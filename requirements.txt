@@ -1,0 +1,35 @@
+# 地政学インテリジェンス API（api_server.py）を Azure App Service（Python 3.11）で動かすための依存パッケージ。
+#
+# api_server.py から到達できる全モジュールの import を解析して作成した（2026-10-15）。
+# バージョンは、ローカルで動作確認した版に固定している（再現性のため）。更新するときは、テストを通してから変える。
+#
+# 含めていないもの（本番のAPIでは使わない）:
+#   streamlit / playwright / feedparser / pytest など。バッチ収集・開発用ツールが必要になったら別ファイルにする。
+# 既存の requirements_azure.txt は、別アプリ（サステナアプリ）用のため、このアプリでは使わない。
+
+# --- Webフレームワーク ---
+fastapi==0.139.2
+starlette==1.3.1
+pydantic==2.13.4
+uvicorn==0.49.0
+python-multipart==0.0.32      # ファイルのアップロード（Form/File）に必須
+
+# --- AI・外部API ---
+openai==2.44.0
+httpx==0.28.1
+requests==2.34.2
+certifi==2026.6.17
+
+# --- 文書・記事の本文抽出 ---
+trafilatura==2.1.0
+lxml==6.1.1
+lxml-html-clean==0.4.5        # trafilatura が必要とする
+pypdf==6.14.2
+python-docx==1.2.0
+
+# --- その他 ---
+jsonschema==4.26.0
+PyYAML==6.0.3                 # データコネクタの設定ファイル
+pandas==2.3.3                 # データコネクタ（CSV/Excel/OFAC）
+python-dateutil==2.9.0.post0
+tzdata==2026.2

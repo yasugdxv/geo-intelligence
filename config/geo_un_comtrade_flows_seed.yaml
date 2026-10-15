@@ -1,0 +1,22 @@
+# UN Comtrade API（Phase2B、credential-required）向けの代表フロー seed。
+# reporterCode/partnerCodeはUN M49数値コード（ISO3ではない、UN Comtrade公式仕様）。
+# 実際の取得対象（reporter/partner/commodity/period）の組み合わせはここで管理し、
+# geo_connector_un_comtrade.pyへハードコードしない。
+#
+# max_records_per_call: 1コールあたりの想定上限件数。UN Comtrade公式の現行レート制限を
+# 前提に固定値化するのではなく、公式仕様変更（レート制限緩和/強化）に追従できるよう
+# 設定値として持つ（コネクタ側は1フロー×1期間を1コールとして扱うため、通常はこの値を
+# 超えない粒度になる。将来的にコマ切れが必要な場合の目安値）。
+max_records_per_call: 2500
+
+flows:
+  - reporter_code: "392"
+    reporter_name: Japan
+    reporter_entity_country_code: JPN
+    partner_code: "0"
+    partner_name: World
+    cmd_code: TOTAL
+    flow_code: X
+    freq_code: A
+    type_code: C
+    periods: ["2022", "2023", "2024"]

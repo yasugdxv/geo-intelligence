@@ -1,0 +1,396 @@
+{
+  "case_id": "ib0-2-iran-hormuz",
+  "theme": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。",
+  "t0_date": "2026-05-14",
+  "evaluation_mode": "retrospective_proxy_directional_as_of_filtered",
+  "harness": "eval_harness.AsOfEvaluationClient",
+  "blinding_note": "T0 theme built ONLY from R006->R002 (2026-03-25, Pollack/Vatanka MEI analysis, adopted-external) plus bare situational framing. Does NOT include M086's conclusion, rejection reasoning, indicators, or framing; does NOT include any post-T0 fact (e.g. Islamabad MoU, confirmed present in this DB as a 2026-07-01-dated document, excluded both from the theme text and by the as-of proxy).",
+  "notes": "Phase I-B0.2: production pipeline run unmodified, DB client substituted with an as-of-date-filtering read proxy. NOT an 'AI output reviewed by expert' case, NOT Phase I-B1.",
+  "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+  "timings_sec": {
+    "generate_scenarios": 138.4
+  },
+  "cqas_all_candidates": [
+    {
+      "scenario_candidate_id": "c84b701f-1572-4998-bf11-5b9a897cc1b5",
+      "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+      "rank": 1,
+      "title": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "assumptions": [
+            "米国は大規模地上侵攻・長期占領までは志向していない。",
+            "イランは体制生存を最優先し、一定の段階で交渉に応じるインセンティブを持つ。",
+            "イスラエル・湾岸諸国は対イラン抑止強化を求めつつも、全面戦争には慎重である。"
+          ],
+          "description": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張しつつあるが、全面的なレジームチェンジ戦略として固定されたとまでは言えない、という中間的なシナリオを主軸に置く。この場合、ホルムズ海峡の不安定化とエネルギー・海上輸送リスクは一定期間続きつつも、最終的には何らかの交渉枠組み（核・地域行動に関する合意）に収れんする可能性が高い。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+          "supporting_evidence": [
+            "専門家が「体制転換的な性格」を指摘しているという記述",
+            "ホルムズ海峡での掃討作戦継続と「後手」評価",
+            "情勢が2026年5月時点でも継続し、交渉かエスカレーションかが不透明とされている点"
+          ],
+          "observable_indicators": [
+            "米国が体制転換を明示的に掲げるか否か。",
+            "イラン体制の中枢（最高指導者・革命防衛隊）を直接標的とする行動の有無。",
+            "ホルムズ海峡でのインシデント頻度とエネルギー価格の推移。",
+            "米・イラン間の秘密・公開チャネルでの交渉報道の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": false,
+              "description": "2003年イラク戦争（大量破壊兵器問題から体制転換戦争へ移行した例）との比較。",
+              "same_domain": true,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": null,
+          "confidence_adjustment_reason": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "米国政権（大統領・国家安全保障チーム）",
+          "イラン指導部（最高指導者・革命防衛隊）",
+          "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+        ],
+        "source_cqas": {
+          "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+          "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+        },
+        "why_this_matters": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+        "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:33:57.574109+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:33:57.905591+00:00"
+    },
+    {
+      "scenario_candidate_id": "62ef8351-089b-4503-aa51-07cec6145754",
+      "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+      "rank": 2,
+      "title": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高まるが、中期的には緩和される。",
+          "switch_conditions": [
+            "米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。",
+            "ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "米国政権（大統領・国家安全保障チーム）",
+          "イラン指導部（最高指導者・革命防衛隊）",
+          "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+        ],
+        "source_cqas": {
+          "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+          "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。 / ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。",
+        "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:33:57.574109+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:33:57.905591+00:00"
+    },
+    {
+      "scenario_candidate_id": "9ebc2350-6b2b-40bd-8e55-be98d75729a2",
+      "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+      "rank": 3,
+      "title": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレ",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレーション」シナリオ。エネルギー・海上輸送・地域安全保障への影響は構造的に深刻化する。",
+          "switch_conditions": [
+            "米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。",
+            "ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "米国政権（大統領・国家安全保障チーム）",
+          "イラン指導部（最高指導者・革命防衛隊）",
+          "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+        ],
+        "source_cqas": {
+          "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+          "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。 / ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。",
+        "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:33:57.574109+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:33:57.905591+00:00"
+    }
+  ],
+  "cqas_total_candidates": 3,
+  "cqas_displayed_top5": [
+    {
+      "scenario_candidate_id": "c84b701f-1572-4998-bf11-5b9a897cc1b5",
+      "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+      "rank": 1,
+      "title": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "assumptions": [
+            "米国は大規模地上侵攻・長期占領までは志向していない。",
+            "イランは体制生存を最優先し、一定の段階で交渉に応じるインセンティブを持つ。",
+            "イスラエル・湾岸諸国は対イラン抑止強化を求めつつも、全面戦争には慎重である。"
+          ],
+          "description": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張しつつあるが、全面的なレジームチェンジ戦略として固定されたとまでは言えない、という中間的なシナリオを主軸に置く。この場合、ホルムズ海峡の不安定化とエネルギー・海上輸送リスクは一定期間続きつつも、最終的には何らかの交渉枠組み（核・地域行動に関する合意）に収れんする可能性が高い。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+          "supporting_evidence": [
+            "専門家が「体制転換的な性格」を指摘しているという記述",
+            "ホルムズ海峡での掃討作戦継続と「後手」評価",
+            "情勢が2026年5月時点でも継続し、交渉かエスカレーションかが不透明とされている点"
+          ],
+          "observable_indicators": [
+            "米国が体制転換を明示的に掲げるか否か。",
+            "イラン体制の中枢（最高指導者・革命防衛隊）を直接標的とする行動の有無。",
+            "ホルムズ海峡でのインシデント頻度とエネルギー価格の推移。",
+            "米・イラン間の秘密・公開チャネルでの交渉報道の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": false,
+              "description": "2003年イラク戦争（大量破壊兵器問題から体制転換戦争へ移行した例）との比較。",
+              "same_domain": true,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": null,
+          "confidence_adjustment_reason": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "米国政権（大統領・国家安全保障チーム）",
+          "イラン指導部（最高指導者・革命防衛隊）",
+          "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+        ],
+        "source_cqas": {
+          "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+          "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+        },
+        "why_this_matters": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+        "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:33:57.574109+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:33:57.905591+00:00"
+    },
+    {
+      "scenario_candidate_id": "62ef8351-089b-4503-aa51-07cec6145754",
+      "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+      "rank": 2,
+      "title": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高まるが、中期的には緩和される。",
+          "switch_conditions": [
+            "米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。",
+            "ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "米国政権（大統領・国家安全保障チーム）",
+          "イラン指導部（最高指導者・革命防衛隊）",
+          "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+        ],
+        "source_cqas": {
+          "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+          "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。 / ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。",
+        "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:33:57.574109+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:33:57.905591+00:00"
+    },
+    {
+      "scenario_candidate_id": "9ebc2350-6b2b-40bd-8e55-be98d75729a2",
+      "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+      "rank": 3,
+      "title": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレ",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレーション」シナリオ。エネルギー・海上輸送・地域安全保障への影響は構造的に深刻化する。",
+          "switch_conditions": [
+            "米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。",
+            "ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "米国政権（大統領・国家安全保障チーム）",
+          "イラン指導部（最高指導者・革命防衛隊）",
+          "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+        ],
+        "source_cqas": {
+          "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+          "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。 / ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。",
+        "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:33:57.574109+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:33:57.905591+00:00"
+    }
+  ],
+  "selected_scenario_candidate_id": "c84b701f-1572-4998-bf11-5b9a897cc1b5",
+  "selected_scenario_rank": 1,
+  "analysis_design": {
+    "analysis_design_id": "c4fffc4c-c84d-42b9-ac3a-bf68ea82e305",
+    "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+    "version": 1,
+    "investigation_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。",
+    "scope": null,
+    "key_actors": [
+      "米国政権（大統領・国家安全保障チーム）",
+      "イラン指導部（最高指導者・革命防衛隊）",
+      "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+    ],
+    "analytical_lenses": [],
+    "hypotheses": [
+      "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張しつつあるが、全面的なレジームチェンジ戦略として固定されたとまでは言えない、という中間的なシナリオを主軸に置く。この場合、ホルムズ海峡の不安定化とエネルギー・海上輸送リスクは一定期間続きつつも、最終的には何らかの交渉枠組み（核・地域行動に関する合意）に収れんする可能性が高い。"
+    ],
+    "alternative_hypotheses": [
+      "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高まるが、中期的には緩和される。",
+      "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレーション」シナリオ。エネルギー・海上輸送・地域安全保障への影響は構造的に深刻化する。"
+    ],
+    "evidence_needed": [
+      "米国の対イラン軍事行動に関する公式声明・議会決議・国防総省ブリーフィングが、目的（核能力抑止 vs 体制転換）をどのように位置づけているか。",
+      "ホルムズ海峡での具体的な軍事行動（機雷掃海、護衛船団、攻撃・拿捕事案）の時系列と、商船運航・保険料・運賃の変化。",
+      "イスラエル国内世論調査における「対イラン軍事行動支持」と「ネタニヤフ個人支持」の具体的な数値と推移。"
+    ],
+    "known_evidence": [
+      "専門家が「体制転換的な性格」を指摘しているという記述",
+      "ホルムズ海峡での掃討作戦継続と「後手」評価",
+      "情勢が2026年5月時点でも継続し、交渉かエスカレーションかが不透明とされている点"
+    ],
+    "knowledge_gaps": [
+      "米国の対イラン軍事行動に関する公式声明・議会決議・国防総省ブリーフィングが、目的（核能力抑止 vs 体制転換）をどのように位置づけているか。",
+      "ホルムズ海峡での具体的な軍事行動（機雷掃海、護衛船団、攻撃・拿捕事案）の時系列と、商船運航・保険料・運賃の変化。",
+      "イスラエル国内世論調査における「対イラン軍事行動支持」と「ネタニヤフ個人支持」の具体的な数値と推移。"
+    ],
+    "watch_points": [
+      "米国政府・議会による対イラン軍事行動の目的に関する公式発言（体制転換言及の有無）。",
+      "ホルムズ海峡での攻撃・拿捕・機雷等のインシデント件数と海上保険料・運賃の推移。",
+      "原油・LNG価格の水準とボラティリティ。",
+      "イランによる地域代理勢力を通じた攻撃の頻度・対象。",
+      "イスラエル国内の世論調査における対イラン軍事行動支持とネタニヤフ個人支持の推移。"
+    ],
+    "report_structure": {},
+    "confidence": "判断不能",
+    "assumptions": [
+      "米国は大規模地上侵攻・長期占領までは志向していない。",
+      "イランは体制生存を最優先し、一定の段階で交渉に応じるインセンティブを持つ。",
+      "イスラエル・湾岸諸国は対イラン抑止強化を求めつつも、全面戦争には慎重である。"
+    ],
+    "change_note": "選択したScenario CandidateのCQAS Runから初版を生成(I-B0.2 as-of run)",
+    "created_by": "phase_ib0_2_retrospective_proxy",
+    "created_at": "2026-09-16T09:34:00.330525+00:00"
+  },
+  "as_of_audit_report": {
+    "as_of_date": "2026-05-14",
+    "tables": {
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 1,
+        "excluded_unverified_count": 0
+      },
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 19,
+        "excluded_unverified_count": 11
+      },
+      "geo_ios_analysis_sessions": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 3,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_scenario_candidates": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 2,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_expert_responses": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_designs": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "write_passthrough_op_count": 15
+}

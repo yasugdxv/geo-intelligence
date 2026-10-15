@@ -1,0 +1,13 @@
+# Manifesto Project Database API（Phase2B、credential-required）向けの設定。
+# 今回のスコープはMain Dataset（政党×選挙年ごとのコード化済み変数）のみ。個々の綱領全文
+# ドキュメント（Corpus）の取得・保存・chunkingはcontent_storage_allowed/
+# external_redistribution_allowedの利用条件確認後の別段階とし、本Connectorでは行わない
+# （docs/geopolitical-connector-guide.md参照）。
+#
+# エンドポイント（https://manifesto-project.wzb.eu/api/v1/get_core）はAPIキー未取得のため
+# 実アクセスで検証できていない。credential_configured=falseの間はConnectorが実行されないため
+# 実害はないが、実際にキーを取得し初めて実行する前にAPI応答形状を再確認すること。
+countries:
+  - country_name: Japan
+  - country_name: Taiwan
+main_dataset_version: MPDS2026a

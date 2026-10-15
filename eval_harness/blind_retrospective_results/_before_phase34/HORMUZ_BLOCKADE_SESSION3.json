@@ -1,0 +1,2657 @@
+{
+  "case_id": "HORMUZ_BLOCKADE_SESSION3",
+  "smoke_test": false,
+  "t0": "2026-02-20",
+  "t0_rationale": "M140返信日(2026-02-21)の前日。転送元CSISレポート内容のみを許可。",
+  "actor_id": "blind_retrospective_diagnostic_hormuz_blockade_session3",
+  "mode": "case_analysis",
+  "profile": "deep",
+  "execution_mode": "staged",
+  "query_text": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。",
+  "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+  "expert_request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+  "expert_response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5",
+  "elapsed_sec": 106.2,
+  "stage_a_full_response_json": {
+    "claims": [
+      {
+        "text": "イランは現在の米・イラン交渉に対し期待値が非常に低く、たとえ合意しても米国が攻撃しない保証がないと認識しているとCSISレポートは記述している。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "イランは「曖昧な合意」ではなく、一語一句まで詰めた戦争回避の確実性を担保する合意を求めているが、現状その水準には程遠いとされる。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "イランはJCPOAに加え、弾道ミサイル開発や代理勢力への支援停止まで含めたJCPOA+αの議論に応じる姿勢は示しているが、全ての条件を受け入れる意思があるわけではない。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジアラビアに保管するという折衷案であれば、イランは国内向けに「自国として濃縮を継続」と主張でき、米国は国際社会に「イラン国内で単独に濃縮していない」と説明できる、という例が示されている。",
+        "claim_type": "illustration",
+        "source_ref": null
+      },
+      {
+        "text": "こうした複雑な折衷案は、理論上は双方の面子を保てるが、合意形成に時間を要する。",
+        "claim_type": "observation",
+        "source_ref": null
+      },
+      {
+        "text": "イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢だが、過去に多くの機会があったにもかかわらず一度も実行していない。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "イラン自身も1〜2百万バレル/日の原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "イランは、最大圧力カードとしてホルムズ封鎖を保持しつつも、実際には自国経済への打撃を避けるため、交渉カードや限定的な威圧行動として使う傾向があると推測できる。",
+        "claim_type": "inference",
+        "source_ref": null
+      },
+      {
+        "text": "イランは、戦争回避の確実性が担保されない限り、核合意やミサイル・代理勢力に関する譲歩を大幅に進めるインセンティブが弱く、交渉の長期化・膠着を許容しつつ圧力カードを維持する可能性が高い。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      }
+    ],
+    "dynamics": null,
+    "stakeholders": [
+      {
+        "actor": "イラン指導部（最高指導者＋安全保障機構）",
+        "purpose": null,
+        "leverage": "安全保障上の抑止",
+        "position": "今回の交渉局面では、米国からの攻撃リスクを最小化しつつ、核・ミサイル・代理勢力に関する自国の安全保障上のレバレッジを維持すること。",
+        "red_lines": null,
+        "confidence": "低",
+        "constraints_fears": "自国経済・原油輸出",
+        "ability_to_move_or_block": null
+      },
+      {
+        "actor": "米国指導部",
+        "purpose": null,
+        "leverage": null,
+        "position": "イランの核・ミサイル・代理勢力能力を制約しつつ、ホルムズ海峡の安定と同盟国のエネルギー安全保障を維持すること。",
+        "red_lines": null,
+        "confidence": "低",
+        "constraints_fears": null,
+        "ability_to_move_or_block": null
+      },
+      {
+        "actor": "湾岸諸国（サウジアラビア、UAEなど）",
+        "purpose": "ホルムズ海峡の安定と自国の原油輸出・経済の維持。",
+        "leverage": "代替パイプライン・港湾インフラ整備、米国との安全保障協力を通じた抑止。",
+        "position": "ホルムズ封鎖のリスクを抑えつつ、自国の輸出ルート多様化を模索。",
+        "priority": "高",
+        "red_lines": "長期にわたる通航妨害や自国タンカーへの攻撃。",
+        "confidence": "低",
+        "constraints_fears": "ホルムズ封鎖による輸出停止・価格急騰・安全保障リスクの増大。",
+        "key_relationships": "米国との安全保障協力、イランとの地理的近接と潜在的対立。",
+        "ability_to_move_or_block": "ホルムズ封鎖の決定そのものは動かせないが、代替ルート整備や米国との協力を通じて封鎖のコスト構造に影響を与え得る。"
+      }
+    ],
+    "main_scenario": {
+      "confidence": "中",
+      "assumptions": [
+        "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+        "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+        "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+      ],
+      "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+      "evidence_class": "structural_reference",
+      "evidence_relevance": [],
+      "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+      "supporting_evidence": [
+        "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+        "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+        "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+      ],
+      "observable_indicators": [
+        "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+        "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+        "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+        "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+      ],
+      "historical_analogies_used": [
+        {
+          "same_actor": true,
+          "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+          "same_domain": true,
+          "analogy_strength": "medium",
+          "same_constraints": true,
+          "same_leverage_mechanism": true,
+          "analogy_source_precedent_id": null,
+          "same_institutional_structure": true
+        }
+      ],
+      "derived_from_hypothesis_id": "H0",
+      "confidence_adjustment_reason": null,
+      "weakening_evidence_relevance": [],
+      "relevance_confidence_adjustment_reason": null
+    },
+    "business_impact": {
+      "direct": null,
+      "indirect": "ホルムズ海峡の全面封鎖は現時点では低蓋然性と見るべきだが、交渉膠着や安全保障不信が続く場合、限定的な拿捕・臨検・航行リスクの誇張が増えれば、海上保険料・運賃・リードタイムの変動を通じて原材料・エネルギーコストや物流に間接的影響が出る可能性がある。",
+      "unrelated_note": null,
+      "environment_change": "米・イラン交渉が長期化し、戦争回避保証の水準が低いままなら、ホルムズ海峡を巡る緊張は慢性的なリスク要因として残り、エネルギー市場・海上保険・湾岸地域の政治リスクを評価する際の前提として組み込む必要がある。"
+    },
+    "initial_anomaly": "イランはホルムズ海峡封鎖を最大の圧力手段として長年言及してきたにもかかわらず、一度も実行していない。今回も交渉への不信が非常に強いにもかかわらず、封鎖カードを「実際に切る」方向ではなく、複雑な折衷案や交渉の細部にこだわる方向へ動いている点が、通常の「最大圧力カードを切る」という直感とずれている。",
+    "review_findings": null,
+    "audience_analysis": null,
+    "executive_summary": {
+      "what_changed": null,
+      "why_it_matters": null,
+      "what_to_watch_decide": null
+    },
+    "key_actor_profiles": [
+      {
+        "actor": "イラン指導部（最高指導者＋安全保障機構）",
+        "red_line": null,
+        "actor_ref": "iran_leadership",
+        "entity_id": null,
+        "confidence": "低",
+        "event_role": {
+          "role_type": "bargaining_card",
+          "explanation": "ホルムズ海峡封鎖は、イランにとって自国経済への打撃を伴うため、実際の行使よりも「最大圧力カードとしての誇示・示唆」によって交渉での抑止力・譲歩獲得を狙う手段として位置づけられていると読むのが自然。",
+          "intended_target_actor_ref": "us_leadership"
+        },
+        "formal_role": null,
+        "evidence_ids": null,
+        "decision_power": null,
+        "driving_forces": [
+          {
+            "force": "自国経済・原油輸出",
+            "direction": "constraining",
+            "description": "ホルムズ経由で1〜2百万バレル/日の原油を輸出しているため、全面封鎖は自国経済にとって自殺的であり、カードの実行を強く制約する。"
+          },
+          {
+            "force": "安全保障上の抑止",
+            "direction": "supporting",
+            "description": "ホルムズ封鎖カードを保持・誇示することは、米国や湾岸諸国に対する抑止・交渉上のレバレッジとして機能し得る。"
+          }
+        ],
+        "perceived_path": null,
+        "ability_to_move": null,
+        "issue_objective": "今回の交渉局面では、米国からの攻撃リスクを最小化しつつ、核・ミサイル・代理勢力に関する自国の安全保障上のレバレッジを維持すること。",
+        "observed_action": "ホルムズ海峡封鎖という最大圧力カードを保持しつつも、過去に一度も全面封鎖を実行していない。JCPOA+αの議論に応じる姿勢は示すが、全条件受け入れには慎重。",
+        "vulnerabilities": null,
+        "ability_to_block": null,
+        "primary_audience": null,
+        "why_actor_matters": null,
+        "available_leverage": null,
+        "secondary_audience": null,
+        "ultimate_objective": null,
+        "actor_model_challenge": null,
+        "persistent_preference": null,
+        "preference_action_gap": "最大圧力カードとしてホルムズ封鎖を公言しながら、実際には自国の原油輸出依存のために行使していないというギャップがある。これは、自国経済の維持と安全保障レバレッジの両立を図るため、カードの「保持・誇示」と「実行」の間に線を引いていると説明できる。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": null,
+        "confidence_adjustment_reason": null,
+        "persistent_preference_change": null,
+        "actor_intelligence_provenance": null,
+        "persistent_preference_evidence": [],
+        "pattern_applicability_assessment": null,
+        "strategic_relationship_preference": null
+      },
+      {
+        "actor": "米国指導部",
+        "red_line": null,
+        "actor_ref": "us_leadership",
+        "entity_id": null,
+        "confidence": "低",
+        "event_role": {
+          "role_type": "constraint",
+          "explanation": "米国の安全保障姿勢（攻撃リスクを完全には否定しないこと）が、イランにとって交渉での譲歩を難しくする構造的制約として機能している。",
+          "intended_target_actor_ref": "iran_leadership"
+        },
+        "formal_role": null,
+        "evidence_ids": null,
+        "decision_power": null,
+        "driving_forces": [],
+        "perceived_path": null,
+        "ability_to_move": null,
+        "issue_objective": "イランの核・ミサイル・代理勢力能力を制約しつつ、ホルムズ海峡の安定と同盟国のエネルギー安全保障を維持すること。",
+        "observed_action": "イラン側から見て、合意しても攻撃しない保証がないと認識されるような安全保障不信を残したまま交渉が進んでいる。",
+        "vulnerabilities": null,
+        "ability_to_block": null,
+        "primary_audience": null,
+        "why_actor_matters": null,
+        "available_leverage": null,
+        "secondary_audience": null,
+        "ultimate_objective": null,
+        "actor_model_challenge": null,
+        "persistent_preference": null,
+        "preference_action_gap": "米国がどこまで戦争回避を保証する意思があるかは資料からは不明だが、イラン側の認識とのギャップが交渉の進展を阻害している。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": null,
+        "confidence_adjustment_reason": null,
+        "persistent_preference_change": null,
+        "actor_intelligence_provenance": null,
+        "persistent_preference_evidence": [],
+        "pattern_applicability_assessment": null,
+        "strategic_relationship_preference": null
+      }
+    ],
+    "root_premise_check": null,
+    "additional_research": [
+      {
+        "priority": "高",
+        "question": "イランの原油輸出のルート構成は現在どうなっているか（ホルムズ経由の比率、代替ルートの有無）。",
+        "rationale": "ホルムズ封鎖の自殺的コスト構造が変化しているかを確認することで、全面封鎖シナリオの蓋然性を再評価できる。",
+        "related_hypothesis": "H4",
+        "recommended_sources": "エネルギー専門ベンダー、IEA等の統計、海運業界レポート"
+      },
+      {
+        "priority": "中",
+        "question": "現在の米・イラン交渉で、戦争回避の保証に関する具体的提案・条項は何が議論されているか。",
+        "rationale": "イランの譲歩インセンティブと圧力カード行使の可能性を読むためのKey Point。",
+        "related_hypothesis": "H0",
+        "recommended_sources": "CSIS以外のシンクタンク分析、米・イラン双方の公式発言"
+      },
+      {
+        "priority": "中",
+        "question": "ホルムズ海峡周辺でのイランによる拿捕・臨検・航行妨害の最近の事例と頻度。",
+        "rationale": "全面封鎖ではなく限定的威圧行動の強度変化をモニタリングすることで、主シナリオの妥当性を検証できる。",
+        "related_hypothesis": "H0",
+        "recommended_sources": "海上保険会社レポート、OSINT、海軍・沿岸警備隊の公開情報"
+      },
+      {
+        "priority": null,
+        "question": "イラン指導部は、ホルムズ海峡封鎖カードをどの程度「実行可能な選択肢」と見ているのか、それともほぼ純粋な交渉カードとしてしか見ていないのか。",
+        "rationale": "Key ActorのPersistent Preferenceと、最大圧力カードの実際の使い方（Preference-Action Gap）を確認するため。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "現在の米・イラン交渉で、戦争回避の保証（攻撃しない約束）に関して具体的にどのような条項・メカニズムが議論されているか。",
+        "rationale": "Key Pointとして「戦争回避保証の水準」がイランの譲歩・圧力カード行使に直結するため。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "ホルムズ海峡周辺で、最近イランによる拿捕・臨検・一時的な航行妨害など、全面封鎖ではないがリスクを誇張する行動が増減しているか。",
+        "rationale": "主シナリオ（全面封鎖ではなく限定的威圧の強化）を検証するための観測指標。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      }
+    ],
+    "hypothesis_register": [
+      {
+        "reason": "CSISレポートは、ホルムズ封鎖がイランにとって自殺的であること、過去に多くの機会がありながら一度も実行していないことを指摘している。この構造的制約を前提にすると、最も普通の説明は「カードは保持・誇示しつつ、全面封鎖は避ける」という読みであり、追加の仮定を必要としない。",
+        "status": "retained",
+        "confidence": "中",
+        "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出依存のため全面封鎖には踏み切らず、交渉の行き詰まり時には限定的な威圧行動（拿捕・臨検・リスク誇張）を強めることでレバレッジを行使する。",
+        "hypothesis_id": "H0",
+        "hypothesis_type": "H0_straightforward",
+        "interaction_basis": {
+          "gap_note": "今回の仮説は主に構造的制約（原油輸出依存）に基づくものであり、特定の人物間の認識・相互作用を前提としなくても成立するため。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対する抑止・交渉上の譲歩獲得のための間接的手段として用いている。",
+        "hypothesis_id": "H1",
+        "hypothesis_type": "H1_instrumental_indirect",
+        "interaction_basis": {
+          "gap_note": "ホルムズ封鎖カードの役割をbargaining_cardとして位置づけるが、具体的な発言・行動に関する詳細な相互作用データは今回の資料にない。",
+          "actor_ref": "iran_leadership",
+          "basis_type": "EVENT_ROLE",
+          "target_actor_ref": "us_leadership"
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+        "status": "unresolved",
+        "confidence": "判断不能",
+        "description": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。",
+        "hypothesis_id": "H2",
+        "hypothesis_type": "H2_counterparty_audience_shift",
+        "interaction_basis": {
+          "gap_note": "ホルムズ封鎖カードが誰に向けたシグナルとして使われているかについての具体的証拠が不足している。",
+          "actor_ref": null,
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "今回の資料にはイラン国内の派閥力学や強硬派の具体的要求に関する情報がなく、この仮説を支える直接的根拠がない。一般的にはあり得る説明だが、現時点の材料からは他仮説より説明力が高いとは言えないため棄却候補として扱う。",
+        "status": "rejected",
+        "confidence": "低",
+        "description": "イランのホルムズ封鎖カードの保持・誇示は、対米交渉というよりも国内安全保障機構・強硬派への配慮や、政権の対外強硬姿勢を示す必要性によって主に駆動されている。",
+        "hypothesis_id": "H3",
+        "hypothesis_type": "H3_constraint_domestic_driver",
+        "interaction_basis": {
+          "gap_note": "国内政治・派閥力学に関する情報が欠如しており、この仮説を検証できない。",
+          "actor_ref": null,
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "CSISレポートは依然として封鎖を自殺的と評価しているが、他の資料がないため、原油輸出ルートの多様化や新インフラの有無を確認できない。従来前提が変化している可能性は理論上あり得るが、現時点では支持・反証材料が不足している。",
+        "status": "unresolved",
+        "confidence": "判断不能",
+        "description": "従来の「ホルムズ封鎖は自殺的であり、イランは決して実行しない」という前提が、原油輸出構造や地域インフラの変化によって既に弱まりつつあり、今後は全面封鎖シナリオの蓋然性を再評価すべき段階に入っている可能性。",
+        "hypothesis_id": "H4",
+        "hypothesis_type": "H4_frame_breaking",
+        "interaction_basis": {
+          "gap_note": "この仮説は主に構造的前提の変化に関するものであり、特定の人物間相互作用を前提としない。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      }
+    ],
+    "one_line_assessment": "現時点の材料では、イランによるホルムズ海峡「全面封鎖」は依然として自国経済への自殺的カードであり主シナリオには置きにくいが、交渉の行き詰まりと安全保障不信が続けば、限定的な妨害・拿捕・リスクの誇張など「封鎖カードの見せ方」を強めるシナリオは十分あり得る。今後は、交渉の具体的中身（戦争回避の保証レベル）、イラン国内の安全保障不信の度合い、そしてホルムズ海峡周辺での実際の行動変化を重点的に見る必要がある。",
+    "relevant_mechanisms": [],
+    "relevant_precedents": [],
+    "key_point_assessment": {
+      "confidence": "中",
+      "control_type": "structural",
+      "evidence_class": "structural_reference",
+      "focus_selection": null,
+      "hinge_structure": {
+        "primary_hinge": "イランの原油輸出がホルムズ海峡に依存し続ける限り、全面封鎖は自国経済への自殺的行動であり、カードの実行蓋然性は低く保たれる。",
+        "secondary_hinges": [
+          "イランがホルムズ以外の輸出ルートをどの程度確保できるか",
+          "国際市場・同盟国の対応が、封鎖のコストをどこまで相殺し得るか"
+        ]
+      },
+      "primary_key_point": "ホルムズ海峡封鎖カードの自国経済へのコスト構造",
+      "evidence_relevance": null,
+      "rejected_candidates": [
+        {
+          "key_point": "イランが求める「戦争回避の確実性」をどこまで交渉で担保できるか",
+          "why_not_primary": "交渉内容は確かに重要だが、今回の資料では具体的条項や米側の姿勢が十分に示されておらず、現時点で主軸に置くには根拠が薄い。補助的な分析軸として扱う。"
+        },
+        {
+          "key_point": "複雑な折衷案に必要な時間と政治的忍耐",
+          "why_not_primary": "時間軸は交渉膠着や圧力カード使用のリスクを高めるが、ホルムズ封鎖の可能性そのものを規定する決定的要因は、まず自国経済へのコスト構造であり、その上に時間要因を重ねて読む方が整理しやすい。"
+        }
+      ],
+      "selection_rationale": "CSISレポートが明示しているのは、イランがホルムズ経由で1〜2百万バレル/日の原油を輸出しており、封鎖が自国経済にとって自殺行為であるという構造的事実である。この構造がある限り、イランが全面封鎖に踏み切る蓋然性は低く、カードの使い方は「誇示・限定的威圧」に傾きやすい。戦争回避保証の水準や折衷案の時間軸も重要だが、まずは「なぜ過去に一度も封鎖していないのか」を説明するこの構造要因を主軸に置くことで、今後の展開を読む際に全面封鎖シナリオを過大評価しない基準線を持てる。",
+      "candidate_key_points": [
+        {
+          "key_point": "イランが求める「戦争回避の確実性」をどこまで交渉で担保できるか",
+          "control_type": "mixed",
+          "what_it_explains": "なぜイランが交渉に応じつつも、曖昧な合意を拒み、時間のかかる複雑な折衷案を模索しているのか。",
+          "why_it_could_be_key": "イラン側は曖昧な合意ではなく、攻撃されない保証を重視しており、この保証の水準が低いままなら、核・ミサイル・代理勢力に関する譲歩を進めるインセンティブが弱い。ホルムズ封鎖カードを含む安全保障レバレッジの維持に傾きやすい。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "ホルムズ海峡での具体的な軍事行動の強度やタイミングまでは直接説明しない。",
+          "control_structure_summary": "米国の安全保障コミットメント（攻撃しない保証）とイラン側の受け止め方が相互に影響し合うため、単一のActorではなく両者の交渉構造に依存する。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "ホルムズ海峡封鎖カードの自国経済へのコスト構造",
+          "control_type": "structural",
+          "what_it_explains": "なぜホルムズ封鎖が「最大圧力手段」とされながら、実際には使われてこなかったのか。",
+          "why_it_could_be_key": "イラン自身がホルムズ経由で大量の原油を輸出しているため、全面封鎖は自国経済にとって自殺的であり、カードの実行を強く制約する。これは、過去に多くの機会がありながら一度も封鎖を実行していない理由を説明する。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "イランが限定的な威圧行動や拿捕など、封鎖未満の行動をどこまで強めるかという細部。",
+          "control_structure_summary": "原油輸出依存とホルムズ海峡の地理的・物流的構造が、イランの行動選択を制約する。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "複雑な折衷案（地域共同濃縮など）に必要な時間と政治的忍耐",
+          "control_type": "institutionally_constrained",
+          "what_it_explains": "なぜ「理論上の折衷案」が直ちに現実化せず、交渉が長期化し得るのか。",
+          "why_it_could_be_key": "オマーン・サウジを巻き込んだ共同濃縮・保管案のような複雑な合意は、理論上は双方の面子を保てるが、合意形成に時間を要する。時間がかかるほど、交渉膠着や国内政治圧力が高まり、イランが圧力カードを誇示する誘惑が強まる可能性がある。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "長期化の中でイランが具体的にどの圧力カードをどの程度使うか。",
+          "control_structure_summary": "多国間合意形成のプロセスと技術・制度的要件が時間軸を規定する。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        }
+      ],
+      "disconfirming_signal": "イランがホルムズ海峡以外のルートで原油輸出の大部分を代替できるようなインフラ・契約を短期間で整備した場合、封鎖の自殺的コスト構造が崩れ、全面封鎖シナリオの蓋然性評価を根本的に見直す必要がある。",
+      "controlling_entity_ids": null,
+      "supporting_evidence_ids": null,
+      "control_structure_summary": "ホルムズ海峡の地理・物流構造とイランの原油輸出依存が、イランの行動選択を強く制約する。単一の政治指導者の意思だけでは覆しにくい構造要因。",
+      "supporting_knowledge_refs": null,
+      "contradicting_evidence_ids": null,
+      "confidence_adjustment_reason": null,
+      "control_type_adjustment_reason": null,
+      "historical_supporting_evidence_ids": null,
+      "relevance_confidence_adjustment_reason": null
+    },
+    "media_source_context": null,
+    "unknown_or_uncertain": "イラン指導部の内部意思決定プロセス、国内派閥力学、米国側の具体的安全保障コミットメントなど、今回の資料では詳細が不明な要素が多く、ホルムズ封鎖カードの「本気度」を定量的に評価することはできない。",
+    "alternative_scenarios": [
+      {
+        "confidence": "低",
+        "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+        "evidence_class": "unsupported_assumption",
+        "switch_conditions": [
+          "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+        ],
+        "weakening_conditions": [
+          "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+          "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+        ],
+        "strengthening_conditions": [
+          "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+          "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+        ],
+        "derived_from_hypothesis_id": "H3",
+        "confidence_adjustment_reason": null
+      },
+      {
+        "confidence": "判断不能",
+        "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+        "evidence_class": "structural_reference",
+        "switch_conditions": [
+          "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+        ],
+        "weakening_conditions": [
+          "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+          "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+        ],
+        "strengthening_conditions": [
+          "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+          "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+        ],
+        "derived_from_hypothesis_id": "H4",
+        "confidence_adjustment_reason": null
+      }
+    ],
+    "discretion_assessment": {
+      "mode_rationale": "ホルムズ海峡封鎖という行動自体は、イラン指導部の裁量によって決定され得る一方で、原油輸出依存や国際市場・軍事バランスといった構造的制約が非常に強く働くため、人間の裁量と構造要因が併存する局面と見るのが妥当。",
+      "discretion_mode": "MIXED"
+    },
+    "monitoring_indicators": [
+      "イランの原油輸出ルート構成（ホルムズ依存度）の変化",
+      "ホルムズ海峡周辺での拿捕・臨検・航行妨害事例の頻度とパターン",
+      "米・イラン交渉での戦争回避保証（攻撃しない約束）に関する具体的条項の有無",
+      "湾岸諸国・国際社会によるホルムズ海峡防衛・代替ルート整備の動き"
+    ],
+    "retraction_conditions": [
+      "イランがホルムズ海峡を事実上全面封鎖し、数週間以上にわたり商船・タンカーの通航を停止させる行動を取った場合。",
+      "イランの原油輸出構造がホルムズ依存から大きく転換したことを示す具体的なインフラ・契約の証拠が出た場合。"
+    ],
+    "sources_and_citations": [],
+    "weakening_information": "もしイランがホルムズ以外のルートで原油輸出の大部分を代替できるようになっている、あるいは国内経済が封鎖による短期的打撃を許容できるほど変化しているという信頼できる証拠が出れば、「封鎖は自殺的であり全面封鎖は低蓋然性」という主シナリオは弱まる。",
+    "contradicting_evidence": null,
+    "directional_perceptions": null,
+    "expert_reasoning_checks": null,
+    "investigation_questions": [
+      {
+        "question": "イラン指導部は、ホルムズ海峡封鎖カードをどの程度「実行可能な選択肢」と見ているのか、それともほぼ純粋な交渉カードとしてしか見ていないのか。",
+        "rationale": "Key ActorのPersistent Preferenceと、最大圧力カードの実際の使い方（Preference-Action Gap）を確認するため。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "現在の米・イラン交渉で、戦争回避の保証（攻撃しない約束）に関して具体的にどのような条項・メカニズムが議論されているか。",
+        "rationale": "Key Pointとして「戦争回避保証の水準」がイランの譲歩・圧力カード行使に直結するため。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "ホルムズ海峡周辺で、最近イランによる拿捕・臨検・一時的な航行妨害など、全面封鎖ではないがリスクを誇張する行動が増減しているか。",
+        "rationale": "主シナリオ（全面封鎖ではなく限定的威圧の強化）を検証するための観測指標。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      }
+    ],
+    "identified_knowledge_gaps": [
+      {
+        "priority": "高",
+        "description": "イランの原油輸出構造（ホルムズ以外のルート・インフラ）の最新状況。",
+        "gap_category": "deterministic",
+        "recommended_action": "エネルギー・物流専門の情報源から、イランの輸出ルート構成と最近のインフラ変化を確認する。"
+      },
+      {
+        "priority": "中",
+        "description": "現在の米・イラン交渉で議論されている戦争回避保証の具体的条項。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "CSIS以外の専門家分析や公式発言から、攻撃しない約束・安全保障メカニズムに関する具体的提案を収集する。"
+      },
+      {
+        "priority": "中",
+        "description": "ホルムズ海峡周辺での最近のイランによる拿捕・臨検・航行妨害の頻度とパターン。",
+        "gap_category": "deterministic",
+        "recommended_action": "海上保険・海運業界レポートやOSINTを通じて、現場行動の変化をモニタリングする。"
+      }
+    ],
+    "knowledge_gaps_referenced": [],
+    "strongest_counterargument": "イランの原油輸出構造が既に変化しており、ホルムズ以外のルートや第三国経由の輸出が拡大している場合、封鎖の自殺的コストが低下し、全面封鎖を含むより強硬な行動が合理的選択肢になり得る。その場合、過去に封鎖してこなかったという観測は今後の行動を制約する材料としての重みを失う。",
+    "human_interaction_coverage": {
+      "status_rationale": "今回の資料にはイラン・米国双方の内部意思決定や相互認識に関する具体的なエピソードが含まれておらず、Directional PerceptionやSituation Actor Assessmentを根拠を持って構成することが難しいため。",
+      "interaction_status": "INSUFFICIENT_EVIDENCE"
+    },
+    "key_actor_action_substance": [],
+    "key_stakeholder_assessment": {
+      "rationale": "ホルムズ海峡封鎖の可能性は、イラン側の意思決定（最高指導者・安全保障機構）が直接的なトリガーとなる一方、米国側の軍事・外交姿勢（攻撃リスク、制裁、交渉内容）がイランの選択を強く制約するため、両者をKey Stakeholderとして扱うのが妥当。ただし、制度構造や他沿岸国・国際市場も重要な背景要因であり、完全に単独決定ではない。",
+      "confidence": "低",
+      "evidence_ids": null,
+      "determination": "multiple",
+      "decision_structure": "イラン側では最高指導者と革命防衛隊が安全保障・軍事行動の最終決定権を持つと一般に理解されているが、今回の資料には具体的な内部構造情報はない。米国側では大統領・安全保障チームが対イラン政策を主導するが、議会・同盟国・市場の制約も大きい。",
+      "selected_actor_ids": [
+        "iran_leadership",
+        "us_leadership"
+      ]
+    },
+    "situation_actor_assessment": null,
+    "decisive_power_and_leverage": null,
+    "assets_dependencies_leverage": [],
+    "preference_action_gap_summary": null
+  },
+  "stage_bd_ranked_candidates": [
+    {
+      "scenario_candidate_id": "1e1936f9-5bac-42c5-ac94-8cdc2dada480",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 1,
+      "title": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも",
+      "content": {
+        "raw": {
+          "confidence": "中",
+          "assumptions": [
+            "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+            "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+            "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+          ],
+          "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+          "evidence_class": "structural_reference",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+          "supporting_evidence": [
+            "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+            "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+            "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+          ],
+          "observable_indicators": [
+            "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+            "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+            "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+            "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": true,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null,
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "中",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "7d6bbd3d-1923-45d2-a249-41219c6995b4",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 2,
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+          "evidence_class": "unsupported_assumption",
+          "switch_conditions": [
+            "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+          ],
+          "weakening_conditions": [
+            "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+            "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+          ],
+          "strengthening_conditions": [
+            "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+            "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "55d436a0-f1e0-43be-9d9e-30c2b2cb58fc",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 3,
+      "title": "イランの原油輸出構造が変化し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+          ],
+          "weakening_conditions": [
+            "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+            "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+          ],
+          "strengthening_conditions": [
+            "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+            "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "63e8579e-1fae-4e15-96fd-b6cf66b56a3c",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 4,
+      "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+          "key_cue": "CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。",
+          "reading": "イランはホルムズ封鎖を日常的な交渉レバレッジではなく、「交渉が完全に破綻し、米軍攻撃が現実味を帯びた瞬間」にのみ切る最後のバックストップとして位置づけている可能性がある。したがって今後の展開では、封鎖カードの見せ方よりも、米軍による先制攻撃リスクの変化とイラン側の『戦争不可避』認識の高まりをモニターする必要がある。",
+          "switch_condition": "米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。",
+            "CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。",
+            "ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。",
+            "イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。",
+            "米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。"
+          ],
+          "key_actors_and_structure": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。\n支持する理由: イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。 / CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。 / ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。\n弱める情報: ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。 / イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。 / 米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。\n切替条件: 米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "cbfba018-2ab6-4a50-93a9-61d399b75965",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 5,
+      "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+          "key_cue": "『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。",
+          "reading": "ホルムズ封鎖はイランにとって自殺的であるという前提を反転し、イラン指導部が体制生存や対外安全保障を最優先する局面では、原油輸出の大幅減少を『受忍可能な犠牲』として選択しうると読む。今後の展開では、イラン経済の脆弱性だけでなく、体制維持・安全保障上の優先順位の変化を見ないと、封鎖の蓋然性評価を誤る可能性がある。",
+          "switch_condition": "イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+          "supporting_reasons": [
+            "CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。",
+            "イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。",
+            "歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。",
+            "イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。",
+            "イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。"
+          ],
+          "key_actors_and_structure": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: 『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。\n支持する理由: CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。 / イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。 / 歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。 / イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。\n弱める情報: 資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。 / イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。\n切替条件: イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "fc191fea-0940-4a65-8a16-1c5e1e54b5ba",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 6,
+      "title": "地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み",
+          "key_cue": "CSISレポートが提示する、オマーン等での地域共同濃縮・サウジ保管という折衷案の存在。これはイラン・湾岸諸国間の新たな協力枠組みの可能性を示している。",
+          "reading": "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジアラビアに保管するような複雑な折衷案が進展した場合、イランの安全保障・地域関係の構造が変化し、ホルムズ封鎖カードが『対米カード』から『地域秩序破壊カード』へと性格を変える可能性がある。これは発生確率は低いが、実現すればホルムズ封鎖のコスト・便益計算を大きく変える。",
+          "switch_condition": "オマーン等での地域共同濃縮事業体やサウジでの濃縮済みウラン保管に向けた具体的な合意・実務協議の進展が確認され、イランと湾岸諸国の間で核関連の相互依存が現実化した場合、この読みの重要性が高まる。",
+          "supporting_reasons": [
+            "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。",
+            "このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。",
+            "イランはJCPOA+αの議論に応じる姿勢を示しており、核問題を軸にした地域的な取り決めに一定の柔軟性を持っていることがうかがえる。",
+            "地域共同事業体が成立すれば、ホルムズ海峡の安定はイランだけでなく、共同事業に関わる湾岸諸国の利益とも直結し、封鎖は地域全体の合意を破壊する行為として位置づけられる。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "このような複雑な折衷案は『理論上は双方の面子を保てる』とされる一方で、実現には時間を要し、現時点では具体的進展が示されていない。",
+            "サウジアラビアなど湾岸諸国がイランとの共同濃縮事業体に政治的に応じるかどうかは不透明であり、構想が実現しない場合、この読みは成立しない。",
+            "仮に共同事業体が成立しても、ホルムズ海峡の安全保障と核燃料サイクルの枠組みがどの程度リンクされるかは不明であり、封鎖カードの性格変化は限定的にとどまる可能性がある。"
+          ],
+          "key_actors_and_structure": "重要なアクターはイラン、オマーン、サウジアラビア、米国、その他湾岸諸国。構造的には、核燃料サイクルをめぐる地域共同事業体が、イランと湾岸諸国の相互依存を高める一方で、ホルムズ海峡を含む海上輸送路の安全保障を『地域共同の利益』として再定義する可能性がある。ホルムズ封鎖は、イラン単独の対米カードから、地域共同事業体全体を人質に取る行為へと意味が変わる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "重要なアクターはイラン、オマーン、サウジアラビア、米国、その他湾岸諸国。構造的には、核燃料サイクルをめぐる地域共同事業体が、イランと湾岸諸国の相互依存を高める一方で、ホルムズ海峡を含む海上輸送路の安全保障を『地域共同の利益』として再定義する可能性がある。ホルムズ封鎖は、イラン単独の対米カードから、地域共同事業体全体を人質に取る行為へと意味が変わる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが提示する、オマーン等での地域共同濃縮・サウジ保管という折衷案の存在。これはイラン・湾岸諸国間の新たな協力枠組みの可能性を示している。\n支持する理由: オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。 / このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。 / イランはJCPOA+αの議論に応じる姿勢を示しており、核問題を軸にした地域的な取り決めに一定の柔軟性を持っていることがうかがえる。 / 地域共同事業体が成立すれば、ホルムズ海峡の安定はイランだけでなく、共同事業に関わる湾岸諸国の利益とも直結し、封鎖は地域全体の合意を破壊する行為として位置づけられる。\n弱める情報: このような複雑な折衷案は『理論上は双方の面子を保てる』とされる一方で、実現には時間を要し、現時点では具体的進展が示されていない。 / サウジアラビアなど湾岸諸国がイランとの共同濃縮事業体に政治的に応じるかどうかは不透明であり、構想が実現しない場合、この読みは成立しない。 / 仮に共同事業体が成立しても、ホルムズ海峡の安全保障と核燃料サイクルの枠組みがどの程度リンクされるかは不明であり、封鎖カードの性格変化は限定的にとどまる可能性がある。\n切替条件: オマーン等での地域共同濃縮事業体やサウジでの濃縮済みウラン保管に向けた具体的な合意・実務協議の進展が確認され、イランと湾岸諸国の間で核関連の相互依存が現実化した場合、この読みの重要性が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    }
+  ],
+  "stage_bd_displayed_top5": [
+    {
+      "scenario_candidate_id": "1e1936f9-5bac-42c5-ac94-8cdc2dada480",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 1,
+      "title": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも",
+      "content": {
+        "raw": {
+          "confidence": "中",
+          "assumptions": [
+            "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+            "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+            "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+          ],
+          "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+          "evidence_class": "structural_reference",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+          "supporting_evidence": [
+            "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+            "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+            "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+          ],
+          "observable_indicators": [
+            "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+            "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+            "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+            "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": true,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null,
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "中",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "7d6bbd3d-1923-45d2-a249-41219c6995b4",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 2,
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+          "evidence_class": "unsupported_assumption",
+          "switch_conditions": [
+            "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+          ],
+          "weakening_conditions": [
+            "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+            "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+          ],
+          "strengthening_conditions": [
+            "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+            "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "55d436a0-f1e0-43be-9d9e-30c2b2cb58fc",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 3,
+      "title": "イランの原油輸出構造が変化し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+          ],
+          "weakening_conditions": [
+            "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+            "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+          ],
+          "strengthening_conditions": [
+            "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+            "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "63e8579e-1fae-4e15-96fd-b6cf66b56a3c",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 4,
+      "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+          "key_cue": "CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。",
+          "reading": "イランはホルムズ封鎖を日常的な交渉レバレッジではなく、「交渉が完全に破綻し、米軍攻撃が現実味を帯びた瞬間」にのみ切る最後のバックストップとして位置づけている可能性がある。したがって今後の展開では、封鎖カードの見せ方よりも、米軍による先制攻撃リスクの変化とイラン側の『戦争不可避』認識の高まりをモニターする必要がある。",
+          "switch_condition": "米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。",
+            "CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。",
+            "ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。",
+            "イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。",
+            "米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。"
+          ],
+          "key_actors_and_structure": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。\n支持する理由: イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。 / CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。 / ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。\n弱める情報: ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。 / イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。 / 米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。\n切替条件: 米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "cbfba018-2ab6-4a50-93a9-61d399b75965",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 5,
+      "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+          "key_cue": "『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。",
+          "reading": "ホルムズ封鎖はイランにとって自殺的であるという前提を反転し、イラン指導部が体制生存や対外安全保障を最優先する局面では、原油輸出の大幅減少を『受忍可能な犠牲』として選択しうると読む。今後の展開では、イラン経済の脆弱性だけでなく、体制維持・安全保障上の優先順位の変化を見ないと、封鎖の蓋然性評価を誤る可能性がある。",
+          "switch_condition": "イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+          "supporting_reasons": [
+            "CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。",
+            "イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。",
+            "歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。",
+            "イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。",
+            "イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。"
+          ],
+          "key_actors_and_structure": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: 『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。\n支持する理由: CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。 / イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。 / 歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。 / イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。\n弱める情報: 資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。 / イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。\n切替条件: イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    }
+  ],
+  "stage_c_reading_portfolio_candidates": [
+    {
+      "scenario_candidate_id": "63e8579e-1fae-4e15-96fd-b6cf66b56a3c",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 4,
+      "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+          "key_cue": "CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。",
+          "reading": "イランはホルムズ封鎖を日常的な交渉レバレッジではなく、「交渉が完全に破綻し、米軍攻撃が現実味を帯びた瞬間」にのみ切る最後のバックストップとして位置づけている可能性がある。したがって今後の展開では、封鎖カードの見せ方よりも、米軍による先制攻撃リスクの変化とイラン側の『戦争不可避』認識の高まりをモニターする必要がある。",
+          "switch_condition": "米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。",
+            "CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。",
+            "ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。",
+            "イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。",
+            "米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。"
+          ],
+          "key_actors_and_structure": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。\n支持する理由: イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。 / CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。 / ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。\n弱める情報: ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。 / イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。 / 米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。\n切替条件: 米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "cbfba018-2ab6-4a50-93a9-61d399b75965",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 5,
+      "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+          "key_cue": "『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。",
+          "reading": "ホルムズ封鎖はイランにとって自殺的であるという前提を反転し、イラン指導部が体制生存や対外安全保障を最優先する局面では、原油輸出の大幅減少を『受忍可能な犠牲』として選択しうると読む。今後の展開では、イラン経済の脆弱性だけでなく、体制維持・安全保障上の優先順位の変化を見ないと、封鎖の蓋然性評価を誤る可能性がある。",
+          "switch_condition": "イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+          "supporting_reasons": [
+            "CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。",
+            "イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。",
+            "歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。",
+            "イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。",
+            "イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。"
+          ],
+          "key_actors_and_structure": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: 『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。\n支持する理由: CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。 / イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。 / 歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。 / イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。\n弱める情報: 資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。 / イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。\n切替条件: イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "fc191fea-0940-4a65-8a16-1c5e1e54b5ba",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 6,
+      "title": "地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み",
+          "key_cue": "CSISレポートが提示する、オマーン等での地域共同濃縮・サウジ保管という折衷案の存在。これはイラン・湾岸諸国間の新たな協力枠組みの可能性を示している。",
+          "reading": "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジアラビアに保管するような複雑な折衷案が進展した場合、イランの安全保障・地域関係の構造が変化し、ホルムズ封鎖カードが『対米カード』から『地域秩序破壊カード』へと性格を変える可能性がある。これは発生確率は低いが、実現すればホルムズ封鎖のコスト・便益計算を大きく変える。",
+          "switch_condition": "オマーン等での地域共同濃縮事業体やサウジでの濃縮済みウラン保管に向けた具体的な合意・実務協議の進展が確認され、イランと湾岸諸国の間で核関連の相互依存が現実化した場合、この読みの重要性が高まる。",
+          "supporting_reasons": [
+            "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。",
+            "このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。",
+            "イランはJCPOA+αの議論に応じる姿勢を示しており、核問題を軸にした地域的な取り決めに一定の柔軟性を持っていることがうかがえる。",
+            "地域共同事業体が成立すれば、ホルムズ海峡の安定はイランだけでなく、共同事業に関わる湾岸諸国の利益とも直結し、封鎖は地域全体の合意を破壊する行為として位置づけられる。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "このような複雑な折衷案は『理論上は双方の面子を保てる』とされる一方で、実現には時間を要し、現時点では具体的進展が示されていない。",
+            "サウジアラビアなど湾岸諸国がイランとの共同濃縮事業体に政治的に応じるかどうかは不透明であり、構想が実現しない場合、この読みは成立しない。",
+            "仮に共同事業体が成立しても、ホルムズ海峡の安全保障と核燃料サイクルの枠組みがどの程度リンクされるかは不明であり、封鎖カードの性格変化は限定的にとどまる可能性がある。"
+          ],
+          "key_actors_and_structure": "重要なアクターはイラン、オマーン、サウジアラビア、米国、その他湾岸諸国。構造的には、核燃料サイクルをめぐる地域共同事業体が、イランと湾岸諸国の相互依存を高める一方で、ホルムズ海峡を含む海上輸送路の安全保障を『地域共同の利益』として再定義する可能性がある。ホルムズ封鎖は、イラン単独の対米カードから、地域共同事業体全体を人質に取る行為へと意味が変わる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "重要なアクターはイラン、オマーン、サウジアラビア、米国、その他湾岸諸国。構造的には、核燃料サイクルをめぐる地域共同事業体が、イランと湾岸諸国の相互依存を高める一方で、ホルムズ海峡を含む海上輸送路の安全保障を『地域共同の利益』として再定義する可能性がある。ホルムズ封鎖は、イラン単独の対米カードから、地域共同事業体全体を人質に取る行為へと意味が変わる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが提示する、オマーン等での地域共同濃縮・サウジ保管という折衷案の存在。これはイラン・湾岸諸国間の新たな協力枠組みの可能性を示している。\n支持する理由: オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。 / このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。 / イランはJCPOA+αの議論に応じる姿勢を示しており、核問題を軸にした地域的な取り決めに一定の柔軟性を持っていることがうかがえる。 / 地域共同事業体が成立すれば、ホルムズ海峡の安定はイランだけでなく、共同事業に関わる湾岸諸国の利益とも直結し、封鎖は地域全体の合意を破壊する行為として位置づけられる。\n弱める情報: このような複雑な折衷案は『理論上は双方の面子を保てる』とされる一方で、実現には時間を要し、現時点では具体的進展が示されていない。 / サウジアラビアなど湾岸諸国がイランとの共同濃縮事業体に政治的に応じるかどうかは不透明であり、構想が実現しない場合、この読みは成立しない。 / 仮に共同事業体が成立しても、ホルムズ海峡の安全保障と核燃料サイクルの枠組みがどの程度リンクされるかは不明であり、封鎖カードの性格変化は限定的にとどまる可能性がある。\n切替条件: オマーン等での地域共同濃縮事業体やサウジでの濃縮済みウラン保管に向けた具体的な合意・実務協議の進展が確認され、イランと湾岸諸国の間で核関連の相互依存が現実化した場合、この読みの重要性が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    }
+  ],
+  "leakage_guard": {
+    "known_risk_knowledge_items_leaked": [],
+    "known_risk_documents_leaked": [],
+    "gold_leakage_detected": false
+  },
+  "as_of_audit_report": {
+    "as_of_date": "2026-02-20",
+    "tables": {
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 35,
+        "excluded_unverified_count": 6
+      },
+      "geo_expert_responses": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_sessions": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_knowledge_items": {
+        "policy": "_policy_geo_knowledge_items",
+        "included_count": 0,
+        "excluded_future_count": 8,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "valid": true,
+  "reading_exposure_after": [
+    {
+      "scenario_candidate_id": "1e1936f9-5bac-42c5-ac94-8cdc2dada480",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 1,
+      "title": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも",
+      "content": {
+        "raw": {
+          "confidence": "中",
+          "assumptions": [
+            "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+            "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+            "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+          ],
+          "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+          "evidence_class": "structural_reference",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+          "supporting_evidence": [
+            "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+            "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+            "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+          ],
+          "observable_indicators": [
+            "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+            "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+            "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+            "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": true,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null,
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "中",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "7d6bbd3d-1923-45d2-a249-41219c6995b4",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 2,
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+          "evidence_class": "unsupported_assumption",
+          "switch_conditions": [
+            "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+          ],
+          "weakening_conditions": [
+            "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+            "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+          ],
+          "strengthening_conditions": [
+            "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+            "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "55d436a0-f1e0-43be-9d9e-30c2b2cb58fc",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 3,
+      "title": "イランの原油輸出構造が変化し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+          ],
+          "weakening_conditions": [
+            "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+            "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+          ],
+          "strengthening_conditions": [
+            "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+            "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "why_this_matters": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+        "raw": {
+          "reason": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "H2_counterparty_audience_shift",
+          "interaction_basis": {
+            "gap_note": "ホルムズ封鎖カードが誰に向けたシグナルとして使われているかについての具体的証拠が不足している。",
+            "actor_ref": null,
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "unresolved",
+      "why_not_selected_by_s": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "reading_portfolio",
+      "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+          "key_cue": "CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。",
+          "reading": "イランはホルムズ封鎖を日常的な交渉レバレッジではなく、「交渉が完全に破綻し、米軍攻撃が現実味を帯びた瞬間」にのみ切る最後のバックストップとして位置づけている可能性がある。したがって今後の展開では、封鎖カードの見せ方よりも、米軍による先制攻撃リスクの変化とイラン側の『戦争不可避』認識の高まりをモニターする必要がある。",
+          "switch_condition": "米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。",
+            "CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。",
+            "ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。",
+            "イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。",
+            "米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。"
+          ],
+          "key_actors_and_structure": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。\n支持する理由: イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。 / CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。 / ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。\n弱める情報: ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。 / イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。 / 米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。\n切替条件: 米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "supporting_basis": [
+        "イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。",
+        "CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。",
+        "ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。",
+        "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。"
+      ],
+      "weakening_basis": [
+        "ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。",
+        "イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。",
+        "米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。"
+      ],
+      "original_hypothesis_status": null,
+      "why_not_selected_by_s": null,
+      "missing_evidence": null,
+      "exposure_rank": 5
+    }
+  ],
+  "reading_exposure_before": [
+    {
+      "scenario_candidate_id": "1e1936f9-5bac-42c5-ac94-8cdc2dada480",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 1,
+      "title": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも",
+      "content": {
+        "raw": {
+          "confidence": "中",
+          "assumptions": [
+            "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+            "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+            "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+          ],
+          "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+          "evidence_class": "structural_reference",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+          "supporting_evidence": [
+            "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+            "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+            "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+          ],
+          "observable_indicators": [
+            "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+            "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+            "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+            "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": true,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null,
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "中",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "7d6bbd3d-1923-45d2-a249-41219c6995b4",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 2,
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+          "evidence_class": "unsupported_assumption",
+          "switch_conditions": [
+            "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+          ],
+          "weakening_conditions": [
+            "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+            "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+          ],
+          "strengthening_conditions": [
+            "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+            "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "55d436a0-f1e0-43be-9d9e-30c2b2cb58fc",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 3,
+      "title": "イランの原油輸出構造が変化し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+          ],
+          "weakening_conditions": [
+            "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+            "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+          ],
+          "strengthening_conditions": [
+            "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+            "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "63e8579e-1fae-4e15-96fd-b6cf66b56a3c",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 4,
+      "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み",
+          "key_cue": "CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。",
+          "reading": "イランはホルムズ封鎖を日常的な交渉レバレッジではなく、「交渉が完全に破綻し、米軍攻撃が現実味を帯びた瞬間」にのみ切る最後のバックストップとして位置づけている可能性がある。したがって今後の展開では、封鎖カードの見せ方よりも、米軍による先制攻撃リスクの変化とイラン側の『戦争不可避』認識の高まりをモニターする必要がある。",
+          "switch_condition": "米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。",
+            "CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。",
+            "ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。",
+            "イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。",
+            "米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。"
+          ],
+          "key_actors_and_structure": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "主なアクターはイラン指導部（最高指導者・安全保障機構）、米国政府・軍、湾岸産油国。構造的には、ホルムズ依存という経済制約と、米軍の圧倒的軍事力・先制攻撃オプションが、イランの抑止戦略設計を規定している。ホルムズ封鎖は経済的には自殺的だが、米軍攻撃を阻止するための「最後の核オプション的カード」として位置づけられうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが強調する「交渉中でさえ攻撃される可能性がある」「戦争回避の確実性を担保する合意を求めているが、その水準には程遠い」という安全保障不信の強さ。\n支持する理由: イランは『曖昧な合意』ではなく、戦争回避の確実性を担保する合意を求めているとされており、交渉の主眼が経済制裁解除だけでなく、米軍攻撃リスクの管理にあることが示唆される。 / CSISレポートは、交渉中でさえ攻撃される可能性があるというイラン側の認識を指摘しており、イランが交渉プロセスそのものを安全保障上のリスクと見ている構図がある。 / ホルムズ封鎖が自国経済にとって自殺的であるにもかかわらず、最大の圧力手段として保持され続けていることは、通常の交渉カードというよりも、極限状況での抑止バックストップとしての性格を持つ可能性を示す。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、平時・低〜中強度危機では使わない『閾値の高いカード』として設計されている可能性と整合的である。\n弱める情報: ホルムズ封鎖が『最大の圧力手段』と明示されていることは、交渉上のレバレッジとしても意識されていることを示し、バックストップ専用という読みを弱める。 / イランは拿捕・臨検など限定的威圧行動を過去に用いており、ホルムズ関連カードを段階的に使い分ける実務的な発想があることから、全面封鎖だけを特別視する構図とは必ずしも限らない。 / 米軍攻撃リスクの評価は外部から観測しにくく、イラン内部の『戦争不可避』認識を直接トレースする材料が乏しいため、この読みは構造推論に依存している。\n切替条件: 米軍の対イラン軍事オプションの具体化（攻撃準備の示唆）と、それに対するイラン側の言説・軍事配置が『全面戦争抑止』を前面に出し始めた場合、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    },
+    {
+      "scenario_candidate_id": "cbfba018-2ab6-4a50-93a9-61d399b75965",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 5,
+      "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み",
+          "key_cue": "『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。",
+          "reading": "ホルムズ封鎖はイランにとって自殺的であるという前提を反転し、イラン指導部が体制生存や対外安全保障を最優先する局面では、原油輸出の大幅減少を『受忍可能な犠牲』として選択しうると読む。今後の展開では、イラン経済の脆弱性だけでなく、体制維持・安全保障上の優先順位の変化を見ないと、封鎖の蓋然性評価を誤る可能性がある。",
+          "switch_condition": "イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+          "supporting_reasons": [
+            "CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。",
+            "イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。",
+            "歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。",
+            "イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。",
+            "過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。",
+            "イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。"
+          ],
+          "key_actors_and_structure": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "重要なアクターはイランの最高指導者と安全保障機構（革命防衛隊など）、国内経済官庁、そして米国・湾岸諸国。構造的には、体制生存を最優先する安全保障国家としてのイランと、原油輸出に依存する経済構造の間のトレードオフが中心となる。ホルムズ封鎖は、経済を犠牲にしても体制への軍事的脅威を抑止するための『最後の賭け』として再評価されうる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: 『封鎖は自国経済にとって自殺行為』という記述が、体制生存と経済損失のどちらを優先するかという価値判断を前提にしている点。\n支持する理由: CSISレポートはイランが『交渉中でさえ攻撃される可能性がある』と認識しているとし、体制生存への脅威が交渉プロセスに内在していることを示している。 / イランは戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされており、体制生存への不安が高い状態が続くと、経済的合理性よりも安全保障上の合理性が優先される可能性がある。 / 歴史的に、多くの国家が深刻な経済損失を伴う選択（戦争・封鎖など）を体制生存のために行ってきたという一般的な構造論から、経済的自殺性が必ずしも行動抑制要因にならないケースがありうる。 / イラン自身がホルムズ経由で1〜2百万バレル/日を輸出しているという依存度は高いが、制裁下で既に経済的困難を経験していることから、追加的損失を『既に失われている利益の延長』として受け入れる心理的余地が生まれる可能性がある。\n弱める情報: 資料はホルムズ封鎖を『自殺行為』と明示しており、イラン指導部が経済的コストを極めて重く見ていることを示唆している。 / 過去に多くの機会があったにもかかわらず一度も封鎖を実行していないという事実は、体制生存が脅かされる局面でもなお経済的自殺性が抑制要因として機能してきた可能性を示す。 / イランがJCPOA+αの議論に応じる姿勢を示していることは、軍事的エスカレーションよりも交渉を通じた安全保障確保を優先している兆候とも読める。\n切替条件: イラン指導部の言説や政策が、経済損失よりも『体制生存のためのいかなる犠牲も辞さない』というトーンに明確にシフトし、交渉より軍事的抑止手段への依存が高まる兆候が観測されれば、この読みの確度が上がる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00"
+    }
+  ],
+  "reading_exposure_after_v1_lexical": [
+    {
+      "scenario_candidate_id": "1e1936f9-5bac-42c5-ac94-8cdc2dada480",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 1,
+      "title": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも",
+      "content": {
+        "raw": {
+          "confidence": "中",
+          "assumptions": [
+            "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+            "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+            "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+          ],
+          "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+          "evidence_class": "structural_reference",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+          "supporting_evidence": [
+            "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+            "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+            "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+          ],
+          "observable_indicators": [
+            "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+            "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+            "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+            "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": true,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null,
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "中",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "7d6bbd3d-1923-45d2-a249-41219c6995b4",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 2,
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+          "evidence_class": "unsupported_assumption",
+          "switch_conditions": [
+            "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+          ],
+          "weakening_conditions": [
+            "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+            "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+          ],
+          "strengthening_conditions": [
+            "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+            "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "55d436a0-f1e0-43be-9d9e-30c2b2cb58fc",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 3,
+      "title": "イランの原油輸出構造が変化し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+          ],
+          "weakening_conditions": [
+            "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+            "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+          ],
+          "strengthening_conditions": [
+            "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+            "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "why_this_matters": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+        "raw": {
+          "reason": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "H2_counterparty_audience_shift",
+          "interaction_basis": {
+            "gap_note": "ホルムズ封鎖カードが誰に向けたシグナルとして使われているかについての具体的証拠が不足している。",
+            "actor_ref": null,
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "unresolved",
+      "why_not_selected_by_s": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "reading_portfolio",
+      "title": "地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み",
+          "key_cue": "CSISレポートが提示する、オマーン等での地域共同濃縮・サウジ保管という折衷案の存在。これはイラン・湾岸諸国間の新たな協力枠組みの可能性を示している。",
+          "reading": "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジアラビアに保管するような複雑な折衷案が進展した場合、イランの安全保障・地域関係の構造が変化し、ホルムズ封鎖カードが『対米カード』から『地域秩序破壊カード』へと性格を変える可能性がある。これは発生確率は低いが、実現すればホルムズ封鎖のコスト・便益計算を大きく変える。",
+          "switch_condition": "オマーン等での地域共同濃縮事業体やサウジでの濃縮済みウラン保管に向けた具体的な合意・実務協議の進展が確認され、イランと湾岸諸国の間で核関連の相互依存が現実化した場合、この読みの重要性が高まる。",
+          "supporting_reasons": [
+            "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。",
+            "このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。",
+            "イランはJCPOA+αの議論に応じる姿勢を示しており、核問題を軸にした地域的な取り決めに一定の柔軟性を持っていることがうかがえる。",
+            "地域共同事業体が成立すれば、ホルムズ海峡の安定はイランだけでなく、共同事業に関わる湾岸諸国の利益とも直結し、封鎖は地域全体の合意を破壊する行為として位置づけられる。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "このような複雑な折衷案は『理論上は双方の面子を保てる』とされる一方で、実現には時間を要し、現時点では具体的進展が示されていない。",
+            "サウジアラビアなど湾岸諸国がイランとの共同濃縮事業体に政治的に応じるかどうかは不透明であり、構想が実現しない場合、この読みは成立しない。",
+            "仮に共同事業体が成立しても、ホルムズ海峡の安全保障と核燃料サイクルの枠組みがどの程度リンクされるかは不明であり、封鎖カードの性格変化は限定的にとどまる可能性がある。"
+          ],
+          "key_actors_and_structure": "重要なアクターはイラン、オマーン、サウジアラビア、米国、その他湾岸諸国。構造的には、核燃料サイクルをめぐる地域共同事業体が、イランと湾岸諸国の相互依存を高める一方で、ホルムズ海峡を含む海上輸送路の安全保障を『地域共同の利益』として再定義する可能性がある。ホルムズ封鎖は、イラン単独の対米カードから、地域共同事業体全体を人質に取る行為へと意味が変わる。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "重要なアクターはイラン、オマーン、サウジアラビア、米国、その他湾岸諸国。構造的には、核燃料サイクルをめぐる地域共同事業体が、イランと湾岸諸国の相互依存を高める一方で、ホルムズ海峡を含む海上輸送路の安全保障を『地域共同の利益』として再定義する可能性がある。ホルムズ封鎖は、イラン単独の対米カードから、地域共同事業体全体を人質に取る行為へと意味が変わる。",
+        "confidence": null,
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "着眼点: CSISレポートが提示する、オマーン等での地域共同濃縮・サウジ保管という折衷案の存在。これはイラン・湾岸諸国間の新たな協力枠組みの可能性を示している。\n支持する理由: オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。 / このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。 / イランはJCPOA+αの議論に応じる姿勢を示しており、核問題を軸にした地域的な取り決めに一定の柔軟性を持っていることがうかがえる。 / 地域共同事業体が成立すれば、ホルムズ海峡の安定はイランだけでなく、共同事業に関わる湾岸諸国の利益とも直結し、封鎖は地域全体の合意を破壊する行為として位置づけられる。\n弱める情報: このような複雑な折衷案は『理論上は双方の面子を保てる』とされる一方で、実現には時間を要し、現時点では具体的進展が示されていない。 / サウジアラビアなど湾岸諸国がイランとの共同濃縮事業体に政治的に応じるかどうかは不透明であり、構想が実現しない場合、この読みは成立しない。 / 仮に共同事業体が成立しても、ホルムズ海峡の安全保障と核燃料サイクルの枠組みがどの程度リンクされるかは不明であり、封鎖カードの性格変化は限定的にとどまる可能性がある。\n切替条件: オマーン等での地域共同濃縮事業体やサウジでの濃縮済みウラン保管に向けた具体的な合意・実務協議の進展が確認され、イランと湾岸諸国の間で核関連の相互依存が現実化した場合、この読みの重要性が高まる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "supporting_basis": [
+        "オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。",
+        "このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。",
+        "イランはJCPOA+αの議論に応じる姿勢を示しており、核問題を軸にした地域的な取り決めに一定の柔軟性を持っていることがうかがえる。",
+        "地域共同事業体が成立すれば、ホルムズ海峡の安定はイランだけでなく、共同事業に関わる湾岸諸国の利益とも直結し、封鎖は地域全体の合意を破壊する行為として位置づけられる。"
+      ],
+      "weakening_basis": [
+        "このような複雑な折衷案は『理論上は双方の面子を保てる』とされる一方で、実現には時間を要し、現時点では具体的進展が示されていない。",
+        "サウジアラビアなど湾岸諸国がイランとの共同濃縮事業体に政治的に応じるかどうかは不透明であり、構想が実現しない場合、この読みは成立しない。",
+        "仮に共同事業体が成立しても、ホルムズ海峡の安全保障と核燃料サイクルの枠組みがどの程度リンクされるかは不明であり、封鎖カードの性格変化は限定的にとどまる可能性がある。"
+      ],
+      "original_hypothesis_status": null,
+      "why_not_selected_by_s": null,
+      "missing_evidence": null,
+      "exposure_rank": 5
+    }
+  ],
+  "reading_exposure_after_v2_family_bucket": [
+    {
+      "scenario_candidate_id": "1e1936f9-5bac-42c5-ac94-8cdc2dada480",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 1,
+      "title": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも",
+      "content": {
+        "raw": {
+          "confidence": "中",
+          "assumptions": [
+            "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+            "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+            "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+          ],
+          "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+          "evidence_class": "structural_reference",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+          "supporting_evidence": [
+            "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+            "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+            "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+          ],
+          "observable_indicators": [
+            "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+            "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+            "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+            "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": true,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null,
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "中",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "7d6bbd3d-1923-45d2-a249-41219c6995b4",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 2,
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+          "evidence_class": "unsupported_assumption",
+          "switch_conditions": [
+            "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+          ],
+          "weakening_conditions": [
+            "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+            "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+          ],
+          "strengthening_conditions": [
+            "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+            "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "55d436a0-f1e0-43be-9d9e-30c2b2cb58fc",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 3,
+      "title": "イランの原油輸出構造が変化し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+          ],
+          "weakening_conditions": [
+            "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+            "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+          ],
+          "strengthening_conditions": [
+            "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+            "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "why_this_matters": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+        "raw": {
+          "reason": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "H2_counterparty_audience_shift",
+          "interaction_basis": {
+            "gap_note": "ホルムズ封鎖カードが誰に向けたシグナルとして使われているかについての具体的証拠が不足している。",
+            "actor_ref": null,
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "unresolved",
+      "why_not_selected_by_s": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "イランはホルムズ海峡封鎖カードを",
+      "content": {
+        "why_this_matters": "イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対する抑止・交渉上の譲歩獲得のための間接的手段として用いている。\n封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+        "raw": {
+          "reason": "封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対する抑止・交渉上の譲歩獲得のための間接的手段として用いている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "H1_instrumental_indirect",
+          "interaction_basis": {
+            "gap_note": "ホルムズ封鎖カードの役割をbargaining_cardとして位置づけるが、具体的な発言・行動に関する詳細な相互作用データは今回の資料にない。",
+            "actor_ref": "iran_leadership",
+            "basis_type": "EVENT_ROLE",
+            "target_actor_ref": "us_leadership"
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対する抑止・交渉上の譲歩獲得のための間接的手段として用いている。\n封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "retained",
+      "why_not_selected_by_s": "封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 5
+    }
+  ],
+  "reading_exposure_after_v3_novelty_bonus": [
+    {
+      "scenario_candidate_id": "1e1936f9-5bac-42c5-ac94-8cdc2dada480",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 1,
+      "title": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも",
+      "content": {
+        "raw": {
+          "confidence": "中",
+          "assumptions": [
+            "イランの原油輸出構造は、少なくとも短期的にはホルムズ海峡への高い依存を維持している。",
+            "米・イラン交渉は当面、戦争回避保証の水準に関してイラン側の満足ラインに達しない可能性が高く、一定期間の膠着が続く。",
+            "イラン指導部は、自国経済への打撃を伴う全面封鎖よりも、限定的威圧行動によるレバレッジ行使を合理的選択肢とみなす傾向がある。"
+          ],
+          "description": "イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも、自国の原油輸出がホルムズに依存している構造的制約から、全面封鎖には踏み切らない。交渉が膠着し、安全保障不信が続く局面では、ホルムズ海峡周辺での拿捕・臨検・一時的な航行妨害、リスク誇張的な発言など「封鎖カードの見せ方」を強めることで、米国や湾岸諸国に対する抑止と交渉上のレバレッジを行使する。したがって今後の展開を読む際には、ホルムズ依存度という構造要因を前提に、限定的威圧行動の強度変化と米・イラン交渉における戦争回避保証の水準を重点的にモニタリングするのが合理的である。",
+          "evidence_class": "structural_reference",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+          "supporting_evidence": [
+            "イランはホルムズ海峡経由で1〜2百万バレル/日の原油を輸出しており、封鎖は自国経済にとって自殺行為となるとCSISレポートが指摘している。",
+            "イランにとって最大の圧力手段はホルムズ海峡封鎖だが、過去に多くの機会があったにもかかわらず一度も実行していないとされる。",
+            "イランは現在の米・イラン交渉に対し期待値が非常に低く、曖昧な合意ではなく戦争回避の確実性を担保する合意を求めているが、その水準には程遠いとされる。"
+          ],
+          "observable_indicators": [
+            "ホルムズ海峡周辺でのイランによる拿捕・臨検・一時的な航行妨害事例の頻度とパターン。",
+            "イラン政府・軍・革命防衛隊によるホルムズ封鎖に言及する発言のトーン（実行示唆か、抑止的誇示か）。",
+            "イランの原油輸出ルート構成（ホルムズ経由比率）の統計。",
+            "米・イラン交渉における戦争回避保証（攻撃しない約束）に関する具体的条項の有無。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "過去の米・イラン緊張局面（例：制裁強化時）でも、イランはホルムズ封鎖を示唆しつつ全面封鎖には踏み切らず、拿捕・臨検など限定的威圧にとどめたと一般に理解されている、というパターンを参照している可能性。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": true,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null,
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "中",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "7d6bbd3d-1923-45d2-a249-41219c6995b4",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 2,
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "ホルムズ封鎖カードの誇示は、米国への抑止・交渉手段というよりも、国内安全保障機構・強硬派への配慮や政権の対外強硬姿勢を示すために主に用いられており、対米交渉が進展しても国内要因からカードの誇示・限定的威圧が続く。",
+          "evidence_class": "unsupported_assumption",
+          "switch_conditions": [
+            "ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。"
+          ],
+          "weakening_conditions": [
+            "イラン国内の派閥力学に関する分析で、ホルムズ封鎖カードが主要な国内政治争点ではないと示される。",
+            "対米交渉の進展に伴い、ホルムズ周辺での限定的威圧行動が目に見えて減少する。"
+          ],
+          "strengthening_conditions": [
+            "イラン国内の強硬派・革命防衛隊などがホルムズ封鎖カードの維持・誇示を公然と要求しているという信頼できる報道や分析が出る。",
+            "対米交渉が一定の進展を見せても、ホルムズ周辺での限定的威圧行動が減らず、むしろ国内政治イベント（選挙・抗議）に合わせて強まるパターンが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "55d436a0-f1e0-43be-9d9e-30c2b2cb58fc",
+      "analysis_session_id": "52ca2dd4-5636-4525-b281-25ddbb7827a0",
+      "rank": 3,
+      "title": "イランの原油輸出構造が変化し",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "イランの原油輸出構造が変化し、ホルムズ以外のルートや第三国経由の輸出が拡大した結果、ホルムズ封鎖の自殺的コストが低下し、全面封鎖またはそれに近い強度の妨害行動の蓋然性が高まる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。"
+          ],
+          "weakening_conditions": [
+            "最新統計でイランの原油輸出が依然としてホルムズに高く依存していることが確認される。",
+            "イラン指導部や専門家分析が、ホルムズ封鎖を依然として自殺的行動と位置づけている。"
+          ],
+          "strengthening_conditions": [
+            "エネルギー・物流専門情報源から、イランの原油輸出の大部分がホルムズ以外のルートで代替可能になっていることを示す具体的データが出る。",
+            "湾岸諸国・国際社会がホルムズ封鎖に対する代替ルート・備蓄体制を整備し、イランが封鎖による国際的コストを自国にとって許容可能と評価し始めた兆候が現れる。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "イラン指導部（最高指導者＋安全保障機構）",
+          "米国指導部",
+          "湾岸諸国（サウジアラビア、UAEなど）"
+        ],
+        "source_cqas": {
+          "request_id": "580f61b5-a29a-4acb-b842-37c99b3cb9f7",
+          "response_id": "527d31f8-9903-45b6-aa2c-f073dd478ff5"
+        },
+        "why_this_matters": "この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。",
+        "analysis_question": "# Situation\n\nワシントン事務所からの米・イラン交渉動向に関するCSISレポートへの反応として、イランによる\nホルムズ海峡封鎖の可能性について論じられている。\n\n# Known Background（転送元CSISレポートより）\n\n- 今回の米・イランの交渉に対し、イラン側の期待値は非常に低く、たとえ合意しても米国が\n  攻撃しないという保証がない。交渉中でさえ攻撃される可能性がある為、イランは「曖昧な合意」\n  ではなく、一語一句まで詰め、戦争回避の確実性を担保する合意を求めているが、現状その水準を\n  達するまでには程遠い。\n- イランはイラン核合意（JCPOA）に加え、弾道ミサイル開発や代理勢力への支援停止まで含めた\n  JCPOA+αの議論に応じる姿勢は示しているものの、全ての条件を受け入れる意思があるわけでは\n  ない。例えば、イランがオマーン等に地域共同のウラン濃縮の事業体を設置し、濃縮済みウランを\n  サウジアラビアに保管するというような折衷案であれば、イランは国内に向けて「自国として\n  濃縮を継続している」と主張でき、米国は国際社会に対し「イラン国内で単独に濃縮していない」\n  と説明できる為、理論上は双方の面子を保てる。しかし、こうした複雑な合意には時間を要する。\n- イランにとって最大の圧力手段はホルムズ海峡封鎖という選択肢であるが、過去に多くの機会が\n  あったにもかかわらず実際には一度も実行していない。これは、イラン自身も1〜2百万バレル/日の\n  原油をホルムズ海峡経由で輸出しており、封鎖は自国経済にとって自殺行為となる為である。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:46:31.002133+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:46:31.436532+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "ホルムズ封鎖カードの誇示は",
+      "content": {
+        "why_this_matters": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+        "raw": {
+          "reason": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "H2_counterparty_audience_shift",
+          "interaction_basis": {
+            "gap_note": "ホルムズ封鎖カードが誰に向けたシグナルとして使われているかについての具体的証拠が不足している。",
+            "actor_ref": null,
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。\n資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "unresolved",
+      "why_not_selected_by_s": "資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "イランはホルムズ海峡封鎖カードを",
+      "content": {
+        "why_this_matters": "イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対する抑止・交渉上の譲歩獲得のための間接的手段として用いている。\n封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+        "raw": {
+          "reason": "封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対する抑止・交渉上の譲歩獲得のための間接的手段として用いている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "H1_instrumental_indirect",
+          "interaction_basis": {
+            "gap_note": "ホルムズ封鎖カードの役割をbargaining_cardとして位置づけるが、具体的な発言・行動に関する詳細な相互作用データは今回の資料にない。",
+            "actor_ref": "iran_leadership",
+            "basis_type": "EVENT_ROLE",
+            "target_actor_ref": "us_leadership"
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対する抑止・交渉上の譲歩獲得のための間接的手段として用いている。\n封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "retained",
+      "why_not_selected_by_s": "封鎖が自殺的であるにもかかわらず最大圧力手段として言及され続けていることは、カードの主な機能が「実行」ではなく「誇示・抑止」にあることを示唆する。これはH0の延長線上であり、カードの役割を明示的に手段として位置づける仮説。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 5
+    }
+  ]
+}

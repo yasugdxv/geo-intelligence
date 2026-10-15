@@ -1,0 +1,1449 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GeoExpertAIResponse",
+  "description": "地政学専門家AIの構造化レスポンス（指示書14.5章）。8モード共通の1スキーマとし、モードごとに重視するセクションが変わる（07_KNOWLEDGE_OUTPUT_TEMPLATES.md参照。draft_generationはIOS Native Report Draft用の追加モードでdraft_sectionsのみを主目的とする）。Fact/Official Claim/Observation/Inference/Hypothesis/Illustrationの分離、主シナリオの反証・撤回条件の必須化など、指示書3章の絶対原則をスキーマレベルで強制する。v1.2(Session2)でKey Stakeholder-first関連フィールドを追加（すべてnullable/optionalでJSON Schema上は後方互換、モード別の実質必須化はQuality Guard側で行う。geo_expert_quality_guard.py参照）。",
+  "definitions": {
+    "evidenceIdList": {
+      "type": ["array", "null"],
+      "items": {"type": "string"},
+      "description": "Source Pack／Case Context／Foundation Packに実在するclaim_id・evidence_id等のみ。存在しないIDは創作せずnullのままにする"
+    },
+    "supportingKnowledgeRefList": {
+      "type": ["array", "null"],
+      "description": "Phase R1 Chunk4: Evidence（今回のClaimを直接検証する証拠）とKnowledge（Actor/Institution/Mediaを理解するための既存の蓄積知識）を混同しないための専用参照。Actor Intelligence Pack/Institution Intelligence Pack/Media Intelligence Packの内容（mandate/decision_authority/persistent_preference等）を根拠として引用したい場合、evidence_idを創作せずここへ記す。Historical Actor Pattern ≠ Current Evidence、Media Profile ≠ Current Evidence、Institution Intelligence ≠ Current Evidenceという既存原則の延長",
+      "items": {
+        "type": "object",
+        "required": ["type", "ref"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["actor_intelligence", "institution_intelligence", "media_intelligence"],
+            "description": "どのIntelligence Packからの参照か"
+          },
+          "ref": {
+            "type": "string",
+            "description": "actor_intelligence: key_actor_profiles[].actor_ref。institution_intelligence: Institution Intelligence Packのentity_id。media_intelligence: Media Intelligence Packのpattern_id/knowledge_item_id"
+          },
+          "field": {
+            "type": ["string", "null"],
+            "description": "参照した具体的な項目（例: mandate, decision_authority, persistent_preference, decision_patterns）。任意"
+          }
+        }
+      }
+    },
+    "actionSubstance": {
+      "type": ["object", "null"],
+      "description": "Signal（誰に何を見せているか）とSubstance（実質的な政策強度）を分けて評価する",
+      "properties": {
+        "stated_signal": {"type": ["string", "null"], "description": "発言・行動が見せようとしているメッセージ"},
+        "concrete_measure": {"type": ["string", "null"], "description": "実際の具体的措置"},
+        "target_scope": {"type": ["string", "null"], "description": "対象・適用範囲"},
+        "legal_or_policy_force": {"type": ["string", "null"], "description": "強制性・拘束性"},
+        "implementation_status": {"type": ["string", "null"]},
+        "enforcement_status": {"type": ["string", "null"]},
+        "discretion": {"type": ["string", "null"], "description": "運用裁量・例外の余地"},
+        "evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+        "assessment": {"type": ["string", "null"], "description": "Signal/Substanceを踏まえた総合評価"}
+      }
+    },
+    "rootPremiseItem": {
+      "type": "object",
+      "properties": {
+        "result": {"type": "string", "enum": ["pass", "warning", "fail", "not_assessable"]},
+        "assessment": {"type": "string"},
+        "evidence_ids": {"$ref": "#/definitions/evidenceIdList"}
+      },
+      "required": ["result", "assessment"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "one_line_assessment": {
+      "type": "string",
+      "description": "一言見立て（1〜3文）。事実と仮説を区別する"
+    },
+    "initial_anomaly": {
+      "type": ["string", "null"],
+      "description": "最初の違和感。通常と何が違い、なぜ重要か"
+    },
+    "claims": {
+      "type": "array",
+      "description": "主張の分解。Fact/Official Claim/Observation/Inference/Hypothesis/Illustrationを分離する",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_type": {
+            "type": "string",
+            "enum": ["fact", "official_claim", "observation", "inference", "hypothesis", "illustration"]
+          },
+          "text": {"type": "string"},
+          "source_ref": {
+            "type": ["string", "null"],
+            "description": "Source Pack内の根拠参照（document_id・event_id・evidence_id等）"
+          }
+        },
+        "required": ["claim_type", "text"]
+      }
+    },
+    "stakeholders": {
+      "type": "array",
+      "description": "主要ステークホルダー（04_KNOWLEDGE_STAKEHOLDER_FORCE_MODEL.md準拠）",
+      "items": {
+        "type": "object",
+        "properties": {
+          "actor": {"type": "string"},
+          "purpose": {"type": ["string", "null"], "description": "本質的目的"},
+          "priority": {"type": ["string", "null"], "description": "現在の優先順位"},
+          "constraints_fears": {"type": ["string", "null"], "description": "制約・避けたい事態"},
+          "red_lines": {"type": ["string", "null"]},
+          "key_relationships": {"type": ["string", "null"], "description": "主要な関係・影響"},
+          "confidence": {"type": ["string", "null"], "enum": ["高", "中", "低", "判断不能", null]},
+          "position": {
+            "type": ["string", "null"],
+            "description": "Phase3-0: 本件における現在の立場・スタンス（purpose=本質的目的、priority=優先順位とは別に、今回の論点に対して具体的にどちらへ動いているか）"
+          },
+          "leverage": {
+            "type": ["string", "null"],
+            "description": "Phase3-0: このActorが本件で行使可能な交渉力・てこ。Knowledge DBのLeverage Card（holder/target/capability等）が既にあれば要約参照し、無ければ案件固有の見立てとして記述する"
+          },
+          "ability_to_move_or_block": {
+            "type": ["string", "null"],
+            "description": "Phase3-0: このActorが結果を動かす力、または阻止する力をどの程度持つか"
+          }
+        },
+        "required": ["actor"]
+      }
+    },
+    "dynamics": {
+      "type": ["string", "null"],
+      "description": "背景の力学。誰の力が上がり誰が困るか、利害一致・対立・拒否権"
+    },
+    "decisive_power_and_leverage": {
+      "type": ["string", "null"],
+      "description": "deprecated(Phase D-1、Phase B/C Canonical Design): 本件全体として、結果を決定づける力・てこが最終的に誰(どのActor間の関係)にあるかの見立て。正典データはkey_point_assessment.control_type/controlling_entity_ids/control_structure_summaryおよびkey_stakeholder_assessment.rationaleへ一本化する方針のため、本フィールドはD-3以降これらからの後方互換の表示用projectionへ切り替える予定——新しい分析内容をここへ書き込む用途では使わないこと"
+    },
+    "key_point_assessment": {
+      "type": "object",
+      "description": "Session2 Reasoning Upgrade: 局面のKey Point（何が局面を規定する蝶番か）を、複数候補の比較検討を経て選定する。key_stakeholder_assessmentより先に行う（Key PointはKey Actor Selectionより先に評価され得るため、controlling_entity_idsはactor_refではなくentity_idで参照する）。【Exploration/Promotion分離の原則、重要】evidence_class/confidenceの規律は『どれだけ大胆な候補を選んでよいか』を制約するものではない。Actor Intelligence（Historical Episode/Decision Pattern）に基づく大胆で説明力の高い候補は、たとえHistorical Patternにしか根拠がなくても、primary_key_pointとして選ぶこと自体は妨げられない——その場合はevidence_classを正直にhistorical_actor_pattern等と申告し、結果としてconfidenceが決定的処理で低く補正されるだけでよい。『評価が低くなるくらいなら最初から選ばない』という自己検閲はしないこと。Evidenceが弱いなら弱いままLow Confidenceで主張し、Currentの裏付けが無いことを正直に示すのが正しい挙動であり、無難で説明力の低い候補へ逃げることではない",
+      "required": ["candidate_key_points", "primary_key_point", "selection_rationale",
+                   "hinge_structure", "control_type", "supporting_evidence_ids",
+                   "disconfirming_signal", "confidence"],
+      "properties": {
+        "candidate_key_points": {
+          "type": "array",
+          "description": "典型2〜4件。網羅ではなく比較検討の痕跡を残す。各候補にもcontrol_typeを持たせ、比較段階から『誰がcontrolするか』というActor中心の見方に固定されないようにする。Actor Intelligence由来の大胆な候補（Historical Patternにしか根拠がないもの含む）を、Confidenceが低くなることを理由に候補から外さないこと——候補として提示し、supporting_evidence_ids/evidence_classで根拠の性質を正直に示せば十分",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key_point": {"type": "string"},
+              "why_it_could_be_key": {"type": "string"},
+              "control_type": {
+                "type": "string",
+                "enum": ["actor_controlled", "institutionally_constrained", "structural", "distributed", "mixed", "unknown"]
+              },
+              "controlling_entity_ids": {
+                "type": ["array", "null"], "items": {"type": "string"},
+                "description": "geo_entities.entity_idのUUID。control_type=actor_controlled/distributed/mixedの場合のみ意味を持つ（optional）"
+              },
+              "control_structure_summary": {"type": ["string", "null"]},
+              "what_it_explains": {"type": "string"},
+              "what_it_does_not_explain": {"type": "string"},
+              "supporting_evidence_ids": {
+                "$ref": "#/definitions/evidenceIdList",
+                "description": "optional。Candidate比較の時点でEvidenceの強弱を残す"
+              },
+              "supporting_knowledge_refs": {"$ref": "#/definitions/supportingKnowledgeRefList"},
+              "control_type_adjustment_reason": {
+                "type": ["string", "null"],
+                "description": "P0-2 Control Structure Fix: control_type=actor_controlledなのにcontrolling_entity_idsが空、等の不整合を決定的処理（normalize_control_type）が検出しunknownへ引き下げた場合のみ設定される"
+              },
+              "historical_supporting_evidence_ids": {
+                "$ref": "#/definitions/evidenceIdList",
+                "description": "Expert AI Depth & Grounding Upgrade（P0-2 Historical/Current Evidence分離）: supporting_evidence_idsのうちActor/Media Intelligence由来のDerived Intelligence ID（historical_episode_id等、今回のCase固有のRaw Evidenceではないもの）を決定的処理（separate_historical_evidence_in_key_point、追加Azure Callなし）が検出し退避した値。LLMが書く必要はない。Historical Patternはprior/plausibilityであってcurrent proofではないため、supporting_evidence_ids（current evidence専用）とは区別する"
+              }
+            },
+            "required": ["key_point", "why_it_could_be_key", "control_type", "what_it_explains", "what_it_does_not_explain"]
+          }
+        },
+        "primary_key_point": {"type": "string"},
+        "selection_rationale": {"type": "string", "description": "なぜこれをPrimaryに選んだか"},
+        "rejected_candidates": {
+          "type": ["array", "null"], "description": "1〜3件、冗長化しない",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key_point": {"type": "string"},
+              "why_not_primary": {"type": "string"}
+            }
+          }
+        },
+        "hinge_structure": {
+          "type": "object",
+          "description": "局面がPrimary Key Pointに帰着する条件構造。単一変数への過剰な単純化を防ぐため、複合条件をprimary/secondaryで表現する",
+          "required": ["primary_hinge"],
+          "properties": {
+            "primary_hinge": {"type": "string", "description": "局面が最も強く依存する単一の変数・事実・条件"},
+            "secondary_hinges": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "Primary Hingeだけでは局面を説明しきれない場合の補助的な条件・制約。0〜3件程度"
+            }
+          }
+        },
+        "control_type": {
+          "type": "string",
+          "enum": ["actor_controlled", "institutionally_constrained", "structural", "distributed", "mixed", "unknown"],
+          "description": "Key Pointを『誰が』ではなく『何が』動かしているかをまず分類する。actor_controlled=特定Actorの意思で動く／institutionally_constrained=制度・手続きに規定される／structural=市場・地理・軍事バランス等の構造的要因／distributed=複数主体の相互拘束／mixed=複数要因の組合せ／unknown=判断不能"
+        },
+        "controlling_entity_ids": {
+          "type": ["array", "null"], "items": {"type": "string"},
+          "description": "control_type=actor_controlled/distributed/mixedの場合のみ意味を持つ（optional、無理に埋めない）。Primary Key Pointを実際に動かせる主体のentity_id（geo_entities.entity_idと一致する実DB UUID。key_actor_profiles[].actor_refではない）。Foundation/Case Contextの一般Entity一覧に表示されるentity_idを参照する。control_type=institutionally_constrained/structuralの場合はnullでよい"
+        },
+        "control_structure_summary": {
+          "type": ["string", "null"],
+          "description": "control_type=institutionally_constrained/structural/distributed/mixedの場合の制約・構造の要約。詳細な理由・拒否権構造はkey_stakeholder_assessment.rationale/decision_structureへ一元化し、ここでは重複記述しない"
+        },
+        "supporting_evidence_ids": {
+          "$ref": "#/definitions/evidenceIdList",
+          "description": "必須。Primary Key Pointを置いた根拠となるEvidence（confidence=高の場合は1件以上）。Actor/Institution/Media Intelligence Packの内容を根拠にしたい場合はここへ架空IDを作らず、supporting_knowledge_refsを使うこと"
+        },
+        "supporting_knowledge_refs": {"$ref": "#/definitions/supportingKnowledgeRefList"},
+        "evidence_relevance": {
+          "type": ["array", "null"],
+          "description": "Phase R1 Chunk2: supporting_evidence_idsに挙げた各Evidenceが、Primary Key Pointという主張をどれだけ直接支えるかを個別に申告する（evidence_classとは別軸——evidence_classはEvidenceの性質・出所、こちらはこのClaimに対する直接性）。supporting_evidence_idsが非空の場合はここも対応するevidence_idを1件以上含めること。confidence=高の場合、少なくとも1件はclaim_relevance=direct/strongly_relevantが必要（さもなくば決定的処理cap_confidence_by_claim_relevanceにより低へ引き下げられる）",
+          "items": {
+            "type": "object",
+            "properties": {
+              "evidence_id": {"type": "string", "description": "supporting_evidence_idsに含まれるIDのいずれか"},
+              "claim_relevance": {
+                "type": "string",
+                "enum": ["direct", "strongly_relevant", "structural", "peripheral"],
+                "description": "direct=このClaimを直接裏付ける／strongly_relevant=強く関連するが直接ではない／structural=背景・構造的関連のみ／peripheral=周辺的で直接の裏付けにならない"
+              },
+              "source_type": {
+                "type": ["string", "null"],
+                "enum": ["primary_official", "counterparty", "independent_mainstream", "specialist_analysis", "local_regional", "third_country", "osint_physical", "current_news", "unknown", null],
+                "description": "この情報源の種類（誰が発信したか）。claim_relevanceとは独立の軸——同じprimary_officialでも、政策の直接発表ならdirect、一般演説ならstructuralになり得る"
+              },
+              "rationale": {"type": ["string", "null"], "description": "なぜこの直接性・出所と判断したか、1文程度"}
+            },
+            "required": ["evidence_id", "claim_relevance"]
+          }
+        },
+        "contradicting_evidence_ids": {
+          "$ref": "#/definitions/evidenceIdList",
+          "description": "optional。Primary Key Pointの選定に対する反証・留保となるEvidenceがあれば記す"
+        },
+        "disconfirming_signal": {
+          "type": "string",
+          "description": "何を観測したらKey Pointの置き方自体を誤ったと判断するか。main_scenario.retraction_conditions（シナリオレベルの撤回条件）とは別物：こちらは分析の出発点自体への反証条件"
+        },
+        "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+        "control_type_adjustment_reason": {
+          "type": ["string", "null"],
+          "description": "P0-2 Control Structure Fix: control_type=actor_controlledなのにcontrolling_entity_idsが空、distributedなのに2件未満かつcontrol_structure_summaryも無い、等の不整合を決定的処理（normalize_control_type、追加Azure Callなし）が検出しunknownへ引き下げた場合のみ設定される（LLMが書く必要はない）"
+        },
+        "evidence_class": {
+          "type": ["string", "null"],
+          "enum": ["current_direct_evidence", "current_indirect_evidence", "historical_actor_pattern", "historical_media_pattern", "structural_reference", "model_general_knowledge", "unsupported_assumption", null],
+          "description": "Expert AI Depth & Grounding Upgrade（P0-2 Evidence Class拡張）: supporting_evidence_idsの性質の分類。historical_actor_pattern/historical_media_pattern/model_general_knowledge/unsupported_assumptionのみの場合、confidenceは高・中を決定的処理（cap_confidence_by_evidence_class）で低へ引き下げられる（既存situation_actor_assessment[]と同じ契約をKey Pointまで拡張）"
+        },
+        "historical_supporting_evidence_ids": {
+          "$ref": "#/definitions/evidenceIdList",
+          "description": "Expert AI Depth & Grounding Upgrade（P0-2 Historical/Current Evidence分離）: supporting_evidence_idsのうちActor/Media Intelligence由来のDerived Intelligence ID（historical_episode_id等、今回のCase固有のRaw Evidenceではないもの）を決定的処理（separate_historical_evidence_in_key_point、追加Azure Callなし）が検出し退避した値。LLMが書く必要はない。分離の結果supporting_evidence_idsが空になった場合、confidence=高/中は低へ引き下げられる（Historical PatternはCurrent Proofではないため）"
+        },
+        "confidence_adjustment_reason": {
+          "type": ["string", "null"],
+          "description": "P0-2 Historical/Current Evidence分離、またはevidence_class起点のConfidence Weightingにより決定的処理がconfidenceを引き下げた場合のみ設定される（LLMが書く必要はない）"
+        },
+        "relevance_confidence_adjustment_reason": {
+          "type": ["string", "null"],
+          "description": "Phase R1 Chunk2: evidence_relevanceの全件がstructural/peripheralのみ（direct/strongly_relevantが皆無）だった場合に、決定的処理cap_confidence_by_claim_relevanceがconfidenceを低へ引き下げた際のみ設定される（LLMが書く必要はない）。confidence_adjustment_reasonとは別フィールド——evidence_class起点の調整理由を上書きしないため"
+        },
+        "focus_selection": {
+          "type": ["object", "null"],
+          "description": "Focus Selection Layer（Session1・2＋過去Expert Review再分析、2026-09-06追加）: 複数のSituation Frame／Candidateがどれも成立し得る中で、次のActor行動・交渉・均衡・Scenarioを読むためにこの局面で最も見るべき論点（Primary Focus）をなぜ今選ぶのかを明示する。『Primary Frame=唯一正しいFrame』という意味ではない——他のFrameが正しくても、現時点でdecision-sensitiveな論点をPrimary Focusとして選ぶ、という別の軸。該当するtriggerが無ければnullのままでよい（無理に生成しない）",
+          "properties": {
+            "trigger_types": {
+              "type": ["array", "null"],
+              "description": "通常2〜3個以内。固定チェックリストではなく、局面に意味のあるものだけ選択的に使うこと。全件を毎回適用しない",
+              "items": {
+                "type": "string",
+                "enum": ["model_or_norm_mismatch", "decision_power", "higher_order_objective",
+                         "behavior_driving_force", "audience_substance_gap", "premise_or_constraint_change",
+                         "implementation_or_feasibility", "causal_chain_break", "phase_or_time_horizon_shift",
+                         "discriminating_hinge", "media_or_source_anomaly", "other"]
+              }
+            },
+            "why_now": {
+              "type": ["string", "null"],
+              "description": "他の候補ではなく、なぜ“今”この論点をPrimary Focusにするか"
+            },
+            "decision_sensitive_outcome": {
+              "type": ["string", "null"],
+              "description": "この論点についての判断が変われば、Actor action／negotiation path／equilibrium／dominant flow／scenarioの見立てのうち何が変わるか"
+            },
+            "discriminating_observation": {
+              "type": ["string", "null"],
+              "description": "trigger_types=discriminating_hingeの場合特に: 複数解釈に共通する観測ではなく、予想が分かれる箇所は何か"
+            }
+          }
+        }
+      }
+    },
+    "key_stakeholder_assessment": {
+      "type": ["object", "null"],
+      "description": "v1.2: この局面を実際に動かす／止めるKey Stakeholderがいるかの判定（04_KNOWLEDGE_STAKEHOLDER_FORCE_MODEL.md）。全ステークホルダーを横並びに分析する前に最初に行う",
+      "properties": {
+        "determination": {
+          "type": "string",
+          "enum": ["single", "multiple", "distributed", "unclear"],
+          "description": "single=1主体, multiple=2-3主体程度, distributed=意思決定が分散しておりそれ自体を構造として示す, unclear=局面を動かす主体が特定できない"
+        },
+        "selected_actor_ids": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "key_actor_profiles[].actor_refと対応する。determination=distributed/unclearの場合は空配列でよい"
+        },
+        "rationale": {"type": "string", "description": "なぜこの判定に至ったか（制度上の決定権・実質的支配力・拒否権・交渉条件を変える力等）"},
+        "decision_structure": {"type": ["string", "null"], "description": "determination=distributedの場合、意思決定ノードと拒否権の構造を具体的に記述する"},
+        "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+        "evidence_ids": {"$ref": "#/definitions/evidenceIdList"}
+      },
+      "required": ["determination", "selected_actor_ids", "rationale", "confidence"]
+    },
+    "key_actor_profiles": {
+      "type": ["array", "null"],
+      "description": "v1.2: Key Stakeholderの深掘りプロファイル（04_KNOWLEDGE_STAKEHOLDER_FORCE_MODEL.md 4章のKey Actor Profile）。目安1〜3件だが上限は固定しない。determination=unclearで該当者を特定できない場合は0件でよい（その場合はidentified_knowledge_gapsに追加調査事項を記録する）",
+      "items": {
+        "type": "object",
+        "properties": {
+          "actor_ref": {"type": "string", "description": "key_stakeholder_assessment.selected_actor_idsと対応させるための識別子"},
+          "actor": {"type": "string"},
+          "entity_id": {"type": ["string", "null"], "description": "地政学ナレッジDBのgeo_entities.entity_idと一致する場合のみ設定"},
+          "formal_role": {"type": ["string", "null"], "description": "制度上何を決め、実行できるか"},
+          "decision_power": {"type": ["string", "null"], "description": "公式な最終決定権・実質的な支配力"},
+          "ability_to_move": {"type": ["string", "null"]},
+          "ability_to_block": {"type": ["string", "null"], "description": "拒否権・阻止能力"},
+          "ultimate_objective": {"type": ["string", "null"], "description": "最終的に守りたい地位・成果・状態"},
+          "strategic_relationship_preference": {"type": ["string", "null"], "description": "相手国・相手人物との関係、交渉様式への志向"},
+          "persistent_preference": {
+            "type": ["string", "null"],
+            "description": "複数の過去行動から仮説化する比較的持続する志向。固定人格ではなく反証可能な仮説として記述する（今回の発言だけから設定しない）"
+          },
+          "persistent_preference_evidence": {
+            "type": "array",
+            "description": "persistent_preferenceを支持・反証する過去の行動・発言。supports_or_contradictsで区別する（配列は1つに統合し、支持と反証を別配列に分けない）",
+            "items": {
+              "type": "object",
+              "properties": {
+                "event_or_behavior": {"type": "string"},
+                "date_or_period": {"type": ["string", "null"]},
+                "claim_id": {"type": ["string", "null"]},
+                "evidence_id": {"type": ["string", "null"]},
+                "source": {"type": ["string", "null"], "description": "DB内のclaim_id/evidence_idが無い過去事実の場合、出典を明記する"},
+                "supports_or_contradicts": {"type": "string", "enum": ["supports", "contradicts"]},
+                "relevance": {"type": ["string", "null"]},
+                "caveat": {"type": ["string", "null"]}
+              },
+              "required": ["event_or_behavior", "supports_or_contradicts"]
+            }
+          },
+          "issue_objective": {"type": ["string", "null"], "description": "今回の争点で実現したいこと"},
+          "observed_action": {"type": ["string", "null"], "description": "実際の発言・行動"},
+          "preference_action_gap": {
+            "type": ["string", "null"],
+            "description": "Persistent PreferenceとObserved Actionの一致・不一致、不一致の場合はDriving Forceによる説明"
+          },
+          "perceived_path": {
+            "type": ["string", "null"],
+            "description": "Tier1(Eguchi Expert AI Final v1.0対応、ActorFlow.perceived_path): このActor本人が、ultimate_objective/issue_objectiveをどうすれば実現できると考えているか（本人の因果的信念、誰をどう動かすつもりか）。分析者がその経路の実効性を保証する記述にしないこと——本人の想定と、分析者が見る実効性は別（実効性自体はaction_substance等の既存フィールドで扱う）。根拠が薄い場合は無理に埋めずnullのままでよい"
+          },
+          "event_role": {
+            "type": ["object", "null"],
+            "description": "Tier1(Eguchi Expert AI Final v1.0対応、ActorFlow.event_role): 今回のEventが、このActorのperceived_path上でどんな役割を果たすと解釈するか（例: 『圧力は目的なのか手段なのか』を構造化する場所）",
+            "properties": {
+              "role_type": {
+                "type": ["string", "null"],
+                "description": "固定enumにしすぎず自由記述でよいが、可能なら近い語に寄せる。例: goal(それ自体が目的)/means(他の目的のための手段)/bargaining_card(交渉材料)/signal(対外シグナル)/constraint(制約条件)/obstacle(障害)/concession(譲歩)/institutionalization(制度化)"
+              },
+              "explanation": {"type": ["string", "null"], "description": "なぜその役割だと判断するか、根拠込みで説明する"},
+              "intended_target_actor_ref": {
+                "type": ["string", "null"],
+                "description": "Phase D-1(Holistic Reasoning Architecture Review): この一手（役割）が誰に対する手段・シグナルかを、key_actor_profiles[].actor_refで参照する。特定の相手を想定しない、または相手を特定できない場合はnullのままでよい"
+              }
+            },
+            "required": ["role_type", "explanation"]
+          },
+          "primary_audience": {"type": ["string", "null"]},
+          "secondary_audience": {"type": ["string", "null"]},
+          "driving_forces": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "force": {"type": "string", "description": "例: 支持基盤, 選挙区, 献金, 産業・雇用, 党内関係, 議会・制度, 官僚組織, 同盟国, 市場等"},
+                "direction": {"type": "string", "enum": ["supporting", "constraining"]},
+                "description": {"type": ["string", "null"]}
+              },
+              "required": ["force", "direction"]
+            }
+          },
+          "action_substance": {"$ref": "#/definitions/actionSubstance"},
+          "red_line": {"type": ["string", "null"]},
+          "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+          "evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+          "persistent_preference_change": {
+            "type": ["string", "null"],
+            "enum": ["reinforced", "revised", null],
+            "description": "v1.2 Phase B: 既存DBのPersistent Preference（提示されている場合）と比べて、今回の分析結果が同じ結論を追加のEvidenceで補強しただけ(reinforced)か、見立てまたはconfidenceが実質的に変わった(revised)かの自己申告。既存のPersistent Preferenceが提示されていない場合はnullのままでよい。Candidate自動生成の要否判定にのみ使う（revisedの場合のみ検討対象）"
+          },
+          "why_actor_matters": {
+            "type": ["string", "null"],
+            "description": "Actor Intelligence Phase AI-3: 【Actor Intelligence Pack】のselection_reasons/relevance_scoreを踏まえ、このActorがなぜ局面を動かせる／止められるのかをLLMが自分の言葉で説明したもの。Packが提供されていない場合はnullのままでよい"
+          },
+          "available_leverage": {
+            "type": ["array", "null"], "items": {"type": "string"},
+            "description": "Actor Intelligence Phase AI-3: 現在使用可能なカード・交渉力"
+          },
+          "unavailable_or_costly_cards": {
+            "type": ["array", "null"], "items": {"type": "string"},
+            "description": "Actor Intelligence Phase AI-3: 使えない、または行使すると高くつくカード"
+          },
+          "vulnerabilities": {
+            "type": ["array", "null"], "items": {"type": "string"},
+            "description": "Actor Intelligence Phase AI-3: このActorの脆弱性・弱み"
+          },
+          "relevant_decision_patterns": {
+            "type": ["array", "null"], "items": {"type": "string"},
+            "description": "Actor Intelligence Phase AI-3: 【Actor Intelligence Pack】のdecision_patterns（複数の先例から導出済み）のうち、今回の局面に関連するものの要約。単発の1事例のみを根拠にした断定はしないこと"
+          },
+          "actor_intelligence_provenance": {
+            "type": ["object", "null"],
+            "description": "Expert AI Depth & Grounding Upgrade（P0-1）: このActor AssessmentがActor Intelligenceのどのデータに基づくかをRuntimeで追跡する。actor_intelligence_status/profile_source/historical_episode_ids/pattern_ids/exception_episode_idsはLLMの自己申告ではなく、決定的処理（attach_actor_intelligence_provenance、追加Azure Callなし）によってActor Intelligence Packの実データから直接設定される。general_knowledge_usedのみLLMの自己申告",
+            "properties": {
+              "actor_intelligence_status": {"type": ["string", "null"], "enum": ["sufficient", "partial", "insufficient", "not_evaluated", null]},
+              "profile_source": {
+                "type": ["string", "null"],
+                "enum": ["actor_intelligence_active", "actor_intelligence_candidate", "none_available", "not_evaluated", null],
+                "description": "実際に参照されたActor ProfileがDB上status=activeかcandidateか。none_available=Actor Intelligence自体が存在しなかった"
+              },
+              "historical_episode_ids": {"type": "array", "items": {"type": "string"}, "description": "Actor Intelligence Packのrelevant_precedentsから決定的に転記"},
+              "pattern_ids": {"type": "array", "items": {"type": "string"}, "description": "Actor Intelligence Packのdecision_patternsのpattern_idから決定的に転記"},
+              "exception_episode_ids": {"type": "array", "items": {"type": "string"}, "description": "pattern_role=exceptionのdecision_patternsが参照するsupporting_precedent_idsから決定的に転記"},
+              "supporting_evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+              "general_knowledge_used": {
+                "type": ["boolean", "null"],
+                "description": "LLMの自己申告: Actor Intelligenceに存在しない内容をモデル一般知識で補ったか。trueの場合、該当箇所はunsupported_actor_assumptionまたはknowledge_gapとして扱い、Medium/High confidenceへ昇格させない"
+              }
+            }
+          },
+          "pattern_applicability_assessment": {
+            "type": ["array", "null"],
+            "description": "deprecated(Phase D-1、Phase B/C Canonical Design): relevant_decision_patternsで参照したHistorical Patternを自動適用せず、今回のCaseとの類似点・相違点・例外事例・適用可能性を評価する。Main Scenarioの根拠としてHistorical Patternを使う場合は必須。責務をhypothesis_register評価時の『Actor Model Fit』観点へ統合する方針のため新規責務追加は行わない。後方互換のためフィールド自体・生成は維持する",
+            "items": {
+              "type": "object",
+              "properties": {
+                "pattern_id": {"type": ["string", "null"]},
+                "pattern_summary": {"type": "string", "description": "過去にどんな行動パターンがあったか"},
+                "current_similarities": {"type": "array", "items": {"type": "string"}},
+                "current_differences": {"type": "array", "items": {"type": "string"}},
+                "exception_evidence_ids": {"type": "array", "items": {"type": "string"}, "description": "過去にこのPatternが崩れたEpisodeのknowledge_item_id"},
+                "applicability": {"type": "string", "enum": ["high", "medium", "low", "uncertain"]},
+                "conclusion": {"type": "string", "description": "Historical Patternは今回の解釈の蓋然性を上げるが、独立した証明にはならない、という区別を明示する"}
+              },
+              "required": ["pattern_summary", "applicability", "conclusion"]
+            }
+          },
+          "actor_model_challenge": {
+            "type": ["object", "null"],
+            "description": "deprecated(Phase D-1、Phase B/C Canonical Design): 既存Actor Intelligence自体が今回のCaseに適用できない可能性を最低1件検討する。最終回答での強調は必須ではないが、内部analysis structureとして保持する。責務をhypothesis_registerのH4(frame_breaking)トリガー条件へ統合する方針のため新規責務追加は行わない。後方互換のためフィールド自体・生成は維持する",
+            "properties": {
+              "challenge_question": {"type": "string", "description": "例: 半導体政策が大幅に権限委任されており、Trump個人が取引材料にできない場合はどうか"},
+              "outcome": {"type": "string", "enum": ["supported", "undermined", "inconclusive"]},
+              "reasoning": {"type": ["string", "null"]}
+            },
+            "required": ["challenge_question", "outcome"]
+          },
+          "confidence_adjustment_reason": {
+            "type": ["string", "null"],
+            "description": "Expert AI Depth & Grounding Upgrade（P0-1 General Knowledge Confidence Cap）: actor_intelligence_provenance.general_knowledge_used=trueかつ現在Caseのevidence_idsが空であるにもかかわらずconfidenceが高/中だった場合に、決定的処理（cap_confidence_by_general_knowledge_flag、追加Azure Callなし）がconfidenceを低へ引き下げた場合のみ設定される（LLMが書く必要はない）"
+          }
+        },
+        "required": ["actor_ref", "actor", "confidence"]
+      }
+    },
+    "audience_analysis": {
+      "type": ["array", "null"],
+      "description": "v1.2: 発言・行動単位のAudience Matrix（04_KNOWLEDGE_STAKEHOLDER_FORCE_MODEL.md 6章）。1主体が複数の発言・行動を持ちうるためkey_actor_profilesとは別配列にする。根拠のあるAudienceを特定できない場合は空配列でよい（その場合はidentified_knowledge_gapsに記録する。根拠なく大量生成しない）",
+      "items": {
+        "type": "object",
+        "properties": {
+          "actor_ref": {"type": "string"},
+          "action_or_statement": {"type": "string"},
+          "primary_audience": {"type": ["string", "null"]},
+          "secondary_audience": {"type": ["string", "null"]},
+          "message_hypothesis": {"type": ["string", "null"], "description": "誰に何を見せたいかの仮説"},
+          "action_substance": {"$ref": "#/definitions/actionSubstance"},
+          "confidence": {"type": ["string", "null"], "enum": ["高", "中", "低", "判断不能", null]}
+        },
+        "required": ["actor_ref", "action_or_statement"]
+      }
+    },
+    "discretion_assessment": {
+      "type": ["object", "null"],
+      "description": "Phase F(Human Interaction Analytical Gate): key_actor_profiles確定の直後、directional_perceptions/situation_actor_assessmentの生成を試みる前に行う軽量な事前判定（STRUCTURE-FIRST EXCEPTION）。この局面がHuman Interaction分析を要するか、物理的・法制度的・技術的・資源的な低裁量構造が支配的かを判定する。deepプロファイル限定。key_point_assessment.control_type（Human Interaction/Hypothesis確定後の精緻な分類）とは役割が異なり、両者が食い違ってもよい（不一致はadvisoryで記録するのみ、失敗扱いにしない）",
+      "properties": {
+        "discretion_mode": {
+          "type": "string",
+          "enum": ["HUMAN_DISCRETION_DOMINANT", "STRUCTURE_DOMINANT", "MIXED"],
+          "description": "HUMAN_DISCRETION_DOMINANT=少数の人物の裁量・思惑・相互作用がこの局面を動かす/STRUCTURE_DOMINANT=物理的現実・法制度・技術的不可能性・資源制約が支配的で人間の裁量は二次的/MIXED=両方が併存"
+        },
+        "mode_rationale": {"type": "string", "description": "なぜこの局面をこう分類したか"}
+      },
+      "required": ["discretion_mode", "mode_rationale"]
+    },
+    "situation_actor_assessment": {
+      "type": ["array", "null"],
+      "description": "Session2 Reasoning Upgrade: Key Actor × Issue Componentの局面依存アセスメント（1行1オブジェクトのフラット配列）。Key ActorのPersistent Profileとは別に、この局面固有の優先度・本音・交換材料・道具的価値を評価する。deepプロファイル限定。根拠のあるComponentを特定できない場合は空配列でよい。総行数は12〜15行程度を上限の目安とし、全Actor×全Componentの完全直積を生成しない",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issue_component": {"type": "string"},
+          "issue_component_description": {"type": ["string", "null"]},
+          "actor_ref": {"type": "string", "description": "key_actor_profiles[].actor_refと対応"},
+          "salience": {
+            "type": "string", "enum": ["high", "medium", "low", "unknown"],
+            "description": "判断材料が無い場合はhigh/medium/lowを無理につけずunknownを使う（confidence=高との組合せは矛盾としてQuality Guardで検出する）"
+          },
+          "priority_rationale": {
+            "type": "string",
+            "description": "なぜ今このComponentが当該Actorにとって重要（または重要でない、あるいは不明である）のか。判断できない場合も文章で明示する（salience=unknownの場合は何が不足しているかをここで説明する）"
+          },
+          "effect_on_actor_objective": {
+            "type": "string",
+            "description": "このComponentがActorのObjectiveにどう作用するか（favor/opposeの単純な二値ではなくメカニズムを記述する）。判断できない場合も文章で明示する"
+          },
+          "desired_outcome": {"type": ["string", "null"]},
+          "instrumental_value": {
+            "type": "string",
+            "enum": ["intrinsic", "instrumental", "negotiating_card", "domestic_signal", "deterrence", "mixed", "unclear"],
+            "description": "そのものを本当に欲しているのか(intrinsic)、別の目的のために利用しているだけか(instrumental/negotiating_card/domestic_signal/deterrence)を区別する。判断できない場合はunclearを選ぶ"
+          },
+          "current_red_line": {"type": ["string", "null"], "description": "この局面で現在Red Lineとして機能しているか（persistent側のred_line_tendenciesとは別）"},
+          "currently_tradeable": {"type": ["string", "null"], "description": "この局面で交換材料になり得るか"},
+          "stated_preference": {"type": ["string", "null"]},
+          "estimated_real_preference": {"type": ["string", "null"]},
+          "genuine_or_tactical": {"type": ["string", "null"], "enum": ["genuine", "tactical", "mixed", "unclear", null]},
+          "primary_binding_constraint": {"type": ["string", "null"], "description": "最も重要な制約1つ（複数列挙を促さない）"},
+          "primary_usable_leverage": {"type": ["string", "null"], "description": "最も重要なレバレッジ1つ（複数列挙を促さない）"},
+          "likely_reaction": {
+            "type": ["string", "null"],
+            "description": "後方互換のため残す。新規に書く場合はactor_expected_response/analyst_expected_responseへ分けること（本人の期待と分析者の予測を混在させない）"
+          },
+          "actor_expected_response": {
+            "type": ["string", "null"],
+            "description": "Tier1(Eguchi Expert AI Final v1.0対応、ActorFlow): このActor本人が『相手は自分のこの行動にこう反応するはずだ』と考えている、と分析者が評価する内容（本人の期待・想定）。分析者自身が実際に起こると予測する内容ではない——それはanalyst_expected_responseへ書くこと"
+          },
+          "analyst_expected_response": {
+            "type": ["string", "null"],
+            "description": "Tier1: 分析者(Expert AI)が、相互作用・制度・能力・資源の制約を踏まえて実際に起こると予測する反応。Actor本人の期待(actor_expected_response)と一致するとは限らない——一致しない場合はその落差自体が重要な分析対象になる"
+          },
+          "target_actor_ref": {
+            "type": ["string", "null"],
+            "description": "Phase D-1(Holistic Reasoning Architecture Review): actor_expected_response/analyst_expected_responseが『誰の反応』についてのものかを、key_actor_profiles[].actor_refで参照する（両フィールドで共有、この行の対象actor_refとは別の相手を指す）。Guardはこのフィールドの接続性（key_actor_profilesに実在するか）のみを機械的に検証し、actor_expected_responseとanalyst_expected_responseの意味的な差（認識のズレ）自体はここでは評価しない——その評価はhypothesis_register側でLLMが行う"
+          },
+          "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+          "evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+          "evidence_class": {
+            "type": ["string", "null"],
+            "enum": ["current_direct_evidence", "current_indirect_evidence", "historical_actor_pattern",
+                     "historical_media_pattern", "structural_reference", "model_general_knowledge",
+                     "unsupported_assumption", null],
+            "description": "Expert AI Depth & Grounding Upgrade（P0-4/9章）: estimated_real_preference/genuine_or_tacticalの根拠の性質。historical_actor_pattern/model_general_knowledge/unsupported_assumptionのみの場合、confidence=高または中は決定的処理（cap_confidence_by_evidence_class）で低へ引き下げられる"
+          },
+          "alternative_interpretation": {"type": ["string", "null"]},
+          "alternative_interpretation_status": {
+            "type": ["string", "null"], "enum": ["plausible", "weak", "unsupported", "contradicted", null]
+          },
+          "media_salience_signal": {"type": ["string", "null"], "enum": ["amplified", "suppressed", "neutral", "unknown", null]},
+          "media_salience_basis": {"$ref": "#/definitions/evidenceIdList"},
+          "confidence_adjustment_reason": {
+            "type": ["string", "null"],
+            "description": "決定的処理によりconfidenceが自動引き下げられた場合のみ設定される（LLMが書く必要はない）"
+          }
+        },
+        "required": ["issue_component", "actor_ref", "salience", "priority_rationale",
+                     "effect_on_actor_objective", "instrumental_value", "confidence"]
+      }
+    },
+    "directional_perceptions": {
+      "type": ["array", "null"],
+      "description": "Tier1(Eguchi Expert AI Final v1.0対応、DirectionalPerception): AがBについて持つ（と分析者が評価する）帰属付きの主観的認識。Bの客観的な実態・能力そのものの記述ではない。A→BとB→Aは別レコードとし、相互に反転・転記しない（A→Bの認識をBの実際の属性としてHumanModel側へ書き写さない）。deepプロファイル限定。根拠のあるペアを特定できない場合は空配列でよい",
+      "items": {
+        "type": "object",
+        "properties": {
+          "observer_actor_ref": {"type": "string", "description": "認識の持ち主(A)。key_actor_profiles[].actor_refと対応させること"},
+          "target_actor_ref": {"type": "string", "description": "認識の対象(B)。key_actor_profiles[].actor_refと対応させること"},
+          "perception": {"type": "string", "description": "AがBについて持つ（と分析者が評価する）認識の内容。Aの主観としての記述にし、Bの客観的な実態の記述にしないこと"},
+          "claim_type": {
+            "type": "string",
+            "enum": ["stated", "inferred_from_behavior", "inferred_from_source", "analyst_hypothesis"],
+            "description": "この認識の根拠の性質。stated=Aが直接そう発言している/inferred_from_behavior=Aの行動から推定/inferred_from_source=第三者情報源からの推定/analyst_hypothesis=根拠が薄い分析者仮説（confidenceは低にすること）"
+          },
+          "evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+          "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+          "issue_scope": {"type": ["string", "null"], "description": "この認識が及ぶ争点・領域範囲。無限定な人格特性へ一般化せず、特定の争点に限られる場合は明記する"},
+          "valid_from": {"type": ["string", "null"]},
+          "valid_to": {"type": ["string", "null"], "description": "この認識が最新でなくなった時点が分かる場合のみ設定。通常はnullでよい"}
+        },
+        "required": ["observer_actor_ref", "target_actor_ref", "perception", "claim_type", "confidence"]
+      }
+    },
+    "human_interaction_coverage": {
+      "type": ["object", "null"],
+      "description": "Phase F(Human Interaction Analytical Gate): directional_perceptions/situation_actor_assessmentの生成を試みた後の自己申告。空配列のまま無言で通過することを禁止し、検討した結果を必ず4状態のいずれかで明示する。deepプロファイル限定",
+      "properties": {
+        "interaction_status": {
+          "type": "string",
+          "enum": ["GROUNDED", "PARTIAL_EVIDENCE", "INSUFFICIENT_EVIDENCE", "NOT_APPLICABLE_STRUCTURE_FIRST"],
+          "description": "GROUNDED=directional_perceptions/situation_actor_assessmentに根拠十分な内容がある/PARTIAL_EVIDENCE=一部のみ根拠がある（identified_knowledge_gapsに欠落分を記録すること）/INSUFFICIENT_EVIDENCE=検討したが根拠を見出せなかった（directional_perceptions/situation_actor_assessmentが空でもよいが、identified_knowledge_gapsへの記録は必須）/NOT_APPLICABLE_STRUCTURE_FIRST=discretion_assessment.discretion_mode=STRUCTURE_DOMINANTの場合のみ選択可"
+        },
+        "status_rationale": {"type": "string", "description": "この状態を選んだ理由"}
+      },
+      "required": ["interaction_status", "status_rationale"]
+    },
+    "investigation_questions": {
+      "type": ["array", "null"],
+      "description": "Session2 Reasoning Upgrade（Phase4）: Reasoning過程で生じた問いを、現行Evidenceで既に答えられるもの（analytical_question/evidence_check）と、真に外部情報が不足しているもの（knowledge_gap）に区別する。knowledge_gap該当分は決定的処理でadditional_research[]へ反映される（LLMに二重生成させない）。deepプロファイル限定",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {"type": "string"},
+          "question_type": {"type": "string", "enum": ["analytical_question", "evidence_check", "knowledge_gap"]},
+          "rationale": {
+            "type": "string",
+            "description": "Key Point/Key Actor/Persistent Preference/Preference-Action Gap/Knowledge Gapのいずれかを名指しで参照"
+          },
+          "can_current_evidence_answer": {"type": "boolean"},
+          "answer_if_yes": {
+            "type": ["string", "null"],
+            "description": "契約: can_current_evidence_answer=trueならこのフィールドは必ず非null（回答自体を書く）。falseなら必ずnull"
+          },
+          "answer_evidence_ids": {
+            "$ref": "#/definitions/evidenceIdList",
+            "description": "契約: can_current_evidence_answer=trueなら1件以上必須"
+          }
+        },
+        "required": ["question", "question_type", "rationale", "can_current_evidence_answer",
+                     "answer_if_yes", "answer_evidence_ids"]
+      }
+    },
+    "preference_action_gap_summary": {
+      "type": ["string", "null"],
+      "description": "v1.2: 複数Key Actorを跨いだPreference-Action Gapの要約（詳細は各key_actor_profiles[].preference_action_gap）"
+    },
+    "identified_knowledge_gaps": {
+      "type": ["array", "null"],
+      "description": "v1.2: 今回の分析で新たに識別した不足情報（既存knowledge_gaps_referencedはContextに既にあるGap参照、こちらは新規識別分）。DBへは自動書き込みしない",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {"type": "string"},
+          "gap_category": {"type": ["string", "null"], "enum": ["deterministic", "analytical_candidate", null]},
+          "priority": {"type": ["string", "null"]},
+          "recommended_action": {"type": ["string", "null"]}
+        },
+        "required": ["description"]
+      }
+    },
+    "media_source_context": {
+      "type": ["object", "null"],
+      "description": "v1.2: メディア編集判断・主流ナラティブとの差分（取得できる情報がある場合のみ、09章参照）",
+      "properties": {
+        "media_editorial_context": {
+          "type": ["array", "null"],
+          "description": "Session2 Reasoning Upgrade: Observable（observed、意図を語れない事実表現）とHypothesis（hypotheses、編集意図・情報源シグナリング・受け手反応の仮説）を構造的に分離する。「Who benefits ≠ intentの証明」（利益を受けるActorがいる、というだけでそのActorが仕掛けたと推定しない）",
+          "items": {
+            "type": "object",
+            "properties": {
+              "outlet": {"type": ["string", "null"]},
+              "caveat": {"type": ["string", "null"]},
+              "document_id": {"type": ["string", "null"]},
+              "observed": {
+                "type": ["array", "null"],
+                "description": "カテゴリA（Observable）。意図・目的を一切含まない事実表現のみ（例:「Actor Xへの言及が本文中に存在しない」は可、「Actor Xを意図的に省いた」は不可、hypotheses側へ）",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "observation_type": {
+                      "type": "string",
+                      "enum": ["headline", "placement", "timing", "source_selection", "source_ordering", "wording", "absence_in_content"]
+                    },
+                    "observation_text": {
+                      "type": "string",
+                      "description": "observation_type=absence_in_contentの場合は「期待される要素が本文に存在しない」的な事実表現に留め、意図（なぜ無いか）を書かない"
+                    },
+                    "evidence_ids": {"$ref": "#/definitions/evidenceIdList"}
+                  },
+                  "required": ["observation_type", "observation_text"]
+                }
+              },
+              "hypotheses": {
+                "type": ["array", "null"],
+                "description": "カテゴリB（editorial_framing）/C（source_signaling）/D（audience_reaction）をcategoryで区別する。「なぜ省かれたか」「意図的なリークか」等、意図を語る内容はすべてここに置く",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "category": {"type": "string", "enum": ["editorial_framing", "source_signaling", "audience_reaction"]},
+                    "question_type": {
+                      "type": "string",
+                      "enum": ["why_this_topic", "why_now", "why_this_outlet", "why_this_journalist",
+                               "why_this_headline", "why_this_framing", "why_this_placement",
+                               "why_these_sources", "why_this_source_order", "why_include_actor",
+                               "why_omit_actor", "intended_audience", "sought_reaction",
+                               "who_benefits", "who_loses"]
+                    },
+                    "hypothesis_text": {"type": "string"},
+                    "status": {
+                      "type": "string",
+                      "enum": ["supported", "partially_supported", "weak", "unsupported", "contradicted", "unknown"]
+                    },
+                    "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+                    "corroboration_basis": {
+                      "type": ["string", "null"],
+                      "enum": ["independent_corroboration", "official_confirmation", "behavioral_corroboration",
+                               "documentary_corroboration", "single_source_only", "unclear", null],
+                      "description": "Evidence件数のみでconfidenceを上げない（同一リークの複数媒体転載を「独立裏取り」と誤認しないため）。質的な裏取り根拠をここで明示する"
+                    },
+                    "corroboration_target": {
+                      "type": ["string", "null"], "enum": ["hypothesis_itself", "underlying_event_only", "unclear", null],
+                      "description": "corroboration_basisが何を裏付けているかを区別する。「出来事が起きたこと」を確認しただけでは、「それが意図的なsignalingだった」というhypothesis_text自体を裏付けたことにはならない。confidence=高を許すのはcorroboration_basisがhypothesis_itselfを裏付けている場合のみ"
+                    },
+                    "supporting_evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+                    "contradicting_evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+                    "alternative_explanation": {"type": ["string", "null"]},
+                    "evidence_class": {
+                      "type": ["string", "null"],
+                      "enum": ["current_direct_evidence", "current_indirect_evidence", "historical_actor_pattern",
+                               "historical_media_pattern", "structural_reference", "model_general_knowledge",
+                               "unsupported_assumption", null],
+                      "description": "Expert AI Depth & Grounding Upgrade（P0-4/9章）: このhypothesisの根拠の性質"
+                    },
+                    "confidence_adjustment_reason": {
+                      "type": ["string", "null"],
+                      "description": "M9.1 Evidence Weighting Fix: このhypothesisのconfidenceが決定的処理（LLMではない）により自動的に引き下げられた場合のみ、その理由がここに記録される（LLM自身がこのフィールドへ値を書く必要はない）。Historical Actor/Media Patternの一致はcurrent independent corroborationではないため、それのみを根拠にconfidence=高を維持することはできない"
+                    }
+                  },
+                  "required": ["category", "question_type", "hypothesis_text", "status", "confidence"]
+                }
+              },
+              "omitted_actor_analysis": {
+                "type": ["array", "null"],
+                "description": "Media記事から省かれているActorの分析。Key Actorとしてまだ選ばれていないActorが記事から抜けていること自体が重要な場合があるため、key_actor_profiles[].actor_refではなくentity_idでgroundingする（Key Point側のcontrolling_entity_idsと同じ理由・同じ型）",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "expected_actor_entity_id": {
+                      "type": "string",
+                      "description": "geo_entities.entity_idのUUID。groundingの正本はこちら"
+                    },
+                    "expected_actor_name": {"type": ["string", "null"], "description": "表示用の名前（任意）。groundingには使わない"},
+                    "why_expected": {"type": "string"},
+                    "omission_hypothesis": {"type": "string"},
+                    "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+                    "supporting_evidence_ids": {"$ref": "#/definitions/evidenceIdList"}
+                  },
+                  "required": ["expected_actor_entity_id", "why_expected", "omission_hypothesis", "confidence"]
+                }
+              }
+            }
+          }
+        },
+        "narrative_deviation": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "properties": {
+              "source": {"type": ["string", "null"]},
+              "deviation_from_mainstream": {"type": ["string", "null"]},
+              "why_it_matters": {"type": ["string", "null"]},
+              "verification_method": {"type": ["string", "null"], "description": "裏取り方法。主流と異なることだけを理由に信頼度を上げない"},
+              "current_assessment": {"type": ["string", "null"]},
+              "source_attribution": {
+                "type": ["string", "null"],
+                "enum": ["named", "anonymous_official", "anonymous_unspecified", "unattributed", null],
+                "description": "Observedな帰属分類のみ（記事自体が明示していない限り`leak`等の意図判定はここに置かない）。「意図的なリーク」「trial balloon」「戦略的signaling」等の意図解釈はすべてmedia_editorial_context[].hypotheses[]（category=source_signaling）側で表現する"
+              },
+              "evidence_ids": {"$ref": "#/definitions/evidenceIdList"}
+            }
+          }
+        },
+        "source_of_sources_note": {"type": ["string", "null"]}
+      }
+    },
+    "root_premise_check": {
+      "type": ["object", "null"],
+      "description": "v1.2: Draft Review等で最初に行うRoot Premise Check（06_KNOWLEDGE_REVIEW_OS.md）。細部を直す前に分析のスタートラインが正しいかを検証する",
+      "properties": {
+        "key_stakeholder_validity": {"$ref": "#/definitions/rootPremiseItem"},
+        "persistent_preference_grounding": {"$ref": "#/definitions/rootPremiseItem"},
+        "objective_hierarchy_separation": {"$ref": "#/definitions/rootPremiseItem"},
+        "preference_action_gap_analysis": {"$ref": "#/definitions/rootPremiseItem"},
+        "observed_action_not_treated_as_ultimate_objective": {"$ref": "#/definitions/rootPremiseItem"},
+        "overall_result": {"type": "string", "enum": ["pass", "warning", "fail"]}
+      },
+      "required": ["key_stakeholder_validity", "persistent_preference_grounding", "objective_hierarchy_separation", "preference_action_gap_analysis", "observed_action_not_treated_as_ultimate_objective", "overall_result"]
+    },
+    "review_findings": {
+      "type": ["array", "null"],
+      "description": "v1.2: レビュー指摘（Critical/Major/Minor、06_KNOWLEDGE_REVIEW_OS.md）。最優先3点を先頭に並べる",
+      "items": {
+        "type": "object",
+        "properties": {
+          "severity": {"type": "string", "enum": ["Critical", "Major", "Minor"]},
+          "category": {"type": ["string", "null"], "description": "例: key_stakeholder, persistent_preference, audience, evidence, scenario, business_impact等"},
+          "finding": {"type": "string"},
+          "recommendation": {"type": ["string", "null"]},
+          "evidence_ids": {"$ref": "#/definitions/evidenceIdList"}
+        },
+        "required": ["severity", "finding"]
+      }
+    },
+    "main_scenario": {
+      "type": "object",
+      "description": "主シナリオ。指示書の絶対原則8により反論・撤回条件とセットで必須",
+      "properties": {
+        "description": {"type": "string"},
+        "confidence": {"type": "string", "enum": ["高", "中", "低", "判断不能"]},
+        "supporting_evidence": {"type": "array", "items": {"type": "string"}},
+        "evidence_relevance": {
+          "type": ["array", "null"],
+          "description": "Phase R1 Chunk2: supporting_evidenceの各Evidenceが、主シナリオという主張をどれだけ直接支えるかを個別に申告する（key_point_assessment.evidence_relevanceと同じ形・同じ思想）。confidence=高の場合、少なくとも1件はclaim_relevance=direct/strongly_relevantが必要",
+          "items": {
+            "type": "object",
+            "properties": {
+              "evidence_id": {"type": "string"},
+              "claim_relevance": {
+                "type": "string",
+                "enum": ["direct", "strongly_relevant", "structural", "peripheral"]
+              },
+              "source_type": {
+                "type": ["string", "null"],
+                "enum": ["primary_official", "counterparty", "independent_mainstream", "specialist_analysis", "local_regional", "third_country", "osint_physical", "current_news", "unknown", null]
+              },
+              "rationale": {"type": ["string", "null"]}
+            },
+            "required": ["evidence_id", "claim_relevance"]
+          }
+        },
+        "weakening_evidence_relevance": {
+          "type": ["array", "null"],
+          "description": "Phase 10-B(Weakening/Contradicting Evidence Structured Binding、ユーザー指示): evidence_relevance（支持側）と対になる、主シナリオを弱める・反証するEvidenceの個別申告。evidence_relevanceと同じ形・同じ思想だが、relationでWEAKENS（前提を弱める・例外を示す）とCONTRADICTS（直接反証する）を区別する。該当するEvidenceが実在しない場合は空配列のままでよい（無理に生成しない。反証Evidenceを全シナリオへ強制しない）",
+          "items": {
+            "type": "object",
+            "properties": {
+              "evidence_id": {"type": "string", "description": "Source Pack／Case Context等に実在するID。存在しないIDを創作しない"},
+              "relation": {
+                "type": "string",
+                "enum": ["WEAKENS", "CONTRADICTS"],
+                "description": "WEAKENS=主シナリオの前提・確信度を弱める（例外・限定条件を示す）／CONTRADICTS=主シナリオの主張と直接矛盾する"
+              },
+              "claim_relevance": {
+                "type": "string",
+                "enum": ["direct", "strongly_relevant", "structural", "peripheral"],
+                "description": "evidence_relevanceと同じ意味（このEvidenceがどれだけ直接的に弱める／反証するか）"
+              },
+              "source_type": {
+                "type": ["string", "null"],
+                "enum": ["primary_official", "counterparty", "independent_mainstream", "specialist_analysis", "local_regional", "third_country", "osint_physical", "current_news", "unknown", null]
+              },
+              "rationale": {"type": ["string", "null"], "description": "なぜこのEvidenceが主シナリオを弱める／反証すると判断したか"}
+            },
+            "required": ["evidence_id", "relation", "claim_relevance"]
+          }
+        },
+        "relevance_confidence_adjustment_reason": {
+          "type": ["string", "null"],
+          "description": "Phase R1 Chunk2: evidence_relevanceの全件がstructural/peripheralのみだった場合に決定的処理cap_confidence_by_claim_relevanceがconfidenceを引き下げた際のみ設定される（LLMが書く必要はない）"
+        },
+        "selection_rationale": {
+          "type": ["string", "null"],
+          "description": "v1.2: 他の仮説より、なぜこれを主軸に置くのかの理由（05_KNOWLEDGE_HYPOTHESIS_EVIDENCE_PROTOCOL.md 4章の主シナリオ選択基準に基づく）"
+        },
+        "assumptions": {"type": ["array", "null"], "items": {"type": "string"}, "description": "v1.2: このシナリオが前提とする追加の仮定"},
+        "observable_indicators": {"type": ["array", "null"], "items": {"type": "string"}, "description": "v1.2: このシナリオを支持する観測可能な兆候（response全体のmonitoring_indicatorsとは別に、このシナリオ固有の検証指標）"},
+        "historical_analogies_used": {
+          "type": ["array", "null"],
+          "description": "Expert AI Depth & Grounding Upgrade（P0-4/10章 Weak Analogy Guard）: supporting_evidenceの中で過去の別事案からの類推（cross-domain analogy含む）を使った場合、その強度を明示する。例: Hormuz海峡通航料事案→半導体輸出規制、のような越境類推はanalogy_strength=weakから評価を開始する",
+          "items": {
+            "type": "object",
+            "properties": {
+              "analogy_source_precedent_id": {"type": ["string", "null"], "description": "参照した過去事例のknowledge_item_id（あれば）"},
+              "description": {"type": "string"},
+              "same_actor": {"type": "boolean"},
+              "same_domain": {"type": "boolean"},
+              "same_institutional_structure": {"type": "boolean"},
+              "same_leverage_mechanism": {"type": "boolean"},
+              "same_constraints": {"type": "boolean"},
+              "analogy_strength": {"type": "string", "enum": ["strong", "medium", "weak"]}
+            },
+            "required": ["description", "analogy_strength"]
+          }
+        },
+        "evidence_class": {
+          "type": ["string", "null"],
+          "enum": ["current_direct_evidence", "current_indirect_evidence", "historical_actor_pattern", "historical_media_pattern", "structural_reference", "model_general_knowledge", "unsupported_assumption", null],
+          "description": "Expert AI Depth & Grounding Upgrade（Evidence Weighting原則のMain Scenarioへの貫通）: supporting_evidenceの性質の分類。Historical Actor/Media IntelligenceはMain Scenarioのplausibility priorとして残してよいが、Current Supporting Evidenceとしては数えない——historical_actor_pattern/historical_media_pattern/model_general_knowledge/unsupported_assumptionのみの場合、confidence=高/中は決定的処理（cap_confidence_by_evidence_class）で低へ引き下げられる。Confidenceが下がってもMain Scenario自体は削除されず、low+関連するunresolved仮説+knowledge_gapとして保持される"
+        },
+        "confidence_adjustment_reason": {
+          "type": ["string", "null"],
+          "description": "決定的処理がconfidenceを引き下げた場合のみ設定される（LLMが書く必要はない）"
+        },
+        "derived_from_hypothesis_id": {
+          "type": ["string", "null"],
+          "description": "Phase D-1(Holistic Reasoning Architecture Review、絶対条件4対応): このMain Scenarioがhypothesis_register[]のどのretainedな仮説から導出されたかを、hypothesis_register[].hypothesis_idで参照する。hypothesis_registerが生成されない局面（standard/quickプロファイル等）ではnullのままでよい"
+        }
+      },
+      "required": ["description", "confidence"]
+    },
+    "alternative_scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {"type": "string"},
+          "confidence": {"type": ["string", "null"], "enum": ["高", "中", "低", "判断不能", null]},
+          "strengthening_conditions": {"type": ["array", "null"], "items": {"type": "string"}, "description": "v1.2: この代替仮説が強まる材料"},
+          "weakening_conditions": {"type": ["array", "null"], "items": {"type": "string"}, "description": "v1.2: この代替仮説が弱まる材料"},
+          "switch_conditions": {"type": ["array", "null"], "items": {"type": "string"}, "description": "v1.2: 主シナリオからこの代替仮説へ切り替える条件"},
+          "evidence_class": {
+            "type": ["string", "null"],
+            "enum": ["current_direct_evidence", "current_indirect_evidence", "historical_actor_pattern", "historical_media_pattern", "structural_reference", "model_general_knowledge", "unsupported_assumption", null],
+            "description": "Main Scenarioと同じEvidence Weighting原則をAlternative Scenarioにも適用する（cap_confidence_by_evidence_classで統一処理）"
+          },
+          "confidence_adjustment_reason": {
+            "type": ["string", "null"],
+            "description": "決定的処理がconfidenceを引き下げた場合のみ設定される（LLMが書く必要はない）"
+          },
+          "derived_from_hypothesis_id": {
+            "type": ["string", "null"],
+            "description": "Phase D-1(Holistic Reasoning Architecture Review、絶対条件4対応): このAlternative Scenarioがhypothesis_register[]のどの仮説に対応するかを、hypothesis_register[].hypothesis_idで参照する"
+          }
+        },
+        "required": ["description"]
+      }
+    },
+    "reasoning_lens_application": {
+      "type": ["array", "null"],
+      "description": "Cue→Grammar→Question Transformation Pilot（Blind Benchmark v0.1対応、ユーザー指示）: key_point_assessment/initial_anomalyで捉えた違和感を、具体的なInvestigation QuestionとAnswer Anglesへ変換する中間ステップ。hypothesis_register(H0-H4)の直前に生成し、その直接の材料とする。局面に効くLensが無ければ0件でよい（毎回2〜4件出す固定枠ではない）。deepプロファイル限定",
+      "items": {
+        "type": "object",
+        "properties": {
+          "grammar_id": {
+            "type": "string",
+            "enum": ["G01", "G02", "G03", "G04", "G05", "G06", "G07", "G08", "G09", "G10",
+                     "G11", "G12", "G13", "G14", "G15"]
+          },
+          "trigger_match": {
+            "type": "string",
+            "description": "このGrammarを選んだ理由。initial_anomaly/key_point_assessmentのどの観測がこのGrammarのTrigger条件に合致するかを具体的に書く"
+          },
+          "investigation_question": {
+            "type": "string",
+            "description": "このGrammarのAsk型を、今回の局面に固有の具体的な問いとして書き下したもの（Grammarのカテゴリ名をそのまま書かない）"
+          },
+          "angle_status": {
+            "type": "string",
+            "enum": ["angles_available", "evidence_insufficient"],
+            "description": "angles_available=answer_anglesへ具体的な競合する読みを書く/evidence_insufficient=問いは立てられるが、今回のEvidenceでは複数の読みを具体化できない（この場合で止めてよく、無理にanswer_anglesを埋めない）"
+          },
+          "answer_angles": {
+            "type": ["array", "null"],
+            "items": {"type": "string"},
+            "description": "angle_status=angles_availableの場合、この問いに対する具体的で局面固有の競合する読み筋を2〜4件（Grammarカタログの抽象カテゴリ名をそのまま書かない）。angle_status=evidence_insufficientの場合はnullのままでよい"
+          }
+        },
+        "required": ["grammar_id", "trigger_match", "investigation_question", "angle_status", "answer_angles"]
+      }
+    },
+    "expert_reasoning_questions": {
+      "type": ["array", "null"],
+      "description": "Cue→Targeted Expert Question Q2b(ユーザー指示): investigation_questions(Evidence Gap/追加調査の特定が目的)とは別の役割。局面をどう捉えるかという解釈的な問いを、feasibility/role_choreography/premise_challengeの3軸に限定し、明確なTrigger条件を満たす場合のみ0〜2件生成する。hypothesis_register生成の直前に置き、その直接の材料とする",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {"type": "string"},
+          "question_axis": {"type": "string", "enum": ["feasibility", "role_choreography", "premise_challenge"]},
+          "trigger": {"type": "string", "description": "この問いを立てた局面固有の具体的根拠(1文)"},
+          "evidence_status": {
+            "type": "string", "enum": ["sufficient", "unresolved"],
+            "description": "sufficient=現在のEvidenceで実質的な回答が可能/unresolved=答えられない(この場合もHypothesis/Scenario生成は止めない)"
+          }
+        },
+        "required": ["question", "question_axis", "trigger", "evidence_status"]
+      }
+    },
+    "expert_reasoning_checks": {
+      "type": ["object", "null"],
+      "description": "Q3a Atomic Question Router(ユーザー指示): 15 Grammar分類やaxis自己分類をLLMに行わせず、4つの独立したチェックとして固定Schema keyで持つ。各チェックは互いに排他的なカテゴリではなく、それぞれ独立にapplicable/not applicableを判定する。hypothesis_register生成の直前に置く",
+      "properties": {
+        "feasibility_check": {
+          "type": "object",
+          "description": "Q08A Implementation Feasibility: Action/commitmentが具体化しており、その実現に必要な人員・能力・専門性・資源・時間等が成否を左右するが、それらが不明または不足している場合のみapplicable=true",
+          "properties": {
+            "applicable": {"type": "boolean"},
+            "trigger_basis": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "applicable=trueの場合、具体的な根拠1〜2個が必須。具体化できなければapplicable=falseにすること"
+            },
+            "question": {"type": ["string", "null"], "description": "applicable=trueの場合のみ。基本形:「このActorがそれを望んでいるかではなく、実際に実行できるのか。何が実行上のボトルネックか」を局面に即して具体化する"},
+            "evidence_status": {"type": ["string", "null"], "enum": ["sufficient", "unresolved", null]}
+          },
+          "required": ["applicable", "trigger_basis", "question", "evidence_status"]
+        },
+        "capability_vs_intent_check": {
+          "type": "object",
+          "description": "Q08B Capability vs Intent: 軍事能力・準備・期限・配備等についての記述が存在し、それが実際の実行意思・開始時期として誤読され得る場合のみapplicable=true",
+          "properties": {
+            "applicable": {"type": "boolean"},
+            "trigger_basis": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "applicable=trueの場合、具体的な根拠1〜2個が必須。具体化できなければapplicable=falseにすること"
+            },
+            "question": {"type": ["string", "null"], "description": "applicable=trueの場合のみ。基本形:「これは実行意思を示しているのか、それとも実行可能な能力を整える目標・期限なのか」を局面に即して具体化する"},
+            "evidence_status": {"type": ["string", "null"], "enum": ["sufficient", "unresolved", null]}
+          },
+          "required": ["applicable", "trigger_basis", "question", "evidence_status"]
+        },
+        "role_choreography_check": {
+          "type": "object",
+          "description": "Q06A Role Choreography: 2名以上の具体的Actorが存在し、同一政権・同盟・陣営など協調可能な関係にあり、同一Counterparty/Issueに対して異なるトーンまたは行動を取っている場合のみapplicable=true",
+          "properties": {
+            "applicable": {"type": "boolean"},
+            "trigger_basis": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "applicable=trueの場合、具体的な根拠1〜2個が必須(2名以上のActor名を含むこと)。具体化できなければapplicable=falseにすること"
+            },
+            "question": {"type": ["string", "null"], "description": "applicable=trueの場合のみ。基本形:「これは本当の内部対立なのか、それとも相手を動かすための意図的な役割分担なのか」を局面に即して具体化する"},
+            "evidence_status": {"type": ["string", "null"], "enum": ["sufficient", "unresolved", null]}
+          },
+          "required": ["applicable", "trigger_basis", "question", "evidence_status"]
+        },
+        "premise_invalidation_check": {
+          "type": "object",
+          "description": "Q01A Premise Invalidation: 現在の主要な見立てが特定可能な前提Xに依存しており、現在の局面変化YがそのXを無効化し得る場合のみapplicable=true。XとYを具体的に示せなければnot applicable",
+          "properties": {
+            "applicable": {"type": "boolean"},
+            "trigger_basis": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "applicable=trueの場合、前提X・局面変化Yそれぞれを具体的に示す1〜2個が必須。具体化できなければapplicable=falseにすること"
+            },
+            "question": {"type": ["string", "null"], "description": "applicable=trueの場合のみ。基本形:「この見立てはXを前提としているが、Yが起きた今もXは成立するか」を局面に即して具体化する"},
+            "evidence_status": {"type": ["string", "null"], "enum": ["sufficient", "unresolved", null]}
+          },
+          "required": ["applicable", "trigger_basis", "question", "evidence_status"]
+        },
+        "higher_order_objective_check": {
+          "type": "object",
+          "description": "Q06B Higher-order Objective: 提示された目的（政策目的・二国間関係・国内政治目的・戦略的位置取り等）が複数並列、または単一で提示されているが、それらの間に上位/下位の階層関係がある可能性が検討されていない場合のみapplicable=true",
+          "properties": {
+            "applicable": {"type": "boolean"},
+            "trigger_basis": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "applicable=trueの場合、並列提示されている複数目的、または単一目的がより上位の目的の手段である可能性を示す具体的根拠1〜2個が必須。具体化できなければapplicable=falseにすること"
+            },
+            "question": {"type": ["string", "null"], "description": "applicable=trueの場合のみ。基本形:「この目的は独立した最終目標か、それともより上位の目的（関係維持・国内政治・戦略的位置取り等）のための下位要素か」を局面に即して具体化する"},
+            "evidence_status": {"type": ["string", "null"], "enum": ["sufficient", "unresolved", null]}
+          },
+          "required": ["applicable", "trigger_basis", "question", "evidence_status"]
+        },
+        "structural_benefit_check": {
+          "type": "object",
+          "description": "Q03A Second-order Structural Benefit: 措置の直接的な対象・一次効果は明示されているが、価格・競争力・物流・資源・市場構造等を通じた二次的な受益者・力学が検討されていない場合のみapplicable=true",
+          "properties": {
+            "applicable": {"type": "boolean"},
+            "trigger_basis": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "applicable=trueの場合、直接効果とは別に、価格・競争力・市場構造等を通じた間接的な受益・損失の経路を示す具体的根拠1〜2個が必須。具体化できなければapplicable=falseにすること"
+            },
+            "question": {"type": ["string", "null"], "description": "applicable=trueの場合のみ。基本形:「直接効果の受益者ではなく、価格・競争力・物流・資源・市場構造等を通じて間接的に得をする主体は誰か」を局面に即して具体化する"},
+            "evidence_status": {"type": ["string", "null"], "enum": ["sufficient", "unresolved", null]}
+          },
+          "required": ["applicable", "trigger_basis", "question", "evidence_status"]
+        },
+        "internal_blocking_check": {
+          "type": "object",
+          "description": "Q12A Internal Blocking/Reversal: 政策・発言が提示された後、撤回・弱体化・変更されたという観測がある場合のみapplicable=true。具体的な押し返し主体はEvidence/Retrievalに基づく場合のみ記述し、無ければ不明のままにする",
+          "properties": {
+            "applicable": {"type": "boolean"},
+            "trigger_basis": {
+              "type": ["array", "null"], "items": {"type": "string"},
+              "description": "applicable=trueの場合、提示→撤回・弱体化・変更という具体的な事実経過1〜2個が必須。具体化できなければapplicable=falseにすること"
+            },
+            "question": {"type": ["string", "null"], "description": "applicable=trueの場合のみ。基本形:「提示から撤回・弱体化へ至った過程で、どの主体（制度・国内連合・支持基盤・官僚機構・安全保障機構・産業界等）が押し返した可能性があるか」を局面に即して具体化する"},
+            "evidence_status": {"type": ["string", "null"], "enum": ["sufficient", "unresolved", null]}
+          },
+          "required": ["applicable", "trigger_basis", "question", "evidence_status"]
+        }
+      },
+      "required": ["feasibility_check", "capability_vs_intent_check", "role_choreography_check", "premise_invalidation_check", "higher_order_objective_check", "structural_benefit_check", "internal_blocking_check"]
+    },
+    "hypothesis_register": {
+      "type": ["array", "null"],
+      "description": "Expert AI Depth & Grounding Upgrade（依頼書11-14章 Competing Hypotheses / Hypothesis Pruning）: Main/Alternative Scenarioへ絞り込む前の内部競合仮説一覧。最低限H0(Surface)/H1(Actor-intent Alternative)/H2(Structural Alternative)/H3(Actor-model-breaking)/H4(Frame-breaking/Wild-card)を検討し、status(retained/rejected/unresolved)を明示する。単に列挙するだけでなく、Evidence Competitionを経て却下した仮説も残す（棄却した痕跡を消さない）。全件が'retained'のみの場合はhypothesis_pruning_present Guardが失敗する",
+      "items": {
+        "type": "object",
+        "properties": {
+          "hypothesis_id": {"type": "string", "description": "例: H0, H1, H2..."},
+          "hypothesis_type": {
+            "type": ["string", "null"],
+            "enum": ["surface", "actor_intent_alternative", "structural_alternative", "actor_model_breaking", "frame_breaking",
+                     "H0_straightforward", "H1_instrumental_indirect", "H2_counterparty_audience_shift",
+                     "H3_constraint_domestic_driver", "H4_frame_breaking", null],
+            "description": "Phase D-1(Holistic Reasoning Architecture Review): surface/actor_intent_alternative/structural_alternative/actor_model_breaking/frame_breakingはlegacy値（過去レスポンス互換用、新規生成では使用しないこと）。新規生成ではH0_straightforward/H1_instrumental_indirect/H2_counterparty_audience_shift/H3_constraint_domestic_driver/H4_frame_breakingのみを使うこと"
+          },
+          "description": {"type": "string"},
+          "status": {"type": "string", "enum": ["retained", "rejected", "unresolved"]},
+          "reason": {"type": ["string", "null"]},
+          "supporting_evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+          "contradicting_evidence_ids": {"$ref": "#/definitions/evidenceIdList"},
+          "weakening_evidence_relevance": {
+            "type": ["array", "null"],
+            "description": "Phase 10-B(Weakening/Contradicting Evidence Structured Binding、ユーザー指示): この仮説を弱める・反証するEvidenceを、単なるID列挙(contradicting_evidence_ids)より詳しく個別申告する。relationでWEAKENS（前提を弱める・例外を示す）とCONTRADICTS（直接反証する）を区別し、rationaleでなぜそう判断したかを示す。該当するEvidenceが実在しない場合は空配列のままでよい（無理に生成しない。反証Evidenceを全仮説へ強制しない）。同じEvidenceが、他の仮説ではsupporting_evidence_idsに入ることもあり得る（意味的な方向は仮説ごとに異なってよい）",
+            "items": {
+              "type": "object",
+              "properties": {
+                "evidence_id": {"type": "string", "description": "Source Pack／Case Context等に実在するID。存在しないIDを創作しない"},
+                "relation": {
+                  "type": "string",
+                  "enum": ["WEAKENS", "CONTRADICTS"],
+                  "description": "WEAKENS=この仮説の前提・確信度を弱める（例外・限定条件を示す）／CONTRADICTS=この仮説の主張と直接矛盾する"
+                },
+                "claim_relevance": {
+                  "type": "string",
+                  "enum": ["direct", "strongly_relevant", "structural", "peripheral"],
+                  "description": "main_scenario.evidence_relevanceと同じ意味（このEvidenceがどれだけ直接的に弱める／反証するか）"
+                },
+                "source_type": {
+                  "type": ["string", "null"],
+                  "enum": ["primary_official", "counterparty", "independent_mainstream", "specialist_analysis", "local_regional", "third_country", "osint_physical", "current_news", "unknown", null]
+                },
+                "rationale": {"type": ["string", "null"], "description": "なぜこのEvidenceがこの仮説を弱める／反証すると判断したか"}
+              },
+              "required": ["evidence_id", "relation", "claim_relevance"]
+            }
+          },
+          "confidence": {"type": ["string", "null"], "enum": ["高", "中", "低", "判断不能", null]},
+          "interaction_basis": {
+            "type": ["object", "null"],
+            "description": "Phase F(Human Interaction Analytical Gate): この仮説が依拠するActor Interactionへの構造的接続。event_role（観測された行動の機能分類）はDirectional Perception/Situation Actor Assessmentの代替にならないため、basis_type=EVENT_ROLEのみで済ませないこと。H0以外の全hypothesis_typeで生成すること",
+            "properties": {
+              "basis_type": {
+                "type": "string",
+                "enum": ["DIRECTIONAL_PERCEPTION", "SITUATION_ACTOR_ASSESSMENT", "EVENT_ROLE", "EVIDENCE_GAP", "NOT_APPLICABLE"],
+                "description": "DIRECTIONAL_PERCEPTION/SITUATION_ACTOR_ASSESSMENT=対応する配列の実在レコード（actor_ref/target_actor_refが一致する組）を根拠にする/EVENT_ROLE=event_role（行動の機能分類）のみを根拠にする（H1/H2/H4では推奨しない）/EVIDENCE_GAP=human_interaction_coverage.interaction_statusがPARTIAL_EVIDENCE/INSUFFICIENT_EVIDENCEの場合、相互作用データの不在自体を論点にする/NOT_APPLICABLE=この仮説が特定の人物・Audience間の相互作用を主張していない（純粋な制度・能力・物理制約等）"
+              },
+              "actor_ref": {"type": ["string", "null"], "description": "根拠とするInteractionのA。directional_perceptions[].observer_actor_refまたはsituation_actor_assessment[].actor_refと一致させること"},
+              "target_actor_ref": {"type": ["string", "null"], "description": "根拠とするInteractionのB"},
+              "gap_note": {"type": ["string", "null"], "description": "basis_type=EVIDENCE_GAPまたはNOT_APPLICABLEの場合、その理由を必ず記述する（何が欠けているか、またはなぜ特定の人物間相互作用を主張しないか）"}
+            },
+            "required": ["basis_type", "actor_ref", "target_actor_ref", "gap_note"]
+          }
+        },
+        "required": ["hypothesis_id", "description", "status"]
+      }
+    },
+    "intelligence_needs": {
+      "type": ["array", "null"],
+      "description": "Expert Reasoning Pipeline v0.2(ユーザー指示): Candidate Hypothesisを具体化する上で、既知の一般論では埋まらず追加のIntelligence（実在Entity/Relationship/類似事例/構造的事実）があれば判断の精度が上がる、という具体的なNeedがある場合のみ列挙する。存在しないNeedを埋めるために毎回件数を揃えて生成しないこと（0件でよい）。ここに列挙したqueryはStage2呼び出し前にDB/Service照会のみ(LLM呼び出しなし)で解決を試み、見つかった場合のみStage2側へ結果を渡す",
+      "items": {
+        "type": "object",
+        "properties": {
+          "need_type": {
+            "type": "string",
+            "enum": ["entity", "relationship", "precedent", "structural_fact"],
+            "description": "entity=特定Actorの属性・立場、relationship=特定Actor間の関係性、precedent=類似の過去事例、structural_fact=制度・構造上の事実"
+          },
+          "query": {"type": "string", "description": "解決に使う具体的な検索文字列（Actor名・関係の対象・事例のキーワード等）。抽象的な問い文ではなく、照会に使える名詞句にすること"},
+          "related_hypothesis_id": {"type": ["string", "null"], "description": "hypothesis_register[].hypothesis_idのうち、このNeedが関係するもの。特定できなければnull"}
+        },
+        "required": ["need_type", "query", "related_hypothesis_id"]
+      }
+    },
+    "model_activation_requests": {
+      "type": ["array", "null"],
+      "description": "Explanatory Model Activation v0.3(ユーザー指示): Call1で提示されたActivation Index(Explanatory Modelの圧縮版1行サマリ一覧)のうち、今回のCueを説明する上で後段(Call2)で具体的に展開する価値があるModelだけを挙げる。Grammar分類ではない——排他的な1件選択ではなく、0件・複数件どちらも正常。best guessで無理に埋めないこと（目安上限3〜4件）。ここで挙げたmodel_idについてのみ、Call2側でFull Model Card(instantiation_prompts等)がLocal Lookupで渡される(追加LLM呼び出しなし)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "model_id": {"type": "string", "description": "Activation Indexに提示されたModel ID(例: EM01)。Indexに無いIDを創作しないこと"},
+          "cue_ref": {"type": "string", "description": "このModelを想起させた、今回の局面の具体的なCue/違和感"},
+          "activation_reason": {"type": "string", "description": "なぜこのModelが今回のCueの説明として試す価値があるか(1〜2文)"}
+        },
+        "required": ["model_id", "cue_ref", "activation_reason"]
+      }
+    },
+    "trajectory_assessment": {
+      "type": ["object", "null"],
+      "description": "Trajectory Reasoning Ablation v0.2(test-only、GEO_EXPERT_TRAJECTORY_ENABLED時のみ生成): 現在のSnapshotだけではこの局面のScenarioを適切に読めないかどうかを判定する。v0.1からの訂正: 「時系列的な推論が必要か」と「追加のEvidence取得が必要か」は別の問いであり同一視しない——既に手元にあるEvidenceだけで時系列推論が可能な場合、Supplemental Retrievalは不要と判定してよい。trajectory_reasoning_needed=falseの場合、他フィールドはnullのままでよい(無理に埋めない)。特定の個別事例(特定の国・人物・出来事)をここで前提にせず、汎用的な判定基準(Escalation/De-escalation、Why now、Prior Narrative、Actor Behavior History)のみで判定すること",
+      "properties": {
+        "trajectory_reasoning_needed": {
+          "type": "boolean",
+          "description": "局面が段階的に強まり/弱まっている、突然の変化でWhy nowが現在情報だけで説明できない、直前までのNarrative/Perceptionが今回の行動の意味を左右する、今回のActor Behaviorが通常か異例か過去との比較が要る、のいずれかに該当する場合のみtrue（Evidenceが既に十分かどうかとは独立に判定すること）"
+        },
+        "primary_mode": {
+          "type": ["string", "null"],
+          "enum": ["escalation", "narrative", "actor_behavior", null],
+          "description": "trajectory_modesのうち、この局面で最も中心的な1つ。'mixed'という値は使わないこと——複数該当する場合はtrajectory_modesへ複数列挙し、その中から最重要の1つをここに指定する。trajectory_reasoning_needed=falseの場合はnull"
+        },
+        "trajectory_modes": {
+          "type": ["array", "null"],
+          "items": {"type": "string", "enum": ["escalation", "narrative", "actor_behavior"]},
+          "description": "この局面に該当するTrajectory Modeを1件以上列挙する(複数可)。escalation=段階的な強まり/弱まりとThreshold、narrative=直前までのPerception蓄積と現在の行動によるPerception変化、actor_behavior=Actorの過去行動パターンとの整合・不整合。該当するMode全てについて、後段でそれぞれ固有のReasoning Checkが行われる(primary_modeだけでなく)"
+        },
+        "reason": {
+          "type": ["string", "null"],
+          "description": "trajectory_reasoning_neededと判断した(またはしなかった)具体的理由"
+        },
+        "existing_evidence_sufficient": {
+          "type": ["boolean", "null"],
+          "description": "trajectory_reasoning_needed=trueの場合のみ判定: 既に提示されているEvidence(RAW_FACTS_SIGNALS等)だけで、上記のTrajectory Reasoning(what changed/current state/next move)を行うのに十分か。十分であればtrueとし、Supplemental Retrievalを要求しないこと（Evidenceが揃っているのに追加取得を求めない）"
+        },
+        "evidence_gaps": {
+          "type": ["array", "null"],
+          "items": {"type": "string"},
+          "description": "existing_evidence_sufficient=falseの場合のみ: 具体的に何が不足しているか(抽象的な「もっと情報が欲しい」ではなく、欠けている具体的な事実・時期・行動を指すこと)"
+        },
+        "supplemental_retrieval_needed": {
+          "type": ["boolean", "null"],
+          "description": "具体的なevidence_gapsが存在し、かつDB照会で解決できる見込みがある場合のみtrue。existing_evidence_sufficient=trueの場合は必ずfalse"
+        },
+        "actors": {
+          "type": ["array", "null"],
+          "items": {"type": "string"},
+          "description": "Trajectoryの中心となるActor(既存のkey_actor_profiles[].actor_ref等と整合させ、架空のIDを作らない)"
+        },
+        "topic": {
+          "type": ["string", "null"],
+          "description": "何についてのTrajectoryか。検索・絞り込みに使える具体的な名詞句にすること"
+        },
+        "lookback_window": {
+          "type": ["string", "null"],
+          "description": "supplemental_retrieval_needed=trueの場合のみ意味を持つ、案件に応じて選択する遡及期間の目安(例: '30 days'/'90 days'/'6 months'/'12 months'/'custom: ...')。全案件で固定値を機械的に使わないこと"
+        },
+        "retrieval_questions": {
+          "type": ["array", "null"],
+          "items": {"type": "string"},
+          "description": "supplemental_retrieval_needed=trueの場合のみ: 各questionはevidence_gapsのいずれかに対応する具体的な問いであること(目安上限6件)。一般的な背景History取得のための問いを作らない——各問いが埋めるべき具体的なGapを持つこと"
+        }
+      },
+      "required": ["trajectory_reasoning_needed", "primary_mode", "trajectory_modes", "reason",
+                   "existing_evidence_sufficient", "evidence_gaps", "supplemental_retrieval_needed",
+                   "actors", "topic", "lookback_window", "retrieval_questions"]
+    },
+    "trajectory_information_need": {
+      "type": ["object", "null"],
+      "description": "Situation Trajectory Intelligence v1(test-only、GEO_EXPERT_TRAJECTORY_V1_ENABLED時のみ生成): v0.1/v0.2のtrajectory_assessmentとは独立した、Issue Scope起点の情報Need判定。『時系列推論が必要か』ではなく『この局面の意味を理解する上で、どのIssue Scopeについての、どの具体的Evidence Gapが不足しているか』を判定する。information_needed=falseの場合、他フィールドはnullのままでよい。特定の個別事例(特定の国・人物・出来事)をここに書かない。",
+      "properties": {
+        "information_needed": {
+          "type": "boolean",
+          "description": "現在のEvidenceだけでは、局面の前提・制約・Actorの選択肢がどう変化してきたかを十分に説明できない場合のみtrue"
+        },
+        "issue_scope": {
+          "type": ["object", "null"],
+          "description": "『何についての過去を探すか』を明示するScope定義。information_needed=trueの場合のみ埋める",
+          "properties": {
+            "core_issue": {"type": ["string", "null"], "description": "検索・絞り込みに使える、この局面の核心テーマ(具体的な名詞句)"},
+            "primary_actors": {"type": ["array", "null"], "items": {"type": "string"}, "description": "中心的Actor(key_actor_profiles[].actor_ref等と整合させ、架空のIDを作らない)"},
+            "secondary_actors": {"type": ["array", "null"], "items": {"type": "string"}, "description": "副次的だが関連するActor"},
+            "relevant_dimensions": {"type": ["array", "null"], "items": {"type": "string"}, "description": "この局面に関連する側面(例: 'military coordination','domestic political perception','public criticism'等、具体的な名詞句)"},
+            "time_horizon": {"type": ["string", "null"], "description": "案件に応じた遡及期間の目安。固定値を機械的に使わないこと"}
+          },
+          "required": ["core_issue", "primary_actors", "secondary_actors", "relevant_dimensions", "time_horizon"]
+        },
+        "evidence_gaps": {
+          "type": ["array", "null"],
+          "description": "information_needed=trueの場合のみ: 具体的なEvidence Gap(目安上限6件)",
+          "items": {
+            "type": "object",
+            "properties": {
+              "gap_type": {
+                "type": "string",
+                "enum": ["prior_state", "turning_point", "precedent", "narrative_state", "constraint_change", "relationship_change"]
+              },
+              "question": {"type": "string", "description": "検索・絞り込みに使える具体的な問い(一般的な背景History取得の問いにしないこと)"},
+              "why_needed": {"type": "string", "description": "このGapが埋まると、現在のCue/Question/Scenario比較のどこが変わるか"}
+            },
+            "required": ["gap_type", "question", "why_needed"]
+          }
+        }
+      },
+      "required": ["information_needed", "issue_scope", "evidence_gaps"]
+    },
+    "strongest_counterargument": {
+      "type": "string",
+      "description": "deprecated(Phase D-1、Phase B/C Canonical Design): 主シナリオへの最も強い反論。責務をhypothesis_register側（棄却/拮抗する仮説）へ統合する方針のため新規責務追加は行わない。後方互換のためフィールド自体・生成は維持する（Stage1は引き続きD-3実施までこれを生成する）"
+    },
+    "weakening_information": {
+      "type": ["string", "null"],
+      "description": "主シナリオを弱める情報"
+    },
+    "contradicting_evidence": {
+      "type": ["array", "null"],
+      "items": {"type": "string"},
+      "description": "Phase3-0: 主シナリオと矛盾する、または反対方向を示す根拠を複数列挙する（strongest_counterargumentは反論の要約1件、こちらは根拠の列挙）"
+    },
+    "retraction_conditions": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "description": "主シナリオの撤回条件（指示書の絶対原則8で必須）"
+    },
+    "additional_research": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {"type": "string"},
+          "related_hypothesis": {"type": ["string", "null"]},
+          "recommended_sources": {"type": ["string", "null"]},
+          "priority": {
+            "type": ["string", "null"], "enum": ["高", "中", "低", null],
+            "description": "Session2: investigation_questions[]（question_type=knowledge_gap）から決定的に反映された項目に付与される"
+          },
+          "rationale": {
+            "type": ["string", "null"],
+            "description": "Session2: なぜこの追加調査が必要か（investigation_questions[].rationaleから反映される場合がある）"
+          }
+        },
+        "required": ["question"]
+      }
+    },
+    "business_impact": {
+      "type": "object",
+      "description": "企業への影響経路（09_KNOWLEDGE_BUSINESS_IMPACT_MODEL.md準拠）。直接・間接・環境変化・関連性限定を分ける",
+      "properties": {
+        "direct": {"type": ["string", "null"]},
+        "indirect": {"type": ["string", "null"]},
+        "environment_change": {"type": ["string", "null"]},
+        "unrelated_note": {
+          "type": ["string", "null"],
+          "description": "自社への有意な接続が確認できない場合、その旨を明記する（無理に提言を作らない）"
+        }
+      }
+    },
+    "monitoring_indicators": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "次に確認すべき兆候・監視指標"
+    },
+    "analyst_coaching_notes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "担当者への学び（10_KNOWLEDGE_ANALYST_DEVELOPMENT.md準拠）"
+    },
+    "executive_summary": {
+      "type": "object",
+      "properties": {
+        "what_changed": {"type": ["string", "null"]},
+        "why_it_matters": {"type": ["string", "null"]},
+        "what_to_watch_decide": {"type": ["string", "null"]}
+      }
+    },
+    "unknown_or_uncertain": {
+      "type": ["string", "null"],
+      "description": "現時点で判断できないこと・情報不足で答えられない点"
+    },
+    "relevant_precedents": {
+      "type": "array",
+      "description": "Phase2A: Knowledge DBから参照した関連Precedent（active化済みのもののみ）",
+      "items": {
+        "type": "object",
+        "properties": {
+          "knowledge_item_id": {"type": "string"},
+          "title": {"type": "string"},
+          "relevance": {"type": ["string", "null"], "description": "今回の案件にどう関連するか"}
+        },
+        "required": ["knowledge_item_id", "title"]
+      }
+    },
+    "relevant_mechanisms": {
+      "type": "array",
+      "description": "Phase2A: Knowledge DBから参照した関連Mechanism（active化済みのもののみ）",
+      "items": {
+        "type": "object",
+        "properties": {
+          "knowledge_item_id": {"type": "string"},
+          "title": {"type": "string"},
+          "relevance": {"type": ["string", "null"]}
+        },
+        "required": ["knowledge_item_id", "title"]
+      }
+    },
+    "assets_dependencies_leverage": {
+      "type": ["array", "null"],
+      "description": "Phase2A: 参照したAsset/Dependency/Leverage Cardの要約",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {"type": "string", "enum": ["asset", "dependency", "leverage_card"]},
+          "summary": {"type": "string"}
+        },
+        "required": ["kind", "summary"]
+      }
+    },
+    "knowledge_gaps_referenced": {
+      "type": ["array", "null"],
+      "description": "Phase2A: 今回のContextに含まれていたKnowledge Gap（deterministic/analytical_candidate）",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gap_id": {"type": "string"},
+          "gap_description": {"type": "string"}
+        },
+        "required": ["gap_id", "gap_description"]
+      }
+    },
+    "sources_and_citations": {
+      "type": ["array", "null"],
+      "description": "Phase2A: 最終回答で実際に参照したEvidence/Documentの一覧（Retrieval Traceのused_in_final_contextと対応）",
+      "items": {
+        "type": "object",
+        "properties": {
+          "result_type": {"type": "string"},
+          "result_id": {"type": "string"},
+          "citation_label": {"type": ["string", "null"]}
+        },
+        "required": ["result_type", "result_id"]
+      }
+    },
+    "actor_intelligence_status": {
+      "type": ["string", "null"],
+      "enum": ["sufficient", "partial", "insufficient", null],
+      "description": "Actor Intelligence Phase AI-3: 今回選ばれたKey ActorについてActor Intelligence（Core Profile/Current Posture/Issue Position）がどの程度揃っていたかのケース単位の充足度。geo_actor_intelligence_service.select_key_actorsがTemporal/Issue Relevance/Evidence Coverageを見て決定的に算出し、レスポンス生成後にコード側で設定する（LLMには生成させない）。Feature Flag無効時、またはcase_idなしの呼び出しではnullのまま"
+    },
+    "draft_sections": {
+      "type": ["array", "null"],
+      "description": "IOS Native Report Draft（draft_generationモード専用）: 与えられたAnalysis Design・局面を読む出力(Situation Assessment)から、レポート本文をセクション単位の散文として構成する。他モードでは常にnull。",
+      "items": {
+        "type": "object",
+        "properties": {
+          "heading": {"type": "string", "description": "例: Executive assessment / Key actors & constraints / Main scenario / Alternative scenarios / Business implications / Indicators to watch"},
+          "body": {"type": "string", "description": "見出しに対応する本文（箇条書きの列挙ではなく、根拠に基づく地の文）。与えられたDesign/Situationの範囲を超えて新事実を創作しない"},
+          "supporting_evidence_ids": {
+            "$ref": "#/definitions/evidenceIdList",
+            "description": "このsectionが根拠とした、与えられたknown_evidence等のID。存在しないIDは創作しない"
+          }
+        },
+        "required": ["heading", "body"]
+      }
+    }
+  },
+  "required": [
+    "one_line_assessment",
+    "claims",
+    "stakeholders",
+    "main_scenario",
+    "retraction_conditions"
+  ]
+}

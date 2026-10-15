@@ -1,0 +1,95 @@
+{
+  "azure": {
+    "endpoint":           "https://YOUR-RESOURCE.openai.azure.com/",
+    "api_key":            "ここにAzure OpenAIのAPIキー",
+    "default_deployment": "gpt-4o",
+    "api_version":        "2024-05-01-preview"
+  },
+  "api_keys": {
+    "openai": "sk-proj-ここにOpenAI APIキーを入力（azureがあれば不要）",
+    "marinetraffic": "ここにMarineTraffic APIキーを入力（船舶追跡に必要・marinetraffic.com で無料登録）"
+  },
+  "connector_credentials": {
+    "_comment": "地政学Connector（Phase2B）用。実キー値はここに書かず、下記env_varで指定したOS環境変数から読む",
+    "wto": {"env_var": "GEO_WTO_API_KEY"},
+    "un_comtrade": {"env_var": "GEO_UN_COMTRADE_API_KEY"},
+    "manifesto_project": {"env_var": "GEO_MANIFESTO_API_KEY"}
+  },
+  "geo_external_signals": {
+    "_comment": "Geopolitical News DB (Phase1: GDELT DOC 2.0 / Phase2A: GDELT 2.0 raw feed)。GDELTは無認証APIのためAPIキー不要。proxy/sslは下記共通ブロックを使う",
+    "gdelt": {
+      "enabled": true,
+      "request_interval_seconds": 5
+    },
+    "gdelt_stream": {
+      "_comment": "Phase2A: GDELT Event/Mentions/GKG raw feed。HTTPプロトコル(http://data.gdeltproject.org)",
+      "enabled": true,
+      "request_interval_seconds": 5,
+      "max_batches_per_run": 4,
+      "event_resolution_lookback_days": 7,
+      "max_event_resolution_batches_per_run": 20
+    }
+  },
+  "proxy": {
+    "enabled": true,
+    "http_proxy": "http://jejp1prfp001.sgn.suntory.co.jp:9400"
+  },
+  "ssl": {
+    "verify": false
+  },
+  "supabase": {
+    "url": "https://xxxx.supabase.co",
+    "key": "ここに anon public API key を入力",
+    "service_role_key": "ここに service_role key を入力（article_crawler.py / article_analyzer.py / sustainability_*.py で必要）"
+  },
+  "geo_intelligence": {
+    "_comment": "地政学Cross-Agent Intelligence API (/api/v1/geo-intelligence/query) 向けAPI Key。未設定の場合は開発環境とみなし認証をスキップする（本番では必ず設定すること）。Phase F: 文字列のみ（caller_app/caller_domain紐付け無し、後方互換）と、{key, caller_app, caller_domain}形式（推奨、Access Policyがcaller_domainを信頼できる根拠になる）を混在させてよい",
+    "api_keys": [
+      {"key": "ここにSustainability Agent用のAPIキーを入力", "caller_app": "sustainability_intelligence", "caller_domain": "sustainability"},
+      {"key": "ここにERM Agent用のAPIキーを入力", "caller_app": "erm_intelligence", "caller_domain": "erm"},
+      "ここに後方互換用の従来型APIキーを入力（caller_domain不明、agent_sharing_policy=allowed_cross_domain以外は既定でdenyされる）"
+    ]
+  },
+  "geo_ios": {
+    "_comment": "Phase I-A.1 SEC-2/SEC-3: IOS人間アクター操作（Approval/Review/Learning/Publication）向けのPilot-grade Identity。X-IOS-Credentialヘッダーで認証する。Broad Production用の最終RBACではなく、正式な社内認証基盤（Entra ID等）が導入されるまでのControlled Pilot専用trust boundary。未設定または空の場合、対象endpointは常に401を返す（自己申告roleへのフォールバックはしない——これがSEC-1/SEC-2の趣旨）。roleはgeo_role_guard.ROLESのいずれかである必要がある（viewer/analyst/expert_reviewer/knowledge_steward/approver/administrator）",
+    "identities": [
+      {"credential": "ここにApprover用のCredential文字列を入力", "identity_id": "pilot_approver", "role": "approver"},
+      {"credential": "ここにKnowledge Steward用のCredential文字列を入力", "identity_id": "pilot_knowledge_steward", "role": "knowledge_steward"}
+    ]
+  },
+  "sustainability_expert": {
+    "enabled": true,
+    "expert_version": "0.1.0",
+    "knowledge_search": {
+      "mode": "local",
+      "azure_ai_search": {
+        "endpoint": "https://YOUR-SEARCH-SERVICE.search.windows.net",
+        "api_key": "ここにAzure AI SearchのAPIキーを入力（modeがazure_ai_searchの場合のみ必要）",
+        "index_name": "suntory-sustainability-expert-v1"
+      },
+      "embedding_deployment": "（任意。ベクトル検索を使う場合のみAzure OpenAIのembeddingデプロイ名を入力）"
+    }
+  },
+  "weekly_digest": {
+    "since_days": 7,
+    "target_min": 15,
+    "target_max": 20
+  },
+  "competitor_monitoring": {
+    "enabled": true,
+    "auto_send_confidence_threshold": 0.85
+  },
+  "monthly_competitor_digest": {
+    "since_days": 30
+  },
+  "email": {
+    "enabled": false,
+    "smtp_host": "（例: 社内SMTPリレーのホスト名、またはsmtp.office365.com）",
+    "smtp_port": 587,
+    "use_starttls": true,
+    "smtp_user": "（認証が必要な場合のみ）",
+    "smtp_password": "（認証が必要な場合のみ）",
+    "from_address": "sustainability-report@example.com",
+    "to_addresses": ["recipient1@example.com", "recipient2@example.com"]
+  }
+}

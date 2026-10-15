@@ -1,0 +1,96 @@
+# 地政学インテリジェンスアプリのバック（API）を Azure Web App（Linux / Python 3.11）へデプロイする。
+# サステナアプリ（app-jp1-sjp-bn-susiq-002）で動いている方式に合わせている。
+#
+#  - 1サーバー構成（既定）: 画面（静的ビルド）もバックの成果物に含め、バックが画面と /api を同じサイトで配信する。
+#  - 2サーバー構成: 実行時に with_frontend を false にし、画面は deploy-azure-frontend.yml で別の Web App へ載せる。
+#
+#  - 実行は手動のみ（Actions タブ → Run workflow）。意図しない本番反映を防ぐため、pushでは動かない。
+#    （サステナアプリのように main への push で動かしたいときは、on: に push を足す）
+#  - Azure へのログインは「発行プロファイル」。Web App の「発行プロファイルのダウンロード」で取得した XML を、
+#    GitHub の Secrets に `azure_backend` という名前で登録しておく（コミットしない）。
+#  - 社内プロキシ環境のため、Azure（Oryxビルド）から PyPI へ届かない。そのためこのジョブで pip install を済ませ、
+#    仮想環境（antenv）ごとデプロイする。Web App 側では SCM_DO_BUILD_DURING_DEPLOYMENT を有効にしない
+#    （サステナアプリと同じ運用）。
+name: Deploy backend to Azure Web App
+
+on:
+  workflow_dispatch:
+    inputs:
+      with_frontend:
+        description: "画面（静的ビルド）もバックに含める（1サーバー構成）。2サーバー構成なら false"
+        type: boolean
+        default: true
+
+env:
+  # 対象の Web App 名。GitHub の Variables（GEO_BACKEND_APP_NAME）で変更できる
+  BACKEND_APP_NAME: ${{ vars.GEO_BACKEND_APP_NAME || 'app-jp1-sjp-bn-geo-002' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read # actions/checkout に必要
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js (frontend build)
+        if: ${{ inputs.with_frontend }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: eco-digest-spark/package-lock.json
+
+      - name: Build frontend (static / SPA)
+        if: ${{ inputs.with_frontend }}
+        working-directory: eco-digest-spark
+        env:
+          GEO_STATIC_BUILD: "1" # APIは同じサイト（相対パス）を見る
+        run: |
+          npm ci
+          npm run build
+
+      - name: Set up Python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Assemble deployment package
+        run: |
+          if [ "${{ inputs.with_frontend }}" = "true" ]; then
+            python deploy/geo_azure/build_package.py
+          else
+            python deploy/geo_azure/build_package.py --no-frontend
+          fi
+
+      # Azure側（Oryx）からPyPIへ届かないため、ここでパッケージを組み込み、antenv ごとデプロイする
+      - name: Create virtual environment and install dependencies
+        working-directory: build/azure_package
+        run: |
+          python -m venv antenv
+          source antenv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-app
+          path: build/azure_package
+          retention-days: 3
+          if-no-files-found: error
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v4
+        with:
+          name: python-app
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ env.BACKEND_APP_NAME }}
+          slot-name: Production
+          publish-profile: ${{ secrets.azure_backend }}

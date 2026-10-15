@@ -1,0 +1,1364 @@
+{
+  "case_id": "RUBIO_VANCE_ROLE_CHOREOGRAPHY",
+  "smoke_test": false,
+  "t0": "2026-02-16",
+  "t0_rationale": "M059返信日(2026-02-17)の前日。",
+  "actor_id": "blind_retrospective_diagnostic_rubio_vance_role_choreography",
+  "mode": "case_analysis",
+  "profile": "deep",
+  "execution_mode": "staged",
+  "query_text": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。",
+  "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+  "expert_request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+  "expert_response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22",
+  "elapsed_sec": 114.0,
+  "stage_a_full_response_json": {
+    "claims": [
+      {
+        "text": "2026年2月中旬、Rubio国務長官が欧米関係に関する発言を行い、そのニュース記事の件名が「Delicate Détente: Rubio Warns of \"Deindustralisation\" of the West」であったことが社内で共有されている。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "元記事本文は一次資料として保存されておらず、具体的な発言内容・訪問国・出席状況等は現時点では不明である。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "記事タイトルには「Delicate Détente（緊張緩和の綱渡り）」と「Rubio Warns of \"Deindustrialisation\" of the West（ルビオが西側の『脱工業化』を警告）」という二つの要素が含まれている。",
+        "claim_type": "observation",
+        "source_ref": null
+      },
+      {
+        "text": "Rubio国務長官の発言は、欧米間の緊張緩和局面（détente）において、産業基盤の弱体化が安全保障・同盟維持にとってリスクであると位置づける試みである可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "「脱工業化」警告は、対中・対ロ競争における西側の製造業・防衛産業基盤の脆弱性を念頭に置いたものか、あるいは欧州のエネルギー・環境政策や米国内の産業空洞化への批判を含む可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "仮にRubioが欧州訪問中の記者会見でこの発言をしたとすれば、欧州側に防衛産業投資やエネルギー政策の見直しを促すメッセージとして読める、というのは一つの説明例であり、現時点では仮想例に過ぎない。",
+        "claim_type": "illustration",
+        "source_ref": null
+      }
+    ],
+    "dynamics": "一次情報がないため、背景の力学は仮説レベルにとどまるが、一般的には次のような力学が想定される：①西側の産業基盤（製造業・防衛産業・エネルギー関連）が弱まると、対中・対ロ競争での交渉力・抑止力が低下し、米国としては同盟国に再工業化・防衛費増額を求めるインセンティブが生じる。②欧州側は環境政策・社会政策・財政制約から重工業・化石燃料依存を減らしたい一方、米国は安全保障上の観点から一定の産業能力維持を求める可能性があり、両者の間で「どの産業をどこまで維持するか」をめぐる力学が生じ得る。③Rubioの国内政治基盤（仮説）として、対中強硬・製造業・防衛産業・一部保守層があり得るため、「脱工業化」警告は国内向けにも響くメッセージとなり得る。",
+    "stakeholders": [
+      {
+        "actor": "Rubio国務長官",
+        "purpose": null,
+        "leverage": null,
+        "position": null,
+        "red_lines": null,
+        "confidence": "判断不能",
+        "constraints_fears": null,
+        "ability_to_move_or_block": "発言・訪問・共同声明を通じて欧州諸国や国内世論へシグナルを送り、議題設定や交渉条件の枠組みを動かすことができる。"
+      },
+      {
+        "actor": "欧州主要国政府・EU機関",
+        "purpose": "安全保障・エネルギー・産業政策のバランスを取りつつ、国内政治・財政制約の中で成長と安定を確保したい。",
+        "leverage": "防衛費・産業補助金・エネルギー政策を通じて産業基盤を強化する政策決定権、EUとしての規制・貿易政策。",
+        "position": "Rubioのような産業基盤警告に対して、防衛能力強化の必要性は認めつつも、環境政策・財政制約とのバランスを模索する立場にあると推測される。",
+        "priority": "短期的にはエネルギー安定・財政健全性、中期的には産業競争力と防衛能力の維持。",
+        "red_lines": "急激な防衛費増額や重工業回帰で環境目標を大幅に後退させること、EU内の産業政策調整なしに一国主義的な補助金競争に陥ること。",
+        "confidence": "判断不能",
+        "constraints_fears": "防衛費増額・産業補助金の拡大による財政負担、環境政策の後退への国内反発、対中・対ロ関係悪化による経済コスト。",
+        "key_relationships": "米国との安全保障同盟（NATO）、EU域内の産業政策協調、中国・ロシアとの経済関係。",
+        "ability_to_move_or_block": "欧州側が防衛産業投資・産業政策協調を進めれば主シナリオを強める一方、環境・財政制約を理由に産業基盤強化を限定すれば、Rubioの問題提起が政策に反映される度合いを弱める。"
+      }
+    ],
+    "main_scenario": {
+      "confidence": "低",
+      "assumptions": [
+        "ニュース件名はRubioの発言内容を大きく誤解させるような編集ではなく、実際に『脱工業化』を問題視する趣旨の発言があったと仮定している。",
+        "Rubioは国務長官として、安全保障・同盟維持の文脈で産業基盤を語っていると仮定し、純粋な経済統計上の技術用語としてのみ『脱工業化』を使っているわけではないとみなしている。",
+        "政権全体としても、対中・対ロ競争を念頭に産業基盤の重要性を一定程度共有していると仮定している（ただし確証はない）。"
+      ],
+      "description": "Rubio国務長官の「西側の脱工業化」警告は、西側主要国（米国・欧州）の製造業・防衛産業・エネルギー関連などの産業基盤の弱体化が、安全保障・同盟維持にとって構造的リスクになっているという問題提起であり、欧米双方に対して中長期的な再工業化・防衛産業強化・エネルギー政策見直しを促すシグナルとして機能している可能性が高い、と暫定的に読む。一次情報がないため確信度は低いが、企業が今後の展開を読むうえでは「産業基盤の安全保障化」が進むかどうかを主軸にモニタリングするシナリオとして採用する。",
+      "evidence_class": "model_general_knowledge",
+      "evidence_relevance": [],
+      "selection_rationale": "hypothesis_registerの中でH0（率直な産業基盤リスクの警告）は、ニュース件名から最も素直に導ける読みであり、追加の仮定が最も少ない。H1（交渉カード）、H2（国内Audience）、H4（フレーム転換）はいずれも成立し得るが、いずれもH0の上に乗る形で説明可能であり、一次情報がない現時点で主軸とするには仮定が多い。企業にとって意思決定関連性が高いのは、西側産業基盤の変化が安全保障・政策・市場にどう影響するかであり、その構造的リスクを中心に据えるH0を主シナリオとして採用するのが合理的。",
+      "supporting_evidence": [
+        "ニュース件名に『Rubio Warns of \"Deindustrialisation\" of the West』とあり、国務長官レベルが西側の産業基盤弱体化を警告していることが示唆されている点（as_of: 2026-02中旬、タイトルのみ）。",
+        "同じ件名に『Delicate Détente』とあり、欧米関係の緊張緩和プロセスと産業基盤の問題が同じ文脈で語られていることから、安全保障・同盟の条件として産業構造が位置づけられている可能性がある点。"
+      ],
+      "observable_indicators": [
+        "Rubioおよび米政権中枢による、今後の演説・記者会見での『脱工業化』『再工業化』『産業政策』『防衛産業基盤』などのキーワードの頻度と位置づけ。",
+        "米国・欧州双方で、防衛産業・重工業・エネルギー関連への投資・補助金・規制強化など、産業基盤強化を目的とする政策パッケージが安全保障・同盟の文脈で語られるかどうか。",
+        "対中・対ロ競争に関する文書・戦略の中で、産業基盤・サプライチェーン・技術規制が安全保障政策の中核要素として扱われるかどうか。"
+      ],
+      "historical_analogies_used": [
+        {
+          "same_actor": false,
+          "description": "冷戦期におけるNATO諸国の防衛産業・重工業基盤維持が、安全保障政策の一部として扱われた事例との類推。",
+          "same_domain": true,
+          "analogy_strength": "medium",
+          "same_constraints": false,
+          "same_leverage_mechanism": true,
+          "analogy_source_precedent_id": null,
+          "same_institutional_structure": true
+        }
+      ],
+      "derived_from_hypothesis_id": "H0",
+      "confidence_adjustment_reason": "主シナリオはニュースタイトルと一般的な安全保障・産業政策の知識に依拠しており、現在の具体的発言録・政策文書といったcurrent_direct_evidenceが欠落しているため、決定的処理によりconfidenceは『低』に制約される。",
+      "weakening_evidence_relevance": [],
+      "relevance_confidence_adjustment_reason": "唯一の直接根拠がニュースタイトルであり、本文・一次発言録が欠落しているため、決定的処理によりconfidenceは『低』に制約される。"
+    },
+    "business_impact": {
+      "direct": null,
+      "indirect": "現時点では構造的仮説にとどまるが、西側の『脱工業化』が安全保障・同盟の文脈で問題視され始めているとすれば、①防衛産業・重工業・エネルギー関連への政策的支援・規制強化、②対中・対ロを念頭に置いたサプライチェーン再編、③欧米間の産業政策協調（補助金・規制・貿易措置）の強化が進む可能性がある。これらは食品・消費財・サービス企業にとっても、エネルギー価格・物流・規制環境・技術投資の前提を変える間接影響となり得る。",
+      "unrelated_note": "一次情報がないため、現時点で自社への直接的な重大リスクを断定することはできない。Rubio発言は、産業基盤・安全保障・欧米関係の構造的議題設定として位置づけ、今後の政策・市場変化の前兆としてモニタリングする段階。",
+      "environment_change": "Rubioのような外交トップが産業基盤を安全保障の論点として語り始めているとすれば、今後数年にわたり『産業政策の安全保障化』が進み、環境政策・通商政策・技術規制が安全保障ロジックと結びつく環境変化が生じる可能性がある。企業は、産業政策・安全保障政策・環境政策の三者を別々ではなく一体として読む必要が高まる。"
+    },
+    "initial_anomaly": "国務長官レベルが「欧米関係」の文脈で、西側の『脱工業化』を警告している点。通常は財務・通商・産業政策の語彙であり、安全保障・外交トップが前面に出るのはやや異例で、産業構造の問題を安全保障・同盟の論点へ引き上げている可能性がある。",
+    "review_findings": null,
+    "audience_analysis": null,
+    "executive_summary": {
+      "what_changed": null,
+      "why_it_matters": null,
+      "what_to_watch_decide": null
+    },
+    "key_actor_profiles": [
+      {
+        "actor": "Rubio国務長官",
+        "red_line": null,
+        "actor_ref": "rubio_state",
+        "entity_id": null,
+        "confidence": "判断不能",
+        "event_role": {
+          "role_type": "signal",
+          "explanation": "記事タイトルから推測すると、この発言は欧米関係の『緊張緩和（détente）』局面において、産業基盤の弱体化リスクを同盟国・国内世論に認識させるためのシグナルとして機能している可能性がある。ただし本文がないため仮説にとどまる。",
+          "intended_target_actor_ref": null
+        },
+        "formal_role": "米国務長官として、米外交政策の遂行・同盟国との協議・安全保障上のシグナル発信を担う。",
+        "evidence_ids": null,
+        "decision_power": "外交・安全保障分野で大きな影響力を持つが、産業政策・通商政策の最終決定権は大統領・議会・関連省庁と共有。",
+        "driving_forces": [],
+        "perceived_path": null,
+        "ability_to_move": "発言・訪問・共同声明を通じて欧州諸国や国内世論へシグナルを送り、議題設定や交渉条件の枠組みを動かすことができる。",
+        "issue_objective": null,
+        "observed_action": "『西側の脱工業化』を警告する発言を行ったと報じられている（ただし本文不在のため具体的な文言・場面は不明）。",
+        "vulnerabilities": null,
+        "ability_to_block": "外交上の合意・共同声明・特定の協定の進行を遅らせたり、条件を厳しくすることで事実上ブロックする余地はあるが、産業政策そのものを単独で阻止する権限は限定的。",
+        "primary_audience": null,
+        "why_actor_matters": "Rubio国務長官は米外交の顔として、欧州諸国・NATO・EUとの関係を調整し、対中・対ロ戦略の文脈で産業政策や防衛産業基盤を安全保障の論点へ引き上げる役割を担い得る。今回の『脱工業化』警告が事実であれば、欧米関係の枠組みの中で産業構造問題をどのように位置づけるかを示す重要なシグナルとなり得る。",
+        "available_leverage": null,
+        "secondary_audience": null,
+        "ultimate_objective": null,
+        "actor_model_challenge": null,
+        "persistent_preference": null,
+        "preference_action_gap": null,
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": null,
+        "confidence_adjustment_reason": null,
+        "persistent_preference_change": null,
+        "actor_intelligence_provenance": {
+          "pattern_ids": [],
+          "profile_source": null,
+          "exception_episode_ids": [],
+          "general_knowledge_used": true,
+          "historical_episode_ids": [],
+          "supporting_evidence_ids": null,
+          "actor_intelligence_status": null
+        },
+        "persistent_preference_evidence": [],
+        "pattern_applicability_assessment": null,
+        "strategic_relationship_preference": null
+      }
+    ],
+    "root_premise_check": null,
+    "additional_research": [
+      {
+        "priority": "高",
+        "question": "Rubio国務長官の『脱工業化』発言の一次ソース（演説録・記者会見記録）を確認し、具体的な文言・文脈・対象産業を特定する。",
+        "rationale": "主シナリオの根拠となる事実が現時点で欠落しており、一次ソース確認が最優先。",
+        "related_hypothesis": "H0",
+        "recommended_sources": "米国務省公式サイトの発言録、主要国際会議の公式記録、共有されたニュース記事の本文。"
+      },
+      {
+        "priority": "中",
+        "question": "Rubioの過去発言から、産業基盤・対中競争・欧州政策に関するPersistent Preferenceを抽出する。",
+        "rationale": "交渉カード仮説や国内Audience仮説の蓋然性を評価するために必要。",
+        "related_hypothesis": "H1",
+        "recommended_sources": "議会証言、主要演説、インタビュー、シンクタンクでの講演記録。"
+      },
+      {
+        "priority": "中",
+        "question": "同時期の欧州側の政策・反応（防衛費・産業政策・エネルギー政策）を確認し、Rubio発言がどの程度影響・議題化しているかを把握する。",
+        "rationale": "発言が実際に欧米関係・産業政策協調の議題設定として機能しているかを検証する。",
+        "related_hypothesis": "H1",
+        "recommended_sources": "EU・主要欧州政府の公式発表、欧州主要紙の報道。"
+      },
+      {
+        "priority": null,
+        "question": "Rubio国務長官の『脱工業化』警告は、具体的にどの産業・どの地域・どの期間を念頭に置いているのか（防衛産業・エネルギー・一般製造業などの区別）。",
+        "rationale": "Key Point（西側産業基盤の弱体化が安全保障・同盟にどう影響するか）を読むために、Rubioが何を『脱工業化』と見なしているかの具体像が必要。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "この発言はどの場面（欧州訪問・国際会議・国内演説など）で行われ、同席していた欧州側の主要アクターは誰か。",
+        "rationale": "Audience・Driving Forceを特定し、欧米関係のどのノード（EU、NATO、特定国）に向けたシグナルかを判断するために必要。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "Rubio国務長官は過去に産業政策・製造業・対中経済競争についてどのような発言・行動を繰り返してきたか。",
+        "rationale": "Persistent Preference仮説（産業基盤重視か、財政保守か、対中強硬かなど）を構築し、今回の発言が一貫したパターンかどうかを検証するため。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      }
+    ],
+    "hypothesis_register": [
+      {
+        "reason": "記事タイトルから最も素直に読めるのは、『脱工業化』という構造問題への警告であり、これを安全保障・同盟の文脈に位置づける読み方である。一次情報がないため確信度は低いが、企業が今後の展開を読むうえで、産業基盤強化の政治的圧力が高まる可能性を念頭に置くことは合理的。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "Rubio国務長官は、西側の産業基盤の弱体化（脱工業化）が安全保障・同盟維持にとってリスクであると率直に警告しており、欧米双方に再工業化・防衛産業強化・エネルギー政策見直しを促すメッセージを発している。",
+        "hypothesis_id": "H0",
+        "hypothesis_type": "H0_straightforward",
+        "interaction_basis": {
+          "gap_note": "現時点ではRubioと特定の相手国・組織との具体的な相互作用に関するEvidenceがなく、仮説は構造要因と一般的な政治動機に基づく読み方にとどまる。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "タイトルの『Delicate Détente』から、何らかの緊張緩和プロセスが進む中で、Rubioが産業基盤を交渉条件として持ち出している可能性がある。これは、産業基盤強化そのものが目的というより、対中・対ロ抑止や同盟負担分担のための手段として位置づける読み方であり、今後の展開（防衛費・産業投資・エネルギー政策の交渉）を読むうえで有用な仮説となる。",
+        "status": "retained",
+        "confidence": "判断不能",
+        "description": "『脱工業化』警告は、対中・対ロ競争における西側の交渉力を高めるための手段であり、欧州に防衛費増額・産業投資・エネルギー政策の調整を求める交渉カードとして用いられている。",
+        "hypothesis_id": "H1",
+        "hypothesis_type": "H1_instrumental_indirect",
+        "interaction_basis": {
+          "gap_note": "Rubioが具体的にどの相手（欧州諸国・中国・ロシア・国内議会）に対して交渉カードとして『脱工業化』を持ち出しているかを示すEvidenceがなく、交渉カード仮説は現時点では検証不能。",
+          "actor_ref": null,
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "国務長官の発言はしばしば国内政治的Audienceも意識して行われる。Rubioが産業基盤を強調することで、対中強硬・製造業重視の立場を国内にアピールしている可能性はあり、企業にとっては米国内の産業政策・補助金・規制の方向性を読むうえで重要な仮説となる。ただし一次情報がなく、Audience特定は仮説にとどまる。",
+        "status": "retained",
+        "confidence": "判断不能",
+        "description": "『脱工業化』警告は表向きには欧米関係・同盟国向けに語られているが、実際には米国内の有権者・産業界・議会向けのメッセージであり、対中競争・製造業復活・防衛産業強化へのコミットメントを示すための国内向けシグナルである。",
+        "hypothesis_id": "H2",
+        "hypothesis_type": "H2_counterparty_audience_shift",
+        "interaction_basis": {
+          "gap_note": "Rubioの国内支持基盤・過去発言・米議会との関係に関するActor Intelligenceがなく、国内Audience仮説は一般的なパターンに基づく推測にとどまる。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "米国内の産業・雇用・ロビーの圧力が外交発言に影響することは一般的だが、Rubio個人の具体的な制約（選挙区・献金・支持団体）に関する情報がないため、この仮説は現時点では評価不能。今後の調査でRubioの国内政治基盤が明らかになれば、仮説の蓋然性を再評価できる。",
+        "status": "unresolved",
+        "confidence": "判断不能",
+        "description": "Rubioの『脱工業化』警告は、対外的には欧米関係の議題設定に見えるが、実際には米国内の産業空洞化・地域雇用・防衛産業ロビー・エネルギー政策などの国内制約が主因であり、それらへの対応圧力が発言を促している。",
+        "hypothesis_id": "H3",
+        "hypothesis_type": "H3_constraint_domestic_driver",
+        "interaction_basis": {
+          "gap_note": "Rubioの国内政治制約に関する具体的Evidenceがないため、国内制約主因仮説は現時点では未評価。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "国務長官が『脱工業化』を問題視すること自体が、従来の経済政策・環境政策のフレームに対する挑戦である可能性がある。企業にとっては、産業政策・環境政策・安全保障政策の三者がどのように再フレームされるかが中長期の戦略に影響するため、このフレーム転換仮説を念頭に置く価値はある。ただし、Rubioの過去発言・政権全体の方針との整合性を確認しない限り、確信度は低い。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "Rubioの『脱工業化』警告は、従来の『サービス経済化＝進歩』『脱炭素＝善』という西側の通説に対するフレーム転換の試みであり、産業基盤維持を安全保障・同盟の前提条件として再定義しようとしている。",
+        "hypothesis_id": "H4",
+        "hypothesis_type": "H4_frame_breaking",
+        "interaction_basis": {
+          "gap_note": "Rubioや政権全体が、他の場面でも同様のフレーム転換（産業基盤重視）を示しているかどうかのEvidenceがなく、今回の発言が一時的なものか構造的な転換かを判断できない。",
+          "actor_ref": null,
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      }
+    ],
+    "one_line_assessment": "Rubio国務長官の「西側の脱工業化」警告は、欧米関係・産業政策・対中競争・国内政治が交差する可能性のあるシグナルだが、現時点では記事タイトル以外の一次情報がなく、複数の仮説を列挙しつつ「何を見ればどの仮説が強まるか」を整理する段階にとどまる（as_of: 2026-02中旬時点のニュースタイトルのみを根拠）。",
+    "relevant_mechanisms": [],
+    "relevant_precedents": [],
+    "key_point_assessment": {
+      "confidence": "低",
+      "control_type": "structural",
+      "evidence_class": "model_general_knowledge",
+      "focus_selection": {
+        "why_now": "Rubioの発言が、単なる産業政策論ではなく欧米関係・安全保障の文脈で語られている可能性があり、産業基盤を上位目的（安全保障・同盟維持）の手段として読む必要がある。また、Rubio自身や欧州側の行動を、単なる『保守』『環境派』といったラベルではなく、産業・雇用・対中競争と結びつけて読むために、behavior_driving_forceのレンズが有効。",
+        "trigger_types": [
+          "higher_order_objective",
+          "behavior_driving_force"
+        ],
+        "decision_sensitive_outcome": "このKey Pointを採用するかどうかで、企業が注視すべきものが『短期的な外交イベント』なのか、『中長期的な産業基盤・防衛産業・エネルギー政策の変化』なのかが変わる。構造リスクを主軸にすると、投資・サプライチェーン・技術戦略の見直しが意思決定上の焦点になる。",
+        "discriminating_observation": null
+      },
+      "hinge_structure": {
+        "primary_hinge": "西側主要国（米国・欧州）の製造業・防衛産業・エネルギー関連産業の能力・投資水準が、今後5〜10年でどの程度維持・再構築されるか。",
+        "secondary_hinges": [
+          "対中・対ロ競争の強度（安全保障環境の悪化が産業基盤強化を促すかどうか）",
+          "環境・エネルギー政策の方向性（脱炭素と産業維持のバランス）",
+          "欧米間の産業政策協調（補助金・規制・貿易措置の整合性）"
+        ]
+      },
+      "primary_key_point": "西側の産業基盤の弱体化が、安全保障・同盟維持にとって構造的リスクになっているという問題提起。",
+      "evidence_relevance": null,
+      "rejected_candidates": [
+        {
+          "key_point": "欧米関係における『緊張緩和（détente）』の進行と、そのもろさ。",
+          "why_not_primary": "détenteの具体的内容（どの合意・どの緊張緩和か）が不明であり、現時点では構造的な産業基盤リスクよりも抽象度が高く、企業の意思決定に直結する論点としては優先度を下げた。"
+        },
+        {
+          "key_point": "Rubio国務長官の国内政治・対中競争文脈における『産業基盤』メッセージ。",
+          "why_not_primary": "Rubio個人のPersistent Preferenceや国内政治基盤に関する一次情報がなく、仮説の自由度が高すぎるため、現時点では補助的な読み方にとどめ、構造的な産業基盤リスクを主軸とした。"
+        }
+      ],
+      "selection_rationale": "記事タイトルから確実に読み取れるのは『脱工業化』という構造的なキーワードであり、具体的なdétenteの中身やRubio個人の動機は一次情報なしには特定できない。一方、企業にとって意思決定関連性が高いのは、西側産業基盤の変化が安全保障・政策・市場にどう影響するかであり、この構造的リスクをPrimary Focusに置くことで、今後の展開を読む際に「どの産業・どの地域の工業能力が問題になるか」を軸に整理できる。",
+      "candidate_key_points": [
+        {
+          "key_point": "西側の産業基盤（製造業・防衛産業・エネルギー関連）の弱体化が、安全保障・同盟維持にとって構造的リスクになっているという問題提起。",
+          "control_type": "structural",
+          "what_it_explains": "なぜ外交トップが産業構造の問題を取り上げるのか、という違和感を『安全保障上の構造リスク』として説明できる。",
+          "why_it_could_be_key": "『脱工業化』という語は産業構造の変化を指すが、これを国務長官が語る場合、安全保障・同盟の持続可能性と結びつけている可能性が高い。今後の展開を読むうえで、どの産業がどの程度弱体化しているかが重要な蝶番となり得る。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "Rubio個人の政治的動機や、具体的にどの政策変更を狙っているかまでは説明できない。",
+          "control_structure_summary": "エネルギー価格・技術革新・環境規制・投資動向・人口構造など、複数の構造要因が西側の産業基盤を規定しており、単一の政治アクターの意思では左右しきれない。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "欧米関係における『緊張緩和（détente）』の進行と、そのもろさ。",
+          "control_type": "mixed",
+          "what_it_explains": "なぜ『脱工業化』警告が『緊張緩和』と同じタイトルに並んでいるのか、という構成を、détenteの条件として産業基盤が取り上げられていると読むことができる。",
+          "why_it_could_be_key": "タイトルの『Delicate Détente』は、何らかの緊張緩和プロセスが進んでいるが、それが脆弱であることを示唆している。産業基盤の問題がこのdétenteを支える／脅かす条件になっている可能性がある。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "どの具体的な合意・緊張緩和プロセス（例：防衛費、制裁緩和など）を指しているかは不明。",
+          "control_structure_summary": "détenteの進行は、米欧双方の外交判断・安全保障環境・第三国（中国・ロシアなど）の行動に依存し、複数アクターの相互作用によって決まる。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "Rubio国務長官の国内政治・対中競争文脈における『産業基盤』メッセージ。",
+          "control_type": "unknown",
+          "what_it_explains": "なぜ外交トップが産業構造を語るのかを、国内政治的なメッセージ（対中強硬・製造業重視）として説明できる。",
+          "why_it_could_be_key": "米国内では製造業復活・対中サプライチェーン分断・防衛産業強化が政治的争点となっており、国務長官の発言は国内向けメッセージとしても機能し得る。今後の展開を読むうえで、Rubioの国内政治的立場が重要な蝶番となる可能性がある。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "欧州側の受け止めや、具体的な政策変更（関税・補助金・防衛産業投資など）への接続は説明しきれない。",
+          "control_structure_summary": "Rubio本人の政治的選好・支持基盤・政権内力学が発言内容を左右するが、産業政策の最終決定は議会・大統領・関連省庁に分散している。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+          "historical_supporting_evidence_ids": null
+        }
+      ],
+      "disconfirming_signal": "Rubioや他の主要アクターが、今後の発言・政策で『脱工業化』を問題視せず、むしろサービス経済化・デジタル化を安全保障上も望ましい方向として一貫して肯定する場合、この局面を『産業基盤の構造リスク』として読むKey Point設定は誤りだったと判断する必要がある。",
+      "controlling_entity_ids": null,
+      "supporting_evidence_ids": null,
+      "control_structure_summary": "産業基盤の強弱は、個々の政治家の発言よりも、長期的な投資・技術・規制・市場構造に依存するため、構造要因が支配的なKey Pointとみなせる。Rubioの発言はこの構造問題を外交・安全保障の議題へ引き上げる試みとして位置づけられる。",
+      "supporting_knowledge_refs": null,
+      "contradicting_evidence_ids": null,
+      "confidence_adjustment_reason": null,
+      "control_type_adjustment_reason": null,
+      "historical_supporting_evidence_ids": null,
+      "relevance_confidence_adjustment_reason": null
+    },
+    "media_source_context": null,
+    "unknown_or_uncertain": "Rubio発言の具体的内容・場面・対象Audience、欧州側の反応、政権全体の方針との整合性など、分析に必要な一次情報がほぼ全て欠落しているため、現時点の見立ては仮説レベルにとどまり、確信度は低い。",
+    "alternative_scenarios": [
+      {
+        "confidence": "判断不能",
+        "description": "『脱工業化』警告は、対中・対ロ競争における西側の交渉力を高めるための手段であり、欧州に防衛費増額・産業投資・エネルギー政策の調整を求める交渉カードとして用いられている（H1）。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "Rubio発言の一次ソース確認により、産業基盤の問題提起が明確に交渉条件・要求事項として位置づけられていることが分かれば、主シナリオ（構造リスクの率直な警告）から交渉カードシナリオへ重心を移す。"
+        ],
+        "weakening_conditions": [
+          "Rubio発言が、特定の交渉文脈ではなく一般的な講演・インタビューでの抽象的コメントにとどまり、具体的な政策要求と結びついていないことが判明する。"
+        ],
+        "strengthening_conditions": [
+          "Rubio発言が、具体的な交渉・会議（NATO首脳会議、EUとの戦略対話など）の場で行われ、同時に防衛費・産業投資・エネルギー政策に関する具体的要求が提示されていることが確認される。",
+          "欧州側の反応として、防衛費増額・産業政策見直しがRubio発言と結びつけて議論されている。"
+        ],
+        "derived_from_hypothesis_id": "H1",
+        "confidence_adjustment_reason": null
+      },
+      {
+        "confidence": "判断不能",
+        "description": "『脱工業化』警告は表向きには欧米関係・同盟国向けに語られているが、実際には米国内の有権者・産業界・議会向けのメッセージであり、対中競争・製造業復活・防衛産業強化へのコミットメントを示すための国内向けシグナルである（H2）。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "Rubioの国内政治基盤・過去発言の分析により、産業基盤メッセージが一貫して国内Audience向けに用いられていることが明らかになれば、主シナリオに国内シグナル要素を強く組み込む。"
+        ],
+        "weakening_conditions": [
+          "Rubio発言が国内ではほとんど注目されず、主に欧州メディア・外交文脈でのみ扱われていることが確認される。"
+        ],
+        "strengthening_conditions": [
+          "Rubio発言が国内メディア・議会・産業界で大きく取り上げられ、対中競争・製造業復活・防衛産業強化の文脈で評価されている。",
+          "Rubioや政権が、同時期に国内向けの産業政策（補助金・税制・規制）を打ち出し、その正当化に『脱工業化』警告を用いている。"
+        ],
+        "derived_from_hypothesis_id": "H2",
+        "confidence_adjustment_reason": null
+      },
+      {
+        "confidence": "低",
+        "description": "Rubioの『脱工業化』警告は、従来の『サービス経済化＝進歩』『脱炭素＝善』という西側の通説に対するフレーム転換の試みであり、産業基盤維持を安全保障・同盟の前提条件として再定義しようとしている（H4）。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "複数の発言・政策文書から、産業基盤維持が安全保障・同盟の前提条件として体系的に位置づけられていることが確認されれば、主シナリオを『構造リスクの率直な警告』から『フレーム転換の進行』へ格上げする。"
+        ],
+        "weakening_conditions": [
+          "Rubio発言が一時的なものにとどまり、その後の政策・発言で政権が従来のサービス経済化・脱炭素路線を安全保障上も問題ないと繰り返し肯定している。"
+        ],
+        "strengthening_conditions": [
+          "Rubioや政権全体が、他の場面でも産業基盤維持を環境政策・通商政策より優先するような発言・政策を繰り返し、既存の政策フレームを明示的に批判している。",
+          "戦略文書・ドクトリンの中で、『産業政策の安全保障化』が明確な方針として打ち出される。"
+        ],
+        "derived_from_hypothesis_id": "H4",
+        "confidence_adjustment_reason": null
+      }
+    ],
+    "discretion_assessment": {
+      "mode_rationale": "Rubioの発言内容・タイミングは政治的裁量に依存する一方、実際の『脱工業化』の進行や産業構造の変化は市場・技術・規制・エネルギー価格など構造要因に強く規定されるため、局面は人間の裁量と構造要因が併存するとみなすのが妥当。",
+      "discretion_mode": "MIXED"
+    },
+    "monitoring_indicators": [
+      "Rubio国務長官および米政権中枢による、産業基盤・防衛産業・エネルギー政策に関する追加発言（特に『脱工業化』『再工業化』『産業政策』などのキーワード）。",
+      "欧州側（EU・主要国）の防衛費・産業政策・エネルギー政策に関する新方針（防衛産業投資、産業補助金、エネルギー転換の見直し）。",
+      "対中・対ロ競争の文脈で、産業基盤・サプライチェーン・技術規制が安全保障政策と結びつけられる動き（輸出管理・投資規制・産業補助金など）。"
+    ],
+    "retraction_conditions": [
+      "Rubioの発言全文が確認され、『脱工業化』という語が文脈上ごく限定的な技術的論点（例：特定産業の統計上の用語）に過ぎないことが判明した場合。",
+      "政権全体やRubio本人が、その後の政策・発言で産業基盤維持を重視せず、むしろサービス経済化・脱炭素を安全保障上も問題ないと繰り返し表明する場合。"
+    ],
+    "sources_and_citations": [],
+    "weakening_information": "Rubioが他の場面で『サービス経済化』『脱炭素』を安全保障上も望ましい方向として一貫して肯定しているEvidenceが見つかれば、『脱工業化』警告を構造的リスクの問題提起と見る主シナリオは弱まる。",
+    "contradicting_evidence": null,
+    "directional_perceptions": null,
+    "expert_reasoning_checks": {
+      "feasibility_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      },
+      "role_choreography_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      },
+      "capability_vs_intent_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      },
+      "premise_invalidation_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      }
+    },
+    "investigation_questions": [
+      {
+        "question": "Rubio国務長官の『脱工業化』警告は、具体的にどの産業・どの地域・どの期間を念頭に置いているのか（防衛産業・エネルギー・一般製造業などの区別）。",
+        "rationale": "Key Point（西側産業基盤の弱体化が安全保障・同盟にどう影響するか）を読むために、Rubioが何を『脱工業化』と見なしているかの具体像が必要。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "この発言はどの場面（欧州訪問・国際会議・国内演説など）で行われ、同席していた欧州側の主要アクターは誰か。",
+        "rationale": "Audience・Driving Forceを特定し、欧米関係のどのノード（EU、NATO、特定国）に向けたシグナルかを判断するために必要。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "Rubio国務長官は過去に産業政策・製造業・対中経済競争についてどのような発言・行動を繰り返してきたか。",
+        "rationale": "Persistent Preference仮説（産業基盤重視か、財政保守か、対中強硬かなど）を構築し、今回の発言が一貫したパターンかどうかを検証するため。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      }
+    ],
+    "identified_knowledge_gaps": [
+      {
+        "priority": "高",
+        "description": "Rubio国務長官の具体的発言内容（引用）、場面（訪問国・会議名）、同席者、質問とのやり取り。",
+        "gap_category": "deterministic",
+        "recommended_action": "元記事本文または一次ソース（演説録・記者会見記録）を入手し、発言の文脈と正確な文言を確認する。"
+      },
+      {
+        "priority": "中",
+        "description": "Rubioの過去の産業政策・対中競争・欧州政策に関する発言・行動パターン。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "過去数年の演説・議会証言・インタビューをレビューし、Persistent Preference仮説を構築する。"
+      },
+      {
+        "priority": "中",
+        "description": "欧州側（EU・主要国）の同時期の反応・政策動向（防衛費・産業政策・エネルギー政策）と、この発言との関連。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "同時期の欧州メディア・政府発表を確認し、Rubio発言がどの程度議題化・反発・支持を受けたかを把握する。"
+      }
+    ],
+    "knowledge_gaps_referenced": [],
+    "strongest_counterargument": "Rubioの発言は、実際にはごく限定的な文脈（例えば特定統計指標の説明や、欧州の一部政策への技術的コメント）で『脱工業化』という語を用いただけであり、西側全体の産業基盤を安全保障上の構造リスクとして再定義する意図はなかった可能性がある。その場合、本件を『産業基盤の安全保障化』のシグナルとして読むこと自体が過剰解釈となる。",
+    "human_interaction_coverage": {
+      "status_rationale": "記事タイトル以外の一次情報がなく、Rubioと欧州側・国内アクターとの具体的な相互作用や認識のズレを評価する根拠が不足しているため、Directional PerceptionやSituation Actor Assessmentを現時点で根拠付きで構築することは難しい。",
+      "interaction_status": "INSUFFICIENT_EVIDENCE"
+    },
+    "key_actor_action_substance": [
+      {
+        "actor_ref": "rubio_state",
+        "action_substance": {
+          "assessment": "現時点では発言の存在のみが示唆されており、具体的な政策措置は不明。Signalとしては産業基盤を安全保障の議題へ引き上げる試みと読めるが、Substance（具体的な政策強度）は確認できない。",
+          "discretion": null,
+          "evidence_ids": null,
+          "target_scope": null,
+          "stated_signal": "西側の産業基盤の弱体化（脱工業化）が安全保障・同盟維持にとって問題であるという警告（仮説）。",
+          "concrete_measure": null,
+          "enforcement_status": null,
+          "implementation_status": null,
+          "legal_or_policy_force": null
+        }
+      }
+    ],
+    "key_stakeholder_assessment": {
+      "rationale": "記事タイトルから唯一特定できる主体はRubio国務長官であり、発言の内容・トーン・場面設定は彼の裁量に大きく依存する。一方、欧米関係や産業政策の最終決定権は各国政府・議会・産業界に分散しているが、今回の局面（発言というEvent）を「動かす／止める」主体としてはRubio本人がKey Stakeholderとみなすのが自然である。",
+      "confidence": "低",
+      "evidence_ids": null,
+      "determination": "single",
+      "decision_structure": "欧米関係全体の意思決定は米政権中枢・欧州各国政府・EU機関などに分散しているが、今回のニュースが示すのはRubioの発言であり、その内容・タイミング・場面設定は国務長官の政治的判断と政権内調整に依存する構造とみなせる。",
+      "selected_actor_ids": [
+        "rubio_state"
+      ]
+    },
+    "situation_actor_assessment": null,
+    "decisive_power_and_leverage": null,
+    "assets_dependencies_leverage": [],
+    "preference_action_gap_summary": null
+  },
+  "stage_bd_ranked_candidates": [
+    {
+      "scenario_candidate_id": "5b309657-b4fe-435f-94eb-56336d723c69",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 1,
+      "title": "Rubio国務長官の「西側の脱工業化」警告は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "ニュース件名はRubioの発言内容を大きく誤解させるような編集ではなく、実際に『脱工業化』を問題視する趣旨の発言があったと仮定している。",
+            "Rubioは国務長官として、安全保障・同盟維持の文脈で産業基盤を語っていると仮定し、純粋な経済統計上の技術用語としてのみ『脱工業化』を使っているわけではないとみなしている。",
+            "政権全体としても、対中・対ロ競争を念頭に産業基盤の重要性を一定程度共有していると仮定している（ただし確証はない）。"
+          ],
+          "description": "Rubio国務長官の「西側の脱工業化」警告は、西側主要国（米国・欧州）の製造業・防衛産業・エネルギー関連などの産業基盤の弱体化が、安全保障・同盟維持にとって構造的リスクになっているという問題提起であり、欧米双方に対して中長期的な再工業化・防衛産業強化・エネルギー政策見直しを促すシグナルとして機能している可能性が高い、と暫定的に読む。一次情報がないため確信度は低いが、企業が今後の展開を読むうえでは「産業基盤の安全保障化」が進むかどうかを主軸にモニタリングするシナリオとして採用する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerの中でH0（率直な産業基盤リスクの警告）は、ニュース件名から最も素直に導ける読みであり、追加の仮定が最も少ない。H1（交渉カード）、H2（国内Audience）、H4（フレーム転換）はいずれも成立し得るが、いずれもH0の上に乗る形で説明可能であり、一次情報がない現時点で主軸とするには仮定が多い。企業にとって意思決定関連性が高いのは、西側産業基盤の変化が安全保障・政策・市場にどう影響するかであり、その構造的リスクを中心に据えるH0を主シナリオとして採用するのが合理的。",
+          "supporting_evidence": [
+            "ニュース件名に『Rubio Warns of \"Deindustrialisation\" of the West』とあり、国務長官レベルが西側の産業基盤弱体化を警告していることが示唆されている点（as_of: 2026-02中旬、タイトルのみ）。",
+            "同じ件名に『Delicate Détente』とあり、欧米関係の緊張緩和プロセスと産業基盤の問題が同じ文脈で語られていることから、安全保障・同盟の条件として産業構造が位置づけられている可能性がある点。"
+          ],
+          "observable_indicators": [
+            "Rubioおよび米政権中枢による、今後の演説・記者会見での『脱工業化』『再工業化』『産業政策』『防衛産業基盤』などのキーワードの頻度と位置づけ。",
+            "米国・欧州双方で、防衛産業・重工業・エネルギー関連への投資・補助金・規制強化など、産業基盤強化を目的とする政策パッケージが安全保障・同盟の文脈で語られるかどうか。",
+            "対中・対ロ競争に関する文書・戦略の中で、産業基盤・サプライチェーン・技術規制が安全保障政策の中核要素として扱われるかどうか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": false,
+              "description": "冷戦期におけるNATO諸国の防衛産業・重工業基盤維持が、安全保障政策の一部として扱われた事例との類推。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": "主シナリオはニュースタイトルと一般的な安全保障・産業政策の知識に依拠しており、現在の具体的発言録・政策文書といったcurrent_direct_evidenceが欠落しているため、決定的処理によりconfidenceは『低』に制約される。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": "唯一の直接根拠がニュースタイトルであり、本文・一次発言録が欠落しているため、決定的処理によりconfidenceは『低』に制約される。"
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "hypothesis_registerの中でH0（率直な産業基盤リスクの警告）は、ニュース件名から最も素直に導ける読みであり、追加の仮定が最も少ない。H1（交渉カード）、H2（国内Audience）、H4（フレーム転換）はいずれも成立し得るが、いずれもH0の上に乗る形で説明可能であり、一次情報がない現時点で主軸とするには仮定が多い。企業にとって意思決定関連性が高いのは、西側産業基盤の変化が安全保障・政策・市場にどう影響するかであり、その構造的リスクを中心に据えるH0を主シナリオとして採用するのが合理的。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "62dc2f15-589a-4a59-bf57-5ac9696250d5",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 2,
+      "title": "『脱工業化』警告は",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "『脱工業化』警告は、対中・対ロ競争における西側の交渉力を高めるための手段であり、欧州に防衛費増額・産業投資・エネルギー政策の調整を求める交渉カードとして用いられている（H1）。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "Rubio発言の一次ソース確認により、産業基盤の問題提起が明確に交渉条件・要求事項として位置づけられていることが分かれば、主シナリオ（構造リスクの率直な警告）から交渉カードシナリオへ重心を移す。"
+          ],
+          "weakening_conditions": [
+            "Rubio発言が、特定の交渉文脈ではなく一般的な講演・インタビューでの抽象的コメントにとどまり、具体的な政策要求と結びついていないことが判明する。"
+          ],
+          "strengthening_conditions": [
+            "Rubio発言が、具体的な交渉・会議（NATO首脳会議、EUとの戦略対話など）の場で行われ、同時に防衛費・産業投資・エネルギー政策に関する具体的要求が提示されていることが確認される。",
+            "欧州側の反応として、防衛費増額・産業政策見直しがRubio発言と結びつけて議論されている。"
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "この分岐が有力になる条件: Rubio発言の一次ソース確認により、産業基盤の問題提起が明確に交渉条件・要求事項として位置づけられていることが分かれば、主シナリオ（構造リスクの率直な警告）から交渉カードシナリオへ重心を移す。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "1f623063-998d-4a9c-a63f-6484227aa28f",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 3,
+      "title": "『脱工業化』警告は表向きには欧米関係・同盟国向けに語られているが",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "『脱工業化』警告は表向きには欧米関係・同盟国向けに語られているが、実際には米国内の有権者・産業界・議会向けのメッセージであり、対中競争・製造業復活・防衛産業強化へのコミットメントを示すための国内向けシグナルである（H2）。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "Rubioの国内政治基盤・過去発言の分析により、産業基盤メッセージが一貫して国内Audience向けに用いられていることが明らかになれば、主シナリオに国内シグナル要素を強く組み込む。"
+          ],
+          "weakening_conditions": [
+            "Rubio発言が国内ではほとんど注目されず、主に欧州メディア・外交文脈でのみ扱われていることが確認される。"
+          ],
+          "strengthening_conditions": [
+            "Rubio発言が国内メディア・議会・産業界で大きく取り上げられ、対中競争・製造業復活・防衛産業強化の文脈で評価されている。",
+            "Rubioや政権が、同時期に国内向けの産業政策（補助金・税制・規制）を打ち出し、その正当化に『脱工業化』警告を用いている。"
+          ],
+          "derived_from_hypothesis_id": "H2",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "この分岐が有力になる条件: Rubioの国内政治基盤・過去発言の分析により、産業基盤メッセージが一貫して国内Audience向けに用いられていることが明らかになれば、主シナリオに国内シグナル要素を強く組み込む。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "fb511997-1a60-4f7c-9588-07f35b2102e6",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 4,
+      "title": "Rubioの『脱工業化』警告は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "Rubioの『脱工業化』警告は、従来の『サービス経済化＝進歩』『脱炭素＝善』という西側の通説に対するフレーム転換の試みであり、産業基盤維持を安全保障・同盟の前提条件として再定義しようとしている（H4）。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "複数の発言・政策文書から、産業基盤維持が安全保障・同盟の前提条件として体系的に位置づけられていることが確認されれば、主シナリオを『構造リスクの率直な警告』から『フレーム転換の進行』へ格上げする。"
+          ],
+          "weakening_conditions": [
+            "Rubio発言が一時的なものにとどまり、その後の政策・発言で政権が従来のサービス経済化・脱炭素路線を安全保障上も問題ないと繰り返し肯定している。"
+          ],
+          "strengthening_conditions": [
+            "Rubioや政権全体が、他の場面でも産業基盤維持を環境政策・通商政策より優先するような発言・政策を繰り返し、既存の政策フレームを明示的に批判している。",
+            "戦略文書・ドクトリンの中で、『産業政策の安全保障化』が明確な方針として打ち出される。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 複数の発言・政策文書から、産業基盤維持が安全保障・同盟の前提条件として体系的に位置づけられていることが確認されれば、主シナリオを『構造リスクの率直な警告』から『フレーム転換の進行』へ格上げする。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "47a213ac-42d6-45d5-8ce0-a9da8ab110c7",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 5,
+      "title": "「緊張緩和の綱渡り」としての危機管理メッセージ：デタント維持のための警告として読む",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "「緊張緩和の綱渡り」としての危機管理メッセージ：デタント維持のための警告として読む",
+          "key_cue": "件名にある「Delicate Détente（緊張緩和の綱渡り）」という表現と、『脱工業化』警告が同じタイトルに並置されている点。",
+          "reading": "Rubioの『脱工業化』警告は、対中・対ロとの軍事的緊張を一定程度抑えた「デタント」を維持するために、西側内部の産業・供給網の脆弱性を是正せよという危機管理メッセージであり、外部脅威よりも「デタントを支える西側の持久力不足」を主因とみる読み方である。",
+          "switch_condition": "Rubioや国務省関係者が『長期的な対中・対ロ競合を持続可能にするために、西側の産業・エネルギー基盤を強化する必要がある』と明示的に語る、あるいはデタント維持と産業政策を結びつける発言・文書が出てくれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "タイトルが『デタント』と『脱工業化』を同時に強調しており、産業基盤の問題が単なる経済論ではなく、緊張緩和の持続可能性に直結する論点として扱われている可能性が高い。",
+            "Rubioの立場（国務長官）からすれば、軍事的抑止と外交的緊張緩和の両立には、長期的な経済・産業の持久力が不可欠という認識が自然であり、産業基盤の弱体化を「デタントの足元を崩す要因」として警告していると読むことができる。",
+            "『脱工業化』という言葉は、単に製造業の減少だけでなく、エネルギー・防衛・重要インフラの国内能力低下を含意し得るため、長期的な対立・競合局面での「疲弊」「交渉力低下」を招き、結果としてデタント維持が困難になるという因果構造が想定しやすい。",
+            "タイトルのニュアンス（綱渡り）から、現状の緊張緩和が不安定であり、少しのショックで再び対立が激化し得るという危機感が示唆されており、そのショック要因として西側内部の産業・供給網の脆弱性が意識されている可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "一次資料がなく、Rubioが実際に『デタント』と産業基盤をどのように結びつけて語ったかが不明であり、タイトル作成者の編集的解釈に過ぎない可能性がある。",
+            "Rubioの発言が、対中・対ロとの緊張緩和ではなく、むしろ対立強化・デカップリングを志向する文脈で行われていた場合、この読みは外れる。",
+            "『脱工業化』が主に国内経済・雇用・政治的ポピュリズムの文脈で語られているだけで、外交的デタントとの関連付けが弱い可能性もある。"
+          ],
+          "key_actors_and_structure": "Rubio国務長官を含む米外交・安全保障当局、西側同盟国政府、対中・対ロ関係における軍事バランスと経済・産業の持久力、供給網・エネルギー・防衛産業を含む「デタントを支える構造」。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "Rubio国務長官を含む米外交・安全保障当局、西側同盟国政府、対中・対ロ関係における軍事バランスと経済・産業の持久力、供給網・エネルギー・防衛産業を含む「デタントを支える構造」。",
+        "confidence": null,
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "着眼点: 件名にある「Delicate Détente（緊張緩和の綱渡り）」という表現と、『脱工業化』警告が同じタイトルに並置されている点。\n支持する理由: タイトルが『デタント』と『脱工業化』を同時に強調しており、産業基盤の問題が単なる経済論ではなく、緊張緩和の持続可能性に直結する論点として扱われている可能性が高い。 / Rubioの立場（国務長官）からすれば、軍事的抑止と外交的緊張緩和の両立には、長期的な経済・産業の持久力が不可欠という認識が自然であり、産業基盤の弱体化を「デタントの足元を崩す要因」として警告していると読むことができる。 / 『脱工業化』という言葉は、単に製造業の減少だけでなく、エネルギー・防衛・重要インフラの国内能力低下を含意し得るため、長期的な対立・競合局面での「疲弊」「交渉力低下」を招き、結果としてデタント維持が困難になるという因果構造が想定しやすい。 / タイトルのニュアンス（綱渡り）から、現状の緊張緩和が不安定であり、少しのショックで再び対立が激化し得るという危機感が示唆されており、そのショック要因として西側内部の産業・供給網の脆弱性が意識されている可能性がある。\n弱める情報: 一次資料がなく、Rubioが実際に『デタント』と産業基盤をどのように結びつけて語ったかが不明であり、タイトル作成者の編集的解釈に過ぎない可能性がある。 / Rubioの発言が、対中・対ロとの緊張緩和ではなく、むしろ対立強化・デカップリングを志向する文脈で行われていた場合、この読みは外れる。 / 『脱工業化』が主に国内経済・雇用・政治的ポピュリズムの文脈で語られているだけで、外交的デタントとの関連付けが弱い可能性もある。\n切替条件: Rubioや国務省関係者が『長期的な対中・対ロ競合を持続可能にするために、西側の産業・エネルギー基盤を強化する必要がある』と明示的に語る、あるいはデタント維持と産業政策を結びつける発言・文書が出てくれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "3158f688-f831-4602-b625-c1eb3429038a",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 6,
+      "title": "『脱工業化＝弱体化』という前提への懐疑：むしろ選択的再編・ハイエンド化の圧力として読む",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "『脱工業化＝弱体化』という前提への懐疑：むしろ選択的再編・ハイエンド化の圧力として読む",
+          "key_cue": "タイトルが『脱工業化』を警告として扱う一方で、本文が不明なため、実際には「どの産業の脱却」を問題視しているかが特定できない点。",
+          "reading": "Rubioの警告は、西側の産業基盤が単純に「縮小」しているというより、低付加価値・高環境負荷の領域からの意図的な退出と、ハイエンド防衛・先端製造・クリーンエネルギーへの再編が進む中で、その移行の政治・社会的コストを警告している可能性があり、『脱工業化＝一律の弱体化』という前提を反転させて読む。",
+          "switch_condition": "Rubioの発言要旨や後続の政策文書で、『脱工業化』と同時に『選択的再工業化』『ハイエンド防衛・クリーンテックへの集中』『環境目標との両立』といったキーワードが並び、特定セクターの退出と他セクターの強化を対比して語る記述が確認されれば、この読みが有力になる。",
+          "supporting_reasons": [
+            "『脱工業化』という言葉は一般にネガティブだが、現実の政策では、環境負荷の高い旧来型産業からの退出と、デジタル・グリーン・防衛などへの再編が同時進行しており、Rubioが問題視しているのは「量的縮小」ではなく「質的再編の不均衡」かもしれない。",
+            "タイトルに『Delicate Détente』とあることから、Rubioがバランスの難しさ（安全保障・環境・経済・社会のトレードオフ）を強調している可能性があり、単純な『工場が減る＝悪』という話ではなく、再編過程の不安定性を警告している読みが成立する。",
+            "国務長官という立場からすれば、産業構造の変化は同盟国との役割分担・サプライチェーン再設計・対外メッセージに直結するため、『脱工業化』をきっかけに、どの分野を国内に残し、どこを同盟国・パートナーに委ねるかという戦略的再編を促す文脈で語っている可能性がある。",
+            "一次情報がないため、件名作成者が『脱工業化』を象徴的に用いているだけで、Rubio自身は「選択的再工業化」「戦略的産業再配置」といったニュアンスを強調していた可能性を排除できない。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "タイトルが『警告』と明示しているため、Rubioが『脱工業化』を基本的にネガティブな現象として捉えている可能性が高く、選択的再編を前提としたニュアンスは弱いかもしれない。",
+            "一次資料がない状況で、『脱工業化』を質的再編のメタファーと読むのは仮定が多く、主流シナリオとして採用しにくい。",
+            "Rubioが従来から産業空洞化・雇用喪失を批判してきた政治的立場にある場合、この読みは弱まる。"
+          ],
+          "key_actors_and_structure": "米国務省・Rubio、欧米の産業政策当局、環境・エネルギー政策コミュニティ、防衛・先端製造企業、労働市場・地域経済をめぐる国内政治構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "米国務省・Rubio、欧米の産業政策当局、環境・エネルギー政策コミュニティ、防衛・先端製造企業、労働市場・地域経済をめぐる国内政治構造。",
+        "confidence": null,
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "着眼点: タイトルが『脱工業化』を警告として扱う一方で、本文が不明なため、実際には「どの産業の脱却」を問題視しているかが特定できない点。\n支持する理由: 『脱工業化』という言葉は一般にネガティブだが、現実の政策では、環境負荷の高い旧来型産業からの退出と、デジタル・グリーン・防衛などへの再編が同時進行しており、Rubioが問題視しているのは「量的縮小」ではなく「質的再編の不均衡」かもしれない。 / タイトルに『Delicate Détente』とあることから、Rubioがバランスの難しさ（安全保障・環境・経済・社会のトレードオフ）を強調している可能性があり、単純な『工場が減る＝悪』という話ではなく、再編過程の不安定性を警告している読みが成立する。 / 国務長官という立場からすれば、産業構造の変化は同盟国との役割分担・サプライチェーン再設計・対外メッセージに直結するため、『脱工業化』をきっかけに、どの分野を国内に残し、どこを同盟国・パートナーに委ねるかという戦略的再編を促す文脈で語っている可能性がある。 / 一次情報がないため、件名作成者が『脱工業化』を象徴的に用いているだけで、Rubio自身は「選択的再工業化」「戦略的産業再配置」といったニュアンスを強調していた可能性を排除できない。\n弱める情報: タイトルが『警告』と明示しているため、Rubioが『脱工業化』を基本的にネガティブな現象として捉えている可能性が高く、選択的再編を前提としたニュアンスは弱いかもしれない。 / 一次資料がない状況で、『脱工業化』を質的再編のメタファーと読むのは仮定が多く、主流シナリオとして採用しにくい。 / Rubioが従来から産業空洞化・雇用喪失を批判してきた政治的立場にある場合、この読みは弱まる。\n切替条件: Rubioの発言要旨や後続の政策文書で、『脱工業化』と同時に『選択的再工業化』『ハイエンド防衛・クリーンテックへの集中』『環境目標との両立』といったキーワードが並び、特定セクターの退出と他セクターの強化を対比して語る記述が確認されれば、この読みが有力になる。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "2f106d8c-b310-4bbc-8bc8-6d7aab4fd406",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 7,
+      "title": "西側内部の分断管理としての『脱工業化』警告：米欧間の役割分担・再シャーディングの伏線",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "西側内部の分断管理としての『脱工業化』警告：米欧間の役割分担・再シャーディングの伏線",
+          "key_cue": "タイトルが『欧米関係に関する発言』として共有されており、『脱工業化』が西側全体ではなく「欧米関係」の文脈で語られている点。",
+          "reading": "Rubioの『脱工業化』警告は、西側全体の産業基盤弱体化を嘆く一般論ではなく、米欧間で産業・防衛・エネルギーの役割分担を再設計し、西側内部の分断（米国の再工業化 vs 欧州の脱炭素・財政制約）を管理するためのフレーミングであり、将来的な『西側内部の再シャーディング』を示唆する可能性がある。",
+          "switch_condition": "今後の発言や政策文書で、Rubioや米側が『欧州はXを担い、米国はYを担う』といった産業・防衛・エネルギーの役割分担を具体的に語りつつ、『脱工業化』を欧州側の課題として繰り返し指摘するようになれば、西側内部の再シャーディングを示唆するこの読みの確度が高まる。",
+          "supporting_reasons": [
+            "件名が『欧米関係』に焦点を当てていることから、Rubioの警告は単なる西側一般論ではなく、米欧間の産業・防衛・エネルギーの役割分担をめぐるメッセージである可能性がある。",
+            "『脱工業化』は欧州で特に議論されているテーマであり、Rubioがこれを取り上げることで、欧州側に防衛産業・エネルギー投資・サプライチェーン強化の負担増を求める一方、米国は別の領域（例えば先端防衛・デジタル・原材料確保など）を担うという再シャーディング構想を暗に示している可能性がある。",
+            "タイトルの『Delicate Détente』は、対中・対ロだけでなく、米欧間の政策優先順位（安全保障 vs 脱炭素・財政規律）を調整する綱渡りを指しているとも読め、Rubioの警告はこの内部調整の難しさを前提にしたものかもしれない。",
+            "西側内部の分断（米国の産業復活志向と欧州の環境・財政制約）が深まると、対外的な結束が弱まり、デタントや抑止の信頼性が低下するため、国務長官が早期に『脱工業化』を共通課題として提示し、役割分担の再設計を促すことには合理性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "一次資料がないため、Rubioが具体的に米欧の役割分担や再シャーディングに言及したかは不明であり、この読みは仮定が多い。",
+            "タイトル作成者が『欧米関係』と書いているだけで、Rubioの発言は実際にはより広い西側全体、あるいは国内向けの文脈だった可能性がある。",
+            "米欧間の役割分担再設計は、通常より具体的な政策パッケージや交渉の形で現れるため、単発の警告発言だけでそこまで読み込むのは過剰解釈のリスクがある。"
+          ],
+          "key_actors_and_structure": "米国務省・Rubio、EU・主要欧州諸国政府、NATO・防衛産業、エネルギー・環境政策コミュニティ、西側内部の財政・人口・政治構造の差異。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "米国務省・Rubio、EU・主要欧州諸国政府、NATO・防衛産業、エネルギー・環境政策コミュニティ、西側内部の財政・人口・政治構造の差異。",
+        "confidence": null,
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "着眼点: タイトルが『欧米関係に関する発言』として共有されており、『脱工業化』が西側全体ではなく「欧米関係」の文脈で語られている点。\n支持する理由: 件名が『欧米関係』に焦点を当てていることから、Rubioの警告は単なる西側一般論ではなく、米欧間の産業・防衛・エネルギーの役割分担をめぐるメッセージである可能性がある。 / 『脱工業化』は欧州で特に議論されているテーマであり、Rubioがこれを取り上げることで、欧州側に防衛産業・エネルギー投資・サプライチェーン強化の負担増を求める一方、米国は別の領域（例えば先端防衛・デジタル・原材料確保など）を担うという再シャーディング構想を暗に示している可能性がある。 / タイトルの『Delicate Détente』は、対中・対ロだけでなく、米欧間の政策優先順位（安全保障 vs 脱炭素・財政規律）を調整する綱渡りを指しているとも読め、Rubioの警告はこの内部調整の難しさを前提にしたものかもしれない。 / 西側内部の分断（米国の産業復活志向と欧州の環境・財政制約）が深まると、対外的な結束が弱まり、デタントや抑止の信頼性が低下するため、国務長官が早期に『脱工業化』を共通課題として提示し、役割分担の再設計を促すことには合理性がある。\n弱める情報: 一次資料がないため、Rubioが具体的に米欧の役割分担や再シャーディングに言及したかは不明であり、この読みは仮定が多い。 / タイトル作成者が『欧米関係』と書いているだけで、Rubioの発言は実際にはより広い西側全体、あるいは国内向けの文脈だった可能性がある。 / 米欧間の役割分担再設計は、通常より具体的な政策パッケージや交渉の形で現れるため、単発の警告発言だけでそこまで読み込むのは過剰解釈のリスクがある。\n切替条件: 今後の発言や政策文書で、Rubioや米側が『欧州はXを担い、米国はYを担う』といった産業・防衛・エネルギーの役割分担を具体的に語りつつ、『脱工業化』を欧州側の課題として繰り返し指摘するようになれば、西側内部の再シャーディングを示唆するこの読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    }
+  ],
+  "stage_bd_displayed_top5": [
+    {
+      "scenario_candidate_id": "5b309657-b4fe-435f-94eb-56336d723c69",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 1,
+      "title": "Rubio国務長官の「西側の脱工業化」警告は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "ニュース件名はRubioの発言内容を大きく誤解させるような編集ではなく、実際に『脱工業化』を問題視する趣旨の発言があったと仮定している。",
+            "Rubioは国務長官として、安全保障・同盟維持の文脈で産業基盤を語っていると仮定し、純粋な経済統計上の技術用語としてのみ『脱工業化』を使っているわけではないとみなしている。",
+            "政権全体としても、対中・対ロ競争を念頭に産業基盤の重要性を一定程度共有していると仮定している（ただし確証はない）。"
+          ],
+          "description": "Rubio国務長官の「西側の脱工業化」警告は、西側主要国（米国・欧州）の製造業・防衛産業・エネルギー関連などの産業基盤の弱体化が、安全保障・同盟維持にとって構造的リスクになっているという問題提起であり、欧米双方に対して中長期的な再工業化・防衛産業強化・エネルギー政策見直しを促すシグナルとして機能している可能性が高い、と暫定的に読む。一次情報がないため確信度は低いが、企業が今後の展開を読むうえでは「産業基盤の安全保障化」が進むかどうかを主軸にモニタリングするシナリオとして採用する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "hypothesis_registerの中でH0（率直な産業基盤リスクの警告）は、ニュース件名から最も素直に導ける読みであり、追加の仮定が最も少ない。H1（交渉カード）、H2（国内Audience）、H4（フレーム転換）はいずれも成立し得るが、いずれもH0の上に乗る形で説明可能であり、一次情報がない現時点で主軸とするには仮定が多い。企業にとって意思決定関連性が高いのは、西側産業基盤の変化が安全保障・政策・市場にどう影響するかであり、その構造的リスクを中心に据えるH0を主シナリオとして採用するのが合理的。",
+          "supporting_evidence": [
+            "ニュース件名に『Rubio Warns of \"Deindustrialisation\" of the West』とあり、国務長官レベルが西側の産業基盤弱体化を警告していることが示唆されている点（as_of: 2026-02中旬、タイトルのみ）。",
+            "同じ件名に『Delicate Détente』とあり、欧米関係の緊張緩和プロセスと産業基盤の問題が同じ文脈で語られていることから、安全保障・同盟の条件として産業構造が位置づけられている可能性がある点。"
+          ],
+          "observable_indicators": [
+            "Rubioおよび米政権中枢による、今後の演説・記者会見での『脱工業化』『再工業化』『産業政策』『防衛産業基盤』などのキーワードの頻度と位置づけ。",
+            "米国・欧州双方で、防衛産業・重工業・エネルギー関連への投資・補助金・規制強化など、産業基盤強化を目的とする政策パッケージが安全保障・同盟の文脈で語られるかどうか。",
+            "対中・対ロ競争に関する文書・戦略の中で、産業基盤・サプライチェーン・技術規制が安全保障政策の中核要素として扱われるかどうか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": false,
+              "description": "冷戦期におけるNATO諸国の防衛産業・重工業基盤維持が、安全保障政策の一部として扱われた事例との類推。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": "主シナリオはニュースタイトルと一般的な安全保障・産業政策の知識に依拠しており、現在の具体的発言録・政策文書といったcurrent_direct_evidenceが欠落しているため、決定的処理によりconfidenceは『低』に制約される。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": "唯一の直接根拠がニュースタイトルであり、本文・一次発言録が欠落しているため、決定的処理によりconfidenceは『低』に制約される。"
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "hypothesis_registerの中でH0（率直な産業基盤リスクの警告）は、ニュース件名から最も素直に導ける読みであり、追加の仮定が最も少ない。H1（交渉カード）、H2（国内Audience）、H4（フレーム転換）はいずれも成立し得るが、いずれもH0の上に乗る形で説明可能であり、一次情報がない現時点で主軸とするには仮定が多い。企業にとって意思決定関連性が高いのは、西側産業基盤の変化が安全保障・政策・市場にどう影響するかであり、その構造的リスクを中心に据えるH0を主シナリオとして採用するのが合理的。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "62dc2f15-589a-4a59-bf57-5ac9696250d5",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 2,
+      "title": "『脱工業化』警告は",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "『脱工業化』警告は、対中・対ロ競争における西側の交渉力を高めるための手段であり、欧州に防衛費増額・産業投資・エネルギー政策の調整を求める交渉カードとして用いられている（H1）。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "Rubio発言の一次ソース確認により、産業基盤の問題提起が明確に交渉条件・要求事項として位置づけられていることが分かれば、主シナリオ（構造リスクの率直な警告）から交渉カードシナリオへ重心を移す。"
+          ],
+          "weakening_conditions": [
+            "Rubio発言が、特定の交渉文脈ではなく一般的な講演・インタビューでの抽象的コメントにとどまり、具体的な政策要求と結びついていないことが判明する。"
+          ],
+          "strengthening_conditions": [
+            "Rubio発言が、具体的な交渉・会議（NATO首脳会議、EUとの戦略対話など）の場で行われ、同時に防衛費・産業投資・エネルギー政策に関する具体的要求が提示されていることが確認される。",
+            "欧州側の反応として、防衛費増額・産業政策見直しがRubio発言と結びつけて議論されている。"
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "この分岐が有力になる条件: Rubio発言の一次ソース確認により、産業基盤の問題提起が明確に交渉条件・要求事項として位置づけられていることが分かれば、主シナリオ（構造リスクの率直な警告）から交渉カードシナリオへ重心を移す。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "1f623063-998d-4a9c-a63f-6484227aa28f",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 3,
+      "title": "『脱工業化』警告は表向きには欧米関係・同盟国向けに語られているが",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "『脱工業化』警告は表向きには欧米関係・同盟国向けに語られているが、実際には米国内の有権者・産業界・議会向けのメッセージであり、対中競争・製造業復活・防衛産業強化へのコミットメントを示すための国内向けシグナルである（H2）。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "Rubioの国内政治基盤・過去発言の分析により、産業基盤メッセージが一貫して国内Audience向けに用いられていることが明らかになれば、主シナリオに国内シグナル要素を強く組み込む。"
+          ],
+          "weakening_conditions": [
+            "Rubio発言が国内ではほとんど注目されず、主に欧州メディア・外交文脈でのみ扱われていることが確認される。"
+          ],
+          "strengthening_conditions": [
+            "Rubio発言が国内メディア・議会・産業界で大きく取り上げられ、対中競争・製造業復活・防衛産業強化の文脈で評価されている。",
+            "Rubioや政権が、同時期に国内向けの産業政策（補助金・税制・規制）を打ち出し、その正当化に『脱工業化』警告を用いている。"
+          ],
+          "derived_from_hypothesis_id": "H2",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "この分岐が有力になる条件: Rubioの国内政治基盤・過去発言の分析により、産業基盤メッセージが一貫して国内Audience向けに用いられていることが明らかになれば、主シナリオに国内シグナル要素を強く組み込む。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "fb511997-1a60-4f7c-9588-07f35b2102e6",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 4,
+      "title": "Rubioの『脱工業化』警告は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "Rubioの『脱工業化』警告は、従来の『サービス経済化＝進歩』『脱炭素＝善』という西側の通説に対するフレーム転換の試みであり、産業基盤維持を安全保障・同盟の前提条件として再定義しようとしている（H4）。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "複数の発言・政策文書から、産業基盤維持が安全保障・同盟の前提条件として体系的に位置づけられていることが確認されれば、主シナリオを『構造リスクの率直な警告』から『フレーム転換の進行』へ格上げする。"
+          ],
+          "weakening_conditions": [
+            "Rubio発言が一時的なものにとどまり、その後の政策・発言で政権が従来のサービス経済化・脱炭素路線を安全保障上も問題ないと繰り返し肯定している。"
+          ],
+          "strengthening_conditions": [
+            "Rubioや政権全体が、他の場面でも産業基盤維持を環境政策・通商政策より優先するような発言・政策を繰り返し、既存の政策フレームを明示的に批判している。",
+            "戦略文書・ドクトリンの中で、『産業政策の安全保障化』が明確な方針として打ち出される。"
+          ],
+          "derived_from_hypothesis_id": "H4",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 複数の発言・政策文書から、産業基盤維持が安全保障・同盟の前提条件として体系的に位置づけられていることが確認されれば、主シナリオを『構造リスクの率直な警告』から『フレーム転換の進行』へ格上げする。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "47a213ac-42d6-45d5-8ce0-a9da8ab110c7",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 5,
+      "title": "「緊張緩和の綱渡り」としての危機管理メッセージ：デタント維持のための警告として読む",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "「緊張緩和の綱渡り」としての危機管理メッセージ：デタント維持のための警告として読む",
+          "key_cue": "件名にある「Delicate Détente（緊張緩和の綱渡り）」という表現と、『脱工業化』警告が同じタイトルに並置されている点。",
+          "reading": "Rubioの『脱工業化』警告は、対中・対ロとの軍事的緊張を一定程度抑えた「デタント」を維持するために、西側内部の産業・供給網の脆弱性を是正せよという危機管理メッセージであり、外部脅威よりも「デタントを支える西側の持久力不足」を主因とみる読み方である。",
+          "switch_condition": "Rubioや国務省関係者が『長期的な対中・対ロ競合を持続可能にするために、西側の産業・エネルギー基盤を強化する必要がある』と明示的に語る、あるいはデタント維持と産業政策を結びつける発言・文書が出てくれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "タイトルが『デタント』と『脱工業化』を同時に強調しており、産業基盤の問題が単なる経済論ではなく、緊張緩和の持続可能性に直結する論点として扱われている可能性が高い。",
+            "Rubioの立場（国務長官）からすれば、軍事的抑止と外交的緊張緩和の両立には、長期的な経済・産業の持久力が不可欠という認識が自然であり、産業基盤の弱体化を「デタントの足元を崩す要因」として警告していると読むことができる。",
+            "『脱工業化』という言葉は、単に製造業の減少だけでなく、エネルギー・防衛・重要インフラの国内能力低下を含意し得るため、長期的な対立・競合局面での「疲弊」「交渉力低下」を招き、結果としてデタント維持が困難になるという因果構造が想定しやすい。",
+            "タイトルのニュアンス（綱渡り）から、現状の緊張緩和が不安定であり、少しのショックで再び対立が激化し得るという危機感が示唆されており、そのショック要因として西側内部の産業・供給網の脆弱性が意識されている可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "一次資料がなく、Rubioが実際に『デタント』と産業基盤をどのように結びつけて語ったかが不明であり、タイトル作成者の編集的解釈に過ぎない可能性がある。",
+            "Rubioの発言が、対中・対ロとの緊張緩和ではなく、むしろ対立強化・デカップリングを志向する文脈で行われていた場合、この読みは外れる。",
+            "『脱工業化』が主に国内経済・雇用・政治的ポピュリズムの文脈で語られているだけで、外交的デタントとの関連付けが弱い可能性もある。"
+          ],
+          "key_actors_and_structure": "Rubio国務長官を含む米外交・安全保障当局、西側同盟国政府、対中・対ロ関係における軍事バランスと経済・産業の持久力、供給網・エネルギー・防衛産業を含む「デタントを支える構造」。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "Rubio国務長官を含む米外交・安全保障当局、西側同盟国政府、対中・対ロ関係における軍事バランスと経済・産業の持久力、供給網・エネルギー・防衛産業を含む「デタントを支える構造」。",
+        "confidence": null,
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "着眼点: 件名にある「Delicate Détente（緊張緩和の綱渡り）」という表現と、『脱工業化』警告が同じタイトルに並置されている点。\n支持する理由: タイトルが『デタント』と『脱工業化』を同時に強調しており、産業基盤の問題が単なる経済論ではなく、緊張緩和の持続可能性に直結する論点として扱われている可能性が高い。 / Rubioの立場（国務長官）からすれば、軍事的抑止と外交的緊張緩和の両立には、長期的な経済・産業の持久力が不可欠という認識が自然であり、産業基盤の弱体化を「デタントの足元を崩す要因」として警告していると読むことができる。 / 『脱工業化』という言葉は、単に製造業の減少だけでなく、エネルギー・防衛・重要インフラの国内能力低下を含意し得るため、長期的な対立・競合局面での「疲弊」「交渉力低下」を招き、結果としてデタント維持が困難になるという因果構造が想定しやすい。 / タイトルのニュアンス（綱渡り）から、現状の緊張緩和が不安定であり、少しのショックで再び対立が激化し得るという危機感が示唆されており、そのショック要因として西側内部の産業・供給網の脆弱性が意識されている可能性がある。\n弱める情報: 一次資料がなく、Rubioが実際に『デタント』と産業基盤をどのように結びつけて語ったかが不明であり、タイトル作成者の編集的解釈に過ぎない可能性がある。 / Rubioの発言が、対中・対ロとの緊張緩和ではなく、むしろ対立強化・デカップリングを志向する文脈で行われていた場合、この読みは外れる。 / 『脱工業化』が主に国内経済・雇用・政治的ポピュリズムの文脈で語られているだけで、外交的デタントとの関連付けが弱い可能性もある。\n切替条件: Rubioや国務省関係者が『長期的な対中・対ロ競合を持続可能にするために、西側の産業・エネルギー基盤を強化する必要がある』と明示的に語る、あるいはデタント維持と産業政策を結びつける発言・文書が出てくれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    }
+  ],
+  "stage_c_reading_portfolio_candidates": [
+    {
+      "scenario_candidate_id": "47a213ac-42d6-45d5-8ce0-a9da8ab110c7",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 5,
+      "title": "「緊張緩和の綱渡り」としての危機管理メッセージ：デタント維持のための警告として読む",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "「緊張緩和の綱渡り」としての危機管理メッセージ：デタント維持のための警告として読む",
+          "key_cue": "件名にある「Delicate Détente（緊張緩和の綱渡り）」という表現と、『脱工業化』警告が同じタイトルに並置されている点。",
+          "reading": "Rubioの『脱工業化』警告は、対中・対ロとの軍事的緊張を一定程度抑えた「デタント」を維持するために、西側内部の産業・供給網の脆弱性を是正せよという危機管理メッセージであり、外部脅威よりも「デタントを支える西側の持久力不足」を主因とみる読み方である。",
+          "switch_condition": "Rubioや国務省関係者が『長期的な対中・対ロ競合を持続可能にするために、西側の産業・エネルギー基盤を強化する必要がある』と明示的に語る、あるいはデタント維持と産業政策を結びつける発言・文書が出てくれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "タイトルが『デタント』と『脱工業化』を同時に強調しており、産業基盤の問題が単なる経済論ではなく、緊張緩和の持続可能性に直結する論点として扱われている可能性が高い。",
+            "Rubioの立場（国務長官）からすれば、軍事的抑止と外交的緊張緩和の両立には、長期的な経済・産業の持久力が不可欠という認識が自然であり、産業基盤の弱体化を「デタントの足元を崩す要因」として警告していると読むことができる。",
+            "『脱工業化』という言葉は、単に製造業の減少だけでなく、エネルギー・防衛・重要インフラの国内能力低下を含意し得るため、長期的な対立・競合局面での「疲弊」「交渉力低下」を招き、結果としてデタント維持が困難になるという因果構造が想定しやすい。",
+            "タイトルのニュアンス（綱渡り）から、現状の緊張緩和が不安定であり、少しのショックで再び対立が激化し得るという危機感が示唆されており、そのショック要因として西側内部の産業・供給網の脆弱性が意識されている可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "一次資料がなく、Rubioが実際に『デタント』と産業基盤をどのように結びつけて語ったかが不明であり、タイトル作成者の編集的解釈に過ぎない可能性がある。",
+            "Rubioの発言が、対中・対ロとの緊張緩和ではなく、むしろ対立強化・デカップリングを志向する文脈で行われていた場合、この読みは外れる。",
+            "『脱工業化』が主に国内経済・雇用・政治的ポピュリズムの文脈で語られているだけで、外交的デタントとの関連付けが弱い可能性もある。"
+          ],
+          "key_actors_and_structure": "Rubio国務長官を含む米外交・安全保障当局、西側同盟国政府、対中・対ロ関係における軍事バランスと経済・産業の持久力、供給網・エネルギー・防衛産業を含む「デタントを支える構造」。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "Rubio国務長官を含む米外交・安全保障当局、西側同盟国政府、対中・対ロ関係における軍事バランスと経済・産業の持久力、供給網・エネルギー・防衛産業を含む「デタントを支える構造」。",
+        "confidence": null,
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "着眼点: 件名にある「Delicate Détente（緊張緩和の綱渡り）」という表現と、『脱工業化』警告が同じタイトルに並置されている点。\n支持する理由: タイトルが『デタント』と『脱工業化』を同時に強調しており、産業基盤の問題が単なる経済論ではなく、緊張緩和の持続可能性に直結する論点として扱われている可能性が高い。 / Rubioの立場（国務長官）からすれば、軍事的抑止と外交的緊張緩和の両立には、長期的な経済・産業の持久力が不可欠という認識が自然であり、産業基盤の弱体化を「デタントの足元を崩す要因」として警告していると読むことができる。 / 『脱工業化』という言葉は、単に製造業の減少だけでなく、エネルギー・防衛・重要インフラの国内能力低下を含意し得るため、長期的な対立・競合局面での「疲弊」「交渉力低下」を招き、結果としてデタント維持が困難になるという因果構造が想定しやすい。 / タイトルのニュアンス（綱渡り）から、現状の緊張緩和が不安定であり、少しのショックで再び対立が激化し得るという危機感が示唆されており、そのショック要因として西側内部の産業・供給網の脆弱性が意識されている可能性がある。\n弱める情報: 一次資料がなく、Rubioが実際に『デタント』と産業基盤をどのように結びつけて語ったかが不明であり、タイトル作成者の編集的解釈に過ぎない可能性がある。 / Rubioの発言が、対中・対ロとの緊張緩和ではなく、むしろ対立強化・デカップリングを志向する文脈で行われていた場合、この読みは外れる。 / 『脱工業化』が主に国内経済・雇用・政治的ポピュリズムの文脈で語られているだけで、外交的デタントとの関連付けが弱い可能性もある。\n切替条件: Rubioや国務省関係者が『長期的な対中・対ロ競合を持続可能にするために、西側の産業・エネルギー基盤を強化する必要がある』と明示的に語る、あるいはデタント維持と産業政策を結びつける発言・文書が出てくれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "3158f688-f831-4602-b625-c1eb3429038a",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 6,
+      "title": "『脱工業化＝弱体化』という前提への懐疑：むしろ選択的再編・ハイエンド化の圧力として読む",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "『脱工業化＝弱体化』という前提への懐疑：むしろ選択的再編・ハイエンド化の圧力として読む",
+          "key_cue": "タイトルが『脱工業化』を警告として扱う一方で、本文が不明なため、実際には「どの産業の脱却」を問題視しているかが特定できない点。",
+          "reading": "Rubioの警告は、西側の産業基盤が単純に「縮小」しているというより、低付加価値・高環境負荷の領域からの意図的な退出と、ハイエンド防衛・先端製造・クリーンエネルギーへの再編が進む中で、その移行の政治・社会的コストを警告している可能性があり、『脱工業化＝一律の弱体化』という前提を反転させて読む。",
+          "switch_condition": "Rubioの発言要旨や後続の政策文書で、『脱工業化』と同時に『選択的再工業化』『ハイエンド防衛・クリーンテックへの集中』『環境目標との両立』といったキーワードが並び、特定セクターの退出と他セクターの強化を対比して語る記述が確認されれば、この読みが有力になる。",
+          "supporting_reasons": [
+            "『脱工業化』という言葉は一般にネガティブだが、現実の政策では、環境負荷の高い旧来型産業からの退出と、デジタル・グリーン・防衛などへの再編が同時進行しており、Rubioが問題視しているのは「量的縮小」ではなく「質的再編の不均衡」かもしれない。",
+            "タイトルに『Delicate Détente』とあることから、Rubioがバランスの難しさ（安全保障・環境・経済・社会のトレードオフ）を強調している可能性があり、単純な『工場が減る＝悪』という話ではなく、再編過程の不安定性を警告している読みが成立する。",
+            "国務長官という立場からすれば、産業構造の変化は同盟国との役割分担・サプライチェーン再設計・対外メッセージに直結するため、『脱工業化』をきっかけに、どの分野を国内に残し、どこを同盟国・パートナーに委ねるかという戦略的再編を促す文脈で語っている可能性がある。",
+            "一次情報がないため、件名作成者が『脱工業化』を象徴的に用いているだけで、Rubio自身は「選択的再工業化」「戦略的産業再配置」といったニュアンスを強調していた可能性を排除できない。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "タイトルが『警告』と明示しているため、Rubioが『脱工業化』を基本的にネガティブな現象として捉えている可能性が高く、選択的再編を前提としたニュアンスは弱いかもしれない。",
+            "一次資料がない状況で、『脱工業化』を質的再編のメタファーと読むのは仮定が多く、主流シナリオとして採用しにくい。",
+            "Rubioが従来から産業空洞化・雇用喪失を批判してきた政治的立場にある場合、この読みは弱まる。"
+          ],
+          "key_actors_and_structure": "米国務省・Rubio、欧米の産業政策当局、環境・エネルギー政策コミュニティ、防衛・先端製造企業、労働市場・地域経済をめぐる国内政治構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "米国務省・Rubio、欧米の産業政策当局、環境・エネルギー政策コミュニティ、防衛・先端製造企業、労働市場・地域経済をめぐる国内政治構造。",
+        "confidence": null,
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "着眼点: タイトルが『脱工業化』を警告として扱う一方で、本文が不明なため、実際には「どの産業の脱却」を問題視しているかが特定できない点。\n支持する理由: 『脱工業化』という言葉は一般にネガティブだが、現実の政策では、環境負荷の高い旧来型産業からの退出と、デジタル・グリーン・防衛などへの再編が同時進行しており、Rubioが問題視しているのは「量的縮小」ではなく「質的再編の不均衡」かもしれない。 / タイトルに『Delicate Détente』とあることから、Rubioがバランスの難しさ（安全保障・環境・経済・社会のトレードオフ）を強調している可能性があり、単純な『工場が減る＝悪』という話ではなく、再編過程の不安定性を警告している読みが成立する。 / 国務長官という立場からすれば、産業構造の変化は同盟国との役割分担・サプライチェーン再設計・対外メッセージに直結するため、『脱工業化』をきっかけに、どの分野を国内に残し、どこを同盟国・パートナーに委ねるかという戦略的再編を促す文脈で語っている可能性がある。 / 一次情報がないため、件名作成者が『脱工業化』を象徴的に用いているだけで、Rubio自身は「選択的再工業化」「戦略的産業再配置」といったニュアンスを強調していた可能性を排除できない。\n弱める情報: タイトルが『警告』と明示しているため、Rubioが『脱工業化』を基本的にネガティブな現象として捉えている可能性が高く、選択的再編を前提としたニュアンスは弱いかもしれない。 / 一次資料がない状況で、『脱工業化』を質的再編のメタファーと読むのは仮定が多く、主流シナリオとして採用しにくい。 / Rubioが従来から産業空洞化・雇用喪失を批判してきた政治的立場にある場合、この読みは弱まる。\n切替条件: Rubioの発言要旨や後続の政策文書で、『脱工業化』と同時に『選択的再工業化』『ハイエンド防衛・クリーンテックへの集中』『環境目標との両立』といったキーワードが並び、特定セクターの退出と他セクターの強化を対比して語る記述が確認されれば、この読みが有力になる。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    },
+    {
+      "scenario_candidate_id": "2f106d8c-b310-4bbc-8bc8-6d7aab4fd406",
+      "analysis_session_id": "486abd14-014d-4544-88cf-fddaf35f788b",
+      "rank": 7,
+      "title": "西側内部の分断管理としての『脱工業化』警告：米欧間の役割分担・再シャーディングの伏線",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "西側内部の分断管理としての『脱工業化』警告：米欧間の役割分担・再シャーディングの伏線",
+          "key_cue": "タイトルが『欧米関係に関する発言』として共有されており、『脱工業化』が西側全体ではなく「欧米関係」の文脈で語られている点。",
+          "reading": "Rubioの『脱工業化』警告は、西側全体の産業基盤弱体化を嘆く一般論ではなく、米欧間で産業・防衛・エネルギーの役割分担を再設計し、西側内部の分断（米国の再工業化 vs 欧州の脱炭素・財政制約）を管理するためのフレーミングであり、将来的な『西側内部の再シャーディング』を示唆する可能性がある。",
+          "switch_condition": "今後の発言や政策文書で、Rubioや米側が『欧州はXを担い、米国はYを担う』といった産業・防衛・エネルギーの役割分担を具体的に語りつつ、『脱工業化』を欧州側の課題として繰り返し指摘するようになれば、西側内部の再シャーディングを示唆するこの読みの確度が高まる。",
+          "supporting_reasons": [
+            "件名が『欧米関係』に焦点を当てていることから、Rubioの警告は単なる西側一般論ではなく、米欧間の産業・防衛・エネルギーの役割分担をめぐるメッセージである可能性がある。",
+            "『脱工業化』は欧州で特に議論されているテーマであり、Rubioがこれを取り上げることで、欧州側に防衛産業・エネルギー投資・サプライチェーン強化の負担増を求める一方、米国は別の領域（例えば先端防衛・デジタル・原材料確保など）を担うという再シャーディング構想を暗に示している可能性がある。",
+            "タイトルの『Delicate Détente』は、対中・対ロだけでなく、米欧間の政策優先順位（安全保障 vs 脱炭素・財政規律）を調整する綱渡りを指しているとも読め、Rubioの警告はこの内部調整の難しさを前提にしたものかもしれない。",
+            "西側内部の分断（米国の産業復活志向と欧州の環境・財政制約）が深まると、対外的な結束が弱まり、デタントや抑止の信頼性が低下するため、国務長官が早期に『脱工業化』を共通課題として提示し、役割分担の再設計を促すことには合理性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "一次資料がないため、Rubioが具体的に米欧の役割分担や再シャーディングに言及したかは不明であり、この読みは仮定が多い。",
+            "タイトル作成者が『欧米関係』と書いているだけで、Rubioの発言は実際にはより広い西側全体、あるいは国内向けの文脈だった可能性がある。",
+            "米欧間の役割分担再設計は、通常より具体的な政策パッケージや交渉の形で現れるため、単発の警告発言だけでそこまで読み込むのは過剰解釈のリスクがある。"
+          ],
+          "key_actors_and_structure": "米国務省・Rubio、EU・主要欧州諸国政府、NATO・防衛産業、エネルギー・環境政策コミュニティ、西側内部の財政・人口・政治構造の差異。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "米国務省・Rubio、EU・主要欧州諸国政府、NATO・防衛産業、エネルギー・環境政策コミュニティ、西側内部の財政・人口・政治構造の差異。",
+        "confidence": null,
+        "key_actors": [
+          "Rubio国務長官",
+          "欧州主要国政府・EU機関"
+        ],
+        "source_cqas": {
+          "request_id": "54a7e78d-b3be-45a4-b905-02e082e3f47e",
+          "response_id": "8e58b236-b705-4dff-82c2-02c2d1ab6d22"
+        },
+        "why_this_matters": "着眼点: タイトルが『欧米関係に関する発言』として共有されており、『脱工業化』が西側全体ではなく「欧米関係」の文脈で語られている点。\n支持する理由: 件名が『欧米関係』に焦点を当てていることから、Rubioの警告は単なる西側一般論ではなく、米欧間の産業・防衛・エネルギーの役割分担をめぐるメッセージである可能性がある。 / 『脱工業化』は欧州で特に議論されているテーマであり、Rubioがこれを取り上げることで、欧州側に防衛産業・エネルギー投資・サプライチェーン強化の負担増を求める一方、米国は別の領域（例えば先端防衛・デジタル・原材料確保など）を担うという再シャーディング構想を暗に示している可能性がある。 / タイトルの『Delicate Détente』は、対中・対ロだけでなく、米欧間の政策優先順位（安全保障 vs 脱炭素・財政規律）を調整する綱渡りを指しているとも読め、Rubioの警告はこの内部調整の難しさを前提にしたものかもしれない。 / 西側内部の分断（米国の産業復活志向と欧州の環境・財政制約）が深まると、対外的な結束が弱まり、デタントや抑止の信頼性が低下するため、国務長官が早期に『脱工業化』を共通課題として提示し、役割分担の再設計を促すことには合理性がある。\n弱める情報: 一次資料がないため、Rubioが具体的に米欧の役割分担や再シャーディングに言及したかは不明であり、この読みは仮定が多い。 / タイトル作成者が『欧米関係』と書いているだけで、Rubioの発言は実際にはより広い西側全体、あるいは国内向けの文脈だった可能性がある。 / 米欧間の役割分担再設計は、通常より具体的な政策パッケージや交渉の形で現れるため、単発の警告発言だけでそこまで読み込むのは過剰解釈のリスクがある。\n切替条件: 今後の発言や政策文書で、Rubioや米側が『欧州はXを担い、米国はYを担う』といった産業・防衛・エネルギーの役割分担を具体的に語りつつ、『脱工業化』を欧州側の課題として繰り返し指摘するようになれば、西側内部の再シャーディングを示唆するこの読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年2月中旬、Rubio国務長官が欧米関係に関する発言（西側の「脱工業化」を警告する内容）を\n行ったことについてのニュース記事が社内で共有された。件名は「Delicate Détente: Rubio Warns\nof \"Deindustralisation\" of the West」（緊張緩和の綱渡り：ルビオが西側の「脱工業化」を警告）。\n\n# Known Background\n\n**記録上、確認できる背景情報はこの件名以上のものがない。** 元記事の本文が一次資料内に\n保存されていないため、具体的な発言内容・訪問国・出席状況等の詳細は、この時点のBlind Input\nとしては提供できない。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:53:35.06139+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:53:35.32655+00:00"
+    }
+  ],
+  "leakage_guard": {
+    "known_risk_knowledge_items_leaked": [],
+    "known_risk_documents_leaked": [],
+    "gold_leakage_detected": false
+  },
+  "as_of_audit_report": {
+    "as_of_date": "2026-02-16",
+    "tables": {
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 48,
+        "excluded_unverified_count": 33
+      },
+      "geo_expert_responses": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_sessions": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_knowledge_items": {
+        "policy": "_policy_geo_knowledge_items",
+        "included_count": 0,
+        "excluded_future_count": 8,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "valid": true
+}

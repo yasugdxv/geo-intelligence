@@ -1,0 +1,404 @@
+{
+  "case_id": "ib0-bc-strategy",
+  "theme": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。",
+  "t0_date": "2026-02-19",
+  "evaluation_mode": "retrospective_proxy_directional_as_of_filtered",
+  "harness": "eval_harness.AsOfEvaluationClient",
+  "notes": "Phase I-B0.1: production pipeline run unmodified, DB client substituted with an as-of-date-filtering read proxy. NOT an 'AI output reviewed by expert' case.",
+  "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+  "timings_sec": {
+    "generate_scenarios": 64.8
+  },
+  "cqas_all_candidates": [
+    {
+      "scenario_candidate_id": "ee7ff25a-7606-48d9-896c-4da57bab38b1",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 1,
+      "title": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "assumptions": [
+            "米国が対イラン軍事オプションを少なくとも理論上は検討している。",
+            "イラン・イスラエル情勢が米国内政治・同盟関係・エネルギー市場・対中戦略・台湾情勢に影響し得る。"
+          ],
+          "description": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業・政策側としては、両方のシナリオが持ち得る影響（エネルギー市場・物流・米中関係・台湾抑止）を仮説として整理し、上記のモニタリング指標を通じて、どちらの方向性が強まりつつあるかを継続的に確認する体制を整えることが重要である。",
+          "evidence_class": null,
+          "evidence_relevance": null,
+          "selection_rationale": null,
+          "supporting_evidence": [],
+          "observable_indicators": [
+            "対イラン・対イスラエルに関する米政権の公式発言のトーン変化（抑止・制裁から軍事オプション言及へのシフト）。",
+            "イスラエル側の対イラン軍事行動に関する発言・軍事態勢の変化。",
+            "原油価格・海上保険料・海運運賃の急激な変動。",
+            "米軍の中東への部隊増派・演習計画の変更。",
+            "米中間選挙での対イラン・対イスラエル・対中政策の争点化状況。"
+          ],
+          "historical_analogies_used": null,
+          "derived_from_hypothesis_id": null,
+          "confidence_adjustment_reason": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": null,
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    },
+    {
+      "scenario_candidate_id": "4ccd76d2-2b5b-4e92-9753-de1faba6111c",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 2,
+      "title": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+          "switch_conditions": [
+            "米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。",
+            "原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。 / 原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。",
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    },
+    {
+      "scenario_candidate_id": "1490809a-b14a-4813-a5fc-1f7beac6441e",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 3,
+      "title": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+          "switch_conditions": [
+            "米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。",
+            "イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。 / イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。",
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    },
+    {
+      "scenario_candidate_id": "f9fb58ff-1295-441b-bd6e-7b2b6089a98c",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 4,
+      "title": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+          "switch_conditions": [
+            "米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。",
+            "イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。 / イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。",
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    }
+  ],
+  "cqas_total_candidates": 4,
+  "cqas_displayed_top5": [
+    {
+      "scenario_candidate_id": "ee7ff25a-7606-48d9-896c-4da57bab38b1",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 1,
+      "title": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "assumptions": [
+            "米国が対イラン軍事オプションを少なくとも理論上は検討している。",
+            "イラン・イスラエル情勢が米国内政治・同盟関係・エネルギー市場・対中戦略・台湾情勢に影響し得る。"
+          ],
+          "description": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業・政策側としては、両方のシナリオが持ち得る影響（エネルギー市場・物流・米中関係・台湾抑止）を仮説として整理し、上記のモニタリング指標を通じて、どちらの方向性が強まりつつあるかを継続的に確認する体制を整えることが重要である。",
+          "evidence_class": null,
+          "evidence_relevance": null,
+          "selection_rationale": null,
+          "supporting_evidence": [],
+          "observable_indicators": [
+            "対イラン・対イスラエルに関する米政権の公式発言のトーン変化（抑止・制裁から軍事オプション言及へのシフト）。",
+            "イスラエル側の対イラン軍事行動に関する発言・軍事態勢の変化。",
+            "原油価格・海上保険料・海運運賃の急激な変動。",
+            "米軍の中東への部隊増派・演習計画の変更。",
+            "米中間選挙での対イラン・対イスラエル・対中政策の争点化状況。"
+          ],
+          "historical_analogies_used": null,
+          "derived_from_hypothesis_id": null,
+          "confidence_adjustment_reason": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": null,
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    },
+    {
+      "scenario_candidate_id": "4ccd76d2-2b5b-4e92-9753-de1faba6111c",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 2,
+      "title": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+          "switch_conditions": [
+            "米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。",
+            "原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。 / 原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。",
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    },
+    {
+      "scenario_candidate_id": "1490809a-b14a-4813-a5fc-1f7beac6441e",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 3,
+      "title": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+          "switch_conditions": [
+            "米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。",
+            "イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。 / イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。",
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    },
+    {
+      "scenario_candidate_id": "f9fb58ff-1295-441b-bd6e-7b2b6089a98c",
+      "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+      "rank": 4,
+      "title": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+          "switch_conditions": [
+            "米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。",
+            "イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [],
+        "source_cqas": {
+          "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+          "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。 / イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。",
+        "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:13:04.229265+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:13:04.571468+00:00"
+    }
+  ],
+  "selected_scenario_candidate_id": "ee7ff25a-7606-48d9-896c-4da57bab38b1",
+  "selected_scenario_rank": 1,
+  "analysis_design": {
+    "analysis_design_id": "b1e6fcec-7e70-431b-ac65-f10875953aad",
+    "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+    "version": 1,
+    "investigation_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。",
+    "scope": null,
+    "key_actors": [],
+    "analytical_lenses": [],
+    "hypotheses": [
+      "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業・政策側としては、両方のシナリオが持ち得る影響（エネルギー市場・物流・米中関係・台湾抑止）を仮説として整理し、上記のモニタリング指標を通じて、どちらの方向性が強まりつつあるかを継続的に確認する体制を整えることが重要である。"
+    ],
+    "alternative_hypotheses": [
+      "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+      "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+      "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。"
+    ],
+    "evidence_needed": [
+      "現在の米政権（大統領・国家安全保障チーム）が対イラン政策で何を最上位目的としているか（抑止・核開発制限・同盟防衛・体制転換など）。",
+      "イスラエル政府・軍がイランに対してどの程度の軍事行動を求めているか、また米国に対してどのような協力・関与を期待しているか。",
+      "2026年米中間選挙において、対イラン・対イスラエル政策がどの程度争点化しているか、また有権者・主要候補のスタンス。",
+      "対イラン軍事行動が行われた場合の原油価格・海上輸送リスクへの影響のレンジ。",
+      "対イラン軍事行動が米中関係・台湾抑止に与える影響（米軍の部隊配備・演習計画・外交的関与のシフト）。"
+    ],
+    "known_evidence": [],
+    "knowledge_gaps": [
+      "現在の米政権（大統領・国家安全保障チーム）が対イラン政策で何を最上位目的としているか（抑止・核開発制限・同盟防衛・体制転換など）。",
+      "イスラエル政府・軍がイランに対してどの程度の軍事行動を求めているか、また米国に対してどのような協力・関与を期待しているか。",
+      "2026年米中間選挙において、対イラン・対イスラエル政策がどの程度争点化しているか、また有権者・主要候補のスタンス。",
+      "対イラン軍事行動が行われた場合の原油価格・海上輸送リスクへの影響のレンジ。",
+      "対イラン軍事行動が米中関係・台湾抑止に与える影響（米軍の部隊配備・演習計画・外交的関与のシフト）。"
+    ],
+    "watch_points": [
+      "米政権（大統領・国務長官・国防長官）の対イラン・対イスラエルに関する公式発言のトーンと具体性。",
+      "イスラエル政府・軍の対イラン発言・軍事態勢・米国との協議に関する報道。",
+      "原油価格・中東航路の海上保険料・海運運賃の動向。",
+      "米インド太平洋軍の部隊配備・演習計画の変化（中東へのシフトの有無）。",
+      "2026年米中間選挙における対イラン・対イスラエル・対中政策の争点化状況（主要候補の発言・世論調査）。",
+      "台湾周辺の軍事活動（米中双方）の変化と、米国の台湾抑止に関する発言。"
+    ],
+    "report_structure": {},
+    "confidence": "判断不能",
+    "assumptions": [
+      "米国が対イラン軍事オプションを少なくとも理論上は検討している。",
+      "イラン・イスラエル情勢が米国内政治・同盟関係・エネルギー市場・対中戦略・台湾情勢に影響し得る。"
+    ],
+    "change_note": "選択したScenario CandidateのCQAS Runから初版を生成(I-B0.1 as-of run)",
+    "created_by": "phase_ib0_1_retrospective_proxy",
+    "created_at": "2026-09-16T09:13:07.150785+00:00"
+  },
+  "as_of_audit_report": {
+    "as_of_date": "2026-02-19",
+    "tables": {
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 8,
+        "excluded_unverified_count": 5
+      },
+      "geo_ios_analysis_sessions": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 3,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_scenario_candidates": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 2,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_expert_responses": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_designs": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "write_passthrough_op_count": 15
+}

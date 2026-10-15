@@ -1,0 +1,2842 @@
+{
+  "case_id": "HORMUZ_TOLL_SESSION1",
+  "smoke_test": false,
+  "t0": "2026-07-15",
+  "t0_rationale": "既知の背景事実は2026-07-14の20%案撤回まで。Session1実施日(2026-07-31)より前。",
+  "actor_id": "blind_retrospective_diagnostic_hormuz_toll_session1",
+  "mode": "case_analysis",
+  "profile": "deep",
+  "execution_mode": "staged",
+  "query_text": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。",
+  "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+  "expert_request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+  "expert_response_id": "a251810d-c12d-401b-985a-318a94aa3033",
+  "elapsed_sec": 139.2,
+  "stage_a_full_response_json": {
+    "claims": [
+      {
+        "text": "6月17日に米国とイランが暫定停戦で合意し、ホルムズ海峡の再開と今後60日間の協議枠組みを設定した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "6月25日以降、商船への攻撃と米軍の報復が始まり、停戦が不安定化した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "7月7〜8日に米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "7月11〜12日にイランがホルムズ海峡の閉鎖・管理強化を打ち出し、軍事衝突が拡大した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "7月13日にトランプ大統領が、米国をホルムズ海峡の「守護者」とし、通航保護の費用負担として20％通航料案を提示した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "7月14日に20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換したと報じられている。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "ホルムズ海峡をめぐる停戦合意から約1か月の間に、停戦→不安定化→停戦終了→海峡閉鎖・軍事衝突拡大→米国による『守護者』宣言と負担案提示→その撤回という急速なエスカレーションとポジション変更が連続している。",
+        "claim_type": "observation",
+        "source_ref": null
+      },
+      {
+        "text": "20％通航料案は、制度原則としての国際海峡通航料導入というより、短期的な交渉カード・圧力として提示された可能性が高い。",
+        "claim_type": "inference",
+        "source_ref": null
+      },
+      {
+        "text": "トランプ大統領は、ホルムズ海峡の安全保障を米国主導で維持することをテコに、同盟国・主要輸入国からの負担や貿易・投資面での譲歩を引き出そうとしている可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "20％案の撤回は、同盟国・市場・官僚組織などからの強い反発、あるいは国際法上の問題指摘を受けて、原則論としての通航料徴収を避けつつ、別の形で『見返り』を求める路線へ修正した結果である可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      }
+    ],
+    "dynamics": "イランが海峡閉鎖・管理強化を打ち出し軍事衝突を拡大させる中で、ホルムズ海峡を通る原油・貨物に依存する国々（日本、欧州、アジア諸国など）は安全保障上のリスクにさらされている。米国は軍事力と制裁をテコに、海峡の安全保障を自らの影響力強化・経済的見返り獲得のカードとして使おうとしているように見える。一方、国際海峡の自由通航原則や同盟国の反発、エネルギー市場の安定性が米国の行動を制約する。イラン側は海峡閉鎖をカードとして米国・同盟国へ圧力をかけるが、過度な閉鎖は自国の輸出や第三国の反発を招くため、どこまで実際に閉鎖するかが争点となる。",
+    "stakeholders": [
+      {
+        "actor": "トランプ大統領（米国）",
+        "purpose": "米国の安全保障上の優位とエネルギー供給の安定を維持しつつ、国内政治的支持を確保すること（仮説）。",
+        "leverage": "同盟国との関係・負担分担",
+        "position": "ホルムズ海峡の安全を米国主導で確保しつつ、その見返りとして同盟国・主要輸入国からの負担や貿易・投資面での譲歩を得ること（仮説）。",
+        "red_lines": "米国がホルムズ海峡の安全保障を完全に放棄し、イランや他勢力に任せることは避けたいと考える可能性（仮説）。",
+        "confidence": "低",
+        "constraints_fears": "国際法・制度原則、エネルギー市場の安定",
+        "ability_to_move_or_block": "海峡防衛のための艦隊展開、護衛作戦の強化、制裁強化や免除撤回、同盟国への協力要請・負担要求などで局面を動かせる。"
+      },
+      {
+        "actor": "イラン指導部",
+        "purpose": "政権維持と対米圧力の中での体制安全保障、制裁緩和、地域的影響力維持（仮説）。",
+        "leverage": "制裁による経済圧力",
+        "position": "米国の制裁強化に対抗し、海峡閉鎖・管理強化を通じて圧力をかけ、制裁緩和や安全保障上の譲歩を得ること（仮説）。",
+        "red_lines": "米国による体制転換を狙った軍事攻撃や、完全な経済窒息状態は避けたい（仮説）。",
+        "confidence": "低",
+        "constraints_fears": "エネルギー輸出への依存",
+        "ability_to_move_or_block": "海峡閉鎖・攻撃の強度を上げることで、米国・同盟国へ圧力をかけ、制裁緩和や安全保障上の譲歩を引き出そうとできる。"
+      },
+      {
+        "actor": "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+        "purpose": "ホルムズ海峡の通航安全とエネルギー供給の安定を維持しつつ、自国の負担と価格上昇を最小化すること。",
+        "leverage": "米国との同盟関係・貿易・投資関係、エネルギー調達先の多様化、国際機関・市場への影響力。",
+        "position": "ホルムズ海峡の緊張緩和と通航安全確保を求めつつ、20％通航料のような極端な負担案には反対・懸念を示す方向に動くと推定されるが、具体的反応は不明。",
+        "priority": "エネルギー供給の途絶回避と価格急騰の抑制が最優先。米国からの負担要求・貿易・投資条件見直しには慎重に対応したい。",
+        "red_lines": "ホルムズ海峡通航に対する恒常的な高率通航料制度化や、過度な負担要求による自国経済への重大な打撃。",
+        "confidence": "低",
+        "constraints_fears": "海峡閉鎖や軍事衝突拡大による供給途絶、原油価格急騰、米国との関係悪化、国内世論の反発。",
+        "key_relationships": "米国との安全保障同盟・貿易関係、イランとのエネルギー取引、国内産業・消費者との関係。",
+        "ability_to_move_or_block": "米国の負担案・貿易・投資条件見直しに対して受け入れ・拒否の姿勢を取ることで、米国のカード選択を事実上制約し得る。"
+      },
+      {
+        "actor": "エネルギー市場・海運・保険業界",
+        "purpose": "リスクを価格に反映しつつ、市場の機能と収益性を維持すること。",
+        "leverage": "保険料・運賃設定、信用供与条件。",
+        "position": "ホルムズ海峡リスクを注視し、保険料・運賃・価格にリスクプレミアムを上乗せする方向に動くが、具体的水準は不明。",
+        "priority": "ホルムズ海峡リスクを保険料・運賃・価格に織り込みつつ、過度な混乱を避ける。",
+        "red_lines": "通航不能状態が長期化し、市場機能が麻痺すること。",
+        "confidence": "低",
+        "constraints_fears": "海峡閉鎖・攻撃拡大による保険不能状態、極端な価格変動による需要破壊。",
+        "key_relationships": "産油国・輸入国・海運会社・保険会社との契約関係。",
+        "ability_to_move_or_block": "高い保険料・運賃設定により、通航コストを事実上引き上げ、過度な緊張を維持しにくくする圧力となり得る。"
+      }
+    ],
+    "main_scenario": {
+      "confidence": "低",
+      "assumptions": [
+        "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+        "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+        "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+      ],
+      "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+      "evidence_class": "model_general_knowledge",
+      "evidence_relevance": [],
+      "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+      "supporting_evidence": [
+        "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+        "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+        "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+      ],
+      "observable_indicators": [
+        "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+        "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+        "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+        "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+      ],
+      "historical_analogies_used": [
+        {
+          "same_actor": true,
+          "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+          "same_domain": false,
+          "analogy_strength": "weak",
+          "same_constraints": false,
+          "same_leverage_mechanism": true,
+          "analogy_source_precedent_id": null,
+          "same_institutional_structure": false
+        }
+      ],
+      "derived_from_hypothesis_id": "H1",
+      "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+      "weakening_evidence_relevance": [],
+      "relevance_confidence_adjustment_reason": null
+    },
+    "business_impact": {
+      "direct": "現時点では、ホルムズ海峡の通航安全に関する緊張が高まっており、原油・石油製品・その他貨物の輸送に遅延・保険料上昇・リスクプレミアムが発生する可能性がある。通航料20％案は撤回されたが、米国が安全保障をテコに貿易・投資条件の見直しや同盟国への負担要求を強める可能性があり、エネルギー調達コストや貿易条件に影響し得る。",
+      "indirect": "エネルギー価格の変動、海上保険料の上昇、通航リスクの高まりが、製造業・物流・消費者価格に波及する可能性がある。また、米国が同盟国に対して安全保障負担や貿易・投資面での譲歩を求める場合、自社の対米輸出・投資計画・サプライチェーンに影響する可能性がある。",
+      "unrelated_note": null,
+      "environment_change": "国際海峡の通航安全をめぐる原則（自由通航と費用負担）が交渉カードとして扱われ始めている兆候があり、今後、他の海峡・航路でも安全保障と費用負担が結びつく議論が増える可能性がある。長期的には、海上輸送コスト構造や安全保障リスクの評価方法に変化が生じるかもしれない。"
+    },
+    "initial_anomaly": "国際海峡の通航安全を「米国が守る・管理する」と強く打ち出しつつ、通航料20％という非常に高い負担案を提示し、わずか1日で撤回している点。安全保障上の重大な原則（国際海峡の自由通航）に関わる料金徴収の話を交渉カードとして出し入れしているように見えることが違和感であり、今後の制度・先例に影響し得る。",
+    "review_findings": null,
+    "audience_analysis": [],
+    "executive_summary": {
+      "what_changed": "ホルムズ海峡をめぐる停戦が崩れ、イランが海峡閉鎖・管理強化を打ち出す中で、米国が『守護者』を自任しつつ、通航保護の費用負担として20％通航料案を提示し、翌日にこれを撤回して貿易・投資による見返りを求める方針へ転換した。",
+      "why_it_matters": "国際海峡の通航安全と費用負担の問題が、安全保障カードと貿易・投資交渉に結びつき始めており、エネルギー調達コストや対米貿易・投資条件に影響し得る。今後、通航料制度化か、貿易・投資・防衛費負担など別のカードにシフトするかで企業への影響が変わる。",
+      "what_to_watch_decide": "米国が再び通航料・費用負担案を提示するか、同盟国・主要輸入国が負担案や貿易・投資条件の見直しにどう反応するか、イランの海峡閉鎖・攻撃の実際の強度、原油価格・海上保険料の動向を注視し、自社のエネルギー調達・物流・対米ビジネスへの影響を評価する必要がある。"
+    },
+    "key_actor_profiles": [
+      {
+        "actor": "トランプ大統領（米国）",
+        "red_line": "米国がホルムズ海峡の安全保障を完全に放棄し、イランや他勢力に任せることは避けたいと考える可能性（仮説）。",
+        "actor_ref": "US_President_Trump",
+        "entity_id": null,
+        "confidence": "低",
+        "event_role": {
+          "role_type": "bargaining_card",
+          "explanation": "20％通航料案は、米国の安全保障負担を強調しつつ、同盟国・主要輸入国に対して『ただ乗りは許さない』というメッセージを送り、負担や譲歩を引き出すための交渉カードとして提示されたが、制度・反発を受けて別のカード（貿易・投資）へ切り替えたと解釈し得る。",
+          "intended_target_actor_ref": null
+        },
+        "formal_role": "米国大統領として、対イラン制裁、軍事行動、同盟国との安全保障協力の方針を決定しうる。",
+        "evidence_ids": null,
+        "decision_power": "ホルムズ海峡における米軍の関与レベル、対イラン制裁の強度、同盟国への負担要求のトーンを左右できる。",
+        "driving_forces": [
+          {
+            "force": "同盟国との関係・負担分担",
+            "direction": "supporting",
+            "description": "ホルムズ海峡防衛をテコに同盟国へ負担を求めることは、米国の負担軽減と政治的メッセージとして有利になり得る。"
+          },
+          {
+            "force": "国際法・制度原則",
+            "direction": "constraining",
+            "description": "国際海峡での通航料徴収は国際法上の議論を呼び、他海峡への先例となるため、官僚・同盟国・市場からの反発が強い制約となる可能性。"
+          },
+          {
+            "force": "エネルギー市場の安定",
+            "direction": "constraining",
+            "description": "過度な負担案や海峡緊張は原油価格の急騰を招き、米国経済・世界経済に悪影響を与えるため、行動の上限を制約する。"
+          }
+        ],
+        "perceived_path": "ホルムズ海峡の安全保障を米国が担うと宣言し、そのコストを理由に同盟国や主要輸入国へ負担を求めることで、経済的・政治的譲歩を引き出せると考えている可能性（仮説）。",
+        "ability_to_move": "海峡防衛のための艦隊展開、護衛作戦の強化、制裁強化や免除撤回、同盟国への協力要請・負担要求などで局面を動かせる。",
+        "issue_objective": "ホルムズ海峡の安全を米国主導で確保しつつ、その見返りとして同盟国・主要輸入国からの負担や貿易・投資面での譲歩を得ること（仮説）。",
+        "observed_action": "ホルムズ海峡の『守護者』を自任し、20％通航料案という高負担案を提示した後、翌日にこれを撤回し、貿易・投資による見返りを求める方針へ転換した。",
+        "vulnerabilities": [
+          "原油価格高騰による国内経済への悪影響",
+          "同盟国からの反発・信頼低下",
+          "長期的な軍事関与による負担と国内支持の低下"
+        ],
+        "ability_to_block": "停戦再開や緊張緩和のための譲歩・制裁緩和を拒否することで、緊張緩和の動きを阻止し得る。",
+        "primary_audience": "同盟国・ホルムズ海峡を利用する主要輸入国（日本、欧州、アジア諸国など）と国内支持層（米国民）。",
+        "why_actor_matters": "米国大統領として、ホルムズ海峡における米軍の関与、対イラン制裁、同盟国への負担要求のトーンを決める権限を持ち、この局面のエスカレーション／緩和を直接左右し得るため。",
+        "available_leverage": [
+          "対イラン制裁強化・緩和",
+          "米軍の艦隊展開・護衛作戦",
+          "同盟国への安全保障協力・負担要求",
+          "貿易・投資条件の調整"
+        ],
+        "secondary_audience": "イラン指導部および国際社会全体。",
+        "ultimate_objective": "米国の安全保障上の優位とエネルギー供給の安定を維持しつつ、国内政治的支持を確保すること（仮説）。",
+        "actor_model_challenge": null,
+        "persistent_preference": "安全保障上のカード（制裁・軍事力）を交渉材料として用い、相手から譲歩や負担を引き出すことを好む可能性（仮説）。",
+        "preference_action_gap": "安全保障を交渉カードにするというPersistent Preference仮説とは整合するが、20％という極端な率とその迅速な撤回は、原則論としての通航料導入を本気で目指していたというより、短期的な圧力・交渉カードとして出したものが、制度・同盟国・市場などの制約で押し返された結果と読む方が整合的に見える。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "国際海峡での恒常的な高率通航料制度化（国際法・同盟国の強い反発を招く）",
+          "ホルムズ海峡からの完全撤退（エネルギー供給と米国の信頼性に大きな打撃）"
+        ],
+        "confidence_adjustment_reason": null,
+        "persistent_preference_change": null,
+        "actor_intelligence_provenance": {
+          "pattern_ids": [],
+          "profile_source": "none_available",
+          "exception_episode_ids": [],
+          "general_knowledge_used": true,
+          "historical_episode_ids": [],
+          "supporting_evidence_ids": null,
+          "actor_intelligence_status": "insufficient"
+        },
+        "persistent_preference_evidence": [],
+        "pattern_applicability_assessment": null,
+        "strategic_relationship_preference": "イランに対しては圧力と交渉カードを併用しつつ、同盟国に対しては『米国が守る』構図を維持しながら負担を求める傾向がある可能性（仮説）。"
+      },
+      {
+        "actor": "イラン指導部",
+        "red_line": "米国による体制転換を狙った軍事攻撃や、完全な経済窒息状態は避けたい（仮説）。",
+        "actor_ref": "Iran_Leadership",
+        "entity_id": null,
+        "confidence": "低",
+        "event_role": {
+          "role_type": "pressure_card",
+          "explanation": "海峡閉鎖・管理強化は、対米・対同盟国への圧力カードとして位置づけられていると解釈し得る。",
+          "intended_target_actor_ref": "US_President_Trump"
+        },
+        "formal_role": "ホルムズ海峡に近接する沿岸国として、海峡の通航管理・軍事行動を事実上左右しうる。",
+        "evidence_ids": null,
+        "decision_power": "海峡閉鎖・管理強化、商船への攻撃の有無・強度を決めることで、通航安全と世界のエネルギー供給に大きな影響を与えうる。",
+        "driving_forces": [
+          {
+            "force": "制裁による経済圧力",
+            "direction": "supporting",
+            "description": "制裁による苦境が、海峡をカードとして使う動機を強める。"
+          },
+          {
+            "force": "エネルギー輸出への依存",
+            "direction": "constraining",
+            "description": "海峡閉鎖は自国の輸出にも打撃を与えるため、完全閉鎖には慎重にならざるを得ない。"
+          }
+        ],
+        "perceived_path": "海峡閉鎖・攻撃を強めることで、米国と同盟国にエネルギー供給リスクを意識させ、制裁緩和や譲歩を引き出せると考えている可能性（仮説）。",
+        "ability_to_move": "海峡閉鎖・攻撃の強度を上げることで、米国・同盟国へ圧力をかけ、制裁緩和や安全保障上の譲歩を引き出そうとできる。",
+        "issue_objective": "米国の制裁強化に対抗し、海峡閉鎖・管理強化を通じて圧力をかけ、制裁緩和や安全保障上の譲歩を得ること（仮説）。",
+        "observed_action": "7月11〜12日に海峡閉鎖・管理強化を打ち出し、軍事衝突を拡大させた。",
+        "vulnerabilities": [
+          "制裁による経済苦境",
+          "国内不満と政権安定性",
+          "軍事力の相対的劣位"
+        ],
+        "ability_to_block": "海峡再開や緊張緩和のための合意を拒否することで、停戦や協議枠組みの進展を阻止し得る。",
+        "primary_audience": "米国政府・同盟国政府。",
+        "why_actor_matters": "ホルムズ海峡の閉鎖・攻撃の強度を決めることで、通航安全と世界のエネルギー供給に直接影響を与え、米国の行動を左右し得るため。",
+        "available_leverage": [
+          "海峡閉鎖・管理強化",
+          "商船への攻撃・拿捕",
+          "地域同盟・代理勢力の活用"
+        ],
+        "secondary_audience": "国内支持層・地域諸国。",
+        "ultimate_objective": "政権維持と対米圧力の中での体制安全保障、制裁緩和、地域的影響力維持（仮説）。",
+        "actor_model_challenge": null,
+        "persistent_preference": "ホルムズ海峡を安全保障・経済のカードとして用い、対米・対同盟国交渉で圧力をかける傾向（仮説）。",
+        "preference_action_gap": "海峡をカードとして使うというPersistent Preference仮説とは整合するが、過度な閉鎖は自国の輸出や第三国の反発を招くため、どこまで実際に閉鎖するかが制約される。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "長期的な完全閉鎖（自国経済と第三国の反発が大きい）",
+          "全面戦争へのエスカレーション（体制存続リスク）"
+        ],
+        "confidence_adjustment_reason": null,
+        "persistent_preference_change": null,
+        "actor_intelligence_provenance": {
+          "pattern_ids": [],
+          "profile_source": "none_available",
+          "exception_episode_ids": [],
+          "general_knowledge_used": true,
+          "historical_episode_ids": [],
+          "supporting_evidence_ids": null,
+          "actor_intelligence_status": "insufficient"
+        },
+        "persistent_preference_evidence": [],
+        "pattern_applicability_assessment": null,
+        "strategic_relationship_preference": "米国との関係では、直接の軍事衝突を避けつつ、海峡閉鎖や攻撃をカードとして制裁緩和や譲歩を引き出す関係を志向する可能性（仮説）。"
+      }
+    ],
+    "root_premise_check": null,
+    "additional_research": [
+      {
+        "priority": "高",
+        "question": "20％通航料案に対する同盟国・主要輸入国の具体的な反応はどうだったか。",
+        "rationale": "同盟国・主要輸入国の受容性が、通航料案の実質的な意味（制度化か交渉カードか）を判定する鍵となる。",
+        "related_hypothesis": "H1",
+        "recommended_sources": "各国政府の公式声明、主要メディア報道、エネルギー・海運業界のコメント。"
+      },
+      {
+        "priority": "中",
+        "question": "米国政府内の官僚組織は、ホルムズ海峡通航料案に対してどのような立場を取ったか。",
+        "rationale": "官僚組織の反発が強かった場合、20％案撤回の主因が国内制度制約である可能性が高まる。",
+        "related_hypothesis": "H3",
+        "recommended_sources": "信頼できる政治・安全保障専門メディア、リーク報道、専門家インタビュー。"
+      },
+      {
+        "priority": "高",
+        "question": "イランの海峡閉鎖・管理強化が、実際の通航量・攻撃件数・拿捕事案にどの程度反映されているか。",
+        "rationale": "イラン側の実際の行動強度が、米国の安全保障カードの必要性と強度を左右するため。",
+        "related_hypothesis": "H0",
+        "recommended_sources": "海運・保険会社のレポート、軍事・OSINT報告、国際機関の統計。"
+      },
+      {
+        "priority": null,
+        "question": "20％通航料案に対して、同盟国（日本、欧州諸国など）やエネルギー輸入国はどのような反応・公式声明を出したか。",
+        "rationale": "Key Actor（トランプ大統領）のPreference-Action Gapと、20％案撤回のDriving Forceを特定するための重要な材料。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "米国政府内（国防総省、国務省、財務省など）から、ホルムズ海峡通航料案に対する懸念や反対意見は報じられているか。",
+        "rationale": "20％案が制度・官僚組織によって押し返されたのか、同盟国・市場からの反発が主因なのかを区別するため。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "イラン側の海峡閉鎖・管理強化は、実際の通航量・攻撃件数・拿捕事案にどの程度反映されているか（宣言と現場行動の差）。",
+        "rationale": "イランのObserved Actionの実質的強度を測り、今後のエスカレーション／抑制の主シナリオを検証するため。",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      }
+    ],
+    "hypothesis_register": [
+      {
+        "reason": "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が『守護者』を自任しつつ負担を求めるのは表向きの説明として自然であり、20％案の迅速な撤回は制度・同盟国・市場の制約を受けた修正と読むのが最も普通の説明である。意図や内部力学は未確認だが、追加の仮定が比較的少なく、今後の展開（通航料より貿易・投資カードへのシフト）を読むうえで実務的に有用。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "トランプ大統領は、ホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、代わりに貿易・投資などより柔軟な見返りを求める路線へ転換した。",
+        "hypothesis_id": "H0",
+        "hypothesis_type": "H0_straightforward",
+        "interaction_basis": {
+          "gap_note": "トランプ大統領と同盟国・イランとの具体的な相互認識や期待についての一次情報が提示されていないため、特定のActor間相互作用に依拠せず、制度・行動レベルの仮説として扱う。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "国際海峡での高率通航料制度化は国際法・同盟国・市場の制約が大きく、実務的には困難と考えられるため、20％案を交渉カード・シグナルとして用い、最終的な目的は別の領域（貿易・投資・防衛費負担）にあると読むのは説明力が高い。H0と比べて、目的の上位階層（負担分担・貿易交渉）を強調する読みであり、今後の展開（通航料ではなく他の見返りへのシフト）を予測するうえで有用。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "20％通航料案は、実際に制度化することが目的ではなく、同盟国・主要輸入国に対して『米国の安全保障負担はただではない』という強いメッセージを送り、貿易・投資・防衛費負担など別の領域で譲歩を引き出すための間接的な手段だった。",
+        "hypothesis_id": "H1",
+        "hypothesis_type": "H1_instrumental_indirect",
+        "interaction_basis": {
+          "gap_note": "同盟国・主要輸入国への具体的な働きかけや反応が提示されていないため、Actor間の詳細な相互作用ではなく、カードの機能に関する構造的仮説として扱う。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+        "status": "unresolved",
+        "confidence": "判断不能",
+        "description": "20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。",
+        "hypothesis_id": "H2",
+        "hypothesis_type": "H2_counterparty_audience_shift",
+        "interaction_basis": {
+          "gap_note": "米国内の支持層・議会・官僚組織との具体的な相互作用に関する情報が不足しており、この仮説を支持・反証する材料がない。",
+          "actor_ref": "US_President_Trump",
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "国際海峡での高率通航料制度化は、同盟国・主要輸入国・市場からの反発が予想されるため、20％案が短期間で撤回されたことを外部制約の強さで説明するのは自然である。今後の展開を読むうえでは、同盟国・市場の反応が米国のカード選択を制約するという視点が重要。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。",
+        "hypothesis_id": "H3",
+        "hypothesis_type": "H3_constraint_domestic_driver",
+        "interaction_basis": {
+          "gap_note": "同盟国・市場の具体的な反応が提示されていないため、特定の人物間相互作用ではなく、構造的制約として扱う。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+        "status": "rejected",
+        "confidence": "低",
+        "description": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。",
+        "hypothesis_id": "H4",
+        "hypothesis_type": "H4_frame_breaking",
+        "interaction_basis": {
+          "gap_note": "国際海峡原則を見直す長期的な制度設計に関する具体的な発言・文書が提示されておらず、このフレームを支持する材料が不足している。",
+          "actor_ref": "US_President_Trump",
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      }
+    ],
+    "one_line_assessment": "ホルムズ海峡をめぐる米・イラン緊張の中で、トランプ大統領は「米国が守る代わりに負担を求める」というカードを一度強く切りつつ、20％通航料案を素早く撤回し、代わりに貿易・投資などより柔軟な見返りを求める交渉路線へ切り替えたと読むのが現時点では最も整合的である（意図や内部力学は仮説）。",
+    "relevant_mechanisms": [],
+    "relevant_precedents": [],
+    "key_point_assessment": {
+      "confidence": "低",
+      "control_type": "institutionally_constrained",
+      "evidence_class": "model_general_knowledge",
+      "focus_selection": {
+        "why_now": "20％案の提示と撤回は、単なる数字の問題ではなく、『米国が守る』という安全保障メッセージと、誰がどのように費用を負担するかという上位目的・負担分担の問題を示している。今後の展開を読むには、トランプ大統領が何を最終的に得たいのか（貿易・投資・同盟国の負担など）と、誰に何を見せているのか（Audience）を読む必要がある。",
+        "trigger_types": [
+          "higher_order_objective",
+          "behavior_driving_force",
+          "audience_substance_gap"
+        ],
+        "decision_sensitive_outcome": "この局面を『通航料制度化の試み』と見るか、『安全保障カードを使った負担分担・貿易交渉』と見るかで、企業が注視すべきもの（通航料制度の有無か、貿易・投資条件の変化か、同盟国の負担分担か）が変わる。",
+        "discriminating_observation": "今後、米国が再び具体的な通航料率や制度案を提示するか、それとも貿易・投資・制裁など別のカードに集中するかが、どの読み筋が正しいかを分ける観測点になる。"
+      },
+      "hinge_structure": {
+        "primary_hinge": "国際海峡で通航料・費用負担を制度化するか、それとも交渉カードとして一時的に使うに留めるかという原則の線引き。",
+        "secondary_hinges": [
+          "同盟国・主要輸入国がどこまで負担案を受け入れるか、あるいは反発するか。",
+          "エネルギー市場の反応（価格・保険料・通航リスク）がどこまで悪化するか。"
+        ]
+      },
+      "primary_key_point": "国際海峡における通航料・費用負担の制度原則と、その交渉カード化",
+      "evidence_relevance": null,
+      "rejected_candidates": [
+        {
+          "key_point": "ホルムズ海峡の安全保障をめぐる米国主導の防衛とイランによる閉鎖カードのせめぎ合い",
+          "why_not_primary": "安全保障のせめぎ合いは重要だが、質問の焦点である20％案の提示と撤回、貿易・投資への転換を直接説明するには、制度原則と交渉カード化の視点の方が適切と判断した。安全保障は背景として扱う。"
+        },
+        {
+          "key_point": "エネルギー市場と世界経済への影響を通じた第三国の圧力・反応",
+          "why_not_primary": "市場構造は重要な制約だが、現時点の情報では具体的な価格変動や第三国の反応が示されておらず、主シナリオの中心に据えるには材料が不足しているため、補助的条件として扱う。"
+        }
+      ],
+      "selection_rationale": "今回の違和感の中心は、ホルムズ海峡の通航安全をめぐる『米国が守る』という安全保障メッセージと、20％通航料案という制度原則に関わる負担案の提示と撤回である。安全保障そのものも重要だが、今後の展開を読むうえでは、国際海峡で料金徴収を正当化するか否かという原則が交渉カードとしてどこまで使われるかが、米国の次のカード選択（通航料か、貿易・投資か、制裁か）を規定すると見るのが意思決定上有用と判断した。",
+      "candidate_key_points": [
+        {
+          "key_point": "ホルムズ海峡の安全保障をめぐる米国主導の防衛とイランによる閉鎖カードのせめぎ合い",
+          "control_type": "mixed",
+          "what_it_explains": "停戦合意から短期間で海峡閉鎖・軍事衝突拡大・米国の『守護者』宣言が起きた背景。",
+          "why_it_could_be_key": "海峡の安全保障がエネルギー供給と世界経済に直結し、米国とイランの行動が通航条件を直接左右するため。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "なぜ20％という具体的な率が選ばれ、なぜ翌日に撤回されたかという細部の政治的計算。",
+          "control_structure_summary": "米国の軍事力とイランの地理的・軍事的カードが相互に制約し合い、国際法・同盟国の反応がその上に乗る構造。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "国際海峡における通航料・費用負担の制度原則と、その交渉カード化",
+          "control_type": "institutionally_constrained",
+          "what_it_explains": "なぜ20％案が短期間で撤回され、貿易・投資という別の見返りへ転換したのかという方向性。",
+          "why_it_could_be_key": "20％通航料案とその撤回は、国際海峡で料金徴収を正当化する先例を作るか否かという制度原則に関わり、他海峡への波及可能性があるため。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "イランの海峡閉鎖・攻撃の具体的な強度や、米軍の現場行動の詳細。",
+          "control_structure_summary": "国際法、既存の海峡通航ルール、同盟国・主要輸入国の受容性が、通航料制度化の可否を制約する。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "エネルギー市場と世界経済への影響を通じた第三国の圧力・反応",
+          "control_type": "structural",
+          "what_it_explains": "なぜ米国が完全な海峡閉鎖や過度な負担案を維持しにくいか。",
+          "why_it_could_be_key": "ホルムズ海峡の緊張は原油価格や世界経済に影響し、日本や欧州など第三国の反応が米国・イラン双方の行動を制約し得るため。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "トランプ大統領の具体的な発言内容やタイミングの政治的意図。",
+          "control_structure_summary": "原油価格、保険料、通航リスクなど市場構造が、各国の許容できる緊張レベルを決める。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        }
+      ],
+      "disconfirming_signal": "同盟国・主要輸入国が20％通航料案を歓迎し、国際海峡での恒常的な通航料制度化に前向きな合意が形成される場合、この局面を『交渉カードとしての一時的な提示と撤回』ではなく『新制度への移行』と見る必要が生じ、現在のKey Point設定は誤りとなる。",
+      "controlling_entity_ids": null,
+      "supporting_evidence_ids": null,
+      "control_structure_summary": "国際法・既存の海峡通航ルール、同盟国・主要輸入国の受容性、エネルギー市場の反応が、通航料制度化の可否を制約する。米国大統領の裁量だけでは決められず、制度と他国の反応が強く影響する。",
+      "supporting_knowledge_refs": null,
+      "contradicting_evidence_ids": null,
+      "confidence_adjustment_reason": null,
+      "control_type_adjustment_reason": null,
+      "historical_supporting_evidence_ids": null,
+      "relevance_confidence_adjustment_reason": null
+    },
+    "media_source_context": null,
+    "unknown_or_uncertain": "20％通航料案の具体的な内容（対象船舶・適用範囲）、同盟国・主要輸入国の反応、米国政府内の官僚組織の立場、イランの海峡閉鎖・管理強化の実際の強度など、今後の展開を読むうえで重要な情報が現時点では不明である。",
+    "alternative_scenarios": [
+      {
+        "confidence": "低",
+        "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+        ],
+        "weakening_conditions": [
+          "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+        ],
+        "strengthening_conditions": [
+          "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+          "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+        ],
+        "derived_from_hypothesis_id": "H0",
+        "confidence_adjustment_reason": null
+      },
+      {
+        "confidence": "低",
+        "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+        ],
+        "weakening_conditions": [
+          "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+        ],
+        "strengthening_conditions": [
+          "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+          "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+        ],
+        "derived_from_hypothesis_id": "H3",
+        "confidence_adjustment_reason": null
+      },
+      {
+        "confidence": "判断不能",
+        "description": "H2（国内向けシグナル）に基づくシナリオ：20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。今後の焦点は、トランプ大統領が対イラン強硬姿勢を国内向けにどこまで維持するかと、官僚組織・同盟国との折り合いをどう付けるかに移る。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "信頼できる情報源が、20％案が主として国内向けシグナルであり、撤回が官僚組織・議会との調整の結果だったと示した場合、主シナリオを国内政治フレームへ切り替える必要がある。"
+        ],
+        "weakening_conditions": [
+          "同盟国・主要輸入国や市場の反応が、20％案撤回の主因だったことを示す情報が出る。"
+        ],
+        "strengthening_conditions": [
+          "米国内メディアや専門家分析が、20％案を主として国内向けポジショニングとして解釈していること。",
+          "官僚組織や議会からの反発・懸念が、20％案撤回の主因だったことを示すリークや証言が出る。"
+        ],
+        "derived_from_hypothesis_id": "H2",
+        "confidence_adjustment_reason": null
+      }
+    ],
+    "discretion_assessment": {
+      "mode_rationale": "ホルムズ海峡の通航安全は物理的・地理的制約（海峡の位置、艦隊展開能力）や国際法の枠組みに強く制約される一方で、トランプ大統領やイラン指導部の裁量的な発言・カードの出し入れが緊張の度合いと交渉条件を大きく動かしているため、構造と人間の裁量が併存していると見る。",
+      "discretion_mode": "MIXED"
+    },
+    "monitoring_indicators": [
+      "米国が再びホルムズ海峡に関する具体的な通航料・費用負担案を提示するかどうか。",
+      "同盟国・主要輸入国（日本、欧州、アジア諸国など）の政府・企業によるホルムズ海峡負担案への反応・公式声明。",
+      "イランによる海峡閉鎖・管理強化が、実際の通航量・攻撃件数・拿捕事案にどの程度反映されているか。",
+      "原油価格・海上保険料・運賃の動向（ホルムズ海峡リスクプレミアムの有無）。",
+      "米国が貿易・投資・防衛費負担など他の領域で同盟国に対する譲歩要求を強めるかどうか。"
+    ],
+    "retraction_conditions": [
+      "米国がホルムズ海峡で再び具体的な通航料制度案を提示し、同盟国・主要輸入国と制度化に向けた協議を進める場合。",
+      "イランの海峡閉鎖・管理強化が完全閉鎖に近い状態まで進み、米国が通航料ではなく軍事的エスカレーションに集中する場合。"
+    ],
+    "sources_and_citations": [],
+    "weakening_information": "20％案が実際には同盟国・主要輸入国からほとんど真剣に受け止められず、単なる国内向け発言として扱われていた場合、通航料制度原則を交渉カードとして読む主シナリオの重みは弱まる。",
+    "contradicting_evidence": [],
+    "directional_perceptions": [],
+    "expert_reasoning_checks": {
+      "feasibility_check": {
+        "question": "米国がホルムズ海峡で20％通航料を実際に徴収・運用することは、国際法・同盟国・市場の制約を踏まえて現実的に可能だったのか。何が実行上のボトルネックか。",
+        "applicable": true,
+        "trigger_basis": [
+          "20％という高率の通航料案が、実務的に徴収・運用可能かどうか不明であり、国際法・同盟国・市場の受容性がボトルネックとなり得る。"
+        ],
+        "evidence_status": "unresolved"
+      },
+      "role_choreography_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      },
+      "capability_vs_intent_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      },
+      "premise_invalidation_check": {
+        "question": "米国は国際海峡の自由通航原則を維持するのか、それともホルムズ海峡で料金徴収を正当化する新たな原則を模索しているのか。",
+        "applicable": true,
+        "trigger_basis": [
+          "前提X: 米国は国際海峡の自由通航原則を尊重し、料金徴収を制度化しないという従来認識。",
+          "変化Y: トランプ大統領がホルムズ海峡で20％通航料案を提示し、米国が守る・管理するという趣旨の発言をしたこと。"
+        ],
+        "evidence_status": "unresolved"
+      }
+    },
+    "investigation_questions": [
+      {
+        "question": "20％通航料案に対して、同盟国（日本、欧州諸国など）やエネルギー輸入国はどのような反応・公式声明を出したか。",
+        "rationale": "Key Actor（トランプ大統領）のPreference-Action Gapと、20％案撤回のDriving Forceを特定するための重要な材料。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "米国政府内（国防総省、国務省、財務省など）から、ホルムズ海峡通航料案に対する懸念や反対意見は報じられているか。",
+        "rationale": "20％案が制度・官僚組織によって押し返されたのか、同盟国・市場からの反発が主因なのかを区別するため。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "イラン側の海峡閉鎖・管理強化は、実際の通航量・攻撃件数・拿捕事案にどの程度反映されているか（宣言と現場行動の差）。",
+        "rationale": "イランのObserved Actionの実質的強度を測り、今後のエスカレーション／抑制の主シナリオを検証するため。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      }
+    ],
+    "identified_knowledge_gaps": [
+      {
+        "priority": "高",
+        "description": "20％通航料案に対する同盟国・主要輸入国の具体的な反応（支持・反対・懸念）。",
+        "gap_category": "deterministic",
+        "recommended_action": "各国政府・企業の声明や報道を確認し、負担案への受容性と反発の強さを把握する。"
+      },
+      {
+        "priority": "中",
+        "description": "米国政府内（国防総省、国務省、財務省など）の内部調整・反対意見の有無。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "信頼できる報道や専門家分析を通じて、官僚組織の立場を確認する。"
+      },
+      {
+        "priority": "高",
+        "description": "イランの海峡閉鎖・管理強化が、実際の通航量・攻撃件数・拿捕事案にどの程度反映されているか。",
+        "gap_category": "deterministic",
+        "recommended_action": "海運・保険・軍事報告などから現場の通航状況と攻撃事案を確認する。"
+      }
+    ],
+    "knowledge_gaps_referenced": [],
+    "strongest_counterargument": "20％通航料案は、同盟国・主要輸入国やイランに向けた交渉カードというより、米国内の支持層・議会に対して強硬姿勢を示すための国内向けシグナルであり、翌日の撤回は官僚組織や同盟国との調整の結果だった可能性がある。この場合、主な焦点は対外負担分担ではなく、国内政治上のポジショニングになる。",
+    "human_interaction_coverage": {
+      "status_rationale": "トランプ大統領とイラン指導部、同盟国との具体的な相互認識や期待についての一次情報が提示されていないため、Directional PerceptionやSituation Actor Assessmentを根拠を持って埋めることができない。人間模様は重要だが、現時点では制度・行動レベルの仮説に留める。",
+      "interaction_status": "INSUFFICIENT_EVIDENCE"
+    },
+    "key_actor_action_substance": [],
+    "key_stakeholder_assessment": {
+      "rationale": "ホルムズ海峡の安全保障と通航条件を大きく動かせるのは、米軍の展開と制裁を決めるトランプ大統領と、海峡閉鎖・攻撃の強度を左右するイラン指導部である。加えて、同盟国・主要輸入国も重要だが、この局面を直接エスカレート／緩和できる決定権は米国大統領とイラン側に集中していると暫定的に見る。",
+      "confidence": "低",
+      "evidence_ids": null,
+      "determination": "multiple",
+      "decision_structure": "米国側では大統領が軍事行動・制裁方針・同盟国への負担要求のトーンを決めるが、議会・官僚・同盟国の反発が制約となる。イラン側では最高指導者・革命防衛隊などが海峡閉鎖・攻撃の強度を決めるが、経済制裁と国内政治が制約となる。",
+      "selected_actor_ids": [
+        "US_President_Trump",
+        "Iran_Leadership"
+      ]
+    },
+    "situation_actor_assessment": [],
+    "decisive_power_and_leverage": null,
+    "assets_dependencies_leverage": [],
+    "preference_action_gap_summary": "トランプ大統領は、ホルムズ海峡の安全保障を米国主導で維持しつつ負担や見返りを求める志向を持つと仮定すると、20％通航料案の提示はその志向と整合するが、翌日の撤回は国際法・同盟国・市場の制約を受けてカードの形を変えた結果と読むのが整合的である。一方、イラン指導部は海峡閉鎖・管理強化をカードとして用いる志向と整合するが、過度な閉鎖は自国経済と第三国の反発を招くため、どこまで実際に閉鎖するかが制約される。"
+  },
+  "stage_bd_ranked_candidates": [
+    {
+      "scenario_candidate_id": "de509f65-2bf5-4f99-9aa3-ab997a8019d8",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+            "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+            "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+          ],
+          "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+          "supporting_evidence": [
+            "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+            "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+            "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+          ],
+          "observable_indicators": [
+            "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+            "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+            "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+            "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "9a6c91d8-2429-4edf-a2a9-e376b8d3c0ab",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 2,
+      "title": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+          ],
+          "weakening_conditions": [
+            "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+            "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "b73c0b6b-7196-48bd-9a39-07070921883c",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 3,
+      "title": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+            "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "fa85c055-9928-4384-9a25-9287ecaf10f3",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 4,
+      "title": "H2（国内向けシグナル）に基づくシナリオ：20％通航料案は",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "H2（国内向けシグナル）に基づくシナリオ：20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。今後の焦点は、トランプ大統領が対イラン強硬姿勢を国内向けにどこまで維持するかと、官僚組織・同盟国との折り合いをどう付けるかに移る。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "信頼できる情報源が、20％案が主として国内向けシグナルであり、撤回が官僚組織・議会との調整の結果だったと示した場合、主シナリオを国内政治フレームへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国や市場の反応が、20％案撤回の主因だったことを示す情報が出る。"
+          ],
+          "strengthening_conditions": [
+            "米国内メディアや専門家分析が、20％案を主として国内向けポジショニングとして解釈していること。",
+            "官僚組織や議会からの反発・懸念が、20％案撤回の主因だったことを示すリークや証言が出る。"
+          ],
+          "derived_from_hypothesis_id": "H2",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 信頼できる情報源が、20％案が主として国内向けシグナルであり、撤回が官僚組織・議会との調整の結果だったと示した場合、主シナリオを国内政治フレームへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "2bfe7890-f6df-45ff-bc9b-721e797f3721",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 5,
+      "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+          "key_cue": "6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序",
+          "reading": "20％案とその迅速な撤回は、同盟国への負担メッセージだけでなく、イランとの停戦・制裁交渉においてホルムズ海峡の管理権限を米国側に引き寄せるためのレバー構築だったと読む。米国が「守護者」を自任し、通航条件を一時的にでも握ることで、今後の停戦再構築や制裁緩和の取引材料を増やそうとしている可能性である。",
+          "switch_condition": "今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+            "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+            "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+            "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+            "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+            "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+          ],
+          "key_actors_and_structure": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序\n支持する理由: 暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。 / イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。 / トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。 / 20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。\n弱める情報: 資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。 / 20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。 / イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。\n切替条件: 今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "9ce95d8c-a096-43ed-83f8-427072184231",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 6,
+      "title": "「守護者」宣言は海峡安定化ではなく、むしろ限定的緊張維持を狙うリスク許容戦略",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "「守護者」宣言は海峡安定化ではなく、むしろ限定的緊張維持を狙うリスク許容戦略",
+          "key_cue": "暫定停戦合意後も商船攻撃と米軍報復が続き、停戦が不安定化しているにもかかわらず、米国が停戦終了を表明し制裁免除を撤回したうえで、海峡の「守護者」を自任しつつ負担案を提示しているという、安定化志向と矛盾するように見える行動の連続",
+          "reading": "主流の前提である『米国はホルムズ海峡の安定化を目指している』を反転し、米国が一定の緊張と不安定性を意図的に維持することで、同盟国・主要輸入国・イランに対する交渉力を高めようとしていると読む。20％案とその撤回は、海峡リスクを顕在化させつつ、完全な危機には至らせない「管理された不安定」の一環と位置づけられる。",
+          "switch_condition": "今後、米国が海峡の緊張を緩和し得る局面（例えば追加停戦提案や緩和措置）でも、あえて強硬な軍事プレゼンスや制裁強化を優先し、海峡リスクを高止まりさせる選択を続ける場合、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "米国は6月17日に暫定停戦に合意したにもかかわらず、6月25日以降の商船攻撃と米軍報復を経て、7月7〜8日に停戦終了と制裁免除撤回を表明しており、短期的安定よりも対イラン圧力を優先した行動に見える。",
+            "イランが海峡閉鎖・管理強化を打ち出し軍事衝突が拡大している局面で、米国が「守護者」宣言と20％案を提示することは、緊張を鎮静化するよりも、むしろ海峡を政治・経済的な争点として前面に押し出す効果を持つ。",
+            "20％案のような極端な負担案は、市場や同盟国に海峡リスクを強く意識させるショックとして機能し、その後の撤回と貿易・投資への転換は、リスクを完全には解消せずに交渉余地を残す「揺さぶり」として解釈できる。",
+            "トランプ政権は他の地域でも、一定の緊張を維持しつつ取引を進めるスタイルを取ってきたと一般に理解されており、ホルムズ海峡でも同様のリスク許容戦略が採用されている可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国が意図的に海峡の不安定性を維持しようとしているという直接的な証拠はなく、単に対イラン圧力や同盟国への負担要求の副作用として緊張が高まっているだけという解釈も可能である。",
+            "エネルギー市場の過度な不安定化は米国経済にも悪影響を及ぼし得るため、米国が積極的にボラティリティを高めるインセンティブは限定的である。",
+            "同盟国・主要輸入国の反発が強まれば、米国の対イラン連携にも支障が出るため、管理された緊張の維持は実務的に難しい戦略である。"
+          ],
+          "key_actors_and_structure": "米国政権（特に対イラン強硬派）、イラン、同盟国・主要輸入国、エネルギー市場。構造としては、(1)限定的な海峡リスクを維持することで、同盟国・輸入国に米国の安全保障の必要性を再認識させる構図、(2)イランに対して経済・軍事両面で圧力をかけるための「管理された緊張」、(3)エネルギー市場のボラティリティを通じた政治・経済的レバー。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "米国政権（特に対イラン強硬派）、イラン、同盟国・主要輸入国、エネルギー市場。構造としては、(1)限定的な海峡リスクを維持することで、同盟国・輸入国に米国の安全保障の必要性を再認識させる構図、(2)イランに対して経済・軍事両面で圧力をかけるための「管理された緊張」、(3)エネルギー市場のボラティリティを通じた政治・経済的レバー。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 暫定停戦合意後も商船攻撃と米軍報復が続き、停戦が不安定化しているにもかかわらず、米国が停戦終了を表明し制裁免除を撤回したうえで、海峡の「守護者」を自任しつつ負担案を提示しているという、安定化志向と矛盾するように見える行動の連続\n支持する理由: 米国は6月17日に暫定停戦に合意したにもかかわらず、6月25日以降の商船攻撃と米軍報復を経て、7月7〜8日に停戦終了と制裁免除撤回を表明しており、短期的安定よりも対イラン圧力を優先した行動に見える。 / イランが海峡閉鎖・管理強化を打ち出し軍事衝突が拡大している局面で、米国が「守護者」宣言と20％案を提示することは、緊張を鎮静化するよりも、むしろ海峡を政治・経済的な争点として前面に押し出す効果を持つ。 / 20％案のような極端な負担案は、市場や同盟国に海峡リスクを強く意識させるショックとして機能し、その後の撤回と貿易・投資への転換は、リスクを完全には解消せずに交渉余地を残す「揺さぶり」として解釈できる。 / トランプ政権は他の地域でも、一定の緊張を維持しつつ取引を進めるスタイルを取ってきたと一般に理解されており、ホルムズ海峡でも同様のリスク許容戦略が採用されている可能性がある。\n弱める情報: 資料には、米国が意図的に海峡の不安定性を維持しようとしているという直接的な証拠はなく、単に対イラン圧力や同盟国への負担要求の副作用として緊張が高まっているだけという解釈も可能である。 / エネルギー市場の過度な不安定化は米国経済にも悪影響を及ぼし得るため、米国が積極的にボラティリティを高めるインセンティブは限定的である。 / 同盟国・主要輸入国の反発が強まれば、米国の対イラン連携にも支障が出るため、管理された緊張の維持は実務的に難しい戦略である。\n切替条件: 今後、米国が海峡の緊張を緩和し得る局面（例えば追加停戦提案や緩和措置）でも、あえて強硬な軍事プレゼンスや制裁強化を優先し、海峡リスクを高止まりさせる選択を続ける場合、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "702f76bb-f04c-43c8-a18a-17d7aa92bfd9",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 7,
+      "title": "ホルムズ海峡を起点とした「多国間安全保障プラットフォーム」構想への転化",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "ホルムズ海峡を起点とした「多国間安全保障プラットフォーム」構想への転化",
+          "key_cue": "20％案が国際法・同盟国・市場の制約から早期に撤回され、代わりに貿易・投資による見返りを求める方針へ転換したという流れと、ホルムズ海峡の安全保障負担が米国単独では持続しにくいという構造的問題",
+          "reading": "発生確率は低いが、20％案の失敗と守護者宣言を契機に、米国が単独負担モデルから多国間の海峡安全保障枠組み（共同パトロール・費用分担・投資連携）へと構想を転換する可能性を読む。米国は『守護者』としての役割を維持しつつ、同盟国・主要輸入国を巻き込んだ新たな安全保障プラットフォームを提案し、通航料ではなく共同投資・防衛協力を軸にした枠組みを模索するシナリオである。",
+          "switch_condition": "米国が今後、ホルムズ海峡の安全保障について同盟国・主要輸入国との共同枠組み（共同パトロール、費用分担、インフラ投資など）を正式に提案・協議し始めた場合、この多国間プラットフォーム構想シナリオの重要性が増す。",
+          "supporting_reasons": [
+            "20％案のような高率通航料の制度化は国際法・同盟国・市場の制約から困難であり、米国が安全保障負担を単独で引き受けつつ費用回収を図るモデルには構造的な限界がある。",
+            "トランプ大統領が通航料案を撤回した後、貿易・投資による見返りを求める方針へ転換していることは、安全保障負担と経済的関係をパッケージ化する方向性を示唆しており、多国間の共同投資・防衛協力枠組みへ発展し得る。",
+            "イランの海峡閉鎖・管理強化と軍事衝突の拡大により、ホルムズ海峡の安全保障は単なる米・イラン問題ではなく、主要輸入国全体の利害に関わる国際公共財として再認識されている可能性がある。",
+            "米国が「守護者」を自任しつつも、費用負担を巡る議論を開いたこと自体が、同盟国・主要輸入国を巻き込んだ新たな枠組みの必要性を示すシグナルとして機能し得る。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、多国間安全保障枠組みや共同パトロール・費用分担スキームに関する具体的な提案や議論は示されておらず、この読みは構造的可能性に基づく仮説にとどまる。",
+            "トランプ政権は多国間枠組みよりも二国間交渉を好む傾向が一般に指摘されており、複雑な多国間プラットフォーム構築に積極的に動くかは不透明である。",
+            "イランを含む形での多国間枠組みは政治的に極めて難しく、イランを排除した枠組みは海峡の実効支配をめぐる緊張をさらに高めるリスクがある。"
+          ],
+          "key_actors_and_structure": "米国、同盟国（特に主要輸入国）、イラン以外の湾岸諸国、国際海運・エネルギー企業。構造としては、(1)海峡安全保障をめぐる米国単独モデルの持続可能性の限界、(2)多国間枠組みへの移行を通じた費用・リスク分散、(3)安全保障と貿易・投資を一体化したプラットフォーム化。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "米国、同盟国（特に主要輸入国）、イラン以外の湾岸諸国、国際海運・エネルギー企業。構造としては、(1)海峡安全保障をめぐる米国単独モデルの持続可能性の限界、(2)多国間枠組みへの移行を通じた費用・リスク分散、(3)安全保障と貿易・投資を一体化したプラットフォーム化。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 20％案が国際法・同盟国・市場の制約から早期に撤回され、代わりに貿易・投資による見返りを求める方針へ転換したという流れと、ホルムズ海峡の安全保障負担が米国単独では持続しにくいという構造的問題\n支持する理由: 20％案のような高率通航料の制度化は国際法・同盟国・市場の制約から困難であり、米国が安全保障負担を単独で引き受けつつ費用回収を図るモデルには構造的な限界がある。 / トランプ大統領が通航料案を撤回した後、貿易・投資による見返りを求める方針へ転換していることは、安全保障負担と経済的関係をパッケージ化する方向性を示唆しており、多国間の共同投資・防衛協力枠組みへ発展し得る。 / イランの海峡閉鎖・管理強化と軍事衝突の拡大により、ホルムズ海峡の安全保障は単なる米・イラン問題ではなく、主要輸入国全体の利害に関わる国際公共財として再認識されている可能性がある。 / 米国が「守護者」を自任しつつも、費用負担を巡る議論を開いたこと自体が、同盟国・主要輸入国を巻き込んだ新たな枠組みの必要性を示すシグナルとして機能し得る。\n弱める情報: 資料には、多国間安全保障枠組みや共同パトロール・費用分担スキームに関する具体的な提案や議論は示されておらず、この読みは構造的可能性に基づく仮説にとどまる。 / トランプ政権は多国間枠組みよりも二国間交渉を好む傾向が一般に指摘されており、複雑な多国間プラットフォーム構築に積極的に動くかは不透明である。 / イランを含む形での多国間枠組みは政治的に極めて難しく、イランを排除した枠組みは海峡の実効支配をめぐる緊張をさらに高めるリスクがある。\n切替条件: 米国が今後、ホルムズ海峡の安全保障について同盟国・主要輸入国との共同枠組み（共同パトロール、費用分担、インフラ投資など）を正式に提案・協議し始めた場合、この多国間プラットフォーム構想シナリオの重要性が増す。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    }
+  ],
+  "stage_bd_displayed_top5": [
+    {
+      "scenario_candidate_id": "de509f65-2bf5-4f99-9aa3-ab997a8019d8",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+            "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+            "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+          ],
+          "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+          "supporting_evidence": [
+            "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+            "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+            "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+          ],
+          "observable_indicators": [
+            "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+            "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+            "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+            "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "9a6c91d8-2429-4edf-a2a9-e376b8d3c0ab",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 2,
+      "title": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+          ],
+          "weakening_conditions": [
+            "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+            "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "b73c0b6b-7196-48bd-9a39-07070921883c",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 3,
+      "title": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+            "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "fa85c055-9928-4384-9a25-9287ecaf10f3",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 4,
+      "title": "H2（国内向けシグナル）に基づくシナリオ：20％通航料案は",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "H2（国内向けシグナル）に基づくシナリオ：20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。今後の焦点は、トランプ大統領が対イラン強硬姿勢を国内向けにどこまで維持するかと、官僚組織・同盟国との折り合いをどう付けるかに移る。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "信頼できる情報源が、20％案が主として国内向けシグナルであり、撤回が官僚組織・議会との調整の結果だったと示した場合、主シナリオを国内政治フレームへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国や市場の反応が、20％案撤回の主因だったことを示す情報が出る。"
+          ],
+          "strengthening_conditions": [
+            "米国内メディアや専門家分析が、20％案を主として国内向けポジショニングとして解釈していること。",
+            "官僚組織や議会からの反発・懸念が、20％案撤回の主因だったことを示すリークや証言が出る。"
+          ],
+          "derived_from_hypothesis_id": "H2",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 信頼できる情報源が、20％案が主として国内向けシグナルであり、撤回が官僚組織・議会との調整の結果だったと示した場合、主シナリオを国内政治フレームへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "2bfe7890-f6df-45ff-bc9b-721e797f3721",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 5,
+      "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+          "key_cue": "6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序",
+          "reading": "20％案とその迅速な撤回は、同盟国への負担メッセージだけでなく、イランとの停戦・制裁交渉においてホルムズ海峡の管理権限を米国側に引き寄せるためのレバー構築だったと読む。米国が「守護者」を自任し、通航条件を一時的にでも握ることで、今後の停戦再構築や制裁緩和の取引材料を増やそうとしている可能性である。",
+          "switch_condition": "今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+            "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+            "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+            "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+            "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+            "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+          ],
+          "key_actors_and_structure": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序\n支持する理由: 暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。 / イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。 / トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。 / 20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。\n弱める情報: 資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。 / 20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。 / イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。\n切替条件: 今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    }
+  ],
+  "stage_c_reading_portfolio_candidates": [
+    {
+      "scenario_candidate_id": "2bfe7890-f6df-45ff-bc9b-721e797f3721",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 5,
+      "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+          "key_cue": "6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序",
+          "reading": "20％案とその迅速な撤回は、同盟国への負担メッセージだけでなく、イランとの停戦・制裁交渉においてホルムズ海峡の管理権限を米国側に引き寄せるためのレバー構築だったと読む。米国が「守護者」を自任し、通航条件を一時的にでも握ることで、今後の停戦再構築や制裁緩和の取引材料を増やそうとしている可能性である。",
+          "switch_condition": "今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+            "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+            "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+            "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+            "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+            "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+          ],
+          "key_actors_and_structure": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序\n支持する理由: 暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。 / イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。 / トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。 / 20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。\n弱める情報: 資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。 / 20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。 / イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。\n切替条件: 今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "9ce95d8c-a096-43ed-83f8-427072184231",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 6,
+      "title": "「守護者」宣言は海峡安定化ではなく、むしろ限定的緊張維持を狙うリスク許容戦略",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "「守護者」宣言は海峡安定化ではなく、むしろ限定的緊張維持を狙うリスク許容戦略",
+          "key_cue": "暫定停戦合意後も商船攻撃と米軍報復が続き、停戦が不安定化しているにもかかわらず、米国が停戦終了を表明し制裁免除を撤回したうえで、海峡の「守護者」を自任しつつ負担案を提示しているという、安定化志向と矛盾するように見える行動の連続",
+          "reading": "主流の前提である『米国はホルムズ海峡の安定化を目指している』を反転し、米国が一定の緊張と不安定性を意図的に維持することで、同盟国・主要輸入国・イランに対する交渉力を高めようとしていると読む。20％案とその撤回は、海峡リスクを顕在化させつつ、完全な危機には至らせない「管理された不安定」の一環と位置づけられる。",
+          "switch_condition": "今後、米国が海峡の緊張を緩和し得る局面（例えば追加停戦提案や緩和措置）でも、あえて強硬な軍事プレゼンスや制裁強化を優先し、海峡リスクを高止まりさせる選択を続ける場合、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "米国は6月17日に暫定停戦に合意したにもかかわらず、6月25日以降の商船攻撃と米軍報復を経て、7月7〜8日に停戦終了と制裁免除撤回を表明しており、短期的安定よりも対イラン圧力を優先した行動に見える。",
+            "イランが海峡閉鎖・管理強化を打ち出し軍事衝突が拡大している局面で、米国が「守護者」宣言と20％案を提示することは、緊張を鎮静化するよりも、むしろ海峡を政治・経済的な争点として前面に押し出す効果を持つ。",
+            "20％案のような極端な負担案は、市場や同盟国に海峡リスクを強く意識させるショックとして機能し、その後の撤回と貿易・投資への転換は、リスクを完全には解消せずに交渉余地を残す「揺さぶり」として解釈できる。",
+            "トランプ政権は他の地域でも、一定の緊張を維持しつつ取引を進めるスタイルを取ってきたと一般に理解されており、ホルムズ海峡でも同様のリスク許容戦略が採用されている可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国が意図的に海峡の不安定性を維持しようとしているという直接的な証拠はなく、単に対イラン圧力や同盟国への負担要求の副作用として緊張が高まっているだけという解釈も可能である。",
+            "エネルギー市場の過度な不安定化は米国経済にも悪影響を及ぼし得るため、米国が積極的にボラティリティを高めるインセンティブは限定的である。",
+            "同盟国・主要輸入国の反発が強まれば、米国の対イラン連携にも支障が出るため、管理された緊張の維持は実務的に難しい戦略である。"
+          ],
+          "key_actors_and_structure": "米国政権（特に対イラン強硬派）、イラン、同盟国・主要輸入国、エネルギー市場。構造としては、(1)限定的な海峡リスクを維持することで、同盟国・輸入国に米国の安全保障の必要性を再認識させる構図、(2)イランに対して経済・軍事両面で圧力をかけるための「管理された緊張」、(3)エネルギー市場のボラティリティを通じた政治・経済的レバー。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "米国政権（特に対イラン強硬派）、イラン、同盟国・主要輸入国、エネルギー市場。構造としては、(1)限定的な海峡リスクを維持することで、同盟国・輸入国に米国の安全保障の必要性を再認識させる構図、(2)イランに対して経済・軍事両面で圧力をかけるための「管理された緊張」、(3)エネルギー市場のボラティリティを通じた政治・経済的レバー。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 暫定停戦合意後も商船攻撃と米軍報復が続き、停戦が不安定化しているにもかかわらず、米国が停戦終了を表明し制裁免除を撤回したうえで、海峡の「守護者」を自任しつつ負担案を提示しているという、安定化志向と矛盾するように見える行動の連続\n支持する理由: 米国は6月17日に暫定停戦に合意したにもかかわらず、6月25日以降の商船攻撃と米軍報復を経て、7月7〜8日に停戦終了と制裁免除撤回を表明しており、短期的安定よりも対イラン圧力を優先した行動に見える。 / イランが海峡閉鎖・管理強化を打ち出し軍事衝突が拡大している局面で、米国が「守護者」宣言と20％案を提示することは、緊張を鎮静化するよりも、むしろ海峡を政治・経済的な争点として前面に押し出す効果を持つ。 / 20％案のような極端な負担案は、市場や同盟国に海峡リスクを強く意識させるショックとして機能し、その後の撤回と貿易・投資への転換は、リスクを完全には解消せずに交渉余地を残す「揺さぶり」として解釈できる。 / トランプ政権は他の地域でも、一定の緊張を維持しつつ取引を進めるスタイルを取ってきたと一般に理解されており、ホルムズ海峡でも同様のリスク許容戦略が採用されている可能性がある。\n弱める情報: 資料には、米国が意図的に海峡の不安定性を維持しようとしているという直接的な証拠はなく、単に対イラン圧力や同盟国への負担要求の副作用として緊張が高まっているだけという解釈も可能である。 / エネルギー市場の過度な不安定化は米国経済にも悪影響を及ぼし得るため、米国が積極的にボラティリティを高めるインセンティブは限定的である。 / 同盟国・主要輸入国の反発が強まれば、米国の対イラン連携にも支障が出るため、管理された緊張の維持は実務的に難しい戦略である。\n切替条件: 今後、米国が海峡の緊張を緩和し得る局面（例えば追加停戦提案や緩和措置）でも、あえて強硬な軍事プレゼンスや制裁強化を優先し、海峡リスクを高止まりさせる選択を続ける場合、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "702f76bb-f04c-43c8-a18a-17d7aa92bfd9",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 7,
+      "title": "ホルムズ海峡を起点とした「多国間安全保障プラットフォーム」構想への転化",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "ホルムズ海峡を起点とした「多国間安全保障プラットフォーム」構想への転化",
+          "key_cue": "20％案が国際法・同盟国・市場の制約から早期に撤回され、代わりに貿易・投資による見返りを求める方針へ転換したという流れと、ホルムズ海峡の安全保障負担が米国単独では持続しにくいという構造的問題",
+          "reading": "発生確率は低いが、20％案の失敗と守護者宣言を契機に、米国が単独負担モデルから多国間の海峡安全保障枠組み（共同パトロール・費用分担・投資連携）へと構想を転換する可能性を読む。米国は『守護者』としての役割を維持しつつ、同盟国・主要輸入国を巻き込んだ新たな安全保障プラットフォームを提案し、通航料ではなく共同投資・防衛協力を軸にした枠組みを模索するシナリオである。",
+          "switch_condition": "米国が今後、ホルムズ海峡の安全保障について同盟国・主要輸入国との共同枠組み（共同パトロール、費用分担、インフラ投資など）を正式に提案・協議し始めた場合、この多国間プラットフォーム構想シナリオの重要性が増す。",
+          "supporting_reasons": [
+            "20％案のような高率通航料の制度化は国際法・同盟国・市場の制約から困難であり、米国が安全保障負担を単独で引き受けつつ費用回収を図るモデルには構造的な限界がある。",
+            "トランプ大統領が通航料案を撤回した後、貿易・投資による見返りを求める方針へ転換していることは、安全保障負担と経済的関係をパッケージ化する方向性を示唆しており、多国間の共同投資・防衛協力枠組みへ発展し得る。",
+            "イランの海峡閉鎖・管理強化と軍事衝突の拡大により、ホルムズ海峡の安全保障は単なる米・イラン問題ではなく、主要輸入国全体の利害に関わる国際公共財として再認識されている可能性がある。",
+            "米国が「守護者」を自任しつつも、費用負担を巡る議論を開いたこと自体が、同盟国・主要輸入国を巻き込んだ新たな枠組みの必要性を示すシグナルとして機能し得る。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、多国間安全保障枠組みや共同パトロール・費用分担スキームに関する具体的な提案や議論は示されておらず、この読みは構造的可能性に基づく仮説にとどまる。",
+            "トランプ政権は多国間枠組みよりも二国間交渉を好む傾向が一般に指摘されており、複雑な多国間プラットフォーム構築に積極的に動くかは不透明である。",
+            "イランを含む形での多国間枠組みは政治的に極めて難しく、イランを排除した枠組みは海峡の実効支配をめぐる緊張をさらに高めるリスクがある。"
+          ],
+          "key_actors_and_structure": "米国、同盟国（特に主要輸入国）、イラン以外の湾岸諸国、国際海運・エネルギー企業。構造としては、(1)海峡安全保障をめぐる米国単独モデルの持続可能性の限界、(2)多国間枠組みへの移行を通じた費用・リスク分散、(3)安全保障と貿易・投資を一体化したプラットフォーム化。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "米国、同盟国（特に主要輸入国）、イラン以外の湾岸諸国、国際海運・エネルギー企業。構造としては、(1)海峡安全保障をめぐる米国単独モデルの持続可能性の限界、(2)多国間枠組みへの移行を通じた費用・リスク分散、(3)安全保障と貿易・投資を一体化したプラットフォーム化。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 20％案が国際法・同盟国・市場の制約から早期に撤回され、代わりに貿易・投資による見返りを求める方針へ転換したという流れと、ホルムズ海峡の安全保障負担が米国単独では持続しにくいという構造的問題\n支持する理由: 20％案のような高率通航料の制度化は国際法・同盟国・市場の制約から困難であり、米国が安全保障負担を単独で引き受けつつ費用回収を図るモデルには構造的な限界がある。 / トランプ大統領が通航料案を撤回した後、貿易・投資による見返りを求める方針へ転換していることは、安全保障負担と経済的関係をパッケージ化する方向性を示唆しており、多国間の共同投資・防衛協力枠組みへ発展し得る。 / イランの海峡閉鎖・管理強化と軍事衝突の拡大により、ホルムズ海峡の安全保障は単なる米・イラン問題ではなく、主要輸入国全体の利害に関わる国際公共財として再認識されている可能性がある。 / 米国が「守護者」を自任しつつも、費用負担を巡る議論を開いたこと自体が、同盟国・主要輸入国を巻き込んだ新たな枠組みの必要性を示すシグナルとして機能し得る。\n弱める情報: 資料には、多国間安全保障枠組みや共同パトロール・費用分担スキームに関する具体的な提案や議論は示されておらず、この読みは構造的可能性に基づく仮説にとどまる。 / トランプ政権は多国間枠組みよりも二国間交渉を好む傾向が一般に指摘されており、複雑な多国間プラットフォーム構築に積極的に動くかは不透明である。 / イランを含む形での多国間枠組みは政治的に極めて難しく、イランを排除した枠組みは海峡の実効支配をめぐる緊張をさらに高めるリスクがある。\n切替条件: 米国が今後、ホルムズ海峡の安全保障について同盟国・主要輸入国との共同枠組み（共同パトロール、費用分担、インフラ投資など）を正式に提案・協議し始めた場合、この多国間プラットフォーム構想シナリオの重要性が増す。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    }
+  ],
+  "leakage_guard": {
+    "known_risk_knowledge_items_leaked": [],
+    "known_risk_documents_leaked": [],
+    "gold_leakage_detected": false
+  },
+  "as_of_audit_report": {
+    "as_of_date": "2026-07-15",
+    "tables": {
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 1
+      },
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 42,
+        "excluded_unverified_count": 9
+      },
+      "geo_expert_responses": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_sessions": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_knowledge_items": {
+        "policy": "_policy_geo_knowledge_items",
+        "included_count": 0,
+        "excluded_future_count": 8,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "valid": true,
+  "reading_exposure_after": [
+    {
+      "scenario_candidate_id": "de509f65-2bf5-4f99-9aa3-ab997a8019d8",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+            "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+            "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+          ],
+          "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+          "supporting_evidence": [
+            "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+            "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+            "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+          ],
+          "observable_indicators": [
+            "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+            "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+            "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+            "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "9a6c91d8-2429-4edf-a2a9-e376b8d3c0ab",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 2,
+      "title": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+          ],
+          "weakening_conditions": [
+            "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+            "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "b73c0b6b-7196-48bd-9a39-07070921883c",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 3,
+      "title": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+            "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "トランプ大統領は",
+      "content": {
+        "why_this_matters": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+        "raw": {
+          "reason": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "H4_frame_breaking",
+          "interaction_basis": {
+            "gap_note": "国際海峡原則を見直す長期的な制度設計に関する具体的な発言・文書が提示されておらず、このフレームを支持する材料が不足している。",
+            "actor_ref": "US_President_Trump",
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "rejected",
+      "why_not_selected_by_s": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "reading_portfolio",
+      "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+          "key_cue": "6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序",
+          "reading": "20％案とその迅速な撤回は、同盟国への負担メッセージだけでなく、イランとの停戦・制裁交渉においてホルムズ海峡の管理権限を米国側に引き寄せるためのレバー構築だったと読む。米国が「守護者」を自任し、通航条件を一時的にでも握ることで、今後の停戦再構築や制裁緩和の取引材料を増やそうとしている可能性である。",
+          "switch_condition": "今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+            "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+            "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+            "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+            "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+            "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+          ],
+          "key_actors_and_structure": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序\n支持する理由: 暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。 / イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。 / トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。 / 20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。\n弱める情報: 資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。 / 20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。 / イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。\n切替条件: 今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "supporting_basis": [
+        "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+        "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+        "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+        "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+      ],
+      "weakening_basis": [
+        "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+        "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+        "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+      ],
+      "original_hypothesis_status": null,
+      "why_not_selected_by_s": null,
+      "missing_evidence": null,
+      "exposure_rank": 5
+    }
+  ],
+  "reading_exposure_before": [
+    {
+      "scenario_candidate_id": "de509f65-2bf5-4f99-9aa3-ab997a8019d8",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+            "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+            "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+          ],
+          "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+          "supporting_evidence": [
+            "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+            "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+            "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+          ],
+          "observable_indicators": [
+            "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+            "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+            "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+            "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "9a6c91d8-2429-4edf-a2a9-e376b8d3c0ab",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 2,
+      "title": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+          ],
+          "weakening_conditions": [
+            "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+            "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "b73c0b6b-7196-48bd-9a39-07070921883c",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 3,
+      "title": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+            "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "fa85c055-9928-4384-9a25-9287ecaf10f3",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 4,
+      "title": "H2（国内向けシグナル）に基づくシナリオ：20％通航料案は",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "H2（国内向けシグナル）に基づくシナリオ：20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。今後の焦点は、トランプ大統領が対イラン強硬姿勢を国内向けにどこまで維持するかと、官僚組織・同盟国との折り合いをどう付けるかに移る。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "信頼できる情報源が、20％案が主として国内向けシグナルであり、撤回が官僚組織・議会との調整の結果だったと示した場合、主シナリオを国内政治フレームへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国や市場の反応が、20％案撤回の主因だったことを示す情報が出る。"
+          ],
+          "strengthening_conditions": [
+            "米国内メディアや専門家分析が、20％案を主として国内向けポジショニングとして解釈していること。",
+            "官僚組織や議会からの反発・懸念が、20％案撤回の主因だったことを示すリークや証言が出る。"
+          ],
+          "derived_from_hypothesis_id": "H2",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 信頼できる情報源が、20％案が主として国内向けシグナルであり、撤回が官僚組織・議会との調整の結果だったと示した場合、主シナリオを国内政治フレームへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    },
+    {
+      "scenario_candidate_id": "2bfe7890-f6df-45ff-bc9b-721e797f3721",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 5,
+      "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+          "key_cue": "6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序",
+          "reading": "20％案とその迅速な撤回は、同盟国への負担メッセージだけでなく、イランとの停戦・制裁交渉においてホルムズ海峡の管理権限を米国側に引き寄せるためのレバー構築だったと読む。米国が「守護者」を自任し、通航条件を一時的にでも握ることで、今後の停戦再構築や制裁緩和の取引材料を増やそうとしている可能性である。",
+          "switch_condition": "今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+            "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+            "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+            "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+            "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+            "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+          ],
+          "key_actors_and_structure": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序\n支持する理由: 暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。 / イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。 / トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。 / 20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。\n弱める情報: 資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。 / 20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。 / イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。\n切替条件: 今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00"
+    }
+  ],
+  "reading_exposure_after_v1_lexical": [
+    {
+      "scenario_candidate_id": "de509f65-2bf5-4f99-9aa3-ab997a8019d8",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+            "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+            "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+          ],
+          "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+          "supporting_evidence": [
+            "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+            "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+            "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+          ],
+          "observable_indicators": [
+            "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+            "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+            "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+            "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "9a6c91d8-2429-4edf-a2a9-e376b8d3c0ab",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 2,
+      "title": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+          ],
+          "weakening_conditions": [
+            "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+            "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "b73c0b6b-7196-48bd-9a39-07070921883c",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 3,
+      "title": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+            "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "トランプ大統領は",
+      "content": {
+        "why_this_matters": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+        "raw": {
+          "reason": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "H4_frame_breaking",
+          "interaction_basis": {
+            "gap_note": "国際海峡原則を見直す長期的な制度設計に関する具体的な発言・文書が提示されておらず、このフレームを支持する材料が不足している。",
+            "actor_ref": "US_President_Trump",
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "rejected",
+      "why_not_selected_by_s": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "20％通航料案は",
+      "content": {
+        "why_this_matters": "20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。\n強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+        "raw": {
+          "reason": "強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "H2_counterparty_audience_shift",
+          "interaction_basis": {
+            "gap_note": "米国内の支持層・議会・官僚組織との具体的な相互作用に関する情報が不足しており、この仮説を支持・反証する材料がない。",
+            "actor_ref": "US_President_Trump",
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。\n強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "unresolved",
+      "why_not_selected_by_s": "強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 5
+    }
+  ],
+  "reading_exposure_after_v2_family_bucket": [
+    {
+      "scenario_candidate_id": "de509f65-2bf5-4f99-9aa3-ab997a8019d8",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+            "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+            "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+          ],
+          "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+          "supporting_evidence": [
+            "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+            "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+            "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+          ],
+          "observable_indicators": [
+            "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+            "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+            "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+            "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "9a6c91d8-2429-4edf-a2a9-e376b8d3c0ab",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 2,
+      "title": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+          ],
+          "weakening_conditions": [
+            "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+            "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "b73c0b6b-7196-48bd-9a39-07070921883c",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 3,
+      "title": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+            "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "トランプ大統領は",
+      "content": {
+        "why_this_matters": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+        "raw": {
+          "reason": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "H4_frame_breaking",
+          "interaction_basis": {
+            "gap_note": "国際海峡原則を見直す長期的な制度設計に関する具体的な発言・文書が提示されておらず、このフレームを支持する材料が不足している。",
+            "actor_ref": "US_President_Trump",
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "rejected",
+      "why_not_selected_by_s": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "reading_portfolio",
+      "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言",
+          "key_cue": "6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序",
+          "reading": "20％案とその迅速な撤回は、同盟国への負担メッセージだけでなく、イランとの停戦・制裁交渉においてホルムズ海峡の管理権限を米国側に引き寄せるためのレバー構築だったと読む。米国が「守護者」を自任し、通航条件を一時的にでも握ることで、今後の停戦再構築や制裁緩和の取引材料を増やそうとしている可能性である。",
+          "switch_condition": "今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+            "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+            "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+            "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+            "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+            "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+          ],
+          "key_actors_and_structure": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "米国政権（トランプ大統領＋安全保障チーム）、イラン政権・軍、ホルムズ海峡を通過する商船・主要輸入国。構造としては、(1)海峡の実効支配・管理権をめぐる米・イランの競合、(2)停戦・制裁交渉におけるレバーの取り合い、(3)海峡通航を人質にしたエネルギー市場への影響を通じた間接的圧力。",
+        "confidence": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "着眼点: 6月の暫定停戦合意とその後の不安定化、7月7〜8日の停戦終了表明と制裁免除撤回、7月11〜12日のイランによる海峡閉鎖・管理強化の打ち出し、そして直後に米国が「守護者」宣言と20％案を提示した時間順序\n支持する理由: 暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。 / イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。 / トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。 / 20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。\n弱める情報: 資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。 / 20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。 / イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。\n切替条件: 今後、停戦再構築や制裁緩和の議論の中で、ホルムズ海峡の通航条件・管理枠組みがイランとの取引材料として明示的に扱われ始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "supporting_basis": [
+        "暫定停戦合意後に商船攻撃と米軍報復が始まり、停戦が不安定化していることから、米・イラン双方が海峡を交渉レバーとして使い始めている構図が見える。",
+        "イランが7月11〜12日に海峡閉鎖・管理強化を打ち出した直後に、米国が「守護者」宣言と20％案を提示しており、海峡の管理主体をめぐる主導権争いとして連続的に読むことができる。",
+        "トランプ大統領は7月7〜8日に停戦終了と制裁免除撤回を表明しており、対イラン圧力を再強化する局面で海峡管理を自らの側に位置づけることは、制裁・停戦再交渉のカードを増やす合理的な動きと整合する。",
+        "20％案を撤回した後も「守護者」フレーミング自体は維持しつつ、貿易・投資による見返りを求める方針へ転換していることから、通航料という具体的手段は変えても、海峡を米国主導の管理対象とみなす構図は維持しようとしていると読める。"
+      ],
+      "weakening_basis": [
+        "資料には、米国がイランとの停戦・制裁交渉でホルムズ海峡管理権を直接的な交渉カードとして位置づけているという明示的な記述はない。",
+        "20％案の提示と撤回が、同盟国・主要輸入国へのメッセージや国内向けシグナルとしても説明可能であり、対イラン交渉レバーという読みは複数ある目的の一つに過ぎない可能性がある。",
+        "イラン側の海峡閉鎖・管理強化がどの程度実効性を持っているか、また米軍の海峡でのプレゼンス拡大がどこまで進んでいるかについて、具体的な軍事・運用面の情報が不足している。"
+      ],
+      "original_hypothesis_status": null,
+      "why_not_selected_by_s": null,
+      "missing_evidence": null,
+      "exposure_rank": 5
+    }
+  ],
+  "reading_exposure_after_v3_novelty_bonus": [
+    {
+      "scenario_candidate_id": "de509f65-2bf5-4f99-9aa3-ab997a8019d8",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "トランプ大統領がホルムズ海峡の安全保障を米国主導で維持することを前提としている。",
+            "国際海峡で20％という高率の通航料を恒常制度化することは、国際法・同盟国・市場の制約から見て実務的に困難である。",
+            "同盟国・主要輸入国は、米国の安全保障負担に対して何らかの形での負担・譲歩を求められることを政治的に受け止めざるを得ない。"
+          ],
+          "description": "現時点では、H1（20％通航料案は制度化が目的ではなく、同盟国・主要輸入国に対して「米国の安全保障負担はただではない」という強いメッセージを送り、貿易・投資・防衛費負担など別領域で譲歩を引き出すための間接的な手段だった）を主シナリオと置くのが最も整合的である。すなわち、トランプ大統領はホルムズ海峡の「守護者」を自任しつつ、極端な20％案を一度提示することで、同盟国・主要輸入国にショックを与え、費用負担・貿易・投資条件の見直しに向けた交渉余地を広げようとしたが、国際法・同盟国・市場の制約を踏まえ、通航料の制度化は早期に引き下げ、より柔軟で政治的に通しやすい見返り（貿易・投資・防衛費負担）へ軸足を移したと読む。今後の展開は、(1)米国が通航料カードを再度持ち出すか、(2)代わりに貿易・投資・防衛費負担の交渉を強めるか、(3)イランの海峡閉鎖・攻撃強度とエネルギー市場の反応がどこまで高まるか、によって分岐する。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+          "supporting_evidence": [
+            "7月13日にトランプ大統領がホルムズ海峡の「守護者」を自任し、20％通航料案を提示したこと。",
+            "7月14日に20％案を撤回し、貿易・投資による見返りを求める方針へ転換したと報じられていること。",
+            "停戦不安定化とイランの海峡閉鎖・軍事衝突拡大の中で、米国が安全保障負担をテコに何らかの見返りを求めるインセンティブを持つと考えるのは自然であること。"
+          ],
+          "observable_indicators": [
+            "米国が今後、ホルムズ海峡に関して再び具体的な通航料・費用負担案を提示するかどうか。",
+            "米国が同盟国・主要輸入国に対して、貿易・投資・防衛費負担など他の領域で譲歩・負担を求める具体的な提案や発言を強めるか。",
+            "同盟国・主要輸入国の政府・企業が、ホルムズ海峡の安全保障と引き換えに何らかの負担・譲歩を受け入れる姿勢を示すか、強く反発するか。",
+            "イランの海峡閉鎖・攻撃強度と原油価格・海上保険料の動向が、米国のカード選択（安全保障強化か、交渉重視か）にどう影響するか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "安全保障負担をテコに同盟国へ防衛費負担や貿易譲歩を求める米国の過去の一般的傾向（NATO防衛費負担議論など）との類似。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "現時点で一次情報・公式文書・同盟国の具体的反応が提示されておらず、主に一般的な安全保障・負担分担の構造理解に基づく仮説であるため、confidenceは低に留める。",
+          "weakening_evidence_relevance": [],
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべきかを整理しやすい。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "MAIN",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 1
+    },
+    {
+      "scenario_candidate_id": "9a6c91d8-2429-4edf-a2a9-e376b8d3c0ab",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 2,
+      "title": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うことを前提に、そのコストを理由に同盟国・主要輸入国へ負担を求めるために20％通航料案を提示したが、制度・同盟国・市場の反発を受けて撤回し、貿易・投資などより柔軟な見返りを求める路線へ転換した。H1との違いは、目的を「安全保障負担の直接的な費用分担」にやや重心を置き、貿易・投資・防衛費負担はその延長線上の選択肢として扱う点にある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。"
+          ],
+          "weakening_conditions": [
+            "米国が通航保護の費用分担よりも、貿易・投資・防衛費負担など他の領域での譲歩要求に明確に軸足を移し、通航料・費用分担の話題をほとんど出さなくなる。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が、ホルムズ海峡防衛のための費用負担や拠出について具体的な議論・提案を始める。",
+            "米国政府が、通航保護のための費用試算や負担分担の枠組みを公式に提示する。"
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 2
+    },
+    {
+      "scenario_candidate_id": "b73c0b6b-7196-48bd-9a39-07070921883c",
+      "analysis_session_id": "33c41b5b-e0cc-4f73-8828-fc9816f293e5",
+      "rank": 3,
+      "title": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は、同盟国・主要輸入国からの強い反発や、エネルギー市場の不安定化懸念など外部制約によって、通航料制度化の試みが押し返された結果であり、米国の行動は主として外部制約に駆動されている。今後も、同盟国・市場の反応が米国のカード選択（通航料か、貿易・投資か、制裁か）を強く制約し、過度な負担案や海峡緊張は維持しにくい。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。"
+          ],
+          "weakening_conditions": [
+            "同盟国・主要輸入国が20％案に対して比較的穏当な反応しか示さず、市場も大きく動揺していなかったことが確認される。"
+          ],
+          "strengthening_conditions": [
+            "同盟国・主要輸入国が20％案に対して強い反発・懸念を公式に表明していたことが確認される。",
+            "原油価格や海上保険料が20％案提示後に急騰し、市場不安定化が顕著だったことが確認される。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": null
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "イラン指導部",
+          "同盟国・主要輸入国（日本、欧州諸国、アジア諸国など）",
+          "エネルギー市場・海運・保険業界"
+        ],
+        "source_cqas": {
+          "request_id": "63844e35-43b6-4017-9f2c-f4591c0efabb",
+          "response_id": "a251810d-c12d-401b-985a-318a94aa3033"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。",
+        "analysis_question": "# Situation\n\n2026年7月中旬、トランプ大統領がホルムズ海峡の通航安全に関して、米国がより強く関与する、あるいは米国が守る・管理するという趣旨の発言をした。一方で、通航保護の費用負担や課金に関する案（20%通航料案）を示した後、これを撤回したとも報じられている。\n\n# Known Background\n\n- 6月17日：米国とイランが暫定停戦で合意。ホルムズ海峡の再開と、今後60日間の協議枠組みを設定。\n- 6月25日以降：商船への攻撃と米軍の報復が始まり、停戦が不安定化。\n- 7月7〜8日：米国が制裁免除を撤回し、トランプ大統領が停戦終了を表明。\n- 7月11〜12日：イランが海峡閉鎖・管理強化を打ち出し、軍事衝突が拡大。\n- 7月13日：トランプ大統領が、米国をホルムズ海峡の「守護者」とし、20％負担案を提示。\n- 7月14日：20％案を撤回し、代わりに貿易・投資による見返りを求める方針へ転換。\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方があり得るかを特定してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T02:44:32.192516+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T02:44:32.646915+00:00",
+      "reading_role": "ALTERNATIVE",
+      "exploratory": false,
+      "source": "s_ranked",
+      "exposure_rank": 3
+    },
+    {
+      "reading_role": "FRONTIER",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "トランプ大統領は",
+      "content": {
+        "why_this_matters": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+        "raw": {
+          "reason": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "H4_frame_breaking",
+          "interaction_basis": {
+            "gap_note": "国際海峡原則を見直す長期的な制度設計に関する具体的な発言・文書が提示されておらず、このフレームを支持する材料が不足している。",
+            "actor_ref": "US_President_Trump",
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。\nこの仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "rejected",
+      "why_not_selected_by_s": "この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 4
+    },
+    {
+      "reading_role": "EXPLORATORY",
+      "exploratory": true,
+      "source": "hypothesis_register",
+      "title": "20％通航料案は",
+      "content": {
+        "why_this_matters": "20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。\n強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+        "raw": {
+          "reason": "強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "H2_counterparty_audience_shift",
+          "interaction_basis": {
+            "gap_note": "米国内の支持層・議会・官僚組織との具体的な相互作用に関する情報が不足しており、この仮説を支持・反証する材料がない。",
+            "actor_ref": "US_President_Trump",
+            "basis_type": "EVIDENCE_GAP",
+            "target_actor_ref": null
+          },
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "weakening_evidence_relevance": null
+        }
+      },
+      "reasoning_story": "20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。\n強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+      "supporting_evidence": [],
+      "weakening_evidence": [],
+      "what_would_make_it_stronger": "強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+      "what_would_make_it_weaker": null,
+      "original_hypothesis_status": "unresolved",
+      "why_not_selected_by_s": "強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。",
+      "supporting_basis": null,
+      "weakening_basis": null,
+      "missing_evidence": "supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく",
+      "exposure_rank": 5
+    }
+  ]
+}

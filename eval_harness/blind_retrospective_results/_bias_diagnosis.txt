@@ -1,0 +1,71 @@
+================================================================================
+CASE: HORMUZ_TOLL_SESSION1
+Top1-3 hypothesis_ids used: ['H0', 'H1', 'H3']
+Reading4(Frontier) = H4 (H4_frame_breaking, status=rejected)
+================================================================================
+-- ELIGIBLE candidates (sorted by score desc) --
+  [hypothesis_register] sig=H2:H2_counterparty_audience_shift(novel=True) weight=0.650 topical_rel=0.0435 SCORE=0.6543 <== SELECTED
+      title: 20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『
+  [reading_portfolio] sig=alternative_causal_structure weight=0.500 topical_rel=0.0817 SCORE=0.5082
+      title: ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言
+  [reading_portfolio] sig=premise_reversal weight=0.500 topical_rel=0.0762 SCORE=0.5076
+      title: 「守護者」宣言は海峡安定化ではなく、むしろ限定的緊張維持を狙うリスク許容戦略
+  [reading_portfolio] sig=wildcard_non_obvious weight=0.100 topical_rel=0.0769 SCORE=0.1077
+      title: ホルムズ海峡を起点とした「多国間安全保障プラットフォーム」構想への転化
+  >> score gap (best - runnerup) = 0.1462
+  >> best namespace=hypothesis_register, runnerup namespace=reading_portfolio
+-- EXCLUDED candidates --
+
+================================================================================
+CASE: HORMUZ_BLOCKADE_SESSION3
+Top1-3 hypothesis_ids used: ['H0', 'H3', 'H4']
+Reading4(Frontier) = H2 (H2_counterparty_audience_shift, status=unresolved)
+================================================================================
+-- ELIGIBLE candidates (sorted by score desc) --
+  [hypothesis_register] sig=H1:H1_instrumental_indirect(novel=True) weight=0.500 topical_rel=0.0889 SCORE=0.5089 <== SELECTED
+      title: イランはホルムズ海峡封鎖カードを、実際に封鎖するためではなく、米国や湾岸諸国に対
+  [reading_portfolio] sig=alternative_causal_structure weight=0.500 topical_rel=0.0876 SCORE=0.5088
+      title: ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み
+  [reading_portfolio] sig=premise_reversal weight=0.500 topical_rel=0.0489 SCORE=0.5049
+      title: ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み
+  [reading_portfolio] sig=wildcard_non_obvious weight=0.100 topical_rel=0.0813 SCORE=0.1081
+      title: 地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み
+  >> score gap (best - runnerup) = 0.0001
+  >> best namespace=hypothesis_register, runnerup namespace=reading_portfolio
+-- EXCLUDED candidates --
+
+================================================================================
+CASE: RUSSIA_SANCTIONS_SESSION2
+Top1-3 hypothesis_ids used: ['H0', 'H1', 'H3']
+Reading4(Frontier) = H4 (H4_frame_breaking, status=retained)
+================================================================================
+-- ELIGIBLE candidates (sorted by score desc) --
+  [hypothesis_register] sig=H2:H2_counterparty_audience_shift(novel=True) weight=0.650 topical_rel=0.0308 SCORE=0.6531 <== SELECTED
+      title: 対ロ制裁強化法案は表向きロシア向けの圧力だが、実際には国内の対ロ強硬派世論・議会
+  [reading_portfolio] sig=alternative_causal_structure weight=0.500 topical_rel=0.0617 SCORE=0.5062
+      title: 『対ロ制裁』よりも『国内権力配分』の再調整としての法案前進
+  [reading_portfolio] sig=premise_reversal weight=0.500 topical_rel=0.0462 SCORE=0.5046
+      title: 『対ロ制裁強化』は目的ではなく、対ロ関係を安定的に“棚上げ”するための枠組み
+  [reading_portfolio] sig=wildcard_non_obvious weight=0.100 topical_rel=0.0349 SCORE=0.1035
+      title: 第三国関税条項が『対ロ制裁』から独立した通商・産業政策ツールへ変質するリスク
+  >> score gap (best - runnerup) = 0.1469
+  >> best namespace=hypothesis_register, runnerup namespace=reading_portfolio
+-- EXCLUDED candidates --
+
+================================================================================
+CASE: US_CHINA_AI_SEMICON_SESSION2
+Top1-3 hypothesis_ids used: ['H0', 'H1', 'H3']
+Reading4(Frontier) = H4 (H4_frame_breaking, status=rejected)
+================================================================================
+-- ELIGIBLE candidates (sorted by score desc) --
+  [hypothesis_register] sig=H2:H2_counterparty_audience_shift(novel=True) weight=0.650 topical_rel=0.0416 SCORE=0.6542 <== SELECTED
+      title: 条件付き許可による中間線は、中国向け政策というより、国内の議会・企業・安全保障コ
+  [reading_portfolio] sig=alternative_causal_structure weight=0.500 topical_rel=0.0407 SCORE=0.5041
+      title: 『AIそのもの』よりも「AIが支える中国の産業・金融構造」を狙った管理線
+  [reading_portfolio] sig=premise_reversal weight=0.500 topical_rel=0.0344 SCORE=0.5034
+      title: 『中国のAI能力抑制』は副次目的であり、主目的はグローバルAIサプライチェーンの標準化・監視体制構築
+  [reading_portfolio] sig=wildcard_non_obvious weight=0.100 topical_rel=0.0374 SCORE=0.1037
+      title: 『迂回規制の一時停止』を起点に、第三国経由の新たな技術ブロック形成が進むシナリオ
+  >> score gap (best - runnerup) = 0.1501
+  >> best namespace=hypothesis_register, runnerup namespace=reading_portfolio
+-- EXCLUDED candidates --

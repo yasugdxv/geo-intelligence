@@ -1,0 +1,69 @@
+{
+  "t0": "2026-02-19",
+  "without_proxy_iran_doc_count": 9,
+  "without_proxy_future_dated": [
+    {
+      "document_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+      "published_at": "2026-05-01T00:00:00+00:00",
+      "title": "Mojtaba Khamenei's Iran and the Politics of Succession"
+    },
+    {
+      "document_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "title": "China's Wang Yi calls on Iran to ensure freedom and safe pas"
+    },
+    {
+      "document_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+      "published_at": "2026-08-06T00:00:00+00:00",
+      "title": "Iran Seeks Bar on US Ships in Hormuz as Deal With Oman Advan"
+    },
+    {
+      "document_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+      "published_at": "2026-08-02T00:00:00+00:00",
+      "title": "How China gets around the blockade of the Strait of Hormuz t"
+    },
+    {
+      "document_id": "c8278119-f2c7-487c-ab06-cd3313026f0b",
+      "published_at": "2026-07-09T00:00:00+00:00",
+      "title": "Strait of Hormuz: what has happened since the US-Iran MoU"
+    },
+    {
+      "document_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "title": "US-Iran war: Trump says no talks, Hormuz blockade continues"
+    },
+    {
+      "document_id": "e522f821-0306-4ac3-bb7b-908341b19ced",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "title": "Iran says agreement with Oman for Strait of Hormuz prohibits"
+    },
+    {
+      "document_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+      "published_at": "2026-04-21T00:00:00+00:00",
+      "title": "Iran's Supreme Leader No Longer Reigns Supreme"
+    },
+    {
+      "document_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+      "published_at": "2026-04-21T00:00:00+00:00",
+      "title": "Iran's Supreme Leader No Longer Reigns Supreme"
+    }
+  ],
+  "with_proxy_iran_doc_count": 0,
+  "with_proxy_future_dated_leaked": [],
+  "2026-05_doc_excluded_without_proxy_count": 1,
+  "2026-08_doc_excluded_without_proxy_count": 5,
+  "2026-05_doc_present_with_proxy": false,
+  "2026-08_doc_present_with_proxy": false,
+  "audit_report": {
+    "as_of_date": "2026-02-19",
+    "tables": {
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 9,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "PASS": true
+}

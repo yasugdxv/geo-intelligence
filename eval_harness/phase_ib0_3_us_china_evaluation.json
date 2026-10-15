@@ -1,0 +1,50 @@
+{
+  "case_id": "ib0-3-us-china-absence-signal",
+  "evaluation_mode": "retrospective_proxy_directional_as_of_filtered",
+  "formal_phase_i_b_status": "NOT_COMPLETE -- Phase I-B0.3 only, retrospective proxy, NOT Phase I-B1",
+  "case_family": "Family C: US-China summit / absence-anomaly detection (independent of Family A=Hungary, Family B=BC Strategy+Iran)",
+  "theme": "2026-05-12 Trump China-visit delegation roster (Tim Cook/Larry Fink/Schwarzman confirmed)",
+  "t0_date": "2026-05-12",
+  "temporal_completeness_caveat": "Same evidence-starvation pattern as prior cases: 0 geo_documents included (4 excluded future), 0 geo_events. Unlike Hungary/BC Strategy/Iran, this case's core test (absence-signal detection) does not obviously depend on rich retrieval -- the whole point is whether the AI notices something from the T0 input's own OMISSION, not from retrieved external evidence -- so the evidence-scarcity caveat applies less directly to the primary finding (Section 'absence_signal_result' below) than to the secondary findings (indicator/counter-hypothesis quality).",
+  "source_artifacts": {
+    "initial_candidates": "3 CQAS scenario candidates (analysis_session_id=0df13313-28a3-46b9-a2f7-687d763bc473)",
+    "top5_displayed": "all 3",
+    "selected_candidate": "rank 1 (substantive tech/capital-market re-engagement framing)",
+    "analysis_design": "design_id=b45337d8-ef3f-4f9c-acba-01fc8a099ebc",
+    "expert_ground_truth": "docs/expert-reference-benchmark/us_china_case_reference.md, specifically M016 (2026-05-12, Eguchi's own direct comment: 'automotive [excluding Tesla] and pharma NOT being included is itself a message')"
+  },
+  "absence_signal_result": {
+    "expert_signal": "The ABSENCE of automotive (ex-Tesla) and pharmaceutical sector representation from the delegation is itself treated as the primary analytical signal -- 'what industries are conspicuously NOT sending their leaders reveals which sectors are excluded from this round of US-China rapprochement.'",
+    "ai_candidates_all_3": "None of the 3 candidates reference which sectors/companies are absent, or draw any inference from an omission. All 3 interpretations are built entirely from POSITIVE presence (who IS on the list) -- tech/capital-market reset (rank1, selected), symbolic-only messaging (rank2), sanctions-relief attempt (rank3).",
+    "classification": "D. missing (complete absence) -- across all 3 candidates and the resulting Design, with no exception",
+    "significance": "This is the cleanest, most decisive finding across all 4 retrospective cases: the CQAS pipeline generated zero absence/anomaly-detection reasoning despite the T0 input itself containing the exact structural cue (a partial, named roster with an implicit gap) that prompted the real expert's signature analytical move. This was not a close call diluted by evidence scarcity -- it is a complete, unambiguous type-of-reasoning gap.",
+    "confidence": "HIGH (unlike other findings in this effort, this one is NOT meaningfully weakened by the retrieval evidence-scarcity caveat, since the signal was available directly in the T0 input text itself, not dependent on retrieval)"
+  },
+  "actor_evaluation": [
+    {"expert_actor": "Trump", "ai_treatment": "'トランプ大統領（米国）'", "classification": "explicit_actor"},
+    {"expert_actor": "Xi Jinping", "ai_treatment": "never named; only '中国指導部' (Chinese leadership, generic)", "classification": "implicit_institutional_actor", "note": "notable: Xi is the actual summit counterpart head of state and is never named specifically, despite Trump being named specifically -- an asymmetry worth flagging"},
+    {"expert_actor": "US administration (broader)", "ai_treatment": "folded entirely into 'トランプ大統領'", "classification": "implicit_institutional_actor"},
+    {"expert_actor": "Chinese leadership (broader)", "ai_treatment": "'中国指導部'", "classification": "implicit_institutional_actor"},
+    {"expert_actor": "Tim Cook / Larry Fink / Schwarzman (delegation members, given directly in the T0 input)", "ai_treatment": "carried forward verbatim into key_actors as a single grouped label ('Apple/BlackRock/Blackstoneなど訪中団企業トップ')", "classification": "explicit_actor (names present) but treated as ONE collective bloc, not as individually distinct decision-relevant variables -- e.g. no candidate differentiates what Cook (hardware/China manufacturing exposure) vs Fink (capital markets) vs Schwarzman (private equity) each specifically represent or want, which is closer to what would be needed to notice the auto/pharma absence in the first place"}
+  ],
+  "reframing_evaluation": {
+    "level_reached": "A. input restatement",
+    "evidence": "investigation_question is the T0 theme text verbatim, identical to all 3 prior cases (4th consecutive occurrence)."
+  },
+  "counter_hypothesis_evaluation": {
+    "alternative_interpretations_generated": [
+      "Substantive re-engagement: summit reframes US-China relations around tech/capital-market recalibration (rank1, selected)",
+      "Symbolic-only: delegation is domestic-audience theater, no substantive economic outcome expected (rank2)",
+      "Adversarial-instrumental: China uses US business/finance figures as a channel to seek sanctions/export-control relief, resisted by US hawks (rank3)"
+    ],
+    "quality_assessment": "A genuinely differentiated set of 3 interpretations along a 'how substantive is this diplomatic gesture' axis -- comparable in spirit to the 'summit preparation progressing vs. stalled' framing suggested as an example. This is a real strength: multi-hypothesis generation itself is not the gap here.",
+    "gap": "None of the 3 hypotheses include 'the absence itself is strategic signaling' as an interpretive category -- the counter-hypothesis generation is good WITHIN the presence-based framing, but does not extend to the absence-based framing at all."
+  },
+  "h1_h5_cross_reference": {
+    "H1_actor_selection": {"status": "inconclusive", "note": "Trump and the 3 named delegation members are explicit; but Xi -- arguably the single most important counterpart actor for a bilateral summit -- is never named, only referred to generically. Consistent with the broader H1 pattern of under-specifying actors who are structurally important but not directly supplied in the input text."},
+    "H2_indicator_reasoning": {"status": "not_applicable", "note": "This case's core test is absence-signal detection, not concrete-indicator specificity; watch_points generated (official statement content, company post-visit comments) are reasonable and not obviously weaker than other cases, so H2 is not meaningfully exercised here."},
+    "H3_counter_hypothesis_rejection_logic": {"status": "does_not_support", "note": "Unlike Hungary/Iran, this case shows GOOD counter-hypothesis generation (3 genuinely distinct interpretations). H3 as originally framed (weak at generating nuanced alternative readings) is NOT supported by this case -- worth noting as a case where the pattern breaks."},
+    "H4_investigation_question_reframing": {"status": "supports", "note": "4th consecutive case of verbatim restatement."},
+    "H5_main_scenario_ranking_divergence": {"status": "not_applicable", "note": "No Selection-Logic-bearing expert ground truth exists for this case (M016 is a single interpretive comment, not a multi-hypothesis selection-with-rejection-reasoning artifact like M086) -- cannot be evaluated here, consistent with the instruction not to force H5 evaluation without matching expert evidence."}
+  }
+}

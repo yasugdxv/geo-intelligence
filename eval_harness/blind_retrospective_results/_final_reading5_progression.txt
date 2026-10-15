@@ -1,0 +1,43 @@
+======================================================================
+CASE: HORMUZ_TOLL_SESSION1
+======================================================================
+--- Reading4 (Frontier, unchanged by this fix) ---
+  status=rejected title=トランプ大統領は
+--- Reading5 progression ---
+  BEFORE (raw rank5):        origin=reading_portfolio_alternative_causal_structure | ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言
+  v1 (lexical distance, BUGGY): source=hypothesis_register | 20％通航料案は
+  v2 (family bucket, still flawed): source=reading_portfolio | ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言
+  v3 (current, structural weight): source=hypothesis_register | 20％通航料案は
+
+======================================================================
+CASE: HORMUZ_BLOCKADE_SESSION3
+======================================================================
+--- Reading4 (Frontier, unchanged by this fix) ---
+  status=unresolved title=ホルムズ封鎖カードの誇示は
+--- Reading5 progression ---
+  BEFORE (raw rank5):        origin=reading_portfolio_premise_reversal | ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み
+  v1 (lexical distance, BUGGY): source=reading_portfolio | 地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み
+  v2 (family bucket, still flawed): source=hypothesis_register | イランはホルムズ海峡封鎖カードを
+  v3 (current, structural weight): source=hypothesis_register | イランはホルムズ海峡封鎖カードを
+
+======================================================================
+CASE: RUSSIA_SANCTIONS_SESSION2
+======================================================================
+--- Reading4 (Frontier, unchanged by this fix) ---
+  status=retained title=『Trumpは対ロ制裁強化を上位目的とする強硬派である』という前提自体が誤っており
+--- Reading5 progression ---
+  BEFORE (raw rank5):        origin=reading_portfolio_alternative_causal_structure | 『対ロ制裁』よりも『国内権力配分』の再調整としての法案前進
+  v1 (lexical distance, BUGGY): source=hypothesis_register | 対ロ制裁強化法案は表向きロシア向けの圧力だが
+  v2 (family bucket, still flawed): source=reading_portfolio | 『対ロ制裁』よりも『国内権力配分』の再調整としての法案前進
+  v3 (current, structural weight): source=hypothesis_register | 対ロ制裁強化法案は表向きロシア向けの圧力だが
+
+======================================================================
+CASE: US_CHINA_AI_SEMICON_SESSION2
+======================================================================
+--- Reading4 (Frontier, unchanged by this fix) ---
+  status=rejected title=初期分析が前提としている『Trump・White House政治ラインは良好な米中関係維持…
+--- Reading5 progression ---
+  BEFORE (raw rank5):        origin=reading_portfolio_premise_reversal | 『中国のAI能力抑制』は副次目的であり、主目的はグローバルAIサプライチェーンの標準化・監視体制構築
+  v1 (lexical distance, BUGGY): source=hypothesis_register | 条件付き許可による中間線は
+  v2 (family bucket, still flawed): source=hypothesis_register | 条件付き許可による中間線は
+  v3 (current, structural weight): source=hypothesis_register | 条件付き許可による中間線は

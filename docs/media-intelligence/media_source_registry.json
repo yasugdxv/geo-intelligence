@@ -1,0 +1,3208 @@
+{
+  "generated_at": "2026-08-31",
+  "count": 103,
+  "sources": [
+    {
+      "source_id": "reuters",
+      "source_name": "Reuters",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "ap",
+      "source_name": "Associated Press",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "afp",
+      "source_name": "AFP",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "bloomberg",
+      "source_name": "Bloomberg",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "ft",
+      "source_name": "Financial Times",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "paid",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "wsj",
+      "source_name": "Wall Street Journal",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "paid",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "nyt",
+      "source_name": "New York Times",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "wapo",
+      "source_name": "Washington Post",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "bbc",
+      "source_name": "BBC",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "economist",
+      "source_name": "The Economist",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "paid",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "cnn",
+      "source_name": "CNN",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "HTTP 451 Unavailable For Legal Reasons(GDPR地域ブロックと推定)"
+    },
+    {
+      "source_id": "politico_us",
+      "source_name": "Politico",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Global mainstream / policy-financial community narrative",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "mixed(paywall多数)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "global_mainstream_narrative",
+        "policy_community_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation_of_non_western_local_events"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "al_jazeera",
+      "source_name": "Al Jazeera",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Qatar/Middle East",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "institutional_perspective": "Qatari state-funded pan-Arab network, pan-Arabist perspective",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "headline_summary_only",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "regional_framing",
+        "pan_arab_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "al_arabiya",
+      "source_name": "Al Arabiya",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Saudi Arabia/Gulf",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "institutional_perspective": "Saudi state-linked (MBC Group), Gulf-establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "gulf_establishment_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "HTTP 403 Forbidden"
+    },
+    {
+      "source_id": "the_national",
+      "source_name": "The National",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "UAE/Gulf",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "UAE(Abu Dhabi)-owned, Gulf-establishment/UAE state-adjacent",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open_no_paywall_observed",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "regional_framing",
+        "uae_perspective"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "haaretz",
+      "source_name": "Haaretz",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "independent",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Israel",
+      "languages": [
+        "en",
+        "he"
+      ],
+      "institutional_perspective": "Israeli liberal/left-leaning independent press, critical of government",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "mixed(premium paywall)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_opposition_framing",
+        "critical_of_government_narrative"
+      ],
+      "do_not_use_for": [
+        "state_official_signal"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "ynet",
+      "source_name": "Ynet (English)",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Israel",
+      "languages": [
+        "en",
+        "he"
+      ],
+      "institutional_perspective": "Mainstream Israeli commercial media, centrist/establishment",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "headline_summary_only",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "domestic_establishment_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "times_of_israel",
+      "source_name": "The Times of Israel",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Israel",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Israeli mainstream English digital outlet",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "domestic_establishment_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスク(Actor Intelligence Build)で検証済み・到達可"
+    },
+    {
+      "source_id": "jerusalem_post",
+      "source_name": "The Jerusalem Post",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Israel",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Israeli mainstream English outlet, security-policy adjacent",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "domestic_establishment_narrative",
+        "security_policy_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "asharq_al_awsat",
+      "source_name": "Asharq Al-Awsat",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Saudi Arabia/Pan-Arab",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "institutional_perspective": "Saudi-owned pan-Arab paper, Gulf establishment",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "gulf_establishment_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "irna",
+      "source_name": "IRNA",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Iran",
+      "languages": [
+        "fa",
+        "en",
+        "ar"
+      ],
+      "institutional_perspective": "Iran's official government news agency (Ministry of Culture and Islamic Guidance)",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "state_messaging"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗"
+    },
+    {
+      "source_id": "tasnim",
+      "source_name": "Tasnim News",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Iran",
+      "languages": [
+        "fa",
+        "en",
+        "ar",
+        "tr",
+        "ur",
+        "he",
+        "ru"
+      ],
+      "institutional_perspective": "IRGC-aligned semi-official Iranian outlet",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "irgc_aligned_signal"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "DNS解決失敗(ENOTFOUND)"
+    },
+    {
+      "source_id": "fars",
+      "source_name": "Fars News",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Iran",
+      "languages": [
+        "fa",
+        "en",
+        "ar",
+        "tr"
+      ],
+      "institutional_perspective": "IRGC-affiliated semi-official Iranian agency (US-sanctioned leadership)",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "irgc_aligned_signal"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "DNS失敗/ECONNREFUSED"
+    },
+    {
+      "source_id": "press_tv",
+      "source_name": "Press TV",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Iran",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "institutional_perspective": "Iranian state broadcaster (IRIB), official government English propaganda channel",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "state_messaging"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "TLS自己署名証明書エラー"
+    },
+    {
+      "source_id": "iran_international",
+      "source_name": "Iran International",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "opposition_exile",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "UK(Persian exile)/Iran",
+      "languages": [
+        "en",
+        "ar",
+        "fa"
+      ],
+      "institutional_perspective": "UK-based (Volant Media) Persian-language exile opposition media",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "hypothesis_generation",
+        "early_signal",
+        "contradiction_detection"
+      ],
+      "do_not_use_for": [
+        "single_source_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "inss_telaviv",
+      "source_name": "INSS (Institute for National Security Studies, Tel Aviv)",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "regional_local",
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "Israel",
+      "languages": [
+        "en",
+        "he"
+      ],
+      "institutional_perspective": "Israeli security-policy establishment think tank (Tel Aviv University-affiliated)",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "security_policy_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "TLS handshake failure"
+    },
+    {
+      "source_id": "iransource_atlanticcouncil",
+      "source_name": "Atlantic Council IranSource",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "US(Iran-focused)",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "US nonpartisan think tank Iran-focused vertical, Western FP establishment",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "western_establishment_analysis"
+      ],
+      "do_not_use_for": [
+        "primary_source"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "gulf_research_center",
+      "source_name": "Gulf Research Center",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "regional_local",
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "Saudi Arabia/Gulf(Jeddah)",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "institutional_perspective": "Independent Gulf-focused policy-establishment think tank",
+      "access_method": "html/pdf",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "gulf_regional_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "ECONNREFUSED"
+    },
+    {
+      "source_id": "tass",
+      "source_name": "TASS",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Russia",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "institutional_perspective": "Russian state news agency, official Kremlin-aligned signal",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "`.ru`ドメイン、ネットワークレベル遮断(前タスク検証済み)"
+    },
+    {
+      "source_id": "ria_novosti",
+      "source_name": "RIA Novosti",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Russia",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "institutional_perspective": "Russian state news agency",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "`.ru`ネットワーク遮断"
+    },
+    {
+      "source_id": "kommersant",
+      "source_name": "Kommersant",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Russia",
+      "languages": [
+        "ru"
+      ],
+      "institutional_perspective": "Russian commercial establishment daily, business elite audience",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_elite_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "`.ru`ネットワーク遮断"
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Russia",
+      "languages": [
+        "ru"
+      ],
+      "institutional_perspective": "Russian commercial business/political news",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_elite_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "`.ru`ネットワーク遮断"
+    },
+    {
+      "source_id": "meduza",
+      "source_name": "Meduza",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "opposition_exile",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Latvia(Russia exile)",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "institutional_perspective": "Russian independent exile outlet",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "hypothesis_generation",
+        "early_signal",
+        "contradiction_detection"
+      ],
+      "do_not_use_for": [
+        "single_source_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "novaya_gazeta_europe",
+      "source_name": "Novaya Gazeta Europe",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "opposition_exile",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Latvia(Russia exile)",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "institutional_perspective": "Russian independent exile outlet",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "hypothesis_generation",
+        "early_signal",
+        "contradiction_detection"
+      ],
+      "do_not_use_for": [
+        "single_source_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "ukrainska_pravda",
+      "source_name": "Ukrainska Pravda",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Ukraine",
+      "languages": [
+        "uk",
+        "en"
+      ],
+      "institutional_perspective": "Ukrainian independent/investigative press, sometimes adversarial to presidency",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed(2025年10月より一部有料化)",
+      "use_for": [
+        "domestic_establishment_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "HTTP 503(全パス・robots.txt含め一貫、WAF疑い)"
+    },
+    {
+      "source_id": "suspilne",
+      "source_name": "Suspilne",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Ukraine",
+      "languages": [
+        "uk"
+      ],
+      "institutional_perspective": "Ukraine public broadcaster, official domestic establishment",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "HTTP 403(homepage・robots.txt双方)"
+    },
+    {
+      "source_id": "interfax_ukraine",
+      "source_name": "Interfax-Ukraine",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Ukraine",
+      "languages": [
+        "uk",
+        "ru",
+        "en",
+        "de"
+      ],
+      "institutional_perspective": "Ukrainian commercial/professional newswire, business elite audience",
+      "access_method": "html/api",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "paid(subscription)",
+      "use_for": [
+        "domestic_elite_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "HTTP 503(WAF疑い、契約制ワイヤー)"
+    },
+    {
+      "source_id": "kyiv_independent",
+      "source_name": "Kyiv Independent",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Ukraine",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Ukrainian English-language independent outlet",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "domestic_establishment_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "carnegie_russia_eurasia",
+      "source_name": "Carnegie Russia Eurasia Center",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "Germany(Berlin, Russia/Eurasia focus)",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Western transatlantic think-tank expert analysis on Russia-Eurasia, successor to Carnegie Moscow Center",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "western_establishment_analysis"
+      ],
+      "do_not_use_for": [
+        "primary_source"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "xinhua",
+      "source_name": "Xinhua",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "China",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "China's official state news agency, most controlled official tone",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "peoples_daily",
+      "source_name": "People's Daily",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "China",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "CCP official organ, most controlled official tone",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "global_times",
+      "source_name": "Global Times",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "China",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "Nationalist/confrontational state-linked, tests stronger external signaling",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "external_hardline_signal_testing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "cgtn",
+      "source_name": "CCTV / CGTN",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "China",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "China state broadcaster international arm",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "caixin",
+      "source_name": "Caixin",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "China",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "Chinese business/semi-independent financial press",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "mixed(paywall一部)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "business_perspective_domestic"
+      ],
+      "do_not_use_for": [
+        "state_official_signal"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "scmp",
+      "source_name": "South China Morning Post",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Hong Kong",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "institutional_perspective": "HK/international gateway to China coverage",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "mixed(paywall一部)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "international_gateway_perspective"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "cna_taiwan",
+      "source_name": "Central News Agency / Focus Taiwan",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Taiwan",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "Taiwan official wire service",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal_taiwan"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "taipei_times",
+      "source_name": "Taipei Times",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Taiwan",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Taiwan domestic English-language daily",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "taiwan_domestic_political_perspective"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "前タスクで検証済み・到達可"
+    },
+    {
+      "source_id": "united_daily_news",
+      "source_name": "United Daily News",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Taiwan",
+      "languages": [
+        "zh"
+      ],
+      "institutional_perspective": "Taiwan domestic daily (pan-blue leaning)",
+      "access_method": "html",
+      "crawlable": null,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "taiwan_domestic_political_perspective"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P3",
+      "robots_or_access_notes": "未検証"
+    },
+    {
+      "source_id": "liberty_times",
+      "source_name": "Liberty Times",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Taiwan",
+      "languages": [
+        "zh"
+      ],
+      "institutional_perspective": "Taiwan domestic daily (pan-green leaning)",
+      "access_method": "html",
+      "crawlable": null,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "taiwan_domestic_political_perspective"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P3",
+      "robots_or_access_notes": "未検証"
+    },
+    {
+      "source_id": "indsr_taiwan",
+      "source_name": "INDSR (Institute for National Defense and Security Research)",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "regional_local",
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "Taiwan",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "institutional_perspective": "Taiwan MND-funded but organizationally independent defense think tank",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "taiwan_security_establishment_analysis"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "kcna",
+      "source_name": "KCNA",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "North Korea",
+      "languages": [
+        "ko"
+      ],
+      "institutional_perspective": "North Korean official signaling channel, not journalism in the ordinary sense",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal_dprk"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "kcna.kp原因不明の接続失敗、代替: kcnawatch.org(第三者ミラー、到達可)"
+    },
+    {
+      "source_id": "kcnawatch",
+      "source_name": "KCNA Watch (third-party mirror)",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": "independent",
+      "lens": [
+        "regional_local",
+        "opposition_exile"
+      ],
+      "country_or_region": "North Korea(monitored, 3rd-party operated)",
+      "languages": [
+        "en",
+        "ko"
+      ],
+      "institutional_perspective": "Independent NK media monitoring archive, unaffiliated with DPRK",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open(premium NK Pro tier exists)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "kcna_rodong_content_access_alternative"
+      ],
+      "do_not_use_for": [
+        "official_dprk_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "rodong_sinmun",
+      "source_name": "Rodong Sinmun",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "North Korea",
+      "languages": [
+        "ko"
+      ],
+      "institutional_perspective": "Workers' Party of Korea official organ, direct propaganda channel",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal_dprk"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "ECONNREFUSED(明確なネットワーク遮断)"
+    },
+    {
+      "source_id": "yonhap",
+      "source_name": "Yonhap News Agency",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "South Korea",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "institutional_perspective": "Semi-official Korean wire agency, government-adjacent",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "domestic_establishment_wire"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(bot検知疑い)"
+    },
+    {
+      "source_id": "chosun_ilbo",
+      "source_name": "Chosun Ilbo",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "South Korea",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "institutional_perspective": "Korean conservative/anti-communist flagship daily",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "conservative_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "汎用WebFetch失敗"
+    },
+    {
+      "source_id": "joongang_ilbo",
+      "source_name": "JoongAng Ilbo / Korea JoongAng Daily",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "South Korea",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "institutional_perspective": "Korean conservative-to-center-right mainstream daily",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "establishment_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "汎用WebFetch失敗"
+    },
+    {
+      "source_id": "hankyoreh",
+      "source_name": "Hankyoreh",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "independent",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "South Korea",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "institutional_perspective": "Korean liberal/progressive press, independence-focused ownership",
+      "access_method": "html/rss",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "progressive_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "汎用WebFetch失敗(RSS存在は裏取り済み、代替経路候補)"
+    },
+    {
+      "source_id": "sejong_institute",
+      "source_name": "Sejong Institute",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "South Korea",
+      "languages": [
+        "en",
+        "ko"
+      ],
+      "institutional_perspective": "Korean mainstream FP/security establishment think tank",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "korea_establishment_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "asan_institute",
+      "source_name": "Asan Institute for Policy Studies",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "South Korea",
+      "languages": [
+        "en",
+        "ko"
+      ],
+      "institutional_perspective": "Korean think tank, externally perceived as center-right leaning",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "korea_establishment_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news"
+      ],
+      "priority": "P3",
+      "robots_or_access_notes": "HTTP 403 Forbidden(3パスで確認)"
+    },
+    {
+      "source_id": "le_monde",
+      "source_name": "Le Monde",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "France",
+      "languages": [
+        "fr"
+      ],
+      "institutional_perspective": "France domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "le_figaro",
+      "source_name": "Le Figaro",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "France",
+      "languages": [
+        "fr"
+      ],
+      "institutional_perspective": "France domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "der_spiegel",
+      "source_name": "Der Spiegel",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Germany",
+      "languages": [
+        "de"
+      ],
+      "institutional_perspective": "Germany domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "faz",
+      "source_name": "Frankfurter Allgemeine Zeitung",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Germany",
+      "languages": [
+        "de"
+      ],
+      "institutional_perspective": "Germany domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "sueddeutsche",
+      "source_name": "Süddeutsche Zeitung",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Germany",
+      "languages": [
+        "de"
+      ],
+      "institutional_perspective": "Germany domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "die_welt",
+      "source_name": "Die Welt",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Germany",
+      "languages": [
+        "de"
+      ],
+      "institutional_perspective": "Germany domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "politico_europe",
+      "source_name": "Politico Europe",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "EU/Brussels",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "EU/Brussels domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "euractiv",
+      "source_name": "Euractiv",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "EU/Brussels",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "EU/Brussels domestic establishment perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "domestic_political_context"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(前タスクで検証済み)"
+    },
+    {
+      "source_id": "nhk",
+      "source_name": "NHK",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan public broadcaster, quasi-governmental domestic establishment",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗"
+    },
+    {
+      "source_id": "nikkei",
+      "source_name": "Nikkei / Nikkei Asia",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan business-establishment daily, pro-market perspective",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "mixed(freemium)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "business_establishment_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "yomiuri",
+      "source_name": "Yomiuri Shimbun / Japan News",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan conservative-leaning largest-circulation daily, LDP-sympathetic",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free(英語版)",
+      "use_for": [
+        "conservative_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(裏取り: 英語版無料)"
+    },
+    {
+      "source_id": "asahi",
+      "source_name": "Asahi Shimbun / AJW",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan liberal/center-left daily, critical of government",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed(日本語版は有料化)",
+      "use_for": [
+        "liberal_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(裏取り: 英語版AJWは無料)"
+    },
+    {
+      "source_id": "mainichi",
+      "source_name": "Mainichi Shimbun (English)",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan centrist/liberal-leaning mainstream daily",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free(英語版)",
+      "use_for": [
+        "centrist_domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "汎用WebFetch失敗(裏取り: 無料)"
+    },
+    {
+      "source_id": "sankei",
+      "source_name": "Sankei Shimbun",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja"
+      ],
+      "institutional_perspective": "Japan conservative/nationalist daily, strongly right-leaning",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free/paid mixed",
+      "use_for": [
+        "conservative_nationalist_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "汎用WebFetch失敗、英語版なし(Japan Forwardが代替)"
+    },
+    {
+      "source_id": "japan_forward",
+      "source_name": "Japan Forward (Sankei English)",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Sankei's English-language advocacy vehicle, right-of-center",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free(寄付会員制あり)",
+      "use_for": [
+        "conservative_nationalist_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "汎用WebFetch失敗"
+    },
+    {
+      "source_id": "kyodo",
+      "source_name": "Kyodo News (English)",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan nonprofit cooperative wire agency, neutral/consensus perspective",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "domestic_wire_neutral"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗(裏取り: 無料の可能性高い)"
+    },
+    {
+      "source_id": "jiji",
+      "source_name": "Jiji Press",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan nonprofit wire agency, neutral/consensus perspective (AFP-partnered)",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "domestic_wire_neutral"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "japan_times",
+      "source_name": "The Japan Times",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "independent",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Japan's oldest English daily, carries Jiji/Kyodo/AFP wire content",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "paid(metered、月20本無料)",
+      "use_for": [
+        "general_english_language_coverage"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "実際のHTTP 402 Payment Required(本物のペイウォール)"
+    },
+    {
+      "source_id": "csis",
+      "source_name": "CSIS",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "US",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "US foreign-policy/security establishment think tank",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "establishment_policy_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "rand",
+      "source_name": "RAND Corporation",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "US",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "US policy research institution, government/military-adjacent",
+      "access_method": "html/pdf",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free(裏取り: 95%は無審査無料公開)",
+      "use_for": [
+        "establishment_policy_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "HTTP 403(WAF疑い、人間ブラウザでは無料の模様)"
+    },
+    {
+      "source_id": "iiss",
+      "source_name": "IISS",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "UK",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "UK security-establishment think tank, Military Balance等で著名",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "title_only(JS-heavy)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed(有料DBあり)",
+      "use_for": [
+        "military_balance_data"
+      ],
+      "do_not_use_for": [
+        "full_text_via_simple_fetch"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "JS-heavyでタイトルのみ取得、ブロックではない"
+    },
+    {
+      "source_id": "chatham_house",
+      "source_name": "Chatham House",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "UK",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "UK foreign-policy establishment think tank",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "establishment_policy_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "carnegie_endowment",
+      "source_name": "Carnegie Endowment for International Peace",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "US(global)",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Independent global foreign-policy analysis brand",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "establishment_policy_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "brookings",
+      "source_name": "Brookings Institution",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "US",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "US domestic/foreign-policy establishment think tank (center-left leaning)",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "establishment_policy_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "rusi",
+      "source_name": "RUSI",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "UK",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "UK defense/security think tank (est. 1831)",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "mixed(一部会員限定)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "establishment_defense_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "bellingcat",
+      "source_name": "Bellingcat",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "osint_satellite_geospatial"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en",
+        "ru",
+        "fr",
+        "es",
+        "de",
+        "uk"
+      ],
+      "institutional_perspective": "Independent OSINT verification/geolocation analysis",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "osint_verification",
+        "geolocation_analysis"
+      ],
+      "do_not_use_for": [
+        "intent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "acled",
+      "source_name": "ACLED",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "conflict_humanitarian_civil_society",
+        "osint_satellite_geospatial"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Conflict event dataset, academic/NGO provenance",
+      "access_method": "api/dataset",
+      "crawlable": true,
+      "full_text_access": "open(一部要登録)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "physical_activity",
+        "conflict_event_verification"
+      ],
+      "do_not_use_for": [
+        "intent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "marinetraffic",
+      "source_name": "MarineTraffic",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "shipping_trade_commodity_insurance",
+        "osint_satellite_geospatial"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Commercial AIS ship-tracking intelligence, freemium",
+      "access_method": "html(JS map)/api(paid)",
+      "crawlable": false,
+      "full_text_access": "title_only(JS-heavy)",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed",
+      "use_for": [
+        "physical_activity",
+        "trade_route_change",
+        "behavior_verification"
+      ],
+      "do_not_use_for": [
+        "intent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "JS-heavyでタイトルのみ取得、ブロックではない"
+    },
+    {
+      "source_id": "planet_labs",
+      "source_name": "Planet Labs",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "osint_satellite_geospatial"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Commercial satellite imagery provider",
+      "access_method": "html(公開情報)/dataset(有料画像)",
+      "crawlable": true,
+      "full_text_access": "marketing_content_only",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "paid(画像本体)",
+      "use_for": [
+        "case_study_reference"
+      ],
+      "do_not_use_for": [
+        "free_raw_imagery_access"
+      ],
+      "priority": "P3",
+      "robots_or_access_notes": "公開コンテンツは事例紹介のみ、生画像は有料契約必須"
+    },
+    {
+      "source_id": "unhcr_data",
+      "source_name": "UNHCR Data Portal",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "conflict_humanitarian_civil_society"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en",
+        "fr",
+        "ar",
+        "es"
+      ],
+      "institutional_perspective": "UN refugee statistics, humanitarian/NGO data (CC BY 4.0)",
+      "access_method": "html/dataset",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "displacement_data",
+        "humanitarian_context"
+      ],
+      "do_not_use_for": [
+        "intent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "ocha_reliefweb",
+      "source_name": "OCHA / ReliefWeb",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "conflict_humanitarian_civil_society"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "UN humanitarian coordination data aggregator",
+      "access_method": "html/api",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free(裏取り: API含め本来無料公開)",
+      "use_for": [
+        "humanitarian_situation_reports"
+      ],
+      "do_not_use_for": [
+        "intent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "HTTP 403(WAF疑い、人間ブラウザ・APIでは無料の模様)"
+    },
+    {
+      "source_id": "opencorporates",
+      "source_name": "OpenCorporates",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "sanctions_illicit_finance"
+      ],
+      "country_or_region": "Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Corporate registry / beneficial ownership aggregator, freemium",
+      "access_method": "html/api(paid)",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "mixed(基本検索無料、バルク/APIは有料)",
+      "use_for": [
+        "corporate_network_verification"
+      ],
+      "do_not_use_for": [
+        "intent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": "HTTP 403(WAF疑い、基本検索は人間ブラウザで無料の模様)"
+    },
+    {
+      "source_id": "kremlin_official_spokespeople",
+      "source_name": "Kremlin official spokespeople (Peskov/Medvedev/Zakharova statements)",
+      "source_class": [
+        "official"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "official_primary"
+      ],
+      "country_or_region": "Russia",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "institutional_perspective": "Official/proxy Russian state signaling channel (spokespeople rather than direct presidential statement)",
+      "access_method": "websearch_secondary_only",
+      "crawlable": false,
+      "full_text_access": "quotes_via_secondary_reporting",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "domestic_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "kremlin.ruはネットワーク遮断のためWebFetch不可、Moscow Times/CNN/WaPo等の引用経由でのみ確認可能"
+    },
+    {
+      "source_id": "ukraine_presidency_official",
+      "source_name": "Ukrainian Presidential Office (president.gov.ua)",
+      "source_class": [
+        "official"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "official_primary"
+      ],
+      "country_or_region": "Ukraine",
+      "languages": [
+        "uk",
+        "en"
+      ],
+      "institutional_perspective": "Ukraine official institutional channel",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal_check_for_absence"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "ECONNRESET(接続不可)。Zelenskyy Pilotでは『公式声明が存在しないこと』自体がObserved事実として重要"
+    },
+    {
+      "source_id": "time_magazine",
+      "source_name": "TIME Magazine",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "global_mainstream",
+      "lens": [
+        "official_primary_adjacent"
+      ],
+      "country_or_region": "US/Global",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "US investigative/narrative journalism, global mainstream",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": null,
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "paid",
+      "use_for": [
+        "global_mainstream_narrative"
+      ],
+      "do_not_use_for": [
+        "battlefield_causal_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "汎用WebFetch失敗、WebSearchで内容確認"
+    },
+    {
+      "source_id": "isw",
+      "source_name": "Institute for the Study of War (ISW)",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "US",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "US military/security specialist analysis, daily war-assessment methodology",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "military_specialist_analysis",
+        "battlefield_assessment"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "saudi_press_agency",
+      "source_name": "Saudi Press Agency (SPA)",
+      "source_class": [
+        "official"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "official_primary"
+      ],
+      "country_or_region": "Saudi Arabia",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "institutional_perspective": "Saudi official government news agency",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "third_country_perspective"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "fmprc_china",
+      "source_name": "Chinese Ministry of Foreign Affairs (fmprc.gov.cn)",
+      "source_class": [
+        "official"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "official_primary"
+      ],
+      "country_or_region": "China",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "China official diplomatic signaling",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "third_country_perspective"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "fdd_turkey_analysis",
+      "source_name": "Foundation for Defense of Democracies (Turkey analysis)",
+      "source_class": [
+        "specialist"
+      ],
+      "media_type": null,
+      "lens": [
+        "establishment_strategic_analysis"
+      ],
+      "country_or_region": "US(Turkey-focused)",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "US establishment think tank, Turkey/Middle East security analysis",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "establishment_policy_analysis"
+      ],
+      "do_not_use_for": [
+        "breaking_news_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "european_leaders_official_statements",
+      "source_name": "European leaders' official statements (Macron/Starmer/von der Leyen/Rutte)",
+      "source_class": [
+        "official"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "official_primary"
+      ],
+      "country_or_region": "Europe/NATO",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "institutional_perspective": "European/NATO institutional and head-of-state signaling, distinct from press framing",
+      "access_method": "websearch_secondary_only",
+      "crawlable": false,
+      "full_text_access": "quotes_via_secondary_reporting",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "solidarity_narrative"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": "elysee.fr/gov.ukとも直接WebFetch不可(404/検索不能)、WebSearchで発言内容を確認"
+    },
+    {
+      "source_id": "euronews_press_review",
+      "source_name": "Euronews press-review aggregation (European press headline roundup)",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "domestic_establishment",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Europe",
+      "languages": [
+        "en"
+      ],
+      "institutional_perspective": "Pan-European press-review aggregator, useful for cross-national headline comparison",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "cross_national_framing_comparison"
+      ],
+      "do_not_use_for": [
+        "single_outlet_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "japan_pm_office",
+      "source_name": "Japan Prime Minister's Office (kantei.go.jp)",
+      "source_class": [
+        "official"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "official_primary"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "institutional_perspective": "Japan official government channel (Chief Cabinet Secretary press conferences)",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "opening_statement_only_qa_not_scrapable",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal",
+        "denial_and_clarification_tracking"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P0",
+      "robots_or_access_notes": "index/list pageは取得できるが記者会見Q&A本文は動画のみでWebFetch不可(技術的制約)"
+    },
+    {
+      "source_id": "tokyo_shimbun",
+      "source_name": "Tokyo Shimbun (東京新聞)",
+      "source_class": [
+        "media"
+      ],
+      "media_type": "independent",
+      "lens": [
+        "regional_local"
+      ],
+      "country_or_region": "Japan",
+      "languages": [
+        "ja"
+      ],
+      "institutional_perspective": "Japan liberal-leaning daily (Chunichi Shimbun group), process/prudence-focused critique",
+      "access_method": "html",
+      "crawlable": true,
+      "full_text_access": "open",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "liberal_domestic_narrative",
+        "process_critique_framing"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P2",
+      "robots_or_access_notes": ""
+    },
+    {
+      "source_id": "taiwan_mofa",
+      "source_name": "Taiwan Ministry of Foreign Affairs (mofa.gov.tw)",
+      "source_class": [
+        "official"
+      ],
+      "media_type": "official_state_linked",
+      "lens": [
+        "official_primary"
+      ],
+      "country_or_region": "Taiwan",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "institutional_perspective": "Taiwan official diplomatic channel, calibrated third-party-to-dispute positioning",
+      "access_method": "html",
+      "crawlable": false,
+      "full_text_access": "index_only_no_historical_archive",
+      "search_available": null,
+      "archive_available": null,
+      "free_or_paid": "free",
+      "use_for": [
+        "official_signal_taiwan",
+        "third_party_restraint_check"
+      ],
+      "do_not_use_for": [
+        "independent_confirmation"
+      ],
+      "priority": "P1",
+      "robots_or_access_notes": ""
+    }
+  ]
+}

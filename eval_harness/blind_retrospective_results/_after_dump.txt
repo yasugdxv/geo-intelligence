@@ -1,0 +1,124 @@
+======================================================================
+CASE: HORMUZ_TOLL_SESSION1
+======================================================================
+--- BEFORE (raw top5) ---
+  rank=1 origin=main_scenario title=現時点では
+  rank=2 origin=alternative_scenario title=H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…
+  rank=3 origin=alternative_scenario title=H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は
+  rank=4 origin=alternative_scenario title=H2（国内向けシグナル）に基づくシナリオ：20％通航料案は
+  rank=5 origin=reading_portfolio_alternative_causal_structure title=ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言
+--- AFTER (composed) ---
+  [MAIN] exposure_rank=1 source=s_ranked exploratory=False orig_status=None
+    title: 現時点では
+    why_this_matters: 複数の仮説のうち、H1は(1)観測された行動（極端な案の提示と迅速な撤回、貿易・投資への転換）を、追加仮定が比較的少ない形で説明でき、(2)国際海峡で高率通航料を恒常制度化することの実務的困難さ（国際法・同盟国・市場制約）とも整合し、(3)企業にとって今後の意思決定上重要な論点（通航料制度化よりも貿易・投資・防衛費負担の変化）へ直接接続できるため、現時点では最も実務的な主シナリオと判断した。H0（表向き説明）と内容的に近いが、目的の上位階層（負担分担・貿易交渉）を明示している点で、今後何を見るべ
+  [ALTERNATIVE] exposure_rank=2 source=s_ranked exploratory=False orig_status=None
+    title: H0（表向き説明）に基づくシナリオ：トランプ大統領はホルムズ海峡の安全保障を米国が担うこと…
+    why_this_matters: この分岐が有力になる条件: 米国と同盟国の間で、ホルムズ海峡防衛のための費用分担枠組み（拠出金・艦隊派遣など）が具体化し、通航料ではなく防衛費負担が主な論点となる場合、主シナリオをH0寄りの『費用分担』フレームへ修正する必要がある。
+  [ALTERNATIVE] exposure_rank=3 source=s_ranked exploratory=False orig_status=None
+    title: H3（外部制約駆動）に基づくシナリオ：20％案の撤回と貿易・投資への転換は
+    why_this_matters: この分岐が有力になる条件: 20％案撤回の主因が、外部制約ではなく米国内の官僚組織・議会との調整だったことを示す信頼できる情報が出た場合、外部制約駆動シナリオの重みを下げ、国内政治・官僚制約を強調する別シナリオへ切り替える必要がある。
+  [FRONTIER] exposure_rank=4 source=hypothesis_register exploratory=True orig_status=rejected
+    title: トランプ大統領は
+    why_this_matters: トランプ大統領は、国際海峡の自由通航原則を根本的に見直し、米国が守る海峡については料金徴収を正当化する新たな原則を打ち立てようとしている可能性があるが、20％案の撤回はその試みが初期段階で頓挫したことを示している。
+この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候
+    why_not_selected_by_s: この仮説は、従来の国際海峡原則を大きく書き換えるフレームであり、興味深いが、現時点では20％案が翌日に撤回されていることから、制度化への本格的な動きと見るにはEvidence Fitが弱い。むしろ交渉カード・シグナルとしての一時的な提示と読む方が説明力が高いと判断し、このフレームは候補として残しつつ主シナリオからは外す。
+    missing_evidence: supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく
+  [EXPLORATORY] exposure_rank=5 source=hypothesis_register exploratory=True orig_status=unresolved
+    title: 20％通航料案は
+    why_this_matters: 20％通航料案は、イランや第三国よりもむしろ米国内の支持層・議会・官僚に向けて『強い姿勢』を示すための国内向けシグナルであり、翌日の撤回は同盟国・官僚組織との調整の結果だった。
+強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。
+    why_not_selected_by_s: 強い案を一度提示してから撤回するパターンは、国内向けに強硬姿勢を示しつつ、実務的には穏当な線へ戻るためのポジショニングとしても説明可能である。しかし、現時点では国内反応や官僚組織の動きに関する情報がなく、Evidence Fitが不足しているため、採否を決められない。
+    missing_evidence: supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく
+
+======================================================================
+CASE: HORMUZ_BLOCKADE_SESSION3
+======================================================================
+--- BEFORE (raw top5) ---
+  rank=1 origin=main_scenario title=イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも
+  rank=2 origin=alternative_scenario title=ホルムズ封鎖カードの誇示は
+  rank=3 origin=alternative_scenario title=イランの原油輸出構造が変化し
+  rank=4 origin=reading_portfolio_alternative_causal_structure title=ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み
+  rank=5 origin=reading_portfolio_premise_reversal title=ホルムズ封鎖の自殺的コストは『受忍可能な犠牲』になりうるという読み
+--- AFTER (composed) ---
+  [MAIN] exposure_rank=1 source=s_ranked exploratory=False orig_status=None
+    title: イランはホルムズ海峡封鎖を最大圧力カードとして保持しつつも
+    why_this_matters: hypothesis_registerのH0（ホルムズ封鎖カードを保持しつつ全面封鎖は避け、限定的威圧でレバレッジを行使する）が、CSISレポートに明示された構造的事実（ホルムズ依存と封鎖の自殺的コスト）と過去の非行使という観測を最も素直に統合しており、追加の仮定をほとんど必要としない。H1はカードの役割をより明示的に「手段」と位置づける補足的な読みであり、H4は構造前提の変化を問うが現時点では材料不足で未解決であるため、今の段階で主軸に置くべき読み筋はH0と判断できる。
+  [ALTERNATIVE] exposure_rank=2 source=s_ranked exploratory=False orig_status=None
+    title: ホルムズ封鎖カードの誇示は
+    why_this_matters: この分岐が有力になる条件: ホルムズ封鎖カードの誇示・限定的威圧が、対米交渉の状況と無関係に国内政治イベントに連動して強弱を繰り返すことが確認されれば、主シナリオ（対米交渉・構造制約中心）から国内要因中心のシナリオへ切り替えを検討する。
+  [ALTERNATIVE] exposure_rank=3 source=s_ranked exploratory=False orig_status=None
+    title: イランの原油輸出構造が変化し
+    why_this_matters: この分岐が有力になる条件: イランがホルムズ海峡で数週間以上にわたり商船・タンカーの通航を事実上停止させる行動を取り、その間も自国の原油輸出や経済が致命的な打撃を受けていないことが確認されれば、主シナリオからこの構造変化シナリオへの切り替えが必要になる。
+  [FRONTIER] exposure_rank=4 source=hypothesis_register exploratory=True orig_status=unresolved
+    title: ホルムズ封鎖カードの誇示は
+    why_this_matters: ホルムズ封鎖カードの誇示は、米国だけでなく湾岸諸国・国内世論に対するメッセージとしても機能しており、対外交渉だけでなく国内正統性維持のためのシグナルでもある。
+資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。
+    why_not_selected_by_s: 資料には国内世論や湾岸諸国への具体的なメッセージに関する記述がなく、カードのAudience構造を評価する根拠が不足しているため、可能性としてはあり得るが現時点では判断不能。
+    missing_evidence: supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく
+  [EXPLORATORY] exposure_rank=5 source=reading_portfolio exploratory=True orig_status=None
+    title: 地域共同濃縮スキームの進展がホルムズ封鎖カードの性格を変える読み
+    why_this_matters: 着眼点: CSISレポートが提示する、オマーン等での地域共同濃縮・サウジ保管という折衷案の存在。これはイラン・湾岸諸国間の新たな協力枠組みの可能性を示している。
+支持する理由: オマーン等に地域共同のウラン濃縮事業体を設置し、濃縮済みウランをサウジに保管するという案は、イランと湾岸諸国の間に新たな協力・相互依存の枠組みを生みうる。 / このような複雑な合意には時間を要するとされており、長期的には地域の安全保障アーキテクチャを変える潜在力を持つ。 / イランはJCPOA+αの議論に応じる姿勢を示し
+
+======================================================================
+CASE: RUSSIA_SANCTIONS_SESSION2
+======================================================================
+--- BEFORE (raw top5) ---
+  rank=1 origin=main_scenario title=現時点では
+  rank=2 origin=alternative_scenario title=H1に基づく代替シナリオ：対ロ制裁強化法案は
+  rank=3 origin=alternative_scenario title=H3に基づく代替シナリオ：対ロ制裁強化法案の前進は
+  rank=4 origin=alternative_scenario title=H4に基づく代替シナリオ（フレーム修正候補）：『Trumpは対ロ制裁強化を上位目的とする強…
+  rank=5 origin=reading_portfolio_alternative_causal_structure title=『対ロ制裁』よりも『国内権力配分』の再調整としての法案前進
+--- AFTER (composed) ---
+  [MAIN] exposure_rank=1 source=s_ranked exploratory=False orig_status=None
+    title: 現時点では
+    why_this_matters: 提示された事実だけで説明可能な最も普通の読みであり、追加の仮定が比較的少ない。議会側の制度化志向とTrump側の裁量志向という構図は、2025年案停滞と2026年案前進の差異を自然に説明する。一方、H1・H4などの『交渉カード優先』仮説はもっともらしいが、対ロ関係に関する具体的過去事例が提示されておらず、現時点では補助的なレンズにとどまるため、H0を主軸とする。
+  [ALTERNATIVE] exposure_rank=2 source=s_ranked exploratory=False orig_status=None
+    title: H1に基づく代替シナリオ：対ロ制裁強化法案は
+    why_this_matters: この分岐が有力になる条件: 第三国関税の実際の適用が対ロ収入削減よりも対中・対インドへの圧力に偏ることが確認された場合、主シナリオからこの代替シナリオへ重心を移す必要がある。
+  [ALTERNATIVE] exposure_rank=3 source=s_ranked exploratory=False orig_status=None
+    title: H3に基づく代替シナリオ：対ロ制裁強化法案の前進は
+    why_this_matters: この分岐が有力になる条件: 議会・同盟国からの対ロ制裁継続圧力が弱まり、Trumpが裁量を条件とせず制裁枠組みの弱体化・緩和を主導する場合、このシナリオの重みは低下し、別の枠組み（例えば対中・対インド優先）が主軸になる。
+  [FRONTIER] exposure_rank=4 source=hypothesis_register exploratory=True orig_status=retained
+    title: 『Trumpは対ロ制裁強化を上位目的とする強硬派である』という前提自体が誤っており
+    why_this_matters: 『Trumpは対ロ制裁強化を上位目的とする強硬派である』という前提自体が誤っており、実際には対ロ関係を交渉カードとして扱い、強い意思決定権を持つ相手との直接交渉を好むため、制裁法案はその交渉余地を残す限りでのみ受け入れる、というActorモデルへの修正が必要である。
+2025年案への反対と2026年案への支持転換が『裁量条項の違い』と整合すること、過去の他案件（対中関税・対イランなど）でTrumpが強いカードと交渉余地を好む傾向が指摘されていることから、『対ロ強硬そのもの』よりも『交渉カード＋裁
+    why_not_selected_by_s: 2025年案への反対と2026年案への支持転換が『裁量条項の違い』と整合すること、過去の他案件（対中関税・対イランなど）でTrumpが強いカードと交渉余地を好む傾向が指摘されていることから、『対ロ強硬そのもの』よりも『交渉カード＋裁量』が上位目的である可能性が高い。これは既存の『対ロ強硬派としてのTrump』像に対するフレーム修正候補。
+    missing_evidence: supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく
+  [EXPLORATORY] exposure_rank=5 source=hypothesis_register exploratory=True orig_status=unresolved
+    title: 対ロ制裁強化法案は表向きロシア向けの圧力だが
+    why_this_matters: 対ロ制裁強化法案は表向きロシア向けの圧力だが、実際には国内の対ロ強硬派世論・議会・同盟国に対するシグナルとしての意味が強く、Trumpはそれを利用して対ロ以外の案件（対中・対イラン・対同盟国負担）での交渉ポジションを強化している。
+議会側にとってはロシア向け圧力が主目的だが、Trumpにとっては国内・同盟国向けのシグナルとしての価値もある可能性がある。ただし、具体的なコミュニケーション戦略や他案件とのリンクを示すEvidenceが不足しており、現時点では仮説段階。
+    why_not_selected_by_s: 議会側にとってはロシア向け圧力が主目的だが、Trumpにとっては国内・同盟国向けのシグナルとしての価値もある可能性がある。ただし、具体的なコミュニケーション戦略や他案件とのリンクを示すEvidenceが不足しており、現時点では仮説段階。
+    missing_evidence: supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく
+
+======================================================================
+CASE: US_CHINA_AI_SEMICON_SESSION2
+======================================================================
+--- BEFORE (raw top5) ---
+  rank=1 origin=main_scenario title=米国の対中半導体・AI輸出管理は
+  rank=2 origin=alternative_scenario title=国内制約主導シナリオ（H3由来）：対中半導体輸出管理の中間線は
+  rank=3 origin=alternative_scenario title=交渉カードシナリオ（H1由来）：条件付き許可による中間線は
+  rank=4 origin=reading_portfolio_alternative_causal_structure title=『AIそのもの』よりも「AIが支える中国の産業・金融構造」を狙った管理線
+  rank=5 origin=reading_portfolio_premise_reversal title=『中国のAI能力抑制』は副次目的であり、主目的はグローバルAIサプライチェーンの標準化・監視体制構築
+--- AFTER (composed) ---
+  [MAIN] exposure_rank=1 source=s_ranked exploratory=False orig_status=None
+    title: 米国の対中半導体・AI輸出管理は
+    why_this_matters: hypothesis_registerでretainedとなっているH0（『最先端能力抑制＋管理された依存』中間線仮説）とH3（国内制約による妥協線仮説）は、いずれも現在の政策構造をよく説明するが、H0は目的側（何を達成したいか）、H3は制約側（何ができないか）からの説明であり、互いに補完的である。今後の展開（追加規制か緩和か、中間線の維持か）を読むうえでは、「米国が中国のAI能力と市場依存をどう位置づけているか」という目的階層を軸にしたH0がよりdecision-relevantであり、技術閾
+  [ALTERNATIVE] exposure_rank=2 source=s_ranked exploratory=False orig_status=None
+    title: 国内制約主導シナリオ（H3由来）：対中半導体輸出管理の中間線は
+    why_this_matters: この分岐が有力になる条件: BISや政権が、輸出管理の線引き変更を説明する際に『国内運用制約』『企業影響』『議会妥協』を主因として強調し、対中AI能力抑制や市場支配戦略への言及が薄くなる場合。
+  [ALTERNATIVE] exposure_rank=3 source=s_ranked exploratory=False orig_status=None
+    title: 交渉カードシナリオ（H1由来）：条件付き許可による中間線は
+    why_this_matters: この分岐が有力になる条件: 半導体輸出管理の大きな変更が、対中交渉の節目（首脳会談、制裁発動・解除）と明確に連動し、White Houseがそれを『交渉の成果・圧力』として位置づける場合。
+  [FRONTIER] exposure_rank=4 source=hypothesis_register exploratory=True orig_status=rejected
+    title: 初期分析が前提としている『Trump・White House政治ラインは良好な米中関係維持…
+    why_this_matters: 初期分析が前提としている『Trump・White House政治ラインは良好な米中関係維持を望み、中国への圧力を残しつつ米企業競争力も維持したい』という上位目的自体が誤っており、実際にはTrumpは対中技術依存戦略を重視していない、あるいは別の上位目的（国内政治・選挙・他分野の取引）を優先している可能性。
+ホルムズ海峡補償料案の撤回や対米投資枠組みへの切り替えなど、Trumpが交渉カードを調整する例はあるが、今回の半導体輸出管理について、初期分析の前提を完全に否定する具体的Evidenceは提供
+    why_not_selected_by_s: ホルムズ海峡補償料案の撤回や対米投資枠組みへの切り替えなど、Trumpが交渉カードを調整する例はあるが、今回の半導体輸出管理について、初期分析の前提を完全に否定する具体的Evidenceは提供されていない。むしろ、安全保障・企業・議会の間での妥協として中間案が形成されたという説明の方が、現時点の材料とは整合的であるため、このフレーム破り仮説は候補としては重要だが現時点では採用しない。
+  [EXPLORATORY] exposure_rank=5 source=hypothesis_register exploratory=True orig_status=retained
+    title: 条件付き許可による中間線は
+    why_this_matters: 条件付き許可による中間線は、中国向け政策というより、国内の議会・企業・安全保障コミュニティ向けのシグナルであり、『安全保障上の懸念に応えつつ企業競争力も守る』姿勢を見せるための国内Audience向け行動である。
+SAFE Chips Actなど議会の圧力とNVIDIAの反論が並存する中で、中間案は両者に対して「最先端は守るが企業も守る」というメッセージを送る機能を持つ。中国側は実際の供給量・性能で評価するが、国内政治的には線引きそのものが重要なシグナルとなるため、この仮説はH0を補完する形で説
+    why_not_selected_by_s: SAFE Chips Actなど議会の圧力とNVIDIAの反論が並存する中で、中間案は両者に対して「最先端は守るが企業も守る」というメッセージを送る機能を持つ。中国側は実際の供給量・性能で評価するが、国内政治的には線引きそのものが重要なシグナルとなるため、この仮説はH0を補完する形で説明力がある。
+    missing_evidence: supporting_evidence_ids/weakening_evidence_relevance/contradicting_evidence_idsの明示的な参照は無く、reasonの記述のみに基づく

@@ -1,0 +1,253 @@
+{
+  "t0": "2026-05-12",
+  "keywords": [
+    "China",
+    "Trump",
+    "Xi",
+    "summit",
+    "visit",
+    "Hass"
+  ],
+  "by_keyword": {
+    "China": {
+      "geo_documents": {
+        "without_proxy_count": 15,
+        "without_proxy_future_dated": [
+          {
+            "document_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+            "published_at": "2026-08-01T00:00:00+00:00",
+            "title": "China's Wang Yi calls on Iran to ensure freedom and safe passage through Strait of Hormuz"
+          },
+          {
+            "document_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+            "published_at": "2026-08-02T00:00:00+00:00",
+            "title": "How China gets around the blockade of the Strait of Hormuz to get Iranian oil"
+          }
+        ],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_events": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_knowledge_items": {
+        "without_proxy_count": 3,
+        "without_proxy_future_created": [
+          {
+            "knowledge_item_id": "60e32ca5-c1e4-4ebb-90fc-7d099ca9e224",
+            "title": "[Media Episode] mep_china_global_times_mfa",
+            "created_at": "2026-08-31T00:29:27.225314+00:00",
+            "as_of_date": "2026-08-31"
+          },
+          {
+            "knowledge_item_id": "613d5298-b784-4a91-a6cf-249bffd91ba5",
+            "title": "[Media Episode] mep2_china_mfa_escalation_ladder",
+            "created_at": "2026-08-31T04:43:25.932051+00:00",
+            "as_of_date": "2026-08-31"
+          },
+          {
+            "knowledge_item_id": "79db455f-7217-41de-a0ec-98eded00e547",
+            "title": "[Media Profile] South China Morning Post",
+            "created_at": "2026-09-02T01:02:23.627743+00:00",
+            "as_of_date": "2026-09-02"
+          }
+        ],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      }
+    },
+    "Trump": {
+      "geo_documents": {
+        "without_proxy_count": 4,
+        "without_proxy_future_dated": [
+          {
+            "document_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+            "published_at": "2026-07-14T00:00:00+00:00",
+            "title": "Trump backs off 20% fee for Strait of Hormuz shipments"
+          },
+          {
+            "document_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+            "published_at": "2026-07-14T00:00:00+00:00",
+            "title": "Trump Backs Off 20% Fee for Strait of Hormuz Shipments"
+          },
+          {
+            "document_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+            "published_at": "2026-08-18T00:00:00+00:00",
+            "title": "US-Iran war: Trump says no talks, Hormuz blockade continues"
+          }
+        ],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_events": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_knowledge_items": {
+        "without_proxy_count": 3,
+        "without_proxy_future_created": [
+          {
+            "knowledge_item_id": "65bbd686-f627-4b9b-b1c6-15fa33820dbe",
+            "title": "Donald Trump",
+            "created_at": "2026-08-30T09:49:16.708733+00:00",
+            "as_of_date": "2026-08-30"
+          },
+          {
+            "knowledge_item_id": "2ec18b13-f115-4a4d-a47f-dc11263b6704",
+            "title": "Donald Trump",
+            "created_at": "2026-09-07T07:19:48.477475+00:00",
+            "as_of_date": "2026-09-07"
+          },
+          {
+            "knowledge_item_id": "6fdacbcf-808e-46ea-9048-f31b38aff29e",
+            "title": "Donald Trump",
+            "created_at": "2026-08-28T11:14:14.242122+00:00",
+            "as_of_date": "2026-08-28"
+          }
+        ],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      }
+    },
+    "Xi": {
+      "geo_documents": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_events": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_knowledge_items": {
+        "without_proxy_count": 5,
+        "without_proxy_future_created": [
+          {
+            "knowledge_item_id": "3434a15c-b8c2-47be-887e-6ba3afa6a732",
+            "title": "Xi Jinping",
+            "created_at": "2026-08-30T23:25:52.764284+00:00",
+            "as_of_date": "2026-08-31"
+          },
+          {
+            "knowledge_item_id": "7a6689bf-4282-4a53-85ae-177078f051c1",
+            "title": "[Media Pattern] media_pattern_exile_media_kremlin_reaction_inclusion_diverges",
+            "created_at": "2026-08-31T00:31:02.644007+00:00",
+            "as_of_date": "2026-08-31"
+          },
+          {
+            "knowledge_item_id": "832f846d-efc5-4d14-ac2b-252fb8f14a05",
+            "title": "[Media Episode] mep2_xinhua_restrained_avoids_measures",
+            "created_at": "2026-08-31T04:44:17.539771+00:00",
+            "as_of_date": "2026-08-31"
+          },
+          {
+            "knowledge_item_id": "f44aac12-a2a1-42f0-9508-0620fa7ba3bc",
+            "title": "Xi Jinping",
+            "created_at": "2026-09-07T06:48:44.696543+00:00",
+            "as_of_date": "2026-09-07"
+          },
+          {
+            "knowledge_item_id": "2aae845f-2d85-4e01-8a04-375caec5ebdd",
+            "title": "Xi Jinping",
+            "created_at": "2026-08-28T11:14:30.3395+00:00",
+            "as_of_date": "2026-08-28"
+          }
+        ],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      }
+    },
+    "summit": {
+      "geo_documents": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_events": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_knowledge_items": {
+        "without_proxy_count": 0,
+        "without_proxy_future_created": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      }
+    },
+    "visit": {
+      "geo_documents": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_events": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_knowledge_items": {
+        "without_proxy_count": 0,
+        "without_proxy_future_created": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      }
+    },
+    "Hass": {
+      "geo_documents": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_events": {
+        "without_proxy_count": 0,
+        "without_proxy_future_dated": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      },
+      "geo_knowledge_items": {
+        "without_proxy_count": 0,
+        "without_proxy_future_created": [],
+        "with_proxy_count": 0,
+        "with_proxy_future_leaked": []
+      }
+    }
+  },
+  "audit_report": {
+    "as_of_date": "2026-05-12",
+    "tables": {
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 5,
+        "excluded_unverified_count": 14
+      },
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_knowledge_items": {
+        "policy": "_policy_geo_knowledge_items",
+        "included_count": 0,
+        "excluded_future_count": 11,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "PASS": true
+}

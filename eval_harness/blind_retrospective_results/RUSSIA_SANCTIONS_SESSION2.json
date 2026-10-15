@@ -1,0 +1,1585 @@
+{
+  "case_id": "RUSSIA_SANCTIONS_SESSION2",
+  "smoke_test": false,
+  "t0": "2026-08-24",
+  "t0_rationale": "テーマ1_0824.docxの基準時点。Session2実施日(2026-08-25)の前日。",
+  "actor_id": "blind_retrospective_diagnostic_russia_sanctions_session2",
+  "mode": "case_analysis",
+  "profile": "deep",
+  "execution_mode": "staged",
+  "query_text": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。",
+  "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+  "expert_request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+  "expert_response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3",
+  "elapsed_sec": 136.8,
+  "stage_a_full_response_json": {
+    "claims": [
+      {
+        "text": "2025年の対ロ制裁強化案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "2026年案では、第三国への関税率が最大500％級から最大100％に下げられ、対象が絞られる一方で、大統領に制裁の適用除外や解除の裁量が広く残された。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "White Houseは2026年案への支持理由として、大統領裁量条項を明示的に挙げた。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "第三国関税を削除する修正案は上院で32対64で否決され、法案全体は86対11で可決した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認されていない。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "2025年案が強い議会支持にもかかわらず停滞し、2026年案がWhite House支持を得て前進したことから、決定点は議会支持の強さではなくTrump側の反対を外すことにあったとみられる。",
+        "claim_type": "inference",
+        "source_ref": null
+      },
+      {
+        "text": "2026年案の条文修正（関税率の引き下げと対象絞り込み、大統領裁量の拡大）は、議会側の「制裁の制度化」とTrump側の「運用裁量確保」の双方にとって受け入れ可能な妥協点となった可能性が高い。",
+        "claim_type": "inference",
+        "source_ref": null
+      },
+      {
+        "text": "Trump政権は対ロ制裁を「固定された対ロ強硬姿勢」としてよりも、「交渉カードとして柔軟に使える圧力手段」として位置づけている可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "第三国関税条項は、議会側にとってロシアの収入を削るための制度的圧力であり、Trump側にとっては中国・インド等への外交カードとしての価値があるため、双方の利害が一致しやすい構造になっている。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "財務省など制裁実務機関は、2026年案の条文修正によって経済的副作用への懸念が一定程度吸収されたため、全面的な阻止には動かなかった可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "ホルムズ海峡通航貨物への20％補償料構想が湾岸諸国の強い反発を受けて翌日に撤回され、対米投資協定枠組みへ切り替えられた事例（document_id: 4782ea75-15f2-47bb-a050-5408f186b989, 3351be8b-3a7b-4428-82c7-f46aa0e6c5ca）は、Trump政権が強い措置を提示した後に、反発を受けてより持続可能な交渉枠組みへ調整するパターンの一例として参考になる。",
+        "claim_type": "illustration",
+        "source_ref": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca"
+      }
+    ],
+    "dynamics": "制度面では、議会が対ロ制裁を政権交代に左右されにくい形で法制化しようとする力が働き、一方で大統領（Trump）が制裁の発動・解除タイミングを自らの裁量でコントロールしたいという力が働いている。第三国関税条項は、ロシアの収入削減と対中・対印圧力という二重の目的を持ち得るため、対ロ強硬派とTrump側の利害が重なる接点となりうる。関税慎重派や財務省は経済的副作用を懸念するが、対ロ制裁そのものへの超党派支持が強く、条文修正で懸念が一部吸収されたため、法案全体を止めるには至っていない。",
+    "stakeholders": [
+      {
+        "actor": "Donald Trump / White House",
+        "purpose": null,
+        "leverage": "外交カード",
+        "position": "対ロ制裁を完全に否定するのではなく、自らの裁量で対ロ・対第三国への圧力カードとして使える制度枠組みを確保すること。",
+        "red_lines": null,
+        "confidence": "低",
+        "constraints_fears": "議会・党内関係",
+        "ability_to_move_or_block": "White House支持を表明することで、上院共和党指導部に法案前進の政治的余地を与える。"
+      },
+      {
+        "actor": "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+        "purpose": "対ロ制裁を政権の判断に左右されにくい形で制度化し、ロシアへの圧力を持続させること。",
+        "leverage": "安全保障コミュニティ",
+        "position": "対ロ制裁強化法案を可決させ、第三国関税などを通じてロシアの収入を削減する制度的枠組みを確保すること。",
+        "red_lines": null,
+        "confidence": "中",
+        "constraints_fears": "White Houseとの関係",
+        "ability_to_move_or_block": "法案の条文設計と修正を通じて、対ロ制裁を政権交代に左右されにくい制度として固定化できる。"
+      },
+      {
+        "actor": "財務省・制裁実務機関",
+        "purpose": "対ロ制裁の実効性を確保しつつ、米国経済への副作用を抑える。",
+        "leverage": "制裁運用の専門知識、実務上のボトルネックを指摘する力。",
+        "position": "2026年案の条文修正で懸念の一部が吸収されたため、全面阻止ではなく技術的修正に注力した可能性。",
+        "priority": "制裁枠組みの技術設計と運用上の安定性。",
+        "red_lines": "実務上処理不能なほど複雑・高強度な制裁設計。",
+        "confidence": "判断不能",
+        "constraints_fears": "過度な関税率や広範な対象設定による市場混乱、金融システムへのストレス。",
+        "key_relationships": "White Houseへの専門的助言、議会公聴会での証言。",
+        "ability_to_move_or_block": "法案内容に影響を与えることはできるが、政治的可決を単独で止める力は持たない。"
+      },
+      {
+        "actor": "関税慎重派議員（Rand Paul等）",
+        "purpose": "対ロ制裁とTrumpへの広範な関税権限拡大を切り離し、通商政策の暴走を防ぐ。",
+        "leverage": "修正案提出権、議会内での通商慎重派としての発言力。",
+        "position": "第三国関税削除修正案を提出し32票を集めたが、法案全体を止めることはできなかった。",
+        "priority": "第三国関税条項の削除・弱体化。",
+        "red_lines": "500％級の極端な関税率や、広範な第三国への一括関税付与。",
+        "confidence": "中",
+        "constraints_fears": "対ロ制裁そのものへの超党派支持が強く、関税部分への反対が「対ロ弱腰」と受け取られる政治的リスク。",
+        "key_relationships": "通商慎重派ネットワーク、財務省・産業界との関係。",
+        "ability_to_move_or_block": "条文の一部を弱めることは試みられるが、対ロ制裁全体の前進を止める決定力は持たない。"
+      }
+    ],
+    "main_scenario": {
+      "confidence": "低",
+      "assumptions": [
+        "White Houseが公表した支持理由（大統領裁量条項重視）は、少なくとも部分的には実際の意思決定動機を反映していると仮定している。",
+        "議会超党派制裁派の核心目的が対ロ制裁の制度化であり、関税率や裁量条項については妥協可能な要素とみなしていると仮定している。"
+      ],
+      "description": "現時点では、対ロ制裁強化法案の前進は「議会による対ロ制裁の制度化」と「Trump政権による制裁運用裁量の維持」が組み合わさった妥協の産物とみるのが最も整合的である。議会の超党派制裁派は、政権交代に左右されにくい対ロ制裁枠組みを法律として固定化することを核心目的とし、White House（Trump）は、制裁そのものを否定せず、自らの裁量で対ロ・対第三国への圧力カードとして使える制度枠組みを確保することを重視した。2025年案は強い議会支持にもかかわらずWhite Houseの反対で停滞したが、2026年案では第三国関税率の引き下げと対象絞り込み、大統領裁量条項の拡充によって、議会側の「制度化」とTrump側の「裁量維持」が両立しうる設計となり、White House支持が付いたことで一気に前進したと読むのが自然である。今後の展開を読むうえでは、(1)法案成立後に大統領裁量条項がどの程度実際に行使されるか、(2)第三国関税が対ロ収入削減だけでなく対中・対印関係の交渉カードとして使われるか、(3)議会が追加修正や監視条項で裁量をさらに縛ろうとするか、が主要な観測ポイントになる。",
+      "evidence_class": "model_general_knowledge",
+      "evidence_relevance": [
+        {
+          "rationale": "ホルムズ海峡補償料構想の撤回と投資枠組みへの切り替えは、Trump政権が強い経済カードを提示しつつ反発を受けて調整するパターンの参考例として、今回の「強い制裁構想→裁量付き妥協」シナリオの説明力を補強する。",
+          "evidence_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+          "source_type": "unknown",
+          "claim_relevance": "structural"
+        }
+      ],
+      "selection_rationale": "hypothesis_registerのH0（制度化と裁量維持の妥協）仮説は、2025年案停滞と2026年案前進の差異、White Houseの支持理由、条文設計の具体的変更と整合しており、追加の仮定が比較的少ない。H1（第三国関税を対中・対印カードとみる仮説）やH3（国内政治制約主因仮説）は今後の展開を読むうえで重要な補足だが、現時点のEvidenceではH0ほど直接的に支持されていないため、主シナリオとしてはH0を採用する。",
+      "supporting_evidence": [
+        "2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞したこと。",
+        "2026年案では第三国関税率が最大500％級から最大100％に下げられ、対象が絞られる一方で、大統領に制裁の適用除外や解除の裁量が広く残されたこと。",
+        "White Houseが2026年案への支持理由として、大統領裁量条項を明示的に挙げたこと。",
+        "第三国関税削除修正案は32対64で否決され、法案全体は86対11で可決したこと。",
+        "ホルムズ海峡20％補償料構想が湾岸諸国の強い反発を受けて翌日に撤回され、対米投資協定枠組みへ切り替えられた事例（document_id: 4782ea75-15f2-47bb-a050-5408f186b989, 3351be8b-3a7b-4428-82c7-f46aa0e6c5ca）が、Trump政権が強い措置を提示した後により持続可能な枠組みへ調整するパターンを示していること。"
+      ],
+      "observable_indicators": [
+        "法案成立後、大統領裁量条項に基づく適用除外・解除決定の頻度と対象（対ロ・対第三国）。",
+        "議会が追加の監視条項や報告義務を通じて大統領裁量をさらに縛ろうとする動きの有無。",
+        "第三国関税条項の具体的発動事例と、その際のWhite House・議会の説明。"
+      ],
+      "historical_analogies_used": [
+        {
+          "same_actor": true,
+          "description": "ホルムズ海峡通航貨物への20％補償料構想が湾岸諸国の反発で撤回され、対米投資協定枠組みへ切り替えられた事例。",
+          "same_domain": false,
+          "analogy_strength": "weak",
+          "same_constraints": false,
+          "same_leverage_mechanism": true,
+          "analogy_source_precedent_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+          "same_institutional_structure": false
+        }
+      ],
+      "derived_from_hypothesis_id": "H0",
+      "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+      "weakening_evidence_relevance": null,
+      "relevance_confidence_adjustment_reason": null
+    },
+    "business_impact": {
+      "direct": null,
+      "indirect": "対ロ制裁強化法案が成立すれば、ロシア関連取引・金融・エネルギーに関するコンプライアンス負担が増加し、第三国関税条項が発動される場合には中国・インドなどを経由したエネルギー・原材料調達コストの上昇リスクがある。制裁の運用裁量が広いことは、企業にとってルールの安定性が低く、政治判断による急な制裁強化・緩和に備える必要があることを意味する。",
+      "unrelated_note": null,
+      "environment_change": "対ロ制裁が政権交代に左右されにくい制度として固定化される方向にあり、米国の対ロ・対中・対印政策が制裁・関税を交渉カードとして用いる傾向が強まる可能性がある。これにより、長期的なエネルギー・原材料調達戦略、第三国経由の取引構造を見直す必要が生じうる。"
+    },
+    "initial_anomaly": "議会側の支持は2025年時点で既に非常に強かったにもかかわらず法案は停滞し、2026年に条文修正とWhite House支持が加わると一気に前進した点。制裁強度よりも「誰がいつどう使えるか」という運用裁量が決定点になっている可能性が高い。",
+    "review_findings": null,
+    "audience_analysis": null,
+    "executive_summary": {
+      "what_changed": "2025年には強い議会支持がありながら停滞していた対ロ制裁強化法案が、2026年には大統領裁量条項と第三国関税設計の調整を経てWhite House支持を得て前進した。制裁は『Trumpを縛る制度』から『Trumpも使える圧力手段』へ性格を変えつつある。",
+      "why_it_matters": "制裁の制度化と大統領の運用裁量が組み合わさることで、対ロ制裁が長期的に続く可能性が高まる一方、第三国関税などが対中・対印関係の交渉カードとして使われる余地も広がる。企業にとっては、ルールの固定化と裁量的運用の両方に備える必要がある。",
+      "what_to_watch_decide": "(1) 法案の最終条文（裁量条項と第三国関税条項）を確認する。(2) 実際の制裁発動・解除事例から、Trump政権が制裁を対ロ強硬そのものとして使うのか、交渉カードとして使うのかを見極める。(3) 中国・インドなど第三国の反応と市場への影響をモニターし、エネルギー・原材料調達戦略の見直し要否を検討する。"
+    },
+    "key_actor_profiles": [
+      {
+        "actor": "Donald Trump / White House",
+        "red_line": null,
+        "actor_ref": "actor_trump",
+        "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+        "confidence": "低",
+        "event_role": {
+          "role_type": "bargaining_card",
+          "explanation": "対ロ制裁強化法案を受け入れること自体が、対ロ関係だけでなく対中・対印など第三国への圧力カードを増やす手段であり、同時に議会との関係を安定させる交渉材料として機能しているとみられる。",
+          "intended_target_actor_ref": "actor_congress_sanctions_block"
+        },
+        "formal_role": "米国大統領。対ロ制裁の発動・解除に関する行政権限と拒否権を持つ。",
+        "evidence_ids": null,
+        "decision_power": "拒否権と共和党議員への影響力により、対ロ制裁法案の前進・停滞を左右できる。",
+        "driving_forces": [
+          {
+            "force": "議会・党内関係",
+            "direction": "constraining",
+            "description": "2025年案を止め続けることは、対ロ強硬派や超党派制裁派との関係悪化を招きうる。"
+          },
+          {
+            "force": "外交カード",
+            "direction": "supporting",
+            "description": "第三国関税条項を含む制裁法は、中国・インド等への交渉カードとして価値がある。"
+          }
+        ],
+        "perceived_path": "制裁の適用除外・解除の裁量を広く残した法案を受け入れることで、議会の対ロ強硬姿勢を満足させつつ、自らは対ロ・対中・対印などへの関税・制裁を交渉カードとして柔軟に使えると考えている可能性がある。",
+        "ability_to_move": "White House支持を表明することで、上院共和党指導部に法案前進の政治的余地を与える。",
+        "issue_objective": "対ロ制裁を完全に否定するのではなく、自らの裁量で対ロ・対第三国への圧力カードとして使える制度枠組みを確保すること。",
+        "observed_action": "2025年案には支持を示さず停滞させ、2026年案では大統領裁量条項を支持理由として明示し、法案前進を容認した。",
+        "vulnerabilities": [
+          "対ロ強硬派・超党派制裁派との関係悪化",
+          "制裁による国内経済への副作用"
+        ],
+        "ability_to_block": "拒否権の示唆や公然の反対により、2025年案のように法案を事実上停滞させることができる。",
+        "primary_audience": "議会（対ロ強硬派および共和党指導部）",
+        "why_actor_matters": "Trumpは拒否権と共和党への影響力を通じて、対ロ制裁法案の前進・停滞を左右できる唯一の行政側Key Actorであり、2025年案を止め、2026年案を支持へ転換した行動がこの局面の方向を決定づけている。",
+        "available_leverage": [
+          "拒否権",
+          "共和党議員への影響力",
+          "第三国関税・制裁カード"
+        ],
+        "secondary_audience": "対ロ・対中・対印など第三国政府",
+        "ultimate_objective": null,
+        "actor_model_challenge": null,
+        "persistent_preference": null,
+        "preference_action_gap": "対ロ制裁強化そのものを上位目的としているかどうかは不明であり、2026年案支持は「対ロ強硬化」よりも「交渉カードとしての制裁運用裁量確保」による説明力が高い可能性がある。",
+        "relevant_decision_patterns": [
+          "強い措置を提示した後、反発を受けてより持続可能な枠組みに調整する（例: ホルムズ海峡補償料構想の撤回と対米投資協定枠組みへの切り替え、document_id: 3351be8b-3a7b-4428-82c7-f46aa0e6c5ca）"
+        ],
+        "unavailable_or_costly_cards": [
+          "対ロ制裁の全面否定（議会との全面対立を招く）"
+        ],
+        "confidence_adjustment_reason": "Actor Intelligence Packがinsufficientであり、今回Caseの直接Evidenceも限定的なため、Trumpの上位目的・Persistent Preferenceに関する評価は一般知識依存が大きく、confidenceを低に留める。",
+        "persistent_preference_change": null,
+        "actor_intelligence_provenance": {
+          "pattern_ids": [],
+          "subject_type": "person",
+          "actor_coverage": "none",
+          "profile_source": "none_available",
+          "institution_coverage": "none",
+          "exception_episode_ids": [],
+          "person_actor_coverage": "none",
+          "general_knowledge_used": true,
+          "historical_episode_ids": [],
+          "supporting_evidence_ids": [],
+          "actor_intelligence_status": "insufficient",
+          "effective_intelligence_coverage": "none"
+        },
+        "persistent_preference_evidence": [],
+        "pattern_applicability_assessment": [
+          {
+            "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+            "pattern_id": null,
+            "applicability": "uncertain",
+            "pattern_summary": "強い措置を提示した後、反発を受けてより持続可能な枠組みに調整する（例: ホルムズ海峡補償料構想の撤回と対米投資協定枠組みへの切り替え、document_id: 3351be8b-3a7b-4428-82c7-f46aa0e6c5ca）",
+            "current_differences": [],
+            "current_similarities": [],
+            "exception_evidence_ids": []
+          }
+        ],
+        "strategic_relationship_preference": null
+      },
+      {
+        "actor": "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+        "red_line": null,
+        "actor_ref": "actor_congress_sanctions_block",
+        "entity_id": null,
+        "confidence": "低",
+        "event_role": {
+          "role_type": "institutionalization",
+          "explanation": "今回の法案は、対ロ制裁を政権交代に左右されにくい制度として固定化するための枠組みづくりとして位置づけられている。",
+          "intended_target_actor_ref": "actor_trump"
+        },
+        "formal_role": "上院議員として対ロ制裁法案の起草・共同提案・修正を主導。",
+        "evidence_ids": null,
+        "decision_power": "超党派の多数派支持を背景に、対ロ制裁の法制化を推進する力を持つ。",
+        "driving_forces": [
+          {
+            "force": "安全保障コミュニティ",
+            "direction": "supporting",
+            "description": "ロシアへの継続的圧力を求める専門家・有権者の期待。"
+          },
+          {
+            "force": "White Houseとの関係",
+            "direction": "constraining",
+            "description": "法案成立のためにはTrumpの拒否権を回避する必要があり、一定の裁量条項を認める妥協が必要。"
+          }
+        ],
+        "perceived_path": "White Houseが受け入れ可能な裁量条項と関税設計を組み込むことで、対ロ制裁の法制化という核心目的を達成できると考えている。",
+        "ability_to_move": "法案の条文設計と修正を通じて、対ロ制裁を政権交代に左右されにくい制度として固定化できる。",
+        "issue_objective": "対ロ制裁強化法案を可決させ、第三国関税などを通じてロシアの収入を削減する制度的枠組みを確保すること。",
+        "observed_action": "2025年案で85人の共同提案者を集め、2026年案では条文修正（関税率調整、大統領裁量条項）を通じてWhite House支持を得られる形へ設計し直した。",
+        "vulnerabilities": [
+          "政権交代時の政策変更",
+          "制裁による経済的副作用への批判"
+        ],
+        "ability_to_block": "White House支持がない場合でも、法案提出・審議を続けることはできるが、最終的な成立を単独で保証する力は持たない。",
+        "primary_audience": "米国内の対ロ強硬世論・安全保障コミュニティ",
+        "why_actor_matters": "超党派制裁派は、対ロ制裁法案の内容と議会内支持を形成する中心的主体であり、White Houseの受け入れ可能な妥協点を探りつつ制度化を進める役割を担っている。",
+        "available_leverage": [
+          "超党派議会支持",
+          "法案起草・修正権限"
+        ],
+        "secondary_audience": "White House（Trump）",
+        "ultimate_objective": "対ロ制裁を政権の判断に左右されにくい形で制度化し、ロシアへの圧力を持続させること。",
+        "actor_model_challenge": null,
+        "persistent_preference": null,
+        "preference_action_gap": "対ロ制裁の強度を最大化することが理想だが、White House支持を得るために関税率を引き下げ、大統領裁量を認める妥協を受け入れている。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "White Houseの拒否権を無視した強行採決（政治的コストが高い）"
+        ],
+        "confidence_adjustment_reason": "actor_intelligence_provenance.general_knowledge_used=true and this case has no current-case evidence_ids backing the assessment; confidence capped at low per the P0-1 General Knowledge Confidence Cap (a model-general-knowledge-only actor assumption must not be promoted to medium/high confidence).",
+        "persistent_preference_change": null,
+        "actor_intelligence_provenance": {
+          "pattern_ids": [],
+          "subject_type": "person",
+          "actor_coverage": "none",
+          "profile_source": "not_evaluated",
+          "institution_coverage": "none",
+          "exception_episode_ids": [],
+          "person_actor_coverage": "none",
+          "general_knowledge_used": true,
+          "historical_episode_ids": [],
+          "supporting_evidence_ids": [],
+          "actor_intelligence_status": "not_evaluated",
+          "effective_intelligence_coverage": "none"
+        },
+        "persistent_preference_evidence": [],
+        "pattern_applicability_assessment": null,
+        "strategic_relationship_preference": "ロシアに対して継続的な圧力を維持しつつ、米国の対ロ政策が政権交代で大きく揺れないようにしたい。"
+      }
+    ],
+    "root_premise_check": null,
+    "additional_research": [
+      {
+        "priority": "高",
+        "question": "Trump政権は対ロ制裁強化法案を、対ロ強硬姿勢の固定化として受け入れたのか、それとも対中・対印など第三国への交渉カードとしての価値を重視して受け入れたのか。",
+        "rationale": "上位目的の違いが今後の制裁運用と第三国関税の使われ方を大きく左右するため。",
+        "related_hypothesis": "H1",
+        "recommended_sources": "過去の対ロ制裁に関する大統領発言・インタビュー、ホワイトハウスブリーフィング、専門家分析。"
+      },
+      {
+        "priority": "中",
+        "question": "2026年案の条文修正（関税率引き下げ、大統領裁量拡大）に対して、財務省や制裁実務機関がどのような内部評価・ロビー活動を行ったか。",
+        "rationale": "経済的副作用と制度設計への専門的懸念が、どこまで条文に反映されたかを確認することで、運用裁量の実質的限界を読む材料になる。",
+        "related_hypothesis": "H3",
+        "recommended_sources": "議会公聴会記録、財務省関係者の証言・報道、シンクタンクレポート。"
+      },
+      {
+        "priority": "中",
+        "question": "第三国関税条項に対する中国・インドなど主要第三国の反応（外交抗議、報復措置の検討など）はどの程度確認されているか。",
+        "rationale": "第三国関税が対ロ制裁だけでなく対中・対印関係の交渉カードとして機能するかどうかを確認するため。",
+        "related_hypothesis": "H1",
+        "recommended_sources": "中国・インド政府の公式声明、主要メディア報道、エネルギー市場分析。"
+      }
+    ],
+    "hypothesis_register": [
+      {
+        "reason": "Evidence Fit: 2025年案停滞と2026年案前進の差異、White Houseが大統領裁量条項を支持理由として明示した事実と整合する。Actor Model Fit: Trumpが交渉カードとして強い措置を提示しつつ、反発を受けて調整するパターン（ホルムズ海峡補償料事案）が参考になる。Means/Timing Fit: 条文修正によってWhite House支持を得たタイミングで法案が前進している。Decision Relevance: 制裁の制度化と裁量のバランスは、今後の制裁運用を読むうえで中心的。",
+        "status": "retained",
+        "confidence": "中",
+        "description": "議会は対ロ制裁を政権交代に左右されにくい制度として固定化したく、Trump政権は制裁の運用裁量を維持したい。2026年案は、制裁の法制化と大統領裁量条項の組み合わせによる妥協の産物であり、双方が望んだものを部分的に得た。",
+        "hypothesis_id": "H0",
+        "hypothesis_type": "H0_straightforward",
+        "interaction_basis": {
+          "gap_note": "議会とWhite Houseの間の具体的な交渉過程に関するEvidenceが不足しており、特定の人物間相互作用を主張するよりも、制度設計と拒否権構造に基づく説明が妥当と判断した。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "Evidence Fit: 第三国関税条項が法案に含まれ、関税慎重派が反対したが法案全体は可決されている。Actor Model Fit: Trumpがホルムズ海峡補償料構想など、強い経済カードを提示して交渉に利用しようとする傾向があることと整合する。Higher-order Objective Check: 対ロ制裁と第三国関税が、対中・対印関係や議会との関係維持という上位目的の手段である可能性を示唆する。Decision Relevance: この仮説が成り立つ場合、今後の制裁運用は対ロだけでなく対中・対印関係の文脈で読む必要がある。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "対ロ制裁強化法案は、対ロ強硬そのものよりも、Trump政権にとって対中・対印など第三国への交渉カードを増やすための手段として受け入れられた。第三国関税条項は、ロシア収入削減と同時に対中・対印関係でのレバレッジを高める目的を持つ。",
+        "hypothesis_id": "H1",
+        "hypothesis_type": "H1_instrumental_indirect",
+        "interaction_basis": {
+          "gap_note": "Trumpが第三国関税条項を対中・対印への交渉カードとしてどの程度意識しているかを示す直接Evidenceが不足しており、Human Interactionとしては未解決の仮説に留まる。",
+          "actor_ref": "actor_trump",
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "Evidence Fit: 2025年案で85人の共同提案者がいたにもかかわらず停滞したことは、議会側の圧力が強かったことを示す。Internal Constraint: White Houseが拒否権を行使し続けることは、対ロ強硬派や超党派制裁派との関係悪化を招きうる。Decision Relevance: 国内政治制約が主因である場合、今後の制裁運用は議会との関係や世論の変化に強く依存する。",
+        "status": "retained",
+        "confidence": "低",
+        "description": "対ロ制裁強化法案の前進は、対外的な対ロ強硬姿勢よりも、国内政治（議会との関係維持、超党派対ロ強硬世論への対応）が主因である。Trump政権は、議会の強い対ロ制裁支持と拒否権行使による政治コストを考慮し、裁量条項を条件に支持へ転換した。",
+        "hypothesis_id": "H3",
+        "hypothesis_type": "H3_constraint_domestic_driver",
+        "interaction_basis": {
+          "gap_note": "具体的な党内交渉や世論動向に関するEvidenceが不足しており、国内政治制約を一般的構造要因として扱うに留める。",
+          "actor_ref": null,
+          "basis_type": "NOT_APPLICABLE",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      },
+      {
+        "reason": "Premise Invalidation Checkが示すように、2026年案支持の理由として大統領裁量条項が強調されていることは、対ロ制裁強化そのものよりも運用裁量を重視する志向を示唆する。しかし、Trumpの長期的Persistent Preferenceに関するActor Intelligenceがinsufficientであり、前提の全面的な修正を確定するにはEvidenceが不足している。",
+        "status": "unresolved",
+        "confidence": "判断不能",
+        "description": "従来の「Trumpは対ロ制裁強化を上位目的としている」という前提自体が誤っており、実際には対ロ制裁を交渉カードとして扱うこと、あるいは対中・対印関係でのレバレッジ確保が上位目的である可能性がある。",
+        "hypothesis_id": "H4",
+        "hypothesis_type": "H4_frame_breaking",
+        "interaction_basis": {
+          "gap_note": "Trumpの対ロ政策に関する長期的Persistent Preferenceを検証するための過去事例・発言の体系的整理が不足しており、Actor Model自体の修正可能性は認識しつつも、現時点では結論を出せない。",
+          "actor_ref": "actor_trump",
+          "basis_type": "EVIDENCE_GAP",
+          "target_actor_ref": null
+        },
+        "supporting_evidence_ids": null,
+        "contradicting_evidence_ids": null,
+        "weakening_evidence_relevance": null
+      }
+    ],
+    "one_line_assessment": "現時点では、「対ロ制裁の制度化を望む議会」と「制裁を交渉カードとして柔軟に使いたいTrump政権」が、第三国関税の強度調整と大統領裁量条項を通じて妥協した、という読みが最も整合的だが、Trump側の上位目的（対ロ強硬そのものか、交渉カード確保か）については仮説の幅を残すべき局面である。",
+    "relevant_mechanisms": [],
+    "relevant_precedents": [],
+    "key_point_assessment": {
+      "confidence": "低",
+      "control_type": "mixed",
+      "evidence_class": "model_general_knowledge",
+      "focus_selection": {
+        "why_now": "今後の展開を読むうえで、誰が制裁発動・解除を決められるか（decision_power）、制裁が対ロ強硬そのものなのか交渉カードなのかという上位目的（higher_order_objective）、そして実際にどこまで発動可能か（implementation_or_feasibility）が、企業にとって最も意思決定関連性が高いため。",
+        "trigger_types": [
+          "decision_power",
+          "higher_order_objective",
+          "implementation_or_feasibility"
+        ],
+        "decision_sensitive_outcome": "このバランスの評価が変われば、対ロ制裁の持続性、第三国関税発動の蓋然性、対中・対印関係への影響の見立てが変わる。",
+        "discriminating_observation": null
+      },
+      "hinge_structure": {
+        "primary_hinge": "大統領裁量条項の具体的な内容（適用除外・解除の条件と範囲）",
+        "secondary_hinges": [
+          "第三国関税率と対象の設計",
+          "議会内の対ロ制裁支持の持続性"
+        ]
+      },
+      "primary_key_point": "対ロ制裁の法制化と大統領の運用裁量のバランス",
+      "evidence_relevance": null,
+      "rejected_candidates": [
+        {
+          "key_point": "第三国関税条項の設計強度",
+          "why_not_primary": "重要な要素だが、関税条項は制度枠組みの一部であり、全体を規定する蝶番はむしろ『制度化 vs 裁量』のバランスにある。"
+        },
+        {
+          "key_point": "White Houseの反対を外すことそのもの",
+          "why_not_primary": "結果として重要だが、その背景にある『制度化と裁量のバランス』を見ないと、今後の運用を読むうえで十分なFrameにならない。"
+        }
+      ],
+      "selection_rationale": "今後の展開（制裁の発動・解除、第三国関税の使われ方）を読むうえで最もdecision-sensitiveなのは、「制度としてどこまで固定され、運用裁量がどこまで残っているか」であり、White House支持転換もこのバランスの再設計によって説明しやすいため。",
+      "candidate_key_points": [
+        {
+          "key_point": "対ロ制裁の法制化（制度化）と大統領の運用裁量のバランス",
+          "control_type": "mixed",
+          "what_it_explains": "なぜ強い議会支持があった2025年案が停滞し、裁量条項を含む2026年案が前進したのか。",
+          "why_it_could_be_key": "2025年案停滞と2026年案前進の差異は、制裁強度よりも大統領裁量条項の有無に依存しているとみられ、今後の制裁運用もこのバランスに左右されるため。",
+          "controlling_entity_ids": [
+            "671eeb94-62df-45f9-a1e4-5e3fa89a71ba"
+          ],
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "第三国関税条項がどの程度実際に発動されるか、対中・対印関係への具体的影響。",
+          "control_structure_summary": "議会が制度枠組みを設計し、大統領がその枠内で運用裁量を行使する構造。",
+          "supporting_knowledge_refs": [
+            {
+              "ref": "actor_trump",
+              "type": "actor_intelligence",
+              "field": "persistent_preference"
+            }
+          ],
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "第三国関税条項の設計（率・対象）の強度調整",
+          "control_type": "institutionally_constrained",
+          "what_it_explains": "関税慎重派が修正案で反対したにもかかわらず法案全体を止められなかった理由。",
+          "why_it_could_be_key": "関税率を500％級から最大100％に下げ、対象を絞ることで、対ロ収入削減と第三国への圧力の両方を維持しつつ、経済的副作用と議会内反発を抑えた可能性があるため。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "Trumpが第三国関税をどの程度本気で使う意思を持っているか。",
+          "control_structure_summary": "関税率・対象は法案条文として固定され、今後の発動は大統領裁量に委ねられる。",
+          "supporting_knowledge_refs": null,
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        },
+        {
+          "key_point": "White Houseの反対を外すことが法案前進の決定点だったこと",
+          "control_type": "actor_controlled",
+          "what_it_explains": "2025年案停滞と2026年案前進の差異。",
+          "why_it_could_be_key": "Counterfactualとして、議会支持だけが決定要因なら2025年にも進んだはずであり、2026年案前進の主因はTrump側の支持転換にあるとみられるため。",
+          "controlling_entity_ids": [
+            "671eeb94-62df-45f9-a1e4-5e3fa89a71ba"
+          ],
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "なぜTrumpが支持転換したのか（対ロ強硬化か、交渉カード確保か）。",
+          "control_structure_summary": null,
+          "supporting_knowledge_refs": [
+            {
+              "ref": "actor_trump",
+              "type": "actor_intelligence",
+              "field": "mandate"
+            }
+          ],
+          "control_type_adjustment_reason": null,
+          "historical_supporting_evidence_ids": null
+        }
+      ],
+      "disconfirming_signal": "大統領裁量条項が実際には極めて限定的であり、運用上ほとんど使われていないことが確認されれば、『制度化と裁量のバランス』を主Key Pointとする見立ては弱まる。",
+      "controlling_entity_ids": [
+        "671eeb94-62df-45f9-a1e4-5e3fa89a71ba"
+      ],
+      "supporting_evidence_ids": null,
+      "control_structure_summary": "議会が対ロ制裁の制度枠組みを設計し、大統領がその枠内で運用裁量を行使する二層構造。",
+      "supporting_knowledge_refs": [
+        {
+          "ref": "actor_trump",
+          "type": "actor_intelligence",
+          "field": "decision_authority"
+        }
+      ],
+      "contradicting_evidence_ids": null,
+      "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+      "control_type_adjustment_reason": null,
+      "historical_supporting_evidence_ids": null,
+      "relevance_confidence_adjustment_reason": null
+    },
+    "media_source_context": null,
+    "unknown_or_uncertain": "Trump政権の対ロ政策に関する長期的Persistent Preference（対ロ強硬そのものか、交渉カード志向か）については、Actor Intelligenceがinsufficientであり、現時点では仮説の幅を残す必要がある。",
+    "alternative_scenarios": [
+      {
+        "confidence": "低",
+        "description": "対ロ制裁強化法案は、対ロ強硬そのものよりも、Trump政権にとって対中・対印など第三国への交渉カードを増やすための手段として受け入れられた。第三国関税条項は、ロシア収入削減と同時に対中・対印関係でのレバレッジを高める目的を持つ。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "第三国関税の初回発動が対ロではなく対中・対印案件に紐づいて行われ、その際の説明が対中・対印への圧力を前面に出している場合。"
+        ],
+        "weakening_conditions": [
+          "第三国関税条項がほとんど発動されず、対ロ制裁が主にロシア向けにのみ使われる。",
+          "政権が第三国関税条項を「抑止的枠組み」としてのみ説明し、交渉カードとしての利用を否定する。"
+        ],
+        "strengthening_conditions": [
+          "White Houseや政権高官が第三国関税条項を対中・対印への交渉カードとして位置づける発言を行う。",
+          "対ロ制裁枠組みが対ロ案件よりも対中・対印案件で優先的に活用される事例が複数確認される。"
+        ],
+        "derived_from_hypothesis_id": "H1",
+        "confidence_adjustment_reason": "Trumpの対中・対印関係に関するPersistent Preferenceや、第三国関税条項の具体的運用に関するEvidenceが不足しているため、仮説としては重要だがconfidenceは低に留める。"
+      },
+      {
+        "confidence": "低",
+        "description": "対ロ制裁強化法案の前進は、対外的な対ロ強硬姿勢よりも、国内政治（議会との関係維持、超党派対ロ強硬世論への対応）が主因である。Trump政権は、議会の強い対ロ制裁支持と拒否権行使による政治コストを考慮し、裁量条項を条件に支持へ転換した。",
+        "evidence_class": "model_general_knowledge",
+        "switch_conditions": [
+          "拒否権行使の政治コストや党内関係悪化への懸念が、政権関係者の証言やリークで主要理由として示される場合。"
+        ],
+        "weakening_conditions": [
+          "Trumpが対ロ制裁強化を自らの外交戦略の中心要素として繰り返し強調し、国内政治要因を副次的なものとして扱う。",
+          "議会との関係が悪化しても制裁運用を独自路線で行う事例が確認される。"
+        ],
+        "strengthening_conditions": [
+          "White House内部や議会関係者から、拒否権行使の政治コストや対ロ強硬世論への配慮が支持転換の主要理由だったとする証言が出る。",
+          "今後の制裁運用が国内世論・議会動向に強く連動し、対外関係よりも国内政治要因で説明される事例が増える。"
+        ],
+        "derived_from_hypothesis_id": "H3",
+        "confidence_adjustment_reason": "具体的な党内交渉や世論動向に関する一次情報が不足しており、国内政治制約を構造要因として一般的に推定する段階に留まる。"
+      }
+    ],
+    "discretion_assessment": {
+      "mode_rationale": "法案の前進には、議会の制度設計（構造要因）とWhite Houseの支持・拒否権行使（人的裁量）の両方が決定的に作用している。条文修正は制度的だが、2025年案停滞と2026年案前進の差異はTrumpの裁量に依存しているため、MIXEDとみるのが妥当。",
+      "discretion_mode": "MIXED"
+    },
+    "monitoring_indicators": [
+      "対ロ制裁強化法案の最終的な成立状況と条文内容（特に大統領裁量条項と第三国関税条項）。",
+      "ホワイトハウスによる制裁発動・解除の具体的事例（対ロ・対中・対印など）と、その理由説明。",
+      "中国・インドなど主要第三国の対ロ制裁・第三国関税への公式反応と、エネルギー価格・貿易フローの変化。"
+    ],
+    "retraction_conditions": [
+      "大統領裁量条項が実質的に形骸化しており、制裁発動・解除がほぼ自動的・議会主導で行われていることが一次情報で確認された場合。",
+      "Trump政権が対ロ制裁強化法案を対ロ強硬姿勢の固定化として明示的に位置づけ、第三国関税条項をほとんど利用しない方針を繰り返し表明した場合。"
+    ],
+    "sources_and_citations": [
+      {
+        "result_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "bce3a535-8b82-41b5-8e3b-9800719cd253",
+        "result_type": "document",
+        "citation_label": null
+      }
+    ],
+    "weakening_information": "もし今後、大統領裁量条項がほとんど使われず、制裁発動・解除が議会主導の硬直的な運用に終始することが確認されれば、「制度化と裁量のバランス」を主シナリオの中心に置く見立ては弱まる。",
+    "contradicting_evidence": null,
+    "directional_perceptions": null,
+    "expert_reasoning_checks": {
+      "feasibility_check": {
+        "question": "このActorがそれを望んでいるかではなく、実際に第三国への最大100％関税を発動できるのか。何が実行上のボトルネックか。",
+        "applicable": true,
+        "trigger_basis": [
+          "第三国関税条項が法案に含まれているが、実際に100％関税を発動するための行政能力・経済的許容度が不明である。"
+        ],
+        "evidence_status": "unresolved"
+      },
+      "internal_blocking_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      },
+      "role_choreography_check": {
+        "question": null,
+        "applicable": false,
+        "trigger_basis": null,
+        "evidence_status": null
+      },
+      "structural_benefit_check": {
+        "question": "直接効果の受益者ではなく、価格・競争力・市場構造等を通じて間接的に得をする主体は誰か。",
+        "applicable": true,
+        "trigger_basis": [
+          "第三国関税条項の直接的対象は中国・インド等のロシア産エネルギー購入国だが、価格・競争力・市場構造を通じて米国エネルギー企業や他産業が間接的に利益を得る可能性が検討されていない。"
+        ],
+        "evidence_status": "unresolved"
+      },
+      "capability_vs_intent_check": {
+        "question": "これは第三国への関税発動意思を示しているのか、それとも発動可能な能力を整える目標・枠組みなのか。",
+        "applicable": true,
+        "trigger_basis": [
+          "第三国関税率・対象が条文として規定されているが、それが直ちに発動意思を意味するとは限らない。"
+        ],
+        "evidence_status": "unresolved"
+      },
+      "premise_invalidation_check": {
+        "question": "この見立ては『Trumpは対ロ制裁強化を上位目的としている』を前提としているが、大統領裁量条項を重視する行動が観測された今もこの前提は成立するか。",
+        "applicable": true,
+        "trigger_basis": [
+          "前提X: Trumpは対ロ制裁強化を上位目的としているという見立て。",
+          "変化Y: 2026年案支持の理由として大統領裁量条項を強調し、制裁の使い方を自分で決めたいという志向が前面に出ている。"
+        ],
+        "evidence_status": "unresolved"
+      },
+      "higher_order_objective_check": {
+        "question": "この目的は独立した最終目標か、それともより上位の目的（対中・対印関係での交渉カード確保や議会との関係維持）のための下位要素か。",
+        "applicable": true,
+        "trigger_basis": [
+          "対ロ制裁強化と第三国関税条項が並列の目的として提示されているが、これらが対中・対印関係や議会との関係維持といった上位目的の手段である可能性が検討されていない。"
+        ],
+        "evidence_status": "unresolved"
+      }
+    },
+    "investigation_questions": [
+      {
+        "question": "Trump政権は対ロ制裁強化法案を、対ロ強硬姿勢の固定化として受け入れたのか、それとも対中・対印など第三国への交渉カードとしての価値を重視して受け入れたのか。",
+        "rationale": "Key Actor（Trump）の上位目的とPreference-Action Gapを特定することが、今後の制裁運用と第三国関税の使われ方を読むうえで決定的なKey Pointになるため。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "2026年案の条文修正（関税率引き下げ、大統領裁量拡大）に対して、財務省や制裁実務機関がどのような内部評価・ロビー活動を行ったか。",
+        "rationale": "制裁の経済的副作用と制度設計への専門的懸念が、どこまで条文に反映されたかを確認することで、今後の運用裁量の実質的な限界を読む材料になる。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "第三国関税条項に対する中国・インドなど主要第三国の反応（外交抗議、報復措置の検討など）はどの程度確認されているか。",
+        "rationale": "第三国関税が対ロ制裁だけでなく対中・対印関係の交渉カードとして機能するかどうかは、今後の展開（関税発動の蓋然性、報復リスク）を読むうえで重要なため。",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      }
+    ],
+    "actor_intelligence_status": "insufficient",
+    "identified_knowledge_gaps": [
+      {
+        "priority": "高",
+        "description": "Trump政権が対ロ制裁をどのような上位目的の下で位置づけているか（対ロ強硬そのものか、交渉カードか）。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "過去の対ロ制裁・対ロ発言・交渉事例を整理し、Persistent Preference仮説を専門家と検証する。"
+      },
+      {
+        "priority": "中",
+        "description": "2026年案の条文修正過程における財務省・制裁実務機関の具体的な関与（懸念点、修正提案）。",
+        "gap_category": "deterministic",
+        "recommended_action": "議会審議記録・証言・リーク報道を調査し、条文修正の技術的背景を確認する。"
+      },
+      {
+        "priority": "中",
+        "description": "第三国関税条項に対する中国・インドなど主要第三国の公式反応と、実際の貿易・価格への影響。",
+        "gap_category": "deterministic",
+        "recommended_action": "外務・通商当局の声明、貿易統計、価格動向を確認する。"
+      }
+    ],
+    "knowledge_gaps_referenced": [],
+    "strongest_counterargument": "対ロ制裁強化法案の前進は、対ロ強硬そのものや第三国関税によるロシア収入削減をTrump自身が強く望んだ結果であり、「裁量維持」よりも対ロ強硬化が上位目的だった可能性がある。つまり、White House支持転換は交渉カード確保ではなく、対ロ政策の実質的なタカ派化を示すという見方。",
+    "human_interaction_coverage": {
+      "status_rationale": "議会とWhite Houseの間に妥協が成立したことは推定できるが、具体的な交渉過程や相互認識に関する一次情報が提示されていないため、Directional PerceptionやSituation Actor Assessmentを根拠を持って埋めることができない。",
+      "interaction_status": "INSUFFICIENT_EVIDENCE"
+    },
+    "key_actor_action_substance": [
+      {
+        "actor_ref": "actor_trump",
+        "action_substance": {
+          "assessment": "Signalとしては『制裁を拒否するのではなく、自らの裁量で使う』姿勢を示し、Substanceとしては対ロ制裁枠組みの法制化を受け入れている。",
+          "discretion": "大統領裁量条項により、適用除外・解除の判断に広い裁量が残る。",
+          "evidence_ids": null,
+          "target_scope": "対ロ制裁および第三国関税の運用全般。",
+          "stated_signal": "対ロ制裁強化法案への支持は、大統領裁量条項がある限り、制裁を柔軟に運用できるというメッセージ。",
+          "concrete_measure": "大統領に制裁の適用除外・解除の広い裁量を認める条文を含む法案への支持。",
+          "enforcement_status": "未確定（法案成立前）。",
+          "implementation_status": "法案は上院を通過済み、下院審議中。",
+          "legal_or_policy_force": "法案成立後は、制裁枠組みが法律として拘束力を持つ一方、大統領裁量条項が運用上の柔軟性を提供する。"
+        }
+      }
+    ],
+    "key_stakeholder_assessment": {
+      "rationale": "2025年案の停滞と2026年案の前進の差異から、この局面を実際に動かしたのは、(1)拒否権と共和党への影響力を持つTrump・White Houseと、(2)対ロ制裁の法制化を推進する超党派議会制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）との間の合意形成であるとみられる。議会支持だけでは2025年に前進しなかったため、White Houseの反対を外すことが決定点となった。",
+      "confidence": "中",
+      "evidence_ids": null,
+      "determination": "multiple",
+      "decision_structure": "上院では超党派制裁派が法案の基盤を形成しつつ、共和党指導部が本会議日程を管理し、White Houseが拒否権と党内影響力を通じて最終的な前進・停滞を左右する構造。関税慎重派や財務省は修正条項を通じて影響を与えるが、最終的な可決を止める拒否権は持たない。",
+      "selected_actor_ids": [
+        "actor_trump",
+        "actor_congress_sanctions_block"
+      ]
+    },
+    "situation_actor_assessment": null,
+    "decisive_power_and_leverage": null,
+    "assets_dependencies_leverage": [],
+    "preference_action_gap_summary": "Trumpが対ロ制裁強化法案を支持へ転換した行動は、対ロ強硬そのものを上位目的とする仮説よりも、制裁を交渉カードとして柔軟に使いたいという運用裁量志向と整合する可能性があるが、Actor Intelligenceが不足しているため確信度は低い。"
+  },
+  "stage_bd_ranked_candidates": [
+    {
+      "scenario_candidate_id": "ccd4de05-60c5-4722-aa38-80513cc981da",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "White Houseが公表した支持理由（大統領裁量条項重視）は、少なくとも部分的には実際の意思決定動機を反映していると仮定している。",
+            "議会超党派制裁派の核心目的が対ロ制裁の制度化であり、関税率や裁量条項については妥協可能な要素とみなしていると仮定している。"
+          ],
+          "description": "現時点では、対ロ制裁強化法案の前進は「議会による対ロ制裁の制度化」と「Trump政権による制裁運用裁量の維持」が組み合わさった妥協の産物とみるのが最も整合的である。議会の超党派制裁派は、政権交代に左右されにくい対ロ制裁枠組みを法律として固定化することを核心目的とし、White House（Trump）は、制裁そのものを否定せず、自らの裁量で対ロ・対第三国への圧力カードとして使える制度枠組みを確保することを重視した。2025年案は強い議会支持にもかかわらずWhite Houseの反対で停滞したが、2026年案では第三国関税率の引き下げと対象絞り込み、大統領裁量条項の拡充によって、議会側の「制度化」とTrump側の「裁量維持」が両立しうる設計となり、White House支持が付いたことで一気に前進したと読むのが自然である。今後の展開を読むうえでは、(1)法案成立後に大統領裁量条項がどの程度実際に行使されるか、(2)第三国関税が対ロ収入削減だけでなく対中・対印関係の交渉カードとして使われるか、(3)議会が追加修正や監視条項で裁量をさらに縛ろうとするか、が主要な観測ポイントになる。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [
+            {
+              "rationale": "ホルムズ海峡補償料構想の撤回と投資枠組みへの切り替えは、Trump政権が強い経済カードを提示しつつ反発を受けて調整するパターンの参考例として、今回の「強い制裁構想→裁量付き妥協」シナリオの説明力を補強する。",
+              "evidence_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+              "source_type": "unknown",
+              "claim_relevance": "structural"
+            }
+          ],
+          "selection_rationale": "hypothesis_registerのH0（制度化と裁量維持の妥協）仮説は、2025年案停滞と2026年案前進の差異、White Houseの支持理由、条文設計の具体的変更と整合しており、追加の仮定が比較的少ない。H1（第三国関税を対中・対印カードとみる仮説）やH3（国内政治制約主因仮説）は今後の展開を読むうえで重要な補足だが、現時点のEvidenceではH0ほど直接的に支持されていないため、主シナリオとしてはH0を採用する。",
+          "supporting_evidence": [
+            "2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞したこと。",
+            "2026年案では第三国関税率が最大500％級から最大100％に下げられ、対象が絞られる一方で、大統領に制裁の適用除外や解除の裁量が広く残されたこと。",
+            "White Houseが2026年案への支持理由として、大統領裁量条項を明示的に挙げたこと。",
+            "第三国関税削除修正案は32対64で否決され、法案全体は86対11で可決したこと。",
+            "ホルムズ海峡20％補償料構想が湾岸諸国の強い反発を受けて翌日に撤回され、対米投資協定枠組みへ切り替えられた事例（document_id: 4782ea75-15f2-47bb-a050-5408f186b989, 3351be8b-3a7b-4428-82c7-f46aa0e6c5ca）が、Trump政権が強い措置を提示した後により持続可能な枠組みへ調整するパターンを示していること。"
+          ],
+          "observable_indicators": [
+            "法案成立後、大統領裁量条項に基づく適用除外・解除決定の頻度と対象（対ロ・対第三国）。",
+            "議会が追加の監視条項や報告義務を通じて大統領裁量をさらに縛ろうとする動きの有無。",
+            "第三国関税条項の具体的発動事例と、その際のWhite House・議会の説明。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "ホルムズ海峡通航貨物への20％補償料構想が湾岸諸国の反発で撤回され、対米投資協定枠組みへ切り替えられた事例。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+          "weakening_evidence_relevance": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "hypothesis_registerのH0（制度化と裁量維持の妥協）仮説は、2025年案停滞と2026年案前進の差異、White Houseの支持理由、条文設計の具体的変更と整合しており、追加の仮定が比較的少ない。H1（第三国関税を対中・対印カードとみる仮説）やH3（国内政治制約主因仮説）は今後の展開を読むうえで重要な補足だが、現時点のEvidenceではH0ほど直接的に支持されていないため、主シナリオとしてはH0を採用する。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "f56ccd9d-58a3-4cd8-9b54-6419548e4008",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 2,
+      "title": "対ロ制裁強化法案は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "対ロ制裁強化法案は、対ロ強硬そのものよりも、Trump政権にとって対中・対印など第三国への交渉カードを増やすための手段として受け入れられた。第三国関税条項は、ロシア収入削減と同時に対中・対印関係でのレバレッジを高める目的を持つ。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "第三国関税の初回発動が対ロではなく対中・対印案件に紐づいて行われ、その際の説明が対中・対印への圧力を前面に出している場合。"
+          ],
+          "weakening_conditions": [
+            "第三国関税条項がほとんど発動されず、対ロ制裁が主にロシア向けにのみ使われる。",
+            "政権が第三国関税条項を「抑止的枠組み」としてのみ説明し、交渉カードとしての利用を否定する。"
+          ],
+          "strengthening_conditions": [
+            "White Houseや政権高官が第三国関税条項を対中・対印への交渉カードとして位置づける発言を行う。",
+            "対ロ制裁枠組みが対ロ案件よりも対中・対印案件で優先的に活用される事例が複数確認される。"
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "Trumpの対中・対印関係に関するPersistent Preferenceや、第三国関税条項の具体的運用に関するEvidenceが不足しているため、仮説としては重要だがconfidenceは低に留める。"
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 第三国関税の初回発動が対ロではなく対中・対印案件に紐づいて行われ、その際の説明が対中・対印への圧力を前面に出している場合。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "e8f47208-debf-496d-8d5c-8a1a92af1454",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 3,
+      "title": "対ロ制裁強化法案の前進は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "対ロ制裁強化法案の前進は、対外的な対ロ強硬姿勢よりも、国内政治（議会との関係維持、超党派対ロ強硬世論への対応）が主因である。Trump政権は、議会の強い対ロ制裁支持と拒否権行使による政治コストを考慮し、裁量条項を条件に支持へ転換した。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "拒否権行使の政治コストや党内関係悪化への懸念が、政権関係者の証言やリークで主要理由として示される場合。"
+          ],
+          "weakening_conditions": [
+            "Trumpが対ロ制裁強化を自らの外交戦略の中心要素として繰り返し強調し、国内政治要因を副次的なものとして扱う。",
+            "議会との関係が悪化しても制裁運用を独自路線で行う事例が確認される。"
+          ],
+          "strengthening_conditions": [
+            "White House内部や議会関係者から、拒否権行使の政治コストや対ロ強硬世論への配慮が支持転換の主要理由だったとする証言が出る。",
+            "今後の制裁運用が国内世論・議会動向に強く連動し、対外関係よりも国内政治要因で説明される事例が増える。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": "具体的な党内交渉や世論動向に関する一次情報が不足しており、国内政治制約を構造要因として一般的に推定する段階に留まる。"
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 拒否権行使の政治コストや党内関係悪化への懸念が、政権関係者の証言やリークで主要理由として示される場合。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "71983212-1d2c-499f-939c-8140f2341aaf",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 4,
+      "title": "「制裁の制度化」よりも『制裁の再政治化』として読む視点",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "「制裁の制度化」よりも『制裁の再政治化』として読む視点",
+          "key_cue": "2026年案で大統領に広い適用除外・解除裁量を残しつつ、議会側も修正案や監視の余地を残している点、および下院慎重派が今後の主要確認点として大統領裁量を挙げている点。",
+          "reading": "今回の前進は、対ロ制裁を安定した制度にするというより、むしろ制裁を再びホワイトハウスと議会の政治ゲームの中心に据え直す枠組みづくりだと読む。制度化と裁量維持の妥協に見えるが、実態は「誰が制裁カードをいつ切るか」をめぐる継続的な政治交渉を制度的に組み込んだ設計だとみる。",
+          "switch_condition": "法案成立後、ホワイトハウスと議会が解除・適用除外・第三国関税の運用をめぐって頻繁に公然の対立や追加修正を行うようなら、『制度化』よりも『再政治化』の読みの確度が高まる。",
+          "supporting_reasons": [
+            "大統領裁量条項が広く残されているため、制裁の実際の強度は今後の政治局面次第で大きく変動しうる設計になっている。これは安定した制度化というより、政治的裁量の舞台を法律の中に埋め込んだ形に近い。",
+            "下院慎重派が「大統領裁量の追加制限」を今後の主要確認点としていることは、法案成立後も裁量をめぐる攻防が続くことを前提にしている読みであり、制度化よりも継続的な政治管理を重視していることを示唆する。",
+            "財務省・Bessentが「強すぎる制度への慎重論」を持ち、条文修正で懸念の一部が吸収されたことは、制裁を自動的に強く発動する仕組みではなく、経済状況に応じて政治的に調整可能な枠組みを志向した結果と読める。",
+            "第三国関税の削除修正案が32票を得つつ否決されたことは、関税権限の扱いが議会内でも分裂要因であり続けることを示し、今後も関税運用をめぐる政治闘争が続く構造を示している。",
+            "White Houseが支持理由として「大統領裁量」を明示したことは、制裁を固定化された対ロ政策というより、政権の政治的ツールとして位置づけ直したい意図を示している。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "主流の読みが強調するように、議会側には『政権交代に左右されにくい枠組み』を作りたいという明確な制度化志向があり、これは再政治化よりも安定化を重視する動機として解釈しうる。",
+            "上院での圧倒的な賛成票（86対11）は、制裁枠組みをめぐる基本線では大きな政治対立を避けたいというコンセンサスが形成されている可能性を示し、制裁を政治闘争の主戦場にする意図が弱いとも読める。",
+            "防衛・エネルギー業界などの外部アクターが条文修正を直接動かした証拠が不足しており、制裁の運用をめぐるロビー活動が今後の政治化を強く規定するという読みを裏付ける材料は現時点で乏しい。"
+          ],
+          "key_actors_and_structure": "ホワイトハウス（Trump）、上院超党派制裁派、共和党指導部、下院慎重派、財務省。制裁法は固定的なルールというより、ホワイトハウスと議会が継続的に解釈・運用を争う『政治化された制度』として機能する構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "ホワイトハウス（Trump）、上院超党派制裁派、共和党指導部、下院慎重派、財務省。制裁法は固定的なルールというより、ホワイトハウスと議会が継続的に解釈・運用を争う『政治化された制度』として機能する構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 2026年案で大統領に広い適用除外・解除裁量を残しつつ、議会側も修正案や監視の余地を残している点、および下院慎重派が今後の主要確認点として大統領裁量を挙げている点。\n支持する理由: 大統領裁量条項が広く残されているため、制裁の実際の強度は今後の政治局面次第で大きく変動しうる設計になっている。これは安定した制度化というより、政治的裁量の舞台を法律の中に埋め込んだ形に近い。 / 下院慎重派が「大統領裁量の追加制限」を今後の主要確認点としていることは、法案成立後も裁量をめぐる攻防が続くことを前提にしている読みであり、制度化よりも継続的な政治管理を重視していることを示唆する。 / 財務省・Bessentが「強すぎる制度への慎重論」を持ち、条文修正で懸念の一部が吸収されたことは、制裁を自動的に強く発動する仕組みではなく、経済状況に応じて政治的に調整可能な枠組みを志向した結果と読める。 / 第三国関税の削除修正案が32票を得つつ否決されたことは、関税権限の扱いが議会内でも分裂要因であり続けることを示し、今後も関税運用をめぐる政治闘争が続く構造を示している。 / White Houseが支持理由として「大統領裁量」を明示したことは、制裁を固定化された対ロ政策というより、政権の政治的ツールとして位置づけ直したい意図を示している。\n弱める情報: 主流の読みが強調するように、議会側には『政権交代に左右されにくい枠組み』を作りたいという明確な制度化志向があり、これは再政治化よりも安定化を重視する動機として解釈しうる。 / 上院での圧倒的な賛成票（86対11）は、制裁枠組みをめぐる基本線では大きな政治対立を避けたいというコンセンサスが形成されている可能性を示し、制裁を政治闘争の主戦場にする意図が弱いとも読める。 / 防衛・エネルギー業界などの外部アクターが条文修正を直接動かした証拠が不足しており、制裁の運用をめぐるロビー活動が今後の政治化を強く規定するという読みを裏付ける材料は現時点で乏しい。\n切替条件: 法案成立後、ホワイトハウスと議会が解除・適用除外・第三国関税の運用をめぐって頻繁に公然の対立や追加修正を行うようなら、『制度化』よりも『再政治化』の読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "8b5bad34-4264-4e5e-a885-26dd7dcffaff",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 5,
+      "title": "『対ロ強硬コンセンサス』を疑い、制裁枠組みを「管理された弱体化」と読む視点",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "『対ロ強硬コンセンサス』を疑い、制裁枠組みを「管理された弱体化」と読む視点",
+          "key_cue": "2026年案で第三国関税を500％級から最大100％に下げ、対象を絞り、大統領に広い解除・除外裁量を残したという条文変更の方向性。",
+          "reading": "資料や主流の読みは、議会・政権とも対ロ強硬を共有していることを前提にしているが、これを反転させ、実際には対ロ制裁の強度を長期的に弱めるための「管理された後退」として今回の妥協を読む。制裁は維持されるが、関税率引き下げと広い裁量によって、実効的な圧力は徐々に薄められる構図だとみる。",
+          "switch_condition": "法案成立後、ホワイトハウスが裁量条項を用いて対ロ制裁の適用除外・解除を積極的に進め、第三国関税の運用も抑制的であることが明らかになれば、『管理された弱体化』の読みの確度が高まる。",
+          "supporting_reasons": [
+            "第三国関税率の大幅な引き下げと対象絞り込みは、ロシア収入削減の実効性を一定程度犠牲にしている可能性があり、対ロ圧力の純粋な強化というより、負担軽減・柔軟性確保を優先した結果と読める。",
+            "財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたことは、経済負担を抑えるために制裁強度を管理された形で弱める方向に働いたと解釈しうる。",
+            "White Houseが支持理由として大統領裁量を強調していることは、将来的に対ロ関係や第三国との関係改善を図る際に、制裁を段階的に緩和・解除する余地を確保したい意図と整合的である。",
+            "通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかった構図は、対ロ強硬の象徴としての法案を維持しながら、中身をより穏当なものに調整する『見かけと実質の乖離』を許容した結果とも読める。",
+            "2025年案が強い議会支持にもかかわらず停滞し、2026年案で前進したことは、より強硬な設計は政治的・経済的に持続可能ではなく、弱めた設計なら受け入れられるという暗黙のコンセンサスが形成された可能性を示す。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "議会の超党派制裁派は『政権交代に左右されにくい制裁制度』を求めており、これは長期的な対ロ圧力維持を志向していると読むのが自然で、管理された弱体化という読みとは緊張する。",
+            "上院での圧倒的賛成票と、第三国関税削除修正案への限定的支持（32票）は、対ロ制裁枠組みの維持・強化に対する政治的支持が依然として強いことを示し、制裁弱体化を主目的とする読みを弱める。",
+            "ロシアへの実際の制裁強度や第三国の行動変化に関する具体的データが提示されておらず、関税率引き下げがどの程度実効的な圧力低下につながるかを評価する材料が不足している。"
+          ],
+          "key_actors_and_structure": "ホワイトハウス（Trump）、財務省・経済官庁、通商慎重派議員、上院共和党指導部。表向きは対ロ強硬を維持しつつ、経済・外交負担を抑えたいアクターが、制裁枠組みを「見かけ上は強硬、実際には緩めやすい」形に再設計する構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "ホワイトハウス（Trump）、財務省・経済官庁、通商慎重派議員、上院共和党指導部。表向きは対ロ強硬を維持しつつ、経済・外交負担を抑えたいアクターが、制裁枠組みを「見かけ上は強硬、実際には緩めやすい」形に再設計する構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 2026年案で第三国関税を500％級から最大100％に下げ、対象を絞り、大統領に広い解除・除外裁量を残したという条文変更の方向性。\n支持する理由: 第三国関税率の大幅な引き下げと対象絞り込みは、ロシア収入削減の実効性を一定程度犠牲にしている可能性があり、対ロ圧力の純粋な強化というより、負担軽減・柔軟性確保を優先した結果と読める。 / 財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたことは、経済負担を抑えるために制裁強度を管理された形で弱める方向に働いたと解釈しうる。 / White Houseが支持理由として大統領裁量を強調していることは、将来的に対ロ関係や第三国との関係改善を図る際に、制裁を段階的に緩和・解除する余地を確保したい意図と整合的である。 / 通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかった構図は、対ロ強硬の象徴としての法案を維持しながら、中身をより穏当なものに調整する『見かけと実質の乖離』を許容した結果とも読める。 / 2025年案が強い議会支持にもかかわらず停滞し、2026年案で前進したことは、より強硬な設計は政治的・経済的に持続可能ではなく、弱めた設計なら受け入れられるという暗黙のコンセンサスが形成された可能性を示す。\n弱める情報: 議会の超党派制裁派は『政権交代に左右されにくい制裁制度』を求めており、これは長期的な対ロ圧力維持を志向していると読むのが自然で、管理された弱体化という読みとは緊張する。 / 上院での圧倒的賛成票と、第三国関税削除修正案への限定的支持（32票）は、対ロ制裁枠組みの維持・強化に対する政治的支持が依然として強いことを示し、制裁弱体化を主目的とする読みを弱める。 / ロシアへの実際の制裁強度や第三国の行動変化に関する具体的データが提示されておらず、関税率引き下げがどの程度実効的な圧力低下につながるかを評価する材料が不足している。\n切替条件: 法案成立後、ホワイトハウスが裁量条項を用いて対ロ制裁の適用除外・解除を積極的に進め、第三国関税の運用も抑制的であることが明らかになれば、『管理された弱体化』の読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "ef8722ed-d24f-4446-87ce-2487cb03a629",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 6,
+      "title": "制裁枠組みが『対ロ政策』から『対制裁政策』への転換点になる可能性",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "制裁枠組みが『対ロ政策』から『対制裁政策』への転換点になる可能性",
+          "key_cue": "財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたこと、および大統領裁量が広く残された点。",
+          "reading": "発生確率は高くないが、もし起きれば局面を大きく変える読みとして、今回の法案が将来の「制裁疲れ」や国際的反発を受けて、米国が自らの制裁政策全体を見直す契機になる可能性を挙げる。対ロ制裁強化法案が、実は制裁の副作用管理・裁量拡大を通じて、対ロに限らない『制裁ガバナンス』の再設計に向かう起点になるシナリオである。",
+          "switch_condition": "今後、対ロ以外の制裁立法や運用においても、経済副作用管理・大統領裁量・第三国への影響をめぐる同様の設計変更が繰り返され、財務省などが『制裁ガバナンス』に関する包括的な議論を公然と行い始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "財務省が制裁の経済的副作用に慎重であり、条文修正で懸念が一部吸収されたことは、対ロ制裁を単発の対外政策としてではなく、経済システムへの影響を含む政策ツールとして総合的に管理しようとする動きの一端と読める。",
+            "大統領裁量が広く残されたことは、将来の政権が対ロ以外の制裁（対中、対イランなど）にも同様の裁量構造を求め、制裁全体の運用ガバナンスを再設計する足掛かりになりうる。",
+            "通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかったことは、制裁ツールの拡張に対する不安が議会内に存在することを示し、将来的に『制裁の乱用』への反発が制度的見直しにつながる可能性を示唆する。",
+            "第三国関税条項は、対ロ収入削減だけでなく第三国との関係に影響を与えるため、国際的な制裁への反発や迂回行動が蓄積すれば、米国が制裁政策全体の持続可能性を再評価する圧力になりうる。",
+            "今回の法案が、制裁の強度と経済副作用のバランスを調整する試みとして位置づけられるなら、今後他の制裁立法でも同様のバランス調整が議論され、結果として『制裁ガバナンス』という新たな政策領域が形成される可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "現時点の資料は、対ロ制裁枠組みの設計に焦点を当てており、米国の制裁政策全体を包括的に見直す意図や議論が存在することを直接示してはいない。",
+            "防衛・エネルギー業界などの外部アクターの関与について十分な証拠がなく、制裁の副作用管理がどの程度広範な経済・産業政策と連動しているかを評価する材料が不足している。",
+            "議会の超党派制裁派は対ロ制裁の制度化を主目的としており、制裁全体のガバナンス再設計という長期的・抽象的な目標を共有しているとは限らない。"
+          ],
+          "key_actors_and_structure": "財務省・経済官庁、ホワイトハウス、通商慎重派議員、国際的な制裁対象国・第三国。対ロ制裁枠組みを通じて、米国が制裁の設計・運用・副作用管理に関する包括的な『対制裁政策』を形成していく構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "財務省・経済官庁、ホワイトハウス、通商慎重派議員、国際的な制裁対象国・第三国。対ロ制裁枠組みを通じて、米国が制裁の設計・運用・副作用管理に関する包括的な『対制裁政策』を形成していく構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたこと、および大統領裁量が広く残された点。\n支持する理由: 財務省が制裁の経済的副作用に慎重であり、条文修正で懸念が一部吸収されたことは、対ロ制裁を単発の対外政策としてではなく、経済システムへの影響を含む政策ツールとして総合的に管理しようとする動きの一端と読める。 / 大統領裁量が広く残されたことは、将来の政権が対ロ以外の制裁（対中、対イランなど）にも同様の裁量構造を求め、制裁全体の運用ガバナンスを再設計する足掛かりになりうる。 / 通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかったことは、制裁ツールの拡張に対する不安が議会内に存在することを示し、将来的に『制裁の乱用』への反発が制度的見直しにつながる可能性を示唆する。 / 第三国関税条項は、対ロ収入削減だけでなく第三国との関係に影響を与えるため、国際的な制裁への反発や迂回行動が蓄積すれば、米国が制裁政策全体の持続可能性を再評価する圧力になりうる。 / 今回の法案が、制裁の強度と経済副作用のバランスを調整する試みとして位置づけられるなら、今後他の制裁立法でも同様のバランス調整が議論され、結果として『制裁ガバナンス』という新たな政策領域が形成される可能性がある。\n弱める情報: 現時点の資料は、対ロ制裁枠組みの設計に焦点を当てており、米国の制裁政策全体を包括的に見直す意図や議論が存在することを直接示してはいない。 / 防衛・エネルギー業界などの外部アクターの関与について十分な証拠がなく、制裁の副作用管理がどの程度広範な経済・産業政策と連動しているかを評価する材料が不足している。 / 議会の超党派制裁派は対ロ制裁の制度化を主目的としており、制裁全体のガバナンス再設計という長期的・抽象的な目標を共有しているとは限らない。\n切替条件: 今後、対ロ以外の制裁立法や運用においても、経済副作用管理・大統領裁量・第三国への影響をめぐる同様の設計変更が繰り返され、財務省などが『制裁ガバナンス』に関する包括的な議論を公然と行い始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    }
+  ],
+  "stage_bd_displayed_top5": [
+    {
+      "scenario_candidate_id": "ccd4de05-60c5-4722-aa38-80513cc981da",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 1,
+      "title": "現時点では",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "White Houseが公表した支持理由（大統領裁量条項重視）は、少なくとも部分的には実際の意思決定動機を反映していると仮定している。",
+            "議会超党派制裁派の核心目的が対ロ制裁の制度化であり、関税率や裁量条項については妥協可能な要素とみなしていると仮定している。"
+          ],
+          "description": "現時点では、対ロ制裁強化法案の前進は「議会による対ロ制裁の制度化」と「Trump政権による制裁運用裁量の維持」が組み合わさった妥協の産物とみるのが最も整合的である。議会の超党派制裁派は、政権交代に左右されにくい対ロ制裁枠組みを法律として固定化することを核心目的とし、White House（Trump）は、制裁そのものを否定せず、自らの裁量で対ロ・対第三国への圧力カードとして使える制度枠組みを確保することを重視した。2025年案は強い議会支持にもかかわらずWhite Houseの反対で停滞したが、2026年案では第三国関税率の引き下げと対象絞り込み、大統領裁量条項の拡充によって、議会側の「制度化」とTrump側の「裁量維持」が両立しうる設計となり、White House支持が付いたことで一気に前進したと読むのが自然である。今後の展開を読むうえでは、(1)法案成立後に大統領裁量条項がどの程度実際に行使されるか、(2)第三国関税が対ロ収入削減だけでなく対中・対印関係の交渉カードとして使われるか、(3)議会が追加修正や監視条項で裁量をさらに縛ろうとするか、が主要な観測ポイントになる。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [
+            {
+              "rationale": "ホルムズ海峡補償料構想の撤回と投資枠組みへの切り替えは、Trump政権が強い経済カードを提示しつつ反発を受けて調整するパターンの参考例として、今回の「強い制裁構想→裁量付き妥協」シナリオの説明力を補強する。",
+              "evidence_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+              "source_type": "unknown",
+              "claim_relevance": "structural"
+            }
+          ],
+          "selection_rationale": "hypothesis_registerのH0（制度化と裁量維持の妥協）仮説は、2025年案停滞と2026年案前進の差異、White Houseの支持理由、条文設計の具体的変更と整合しており、追加の仮定が比較的少ない。H1（第三国関税を対中・対印カードとみる仮説）やH3（国内政治制約主因仮説）は今後の展開を読むうえで重要な補足だが、現時点のEvidenceではH0ほど直接的に支持されていないため、主シナリオとしてはH0を採用する。",
+          "supporting_evidence": [
+            "2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞したこと。",
+            "2026年案では第三国関税率が最大500％級から最大100％に下げられ、対象が絞られる一方で、大統領に制裁の適用除外や解除の裁量が広く残されたこと。",
+            "White Houseが2026年案への支持理由として、大統領裁量条項を明示的に挙げたこと。",
+            "第三国関税削除修正案は32対64で否決され、法案全体は86対11で可決したこと。",
+            "ホルムズ海峡20％補償料構想が湾岸諸国の強い反発を受けて翌日に撤回され、対米投資協定枠組みへ切り替えられた事例（document_id: 4782ea75-15f2-47bb-a050-5408f186b989, 3351be8b-3a7b-4428-82c7-f46aa0e6c5ca）が、Trump政権が強い措置を提示した後により持続可能な枠組みへ調整するパターンを示していること。"
+          ],
+          "observable_indicators": [
+            "法案成立後、大統領裁量条項に基づく適用除外・解除決定の頻度と対象（対ロ・対第三国）。",
+            "議会が追加の監視条項や報告義務を通じて大統領裁量をさらに縛ろうとする動きの有無。",
+            "第三国関税条項の具体的発動事例と、その際のWhite House・議会の説明。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": true,
+              "description": "ホルムズ海峡通航貨物への20％補償料構想が湾岸諸国の反発で撤回され、対米投資協定枠組みへ切り替えられた事例。",
+              "same_domain": false,
+              "analogy_strength": "weak",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+              "same_institutional_structure": false
+            }
+          ],
+          "derived_from_hypothesis_id": "H0",
+          "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+          "weakening_evidence_relevance": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "hypothesis_registerのH0（制度化と裁量維持の妥協）仮説は、2025年案停滞と2026年案前進の差異、White Houseの支持理由、条文設計の具体的変更と整合しており、追加の仮定が比較的少ない。H1（第三国関税を対中・対印カードとみる仮説）やH3（国内政治制約主因仮説）は今後の展開を読むうえで重要な補足だが、現時点のEvidenceではH0ほど直接的に支持されていないため、主シナリオとしてはH0を採用する。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "f56ccd9d-58a3-4cd8-9b54-6419548e4008",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 2,
+      "title": "対ロ制裁強化法案は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "対ロ制裁強化法案は、対ロ強硬そのものよりも、Trump政権にとって対中・対印など第三国への交渉カードを増やすための手段として受け入れられた。第三国関税条項は、ロシア収入削減と同時に対中・対印関係でのレバレッジを高める目的を持つ。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "第三国関税の初回発動が対ロではなく対中・対印案件に紐づいて行われ、その際の説明が対中・対印への圧力を前面に出している場合。"
+          ],
+          "weakening_conditions": [
+            "第三国関税条項がほとんど発動されず、対ロ制裁が主にロシア向けにのみ使われる。",
+            "政権が第三国関税条項を「抑止的枠組み」としてのみ説明し、交渉カードとしての利用を否定する。"
+          ],
+          "strengthening_conditions": [
+            "White Houseや政権高官が第三国関税条項を対中・対印への交渉カードとして位置づける発言を行う。",
+            "対ロ制裁枠組みが対ロ案件よりも対中・対印案件で優先的に活用される事例が複数確認される。"
+          ],
+          "derived_from_hypothesis_id": "H1",
+          "confidence_adjustment_reason": "Trumpの対中・対印関係に関するPersistent Preferenceや、第三国関税条項の具体的運用に関するEvidenceが不足しているため、仮説としては重要だがconfidenceは低に留める。"
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 第三国関税の初回発動が対ロではなく対中・対印案件に紐づいて行われ、その際の説明が対中・対印への圧力を前面に出している場合。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "e8f47208-debf-496d-8d5c-8a1a92af1454",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 3,
+      "title": "対ロ制裁強化法案の前進は",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "対ロ制裁強化法案の前進は、対外的な対ロ強硬姿勢よりも、国内政治（議会との関係維持、超党派対ロ強硬世論への対応）が主因である。Trump政権は、議会の強い対ロ制裁支持と拒否権行使による政治コストを考慮し、裁量条項を条件に支持へ転換した。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "拒否権行使の政治コストや党内関係悪化への懸念が、政権関係者の証言やリークで主要理由として示される場合。"
+          ],
+          "weakening_conditions": [
+            "Trumpが対ロ制裁強化を自らの外交戦略の中心要素として繰り返し強調し、国内政治要因を副次的なものとして扱う。",
+            "議会との関係が悪化しても制裁運用を独自路線で行う事例が確認される。"
+          ],
+          "strengthening_conditions": [
+            "White House内部や議会関係者から、拒否権行使の政治コストや対ロ強硬世論への配慮が支持転換の主要理由だったとする証言が出る。",
+            "今後の制裁運用が国内世論・議会動向に強く連動し、対外関係よりも国内政治要因で説明される事例が増える。"
+          ],
+          "derived_from_hypothesis_id": "H3",
+          "confidence_adjustment_reason": "具体的な党内交渉や世論動向に関する一次情報が不足しており、国内政治制約を構造要因として一般的に推定する段階に留まる。"
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 拒否権行使の政治コストや党内関係悪化への懸念が、政権関係者の証言やリークで主要理由として示される場合。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "71983212-1d2c-499f-939c-8140f2341aaf",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 4,
+      "title": "「制裁の制度化」よりも『制裁の再政治化』として読む視点",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "「制裁の制度化」よりも『制裁の再政治化』として読む視点",
+          "key_cue": "2026年案で大統領に広い適用除外・解除裁量を残しつつ、議会側も修正案や監視の余地を残している点、および下院慎重派が今後の主要確認点として大統領裁量を挙げている点。",
+          "reading": "今回の前進は、対ロ制裁を安定した制度にするというより、むしろ制裁を再びホワイトハウスと議会の政治ゲームの中心に据え直す枠組みづくりだと読む。制度化と裁量維持の妥協に見えるが、実態は「誰が制裁カードをいつ切るか」をめぐる継続的な政治交渉を制度的に組み込んだ設計だとみる。",
+          "switch_condition": "法案成立後、ホワイトハウスと議会が解除・適用除外・第三国関税の運用をめぐって頻繁に公然の対立や追加修正を行うようなら、『制度化』よりも『再政治化』の読みの確度が高まる。",
+          "supporting_reasons": [
+            "大統領裁量条項が広く残されているため、制裁の実際の強度は今後の政治局面次第で大きく変動しうる設計になっている。これは安定した制度化というより、政治的裁量の舞台を法律の中に埋め込んだ形に近い。",
+            "下院慎重派が「大統領裁量の追加制限」を今後の主要確認点としていることは、法案成立後も裁量をめぐる攻防が続くことを前提にしている読みであり、制度化よりも継続的な政治管理を重視していることを示唆する。",
+            "財務省・Bessentが「強すぎる制度への慎重論」を持ち、条文修正で懸念の一部が吸収されたことは、制裁を自動的に強く発動する仕組みではなく、経済状況に応じて政治的に調整可能な枠組みを志向した結果と読める。",
+            "第三国関税の削除修正案が32票を得つつ否決されたことは、関税権限の扱いが議会内でも分裂要因であり続けることを示し、今後も関税運用をめぐる政治闘争が続く構造を示している。",
+            "White Houseが支持理由として「大統領裁量」を明示したことは、制裁を固定化された対ロ政策というより、政権の政治的ツールとして位置づけ直したい意図を示している。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "主流の読みが強調するように、議会側には『政権交代に左右されにくい枠組み』を作りたいという明確な制度化志向があり、これは再政治化よりも安定化を重視する動機として解釈しうる。",
+            "上院での圧倒的な賛成票（86対11）は、制裁枠組みをめぐる基本線では大きな政治対立を避けたいというコンセンサスが形成されている可能性を示し、制裁を政治闘争の主戦場にする意図が弱いとも読める。",
+            "防衛・エネルギー業界などの外部アクターが条文修正を直接動かした証拠が不足しており、制裁の運用をめぐるロビー活動が今後の政治化を強く規定するという読みを裏付ける材料は現時点で乏しい。"
+          ],
+          "key_actors_and_structure": "ホワイトハウス（Trump）、上院超党派制裁派、共和党指導部、下院慎重派、財務省。制裁法は固定的なルールというより、ホワイトハウスと議会が継続的に解釈・運用を争う『政治化された制度』として機能する構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "ホワイトハウス（Trump）、上院超党派制裁派、共和党指導部、下院慎重派、財務省。制裁法は固定的なルールというより、ホワイトハウスと議会が継続的に解釈・運用を争う『政治化された制度』として機能する構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 2026年案で大統領に広い適用除外・解除裁量を残しつつ、議会側も修正案や監視の余地を残している点、および下院慎重派が今後の主要確認点として大統領裁量を挙げている点。\n支持する理由: 大統領裁量条項が広く残されているため、制裁の実際の強度は今後の政治局面次第で大きく変動しうる設計になっている。これは安定した制度化というより、政治的裁量の舞台を法律の中に埋め込んだ形に近い。 / 下院慎重派が「大統領裁量の追加制限」を今後の主要確認点としていることは、法案成立後も裁量をめぐる攻防が続くことを前提にしている読みであり、制度化よりも継続的な政治管理を重視していることを示唆する。 / 財務省・Bessentが「強すぎる制度への慎重論」を持ち、条文修正で懸念の一部が吸収されたことは、制裁を自動的に強く発動する仕組みではなく、経済状況に応じて政治的に調整可能な枠組みを志向した結果と読める。 / 第三国関税の削除修正案が32票を得つつ否決されたことは、関税権限の扱いが議会内でも分裂要因であり続けることを示し、今後も関税運用をめぐる政治闘争が続く構造を示している。 / White Houseが支持理由として「大統領裁量」を明示したことは、制裁を固定化された対ロ政策というより、政権の政治的ツールとして位置づけ直したい意図を示している。\n弱める情報: 主流の読みが強調するように、議会側には『政権交代に左右されにくい枠組み』を作りたいという明確な制度化志向があり、これは再政治化よりも安定化を重視する動機として解釈しうる。 / 上院での圧倒的な賛成票（86対11）は、制裁枠組みをめぐる基本線では大きな政治対立を避けたいというコンセンサスが形成されている可能性を示し、制裁を政治闘争の主戦場にする意図が弱いとも読める。 / 防衛・エネルギー業界などの外部アクターが条文修正を直接動かした証拠が不足しており、制裁の運用をめぐるロビー活動が今後の政治化を強く規定するという読みを裏付ける材料は現時点で乏しい。\n切替条件: 法案成立後、ホワイトハウスと議会が解除・適用除外・第三国関税の運用をめぐって頻繁に公然の対立や追加修正を行うようなら、『制度化』よりも『再政治化』の読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "8b5bad34-4264-4e5e-a885-26dd7dcffaff",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 5,
+      "title": "『対ロ強硬コンセンサス』を疑い、制裁枠組みを「管理された弱体化」と読む視点",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "『対ロ強硬コンセンサス』を疑い、制裁枠組みを「管理された弱体化」と読む視点",
+          "key_cue": "2026年案で第三国関税を500％級から最大100％に下げ、対象を絞り、大統領に広い解除・除外裁量を残したという条文変更の方向性。",
+          "reading": "資料や主流の読みは、議会・政権とも対ロ強硬を共有していることを前提にしているが、これを反転させ、実際には対ロ制裁の強度を長期的に弱めるための「管理された後退」として今回の妥協を読む。制裁は維持されるが、関税率引き下げと広い裁量によって、実効的な圧力は徐々に薄められる構図だとみる。",
+          "switch_condition": "法案成立後、ホワイトハウスが裁量条項を用いて対ロ制裁の適用除外・解除を積極的に進め、第三国関税の運用も抑制的であることが明らかになれば、『管理された弱体化』の読みの確度が高まる。",
+          "supporting_reasons": [
+            "第三国関税率の大幅な引き下げと対象絞り込みは、ロシア収入削減の実効性を一定程度犠牲にしている可能性があり、対ロ圧力の純粋な強化というより、負担軽減・柔軟性確保を優先した結果と読める。",
+            "財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたことは、経済負担を抑えるために制裁強度を管理された形で弱める方向に働いたと解釈しうる。",
+            "White Houseが支持理由として大統領裁量を強調していることは、将来的に対ロ関係や第三国との関係改善を図る際に、制裁を段階的に緩和・解除する余地を確保したい意図と整合的である。",
+            "通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかった構図は、対ロ強硬の象徴としての法案を維持しながら、中身をより穏当なものに調整する『見かけと実質の乖離』を許容した結果とも読める。",
+            "2025年案が強い議会支持にもかかわらず停滞し、2026年案で前進したことは、より強硬な設計は政治的・経済的に持続可能ではなく、弱めた設計なら受け入れられるという暗黙のコンセンサスが形成された可能性を示す。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "議会の超党派制裁派は『政権交代に左右されにくい制裁制度』を求めており、これは長期的な対ロ圧力維持を志向していると読むのが自然で、管理された弱体化という読みとは緊張する。",
+            "上院での圧倒的賛成票と、第三国関税削除修正案への限定的支持（32票）は、対ロ制裁枠組みの維持・強化に対する政治的支持が依然として強いことを示し、制裁弱体化を主目的とする読みを弱める。",
+            "ロシアへの実際の制裁強度や第三国の行動変化に関する具体的データが提示されておらず、関税率引き下げがどの程度実効的な圧力低下につながるかを評価する材料が不足している。"
+          ],
+          "key_actors_and_structure": "ホワイトハウス（Trump）、財務省・経済官庁、通商慎重派議員、上院共和党指導部。表向きは対ロ強硬を維持しつつ、経済・外交負担を抑えたいアクターが、制裁枠組みを「見かけ上は強硬、実際には緩めやすい」形に再設計する構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "ホワイトハウス（Trump）、財務省・経済官庁、通商慎重派議員、上院共和党指導部。表向きは対ロ強硬を維持しつつ、経済・外交負担を抑えたいアクターが、制裁枠組みを「見かけ上は強硬、実際には緩めやすい」形に再設計する構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 2026年案で第三国関税を500％級から最大100％に下げ、対象を絞り、大統領に広い解除・除外裁量を残したという条文変更の方向性。\n支持する理由: 第三国関税率の大幅な引き下げと対象絞り込みは、ロシア収入削減の実効性を一定程度犠牲にしている可能性があり、対ロ圧力の純粋な強化というより、負担軽減・柔軟性確保を優先した結果と読める。 / 財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたことは、経済負担を抑えるために制裁強度を管理された形で弱める方向に働いたと解釈しうる。 / White Houseが支持理由として大統領裁量を強調していることは、将来的に対ロ関係や第三国との関係改善を図る際に、制裁を段階的に緩和・解除する余地を確保したい意図と整合的である。 / 通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかった構図は、対ロ強硬の象徴としての法案を維持しながら、中身をより穏当なものに調整する『見かけと実質の乖離』を許容した結果とも読める。 / 2025年案が強い議会支持にもかかわらず停滞し、2026年案で前進したことは、より強硬な設計は政治的・経済的に持続可能ではなく、弱めた設計なら受け入れられるという暗黙のコンセンサスが形成された可能性を示す。\n弱める情報: 議会の超党派制裁派は『政権交代に左右されにくい制裁制度』を求めており、これは長期的な対ロ圧力維持を志向していると読むのが自然で、管理された弱体化という読みとは緊張する。 / 上院での圧倒的賛成票と、第三国関税削除修正案への限定的支持（32票）は、対ロ制裁枠組みの維持・強化に対する政治的支持が依然として強いことを示し、制裁弱体化を主目的とする読みを弱める。 / ロシアへの実際の制裁強度や第三国の行動変化に関する具体的データが提示されておらず、関税率引き下げがどの程度実効的な圧力低下につながるかを評価する材料が不足している。\n切替条件: 法案成立後、ホワイトハウスが裁量条項を用いて対ロ制裁の適用除外・解除を積極的に進め、第三国関税の運用も抑制的であることが明らかになれば、『管理された弱体化』の読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    }
+  ],
+  "stage_c_reading_portfolio_candidates": [
+    {
+      "scenario_candidate_id": "71983212-1d2c-499f-939c-8140f2341aaf",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 4,
+      "title": "「制裁の制度化」よりも『制裁の再政治化』として読む視点",
+      "content": {
+        "raw": {
+          "slot": "alternative_causal_structure",
+          "title": "「制裁の制度化」よりも『制裁の再政治化』として読む視点",
+          "key_cue": "2026年案で大統領に広い適用除外・解除裁量を残しつつ、議会側も修正案や監視の余地を残している点、および下院慎重派が今後の主要確認点として大統領裁量を挙げている点。",
+          "reading": "今回の前進は、対ロ制裁を安定した制度にするというより、むしろ制裁を再びホワイトハウスと議会の政治ゲームの中心に据え直す枠組みづくりだと読む。制度化と裁量維持の妥協に見えるが、実態は「誰が制裁カードをいつ切るか」をめぐる継続的な政治交渉を制度的に組み込んだ設計だとみる。",
+          "switch_condition": "法案成立後、ホワイトハウスと議会が解除・適用除外・第三国関税の運用をめぐって頻繁に公然の対立や追加修正を行うようなら、『制度化』よりも『再政治化』の読みの確度が高まる。",
+          "supporting_reasons": [
+            "大統領裁量条項が広く残されているため、制裁の実際の強度は今後の政治局面次第で大きく変動しうる設計になっている。これは安定した制度化というより、政治的裁量の舞台を法律の中に埋め込んだ形に近い。",
+            "下院慎重派が「大統領裁量の追加制限」を今後の主要確認点としていることは、法案成立後も裁量をめぐる攻防が続くことを前提にしている読みであり、制度化よりも継続的な政治管理を重視していることを示唆する。",
+            "財務省・Bessentが「強すぎる制度への慎重論」を持ち、条文修正で懸念の一部が吸収されたことは、制裁を自動的に強く発動する仕組みではなく、経済状況に応じて政治的に調整可能な枠組みを志向した結果と読める。",
+            "第三国関税の削除修正案が32票を得つつ否決されたことは、関税権限の扱いが議会内でも分裂要因であり続けることを示し、今後も関税運用をめぐる政治闘争が続く構造を示している。",
+            "White Houseが支持理由として「大統領裁量」を明示したことは、制裁を固定化された対ロ政策というより、政権の政治的ツールとして位置づけ直したい意図を示している。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "主流の読みが強調するように、議会側には『政権交代に左右されにくい枠組み』を作りたいという明確な制度化志向があり、これは再政治化よりも安定化を重視する動機として解釈しうる。",
+            "上院での圧倒的な賛成票（86対11）は、制裁枠組みをめぐる基本線では大きな政治対立を避けたいというコンセンサスが形成されている可能性を示し、制裁を政治闘争の主戦場にする意図が弱いとも読める。",
+            "防衛・エネルギー業界などの外部アクターが条文修正を直接動かした証拠が不足しており、制裁の運用をめぐるロビー活動が今後の政治化を強く規定するという読みを裏付ける材料は現時点で乏しい。"
+          ],
+          "key_actors_and_structure": "ホワイトハウス（Trump）、上院超党派制裁派、共和党指導部、下院慎重派、財務省。制裁法は固定的なルールというより、ホワイトハウスと議会が継続的に解釈・運用を争う『政治化された制度』として機能する構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_alternative_causal_structure",
+        "main_lens": "ホワイトハウス（Trump）、上院超党派制裁派、共和党指導部、下院慎重派、財務省。制裁法は固定的なルールというより、ホワイトハウスと議会が継続的に解釈・運用を争う『政治化された制度』として機能する構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 2026年案で大統領に広い適用除外・解除裁量を残しつつ、議会側も修正案や監視の余地を残している点、および下院慎重派が今後の主要確認点として大統領裁量を挙げている点。\n支持する理由: 大統領裁量条項が広く残されているため、制裁の実際の強度は今後の政治局面次第で大きく変動しうる設計になっている。これは安定した制度化というより、政治的裁量の舞台を法律の中に埋め込んだ形に近い。 / 下院慎重派が「大統領裁量の追加制限」を今後の主要確認点としていることは、法案成立後も裁量をめぐる攻防が続くことを前提にしている読みであり、制度化よりも継続的な政治管理を重視していることを示唆する。 / 財務省・Bessentが「強すぎる制度への慎重論」を持ち、条文修正で懸念の一部が吸収されたことは、制裁を自動的に強く発動する仕組みではなく、経済状況に応じて政治的に調整可能な枠組みを志向した結果と読める。 / 第三国関税の削除修正案が32票を得つつ否決されたことは、関税権限の扱いが議会内でも分裂要因であり続けることを示し、今後も関税運用をめぐる政治闘争が続く構造を示している。 / White Houseが支持理由として「大統領裁量」を明示したことは、制裁を固定化された対ロ政策というより、政権の政治的ツールとして位置づけ直したい意図を示している。\n弱める情報: 主流の読みが強調するように、議会側には『政権交代に左右されにくい枠組み』を作りたいという明確な制度化志向があり、これは再政治化よりも安定化を重視する動機として解釈しうる。 / 上院での圧倒的な賛成票（86対11）は、制裁枠組みをめぐる基本線では大きな政治対立を避けたいというコンセンサスが形成されている可能性を示し、制裁を政治闘争の主戦場にする意図が弱いとも読める。 / 防衛・エネルギー業界などの外部アクターが条文修正を直接動かした証拠が不足しており、制裁の運用をめぐるロビー活動が今後の政治化を強く規定するという読みを裏付ける材料は現時点で乏しい。\n切替条件: 法案成立後、ホワイトハウスと議会が解除・適用除外・第三国関税の運用をめぐって頻繁に公然の対立や追加修正を行うようなら、『制度化』よりも『再政治化』の読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "8b5bad34-4264-4e5e-a885-26dd7dcffaff",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 5,
+      "title": "『対ロ強硬コンセンサス』を疑い、制裁枠組みを「管理された弱体化」と読む視点",
+      "content": {
+        "raw": {
+          "slot": "premise_reversal",
+          "title": "『対ロ強硬コンセンサス』を疑い、制裁枠組みを「管理された弱体化」と読む視点",
+          "key_cue": "2026年案で第三国関税を500％級から最大100％に下げ、対象を絞り、大統領に広い解除・除外裁量を残したという条文変更の方向性。",
+          "reading": "資料や主流の読みは、議会・政権とも対ロ強硬を共有していることを前提にしているが、これを反転させ、実際には対ロ制裁の強度を長期的に弱めるための「管理された後退」として今回の妥協を読む。制裁は維持されるが、関税率引き下げと広い裁量によって、実効的な圧力は徐々に薄められる構図だとみる。",
+          "switch_condition": "法案成立後、ホワイトハウスが裁量条項を用いて対ロ制裁の適用除外・解除を積極的に進め、第三国関税の運用も抑制的であることが明らかになれば、『管理された弱体化』の読みの確度が高まる。",
+          "supporting_reasons": [
+            "第三国関税率の大幅な引き下げと対象絞り込みは、ロシア収入削減の実効性を一定程度犠牲にしている可能性があり、対ロ圧力の純粋な強化というより、負担軽減・柔軟性確保を優先した結果と読める。",
+            "財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたことは、経済負担を抑えるために制裁強度を管理された形で弱める方向に働いたと解釈しうる。",
+            "White Houseが支持理由として大統領裁量を強調していることは、将来的に対ロ関係や第三国との関係改善を図る際に、制裁を段階的に緩和・解除する余地を確保したい意図と整合的である。",
+            "通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかった構図は、対ロ強硬の象徴としての法案を維持しながら、中身をより穏当なものに調整する『見かけと実質の乖離』を許容した結果とも読める。",
+            "2025年案が強い議会支持にもかかわらず停滞し、2026年案で前進したことは、より強硬な設計は政治的・経済的に持続可能ではなく、弱めた設計なら受け入れられるという暗黙のコンセンサスが形成された可能性を示す。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "議会の超党派制裁派は『政権交代に左右されにくい制裁制度』を求めており、これは長期的な対ロ圧力維持を志向していると読むのが自然で、管理された弱体化という読みとは緊張する。",
+            "上院での圧倒的賛成票と、第三国関税削除修正案への限定的支持（32票）は、対ロ制裁枠組みの維持・強化に対する政治的支持が依然として強いことを示し、制裁弱体化を主目的とする読みを弱める。",
+            "ロシアへの実際の制裁強度や第三国の行動変化に関する具体的データが提示されておらず、関税率引き下げがどの程度実効的な圧力低下につながるかを評価する材料が不足している。"
+          ],
+          "key_actors_and_structure": "ホワイトハウス（Trump）、財務省・経済官庁、通商慎重派議員、上院共和党指導部。表向きは対ロ強硬を維持しつつ、経済・外交負担を抑えたいアクターが、制裁枠組みを「見かけ上は強硬、実際には緩めやすい」形に再設計する構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_premise_reversal",
+        "main_lens": "ホワイトハウス（Trump）、財務省・経済官庁、通商慎重派議員、上院共和党指導部。表向きは対ロ強硬を維持しつつ、経済・外交負担を抑えたいアクターが、制裁枠組みを「見かけ上は強硬、実際には緩めやすい」形に再設計する構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 2026年案で第三国関税を500％級から最大100％に下げ、対象を絞り、大統領に広い解除・除外裁量を残したという条文変更の方向性。\n支持する理由: 第三国関税率の大幅な引き下げと対象絞り込みは、ロシア収入削減の実効性を一定程度犠牲にしている可能性があり、対ロ圧力の純粋な強化というより、負担軽減・柔軟性確保を優先した結果と読める。 / 財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたことは、経済負担を抑えるために制裁強度を管理された形で弱める方向に働いたと解釈しうる。 / White Houseが支持理由として大統領裁量を強調していることは、将来的に対ロ関係や第三国との関係改善を図る際に、制裁を段階的に緩和・解除する余地を確保したい意図と整合的である。 / 通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかった構図は、対ロ強硬の象徴としての法案を維持しながら、中身をより穏当なものに調整する『見かけと実質の乖離』を許容した結果とも読める。 / 2025年案が強い議会支持にもかかわらず停滞し、2026年案で前進したことは、より強硬な設計は政治的・経済的に持続可能ではなく、弱めた設計なら受け入れられるという暗黙のコンセンサスが形成された可能性を示す。\n弱める情報: 議会の超党派制裁派は『政権交代に左右されにくい制裁制度』を求めており、これは長期的な対ロ圧力維持を志向していると読むのが自然で、管理された弱体化という読みとは緊張する。 / 上院での圧倒的賛成票と、第三国関税削除修正案への限定的支持（32票）は、対ロ制裁枠組みの維持・強化に対する政治的支持が依然として強いことを示し、制裁弱体化を主目的とする読みを弱める。 / ロシアへの実際の制裁強度や第三国の行動変化に関する具体的データが提示されておらず、関税率引き下げがどの程度実効的な圧力低下につながるかを評価する材料が不足している。\n切替条件: 法案成立後、ホワイトハウスが裁量条項を用いて対ロ制裁の適用除外・解除を積極的に進め、第三国関税の運用も抑制的であることが明らかになれば、『管理された弱体化』の読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    },
+    {
+      "scenario_candidate_id": "ef8722ed-d24f-4446-87ce-2487cb03a629",
+      "analysis_session_id": "96788305-ca2a-493f-8fe4-f457c1fe7f56",
+      "rank": 6,
+      "title": "制裁枠組みが『対ロ政策』から『対制裁政策』への転換点になる可能性",
+      "content": {
+        "raw": {
+          "slot": "wildcard_non_obvious",
+          "title": "制裁枠組みが『対ロ政策』から『対制裁政策』への転換点になる可能性",
+          "key_cue": "財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたこと、および大統領裁量が広く残された点。",
+          "reading": "発生確率は高くないが、もし起きれば局面を大きく変える読みとして、今回の法案が将来の「制裁疲れ」や国際的反発を受けて、米国が自らの制裁政策全体を見直す契機になる可能性を挙げる。対ロ制裁強化法案が、実は制裁の副作用管理・裁量拡大を通じて、対ロに限らない『制裁ガバナンス』の再設計に向かう起点になるシナリオである。",
+          "switch_condition": "今後、対ロ以外の制裁立法や運用においても、経済副作用管理・大統領裁量・第三国への影響をめぐる同様の設計変更が繰り返され、財務省などが『制裁ガバナンス』に関する包括的な議論を公然と行い始めれば、この読みの確度が高まる。",
+          "supporting_reasons": [
+            "財務省が制裁の経済的副作用に慎重であり、条文修正で懸念が一部吸収されたことは、対ロ制裁を単発の対外政策としてではなく、経済システムへの影響を含む政策ツールとして総合的に管理しようとする動きの一端と読める。",
+            "大統領裁量が広く残されたことは、将来の政権が対ロ以外の制裁（対中、対イランなど）にも同様の裁量構造を求め、制裁全体の運用ガバナンスを再設計する足掛かりになりうる。",
+            "通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかったことは、制裁ツールの拡張に対する不安が議会内に存在することを示し、将来的に『制裁の乱用』への反発が制度的見直しにつながる可能性を示唆する。",
+            "第三国関税条項は、対ロ収入削減だけでなく第三国との関係に影響を与えるため、国際的な制裁への反発や迂回行動が蓄積すれば、米国が制裁政策全体の持続可能性を再評価する圧力になりうる。",
+            "今回の法案が、制裁の強度と経済副作用のバランスを調整する試みとして位置づけられるなら、今後他の制裁立法でも同様のバランス調整が議論され、結果として『制裁ガバナンス』という新たな政策領域が形成される可能性がある。"
+          ],
+          "insufficient_material": false,
+          "weakening_information": [
+            "現時点の資料は、対ロ制裁枠組みの設計に焦点を当てており、米国の制裁政策全体を包括的に見直す意図や議論が存在することを直接示してはいない。",
+            "防衛・エネルギー業界などの外部アクターの関与について十分な証拠がなく、制裁の副作用管理がどの程度広範な経済・産業政策と連動しているかを評価する材料が不足している。",
+            "議会の超党派制裁派は対ロ制裁の制度化を主目的としており、制裁全体のガバナンス再設計という長期的・抽象的な目標を共有しているとは限らない。"
+          ],
+          "key_actors_and_structure": "財務省・経済官庁、ホワイトハウス、通商慎重派議員、国際的な制裁対象国・第三国。対ロ制裁枠組みを通じて、米国が制裁の設計・運用・副作用管理に関する包括的な『対制裁政策』を形成していく構造。",
+          "insufficient_material_reason": ""
+        },
+        "origin": "reading_portfolio_wildcard_non_obvious",
+        "main_lens": "財務省・経済官庁、ホワイトハウス、通商慎重派議員、国際的な制裁対象国・第三国。対ロ制裁枠組みを通じて、米国が制裁の設計・運用・副作用管理に関する包括的な『対制裁政策』を形成していく構造。",
+        "confidence": null,
+        "key_actors": [
+          "Donald Trump / White House",
+          "超党派対ロ制裁派（Grahamら共和党強硬派＋Blumenthal、Shaheenら）",
+          "財務省・制裁実務機関",
+          "関税慎重派議員（Rand Paul等）"
+        ],
+        "source_cqas": {
+          "request_id": "34d6b983-e08c-4f18-aa54-283974973e3a",
+          "response_id": "353c111b-c0d7-4e34-8354-d5dd55bdd8f3"
+        },
+        "why_this_matters": "着眼点: 財務省・Bessentが制裁の経済的副作用に慎重であり、条文修正で懸念の一部が吸収されたこと、および大統領裁量が広く残された点。\n支持する理由: 財務省が制裁の経済的副作用に慎重であり、条文修正で懸念が一部吸収されたことは、対ロ制裁を単発の対外政策としてではなく、経済システムへの影響を含む政策ツールとして総合的に管理しようとする動きの一端と読める。 / 大統領裁量が広く残されたことは、将来の政権が対ロ以外の制裁（対中、対イランなど）にも同様の裁量構造を求め、制裁全体の運用ガバナンスを再設計する足掛かりになりうる。 / 通商慎重派や関税権限に慎重な議員が第三国関税部分に反対しつつも法案全体を止められなかったことは、制裁ツールの拡張に対する不安が議会内に存在することを示し、将来的に『制裁の乱用』への反発が制度的見直しにつながる可能性を示唆する。 / 第三国関税条項は、対ロ収入削減だけでなく第三国との関係に影響を与えるため、国際的な制裁への反発や迂回行動が蓄積すれば、米国が制裁政策全体の持続可能性を再評価する圧力になりうる。 / 今回の法案が、制裁の強度と経済副作用のバランスを調整する試みとして位置づけられるなら、今後他の制裁立法でも同様のバランス調整が議論され、結果として『制裁ガバナンス』という新たな政策領域が形成される可能性がある。\n弱める情報: 現時点の資料は、対ロ制裁枠組みの設計に焦点を当てており、米国の制裁政策全体を包括的に見直す意図や議論が存在することを直接示してはいない。 / 防衛・エネルギー業界などの外部アクターの関与について十分な証拠がなく、制裁の副作用管理がどの程度広範な経済・産業政策と連動しているかを評価する材料が不足している。 / 議会の超党派制裁派は対ロ制裁の制度化を主目的としており、制裁全体のガバナンス再設計という長期的・抽象的な目標を共有しているとは限らない。\n切替条件: 今後、対ロ以外の制裁立法や運用においても、経済副作用管理・大統領裁量・第三国への影響をめぐる同様の設計変更が繰り返され、財務省などが『制裁ガバナンス』に関する包括的な議論を公然と行い始めれば、この読みの確度が高まる。",
+        "analysis_question": "# Situation\n\n米国の対ロ制裁強化法案が2026年に前進した。中心的な見立て（Speaker3側の初期分析）は、\n「対ロ制裁を法律として固定したい議会」と「制裁の使い方は自分で決めたいTrump政権」の間で\n妥協が成立した結果とみるのが最も整合的、というもの。\n\n# Known Background\n\n- 2025年案は上院で85人の共同提案者を集めたが、Trump政権の支持を得られず停滞した。\n- 2026年案では、第三国への関税を500％級から最大100％に下げ、対象を絞る一方、大統領に\n  制裁の適用除外や解除の裁量を広く残した。\n- White Houseは、この大統領裁量を支持理由として明示した。\n- 重要な変化は、法案が「Trumpを縛る制裁」から「Trumpも使える圧力手段」に変わったこと。\n- Counterfactual: 議会支持の強さだけが決定要因なら、2025年にも進んだはずである。したがって\n  見るべきは、なぜTrump側が反対を外したのかである。\n- 防衛・エネルギー業界等が今回の条文修正を直接動かしたとの十分な証拠は、現時点では確認できない。\n\n## 本当の綱引き（初期分析）\n\n1. **制裁の「制度化」vs 大統領の「運用裁量」**: 議会側はTrumpが積極的に動かなくても一定の\n   対ロ圧力が残る制度を作りたい。Trump側は制裁は持ちたいが「いつ使うか」「いつ解除するか」は\n   自分で決めたい。妥協として、議会は制裁の法制化を確保し、Trumpは適用除外・解除などの\n   広い裁量を確保した。\n2. **第三国関税で双方の利害が一致**: 議会側は中国・インド等のロシア産エネルギー購入を抑え\n   ロシアの収入を削りたい。Trump側は第三国への関税を外交上の圧力手段として持ちたい。\n3. **関税反対派は法案全体を止められなかった**: 第三国関税を削除する修正案には32票が入ったが\n   否決され、法案全体は86対11で上院を通過した。\n\n## 着地点（初期分析）\n\n議会は「制裁を法律にすること」を得た。Trumpは「制裁の使い方を決める裁量」を得た。これが\n今回の妥協の核心とみる。\n\n## Stakeholder Table（初期分析、Speaker3側が事前に作成）\n\n| Actor | 欲しかったもの | 持っていた力 | 今回の役割 |\n|---|---|---|---|\n| Trump・White House | 強い対ロ圧力＋自らの運用裁量 | 拒否権、共和党への影響力 | 2025年の最大の阻止要因。2026年に支持へ転換 |\n| Grahamら共和党の対ロ強硬派 | 強い制裁の法制化 | 多数の議会支持、Trumpとの関係 | 議会とWhite Houseの仲介 |\n| Blumenthal、Shaheenら超党派制裁派 | 政権判断に左右されにくい制裁制度 | 超党派票、外交・安保分野での立場 | 法案の議会基盤を維持 |\n| 上院共和党指導部 | Trumpと衝突せず法案を通す | 本会議の日程管理 | White House支持後に前進させる |\n| 財務省・Bessent | 制裁の経済的副作用を抑える | 制裁実務、政権内での専門性 | 強すぎる制度への慎重論 |\n| 関税権限に慎重な議員 | 対ロ制裁とTrumpへの関税権限拡大を分離 | 修正案、議会票 | 関税部分に反対したが阻止できず |\n\n| Actor | 望んだ結果 | なぜ止められなかったか |\n|---|---|---|\n| Rand Paul等 | 第三国関税の削除 | 修正案は32対64で否決 |\n| Wydenら通商慎重派 | Trumpへの関税権限拡大を阻止 | 対ロ制裁自体には賛成する議員が多かった |\n| 財務省等 | 経済的副作用を抑える | 条文修正で懸念の一部が吸収された |\n| 下院の慎重派 | 大統領裁量の追加制限 | まだ審議途中。今後の主要確認点 |\n\n# Analysis Request\n\nこの局面を分析してください。特に、今後の展開を読むうえで何を見るべきか、どのような読み方が\nあり得るかを特定してください。上記のステークホルダー整理・力学の見立てについて、見直すべき\n前提があれば指摘してください。"
+      },
+      "displayed": false,
+      "selected": false,
+      "generated_at": "2026-09-24T08:12:03.693499+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-24T08:12:04.23736+00:00"
+    }
+  ],
+  "leakage_guard": {
+    "known_risk_knowledge_items_leaked": [],
+    "known_risk_documents_leaked": [],
+    "gold_leakage_detected": false
+  },
+  "as_of_audit_report": {
+    "as_of_date": "2026-08-24",
+    "tables": {
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 4,
+        "excluded_future_count": 34,
+        "excluded_unverified_count": 25
+      },
+      "geo_source_registry": {
+        "policy": "_policy_created_at_only",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 4
+      },
+      "geo_entities": {
+        "policy": "_policy_geo_entities",
+        "included_count": 26,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_relationships": {
+        "policy": "_policy_geo_relationships",
+        "included_count": 30,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_knowledge_items": {
+        "policy": "_policy_geo_knowledge_items",
+        "included_count": 0,
+        "excluded_future_count": 40,
+        "excluded_unverified_count": 0
+      },
+      "geo_expert_responses": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_sessions": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "valid": true
+}

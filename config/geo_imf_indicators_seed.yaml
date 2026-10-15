@@ -1,0 +1,30 @@
+# IMF DataMapper API（Phase2B）向けの代表Indicator seed。
+# 実際のIndicator Codeはここで管理し、geo_connector_imf.pyへハードコードしない。
+# 各コードは https://www.imf.org/external/datamapper/api/v1/indicators で実在確認済み
+# （World Economic Outlook, 2026年4月版データセット）。
+indicators:
+  - code: NGDP_RPCH
+    name: Real GDP growth
+    unit: percent
+    frequency: annual
+    geographic_scope: country
+  - code: NGDPD
+    name: GDP, current prices
+    unit: billions_usd
+    frequency: annual
+    geographic_scope: country
+  - code: NGDPDPC
+    name: GDP per capita, current prices
+    unit: usd
+    frequency: annual
+    geographic_scope: country
+  - code: PCPIPCH
+    name: Inflation, average consumer prices
+    unit: percent
+    frequency: annual
+    geographic_scope: country
+  - code: PPPGDP
+    name: GDP based on purchasing-power-parity (PPP) valuation
+    unit: international_dollars
+    frequency: annual
+    geographic_scope: country

@@ -1,0 +1,17 @@
+# WTO Timeseries API（Phase2B、credential-required）向けの代表Indicator seed。
+# ベースURL・認証ヘッダ（Ocp-Apim-Subscription-Key、Azure APIM方式）は複数の一般公開情報から
+# 確認済みだが、個々のクエリパラメータ名（i/r/p/ps等の略称）はAPIキー未取得のため実アクセスで
+# 検証できていない。credential_configured=falseの間はConnectorが実行されないため実害はないが、
+# 実際にAPIキーを取得して初めて実行する際は、まずapiportal.wto.org のAPI Console上で
+# 1件リクエストを試し、本ファイルのパラメータ名がドキュメント通りか再確認すること。
+max_records_per_call: 500
+indicators:
+  - code: HS_A_0010
+    name: Merchandise exports, total
+    unit: usd_thousand
+    frequency: annual
+    reporter_code: "392"
+    reporter_name: Japan
+    partner_code: "0"
+    partner_name: World
+    periods: ["2022", "2023", "2024"]

@@ -1,0 +1,72 @@
+# 【2サーバー構成のときだけ使う】画面（フロント）を、別の Azure Web App（Node.js）へデプロイする。
+# サステナアプリ（app-jp1-sjp-bn-susiq-frontend-001）で動いている方式に合わせている（Nodeの node-server）。
+# 1サーバー構成（バックが画面も配信する）の場合は、このワークフローは使わない。
+#
+#  - 実行は手動のみ。Azure へのログインは発行プロファイル（GitHub の Secrets: `azure_frontend`）。
+#  - GitHub の Variables に次の2つを登録しておく:
+#        GEO_FRONTEND_APP_NAME … フロント用 Web App の名前
+#        GEO_BACKEND_URL       … バックの URL（例: https://app-jp1-sjp-bn-geo-002.azurewebsites.net）。画面のビルド時に埋め込まれる
+#  - バック側では、環境変数 CORS_ALLOWED_ORIGINS にフロントの URL を指定しておく（指定が無いと、ブラウザが API 呼び出しを拒否する）。
+#  - フロント用 Web App の起動コマンド: `node server/index.mjs`
+name: Deploy frontend to Azure Web App
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check variables
+        run: |
+          if [ -z "${{ vars.GEO_BACKEND_URL }}" ] || [ -z "${{ vars.GEO_FRONTEND_APP_NAME }}" ]; then
+            echo "GitHub の Variables に GEO_BACKEND_URL と GEO_FRONTEND_APP_NAME を登録してください。"
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: eco-digest-spark/package-lock.json
+
+      - name: Build frontend (Node server)
+        working-directory: eco-digest-spark
+        env:
+          GEO_NODE_BUILD: "1" # nitro の node-server 形式で出力（.output/）
+          VITE_API_BASE: ${{ vars.GEO_BACKEND_URL }} # バックのアドレス（ビルド時に埋め込まれる）
+        run: |
+          npm ci
+          npm run build
+
+      - name: Zip artifact for deployment
+        run: |
+          cd eco-digest-spark/.output
+          zip -r ../../release.zip ./*
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: node-app
+          path: release.zip
+          retention-days: 3
+          if-no-files-found: error
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: node-app
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ vars.GEO_FRONTEND_APP_NAME }}
+          slot-name: Production
+          package: release.zip
+          publish-profile: ${{ secrets.azure_frontend }}

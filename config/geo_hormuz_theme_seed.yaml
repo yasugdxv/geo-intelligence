@@ -1,0 +1,16 @@
+# イラン/イスラエル/湾岸/ホルムズ海峡 テーマのseedデータ（Phase 3-0 Pilot）。
+#
+# 2026年2月28日の米・イスラエルによるイラン攻撃（Operation Epic Fury）に始まり、
+# ホルムズ海峡封鎖・4月停戦・6月イスラマバードMoU・7月以降の膠着状態へと続く、
+# 現在進行中の実際の危機を対象とする。Indicator Monitorは今回のPilotの検証範囲外の
+# ため投入しない（docs/geopolitical-implementation-plan.md Phase3-0参照）。
+
+theme:
+  code: hormuz_strait
+  name_ja: イラン・ホルムズ海峡危機
+  name_en: Iran / Strait of Hormuz Crisis
+  description: >
+    2026年2月28日の米・イスラエルによるイラン攻撃と最高指導者暗殺に端を発し、
+    イランによるホルムズ海峡封鎖、4月停戦、6月イスラマバードMoU、7月以降の
+    通航料・海峡管理を巡る膠着状態へと続く危機を監視するTheater。
+    Phase 3-0 Pilotとして最小限のEntity/Claim/Precedentのみ投入する。

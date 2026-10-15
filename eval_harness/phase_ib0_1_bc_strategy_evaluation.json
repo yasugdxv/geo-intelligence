@@ -1,0 +1,76 @@
+{
+  "case_id": "ib0-bc-strategy",
+  "evaluation_mode": "retrospective_proxy_directional_as_of_filtered",
+  "formal_phase_i_b_status": "NOT_COMPLETE -- Phase I-B0.1 only",
+  "theme": "2026-02-19 BC Strategy meeting: US-Iran attack imminence, attack options, domestic US politics, spillover to midterms/Japan investment/US-China-Taiwan",
+  "t0_date": "2026-02-19",
+  "temporal_completeness_caveat": "CRITICAL: unlike Hungary, retrieval under the as-of proxy returned ZERO geo_documents for this case (8 excluded as future-dated, 5 excluded as unverified/no published_at, 0 included; geo_events also returned 0). All findings below carry LOWER confidence than Hungary's -- misses may reflect genuine CQAS/generation limitations, OR may simply be the expected, appropriate consequence of an information-starved T0 reconstruction (the system correctly declining to fabricate actor names/specifics it had no retrievable T0 evidence for), OR may partly reflect the harness's own conservative 'exclude if published_at is null' policy removing sources that were actually valid at T0. This ambiguity could not be resolved within this pass and is treated as a limitation of the evaluation, not of the product.",
+  "source_artifacts": {
+    "initial_candidates": "4 CQAS scenario candidates (analysis_session_id=8e890286-ad3d-4462-8f8d-9c596fa79577)",
+    "displayed_top5": "all 4 (fewer than 5 generated)",
+    "selected_candidate": "rank 1 (attack-option-uncertain, monitoring framing)",
+    "analysis_design": "design_id=b1e6fcec-7e70-431b-ac65-f10875953aad, version 1",
+    "expert_ground_truth": "docs/expert-reference-benchmark/bc_strategy_case_reference.md",
+    "as_of_audit": "geo_documents: 0 included / 8 excluded_future / 5 excluded_unverified; geo_events: 0/0/0 (no matches at all)"
+  },
+  "expert_dimensions_evaluated": [
+    {
+      "dimension": "Attack option binary: limited strike (nuclear/missile facilities only) vs. regime change (remove Khamenei)",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (Cooper's analysis)",
+      "classification": "validated_dimension",
+      "evidence": "AI candidate #3 (limited deterrent strike, no regime change) and candidate #4 (regime-change-oriented large operation) directly mirror this exact binary, independently of any retrieved evidence -- this framing appears to come from the model's general reasoning about the topic type, not from retrieval.",
+      "confidence": "MEDIUM-HIGH -- a genuine structural match, though the AI could not evidence WHY Cooper considered regime-change more likely (the 'problem recurs in a year' rationale) since Cooper's own view was never retrievable"
+    },
+    {
+      "dimension": "2026 US midterm elections as a driver of Trump's decision timing (political comeback motive)",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+      "classification": "validated_dimension",
+      "evidence": "AI's Design explicitly lists '2026年米中間選挙における対イラン・対イスラエル・対中政策の争点化状況' as both an evidence_needed item and a watch_point.",
+      "confidence": "MEDIUM -- the topic-level connection is present; the specific causal claim (military action as an electoral 'comeback' move) is not articulated"
+    },
+    {
+      "dimension": "Spillover to US-China relations and Taiwan deterrence",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+      "classification": "validated_dimension",
+      "evidence": "AI's Design explicitly includes Taiwan-related watch_points and evidence_needed ('対イラン軍事行動が米中関係・台湾抑止に与える影響').",
+      "confidence": "MEDIUM -- topic present, none of the specific mechanisms (Xiaomi-Ford JV, Vance's remark, a Trump-Xi Taiwan promise) are captured"
+    },
+    {
+      "dimension": "All named actors: Trump, Khamenei, Zack Cooper, Witkoff, McConnell/Graham, Netanyahu/Israel, Takaichi, Xi, Vance, NSC Asia director",
+      "expert_origin_status": "mixed (mostly EXPERT_ADOPTED_EXTERNAL, Cooper-originated)",
+      "classification": "generation_miss_candidate",
+      "evidence": "key_actors=[] in all 4 AI candidates and in the resulting Design -- a complete absence of named actors, more severe than Hungary's partial miss. Directly attributable, at least in part, to the near-total absence of retrievable T0-scoped evidence (0 documents, 0 events available to ground any specific actor claim).",
+      "confidence": "LOW-MEDIUM -- cannot cleanly separate 'CQAS failed to name actors' from 'CQAS correctly declined to name actors without evidence'; both readings are plausible given the retrieval context"
+    },
+    {
+      "dimension": "Carrier strike group deployment (Gerald R. Ford, arriving within 1-2 days) as the specific observable timing indicator",
+      "expert_origin_status": "EXPERT_GENERATED (Eguchi's own addition, the case's highest-value original contribution)",
+      "classification": "generation_miss_candidate",
+      "evidence": "AI's watch_points mention '米インド太平洋軍の部隊配備' generically but never a specific carrier/naval deployment as a concrete, near-term timing signal. This is the BC Strategy analogue of Hungary's Trump/MAGA miss -- the one dimension that was genuinely Eguchi's own original analytical move, absent from AI's output.",
+      "confidence": "MEDIUM -- a real gap, though a specific ship name/deployment could not plausibly have been retrieved without a matching geo_events row, none of which existed for this theme regardless of the as-of filter"
+    },
+    {
+      "dimension": "\"Trump escalates when mocked\" actor behavior pattern (Venezuela precedent applied to Iran, from Cooper's analysis)",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (Tier1, explicitly present in Cooper's own analysis, not a Tier2 reconstruction)",
+      "classification": "generation_miss_candidate",
+      "evidence": "No historical-analogy or actor-behavior-pattern content appears anywhere in AI's 4 candidates (historical_analogies_used=null throughout). Consistent with the complete absence of named actors.",
+      "confidence": "LOW-MEDIUM -- same evidence-starvation caveat as above"
+    },
+    {
+      "dimension": "Japan/Takaichi investment-commitment-size mismatch as a specific US-Japan friction point",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+      "classification": "ambiguous",
+      "evidence": "The T0 theme text explicitly mentioned '日本の対米投資' as a topic, yet none of AI's 4 candidates or the Design engage with Japan specifically at all (no mention of Takaichi, investment figures, or tariff risk). Given zero retrievable documents, it's unclear whether this reflects a reasoning gap or simply nothing to retrieve; flagged ambiguous rather than forced into generation_miss.",
+      "confidence": "LOW"
+    }
+  ],
+  "report_design_findings": {
+    "investigation_question": "Same pattern as Hungary: AI carries the raw input theme forward verbatim as investigation_question, with no distinct analytical re-framing paragraph.",
+    "key_actors_ai": [],
+    "key_actors_expert": ["Trump", "Khamenei", "Zack Cooper (BC Strategy)", "Witkoff", "McConnell/Graham", "Netanyahu/Israel", "Takaichi", "Xi", "Vance", "NSC Asia director"],
+    "key_actor_gap": "Total: AI's actor list is completely empty vs. the expert's 10-actor list. The most severe actor-coverage gap of the two I-B0 cases so far.",
+    "ai_originally_had": "An appropriately hedged, low-confidence, options-framed structure (limited-strike vs. diplomacy-only vs. regime-change) with sensible generic watch_points",
+    "expert_added": "Every specific actor; the carrier-deployment indicator; the Trump-escalation behavior pattern; the Japan investment-mismatch leverage point",
+    "expert_removed_or_would_correct": "not applicable in this retrospective-proxy mode"
+  }
+}

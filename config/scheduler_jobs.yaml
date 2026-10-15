@@ -1,0 +1,218 @@
+# Phase D: Production Scheduling — Job Registry（宣言的定義）。
+#
+# ここに無いconnector_type/CLIコマンドは新しく作らない——既存geo_connector_cli.pyの
+# サブコマンドをそのまま呼ぶ薄いオーケストレーション層（geo_scheduler_service.py）が
+# この定義を読む。Scheduler本体（cron/systemd timer等）が無い環境でも、この定義ファイル
+# 自体は「Scheduler Ready」の一部として完成させておく（本番サーバ構築後、ここを読んで
+# 登録するだけで良い状態にする）。
+#
+# downstream（Signal→Event→Episode Candidate→Episode Cluster→Situation Link）は
+# COLLECTION_GDELT_STREAM 1Job内に埋め込み済み（run_gdelt_structured_ingestion /
+# run_gdelt_stream_catchupが全て行う）。独立したBUILD_*ジョブは存在しない——
+# produces_phasesとして内部フェーズを記録するだけで、別途スケジュールしない。
+#
+# retry_policy: retryable=trueの場合のみ自動retryする。max_retries回を超えたら
+# non-retryableと同様に人間判断待ちとして扱う（無限retry禁止、item22/23）。
+
+version: 1
+
+defaults:
+  retry_policy:
+    max_retries: 2
+    backoff_seconds: 300
+  stale_after_hours: 6   # この時間status=runningが続き、かつ後続tickでも進展が無ければstale扱い
+  # Scheduler tick（geo_scheduler_cli.py tick）の運用設定。retry/backoffはこのファイルの
+  # retry_policy（Jobごと、無ければdefaults）の一箇所だけで管理する。
+  tick_interval_minutes: 15          # OS側のtimer/cronの実行間隔（heartbeat判定の基準）
+  heartbeat_healthy_minutes: 45      # この時間heartbeatが無ければScheduler異常（tick 3回分）
+  exhausted_cooldown_hours: 6        # max_retriesを使い切った後、再び自動試行するまでの待ち時間
+
+jobs:
+  COLLECTION_GDELT_DOC:
+    job_type: collection
+    description: "GDELT News DOC API（全enabled query）。1日1回の定期実行＋ギャップ検出時はcatch-up。"
+    connector_type: gdelt          # geo_ingestion_runsでのstatus追跡キー（gdelt-batchの実行単位）
+    catchup_connector_type: gdelt_doc_catchup  # 定常watermark記録用（checkpoint_scope=incremental）
+    cli_command: gdelt-batch
+    cadence: daily
+    cadence_hint: "毎日1回（例: 06:00 JST）"
+    source_scope: null              # GDELTはsource-neutral、geo_source_registryに行を持たない
+    depends_on: []
+    retry_policy:
+      max_retries: 2
+      backoff_seconds: 300
+    stale_after_hours: 3
+    catchup:
+      enabled: true
+      # resolve_doc_incremental_sinceの暗黙7日打ち切りバグ（Phase A発見）への対応:
+      # Schedulerはgeo_external_signal_queries.last_run_atから実際のgapを計算し、
+      # 7日を超えるgapがあれば明示的にgdelt-historicalを段階的に呼ぶ（コード側のバグは
+      # 直さず、呼び出し側のsince計算で回避する）。
+      gap_floor_source: geo_external_signal_queries.last_run_at
+      max_single_window_days: 7     # 1回のcatch-up呼び出しで処理する最大期間（段階実行）
+
+  COLLECTION_GDELT_STREAM:
+    job_type: collection
+    description: "GDELT raw Event/Mentions/GKG stream。Signal→Event→Episode Candidate→Episode Cluster→Situation Linkまで内部で自動実行する。"
+    connector_type: gdelt_stream
+    catchup_connector_type: gdelt_stream_catchup
+    cli_command: gdelt-stream-catchup
+    cadence: "every_15_minutes"
+    cadence_hint: "15分ごと（batch grid自体が15分単位のため）"
+    source_scope: null
+    depends_on: [COLLECTION_GDELT_DOC]   # URL一致によるEvent構築がNews DOC側のSignalに依存するため
+    retry_policy:
+      max_retries: 3
+      backoff_seconds: 120
+    stale_after_hours: 2
+    produces_phases:                 # 別Jobではない、1回の実行に含まれる内部フェーズ（表示用）
+      - signal_to_event_match
+      - actor_episode_candidate_build
+      - media_episode_candidate_build
+      - episode_cluster_recompute
+      - situation_link_recompute
+    catchup:
+      enabled: true
+      max_calls_per_tick: 10          # 既存--max-callsをそのまま使う、1 tickで無限に追いつかせない
+      batches_per_call: 100
+
+  COLLECTION_IMF:
+    job_type: collection
+    description: "IMF DataMapper API（無認証）。"
+    connector_type: imf
+    cli_command: imf
+    cadence: quarterly
+    cadence_hint: "四半期に1回"
+    source_registry_name: "IMF DataMapper API"
+    # 対象国は人間が決める（未設定=null の間はnot_configuredとして実行しない）
+    params: {theme_id: null, entity_id: null, country_code: null}
+    depends_on: []
+    retry_policy:
+      max_retries: 2
+      backoff_seconds: 600
+    stale_after_hours: 24
+
+  COLLECTION_WORLD_BANK:
+    job_type: collection
+    description: "World Bank Indicators API（無認証）。"
+    connector_type: world_bank
+    cli_command: world_bank
+    cadence: quarterly
+    cadence_hint: "四半期に1回"
+    source_registry_name: "World Bank Indicators API"
+    params: {theme_id: null, entity_id: null, country_code: null}
+    depends_on: []
+    retry_policy:
+      max_retries: 2
+      backoff_seconds: 600
+    stale_after_hours: 24
+
+  COLLECTION_OFAC:
+    job_type: collection
+    description: "OFAC SDN List（約19,500件、1件ずつ処理のため非常に遅い）。専用枠で実行し他Jobと同時実行しない。"
+    connector_type: ofac
+    cli_command: ofac
+    cadence: daily
+    cadence_hint: "毎日1回（深夜帯推奨、長時間実行のため）"
+    source_registry_name: "OFAC Sanctions List Service"
+    depends_on: []
+    dedicated: true                  # 他のJobと並行実行しない（専用枠）
+    retry_policy:
+      max_retries: 1                 # 遅いConnectorを無駄に連打しない
+      backoff_seconds: 1800
+    stale_after_hours: 48            # Phase Aの実測（約19,488件で30時間超）を踏まえた値
+
+  # ---- GEO_DIRECT_COLLECTION_V1（政府・国際機関のDirect Collection）----
+  # Scheduler-ready（定義と実行経路のみ）。本番Linuxのtimer登録は別途（Production Schedulerは配備待ち）。
+  # 取得口は config/geo_direct_sources.yaml、承認ゲート(automation_allowed)はGeo Source Registryが正。
+  # 承認前のSourceは not_configured として扱い、失敗にしない。
+  COLLECTION_DIRECT_RSS:
+    job_type: collection
+    description: "政府・国際機関のRSS／公開HTML一覧の直接取得（防衛省・統合幕僚監部・IAEA・WTO・CMF・UN News・EIA・USTR。汎用Geo RSS / HTML list Collector）。"
+    connector_type: rss
+    cli_command: rss
+    cadence: every_6_hours
+    cadence_hint: "6時間ごと"
+    source_scope: direct_sources
+    depends_on: []
+    retry_policy:
+      max_retries: 2
+      backoff_seconds: 600
+    stale_after_hours: 2
+
+  COLLECTION_UKMTO:
+    job_type: collection
+    description: "UKMTO（海上の事案・警告）。公開Web UIが使う公開JSON endpoint。取得間隔は30分以上（Collector側でも強制）。初回はBaseline（Alert対象にしない）。"
+    connector_type: ukmto
+    cli_command: ukmto
+    cadence: every_30_minutes
+    cadence_hint: "30分ごと（これより短くしない）"
+    source_scope: direct_sources
+    depends_on: []
+    retry_policy:
+      max_retries: 2
+      backoff_seconds: 600
+    stale_after_hours: 1
+
+  COLLECTION_FEDERAL_REGISTER:
+    job_type: collection
+    description: "米連邦官報の公式API。機関・検索語による決定的な絞り込み（BIS/OFAC/USTR/国防/半導体/中国）。"
+    connector_type: federal_register
+    cli_command: federal-register
+    cadence: daily
+    cadence_hint: "毎日1回"
+    source_scope: direct_sources
+    depends_on: []
+    retry_policy:
+      max_retries: 2
+      backoff_seconds: 900
+    stale_after_hours: 2
+
+  COLLECTION_SANCTIONS_XML:
+    job_type: collection
+    description: "国連安保理・英国の制裁リスト（構造化XML）。初回=Baseline、以降は差分のみ要約Signal。"
+    connector_type: sanctions_xml
+    cli_command: sanctions
+    cadence: daily
+    cadence_hint: "毎日1回（英国は約22MBのため夜間推奨）"
+    source_scope: direct_sources
+    depends_on: []
+    retry_policy:
+      max_retries: 1
+      backoff_seconds: 1800
+    stale_after_hours: 3
+
+  # UN Comtrade / WTO / Manifesto Project: Phase A分類でUNSUPPORTED（APIキー未取得）。
+  # Scheduler対象から除外する（enabled: false）。資格情報が設定されればenabled: trueへ変更する。
+  COLLECTION_UN_COMTRADE:
+    job_type: collection
+    connector_type: un_comtrade
+    cli_command: un_comtrade
+    cadence: quarterly
+    enabled: false
+    disabled_reason: "credential_missing（Phase A分類: UNSUPPORTED）"
+
+  COLLECTION_WTO:
+    job_type: collection
+    connector_type: wto
+    cli_command: wto
+    cadence: quarterly
+    enabled: false
+    disabled_reason: "credential_missing（Phase A分類: UNSUPPORTED）"
+
+  COLLECTION_MANIFESTO:
+    job_type: collection
+    connector_type: manifesto
+    cli_command: manifesto
+    cadence: annual
+    enabled: false
+    disabled_reason: "credential_missing（Phase A分類: UNSUPPORTED）"
+
+# Human Gate後の半自動Job（Phase C実装済み）。Scheduler対象には含めない——
+# Human Acceptが必要なため自動実行しない（item 13/16）。参考情報として記載するのみ。
+manual_only_jobs:
+  THEME_CANDIDATE_SYNC:
+    job_type: human_triggered
+    description: "Accepted Episode Cluster→Theme Candidate生成。Phase CのUI（個別/一括Syncボタン）から人間が明示的に実行する。Schedulerには登録しない。"
+    connector_type: theme_candidate_sync
+    auto_sync_after_accept: false     # 将来の拡張余地として残す（item13の"Auto Sync after Accept"設定）が、既定はfalse

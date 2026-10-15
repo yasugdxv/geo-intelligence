@@ -1,0 +1,27 @@
+# 秘密情報（CLAUDE.mdルール: config.json/.envは絶対にコミットしない）
+config.json
+.env
+scripts/.phase5_target.json
+scripts/.phase5_state*.json
+scripts/phase5_storage_manifest.csv
+
+# 生成物（run.pyが実行のたびに書き出す静的HTML、サイズも大きい）
+dashboard.html
+
+# キャッシュ
+cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 退避した旧ファイル（削除ではなく退避のため、追跡対象から外す）
+_archive/
+
+# 仮想環境・依存関係
+.venv/
+node_modules/
+
+# Azureデプロイ用の生成物（deploy/geo_azure/build_package.py と npm run build が作る）
+build/
+eco-digest-spark/dist/
+eco-digest-spark/.output/

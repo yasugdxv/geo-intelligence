@@ -1,0 +1,60 @@
+{
+  "case_id": "ib0-2-iran-hormuz",
+  "evaluation_mode": "retrospective_proxy_directional_as_of_filtered",
+  "formal_phase_i_b_status": "NOT_COMPLETE -- Phase I-B0.2 only, retrospective proxy, NOT Phase I-B1",
+  "theme": "2026-05-14 Iran/Hormuz Strait continuing crisis (post-strike, pre-negotiation-outcome)",
+  "t0_date": "2026-05-14",
+  "temporal_completeness_caveat": "Same evidence-starvation pattern as BC Strategy: 0 geo_documents included (19 excluded future, 11 excluded unverified), 0 geo_events included (1 excluded future). Confidence on findings below is capped at MEDIUM at most for this reason -- the DB simply has no Iran/Hormuz documents dated before 2026-05-15 at all (earliest is 1 day after T0), so this is a structural feature of how this dataset happens to be seeded, not something a different T0 choice within the Feb-May window could have avoided.",
+  "source_artifacts": {
+    "initial_candidates": "3 CQAS scenario candidates (analysis_session_id=78fda924-3db7-4940-82f4-52e3f3cb31d1)",
+    "top5_displayed": "all 3",
+    "selected_candidate": "rank 1 (coercive-campaign-converging-to-negotiation, a middle path)",
+    "analysis_design": "design_id=c4fffc4c-c84d-42b9-ac3a-bf68ea82e305",
+    "expert_ground_truth": "docs/expert-reference-benchmark/iran_case_reference.md, specifically M086 (2026-05-14, Eguchi's own direct-authored 7-point summary with explicit rejection reasoning -- the single strongest Selection Logic artifact across all cases audited)"
+  },
+  "selection_rejection_evaluation": {
+    "expert_selected_hypothesis": "War resumption likely (M086 point 7: 'The possibility of renewed war is high')",
+    "expert_selected_vs_ai": "AI's rank-3 alternative (long-term/broad escalation, US pushes toward regime change, Iran retaliates via Hormuz blockade/proxies) is the closest semantic match. AI's OWN top-ranked/SELECTED main_scenario (a middle path converging toward some negotiated framework) does NOT match what the real expert actually concluded.",
+    "classification": "ranked_top5 (generated and displayed, but not the AI's own main/selected pick)",
+    "significance": "This is the single most concrete finding across all 3 retrospective cases: the AI's OWN internal ranking (main_scenario vs alternative_scenario) diverged from the real expert's actual conclusion, even though the correct-direction content WAS generated somewhere in the candidate set. This does not fit cleanly into 'generation_miss' (it was generated) or the classic 'ranking_miss' definition (it WAS in the displayed Top N, since all 3 candidates were displayed) -- it is better described as a main-scenario-selection divergence: the CQAS pipeline's own main/alternative assignment (main_scenario=rank1 always, per geo_ios_expert_ai_adapter's design of 'reusing Expert AI's own primary/alternative judgment as-is') did not converge on the expert's real answer.",
+
+    "expert_rejected_hypothesis_1": "Phased negotiation (Hormuz reopening first, nuclear issue later) -- REJECTED by Eguchi because of Trump's face-maintenance difficulty (M086 point 2: '面子維持が困難')",
+    "ai_treatment_of_hypothesis_1": "AI's rank-2 alternative ('managed de-escalation') is essentially the same path (early US pullback, negotiated settlement) -- but AI presents it as a live, undismissed alternative with purely operational switch_conditions (official statements, Hormuz incident counts), with NO reference to Trump's psychological/face-maintenance dynamics as a reason it might NOT happen.",
+    "classification_1": "generated (the hypothesis itself), but the REJECTION REASONING itself (why an expert would rule this out) is completely absent -- AI has no mechanism visible here for representing 'a plausible-sounding path an expert would actually rule out for actor-psychology reasons'",
+
+    "expert_rejected_hypothesis_2": "Stalemate without agreement -- REJECTED because of (a) US economic/midterm-election cost of prolonged conflict and (b) risk of Iran expanding attacks across the Gulf (M086 point 6)",
+    "ai_treatment_of_hypothesis_2": "No AI candidate describes a pure frozen-stalemate state distinctly; the Gulf-attack-expansion risk element appears folded into candidate 3's escalation scenario, but the midterm-election-cost linkage is entirely absent from this case's output (notable since BC Strategy's output DID reference midterms).",
+    "classification_2": "not_generated (as a distinct hypothesis); Gulf-attack-expansion risk element partially present inside a different candidate"
+  },
+  "indicator_evaluation": [
+    {
+      "expert_indicator": "'Iran cannot endure reduced oil production' theory -- explicitly REJECTED by most experts per M086, used as part of the reasoning against the stalemate hypothesis",
+      "ai_treatment": "AI's watch_points/observable_indicators include generic oil/LNG price level and volatility monitoring, without engaging the specific 'can Iran endure a production cut' debate or that the expert consensus rejects it as a real constraint.",
+      "grade": "B (semantically near indicator generated, but the specific debate/rejection is not captured)"
+    },
+    {
+      "expert_indicator": "US economic cost / midterm election political cost as a factor working against prolonged stalemate",
+      "ai_treatment": "Absent from this case's watch_points and evidence_needed entirely.",
+      "grade": "D (complete absence)"
+    },
+    {
+      "expert_indicator": "Iran's risk of expanding attacks across the Gulf region via proxies",
+      "ai_treatment": "Present, folded into candidate 3's escalation-scenario description ('代理勢力を通じた広域攻撃').",
+      "grade": "B (semantically near, present within one candidate's narrative rather than as a standalone cross-cutting watch_point)"
+    }
+  ],
+  "actor_evaluation": [
+    {"expert_actor": "Trump", "ai_treatment": "'米国政権（大統領・国家安全保障チーム）'", "classification": "implicitly_covered", "note": "role-level, not named"},
+    {"expert_actor": "Khamenei", "ai_treatment": "'イラン指導部（最高指導者・革命防衛隊）'", "classification": "implicitly_covered", "note": "role-level, not named"},
+    {"expert_actor": "Netanyahu", "ai_treatment": "'イスラエル政権（ネタニヤフ首相と安全保障閣僚）'", "classification": "explicitly_generated", "note": "FIRST instance across all 3 retrospective cases of a specific named individual appearing in AI's key_actors -- a partial, notable exception to the H1 pattern"},
+    {"expert_actor": "Xi Jinping / China", "ai_treatment": "absent", "classification": "not_applicable", "note": "the T0 theme (deliberately, per blinding design) scoped the situation to the US-Iran-Israel triangle and did not include the China/Trump-Xi-summit thread from M032 -- this thread belongs to a different part of the continuous Iran situation than what this specific T0 input covered, so its absence is not a fair miss against this theme"},
+    {"expert_actor": "Ghalibaf (parliament speaker, negotiation channel)", "ai_treatment": "absent", "classification": "missing"},
+    {"expert_actor": "Pollack / Vatanka (MEI analysts)", "ai_treatment": "n/a", "classification": "not_applicable", "note": "these are source-attribution figures (external analysts), not geopolitical actors in the situation itself"}
+  ],
+  "h1_h4_cross_reference": {
+    "H1_actor_selection": {"status": "inconclusive", "note": "partial improvement (Netanyahu named) alongside continued genericness for Trump/Khamenei and missing secondary actors (Xi, Ghalibaf) -- mixed result, does not cleanly support or contradict the prior n=2 pattern"},
+    "H2_indicator_reasoning": {"status": "supports", "note": "one indicator matched semantically (oil price), one completely missed (midterm linkage), consistent with H2's 'weak at concrete/specific indicators' hypothesis"},
+    "H3_counter_hypothesis_nuance": {"status": "supports", "note": "new instance: AI generated the REJECTED hypothesis's content but not the expert's REASON for rejecting it (Trump face-maintenance psychology) -- same underlying pattern as Hungary's 'not the end of populism' miss, applied to rejection-logic rather than a standalone nuance"},
+    "H4_investigation_question_reframing": {"status": "supports", "note": "3rd consecutive case where investigation_question is the raw input theme verbatim"}
+  }
+}

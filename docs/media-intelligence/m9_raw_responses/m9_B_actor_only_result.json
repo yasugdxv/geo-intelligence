@@ -1,0 +1,1276 @@
+{
+  "request": {
+    "request_id": "6881bc34-06e0-47e1-bd27-97c1f2b646df",
+    "theme_id": null,
+    "mode": "case_analysis",
+    "query_text": "2025年2月28日、ウクライナのゼレンスキー大統領と米国のトランプ大統領・ヴァンス副大統領のオーバルオフィスでの会談が、カメラの前での激しい口論に発展し、鉱物資源合意の署名・共同記者会見は中止された。この直後、米国は3月3日から3月11日まで対ウクライナ軍事支援・情報共有を一時停止し、3月11日のジェッダ(サウジアラビア)での米・ウクライナ協議で関係は正常化した。\n\n現時点で得られる各種の報道・公式発言(米欧主流メディア、ウクライナ国内メディア、ウクライナ大統領府の対応、ロシア政府公式スポークスパーソンの反応、ロシア独立系・国外亡命系メディア、欧州首脳・NATO事務総長の発言、大陸欧州の報道機関、軍事専門家(ISW等)・紛争データ(ACLED等)による戦況評価、中国・トルコ・サウジアラビア等第三国の反応)を踏まえ、以下を評価せよ。\n\n1. この局面のKey Point(何がこの局面全体を規定しているか)は何か。\n2. 鍵となるActor(Zelenskyy、Trump、Putin等)それぞれの、この局面における本当の優先順位・交渉上の立場は何か。\n3. 各情報源(Global mainstream/Ukraine国内/Russia公式・独立系/専門家・OSINT/第三国)の間で報道内容・解釈にどのような違いがあり、それぞれどの程度重く見るべきか。\n4. 今回の外交的対立が、今後のウクライナ支援・停戦交渉にどのようなシナリオをもたらす可能性があるか。",
+    "created_at": "2026-08-31T05:26:26.446397+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "42de2ac1-12e5-46cc-b727-5642e468f76e",
+    "request_id": "6881bc34-06e0-47e1-bd27-97c1f2b646df",
+    "document_ids": [
+      "4782ea75-15f2-47bb-a050-5408f186b989",
+      "5c99bd85-72e8-4278-b431-2c96595a8533",
+      "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+      "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+      "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+      "a9208a53-6674-4447-922b-5fb15ecdd2be",
+      "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+      "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+      "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+      "d163ef87-de0e-41fc-bea5-366f7e5aa89f"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-08-31T05:26:26.774537+00:00"
+  },
+  "response": {
+    "response_id": "f596edde-b6f1-4f18-9829-ada4e2e9f1af",
+    "request_id": "6881bc34-06e0-47e1-bd27-97c1f2b646df",
+    "source_pack_id": "42de2ac1-12e5-46cc-b727-5642e468f76e",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "2025年2月28日、ゼレンスキー大統領とトランプ大統領・ヴァンス副大統領のオーバルオフィス会談が激しい口論に発展し、鉱物資源合意の署名と共同記者会見は中止された。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "米国は3月3日から3月11日まで対ウクライナ軍事支援・情報共有を一時停止し、3月11日のジェッダでの米・ウクライナ協議で関係は正常化した。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "支援・情報共有の一時停止は、ウクライナ側へ停戦条件や鉱物資源合意に関する譲歩を迫るための交渉カードとして用いられた可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "ゼレンスキーは、ロシア側の停戦条件が検証可能でない限り、領土・主権に関わる譲歩を受け入れないというレッドラインを維持しようとした結果、トランプとの公開対立を辞さなかった。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "トランプは、国内政治的に「ウクライナ支援の条件付き・取引化」を示すことで支持層にアピールしつつ、ロシア・第三国との大きなディール余地も残そうとしている。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "短期的な外交的対立は、長期的な停戦交渉において、米国が「支援のオン・オフ」をレバレッジとして使う前例を作り、ウクライナ側の交渉余地を狭める可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "背景の力学として、(1) 米国の対ウクライナ支援をめぐる国内政治（支援疲れ・財政負担・対ロ関係再構築志向）と、(2) ウクライナの生存・主権防衛の絶対優先、(3) ロシアのNATO拡大阻止・戦果の固定化志向が三つ巴になっている。トランプは支援を「条件付きカード」に変えることで国内支持層とロシア・第三国への交渉余地を得る一方、ゼレンスキーは停戦条件のレッドラインを守ることで国内正統性と同盟国世論への訴求を維持しようとしている。ロシアにとっては米ウクライナ間の亀裂は有利だが、支援停止が短期で終わったことは「完全な米離脱」ではないことを示し、長期戦略の不確実性を残す。",
+      "stakeholders": [
+        {
+          "actor": "Donald Trump",
+          "purpose": "国内政治的には、支持層に対して「米国の負担を減らし、取引を通じて有利な条件を引き出す強いリーダー」としてのイメージを維持しつつ、自身の政権の安全保障レガシー（戦争の終結・負担軽減）を確保すること。",
+          "leverage": "支持基盤・世論",
+          "position": "今回の局面では、(1) ウクライナ支援の条件付き化を通じて、鉱物資源合意や停戦条件で米国に有利なディールを引き出すこと、(2) 国内向けに「無制限支援ではない」というメッセージを発信すること。",
+          "red_lines": "米国の負担が過度に増大し、国内支持層からの反発が政権維持を脅かすレベルに達することは避けたい。一方で、ロシアに対して「完全な勝利」を約束するような無制限支援も避けたい。",
+          "confidence": "中",
+          "constraints_fears": "議会・制度、国際関係・同盟",
+          "ability_to_move_or_block": "支援の増減・停止を通じてウクライナの戦場持久力と交渉ポジションを大きく動かせる。"
+        },
+        {
+          "actor": "Volodymyr Zelenskyy",
+          "purpose": "ウクライナの主権・領土の最大限の保全と、ロシアの侵略に対する正義の確保（戦犯追及・安全保障保証）を維持しつつ、国家として生存し続けること。",
+          "leverage": "国内支持層・戦時世論",
+          "position": "今回の局面では、(1) ロシア停戦条件が検証可能でない限り不利な資源・領土譲歩を避けること、(2) 米国との関係を維持しつつ、自国のレッドラインを守ること。",
+          "red_lines": "検証可能な安全保障保証・戦犯追及なしにロシアの停戦案を受け入れること、主権・領土に重大な譲歩を行うこと。",
+          "confidence": "中",
+          "constraints_fears": "同盟国支援依存、戦場状況",
+          "ability_to_move_or_block": "停戦条件・資源合意に関する立場を通じて、戦争の継続・終結の方向性を動かせる。"
+        },
+        {
+          "actor": "Vladimir Putin",
+          "purpose": "NATO東方拡大の阻止と、旧ソ連圏（特にウクライナ）に対する影響力の維持・強化。",
+          "leverage": "国内権威維持",
+          "position": "今回の局面では、米・ウクライナ間の亀裂を利用して、ウクライナ支援の弱体化・停戦条件の自国有利化を図ること。",
+          "red_lines": "ウクライナのNATO加盟・西側安全保障枠組みへの完全統合。",
+          "confidence": "低",
+          "constraints_fears": "エネルギー輸出依存",
+          "ability_to_move_or_block": "攻勢・停戦シグナル・資源供給などを通じて、米・ウクライナ双方の交渉ポジションを動かせる。"
+        },
+        {
+          "actor": "米国議会（支援法案・予算承認主体）",
+          "purpose": "国内財政負担・政治的責任を管理しつつ、対ロ抑止と同盟信頼性を維持する。",
+          "leverage": "予算承認権・支援法案の修正権。",
+          "position": "支援継続には一定賛成だが、条件付き・透明性向上を求める立場。",
+          "priority": "ウクライナ支援の規模・条件を巡る党派間妥協。",
+          "red_lines": "極端な無条件・無期限の巨額支援、または急激な支援ゼロ化。",
+          "confidence": "中",
+          "constraints_fears": "支援過多による有権者反発、支援不足による安全保障リスク。",
+          "key_relationships": "トランプ政権との関係、党派内強硬派・穏健派、防衛産業ロビー。",
+          "ability_to_move_or_block": "長期的支援枠組みの拡大・縮小を決定し、極端な政策を抑制できる。"
+        },
+        {
+          "actor": "NATO・欧州主要国",
+          "purpose": "欧州安全保障の安定とロシアの侵略抑止、ウクライナの主権防衛。",
+          "leverage": "独自の軍事・財政支援、制裁・エネルギー政策、外交仲介。",
+          "position": "米国の支援停止を懸念しつつ、自らの支援拡大・仲介役の模索を進める。",
+          "priority": "ウクライナ支援継続と、米国関与の維持。",
+          "red_lines": "ロシアによるウクライナ完全制圧、NATO加盟国への直接攻撃。",
+          "confidence": "中",
+          "constraints_fears": "米国の支援縮小・離脱、戦争拡大による自国への波及。",
+          "key_relationships": "米国との同盟関係、ウクライナとの安全保障協力、ロシアとのエネルギー・制裁関係。",
+          "ability_to_move_or_block": "米国支援縮小を部分的に補完し、停戦枠組み形成に影響を与え得るが、単独で戦争の帰趨を決める力は限定的。"
+        },
+        {
+          "actor": "第三国（サウジアラビア・トルコ・中国など)",
+          "purpose": "地域・国際的影響力の拡大、エネルギー・資源・再建利権の獲得。",
+          "leverage": "外交フォーラム提供、資金・投資、エネルギー市場への影響。",
+          "position": "ジェッダ協議のような場を提供し、仲介役としての地位を模索。",
+          "priority": "停戦仲介・再建プロセスへの関与。",
+          "red_lines": "自国への直接安全保障リスク、制裁対象化。",
+          "confidence": "低",
+          "constraints_fears": "西側・ロシア双方との関係悪化、紛争長期化による経済リスク。",
+          "key_relationships": "米国・ロシア・欧州とのバランス外交。",
+          "ability_to_move_or_block": "停戦プロセスの形式・参加者構成に影響を与え得るが、主要当事者の意思を覆す力は限定的。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "支援停止は戦場に一定の影響を与え得る程度の実質を持っていたが、完全な離脱ではなかった。",
+          "ジェッダ協議では鉱物資源合意や停戦条件に関する何らかの調整が行われた。",
+          "トランプ・ゼレンスキー双方は国内政治・戦場状況から完全決裂を避けるインセンティブを持っていた。"
+        ],
+        "description": "現時点では、この局面を「トランプ政権が対ウクライナ支援・情報共有のオン・オフを交渉カードとして用い、ゼレンスキーの停戦条件レッドラインと正面衝突した結果、一時的な外交的対立と支援停止が生じたが、双方とも完全決裂は望まず、ジェッダ協議で条件調整の上で関係を正常化した」と見るのが最も整合的である。今後も米国は支援の強度・条件を交渉カードとして用いる可能性があり、ウクライナは停戦条件に関するレッドラインを維持しつつ、資源・制度面での柔軟性を示すシナリオが主軸となる。",
+        "selection_rationale": "他の説明（純粋な支援疲れによる政策転換、個人的感情による偶発的対立など）もあり得るが、支援停止が短期間で終わり、ジェッダ協議で正常化していることから、支援のオン・オフが交渉カードとして用いられたと見る方が、トランプ・ゼレンスキー双方の既存パターンと時系列に整合する。",
+        "supporting_evidence": [
+          "支援・情報共有が短期間停止され、その後正常化している時系列（交渉カードとしての使用を示唆）。",
+          "トランプのディール志向・レバレッジ重視という既存のActor Intelligence。",
+          "ゼレンスキーの停戦条件への不信・レッドライン維持というPersistent Preference仮説。"
+        ],
+        "observable_indicators": [
+          "今後の対ウクライナ支援パッケージに、鉱物資源・停戦条件・選挙などの条件が明示的に紐づけられるか。",
+          "トランプ政権が他の同盟国に対しても支援・安全保障コミットメントのオン・オフを交渉カードとして用いるか。",
+          "ゼレンスキーが停戦条件に関するレッドラインを公的発言で再確認しつつ、資源・制度面での譲歩を示すか。"
+        ]
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "ウクライナ支援の条件付き化・カード化が進む場合、欧州安全保障環境の不確実性が高まり、エネルギー価格・物流・防衛産業投資に波及する可能性がある。特に欧州向け事業・サプライチェーンを持つ企業にとって、停戦交渉の遅延・戦況悪化は市場・原材料・物流リスクを高める。",
+        "unrelated_note": "本ケースは主に安全保障・外交の枠組みの変化に関するものであり、特定企業への直接的な即時影響は、ウクライナ・欧州への露出が大きい場合を除き限定的とみられる。",
+        "environment_change": "米国が安全保障コミットメントを交渉カードとして用いる前例が強まれば、他地域（中東・インド太平洋）でも同様のパターンが現れ、長期的な地政学リスクの構造が変化する。企業は同盟国間の関係を安定前提とせず、支援・制裁のオン・オフを前提にした柔軟なサプライチェーン設計が必要になる可能性。"
+      },
+      "initial_anomaly": "通常の首脳会談では、激しい口論がカメラの前で可視化され、直後に合意署名・共同記者会見が中止されることは異例である。また、対ウクライナ軍事支援・情報共有の「一時停止」が数日単位で行われ、その後短期間で正常化している点も、純粋な政策転換というより交渉カード・シグナルとしての性格が強い。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "actor_trump",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては非常に強く、Substanceとしても一定の実質を伴う可能性が高いが、停止範囲が不明なためレバレッジ強度の評価には留保が必要。",
+            "discretion": "停止期間・対象の選定に大統領側の裁量余地が大きい。",
+            "evidence_ids": null,
+            "target_scope": "軍事支援パッケージと情報共有全般（具体的範囲は未確認）。",
+            "stated_signal": "支援のオン・オフを通じて、ウクライナ側に譲歩を迫りつつ、国内向けに『負担軽減・条件付き支援』を示す。",
+            "concrete_measure": "3月3日〜11日の対ウクライナ軍事支援・情報共有の一時停止。",
+            "enforcement_status": "詳細不明だが、少なくとも一部支援・情報共有が停止されたとされる。",
+            "implementation_status": "停止措置は実施され、その後ジェッダ協議後に再開。",
+            "legal_or_policy_force": "大統領の裁量による運用上の停止だが、予算・法的枠組みは維持されていると推定。"
+          },
+          "primary_audience": "米国内支持層・議会",
+          "message_hypothesis": "「ウクライナ支援は無条件ではなく、米国の利益（資源・停戦条件）を守るための取引であり、必要なら支援を止めることも辞さない」というメッセージ。",
+          "secondary_audience": "ゼレンスキー政権・ロシア・第三国",
+          "action_or_statement": "オーバルオフィスでの激しい口論後、鉱物資源合意署名・共同記者会見を中止し、対ウクライナ軍事支援・情報共有を一時停止した。"
+        },
+        {
+          "actor_ref": "actor_zelenskyy",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては非常に強く、Substanceとしては『不利な合意を阻止した』という意味で実質的だが、代替合意の有無が不明なため長期的影響は未確定。",
+            "discretion": "ゼレンスキーには署名の可否に関する政治的裁量があるが、支援依存度が高いためコストも大きい。",
+            "evidence_ids": null,
+            "target_scope": "鉱物資源合意と、それに紐づく停戦・安全保障条件。",
+            "stated_signal": "停戦条件・資源合意に関する自国のレッドラインを明確に示し、国内正統性を維持する。",
+            "concrete_measure": "鉱物資源合意の署名拒否・共同記者会見の中止。",
+            "enforcement_status": "ウクライナ側として不利な合意履行義務は発生していない。",
+            "implementation_status": "合意は成立せず、後続のジェッダ協議で条件調整が図られたと推定。",
+            "legal_or_policy_force": "署名拒否により合意は法的に成立せず、政策変更は発生しない。"
+          },
+          "primary_audience": "ウクライナ国内世論・軍・犠牲者遺族",
+          "message_hypothesis": "「検証なきロシア停戦や不利な資源・領土譲歩は、米国との関係悪化リスクを負ってでも受け入れない」というレッドラインの再確認。",
+          "secondary_audience": "米国・欧州同盟国",
+          "action_or_statement": "オーバルオフィス会談でトランプ・ヴァンスと激しく口論し、鉱物資源合意の署名・共同記者会見を中止した。"
+        },
+        {
+          "actor_ref": "actor_zelenskyy",
+          "confidence": "低",
+          "action_substance": {
+            "assessment": "Signalとしては『協調継続』を示し、Substanceとしては支援再開という実質を伴うが、どの条件を譲ったかが不明なため評価は限定的。",
+            "discretion": "ゼレンスキーは完全決裂を避けるため、一定の譲歩を行った可能性がある。",
+            "evidence_ids": null,
+            "target_scope": "対ウクライナ支援枠組み全般と鉱物資源・停戦条件の一部。",
+            "stated_signal": "米国との協調を維持し、支援継続を確保する意志。",
+            "concrete_measure": "支援・情報共有の再開を受け入れ、何らかの条件調整に合意。",
+            "enforcement_status": "再開後の支援は継続しているとされる。",
+            "implementation_status": "支援・情報共有は再開されている。",
+            "legal_or_policy_force": "新たな合意・了解事項が形成された可能性があるが詳細不明。"
+          },
+          "primary_audience": "米国・欧州同盟国",
+          "message_hypothesis": "「レッドラインは維持しつつも、同盟国との完全決裂は避け、現実的な妥協を図る」という姿勢。",
+          "secondary_audience": "ウクライナ国内世論",
+          "action_or_statement": "3月11日のジェッダ協議で米国との関係正常化に応じた。"
+        },
+        {
+          "actor_ref": "actor_putin",
+          "confidence": "低",
+          "action_substance": {
+            "assessment": "Signal中心の行動であり、Substanceは世論形成・第三国姿勢に間接的影響を与え得るが、本件Source Packでは具体的証拠がないため仮説にとどまる。",
+            "discretion": "情報戦はプーチン政権の裁量で強度を調整可能。",
+            "evidence_ids": null,
+            "target_scope": "国内世論・第三国世論。",
+            "stated_signal": "米・ウクライナ間の亀裂をロシアの成功として描き、戦争継続の正当化に利用。",
+            "concrete_measure": "公式声明・メディア報道・トークショーなどでの宣伝。",
+            "enforcement_status": "不明。",
+            "implementation_status": "一般的に類似局面で行われてきたパターンからの推定であり、本件固有の実施は未確認。",
+            "legal_or_policy_force": "法的拘束力はないが、情報戦として機能。"
+          },
+          "primary_audience": "ロシア国内世論・エリート層",
+          "message_hypothesis": "「西側は分裂しており、ウクライナ支援は不安定で信頼できない」というナラティブ強化。",
+          "secondary_audience": "グローバルサウス・第三国",
+          "action_or_statement": "米・ウクライナ間の対立・支援停止に対する公式・プロパガンダ上の反応（一般的傾向として推定）。"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "米国が対ウクライナ支援・情報共有のオン・オフを短期的に操作し、オーバルオフィスでの公開対立と支援停止を通じて交渉カードとして用いた可能性が浮上した。これは従来の「一貫した支援コミットメント」からの重要な変化である。",
+        "why_it_matters": "支援のカード化は、ウクライナ戦争の停戦交渉・欧州安全保障枠組み・他地域の同盟関係にも波及し得る。企業にとっては、戦争の長期化・停戦の不確実性・エネルギー・物流リスクの構造変化につながる。",
+        "what_to_watch_decide": "(1) 今後の対ウクライナ支援パッケージの条件付き化の度合い、(2) 米国内世論・議会の支援疲れ、(3) ゼレンスキーの停戦条件レッドライン維持の強度、(4) 欧州・NATO・第三国の仲介・支援動向をモニタリングし、自社の欧州・エネルギー・物流露出に応じたシナリオ別準備を検討すること。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Donald Trump",
+          "red_line": "米国の負担が過度に増大し、国内支持層からの反発が政権維持を脅かすレベルに達することは避けたい。一方で、ロシアに対して「完全な勝利」を約束するような無制限支援も避けたい。",
+          "actor_ref": "actor_trump",
+          "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "confidence": "中",
+          "formal_role": "米国大統領として、対ウクライナ軍事支援・情報共有の実施方針に大きな裁量を持つ（ただし予算・法的枠組みは議会と共有）。",
+          "evidence_ids": null,
+          "decision_power": "支援パッケージのタイミング・内容・一時停止を決める実質的権限を持つが、長期的な支援枠組み・予算は議会に制約される。",
+          "driving_forces": [
+            {
+              "force": "支持基盤・世論",
+              "direction": "supporting",
+              "description": "ウクライナ支援疲れ・財政負担への不満を持つ支持層に対し、支援の条件付き化は政治的に受け入れられやすい。"
+            },
+            {
+              "force": "議会・制度",
+              "direction": "constraining",
+              "description": "議会の支援法案・予算承認があるため、完全な支援停止や長期的離脱には制度的制約がある。"
+            },
+            {
+              "force": "国際関係・同盟",
+              "direction": "constraining",
+              "description": "NATO・欧州同盟国からの圧力により、支援の完全停止は難しく、短期的なカードとしての使用にとどまる可能性。"
+            }
+          ],
+          "ability_to_move": "支援の増減・停止を通じてウクライナの戦場持久力と交渉ポジションを大きく動かせる。",
+          "issue_objective": "今回の局面では、(1) ウクライナ支援の条件付き化を通じて、鉱物資源合意や停戦条件で米国に有利なディールを引き出すこと、(2) 国内向けに「無制限支援ではない」というメッセージを発信すること。",
+          "observed_action": "オーバルオフィス会談でゼレンスキーと激しく口論し、鉱物資源合意の署名・共同記者会見を中止。その直後に対ウクライナ軍事支援・情報共有を一時停止し、ジェッダ協議で正常化させた。",
+          "vulnerabilities": [
+            "国内支持率・選挙",
+            "議会との対立",
+            "国際的信頼性の低下"
+          ],
+          "ability_to_block": "議会の支援法案の運用を遅らせる・条件を付けることで、実質的に支援を絞ることができる。",
+          "action_substance": {
+            "assessment": "強いSignalと一定のSubstanceを伴うが、停止範囲不明のためレバレッジ強度評価は中程度。",
+            "discretion": "停止期間・対象選定に大統領裁量が大きい。",
+            "evidence_ids": null,
+            "target_scope": "軍事支援・情報共有（範囲不明）。",
+            "stated_signal": "支援は米国の利益と結びついた条件付きのものであり、譲歩がなければ停止もあり得る。",
+            "concrete_measure": "対ウクライナ軍事支援・情報共有の一時停止。",
+            "enforcement_status": "停止期間中は少なくとも一部支援が止まったと推定。",
+            "implementation_status": "停止後、ジェッダ協議を経て再開。",
+            "legal_or_policy_force": "運用上の停止措置であり、予算・法的枠組みは維持。"
+          },
+          "primary_audience": "米国内の支持層・議会（「ウクライナ支援は条件付きであり、米国の利益を守るための取引だ」と示す）。",
+          "why_actor_matters": "トランプは対ウクライナ支援のオン・オフを決める権限を持ち、支援を交渉カードとして用いる嗜好があるため、この局面のKey Point（支援のカード化）を直接動かす主体である。",
+          "available_leverage": [
+            "軍事支援・情報共有の一時停止・再開",
+            "関税・制裁など対ロ・対第三国への経済的レバレッジ",
+            "鉱物資源合意・投資条件"
+          ],
+          "secondary_audience": "ゼレンスキー政権・ロシア・第三国（ウクライナ支援は無条件ではなく、停戦・資源合意に関する譲歩を求めるカードであると示す）。",
+          "ultimate_objective": "国内政治的には、支持層に対して「米国の負担を減らし、取引を通じて有利な条件を引き出す強いリーダー」としてのイメージを維持しつつ、自身の政権の安全保障レガシー（戦争の終結・負担軽減）を確保すること。",
+          "persistent_preference": "多国間枠組みよりも二国間ディールを重視し、関税・制裁・支援のオン・オフを交渉カードとして早期に用いる傾向がある（Foundation Packのcore_profileと整合）。",
+          "preference_action_gap": "Persistent Preference（ディール志向・レバレッジ重視）と今回の行動（支援停止を交渉カードとして使用）は整合的であり、大きなGapはない。ただし、公開の場での激しい口論・合意破談は、通常の交渉よりも高い政治的リスクを伴うため、国内支持層へのシグナルやゼレンスキーへの圧力を優先した結果とみられる。",
+          "relevant_decision_patterns": [
+            "多国間枠組みより二国間ディールを優先し、経済的レバレッジを初期段階から用いる傾向。"
+          ],
+          "unavailable_or_costly_cards": [
+            "NATO条約そのものの変更（議会・同盟国の強い制約）",
+            "ウクライナ支援の完全かつ長期的な停止（欧州・NATOとの関係悪化リスクが高い）"
+          ],
+          "persistent_preference_change": null,
+          "persistent_preference_evidence": [
+            {
+              "caveat": "ホルムズ海峡事案は中東・エネルギー文脈であり、ウクライナ戦争とはテーマが異なるため、完全な類推は避ける必要がある。",
+              "source": "参照文書「Trump Backs Off 20% Fee for Strait of Hormuz Shipments」等に示される行動パターン（ただし本ケースへの直接適用には留保）。",
+              "claim_id": null,
+              "relevance": "経済的レバレッジを交渉カードとして用いる嗜好を示唆。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "過去の対同盟国・貿易交渉で、関税・制裁を初期段階から交渉カードとして用いた事例（例: 対EU・対中国関税）。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "strategic_relationship_preference": "ウクライナとの関係を、無条件の同盟というより「条件付きパートナー」として扱い、支援と資源・政治的譲歩を組み合わせたディール型関係を好む仮説。ロシアとは、対立を維持しつつも直接交渉の余地を残す関係を好む可能性。"
+        },
+        {
+          "actor": "Volodymyr Zelenskyy",
+          "red_line": "検証可能な安全保障保証・戦犯追及なしにロシアの停戦案を受け入れること、主権・領土に重大な譲歩を行うこと。",
+          "actor_ref": "actor_zelenskyy",
+          "entity_id": "0196d7bd-c39d-4027-a73b-6dad95aa8357",
+          "confidence": "中",
+          "formal_role": "ウクライナ大統領として、戦争継続・停戦条件・資源合意に関する最終的な政治的決定権を持つ。",
+          "evidence_ids": null,
+          "decision_power": "戦場での持久戦継続・停戦受け入れ・領土譲歩の有無を決める政治的権限を持つが、同盟国支援への依存度が高く、完全な自由裁量ではない。",
+          "driving_forces": [
+            {
+              "force": "国内支持層・戦時世論",
+              "direction": "supporting",
+              "description": "不利な停戦・領土譲歩への拒否は国内世論の支持を得やすい。"
+            },
+            {
+              "force": "同盟国支援依存",
+              "direction": "constraining",
+              "description": "米国・NATO支援への依存度が高く、完全な対立・決裂は戦場持久力を危うくする。"
+            },
+            {
+              "force": "戦場状況",
+              "direction": "constraining",
+              "description": "戦況が悪化すれば停戦受け入れ圧力が高まり、レッドライン維持が難しくなる。"
+            }
+          ],
+          "ability_to_move": "停戦条件・資源合意に関する立場を通じて、戦争の継続・終結の方向性を動かせる。",
+          "issue_objective": "今回の局面では、(1) ロシア停戦条件が検証可能でない限り不利な資源・領土譲歩を避けること、(2) 米国との関係を維持しつつ、自国のレッドラインを守ること。",
+          "observed_action": "オーバルオフィス会談でトランプ・ヴァンスと激しく口論し、鉱物資源合意の署名・共同記者会見を中止。支援停止期間中も最終的にはジェッダ協議で関係正常化に応じた。",
+          "vulnerabilities": [
+            "同盟国支援への高い依存",
+            "国内経済・インフラの疲弊",
+            "戦争継続による人的損失"
+          ],
+          "ability_to_block": "不利な停戦・資源合意を拒否することで、ロシア・第三国・米国の望むディールを阻止できる。",
+          "action_substance": {
+            "assessment": "国内向け・同盟国向けに強いSignalであり、Substanceとしても不利な合意阻止という実質を持つ。",
+            "discretion": "署名拒否は政治的裁量だが、支援依存度から高コスト。",
+            "evidence_ids": null,
+            "target_scope": "鉱物資源合意と関連する停戦・安全保障条件。",
+            "stated_signal": "不利な停戦・資源譲歩は受け入れないというレッドライン維持。",
+            "concrete_measure": "鉱物資源合意署名拒否・共同記者会見中止。",
+            "enforcement_status": "不利な合意履行は回避されている。",
+            "implementation_status": "合意は成立せず、後続協議で再調整。",
+            "legal_or_policy_force": "合意不成立により法的義務は発生せず。"
+          },
+          "primary_audience": "ウクライナ国内世論・軍・犠牲者遺族（不利な停戦・資源譲歩を拒否するリーダーとしての正統性を維持）。",
+          "why_actor_matters": "ゼレンスキーは停戦条件・資源合意に関するウクライナ側のレッドラインを設定する主体であり、米国の支援カードに対してどこまで譲歩するかを決める鍵となる。",
+          "available_leverage": [
+            "戦場での持久戦継続",
+            "国際世論・メディアへの訴求",
+            "欧州・NATOへの直接働きかけ"
+          ],
+          "secondary_audience": "米国・欧州同盟国（停戦条件に関する自国のレッドラインを明確に示し、支援継続の政治的正当性を訴える）。",
+          "ultimate_objective": "ウクライナの主権・領土の最大限の保全と、ロシアの侵略に対する正義の確保（戦犯追及・安全保障保証）を維持しつつ、国家として生存し続けること。",
+          "persistent_preference": "対米関係において、支援を求める側でありながら核心的な交渉条件（検証なきロシア停戦への不信）は公然たる対立のコストを負ってでも譲らない。ただし選挙延期など国内制度的論点では立場を変化させる柔軟性がある。",
+          "preference_action_gap": "Persistent Preference（停戦条件への強い不信）と今回の行動（合意破談・公開対立）は整合的であり、Gapは小さい。一方で、ジェッダ協議で関係正常化に応じたことは、支援依存度の高さから米国との完全決裂を避ける現実的選択として説明できる。",
+          "relevant_decision_patterns": [
+            "停戦条件への不信から、同盟国とも対立を辞さないパターン。",
+            "対米圧力に応じて国内制度的論点で立場を変化させる柔軟性。"
+          ],
+          "unavailable_or_costly_cards": [
+            "米国との完全な決裂（支援喪失のリスクが高い）",
+            "ロシアへの一方的譲歩"
+          ],
+          "persistent_preference_change": null,
+          "persistent_preference_evidence": [
+            {
+              "caveat": "具体的事例の詳細がこのSource Packには含まれていないため、一般化には留保が必要。",
+              "source": "Actor Intelligence Packのdecision_pattern記述に基づく一般化（具体的事例は別途確認が必要）。",
+              "claim_id": null,
+              "relevance": "停戦条件への不信がPersistent Preferenceであることを示唆。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "過去の停戦・和平案に対し、ロシア側の履行保証が弱い場合に強硬に反対し、同盟国との緊張を招いた事例。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "strategic_relationship_preference": "米国・NATOとの関係を生命線としつつも、停戦条件に関しては同盟国とも対立を辞さず、自国のレッドラインを維持する傾向。"
+        },
+        {
+          "actor": "Vladimir Putin",
+          "red_line": "ウクライナのNATO加盟・西側安全保障枠組みへの完全統合。",
+          "actor_ref": "actor_putin",
+          "entity_id": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+          "confidence": "低",
+          "formal_role": "ロシア大統領として、対ウクライナ戦争・停戦条件・外交方針の最終決定権を持つ。",
+          "evidence_ids": null,
+          "decision_power": "戦場での攻勢・停戦提案・資源・領土条件を決める権限を持ち、ロシア国家の安全保障戦略を統括する。",
+          "driving_forces": [
+            {
+              "force": "エネルギー輸出依存",
+              "direction": "constraining",
+              "description": "長期戦・制裁により財政負担が増大し、戦争継続には経済的制約がある。"
+            },
+            {
+              "force": "国内権威維持",
+              "direction": "supporting",
+              "description": "戦争を通じたナショナリズム動員が権威維持に資する。"
+            }
+          ],
+          "ability_to_move": "攻勢・停戦シグナル・資源供給などを通じて、米・ウクライナ双方の交渉ポジションを動かせる。",
+          "issue_objective": "今回の局面では、米・ウクライナ間の亀裂を利用して、ウクライナ支援の弱体化・停戦条件の自国有利化を図ること。",
+          "observed_action": "本Source Packには具体的行動は記載されていないが、一般にロシア政府公式スポークスパーソンや独立系メディアが米・ウクライナ間の対立を宣伝材料として利用する傾向があると推測される。",
+          "vulnerabilities": [
+            "制裁による経済負担",
+            "戦争長期化による国内不満",
+            "エネルギー価格変動への依存"
+          ],
+          "ability_to_block": "受け入れ難い停戦条件・安全保障枠組みを拒否することで、戦争終結を阻止できる。",
+          "action_substance": {
+            "assessment": "現時点では仮説レベルであり、Substance評価は判断不能。",
+            "discretion": "情報戦強度は裁量的。",
+            "evidence_ids": null,
+            "target_scope": "国内世論・第三国。",
+            "stated_signal": "西側分裂・支援不安定性を強調するナラティブ（推定）。",
+            "concrete_measure": "公式声明・プロパガンダ（本件固有の証拠は未提示）。",
+            "enforcement_status": "未確認。",
+            "implementation_status": "未確認。",
+            "legal_or_policy_force": "なし。"
+          },
+          "primary_audience": "ロシア国内世論・エリート層（米・ウクライナ間の亀裂を成功として描く）。",
+          "why_actor_matters": "プーチンは戦場と停戦条件を決める主体であり、米・ウクライナ間の対立を利用するかどうかが停戦交渉の方向性に影響する。",
+          "available_leverage": [
+            "戦場での攻勢・停戦提案",
+            "エネルギー供給・価格操作",
+            "情報戦・プロパガンダ"
+          ],
+          "secondary_audience": "グローバルサウス・第三国（西側の分裂を示し、ロシアへの同情・中立維持を促す）。",
+          "ultimate_objective": "NATO東方拡大の阻止と、旧ソ連圏（特にウクライナ）に対する影響力の維持・強化。",
+          "persistent_preference": "NATO東方拡大を安全保障上の脅威とみなし、ウクライナのNATO加盟・西側統合を阻止することを最優先する傾向。",
+          "preference_action_gap": "具体的行動がこのSource Packには含まれていないため、Gap評価は判断不能。",
+          "relevant_decision_patterns": [
+            "NATO拡大阻止を最優先し、戦場・外交を組み合わせて長期的に圧力をかける傾向。"
+          ],
+          "unavailable_or_costly_cards": [
+            "全面的な譲歩による停戦（国内権威の失墜リスク）",
+            "戦争の極端なエスカレーション（NATOとの直接衝突リスク）"
+          ],
+          "persistent_preference_change": null,
+          "persistent_preference_evidence": [
+            {
+              "caveat": "公式立場であり、真の動機が完全に同一とは限らない。",
+              "source": "Actor Intelligence Packのcore_profile記述。",
+              "claim_id": null,
+              "relevance": "ウクライナ戦争の根本的動機と整合。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "過去の演説・声明で、NATO東方拡大を明確なレッドラインとして繰り返し批判してきた。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "strategic_relationship_preference": "米国・NATOとは対立を維持しつつ、制裁緩和・安全保障枠組みの再交渉を狙う関係。ウクライナとは、完全な独立主権国家ではなく、ロシアの影響圏として扱いたい。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "支援・情報共有停止の具体的範囲と戦場への影響はどの程度だったか。",
+          "rationale": "カード化の実質を評価するための基礎データ。",
+          "related_hypothesis": "支援のカード化が実質的レバレッジだったかどうか。",
+          "recommended_sources": "国防総省・ウクライナ国防省の発表、ISW・ACLED等の戦況データ。"
+        },
+        {
+          "priority": "高",
+          "question": "オーバルオフィス会談での具体的争点（鉱物資源合意条項・停戦条件・選挙など）は何だったか。",
+          "rationale": "Key Actorの優先順位・立場を精緻化するため。},{",
+          "related_hypothesis": "ゼレンスキーのレッドライン維持が対立の主因だったか。",
+          "recommended_sources": "米欧主流メディア・ウクライナ国内メディア・リークの比較。"
+        },
+        {
+          "priority": null,
+          "question": "オーバルオフィス会談での激しい口論の具体的争点は何だったか（鉱物資源合意条項、停戦条件、選挙・国内制度など）。",
+          "rationale": "Key Point・Key Actorの優先順位と交渉立場を精緻化するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "3月3〜11日の支援・情報共有停止の具体的範囲（どの兵器・情報が止まり、どれが継続したか）はどこまで特定できるか。",
+          "rationale": "支援のカード化（Preference-Action Gap）の実質を評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ジェッダ協議での『関係正常化』の具体的内容（支援再開条件・鉱物資源合意の再交渉有無）は何か。",
+          "rationale": "主シナリオの前提（条件調整の存在）を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ロシア政府公式・独立系メディアは米・ウクライナ間の対立・支援停止をどのように報じたか。",
+          "rationale": "Media/Source差異とロシア側の利用の仕方（Audience仮説）を確認するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米欧主流メディア・ウクライナ国内メディア・第三国メディアの間で、支援停止の原因・性格（技術的調整 vs 交渉カード）に関するナラティブはどう異なるか。",
+          "rationale": "Media間の解釈差を整理し、どの見方をどの程度重く見るかを評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "one_line_assessment": "この局面の主軸は「米国の対ウクライナ支援をめぐる、トランプ政権の交渉カード化とゼレンスキーの停戦条件レッドラインの正面衝突」であり、オーバルオフィスでの鉱物資源合意破談と短期支援停止は、長期的な停戦・安全保障枠組みをめぐる力関係調整の一段階とみるのが整合的である（as_of: 2026-08-31、全体確信度: 中）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "actor_controlled",
+        "hinge_structure": {
+          "primary_hinge": "トランプ政権が対ウクライナ支援・情報共有のオン・オフを交渉カードとしてどこまで使うか（頻度・期間・対象の広さ）",
+          "secondary_hinges": [
+            "ゼレンスキー政権が停戦条件・資源合意に関するレッドラインをどこまで維持するか",
+            "欧州・NATOが米国の支援停止をどの程度補完できるか",
+            "ロシアの戦場行動・停戦シグナルがどの方向へ動くか"
+          ]
+        },
+        "primary_key_point": "米国の対ウクライナ軍事支援・情報共有のオン・オフが交渉カードとして使われ始めたこと",
+        "rejected_candidates": [
+          {
+            "key_point": "ウクライナ側の停戦条件レッドラインの維持",
+            "why_not_primary": "ゼレンスキーのレッドラインは重要だが、今回の具体的な支援停止・再開という行動は米側の裁量に依存しており、局面の可視的変化を直接生んだのは米側のレバー操作であるため、背景要因として扱う。"
+          },
+          {
+            "key_point": "米国内の支援疲れ・財政負担への反発",
+            "why_not_primary": "支援停止の政治的土台として重要だが、局面の具体的なタイミングと強度（オーバルオフィス破談直後の停止・短期での再開）を説明するには、トランプ個人の交渉嗜好と結びついた「カード化」の方が中心的。"
+          },
+          {
+            "key_point": "ロシアの戦場・外交上の動き",
+            "why_not_primary": "戦況・ロシアのシグナルは米・ウクライナ双方の立場を制約するが、今回のオーバルオフィスでの公開対立と短期支援停止という具体的イベントは、ロシアの直接行動よりも米・ウクライナ間の交渉に依存している。"
+          }
+        ],
+        "selection_rationale": "提示された事実の中心は、(1) オーバルオフィスでの合意破談、(2) その直後の支援・情報共有の一時停止、(3) ジェッダ協議での正常化という、米国の支援レバーの操作に関する時系列である。ゼレンスキーのレッドラインや米国内世論、ロシアの動きは重要な背景だが、この局面を具体的に動かした「蝶番」は、トランプ政権が支援のオン・オフを交渉カードとして用いたことと見るのが最も説明力が高い。",
+        "candidate_key_points": [
+          {
+            "key_point": "米国の対ウクライナ軍事支援・情報共有のオン・オフが交渉カードとして使われ始めたこと",
+            "control_type": "actor_controlled",
+            "what_it_explains": "オーバルオフィスでの破談後に支援が一時停止され、その後ジェッダ協議で正常化した時系列。トランプの交渉嗜好（ディール志向）とも整合する。",
+            "why_it_could_be_key": "支援停止と再開が短期間に行われており、単なる政策転換ではなく交渉上のレバレッジとして機能している可能性が高い。これが今後の停戦交渉・資源合意・安全保障枠組み全体に影響し得る。",
+            "controlling_entity_ids": [
+              "c93580fd-99b1-44d9-b924-beb89a2e8378"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "ロシア側の戦場行動やプロパガンダ、欧州・NATOの独自支援拡大など、米国以外の主体が動かす部分は直接説明しない。",
+            "control_structure_summary": null
+          },
+          {
+            "key_point": "ウクライナ側の停戦条件に関するレッドライン（検証なきロシア停戦への不信）が、米国との関係悪化リスクを負ってでも維持されていること",
+            "control_type": "actor_controlled",
+            "what_it_explains": "ゼレンスキーが支援依存度が高いにもかかわらず、オーバルオフィスでの激しい口論と合意破談を受け入れたこと。停戦条件をめぐる強硬姿勢。",
+            "why_it_could_be_key": "ゼレンスキーは過去にも停戦条件に関して強硬な立場を取り、同盟国との緊張を招いても譲らないパターンがあるとされる。今回も鉱物資源合意や停戦条件をめぐる根本的な不一致が公開対立に現れた可能性がある。",
+            "controlling_entity_ids": [
+              "0196d7bd-c39d-4027-a73b-6dad95aa8357"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "米国内の支援疲れやトランプの国内政治計算、ロシア・第三国の反応など、ウクライナ側以外の動機は直接説明しない。",
+            "control_structure_summary": null
+          },
+          {
+            "key_point": "米国内のウクライナ支援疲れ・財政負担への政治的反発",
+            "control_type": "mixed",
+            "what_it_explains": "トランプが支援停止という強いカードを切る政治的インセンティブ。国内向けに「無条件支援ではない」と示す必要性。",
+            "why_it_could_be_key": "トランプ政権下では、ウクライナ支援に批判的な世論・議会勢力が存在し、支援の条件付き化・縮小を求める圧力があるとされる。これが支援停止という行動を後押しした可能性。",
+            "controlling_entity_ids": [
+              "c93580fd-99b1-44d9-b924-beb89a2e8378"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "ジェッダ協議での迅速な正常化や、鉱物資源合意そのものの内容・破談理由の詳細は直接説明しない。",
+            "control_structure_summary": "トランプ政権の裁量に加え、議会・支持層・メディア世論が支援のあり方を制約している構造。"
+          },
+          {
+            "key_point": "ロシアの戦場・外交上の動き（攻勢・停戦シグナル）が米・ウクライナ双方の交渉ポジションを制約していること",
+            "control_type": "structural",
+            "what_it_explains": "なぜこのタイミングで鉱物資源合意・停戦条件が前面に出たのか、ロシア側の反応がどのように利用されるか。",
+            "why_it_could_be_key": "戦況の悪化やロシアの停戦提案が、米国に「早期合意」を促し、ウクライナに「不利な停戦拒否」を促すなど、双方の立場を引き寄せる・引き離す力として働く。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "オーバルオフィスでの公開口論や支援停止という具体的な米側の手法選択は直接説明しない。",
+            "control_structure_summary": "戦場の状況とロシアの外交シグナルが、米・ウクライナ双方の選択肢を制約する構造的要因。"
+          }
+        ],
+        "disconfirming_signal": "今後、米国がウクライナ支援・情報共有を一切交渉カードとして使わず、支援の強度が国内政治・予算要因のみで漸進的に変化し、特定の交渉局面（停戦・資源合意等）と連動しないことが確認されれば、この局面を「支援のカード化」をKey Pointと見る見立ては誤りだったと判断する必要がある。",
+        "controlling_entity_ids": [
+          "c93580fd-99b1-44d9-b924-beb89a2e8378"
+        ],
+        "supporting_evidence_ids": null,
+        "control_structure_summary": null,
+        "contradicting_evidence_ids": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "オーバルオフィス会談の具体的内容、支援停止の実質的範囲、ジェッダ協議での合意内容など、核心的事実がこのSource Packには含まれておらず、仮説は暫定的である。これらが確認されるまでは、主シナリオの確信度は中にとどめるべき。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "支援停止は主に米国内の支援疲れ・財政負担への対応であり、オーバルオフィスでの対立は象徴的事件だった。今後は支援が漸進的に縮小・条件付き化されるが、停戦交渉における『支援のカード化』は限定的で、技術的・軍事的支援調整が中心となる。",
+          "switch_conditions": [
+            "国防総省・ホワイトハウスが支援停止を純粋に技術的・予算的理由と説明し、交渉カードとしての性格を一貫して否定し、その後の行動もそれを裏付ける。"
+          ],
+          "weakening_conditions": [
+            "支援停止が戦場に明確な影響を与えたことが確認される。",
+            "今後の支援パッケージに停戦条件・資源合意・選挙などの具体的条件が紐づけられる。"
+          ],
+          "strengthening_conditions": [
+            "支援停止の範囲がごく限定的で、戦場への影響がほとんどなかったことが確認される。",
+            "今後の支援パッケージが停戦・資源合意など特定交渉局面と連動せず、予算・世論要因のみで調整される。",
+            "トランプ政権が他の同盟国に対して支援オン・オフを交渉カードとして用いる事例がほとんど見られない。"
+          ]
+        },
+        {
+          "confidence": "中",
+          "description": "オーバルオフィスでの対立はゼレンスキーのレッドライン維持が主因であり、米側の支援カード化は限定的だった。ウクライナが停戦条件レッドラインを維持し続けることで米国との緊張が再燃し、欧州・サウジ・トルコなど第三国が仲介役として停戦交渉の中心に浮上し、米国の役割が相対的に低下する。",
+          "switch_conditions": [
+            "第三国主導の停戦枠組み案が具体化し、米国がそれを追認する形で関与する兆候が現れる。"
+          ],
+          "weakening_conditions": [
+            "ゼレンスキーが停戦条件に関する発言トーンを軟化させ、米国案に沿った妥協を受け入れる。",
+            "第三国仲介フォーマットが停戦交渉の中心にならず、最終的な枠組みが米国・NATO主導で決まる。"
+          ],
+          "strengthening_conditions": [
+            "ゼレンスキーが今後も停戦条件に関して米国と公開対立を繰り返す。",
+            "欧州・サウジアラビア・トルコなどが停戦仲介で主導的役割を強め、ジェッダ協議のような第三国主導フォーマットが増える。",
+            "米国内でウクライナ支援への懐疑が強まり、米国が停戦交渉の前面に出ることを避ける。"
+          ]
+        }
+      ],
+      "monitoring_indicators": [
+        "今後の対ウクライナ支援パッケージに付随する条件（鉱物資源・停戦・選挙など）の有無。",
+        "米国内でのウクライナ支援に関する世論・議会動向。",
+        "ゼレンスキーの停戦条件・資源合意に関する発言のトーン変化。",
+        "ロシアの戦場行動・停戦シグナルの強度。",
+        "欧州・NATOの独自支援拡大・停戦仲介の動き。"
+      ],
+      "retraction_conditions": [
+        "今後の資料で、支援停止が純粋に技術的・予算的理由によるものであり、鉱物資源合意・停戦条件とは無関係だったことが一次情報で確認される。",
+        "トランプ・ゼレンスキー双方が、オーバルオフィスでの対立が誤解・感情的衝突であり、政策・交渉方針とは無関係だったと一貫して説明し、その後の行動もそれを裏付ける。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "5c99bd85-72e8-4278-b431-2c96595a8533",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "支援停止が実際には限定的で、主要兵器・情報共有は継続していたことが確認されれば、「カード化」の実質は弱まり、象徴的シグナルとしての性格が強まる。",
+      "contradicting_evidence": [
+        "支援停止期間中も戦場でのウクライナ側の作戦に大きな変化がなく、支援の実質がほぼ維持されていたとする戦況評価。",
+        "ホワイトハウス・国防総省が支援停止を「技術的調整」「一時的レビュー」と説明し、交渉カードとしての性格を否定する公式発言。"
+      ],
+      "investigation_questions": [
+        {
+          "question": "オーバルオフィス会談での激しい口論の具体的争点は何だったか（鉱物資源合意条項、停戦条件、選挙・国内制度など）。",
+          "rationale": "Key Point・Key Actorの優先順位と交渉立場を精緻化するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "3月3〜11日の支援・情報共有停止の具体的範囲（どの兵器・情報が止まり、どれが継続したか）はどこまで特定できるか。",
+          "rationale": "支援のカード化（Preference-Action Gap）の実質を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ジェッダ協議での『関係正常化』の具体的内容（支援再開条件・鉱物資源合意の再交渉有無）は何か。",
+          "rationale": "主シナリオの前提（条件調整の存在）を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ロシア政府公式・独立系メディアは米・ウクライナ間の対立・支援停止をどのように報じたか。",
+          "rationale": "Media/Source差異とロシア側の利用の仕方（Audience仮説）を確認するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米欧主流メディア・ウクライナ国内メディア・第三国メディアの間で、支援停止の原因・性格（技術的調整 vs 交渉カード）に関するナラティブはどう異なるか。",
+          "rationale": "Media間の解釈差を整理し、どの見方をどの程度重く見るかを評価するため。",
+          "answer_if_yes": null,
+          "question_type": "analytical_question",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "オーバルオフィスでの激しい口論の具体的争点（鉱物資源合意の条項、停戦条件、選挙・国内制度など）。",
+          "gap_category": "deterministic",
+          "recommended_action": "会談内容に関する一次報道・当事者発言・リークの信頼性を比較検証する。"
+        },
+        {
+          "priority": "中",
+          "description": "3月3〜11日の支援・情報共有停止の具体的範囲（どの兵器・情報が止まり、どれが継続したか）。",
+          "gap_category": "deterministic",
+          "recommended_action": "国防総省・ホワイトハウス・ウクライナ側の公式説明と戦場データ（ISW・ACLED等）を照合する。"
+        },
+        {
+          "priority": "高",
+          "description": "ジェッダ協議での「関係正常化」の具体的内容（支援再開条件・鉱物資源合意の再交渉有無）。",
+          "gap_category": "deterministic",
+          "recommended_action": "共同声明・リーク・専門家分析を比較し、どの条件が変更されたかを特定する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "支援停止は交渉カードではなく、米国内の支援疲れ・財政負担への対応として一時的に行われたものであり、オーバルオフィスでの対立も主に個人的感情・コミュニケーションの失敗による偶発的事件だった可能性がある。その場合、支援のカード化をKey Pointとする見立ては過剰な戦略化であり、今後の停戦交渉への影響も限定的となる。",
+      "key_stakeholder_assessment": {
+        "rationale": "この局面を実際に動かしたのは、(1) 対ウクライナ支援・情報共有のオン・オフを決める権限を持つトランプ政権、(2) 戦場での持久力と停戦条件の受容可能範囲を決めるゼレンスキー政権、(3) 戦況と停戦条件の枠組みを左右するロシア（プーチン政権）の三者である。トランプは支援レバーを操作できる、ゼレンスキーは停戦条件のレッドラインを設定できる、プーチンは戦場と停戦提案を通じて両者の選択肢を制約できるため、複数Key Stakeholderとみなすのが妥当。",
+        "confidence": "中",
+        "evidence_ids": null,
+        "determination": "multiple",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "actor_trump",
+          "actor_zelenskyy",
+          "actor_putin"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "actor_trump",
+          "confidence": "中",
+          "evidence_ids": null,
+          "desired_outcome": "譲歩を引き出しつつ、支援負担を調整。",
+          "issue_component": "対ウクライナ軍事支援のオン・オフ",
+          "likely_reaction": "譲歩が得られなければ再度停止を示唆する可能性。",
+          "current_red_line": "完全かつ長期的な支援ゼロ化は避けたい。",
+          "stated_preference": "支援は米国利益と結びつくべき。",
+          "instrumental_value": "negotiating_card",
+          "priority_rationale": "トランプにとって支援オン・オフは国内政治・対ウクライナ交渉双方で主要なレバレッジ。",
+          "currently_tradeable": "支援強度・期間は交渉材料として扱う。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "支援停止・再開のタイミング。",
+          "effect_on_actor_objective": "支援停止は国内支持層へのアピールと、ウクライナへの譲歩圧力に資するが、同盟信頼性低下リスクも伴う。",
+          "estimated_real_preference": "支援を完全にはやめず、カードとして調整したい。",
+          "alternative_interpretation": "単なる支援疲れ対応であり、交渉カードではない。",
+          "primary_binding_constraint": "議会・同盟国からの圧力。",
+          "issue_component_description": "支援・情報共有を停止・再開する裁量。",
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "actor_zelenskyy",
+          "confidence": "中",
+          "evidence_ids": null,
+          "desired_outcome": "検証可能な保証と戦犯追及を伴う停戦。",
+          "issue_component": "停戦条件（領土・検証・安全保障保証）",
+          "likely_reaction": "強い圧力下でも核心条件では譲歩を拒否。",
+          "current_red_line": "検証なき停戦・重大な領土譲歩。",
+          "stated_preference": "不利な停戦は受け入れない。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "国家生存・主権に直結し、ゼレンスキーの正統性の核心。",
+          "currently_tradeable": "細部の実施時期・形式は交渉余地あり。",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": null,
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "戦場持久戦と国際世論。",
+          "effect_on_actor_objective": "不利な停戦受け入れは目的に反し、レッドライン維持は国内支持を維持する。",
+          "estimated_real_preference": "レッドラインは維持しつつ、周辺条件で妥協。",
+          "alternative_interpretation": "国内向けの強硬ポーズであり、実際にはより柔軟。",
+          "primary_binding_constraint": "戦場状況・同盟支援依存。",
+          "issue_component_description": "ロシア停戦案の受容条件。",
+          "alternative_interpretation_status": "weak"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "actor_trump",
+          "confidence": "低",
+          "evidence_ids": null,
+          "desired_outcome": "米企業に有利な鉱物資源アクセス。",
+          "issue_component": "鉱物資源合意",
+          "likely_reaction": "合意が得られなければ他のカードを模索。",
+          "current_red_line": "米国にとって極端に不利な条件は避けたい。",
+          "stated_preference": "米国の利益を守る資源合意。",
+          "instrumental_value": "mixed",
+          "priority_rationale": "国内製造業・雇用保護と結びつくが、停戦条件ほどではない。",
+          "currently_tradeable": "資源条件は停戦・支援とパッケージ交渉可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "支援オン・オフ。",
+          "effect_on_actor_objective": "有利な資源合意は国内経済・政治にプラス。",
+          "estimated_real_preference": "資源合意を停戦・支援とリンクさせたい。",
+          "alternative_interpretation": "資源合意は象徴的で、実質は小さい。",
+          "primary_binding_constraint": "ウクライナ側のレッドライン。",
+          "issue_component_description": "ウクライナ鉱物資源の対米供与条件。",
+          "alternative_interpretation_status": "unsupported"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "actor_zelenskyy",
+          "confidence": "低",
+          "evidence_ids": null,
+          "desired_outcome": "主権尊重・公平な条件の資源合意。",
+          "issue_component": "鉱物資源合意",
+          "likely_reaction": "主権侵害と受け止められる条件には強く反発。",
+          "current_red_line": "主権を損なうような資源譲歩。",
+          "stated_preference": "公平な資源合意。",
+          "instrumental_value": "instrumental",
+          "priority_rationale": "経済再建に重要だが、主権・停戦条件ほどではない。",
+          "currently_tradeable": "価格・投資条件などは交渉可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "資源の希少性。",
+          "effect_on_actor_objective": "有利な資源合意は再建に資するが、不利な条件は主権・国内支持を損なう。",
+          "estimated_real_preference": "支援と引き換えに一定の譲歩も検討し得るが、主権侵害は拒否。",
+          "alternative_interpretation": "資源合意は停戦条件と不可分であり、実質的レッドラインの一部。",
+          "primary_binding_constraint": "国内世論・主権意識。",
+          "issue_component_description": "ウクライナ鉱物資源の対米供与条件。",
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "actor_trump",
+          "confidence": "中",
+          "evidence_ids": null,
+          "desired_outcome": "『責任ある支援縮小』のイメージ。",
+          "issue_component": "米国内支援疲れ・財政負担",
+          "likely_reaction": "世論動向に応じて支援調整を強調。",
+          "current_red_line": "支持層が『無制限支援』と感じる状況。",
+          "stated_preference": "米国負担の軽減。",
+          "instrumental_value": "domestic_signal",
+          "priority_rationale": "選挙・支持率に直結。",
+          "currently_tradeable": "支援規模・期間は国内政治状況に応じて調整。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "支援条件の公表。",
+          "effect_on_actor_objective": "支援疲れに応える姿勢は支持層維持に資する。",
+          "estimated_real_preference": "支援を完全にはやめず、負担軽減を示したい。",
+          "alternative_interpretation": "支援疲れは誇張されており、実際には安全保障懸念が優先。",
+          "primary_binding_constraint": "選挙・支持率。",
+          "issue_component_description": "有権者・議会のウクライナ支援への態度。",
+          "alternative_interpretation_status": "weak"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "actor_putin",
+          "confidence": "低",
+          "evidence_ids": null,
+          "desired_outcome": "自国有利な戦果固定化とNATO拡大阻止。",
+          "issue_component": "ロシアの戦場行動・停戦シグナル",
+          "likely_reaction": "米・ウクライナ間亀裂を利用して自国案を押し出す。",
+          "current_red_line": "ウクライナのNATO加盟。",
+          "stated_preference": "NATO拡大阻止。",
+          "instrumental_value": "mixed",
+          "priority_rationale": "戦争の帰趨と停戦条件に直結。",
+          "currently_tradeable": "停戦条件の細部は交渉余地あり。",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": null,
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "戦場攻勢・停戦提案。",
+          "effect_on_actor_objective": "攻勢は戦果固定化に資し、停戦シグナルは制裁緩和・戦果承認を狙う。",
+          "estimated_real_preference": "戦果を最大化しつつ、制裁緩和を得たい。",
+          "alternative_interpretation": "停戦シグナルは主に第三国向けのイメージ戦略。",
+          "primary_binding_constraint": "制裁・経済負担。",
+          "issue_component_description": "攻勢・停戦提案が米・ウクライナ双方に与える影響。",
+          "alternative_interpretation_status": "plausible"
+        }
+      ],
+      "decisive_power_and_leverage": "この局面全体を決定づける力は、最終的には「米国の対ウクライナ支援のオン・オフを決める権限を持つトランプ政権」と、「戦場での持久力と停戦条件の受容可能範囲を決めるウクライナ側（ゼレンスキー政権）」の相互作用にある。ロシアは戦況とエスカレーションリスクを通じて間接的にこの相互作用を制約し、欧州・NATOは代替支援能力と政治的圧力を通じて米国のレバレッジを補完・制約する立場にある。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "トランプについては、ディール志向・レバレッジ重視というPersistent Preferenceと、支援停止を交渉カードとして用いた今回の行動は整合的であり、Gapは小さい。ゼレンスキーについては、停戦条件への不信というレッドライン維持と、オーバルオフィスでの合意破談・公開対立は整合的だが、ジェッダ協議での関係正常化は同盟依存度の高さからの現実的調整として説明できる。プーチンについては、具体的行動がこのSource PackにないためGap評価はできない。"
+    },
+    "created_at": "2026-08-31T05:26:27.339614+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "ee333e5b-0c3f-4e2f-9f0e-6515a9493df5",
+    "response_id": "f596edde-b6f1-4f18-9829-ada4e2e9f1af",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Donald Trump, Volodymyr Zelenskyy, Vladimir Putin, 米国議会（支援法案・予算承認主体）, NATO・欧州主要国, 第三国（サウジアラビア・トルコ・中国など)",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 25,
+    "failed_count": 2,
+    "created_at": "2026-08-31T05:26:27.724138+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 74670,
+    "completion_tokens": 16738,
+    "total_tokens": 91408
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1_initial_failed",
+        "attempts": 1,
+        "success": false,
+        "elapsed_ms": 85922
+      },
+      {
+        "stage": "stage1_recovery",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 76172,
+        "prompt_tokens": 32182,
+        "completion_tokens": 10403
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 48062,
+        "prompt_tokens": 42488,
+        "completion_tokens": 6335
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Donald Trump, Volodymyr Zelenskyy, Vladimir Putin, 米国議会（支援法案・予算承認主体）, NATO・欧州主要国, 第三国（サウジアラビア・トルコ・中国など)"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 244.0779999999795
+}

@@ -1,0 +1,326 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * 2026-09-23追加、ユーザー指摘「サイト全体的にフォントが小さいので読みやすくして」:
+ * 個別コンポーネントのtext-*クラスを一つずつ大きくする対応では反映が薄く不十分
+ * だったため（Button/Input等の共通部品がtext-xs/sm/md:text-smを内部で使っており、
+ * 呼び出し側でtext-*を大きくしても効果が限定的だった）、Tailwindのフォントサイズ
+ * スケール自体をサイト全体（このアプリ全ページ）に対して底上げする。
+ * text-xs〜text-3xlの各値・line-heightを一段階分（+1〜3px、行間も拡大）引き上げ、
+ * text-*クラスを使う全箇所に自動的に反映される。個別ファイルの変更は不要。
+ */
+@theme {
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.4;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.75;
+  --text-lg: 1.1875rem;
+  --text-lg--line-height: 1.8;
+  --text-xl: 1.375rem;
+  --text-xl--line-height: 1.5;
+  --text-2xl: 1.625rem;
+  --text-2xl--line-height: 1.4;
+  --text-3xl: 2rem;
+  --text-3xl--line-height: 1.3;
+}
+
+/*
+ * Design system definition.
+ *
+ * The @theme inline block maps CSS custom properties to Tailwind utility
+ * classes (e.g. --color-primary -> bg-primary, text-primary).
+ *
+ * The :root and .dark blocks define the actual color values using oklch.
+ * All colors MUST use oklch format.
+ *
+ * To add a new semantic color:
+ * 1. Add the variable to :root (light value) and .dark (dark value)
+ * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-serif:
+    "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Instrument Serif",
+    ui-sans-serif, sans-serif;
+  --font-sans:
+    "M PLUS Rounded 1c", "Inter", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-accent-leaf: var(--accent-leaf);
+  --color-accent-earth: var(--accent-earth);
+  --color-accent-sky: var(--accent-sky);
+}
+
+:root {
+  --radius: 0.5rem;
+  /* Editorial cream paper background */
+  --background: oklch(0.985 0.012 95);
+  --foreground: oklch(0.22 0.03 155);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.03 155);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.03 155);
+  /* Deep forest green */
+  --primary: oklch(0.34 0.07 155);
+  --primary-foreground: oklch(0.985 0.012 95);
+  --secondary: oklch(0.94 0.02 100);
+  --secondary-foreground: oklch(0.28 0.05 155);
+  --muted: oklch(0.955 0.014 95);
+  --muted-foreground: oklch(0.5 0.02 150);
+  --accent: oklch(0.92 0.05 130);
+  --accent-foreground: oklch(0.28 0.05 155);
+  --destructive: oklch(0.55 0.2 28);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.89 0.02 100);
+  --input: oklch(0.89 0.02 100);
+  --ring: oklch(0.55 0.1 155);
+  --accent-leaf: oklch(0.62 0.15 145);
+  --accent-earth: oklch(0.55 0.09 60);
+  --accent-sky: oklch(0.62 0.09 220);
+  --chart-1: oklch(0.55 0.15 155);
+  --chart-2: oklch(0.65 0.13 90);
+  --chart-3: oklch(0.55 0.1 220);
+  --chart-4: oklch(0.6 0.13 55);
+  --chart-5: oklch(0.5 0.15 300);
+  --sidebar: oklch(0.28 0.045 155);
+  --sidebar-foreground: oklch(0.93 0.02 95);
+  --sidebar-primary: oklch(0.75 0.13 130);
+  --sidebar-primary-foreground: oklch(0.2 0.03 155);
+  --sidebar-accent: oklch(0.34 0.05 155);
+  --sidebar-accent-foreground: oklch(0.985 0.012 95);
+  --sidebar-border: oklch(0.36 0.04 155);
+  --sidebar-ring: oklch(0.75 0.13 130);
+}
+
+.dark {
+  --background: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.984 0.003 247.858);
+  --card: oklch(0.208 0.042 265.755);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.929 0.013 255.508);
+  --primary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.279 0.041 260.031);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.279 0.041 260.031);
+  --muted-foreground: oklch(0.704 0.04 256.788);
+  --accent: oklch(0.279 0.041 260.031);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.551 0.027 264.364);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.208 0.042 265.755);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.279 0.041 260.031);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  .font-serif,
+  h1.editorial,
+  h2.editorial,
+  h3.editorial {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+@utility text-editorial {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+@utility card-paper {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 1px 0 rgb(0 0 0 / 0.02),
+    0 8px 24px -12px rgb(60 40 20 / 0.08);
+}
+
+/*
+ * .geo-shell — Geo Intelligence Platform配色スコープ。
+ *
+ * geo.*ページ（Geopoloticaldashboard_design.htmlのUIデザイン）専用のトークン上書き。
+ * :root/.dark同様の仕組みで、既存の意味トークン（--background/--card/--border/--muted/
+ * --foreground/--sidebar系）をこのセレクタ配下でのみ上書きする。@theme inlineが
+ * `--color-X: var(--X)`という実行時参照になっているため、bg-background/card-paper/
+ * bg-sidebar-primary等、既存クラス名は一切変更せずに配色だけこの範囲でリスキンできる。
+ * 非geoページ（article/category/competitors等）はこのクラスの外側にあるため無影響。
+ */
+.geo-shell {
+  font-family: var(--font-sans);
+
+  --background: oklch(0.965 0.003 220);
+  --foreground: oklch(0.21 0.02 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.02 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.02 250);
+  --primary: oklch(0.48 0.09 180);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.004 220);
+  --secondary-foreground: oklch(0.21 0.02 250);
+  --muted: oklch(0.94 0.004 220);
+  --muted-foreground: oklch(0.52 0.015 240);
+  --accent: oklch(0.93 0.02 180);
+  --accent-foreground: oklch(0.21 0.02 250);
+  --destructive: oklch(0.48 0.15 15);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9 0.005 220);
+  --input: oklch(0.9 0.005 220);
+  --ring: oklch(0.48 0.09 180);
+  --sidebar: oklch(0.19 0.035 252);
+  --sidebar-foreground: oklch(0.85 0.01 240);
+  --sidebar-primary: oklch(0.48 0.09 180);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.25 0.03 250);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.25 0.03 250);
+  --sidebar-ring: oklch(0.48 0.09 180);
+
+  /* Geo Intelligence Platformデザイン固有トークン（bg-geo-navy, text-geo-teal等として使用可） */
+  --geo-navy: oklch(0.19 0.035 252);
+  --geo-navy-2: oklch(0.23 0.035 250);
+  --geo-teal: oklch(0.48 0.09 180);
+  --geo-teal-soft: oklch(0.95 0.02 180);
+  --geo-red: oklch(0.48 0.15 15);
+  --geo-red-soft: oklch(0.94 0.02 20);
+  --geo-amber: oklch(0.52 0.13 65);
+  --geo-amber-soft: oklch(0.96 0.035 85);
+  --geo-green: oklch(0.47 0.1 150);
+  --geo-green-soft: oklch(0.95 0.025 150);
+  --geo-violet: oklch(0.46 0.13 300);
+  --geo-violet-soft: oklch(0.94 0.02 300);
+  --geo-ink: oklch(0.21 0.02 250);
+  --geo-faint: oklch(0.64 0.015 240);
+}
+
+@theme inline {
+  --color-geo-navy: var(--geo-navy);
+  --color-geo-navy-2: var(--geo-navy-2);
+  --color-geo-teal: var(--geo-teal);
+  --color-geo-teal-soft: var(--geo-teal-soft);
+  --color-geo-red: var(--geo-red);
+  --color-geo-red-soft: var(--geo-red-soft);
+  --color-geo-amber: var(--geo-amber);
+  --color-geo-amber-soft: var(--geo-amber-soft);
+  --color-geo-green: var(--geo-green);
+  --color-geo-green-soft: var(--geo-green-soft);
+  --color-geo-violet: var(--geo-violet);
+  --color-geo-violet-soft: var(--geo-violet-soft);
+  --color-geo-ink: var(--geo-ink);
+  --color-geo-faint: var(--geo-faint);
+}
+
+@utility geo-heading {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+@utility geo-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 1px 2px rgb(15 28 41 / 0.04),
+    0 8px 28px rgb(15 28 41 / 0.05);
+}
+
+/*
+ * 2026-09-23追加、ユーザー指摘「ダッシュボード全体の可読性を改善してください」
+ * （ニュース本文並みの文字サイズ・行間・コントラストにする）への対応。
+ *
+ * 個別ページに文字色・行間・横幅をベタ書きせず、共通token化する:
+ * - geo-prose: Reading description/Reasoning Story/Evidence summary/AIチャット/
+ *   Review文章などの長文本文に使う。text-muted-foreground等の薄い色ではなく
+ *   本文用の濃い色（--geo-ink相当）、1.8行間、1行60〜80字程度に収まる横幅
+ *   （68ch）を一括で与える。個別ファイルでcolor/line-height/max-widthを
+ *   ベタ書きする代わりにこのクラス1つを付ける。
+ * - geo-meta: metadata/tag/補助情報用。本文(geo-prose)よりはっきり小さく・薄く
+ *   することで、本文とmetadataのコントラストを明確にする。
+ */
+@utility geo-prose {
+  color: var(--geo-ink, var(--foreground));
+  line-height: 1.8;
+  max-width: 68ch;
+}
+
+@utility geo-meta {
+  color: var(--geo-faint, var(--muted-foreground));
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}

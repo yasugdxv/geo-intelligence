@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GeoExpertAIRequest",
+  "description": "地政学専門家AIへのリクエスト（指示書14.5章）",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": [
+        "theme_design",
+        "research_design",
+        "case_analysis",
+        "outline_review",
+        "draft_review",
+        "executive_brief",
+        "analyst_coaching",
+        "draft_generation"
+      ],
+      "description": "地政学専門家AIの8モードのいずれか"
+    },
+    "theme_id": {
+      "type": ["string", "null"],
+      "description": "対象テーマのgeo_themes.theme_id。指定なしの場合はテーマ横断で参照情報を集める"
+    },
+    "query_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "依頼内容の自由記述"
+    },
+    "draft_text": {
+      "type": ["string", "null"],
+      "description": "outline_review/draft_reviewモードでレビュー対象とする構成案・ドラフト本文"
+    }
+  },
+  "required": ["mode", "query_text"]
+}

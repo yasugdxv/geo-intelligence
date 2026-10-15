@@ -1,0 +1,39 @@
+================================================================================
+CASE: HORMUZ_TOLL_SESSION1  Frontier=H4(H4_frame_breaking)
+================================================================================
+  [reading_portfolio] alternative_causal_structure: weight=0.500 rel=0.0817 score=0.5082 <== pre-tiebreak best
+  [reading_portfolio] premise_reversal: weight=0.500 rel=0.0762 score=0.5076 <== runner-up
+  [hypothesis_register] H2:H2_counterparty_audience_shift: weight=0.450 rel=0.0435 score=0.4543
+  [reading_portfolio] wildcard_non_obvious: weight=0.100 rel=0.0769 score=0.1077
+  gap = 0.0006  near_tie(<= 0.03)=True
+  FINAL SELECTED: [reading_portfolio] ホルムズ海峡を「対イラン交渉レバー」に変える試みとしての守護者宣言
+
+================================================================================
+CASE: HORMUZ_BLOCKADE_SESSION3  Frontier=H2(H2_counterparty_audience_shift)
+================================================================================
+  [reading_portfolio] alternative_causal_structure: weight=0.500 rel=0.0876 score=0.5088 <== pre-tiebreak best
+  [reading_portfolio] premise_reversal: weight=0.500 rel=0.0489 score=0.5049 <== runner-up
+  [hypothesis_register] H1:H1_instrumental_indirect: weight=0.300 rel=0.0889 score=0.3089
+  [reading_portfolio] wildcard_non_obvious: weight=0.100 rel=0.0813 score=0.1081
+  gap = 0.0039  near_tie(<= 0.03)=True
+  FINAL SELECTED: [reading_portfolio] ホルムズ封鎖カードは「交渉破綻時の戦争抑止」用バックストップとして温存される読み
+
+================================================================================
+CASE: RUSSIA_SANCTIONS_SESSION2  Frontier=H4(H4_frame_breaking)
+================================================================================
+  [reading_portfolio] alternative_causal_structure: weight=0.500 rel=0.0617 score=0.5062 <== pre-tiebreak best
+  [reading_portfolio] premise_reversal: weight=0.500 rel=0.0462 score=0.5046 <== runner-up
+  [hypothesis_register] H2:H2_counterparty_audience_shift: weight=0.450 rel=0.0308 score=0.4531
+  [reading_portfolio] wildcard_non_obvious: weight=0.100 rel=0.0349 score=0.1035
+  gap = 0.0016  near_tie(<= 0.03)=True
+  FINAL SELECTED: [reading_portfolio] 『対ロ制裁』よりも『国内権力配分』の再調整としての法案前進
+
+================================================================================
+CASE: US_CHINA_AI_SEMICON_SESSION2  Frontier=H4(H4_frame_breaking)
+================================================================================
+  [reading_portfolio] alternative_causal_structure: weight=0.500 rel=0.0407 score=0.5041 <== pre-tiebreak best
+  [reading_portfolio] premise_reversal: weight=0.500 rel=0.0344 score=0.5034 <== runner-up
+  [hypothesis_register] H2:H2_counterparty_audience_shift: weight=0.450 rel=0.0416 score=0.4542
+  [reading_portfolio] wildcard_non_obvious: weight=0.100 rel=0.0374 score=0.1037
+  gap = 0.0006  near_tie(<= 0.03)=True
+  FINAL SELECTED: [reading_portfolio] 『AIそのもの』よりも「AIが支える中国の産業・金融構造」を狙った管理線

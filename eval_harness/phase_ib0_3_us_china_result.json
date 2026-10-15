@@ -1,0 +1,379 @@
+{
+  "case_id": "ib0-3-us-china-absence-signal",
+  "theme": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。",
+  "t0_date": "2026-05-12",
+  "evaluation_mode": "retrospective_proxy_directional_as_of_filtered",
+  "harness": "eval_harness.AsOfEvaluationClient",
+  "case_family": "Family C: US-China summit / absence-anomaly detection (independent of Family A=Hungary and Family B=BC Strategy/Iran)",
+  "blinding_note": "T0 theme states ONLY the objective, publicly-knowable delegation roster fact (Tim Cook/Larry Fink/Schwarzman) and the planned-summit timing (a scheduled fact, not an outcome). Does NOT state or hint at Eguchi's own interpretive move (that the ABSENCE of auto/pharma representation is itself the significant signal) -- that interpretive leap, if made, must come from the AI itself.",
+  "notes": "Phase I-B0.3: production pipeline run unmodified, DB client substituted with an as-of-date-filtering read proxy. NOT an 'AI output reviewed by expert' case, NOT Phase I-B1.",
+  "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+  "timings_sec": {
+    "generate_scenarios": 81.5
+  },
+  "cqas_all_candidates": [
+    {
+      "scenario_candidate_id": "62b58320-9517-4667-acbb-884ce51c95ad",
+      "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+      "rank": 1,
+      "title": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テク",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "米中双方が経済・投資関係の安定化・再構築に一定のインセンティブを持っている。",
+            "企業・金融トップの同行は象徴的な意味だけでなく、何らかの実務的議題・期待を伴っている。"
+          ],
+          "description": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テクノロジー・資本市場・投資フローの再調整』の場として位置づける動きと見るのが最も整合的である。米中双方は、完全なデカップリングではなく、分野ごとの選別的関与・再構築を模索しており、企業・金融界を巻き込んだ形で対中ビジネス・投資関係の新たな枠組みを探る可能性がある。ただし、具体的な議題・合意内容が不明なため、確信度は低にとどまる。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+          "supporting_evidence": [
+            "VISIT_DELEGATION_COMPOSITION"
+          ],
+          "observable_indicators": [
+            "共同声明や事後発表で、関税・輸出管理・対中投資規制・サプライチェーン・金融市場に関する具体的な合意・協議枠組みが示されるか。",
+            "Apple・BlackRock・Blackstoneが訪中後に、中国での投資・製造・サービス展開に関する具体的な動きやコメントを出すか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": false,
+              "description": "過去の米中首脳会談や首脳訪問に企業トップが同行し、関税・投資・市場アクセスに関する合意や協議枠組みが形成された事例一般。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": null,
+          "confidence_adjustment_reason": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+          "中国指導部"
+        ],
+        "source_cqas": {
+          "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+          "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+        },
+        "why_this_matters": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+        "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:48:45.413387+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:48:45.78925+00:00"
+    },
+    {
+      "scenario_candidate_id": "6a35bf48-d2ab-4b06-a531-917f9065d633",
+      "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+      "rank": 2,
+      "title": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+          "switch_conditions": [
+            "首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+          "中国指導部"
+        ],
+        "source_cqas": {
+          "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+          "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。",
+        "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:48:45.413387+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:48:45.78925+00:00"
+    },
+    {
+      "scenario_candidate_id": "2b2dbeb4-275d-4c34-86ee-eec3a3afd932",
+      "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+      "rank": 3,
+      "title": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+          "switch_conditions": [
+            "米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+          "中国指導部"
+        ],
+        "source_cqas": {
+          "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+          "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。",
+        "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:48:45.413387+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:48:45.78925+00:00"
+    }
+  ],
+  "cqas_total_candidates": 3,
+  "cqas_displayed_top5": [
+    {
+      "scenario_candidate_id": "62b58320-9517-4667-acbb-884ce51c95ad",
+      "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+      "rank": 1,
+      "title": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テク",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "assumptions": [
+            "米中双方が経済・投資関係の安定化・再構築に一定のインセンティブを持っている。",
+            "企業・金融トップの同行は象徴的な意味だけでなく、何らかの実務的議題・期待を伴っている。"
+          ],
+          "description": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テクノロジー・資本市場・投資フローの再調整』の場として位置づける動きと見るのが最も整合的である。米中双方は、完全なデカップリングではなく、分野ごとの選別的関与・再構築を模索しており、企業・金融界を巻き込んだ形で対中ビジネス・投資関係の新たな枠組みを探る可能性がある。ただし、具体的な議題・合意内容が不明なため、確信度は低にとどまる。",
+          "evidence_class": "model_general_knowledge",
+          "evidence_relevance": [],
+          "selection_rationale": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+          "supporting_evidence": [
+            "VISIT_DELEGATION_COMPOSITION"
+          ],
+          "observable_indicators": [
+            "共同声明や事後発表で、関税・輸出管理・対中投資規制・サプライチェーン・金融市場に関する具体的な合意・協議枠組みが示されるか。",
+            "Apple・BlackRock・Blackstoneが訪中後に、中国での投資・製造・サービス展開に関する具体的な動きやコメントを出すか。"
+          ],
+          "historical_analogies_used": [
+            {
+              "same_actor": false,
+              "description": "過去の米中首脳会談や首脳訪問に企業トップが同行し、関税・投資・市場アクセスに関する合意や協議枠組みが形成された事例一般。",
+              "same_domain": true,
+              "analogy_strength": "medium",
+              "same_constraints": false,
+              "same_leverage_mechanism": true,
+              "analogy_source_precedent_id": null,
+              "same_institutional_structure": true
+            }
+          ],
+          "derived_from_hypothesis_id": null,
+          "confidence_adjustment_reason": null,
+          "relevance_confidence_adjustment_reason": null
+        },
+        "origin": "main_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+          "中国指導部"
+        ],
+        "source_cqas": {
+          "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+          "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+        },
+        "why_this_matters": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+        "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:48:45.413387+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:48:45.78925+00:00"
+    },
+    {
+      "scenario_candidate_id": "6a35bf48-d2ab-4b06-a531-917f9065d633",
+      "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+      "rank": 2,
+      "title": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+      "content": {
+        "raw": {
+          "confidence": "判断不能",
+          "description": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+          "switch_conditions": [
+            "首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "判断不能",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+          "中国指導部"
+        ],
+        "source_cqas": {
+          "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+          "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。",
+        "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:48:45.413387+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:48:45.78925+00:00"
+    },
+    {
+      "scenario_candidate_id": "2b2dbeb4-275d-4c34-86ee-eec3a3afd932",
+      "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+      "rank": 3,
+      "title": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+      "content": {
+        "raw": {
+          "confidence": "低",
+          "description": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+          "switch_conditions": [
+            "米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。"
+          ]
+        },
+        "origin": "alternative_scenario",
+        "main_lens": null,
+        "confidence": "低",
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+          "中国指導部"
+        ],
+        "source_cqas": {
+          "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+          "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+        },
+        "why_this_matters": "この分岐が有力になる条件: 米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。",
+        "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+      },
+      "displayed": true,
+      "selected": false,
+      "generated_at": "2026-09-16T09:48:45.413387+00:00",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "prompt_version": "geo-expert-v1.2-staged-phaseA",
+      "cqas_knowledge_version": "3b31db8e2355",
+      "created_at": "2026-09-16T09:48:45.78925+00:00"
+    }
+  ],
+  "selected_scenario_candidate_id": "62b58320-9517-4667-acbb-884ce51c95ad",
+  "selected_scenario_rank": 1,
+  "analysis_design": {
+    "analysis_design_id": "b45337d8-ef3f-4f9c-acba-01fc8a099ebc",
+    "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+    "version": 1,
+    "investigation_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。",
+    "scope": null,
+    "key_actors": [
+      "トランプ大統領（米国）",
+      "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+      "中国指導部"
+    ],
+    "analytical_lenses": [],
+    "hypotheses": [
+      "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テクノロジー・資本市場・投資フローの再調整』の場として位置づける動きと見るのが最も整合的である。米中双方は、完全なデカップリングではなく、分野ごとの選別的関与・再構築を模索しており、企業・金融界を巻き込んだ形で対中ビジネス・投資関係の新たな枠組みを探る可能性がある。ただし、具体的な議題・合意内容が不明なため、確信度は低にとどまる。"
+    ],
+    "alternative_hypotheses": [
+      "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+      "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。"
+    ],
+    "evidence_needed": [
+      "訪中団の正式なメンバーリスト（他に誰が含まれるか、軍・安全保障関係者や他産業の代表の有無）。",
+      "米中首脳会談および訪中団に関する公式議題（経済・投資・テクノロジー・金融のどの分野が含まれるか）。",
+      "Apple・BlackRock・Blackstoneが今回の訪中で想定している具体的な目的（投資案件、規制緩和要望、サプライチェーン協議など）。"
+    ],
+    "known_evidence": [
+      "VISIT_DELEGATION_COMPOSITION"
+    ],
+    "knowledge_gaps": [
+      "訪中団の正式なメンバーリスト（他に誰が含まれるか、軍・安全保障関係者や他産業の代表の有無）。",
+      "米中首脳会談および訪中団に関する公式議題（経済・投資・テクノロジー・金融のどの分野が含まれるか）。",
+      "Apple・BlackRock・Blackstoneが今回の訪中で想定している具体的な目的（投資案件、規制緩和要望、サプライチェーン協議など）。"
+    ],
+    "watch_points": [
+      "訪中団の正式メンバーリストと肩書き（軍・安全保障関係者、他産業代表の有無）。",
+      "米中首脳会談前後の公式議題・共同声明における経済・投資・テクノロジー・金融関連項目の有無・比重。",
+      "Apple・BlackRock・Blackstoneによる訪中前後のコメント（対中投資・サプライチェーン・規制に関する発言）。",
+      "米中間で新たに発表される関税・輸出管理・対中投資規制の変更や協議枠組み。"
+    ],
+    "report_structure": {},
+    "confidence": "低",
+    "assumptions": [
+      "米中双方が経済・投資関係の安定化・再構築に一定のインセンティブを持っている。",
+      "企業・金融トップの同行は象徴的な意味だけでなく、何らかの実務的議題・期待を伴っている。"
+    ],
+    "change_note": "選択したScenario CandidateのCQAS Runから初版を生成(I-B0.3 as-of run)",
+    "created_by": "phase_ib0_3_retrospective_proxy",
+    "created_at": "2026-09-16T09:48:48.171364+00:00"
+  },
+  "as_of_audit_report": {
+    "as_of_date": "2026-05-12",
+    "tables": {
+      "geo_events": {
+        "policy": "_policy_geo_events",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_documents": {
+        "policy": "_policy_geo_documents",
+        "included_count": 0,
+        "excluded_future_count": 4,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_sessions": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 3,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_scenario_candidates": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 2,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_expert_responses": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 1,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      },
+      "geo_ios_analysis_designs": {
+        "policy": "_policy_passthrough_no_filter",
+        "included_count": 0,
+        "excluded_future_count": 0,
+        "excluded_unverified_count": 0
+      }
+    }
+  },
+  "write_passthrough_op_count": 15
+}

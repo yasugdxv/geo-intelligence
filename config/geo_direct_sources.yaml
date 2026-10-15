@@ -1,0 +1,226 @@
+# GEO_DIRECT_COLLECTION_V1: Geo側の直接取得（Direct Collection）の取得口設定。
+#
+# Sourceの「同一性・承認ゲート」は Geo Source Registry（geo_source_registry / geo_source_domains）が正。
+# ここには Registryに置き場の無い「取得口（endpoint）」と「Geo向けの取得方針」だけを宣言する。
+# （Collection Endpoint用のテーブルは作らない方針のため。Source IDはここに書かない＝domainで引く）
+#
+# Sustainability / ERM の設定・記事は参照しない。同じSourceでも、Geoは Geo観点で取得する。
+# 取得を有効にするには Registry側で automation_allowed=true（steward承認）が必要。
+
+version: 1
+
+rss_sources:
+  mod_japan:
+    registry_domain: mod.go.jp
+    feed_url: https://www.mod.go.jp/j/rss/news.xml
+    language: ja
+    max_items: 100
+    # Geo向け方針: 防衛省の報道発表は全件がGeo関連（台湾・中国・日米同盟・南西諸島）。keyword絞り込みなし。
+    policy: {include_any: [], exclude_any: []}
+    cadence: every_6_hours
+
+  iaea:
+    registry_domain: iaea.org
+    feed_url: https://www.iaea.org/feeds/news
+    language: en
+    max_items: 100
+    # IAEAの発信は核（イラン・北朝鮮・ザポリージャ）に関するものが中心。全件を対象にする。
+    policy: {include_any: [], exclude_any: []}
+    cadence: every_6_hours
+
+  wto:
+    registry_domain: wto.org
+    feed_url: https://www.wto.org/library/rss/latest_news_e.xml
+    language: en
+    max_items: 50
+    # Geo向け方針: 貿易制限・輸出規制・紛争・経済安保に関わるものを優先（決定的なkeyword。AI判定なし）。
+    # 行事・研修系のニュースは取り込まない。
+    policy:
+      include_any: [dispute, panel, tariff, restriction, export, import, subsid, sanction, security, china, united states,
+                    european union, "eu ", trade policy, trade war, supply chain, semiconductor, critical, retaliat, safeguard,
+                    anti-dumping, countervailing, wto reform, ministerial, forecast, trade outlook, goods trade]
+      exclude_any: [webinar, internship, "e-learning", "call for", "job vacanc"]
+    cadence: every_6_hours
+
+  # ---- Wave 2（2026-10-06）。いずれも既存の汎用Geo RSS Collectorで取得（専用コードなし）----
+  cmf:
+    registry_domain: combinedmaritimeforces.com
+    feed_url: https://combinedmaritimeforces.com/feed/
+    language: en
+    max_items: 50
+    # 多国籍海軍の海上安全保障の公式発表。更新は緩やか（週1〜2件）。全件がGeo関連のため絞り込みなし
+    policy: {include_any: [], exclude_any: []}
+    cadence: every_6_hours
+
+  un_news_me:
+    registry_domain: news.un.org
+    feed_url: https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml
+    language: en
+    max_items: 50
+    policy: {include_any: [], exclude_any: []}          # 地域フィード（中東）で既に絞られている。関連判定はTheme側
+    cadence: every_6_hours
+
+  eia:
+    registry_domain: eia.gov
+    feed_url: https://www.eia.gov/rss/todayinenergy.xml
+    language: en
+    max_items: 50
+    # Geo向け方針: 原油・LNG・海上輸送・中東に関わるものだけ取り込む（EVや米国内電力の記事などは対象外）
+    policy:
+      include_any: [crude, oil, petroleum, LNG, "natural gas exports", tanker, strait, hormuz, "middle east", iran, opec, sanction, shipping, refinery, "energy security"]
+      exclude_any: []
+    cadence: every_6_hours
+
+  ustr:
+    registry_domain: ustr.gov
+    feed_url: https://ustr.gov/rss.xml
+    language: en
+    max_items: 50
+    policy: {include_any: [], exclude_any: []}          # 通商政策の公式発表。関連判定はTheme側
+    cadence: every_6_hours
+
+# 公開HTMLの安定した一覧を決定論でparseする取得口（HTML list）。V1_2: Maersk運航勧告を追加（baseline・更新検知・詳細のmeta description取得）。
+# 1つのSource（Registry）に対する**もう1つのCollection Endpoint**として扱う（別Sourceにしない）。
+#   registry_domain=既存Sourceのdomain（Canonical Source）／origin_section=Provenanceに残す発信部署
+#   parser=コード側の決定論パーサ名（Sourceごとの専用Collectorは作らない）
+html_list_sources:
+  mod_joint_staff:
+    registry_domain: mod.go.jp                          # Canonical Source = 既存の「日本 防衛省（報道発表）」
+    endpoint_name: "統合幕僚監部 HTML list"
+    origin_section: "統合幕僚監部"
+    page_url: https://www.mod.go.jp/js/
+    base_url: https://www.mod.go.jp
+    parser: mod_js_list
+    language: ja
+    max_items: 100
+    # 防衛・安全保障のDirect Sourceとして全件を取得（台湾Pilotだけにhardcodeしない）。関連判定はTheme側
+    policy: {include_any: [], exclude_any: []}
+    cadence: every_6_hours
+
+  maersk_advisories:
+    registry_domain: maersk.com                         # Canonical Source = Maersk 運航勧告（News & Advisories）
+    endpoint_name: "Maersk Advisories HTML list"
+    origin_section: "Maersk News & Advisories"
+    page_url: https://www.maersk.com/news/category/advisories     # クエリなし（robots.txtは /news/category/*? のみ禁止）
+    base_url: https://www.maersk.com
+    parser: maersk_news_list
+    language: en
+    max_items: 60
+    source_role: primary_evidence                       # 企業自身の運航情報（公的な勧告ではない）
+    baseline_on_first_run: true
+    detail: {enabled: true, max_per_run: 12, delay_seconds: 1.0}     # 新規・更新の記事だけ、meta descriptionを要約として取得
+    # 決定論filter（タイトル）: 中東海域の運航勧告。Maerskの一般的な運賃・サービス・各国の手続きのお知らせは対象外
+    policy:
+      include_any: ["middle east", "red sea", "arabian gulf", "persian gulf", "gulf of", "hormuz", "suez", "bab el mandeb", oman, iran, "jebel ali",
+                    fujairah, "khor fakkan", uae, "port suspension", "port closure", djibouti, aden]
+      exclude_any: []
+    cadence: every_6_hours
+
+# Maersk 運航勧告（Shipping / Commercial）。Official Maritime Advisory（UKMTO）や軍（CMF）と同じ役割・重みではない。
+# 同じURLの記事が更新される（Middle East Operational Update等）ためcontent hashで更新を検知。初回の既存記事はbaseline（Alert対象外）。
+# Geo向けの決定論filter（タイトル）: 中東・紅海・湾岸・ホルムズ・スエズ等の運航勧告だけ。全Newsは取得しない（LLM不使用）。
+# ※ このブロックは html_list_sources の下に属する（インデント注意）
+
+# UKMTO（UK Maritime Trade Operations）。RSSではなくincident固有のstructured data（JSON）のためSource専用Collector。
+# **正式に文書化された公開APIではなく、公開Web UI（www.ukmto.org Recent Incidents）が画面表示のために使う公開endpoint**。
+# Known limitation: schema変更リスク / endpoint変更リスク / 可用性の保証なし。GETのみ。write系・管理系は使わない。
+ukmto:
+  registry_domain: sccd.royalnavy.mod.uk                 # canonical domain（alias: ukmto.org）
+  endpoint_url: https://sccd.royalnavy.mod.uk/api/ukmto/all
+  original_page_url: https://www.ukmto.org/recent-incidents
+  language: en
+  min_interval_minutes: 30                               # これより高頻度には取得しない（手動実行も同じ）
+  cadence: every_30_minutes
+
+# 米連邦官報（Federal Register）公式API。AI判定は使わず、機関(agency)と検索語による決定的な絞り込みのみ。
+# Geo / 経済安保で有用な領域: 輸出管理(BIS)・制裁(OFAC/財務省/国務省)・通商(USTR)・国防・半導体・中国。
+federal_register:
+  registry_domain: federalregister.gov
+  api_url: https://www.federalregister.gov/api/v1/documents.json
+  language: en
+  lookback_days: 14          # 初回・通常とも直近14日（再取得してもdedupで重複しない）
+  per_page: 100
+  # 手続き的で情報価値の低い定型文書は取り込まない
+  exclude_any: ["Agency Information Collection Activities", "Sunshine Act", "Privacy Act of 1974; System of Records"]
+  cadence: daily
+  queries:
+    bis_export_control:    {agencies: [industry-and-security-bureau]}
+    ofac_sanctions:        {agencies: [foreign-assets-control-office]}
+    ustr_trade:            {agencies: [trade-representative-office-of-united-states]}
+    state_sanctions:       {agencies: [state-department], term: sanctions}
+    defense_china:         {agencies: [defense-department], term: China}
+    commerce_semiconductor: {agencies: [commerce-department], term: semiconductor}
+    treasury_china:        {agencies: [treasury-department], term: China}
+
+# 構造化された制裁リスト（記事ではない）。geo_sanctions_entries / geo_sanctions_entry_versions に保存する。
+# 初回実行=Baseline（Signal/Alertは作らない）。2回目以降の差分（追加・変更・削除）だけを要約Signal 1件にする。
+sanctions_lists:
+  un_consolidated:
+    registry_domain: scsanctions.un.org
+    url: https://scsanctions.un.org/resources/xml/en/consolidated.xml
+    format: un_xml
+    language: en
+    cadence: daily
+  uk_fcdo:
+    registry_domain: sanctionslist.fcdo.gov.uk
+    url: https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml
+    format: uk_xml
+    language: en
+    cadence: daily
+
+# Coverage-aware Theme Freshness（決定論。LLM不使用）のSource別ルール。キーはRegistryのdomain。
+#   area            : 領域ラベル（表示用）
+#   role            : primary=Themeの鮮度判定に使う一次情報 / auxiliary=補助（鮮度判定の主要Sourceにしない）
+#   freshness_basis : published=最新published_atが期限内かつ取得が健全 / collection=取得が健全であればfresh（制裁リスト等、記事を持たないSource）
+#   stale_after_days: publishedの許容日数（週末を挟む公式発表を考慮して既定3日）
+#   collection_stale_days: 取得（last_successful_ingestion_at）が止まっていると見なす日数
+# 広域メディア（GDELT）はここに含めない（Theme共通の「広域Media」として別に判定する）。
+coverage_areas:
+  mod.go.jp:                 {area: "台湾・日本の防衛（日本 防衛省）", role: primary, freshness_basis: published, stale_after_days: 3, collection_stale_days: 1}
+  iaea.org:                  {area: "核・不拡散（IAEA）", role: primary, freshness_basis: published, stale_after_days: 3, collection_stale_days: 1}
+  federalregister.gov:       {area: "経済安保・輸出管理（米連邦官報: BIS/OFAC/USTR等）", role: primary, freshness_basis: published, stale_after_days: 4, collection_stale_days: 2}
+  scsanctions.un.org:        {area: "制裁（国連安保理）", role: primary, freshness_basis: collection, collection_stale_days: 2}
+  sanctionslist.fcdo.gov.uk: {area: "制裁（英国）", role: primary, freshness_basis: collection, collection_stale_days: 2}
+  wto.org:                   {area: "通商（WTO。公式RSSの更新が不定期なため補助）", role: auxiliary, freshness_basis: published, stale_after_days: 3, collection_stale_days: 1}
+  treasury.gov:              {area: "制裁（米財務省 OFAC。既存Connector）", role: primary, freshness_basis: collection, collection_stale_days: 3}
+  combinedmaritimeforces.com: {area: "海上安全保障（CMF/JMIC。更新は週1〜2件）", role: primary, freshness_basis: published, stale_after_days: 14, collection_stale_days: 1}
+  news.un.org:               {area: "中東（国連ニュース。国連編集の報道＝補助）", role: auxiliary, freshness_basis: published, stale_after_days: 7, collection_stale_days: 1}
+  eia.gov:                   {area: "エネルギー（EIA。原油・LNGの分析＝文脈）", role: auxiliary, freshness_basis: published, stale_after_days: 5, collection_stale_days: 1}
+  ustr.gov:                  {area: "通商（USTR）", role: primary, freshness_basis: published, stale_after_days: 4, collection_stale_days: 1}
+  # UKMTOは事案の「完全な一覧」を返すため、事案が無い期間があっても取得が健全ならfresh（basis=collection）。取得が3時間止まる／直近の取得が失敗ならstale
+  maersk.com:                {area: "海運の運航勧告（Maersk。Shipping / Commercial＝企業情報。鮮度判定に使わない）", role: commercial, freshness_basis: published, stale_after_days: 14, collection_stale_days: 1}
+  sccd.royalnavy.mod.uk:     {area: "海上の事案・警告（UKMTO。Official / Maritime Advisory）", role: primary, freshness_basis: collection, collection_stale_days: 0.125}
+
+# Coverage別 Live Intelligence Status（READY / WARNING / BLOCKED。決定論）の領域定義。
+#   direct: この領域を直接覆うSourceのregistry domain（無ければ広域メディアだけに依存）
+#   READY   : 領域の一次Directがすべて最新、かつ広域メディアも最新
+#   WARNING : 一部は最新（一次Directに最新がある）だが、全体は揃っていない（広域メディア停止・一部Source停止）
+#   BLOCKED : 最新の観測範囲が無い
+live_intelligence_areas:
+  taiwan_japan_defense:     {label: "Taiwan / Japan Defense", direct: [mod.go.jp]}
+  us_economic_security:     {label: "US Economic Security / Export Control", direct: [federalregister.gov]}
+  nuclear_nonproliferation: {label: "Nuclear / Non-proliferation", direct: [iaea.org]}
+  sanctions:                {label: "Sanctions", direct: [scsanctions.un.org, sanctionslist.fcdo.gov.uk, treasury.gov]}
+  trade:                    {label: "Trade", direct: [wto.org, ustr.gov]}
+  # Source数ではなく「種類別」にCoverageを見る。国営・専門・報道Sourceは一次と同じ重みで扱わない（鮮度判定に使わない）
+  middle_east_maritime:
+    label: "Middle East Maritime"
+    direct: [sccd.royalnavy.mod.uk, combinedmaritimeforces.com, maersk.com, news.un.org]
+    categories:
+      official_maritime_advisory: {label: "Official / Maritime Advisory", domains: [sccd.royalnavy.mod.uk]}   # UKMTO
+      military_security:         {label: "Military / Security", domains: [combinedmaritimeforces.com]}
+      shipping_commercial:       {label: "Shipping / Commercial", domains: [maersk.com]}      # Maersk（企業の運航勧告。一次と同じ重みにしない）
+      specialist_media:          {label: "Specialist Media", domains: []}                      # Iran International等（未登録。一次と同じ重みにしない）
+      context_official:          {label: "Context（国連・エネルギー）", domains: [news.un.org, eia.gov]}
+      broad_media:               {label: "Broad Media", broad: true}
+  broad_media:              {label: "Broad Media Discovery", direct: [], broad_only: true}
+
+# 海域の分類（Middle East Maritime系テーマの内訳表示用。DB変更なし）。上から順に判定し、最初に当たった海域にする。
+# Theme scope: 「ホルムズ海峡・中東海上リスク」は Hormuz に加えて Red Sea / Gulf of Oman / Persian(Arabian) Gulf を含む（Red Seaは既存keyword）。
+# Gulf of Aden・Arabian Sea・Indian Ocean等は Wider Middle East（Themeの関連条件には自動では入らない）。
+maritime_regions:
+  - {key: hormuz,             label: "Hormuz",             terms: ["Strait of Hormuz", "Hormuz", "ホルムズ"]}
+  - {key: gulf_of_oman,       label: "Gulf of Oman",       terms: ["Gulf of Oman", "Fujairah", "Khor Fakkan", "Muscat", "オマーン湾"]}
+  - {key: persian_gulf,       label: "Persian / Arabian Gulf", terms: ["Persian Gulf", "Arabian Gulf", "Jebel Ali", "Ras Tanura", "ペルシャ湾", "アラビア湾"]}
+  - {key: red_sea,            label: "Red Sea",            terms: ["Red Sea", "Bab el Mandeb", "Bab-el-Mandeb", "Suez", "紅海"]}
+  - {key: wider_middle_east,  label: "Wider Middle East",  terms: ["Gulf of Aden", "Arabian Sea", "Somali Basin", "Indian Ocean", "Oman", "UAE", "Iran", "Yemen", "Saudi", "Djibouti"]}

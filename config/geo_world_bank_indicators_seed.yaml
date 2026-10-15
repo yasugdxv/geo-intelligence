@@ -1,0 +1,39 @@
+# World Bank Indicators Connector（Phase2A）向けの代表Indicator seed。
+# 実際のIndicator Codeはここで管理し、geo_connector_world_bank.pyへハードコードしない。
+# 追加・変更する場合はこのファイルを編集するだけでよい。
+indicators:
+  - code: SP.POP.TOTL
+    name: Population, total
+    unit: count
+    frequency: annual
+    geographic_scope: country
+  - code: NY.GDP.MKTP.CD
+    name: GDP (current US$)
+    unit: USD
+    frequency: annual
+    geographic_scope: country
+  - code: NY.GDP.MKTP.KD.ZG
+    name: GDP growth (annual %)
+    unit: percent
+    frequency: annual
+    geographic_scope: country
+  - code: NY.GDP.PCAP.CD
+    name: GDP per capita (current US$)
+    unit: USD
+    frequency: annual
+    geographic_scope: country
+  - code: FP.CPI.TOTL.ZG
+    name: Inflation, consumer prices (annual %)
+    unit: percent
+    frequency: annual
+    geographic_scope: country
+  - code: NE.TRD.GNFS.ZS
+    name: Trade (% of GDP)
+    unit: percent
+    frequency: annual
+    geographic_scope: country
+  - code: FI.RES.TOTL.CD
+    name: Total reserves (includes gold, current US$)
+    unit: USD
+    frequency: annual
+    geographic_scope: country

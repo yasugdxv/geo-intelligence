@@ -42,8 +42,10 @@ export const ja: Record<string, string> = {
   "extnet.detail.inferredTopics": "扱われた話題",
   "extnet.detail.inferredRegions": "地域",
   "extnet.detail.inferredActors": "アクター",
-  "extnet.detail.inferredBasis": "あなたが見られる面談ログ{logs}件のAI整理から集計。本人の発言として特定された見解：{views}件",
+  "extnet.detail.inferredBasis": "あなたが見られる面談ログ{logs}件のうち、AI整理済みの{summarized}件から集計。本人の発言として特定された見解：{views}件",
   "extnet.detail.inferredNone": "あなたが見られる面談ログのAI整理がまだ無いため、推定できません。",
+  "extnet.detail.inferredNoSummary":
+    "面談ログ{logs}件はありますが、AI整理がまだ実行されていないため、推定できません。各ログの「AI整理」を実行すると、話題・地域・アクターが集計されます。",
   "extnet.field.memo": "メモ",
   "extnet.field.contacts": "外部コンタクト",
   "extnet.field.date": "面談日",
@@ -172,8 +174,10 @@ export const en: Record<string, string> = {
   "extnet.detail.inferredTopics": "Topics discussed",
   "extnet.detail.inferredRegions": "Regions",
   "extnet.detail.inferredActors": "Actors",
-  "extnet.detail.inferredBasis": "Aggregated from AI summaries of {logs} contact log(s) you can see. Views identified as the person's own: {views}",
+  "extnet.detail.inferredBasis": "Aggregated from the {summarized} AI-summarized log(s) out of the {logs} contact log(s) you can see. Views identified as the person's own: {views}",
   "extnet.detail.inferredNone": "No AI summary of contact logs you can see yet, so nothing can be inferred.",
+  "extnet.detail.inferredNoSummary":
+    "There are {logs} contact log(s), but no AI summary has been run yet, so nothing can be inferred. Run the AI summary on each log to aggregate topics, regions and actors.",
   "extnet.field.memo": "Memo",
   "extnet.field.contacts": "External contacts",
   "extnet.field.date": "Meeting date",

@@ -41,8 +41,10 @@ _WHOLE_ID_PATTERN = re.compile(
     r"^(?:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}|[A-Za-z][A-Za-z0-9]*(?:_[A-Za-z0-9]+)+)$",
     re.IGNORECASE)
 # 仮説ID（H0〜H9）だけを対象にする。H20/H200のような製品名（2桁以上）は消さない。
-_HYP_PAREN_PATTERN = re.compile(r"\bH\d(?!\d)(?:\s*[+＋]\s*H\d(?!\d))*[（(]([^）)]*)[）)]")
-_HYP_WORD_PATTERN = re.compile(r"\bH\d(?!\d)(?:\s*[+＋]\s*H\d(?!\d))*(?:仮説|シナリオ)?")
+_HYP_PAREN_PATTERN = re.compile(r"(?<![A-Za-z0-9_])H\d(?!\d)(?:\s*[+＋]\s*H\d(?!\d))*[（(]([^）)]*)[）)]")
+# 仮説IDに続く内部名（H1_instrumental_indirect 等）も一緒に除く。残ると「この見立て_instrumental_indirect」になる
+_HYP_KEY = r"(?:_[A-Za-z][A-Za-z0-9]*(?:_[A-Za-z0-9]+)*)?"
+_HYP_WORD_PATTERN = re.compile(rf"(?<![A-Za-z0-9_])H\d(?!\d){_HYP_KEY}(?:\s*[+＋]\s*H\d(?!\d){_HYP_KEY})*(?:仮説|シナリオ)?")
 _SCENARIO_LABEL_PREFIX = re.compile(r"^(?:代替|主)シナリオ\d*\s*[：:]\s*")
 _REGISTER_PATTERN = re.compile(r"hypothesis_register(?:の|における|内の|に)?")
 _ANALYSIS_LABEL_PATTERN = re.compile(

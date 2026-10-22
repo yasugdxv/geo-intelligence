@@ -18,6 +18,7 @@ import geo_audit
 import geo_expert_engine
 import geo_expert_schema
 import geo_ios_reading_exposure_composer as reading_exposure_composer
+import geo_ios_title_utils as title_utils
 import geo_ios_reading_portfolio_service as reading_portfolio_service
 
 # 既存7モードの中で、テーマ入力から「何を調査すべきか」を設計する用途に最も近いモード
@@ -92,15 +93,8 @@ _SHORT_TITLE_MAX_LEN = 45
 
 
 def _short_title(description: str) -> str:
-    if not description:
-        return ""
-    for sep in ("。", "、"):
-        idx = description.find(sep)
-        if 0 < idx <= _SHORT_TITLE_MAX_LEN:
-            return description[:idx]
-    if len(description) <= _SHORT_TITLE_MAX_LEN:
-        return description
-    return description[:_SHORT_TITLE_MAX_LEN] + "…"
+    # 共通関数へ集約（2026-10-21）: 文の途中の断片（「現時点では」等）で切らない・内部ラベルを外す
+    return title_utils.short_title(description, _SHORT_TITLE_MAX_LEN)
 
 
 def _normalize_alternative(item: dict) -> dict:

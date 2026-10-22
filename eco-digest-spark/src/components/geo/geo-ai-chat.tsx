@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Sparkles, Send, X, Maximize2, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,6 +39,17 @@ export function GeoAiChatPanel({
     { role: "assistant", content: t("geo.chat.seedMessage") },
   ]);
   const messages = controlledMessages ?? internalMessages;
+  // 新しいメッセージ（プリセットを選び直したときの入力フォームを含む）が増えたら、画面内に表示する。
+  // これが無いと、選び直した新しいフォームが画面の下に追加されるだけで、「選んでも何も起きない」ように見えた。
+  const lastRef = useRef<HTMLDivElement>(null);
+  const skipFirstScroll = useRef(true);
+  useEffect(() => {
+    if (skipFirstScroll.current) {
+      skipFirstScroll.current = false; // 開いた直後は、画面を動かさない
+      return;
+    }
+    lastRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [messages.length]);
   const [input, setInput] = useState("");
   const chatSend = useGeoChatSend();
 
@@ -97,7 +108,7 @@ export function GeoAiChatPanel({
             <Sparkles className="h-4 w-4" />
           </div>
           <div>
-            <div className="text-editorial text-lg leading-none">{t("nav.geoExpertAI")}</div>
+            <div className="text-editorial text-lg leading-none">{t("geo.chat.title")}</div>
             <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">
               {t("geo.chat.headerSubtitle")}
             </div>
@@ -121,7 +132,11 @@ export function GeoAiChatPanel({
 
       <div className="flex-1 overflow-y-auto px-5 py-5 space-y-5">
         {messages.map((m, i) => (
-          <div key={i} className={m.role === "user" ? "flex justify-end" : ""}>
+          <div
+            key={i}
+            ref={i === messages.length - 1 ? lastRef : undefined}
+            className={m.role === "user" ? "flex justify-end" : ""}
+          >
             {m.role === "user" ? (
               <div className="max-w-[85%] rounded-2xl rounded-br-sm bg-primary text-primary-foreground px-4 py-2.5 text-sm">
                 {m.content}

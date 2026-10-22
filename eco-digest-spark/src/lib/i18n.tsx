@@ -1067,8 +1067,15 @@ const STRINGS: Record<Lang, Record<string, string>> = {
     "geo.theme.notFound": "テーマが見つかりませんでした。",
     "geo.theme.noAssessment": "まだExpert AI分析がありません。Expert AIで分析を開始してください。",
 
+    "geo.chat.title": "インテリジェンスAI（会話）",
+    "geo.ia.cross.thinking": "使えるすべてのソースを横断して調べています…",
+    "geo.ia.cross.error": "横断での調査に失敗しました（{message}）。もう一度お試しください。",
+    "geo.ia.cross.web":
+      "自由質問でもWeb検索を使う（質問の文言を外部へ送ります。社外秘は書かないでください）",
+    "geo.ia.cross.lanes": "根拠の内訳",
+    "geo.ia.cross.demoted": "確認済みの社内根拠が無いため、{n}件を事実から見立てに移しました",
     "geo.chat.seedMessage":
-      "こんにちは。地政学専門家AIです。監視中のテーマに関する検証済みEvent・Evidenceを根拠に、事実と推測を分けてお答えします（現時点は簡易版の会話窓口です）。",
+      "こんにちは。インテリジェンスAI（会話）です。自由に質問できます（根拠に基づき、事実と推測を分けてお答えします）。左のプリセットを選ぶと、条件を指定して、レポート・ナレッジ・記事などを横断して調べられます（Web検索・面談ログは、条件で選べます）。局面の読みを本格的に出すときは、「エキスパートAI相談」をお使いください。",
     "geo.chat.headerSubtitle": "検証済みEvent・Evidence連携",
     "geo.chat.inputPlaceholder": "監視テーマの状況について質問…",
     "geo.chat.disclaimer":
@@ -2697,8 +2704,16 @@ const STRINGS: Record<Lang, Record<string, string>> = {
     "geo.theme.notFound": "Theme not found.",
     "geo.theme.noAssessment": "No Expert AI assessment yet. Start an analysis in Expert AI.",
 
+    "geo.chat.title": "Intelligence AI (Chat)",
+    "geo.ia.cross.thinking": "Searching across all available sources…",
+    "geo.ia.cross.error": "The cross-source search failed ({message}). Please try again.",
+    "geo.ia.cross.web":
+      "Also use web search for free questions (your question text is sent externally; do not include confidential information)",
+    "geo.ia.cross.lanes": "Evidence by source",
+    "geo.ia.cross.demoted":
+      "{n} claim(s) moved from facts to interpretation because no verified internal evidence backs them",
     "geo.chat.seedMessage":
-      "Hello, I'm the Geopolitical Expert AI. I answer based on verified events and evidence for the monitored themes, separating fact from inference (this is currently a lightweight conversational MVP).",
+      "Hello, I'm the Intelligence AI chat. Ask me anything: I answer from verified events, evidence and knowledge, separating fact from inference. Pick a preset on the left to investigate across reports, knowledge and articles (web search and interview logs are optional). For a full reading of a situation, use Expert AI Consultation.",
     "geo.chat.headerSubtitle": "Connected to verified events & evidence",
     "geo.chat.inputPlaceholder": "Ask about the monitored situation…",
     "geo.chat.disclaimer":

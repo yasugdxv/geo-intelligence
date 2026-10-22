@@ -140,7 +140,10 @@ def set_my_display_name(client, identity, display_name) -> dict:
         client.update("geo_ios_identities", {"identity_id": f"eq.{uid}"}, {"display_name": name})
     except Exception as exc:  # noqa: BLE001
         raise ExternalNetworkError("表示名を保存できませんでした（sql/2026-10-09b_geo_ios_identities_display_name.sql を適用してください）") from exc
-    geo_audit.log_audit(client, actor=uid, action="external_network_display_name_set", target_table="geo_ios_identities", target_id=uid)
+    # geo_audit_logs.target_id は uuid 型。identity_id（auto_xxxx 等）はuuidではないため target_id には入れず、detail に残す
+    # （入れると保存後の監査ログ書き込みが400になり、名前は保存されたのに画面にエラーが出ていた）
+    geo_audit.log_audit(client, actor=uid, action="external_network_display_name_set", target_table="geo_ios_identities",
+                        target_id=None, detail={"identity_id": uid})
     return {"user_id": uid, "display_name": name}
 
 
@@ -380,12 +383,15 @@ def _inferred_by_contact(client, identity, contact_ids: list) -> dict:
         if not log:
             continue
         a = acc.setdefault(l["contact_id"], {"topics": Counter(), "regions": Counter(), "actors": Counter(), "log_count": 0,
-                                             "speaker_view_count": 0, "sample_views": [], "last_log_date": None})
+                                             "speaker_view_count": 0, "sample_views": [], "last_log_date": None,
+                                             "summarized_log_count": 0})
         a["log_count"] += 1
         if not a["last_log_date"] or log["contact_date"] > a["last_log_date"]:
             a["last_log_date"] = log["contact_date"]
         s = summaries.get(l["log_id"]) or {}
         content = s.get("edited") or s.get("ai_generated") or {}
+        if content:                                       # AI整理がある（または人が編集済みの）ログだけを「集計に使った」と数える
+            a["summarized_log_count"] += 1
         ctx = content.get("related_context") or {}
         a["topics"].update(ctx.get("topics") or [])
         a["regions"].update(ctx.get("countries") or [])
@@ -401,7 +407,8 @@ def _inferred_by_contact(client, identity, contact_ids: list) -> dict:
         out[cid] = {"topics": [{"name": n, "count": c} for n, c in a["topics"].most_common(8)],
                     "regions": [{"name": n, "count": c} for n, c in a["regions"].most_common(8)],
                     "actors": [{"name": n, "count": c} for n, c in a["actors"].most_common(8)],
-                    "log_count": a["log_count"], "speaker_view_count": a["speaker_view_count"],
+                    "log_count": a["log_count"], "summarized_log_count": a["summarized_log_count"],
+                    "speaker_view_count": a["speaker_view_count"],
                     "sample_views": a["sample_views"], "last_log_date": a["last_log_date"], "note": INFERRED_NOTE}
     return out
 

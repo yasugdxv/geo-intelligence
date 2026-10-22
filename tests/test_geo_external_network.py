@@ -395,3 +395,50 @@ def test_sql_file_has_seven_tables_and_rls():
     sql = (HERE / "sql" / "2026-10-09_geo_external_network.sql").read_text(encoding="utf-8")
     assert len(re.findall(r"create table if not exists public\.geo_external_", sql)) == 7
     assert len(re.findall(r"enable row level security", sql)) == 7
+
+
+def test_display_name_audit_log_never_puts_non_uuid_identity_id_in_uuid_column(env):
+    """geo_audit_logs.target_id は uuid 型。identity_id（auto_xxxx）を入れると、保存後の監査ログ書き込みが
+    本物のDBで400になり、名前は保存されたのに画面にエラーが出ていた（2026-10-22）。"""
+    import uuid
+    svc.set_my_display_name(env, ident("auto_deac2a2d86f9"), "大濱")
+    rows = [r for r in env.tables["geo_audit_logs"] if r["action"] == "external_network_display_name_set"]
+    assert len(rows) == 1
+    target = rows[0].get("target_id")
+    assert target is None or str(uuid.UUID(str(target)))          # None か、正しいuuidだけ
+    assert rows[0]["detail"] == {"identity_id": "auto_deac2a2d86f9"}
+
+
+def test_all_external_network_audit_target_ids_are_uuid_or_none(env):
+    import uuid
+    c = mk_contact(env)
+    mk_log(env, "alice", [c["contact_id"]])
+    svc.set_my_display_name(env, ident("alice"), "山田")
+    for r in env.tables["geo_audit_logs"]:
+        t = r.get("target_id")
+        assert t is None or uuid.UUID(str(t))
+
+
+def test_inferred_expertise_counts_only_ai_summarized_logs(env):
+    """AI整理が無いログを「AI整理から集計」と数えない（2026-10-22: 3件のログがあるのに『3件のAI整理から集計・0件』と出ていた）。"""
+    c = mk_contact(env)
+    l1 = mk_log(env, "alice", [c["contact_id"]])
+    l2 = mk_log(env, "alice", [c["contact_id"]])
+    mk_log(env, "alice", [c["contact_id"]])
+    inf = svc.get_contact(env, ident("alice"), c["contact_id"])["inferred_expertise"]
+    assert inf["log_count"] == 3 and inf["summarized_log_count"] == 0 and inf["topics"] == []
+    env.insert("geo_external_contact_log_ai_summaries", [
+        {"log_id": l1["log_id"], "ai_generated": {"related_context": {"topics": ["半導体規制"], "countries": ["米国"], "actors": []}}, "edited": None}])
+    env.insert("geo_external_contact_log_ai_summaries", [
+        {"log_id": l2["log_id"], "ai_generated": {}, "edited": {"related_context": {"topics": ["半導体規制"], "countries": [], "actors": []}}}])
+    inf = svc.get_contact(env, ident("alice"), c["contact_id"])["inferred_expertise"]
+    assert inf["log_count"] == 3 and inf["summarized_log_count"] == 2
+    assert inf["topics"] == [{"name": "半導体規制", "count": 2}]
+
+
+def test_expert_snippet_says_not_inferable_when_no_log_is_ai_summarized():
+    import geo_intelligence_ai_preset_sources as ps
+    inf = {"topics": [], "regions": [], "actors": [], "log_count": 3, "summarized_log_count": 0,
+           "speaker_view_count": 0, "sample_views": []}
+    text = ps._contact_snippet({"affiliation_title": "X大学", "expertise_note": None}, inf)
+    assert "推定できません" in text and "本人の発言として特定された見解" not in text

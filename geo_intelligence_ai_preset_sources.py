@@ -300,7 +300,10 @@ def search_events(ctx: dict) -> dict:
 def _contact_snippet(c: dict, inf: dict | None) -> str | None:
     """人が登録した情報と、会話ログからのAI推定を、混ぜずに別々に書く。"""
     parts = [f"【登録情報】所属・役職: {c.get('affiliation_title') or '未登録'} ／ 専門領域コメント: {c.get('expertise_note') or '未登録'}"]
-    if inf:
+    if inf and inf.get("summarized_log_count", inf.get("log_count")) == 0:
+        # 面談ログはあるが、AI整理が1件も無い＝集計できていない。「AI推定」として何かを言わない
+        parts.append(f"【会話ログからのAI推定】面談{inf['log_count']}回の記録はあるが、AI整理済みのログが無く、推定できません")
+    elif inf:
         def names(k):
             return "、".join(f"{x['name']}({x['count']}回)" for x in inf[k][:5]) or "なし"
         parts.append(f"【会話ログからのAI推定・未確認】面談{inf['log_count']}回。扱われた話題: {names('topics')}。地域: {names('regions')}。"

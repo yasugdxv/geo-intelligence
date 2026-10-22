@@ -303,109 +303,14 @@ export function ThemeExplorerPanel({
 
   return (
     <div className="space-y-5">
-      {/* 検索エリア: キーワード・注目度・新規のみ・並べ替え。クイック検索のチップ付き */}
-      <section className="card-paper rounded-lg p-4 space-y-3" data-testid="theme-explorer-toolbar">
-        <div className="flex items-center justify-between gap-3 flex-wrap">
-          <label htmlFor="theme-keyword" className="text-sm font-medium">
-            {t("geo.themeExplorer.v2.searchLabel")}
-          </label>
-          <DataFreshnessBadge freshness={data?.data_freshness} />
-        </div>
-        <form
-          className="flex gap-2"
-          onSubmit={(e) => {
-            e.preventDefault();
-            setKeyword(keywordInput.trim());
-            setPage(1);
-          }}
-        >
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-            <Input
-              id="theme-keyword"
-              value={keywordInput}
-              onChange={(e) => setKeywordInput(e.target.value)}
-              placeholder={t("geo.themeExplorer.v2.searchPlaceholder")}
-              className="pl-9 h-10"
-            />
-          </div>
-          <Button type="submit" className="h-10 px-5">
-            {t("geo.themeExplorer.v2.searchButton")}
-          </Button>
-        </form>
-
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <div className="flex items-center gap-1.5" role="group" aria-label={t("geo.themeExplorer.v2.level")}>
-            <span className="text-xs text-muted-foreground">{t("geo.themeExplorer.v2.level")}</span>
-            {(["all", "high", "medium", "low"] as const).map((lv) => (
-              <button
-                key={lv}
-                type="button"
-                aria-pressed={level === lv}
-                onClick={() => {
-                  setLevel(lv);
-                  setPage(1);
-                }}
-                className={`px-2.5 py-1 rounded-full border text-xs transition-colors ${
-                  level === lv
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "bg-background hover:bg-muted border-border"
-                }`}
-              >
-                {lv === "all" ? t("geo.themeExplorer.v2.levelAll") : t(`geo.themeExplorer.attention.${lv}`)}
-              </button>
-            ))}
-          </div>
-          <label className="flex items-center gap-2 text-xs cursor-pointer">
-            <Switch
-              checked={newOnly}
-              onCheckedChange={(v) => {
-                setNewOnly(v);
-                setPage(1);
-              }}
-            />
-            {t("geo.themeExplorer.v2.newOnly")}
-          </label>
-          <div className="flex items-center gap-1.5 ml-auto">
-            <span className="text-xs text-muted-foreground">{t("geo.themeExplorer.v2.sort")}</span>
-            <Select value={sortMode} onValueChange={(v) => setSortMode(v as SortMode)}>
-              <SelectTrigger className="w-[170px] h-8" aria-label={t("geo.themeExplorer.sort.label")}>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="newest">{t("geo.themeExplorer.sort.newest")}</SelectItem>
-                <SelectItem value="attention">{t("geo.themeExplorer.v2.sortAttention")}</SelectItem>
-                <SelectItem value="related">{t("geo.themeExplorer.v2.sortRelated")}</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-1.5" data-testid="theme-quick-search">
-          <span className="text-xs text-muted-foreground mr-1">{t("geo.themeExplorer.v2.quickTitle")}</span>
-          {QUICK_KEYWORDS.map((w) => (
-            <button
-              key={w}
-              type="button"
-              onClick={() => pickQuick(w)}
-              className={`px-2.5 py-1 rounded-full border text-xs transition-colors ${
-                keyword === w ? "bg-primary/10 border-primary text-primary" : "bg-background hover:bg-muted border-border"
-              }`}
-            >
-              {w}
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* AIによる新規テーマ探索: チャットで要件をすり合わせ→おすすめソースを選ぶ→必要ならWeb検索も含めて実行する */}
-      <details className="card-paper rounded-lg p-4 group" data-testid="theme-explorer-prompt" open={running || !!result || !!brief}>
-        <summary className="cursor-pointer list-none flex items-center gap-2 text-sm font-medium">
+      {/* AIによる新規テーマ探索: メイン機能。チャットで要件をすり合わせ→おすすめソースを選ぶ→必要ならWeb検索も含めて実行する */}
+      <section className="card-paper rounded-lg p-4 space-y-3" data-testid="theme-explorer-prompt">
+        <div className="flex items-center gap-2 text-sm font-medium">
           <Sparkles className="h-4 w-4 text-primary" />
           {t("geo.themeExplorer.v2.discoverTitle")}
           <span className="text-xs font-normal text-muted-foreground">{t("geo.themeExplorer.v2.discoverHint")}</span>
-        </summary>
-        <div className="mt-3 space-y-3">
+        </div>
+        <div className="space-y-3">
           <p className="text-xs text-muted-foreground">{t("geo.themeExplorer.live.intro")}</p>
 
           {/* チャット履歴 */}
@@ -572,6 +477,102 @@ export function ThemeExplorerPanel({
               {t("geo.themeExplorer.discovery.error", { message: errorMessage })}
             </p>
           )}
+        </div>
+      </section>
+
+      {/* 過去に見つかったテーマ候補の検索: 補助機能のため折りたたみ（既定は閉じた状態）。
+          キーワード・注目度・新規のみ・並べ替えの設定は折りたたんでいても有効で、下の一覧へ反映される */}
+      <details className="card-paper rounded-lg p-4 group" data-testid="theme-explorer-toolbar">
+        <summary className="cursor-pointer list-none flex items-center justify-between gap-3 flex-wrap">
+          <span className="text-sm font-medium">{t("geo.themeExplorer.v2.searchLabel")}</span>
+          <DataFreshnessBadge freshness={data?.data_freshness} />
+        </summary>
+        <div className="mt-3 space-y-3">
+          <form
+            className="flex gap-2"
+            onSubmit={(e) => {
+              e.preventDefault();
+              setKeyword(keywordInput.trim());
+              setPage(1);
+            }}
+          >
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+              <Input
+                id="theme-keyword"
+                value={keywordInput}
+                onChange={(e) => setKeywordInput(e.target.value)}
+                placeholder={t("geo.themeExplorer.v2.searchPlaceholder")}
+                className="pl-9 h-10"
+              />
+            </div>
+            <Button type="submit" className="h-10 px-5">
+              {t("geo.themeExplorer.v2.searchButton")}
+            </Button>
+          </form>
+
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <div className="flex items-center gap-1.5" role="group" aria-label={t("geo.themeExplorer.v2.level")}>
+              <span className="text-xs text-muted-foreground">{t("geo.themeExplorer.v2.level")}</span>
+              {(["all", "high", "medium", "low"] as const).map((lv) => (
+                <button
+                  key={lv}
+                  type="button"
+                  aria-pressed={level === lv}
+                  onClick={() => {
+                    setLevel(lv);
+                    setPage(1);
+                  }}
+                  className={`px-2.5 py-1 rounded-full border text-xs transition-colors ${
+                    level === lv
+                      ? "bg-primary text-primary-foreground border-primary"
+                      : "bg-background hover:bg-muted border-border"
+                  }`}
+                >
+                  {lv === "all" ? t("geo.themeExplorer.v2.levelAll") : t(`geo.themeExplorer.attention.${lv}`)}
+                </button>
+              ))}
+            </div>
+            <label className="flex items-center gap-2 text-xs cursor-pointer">
+              <Switch
+                checked={newOnly}
+                onCheckedChange={(v) => {
+                  setNewOnly(v);
+                  setPage(1);
+                }}
+              />
+              {t("geo.themeExplorer.v2.newOnly")}
+            </label>
+            <div className="flex items-center gap-1.5 ml-auto">
+              <span className="text-xs text-muted-foreground">{t("geo.themeExplorer.v2.sort")}</span>
+              <Select value={sortMode} onValueChange={(v) => setSortMode(v as SortMode)}>
+                <SelectTrigger className="w-[170px] h-8" aria-label={t("geo.themeExplorer.sort.label")}>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="newest">{t("geo.themeExplorer.sort.newest")}</SelectItem>
+                  <SelectItem value="attention">{t("geo.themeExplorer.v2.sortAttention")}</SelectItem>
+                  <SelectItem value="related">{t("geo.themeExplorer.v2.sortRelated")}</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-1.5" data-testid="theme-quick-search">
+            <span className="text-xs text-muted-foreground mr-1">{t("geo.themeExplorer.v2.quickTitle")}</span>
+            {QUICK_KEYWORDS.map((w) => (
+              <button
+                key={w}
+                type="button"
+                onClick={() => pickQuick(w)}
+                className={`px-2.5 py-1 rounded-full border text-xs transition-colors ${
+                  keyword === w ? "bg-primary/10 border-primary text-primary" : "bg-background hover:bg-muted border-border"
+                }`}
+              >
+                {w}
+              </button>
+            ))}
+          </div>
         </div>
       </details>
 

@@ -454,6 +454,11 @@ export function CitationList({ citations }: { citations: PresetCitation[] }) {
             <li key={c.ref_id} className="text-xs border border-border rounded-md px-2.5 py-1.5 bg-background">
               <div className="flex flex-wrap items-center gap-1.5">
                 <span className="font-mono text-[10px] px-1 rounded bg-muted">{c.ref_id}</span>
+                {c.lane_label && (
+                  <Badge variant="outline" className="text-[10px]">
+                    {c.lane_label}
+                  </Badge>
+                )}
                 <Badge variant={c.origin === "web" ? "outline" : "secondary"} className="text-[10px]">
                   {c.origin === "web" ? t("geo.ia.origin.web") : `${t("geo.ia.origin.internal")}・${stype.startsWith("geo.ia.") ? c.source_label : stype}`}
                 </Badge>
@@ -537,6 +542,14 @@ export function PresetResultCard({ result }: { result: PresetRunResult }) {
             </ul>
           </div>
         ))}
+      {result.mode === "cross_source" && (result.lanes ?? []).length > 0 && (
+        <p className="text-[11px] text-muted-foreground">
+          {t("geo.ia.cross.lanes")}：
+          {(result.lanes ?? []).map((l) => `${l.label} ${l.count}件`).join("・")}
+          {(result.lane_demoted ?? 0) > 0 &&
+            `（${t("geo.ia.cross.demoted", { n: result.lane_demoted ?? 0 })}）`}
+        </p>
+      )}
       <Warnings warnings={result.warnings} />
       <CitationList citations={result.citations} />
       <SourceStatusList rows={result.source_status} />

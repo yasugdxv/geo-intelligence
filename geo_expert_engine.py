@@ -350,6 +350,8 @@ _GENERIC_KANJI_KEYWORD_STOPWORDS = {
 _GENERIC_LATIN_KEYWORD_STOPWORDS = {
     "key", "actor", "actors", "leverage", "point", "points", "gap", "gaps",
     "card", "cards", "primary", "evidence",
+    # 質問の定型見出し「Situation:」が固有語扱いされ、無関係な"Situation Report"系文書を大量採用していた（2026-10-15）
+    "situation", "situations",
 }
 # Phase 10-R(Source Pack Retrieval Precision Hotfix、ユーザー指示): 上と同じ分析
 # framing語のKatakana外来語表記版（実データで確認済み——Saudi-Israelクエリの
@@ -401,6 +403,7 @@ def _classify_keywords(keywords: list) -> tuple:
 
 
 _GENERIC_KEYWORD_ADMISSION_MIN_MATCHES = 2
+_EXPANSION_FETCH_WORKERS = 6    # クロスリンガル展開ON時の並列問い合わせ数
 _WORD_BOUNDARY_PATTERN_CACHE: dict = {}
 
 
@@ -484,8 +487,11 @@ def _excluded_theme_ids(client) -> set:
 
 
 def _relevant_rows_by_keywords(client, table: str, id_field: str, columns: list, keywords: list, *,
-                                theme_id: str = None, limit: int) -> list:
-    """keywordsのいずれかがcolumnsのいずれかへILIKE部分一致する行を、id_fieldで重複排除しつつ
+                                theme_id: str = None, limit: int, expansions: dict = None) -> list:
+    """expansions（任意、{日本語キーワード: [英語名...]}、geo_keyword_expansion.expand_keywords）を渡すと、
+    英語名での一致も「その日本語キーワードに一致した」と同じ扱いで数える（採用ルールは変えない、既定は従来動作）。
+
+    keywordsのいずれかがcolumnsのいずれかへILIKE部分一致する行を、id_fieldで重複排除しつつ
     集める（geo_search_service._partial_match_candidatesと同じ既存パターン、新規RPC・
     migrationは作らない）。theme_id指定時はさらにtheme_idで絞り込む。
 
@@ -539,42 +545,64 @@ def _relevant_rows_by_keywords(client, table: str, id_field: str, columns: list,
                                     if len(strong_katakana_keywords) > _GENERIC_KEYWORD_ADMISSION_MIN_MATCHES
                                     else 1)
     excluded_theme_ids = _excluded_theme_ids(client)
+    # 展開ON時のみ: 「Trump」のように英語文書に多数ある語は上位limit件が任意の10件になり本題の文書を取り逃すため、
+    # 候補の取得数を増やす（採用後の並べ替えは一致キーワード数で行う）。展開なしの場合は従来どおり
+    fetch_limit = min(max(limit * 3, limit), 30) if expansions else limit
     rows_by_id = {}
     matched_strong_ascii = {}
     matched_strong_katakana = {}
     matched_generic = {}
+
+    def _fetch(term, column):
+        params = {"select": "*", column: f"ilike.*{term}*", "limit": str(fetch_limit)}
+        if theme_id:
+            params["theme_id"] = f"eq.{theme_id}"
+        try:
+            return client.select(table, params)
+        except Exception:  # noqa: BLE001 — ILIKE非対応列等、既存_partial_match_candidatesと同じ扱い
+            return []
+
+    # 展開ON時のみ、問い合わせ（読み取りのみ）を並列に行う（問い合わせ数が増えるため）。結果の処理は従来と同じ順序で
+    # 逐次に行うので、採用結果は変わらない。展開なしの場合は従来どおり逐次（挙動不変）
+    prefetched = {}
+    if expansions:
+        from concurrent.futures import ThreadPoolExecutor
+        tasks = [(t, c) for kw in keywords for t in [kw] + list(expansions.get(kw, [])) for c in columns]
+        with ThreadPoolExecutor(max_workers=_EXPANSION_FETCH_WORKERS) as pool:
+            for task, rows in zip(tasks, pool.map(lambda tc: _fetch(*tc), tasks)):
+                prefetched[task] = rows
+
     for keyword in keywords:
         is_strong = keyword in strong_keywords
-        is_ascii_latin = bool(_ASCII_LATIN_KEYWORD_PATTERN.fullmatch(keyword))
         is_katakana_only = bool(_KATAKANA_ONLY_PATTERN.fullmatch(keyword))
-        for column in columns:
-            params = {"select": "*", column: f"ilike.*{keyword}*", "limit": str(limit)}
-            if theme_id:
-                params["theme_id"] = f"eq.{theme_id}"
-            try:
-                rows = client.select(table, params)
-            except Exception:  # noqa: BLE001 — ILIKE非対応列等、既存_partial_match_candidatesと同じ扱い
-                rows = []
-            for row in rows:
-                if row.get("is_mock"):
-                    continue
-                if _is_synthetic_test_corpus_row(row):
-                    continue
-                row_theme_id = row.get("theme_id")
-                if row_theme_id and row_theme_id in excluded_theme_ids and row_theme_id != theme_id:
-                    continue
-                if is_ascii_latin and not _ascii_word_boundary_match(keyword, row.get(column) or ""):
-                    continue
-                if is_katakana_only and not _katakana_word_boundary_match(keyword, row.get(column) or ""):
-                    continue
-                row_id = row[id_field]
-                rows_by_id[row_id] = row
-                if is_strong and is_katakana_only:
-                    matched_strong_katakana.setdefault(row_id, set()).add(keyword)
-                elif is_strong:
-                    matched_strong_ascii.setdefault(row_id, set()).add(keyword)
-                else:
-                    matched_generic.setdefault(row_id, set()).add(keyword)
+        # 検索語 = キーワード自身 + 英語展開語。分類（strong/generic）は元のキーワードのまま、境界チェックは検索語ごと
+        for term in [keyword] + list((expansions or {}).get(keyword, [])):
+            term_is_ascii = bool(_ASCII_LATIN_KEYWORD_PATTERN.fullmatch(term))
+            # "Strait of Hormuz"のような複数語の展開語のみ（元のキーワード自体の判定は従来のまま）
+            term_is_ascii_phrase = term != keyword and (not term_is_ascii) and term.isascii()
+            term_is_katakana = bool(_KATAKANA_ONLY_PATTERN.fullmatch(term))
+            for column in columns:
+                rows = prefetched[(term, column)] if expansions else _fetch(term, column)
+                for row in rows:
+                    if row.get("is_mock"):
+                        continue
+                    if _is_synthetic_test_corpus_row(row):
+                        continue
+                    row_theme_id = row.get("theme_id")
+                    if row_theme_id and row_theme_id in excluded_theme_ids and row_theme_id != theme_id:
+                        continue
+                    if (term_is_ascii or term_is_ascii_phrase) and not _ascii_word_boundary_match(term, row.get(column) or ""):
+                        continue
+                    if term_is_katakana and not _katakana_word_boundary_match(term, row.get(column) or ""):
+                        continue
+                    row_id = row[id_field]
+                    rows_by_id[row_id] = row
+                    if is_strong and is_katakana_only:
+                        matched_strong_katakana.setdefault(row_id, set()).add(keyword)
+                    elif is_strong:
+                        matched_strong_ascii.setdefault(row_id, set()).add(keyword)
+                    else:
+                        matched_generic.setdefault(row_id, set()).add(keyword)
 
     admitted = []
     for row_id, row in rows_by_id.items():
@@ -584,6 +612,8 @@ def _relevant_rows_by_keywords(client, table: str, id_field: str, columns: list,
         has_strong = strong_ascii_match_count >= 1 or strong_katakana_match_count >= min_strong_katakana_matches
         if has_strong or generic_match_count >= min_generic_matches:
             row["_strong_anchor_match"] = has_strong
+            if expansions:      # 展開ON時のみ付ける内部値（build_source_packの並べ替え用、本文・DBへは出さない）
+                row["_keyword_match_count"] = strong_ascii_match_count + strong_katakana_match_count + generic_match_count
             admitted.append(row)
     return admitted
 
@@ -1719,20 +1749,28 @@ def build_source_pack(client, theme_id: str, query_text: str,
         theme = themes[0] if themes else None
 
     keywords = _extract_query_keywords(query_text)
+    # クロスリンガル展開（日本語→英語名）。既定ON（2026-10-16有効化）。環境変数 GEO_CROSS_LINGUAL_KEYWORDS=0 でOFF＝従来動作
+    expansions = {}
+    if keywords:
+        import geo_keyword_expansion
+        if geo_keyword_expansion.is_enabled():
+            expansions = geo_keyword_expansion.expand_keywords(client, keywords)
 
     events = []
     if keywords:
         events = _relevant_rows_by_keywords(
             client, "geo_events", "event_id", ["actor", "action", "target", "event_type"], keywords,
-            theme_id=theme_id, limit=event_limit)
+            theme_id=theme_id, limit=event_limit, expansions=expansions)
     # Phase 10-R: Strong Anchor一致を優先し、同順位内は既存通り新しい順にする。
     # _strong_anchor_matchはranking専用の内部フラグなので、キー計算後に取り除く
     # （Source Pack本文・DB保存へは出さない）。
     for e in events:
         e["_sort_strong_anchor"] = e.pop("_strong_anchor_match", False)
-    events.sort(key=lambda e: (e["_sort_strong_anchor"], e.get("created_at") or ""), reverse=True)
+    # 展開ON時のみ、一致したキーワードの種類が多い行を先にする（_keyword_match_countは展開時だけ付く。無ければ0で従来順）
+    events.sort(key=lambda e: (e.get("_keyword_match_count", 0), e["_sort_strong_anchor"], e.get("created_at") or ""), reverse=True)
     for e in events:
         e.pop("_sort_strong_anchor", None)
+        e.pop("_keyword_match_count", None)
     events = events[:event_limit]
 
     event_ids = [e["event_id"] for e in events]
@@ -1749,13 +1787,14 @@ def build_source_pack(client, theme_id: str, query_text: str,
     if keywords:
         documents = _relevant_rows_by_keywords(
             client, "geo_documents", "document_id", ["title", "extracted_text"], keywords,
-            theme_id=theme_id, limit=document_limit)
+            theme_id=theme_id, limit=document_limit, expansions=expansions)
     # Phase 10-R: Strong Anchor一致を優先し、同順位内は既存通り新しい順にする。
     for d in documents:
         d["_sort_strong_anchor"] = d.pop("_strong_anchor_match", False)
-    documents.sort(key=lambda d: (d["_sort_strong_anchor"], d.get("fetched_at") or ""), reverse=True)
+    documents.sort(key=lambda d: (d.get("_keyword_match_count", 0), d["_sort_strong_anchor"], d.get("fetched_at") or ""), reverse=True)
     for d in documents:
         d.pop("_sort_strong_anchor", None)
+        d.pop("_keyword_match_count", None)
     documents = documents[:document_limit]
     if extra_document_ids:
         known_ids = {d["document_id"] for d in documents}
@@ -1836,7 +1875,9 @@ def build_source_pack(client, theme_id: str, query_text: str,
                 meta_parts.append(f"公開日時: {d['published_at']}")
             if meta_parts:
                 lines.append(f"  {' / '.join(meta_parts)}")
-            excerpt = _excerpt_around_keywords(d.get("extracted_text") or "", keywords)
+            excerpt = _excerpt_around_keywords(
+                d.get("extracted_text") or "",
+                keywords + [t for ts in expansions.values() for t in ts])
             if excerpt:
                 lines.append(f"  抜粋: {' '.join(excerpt.split())}")
 

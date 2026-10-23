@@ -55,6 +55,7 @@ import geo_external_signal_api  # noqa: E402
 import geo_cors  # noqa: E402
 import geo_external_network_api  # noqa: E402
 import geo_intelligence_ai_preset_api  # noqa: E402
+import geo_conversation_mode_api  # noqa: E402
 import geo_external_event_api  # noqa: E402
 import geo_intelligence_api  # noqa: E402
 import geo_intelligence_gap_api  # noqa: E402
@@ -929,6 +930,7 @@ app.include_router(geo_daily_brief_api.geo_daily_brief_router)
 app.include_router(geo_external_network_api.geo_external_network_router)
 app.include_router(geo_intelligence_ai_preset_api.geo_intelligence_ai_preset_router)
 app.include_router(geo_intelligence_ai_preset_api.geo_intelligence_ai_conversation_router)
+app.include_router(geo_conversation_mode_api.geo_conversation_mode_router)
 
 # 画面（静的ビルド）の配信。必ず全ルーターの登録の後に呼ぶ（全パス受けのため）。配信元（_shell.html）が
 # 無ければ何もしない＝API専用として動く（ローカル開発は従来どおり。Azureでは同じサイトで画面も配信する）。

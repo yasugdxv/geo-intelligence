@@ -32,6 +32,7 @@ rank2以降）・hypothesis_register・既存Reading Portfolio出力を入力と
 
 Evidence最低基準を満たす候補が存在しない場合、無理に5件へ埋めない（4件・3件で返してよい）。
 """
+import geo_ios_title_utils as title_utils
 import geo_llm_common
 
 _DUPLICATE_SIMILARITY_THRESHOLD = 0.5
@@ -134,15 +135,8 @@ _MARGINAL_COVERAGE_WEIGHT = 0.15
 
 
 def _short_title(description: str) -> str:
-    if not description:
-        return ""
-    for sep in ("。", "、"):
-        idx = description.find(sep)
-        if 0 < idx <= _SHORT_TITLE_MAX_LEN:
-            return description[:idx]
-    if len(description) <= _SHORT_TITLE_MAX_LEN:
-        return description
-    return description[:_SHORT_TITLE_MAX_LEN] + "…"
+    # 共通関数へ集約（2026-10-21）: 文の途中の断片（「現時点では」等）で切らない・内部ラベルを外す
+    return title_utils.short_title(description, _SHORT_TITLE_MAX_LEN)
 
 
 def _hypothesis_text(h: dict) -> str:

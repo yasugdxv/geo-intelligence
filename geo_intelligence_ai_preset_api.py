@@ -77,6 +77,22 @@ def run(req: RunRequest, identity=Depends(geo_ios_identity.get_optional_ios_iden
                   lang=req.lang)
 
 
+class AskRequest(BaseModel):
+    message: str
+    history: list[dict] = []
+    with_web: bool = False          # Web検索への同意（質問の文言だけを外部へ送る）。画面の同意チェックから
+    lang: str = "ja"
+
+
+@geo_intelligence_ai_preset_router.post("/ask")
+def ask(req: AskRequest, identity=Depends(geo_ios_identity.get_optional_ios_identity)):
+    """自由質問を、使えるすべてのソースへ横断で投げて答える（機能フラグ GEO_IA_CROSS_SOURCE_ENABLED）。
+    結果は /run と同じ形（context つき）。追加質問は /followup でそのまま続けられる。"""
+    return _guard(svc.ask, _client, _azure_client, _model, identity=identity,
+                  requester_context=_requester_context(identity), message=req.message, history=req.history,
+                  with_web=req.with_web, lang=req.lang)
+
+
 class FollowupRequest(BaseModel):
     message: str
     context: dict
@@ -123,6 +139,10 @@ def list_conversations(identity=Depends(geo_ios_identity.verify_ios_identity)):
 
 @geo_intelligence_ai_conversation_router.put("/{conversation_id}")
 def put_conversation(conversation_id: str, body: ConversationBody, identity=Depends(geo_ios_identity.verify_ios_identity)):
+    # 会話モード(cm_)の会話は、会話モードのサーバー処理だけが保存する（根拠のスナップショットや呼び出し数を、
+    # クライアントが自由に書き換えて上限・権限の再確認を回避できないようにする）。削除・一覧はこれまでどおり。
+    if conversation_id.startswith("cm_"):
+        raise HTTPException(status_code=400, detail="会話モードの会話は、サーバー側で保存されます（この経路では保存できません）")
     return _conv(store.put_conversation, _client, identity.identity_id, conversation_id, title=body.title,
                  messages=body.messages, preset=body.preset, updated_at=body.updatedAt)
 

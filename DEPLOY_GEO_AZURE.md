@@ -42,6 +42,9 @@
 | `GEO_UPLOAD_BASE` | ✅ | `/home/data/uploads`（アップロードしたファイルを、再起動・再デプロイで消さない） |
 | `GEO_EXPERT_REVIEW_CACHE_DIR` | **設定しない** | 成果物に入っている生成済みキャッシュ（`expert_review_cache/`）を使うため。設定すると、空の場所を見に行き、初回表示のたびに LLM で再生成する |
 | `GEO_GDELT_STATE_DIR` | ✅ | `/home/data/state` |
+| `GEO_CONVERSATION_MODE_ENABLED` | 任意（既定OFF） | `true` で、インテリジェンスAIの会話モード（ギャルとおっさんと私／コンサルと私と相棒／ステークホルダー会議）を有効にする。会話のたびに Azure OpenAI を呼ぶ（費用がかかる）。会話のサーバー保存を使うには、`sql/2026-10-19_geo_conversation_mode_storage.sql` の適用が必要（未適用でもブラウザ内保存で動く）。詳細は `docs/conversation-mode-v1-release-notes.md` |
+| `GEO_CONVERSATION_MODE_WEB_SEARCH_ENABLED` | 任意（既定OFF） | `true` で、会話モードの Web 検索（Perplexity。`PERPLEXITY_API_KEY` が必要）を有効にする。送るのは「おすすめテーマ」の題名だけ。上のフラグがOFFなら無効 |
+| `GEO_IA_CROSS_SOURCE_ENABLED` | 任意（既定OFF） | `true` で、インテリジェンスAI(会話)の通常モードの自由質問を、使えるすべてのソース（レポート・ナレッジ・記事・モニタリング・GDELT・情報ソースDB、条件によりWeb・面談ログ）へ横断で投げて答える（`/api/geo/intelligence-ai/presets/ask`）。OFFのときは従来の簡易チャット（`/api/geo/chat`）。Webへ送るのは、画面の同意チェックがあるときの質問文のみ。 |
 | `CORS_ALLOWED_ORIGINS` | B のみ | フロント Web App の URL（例 `https://<フロントのアプリ名>.azurewebsites.net`）。カンマ区切りで複数可 |
 | `HTTPS_PROXY` / `SSL_VERIFY` | 条件付き | Azure から外部へ直接出られない環境のみ（情シスに確認） |
 
@@ -112,3 +115,9 @@ Web App → 概要 → 「**発行プロファイルのダウンロード**」�
 - 定期バッチ（記事収集・スケジューラ）はこの Web App では動かしていない。
 - ローカル開発は従来どおり（`python api_server.py` と `npm run dev`）。
 - 1サーバー構成の成果物のローカル確認: `GEO_STATIC_BUILD=1 npm run build`（`eco-digest-spark/`）→ `python deploy/geo_azure/build_package.py`。
+
+### 5-1. 実際に起きた失敗: デプロイが「Package deployment using ZIP Deploy failed」で止まる（2026-10-22）
+- **症状**: GitHub Actions の「Deploy to Azure Web App」が失敗。Azure（デプロイセンター／Kudu）のログの先頭が `oryx build /tmp/zipdeploy/extracted ... --platform python` で、続いて `Could not fetch URL https://pypi.org/simple/...` `SSLError` `No matching distribution found for fastapi==...`。
+- **原因**: Web App で **Azure 側のビルド（Oryx）が有効**になっている。`requirements.txt` を見つけて、Azure 側で `pip install` を走らせ、社内ネットワークの制約で PyPI に届かず失敗する。このワークフローは、GitHub 側で `pip install` を済ませて `antenv` ごと載せる方式なので、Azure 側のビルドは不要（かつ失敗の原因）。
+- **対処**: Azure ポータル → 構成 → アプリケーション設定で、`SCM_DO_BUILD_DURING_DEPLOYMENT` と `ENABLE_ORYX_BUILD` を **削除、または `false`** にして保存（アプリが再起動する）→ ワークフローを再実行。ログの先頭に `oryx build` が出なくなれば、Azure 側のビルドは無効になっている。
+- **予防**: 新しい Python の Web App は、作成時に `SCM_DO_BUILD_DURING_DEPLOYMENT=true` が自動で入ることがある。新規作成・作り直しのたびに確認する。

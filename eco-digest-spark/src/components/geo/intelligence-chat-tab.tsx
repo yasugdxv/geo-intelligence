@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, MessageSquare, Plus, Trash2 } from "lucide-react";
 import { GeoAiChatPanel } from "@/components/geo/geo-ai-chat";
 import {
-  PresetCards,
   PresetFollowupCard,
   PresetFormCard,
   PresetList,
@@ -13,6 +12,7 @@ import {
   defaultConditions,
 } from "@/components/geo/intelligence-presets";
 import { useLanguage } from "@/lib/i18n";
+import { isConversationModeRecord } from "@/lib/geoConversationModeApi";
 import type { ChatMsg } from "@/lib/api";
 import {
   deleteGeoConversation,
@@ -27,6 +27,7 @@ import {
   fetchServerConversations,
   saveServerConversation,
   useExtractPresetConditions,
+  useAskCrossSource,
   usePresetFollowup,
   usePresets,
   useRunPreset,
@@ -50,6 +51,10 @@ export function GeoIntelligenceChatTab() {
   const extract = useExtractPresetConditions();
   const run = useRunPreset();
   const followup = usePresetFollowup();
+  const ask = useAskCrossSource();
+  // 自由質問のソース横断（サーバーの機能フラグが有効なとき）。Web検索は、画面の同意チェックがあるときだけ使う
+  const crossEnabled = !!presetsQuery.data?.cross_source_enabled;
+  const [askWeb, setAskWeb] = useState(false);
 
   const [conversations, setConversations] = useState<GeoChatConversation[]>([]);
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -73,7 +78,9 @@ export function GeoIntelligenceChatTab() {
     // ログイン中は、サーバーに保存された会話（別のパソコンで始めたもの等）を統合する。新しい方を採用する。
     // 未ログイン・テーブル未作成・通信失敗のときは空が返り、ブラウザ内の履歴だけで動く。
     let cancelled = false;
-    fetchServerConversations().then((remote) => {
+    fetchServerConversations().then((all) => {
+      // 会話モードの会話は通常チャットの履歴に混ぜない（専用の履歴で扱う）
+      const remote = all.filter((r) => !isConversationModeRecord(r));
       if (cancelled || remote.length === 0) return;
       const local = new Map(listGeoConversations().map((c) => [c.id, c]));
       remote.forEach((r) => {
@@ -247,7 +254,42 @@ export function GeoIntelligenceChatTab() {
       );
       return true;
     }
-    return false; // プリセットを使っていない会話は、従来どおり /api/geo/chat
+    if (crossEnabled) {
+      // プリセットを使わない自由質問: 使えるすべてのソースへ横断で投げる。結果は、プリセットの調査結果と同じ形で出し、
+      // 続けて入力すると、その結果を踏まえた追加対話になる
+      commit([...history, userMsg]);
+      setBusy(t("geo.ia.cross.thinking"));
+      ask.mutate(
+        {
+          message: text,
+          history: history.map(({ role, content }) => ({ role, content })),
+          with_web: askWeb,
+        },
+        {
+          onSuccess: (res) => {
+            if (epoch !== epochRef.current) return;
+            commit(
+              [
+                ...messagesRef.current,
+                { role: "assistant", content: res.summary, presetResult: res },
+              ],
+              { presetId: null, context: res.context },
+            );
+            setBusy(null);
+          },
+          onError: (err: Error) => {
+            if (epoch !== epochRef.current) return;
+            commit([
+              ...messagesRef.current,
+              { role: "assistant", content: t("geo.ia.cross.error", { message: err.message }) },
+            ]);
+            setBusy(null);
+          },
+        },
+      );
+      return true;
+    }
+    return false; // 機能フラグが無効のときは、従来どおり /api/geo/chat
   };
 
   // ---- 調査の実行（「この条件で調査する」）----
@@ -311,8 +353,6 @@ export function GeoIntelligenceChatTab() {
     return null;
   };
 
-  const showCards = messages.length <= 1 && presets.length > 0;
-
   return (
     <div className="flex-1 grid grid-cols-1 md:grid-cols-[300px_1fr] min-h-[600px] geo-card overflow-hidden">
       <button
@@ -339,6 +379,17 @@ export function GeoIntelligenceChatTab() {
             onSelect={selectPreset}
             availability={presetsQuery.data?.source_availability ?? {}}
           />
+        )}
+        {crossEnabled && presetsQuery.data?.source_availability?.web?.available && (
+          <label className="mt-4 flex items-start gap-2 px-2 text-[11px] text-muted-foreground">
+            <input
+              type="checkbox"
+              checked={askWeb}
+              onChange={(e) => setAskWeb(e.target.checked)}
+              className="mt-0.5"
+            />
+            <span>{t("geo.ia.cross.web")}</span>
+          </label>
         )}
         {presetsQuery.error && (
           <p className="mt-4 px-2 text-[11px] text-destructive">{(presetsQuery.error as Error).message}</p>
@@ -383,7 +434,6 @@ export function GeoIntelligenceChatTab() {
           interceptSend={interceptSend}
           renderMessage={renderMessage}
           externalBusyLabel={busy}
-          afterMessages={showCards ? <PresetCards presets={presets} disabled={!!busy} onSelect={selectPreset} /> : null}
         />
       </div>
     </div>

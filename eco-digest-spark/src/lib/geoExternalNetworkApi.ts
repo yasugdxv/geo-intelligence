@@ -50,7 +50,10 @@ export interface ExtInferredExpertise {
   topics: { name: string; count: number }[];
   regions: { name: string; count: number }[];
   actors: { name: string; count: number }[];
+  /** 見られる面談ログの件数 */
   log_count: number;
+  /** そのうち、AI整理がある（集計に使えた）面談ログの件数。0なら推定できていない */
+  summarized_log_count: number;
   speaker_view_count: number;
   sample_views: string[];
   last_log_date: string | null;

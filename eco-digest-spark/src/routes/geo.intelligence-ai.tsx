@@ -3,6 +3,7 @@ import { useState } from "react";
 import { TopBar } from "@/components/top-bar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { GeoIntelligenceChatTab } from "@/components/geo/intelligence-chat-tab";
+import { IntelligenceModeShell } from "@/components/geo/conversation-mode/intelligence-mode-shell";
 import { GeoCard, GeoCardBody, GeoCardHeader } from "@/components/geo/geo-card";
 import { GeoIntelligenceAiSearchTab } from "@/components/geo/geo-intelligence-ai-search";
 import { useLanguage } from "@/lib/i18n";
@@ -142,7 +143,9 @@ function GeoIntelligenceAiPage() {
             <TabsTrigger value="requests">AI Requests</TabsTrigger>
           </TabsList>
           <TabsContent value="chat">
-            <GeoIntelligenceChatTab />
+            <IntelligenceModeShell>
+              <GeoIntelligenceChatTab />
+            </IntelligenceModeShell>
           </TabsContent>
           <TabsContent value="search">
             <GeoIntelligenceAiSearchTab />

@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { Loader2, Plus } from "lucide-react";
 import { TopBar } from "@/components/top-bar";
@@ -15,6 +15,7 @@ export const Route = createFileRoute("/geo/external-network/contacts/$contactId"
 function ExternalContactDetailPage() {
   const { contactId } = Route.useParams();
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const query = useExtContact(contactId);
   const me = useExtUsers().data?.me;
   const deactivate = useDeactivateExtContact();
@@ -97,7 +98,7 @@ function ExternalContactDetailPage() {
 
             <section className="space-y-2">
               <h2 className="text-lg font-semibold">{t("extnet.detail.inferred")}</h2>
-              {c.inferred_expertise ? (
+              {c.inferred_expertise && c.inferred_expertise.summarized_log_count > 0 ? (
                 <div className="border border-border rounded-md px-4 py-3 space-y-2 bg-muted/30">
                   <p className="text-xs text-muted-foreground">{c.inferred_expertise.note}</p>
                   {(
@@ -122,6 +123,7 @@ function ExternalContactDetailPage() {
                   <p className="text-xs text-muted-foreground">
                     {t("extnet.detail.inferredBasis", {
                       logs: c.inferred_expertise.log_count,
+                      summarized: c.inferred_expertise.summarized_log_count,
                       views: c.inferred_expertise.speaker_view_count,
                     })}
                   </p>
@@ -133,6 +135,10 @@ function ExternalContactDetailPage() {
                     </ul>
                   )}
                 </div>
+              ) : c.inferred_expertise ? (
+                <p className="text-sm text-muted-foreground">
+                  {t("extnet.detail.inferredNoSummary", { logs: c.inferred_expertise.log_count })}
+                </p>
               ) : (
                 <p className="text-sm text-muted-foreground">{t("extnet.detail.inferredNone")}</p>
               )}
@@ -143,7 +149,17 @@ function ExternalContactDetailPage() {
               {c.logs.length === 0 && <p className="text-sm text-muted-foreground">{t("extnet.empty.history")}</p>}
               <ul className="space-y-2">
                 {c.logs.map((l) => (
-                  <li key={l.log_id} className="border border-border rounded-md px-4 py-3">
+                  // カードのどこを押しても、面談ログの詳細が開く
+                  <li
+                    key={l.log_id}
+                    className="border border-border rounded-md px-4 py-3 cursor-pointer hover:bg-muted/40"
+                    onClick={() =>
+                      navigate({
+                        to: "/geo/external-network/logs/$logId",
+                        params: { logId: l.log_id },
+                      })
+                    }
+                  >
                     <div className="flex items-center gap-3 text-sm">
                       <Link to="/geo/external-network/logs/$logId" params={{ logId: l.log_id }} className="font-medium hover:underline">
                         {l.contact_date}

@@ -24,6 +24,7 @@ Fail-closed default: any table with no explicit policy returns zero rows and
 is recorded as UNDEFINED_POLICY_FAIL_CLOSED in the audit log, rather than
 silently passing rows through unfiltered.
 """
+import threading
 from datetime import date, datetime
 
 
@@ -224,6 +225,8 @@ _RUN_BOOKKEEPING_TABLES = (
     "geo_expert_requests", "geo_expert_responses",
 )
 
+_AUDIT_LOCK = threading.Lock()
+
 TABLE_POLICIES = {
     **{t: _policy_passthrough_no_filter for t in _RUN_BOOKKEEPING_TABLES},
     "geo_documents": _policy_geo_documents,
@@ -231,6 +234,8 @@ TABLE_POLICIES = {
     "geo_knowledge_items": _policy_geo_knowledge_items,
     "geo_relationships": _policy_geo_relationships,
     "geo_entities": _policy_geo_entities,
+    # 別名は「名前の対応」だけで事実の内容を持たない（geo_entitiesの同定項目と同じ扱い）。日本語→英語の検索展開が使う
+    "geo_entity_aliases": _policy_passthrough_no_filter,
     "geo_observations": _policy_geo_observations,
     "geo_evidence": _policy_created_at_only,
     "geo_claim_evidence": _policy_created_at_only,
@@ -414,10 +419,12 @@ class AsOfEvaluationClient:
         return kept
 
     def _record(self, table: str, policy_name: str, included: int, fut: int, unverified: int):
-        entry = self._audit.setdefault(table, TableAudit(policy_name))
-        entry.included += included
-        entry.excluded_future += fut
-        entry.excluded_unverified += unverified
+        # 検索の並列化（geo_expert_engineの展開ON時）で同時に呼ばれても数え落とさないようロックする
+        with _AUDIT_LOCK:
+            entry = self._audit.setdefault(table, TableAudit(policy_name))
+            entry.included += included
+            entry.excluded_future += fut
+            entry.excluded_unverified += unverified
 
     def audit_report(self) -> dict:
         return {"as_of_date": self.as_of.isoformat(), "policy_mode": self.policy_mode,

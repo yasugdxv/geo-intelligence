@@ -114,7 +114,17 @@ function ExternalLogsPage() {
             </TableHeader>
             <TableBody>
               {items.map((l) => (
-                <TableRow key={l.log_id}>
+                // 行のどこを押しても詳細が開く（日付の文字だけがリンクだと、メモを押しても開かないように見えた）
+                <TableRow
+                  key={l.log_id}
+                  className="cursor-pointer hover:bg-muted/40"
+                  onClick={() =>
+                    navigate({
+                      to: "/geo/external-network/logs/$logId",
+                      params: { logId: l.log_id },
+                    })
+                  }
+                >
                   <TableCell className="whitespace-nowrap font-medium">
                     <Link to="/geo/external-network/logs/$logId" params={{ logId: l.log_id }} className="hover:underline">
                       {l.contact_date}

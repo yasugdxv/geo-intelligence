@@ -10,11 +10,16 @@ import type { GeoReportSummary } from "@/lib/geoKnowledgeApi";
 
 const API_BASE = API_BASE_URL;
 const BASE = "/api/geo/intelligence-ai/presets";
+// LLM呼び出しを伴う重い処理（Expert AI連携等）を想定した余裕のあるタイムアウト。
+// これが無いと、バックエンドがハングした場合に「処理中」状態から永久に戻らず、
+// 左サイドバーのプリセットボタンが押せないまま固まる。
+const PRESET_REQUEST_TIMEOUT_MS = 240_000;
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${BASE}${path}`, {
     ...init,
     headers: { "Content-Type": "application/json", ...getIosAuthHeaders(), ...init?.headers },
+    signal: init?.signal ?? AbortSignal.timeout(PRESET_REQUEST_TIMEOUT_MS),
   });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
@@ -29,7 +34,9 @@ export type PresetId =
   | "changes_since_last"
   | "compare_views"
   | "test_hypothesis"
-  | "early_signals";
+  | "early_signals"
+  /** 自由質問のソース横断（メニューには出さない非表示のプリセット） */
+  | "cross_source";
 
 export interface PresetField {
   key: string;
@@ -60,6 +67,8 @@ export interface SourceAvailability {
 export interface PresetListResponse {
   presets: PresetDefinition[];
   source_availability: Record<string, SourceAvailability>;
+  /** 自由質問のソース横断が有効か（サーバーの機能フラグ） */
+  cross_source_enabled?: boolean;
 }
 
 /** フォームの条件。選択式・テキストは string、検索ソースの選択は include_* の boolean。 */
@@ -85,6 +94,9 @@ export interface PresetCitation {
   date: string | null;
   url: string | null;
   meta: Record<string, unknown>;
+  /** ソース横断の自由質問のとき: 根拠のレーン（internal / expert_knowledge / article / network / source_library / web） */
+  lane?: string;
+  lane_label?: string;
 }
 
 /** 追加対話のために会話ごとに保持する文脈。本文は持たず、参照ID（種別+ID）と検索条件だけを持つ。 */
@@ -109,6 +121,10 @@ export interface PresetRunResult {
   citations: PresetCitation[];
   warnings: string[];
   context: PresetContext;
+  /** ソース横断の自由質問のとき */
+  mode?: "cross_source";
+  lanes?: { lane: string; label: string; count: number }[];
+  lane_demoted?: number;
 }
 
 export interface PresetFollowupResult {
@@ -162,6 +178,22 @@ export function useRunPreset() {
   return useMutation({
     mutationFn: (v: { preset_id: PresetId; conditions: PresetConditions }) =>
       request<PresetRunResult>("/run", { method: "POST", body: JSON.stringify({ ...v, lang }) }),
+  });
+}
+
+/** 自由質問を、使えるすべてのソースへ横断で投げて答える（サーバーの機能フラグが有効なときだけ使う）。 */
+export function useAskCrossSource() {
+  const { lang } = useLanguage();
+  return useMutation({
+    mutationFn: (v: {
+      message: string;
+      history: { role: string; content: string }[];
+      with_web: boolean;
+    }) =>
+      request<PresetRunResult>("/ask", {
+        method: "POST",
+        body: JSON.stringify({ ...v, lang }),
+      }),
   });
 }
 

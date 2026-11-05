@@ -1,0 +1,11 @@
+
+参照文書一覧（[document_id: ...]をCurrent Evidenceとして引用する際のIDとして使うこと。タイトル文字列を代わりに引用しない）:
+- [document_id: 3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d] China's Wang Yi calls on Iran to ensure freedom and safe passage through Strait of Hormuz
+  出典: South China Morning Post / 公開日時: 2026-08-01T00:00:00+00:00
+  抜粋: SCMP報道（要約、Web検索で確認）: 中国の王毅外相はイランに対し、ホルムズ海峡における航行の自由と安全な通航を確保するよう要請した。今回の危機で中国がイランへ直接公に要請したのは初めてとされる。中国は「実利的中立」の姿勢を取り、米・イラン双方に自制を求めつつ対話再開を仲介している。
+- [document_id: a9208a53-6674-4447-922b-5fb15ecdd2be] How China gets around the blockade of the Strait of Hormuz to get Iranian oil
+  出典: NPR / 公開日時: 2026-08-02T00:00:00+00:00
+  抜粋: NPR報道（要約、Web検索で確認）: 中国は開戦後、原油備蓄を年初から16%積み増し、封鎖期間中の輸入を日量500万バレル超削減して価格急騰を緩和した。4月の停戦後から7月MoU失効までの間隙には、イラン産原油タンカー60隻超が中国向けに出荷されたとみられる。
+- [document_id: 6b3e15d8-bb4c-4b47-a94c-41196ea5d282] Iran Seeks Bar on US Ships in Hormuz as Deal With Oman Advances
+  出典: Bloomberg / 公開日時: 2026-08-06T00:00:00+00:00
+  抜粋: Bloomberg報道（要約、Web検索で確認）: イランはオマーンとの交渉が進む枠組みの一部として米国船籍のホルムズ海峡における恒久的な航行禁止を求めている。

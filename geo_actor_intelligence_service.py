@@ -42,8 +42,11 @@ ACTOR_ENTITY_TYPES = frozenset({
 
 # Candidate Actor探索・Pack構築のBudget（新規環境変数は増やさず、コード定数として管理する）
 CANDIDATE_RELATIONSHIP_EXPANSION_TOP_K = 5  # 1-hop Relationship展開時、起点entity1つあたりの上限
-ACTOR_PACK_CHAR_BUDGET = 6000
-ACTOR_PACK_PER_ACTOR_CHAR_BUDGET = 1200
+# 2026-11-04: 6000文字では、重要人物が3人いるだけで末尾の人物（同点なら名前順で後ろ）がPackごと
+# 落ちていた（Trump/Putin/Xiの3首脳で合計14,570文字→Trumpのみ残存）。1人あたりの上限を実際に効かせ
+# （_compact_actor_packs）、全体はMAX_ACTORS(5)×1人分を収める値にする。
+ACTOR_PACK_CHAR_BUDGET = 15000
+ACTOR_PACK_PER_ACTOR_CHAR_BUDGET = 3000
 ACTOR_PACK_PRECEDENT_TOP_K = 2
 ACTOR_PACK_RELATIONSHIP_TOP_K = 3
 ACTOR_PACK_DECISION_PATTERN_TOP_K = 2
@@ -619,6 +622,85 @@ def _relevant_relationships_between(client, entity_ids: list, reference_date: da
     return relationships[:ACTOR_PACK_RELATIONSHIP_TOP_K]
 
 
+# 圧縮しても変えない項目（ID・識別・状態。AIが参照するキーなので文字を削らない）
+_COMPACT_PROTECTED_KEYS = frozenset({
+    "entity_id", "actor_intelligence_id", "canonical_name", "selection_reasons", "relevance_score",
+    "actor_intelligence_status", "profile_source", "pattern_ids", "exception_episode_ids",
+    "historical_episode_ids", "target_entity_id", "target_canonical_name",
+})
+_COMPACT_MIN_TEXT_LEN = 60
+
+
+def _iter_compactable_texts(obj, parent=None, key=None, top_level=True):
+    """圧縮の対象になる文字列を (親コンテナ, キー/添字, 文字列) で列挙する（保護キー配下は除く）。"""
+    if isinstance(obj, str):
+        yield parent, key, obj
+    elif isinstance(obj, dict):
+        for k, v in obj.items():
+            if k in _COMPACT_PROTECTED_KEYS:
+                continue
+            yield from _iter_compactable_texts(v, obj, k, False)
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj):
+            yield from _iter_compactable_texts(v, obj, i, False)
+
+
+def _shorten_text(text: str, target_len: int) -> str:
+    """文の切れ目（。・、・改行・空白）を優先して短くする。意味の書き換えや要約はしない。"""
+    if len(text) <= target_len:
+        return text
+    cut = text[:target_len]
+    best = max(cut.rfind(c) for c in ("。", "\n", "、", ". ", " "))
+    if best >= target_len // 2:
+        cut = cut[:best + 1]
+    return cut.rstrip() + "…"
+
+
+def _iter_compactable_lists(obj, top_level=True):
+    """圧縮の対象になる配列（保護キー配下は除く）を、入れ子も含めて列挙する。"""
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k in _COMPACT_PROTECTED_KEYS:
+                continue
+            if isinstance(v, list):
+                yield v
+            yield from _iter_compactable_lists(v, False)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from _iter_compactable_lists(v, False)
+
+
+def _compact_actor_packs(actor_packs: list, per_actor_budget: int) -> list:
+    """各Actorの Pack を per_actor_budget 文字以内へ、決まった規則で圧縮する（LLM不使用）。
+    ①最も長い文章から順に文の切れ目で短くする（これ以上短くならない文は飛ばして次へ進む）。
+    ②文章が尽きても超える場合のみ、最も大きい配列の末尾要素（1件は残す）を落とす。
+    項目（core_profile/decision_patterns等）自体は消さない。予算内のPackには何もしない。"""
+    def _size(p) -> int:
+        return len(json.dumps(p, ensure_ascii=False))
+
+    result = []
+    for pack in actor_packs:
+        p = json.loads(json.dumps(pack, ensure_ascii=False))  # 元のPackは変更しない
+        stuck = set()  # これ以上短くできない文字列 (id(親), キー)
+        while _size(p) > per_actor_budget:
+            texts = [t for t in _iter_compactable_texts(p)
+                     if len(t[2]) > _COMPACT_MIN_TEXT_LEN and (id(t[0]), t[1]) not in stuck]
+            if texts:
+                parent, k, text = max(texts, key=lambda t: len(t[2]))
+                new_text = _shorten_text(text, max(_COMPACT_MIN_TEXT_LEN, int(len(text) * 0.75)))
+                if len(new_text) >= len(text):
+                    stuck.add((id(parent), k))
+                else:
+                    parent[k] = new_text
+                continue
+            droppable = [v for v in _iter_compactable_lists(p) if len(v) > 1]
+            if not droppable:
+                break
+            max(droppable, key=lambda v: len(json.dumps(v, ensure_ascii=False))).pop()
+        result.append(p)
+    return result
+
+
 def _trim_to_char_budget(actor_packs: list, char_budget: int) -> list:
     """build_case_contextと同じ「リスト末尾から削る」方式。各ActorのPrecedent/Relationship
     末尾から順に削り、それでも超過する場合はActor自体を末尾から削る。"""
@@ -784,6 +866,10 @@ def build_actor_intelligence_pack(client, case_id: str | None, *, max_actors: in
             ],
         })
 
+    # 1人あたりの上限は「全体予算÷人数」（最低でもACTOR_PACK_PER_ACTOR_CHAR_BUDGET）。少人数なら
+    # 1人に多く割り当て、人数が多いときだけ強く圧縮する。
+    per_actor_budget = max(ACTOR_PACK_PER_ACTOR_CHAR_BUDGET, ACTOR_PACK_CHAR_BUDGET // max(len(actor_packs), 1))
+    actor_packs = _compact_actor_packs(actor_packs, per_actor_budget)
     actor_packs = _trim_to_char_budget(actor_packs, ACTOR_PACK_CHAR_BUDGET)
     known_ids.discard(None)
 

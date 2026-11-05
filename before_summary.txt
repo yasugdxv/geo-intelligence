@@ -1,0 +1,30 @@
+case1_trump_xi
+ primary_key_point: 米国の対中輸出管理・制裁制度（半導体・AI関連）の強度と適用範囲
+ control_type: institutionally_constrained controlling_entity_ids: None
+ key_actor_profiles actor_refs: ['trump', 'xi']
+ initial_failed: ['fact_claims_have_source_ref', 'stakeholders_grounded_in_source_pack']
+
+case2_putin
+ primary_key_point: プーチンのNATO東方拡大に対する脅威認識と、それに基づくウクライナの安全保障的地位の再定義
+ control_type: mixed controlling_entity_ids: ['897329dc-fbfe-4e2f-b0a1-41e621c065c0']
+ key_actor_profiles actor_refs: ['putin_main']
+ initial_failed: ['fact_claims_have_source_ref', 'stakeholders_grounded_in_source_pack', 'evidence_attribution_not_conflated']
+
+case3_netanyahu
+ primary_key_point: ネタニヤフによる説明責任回避と国内政権延命の必要性
+ control_type: mixed controlling_entity_ids: ['585cc564-5a71-40ac-959b-3995d3a409c8']
+ key_actor_profiles actor_refs: ['netanyahu']
+ initial_failed: ['fact_claims_have_source_ref', 'stakeholders_grounded_in_source_pack', 'evidence_attribution_not_conflated']
+
+case4_mbs
+ primary_key_point: MBSの王位継承と国内権力基盤強化の必要性
+ control_type: actor_controlled controlling_entity_ids: ['c47c90e6-eda1-4f56-9c3e-2b3206fde945']
+ key_actor_profiles actor_refs: ['mbs']
+ initial_failed: ['fact_claims_have_source_ref', 'stakeholders_grounded_in_source_pack', 'evidence_attribution_not_conflated']
+
+case5_kim
+ primary_key_point: 北朝鮮の核・ミサイル能力を体制保証とする戦略的選好
+ control_type: actor_controlled controlling_entity_ids: ['64db3e84-45e3-4217-bf08-1018e1f8c7c5']
+ key_actor_profiles actor_refs: ['kim_jong_un']
+ initial_failed: ['stakeholders_grounded_in_source_pack', 'evidence_attribution_not_conflated']
+

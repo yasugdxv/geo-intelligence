@@ -882,6 +882,93 @@ def test_fixture_b_canonical_xi_entity_id_with_approved_alias_is_valid():
     assert response["key_actor_profiles"][0]["entity_id"] == _XI_ENTITY_ID
 
 
+def test_strip_leading_as_of_variants():
+    f = engine._strip_leading_as_of
+    assert f("as_of: 2026-11-04。提供された案件記述を前提に、主シナリオとする。") == "提供された案件記述を前提に、主シナリオとする。"
+    assert f("as_of：2026年7月14日") == "as_of：2026年7月14日"  # 消すと空になる場合は元のまま
+    assert f("as_of 2026-09-24時点では、イランは封鎖カードを使えないと見ている。") == "イランは封鎖カードを使えないと見ている。"
+    assert f("（as_of: 2026-11-04）米中は交渉を続ける。") == "米中は交渉を続ける。"
+    assert f("AS-OF 2026/11/04: 米中は交渉を続ける。") == "米中は交渉を続ける。"
+
+
+def test_strip_leading_hypothesis_label_variants():
+    f = engine._strip_leading_as_of
+    assert f("H1：残存治安組織が秩序維持を条件化する。") == "残存治安組織が秩序維持を条件化する。"
+    assert f("H0を主シナリオとして採用する。現体制が崩壊しても武装機構は残る。") == "現体制が崩壊しても武装機構は残る。"
+    assert f("H4: 共通指揮が崩れ、複数の権力拠点が形成される。") == "共通指揮が崩れ、複数の権力拠点が形成される。"
+    assert f("H2を採用する。相手が動く。") == "相手が動く。"
+    assert f("as_of: 2026-11-04。H1：残存治安組織が動く。") == "残存治安組織が動く。"  # as_ofの後ろのラベルも外す
+
+
+def test_strip_leading_hypothesis_label_keeps_non_label_text():
+    f = engine._strip_leading_as_of
+    assert f("H1Nのような型番は対象外。") == "H1Nのような型番は対象外。"
+    assert f("米中は交渉を続ける。H1：途中の記述は触らない。") == "米中は交渉を続ける。H1：途中の記述は触らない。"
+    assert f("H0") == "H0"  # 全部消えてしまう場合は元のまま
+
+
+def test_strip_leading_as_of_keeps_text_without_prefix_or_with_mid_sentence_as_of():
+    f = engine._strip_leading_as_of
+    assert f("米中は交渉を続ける。as_of: 2026-11-04時点の情報。") == "米中は交渉を続ける。as_of: 2026-11-04時点の情報。"
+    assert f("現時点では、核軍縮合意への移行ではない。") == "現時点では、核軍縮合意への移行ではない。"
+    assert f(None) is None
+
+
+def test_strip_as_of_prefix_in_response_fixes_reader_facing_fields_only():
+    r = {"one_line_assessment": "as_of: 2026-11-04。要点です。",
+         "main_scenario": {"description": "as_of: 2026-11-04。主シナリオです。", "title_hint": "as_of: 2026-11-04。"},
+         "key_point_assessment": {"primary_key_point": "as_of: 2026-11-04。核心です。",
+                                  "candidate_key_points": [{"key_point": "as_of: 2026-11-04。候補です。"}]},
+         "alternative_scenarios": [{"description": "as_of: 2026-11-04。代替です。"}],
+         "hypothesis_register": [{"description": "as_of: 2026-11-04。仮説です。"}]}
+    n = engine._strip_as_of_prefix_in_response(r)
+    assert n == 6
+    assert r["one_line_assessment"] == "要点です。" and r["main_scenario"]["description"] == "主シナリオです。"
+    assert r["alternative_scenarios"][0]["description"] == "代替です。"
+    assert r["main_scenario"]["title_hint"] == "as_of: 2026-11-04。"  # 対象外のフィールドは触らない
+    assert engine._strip_as_of_prefix_in_response({}) == 0
+
+
+def test_identity_japanese_name_matches_via_alt_names_from_db():
+    """日本語名「トランプ」で書かれた正しいActorが、canonical_name(英語)だけの照合でmismatch扱いに
+    ならず、DBのname_jaも見て一致と判定されること（2026-11-04、新モデルが日本語名で出力する回帰）。"""
+    tid = "c93580fd-99b1-44d9-b924-beb89a2e8378"
+    response = {"key_actor_profiles": [{"actor_ref": "a1", "actor": "トランプ", "entity_id": tid}]}
+    mismatches = engine._resolve_entity_identity_consistency(
+        response, stage1_visible_entity_names={tid: "Donald Trump"},
+        entity_alt_names={tid: ["Trump", "トランプ"]})
+    assert mismatches == []
+    assert response["key_actor_profiles"][0]["entity_id"] == tid
+
+
+def test_identity_japanese_name_without_alt_names_keeps_old_behavior():
+    """alt_namesを渡さない既存呼び出しでは、従来どおりcanonical_nameのみで照合される(後方互換)。"""
+    tid = "c93580fd-99b1-44d9-b924-beb89a2e8378"
+    response = {"key_actor_profiles": [{"actor_ref": "a1", "actor": "トランプ", "entity_id": tid}]}
+    mismatches = engine._resolve_entity_identity_consistency(
+        response, stage1_visible_entity_names={tid: "Donald Trump"})
+    assert len(mismatches) == 1 and response["key_actor_profiles"][0]["entity_id"] is None
+
+
+def test_identity_unrelated_name_still_unresolved_with_alt_names():
+    """alt_namesがあっても、無関係な名前は従来どおりunresolvedになる(取り違え検出は維持)。"""
+    tid = "c93580fd-99b1-44d9-b924-beb89a2e8378"
+    response = {"key_actor_profiles": [{"actor_ref": "a1", "actor": "プーチン", "entity_id": tid}]}
+    mismatches = engine._resolve_entity_identity_consistency(
+        response, stage1_visible_entity_names={tid: "Donald Trump"},
+        entity_alt_names={tid: ["Trump", "トランプ"]})
+    assert len(mismatches) == 1 and response["key_actor_profiles"][0]["entity_id"] is None
+
+
+def test_fetch_entity_alt_names_returns_empty_on_db_failure():
+    """名前表の取得に失敗しても例外を出さず空dictを返す(Expert AIの実行を止めない)。"""
+    class _Broken:
+        def select(self, *a, **k):
+            raise RuntimeError("db down")
+    assert engine._fetch_entity_alt_names(_Broken(), ["x"]) == {}
+    assert engine._fetch_entity_alt_names(_Broken(), []) == {}
+
+
 def test_fixture_c_canonical_xi_entity_id_with_unrelated_name_is_invalid():
     """C: canonical Xi entity_id + "Taiwan trade authority" → invalid/unresolved。
     6E-5で埋めた穴の直接回帰: entity_idがstage1_visible_entity_ids内で正当でも、

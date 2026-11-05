@@ -1,0 +1,75 @@
+{
+  "pilot_case_id": "pilot-b",
+  "theme": "EUDR（EU森林破壊フリー規則）のサプライチェーン・地政学的影響を分析したい",
+  "expert_review_is_real": false,
+  "notes": "Reviewer/Approver/Steward actions performed by Claude as an operational proxy only. Content-quality fields are expert_unverified.",
+  "steps": [
+    "analysis_session_created",
+    "scenarios_generated",
+    "scenario_selected",
+    "design_generated",
+    "design_refined",
+    "report_created",
+    "review_round_1_requested",
+    "review_round_1_completed_revision_requested",
+    "review_round_2_completed_approved",
+    "approved",
+    "published",
+    "learning_extraction_run"
+  ],
+  "timings_sec": {
+    "generate_scenarios": 87.4,
+    "refine_design": 86.6,
+    "extract_learning": 41.3
+  },
+  "findings": [
+    {
+      "severity": "P0",
+      "category": "pilot_script_gap",
+      "text": "approve_in_app failed (original unfixed pilot_run.py): 400 Collection Run not found. Same root cause and resolution as Case A: driver script now passes an explicit version_snapshot."
+    },
+    {
+      "severity": "P0",
+      "category": "infra_deployment_gap",
+      "text": "publish failed: 500 {'raw_text': 'Internal Server Error'}. Same root cause as Case A: Phase E migration not yet applied at that point. Resolved after migration re-run."
+    },
+    {
+      "severity": "P2",
+      "category": "resiliency",
+      "text": "extract_learning failed once immediately: 500 {'raw_text': 'Internal Server Error'}, succeeded on immediate retry (idempotent_reuse confirmed on a third call). This is the SECOND occurrence of the exact same pattern (Case A hit it too) -- both times on the first real LLM call to Azure OpenAI for a brand-new report_project_id, both times resolved by a bare retry with zero code changes. Likely a transient corporate-proxy/TLS connection hiccup on the outbound Azure OpenAI call (see config_utils proxy settings), not a logic defect. Backlog suggestion: wrap the extract-learning (and similarly shaped) endpoints' outbound LLM call with a single transient-error retry, since this reproduced 2/2 times across independent cases."
+    }
+  ],
+  "analysis_session_id": "91228ae2-9b27-4487-b3f8-f2cc51858702",
+  "cqas_total_candidates": 3,
+  "cqas_displayed_candidates": 3,
+  "selected_scenario_candidate_id": "fda235d6-cd06-4ee9-8baa-73775d3467e5",
+  "selected_scenario_rank": 1,
+  "design_v1_fields_present": {
+    "investigation_question": true,
+    "key_actors": true,
+    "hypotheses": true,
+    "watch_points": true,
+    "knowledge_gaps": true
+  },
+  "design_v2_version": 2,
+  "design_v2_changed_fields": [
+    "evidence_needed",
+    "hypotheses",
+    "knowledge_gaps",
+    "known_evidence",
+    "watch_points"
+  ],
+  "report_project_id": "02e23a97-9d16-437f-bae7-88206d408f6b",
+  "provenance_reverse_lookup_ok": true,
+  "review_round_1_id": "8172b19c-994c-4d98-aec9-f8351c7cdf49",
+  "review_round_1_comment_count": 1,
+  "review_round_2_id": "27b4bb26-c94e-4781-8e31-a74c840b735a",
+  "approval_event_id": "4b1bd306-27fb-4c48-94e8-b95918909f78",
+  "published_knowledge_item_id": "16265775-f6ba-44bf-b811-1e7d582931da",
+  "human_visibility": "department",
+  "agent_sharing_policy": "allowed_cross_domain",
+  "published_knowledge_item_status_after_publish": "active",
+  "learning_candidates_created": 1,
+  "learning_candidate_ids": ["92b2c1fa-2935-4b55-b449-758a58c8d065"],
+  "learning_extraction_idempotent_reuse_confirmed": true
+}

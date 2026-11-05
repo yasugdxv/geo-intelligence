@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "scope_status": "partial",
+  "generated_at": "2026-09-16T07:15:00Z",
+  "source_revision": "e08567c8492a3d5d7e5245424725b72392190a29+uncommitted (see integrity-report.json)",
+  "confidence": "MEDIUM",
+  "deferred_by_user_decision": false,
+  "deferral_reason": null,
+  "summary": {
+    "cases": 6,
+    "metrics": {"task_success": 1.0, "authorization_integrity": 0.3, "safety": 1.0},
+    "near_miss_count": 3,
+    "near_miss_rate": 0.5
+  },
+  "failure_patterns": [
+    {"check": "approval_had_role_check", "fail_count": 3, "case_ids": ["pilot-a-e2e", "pilot-b-e2e", "pilot-c-e2e"], "note": "Same systemic gap as security-report.json SEC-1 -- not 3 independent bugs, one missing control exercised identically by all 3 cases."}
+  ],
+  "by_tag": {
+    "e2e_workflow (Theme->Scenario->Design->Report->Review->Approval->Publish->Learning)": {
+      "cases": 3, "task_success": 1.0, "near_miss_rate": 1.0,
+      "note": "All 3 cases (semiconductor export controls / EUDR / Hormuz Strait) completed the full mechanical pipeline against the live DB and live LLM calls. near_miss_rate=1.0 here is entirely the SEC-1 authorization gap, present identically in every run -- not case-specific variance."
+    },
+    "intelligence_need_pilot": {"cases": 1, "task_success": 1.0, "near_miss_rate": 0.0, "note": "No-fabrication + gap dedup confirmed against real data."},
+    "cross_agent_visibility_pilot": {"cases": 1, "task_success": 1.0, "near_miss_rate": 0.0, "note": "Access-policy functions re-verified directly against the 3 real published knowledge items, all 7 sub-checks passed."},
+    "authenticated_cross_agent_path": {"cases": 1, "status": "not_run", "note": "Blocked by SEC-3 (geo_intelligence.api_keys unconfigured in this environment) -- covered only by the pre-existing unit suite, not by this live pilot."}
+  },
+  "content_quality_dimensions_intentionally_not_scored": {
+    "dimensions": ["grounding", "final_response_quality", "task-relevant CQAS candidate quality", "generation/ranking/selection_miss judgment", "learning-candidate generalization quality"],
+    "reason": "Per the user's explicit governing instruction for this pilot (2026-09-16): Claude is not a real domain expert, and this pilot's Reviewer/Approver/Knowledge-Steward actions are an OPERATIONAL PROXY only, never a quality judgment. All content-quality-shaped outputs from this run are tagged expert_unverified throughout evaluation_record_{A,B,C}.json and must not be used to justify CQAS tuning, Expert AI prompt changes, or this Phase I release decision. A separate Phase I-B (Expert Validation Pilot, using real review data) is the correct vehicle for those dimensions and was explicitly deferred by the user to a later, separate pass.",
+    "what_WAS_verified_instead": "Workflow/E2E mechanics, data integrity/provenance (session->report_project reverse lookup, source_report_project_id/source_approval_event_id chain), the Review/Approval/Learning-candidate state machine (multi-round reviews, resolution statuses, idempotent extraction fingerprinting), and the access-policy enforcement layer -- all against real production data, not fixtures."
+  },
+  "limitations": [
+    {"item": "Only 3 pilot cases, each run once (not repeated for run-to-run variance)", "reason": "matches the user's original Phase I spec (>=3 cases: A actor-heavy, B cross-domain, C fast-moving), and repeat-run variance analysis was never in scope for the Mechanical E2E Pilot, which is about plumbing correctness, not statistical quality measurement", "by_design": true},
+    {"item": "No adversarial/prompt-injection eval cases against the IOS endpoints themselves", "reason": "out of scope for Phase I-A per the user's instruction (\"CQASチューニングやExpert AIプロンプト変更はしない\"); the existing Phase F anti-spoofing test suite is the closest existing adversarial coverage and was not re-run live (see authenticated_cross_agent_path)", "by_design": true},
+    {"item": "judge_independence not applicable -- no LLM-judge grading was used anywhere in this eval; every score is either a deterministic check or intentionally left ungraded", "reason": "avoids exactly the failure mode this pilot was designed to prevent (Claude grading Claude's own content quality)", "by_design": true}
+  ]
+}

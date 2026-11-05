@@ -1,0 +1,82 @@
+{
+  "case_id": "RUBIO_VANCE_ROLE_CHOREOGRAPHY",
+  "case_name": "Rubio / Vance Good Cop / Bad Cop Role Choreography",
+  "source_session": "一次的なSession/Review記録ではなく、2026-02-17付の実メール返信（M059）。reasoning_episodes_v0_2.csv（後から作成されたGold CSV）のエピソードE08は交差確認のみに使用し、Source of Truthとしては扱っていない。",
+  "source_documents": {
+    "blind_input_source": "eguchi_expert_ai_final_v1_0/sources/M059.html（件名メタデータのみ。転送元記事本文は一次資料内に存在しない）",
+    "expert_gold_source": "eguchi_expert_ai_final_v1_0/sources/M059.html（江口さんの返信本文）",
+    "cross_reference_only": "reasoning_episodes_v0_2.csv episode E08（source_ref: '069 Re: Delicate Détente'）— evaluation-onlyの交差確認用。Source of Truthとしては使わない。"
+  },
+  "source_gap_disclosure": "M059.htmlに転送元記事の本文が含まれておらず、件名メタデータのみが確認できる。江口さんの返信内で言及される具体的事実（スロバキア/ハンガリー訪問、ウクライナ有志団会合欠席等）が記事由来か本人の補足知識かを判別できないため、これらをBlind Inputに含めていない。このためBlind Input自体の情報量が他ケースより著しく少ない点に注意（RUBIO_VANCE_ROLE_CHOREOGRAPHY_BLIND_INPUT.md参照）。",
+  "blind_input_file": "RUBIO_VANCE_ROLE_CHOREOGRAPHY_BLIND_INPUT.md",
+  "session_faithful_input_file": "RUBIO_VANCE_ROLE_CHOREOGRAPHY_SESSION_FAITHFUL_INPUT.md",
+  "expert_gold_file": "RUBIO_VANCE_ROLE_CHOREOGRAPHY_EXPERT_GOLD.md",
+  "validation_rubric_file": "RUBIO_VANCE_ROLE_CHOREOGRAPHY_VALIDATION_RUBRIC.md",
+  "_semantic_role_note": "全Gold Unitが独立したReading Cardとして出ることは要求しない。semantic_role=reading_candidate/primary_readingのみCQA Candidate Pool/S Ranking/Portfolio Rescue/Final Exposureで評価する。",
+  "_existing_model_mapping_note": "gold_reasoning_patterns内のexisting_model_mappingはevaluation-onlyのsoft mappingである。Generation Input（Runtime Prompt/Retrieval）へは絶対に渡さないこと。",
+  "gold_units": [
+    {
+      "unit_id": "GU1_words_actions_divergence",
+      "semantic_role": "cue_implication",
+      "title": "Rubioの発言と行動が逆方向を向いていること自体への着目",
+      "summary": "Rubioの融和的な発言内容と、MAGA寄りの国のみ訪問しウクライナ関連会合を欠席するという実際の行動が一致していない。",
+      "evaluation_axes": ["cue_hit", "question_reframe_hit", "step2_reasoning_exposure"]
+    },
+    {
+      "unit_id": "GU2_good_cop_bad_cop_role_choreography",
+      "semantic_role": "primary_reading",
+      "title": "JDヴァンスとルビオはBad Cop/Good Copを演じ分けて相手の心理をコントロールしている",
+      "summary": "ルビオとヴァンスは教科書通りのGood Cop/Bad Cop役割分担によって相手側の心理をコントロールする手法を取っているという読み。",
+      "evaluation_axes": ["candidate_hit", "s_rank", "top3_retention", "top5_retention", "portfolio_rescue", "final_exposure_hit", "causal_structure_hit"]
+    },
+    {
+      "unit_id": "GU3_witkoff_kushner_parallel_structure",
+      "semantic_role": "relationship_insight",
+      "title": "ウクライナ・ガザ交渉ではウィトコフ・クシュナーがBad Cop役を担っている",
+      "summary": "GU2と同型の役割分担パターンが、ウクライナ・ガザ交渉チャンネル（ウィトコフ・クシュナー）でも並行して観測される。",
+      "evaluation_axes": ["actor_relationship_hit", "causal_structure_hit", "step2_reasoning_story_exposure"]
+    },
+    {
+      "unit_id": "GU4_actions_as_true_intent",
+      "semantic_role": "actor_insight",
+      "title": "行動（訪問国選択・会合出欠）を本音の指標として読む",
+      "summary": "本音の判断根拠として、発言内容ではなく具体的な行動（訪問・欠席の選択）を採用する証拠選択の方法。",
+      "evaluation_axes": ["actor_relationship_hit", "causal_structure_hit", "step2_reasoning_story_exposure"]
+    }
+  ],
+  "gold_cues": [
+    "Rubioの発言内容と実際の行動（訪問国選択・会合出欠）が逆方向を向いている"
+  ],
+  "gold_questions": [
+    "発言と行動、どちらが本音を反映しているか",
+    "この不一致は個人的な矛盾ではなく、意図的な役割分担ではないか"
+  ],
+  "gold_actors": [
+    "Marco Rubio（国務長官）",
+    "JD Vance（副大統領）",
+    "Steve Witkoff",
+    "Jared Kushner"
+  ],
+  "gold_relationships": [
+    {"from": "Rubio", "to": "Vance", "type": "good_cop_bad_cop_choreography", "unit_id": "GU2_good_cop_bad_cop_role_choreography"},
+    {"from": "Witkoff/Kushner", "to": "Ukraine/Gaza negotiation", "type": "parallel_bad_cop_role", "unit_id": "GU3_witkoff_kushner_parallel_structure"}
+  ],
+  "gold_reasoning_patterns": [
+    {
+      "pattern_name_ja": "Means-Goal / Role Choreography（矛盾する言動を意図的な役割分担として読む）",
+      "pattern_description": "一見矛盾する複数アクターの言動を、単なる不一致ではなく意図的に演じ分けられた役割分担として読む",
+      "unit_id": "GU2_good_cop_bad_cop_role_choreography",
+      "existing_model_mapping": "G06 Means–Goal / Role Choreography（reasoning_episodes_v0_2.csv、後から作成されたGold CSV由来）",
+      "mapping_confidence": "soft",
+      "mapping_note": "この対応関係は後から作成されたCSVに由来するため、Source of Truthとしては扱わない。evaluation-onlyの交差確認情報として付記する。"
+    },
+    {
+      "pattern_name_ja": "並行構造による裏付け（別チャンネルでの同型パターンを確認する）",
+      "pattern_description": "ある読みを、別の並行する事例・交渉チャンネルにおける同型のパターンで裏付ける",
+      "unit_id": "GU3_witkoff_kushner_parallel_structure",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    }
+  ]
+}

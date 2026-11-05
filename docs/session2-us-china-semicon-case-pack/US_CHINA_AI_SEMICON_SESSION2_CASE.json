@@ -1,0 +1,104 @@
+{
+  "case_id": "US_CHINA_AI_SEMICON_SESSION2",
+  "case_name": "米中AI・半導体競争を巡る米国の対中輸出管理政策の政治力学",
+  "source_session": "Session 2 (2026-08-25、江口さんインタビュー２、Teams/Plaud文字起こし生データ)、テーマ2",
+  "source_documents": {
+    "blind_input_source": "テーマ2_0824.docx（Section 1〜8、Stakeholder Table。GPT初期分析ドラフト＋背景ファクト）",
+    "expert_gold_source": "江口さんインタビュー２ (1).docx（テーマ2に関する発言部分、ASR生データ）",
+    "note": "expert_gold_sourceはTeams/Plaudの音声認識による文字起こし生データ。言い淀み等をASRが正しく認識できていない箇所がある。"
+  },
+  "blind_input_file": "US_CHINA_AI_SEMICON_SESSION2_BLIND_INPUT.md",
+  "session_faithful_input_file": "US_CHINA_AI_SEMICON_SESSION2_SESSION_FAITHFUL_INPUT.md",
+  "expert_gold_file": "US_CHINA_AI_SEMICON_SESSION2_EXPERT_GOLD.md",
+  "validation_rubric_file": "US_CHINA_AI_SEMICON_SESSION2_VALIDATION_RUBRIC.md",
+  "_semantic_role_note": "全Gold Unitが独立したReading Cardとして出ることは要求しない。semantic_role=reading_candidateのみCQA Candidate Pool/S Ranking/Portfolio Rescue/Final Exposureで評価する。",
+  "_existing_model_mapping_note": "gold_reasoning_patterns内のexisting_model_mappingはevaluation-onlyのsoft mappingである。Generation Input（Runtime Prompt/Retrieval）へは絶対に渡さないこと。",
+  "gold_units": [
+    {
+      "unit_id": "GU1_good_us_china_relations_superordinate_objective",
+      "semantic_role": "primary_reading",
+      "title": "圧力維持・競争力維持の上位に『良好な米中関係の維持』という目的がある",
+      "summary": "Trumpにとって対中圧力維持と自国企業競争力維持は並列目的ではなく、そのさらに上位に良好な米中関係維持という目的がある。",
+      "evaluation_axes": ["candidate_hit", "s_rank", "top3_retention", "top5_retention", "portfolio_rescue", "final_exposure_hit", "causal_structure_hit"]
+    },
+    {
+      "unit_id": "GU2_semiconductor_as_relationship_tool",
+      "semantic_role": "reading_candidate",
+      "title": "良好な関係を維持するためのツールとして半導体アクセスを使うことも厭わない",
+      "summary": "半導体輸出管理は安全保障と競争力だけで決まる政策ではなく、対中関係全体を管理するための交渉材料として位置づけられる。",
+      "evaluation_axes": ["candidate_hit", "s_rank", "top3_retention", "top5_retention", "portfolio_rescue", "final_exposure_hit"]
+    },
+    {
+      "unit_id": "GU3_nsc_as_primary_opposition",
+      "semantic_role": "structural_explanation",
+      "title": "半導体を道具として使うことに対する最大の反対勢力は国家安全保障ライン",
+      "summary": "GU1の上位目的から各Actorの立ち位置が逆算的に説明される——NSCが最大の反対勢力、Commerceは両立志向、議会規制派は停止志向。",
+      "evaluation_axes": ["actor_relationship_hit", "causal_structure_hit", "step2_reasoning_story_exposure"]
+    },
+    {
+      "unit_id": "GU4_recurring_pattern_tiktok_ev",
+      "semantic_role": "relationship_insight",
+      "title": "同じ計算パターンがTikTok・中国EV投資でも繰り返される",
+      "summary": "『圧力維持+競争力維持+良好な関係維持』という同一パターンがTikTok売却騒動や中国EV対米投資提案でも観測され、半導体固有ではなくTrumpの繰り返しパターンであることを裏付ける。",
+      "evaluation_axes": ["actor_relationship_hit", "causal_structure_hit", "step2_reasoning_story_exposure"]
+    },
+    {
+      "unit_id": "GU5_start_from_keyman_country_objective",
+      "semantic_role": "diagnostic_question",
+      "title": "この局面の最大のキーマンを軸に、その人の当該国への根本的な考えから逆算する",
+      "summary": "局面分析のスタートポイントは最大のキーマンを特定し、その人物の当該国全体への根幹の考えを捉えてから個別政策を逆算すること。",
+      "evaluation_axes": ["cue_hit", "question_reframe_hit", "step2_reasoning_exposure"]
+    }
+  ],
+  "gold_cues": [
+    "Stakeholder Tableが『圧力維持・競争力維持・良好な関係維持』を並列目的として扱っている点への疑義",
+    "TikTok売却騒動・中国EV対米投資提案という別事例との構造的な類似"
+  ],
+  "gold_questions": [
+    "Trumpのより上位の対中関係観・Objectiveは何か",
+    "半導体政策はその上位目的に対してどういう手段的（instrumental）位置づけにあるか"
+  ],
+  "gold_actors": [
+    "Trump（米大統領）",
+    "White House国家安全保障ライン（NSC等）",
+    "Commerce・Lutnick商務長官",
+    "BIS・Kessler商務次官",
+    "議会の規制強化派",
+    "Moolenaar（管理された依存派）",
+    "NVIDIA",
+    "TSMC等の受託製造会社",
+    "中国（国家、およびEVメーカー等の企業主体）"
+  ],
+  "gold_relationships": [
+    {"from": "Trump", "to": "China", "type": "relationship_maintenance_as_superordinate_goal", "unit_id": "GU1_good_us_china_relations_superordinate_objective"},
+    {"from": "Semiconductor export policy", "to": "US-China relationship", "type": "instrumental_tool", "unit_id": "GU2_semiconductor_as_relationship_tool"},
+    {"from": "NSC", "to": "Trump's instrumental use of chips", "type": "institutional_opposition", "unit_id": "GU3_nsc_as_primary_opposition"},
+    {"from": "TikTok deal pattern", "to": "Semiconductor deal pattern", "type": "structural_analogy", "unit_id": "GU4_recurring_pattern_tiktok_ev"}
+  ],
+  "gold_reasoning_patterns": [
+    {
+      "pattern_name_ja": "並列目的に階層を与える（上位概念/下位の道具という構造化）",
+      "pattern_description": "複数の並列した目的として提示されているものに、上位目的とそれを実現する道具という階層構造を与え直す",
+      "unit_id": "GU1_good_us_china_relations_superordinate_objective",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    },
+    {
+      "pattern_name_ja": "横断的パターン確認（同一Actorの別事例での再現性を確認する）",
+      "pattern_description": "ある局面で見出した構造を、同一行為者の別の事例に当てはめて再現性を確認し、単発の解釈ではなく繰り返しパターンとして裏付ける",
+      "unit_id": "GU4_recurring_pattern_tiktok_ev",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    },
+    {
+      "pattern_name_ja": "キーマン起点法（局面のキーマンの対象国全体への根幹の考えから逆算する）",
+      "pattern_description": "局面の最大のキーマンを特定し、その人物の対象国全体への根本的なスタンスを起点に個別政策判断を逆算的に説明する",
+      "unit_id": "GU5_start_from_keyman_country_objective",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    }
+  ]
+}

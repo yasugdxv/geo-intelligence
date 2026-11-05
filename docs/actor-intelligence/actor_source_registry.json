@@ -1,0 +1,3964 @@
+{
+  "generated_at": "2026-08-30",
+  "note": "10 Key Actors Historical Intelligence Build, Phase B (Source Registry)。ファイルベース管理（DB migration不要、geo_source_registryテーブルは既存theme_id紐付け限定schemaのため今回は再利用しない）。各source_idはこのファイル内でのみ一意なローカル識別子であり、DBのUUID/FK制約は無い。",
+  "actors": [
+    {
+      "actor_intelligence_id": "donald_trump",
+      "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "whitehouse_gov_remarks",
+          "source_name": "The White House - Remarks",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Executive Office of the President (whitehouse.gov)",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "speech_transcript",
+            "press_conference",
+            "official_statement",
+            "remarks"
+          ],
+          "historical_start_year": 2025,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。第二期(2025-)のみ、第一期はtrumpwhitehouse.archives.govへ移動済み。ページネーションあり(163+ページ)。",
+          "searchability": "サイト内検索/フィルタあり",
+          "expected_value": "現任期の発言・声明の一次記録",
+          "priority": "high"
+        },
+        {
+          "source_id": "whitehouse_gov_presidential_actions",
+          "source_name": "The White House - Presidential Actions",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Executive Office of the President (whitehouse.gov)",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "executive_order",
+            "proclamation",
+            "memorandum",
+            "official_statement"
+          ],
+          "historical_start_year": 2025,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "未直接fetchだが同一CMS構造",
+          "searchability": "action種別で分類",
+          "expected_value": "発言でなく実際の行動（大統領令等）の制度的記録",
+          "priority": "high"
+        },
+        {
+          "source_id": "trumpwhitehouse_archives_2017_2021",
+          "source_name": "Trump White House Archives (NARA, 2017-2021)",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "National Archives and Records Administration (NARA)",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "speech_transcript",
+            "press_conference",
+            "official_statement",
+            "executive_order",
+            "proclamation"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": false,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。凍結済みStatic Archive、明瞭なnavigation。",
+          "searchability": "section/topic別navigation",
+          "expected_value": "第一期(2017-2021)の完全な公式記録アーカイブ",
+          "priority": "high"
+        },
+        {
+          "source_id": "trumpwhitehouse_un_ga_speeches",
+          "source_name": "Trump WH Archives - UN General Assembly Remarks (73rd/74th)",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "NARA (trumpwhitehouse.archives.gov)",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "speech_transcript",
+            "official_statement"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": false,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。73rd Session全文取得、真正性確認済み。",
+          "searchability": "セッション別permalink",
+          "expected_value": "第一期UNGA演説の公式逐語記録",
+          "priority": "high"
+        },
+        {
+          "source_id": "un_ga_80th_session_trump",
+          "source_name": "UN Audiovisual Library - Trump 80th Session GA Address (2025)",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "United Nations (media.un.org)",
+          "country": "International",
+          "language": "English他",
+          "content_types": [
+            "speech_transcript",
+            "audio_recording"
+          ],
+          "historical_start_year": 2025,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。音声のみ、文字起こしはWikisource等で別途要確認。",
+          "searchability": "asset-idベース",
+          "expected_value": "直近UNGA演説（音声）の公式記録",
+          "priority": "medium"
+        },
+        {
+          "source_id": "nato_official_texts",
+          "source_name": "NATO Official Texts and Resources (Summit Declarations)",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "NATO",
+          "country": "International",
+          "language": "English",
+          "content_types": [
+            "official_statement",
+            "joint_statement",
+            "treaty_declaration"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "検索で存在確認、直接fetch未実施。日付付きURLパターン。",
+          "searchability": "日付URLで時系列検索容易",
+          "expected_value": "NATO関連の制度的合意記録（本人発言と独立）",
+          "priority": "high"
+        },
+        {
+          "source_id": "app_ucsb_trump_documents",
+          "source_name": "The American Presidency Project (UCSB) - Trump Documents",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "UC Santa Barbara",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "speech_transcript",
+            "press_conference",
+            "official_statement",
+            "executive_order",
+            "campaign_document",
+            "social_media_post"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。188,437件、第一期/第二期を別entryで索引。フォームベース検索。",
+          "searchability": "president/term/category/date_range で高精度フィルタ可能",
+          "expected_value": "最も充実した横断アーカイブ、2015年キャンペーン期から現在まで",
+          "priority": "high"
+        },
+        {
+          "source_id": "app_ucsb_truth_social",
+          "source_name": "APP - Truth Social Posts Archive",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "UC Santa Barbara",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "social_media_post"
+          ],
+          "historical_start_year": 2022,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。667件、日付別permalink。",
+          "searchability": "日次permalinkで容易にクロール可能",
+          "expected_value": "本人の未編集発言（取引型スタイルの重要シグナル）",
+          "priority": "high"
+        },
+        {
+          "source_id": "app_ucsb_event_timeline",
+          "source_name": "APP - Trump Event Timeline",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "UC Santa Barbara",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "biography",
+            "timeline"
+          ],
+          "historical_start_year": 1946,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "URL確認のみ、未fetch",
+          "searchability": "単一参照ページ",
+          "expected_value": "経歴の時系列骨格（Discovery補助、学術ホスティングでWikipediaより信頼度高）",
+          "priority": "medium"
+        },
+        {
+          "source_id": "trumplibrary_gov",
+          "source_name": "Donald J. Trump Presidential Library (official site)",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "NARA",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "biography",
+            "archive_index",
+            "foia_records"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": true,
+          "access_method": "manual",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。FOIA request経路あり、2026年以降拡充予定。",
+          "searchability": "メニュー構造",
+          "expected_value": "第一期アーカイブ・FOIA公開の窓口",
+          "priority": "medium"
+        },
+        {
+          "source_id": "congress_gov_crs_reports",
+          "source_name": "Congress.gov - CRS Reports on Trump Administration Foreign Policy",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Congressional Research Service",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "research_report",
+            "policy_analysis"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": true,
+          "robots_or_access_notes": "検索で複数の実在レポート確認(R49019/IN12678/R48960等)。EveryCRSReport.comがミラーとして使いやすい。",
+          "searchability": "タイトル/トピック/番号で検索可能",
+          "expected_value": "政権の対イラン・対中政策等への非党派的な独立分析",
+          "priority": "medium"
+        },
+        {
+          "source_id": "reuters_trump_coverage",
+          "source_name": "Reuters - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "International",
+          "language": "English",
+          "content_types": [
+            "news_article"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "rss",
+          "crawlable": true,
+          "robots_or_access_notes": "一般知識ベース、未fetch",
+          "searchability": "良好",
+          "expected_value": "交渉・翻意の中立的記録",
+          "priority": "high"
+        },
+        {
+          "source_id": "ap_trump_coverage",
+          "source_name": "Associated Press - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "AP",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "rss",
+          "crawlable": true,
+          "robots_or_access_notes": "一般知識ベース、未fetch",
+          "searchability": "良好",
+          "expected_value": "速報性の高い中立的事実記録",
+          "priority": "high"
+        },
+        {
+          "source_id": "bbc_trump_coverage",
+          "source_name": "BBC - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "BBC",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "rss",
+          "crawlable": true,
+          "robots_or_access_notes": "一般知識ベース、Paywallなし",
+          "searchability": "良好",
+          "expected_value": "同盟国側視点の反応把握",
+          "priority": "high"
+        },
+        {
+          "source_id": "ft_trump_coverage",
+          "source_name": "Financial Times - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Financial Times",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Paywallあり",
+          "searchability": "限定的（要購読）",
+          "expected_value": "経済・貿易面の分析",
+          "priority": "medium"
+        },
+        {
+          "source_id": "wsj_trump_coverage",
+          "source_name": "Wall Street Journal - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "WSJ/Dow Jones",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "interview"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Paywallあり",
+          "searchability": "限定的",
+          "expected_value": "独占インタビュー等（他媒体で引用される場合あり）",
+          "priority": "medium"
+        },
+        {
+          "source_id": "nyt_trump_coverage",
+          "source_name": "New York Times - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "NYT",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "interview"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Paywallあり、Archive APIは要キー",
+          "searchability": "良好（Archive API利用可）",
+          "expected_value": "内部政策決定過程の深掘り報道",
+          "priority": "medium"
+        },
+        {
+          "source_id": "wapo_trump_coverage",
+          "source_name": "Washington Post - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Washington Post",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "fact_check"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Paywallあり。Fact Checkerデータベースが特に有用。",
+          "searchability": "良好",
+          "expected_value": "発言と事実の乖離検証",
+          "priority": "medium"
+        },
+        {
+          "source_id": "bloomberg_trump_coverage",
+          "source_name": "Bloomberg - Trump coverage",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Bloomberg",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Paywallあり",
+          "searchability": "良好",
+          "expected_value": "経済政策の市場的影響分析",
+          "priority": "low"
+        },
+        {
+          "source_id": "wikipedia_trump_discovery",
+          "source_name": "Wikipedia - Donald Trump / Foreign policy of Donald Trump",
+          "actor_refs": [
+            "donald_trump"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "English",
+          "content_types": [
+            "biography",
+            "timeline"
+          ],
+          "historical_start_year": 1946,
+          "current_updates_available": true,
+          "access_method": "api",
+          "crawlable": true,
+          "robots_or_access_notes": "Discovery専用、最終Evidenceにしない",
+          "searchability": "優秀（構造化・引用多数）",
+          "expected_value": "イベント名・日付の発見用途のみ",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "xi_jinping",
+      "entity_id": "f34571d3-4742-41b7-8648-5b3ee13b7720",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "gov_cn_state_council_english",
+          "source_name": "The State Council of the PRC (English Portal)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "State Council / Xinhua",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "official_statement",
+            "speech_transcript",
+            "news_article",
+            "policy_document"
+          ],
+          "historical_start_year": 2006,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。日付付きpermalink、静的HTML中心。",
+          "searchability": "News/Policies/Archiveナビ、検索APIなし",
+          "expected_value": "公式声明・全文演説の一次記録",
+          "priority": "high"
+        },
+        {
+          "source_id": "mfa_regular_press_conferences",
+          "source_name": "MFA Regular Press Conferences (Spokesperson Transcripts)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Ministry of Foreign Affairs of the PRC",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "press_conference",
+            "official_statement"
+          ],
+          "historical_start_year": 2002,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み(/eng/xw/fyrbt/lxjzh/)。日付コードpermalink。推測URLは404だったため要注意。",
+          "searchability": "月別クロールに適する",
+          "expected_value": "台湾・米中関係の日次公式見解",
+          "priority": "high"
+        },
+        {
+          "source_id": "mfa_speeches_statements",
+          "source_name": "MFA/FMPRC Speeches and Statements Archive",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "MFA of the PRC",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "speech_transcript",
+            "official_statement"
+          ],
+          "historical_start_year": 2000,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "検索で存在確認、未直接fetch",
+          "searchability": "カテゴリ別閲覧",
+          "expected_value": "日次briefingを超える正式演説",
+          "priority": "high"
+        },
+        {
+          "source_id": "xinhua_official_speech_releases",
+          "source_name": "Xinhua English (Official Speech/Statement Wire)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Xinhua News Agency",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "speech_transcript",
+            "official_statement",
+            "news_article"
+          ],
+          "historical_start_year": 2000,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。日付付きpermalink、JS非依存。",
+          "searchability": "カテゴリnav+日付URL",
+          "expected_value": "他媒体が転載する演説全文の一次配信元",
+          "priority": "high"
+        },
+        {
+          "source_id": "scio_gov_cn_xi_speeches",
+          "source_name": "SCIO English - Xi Speeches/Governance of China",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "State Council Information Office",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "speech_transcript",
+            "official_statement"
+          ],
+          "historical_start_year": 2004,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "検索で存在確認(UNGA演説全文等)、未直接fetch",
+          "searchability": "topic/node別",
+          "expected_value": "UNGA等多国間演説全文の最良アーカイブ",
+          "priority": "high"
+        },
+        {
+          "source_id": "cpc_20th_congress_report_archive",
+          "source_name": "20th CPC National Congress Official Documents Archive",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "gov.cn/Xinhua特設",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "official_statement",
+            "policy_document"
+          ],
+          "historical_start_year": 2022,
+          "current_updates_available": false,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "検索で存在確認、静的アーカイブ",
+          "searchability": "単一特設ページ",
+          "expected_value": "党の5カ年戦略路線の正文（台湾統一言及含む）",
+          "priority": "high"
+        },
+        {
+          "source_id": "idcpc_party_documents_archive",
+          "source_name": "International Department of the CPC - English Document Archive",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "CPC中央対外連絡部",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "official_statement",
+            "policy_document"
+          ],
+          "historical_start_year": 2012,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "検索で到達確認のみ、未直接fetch",
+          "searchability": "文書ツリー閲覧",
+          "expected_value": "党大会文書の代替ミラー",
+          "priority": "medium"
+        },
+        {
+          "source_id": "npc_english_official_site",
+          "source_name": "National People's Congress - English Site",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "全人代",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "official_statement",
+            "policy_document",
+            "press_conference"
+          ],
+          "historical_start_year": 2003,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "アクセス障害確認: TLS handshake failureで2回fetch失敗（geo-blockではなく legacy TLS設定の可能性、要別クライアント確認）",
+          "searchability": "不明（未アクセスのため）",
+          "expected_value": "全人代会期記録",
+          "priority": "medium"
+        },
+        {
+          "source_id": "governance_of_china_book_series",
+          "source_name": "Xi Jinping: The Governance of China (演説集シリーズ)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Foreign Languages Press/State Council",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "speech_transcript",
+            "official_statement"
+          ],
+          "historical_start_year": 2014,
+          "current_updates_available": true,
+          "access_method": "pdf",
+          "crawlable": false,
+          "robots_or_access_notes": "書籍/PDF形式、継続クロール不可、周期的入手対象",
+          "searchability": "全文検索不可（書籍取得が必要）",
+          "expected_value": "最も体系立ったXi本人の発言集（長期教義追跡向け）",
+          "priority": "medium"
+        },
+        {
+          "source_id": "xinhua_english_news",
+          "source_name": "Xinhua English News Wire (一般報道)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Xinhua",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "news_article"
+          ],
+          "historical_start_year": 2000,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。最も統制の効いた公式トーン、独自解釈ほぼ無し。",
+          "searchability": "日付URL+カテゴリ",
+          "expected_value": "公式ナラティブの基準線",
+          "priority": "high"
+        },
+        {
+          "source_id": "peoples_daily_english",
+          "source_name": "People's Daily Online (English)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "人民日報",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "official_statement"
+          ],
+          "historical_start_year": 1997,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。日付付きpermalink。",
+          "searchability": "セクション別+日付URL",
+          "expected_value": "党の機関紙、イデオロギー的シグナリングでXinhuaより一段上の権威性",
+          "priority": "high"
+        },
+        {
+          "source_id": "global_times_english",
+          "source_name": "Global Times (English)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Global Times(人民日報系タブロイド)",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "opinion"
+          ],
+          "historical_start_year": 2009,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。Xinhua/人民日報とは意図的に異なる、民族主義的・対決的トーン。台湾・対米強硬シグナルのテスト媒体。",
+          "searchability": "カテゴリ+日付slug",
+          "expected_value": "非公式公式の強硬論調シグナル把握",
+          "priority": "high"
+        },
+        {
+          "source_id": "cgtn_english",
+          "source_name": "CGTN (English)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "CCTV国際版",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "video_transcript"
+          ],
+          "historical_start_year": 2016,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み(www.cgtn.com)。root pathは404、記事別path使用要。",
+          "searchability": "カテゴリnav+日付URL",
+          "expected_value": "国営放送の演説映像・引用抜粋",
+          "priority": "medium"
+        },
+        {
+          "source_id": "caixin_global",
+          "source_name": "Caixin Global",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "財新伝媒",
+          "country": "China",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。部分Paywallあり、見出し・要約は閲覧可。RSS提供。",
+          "searchability": "セクション別+RSS",
+          "expected_value": "経済安保・財政政策等の相対的に独立した分析視点",
+          "priority": "high"
+        },
+        {
+          "source_id": "scmp_xi_jinping_topic",
+          "source_name": "South China Morning Post - Xi Jinping Topic Page",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "SCMP",
+          "country": "Hong Kong",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2007,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。混在Paywall（一部SCMP Plus限定）。",
+          "searchability": "専用topicページで発見容易",
+          "expected_value": "香港拠点の相対的に西側寄り報道・分析",
+          "priority": "high"
+        },
+        {
+          "source_id": "cna_focus_taiwan",
+          "source_name": "Central News Agency Taiwan / Focus Taiwan (English)",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "中央社",
+          "country": "Taiwan",
+          "language": "en",
+          "content_types": [
+            "news_article"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。分単位timestamp、RSSあり。",
+          "searchability": "カテゴリ絞込+RSS",
+          "expected_value": "台湾側直接カウンターパート視点",
+          "priority": "high"
+        },
+        {
+          "source_id": "taipei_times",
+          "source_name": "Taipei Times",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "自由時報集団",
+          "country": "Taiwan",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "opinion"
+          ],
+          "historical_start_year": 1999,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。Paywallなし、RSSあり。",
+          "searchability": "日付アーカイブ+RSS",
+          "expected_value": "台湾側の独立系論調・分析",
+          "priority": "medium"
+        },
+        {
+          "source_id": "reuters_china_coverage",
+          "source_name": "Reuters - China Coverage",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "International",
+          "language": "en",
+          "content_types": [
+            "news_article"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "アクセス障害: WebFetch直接失敗(2025年以降のAIクローラーブロックポリシー)。検索スニペット経由のみ利用可。",
+          "searchability": "検索スニペットで発見可能",
+          "expected_value": "西側主要通信社の中国報道",
+          "priority": "medium"
+        },
+        {
+          "source_id": "bloomberg_china_coverage",
+          "source_name": "Bloomberg - China/Xi Jinping Coverage",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Bloomberg",
+          "country": "United States",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2000,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "Paywall。中国国内では過去にブロック歴あり（それ自体が機微度の指標）",
+          "searchability": "検索スニペット",
+          "expected_value": "経済安保面の深掘り分析",
+          "priority": "low"
+        },
+        {
+          "source_id": "wikipedia_xi_jinping",
+          "source_name": "Wikipedia - Xi Jinping",
+          "actor_refs": [
+            "xi_jinping"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "en",
+          "content_types": [
+            "reference_article"
+          ],
+          "historical_start_year": 2003,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch確認済み。構造化・引用充実、158言語版。",
+          "searchability": "優秀",
+          "expected_value": "Discovery専用",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "vladimir_putin",
+      "entity_id": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "kremlin_en_transcripts",
+          "source_name": "President of Russia - English Transcripts & Speeches Archive",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Presidential Executive Office of Russia",
+          "country": "Russia",
+          "language": "English",
+          "content_types": [
+            "speech_transcript",
+            "press_conference",
+            "official_statement",
+            "direct_line_transcript",
+            "interview_transcript"
+          ],
+          "historical_start_year": 2000,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "COULD NOT VERIFY LIVE: all fetch attempts failed silently (network-level block from this environment). Existence/URL pattern/2000 start date confirmed via WebSearch, indexed by search engines.",
+          "searchability": "Stable numeric permalinks, on-site date/keyword search when reachable.",
+          "expected_value": "Single highest-value source: verbatim official record spanning nearly entire tenure (2000-present) incl. Direct Line, Valdai, press conferences.",
+          "priority": "high"
+        },
+        {
+          "source_id": "kremlin_ru_native_archive",
+          "source_name": "President of Russia - Russian-language Transcripts & Executive Acts",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Presidential Executive Office of Russia",
+          "country": "Russia",
+          "language": "Russian",
+          "content_types": [
+            "speech_transcript",
+            "official_statement",
+            "decree",
+            "executive_order"
+          ],
+          "historical_start_year": 2000,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Same domain, same unverified-live status. Russian corpus larger than English-translated subset.",
+          "searchability": "Same site search/index; independently indexed by search engines.",
+          "expected_value": "Fills gaps where English translations are partial/delayed/omitted.",
+          "priority": "high"
+        },
+        {
+          "source_id": "mid_ru_statements",
+          "source_name": "Russian Ministry of Foreign Affairs - Foreign Policy News/Statements",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Russian MFA (MID)",
+          "country": "Russia",
+          "language": "English/Russian",
+          "content_types": [
+            "official_statement",
+            "press_release",
+            "diplomatic_note"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "ECONNREFUSED - unreachable from this environment, same pattern as other Russian state domains.",
+          "searchability": "Unverified directly.",
+          "expected_value": "Official Russian position statements on NATO/sanctions/Ukraine supplementing Putin's personal remarks.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "un_ga_speeches_russia",
+          "source_name": "UN General Assembly / Security Council Statement Records (Russia)",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "United Nations",
+          "country": "International",
+          "language": "English/Russian",
+          "content_types": [
+            "speech_transcript",
+            "official_statement"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "Guessed URL 404'd; correct endpoint needs re-verification. Putin himself rarely addresses UNGA directly (Lavrov usually does).",
+          "searchability": "Unverified this session.",
+          "expected_value": "Independent institutional record of Russia's formal international statements.",
+          "priority": "low"
+        },
+        {
+          "source_id": "tass_politics",
+          "source_name": "TASS - Russian Politics & Diplomacy section",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "TASS (Russian state news agency)",
+          "country": "Russia",
+          "language": "English (tass.com)/Russian (tass.ru)",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Both tass.com/tass.ru returned ECONNREFUSED. Search found EU may require ISP-level TASS blocking, plausibly explaining this.",
+          "searchability": "Known clear article listings when accessible.",
+          "expected_value": "Establishment/official Russian framing, contrast source vs independent/Western coverage.",
+          "priority": "high"
+        },
+        {
+          "source_id": "ria_novosti",
+          "source_name": "RIA Novosti - Politics",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "RIA Novosti",
+          "country": "Russia",
+          "language": "Russian",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "ECONNREFUSED - unreachable, not verified live.",
+          "searchability": "Unverified.",
+          "expected_value": "Second official/establishment Russian wire source.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "kommersant_politics",
+          "source_name": "Kommersant - Politics rubric",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Kommersant",
+          "country": "Russia",
+          "language": "Russian",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "ECONNREFUSED - unreachable.",
+          "searchability": "Unverified.",
+          "expected_value": "More detailed/analytical domestic coverage than wire agencies.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "rbc_politics",
+          "source_name": "RBC - Politics rubric",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "RosBiznesConsulting (RBC)",
+          "country": "Russia",
+          "language": "Russian",
+          "content_types": [
+            "news_article",
+            "business_news"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "ECONNREFUSED - unreachable.",
+          "searchability": "Unverified.",
+          "expected_value": "Business/economic angle on sanctions, historically more independent-leaning than TASS/RIA.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "meduza_en",
+          "source_name": "Meduza (English edition)",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Meduza (Russian exile outlet, Latvia)",
+          "country": "Latvia",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "explainer",
+            "investigation"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED LIVE: meduza.io/en fetched successfully, confirmed listing/tags/timestamps and a full article permalink load.",
+          "searchability": "Clean category listing; /en/search returned 404 (path guess wrong).",
+          "expected_value": "Best-verified independent/exile Russian-perspective source, English-translated, uncensored.",
+          "priority": "high"
+        },
+        {
+          "source_id": "novaya_gazeta_europe",
+          "source_name": "Novaya Gazeta Europe",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Novaya Gazeta Europe (exile)",
+          "country": "Germany/Europe",
+          "language": "Russian (primary), some English",
+          "content_types": [
+            "news_article",
+            "investigation",
+            "data_journalism"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED LIVE: novayagazeta.eu fetched successfully, rubric nav confirmed, dated permalinks.",
+          "searchability": "Clear rubric-based browsing.",
+          "expected_value": "Second independent/exile voice, strong investigative tradition.",
+          "priority": "high"
+        },
+        {
+          "source_id": "reuters_world_europe_putin",
+          "source_name": "Reuters - World/Europe (Russia coverage)",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "United Kingdom/International",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Tool-side 'unable to fetch', not a network failure. Generally well-indexed, light metering.",
+          "searchability": "Well-indexed.",
+          "expected_value": "Gold-standard Western wire coverage.",
+          "priority": "high"
+        },
+        {
+          "source_id": "ap_news_putin_hub",
+          "source_name": "AP News - Vladimir Putin topic hub",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Associated Press",
+          "country": "United States/International",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Tool-side 'unable to fetch', same pattern as Reuters/NYT/FT/WSJ.",
+          "searchability": "Unconfirmed live.",
+          "expected_value": "Unpaywalled, high-reliability wire coverage.",
+          "priority": "high"
+        },
+        {
+          "source_id": "bbc_putin_topic",
+          "source_name": "BBC News - Vladimir Putin topic page",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "BBC",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "broadcast_transcript"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Tool-side 'unable to fetch'. BBC itself has been blocked inside Russia at times (access-asymmetry data point).",
+          "searchability": "Unconfirmed live.",
+          "expected_value": "Unpaywalled Western coverage, strong historical depth.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "bloomberg_politics_putin",
+          "source_name": "Bloomberg - Politics/Russia coverage",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Bloomberg",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "HTTP 403 (bot-detection, distinct from domain-block pattern). Likely paywalled/bot-gated.",
+          "searchability": "Unconfirmed.",
+          "expected_value": "Sanctions/economic-impact angle, deprioritized due to confirmed access friction.",
+          "priority": "low"
+        },
+        {
+          "source_id": "ft_putin_topic",
+          "source_name": "Financial Times - Vladimir Putin topic page",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Financial Times",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool-side 'unable to fetch'; also hard-paywalled.",
+          "searchability": "Unconfirmed.",
+          "expected_value": "High-quality sanctions/finance analysis, low realistic automated accessibility.",
+          "priority": "low"
+        },
+        {
+          "source_id": "wsj_russia",
+          "source_name": "Wall Street Journal - Russia/World coverage",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Wall Street Journal",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool-side 'unable to fetch'; hard-paywalled.",
+          "searchability": "Unconfirmed.",
+          "expected_value": "Valuable but low realistic automated accessibility.",
+          "priority": "low"
+        },
+        {
+          "source_id": "nyt_putin_topic",
+          "source_name": "New York Times - Vladimir Putin topic page",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "New York Times",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool-side 'unable to fetch'; metered/paywalled.",
+          "searchability": "Unconfirmed.",
+          "expected_value": "Deep historical archive (covers Putin since the 1990s) but limited automated accessibility.",
+          "priority": "low"
+        },
+        {
+          "source_id": "wikipedia_putin",
+          "source_name": "Wikipedia - Vladimir Putin (and List of speeches)",
+          "actor_refs": [
+            "vladimir_putin"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "English (234 languages)",
+          "content_types": [
+            "biographical_summary",
+            "citation_index"
+          ],
+          "historical_start_year": 1952,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED LIVE: both bio page and speeches list fetched. Speeches list thin on primary-source citations - discovery only.",
+          "searchability": "Fully indexed.",
+          "expected_value": "Discovery/triage layer, build initial timeline to verify against kremlin.ru/wire coverage.",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "kim_jong_un",
+      "entity_id": "64db3e84-45e3-4217-bf08-1018e1f8c7c5",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "kcna_official",
+          "source_name": "Korean Central News Agency (official site)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "KCNA (DPRK state news agency)",
+          "country": "North Korea",
+          "language": "en, ko",
+          "content_types": [
+            "official_statement",
+            "state_media_signal",
+            "news_article"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch to kcna.kp returned no output (timeout/unreachable), consistent with known instability. Use KCNA Watch as operational substitute.",
+          "searchability": "No reliable full-text search historically.",
+          "expected_value": "Highest-signal official channel when reachable but operationally unreliable.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "rodong_sinmun_official",
+          "source_name": "Rodong Sinmun (official site)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Workers' Party of Korea Central Committee",
+          "country": "North Korea",
+          "language": "en, ko, zh",
+          "content_types": [
+            "official_statement",
+            "state_media_signal",
+            "party_newspaper"
+          ],
+          "historical_start_year": 2011,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Hosted at rodong.rep.kp; not verified reachable this session. Treat direct access as unreliable, use KCNA Watch mirror.",
+          "searchability": "Limited native search.",
+          "expected_value": "Party-line signaling distinct from KCNA wire.",
+          "priority": "low"
+        },
+        {
+          "source_id": "kcna_watch_mirror",
+          "source_name": "KCNA Watch (NK News DPRK state media aggregator)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "NK News",
+          "country": "South Korea/international",
+          "language": "en, ko",
+          "content_types": [
+            "state_media_signal",
+            "official_statement",
+            "archived_pdf",
+            "news_article"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: loaded successfully, ~1,353,518 archived articles, real-time mirroring of 25+ DPRK outlets. RECOMMENDED substitute for unreliable official sites.",
+          "searchability": "Fast full-text search across all outlets/dates.",
+          "expected_value": "Highest practical value for continuous ingestion of DPRK state signaling.",
+          "priority": "high"
+        },
+        {
+          "source_id": "rok_unification_ministry",
+          "source_name": "Ministry of Unification (Republic of Korea)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Government of the Republic of Korea",
+          "country": "South Korea",
+          "language": "en, ko, zh",
+          "content_types": [
+            "official_statement",
+            "government_report",
+            "policy_document"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: unikorea.go.kr loaded, English section confirmed present. Guessed deep-link 404'd, use root domain.",
+          "searchability": "Category browse.",
+          "expected_value": "Authoritative ROK characterization of NK positions/policy.",
+          "priority": "high"
+        },
+        {
+          "source_id": "un_1718_sanctions_committee",
+          "source_name": "UN Security Council 1718 Sanctions Committee (DPRK)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "United Nations Security Council",
+          "country": "International",
+          "language": "en",
+          "content_types": [
+            "official_statement",
+            "sanctions_list",
+            "press_release",
+            "un_document"
+          ],
+          "historical_start_year": 2006,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Confirmed real/active via search; not directly fetched.",
+          "searchability": "Structured document repository.",
+          "expected_value": "Ground truth for nuclear-program sanctions/formal international response.",
+          "priority": "high"
+        },
+        {
+          "source_id": "yonhap_news_agency",
+          "source_name": "Yonhap News Agency (English)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Yonhap News Agency",
+          "country": "South Korea",
+          "language": "en, ko",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch tool failed generically (same as Reuters), likely tool restriction not real outage. Semi-official wire with inter-Korean mission framing.",
+          "searchability": "Standard news site search.",
+          "expected_value": "Fast, high-volume South Korean wire coverage.",
+          "priority": "high"
+        },
+        {
+          "source_id": "chosun_ilbo_english",
+          "source_name": "Chosun Ilbo (English edition)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Chosun Ilbo",
+          "country": "South Korea",
+          "language": "en, ko",
+          "content_types": [
+            "news_article",
+            "opinion"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch failed (tool-side, likely). South Korea's largest-circulation conservative daily.",
+          "searchability": "Standard news site search.",
+          "expected_value": "Conservative-leaning perspective, spectrum balance vs Hankyoreh.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "joongang_ilbo_english",
+          "source_name": "Korea JoongAng Daily",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "JoongAng Ilbo (w/ NYT partnership)",
+          "country": "South Korea",
+          "language": "en, ko",
+          "content_types": [
+            "news_article",
+            "opinion"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch failed (tool-side, likely). Centrist-to-moderate daily.",
+          "searchability": "Standard news site search.",
+          "expected_value": "Centrist perspective, spectrum balance.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "hankyoreh_english",
+          "source_name": "The Hankyoreh (English edition)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Hankyoreh",
+          "country": "South Korea",
+          "language": "en, ko",
+          "content_types": [
+            "news_article",
+            "opinion"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch failed (tool-side, likely). Leading progressive/left-leaning daily, favorable to inter-Korean engagement.",
+          "searchability": "Standard news site search.",
+          "expected_value": "Progressive perspective completing SK political spectrum.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "38north_stimson",
+          "source_name": "38 North",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Stimson Center",
+          "country": "United States",
+          "language": "en",
+          "content_types": [
+            "expert_analysis",
+            "commentary",
+            "briefing"
+          ],
+          "historical_start_year": 2010,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Real, actively publishing (search-verified, 2026 articles found). Direct WebFetch returned HTTP 403 (bot-blocking) - human-browsable, not casually scrapable.",
+          "searchability": "Site search plus topic/country tagging.",
+          "expected_value": "Highest-quality Western NK-specialist expert analysis.",
+          "priority": "high"
+        },
+        {
+          "source_id": "nk_leadership_watch",
+          "source_name": "North Korea Leadership Watch",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Michael Madden (affiliate of 38 North)",
+          "country": "United States",
+          "language": "en",
+          "content_types": [
+            "expert_analysis",
+            "leadership_tracking",
+            "blog"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Confirmed real via WebSearch; not directly fetched.",
+          "searchability": "Category/tag browse.",
+          "expected_value": "Granular tracking of Kim Jong Un's public activity - health/succession/power-structure signals.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "nknews_pro",
+          "source_name": "NK News / NK Pro",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "NK News",
+          "country": "South Korea",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "expert_analysis",
+            "leadership_tracker"
+          ],
+          "historical_start_year": 2010,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Confirmed real via WebSearch; parent org of KCNA Watch. Subscription-based (NK Pro), limited free articles.",
+          "searchability": "Site search plus leadership tracker tool.",
+          "expected_value": "Deep specialist reporting + official leadership-travel tracker, gated by subscription.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "un_press_dprk",
+          "source_name": "UN Meetings Coverage & Press Releases (DPRK-related)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "United Nations (press.un.org)",
+          "country": "International",
+          "language": "en",
+          "content_types": [
+            "press_release",
+            "meeting_record"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Confirmed real via WebSearch; not directly fetched.",
+          "searchability": "Browsable by year/document code.",
+          "expected_value": "Primary-document trail for sanctions actions tied to nuclear/missile tests.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "wikipedia_kim_jong_un",
+          "source_name": "Wikipedia (Kim Jong Un and related NK articles)",
+          "actor_refs": [
+            "kim_jong_un"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "en",
+          "content_types": [
+            "encyclopedic_summary",
+            "discovery_index"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched; reliably accessible per general knowledge. Discovery only.",
+          "searchability": "Native full-text search.",
+          "expected_value": "Fast orientation and citation trail to primary sources.",
+          "priority": "low"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "volodymyr_zelenskyy",
+      "entity_id": "0196d7bd-c39d-4027-a73b-6dad95aa8357",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "president_gov_ua_en",
+          "source_name": "Official Website of the President of Ukraine (English section)",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Office of the President of Ukraine",
+          "country": "Ukraine",
+          "language": "English (translated) + Ukrainian (primary)",
+          "content_types": [
+            "speech_transcript",
+            "official_statement",
+            "decree",
+            "news_article",
+            "press_release"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "COULD NOT VERIFY: all fetch attempts returned ECONNRESET (likely WAF/network block, not real downtime - site is well-documented as live). Known structure: Speeches, All news, Decrees, visits, Photos, Videos.",
+          "searchability": "Google-indexed; predictable /en/news/... URL patterns.",
+          "expected_value": "Ground-truth primary source for official statements/decrees/speeches - anchor of the official layer.",
+          "priority": "high"
+        },
+        {
+          "source_id": "zelenskyy_official_social",
+          "source_name": "Official Zelenskyy/Presidential Office social channels (X, Telegram)",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Office of the President of Ukraine",
+          "country": "Ukraine",
+          "language": "Ukrainian and English (parallel)",
+          "content_types": [
+            "official_statement",
+            "social_media_post"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "api",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched; requires X/Telegram API. Existence confirmed indirectly via search.",
+          "searchability": "Requires API access, not freely crawlable via plain HTML.",
+          "expected_value": "Fastest-moving official channel, often precedes president.gov.ua write-ups.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "un_ga_speeches_ukraine",
+          "source_name": "UN General Assembly official speech/session records (Zelenskyy)",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "United Nations",
+          "country": "International",
+          "language": "English + original",
+          "content_types": [
+            "speech_transcript",
+            "session_record"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched. Confirmed via search that transcripts (2022-2024) are well documented/syndicated (Kyiv Independent, Al Jazeera, PBS).",
+          "searchability": "UN maintains structured meetings-coverage archive; should be checked directly.",
+          "expected_value": "Highest-authority record of set-piece international diplomacy speeches.",
+          "priority": "high"
+        },
+        {
+          "source_id": "allied_joint_statements_ukraine",
+          "source_name": "NATO/G7/EU official joint statements referencing Ukraine",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "NATO/European Council/G7/US Mission to NATO",
+          "country": "International (Belgium/EU)",
+          "language": "English",
+          "content_types": [
+            "official_statement",
+            "joint_declaration",
+            "press_release"
+          ],
+          "historical_start_year": 2022,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "consilium.europa.eu returned HTTP 403 (likely bot-blocking); specific 2023 Vilnius G7 Joint Declaration page confirmed to exist via search.",
+          "searchability": "Stable dated URLs per summit/press-release.",
+          "expected_value": "Documents Western support relationship directly - commitments, wording shifts over time.",
+          "priority": "high"
+        },
+        {
+          "source_id": "verkhovna_rada_en",
+          "source_name": "Verkhovna Rada of Ukraine - official English site",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Verkhovna Rada",
+          "country": "Ukraine",
+          "language": "English + Ukrainian",
+          "content_types": [
+            "legislative_record",
+            "official_statement"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch failed with ECONNREFUSED (network-level). Existence well-established general knowledge.",
+          "searchability": "Not verified; typically has searchable law/bill database.",
+          "expected_value": "Cross-reference president/parliament relations (martial law extensions, wartime legislation).",
+          "priority": "low"
+        },
+        {
+          "source_id": "cabinet_of_ministers_kmu",
+          "source_name": "Cabinet of Ministers of Ukraine - official site",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Cabinet of Ministers of Ukraine",
+          "country": "Ukraine",
+          "language": "Ukrainian (partial English)",
+          "content_types": [
+            "official_statement",
+            "press_release"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not fetched this session. English coverage known to be thinner than president.gov.ua.",
+          "searchability": "Not verified.",
+          "expected_value": "Government-side confirmation of policy execution tied to presidential decrees.",
+          "priority": "low"
+        },
+        {
+          "source_id": "kyiv_independent",
+          "source_name": "The Kyiv Independent",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Kyiv Independent (independent, reader-funded)",
+          "country": "Ukraine",
+          "language": "English (native)",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "speech_transcript_reprint",
+            "investigation"
+          ],
+          "historical_start_year": 2021,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED LIVE via WebFetch: fully accessible, no paywall, native English, dated permalinks. No dedicated Zelensky tag found in visible nav.",
+          "searchability": "News-archive and per-tag listing pages.",
+          "expected_value": "Best English-native, non-paywalled Ukrainian outlet since 2021 founding.",
+          "priority": "high"
+        },
+        {
+          "source_id": "ukrainska_pravda_eng",
+          "source_name": "Ukrainska Pravda - English edition",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Ukrainska Pravda",
+          "country": "Ukraine",
+          "language": "English (translated)",
+          "content_types": [
+            "news_article",
+            "quote_report"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "COULD NOT VERIFY: HTTP 503 twice (likely rate-limiting/bot-blocking, not real outage - large continuously operating outlet since 2000).",
+          "searchability": "Not verified this session.",
+          "expected_value": "One of Ukraine's most-cited independent outlets, spans full Zelenskyy presidency incl. pre-war.",
+          "priority": "high"
+        },
+        {
+          "source_id": "suspilne_en",
+          "source_name": "Suspilne (Ukrainian public broadcaster) - English-facing news",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Suspilne Ukraine",
+          "country": "Ukraine",
+          "language": "Ukrainian primarily; limited English",
+          "content_types": [
+            "news_article",
+            "broadcast_transcript"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "HTTP 403 on corp.suspilne.media (corporate/about site, not main portal - needs re-check on suspilne.media directly).",
+          "searchability": "Not verified.",
+          "expected_value": "Public-broadcaster perspective, but English footprint may be thin.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "interfax_ukraine_en",
+          "source_name": "Interfax-Ukraine - English wire",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Interfax-Ukraine",
+          "country": "Ukraine",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "HTTP 503 twice. Agency (founded 1992) markets subscription wire products alongside a public page - possibly partial paywall.",
+          "searchability": "Not verified.",
+          "expected_value": "Wire-service granularity/speed, but reliability as open-crawl target uncertain.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "reuters_ukraine",
+          "source_name": "Reuters - Ukraine/Zelenskyy coverage",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "United Kingdom/International",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched; general knowledge + search confirming live stories, several mirrored freely via Yahoo News.",
+          "searchability": "Structured dated URL scheme and topic pages.",
+          "expected_value": "Core Western wire baseline for fact-checking dates/quotes.",
+          "priority": "high"
+        },
+        {
+          "source_id": "ap_news_ukraine",
+          "source_name": "Associated Press - Ukraine/Zelenskyy coverage",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Associated Press",
+          "country": "United States/International",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched; confirmed via search that AP stories circulate freely, mirrored on PBS/Yahoo without paywall.",
+          "searchability": "Dated/tagged article pages, generally free.",
+          "expected_value": "Free, high-reliability Western wire baseline.",
+          "priority": "high"
+        },
+        {
+          "source_id": "bbc_news_zelensky",
+          "source_name": "BBC News - Zelenskyy topic coverage",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "BBC",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch flatly refused for bbc.com (tool-level domain restriction). BBC known free/unpaywalled for UK-facing readers.",
+          "searchability": "Dated topic pages with permalinks historically.",
+          "expected_value": "Major non-US Western perspective, useful for US vs European press framing comparison.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "financial_times_ukraine",
+          "source_name": "Financial Times - Ukraine/Zelenskyy coverage",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Financial Times",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2019,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Not fetched; hard subscription paywall, low value for automated bulk ingestion.",
+          "searchability": "Gated content body.",
+          "expected_value": "High-quality financial/geopolitical analysis, manual spot-check use only.",
+          "priority": "low"
+        },
+        {
+          "source_id": "wikipedia_zelenskyy",
+          "source_name": "Wikipedia - Volodymyr Zelenskyy",
+          "actor_refs": [
+            "volodymyr_zelenskyy"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "English (and many others)",
+          "content_types": [
+            "biographical_summary",
+            "timeline",
+            "citation_index"
+          ],
+          "historical_start_year": 1978,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched but appeared reliably in search results; universally known free/crawlable with REST/API path.",
+          "searchability": "Excellent - well-structured, internally linked, heavily cited.",
+          "expected_value": "Fast orientation/timeline-building, citation index - not itself evidentiary.",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "benjamin_netanyahu",
+      "entity_id": "585cc564-5a71-40ac-959b-3995d3a409c8",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "pmo_gov_il_english",
+          "source_name": "Prime Minister's Office - Official Site (English section)",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Government of Israel",
+          "country": "Israel",
+          "language": "English/Hebrew",
+          "content_types": [
+            "official_statement",
+            "speech_transcript",
+            "press_release",
+            "event_readout"
+          ],
+          "historical_start_year": 2009,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch returned HTTP 403 on gov.il pages despite being indexed/reachable via Google; content real and current (verified via search). Likely needs headless browser rather than simple scraping.",
+          "searchability": "Google-indexed; site search exists.",
+          "expected_value": "Ground-truth primary text of official statements, cabinet remarks, speeches (e.g. UN GA).",
+          "priority": "high"
+        },
+        {
+          "source_id": "mfa_gov_il",
+          "source_name": "Israel Ministry of Foreign Affairs - Statements & Documents",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Israel Ministry of Foreign Affairs",
+          "country": "Israel",
+          "language": "English/Hebrew",
+          "content_types": [
+            "official_statement",
+            "press_release",
+            "joint_statement",
+            "legal_filing"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Not directly WebFetched; WebSearch confirmed live current pages incl. joint declarations and ICC-related legal filings (PDF).",
+          "searchability": "Indexed by Google.",
+          "expected_value": "Institutional statements on Iran, Gaza legal proceedings (ICC/ICJ), joint declarations.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "knesset_official_site",
+          "source_name": "Knesset (Israeli Parliament) Official Site - English",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "The Knesset",
+          "country": "Israel",
+          "language": "English/Hebrew",
+          "content_types": [
+            "legislative_record",
+            "member_profile",
+            "plenum_protocol",
+            "committee_record"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch to main.knesset.gov.il returned empty/unparseable response (JS-heavy). Existence/URL pattern confirmed via WebSearch only; depth of protocol archive unverified.",
+          "searchability": "Requires navigating MK database and protocol search separately.",
+          "expected_value": "Formal legislative footprint across his many non-consecutive Knesset terms since 1996.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "un_ga_speech_record",
+          "source_name": "UN General Assembly Speech Records (Netanyahu addresses)",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "United Nations / mirrored via Israeli PMO",
+          "country": "International",
+          "language": "English/Hebrew",
+          "content_types": [
+            "speech_transcript"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "UN's webtv.un.org/undocs.org host transcripts/video; confirmed indirectly via gov.il-hosted transcript (Sept 2026, Hamas/hostages topic).",
+          "searchability": "UN's official record searchable by session/country.",
+          "expected_value": "Most citable primary text for highest-profile international messaging each year.",
+          "priority": "high"
+        },
+        {
+          "source_id": "haaretz",
+          "source_name": "Haaretz",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Haaretz.com (Schocken Group)",
+          "country": "Israel",
+          "language": "English/Hebrew",
+          "content_types": [
+            "news_article",
+            "opinion",
+            "investigative_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch confirmed mixed '.premium' paywall model; guessed tag URL 404'd, use site search/category browsing instead. Live coverage confirmed Aug 2026.",
+          "searchability": "On-site search.",
+          "expected_value": "Left-leaning, frequently critical/investigative coverage - ideological counterweight to Jerusalem Post.",
+          "priority": "high"
+        },
+        {
+          "source_id": "times_of_israel",
+          "source_name": "The Times of Israel - Benjamin Netanyahu topic page",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Times of Israel",
+          "country": "Israel",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "live_blog",
+            "opinion"
+          ],
+          "historical_start_year": 2012,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch confirmed working topic archive, mostly free with some registration prompts. Founded 2012, so archive extends only to that year.",
+          "searchability": "Dedicated topic page with pagination, on-site search, RSS historically.",
+          "expected_value": "Centrist-to-liberal, high volume day-to-day coverage, least paywalled of the three Israeli dailies checked.",
+          "priority": "high"
+        },
+        {
+          "source_id": "jerusalem_post",
+          "source_name": "The Jerusalem Post - Benjamin Netanyahu tag",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Jerusalem Post",
+          "country": "Israel",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "opinion",
+            "biography_summary"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch confirmed working tag archive with bio summary; headlines free, full articles/Premium gated.",
+          "searchability": "Dedicated tag page, on-site search.",
+          "expected_value": "More right-leaning/security-hawkish framing - ideological counterweight to Haaretz.",
+          "priority": "high"
+        },
+        {
+          "source_id": "ynetnews",
+          "source_name": "Ynetnews (English) - Benjamin Netanyahu topic page",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Yedioth Ahronoth Group",
+          "country": "Israel",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "opinion"
+          ],
+          "historical_start_year": 2005,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly WebFetched; WebSearch confirmed live topic page. Largely free/ad-supported.",
+          "searchability": "Dedicated topic page.",
+          "expected_value": "Mainstream high-traffic tabloid-style outlet, popular/mass-market framing.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "al_jazeera_english_netanyahu",
+          "source_name": "Al Jazeera English - Netanyahu coverage",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Al Jazeera Media Network (Qatar state-funded)",
+          "country": "Qatar",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "opinion"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly WebFetched; WebSearch confirmed current articles. Netanyahu government ordered Al Jazeera's Israel offices closed May 2024 (relevant press-freedom data point).",
+          "searchability": "General site search works.",
+          "expected_value": "Regional/Arab counterparty perspective, explicitly adversarial to Netanyahu government framing on Gaza.",
+          "priority": "high"
+        },
+        {
+          "source_id": "al_arabiya_english_netanyahu",
+          "source_name": "Al Arabiya English - Netanyahu coverage",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Al Arabiya (Saudi-owned, MBC Group)",
+          "country": "Saudi Arabia/UAE",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "interview_transcript"
+          ],
+          "historical_start_year": 2007,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly WebFetched; WebSearch confirmed current coverage incl. Netanyahu-Trump meeting.",
+          "searchability": "Articles found via general search.",
+          "expected_value": "Gulf-state-aligned Arab perspective, more measured toward Israel given normalization context.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "reuters_middle_east_netanyahu",
+          "source_name": "Reuters - Middle East/Israel coverage",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "United Kingdom/International",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not independently verified this session (no specific topic URL confirmed).",
+          "searchability": "Known category pages, low paywall friction for headlines (unverified).",
+          "expected_value": "Wire-service, low-editorializing baseline for factual timeline.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "ap_news_netanyahu",
+          "source_name": "Associated Press - Israel/Netanyahu coverage",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Associated Press",
+          "country": "United States",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not independently verified this session, general knowledge only.",
+          "searchability": "Topic hub pages, generally free.",
+          "expected_value": "Similar wire-service baseline value to Reuters.",
+          "priority": "low"
+        },
+        {
+          "source_id": "wikipedia_netanyahu",
+          "source_name": "Wikipedia - Benjamin Netanyahu",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "English",
+          "content_types": [
+            "biography_summary",
+            "timeline",
+            "reference_links"
+          ],
+          "historical_start_year": 1949,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Confirmed as live, actively maintained discovery layer.",
+          "searchability": "Full-text search, cited sources.",
+          "expected_value": "Fast orientation, citation harvesting for term dates/timelines.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "financial_times_israel",
+          "source_name": "Financial Times - Israel/Netanyahu coverage",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Financial Times",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Not fetched, general knowledge only. Hard paywall known.",
+          "searchability": "Unverified.",
+          "expected_value": "Western financial/geopolitical-elite framing.",
+          "priority": "low"
+        },
+        {
+          "source_id": "bbc_news_middle_east_netanyahu",
+          "source_name": "BBC News - Netanyahu/Middle East coverage",
+          "actor_refs": [
+            "benjamin_netanyahu"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "BBC",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": null,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not fetched, general knowledge only.",
+          "searchability": "Topic tag pages, free.",
+          "expected_value": "Mainstream Western public-broadcaster framing.",
+          "priority": "low"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "mohammed_bin_salman",
+      "entity_id": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "spa_english",
+          "source_name": "Saudi Press Agency (SPA) - English",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Saudi Press Agency",
+          "country": "Saudi Arabia",
+          "language": "English (also Arabic, French, others)",
+          "content_types": [
+            "official_statement",
+            "news_article",
+            "royal_decree",
+            "policy_document"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "WebFetch loaded only minimal header fragment (JS-heavy front page). Domain confirmed real. No separate Royal Court site - decrees distributed as SPA releases.",
+          "searchability": "No confirmed public RSS/API; likely needs browser rendering.",
+          "expected_value": "Single most authoritative Tier1 source for verbatim official Saudi statements/decrees naming MBS.",
+          "priority": "high"
+        },
+        {
+          "source_id": "mofa_saudi",
+          "source_name": "Ministry of Foreign Affairs, Kingdom of Saudi Arabia (English)",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Saudi MOFA",
+          "country": "Saudi Arabia",
+          "language": "English/Arabic",
+          "content_types": [
+            "official_statement",
+            "joint_statement",
+            "press_release"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: fully loaded, News & Statements section, embassy directory, eServices.",
+          "searchability": "Structured navigation, standard site search.",
+          "expected_value": "Primary source for official foreign-policy statements (Gulf, Iran, US-China balancing).",
+          "priority": "high"
+        },
+        {
+          "source_id": "vision2030_official",
+          "source_name": "Saudi Vision 2030 (official program site)",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Government of Saudi Arabia",
+          "country": "Saudi Arabia",
+          "language": "English/Arabic",
+          "content_types": [
+            "policy_document",
+            "official_statement",
+            "progress_report"
+          ],
+          "historical_start_year": 2016,
+          "current_updates_available": true,
+          "access_method": "pdf",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch returned HTTP 403 (Cloudflare/bot-protection), site confirmed real via general knowledge. MBS's signature policy program (April 2016).",
+          "searchability": "Indexed by Google; direct scraping blocked for bots.",
+          "expected_value": "Canonical text for MBS's core economic/social transformation agenda.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "pif_official",
+          "source_name": "Public Investment Fund (PIF) - official site",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Public Investment Fund (chaired by MBS)",
+          "country": "Saudi Arabia",
+          "language": "English/Arabic",
+          "content_types": [
+            "official_statement",
+            "press_release",
+            "investment_announcement"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch returned HTTP 403 (bot-protection). MBS chairs PIF - well-established fact (54% stake in MBC Group/Al Arabiya confirmed via search).",
+          "searchability": "Not independently verified.",
+          "expected_value": "Direct proxy for MBS's economic-diplomacy moves (US/China/Gulf investment flows).",
+          "priority": "high"
+        },
+        {
+          "source_id": "gcc_secretariat",
+          "source_name": "Gulf Cooperation Council (GCC) General Secretariat",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "GCC General Secretariat",
+          "country": "Saudi Arabia (GCC HQ)/multilateral",
+          "language": "English/Arabic",
+          "content_types": [
+            "official_statement",
+            "joint_communique",
+            "summit_declaration"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: loaded successfully, News/Media Center sections present.",
+          "searchability": "Search function present; historical archive depth unconfirmed.",
+          "expected_value": "Institutional-level Gulf relations statements involving Saudi Arabia.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "al_arabiya_english_mbs",
+          "source_name": "Al Arabiya English",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Al Arabiya/MBC Group (54% PIF-owned)",
+          "country": "Saudi Arabia (UAE-based historically)",
+          "language": "English (Arabic as main channel)",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "official_statement_coverage"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch HTTP 403. Confirmed state-aligned via search (MBC 54% PIF-owned, editorial 'aligned with Riyadh's objectives'). FLAG: state-aligned, not independent.",
+          "searchability": "Not independently verified due to fetch block.",
+          "expected_value": "State-aligned framing baseline vs Al Jazeera/Western coverage.",
+          "priority": "high"
+        },
+        {
+          "source_id": "asharq_alawsat_english",
+          "source_name": "Asharq Al-Awsat (English edition)",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "SRMG (owned by royal family member)",
+          "country": "Saudi Arabia (pan-Arab, historically London-printed)",
+          "language": "English (Arabic-first)",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "opinion"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: fully loaded, dedicated Gulf/Arab World sections. State/royal-linked, same caveat as Al Arabiya.",
+          "searchability": "Fully crawlable, clear category nav, timestamps.",
+          "expected_value": "Best-verified crawlable Saudi-owned outlet, more analytical depth than Al Arabiya.",
+          "priority": "high"
+        },
+        {
+          "source_id": "arab_news",
+          "source_name": "Arab News",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "SRMG",
+          "country": "Saudi Arabia",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "opinion"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetch-tested; existence/SRMG ownership confirmed via search. Same state-alignment caveat.",
+          "searchability": "Presumed standard navigation.",
+          "expected_value": "Oldest English-language Saudi paper, limited independent value vs Asharq Al-Awsat.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "the_national_uae",
+          "source_name": "The National (Abu Dhabi)",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Abu Dhabi Media (UAE state-owned, not Saudi)",
+          "country": "United Arab Emirates",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetch-tested; dedicated Saudi Arabia section confirmed via search.",
+          "searchability": "Dedicated Saudi Arabia tag/section confirmed.",
+          "expected_value": "Regional non-Saudi-owned middle ground perspective.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "al_jazeera_english_mbs",
+          "source_name": "Al Jazeera English",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Al Jazeera Media Network (Qatar state-funded)",
+          "country": "Qatar",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "investigative_report"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebSearch: live dated article URLs found incl. dedicated MBS tag page.",
+          "searchability": "Dedicated MBS tag page and Saudi Arabia topic page.",
+          "expected_value": "Key COUNTERPOINT source, Qatar-funded and institutionally independent of Riyadh (notable given 2017-2021 rift).",
+          "priority": "high"
+        },
+        {
+          "source_id": "reuters_middle_east_mbs",
+          "source_name": "Reuters - Middle East coverage",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "United Kingdom/global",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level block ('unable to fetch'), not evidence of outage.",
+          "searchability": "Known topic hubs, metered/paywalled pages.",
+          "expected_value": "Gold-standard Western wire coverage of Saudi/MBS diplomacy and OPEC+ decisions.",
+          "priority": "high"
+        },
+        {
+          "source_id": "ap_news_saudi",
+          "source_name": "AP News - Saudi Arabia hub",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Associated Press",
+          "country": "United States/global",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Same tool-level block as Reuters.",
+          "searchability": "Not independently verified.",
+          "expected_value": "Second major Western wire source, cross-verification vs Reuters.",
+          "priority": "high"
+        },
+        {
+          "source_id": "financial_times_saudi",
+          "source_name": "Financial Times - Saudi Arabia coverage",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Financial Times",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "Not fetch-tested; hard paywall known.",
+          "searchability": "Headlines/summaries via search only.",
+          "expected_value": "Oil-policy and PIF/economic-diplomacy analysis, limited to metadata without subscription.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "wikipedia_mbs",
+          "source_name": "Wikipedia - Mohammed bin Salman",
+          "actor_refs": [
+            "mohammed_bin_salman"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "English",
+          "content_types": [
+            "reference_article",
+            "biography"
+          ],
+          "historical_start_year": 1985,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Well-known reliably accessible; discovery-tier only.",
+          "searchability": "Fully indexed, internally hyperlinked.",
+          "expected_value": "Discovery/triage: chronology scaffolding (deputy crown prince 2015, crown prince 2017, PM 2022).",
+          "priority": "low"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "emmanuel_macron",
+      "entity_id": "6b8dabf0-3d77-4071-88f6-1aa66df2d7e6",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "elysee_speeches_statements",
+          "source_name": "Elysee - Speeches and Statements (Emmanuel Macron)",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Presidency of the French Republic",
+          "country": "France",
+          "language": "French, English (full translations of major speeches)",
+          "content_types": [
+            "speech_transcript",
+            "official_statement",
+            "pdf"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via fetch. robots.txt permissive (disallows only search paths); 8 XML sitemaps. Confirmed Sorbonne 'Europe speech' (25 Apr 2024) full English transcript ~16-17k words.",
+          "searchability": "Site search disallowed for crawlers, but sitemaps + filter UI work; well Google-indexed.",
+          "expected_value": "Highest-fidelity primary record of Macron's own words on EU/NATO/strategic autonomy in official English translation.",
+          "priority": "high"
+        },
+        {
+          "source_id": "elysee_all_actualites",
+          "source_name": "Elysee - All News/Actualities (English section)",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Presidency of the French Republic",
+          "country": "France",
+          "language": "English, French",
+          "content_types": [
+            "news_article",
+            "joint_statement",
+            "press_release"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via fetch (elysee.fr/en/all-actualities). Reverse-chronological, paginated, confirmed live items to Aug 2026.",
+          "searchability": "Built-in filter UI by topic/date; no API found.",
+          "expected_value": "Feed for joint EU/NATO statements and state-visit communiques issued directly by the Presidency.",
+          "priority": "high"
+        },
+        {
+          "source_id": "diplomatie_official_statements",
+          "source_name": "France Diplomatie - Official Statements and Speeches",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Ministere de l'Europe et des Affaires Etrangeres (MEAE)",
+          "country": "France",
+          "language": "English, French",
+          "content_types": [
+            "official_statement",
+            "press_release",
+            "speech_transcript"
+          ],
+          "historical_start_year": 2012,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via fetch. Paginated ~64 pages, filterable by date/type/minister. robots.txt allows Googlebot fully. Confirmed live to Aug 27 2026.",
+          "searchability": "Native date/type/minister filters, good for systematic backfill.",
+          "expected_value": "Official French government positions on EU/foreign policy distinct from presidential statements.",
+          "priority": "high"
+        },
+        {
+          "source_id": "un_ga_debate_france",
+          "source_name": "UN General Assembly General Debate - France Statements Archive",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "United Nations",
+          "country": "International",
+          "language": "French, English",
+          "content_types": [
+            "speech_transcript",
+            "video"
+          ],
+          "historical_start_year": 2013,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Confirmed existence/URL pattern (gadebate.un.org/en/{session}/france) via search; guessed session-name URL 404'd.",
+          "searchability": "Per-session archive pages, must enumerate by session number.",
+          "expected_value": "Annual formal French position on multilateralism, EU role, global security.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "nato_int_news_macron",
+          "source_name": "NATO - Official News",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "NATO",
+          "country": "International (Belgium)",
+          "language": "English, French",
+          "content_types": [
+            "official_statement",
+            "press_release",
+            "news_article"
+          ],
+          "historical_start_year": 1995,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Site mid-migration banner observed, general listing view degraded but older deep links still resolve individually.",
+          "searchability": "Date/theme/language filters; deep-link discovery via search more reliable currently.",
+          "expected_value": "Official NATO framing of French positions - necessary counterpart to French self-reporting.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "consilium_european_council_macron",
+          "source_name": "European Council/Council of the EU - Press Releases & Meeting Conclusions",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "European Council/Council of the EU",
+          "country": "European Union (Belgium)",
+          "language": "English, French (all EU languages)",
+          "content_types": [
+            "official_statement",
+            "press_release",
+            "conclusions_document"
+          ],
+          "historical_start_year": 2000,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "HTTP 403 Forbidden on both press-releases and meetings pages - bot/WAF blocking, not robots.txt disallow. Site normally browser-accessible.",
+          "searchability": "Unknown from this session due to 403.",
+          "expected_value": "Official EU-level record of European Council conclusions where France/Macron is key actor.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "assemblee_nationale_travaux",
+          "source_name": "Assemblee Nationale - Travaux Parlementaires/Actualites",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "French National Assembly",
+          "country": "France",
+          "language": "French (limited English)",
+          "content_types": [
+            "parliamentary_record",
+            "news_article",
+            "adopted_text"
+          ],
+          "historical_start_year": 2024,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via fetch: static HTML, accessibility statement present. Guessed deep path returned CMS backend metadata - navigate from real homepage.",
+          "searchability": "Structured navigation by legislature/session; no confirmed public search API.",
+          "expected_value": "Domestic legislative reaction/debate context around Macron's EU/NATO/foreign policy moves.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "defense_gouv_fr_actualites",
+          "source_name": "Ministere des Armees - Actualites",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "French Ministry of the Armed Forces",
+          "country": "France",
+          "language": "French",
+          "content_types": [
+            "news_article",
+            "official_statement"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched; surfaced as live current result via search (NATO summit 2026 coverage).",
+          "searchability": "Standard gov.fr structure, not independently verified.",
+          "expected_value": "Defense-ministry-level detail on NATO summits, capability commitments.",
+          "priority": "low"
+        },
+        {
+          "source_id": "le_monde_international",
+          "source_name": "Le Monde - International Section",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Le Monde (Groupe Le Monde)",
+          "country": "France",
+          "language": "French (limited English)",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "opinion"
+          ],
+          "historical_start_year": 1944,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool refuses domain outright ('unable to fetch'), distinct from HTTP error. Well-known paywall beyond lead paragraph. Center-left/centrist - do not blend with Le Figaro.",
+          "searchability": "Known on-site search, not verified.",
+          "expected_value": "Center-left French domestic framing, needed for spectrum coverage; expect paywall.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "le_figaro_international",
+          "source_name": "Le Figaro - International Section",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Le Figaro (Groupe Figaro/Dassault)",
+          "country": "France",
+          "language": "French",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "opinion"
+          ],
+          "historical_start_year": 1826,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Same tool-level block as Le Monde. Well known to paywall beyond short preview. Center-right/conservative (Dassault-owned) - keep as separate signal from Le Monde.",
+          "searchability": "Not verified.",
+          "expected_value": "Center-right domestic framing, necessary counterweight to Le Monde.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "politico_europe_macron",
+          "source_name": "Politico Europe - Emmanuel Macron tag/topic page",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Politico Europe (Axel Springer)",
+          "country": "Belgium/EU",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "newsletter"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool could not reach politico.eu. Most news free, 'Politico Pro' deep coverage metered.",
+          "searchability": "Tag-based archive pages (conceptually confirmed, not fetched).",
+          "expected_value": "Brussels-insider framing of France's EU-level maneuvering.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "euractiv_eu_policy",
+          "source_name": "Euractiv - EU Policy News (France sections)",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Euractiv Media Network",
+          "country": "Belgium/EU",
+          "language": "English (also French edition)",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 1999,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool could not reach euractiv.com. Generally largely free/ad-supported, less paywalled than mainstream press.",
+          "searchability": "Not verified.",
+          "expected_value": "EU-policy-specific angle on French positions, less paywalled if fetch path found.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "reuters_world_europe_macron",
+          "source_name": "Reuters - World: Europe",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "International",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 1851,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool could not reach reuters.com. Generally lightly gated (metered) rather than hard-paywalled.",
+          "searchability": "Not verified.",
+          "expected_value": "High-credibility neutral wire baseline for cross-checking French/EU statements.",
+          "priority": "high"
+        },
+        {
+          "source_id": "bbc_news_macron_topic",
+          "source_name": "BBC News - Emmanuel Macron topic page",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "BBC",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article"
+          ],
+          "historical_start_year": 2017,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Tool could not reach bbc.com. Generally free/unpaywalled globally for text.",
+          "searchability": "Dedicated topic-tag pages (not fetched).",
+          "expected_value": "Free high-trust Anglophone framing, useful fallback if French/EU-specialist outlets blocked.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "wikipedia_emmanuel_macron",
+          "source_name": "Wikipedia - Emmanuel Macron/Presidency of Emmanuel Macron",
+          "actor_refs": [
+            "emmanuel_macron"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "English (and French edition)",
+          "content_types": [
+            "encyclopedia_article",
+            "reference_links"
+          ],
+          "historical_start_year": 2006,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via fetch - fully accessible. Sub-articles exist (Presidency of Emmanuel Macron, List of presidential trips).",
+          "searchability": "Fully indexed, category/citation structure ideal for discovering primary sources.",
+          "expected_value": "Discovery layer - use citations to find primary-source deep links.",
+          "priority": "low"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "friedrich_merz",
+      "entity_id": "123ea194-e93c-498a-a77b-72938143bb69",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "bundesregierung_en_speeches",
+          "source_name": "Bundesregierung.de - Federal Government English News/Speeches Hub",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Presse- und Informationsamt der Bundesregierung",
+          "country": "Germany",
+          "language": "English (German original also available)",
+          "content_types": [
+            "speech_transcript",
+            "official_statement",
+            "press_release"
+          ],
+          "historical_start_year": 2025,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED live via WebFetch: readable static-style HTML, no paywall/JS block. Individual speech URLs (confirmed via search) more reliable than the hub landing page.",
+          "searchability": "Site search plus web search surfaces pages reliably; no confirmed RSS.",
+          "expected_value": "Authoritative English transcripts of Merz's chancellor-era speeches/statements since May 2025.",
+          "priority": "high"
+        },
+        {
+          "source_id": "bundeskanzler_de_merz",
+          "source_name": "Bundeskanzler.de - Official Chancellor Portal (Friedrich Merz)",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Bundeskanzleramt (Federal Chancellery)",
+          "country": "Germany",
+          "language": "English (bk-en) and German (bk-de)",
+          "content_types": [
+            "biography",
+            "official_statement",
+            "speech_transcript",
+            "schedule"
+          ],
+          "historical_start_year": 2025,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED live via WebFetch: loads cleanly, English content present, biography + further sections links; no paywall/blocking.",
+          "searchability": "Direct URL navigation reliable; no confirmed API.",
+          "expected_value": "Canonical biography plus 'Reden: Im Wortlaut' full-text speech archive and official schedule.",
+          "priority": "high"
+        },
+        {
+          "source_id": "consilium_europa_eu_press_merz",
+          "source_name": "European Council/Council of the EU Press Releases (Consilium)",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "General Secretariat of the Council of the EU",
+          "country": "European Union (Belgium)",
+          "language": "English (multilingual)",
+          "content_types": [
+            "joint_statement",
+            "official_statement",
+            "press_release",
+            "readout"
+          ],
+          "historical_start_year": 2025,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched; multiple real resolvable URLs confirmed via search (Aug 2025 Alaska-meeting statement, Dec 2025 Ukraine statement, May 2025 Costa-Merz readout).",
+          "searchability": "Filterable press-releases index by year/date.",
+          "expected_value": "Multilateral EU-level statements co-signed by Merz on Russia/Ukraine, EU fiscal policy, summit outcomes.",
+          "priority": "high"
+        },
+        {
+          "source_id": "nato_int_official_merz",
+          "source_name": "NATO.int Official Statements/Newsroom",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "NATO",
+          "country": "International (Belgium)",
+          "language": "English/French",
+          "content_types": [
+            "official_statement",
+            "press_release",
+            "summit_declaration"
+          ],
+          "historical_start_year": 2025,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "NOT directly verified; search did not surface direct hits for Merz-specific statements, needs follow-up manual check.",
+          "searchability": "Newsroom/press-release index exists; better found via secondary reporting first.",
+          "expected_value": "Official NATO framing of German rearmament commitments (spending targets, brigade deployment).",
+          "priority": "medium"
+        },
+        {
+          "source_id": "auswaertiges_amt_en_merz",
+          "source_name": "Federal Foreign Office (Auswartiges Amt) English Newsroom",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Auswartiges Amt",
+          "country": "Germany",
+          "language": "English (also German, French)",
+          "content_types": [
+            "press_release",
+            "official_statement",
+            "joint_statement"
+          ],
+          "historical_start_year": 2022,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED live via WebFetch: loads cleanly, English confirmed, latest-articles section, topic search, 'Show more' pagination.",
+          "searchability": "Built-in topic search.",
+          "expected_value": "Foreign-ministry-level statements on Russia/Ukraine/EU distinct from Chancellery statements.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "bundestag_textarchiv",
+          "source_name": "Deutscher Bundestag - Textarchiv (Plenary Debate Summaries)",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Deutscher Bundestag",
+          "country": "Germany",
+          "language": "German",
+          "content_types": [
+            "debate_summary",
+            "speech_transcript",
+            "official_statement"
+          ],
+          "historical_start_year": 1994,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly fetched; real URLs confirmed via search (July 2026 government statement, Nov 2025 Ukraine debate). No paywall expected.",
+          "searchability": "URL/keyword search by year+calendar-week slug works via web search.",
+          "expected_value": "German-language summaries of Bundestag debates from both chancellor era and earlier CDU/CSU Fraktion chair years.",
+          "priority": "high"
+        },
+        {
+          "source_id": "bundestag_dip_api",
+          "source_name": "Bundestag DIP (Dokumentations- und Informationssystem)",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Deutscher Bundestag/Bundesrat",
+          "country": "Germany",
+          "language": "German",
+          "content_types": [
+            "plenary_protocol",
+            "legislative_document",
+            "speech_transcript"
+          ],
+          "historical_start_year": 1949,
+          "current_updates_available": true,
+          "access_method": "api",
+          "crawlable": true,
+          "robots_or_access_notes": "Not directly tested; confirmed via search that dip.bundestag.de offers documented JSON/XML API, full docs from Dec 1976, facsimiles to 1949.",
+          "searchability": "Dedicated structured search UI plus documented API - strongest programmatic option in this set.",
+          "expected_value": "Deepest systematic archive for Merz's pre-Chancellor Bundestag career (1994-2009, 2021-2025) via real API.",
+          "priority": "high"
+        },
+        {
+          "source_id": "cdu_de_official",
+          "source_name": "CDU.de - Official Party Site (Friedrich Merz)",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "CDU Deutschlands",
+          "country": "Germany",
+          "language": "German",
+          "content_types": [
+            "party_program",
+            "official_statement",
+            "biography"
+          ],
+          "historical_start_year": 2022,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch failed with ECONNREFUSED (network-level, distinct from other blocks) - needs manual retry. Content confirmed via search (Grundsatzprogramm, 2025 Bundestagswahlprogramm).",
+          "searchability": "General web search reliably surfaces specific CDU document pages.",
+          "expected_value": "Party-level positioning: CDU Grundsatzprogramm and 2025 election platform.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "der_spiegel_merz",
+          "source_name": "Der Spiegel - Friedrich Merz coverage",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "SPIEGEL-Verlag",
+          "country": "Germany",
+          "language": "German (some English via spiegel.de/international)",
+          "content_types": [
+            "news_article",
+            "investigative_report",
+            "analysis"
+          ],
+          "historical_start_year": 1994,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch blocked ('unable to fetch'). Confirmed via search: Spiegel+ metered paywall, ~100 premium articles, EUR24.99/month. Left-liberal orientation.",
+          "searchability": "Not directly crawlable; discovery via search only.",
+          "expected_value": "Investigative/critical left-of-center coverage, counterweight to Welt.",
+          "priority": "high"
+        },
+        {
+          "source_id": "faz_net_merz",
+          "source_name": "Frankfurter Allgemeine Zeitung (FAZ.NET) - Friedrich Merz coverage",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Frankfurter Allgemeine Zeitung GmbH",
+          "country": "Germany",
+          "language": "German",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "commentary"
+          ],
+          "historical_start_year": 1994,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch blocked incl. RSS attempt. Confirmed via search: dynamic F+ paywall (~EUR2.95/week).",
+          "searchability": "Not directly crawlable; discovery via search only.",
+          "expected_value": "Liberal-conservative elite-consensus paper of record for German policy analysis.",
+          "priority": "high"
+        },
+        {
+          "source_id": "sueddeutsche_merz",
+          "source_name": "Sueddeutsche Zeitung (SZ) - Politik coverage of Friedrich Merz",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Sueddeutsche Zeitung GmbH",
+          "country": "Germany",
+          "language": "German",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "commentary"
+          ],
+          "historical_start_year": 1994,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch blocked. Confirmed via search: metered model, ~10 free articles/week then SZ-Plus (EUR30/month).",
+          "searchability": "Not directly crawlable; discovery via search only.",
+          "expected_value": "Centre-left Munich-based perspective, balances Spiegel/FAZ.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "welt_merz",
+          "source_name": "Die Welt (WELT) - Friedrich Merz theme page",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Axel Springer SE",
+          "country": "Germany",
+          "language": "German",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "commentary"
+          ],
+          "historical_start_year": 1994,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch blocked. Confirmed via search: WELTplus Premium paywall (EUR19.99/month).",
+          "searchability": "Not directly crawlable; discovery via search only.",
+          "expected_value": "Conservative Springer-owned outlet, closer to Merz's own editorial line - understand sympathetic domestic framing.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "politico_europe_merz",
+          "source_name": "Politico Europe - Friedrich Merz tag/coverage",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Politico Europe",
+          "country": "European Union (Belgium)",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis",
+            "policy_brief"
+          ],
+          "historical_start_year": 2022,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch blocked. General coverage largely free; deeper 'Politico Pro' subscription tier.",
+          "searchability": "Not directly crawlable; discovery via search only.",
+          "expected_value": "Brussels-insider framing of Merz's EU-level positioning (debt mutualization, EU defense).",
+          "priority": "high"
+        },
+        {
+          "source_id": "reuters_germany",
+          "source_name": "Reuters - Germany/Europe wire coverage of Merz",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "International (UK)",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 1994,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch blocked. Generally free-to-read with light registration.",
+          "searchability": "Not directly crawlable; discovery via search only.",
+          "expected_value": "Fast neutral wire baseline for timestamped fact-checking.",
+          "priority": "high"
+        },
+        {
+          "source_id": "bbc_germany",
+          "source_name": "BBC News - Germany topic coverage",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "British Broadcasting Corporation",
+          "country": "United Kingdom",
+          "language": "English",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 1994,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch blocked. Free/paywall-free (license-fee funded).",
+          "searchability": "Not directly crawlable; discovery via search only.",
+          "expected_value": "Free accessible non-specialist baseline read on German politics.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "wikipedia_merz",
+          "source_name": "Wikipedia - Friedrich Merz",
+          "actor_refs": [
+            "friedrich_merz"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "English (also German and 86+ others)",
+          "content_types": [
+            "biography",
+            "summary_article"
+          ],
+          "historical_start_year": 1955,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED live via WebFetch: comprehensive sourced coverage, no paywall/blocking.",
+          "searchability": "Fully searchable, well-linked citation trail.",
+          "expected_value": "Discovery-layer index of career and cited claims to bootstrap deeper research.",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "actor_intelligence_id": "takaichi_sanae",
+      "entity_id": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+      "status": "completed",
+      "sources": [
+        {
+          "source_id": "kantei_pmo_english",
+          "source_name": "Prime Minister's Office of Japan (Kantei) - English section",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "Cabinet Secretariat, Government of Japan",
+          "country": "Japan",
+          "language": "en (ja original)",
+          "content_types": [
+            "speech_transcript",
+            "official_statement",
+            "press_conference_transcript",
+            "policy_document"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: static/server-rendered, confirmed live 'Press Conference by PM TAKAICHI Sanae' entries, RSS at /index-e2.rdf.",
+          "searchability": "Browsable by category/date, RSS feed, no full-text search.",
+          "expected_value": "Highest-fidelity primary record of Takaichi's PM-era statements in authorized English.",
+          "priority": "high"
+        },
+        {
+          "source_id": "mofa_press_statements",
+          "source_name": "Ministry of Foreign Affairs of Japan - Press Releases & Statements",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier1_primary",
+          "publisher": "MOFA Japan",
+          "country": "Japan",
+          "language": "en, ja",
+          "content_types": [
+            "official_statement",
+            "joint_statement",
+            "diplomatic_readout",
+            "press_release"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Direct WebFetch HTTP 403; WebSearch confirmed real live pages (statement by PM Takaichi, US-Japan summit readouts). Site real/indexed, automated fetch blocked.",
+          "searchability": "Google-indexed; Statements/Messages index page.",
+          "expected_value": "Official positions on China, Taiwan, US-Japan alliance incl. joint statements.",
+          "priority": "high"
+        },
+        {
+          "source_id": "cas_economic_security_docs",
+          "source_name": "Cabinet Secretariat - Economic Security Legislation Expert Council records",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Cabinet Secretariat, Government of Japan",
+          "country": "Japan",
+          "language": "ja only",
+          "content_types": [
+            "meeting_minutes",
+            "policy_document",
+            "expert_council_report"
+          ],
+          "historical_start_year": 2021,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: cas.go.jp page loaded, listing 4 meetings (Nov 2021-Feb 2022) with minutes/recommendations. No English version.",
+          "searchability": "Static directory browsing by meeting date.",
+          "expected_value": "Direct institutional trace of economic security legislative framework she helped originate (2021-2022).",
+          "priority": "high"
+        },
+        {
+          "source_id": "kokkai_ndl_diet_records",
+          "source_name": "National Diet Proceedings Search System",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "National Diet Library",
+          "country": "Japan",
+          "language": "ja only",
+          "content_types": [
+            "diet_minutes",
+            "legislative_record",
+            "question_and_answer_transcript"
+          ],
+          "historical_start_year": 1993,
+          "current_updates_available": true,
+          "access_method": "search",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch returned only page title (JS-heavy SPA). Confirmed via WebSearch as real, covering Diet minutes from 1947, no English interface.",
+          "searchability": "Full-text/speaker-name search, manual/interactive only.",
+          "expected_value": "Richest source for her pre-PM Diet record (elected 1993, ~30 years of floor speeches).",
+          "priority": "high"
+        },
+        {
+          "source_id": "shugiin_member_db",
+          "source_name": "House of Representatives (Shugiin) Member Database",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "House of Representatives, National Diet of Japan",
+          "country": "Japan",
+          "language": "ja (some en)",
+          "content_types": [
+            "member_profile",
+            "bill_sponsorship_record",
+            "question_letter"
+          ],
+          "historical_start_year": 1993,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "Specific deep-link 404'd; general shugiin.go.jp site is real government domain, use general site not unverified deep link.",
+          "searchability": "Member lookup by name; external Diet video search tool found.",
+          "expected_value": "Institutional record of bill sponsorships/committee memberships across ~30-year Diet career.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "nhk_world_english",
+          "source_name": "NHK World-Japan (English)",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "NHK",
+          "country": "Japan",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "video_transcript"
+          ],
+          "historical_start_year": 2009,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level block. WebSearch confirmed extensive current free coverage (leadership win, India trip, ICC statement).",
+          "searchability": "Site-native search, well-indexed.",
+          "expected_value": "Free English-language high-frequency PM activity coverage.",
+          "priority": "high"
+        },
+        {
+          "source_id": "kyodo_news_english",
+          "source_name": "Kyodo News (English)",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Kyodo News",
+          "country": "Japan",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 1990,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level block. WebSearch confirms widely cited as live wire source.",
+          "searchability": "Google-indexed.",
+          "expected_value": "Primary Japanese wire, often first English report of official announcements.",
+          "priority": "high"
+        },
+        {
+          "source_id": "jiji_press",
+          "source_name": "Jiji Press incl. English",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Jiji Press",
+          "country": "Japan",
+          "language": "ja (primary), en (jen.jiji.com)",
+          "content_types": [
+            "news_article",
+            "wire_report"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: loads, current-dated content, partial paywall (member-only articles), working English link.",
+          "searchability": "Site search, category browsing.",
+          "expected_value": "Second major Japanese wire, partially in English.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "yomiuri_shimbun",
+          "source_name": "Yomiuri Shimbun / The Japan News (English)",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Yomiuri Shimbun",
+          "country": "Japan",
+          "language": "ja (primary), en",
+          "content_types": [
+            "news_article",
+            "editorial",
+            "polling_data"
+          ],
+          "historical_start_year": 1990,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level failure. WebSearch confirmed active citation. Largest circulation, center-right/conservative.",
+          "searchability": "Not directly verified.",
+          "expected_value": "Largest-circulation domestic paper, LDP-establishment perspective.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "asahi_shimbun_ajw",
+          "source_name": "Asahi Shimbun / AJW (English)",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Asahi Shimbun",
+          "country": "Japan",
+          "language": "ja (primary), en (AJW)",
+          "content_types": [
+            "news_article",
+            "editorial"
+          ],
+          "historical_start_year": 1990,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level failure. WebSearch confirmed AJW active. More liberal/critical of LDP conservative nationalism.",
+          "searchability": "Not directly verified.",
+          "expected_value": "Left-of-center perspective, counterweight to Yomiuri/Sankei.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "mainichi_shimbun",
+          "source_name": "Mainichi Shimbun (English)",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Mainichi Newspapers",
+          "country": "Japan",
+          "language": "ja (primary), en",
+          "content_types": [
+            "news_article",
+            "polling_data"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level failure, not independently confirmed live this session (unverified, recommend follow-up).",
+          "searchability": "Not verified.",
+          "expected_value": "Centrist-to-liberal daily, regular approval-rating polls.",
+          "priority": "low"
+        },
+        {
+          "source_id": "sankei_shimbun",
+          "source_name": "Sankei Shimbun",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Sankei Shimbun",
+          "country": "Japan",
+          "language": "ja only (limited en via Japan Forward)",
+          "content_types": [
+            "news_article",
+            "editorial"
+          ],
+          "historical_start_year": 1996,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level failure, not independently confirmed this session.",
+          "searchability": "Not verified.",
+          "expected_value": "Most conservative/nationalist daily, editorially closest to Takaichi's own political camp.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "japan_times",
+          "source_name": "The Japan Times",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "The Japan Times, Ltd.",
+          "country": "Japan",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "analysis"
+          ],
+          "historical_start_year": 1990,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch returned HTTP 402 Payment Required. Metered paywall confirmed, free tier ~2 years, older needs Premium.",
+          "searchability": "Google-indexed, own site search.",
+          "expected_value": "Best English-native domestic Japan outlet, paywall limits deep historical scraping.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "nikkei",
+          "source_name": "Nikkei (日本経済新聞)",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Nikkei Inc.",
+          "country": "Japan",
+          "language": "ja (primary), en (Nikkei Asia)",
+          "content_types": [
+            "news_article",
+            "economic_analysis"
+          ],
+          "historical_start_year": 1990,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "VERIFIED via WebFetch: loads, headlines free, most articles member-only (confirmed paywall).",
+          "searchability": "Site search present, article bodies gated.",
+          "expected_value": "Best business/economic-security-policy depth but heavily paywalled.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "ldp_official_english",
+          "source_name": "Liberal Democratic Party of Japan - official/English site",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier2_institutional",
+          "publisher": "Liberal Democratic Party",
+          "country": "Japan",
+          "language": "ja (primary), en",
+          "content_types": [
+            "party_platform",
+            "policy_document",
+            "leadership_election_record"
+          ],
+          "historical_start_year": 1993,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch failed with TLS error (self-signed certificate) - genuine technical issue, needs re-verification, not confirmed accessible.",
+          "searchability": "Not verified due to TLS failure.",
+          "expected_value": "Official party platform and 2025 LDP leadership election materials.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "reuters_asia_pacific_takaichi",
+          "source_name": "Reuters - Asia-Pacific/Japan coverage",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Reuters",
+          "country": "United Kingdom/International",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "wire_report",
+            "analysis"
+          ],
+          "historical_start_year": 1990,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "WebFetch tool-level failure. Known metered/registration paywall on much content.",
+          "searchability": "Not verified.",
+          "expected_value": "International wire framing on US/China/Taiwan positioning, needs alternate access route.",
+          "priority": "medium"
+        },
+        {
+          "source_id": "bloomberg_japan",
+          "source_name": "Bloomberg - Japan/Takaichi economic policy coverage",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier3_secondary",
+          "publisher": "Bloomberg L.P.",
+          "country": "United States",
+          "language": "en",
+          "content_types": [
+            "news_article",
+            "economic_analysis",
+            "opinion"
+          ],
+          "historical_start_year": 2015,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": false,
+          "robots_or_access_notes": "Verified via WebSearch only: multiple live dated articles (Nov 2025-Jul 2026) on fiscal policy, GPIF, investment plan. Known metered paywall.",
+          "searchability": "Not independently verified.",
+          "expected_value": "Best-in-class coverage of her economic-security/fiscal policy agenda.",
+          "priority": "high"
+        },
+        {
+          "source_id": "wikipedia_takaichi",
+          "source_name": "Wikipedia - Sanae Takaichi",
+          "actor_refs": [
+            "takaichi_sanae"
+          ],
+          "source_tier": "tier4_discovery",
+          "publisher": "Wikimedia Foundation",
+          "country": "International",
+          "language": "en (ja also exists)",
+          "content_types": [
+            "biographical_summary",
+            "citation_index"
+          ],
+          "historical_start_year": 1993,
+          "current_updates_available": true,
+          "access_method": "html",
+          "crawlable": true,
+          "robots_or_access_notes": "VERIFIED via WebFetch: loads fully, covers 1993-2026, 116+ citations to Kyodo/Jiji/Yonhap/government docs.",
+          "searchability": "Full-text searchable, ready-made citation index.",
+          "expected_value": "Discovery/triage bootstrap into dated news articles and official documents.",
+          "priority": "low"
+        }
+      ]
+    }
+  ]
+}

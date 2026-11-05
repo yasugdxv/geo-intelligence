@@ -1,0 +1,151 @@
+{
+ "tag": "EV",
+ "run_id": "fresh-ev-run",
+ "execution_id": "a53801d7-9c00-495f-ac0c-f7c001bcf743",
+ "total_records": 391909,
+ "nonduplicate_records": 253157,
+ "analysis_clusters": 9643,
+ "sentiment_clusters": 12836,
+ "prompt1_zip_bytes": 43499211,
+ "prompt2_base_zip_bytes": 96780779,
+ "zip_integrity_testzip": null,
+ "record_map_chunks": 8,
+ "record_map_rows": 391909,
+ "record_set": {
+  "ok": true,
+  "expected_total": 391909,
+  "exported_total": 391909,
+  "stale_total": 0,
+  "missing_total": 0
+ },
+ "validator": {
+  "errors": [],
+  "warnings": [
+   "record_id_signal_not_unique",
+   "configured_start_date_empty"
+  ]
+ },
+ "analysis_contract": "evidence_intelligence_v1",
+ "keyword_matcher": "keyword_matcher_v2",
+ "manifest_keyword_matcher_version": "keyword_matcher_v2",
+ "manifest_record_map_chunks": "8",
+ "monitoring_scope": [
+  {
+   "signal_source": "S1",
+   "configured_start_date": "",
+   "effective_start_date": "2026-09-01",
+   "effective_start_source": "actual_min_date",
+   "actual_min_date": "2026-09-01",
+   "actual_max_date": "2026-10-02"
+  },
+  {
+   "signal_source": "S2",
+   "configured_start_date": "",
+   "effective_start_date": "2026-09-16",
+   "effective_start_source": "actual_min_date",
+   "actual_min_date": "2026-09-16",
+   "actual_max_date": "2026-10-02"
+  },
+  {
+   "signal_source": "S3",
+   "configured_start_date": "",
+   "effective_start_date": "2026-09-01",
+   "effective_start_source": "actual_min_date",
+   "actual_min_date": "2026-09-01",
+   "actual_max_date": "2026-10-02"
+  },
+  {
+   "signal_source": "S4",
+   "configured_start_date": "",
+   "effective_start_date": "2026-09-01",
+   "effective_start_source": "actual_min_date",
+   "actual_min_date": "2026-09-01",
+   "actual_max_date": "2026-10-02"
+  },
+  {
+   "signal_source": "S5",
+   "configured_start_date": "",
+   "effective_start_date": "2026-09-01",
+   "effective_start_source": "actual_min_date",
+   "actual_min_date": "2026-09-01",
+   "actual_max_date": "2026-10-02"
+  },
+  {
+   "signal_source": "S6",
+   "configured_start_date": "",
+   "effective_start_date": "2026-09-01",
+   "effective_start_source": "actual_min_date",
+   "actual_min_date": "2026-09-01",
+   "actual_max_date": "2026-10-02"
+  }
+ ],
+ "discovery_files": [
+  "discovery_candidates.csv",
+  "discovery_candidate_representatives.csv"
+ ],
+ "source_class_record_level": {
+  "Public_Voice_Candidate": 58965,
+  "Unknown": 34130,
+  "Media": 143110,
+  "Fact_Only_Candidate": 15456,
+  "Corporate_PR": 638,
+  "Official": 858
+ },
+ "source_bucket_record_level": {
+  "public_social": 69569,
+  "unknown": 34130,
+  "media": 143110,
+  "public_blog": 3847,
+  "pr_release": 638,
+  "official": 858,
+  "public_forum": 916,
+  "public_review_or_ec": 89
+ },
+ "requires_review": {
+  "clusters": 9643,
+  "true": 7599,
+  "false": 2044,
+  "reasons": {
+   "keyword_collision": 1231,
+   "fallback": 5388,
+   "source_identity_uncertain": 1993,
+   "mixed_reaction": 1426,
+   "representative_conflict": 157,
+   "cap_hit": 798,
+   "missing_text": 174
+  }
+ },
+ "coherence_cap_hit": {
+  "Medium": 669,
+  "High": 129
+ },
+ "recursive_split_applied": 0,
+ "heterogeneous_clusters": 0,
+ "source_class_purity_lt_1": 379,
+ "matched": 28670,
+ "fallback": 224487,
+ "review_text_status": {
+  "has_text": 237701,
+  "retweet_only": 15363,
+  "attachment_or_shared_only": 87,
+  "missing_body": 6
+ },
+ "lint_severity": {
+  "WARNING": 168,
+  "INFO": 175
+ },
+ "lint_issue_types": {
+  "substring_collision": 115,
+  "inflection_not_covered": 86,
+  "required_inside_include": 49,
+  "punctuation_variant": 32,
+  "cues_not_phrases": 15,
+  "high_hit_rate": 10,
+  "short_keyword": 10,
+  "fallback_has_include": 6,
+  "required_exclude_overlap": 6,
+  "include_names_only_term": 5,
+  "multilingual_keywords_missing": 3,
+  "include_exclude_cross_conflict": 2
+ }
+}

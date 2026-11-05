@@ -1,0 +1,16 @@
+mode: LIVE
+
+=== dad5abe7-dee3-4363-a14e-2cc473329c16 ===
+status: updated
+  Fetch                  PASS  本文取得成功
+  Update                 PASS  既存document_idをUPDATE、新規行なし
+  Text                   PASS  before_len=62 -> after_len=12157
+  Date                   PASS  before=None -> after=2026-06-24
+  Provenance             PASS  canonical_url/research_origin維持
+  Hash                   PASS  c18b94f1f881e22beb4c704162e124ac12b342eb97a2fee9410e8916a4fb7c77 -> e356f74c36827f0edb0b1d842cdf666753e260792a7e82e4d634be6d970130b1
+  Duplicate              PASS  新規重複行なし
+  Foundation eligibility PASS  
+  text_preview: 
+
+=== summary ===
+  dad5abe7-dee3-4363-a14e-2cc473329c16: updated

@@ -1,0 +1,1143 @@
+{
+  "request": {
+    "request_id": "69a699a9-ff46-4824-9c3f-19cd6fbac153",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "NATOにおける防衛費負担配分と欧州の防衛自立をめぐる、米国・フランス・ドイツ間の現在の局面について、主要な意思決定主体、それぞれの目的、現在の力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-03T05:05:54.007827+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "a0c18b0c-abd9-4a9d-aebe-3ae0c3d4c764",
+    "request_id": "69a699a9-ff46-4824-9c3f-19cd6fbac153",
+    "document_ids": [
+      "0ae51c9e-40bf-486c-8181-b5eea432cd3f",
+      "1471ec16-357d-4576-a8bc-bf7bfcf3344c"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T05:05:54.42934+00:00"
+  },
+  "response": {
+    "response_id": "cd1ed3a4-70b1-4001-9643-253eccbcd532",
+    "request_id": "69a699a9-ff46-4824-9c3f-19cd6fbac153",
+    "source_pack_id": "a0c18b0c-abd9-4a9d-aebe-3ae0c3d4c764",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "NATOは「防衛投資と5%コミットメント」に関する公式トピックを提示している。",
+          "claim_type": "official_claim",
+          "source_ref": "1471ec16-357d-4576-a8bc-bf7bfcf3344c"
+        },
+        {
+          "text": "NATO公式が5%コミットメントを前面に出していることは、加盟国に対し従来の2%目標以上の防衛支出・投資を求める圧力が強まっていることを示唆する。",
+          "claim_type": "inference",
+          "source_ref": "1471ec16-357d-4576-a8bc-bf7bfcf3344c"
+        },
+        {
+          "text": "EPISの分析タイトルは「NATO 3.0: Burden-Sharing or Strategic Retreat?」と、負担分担と戦略的撤退を対比させている。",
+          "claim_type": "official_claim",
+          "source_ref": "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+        },
+        {
+          "text": "EPISの「Burden-Sharing or Strategic Retreat?」というフレーミングは、米国がNATOにおける防衛負担を減らし、欧州側により大きな責任を求める可能性（負担分担）と、米国がNATOから戦略的に距離を置く可能性（撤退）を同時に論点化していると解釈できる。",
+          "claim_type": "hypothesis",
+          "source_ref": "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+        },
+        {
+          "text": "防衛費負担配分と欧州防衛自立をめぐる現在の局面では、米国大統領（特にTrump再登場の可能性）、フランス大統領マクロン、ドイツ国内の保守勢力（Merzを含む）が、それぞれ自国の負担と同盟構造のあり方をめぐり異なる目的を持っている。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "Donald Trumpは、取引的な二国間交渉を好み、国内製造業・雇用保護を対外交渉の優先目標に置き、関税・制裁などの経済レバレッジを初期段階で用いる傾向があるとされる。これはNATO負担分担をめぐる交渉でも、欧州側に防衛費増額を迫るカードとして使われ得る。",
+          "claim_type": "illustration",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "提供資料が限定的なため、背景力学は仮説レベルだが、次のような構図が想定される。米国側では、NATOにおける防衛費負担削減と国内優先（製造業・雇用）を重視する政治力学があり、特にTrump系の取引的アプローチは「欧州が防衛費を増やさなければ米国は関与を減らす」という交渉カードを好む可能性がある。一方、フランスは欧州防衛自立（EUレベルの防衛能力強化）を長期的目標として掲げ、NATO枠組みとEU防衛構想のバランスを模索していると考えられる。ドイツでは、伝統的な慎重な安全保障姿勢と、保守勢力による防衛費増額・責任ある同盟国像の追求がせめぎ合っている可能性がある。NATO制度としては、5%コミットメントなど数値目標を通じて加盟国に防衛投資を促しつつ、米国の関与維持と欧州側の負担増の両立を図る構造的圧力が働いている。",
+      "stakeholders": [
+        {
+          "actor": "Donald Trump",
+          "purpose": "国内製造業・雇用の保護を対外交渉の優先目標に位置づける（Actor Intelligence Packによる仮説）。",
+          "leverage": "米国内の製造業・雇用",
+          "position": "欧州側に防衛費増額と負担分担を求めつつ、米国の国内負担を減らし、国内製造業・雇用保護を優先する交渉結果を得ること（仮説）。",
+          "red_lines": "米国が過度の防衛負担を負い続け、国内製造業・雇用に不利な条件が固定化されること（仮説）。",
+          "confidence": "低",
+          "constraints_fears": "議会・予算承認権",
+          "ability_to_move_or_block": "NATOへのコミットメントを交渉カードとして用い、欧州側に防衛費増額や他の譲歩を迫ることで、負担分担の方向性を動かし得る。"
+        },
+        {
+          "actor": "Emmanuel Macron",
+          "purpose": "欧州の戦略的自立（仮説）。",
+          "leverage": "フランスの戦略文化（欧州自立志向）",
+          "position": "NATO枠組みを維持しつつ、EU防衛構想を進め、欧州側の防衛能力と政治的自立を高めること（仮説）。",
+          "red_lines": "欧州が米国に過度に依存し続け、戦略的自立を達成できない状態が固定化されること（仮説）。",
+          "confidence": "判断不能",
+          "constraints_fears": null,
+          "ability_to_move_or_block": "欧州防衛自立（EU防衛構想）を政治的に推進し、NATOとEU防衛の役割分担を提起することで、欧州側の防衛費配分と安全保障構造を動かし得る。"
+        },
+        {
+          "actor": "Friedrich Merz",
+          "purpose": "ドイツを責任ある同盟国として位置づけ、保守的安全保障政策を推進すること（仮説）。",
+          "leverage": "ドイツ国内の安全保障認識",
+          "position": "ドイツの防衛費増額とNATOへのコミットメント強化を通じて、欧州側の負担分担を現実的に進めること（仮説）。",
+          "red_lines": "ドイツが防衛費を十分に増額せず、同盟内で『ただ乗り』と見なされ続けること（仮説）。",
+          "confidence": "判断不能",
+          "constraints_fears": null,
+          "ability_to_move_or_block": "防衛費増額や責任ある同盟国像を主張することで、ドイツの防衛支出とNATOへのコミットメントを強化し得る。"
+        },
+        {
+          "actor": "NATO制度（事務総長・加盟国代表の集合）",
+          "purpose": "加盟国の集団防衛と抑止力維持。",
+          "leverage": "防衛投資目標の設定、サミット声明、加盟国へのピアプレッシャー。",
+          "position": "防衛投資目標を強調しつつ、米国の関与維持と欧州側の負担増の両立を模索していると推定されるが、具体的運用は不明。",
+          "priority": "防衛投資目標（5%コミットメントなど）を通じて、加盟国の防衛能力を底上げし、同盟の信頼性を維持すること。",
+          "red_lines": "加盟国が防衛投資目標を大きく下回り、NATOの抑止力が信頼されなくなること（仮説）。",
+          "confidence": "判断不能",
+          "constraints_fears": "加盟国の防衛費増額への政治的抵抗、財政制約、米国のコミットメント低下による抑止力の弱体化。",
+          "key_relationships": "米国大統領・議会、欧州主要国政府（フランス・ドイツなど）との協調と調整。",
+          "ability_to_move_or_block": "加盟国の防衛費増額を促す方向へは動かし得るが、単独で米国のコミットメントや欧州防衛自立構想を決定づける力は限定的。"
+        },
+        {
+          "actor": "米国議会",
+          "purpose": "米国の財政健全性と安全保障利益のバランスを取りつつ、NATOへのコミットメントを管理すること。",
+          "leverage": "予算承認権、条約承認権。",
+          "position": "NATOへのコミットメントと負担分担要求の間で、党派・委員会ごとに立場が分かれている可能性が高いが、提供資料からは特定できない。",
+          "priority": "防衛予算・駐留軍・対外コミットメントに対する監督。",
+          "red_lines": "米国の安全保障を損なう形での急激なNATOからの撤退（仮説）。",
+          "confidence": "判断不能",
+          "constraints_fears": "過度な対外防衛負担による財政負担、国内有権者の反発。",
+          "key_relationships": "大統領、国防総省、同盟国政府。",
+          "ability_to_move_or_block": "NATO関連予算・駐留軍維持・拡大を承認または拒否することで、結果を大きく動かす／阻止する力を持つ。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "Trumpまたは類似の取引志向の米国指導者がNATO負担分担交渉に影響を与える立場にあること。",
+          "NATOの5%コミットメントが加盟国に対し実質的な防衛投資増を促す拘束力を持つこと。",
+          "Macronが欧州防衛自立構想を推進し続け、ドイツなどが防衛費増額に一定程度応じること。"
+        ],
+        "description": "現局面では、NATO防衛費負担配分と欧州防衛自立をめぐる力学は、米国のNATO関与の強弱（特にTrump再登場の可能性）を中心に、NATO制度の防衛投資目標（5%コミットメント）と欧州側の防衛自立構想が相互に拘束し合う構図とみるのが最も整合的である。米国側では、国内製造業・雇用保護を優先しつつ、欧州側に防衛費増額と負担分担を求める取引志向のアプローチが想定される。NATOは5%コミットメントなど数値目標を通じて加盟国に防衛投資を促し、米国の負担削減要求を制度的に支える。一方、フランスを中心とする欧州防衛自立論は、米国の信頼性への懸念から推進力を得ており、ドイツなど欧州主要国の防衛費増額とNATOコミットメント強化が、欧州側の責任ある負担分担として位置づけられる。結果として、短期的には『米国の負担削減＋欧州側の防衛費増額＋NATO枠組み維持』という方向性が主シナリオだが、米国の戦略的撤退が進む場合には『NATOの役割縮小＋EU防衛構想の加速』という代替シナリオへの移行可能性も残る。",
+        "evidence_class": "current_indirect_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "EPISのタイトルがNATO 3.0の核心を『負担分担か戦略的撤退か』と米国の選択に置いており、主シナリオの中心仮説（米国の関与の強弱が局面を規定する）を支える。",
+            "evidence_id": "0ae51c9e-40bf-486c-8181-b5eea432cd3f",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          },
+          {
+            "rationale": "NATO公式の5%コミットメントは、防衛投資目標が制度的に強化されていることを示し、主シナリオの一部（欧州側の防衛費増額と負担分担）を支える。",
+            "evidence_id": "1471ec16-357d-4576-a8bc-bf7bfcf3344c",
+            "source_type": "primary_official",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "selection_rationale": "H0（Surface）として『米国の負担削減要求とNATOの数値目標強化により、欧州側の防衛費増額が進む』という説明が、提供資料に最も直接整合する。H1（Actor-intent）として『米国がNATOを交渉カードとして用い、戦略的撤退をちらつかせる』仮説もEPISのフレーミングから一定の蓋然性があるが、具体的行動Evidenceが不足している。H2（Structural）として『欧州防衛自立構想が構造的に進む』仮説は重要だが、現資料では補助的要因として扱うのが妥当。H3/H4（Actor-model-breaking/Frame-breaking）は検討したが、現時点のEvidenceでは主軸とするには弱い。したがって、NATO公式の5%コミットメントとEPISのフレーミングを組み合わせた主シナリオを採用するが、Evidence不足のためconfidenceは低にとどめる。",
+        "supporting_evidence": [
+          "0ae51c9e-40bf-486c-8181-b5eea432cd3f",
+          "1471ec16-357d-4576-a8bc-bf7bfcf3344c"
+        ],
+        "observable_indicators": [
+          "米国大統領・議会によるNATO予算・駐留軍・核抑止に関する発言・決定。",
+          "NATOサミットでの防衛投資目標（5%コミットメント）の具体的運用決定。",
+          "フランス・ドイツの防衛予算の対GDP比推移と、EU防衛構想に関する公式声明。"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "NATO防衛費負担配分と欧州防衛自立の進展は、欧州域内の安全保障環境・防衛産業・技術主権に影響し、長期的にはエネルギー・物流・規制環境にも波及し得る。特に欧州防衛自立が進む場合、EU内の防衛・安全保障関連規制や産業政策が強化され、企業のサプライチェーン・技術輸出・データ・サイバー安全保障への要求が高まる可能性がある。",
+        "unrelated_note": "現時点の資料だけでは、特定企業への直接的な防衛費負担配分の影響経路は特定できないため、無理に重大リスクとして結論づけない。",
+        "environment_change": "米国のNATO関与の強弱と欧州防衛自立の進展は、欧州を事業拠点とする企業にとって、安全保障リスク・規制環境・政治的リスクの前提を変える『環境変化』要因であり、直接の事業影響が弱くても中長期的な戦略・投資判断に影響し得る。"
+      },
+      "initial_anomaly": "NATO公式資料で「防衛投資と5%コミットメント」が強調されている一方、EPISの分析タイトルが「NATO 3.0: 負担分担か戦略的撤退か」と二者択一的なフレーミングをしている点。通常の『2%目標』から『5%コミットメント』へのシフトと、『負担分担』と『米国の戦略的撤退』が同じ文脈で語られていることが、従来のNATO認識からのズレとして重要。",
+      "review_findings": null,
+      "audience_analysis": [],
+      "executive_summary": {
+        "what_changed": "NATO公式が『防衛投資と5%コミットメント』を前面に出し、EPISが『NATO 3.0: 負担分担か戦略的撤退か』というフレーミングを提示していることから、従来の2%目標中心の負担分担議論から、米国の関与の強弱と欧州防衛自立を含む構造的再編の局面へ移行しつつある可能性が示唆される。",
+        "why_it_matters": "米国のNATOコミットメントの強弱と欧州防衛自立の進展は、欧州の安全保障環境・防衛産業・技術主権・規制環境に中長期的な影響を与え、企業の投資・サプライチェーン・リスク管理の前提を変え得る。",
+        "what_to_watch_decide": "NATO 5%コミットメントの具体的運用、米国のNATO予算・駐留軍・核抑止に関する決定、フランス・ドイツの防衛予算推移、EU防衛構想に関する拘束力ある合意を継続的にモニタリングし、欧州事業の安全保障・規制リスク前提を適宜更新すること。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Donald Trump",
+          "red_line": "米国が過度の防衛負担を負い続け、国内製造業・雇用に不利な条件が固定化されること（仮説）。",
+          "actor_ref": "Donald Trump",
+          "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "confidence": "低",
+          "formal_role": "（仮説）米国大統領として、NATOへの予算・兵力・核抑止コミットメントに大きな影響力を持つ可能性がある。",
+          "evidence_ids": [
+            "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+          ],
+          "decision_power": "米国憲法上の三権分立のもと、大統領として外交・安全保障政策の主導権を持つが、予算・条約承認では議会の制約を受ける。",
+          "driving_forces": [
+            {
+              "force": "米国内の製造業・雇用",
+              "direction": "supporting",
+              "description": "国内産業・雇用保護を優先することで、対外防衛負担削減や同盟国への負担分担要求が政治的に支持されやすくなる。"
+            },
+            {
+              "force": "議会・予算承認権",
+              "direction": "constraining",
+              "description": "NATOへの予算・駐留軍維持には議会の承認が必要であり、大統領の自由度を制約する。"
+            }
+          ],
+          "ability_to_move": "NATOへのコミットメントを交渉カードとして用い、欧州側に防衛費増額や他の譲歩を迫ることで、負担分担の方向性を動かし得る。",
+          "issue_objective": "欧州側に防衛費増額と負担分担を求めつつ、米国の国内負担を減らし、国内製造業・雇用保護を優先する交渉結果を得ること（仮説）。",
+          "observed_action": "今回の資料ではTrumpの具体的行動は直接観測されていない。過去の一般的傾向に基づく仮説のみ。",
+          "vulnerabilities": [
+            "議会の予算承認権による制約",
+            "同盟国からの信頼低下による長期的な安全保障コスト"
+          ],
+          "ability_to_block": "議会との関係次第だが、予算案や外交方針を通じてNATOへの追加コミットメントや拡大を阻止する能力を持ち得る。",
+          "primary_audience": "米国内の支持層（製造業・雇用重視の有権者）、共和党支持基盤（仮説）。",
+          "why_actor_matters": "Actor Intelligence Packでselection_reasonsがissue_linked, veto_powerとされている通り、TrumpはNATO負担分担と欧州防衛自立の議論において、米国のコミットメントを増減させる拒否権的な力を持ち得る。取引志向の外交スタイルから、欧州側に防衛費増額を迫る交渉を主導し、NATOへの関与を交渉カードとして用いる可能性が高く、局面の方向性を大きく動かしうる。",
+          "available_leverage": [
+            "関税・制裁などの経済的レバレッジ",
+            "NATOへの予算・兵力・核抑止コミットメントの調整"
+          ],
+          "secondary_audience": "欧州主要国政府（防衛費増額を迫られる側）、NATO事務局（仮説）。",
+          "ultimate_objective": "国内製造業・雇用の保護を対外交渉の優先目標に位置づける（Actor Intelligence Packによる仮説）。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "提供資料からは、NATO政策決定における米国内の官僚・議会の役割について具体的なEvidenceがなく、Trump個人の影響力がどこまで制約されるかは判断不能。",
+            "challenge_question": "NATO防衛政策が官僚組織や議会に大きく委ねられ、Trump個人が取引材料として自由に扱えない場合、このActor Intelligenceはどこまで適用できるか。"
+          },
+          "persistent_preference": "経済的レバレッジ（関税・制裁など）を用いて、同盟国を含む相手国に負担分担や譲歩を求める取引志向の外交スタイル。",
+          "preference_action_gap": "現時点の資料では、NATO防衛費負担に関するTrumpの具体的行動が観測されていないため、Persistent PreferenceとのGapは評価不能。",
+          "relevant_decision_patterns": [
+            "取引的な二国間交渉を優先し、多国間枠組みを交渉カードとして扱う傾向"
+          ],
+          "unavailable_or_costly_cards": [
+            "NATOからの完全撤退（国内外の安全保障・同盟関係へのコストが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "full",
+            "profile_source": "actor_intelligence_active",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "full",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "partial",
+            "effective_intelligence_coverage": "full"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "具体的なNATO事案への適用は今回資料からは直接確認できず、一般的傾向としての仮説にとどまる。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "NATO負担分担をめぐる交渉でも同様のスタイルが適用される可能性がある。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "関税・制裁等の経済的レバレッジを交渉の初期段階で用いる傾向",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "過去の取引志向パターンは、NATO負担分担交渉のスタイルを推定する上で蓋然性を高めるが、今回の具体的行動が観測されていないため、独立した証明にはならない。",
+              "pattern_id": null,
+              "applicability": "medium",
+              "pattern_summary": "取引的な二国間交渉を好み、経済的レバレッジを用いて相手国に譲歩を迫る。",
+              "current_differences": [
+                "NATOは多国間安全保障枠組みであり、純粋な二国間交渉とは制度構造が異なる。"
+              ],
+              "current_similarities": [
+                "NATO負担分担をめぐる交渉でも、欧州側に防衛費増額を求める取引的アプローチが合理的に適用し得る。"
+              ],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "取引的な二国間交渉を優先し、多国間枠組みを交渉カードとして扱う傾向",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "取引（ディール）的な二国間交渉を、多国間枠組みより優先する傾向（Actor Intelligence Packによる仮説）。"
+        },
+        {
+          "actor": "Emmanuel Macron",
+          "red_line": "欧州が米国に過度に依存し続け、戦略的自立を達成できない状態が固定化されること（仮説）。",
+          "actor_ref": "Emmanuel Macron",
+          "entity_id": "6b8dabf0-3d77-4071-88f6-1aa66df2d7e6",
+          "confidence": "判断不能",
+          "formal_role": "フランス大統領として、フランスの防衛政策・EU防衛構想へのコミットメントに大きな影響力を持つ。",
+          "evidence_ids": null,
+          "decision_power": "フランスの外交・防衛政策を主導し、EUレベルの防衛自立構想においても重要な発言力を持つ。",
+          "driving_forces": [
+            {
+              "force": "フランスの戦略文化（欧州自立志向）",
+              "direction": "supporting",
+              "description": "歴史的にフランスは欧州の戦略的自立を重視しており、Macronの防衛自立論を支える。"
+            }
+          ],
+          "ability_to_move": "欧州防衛自立（EU防衛構想）を政治的に推進し、NATOとEU防衛の役割分担を提起することで、欧州側の防衛費配分と安全保障構造を動かし得る。",
+          "issue_objective": "NATO枠組みを維持しつつ、EU防衛構想を進め、欧州側の防衛能力と政治的自立を高めること（仮説）。",
+          "observed_action": "今回資料からはMacronの具体的行動は直接観測されていない。",
+          "vulnerabilities": [
+            "フランス国内の予算制約",
+            "他のEU加盟国の防衛自立への温度差"
+          ],
+          "ability_to_block": "フランスとしてNATO内の特定の決定（例えば新たな任務や拡大）に慎重姿勢を取ることで、同盟の方向性に影響を与える可能性がある。",
+          "primary_audience": "フランス国内の有権者・産業界、EU加盟国の指導者（仮説）。",
+          "why_actor_matters": "Macronは欧州防衛自立構想の主要な提唱者とされることが多く、NATOとEU防衛の関係を再定義する議論で中心的役割を果たし得る。米国のNATO関与が不確実な中で、欧州側がどこまで自前の防衛能力を構築するかを左右する政治的リーダーとして重要。",
+          "available_leverage": [
+            "フランスの防衛予算・軍事能力",
+            "EU内での政治的影響力"
+          ],
+          "secondary_audience": "米国政府・NATO事務局（仮説）。",
+          "ultimate_objective": "欧州の戦略的自立（仮説）。",
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": "具体的行動が観測されていないため、Gapは評価不能。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "NATOからの急激な離脱（同盟関係・抑止力へのコストが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "none_available",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "insufficient",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "欧州が米国に過度に依存しない形で、自前の防衛能力と外交自主性を確保すること（仮説）。"
+        },
+        {
+          "actor": "Friedrich Merz",
+          "red_line": "ドイツが防衛費を十分に増額せず、同盟内で『ただ乗り』と見なされ続けること（仮説）。",
+          "actor_ref": "Friedrich Merz",
+          "entity_id": "123ea194-e93c-498a-a77b-72938143bb69",
+          "confidence": "判断不能",
+          "formal_role": "ドイツの保守政党指導者として、ドイツの防衛政策・NATOへのコミットメントに影響を与え得る。",
+          "evidence_ids": null,
+          "decision_power": "政権獲得または連立への参加次第で、防衛費増額やNATOへの姿勢を左右する可能性がある。",
+          "driving_forces": [
+            {
+              "force": "ドイツ国内の安全保障認識",
+              "direction": "supporting",
+              "description": "ロシアの脅威認識などから、防衛費増額への支持が高まる可能性がある。"
+            }
+          ],
+          "ability_to_move": "防衛費増額や責任ある同盟国像を主張することで、ドイツの防衛支出とNATOへのコミットメントを強化し得る。",
+          "issue_objective": "ドイツの防衛費増額とNATOへのコミットメント強化を通じて、欧州側の負担分担を現実的に進めること（仮説）。",
+          "observed_action": "今回資料からはMerzの具体的行動は観測されていない。",
+          "vulnerabilities": [
+            "ドイツ国内の財政制約",
+            "反軍事的世論"
+          ],
+          "ability_to_block": "野党として政府の防衛政策に反対することで、防衛費増額や特定のNATO決定を阻止する可能性がある。",
+          "primary_audience": "ドイツ国内の保守的有権者・産業界（仮説）。",
+          "why_actor_matters": "Merzはドイツの保守勢力の代表として、防衛費増額やNATOへのコミットメント強化を主張し得る立場にあり、欧州側の負担分担を現実に進める上で重要な国内政治アクターとなり得る。",
+          "available_leverage": [
+            "政党としての議会内影響力",
+            "世論形成能力"
+          ],
+          "secondary_audience": "NATO同盟国・米国政府（仮説）。",
+          "ultimate_objective": "ドイツを責任ある同盟国として位置づけ、保守的安全保障政策を推進すること（仮説）。",
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": "具体的行動が観測されていないため、Gapは評価不能。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "急激な防衛費増額による財政負担"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "none_available",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "insufficient",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "NATO枠組みを重視しつつ、ドイツの防衛能力強化を図ること（仮説）。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "NATO 5%コミットメントの具体的内容と加盟国の対応状況はどうなっているか。",
+          "rationale": "制度的拘束力の強さが、主シナリオの『防衛費増額と負担分担の進展』部分の妥当性を左右するため。",
+          "related_hypothesis": "NATO制度が防衛費負担配分を規定する中心軸であるという仮説。",
+          "recommended_sources": "NATO公式資料、最新サミット声明、加盟国別防衛支出データ。"
+        },
+        {
+          "priority": "高",
+          "question": "EPIS『NATO 3.0: Burden-Sharing or Strategic Retreat?』本文で提示されている具体的シナリオとEvidenceは何か。",
+          "rationale": "EPISの分析は現局面の専門家見立てであり、主シナリオの妥当性を検証する鍵となる。",
+          "related_hypothesis": "米国のNATO関与の強弱が局面の蝶番であるという仮説。",
+          "recommended_sources": "document_id: 0ae51c9e-40bf-486c-8181-b5eea432cd3fの全文。"
+        },
+        {
+          "priority": null,
+          "question": "NATO 5%コミットメントは、防衛支出のどの項目を含み、加盟国にどの程度の拘束力を持つのか。",
+          "rationale": "Key Point（NATO制度の防衛投資目標）と主シナリオの『防衛費増額と負担分担の進展』の妥当性を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "EPIS『NATO 3.0: Burden-Sharing or Strategic Retreat?』本文では、米国・フランス・ドイツの立場とシナリオがどのように整理されているか。",
+          "rationale": "Key Point（米国のNATO関与の強弱）と主シナリオの中心仮説を支えるか、反証するかを確認するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "Macronの欧州防衛自立に関する具体的発言・政策は、NATOとの関係をどのように位置づけているか。",
+          "rationale": "Key Stakeholder（Macron）のPersistent Preferenceと、欧州防衛自立構想の位置づけを明確にするため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "Merzを含むドイツ保守勢力は、防衛費・NATOに関してどのような具体的立場と過去の行動を示しているか。",
+          "rationale": "Key Stakeholder（Merz）の目的と、ドイツの防衛費増額・負担分担への影響を評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米国大統領・議会は、最近の発言・決定でNATOへのコミットメントをどのように位置づけているか。",
+          "rationale": "Key Point（米国のNATO関与の強弱）が局面の蝶番であるという仮説を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "NATO公式資料（5%コミットメント）とEPISのフレーミング（負担分担か戦略的撤退か）が、負担分担と防衛投資を主要論点としていることに整合するが、具体的行動Evidenceが不足しているため確信度は低。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "米国の負担削減要求とNATOの防衛投資目標（5%コミットメント）強化により、欧州側の防衛費増額が進みつつ、NATO中心の安全保障構造が当面維持される。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "1471ec16-357d-4576-a8bc-bf7bfcf3344c",
+            "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "EPISの『Burden-Sharing or Strategic Retreat?』というフレーミングと、Actor Intelligence PackにあるTrumpの取引志向・経済的レバレッジ活用傾向から一定の蓋然性はあるが、今回資料には具体的行動Evidenceがない。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "米国（特にTrump系の取引志向）は、NATOへのコミットメントを交渉カードとして用い、欧州側に防衛費増額と負担分担を迫る一方で、戦略的撤退の可能性をちらつかせている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": [
+            "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Macronの防衛自立論やEU防衛構想は重要な構造要因と考えられるが、今回資料には具体的政策・行動のEvidenceがなく、主軸とするか補助要因とするか判断不能。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "欧州防衛自立（EUレベルの防衛能力強化）構想が構造的に進み、米国のNATO関与の強弱にかかわらず、欧州側の防衛費増額と安全保障能力強化が進む。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "その可能性は検討したが、提供資料からは官僚・議会主導のEvidenceも、Trump個人の影響が限定的であるEvidenceも得られず、現時点でこの仮説を主軸に置く根拠がないため。",
+          "status": "rejected",
+          "confidence": "判断不能",
+          "description": "NATO防衛政策は米国内の官僚組織や議会に大きく委ねられており、Trump個人の取引志向パターンは今回の局面には限定的にしか適用できない。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+          ]
+        },
+        {
+          "reason": "EPISの『NATO 3.0』という表現は広い構造的変化を示唆するが、提供資料では防衛投資と負担分担が主要論点として明示されており、問い自体を否定するほどのEvidenceはないため補助的視点にとどめる。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "『防衛費負担配分』という問い自体が、NATOの本質的な課題（政治的結束・核抑止・産業基盤・技術主権）を過度に単純化しており、現局面の中心は負担分担ではなく、NATOの役割・地理的範囲・政治的結束の再定義にある。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": [
+            "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+          ],
+          "contradicting_evidence_ids": [
+            "1471ec16-357d-4576-a8bc-bf7bfcf3344c"
+          ]
+        }
+      ],
+      "one_line_assessment": "現時点では、NATO防衛費負担をめぐる米国・欧州の局面は「米国の負担削減・欧州側の数値コミット（5%）・欧州防衛自立構想のせめぎ合い」という構図であり、制度としてのNATOと米国大統領（特にTrump再登場の可能性）、フランス大統領マクロン、ドイツ国内の保守勢力が主要な意思決定ノードとなる。ただし、提供資料が限定的なため、内部力学や今後の方向性は仮説レベルにとどまる（as_of: 2026-09-03）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "mixed",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "米国大統領と議会が、NATOへの安全保障コミットメント（予算・兵力・核抑止）をどの水準で維持するか",
+          "secondary_hinges": [
+            "NATOが防衛投資目標（5%コミットメントなど）をどこまで拘束力ある形で運用するか",
+            "フランス・ドイツなど欧州主要国がEU防衛構想とNATO枠組みのどちらへ重心を置くか",
+            "ロシアの脅威認識や米中競争など外部安全保障環境の変化"
+          ]
+        },
+        "primary_key_point": "米国のNATO関与の強弱（特にTrump再登場の可能性）が、欧州側の防衛自立議論と負担分担の方向性を規定している",
+        "evidence_relevance": [
+          {
+            "rationale": "EPISのタイトルがNATO 3.0の核心を『負担分担か戦略的撤退か』と米国の選択に置いているため、米国のNATO関与の強弱が局面の中心であるという主張を強く支える。",
+            "evidence_id": "0ae51c9e-40bf-486c-8181-b5eea432cd3f",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "NATOの防衛投資5%コミットメントが中心軸",
+            "why_not_primary": "重要な制度要因だが、EPISのフレーミングや米国の政治力学を踏まえると、5%コミットメントは米国の関与の強弱に対する欧州側の応答として位置づける方が自然であり、局面の蝶番というより結果指標に近いと判断した。"
+          },
+          {
+            "key_point": "欧州防衛自立構想が中心軸",
+            "why_not_primary": "欧州防衛自立は長期的な構造変化として重要だが、現局面では米国のNATOコミットメントの不確実性がその推進力を規定しているとみる方が説明力が高く、欧州側の構想単独を蝶番とするにはEvidenceが不足している。"
+          },
+          {
+            "key_point": "Frame-breaking仮説（防衛費負担配分という問い自体の前提が誤っている）",
+            "why_not_primary": "NATO 3.0がより広い構造的変化を含む可能性はあるが、提供資料からは防衛投資と負担分担が主要論点であることが明示されており、現時点で問い自体を否定するほどのEvidenceはないため補助的な視点にとどめた。"
+          }
+        ],
+        "selection_rationale": "提供資料のうちEPISのタイトル『Burden-Sharing or Strategic Retreat?』は、NATO 3.0の核心を米国の選択（負担分担を求めるか、戦略的撤退か）としてフレーミングしている。NATOの5%コミットメントは重要な制度要因だが、それ自体は米国のコミットメントの強弱に依存して意味が変わる。欧州防衛自立構想も、米国の関与が不確実だからこそ政治的推進力を得ている側面が強い。したがって、現局面を規定する蝶番としては、米国のNATO関与の強弱を中心に置くのが最も整合的と判断した。ただし、これは現時点の仮説であり、米国内政治・NATOサミット決定など追加Evidenceにより修正され得る。",
+        "candidate_key_points": [
+          {
+            "key_point": "NATOの防衛投資5%コミットメントが、加盟国の防衛費負担配分を規定する中心軸になりつつある",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜ欧州諸国が防衛費増額を議論せざるを得ないのか、米国が『欧州は約束した水準まで防衛費を増やすべきだ』と主張しやすくなる構造、負担分担の議論が数値目標中心になっている理由を説明できる。",
+            "why_it_could_be_key": "公式NATOトピックとして5%コミットメントが提示されていることは、加盟国に対する新たな数値目標・義務の設定であり、米国・欧州間の負担分担を具体的に再定義する枠組みとなり得るため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "1471ec16-357d-4576-a8bc-bf7bfcf3344c"
+            ],
+            "what_it_does_not_explain": "米国がNATOから戦略的に撤退するかどうか、欧州防衛自立（EU防衛構想）との関係、フランスやドイツの国内政治動学までは直接説明しない。",
+            "control_structure_summary": "NATOという多国間安全保障機構が、加盟国の防衛投資目標を合意・更新し、それに沿って各国が予算編成・装備投資を行う制度構造。個々の指導者の意思だけでなく、条約義務・サミット合意・同盟内のピアプレッシャーが防衛費配分を拘束する。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "NATO",
+                "type": "institution_intelligence",
+                "field": "mandate"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米国のNATO関与の強弱（特にTrump再登場の可能性）が、欧州側の防衛自立議論と負担分担の方向性を規定している",
+            "control_type": "actor_controlled",
+            "what_it_explains": "なぜEPISが『負担分担か戦略的撤退か』と米国の選択を中心にフレーミングしているのか、欧州側で米国の信頼性への懸念から防衛自立論が強まる理由を説明できる。",
+            "why_it_could_be_key": "EPISの『Burden-Sharing or Strategic Retreat?』というフレーミングは、米国が負担分担を求めるか、戦略的撤退を選ぶかがNATO 3.0の核心だと示唆している。米国のコミットメントの強弱は、欧州がどこまで自前の防衛能力を構築するかのインセンティブを直接左右する。",
+            "controlling_entity_ids": [
+              "c93580fd-99b1-44d9-b924-beb89a2e8378"
+            ],
+            "supporting_evidence_ids": [
+              "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+            ],
+            "what_it_does_not_explain": "NATO内部の制度的な防衛投資目標の設定プロセス、フランス・ドイツの具体的な防衛政策選好、EU防衛構想の技術的・財政的制約までは直接説明しない。",
+            "control_structure_summary": "米国大統領と議会が、NATOへの予算・兵力・核抑止コミットメントを決定する。特にTrumpのような取引志向の指導者は、欧州側の防衛費増額や他の譲歩を条件にNATO関与を交渉カードとして用いる可能性があり、米国の選択がNATO全体の方向性を大きく動かす。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "Donald Trump",
+                "type": "actor_intelligence",
+                "field": "core_profile.worldview"
+              },
+              {
+                "ref": "Donald Trump",
+                "type": "actor_intelligence",
+                "field": "core_profile.core_objectives"
+              },
+              {
+                "ref": "Donald Trump",
+                "type": "actor_intelligence",
+                "field": "core_profile.decision_preferences"
+              },
+              {
+                "ref": "Donald Trump",
+                "type": "actor_intelligence",
+                "field": "core_profile.structural_constraints"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "欧州防衛自立（EUレベルの防衛能力強化）構想が、NATO枠組みと並行して進むかどうかが、負担分担と戦略的撤退の意味を変える",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ欧州側で『NATOへの依存を減らし、自前の防衛能力を高めるべきだ』という議論が出るのか、米国の負担削減が必ずしも安全保障の空白を意味しない可能性を説明できる。",
+            "why_it_could_be_key": "もし欧州がEU防衛構想を実質的に進めれば、米国のNATO負担削減や部分的撤退があっても欧州側の安全保障能力は一定程度維持され得る。一方、欧州防衛自立が進まなければ、米国の負担削減はNATO全体の抑止力低下に直結する。",
+            "controlling_entity_ids": [
+              "6b8dabf0-3d77-4071-88f6-1aa66df2d7e6",
+              "123ea194-e93c-498a-a77b-72938143bb69"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "米国のNATO関与の具体的な決定、NATO制度上の防衛投資目標の設定プロセスまでは説明しない。",
+            "control_structure_summary": "フランス（マクロン）を中心とする欧州防衛自立論と、ドイツなど他の加盟国の防衛政策選好が組み合わさって、EU防衛構想の進度が決まる。単一の指導者ではなく、複数の欧州主要国政府・議会・産業界の合意形成が必要。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "Emmanuel Macron",
+                "type": "actor_intelligence",
+                "field": "persistent_preference"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "H4 Frame-breaking仮説：『防衛費負担配分』という問い自体が、NATOの本質的な課題（政治的結束・核抑止・産業基盤）を過度に単純化している可能性",
+            "control_type": "structural",
+            "what_it_explains": "なぜ『NATO 3.0』という表現が使われているのか、負担分担と戦略的撤退の議論が、より広い構造的変化（米中競争、ロシアの脅威、技術主権）と結びついている可能性を示唆する。",
+            "why_it_could_be_key": "EPISの『NATO 3.0』という表現は、単なる防衛費の数値目標ではなく、NATOの役割・地理的範囲・政治的結束の再定義を含意している可能性がある。負担分担だけに焦点を当てると、欧州防衛自立や産業基盤・技術主権など構造的要因を見落とす危険がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+            ],
+            "what_it_does_not_explain": "具体的な防衛費配分の交渉結果、米国・フランス・ドイツの短期的な政策選択までは説明しない。",
+            "control_structure_summary": "NATOの課題は、防衛費だけでなく、核抑止、前方展開、産業・技術基盤、政治的結束など複数の構造的要因から成る。これらは市場・技術・地理・歴史的経験に規定され、単一のActorや数値目標では制御しきれない。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "米国大統領と議会が、欧州側の防衛費水準や負担分担にかかわらず、NATOへのコミットメントを長期的に無条件で維持することを公式に明言し、それに反する行動（予算削減・駐留軍削減・核抑止の見直しなど）が観測されない場合。この場合、局面の蝶番を『米国の関与の強弱』に置く見立て自体を再検討する必要がある。",
+        "controlling_entity_ids": [
+          "c93580fd-99b1-44d9-b924-beb89a2e8378"
+        ],
+        "supporting_evidence_ids": [
+          "0ae51c9e-40bf-486c-8181-b5eea432cd3f"
+        ],
+        "control_structure_summary": "米国の政治（大統領・議会）がNATOへのコミットメントの水準を決める一方、NATO制度が防衛投資目標を設定し、欧州主要国が自前の防衛能力とEU防衛構想を進めるかどうかを決める。これらが相互に拘束し合うため、単一Actorではなく混合的な制御構造となっている。",
+        "supporting_knowledge_refs": [
+          {
+            "ref": "Donald Trump",
+            "type": "actor_intelligence",
+            "field": "core_profile.worldview"
+          },
+          {
+            "ref": "Donald Trump",
+            "type": "actor_intelligence",
+            "field": "core_profile.core_objectives"
+          },
+          {
+            "ref": "Donald Trump",
+            "type": "actor_intelligence",
+            "field": "core_profile.decision_preferences"
+          },
+          {
+            "ref": "Donald Trump",
+            "type": "actor_intelligence",
+            "field": "core_profile.structural_constraints"
+          }
+        ],
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "MacronとMerzの具体的な防衛政策・NATOに対する現在の立場、NATO 5%コミットメントの詳細、EPIS分析本文の内容など、主シナリオを精緻化する上で重要な情報が不足している。これらが判明するまでは、局面の方向性については低確度の仮説にとどめる。",
+      "alternative_scenarios": [
+        {
+          "confidence": "判断不能",
+          "description": "代替シナリオ1：米国がNATOへのコミットメントを維持しつつ、欧州側の防衛費増額を強く求めるが、欧州防衛自立構想は限定的にしか進まず、NATO中心の安全保障構造が継続する。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国がNATOへの予算・駐留軍・核抑止コミットメントを大幅に削減する具体的決定を行う。",
+            "EU防衛構想に関する拘束力ある合意が採択され、加盟国が防衛費を大幅に増額する。"
+          ],
+          "weakening_conditions": [
+            "米国がNATO予算や欧州駐留軍を削減し、関与縮小の具体的措置を取る。",
+            "EUが防衛分野で拘束力ある合意（共同防衛条項・共同装備計画など）を採択し、加盟国が防衛費を大幅に増額する。"
+          ],
+          "strengthening_conditions": [
+            "米国大統領・議会がNATOへのコミットメントを明確に維持すると宣言し、予算・駐留軍削減が行われない。",
+            "NATOサミットで、5%コミットメントが「目標」として扱われ、加盟国の遵守状況に対する制裁や強いペナルティが設けられない。",
+            "EU防衛構想に対する加盟国の支持が限定的にとどまり、共同防衛・共同装備計画が部分的なものにとどまる。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "判断不能",
+          "description": "代替シナリオ2：米国のNATO関与が大幅に縮小し、欧州側がEU防衛構想を急速に進めることで、NATOの役割が抑止の一部に限定される『欧州防衛自立』型構造へ移行する。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国がNATOへの予算・駐留軍・核抑止コミットメントを大幅に削減する具体的決定を行い、同時にEUが防衛構想に関する拘束力ある合意を採択する。"
+          ],
+          "weakening_conditions": [
+            "米国がNATOへのコミットメントを長期的に維持すると公式に宣言し、それに反する行動が観測されない。",
+            "EU防衛構想が政治的声明にとどまり、具体的な共同防衛・共同装備計画が進まない。"
+          ],
+          "strengthening_conditions": [
+            "米国がNATOへの予算・駐留軍・核抑止コミットメントを削減する、または条件付きにする決定を行う。",
+            "EPISなどの専門家分析で、米国の戦略的撤退シナリオが主流の議論として扱われる。",
+            "EUが防衛構想に関する拘束力ある合意（共同防衛条項・共同装備計画など）を採択し、加盟国が防衛費を大幅に増額する。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "米国大統領・議会によるNATO予算・駐留軍・核抑止に関する決定。",
+        "NATOサミットでの防衛投資目標（5%コミットメント）の具体的運用決定。",
+        "フランス・ドイツの防衛予算の対GDP比推移。",
+        "EU防衛構想に関する拘束力ある合意（共同防衛条項・共同装備計画など）の有無。"
+      ],
+      "retraction_conditions": [
+        "米国がNATOへのコミットメントを無条件で長期維持すると公式に宣言し、それに反する行動が観測されない場合。",
+        "NATOの5%コミットメントが加盟国にほとんど影響を与えず、防衛費増額が進まないことが明らかになった場合。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "0ae51c9e-40bf-486c-8181-b5eea432cd3f",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "1471ec16-357d-4576-a8bc-bf7bfcf3344c",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "NATO加盟国の多くが依然として2%目標すら達成していない、あるいは5%コミットメントが政治的宣言にとどまり実質的な拘束力を持たないというEvidenceが出れば、主シナリオの『防衛費増額と負担分担の進展』部分は弱まる。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "NATO 5%コミットメントは、防衛支出のどの項目を含み、加盟国にどの程度の拘束力を持つのか。",
+          "rationale": "Key Point（NATO制度の防衛投資目標）と主シナリオの『防衛費増額と負担分担の進展』の妥当性を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "EPIS『NATO 3.0: Burden-Sharing or Strategic Retreat?』本文では、米国・フランス・ドイツの立場とシナリオがどのように整理されているか。",
+          "rationale": "Key Point（米国のNATO関与の強弱）と主シナリオの中心仮説を支えるか、反証するかを確認するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "Macronの欧州防衛自立に関する具体的発言・政策は、NATOとの関係をどのように位置づけているか。",
+          "rationale": "Key Stakeholder（Macron）のPersistent Preferenceと、欧州防衛自立構想の位置づけを明確にするため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "Merzを含むドイツ保守勢力は、防衛費・NATOに関してどのような具体的立場と過去の行動を示しているか。",
+          "rationale": "Key Stakeholder（Merz）の目的と、ドイツの防衛費増額・負担分担への影響を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米国大統領・議会は、最近の発言・決定でNATOへのコミットメントをどのように位置づけているか。",
+          "rationale": "Key Point（米国のNATO関与の強弱）が局面の蝶番であるという仮説を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "NATO 5%コミットメントの具体的内容（対象となる支出項目、拘束力、加盟国ごとの対応状況）。",
+          "gap_category": "deterministic",
+          "recommended_action": "NATO公式資料（document_id: 1471ec16-357d-4576-a8bc-bf7bfcf3344cの全文）と最新サミット声明を確認する。"
+        },
+        {
+          "priority": "高",
+          "description": "EPIS『NATO 3.0: Burden-Sharing or Strategic Retreat?』の本文内容（米国・フランス・ドイツの具体的立場とシナリオ）。",
+          "gap_category": "deterministic",
+          "recommended_action": "document_id: 0ae51c9e-40bf-486c-8181-b5eea432cd3fの全文を精読し、主要仮説とEvidenceを抽出する。"
+        },
+        {
+          "priority": "中",
+          "description": "Macronの欧州防衛自立に関する具体的発言・政策（EU防衛構想、NATOとの関係）。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "フランス政府公式発言・EUサミット声明・主要演説を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "Merzの防衛費・NATOに関する具体的立場と過去の発言。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "ドイツ国内報道・政党資料を確認する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "NATOの5%コミットメントやEPISのフレーミングは、実際の政策変化よりも象徴的・議論上の位置づけに過ぎず、米国・欧州ともに現実の防衛費増額や構造的変化は限定的であり、従来のNATO構造が大きくは変わらないという見方。",
+      "key_stakeholder_assessment": {
+        "rationale": "NATO防衛費負担と欧州防衛自立をめぐる局面では、(1) 米国大統領（特にTrump再登場の可能性）がNATOへのコミットメントと欧州への要求水準を決める力を持ち、(2) フランス大統領マクロンが欧州防衛自立構想の政治的推進役となり得る、(3) ドイツでは保守勢力（Merzを含む）が防衛費増額や責任ある同盟国像を主張しうる。制度としてのNATOも重要だが、提供されたActor Intelligence Packに基づき、これら三者を主要な意思決定主体として暫定的に選定した。ただし、MacronとMerzについてはActor Intelligenceが不十分であり、評価は低〜中の確度にとどまる。",
+        "confidence": "低",
+        "evidence_ids": [
+          "0ae51c9e-40bf-486c-8181-b5eea432cd3f",
+          "1471ec16-357d-4576-a8bc-bf7bfcf3344c"
+        ],
+        "determination": "multiple",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "Donald Trump",
+          "Emmanuel Macron",
+          "Friedrich Merz"
+        ]
+      },
+      "situation_actor_assessment": null,
+      "decisive_power_and_leverage": "決定的な力は、(1) 米国大統領と米議会のNATOへのコミットメント（予算・駐留軍・核抑止の継続）と、(2) NATOという制度枠組みが設定する防衛投資目標・加盟国義務、(3) 欧州主要国（フランス・ドイツなど）がどこまで自前の防衛能力とEU防衛構想を進めるか、の三つの組み合わせにある。単一のActorではなく、米国の政治（特にTrump再登場の可能性）、NATO制度、欧州主要国の選択が相互拘束する「distributed/mixed」な構造とみるのが妥当だが、米国の核抑止と前方展開能力が依然として最大のレバレッジを持つため、最終的な安全保障構造の方向性は米国のコミットメントの強弱に大きく依存する。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-03T05:05:55.730684+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "19228a9e-c43c-4f0b-99b8-7af41d1d66eb",
+    "response_id": "cd1ed3a4-70b1-4001-9643-253eccbcd532",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Donald Trump, Emmanuel Macron, Friedrich Merz, NATO制度（事務総長・加盟国代表の集合）, 米国議会",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=institution_intelligenceのref=NATOがsubject_type=institutionのkey_actor_profiles[].entity_idに実在しません",
+        "passed": false
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 37,
+    "failed_count": 2,
+    "created_at": "2026-09-03T05:05:56.176196+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "supporting_knowledge_refs_grounded"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "supporting_knowledge_refs_grounded"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "Donald Trump",
+      "Emmanuel Macron",
+      "Friedrich Merz"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 85569,
+    "completion_tokens": 15049,
+    "total_tokens": 100618
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 89062,
+        "prompt_tokens": 40208,
+        "completion_tokens": 11626
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 23827,
+        "prompt_tokens": 45361,
+        "completion_tokens": 3423
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Donald Trump, Emmanuel Macron, Friedrich Merz, NATO制度（事務総長・加盟国代表の集合）, 米国議会"
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=institution_intelligenceのref=NATOがsubject_type=institutionのkey_actor_profiles[].entity_idに実在しません"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 2,
+        "gaps": []
+      },
+      "research_cycle": {
+        "triggered": false,
+        "search_calls_used": 0,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 0,
+      "final_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 2,
+        "gaps": []
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

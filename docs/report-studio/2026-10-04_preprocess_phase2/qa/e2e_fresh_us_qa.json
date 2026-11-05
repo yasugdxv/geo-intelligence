@@ -1,0 +1,230 @@
+{
+ "tag": "US",
+ "run_id": "fresh-us-run",
+ "execution_id": "b1629a17-e1c8-4dbc-aa54-12edeb7b7b44",
+ "total_records": 209976,
+ "nonduplicate_records": 174655,
+ "analysis_clusters": 29951,
+ "sentiment_clusters": 34679,
+ "prompt1_zip_bytes": 37538443,
+ "prompt2_base_zip_bytes": 71959944,
+ "zip_integrity_testzip": null,
+ "record_map_chunks": 5,
+ "record_map_rows": 209976,
+ "record_set": {
+  "ok": true,
+  "expected_total": 209976,
+  "exported_total": 209976,
+  "stale_total": 0,
+  "missing_total": 0
+ },
+ "validator": {
+  "errors": [],
+  "warnings": []
+ },
+ "analysis_contract": "public_voice_monitor_v4_3",
+ "keyword_matcher": "keyword_matcher_v2",
+ "manifest_keyword_matcher_version": "keyword_matcher_v2",
+ "manifest_record_map_chunks": "5",
+ "monitoring_scope": [
+  {
+   "signal_source": "S10",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S11",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S12",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S13",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-01",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S14",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S15",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S16",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S17",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-01",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S1",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S2",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S3",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S4",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S5",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S6",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S7",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S8",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  },
+  {
+   "signal_source": "S9",
+   "configured_start_date": "2026-07-01",
+   "effective_start_date": "2026-07-01",
+   "effective_start_source": "master_trend_start_date",
+   "actual_min_date": "2026-09-07",
+   "actual_max_date": "2026-09-30"
+  }
+ ],
+ "discovery_files": [],
+ "source_class_record_level": {
+  "Public_Voice_Candidate": 37860,
+  "Fact_Only_Candidate": 78736,
+  "Media": 52024,
+  "Unknown": 5649,
+  "Official": 265,
+  "Corporate_PR": 121
+ },
+ "source_bucket_record_level": {
+  "public_social": 112788,
+  "media": 52024,
+  "unknown": 5649,
+  "official": 265,
+  "public_blog": 3110,
+  "public_forum": 651,
+  "pr_release": 121,
+  "public_review_or_ec": 47
+ },
+ "requires_review": {
+  "clusters": 29951,
+  "true": 18579,
+  "false": 11372,
+  "reasons": {
+   "mixed_reaction": 4856,
+   "fallback": 4695,
+   "source_identity_uncertain": 4060,
+   "keyword_collision": 8572,
+   "missing_text": 2493,
+   "cap_hit": 1127,
+   "representative_conflict": 207
+  }
+ },
+ "coherence_cap_hit": {
+  "Medium": 990,
+  "High": 137
+ },
+ "recursive_split_applied": 0,
+ "heterogeneous_clusters": 0,
+ "source_class_purity_lt_1": 1598,
+ "matched": 116732,
+ "fallback": 57923,
+ "review_text_status": {
+  "has_text": 95919,
+  "retweet_only": 78427,
+  "attachment_or_shared_only": 275,
+  "missing_body": 34
+ },
+ "lint_severity": {
+  "WARNING": 553,
+  "INFO": 4547
+ },
+ "lint_issue_types": {
+  "required_inside_include": 3366,
+  "substring_collision": 1033,
+  "inflection_not_covered": 249,
+  "alias_collision": 135,
+  "generic_word": 98,
+  "prefix_collision": 85,
+  "punctuation_variant": 78,
+  "high_hit_rate": 41,
+  "short_keyword": 15
+ }
+}

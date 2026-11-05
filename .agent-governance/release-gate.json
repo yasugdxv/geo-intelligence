@@ -1,0 +1,20 @@
+{
+  "decision": "BLOCK",
+  "policy_used": {
+    "path": "C:\\Users\\269811\\python\\projects\\geopolitical_monitor_dashboard\\.claude\\skills\\agent-release-gate\\references\\default-policy.json",
+    "source": "bundled references/default-policy.json (no repo-specific policy found)"
+  },
+  "blocking_reasons": [
+    "development integrity: base revision guard FAILED (head='e08567c8492a3d5d7e5245424725b72392190a29' expected_base='unknown -- no commit was ever made at the start of Phase B, so there is no true base SHA to compare against; this is itself the finding')",
+    "security P1 findings: 3",
+    "required eval metric missing: grounding",
+    "near_miss_rate=0.500 exceeds policy"
+  ],
+  "warnings": [],
+  "evidence": {
+    "security": true,
+    "evaluation": true,
+    "token": true,
+    "integrity": true
+  }
+}

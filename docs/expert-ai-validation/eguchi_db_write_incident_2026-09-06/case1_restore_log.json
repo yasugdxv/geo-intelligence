@@ -1,0 +1,17 @@
+{
+  "restored_at": "2026-09-06T05:51:03.905926+00:00",
+  "case_id": "61447d94-e5cc-48f9-9352-31df72af9628",
+  "recovered_from": {
+    "response_id": "712a3c40-d111-485d-b194-d346947b4d66",
+    "request_id": "b3b390ad-62be-48cb-8cfc-c5eea873436d",
+    "response_created_at": "2026-09-03T05:50:21.759897+00:00"
+  },
+  "provenance_verification": {
+    "method": "geo_retrieval_runs.case_id直接照合（案件横断で唯一この関数の実行がcase_idを確実に記録するテーブル）。本日OFF/ON実行(22cf405d.../de2967e4...)の直前のcase_id一致retrieval_runがrequest_id=b3b390ad-...(2026-09-03T05:50:21)であることを確認。geo_retrieval_runs全18件の時系列に抜けが無いことも確認。",
+    "control_case_verification": "未改変のCase2 Putin(d9252cae-...)で、最新retrieval_runに対応するgeo_expert_responses.response_jsonが現在のgeo_cases.final_outputとEXACT MATCHであることを実データで確認し、この書込み経路(retrieval_run→request_id→response_id→response_json→final_output)の妥当性を検証済み。",
+    "docs_cross_check": "docs/expert-ai-validation/original_after_v2/raw/original_after_v2_case1_trump_xi_result.json はrequest_id=98199ea7-...(2026-09-01、より古い別Run)であり不採用。DB内の正確な時系列照合を優先した。"
+  },
+  "action": "restored geo_cases.final_output to the response_json of response_id=712a3c40 (the exact response tied to the last case-linked run before today's OFF/ON), field-only, no timestamp manipulation",
+  "post_restore_updated_at": "2026-09-06T05:51:02.801196+00:00",
+  "exact_match_confirmed": true
+}

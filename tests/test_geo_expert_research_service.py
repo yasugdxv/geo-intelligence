@@ -331,3 +331,82 @@ def test_run_research_cycle_handles_external_research_failure_gracefully():
     assert result["documents_added"] == []
     assert result["stop_condition"] == "evidence_unobtainable"
     assert "error" in result
+
+
+# ---------------------------------------------------------------------------
+# 2026-11-04: theme_id未指定での検索 / 鮮度トリガー / 要旨の添付 / 取得済みURLの再利用
+# ---------------------------------------------------------------------------
+
+def test_sufficiency_recency_gap_downgrades_when_newest_evidence_is_old():
+    pack = {"document_ids": ["d1", "d2", "d3"], "evidence_ids": [], "text": "x"}
+    fresh = research.assess_research_sufficiency(pack, newest_evidence_age_days=3)
+    stale = research.assess_research_sufficiency(pack, newest_evidence_age_days=60)
+    assert fresh["current_evidence"] == "sufficient"
+    assert stale["current_evidence"] == "partial"
+    assert any("recency_gap" in g for g in stale["gaps"])
+
+
+def test_sufficiency_unknown_age_does_not_trigger_recency_gap():
+    pack = {"document_ids": ["d1", "d2"], "evidence_ids": [], "text": "x"}
+    assert research.assess_research_sufficiency(pack, newest_evidence_age_days=None)["current_evidence"] == "sufficient"
+
+
+def test_newest_document_age_days_uses_latest_published_at_and_handles_empty():
+    from datetime import datetime, timezone
+    client = FakeSupabaseClient({"geo_documents": [
+        {"document_id": "a", "published_at": "2026-10-01T00:00:00+00:00"},
+        {"document_id": "b", "published_at": "2026-10-25T00:00:00+00:00"},
+        {"document_id": "c", "published_at": None},
+    ]})
+    now = datetime(2026, 11, 4, tzinfo=timezone.utc)
+    assert research.newest_document_age_days(client, ["a", "b", "c"], today=now) == 10
+    assert research.newest_document_age_days(client, ["c"], today=now) is None  # 発行日なし→不明
+    assert research.newest_document_age_days(client, [], today=now) is None
+
+
+def test_get_or_create_adhoc_research_theme_is_idempotent():
+    client = FakeSupabaseClient({"geo_themes": []})
+    first = research.get_or_create_adhoc_research_theme(client)
+    second = research.get_or_create_adhoc_research_theme(client)
+    assert first == second
+    assert len(client.tables["geo_themes"]) == 1
+    assert client.tables["geo_themes"][0]["code"] == research.ADHOC_RESEARCH_THEME_CODE
+
+
+def test_qualify_and_persist_citations_attaches_labeled_summary():
+    client = _base_client()
+    persisted = research.qualify_and_persist_citations(
+        client, theme_id="t", citations=[{"url": "https://www.reuters.com/a", "title": "Title A"}],
+        summary="米ロが中国に参加を促している。")
+    text = persisted[0]["extracted_text"]
+    assert text.startswith("Title A") and "米ロが中国に参加を促している" in text and "AI要約・未検証" in text
+
+
+def test_qualify_and_persist_citations_without_summary_keeps_title_only():
+    client = _base_client()
+    persisted = research.qualify_and_persist_citations(
+        client, theme_id="t", citations=[{"url": "https://www.reuters.com/a", "title": "Title A"}])
+    assert persisted[0]["extracted_text"] == "Title A"
+
+
+def test_qualify_and_persist_citations_reports_reused_existing_urls():
+    client = _base_client()
+    cits = [{"url": "https://www.reuters.com/a", "title": "A"}]
+    research.qualify_and_persist_citations(client, theme_id="t", citations=cits)
+    reused: list = []
+    second = research.qualify_and_persist_citations(client, theme_id="t", citations=cits, reused_out=reused)
+    assert second == [] and len(reused) == 1 and reused[0].get("document_id")
+    assert len(client.tables["geo_documents"]) == 1  # 重複保存はしない
+
+
+def test_run_research_cycle_returns_reused_documents_on_second_search():
+    client = _base_client()
+    azure_client = _mock_responses_client(
+        '```json\n{"summary": "x", "found_relevant_information": true}\n```',
+        [{"url": "https://www.bis.doc.gov/rule", "title": "BIS Rule"}])
+    kw = dict(theme_id="t", query_text="半導体規制", sufficiency={"current_evidence": "partial"})
+    first = research.run_research_cycle(client, azure_client, "m", **kw)
+    second = research.run_research_cycle(client, azure_client, "m", **kw)
+    assert len(first["documents_added"]) == 1 and first["documents_reused"] == []
+    assert second["documents_added"] == [] and len(second["documents_reused"]) == 1
+    assert second["stop_condition"] == "sufficient_comparison"

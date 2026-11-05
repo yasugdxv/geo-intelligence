@@ -1,0 +1,1202 @@
+{
+  "request": {
+    "request_id": "073200c0-1eb0-4e03-84cc-6abe8a184323",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "トランプ大統領と習近平国家主席は、今回の米中半導体・AI規制(輸出管理強化、Nvidia・TSMCへの制限、中国側の対抗措置等)を巡って、それぞれ相手にどのような行動を取らせたい、あるいは思いとどまらせたいと考えていると推定されるか。各々が「これをすれば相手はこう反応するはずだ」と想定している経路と、実際に生じると考えられる相手の反応との間にはどのような違いがあるか。"
+  },
+  "source_pack": {
+    "source_pack_id": "3730a75d-6cf6-4406-b5f0-0554ad0cd3f8",
+    "request_id": "073200c0-1eb0-4e03-84cc-6abe8a184323",
+    "document_ids": [
+      "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+      "b5c17e2e-a432-4e45-ba45-7c618020326d",
+      "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": []
+  },
+  "response": {
+    "response_id": "f486c84f-8ed9-4783-a88e-5d5ef35c8542",
+    "request_id": "073200c0-1eb0-4e03-84cc-6abe8a184323",
+    "source_pack_id": "3730a75d-6cf6-4406-b5f0-0554ad0cd3f8",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "one_line_assessment": "現時点の公開情報だけでは断定できないが、トランプは対中AI半導体規制を「取引材料・圧力カード」として用い、中国側に技術アクセスの譲歩や関係改善のディールを引き出したい一方、習近平は米国の規制を「長期技術自立と対米依存低減」の加速要因として利用しつつ、短期的には報復・迂回・分断工作を組み合わせて米側の規制強度を抑えたいとみなすシナリオが最も整合的と考えられる（仮説レベル）。",
+      "initial_anomaly": null,
+      "claims": [
+        {
+          "claim_type": "fact",
+          "text": "米国がNvidiaの対中AI半導体輸出に対する新たな制限を検討・実施していると報じられている。",
+          "source_ref": "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+        },
+        {
+          "claim_type": "fact",
+          "text": "米国がTSMCによる中国向け7nmクラスAIチップの輸出停止を命じたとする報道がある。",
+          "source_ref": "804f1328-1f88-4fe0-a398-5cf1bdc5fc38"
+        },
+        {
+          "claim_type": "fact",
+          "text": "米国の対中AI半導体規制強化を受け、中国AI企業が海外拠点などを通じてNvidia製品へのアクセスを模索していると報じられている。",
+          "source_ref": "b5c17e2e-a432-4e45-ba45-7c618020326d"
+        },
+        {
+          "claim_type": "inference",
+          "text": "Nvidia・TSMCへの制限強化は、米国が中国の先端AI計算能力へのアクセスを抑制しようとする一連の輸出管理政策の延長線上にあると考えられる。",
+          "source_ref": null
+        },
+        {
+          "claim_type": "hypothesis",
+          "text": "トランプは、対中AI半導体規制を「最大限強硬な姿勢を見せつつ、必要に応じてディールの一部として調整可能なカード」として位置づけている可能性がある。",
+          "source_ref": null
+        },
+        {
+          "claim_type": "hypothesis",
+          "text": "習近平は、米国の規制を短期的には痛手と見つつも、長期的には国産化・技術自立を正当化し加速させる外圧として利用しようとしている可能性がある。",
+          "source_ref": null
+        }
+      ],
+      "dynamics": null,
+      "decisive_power_and_leverage": "制度上の輸出管理のスイッチを握るのは米商務省BISだが、対中規制の方向性と強度を大きく変え得るのはホワイトハウス（トランプ）と議会であり、中国側では習近平が国家戦略・報復・迂回の組み合わせを決める。結果として、米側の制度レバー（BIS）とトランプの政治判断、中国側の長期技術戦略（習近平）が相互に拘束し合う「分散だが米側優位のレバレッジ構造」とみなせる。",
+      "key_point_assessment": {
+        "candidate_key_points": [
+          {
+            "key_point": "米国による先端AI半導体・製造能力への輸出管理の強度と範囲",
+            "why_it_could_be_key": "Nvidia・TSMCへの制限など、今回の局面の直接トリガーであり、中国のAI能力・サプライチェーン・報復の度合いを規定する。トランプ政権の裁量とBISの運用で調整可能なため、両首脳の思惑が最も集中するレバーになりやすい。",
+            "control_type": "mixed",
+            "controlling_entity_ids": [
+              "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+              "c93580fd-99b1-44d9-b924-beb89a2e8378"
+            ],
+            "control_structure_summary": "法的にはBISが規則を策定・運用するが、対中強硬路線や例外付与の方向性は大統領・ホワイトハウスの政治判断に強く依存する二層構造。",
+            "what_it_explains": "Nvidia・TSMCなど特定企業への制限、規制の対象ノード（7nm・AI用途など）の選び方、中国企業の迂回行動、米企業ロビーとの緊張を説明しやすい。",
+            "what_it_does_not_explain": "中国側の長期的な技術自立戦略や、第三国の対応（台湾・韓国・EUなど）の全ては説明しきれない。",
+            "supporting_evidence_ids": [
+              "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+              "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+            ],
+            "supporting_knowledge_refs": [
+              {
+                "type": "institution_intelligence",
+                "ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+                "field": "mandate"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "中国側の先端AI計算資源へのアクセス経路（正規輸入・第三国経由・クラウド等）の確保・遮断",
+            "why_it_could_be_key": "CNBC報道のように、中国AI企業が海外でNvidiaパワーを確保しようとしていることから、実際の計算資源アクセス経路が規制の実効性と中国側の痛みを左右する。",
+            "control_type": "distributed",
+            "controlling_entity_ids": null,
+            "control_structure_summary": "米国の輸出管理、中国企業の迂回スキーム、第三国の規制姿勢、クラウド事業者のコンプライアンスなど複数主体の相互作用で決まる。",
+            "what_it_explains": "なぜ規制強化にもかかわらず中国企業が依然としてNvidiaリソースを求め、海外拠点などを活用しているのかという行動を説明できる。",
+            "what_it_does_not_explain": "トランプや習近平の高位の政治的意図そのものや、規制の法的設計の詳細は直接説明しない。",
+            "supporting_evidence_ids": [
+              "b5c17e2e-a432-4e45-ba45-7c618020326d"
+            ],
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米中双方の国内政治・ナショナリズム圧力（対中強硬／対米強硬を求める世論・エリート）",
+            "why_it_could_be_key": "両首脳がどこまで譲歩できるか、規制や報復の強度をどこで止めるかを決める「見えないレッドライン」として機能し得る。",
+            "control_type": "structural",
+            "controlling_entity_ids": null,
+            "control_structure_summary": "選挙・党内力学・軍・安全保障官僚・産業界など複数の国内アクターの集合的圧力として構造的に存在し、個々の首脳の裁量を制約する。",
+            "what_it_explains": "なぜ双方が強硬なレトリックや象徴的措置を取りやすいか、またなぜ全面的な妥協が難しいかを説明できる。",
+            "what_it_does_not_explain": "具体的にどの企業・技術ノードが対象になるかといったミクロな政策設計は説明しない。",
+            "supporting_evidence_ids": null,
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "primary_key_point": "米国による先端AI半導体・製造能力への輸出管理の強度と範囲",
+        "selection_rationale": "今回の3文書はいずれも米国の輸出管理強化（Nvidia・TSMC制限）を中心に報じており、これがなければ中国側の迂回行動も起きない。トランプと習近平が相手の行動を変えようとする際に最も直接的に使えるレバーであり、BISとホワイトハウスの混合統制という意味で、両者の意図と制度構造を同時に反映する「蝶番」として妥当と判断した。中国側アクセス経路や国内政治圧力は重要な補助条件だが、今回の局面の起点ではなく反応・制約として位置づけられる。",
+        "rejected_candidates": [
+          {
+            "key_point": "中国側の先端AI計算資源へのアクセス経路（正規輸入・第三国経由・クラウド等）の確保・遮断",
+            "why_not_primary": "規制の実効性を左右する重要要素だが、今回の報道の中心は米国側の規制決定であり、アクセス経路はその結果として変化している。首脳レベルの「相手に何をさせたいか」を読むには、まず米側レバーの方が中心的と判断した。"
+          },
+          {
+            "key_point": "米中双方の国内政治・ナショナリズム圧力",
+            "why_not_primary": "構造的制約として常に存在するが、今回の半導体・AI規制に特有の新要素としては示されておらず、Current Evidenceから直接トリガーとして特定できないため、背景条件として扱うにとどめた。"
+          }
+        ],
+        "hinge_structure": {
+          "primary_hinge": "米国がどの技術ノード・用途（例：7nmクラスAIチップ）まで輸出管理対象を拡大・厳格運用するか",
+          "secondary_hinges": [
+            "BISがどの程度企業ロビーや同盟国の懸念を受けて例外・猶予を設けるか",
+            "中国側がどの程度効果的な迂回経路（第三国・クラウド等）を確保できるか"
+          ]
+        },
+        "control_type": "mixed",
+        "controlling_entity_ids": [
+          "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+          "c93580fd-99b1-44d9-b924-beb89a2e8378"
+        ],
+        "control_structure_summary": "法制度上はBISが輸出管理規則を策定・執行するが、対中規制の強度・対象範囲・例外付与はホワイトハウス（トランプ）の政治判断に左右される二層構造。中国側はこのレバーを前提条件として、自国の対応を設計せざるを得ない。",
+        "supporting_evidence_ids": [
+          "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+          "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+        ],
+        "supporting_knowledge_refs": [
+          {
+            "type": "institution_intelligence",
+            "ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+            "field": "mandate"
+          }
+        ],
+        "evidence_relevance": [
+          {
+            "evidence_id": "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "claim_relevance": "direct",
+            "source_type": "unknown",
+            "rationale": "TSMCへの7nm AIチップ輸出停止命令という、まさに先端AI半導体輸出管理の強度・範囲に関する具体的事例だから。"
+          },
+          {
+            "evidence_id": "755e629d-1ade-4f0b-912f-90b6aa6ae8c5",
+            "claim_relevance": "direct",
+            "source_type": "unknown",
+            "rationale": "Nvidiaの対中AIチップ販売への新たな制限という、輸出管理強化の別事例を示している。"
+          }
+        ],
+        "contradicting_evidence_ids": null,
+        "disconfirming_signal": "米国が先端AI半導体の対中輸出をほぼ全面的に自由化しつつ、別の手段（関税や投資規制のみ）で対中圧力を維持するような政策転換が公式に行われた場合、今回の局面のKey Pointを「輸出管理の強度と範囲」と置いた前提自体を見直す必要がある。",
+        "confidence": "中",
+        "control_type_adjustment_reason": null,
+        "evidence_class": "current_direct_evidence",
+        "historical_supporting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "key_stakeholder_assessment": {
+        "determination": "multiple",
+        "selected_actor_ids": [
+          "trump",
+          "xi"
+        ],
+        "rationale": "米側ではBISが制度レバーを握るが、対中規制の方向性・強度を政治的に決めるのは大統領（トランプ）であり、中国側では習近平が国家戦略・報復・迂回の組み合わせを最終決定する。両者が互いの行動を変えようとしている局面であり、単一側だけでは説明できないため「multiple」とした。",
+        "decision_structure": null,
+        "confidence": "低",
+        "evidence_ids": null
+      },
+      "key_actor_profiles": [
+        {
+          "actor_ref": "trump",
+          "actor": "Donald Trump",
+          "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "formal_role": null,
+          "decision_power": null,
+          "ability_to_move": null,
+          "ability_to_block": null,
+          "ultimate_objective": null,
+          "strategic_relationship_preference": null,
+          "persistent_preference": null,
+          "persistent_preference_evidence": [],
+          "issue_objective": "対中AI半導体規制を通じて、中国の先端軍事・監視用途へのAI能力移転を抑えつつ、自身が有利な対中ディール（貿易・投資・安全保障）をまとめるための交渉カードを確保すること（仮説）。",
+          "observed_action": "Nvidia・TSMCなどへの対中輸出制限強化を容認・推進していると推定されるが、Current Evidenceにはトランプ本人の直接発言・決定文書は含まれていない。",
+          "preference_action_gap": "トランプが本質的に「対中関係の完全な断絶」ではなく「強いカードを持ったうえでの取引」を好むと仮定すると、非常に強い輸出規制を打ち出しつつも、将来の交渉で緩和・例外をカードとして使う余地を残そうとしている可能性がある（仮説）。",
+          "perceived_path": "強い対中AI半導体規制を打ち出す→中国経済・軍事のボトルネックを作る→習近平政権に圧力をかけ、貿易・投資・安全保障など他分野で有利な譲歩を引き出す→必要に応じて規制緩和を「報酬」として提供する、という因果経路を想定している可能性がある。",
+          "event_role": {
+            "role_type": "bargaining_card",
+            "explanation": "AI半導体規制は、対中関係全体の中で、他の争点（関税・為替・安全保障）と組み合わせて取引するためのカードとして位置づけられていると読む方が、単なる安全保障措置とみなすよりもトランプの交渉スタイルと整合的という仮説。"
+          },
+          "primary_audience": "習近平政権（対中圧力とディール可能性の双方を示す相手）",
+          "secondary_audience": "米国内の対中強硬派・安全保障コミュニティ、対中依存を懸念する有権者・産業界",
+          "driving_forces": [
+            {
+              "force": "米国内の対中強硬世論・安全保障コミュニティ",
+              "direction": "supporting",
+              "description": "対中技術流出を懸念する勢力は、AI半導体規制強化を支持しやすい。"
+            },
+            {
+              "force": "米ハイテク企業・投資家の利益",
+              "direction": "constraining",
+              "description": "Nvidia・TSMCなどは収益減を懸念し、過度な規制には反発し得る。"
+            }
+          ],
+          "red_line": null,
+          "confidence": "低",
+          "evidence_ids": null,
+          "persistent_preference_change": null,
+          "why_actor_matters": "米国の輸出管理の政治的方向性を決め、BISに対して規制強化・緩和のシグナルを出せる立場にあるため。対中AI半導体規制を「どこまでカードとして使うか」を決めるのはトランプの裁量に大きく依存する。",
+          "available_leverage": [
+            "Nvidia・TSMCなど米・同盟国企業への輸出許可・例外付与の裁量",
+            "追加制裁・関税・投資規制のカード"
+          ],
+          "unavailable_or_costly_cards": [
+            "全面的な対中技術断絶（米企業・同盟国へのコストが大きい）"
+          ],
+          "vulnerabilities": [
+            "米企業ロビー・株式市場の反発",
+            "同盟国との足並みの乱れ"
+          ],
+          "relevant_decision_patterns": null,
+          "actor_intelligence_provenance": null,
+          "pattern_applicability_assessment": null,
+          "actor_model_challenge": null,
+          "confidence_adjustment_reason": null,
+          "action_substance": {
+            "stated_signal": null,
+            "concrete_measure": "Nvidia・TSMCへの対中AI半導体輸出制限を容認・推進（と推定）。",
+            "target_scope": "中国向け先端AI半導体（7nmクラスAIチップ等）。",
+            "legal_or_policy_force": "BIS規則として強制力あり。",
+            "implementation_status": "TSMCへの輸出停止命令、Nvidiaへの新制限が報じられている。",
+            "enforcement_status": "不明。",
+            "discretion": "ホワイトハウス・BISに例外・猶予の裁量余地。",
+            "evidence_ids": [
+              "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+              "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+            ],
+            "assessment": "安全保障措置であると同時に、将来の交渉で緩和・例外をカードにし得る構造。"
+          }
+        },
+        {
+          "actor_ref": "xi",
+          "actor": "Xi Jinping",
+          "entity_id": "f34571d3-4742-41b7-8648-5b3ee13b7720",
+          "formal_role": null,
+          "decision_power": null,
+          "ability_to_move": null,
+          "ability_to_block": null,
+          "ultimate_objective": null,
+          "strategic_relationship_preference": null,
+          "persistent_preference": null,
+          "persistent_preference_evidence": [],
+          "issue_objective": "米国のAI半導体規制の実効性を弱めつつ、中国の長期的な半導体・AI技術自立を加速させること（仮説）。",
+          "observed_action": "Current Evidenceには習近平本人の具体的行動・発言は含まれていないが、中国AI企業が海外でNvidiaリソースを確保しようとしていることから、短期的には迂回経路の確保を黙認・支援している可能性がある。",
+          "preference_action_gap": "米国依存を減らしたい長期志向と、短期的にNvidia等への依存を続けざるを得ない現実の間にギャップがあり、当面は迂回・外部調達と国内投資を並行させる二重戦略を取っていると考えられる。",
+          "perceived_path": "米国の規制を「外圧」として国内に提示し、半導体・AIへの国家投資と統制を正当化→短期的には第三国・クラウド等を通じてNvidia等のリソースを確保→中長期的には国産GPU・EUV代替技術などを育成し、対米依存を減らす、という経路を想定している可能性。",
+          "event_role": {
+            "role_type": "constraint",
+            "explanation": "米国のAI半導体規制は、中国にとって短期的な制約だが、同時に国内技術自立を加速させるための「外圧」として利用される可能性がある。"
+          },
+          "primary_audience": "中国国内の党・軍・ハイテク産業（「米国の封じ込め」に対抗する必要性を示す）",
+          "secondary_audience": "米国・同盟国（報復・迂回能力を示し、過度な規制のコストを意識させる）",
+          "driving_forces": [
+            {
+              "force": "中国の軍・安全保障コミュニティ",
+              "direction": "supporting",
+              "description": "AI半導体の軍事・監視用途を重視し、対米依存低減と国産化を強く求める。"
+            },
+            {
+              "force": "中国の民間テック企業",
+              "direction": "constraining",
+              "description": "短期的にはNvidia等へのアクセスを失うと事業に大きな打撃となるため、急激な対抗措置には慎重。"
+            }
+          ],
+          "red_line": null,
+          "confidence": "低",
+          "evidence_ids": [
+            "b5c17e2e-a432-4e45-ba45-7c618020326d"
+          ],
+          "persistent_preference_change": null,
+          "why_actor_matters": "中国の国家戦略・技術自立路線・対米報復の方向性を最終的に決める立場にあり、米国の規制に対する中国側の「本線の反応」を規定する。",
+          "available_leverage": [
+            "対米・対同盟国への報復措置（輸出規制・市場アクセス制限など）",
+            "国内市場・補助金を通じた国産半導体企業の育成"
+          ],
+          "unavailable_or_costly_cards": [
+            "Nvidia等の完全排除（短期的に自国AI産業へ大打撃）"
+          ],
+          "vulnerabilities": [
+            "先端製造装置・EDA・IPなどでの対外依存",
+            "外資系企業・投資の流出リスク"
+          ],
+          "relevant_decision_patterns": null,
+          "actor_intelligence_provenance": null,
+          "pattern_applicability_assessment": null,
+          "actor_model_challenge": null,
+          "confidence_adjustment_reason": null,
+          "action_substance": {
+            "stated_signal": null,
+            "concrete_measure": "中国AI企業による海外でのNvidia GPU利用・調達の模索。",
+            "target_scope": "海外拠点・クラウド等を通じたNvidiaパワーへのアクセス。",
+            "legal_or_policy_force": "国家による公式措置としては不明。企業行動として観測。",
+            "implementation_status": "CNBC報道ベースで進行中。",
+            "enforcement_status": "不明。",
+            "discretion": "中国政府はこの行動を黙認・支援・制限する裁量を持つと推定。",
+            "evidence_ids": [
+              "b5c17e2e-a432-4e45-ba45-7c618020326d"
+            ],
+            "assessment": "短期的な痛み緩和のための実務的対応であり、長期の国産化戦略と並行する可能性がある。"
+          }
+        }
+      ],
+      "preference_action_gap_summary": "トランプは「強い規制を打ち出しつつ、将来のディールのカードとして残す」意図を持つ可能性があり、習近平は「対米依存低減を志向しつつ、短期的にはNvidia等への依存を続けざるを得ない」という二重構造にあると仮説的に整理できる。両者とも上位志向と現実の行動の間にギャップがあり、それが規制強化と迂回・報復の組み合わせとして現れている可能性がある。",
+      "identified_knowledge_gaps": [
+        {
+          "description": "トランプ本人が対中AI半導体・TSMC/Nvidia規制についてどのような発言・指示を行ったかの一次情報（演説・大統領令・インタビューなど）。",
+          "gap_category": "deterministic",
+          "priority": "高",
+          "recommended_action": "ホワイトハウス文書・公式演説・主要インタビューの検索・整理。"
+        },
+        {
+          "description": "習近平がAI半導体・技術自立に関して最近行った具体的な演説・内部指示の内容。",
+          "gap_category": "deterministic",
+          "priority": "高",
+          "recommended_action": "中国公式メディア・党文書・政策報告から関連発言を抽出。"
+        },
+        {
+          "description": "BISとホワイトハウスの間で、対中AI半導体規制の設計に関する権限配分・実務運用の実態。",
+          "gap_category": "analytical_candidate",
+          "priority": "中",
+          "recommended_action": "BIS規則文書・連邦官報・専門家分析を通じた制度設計の確認。"
+        }
+      ],
+      "main_scenario": {
+        "description": "トランプは、先端AI半導体・TSMC/Nvidiaへの対中輸出規制を「安全保障上の正当性を持つ強力な交渉カード」として位置づけ、中国側に対し「このままではAI・軍事能力が制約されるが、関税・投資・安全保障など他分野で譲歩すれば調整の余地がある」と見せたいと考えている可能性がある。一方、習近平は、米国の規制を短期的には迂回・報復で相殺しつつ、長期的には国産化・技術自立を加速させる外圧として利用し、「米国に依存しないAI大国」への路線を国内的に正当化しようとしているとみられる（いずれも仮説）。トランプ側の想定では、中国は経済・軍事への打撃を恐れて早期にディールに応じると見ている可能性があるが、実際には習近平は痛みを受け入れつつ長期戦を選び、迂回経路の活用・第三国との連携・国内投資を通じて規制の実効性を削ごうとするため、トランプの期待よりも「粘る中国」と「長期化する技術デカップリング」が現実化するリスクが高い。",
+        "confidence": "低",
+        "supporting_evidence": [
+          "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+          "755e629d-1ade-4f0b-912f-90b6aa6ae8c5",
+          "b5c17e2e-a432-4e45-ba45-7c618020326d"
+        ],
+        "evidence_relevance": [
+          {
+            "evidence_id": "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "claim_relevance": "strongly_relevant",
+            "source_type": "unknown",
+            "rationale": "TSMCへの7nm AIチップ輸出停止命令は、トランプ側が使える強力なカードの具体例を示す。"
+          },
+          {
+            "evidence_id": "755e629d-1ade-4f0b-912f-90b6aa6ae8c5",
+            "claim_relevance": "strongly_relevant",
+            "source_type": "unknown",
+            "rationale": "Nvidiaへの新制限は、米国がAI半導体を安全保障上のレバーとして使っていることを示す。"
+          },
+          {
+            "evidence_id": "b5c17e2e-a432-4e45-ba45-7c618020326d",
+            "claim_relevance": "strongly_relevant",
+            "source_type": "unknown",
+            "rationale": "中国AI企業が海外でNvidiaパワーを確保しようとしている事実は、習近平側が短期的に迂回・外部調達を重視していることの間接的な示唆となる。"
+          }
+        ],
+        "relevance_confidence_adjustment_reason": null,
+        "selection_rationale": "Current Evidenceは規制の存在と中国企業の迂回行動を示すにとどまり、両首脳の意図は直接示していない。そのため確信度は低にとどめるが、輸出管理を交渉カード・外圧として利用する読みは、過去の米中関係の一般的パターンと整合し、規制強化と迂回・国産化投資という観測された行動を同時に説明しやすい。代替仮説（純粋な安全保障目的のみ、あるいは国内政治パフォーマンスのみ）よりも、交渉・長期戦略を組み合わせたシナリオの方が説明力が高いと判断した。",
+        "assumptions": [
+          "トランプが対中政策全般で「強いカードを持ったうえでの取引」を好むという一般的傾向が今回も一定程度当てはまること。",
+          "習近平が長期的な技術自立・対米依存低減を重視していること。",
+          "BISの規制設計がホワイトハウスの政治判断と連動していること。"
+        ],
+        "observable_indicators": [
+          "トランプが対中AI半導体規制を他の争点（関税・投資など）とセットで語る発言が出るか。",
+          "習近平・中国指導部がAI半導体国産化・技術自立を強調する政策文書・演説を増やすか。",
+          "中国側がNvidia・TSMCに対し、非公開の形も含めてどの程度アクセスを維持・拡大しようとするか。"
+        ],
+        "historical_analogies_used": null,
+        "evidence_class": "current_indirect_evidence",
+        "confidence_adjustment_reason": null
+      },
+      "alternative_scenarios": [
+        {
+          "description": "トランプ・習近平ともに、AI半導体規制を主として安全保障・国内政治上の必要性から実施・受忍しており、「相手にこう反応させたい」という精緻な期待経路は弱い。結果として、双方とも相手の反応を過小評価・過大評価しつつも、構造的な技術デカップリングが惰性的に進む。",
+          "confidence": "低",
+          "strengthening_conditions": [
+            "両者の公式発言・文書で、AI半導体規制がほぼ専ら安全保障・国内政治の文脈で語られ、交渉カードや長期技術戦略としての位置づけがほとんど見られない。",
+            "米中間で規制緩和を巡るディールの兆候が乏しく、規制が一方向的に積み上がる。"
+          ],
+          "weakening_conditions": [
+            "トランプがAI半導体規制を他の争点とセットで「取引材料」として明示的に語る。",
+            "習近平が米規制を利用した国産化・技術自立戦略を繰り返し強調し、対米関係の文脈で位置づける。"
+          ],
+          "switch_conditions": [
+            "安全保障・国内政治以外の目的（交渉・長期技術戦略）を示す明確な発言・文書が見つからない場合、主シナリオからこのシナリオへ重心を移す。"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "confidence_adjustment_reason": null
+        },
+        {
+          "description": "トランプは主として国内政治（対中強硬アピール・産業政策）目的で規制を強化し、中国へのディール圧力は二次的。習近平も主として国内向けに「米国の封じ込めに屈しない」姿勢を示すために報復・国産化を強調し、実務的には第三国経由での調達継続を容認する。相互に相手の実務的柔軟性を誤解し、象徴的対立が続く一方で、裏側ではビジネスが継続する。",
+          "confidence": "低",
+          "strengthening_conditions": [
+            "トランプが選挙演説などでAI半導体規制を国内雇用・産業保護の文脈で強調し、中国への譲歩・ディールへの言及が乏しい。",
+            "習近平が対米関係よりも国内ナショナリズム・自立路線の象徴としてのみこの問題を扱う発言を繰り返す。",
+            "第三国経由でのNvidia等の継続的な大規模調達が確認される。"
+          ],
+          "weakening_conditions": [
+            "米中間でAI半導体規制を含む包括的ディールの模索が報じられる。",
+            "中国側が第三国経由調達を大幅に制限し、国産化への急激なシフトを行う。"
+          ],
+          "switch_conditions": [
+            "規制が主に国内政治パフォーマンスとして使われていることを示す証拠が蓄積した場合、主シナリオからの切り替えを検討。"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "strongest_counterargument": "トランプも習近平も、AI半導体規制を交渉カードや長期戦略としてではなく、ほぼ純粋に安全保障・国内政治上の必要性から実施しており、「相手にこう反応させたい」という精緻な期待経路は持っていない可能性がある。",
+      "weakening_information": "現時点の文書には、両首脳の具体的発言・内部文書が含まれておらず、意図に関する仮説は一般的な行動パターンに依存せざるを得ない。",
+      "contradicting_evidence": null,
+      "retraction_conditions": [
+        "トランプが公的に「AI半導体規制は交渉材料ではなく、いかなるディールでも緩めない」と明言し、それに反する行動が観測されない場合。",
+        "習近平が「米国の規制にもかかわらず、我々は今後もNvidia等への依存を続ける」といった趣旨の発言を行い、国産化・自立路線を後退させる政策を取った場合。"
+      ],
+      "additional_research": [
+        {
+          "question": "トランプは対中AI半導体・TSMC/Nvidia規制について、どのような具体的発言・指示を行っているか。",
+          "related_hypothesis": "トランプが規制を交渉カードとして位置づけているという仮説",
+          "recommended_sources": "ホワイトハウス公式文書、演説、主要インタビュー、議会証言",
+          "priority": "高",
+          "rationale": "本人の発言が確認できれば、交渉カード説と純粋安全保障説のどちらが妥当かを絞り込める。"
+        },
+        {
+          "question": "習近平はAI半導体・技術自立について、最近の党・政府文書でどのように位置づけているか。",
+          "related_hypothesis": "習近平が米国の規制を外圧として国産化を加速させているという仮説",
+          "recommended_sources": "人民日報、求是、政府工作報告、関連政策文書",
+          "priority": "高",
+          "rationale": "国産化・自立路線の強調度合いから、長期戦略としての位置づけを検証できる。"
+        },
+        {
+          "question": "トランプは対中AI半導体・TSMC/Nvidia規制について、相手（中国）がどう反応することを期待していると示唆する発言をしているか。",
+          "related_hypothesis": null,
+          "recommended_sources": null,
+          "priority": null,
+          "rationale": "Key Actor（トランプ）のactor_expected_responseを裏付ける一次情報が欠けている。"
+        },
+        {
+          "question": "習近平は米国のAI半導体規制をどの程度「外圧」として国内技術自立の正当化に使っているか。",
+          "related_hypothesis": null,
+          "recommended_sources": null,
+          "priority": null,
+          "rationale": "Key Actor（習近平）のperceived_path・domestic_signal仮説の検証に必要。"
+        },
+        {
+          "question": "BISとホワイトハウスの間で、対中AI半導体規制の設計に関する裁量配分はどうなっているか。",
+          "related_hypothesis": null,
+          "recommended_sources": null,
+          "priority": null,
+          "rationale": "Key Point（輸出管理の強度・範囲）のcontrol_structure理解に必要。"
+        }
+      ],
+      "business_impact": {
+        "direct": null,
+        "indirect": "AI半導体・TSMC/Nvidiaへの規制強化と中国側の迂回・国産化は、AIインフラコスト・供給安定性・技術スタック選択に影響し得る。特に中国市場向けAIサービス・製造拠点を持つ企業は、利用可能なGPU・クラウドの制約や価格上昇を通じて間接的な影響を受ける可能性がある。",
+        "environment_change": "米中間の技術デカップリングがAI半導体領域で一段と進み、サプライチェーン・規制リスクを前提とした長期戦略（調達多様化・地域別技術スタック分離など）が必要になる環境変化が進行しているとみられる。",
+        "unrelated_note": null
+      },
+      "monitoring_indicators": [
+        "トランプ・ホワイトハウスからの対中AI半導体規制に関する公式発言・文書の内容とトーン。",
+        "習近平・中国指導部によるAI半導体・技術自立に関する演説・政策文書の頻度と具体性。",
+        "BISによる追加規則・例外許可の動き（対象ノード・企業・用途の変化）。",
+        "中国AI企業による海外拠点・クラウド経由でのNvidiaリソース確保の動向。"
+      ],
+      "unknown_or_uncertain": "トランプと習近平それぞれの「相手にこう反応させたい」という具体的な期待経路は、Current Evidenceには直接現れておらず、ここでの記述は一般的な行動パターンに基づく仮説にとどまる。両者の内部文書・詳細な発言が確認されるまでは、確信度を上げるべきではない。",
+      "executive_summary": {
+        "what_changed": null,
+        "why_it_matters": null,
+        "what_to_watch_decide": null
+      },
+      "stakeholders": [
+        {
+          "actor": "Donald Trump",
+          "purpose": null,
+          "constraints_fears": "米ハイテク企業・投資家の利益",
+          "red_lines": null,
+          "confidence": "低",
+          "position": "対中AI半導体規制を通じて、中国の先端軍事・監視用途へのAI能力移転を抑えつつ、自身が有利な対中ディール（貿易・投資・安全保障）をまとめるための交渉カードを確保すること（仮説）。",
+          "leverage": "米国内の対中強硬世論・安全保障コミュニティ",
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "Xi Jinping",
+          "purpose": null,
+          "constraints_fears": "中国の民間テック企業",
+          "red_lines": null,
+          "confidence": "低",
+          "position": "米国のAI半導体規制の実効性を弱めつつ、中国の長期的な半導体・AI技術自立を加速させること（仮説）。",
+          "leverage": "中国の軍・安全保障コミュニティ",
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "Bureau of Industry and Security (BIS)",
+          "purpose": "米国輸出管理法に基づき、国家安全保障・外交政策上の目的から対中先端技術輸出を管理する。",
+          "priority": "対中AI半導体・先端製造能力へのアクセス制限を適切に設計・運用すること。",
+          "constraints_fears": "米企業・同盟国への過度な負担、規制の抜け穴、政治的介入による一貫性の欠如。",
+          "red_lines": null,
+          "key_relationships": "ホワイトハウス（トランプ）からの政治的方向性、議会・安全保障コミュニティからの圧力、Nvidia・TSMC等企業からのロビー。",
+          "confidence": "中",
+          "position": "対中AI半導体規制強化の実務主体として、規則策定・ライセンス運用を通じて制限を具体化している。",
+          "leverage": "輸出管理規則の設計・ライセンス付与・例外設定を通じて、企業の対中ビジネスを左右できる。",
+          "ability_to_move_or_block": "規制の細部（対象ノード・用途・企業）を通じて、トランプ・習近平双方の選択肢を実務的に制約・調整できる。"
+        }
+      ],
+      "sources_and_citations": [
+        {
+          "result_type": "document",
+          "result_id": "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+          "citation_label": null
+        },
+        {
+          "result_type": "document",
+          "result_id": "b5c17e2e-a432-4e45-ba45-7c618020326d",
+          "citation_label": null
+        },
+        {
+          "result_type": "document",
+          "result_id": "755e629d-1ade-4f0b-912f-90b6aa6ae8c5",
+          "citation_label": null
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "relevant_precedents": [],
+      "relevant_mechanisms": [],
+      "assets_dependencies_leverage": [],
+      "audience_analysis": [
+        {
+          "actor_ref": "trump",
+          "action_or_statement": "対中AI半導体・TSMC/Nvidia規制を強化・維持する（と推定される）",
+          "primary_audience": "習近平政権",
+          "secondary_audience": "米国内の対中強硬派・安全保障コミュニティ、対中依存を懸念する有権者・産業界",
+          "message_hypothesis": "中国がAI・軍事能力で痛みを感じるほど強い規制を示しつつ、「ディール次第で調整可能なカード」であることも匂わせ、譲歩を引き出したい。国内には対中強硬姿勢と技術流出阻止をアピールしたい。",
+          "action_substance": {
+            "stated_signal": null,
+            "concrete_measure": "Nvidia・TSMCの対中AI半導体輸出を制限する方向の政策を容認・推進（具体的な法令・発言はCurrent Evidenceに未記載）。",
+            "target_scope": "中国向け7nmクラスAIチップなど先端AI半導体（[document_id: 804f1328-1f88-4fe0-a398-5cf1bdc5fc38]、[document_id: 755e629d-1ade-4f0b-912f-90b6aa6ae8c5]）",
+            "legal_or_policy_force": "BIS輸出管理規則として法的拘束力を持つが、例外・猶予の裁量余地が残ると推定。",
+            "implementation_status": "TSMCへの7nm AIチップ輸出停止命令、Nvidiaへの新制限が報じられている段階。",
+            "enforcement_status": "詳細不明（Current Evidenceに執行状況の具体記述なし）。",
+            "discretion": "BIS運用・ホワイトハウス判断により例外・ライセンス付与の余地があると推定。",
+            "evidence_ids": [
+              "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+              "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+            ],
+            "assessment": "Substanceとしては実際に企業を縛る強い措置だが、制度上の裁量が残るため、将来の交渉カードとしても使い得る構造。"
+          },
+          "confidence": "低"
+        },
+        {
+          "actor_ref": "xi",
+          "action_or_statement": "米国のAI半導体規制に対抗しつつ、迂回調達と国産化を進める（と推定される）",
+          "primary_audience": "中国国内の党・軍・ハイテク産業",
+          "secondary_audience": "米国・同盟国",
+          "message_hypothesis": "米国の封じ込めに屈せず、外圧を利用して技術自立を加速させる決意を示す一方、短期的にはNvidia等へのアクセスを維持できる能力を誇示し、米側に規制の限界とコストを意識させたい。",
+          "action_substance": {
+            "stated_signal": null,
+            "concrete_measure": "中国AI企業が海外拠点などを通じてNvidia製品へのアクセスを模索している（[document_id: b5c17e2e-a432-4e45-ba45-7c618020326d]）。",
+            "target_scope": "中国AI企業による海外でのNvidia GPU利用など、第三国・クラウド経由の計算資源確保。",
+            "legal_or_policy_force": "習近平本人の公式措置としてはCurrent Evidenceに記載なし。企業行動の黙認・支援が推定されるにとどまる。",
+            "implementation_status": "海外拠点・パートナーを通じたNvidiaパワー確保の動きが報じられている。",
+            "enforcement_status": "不明。中国当局がどの程度積極的に関与・支援しているかは資料にない。",
+            "discretion": "中国政府は国内規制・補助金・外交を通じて迂回経路・国産化投資を調整し得るが、対外依存という構造制約が大きい。",
+            "evidence_ids": [
+              "b5c17e2e-a432-4e45-ba45-7c618020326d"
+            ],
+            "assessment": "Substanceとしては、米規制の実効性を削ぐための迂回行動が既に進行しているが、国家戦略としてどこまで組織化されているかは不明。"
+          },
+          "confidence": "低"
+        }
+      ],
+      "media_source_context": null,
+      "situation_actor_assessment": [
+        {
+          "issue_component": "AI半導体輸出規制の強度・範囲",
+          "issue_component_description": "どの技術ノード・用途まで対中輸出を制限するか。",
+          "actor_ref": "trump",
+          "salience": "high",
+          "priority_rationale": "規制強度は対中圧力カードの価値と米企業へのコストを同時に決めるため、トランプにとって重要な調整レバーとなる。",
+          "effect_on_actor_objective": "強い規制は対中ディールでの交渉力を高める一方、米企業・市場の反発リスクを高める。",
+          "desired_outcome": "中国にとって十分痛みを伴うが、米企業が致命傷を負わないレベルの強い規制。将来の緩和余地も残す。",
+          "instrumental_value": "negotiating_card",
+          "current_red_line": "中国の軍事・監視用途に直結するAI半導体については、ディールがあっても完全自由化は避けたいと推定（仮説）。",
+          "currently_tradeable": "一部ノード・用途・企業については、譲歩と引き換えに緩和・例外を提供し得るとみなしている可能性。",
+          "stated_preference": null,
+          "estimated_real_preference": "安全保障上の正当性を維持しつつ、規制を取引材料として活用できるような設計。",
+          "genuine_or_tactical": "mixed",
+          "primary_binding_constraint": "米国内の安全保障コミュニティ・対中強硬派の反発。",
+          "primary_usable_leverage": "規制緩和・例外付与の約束。",
+          "likely_reaction": null,
+          "actor_expected_response": "強い規制を打ち出せば、中国は経済・軍事への打撃を恐れてディールに応じると期待している可能性。",
+          "analyst_expected_response": "中国は短期的な痛みを受け入れつつ、迂回・国産化で長期戦を選び、早期ディールには応じない可能性が高い。",
+          "confidence": "低",
+          "evidence_ids": [
+            "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "alternative_interpretation": "トランプはディールよりも国内政治・安全保障を優先し、相手の反応を深く計算していない可能性。",
+          "alternative_interpretation_status": "plausible",
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "中国側の迂回・第三国経由調達",
+          "issue_component_description": "中国が海外拠点・クラウド等を通じてNvidiaパワーを確保する動き。",
+          "actor_ref": "trump",
+          "salience": "medium",
+          "priority_rationale": "規制の実効性を左右するが、直接コントロールしにくく、BIS・同盟国との協調が必要。",
+          "effect_on_actor_objective": "迂回が広がると圧力カードの実効性が低下し、ディール価値が下がる。",
+          "desired_outcome": "同盟国・クラウド事業者と連携し、迂回経路を可能な限り封じる。",
+          "instrumental_value": "deterrence",
+          "current_red_line": null,
+          "currently_tradeable": "第三国への圧力・インセンティブを交渉材料にし得るが、複雑。",
+          "stated_preference": null,
+          "estimated_real_preference": "迂回は抑えたいが、完全封鎖はコストが高く、一定の漏れは許容する可能性。",
+          "genuine_or_tactical": "unclear",
+          "primary_binding_constraint": "同盟国・第三国の協力意欲。",
+          "primary_usable_leverage": "制裁・市場アクセスを通じた第三国への圧力。",
+          "likely_reaction": null,
+          "actor_expected_response": "迂回コストを上げれば、中国はディールを検討すると期待する可能性。",
+          "analyst_expected_response": "中国は新たな迂回経路・自前クラウドを模索し続け、完全封鎖は困難。",
+          "confidence": "判断不能",
+          "evidence_ids": [
+            "b5c17e2e-a432-4e45-ba45-7c618020326d"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "alternative_interpretation": null,
+          "alternative_interpretation_status": null,
+          "media_salience_signal": "neutral",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "AI半導体規制の国内政治効果",
+          "issue_component_description": "対中強硬アピール・産業政策としての利用。",
+          "actor_ref": "trump",
+          "salience": "high",
+          "priority_rationale": "選挙・支持基盤にとって対中強硬姿勢は重要なメッセージとなり得る。",
+          "effect_on_actor_objective": "強硬姿勢は支持基盤を固めるが、企業ロビーとの摩擦を生む。",
+          "desired_outcome": "対中強硬を示しつつ、主要企業・市場の反発を管理可能な範囲に抑える。",
+          "instrumental_value": "domestic_signal",
+          "current_red_line": null,
+          "currently_tradeable": "国内政治カードとして他の政策と交換し得る。",
+          "stated_preference": null,
+          "estimated_real_preference": "国内向けシグナル価値を重視しつつ、実務的コストはBIS・企業に押し付けたい。",
+          "genuine_or_tactical": "mixed",
+          "primary_binding_constraint": "選挙日程・支持率。",
+          "primary_usable_leverage": "対中強硬レトリック・追加規制の示唆。",
+          "likely_reaction": null,
+          "actor_expected_response": "強硬姿勢で支持基盤が結束すると期待。",
+          "analyst_expected_response": "一部支持層には有効だが、企業・市場の反発が強まる可能性。",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "alternative_interpretation": null,
+          "alternative_interpretation_status": null,
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "AI半導体輸出規制の強度・範囲",
+          "issue_component_description": "どの技術ノード・用途まで対中輸出を制限するか。",
+          "actor_ref": "xi",
+          "salience": "high",
+          "priority_rationale": "規制強度は中国のAI・軍事・産業発展に直接影響する。",
+          "effect_on_actor_objective": "強い規制は短期的に痛みだが、長期的には国産化・自立を正当化する外圧となる。",
+          "desired_outcome": "短期的な痛みを管理可能な範囲に抑えつつ、外圧を利用して国内投資・統制を強化。",
+          "instrumental_value": "mixed",
+          "current_red_line": "中国の軍・安全保障に致命的な能力ギャップを生むレベルの規制は、何らかの強い対抗措置を迫るレッドラインとなり得る（仮説）。",
+          "currently_tradeable": "規制の一部緩和を他分野の譲歩と交換する可能性はあるが、主軸は自立路線。",
+          "stated_preference": null,
+          "estimated_real_preference": "規制を完全に撤回させるよりも、自立路線を加速させる方向へ利用したい。",
+          "genuine_or_tactical": "mixed",
+          "primary_binding_constraint": "先端製造装置・EDA等での対外依存。",
+          "primary_usable_leverage": "対米・対同盟国への報復措置・市場アクセス。",
+          "likely_reaction": null,
+          "actor_expected_response": "米国は中国の痛みを見て一定の緩和に応じると期待する可能性もあるが、長期戦も覚悟。",
+          "analyst_expected_response": "米国は安全保障上の懸念から簡単には緩和せず、長期的なデカップリングが進行。",
+          "confidence": "低",
+          "evidence_ids": [
+            "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "alternative_interpretation": "習近平は外圧利用よりも、規制緩和を最優先に求めている可能性。",
+          "alternative_interpretation_status": "plausible",
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "迂回・第三国経由調達",
+          "issue_component_description": "海外拠点・クラウド等を通じたNvidiaパワー確保。",
+          "actor_ref": "xi",
+          "salience": "high",
+          "priority_rationale": "短期的にAI開発を継続するための生命線。",
+          "effect_on_actor_objective": "短期の痛みを緩和しつつ、国産化への時間を稼ぐ。",
+          "desired_outcome": "米規制の網をかいくぐり、必要な計算資源を確保。",
+          "instrumental_value": "instrumental",
+          "current_red_line": "迂回経路が完全に遮断されることは避けたい。",
+          "currently_tradeable": "第三国との関係・市場アクセスを通じて迂回経路維持を交渉材料にし得る。",
+          "stated_preference": null,
+          "estimated_real_preference": "当面はNvidia等への依存を続けざるを得ない。",
+          "genuine_or_tactical": "genuine",
+          "primary_binding_constraint": "米国・同盟国の域外適用的な規制・制裁。",
+          "primary_usable_leverage": "第三国との経済関係・投資。",
+          "likely_reaction": null,
+          "actor_expected_response": "米国は完全封鎖は困難で、一定の迂回は黙認せざるを得ないと期待。",
+          "analyst_expected_response": "米国は主要な迂回経路を段階的に締め付けるが、完全封鎖はできず、グレーゾーンが残る。",
+          "confidence": "中",
+          "evidence_ids": [],
+          "evidence_class": "current_indirect_evidence",
+          "alternative_interpretation": null,
+          "alternative_interpretation_status": null,
+          "media_salience_signal": "neutral",
+          "media_salience_basis": [],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "国内向けナショナリズム・技術自立ナラティブ",
+          "issue_component_description": "米規制を外圧として利用し、国内結束と投資を正当化。",
+          "actor_ref": "xi",
+          "salience": "high",
+          "priority_rationale": "党・軍・産業界の支持を維持し、痛みを伴う長期投資を正当化するために重要。",
+          "effect_on_actor_objective": "短期の痛みを「必要な犠牲」として受容させ、長期自立路線への支持を固める。",
+          "desired_outcome": "米国の封じ込めを強調しつつ、国産化・自立路線への国内支持を強化。",
+          "instrumental_value": "domestic_signal",
+          "current_red_line": null,
+          "currently_tradeable": "国内ナラティブは対外交渉で柔軟性を制約し得るため、容易には手放せない。",
+          "stated_preference": null,
+          "estimated_real_preference": "外圧ナラティブを維持しつつ、裏では実務的な調達・交渉も行う二重戦略。",
+          "genuine_or_tactical": "mixed",
+          "primary_binding_constraint": "党内・軍・安全保障コミュニティの期待。",
+          "primary_usable_leverage": "国内世論・ナショナリズムを背景にした対外強硬姿勢。",
+          "likely_reaction": null,
+          "actor_expected_response": "強いナラティブで国内が結束し、痛みを耐えると期待。",
+          "analyst_expected_response": "一定の結束は得られるが、経済成長鈍化が長期化すれば不満も蓄積。",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "alternative_interpretation": null,
+          "alternative_interpretation_status": null,
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "investigation_questions": [
+        {
+          "question": "トランプは対中AI半導体・TSMC/Nvidia規制について、相手（中国）がどう反応することを期待していると示唆する発言をしているか。",
+          "question_type": "knowledge_gap",
+          "rationale": "Key Actor（トランプ）のactor_expected_responseを裏付ける一次情報が欠けている。",
+          "can_current_evidence_answer": false,
+          "answer_if_yes": null,
+          "answer_evidence_ids": null
+        },
+        {
+          "question": "習近平は米国のAI半導体規制をどの程度「外圧」として国内技術自立の正当化に使っているか。",
+          "question_type": "knowledge_gap",
+          "rationale": "Key Actor（習近平）のperceived_path・domestic_signal仮説の検証に必要。",
+          "can_current_evidence_answer": false,
+          "answer_if_yes": null,
+          "answer_evidence_ids": null
+        },
+        {
+          "question": "BISとホワイトハウスの間で、対中AI半導体規制の設計に関する裁量配分はどうなっているか。",
+          "question_type": "analytical_question",
+          "rationale": "Key Point（輸出管理の強度・範囲）のcontrol_structure理解に必要。",
+          "can_current_evidence_answer": false,
+          "answer_if_yes": null,
+          "answer_evidence_ids": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "description": "AI半導体規制は主として安全保障上の必要性から導入されており、トランプ・習近平とも相手の反応を精緻に計算しているわけではない。",
+          "status": "rejected",
+          "reason": "安全保障要因は重要だが、中国企業の迂回行動（[document_id: b5c17e2e-a432-4f0b-912f-90b6aa6ae8c5]）や規制の裁量構造から、交渉・長期戦略としての利用を完全に無視するのは説明力が弱いと判断。",
+          "supporting_evidence_ids": [
+            "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "contradicting_evidence_ids": [
+            "b5c17e2e-a432-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "confidence": "低"
+        },
+        {
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "description": "トランプはAI半導体規制を強い交渉カードとして位置づけ、中国に譲歩を迫ることを主目的としている。習近平はこれを外圧として利用し、長期技術自立を加速させる。",
+          "status": "retained",
+          "reason": "規制の裁量構造と中国企業の迂回・国産化志向を同時に説明しやすい。",
+          "supporting_evidence_ids": [
+            "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "755e629d-1ade-4f0b-912f-90b6aa6ae8c5",
+            "b5c17e2e-a432-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "contradicting_evidence_ids": null,
+          "confidence": "低"
+        },
+        {
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "description": "AI半導体規制の強化は、米中双方の安全保障官僚・議会・産業構造・技術依存といった構造要因により自動的に進んでおり、首脳の意図は二次的。",
+          "status": "unresolved",
+          "reason": "BISや安全保障コミュニティの役割は大きいが、Current Evidenceだけでは首脳の裁量度合いを判定できない。",
+          "supporting_evidence_ids": [
+            "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "755e629d-1ade-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "contradicting_evidence_ids": null,
+          "confidence": "判断不能"
+        },
+        {
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "description": "トランプは対中ディール志向ではなく、今回に限ってはイデオロギー的な対中断絶を志向しており、交渉カードとして規制を使うつもりはない。習近平も技術自立より短期成長を優先している。",
+          "status": "rejected",
+          "reason": "Current Evidenceにこれを支持する材料はなく、一般的な行動パターンとも整合しにくい。",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "confidence": "低"
+        },
+        {
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "description": "AI半導体規制は米中二国間の駆け引きではなく、多国間の技術ガバナンス・サプライチェーン再編の一部であり、トランプ・習近平の相互期待は周辺的に過ぎない。",
+          "status": "unresolved",
+          "reason": "TSMC（台湾）や第三国経由調達が関与しているが、Current Evidenceは米中軸で報じており、多国間枠組みの中心性は判断不能。",
+          "supporting_evidence_ids": [
+            "804f1328-1f88-4fe0-a398-5cf1bdc5fc38",
+            "b5c17e2e-a432-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "contradicting_evidence_ids": null,
+          "confidence": "判断不能"
+        }
+      ],
+      "directional_perceptions": [
+        {
+          "observer_actor_ref": "trump",
+          "target_actor_ref": "xi",
+          "perception": "強いAI半導体規制を科せば、中国は経済・軍事への打撃を恐れて比較的早期にディールに応じる可能性が高い。",
+          "claim_type": "analyst_hypothesis",
+          "evidence_ids": null,
+          "confidence": "低",
+          "issue_scope": "AI半導体・対中技術規制を含む対中交渉全般",
+          "valid_from": null,
+          "valid_to": null
+        },
+        {
+          "observer_actor_ref": "xi",
+          "target_actor_ref": "trump",
+          "perception": "米国は中国の痛みを見ても、国内政治・安全保障上の理由から簡単には規制を緩めないが、長期的な完全封鎖はコストが高く、迂回経路は残る。",
+          "claim_type": "analyst_hypothesis",
+          "evidence_ids": [
+            "b5c17e2e-a432-4f0b-912f-90b6aa6ae8c5"
+          ],
+          "confidence": "低",
+          "issue_scope": "AI半導体規制とその迂回・長期戦略",
+          "valid_from": null,
+          "valid_to": null
+        }
+      ],
+      "root_premise_check": null,
+      "review_findings": null
+    }
+  },
+  "quality_evaluation": {
+    "evaluation_id": "41ea5017-4cf4-4f75-ac2a-c8946d40b2d5",
+    "response_id": "f486c84f-8ed9-4783-a88e-5d5ef35c8542",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "has_retraction_conditions",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "versions_recorded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "passed": false,
+        "detail": "supporting_knowledge_refs: type=institution_intelligenceのref=63fa2294-ceca-488f-8e76-d4dae736a8ceがsubject_type=institutionのkey_actor_profiles[].entity_idに実在しません"
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_controllers_covered",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "primary_key_point_evidence_coverage",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "directional_perceptions_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "directional_perception_not_self_referential",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "actor_model_challenged",
+        "passed": true,
+        "detail": ""
+      }
+    ],
+    "passed_count": 44,
+    "failed_count": 1,
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "supporting_knowledge_refs_grounded"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "supporting_knowledge_refs_grounded"
+    ],
+    "removed_fabricated_ids": [
+      "situation_actor_assessment[4].evidence_ids=b5c17e2e-a432-4f0b-912f-90b6aa6ae8c5",
+      "situation_actor_assessment[4].media_salience_basis=b5c17e2e-a432-4f0b-912f-90b6aa6ae8c5"
+    ],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 87468,
+    "completion_tokens": 15218,
+    "total_tokens": 102686
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment",
+        "directional_perception"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment', 'directional_perception']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 75093,
+        "prompt_tokens": 42397,
+        "completion_tokens": 8029
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment+directional_perception",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 59968,
+        "prompt_tokens": 45071,
+        "completion_tokens": 7189
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=institution_intelligenceのref=63fa2294-ceca-488f-8e76-d4dae736a8ceがsubject_type=institutionのkey_actor_profiles[].entity_idに実在しません"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": false
+    }
+  },
+  "persistent_preference_candidates": []
+}

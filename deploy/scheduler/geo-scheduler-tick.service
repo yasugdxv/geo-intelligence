@@ -1,0 +1,20 @@
+# 地政学インテリジェンス Scheduler tick（収集系Jobの周期判定と実行）。
+# 15分ごとにtimerが起動する oneshot。常駐はしない（再起動に強い。状態は全てDB）。
+# 本番Linuxサーバ構築後に /etc/systemd/system/ へ配置する（現時点では未登録 = PRODUCTION DEPLOYMENT PENDING）。
+[Unit]
+Description=Geo Intelligence Scheduler tick
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# 配置先は環境に合わせて変更する。config.json（秘密情報）はWorkingDirectoryに置く（コミットしない）。
+WorkingDirectory=/opt/geo/geopolitical_monitor_dashboard
+ExecStart=/opt/geo/.venv/bin/python geo_scheduler_cli.py tick
+# 1回のtickの上限（GDELT DOC→streamの順次実行を含む）。超えたらsystemdが止め、DB上のrunningはstale回復される
+TimeoutStartSec=3h
+# 社内プロキシが必要な場合（値は環境に合わせる。APIキー等はここに書かない）
+# Environment=HTTPS_PROXY=http://<proxy>:<port>
+User=geo
+StandardOutput=journal
+StandardError=journal

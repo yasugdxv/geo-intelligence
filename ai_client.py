@@ -7,6 +7,10 @@ sustainability_article_selector.py 等）まで run.py 全体をimportして
 起動コストが増えていた。依存を最小限（httpx, openai, config_utils）に
 した本モジュールへ切り出す。
 """
+import ipaddress
+import socket
+from urllib.parse import urlparse
+
 import httpx
 
 from config_utils import find_azure_cfg
@@ -18,6 +22,20 @@ from config_utils import find_azure_cfg
 # ケースには効かない)。read/write/poolを180秒、connectを30秒に制限し、ハング時は例外を
 # 発生させて既存のリトライ処理(geo_llm_common.call_llm_structured等)に委ねる。
 _HTTP_CLIENT_TIMEOUT = httpx.Timeout(180.0, connect=30.0)
+
+
+def _is_private_host(host: str) -> bool:
+    """ホスト名が社内(プライベート)IPに解決されるか。Private Endpoint はプロキシを通すと拒否される。"""
+    try:
+        return ipaddress.ip_address(socket.gethostbyname(host)).is_private
+    except Exception:
+        return False
+
+
+def _normalize_azure_endpoint(endpoint: str) -> str:
+    """Foundry画面のURL(/openai/v1/ 付き)が貼られても、ホスト名までに丸める。"""
+    u = urlparse(endpoint)
+    return f"{u.scheme}://{u.netloc}" if u.scheme and u.netloc else endpoint
 
 
 def make_openai_client(config: dict):
@@ -34,6 +52,10 @@ def make_openai_client(config: dict):
     az_key      = (az.get("api_key")  or "").strip()
     if az_endpoint and az_key:
         from openai import AzureOpenAI
+        az_endpoint = _normalize_azure_endpoint(az_endpoint)
+        # 社内IP(Private Endpoint)宛てはプロキシを通さず直接つなぐ
+        if _is_private_host(urlparse(az_endpoint).netloc):
+            http_client = httpx.Client(trust_env=False, verify=ssl_verify, timeout=_HTTP_CLIENT_TIMEOUT)
         dep = (az.get("deployment") or az.get("default_deployment") or "gpt-4o").strip()
         kwargs: dict = {
             "azure_endpoint": az_endpoint,

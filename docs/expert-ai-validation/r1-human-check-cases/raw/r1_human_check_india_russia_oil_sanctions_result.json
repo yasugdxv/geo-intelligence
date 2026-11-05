@@ -1,0 +1,1302 @@
+{
+  "request": {
+    "request_id": "fbd0961b-d063-47e8-a692-6012d4c75a26",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "インドによるロシア産原油の購入と精製品輸出、それに対する米国・EU等の制裁・外交圧力をめぐる現在の局面について分析してください。\n\n最新の公開情報を確認し、\n\n- インド政府、ロシア政府、米国政府、EU、インドの精製企業、海運・保険・金融などのうち、実際に結果を動かす主体\n- 各主体の目的、制約、経済的インセンティブ、利用可能なカード\n- 原油価格差、決済、船舶、保険、制裁制度、精製後製品の扱い等のStructural / Institutional要因\n- インド政府の外交的発言と実際の企業行動の関係\n- 西側による圧力がどこまで実効性を持つか\n- この局面のPrimary Key Point\n- 現在のMain ScenarioとAlternative Scenario\n- 方向転換を示すObservable Indicators\n\nを整理してください。\n\n「インドはロシア寄り／西側寄り」という政治ラベルだけではなく、誰がどの条件下で行動を変えるのかという意思決定構造を重視してください。\n\nEvidenceが主体別に不足している場合は、必要な追加Researchを行ったうえで判断してください。",
+    "created_at": "2026-09-03T11:42:27.246794+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "d2bdf954-4e8f-4d6b-8eb6-8b4431c1f50a",
+    "request_id": "fbd0961b-d063-47e8-a692-6012d4c75a26",
+    "document_ids": [
+      "b5a290a8-90dc-43c4-9383-3f75329f4826"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T11:42:27.898812+00:00"
+  },
+  "response": {
+    "response_id": "81fac44a-d8f6-457b-a915-3fb51dad2e5e",
+    "request_id": "fbd0961b-d063-47e8-a692-6012d4c75a26",
+    "source_pack_id": "d2bdf954-4e8f-4d6b-8eb6-8b4431c1f50a",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "G7・EUはロシア産原油に対して価格上限措置と海運・保険・金融面の制裁を導入している。",
+          "claim_type": "fact",
+          "source_ref": "b5a290a8-90dc-43c4-9383-3f75329f4826"
+        },
+        {
+          "text": "インドはロシア産原油の主要な購入国となり、輸入した原油を国内で精製し、精製品を欧州などへ輸出していることが各種統計・報道で確認されている。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "制裁導入後も、インド発の精製品輸出は増加しており、EU向けディーゼル等に占めるインド産の比率が高まっている。",
+          "claim_type": "observation",
+          "source_ref": null
+        },
+        {
+          "text": "インド政府は、エネルギー安全保障と国益を理由に、ロシア産原油の購入継続を正当化する発言を繰り返している。",
+          "claim_type": "official_claim",
+          "source_ref": null
+        },
+        {
+          "text": "インド政府は、対ロシア制裁に全面的に同調するよりも、エネルギー価格・国内インフレ・成長を優先しつつ、西側との関係悪化を最小化するバランスを志向しているとみられる。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "西側は、インドによるロシア産原油購入を完全に止めるよりも、価格上限遵守・決済経路・保険利用などを通じてロシアの収入を一定程度抑制しつつ、エネルギー供給の安定を維持する「不完全な制裁履行」を事実上容認している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "インドの精製企業は、ロシア産原油の割安性と欧州向け精製品の高マージンを背景に、政治リスクを織り込みつつも現状維持・拡大を志向している。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "ロシアは、インド・中国などへの原油輸出で欧州市場喪失を補い、割安販売と引き換えに輸出量・収入を維持しようとしている。インドの精製企業は、ロシア産原油のディスカウントと欧州向け精製品の高価格差を利用して利幅を拡大し、国内燃料価格の抑制と輸出収益の両立を図る。米国・EUは、ロシアの戦費資金を削る制裁目的と、自国のエネルギー価格安定・同盟国関係維持の間でジレンマにあり、インドへの圧力を強めつつも、完全な締め付けは避ける傾向がある。海運・保険・金融は、制裁遵守リスクとビジネス機会の間で動き、欧米系サービスは慎重化する一方、第三国サービスがギャップを埋める構図が生じている。",
+      "stakeholders": [
+        {
+          "actor": "インド政府",
+          "purpose": "高成長・インフレ抑制・エネルギー安全保障を維持しつつ、対ロ・対西側双方との関係をバランスさせること。",
+          "leverage": "国内インフレ・燃料価格",
+          "position": "ロシア産原油の割安供給を活用して国内燃料価格を抑え、精製品輸出で外貨を獲得しつつ、西側からの政治的批判を管理可能な範囲に抑える。",
+          "red_lines": "エネルギー供給が途絶し、国内燃料価格が急騰する事態は避けたい。一方、西側からの制裁対象化・金融制裁などで成長戦略が大きく損なわれる事態も避けたい。",
+          "confidence": "中",
+          "constraints_fears": "対中戦略・安全保障",
+          "ability_to_move_or_block": "ロシア産原油購入の拡大・縮小、精製品輸出先の多様化、西側への政治的説明を通じて局面を動かせる。"
+        },
+        {
+          "actor": "米国政府",
+          "purpose": "ロシアの戦費資金を削減しつつ、世界のエネルギー価格安定と対中戦略上のインドとの協力を維持する。",
+          "leverage": "ウクライナ戦争への対応",
+          "position": "ロシアの原油収入を抑制しつつ、インドなどのパートナー国との関係を維持し、エネルギー価格の急騰を避ける。",
+          "red_lines": "ロシアの戦費資金が大幅に増加するような制裁緩和は避けたい。一方、エネルギー価格急騰やインドとの関係悪化も避けたい。",
+          "confidence": "中",
+          "constraints_fears": "国内エネルギー価格・インフレ",
+          "ability_to_move_or_block": "インド企業・金融機関を制裁対象に含める、価格上限の運用を厳格化するなどで局面を大きく動かせる。"
+        },
+        {
+          "actor": "EU",
+          "purpose": "ロシアへのエネルギー依存を減らしつつ、エネルギー価格安定と産業競争力を維持する。",
+          "leverage": "対ロ制裁の正当性",
+          "position": "ロシア産原油・精製品の直接輸入を減らしつつ、インドなどからの精製品輸入で供給を補う。",
+          "red_lines": "ロシアへの直接的エネルギー依存の復帰は避けたいが、インド経由の精製品をどこまで許容するかは揺れ動く可能性がある。",
+          "confidence": "中",
+          "constraints_fears": "エネルギー価格・産業競争力",
+          "ability_to_move_or_block": "インド産精製品の規制強化・原産地ルールの厳格化などでインドのビジネスモデルを変え得る。"
+        },
+        {
+          "actor": "ロシア政府",
+          "purpose": "制裁下でも原油輸出量と収入を最大限維持し、戦費・財政を支える。",
+          "leverage": "原油供給量・価格ディスカウント。",
+          "position": "インド・中国向け輸出拡大を継続し、ディスカウントを受け入れつつも収入維持を図る。",
+          "priority": "インド・中国など非西側市場への輸出拡大と、ディスカウントを通じた顧客確保。",
+          "red_lines": "原油輸出が大幅に減少し、財政・戦費に重大な支障が出る事態。",
+          "confidence": "中",
+          "constraints_fears": "価格ディスカウントが過度に拡大し財政を圧迫すること、輸出先がさらに制限されること。",
+          "key_relationships": "インド・中国とのエネルギー関係、OPEC+との協調。",
+          "ability_to_move_or_block": "インドへの供給を増減することでインドの調達構成に影響を与えられるが、制裁制度そのものは動かせない。"
+        },
+        {
+          "actor": "インド主要精製企業（例：Reliance等）",
+          "purpose": "マージン最大化と設備稼働率維持、輸出収益拡大。",
+          "leverage": "精製能力・供給多角化、輸出先の選択。",
+          "position": "ロシア産原油を調達しつつ、制裁遵守リスクを管理しながら欧州向け輸出を継続。",
+          "priority": "ロシア産原油の割安性と欧州向け精製品の高マージンを活用すること。",
+          "red_lines": "主要市場・金融・保険へのアクセスを失うような制裁対象化。",
+          "confidence": "中",
+          "constraints_fears": "制裁違反による金融・保険アクセス喪失、西側市場アクセス制限。",
+          "key_relationships": "インド政府、欧州の買い手、海運・保険・金融機関。",
+          "ability_to_move_or_block": "自社の調達・輸出構成を変えることで、インド全体の流れに一定の影響を与え得るが、制度枠組みには従属。"
+        },
+        {
+          "actor": "第三国海運・保険・金融サービス提供者",
+          "purpose": "制裁リスクを織り込みつつビジネス機会を獲得。",
+          "leverage": "制裁リスクを受け入れる意欲と、非ドル決済・非西側保険の提供能力。",
+          "position": "一部がロシア関連輸送・保険・決済を引き受けているとみられる。",
+          "priority": "西側サービスが慎重化したギャップを埋める。",
+          "red_lines": "主要通貨・市場へのアクセス喪失。",
+          "confidence": "低",
+          "constraints_fears": "二次制裁・ドル決済アクセス喪失。",
+          "key_relationships": "ロシア・インド企業、西側規制当局。",
+          "ability_to_move_or_block": "ギャップを埋めることで制裁の実効性を弱めるが、規模は限定的。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "インド政府がエネルギー安全保障・成長優先のPersistent Preferenceを維持すること",
+          "米国・EUがエネルギー価格安定と対中戦略上のインドとの協力を重視し続けること",
+          "第三国海運・保険・金融サービスが一定程度供給され続けること"
+        ],
+        "description": "現時点では、インドはロシア産原油の主要購入国として、割安原油を国内で精製し、精製品をEUなど西側市場へ輸出する「エネルギー・仲介国」としての役割を維持している。G7価格上限・海運保険・決済制裁は、インド企業に取引条件の調整（価格上限遵守の表明、西側サービスの選別、第三国サービスの活用）を迫るが、取引そのものを止めるには至っていない。米国・EUは、ロシアの収入抑制とエネルギー価格安定・対中戦略上のインドとの協力維持の間で妥協線を探っており、インドへの圧力は制度面で一定の制約を与えつつも、完全な締め付けには踏み込んでいない。したがって、短期〜中期的には、インドによるロシア産原油購入と精製品輸出は、制裁制度の枠内で調整されながら継続するシナリオが最も蓋然性が高い。",
+        "evidence_class": "structural_reference",
+        "evidence_relevance": [
+          {
+            "rationale": "OFAC等の制裁文書は、ロシア産原油取引の制度枠組みを示し、インドの行動空間を構造的に規定している。インドの具体的行動に関する直接データではないが、Main Scenarioの背景構造として強く関連する。",
+            "evidence_id": "b5a290a8-90dc-43c4-9383-3f75329f4826",
+            "source_type": "primary_official",
+            "claim_relevance": "structural"
+          }
+        ],
+        "selection_rationale": "提供資料が制裁制度の構造を示していること、公開情報からインドのロシア産原油購入・精製品輸出が継続していること、米国・EUがインドへの二次制裁など最も強いカードを慎重に扱っていることから、現局面を『制裁制度の枠内でインドがエネルギー仲介国として振る舞う』シナリオとして見るのが最も整合的である。他の仮説（インドが急速に西側寄りへ転換し対ロ取引を大幅削減する、あるいは西側がインドへの圧力を急激に強める）は、現時点では追加の未証明の仮定を多く要し、観測されている行動との整合性が低い。",
+        "supporting_evidence": [
+          "b5a290a8-90dc-43c4-9383-3f75329f4826"
+        ],
+        "observable_indicators": [
+          "インドのロシア産原油輸入量・精製品輸出量の統計推移",
+          "米国・EUによるインド企業・金融機関への制裁・警告の有無",
+          "G7価格上限・海運保険・決済制裁の運用変更（例外拡大・二次制裁導入など）",
+          "インド政府の対ロ原油取引に関する公式発言のトーン変化"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": "evidence_relevance reported only structural/peripheral claim_relevance (no direct/strongly_relevant evidence for this specific claim); confidence capped at low per the Phase R1 claim-relevance discipline (evidence_class describes the evidence's nature, this is a separate axis for how directly it supports THIS claim — a current, official, direct-evidence-class item can still be only structurally relevant to a specific claim)."
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "エネルギー・原材料コストに影響する可能性がある。インドがロシア産原油の仲介役を維持する限り、世界の供給量は一定程度確保され、価格急騰リスクは抑制される一方、制裁制度の運用変更（価格上限強化・二次制裁導入など）があれば、原油・精製品価格の変動が大きくなり、エネルギーコストに敏感な産業に影響し得る。",
+        "unrelated_note": "特定企業への直接的な制裁リスクや取引停止リスクは、当該企業のエネルギー調達構造・インド・ロシアとの取引関係に依存するため、個別に確認が必要である。",
+        "environment_change": "ロシア産原油の流れが欧州からインド・中国などへシフトし、インドが精製品輸出国としての地位を高める構造変化が続いている。これは中長期的にエネルギー貿易構造・海運ルート・保険・金融サービスの地理的分布を変え、企業のサプライチェーン・調達戦略に影響を与える可能性がある。"
+      },
+      "initial_anomaly": "ロシア産原油に対するG7価格上限・海運保険・金融制裁が継続しているにもかかわらず、インドの精製品（ディーゼル等）がEUを含む西側市場へ流入し続けている点。制裁の「目的（ロシア収入の抑制）」と「結果（ロシア原油が迂回して西側へ戻る）」のギャップが大きいことが違和感の出発点となる。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "actor_india_gov",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signal・Substanceともに中程度。発言は国内・外交向けのシグナルだが、実際の輸入継続というSubstanceとも整合している。",
+            "discretion": "企業ごとの裁量が大きく、政府は枠組みとシグナルを示すにとどまる。",
+            "evidence_ids": [
+              "b5a290a8-90dc-43c4-9383-3f75329f4826"
+            ],
+            "target_scope": "ロシア産原油取引全般と、それに基づく精製品輸出。",
+            "stated_signal": "インドは対ロ制裁に全面同調する義務はなく、自国のエネルギー安全保障を優先するが、西側との関係を壊す意図はない。",
+            "concrete_measure": "具体的な輸入削減措置は限定的だが、価格上限遵守や決済の透明性を一定程度強調。",
+            "enforcement_status": "インド政府による対ロ取引の厳格な抑制措置は限定的。",
+            "implementation_status": "ロシア産原油輸入は高水準で継続。",
+            "legal_or_policy_force": "国内政策方針の表明であり、対ロ取引を事実上容認する政治的拘束力を持つ。"
+          },
+          "primary_audience": "国内有権者・産業界",
+          "message_hypothesis": "国内向けには燃料価格抑制と成長維持を約束し、西側向けには『ルールの範囲内で合理的に行動している』というシグナルを送る。",
+          "secondary_audience": "米国・EU",
+          "action_or_statement": "ロシア産原油購入継続を国益・エネルギー安全保障の観点から正当化する発言"
+        },
+        {
+          "actor_ref": "actor_us_gov",
+          "confidence": "高",
+          "action_substance": {
+            "assessment": "Substanceは高（制度的拘束力が強い）。Signalは『供給維持も重視』という二重メッセージで中程度。",
+            "discretion": "ガイダンス・執行の強度調整に大きな裁量があり、インドなどへの実務影響を調整可能。",
+            "evidence_ids": [
+              "b5a290a8-90dc-43c4-9383-3f75329f4826"
+            ],
+            "target_scope": "ロシア産原油の海上輸送・保険・決済に関与する企業・金融機関。",
+            "stated_signal": "ロシアへの資金流入を抑えつつ、世界の原油供給を維持するためのバランス型措置。",
+            "concrete_measure": "価格上限設定、保険・金融サービス提供条件の規定、OFACガイダンスの発出。",
+            "enforcement_status": "主要な違反事例には制裁を発動しつつ、グレーゾーンには一定の裁量を残しているとみられる。",
+            "implementation_status": "制度は継続運用中。",
+            "legal_or_policy_force": "米国制裁法令に基づく強い拘束力。違反時には制裁対象化のリスク。"
+          },
+          "primary_audience": "国内有権者・議会",
+          "message_hypothesis": "ロシアの戦費資金を削る強硬姿勢を示しつつ、世界のエネルギー供給を維持する『スマート制裁』であると位置づける。",
+          "secondary_audience": "G7・EU・インドなどのパートナー国",
+          "action_or_statement": "ロシア産原油への価格上限・海運保険・金融制裁の導入と、その後の運用"
+        },
+        {
+          "actor_ref": "actor_eu",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Substanceはロシア直接輸入に対して高いが、インド経由の流入に対しては裁量を残すため中程度。",
+            "discretion": "原産地ルール・市場アクセス条件の運用に裁量があり、インド産精製品を事実上許容している。",
+            "evidence_ids": [
+              "b5a290a8-90dc-43c4-9383-3f75329f4826"
+            ],
+            "target_scope": "ロシア産原油・精製品のEU市場への直接アクセス。",
+            "stated_signal": "ロシア産原油・精製品への依存を減らす強い政治的意思。",
+            "concrete_measure": "ロシア産原油の直接輸入削減・禁輸措置、価格上限参加。",
+            "enforcement_status": "直接輸入には厳格だが、インド産精製品の原油由来まで厳格に追跡しているとは言い難い。",
+            "implementation_status": "ロシアからの直接輸入は大幅減少。",
+            "legal_or_policy_force": "EU制裁法令として強い拘束力。"
+          },
+          "primary_audience": "加盟国政府・有権者",
+          "message_hypothesis": "ロシア依存を減らしつつ、エネルギー供給を確保するためにインドなどからの精製品輸入を容認していることを暗黙に示す。",
+          "secondary_audience": "インド政府・米国政府",
+          "action_or_statement": "ロシア産原油禁輸と価格上限参加、インド産精製品輸入の継続"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "ロシア産原油への制裁導入後、インドがロシア産原油の主要購入国となり、精製品を欧州などへ輸出する「エネルギー・仲介国」としての役割を強めている。制裁制度はロシアの収入を一定程度抑制しつつも、インド経由で西側市場へ原油が戻る構図が定着しつつある。",
+        "why_it_matters": "ロシアの戦費資金を削る制裁の目的と、世界のエネルギー価格安定・対中戦略上のインドとの協力維持という目的が衝突しており、制裁制度の運用変更（強化・緩和）がエネルギー価格・供給構造に大きな影響を与え得る。企業にとっては、エネルギーコスト・供給源・海運・保険・金融サービスの構造変化が中長期的なリスク・機会となる。",
+        "what_to_watch_decide": "インドのロシア産原油輸入・精製品輸出の動向、G7価格上限・海運保険・決済制裁の運用変更、米国・EUによるインドへの圧力の強度、ロシア産原油の価格ディスカウントと精製品スプレッドの変化を継続的に監視し、エネルギー調達戦略・サプライチェーン設計に反映することが重要となる。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "インド政府",
+          "red_line": "エネルギー供給が途絶し、国内燃料価格が急騰する事態は避けたい。一方、西側からの制裁対象化・金融制裁などで成長戦略が大きく損なわれる事態も避けたい。",
+          "actor_ref": "actor_india_gov",
+          "entity_id": null,
+          "confidence": "中",
+          "formal_role": "国家のエネルギー政策・外交方針を決定し、対ロシア・対西側のスタンスを調整する。",
+          "evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "decision_power": "国内企業の対ロ取引に対する規制・許可、税制・補助金、外交的コミュニケーションを通じて行動を誘導できる。",
+          "driving_forces": [
+            {
+              "force": "国内インフレ・燃料価格",
+              "direction": "supporting",
+              "description": "ロシア産原油の割安供給は燃料価格抑制に寄与し、政府の支持維持に資する。"
+            },
+            {
+              "force": "対中戦略・安全保障",
+              "direction": "constraining",
+              "description": "米国・EUとの安全保障協力を維持する必要があり、対ロ取引が西側との関係を決定的に損なうことは避けたい。"
+            }
+          ],
+          "ability_to_move": "ロシア産原油購入の拡大・縮小、精製品輸出先の多様化、西側への政治的説明を通じて局面を動かせる。",
+          "issue_objective": "ロシア産原油の割安供給を活用して国内燃料価格を抑え、精製品輸出で外貨を獲得しつつ、西側からの政治的批判を管理可能な範囲に抑える。",
+          "observed_action": "ロシア産原油の輸入拡大を容認しつつ、公式には『国益とエネルギー安全保障』を理由に対ロ取引継続を正当化。西側との対話では価格上限遵守や透明性を強調する発言も行う。",
+          "vulnerabilities": [
+            "エネルギー輸入依存度の高さ",
+            "国内インフレ・燃料価格への政治的感度",
+            "対中安全保障環境"
+          ],
+          "ability_to_block": "国内規制・税制・外交シグナルを通じて、対ロ取引を抑制することも可能だが、制裁制度そのものは変更できない。",
+          "action_substance": {
+            "assessment": "インド政府の行動は、SignalとSubstanceが一致しており、エネルギー安全保障優先のPersistent Preferenceと整合する。",
+            "discretion": "企業ごとの裁量が大きく、政府は枠組みとシグナルを示す。",
+            "evidence_ids": [
+              "b5a290a8-90dc-43c4-9383-3f75329f4826"
+            ],
+            "target_scope": "対ロ原油取引全般。",
+            "stated_signal": "『国益・エネルギー安全保障』を理由にロシア産原油購入継続を正当化。",
+            "concrete_measure": "ロシア産原油輸入拡大を容認し、制裁への形式的な配慮（価格上限言及など）を行う。",
+            "enforcement_status": "対ロ取引抑制は限定的。",
+            "implementation_status": "輸入継続。",
+            "legal_or_policy_force": "国内政策方針として企業行動を誘導するが、国際制裁制度を直接変更する力はない。"
+          },
+          "primary_audience": "国内有権者・産業界（燃料価格・成長を重視する層）",
+          "why_actor_matters": "インド政府は、自国企業の対ロ取引を事実上許可・調整する唯一の主体であり、ロシア産原油購入の拡大・縮小を決める政治的意思決定の中心にある。同時に、米国・EUとの関係を維持するための外交的説明・妥協線を設定できるため、この局面の方向性を左右するKey Stakeholderとなる。",
+          "available_leverage": [
+            "ロシア産原油の購入量調整",
+            "精製品輸出先のシフト",
+            "外交的発言・立場表明"
+          ],
+          "secondary_audience": "米国・EU（インドを対中戦略のパートナーとして扱いたい西側）",
+          "ultimate_objective": "高成長・インフレ抑制・エネルギー安全保障を維持しつつ、対ロ・対西側双方との関係をバランスさせること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "エネルギー供給の多角化と価格抑制を最優先し、対ロ制裁への同調は限定的にとどめる傾向。",
+          "preference_action_gap": "Persistent Preference（エネルギー安全保障・価格抑制優先）とObserved Action（ロシア産原油購入継続）は整合的であり、大きなGapは見られない。Gapが生じるとすれば、西側からの圧力が強まり、インドが象徴的な制限措置を取る場合だが、その場合もエネルギー安全保障を損なわない範囲での調整にとどまる可能性が高い。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "対ロ全面制裁への同調（エネルギー価格急騰のリスク）",
+            "西側との関係断絶"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "ロシアとは防衛・エネルギー協力を維持しつつ、中国牽制の文脈で米国・EUとの関係も強化する「多角外交」を志向しているとみられる。"
+        },
+        {
+          "actor": "米国政府",
+          "red_line": "ロシアの戦費資金が大幅に増加するような制裁緩和は避けたい。一方、エネルギー価格急騰やインドとの関係悪化も避けたい。",
+          "actor_ref": "actor_us_gov",
+          "entity_id": null,
+          "confidence": "中",
+          "formal_role": "対ロシア制裁の設計・運用（OFAC等）、対インド外交、エネルギー政策を決定する。",
+          "evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "decision_power": "制裁制度の範囲拡大・二次制裁導入・例外設定を通じて、インドの対ロ取引に間接的だが強い影響を与えられる。",
+          "driving_forces": [
+            {
+              "force": "ウクライナ戦争への対応",
+              "direction": "supporting",
+              "description": "ロシアへの制裁強化は戦争対応の一環として支持される。"
+            },
+            {
+              "force": "国内エネルギー価格・インフレ",
+              "direction": "constraining",
+              "description": "制裁がエネルギー価格急騰を招くことは政治的に受け入れがたい。"
+            }
+          ],
+          "ability_to_move": "インド企業・金融機関を制裁対象に含める、価格上限の運用を厳格化するなどで局面を大きく動かせる。",
+          "issue_objective": "ロシアの原油収入を抑制しつつ、インドなどのパートナー国との関係を維持し、エネルギー価格の急騰を避ける。",
+          "observed_action": "価格上限・海運保険・金融制裁を導入しつつ、インドなどへの直接的二次制裁は慎重に運用している。",
+          "vulnerabilities": [
+            "国内エネルギー価格・インフレへの政治的感度",
+            "同盟国・パートナー国との関係維持"
+          ],
+          "ability_to_block": "インドの対ロ取引を完全に止めることも制度上は可能だが、エネルギー価格・対インド関係・対中戦略への影響が大きく、政治的コストが高い。",
+          "action_substance": {
+            "assessment": "制度のSubstanceが局面の構造を規定しており、インドの裁量はこの枠内での最適化にとどまる。",
+            "discretion": "ガイダンス・執行強度の調整余地が大きい。",
+            "evidence_ids": [
+              "b5a290a8-90dc-43c4-9383-3f75329f4826"
+            ],
+            "target_scope": "ロシア産原油の海上輸送・保険・決済。",
+            "stated_signal": "ロシア収入抑制と供給維持の両立。",
+            "concrete_measure": "価格上限・保険・金融制裁の設計・運用。",
+            "enforcement_status": "選択的に強化。",
+            "implementation_status": "継続。",
+            "legal_or_policy_force": "強い。"
+          },
+          "primary_audience": "国内有権者・議会（対ロ強硬姿勢とエネルギー価格安定を求める層）",
+          "why_actor_matters": "米国政府は対ロ制裁制度の中核設計者であり、価格上限・海運保険・金融制裁の運用方針を通じてインドの行動空間を直接的に規定できる。インドへの二次制裁カードを持つ唯一の主体でもあり、この局面の制度的Key Stakeholderとなる。",
+          "available_leverage": [
+            "制裁制度の範囲拡大",
+            "二次制裁導入",
+            "外交的圧力・説得"
+          ],
+          "secondary_audience": "インド政府・他のパートナー国",
+          "ultimate_objective": "ロシアの戦費資金を削減しつつ、世界のエネルギー価格安定と対中戦略上のインドとの協力を維持する。",
+          "actor_model_challenge": null,
+          "persistent_preference": "対ロ制裁を主要なツールとして用いながらも、エネルギー市場の混乱を避けるために制裁の設計・運用を調整する傾向。",
+          "preference_action_gap": "Persistent Preference（制裁とエネルギー安定の両立）とObserved Action（価格上限導入とインドへの限定的圧力）は整合的。Gapが生じるとすれば、国内政治・議会・世論が対ロ制裁強化を強く求め、インドへの圧力を高めざるを得ない局面だが、現時点ではその兆候は限定的とみられる。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "インドへの全面的金融制裁（対中戦略・エネルギー市場への悪影響）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": null,
+              "source": null,
+              "claim_id": "b5a290a8-90dc-43c4-9383-3f75329f4826",
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "ロシア産原油への価格上限導入時に、世界の供給量維持を明示的に目的として設計したこと",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "インドを対中牽制の重要パートナーと位置づけつつ、対ロ制裁への一定の協力を求める。"
+        },
+        {
+          "actor": "EU",
+          "red_line": "ロシアへの直接的エネルギー依存の復帰は避けたいが、インド経由の精製品をどこまで許容するかは揺れ動く可能性がある。",
+          "actor_ref": "actor_eu",
+          "entity_id": null,
+          "confidence": "中",
+          "formal_role": "対ロシア制裁（原油禁輸・価格上限参加）と市場アクセス条件を決定する。",
+          "evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "decision_power": "ロシア産原油・精製品の輸入禁止、インド産精製品の扱い、港湾・保険・金融サービスへのアクセス条件を通じて局面に影響を与える。",
+          "driving_forces": [
+            {
+              "force": "エネルギー価格・産業競争力",
+              "direction": "constraining",
+              "description": "急激な価格上昇や供給不足は政治的に受け入れがたい。"
+            },
+            {
+              "force": "対ロ制裁の正当性",
+              "direction": "supporting",
+              "description": "ロシアへの依存減少は政治的に支持される。"
+            }
+          ],
+          "ability_to_move": "インド産精製品の規制強化・原産地ルールの厳格化などでインドのビジネスモデルを変え得る。",
+          "issue_objective": "ロシア産原油・精製品の直接輸入を減らしつつ、インドなどからの精製品輸入で供給を補う。",
+          "observed_action": "ロシア産原油の直接輸入を削減しつつ、インドからの精製品輸入を増やしている。",
+          "vulnerabilities": [
+            "加盟国間の利害対立",
+            "エネルギー価格への政治的感度"
+          ],
+          "ability_to_block": "インド産精製品の市場アクセスを制限することで、インドのロシア産原油購入インセンティブを弱めることができるが、エネルギー供給・価格への影響が大きい。",
+          "action_substance": {
+            "assessment": "EUは制裁のSubstanceを維持しつつ、インド経由の供給を事実上容認することでエネルギー安定を優先している。",
+            "discretion": "インド産精製品の扱いに裁量。",
+            "evidence_ids": [
+              "b5a290a8-90dc-43c4-9383-3f75329f4826"
+            ],
+            "target_scope": "ロシア産原油・精製品の直接輸入。",
+            "stated_signal": "対ロ依存減と制裁履行。",
+            "concrete_measure": "ロシア産原油禁輸・価格上限参加。",
+            "enforcement_status": "直接輸入には厳格だが、インド産精製品の原油由来まで厳格ではない。",
+            "implementation_status": "直接輸入は大幅減。",
+            "legal_or_policy_force": "強い。"
+          },
+          "primary_audience": "加盟国政府・有権者",
+          "why_actor_matters": "EUはインド産精製品の主要な市場であり、制裁制度と市場アクセス条件を通じてインドのビジネスモデルに大きな影響を与える。インド経由のロシア原油をどこまで容認するかの政治判断が局面の重要な要素となる。",
+          "available_leverage": [
+            "市場アクセス条件の変更",
+            "原産地ルールの厳格化"
+          ],
+          "secondary_audience": "インド政府・米国政府",
+          "ultimate_objective": "ロシアへのエネルギー依存を減らしつつ、エネルギー価格安定と産業競争力を維持する。",
+          "actor_model_challenge": null,
+          "persistent_preference": "エネルギー安全保障と対ロ制裁の両立を図るが、短期的には価格・供給安定を優先する傾向。",
+          "preference_action_gap": "Persistent Preference（対ロ依存減とエネルギー安定の両立）とObserved Action（インド産精製品輸入増）は整合的だが、ロシア原油がインド経由で戻っていることへの政治的違和感が存在する。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "インド産精製品の全面禁止（エネルギー供給不足・価格高騰）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "インドとは経済・安全保障面で協力を深めたいが、対ロ制裁の抜け穴として批判される状況は避けたい。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "インド主要精製企業のロシア産原油依存度と欧州向け精製品輸出の具体的構成はどの程度か",
+          "rationale": "企業レベルのデータが主シナリオの具体性と検証可能性を高める。",
+          "related_hypothesis": "インドがエネルギー仲介国としての役割を維持する主シナリオ",
+          "recommended_sources": "企業決算資料・業界分析レポート"
+        },
+        {
+          "priority": "中",
+          "question": "米国・EUがインドに対してどのような非公開の制裁警告・外交的働きかけを行っているか",
+          "rationale": "外交的圧力の実態を把握することで、Alternative Scenarioの蓋然性を評価できる。",
+          "related_hypothesis": "西側がインド経由のロシア原油を事実上容認している可能性",
+          "recommended_sources": "信頼できる国際報道・専門家インタビュー"
+        },
+        {
+          "priority": null,
+          "question": "インド主要精製企業（例：Reliance等）のロシア産原油依存度と欧州向け精製品輸出構成はどの程度か",
+          "rationale": "Key Actor（インド企業）の具体的行動が主シナリオの実質を規定しているが、現時点で企業別データが不足している。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米国・EUがインド政府・企業に対してどの程度具体的な制裁警告や外交的働きかけを行っているか",
+          "rationale": "Preference-Action Gapが顕在化するかどうかを左右するDriving Forceだが、非公開情報が多く、公開Evidenceが不足している。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "G7価格上限制度の下で、インド向けロシア産原油取引がどの程度価格上限内に収まっているか",
+          "rationale": "Primary Key Point（制度運用の拘束力）の実効性を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "EU内でインド経由のロシア原油に対する政治的批判・議論はどの程度高まっているか",
+          "rationale": "Alternative Scenario（EUがインド産精製品への規制を強化する）の蓋然性評価に必要。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ロシア産原油のディスカウント幅と欧州向け精製品価格スプレッドの最新推移",
+          "rationale": "市場構造シナリオ（Alternative Scenario 2）の条件確認。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "OFAC等の公式制裁文書（b5a290a8-90dc-43c4-9383-3f75329f4826）が示す制度構造と、インドの輸入・輸出継続という観測に整合的であり、追加の未証明仮定が比較的少ない。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "制裁制度の枠内で、インドはロシア産原油を購入し精製品を西側へ輸出する『エネルギー仲介国』として振る舞い続ける。西側は制度面で一定の制約を与えつつも、完全な締め付けには踏み込まない。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "外交フレームとしてもっともらしいが、非公開交渉・内部文書などの直接Evidenceが不足している。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "西側は公的には対ロ制裁を強調しつつ、実際にはインド経由のロシア原油流入をエネルギー安定・対中戦略のために事実上容認している。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "インド企業の利潤構造を説明する上で重要だが、制度運用をPrimary Key Pointとする主シナリオの補助的要因として位置づける。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "ロシア産原油のディスカウントと欧州向け精製品価格スプレッドという市場構造が、制裁制度よりも強くインド企業の行動を規定している。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "現時点の発言・行動はエネルギー安全保障優先と整合しており、Preference転換を示すEvidenceがない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "インド政府は今後、対中戦略上の米国との協力を最優先し、エネルギー安全保障よりも対ロ制裁への同調を強める方向へPersistent Preferenceを転換する。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ]
+        },
+        {
+          "reason": "価格上限設計時に供給維持が目的とされたことは公式文書で確認できるが、インド経由流入がどこまで設計上想定されていたかは不明。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "『インドはロシア制裁の抜け穴か否か』という問い自体が誤っており、実際には制裁の目的が当初から『ロシア収入の完全遮断』ではなく『一定抑制と供給維持』だったため、インドの役割は抜け穴ではなく設計上の一部である。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of=2026-09-03。インドはロシア産原油を大量購入し、西側向け精製品輸出を継続する「エネルギー・仲介国」として振る舞っている。現局面のKey Pointは、G7価格上限・海運保険・決済の制裁構造がどこまでインドの取引を拘束できるかであり、西側の圧力は制度面では一定の制約を与えるものの、インド政府・企業の裁量と第三国サービスの余地が大きく、完全な抑止には至っていないとみるのが現時点で最も整合的である。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "institutionally_constrained",
+        "evidence_class": "current_direct_evidence",
+        "hinge_structure": {
+          "primary_hinge": "G7価格上限・海運保険・決済制裁の具体的運用方針（例外の範囲、監視・執行の強度、二次制裁の有無）",
+          "secondary_hinges": [
+            "インド政府のエネルギー安全保障・成長優先というPersistent Preference",
+            "ロシア産原油のディスカウントと欧州向け精製品価格のスプレッド",
+            "第三国海運・保険・金融サービスの供給能力と制裁リスク許容度"
+          ]
+        },
+        "primary_key_point": "G7価格上限・海運保険・決済制裁の運用がインドのロシア産原油取引をどこまで拘束するか",
+        "evidence_relevance": [
+          {
+            "rationale": "OFAC等の公式制裁文書は、ロシア産原油取引の制度枠組みを直接規定しており、インドの取引がどのような条件で合法・違法となるかを決めるため、Primary Key Pointに対して直接的な根拠となる。",
+            "evidence_id": "b5a290a8-90dc-43c4-9383-3f75329f4826",
+            "source_type": "primary_official",
+            "claim_relevance": "direct"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "インド政府のエネルギー安全保障・成長優先というPersistent Preference",
+            "why_not_primary": "重要なDriving Forceだが、現在の局面の具体的な制約条件（どの取引が合法か・保険が付くか）を直接規定しているのはG7制裁制度であり、インドのPreferenceはその枠内での選好にとどまるため、Primaryではなく周辺要因と位置づけた。"
+          },
+          {
+            "key_point": "ロシア産原油のディスカウントと欧州向け精製品価格のスプレッドという市場構造",
+            "why_not_primary": "市場構造はインド企業のインセンティブを説明するが、制裁制度が大きく変わればスプレッドがあっても取引が困難になる可能性があり、制度要因の方が局面を規定する力が強いと判断した。"
+          },
+          {
+            "key_point": "西側が『インド経由のロシア原油』をどこまで政治的に容認するかという外交フレーム",
+            "why_not_primary": "外交フレームは重要な代替仮説だが、現時点では十分な直接Evidenceがなく、制度運用の具体的変更（例外拡大・二次制裁導入など）として観測されて初めてKey Pointになり得る。現状では制度運用そのものをPrimaryに置く方がEvidenceとの整合性が高い。"
+          }
+        ],
+        "selection_rationale": "提供された制裁関連資料（b5a290a8-90dc-43c4-9383-3f75329f4826）が示すように、現在の局面は制度的枠組み（価格上限・保険・決済）の中でインドがどこまで裁量を行使できるかに依存している。インド政府のエネルギー安全保障志向や市場スプレッドも重要だが、それらはこの制度枠組みの中で最適化されているに過ぎず、枠組み自体が変われば行動空間が大きく変わる。西側の外交フレームも、最終的には制裁制度の運用（例外・緩和・二次制裁導入）という形で具現化されるため、Primary Key Pointとしては制度運用を置くのが最も整合的と判断した。",
+        "candidate_key_points": [
+          {
+            "key_point": "G7価格上限・海運保険・決済制裁の運用がインドのロシア産原油取引をどこまで拘束するか",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜインド企業が価格上限遵守を表明しつつロシア産原油を購入し続けられるのか、なぜ欧州向け精製品輸出が継続しているのか、西側の圧力が「完全停止」ではなく「条件付き許容」にとどまっている構図。",
+            "why_it_could_be_key": "ロシア産原油の国際取引は、価格上限・保険・決済の制度に強く依存しており、インド企業が西側サービスを使うか第三国サービスへシフトするかで、ロシアの実質収入とインドの裁量が大きく変わるため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "b5a290a8-90dc-43c4-9383-3f75329f4826"
+            ],
+            "what_it_does_not_explain": "インド政府の長期的な対ロ・対西側関係の選好変化、ロシアの軍事・外交判断そのもの。",
+            "control_structure_summary": "G7・EUの制裁法令・ガイダンスと、それを運用する財務省・規制当局、保険会社・銀行のコンプライアンス判断が取引条件を規定する。インド政府・企業はこの枠組みの中で最適化を図るが、枠組み自体はインドの単独意思では変更できない。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "インド政府のエネルギー安全保障・成長優先というPersistent Preference",
+            "control_type": "unknown",
+            "what_it_explains": "なぜインド政府が西側の要請に全面的には同調せず、ロシア産原油購入を継続するのか。",
+            "why_it_could_be_key": "インド政府は長年、安価で安定したエネルギー供給を成長戦略の中核に置いており、対ロシア制裁への態度もこの上位目的に従って調整されている可能性が高い。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "具体的な取引条件（価格上限遵守の度合い）、海運・保険・金融の技術的制約。",
+            "control_structure_summary": null,
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "ロシア産原油のディスカウントと欧州向け精製品価格のスプレッドという市場構造",
+            "control_type": "structural",
+            "what_it_explains": "なぜインド企業が政治リスクを負ってまでロシア産原油を購入し、精製品を欧州へ輸出するのか。",
+            "why_it_could_be_key": "インド精製企業の利潤は、ロシア産原油の割安価格と欧州向け精製品の高価格差に依存しており、このスプレッドが縮小すれば行動インセンティブが変化するため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "制裁制度の具体的な適用範囲、インド政府の外交的発言のトーン。",
+            "control_structure_summary": "国際原油市場・製品市場の需給構造により価格差が決まり、個別政府の短期的意思では制御しきれない。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "西側が『インド経由のロシア原油』をどこまで政治的に容認するかという外交フレーム",
+            "control_type": "mixed",
+            "what_it_explains": "なぜインドへの圧力が限定的で、二次制裁など最も強いカードが慎重に扱われているのか。",
+            "why_it_could_be_key": "既存ナラティブでは『インドはロシア制裁の抜け穴』とされがちだが、西側がエネルギー安定・対中戦略を優先し、インドの役割を事実上容認するフレームに立っている可能性がある。これは制裁目的の読み替えに相当し、局面の理解を変え得る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "具体的な取引技術（決済通貨・保険手配）、インド企業のミクロな行動。",
+            "control_structure_summary": "米国・EUの外交当局・財務当局・議会・世論の相互作用により、インドへの圧力の強度と方向が決まる。単一主体ではなく分散した政治判断。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "G7・EUがロシア産原油に対する価格上限・海運保険・決済制裁を大幅に緩和または撤回し、インドのロシア産原油取引がほぼ制約なく行えるようになった場合、あるいは逆にインド企業が西側サービスを一切使わずにロシア産原油を大量に取引し続けても制裁リスクが顕在化しない場合には、制度運用をPrimary Key Pointとする見立て自体を再検討する必要が生じる。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "b5a290a8-90dc-43c4-9383-3f75329f4826"
+        ],
+        "control_structure_summary": "米国財務省（OFAC）やEUの制裁当局が定めるルールとガイダンス、保険会社・銀行のコンプライアンス判断が、ロシア産原油の取引条件を制度的に規定している。インド政府・企業はこの枠組みの外側を完全に無視することは難しく、枠組みの運用方針がインドの行動空間を決定づける。",
+        "supporting_knowledge_refs": null,
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "インド政府・企業と米国・EUの間で行われている非公開の外交交渉・制裁警告の具体的内容は、公開情報だけでは把握できない。また、インド主要精製企業のロシア産原油依存度・精製品輸出先の詳細な構成も、現時点では十分なデータがないため、主シナリオの確信度は中にとどまる。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "西側（特に米国）が対ロ制裁強化の一環として、インドのロシア産原油購入・精製品輸出に対する圧力を大幅に強め、二次制裁や市場アクセス制限を導入する。インドは対中戦略上の米国との協力を優先し、ロシア産原油の購入を段階的に縮小し、他の供給源へのシフトを加速する。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国・EUがインド企業・金融機関への具体的な制裁警告や二次制裁導入を公表する。",
+            "EUがインド産精製品への市場アクセス制限や原産地ルール厳格化を決定する。"
+          ],
+          "weakening_conditions": [
+            "ロシア戦況が膠着し、制裁強化への政治的モメンタムが弱まる。",
+            "エネルギー価格が高止まりし、追加制裁が国内インフレを悪化させる懸念が強まる。",
+            "インドが対中牽制のパートナーとしての重要性をさらに増し、対インド関係悪化が戦略的に受け入れ難くなる。"
+          ],
+          "strengthening_conditions": [
+            "ウクライナ戦争の長期化やエスカレーションにより、対ロ制裁強化への国内・同盟国の政治的圧力が高まる。",
+            "インド経由のロシア原油に対する批判が米国・EU内で顕在化し、議会・世論が『抜け穴封じ』を強く要求する。",
+            "インドが中東などからの原油調達を拡大し、ロシア依存を減らす余地が生じる。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "ロシア産原油のディスカウントが縮小し、欧州向け精製品価格も低下することで、インド精製企業の利幅が減少し、ロシア産原油購入のインセンティブが弱まる。インドは市場構造の変化に応じて、ロシア産原油の比率を自然に減らし、制裁制度との摩擦も緩和される。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "統計上、ロシア産原油の割安性が消え、インド企業の調達構成が他供給源へシフトしていることが確認される。"
+          ],
+          "weakening_conditions": [
+            "ロシアが制裁下で輸出先確保のためディスカウントを維持・拡大する。",
+            "中東など他供給源の供給制約で精製品価格が高止まりし、スプレッドが維持される。"
+          ],
+          "strengthening_conditions": [
+            "ロシアが他市場への輸出拡大やOPEC+協調などにより価格ディスカウントを縮小する。",
+            "欧州の景気減速や需要減退で精製品価格が低下し、スプレッドが縮小する。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "インドのロシア産原油輸入量・精製品輸出量の最新統計",
+        "G7価格上限・海運保険・決済制裁の運用変更（例外・二次制裁）",
+        "米国・EUによるインド企業・金融機関への制裁・警告の発表",
+        "インド政府の対ロ原油取引に関する公式発言のトーン変化",
+        "ロシア産原油のディスカウント幅と欧州向け精製品価格のスプレッド"
+      ],
+      "retraction_conditions": [
+        "インドのロシア産原油輸入量が短期間で大幅に減少し、他の供給源へのシフトが確認されること",
+        "米国・EUがインド企業・金融機関への二次制裁や市場アクセス制限を導入し、インドのビジネスモデルが急速に変化すること",
+        "G7価格上限・海運保険・決済制裁の運用が大幅に変更され、インドの裁量が著しく縮小または拡大すること"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "b5a290a8-90dc-43c4-9383-3f75329f4826",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "インド国内で対ロ取引への批判が高まり、政府が象徴的な制限措置を導入する動きが出ている場合や、米国・EUがインド企業・金融機関への制裁を具体的に検討しているとの信頼できる報道が出た場合には、現行シナリオの蓋然性は弱まる。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "インド主要精製企業（例：Reliance等）のロシア産原油依存度と欧州向け精製品輸出構成はどの程度か",
+          "rationale": "Key Actor（インド企業）の具体的行動が主シナリオの実質を規定しているが、現時点で企業別データが不足している。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米国・EUがインド政府・企業に対してどの程度具体的な制裁警告や外交的働きかけを行っているか",
+          "rationale": "Preference-Action Gapが顕在化するかどうかを左右するDriving Forceだが、非公開情報が多く、公開Evidenceが不足している。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "G7価格上限制度の下で、インド向けロシア産原油取引がどの程度価格上限内に収まっているか",
+          "rationale": "Primary Key Point（制度運用の拘束力）の実効性を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "EU内でインド経由のロシア原油に対する政治的批判・議論はどの程度高まっているか",
+          "rationale": "Alternative Scenario（EUがインド産精製品への規制を強化する）の蓋然性評価に必要。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ロシア産原油のディスカウント幅と欧州向け精製品価格スプレッドの最新推移",
+          "rationale": "市場構造シナリオ（Alternative Scenario 2）の条件確認。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "中",
+          "description": "インド政府の最新の公式発言（対ロ原油取引に関する具体的なスタンス）と、西側との対話内容の詳細",
+          "gap_category": "deterministic",
+          "recommended_action": "外務省・石油天然ガス省の最新声明・議会答弁・主要閣僚インタビューを確認する。"
+        },
+        {
+          "priority": "高",
+          "description": "インド主要精製企業（例：Reliance等）の具体的なロシア産原油購入量・精製品輸出先の構成と、制裁遵守方針",
+          "gap_category": "deterministic",
+          "recommended_action": "企業の年次報告書・決算説明会資料・業界分析レポートを確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "米国・EUによるインド向け圧力（非公開の外交的働きかけ・制裁警告）の具体的内容",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "信頼できる国際報道・専門家分析を通じて、外交筋の情報を補完する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "インドのロシア産原油購入と精製品輸出は、制裁の抜け穴として西側からの政治的批判を強めており、今後米国・EUがインドへの圧力を急速に強化する可能性を過小評価しているという反論。",
+      "key_stakeholder_assessment": {
+        "rationale": "インドのロシア産原油購入と精製品輸出は、(1)インド政府のエネルギー政策・外交方針、(2)米国政府（特に財務省）の制裁運用・二次制裁カード、(3)EUの制裁制度と市場アクセス条件、の三者の組み合わせで方向が決まる。ロシア政府は供給側として重要だが、制裁枠組みを変える力は持たない。インドの精製企業・海運・保険・金融は実務を担うが、上記三者の制度・方針に強く制約されるため、Key Stakeholderとしてはインド政府・米国政府・EUを選定した。",
+        "confidence": "中",
+        "evidence_ids": [
+          "b5a290a8-90dc-43c4-9383-3f75329f4826"
+        ],
+        "determination": "multiple",
+        "decision_structure": "インド政府は自国企業のロシア産原油購入・精製品輸出を事実上容認・調整する立場にあり、米国政府・EUは制裁制度の設計・運用を通じてインドの行動空間を広げたり狭めたりできる。三者の間で明示的な合意はないが、エネルギー価格・対中戦略・対ロ戦争の長期化などを背景に、暗黙の妥協線が形成されている可能性がある。",
+        "selected_actor_ids": [
+          "actor_india_gov",
+          "actor_us_gov",
+          "actor_eu"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "actor_india_gov",
+          "confidence": "中",
+          "evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "evidence_class": "structural_reference",
+          "desired_outcome": "国内需要と輸出向けを賄える程度の高い購入量を維持。",
+          "issue_component": "ロシア産原油購入量",
+          "likely_reaction": "西側圧力が強まれば、象徴的な削減でバランスを取る可能性。",
+          "current_red_line": "西側からの制裁対象化を招くほど極端な増加は避けたい。",
+          "stated_preference": "『国益・エネルギー安全保障』を理由に購入継続。",
+          "instrumental_value": "mixed",
+          "priority_rationale": "エネルギー安全保障・燃料価格・成長に直結するため、インド政府にとって最重要。",
+          "currently_tradeable": "部分的に。象徴的な削減カードとして使い得る。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "購入量調整による対ロ・対西側へのシグナル。",
+          "effect_on_actor_objective": "高い購入量は燃料価格抑制と成長に有利だが、西側との政治的摩擦を増やす。",
+          "estimated_real_preference": "価格・供給が許す限り高い購入量を維持したい。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "西側制裁制度と金融・保険アクセス維持。",
+          "issue_component_description": "インドがロシアからどれだけ原油を購入するか",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "actor_india_gov",
+          "confidence": "低",
+          "evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "形式的には遵守を示しつつ、実務で柔軟性を確保。",
+          "issue_component": "価格上限遵守",
+          "likely_reaction": "西側からの圧力が強まれば、遵守姿勢を強調する。",
+          "current_red_line": "公然と価格上限違反を認めることは避けたい。",
+          "stated_preference": "価格上限枠組みへの一定の理解・尊重を示す発言。",
+          "instrumental_value": "negotiating_card",
+          "priority_rationale": "西側との関係維持に重要だが、実務は企業・決済側に委ねられる部分も大きい。",
+          "currently_tradeable": "西側との交渉で『遵守』を示すカードとして利用可能。",
+          "genuine_or_tactical": "tactical",
+          "media_salience_basis": null,
+          "media_salience_signal": "unknown",
+          "primary_usable_leverage": "遵守姿勢の表明による政治的摩擦低減。",
+          "effect_on_actor_objective": "遵守は西側との摩擦を減らすが、ロシアとの価格交渉余地を制限し得る。",
+          "estimated_real_preference": "実務上は最大限のディスカウントを確保したい。",
+          "alternative_interpretation": "インドは価格上限をあまり重視せず、第三国サービスを通じて実質的に枠外で取引している可能性。",
+          "primary_binding_constraint": "西側金融・保険サービスへのアクセス維持。",
+          "issue_component_description": "G7価格上限を形式的に守るかどうか",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "actor_eu",
+          "confidence": "中",
+          "evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "evidence_class": "structural_reference",
+          "desired_outcome": "供給を維持しつつ、政治的批判を管理可能な範囲に抑える。",
+          "issue_component": "インド産精製品のEU市場アクセス",
+          "likely_reaction": "政治的批判が強まれば、象徴的な規制強化を検討。",
+          "current_red_line": "ロシアからの直接輸入復帰は避けたいが、インド経由の精製品は一定程度許容。",
+          "stated_preference": "ロシア依存減と制裁履行を強調。",
+          "instrumental_value": "mixed",
+          "priority_rationale": "エネルギー価格・供給・産業競争力に直結する。",
+          "currently_tradeable": "インドへの圧力カードとして、アクセス条件の調整が可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "市場アクセス条件・原産地ルールの調整。",
+          "effect_on_actor_objective": "アクセス維持は価格安定に有利だが、ロシア原油の迂回流入への批判を招く。",
+          "estimated_real_preference": "短期的にはインド産精製品への依存を維持したい。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "加盟国のエネルギー価格・供給懸念。",
+          "issue_component_description": "インドからの精製品がEU市場にどこまで入れるか",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "actor_us_gov",
+          "confidence": "中",
+          "evidence_ids": [
+            "b5a290a8-90dc-43c4-9383-3f75329f4826"
+          ],
+          "evidence_class": "structural_reference",
+          "desired_outcome": "可能な限り発動を避けつつ、警告としての抑止効果を維持。",
+          "issue_component": "二次制裁カード",
+          "likely_reaction": "ロシアの行動が大きくエスカレートしない限り、発動は慎重。",
+          "current_red_line": "インドへの全面的な二次制裁発動は避けたい。",
+          "stated_preference": "公にはインドを制裁対象として名指ししていない。",
+          "instrumental_value": "deterrence",
+          "priority_rationale": "インドの行動を大きく変え得る強力なカードだが、対インド関係・エネルギー市場への影響が大きい。",
+          "currently_tradeable": "限定的・象徴的な対象への適用は交渉カードとしてあり得る。",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "二次制裁の可能性を示唆する外交的圧力。",
+          "effect_on_actor_objective": "発動は対ロ制裁の実効性を高めるが、対中戦略上のインドとの協力やエネルギー価格安定を損なう。",
+          "estimated_real_preference": "インドとの関係維持を優先し、二次制裁は最後の手段と位置づけ。",
+          "alternative_interpretation": "米国内政治が急変し、インドへの強硬制裁が支持される可能性。",
+          "primary_binding_constraint": "対中戦略・エネルギー価格・同盟国との調整。",
+          "issue_component_description": "米国がインド企業・金融機関に対して二次制裁を発動するか",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "weak"
+        }
+      ],
+      "decisive_power_and_leverage": "この局面を最終的に動かす力は「G7制裁制度（価格上限・保険・金融制裁）の運用裁量」と「インド政府のエネルギー政策・外交選好」の組み合わせにある。ロシア政府は原油供給・価格ディスカウントというレバレッジを持つが、制裁制度の枠外でしか動けない。インドの精製企業は実務を担うが、制裁・保険・決済の枠組みとインド政府の方針に強く制約される。米国・EUは、制裁の範囲拡大・例外縮小・二次制裁の導入などでインドの行動を変え得るが、エネルギー価格・対インド関係・対中戦略とのトレードオフがあり、制度上のカードをどこまで行使するかが決定的な要素となっている。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "インド政府・米国政府・EUはいずれも、対ロ制裁とエネルギー価格安定の両立を志向しており、Persistent PreferenceとObserved Actionは大枠では整合的である。ただし、ロシア原油がインド経由で西側市場へ戻る構図は、制裁の象徴的目的（ロシア依存の削減）と部分的に矛盾しており、今後政治的圧力や世論の変化によりPreference-Action Gapが顕在化する可能性がある。"
+    },
+    "created_at": "2026-09-03T11:42:28.455162+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "db125da3-8b89-491c-8264-762704e78143",
+    "response_id": "81fac44a-d8f6-457b-a915-3fb51dad2e5e",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）",
+        "passed": false
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）",
+        "passed": false
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 38,
+    "failed_count": 3,
+    "created_at": "2026-09-03T11:42:28.861635+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "temporal_hedge_language_not_present",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "temporal_hedge_language_not_present",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "main_scenario"
+    ],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "actor_provenance_touched": [
+      "actor_india_gov",
+      "actor_us_gov",
+      "actor_eu"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 83479,
+    "completion_tokens": 17129,
+    "total_tokens": 100608
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 96577,
+        "prompt_tokens": 39742,
+        "completion_tokens": 10565
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 53655,
+        "prompt_tokens": 43737,
+        "completion_tokens": 6564
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "insufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "insufficient",
+        "direct_evidence_count": 0,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=insufficient（Direct Evidence 0件、目安2件以上でsufficient候補）"
+        ]
+      },
+      "research_cycle": {
+        "triggered": true,
+        "search_calls_used": 1,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 1,
+      "final_sufficiency": {
+        "current_evidence": "partial",
+        "institutional_coverage": "not_evaluated",
+        "overall": "partial",
+        "direct_evidence_count": 1,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=partial（Direct Evidence 1件、目安2件以上でsufficient候補）"
+        ]
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

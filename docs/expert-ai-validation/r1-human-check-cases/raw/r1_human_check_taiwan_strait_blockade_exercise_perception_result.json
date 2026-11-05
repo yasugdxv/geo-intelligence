@@ -1,0 +1,1592 @@
+{
+  "request": {
+    "request_id": "270e86e9-10db-461e-bfc7-0d2157d9e679",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "台湾海峡周辺における中国軍・海警局の最近の活動について、「軍事演習」「封鎖訓練」「検疫・隔離」「実質的な封鎖準備」など異なる評価が出ている局面を分析してください。\n\n最新の公開情報を調査し、\n\n- 中国指導部・人民解放軍・海警局、台湾政府、米国、日本等の主要主体\n- 各主体の目的、制約、利用可能なカード、避けたいエスカレーション\n- 中国側公式発表、台湾側評価、米国・日本政府、主要メディア、安全保障専門家などでNarrativeがどう異なるか\n- Narrativeの違いが単なる表現差なのか、異なるEvidenceやAudienceを反映しているのか\n- 実際に「通常の演習」と「封鎖能力の実証」を分けるObservableな要素\n- 現局面のPrimary Key Point\n- Main Scenarioと重要なAlternative Scenario\n- 商船、航空、保険、市場等に実質的影響が発生したと判断するためのIndicators\n\nを分析してください。\n\n「封鎖」という強い言葉が報じられていること自体をKey Pointにせず、実際の軍事・法執行・商業行動をEvidenceとして、局面の意味を判断してください。\n\n既存の「軍事演習の強度が上がった」という説明では捉えられない変化がある場合に限り、Frame-breakingな解釈を提示してください。",
+    "created_at": "2026-09-03T11:51:01.26402+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "4c4f289e-d424-417c-bbf4-f4c2c0c3bc23",
+    "request_id": "270e86e9-10db-461e-bfc7-0d2157d9e679",
+    "document_ids": [
+      "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T11:51:01.82362+00:00"
+  },
+  "response": {
+    "response_id": "d680302e-0350-4d51-9b78-3262e8bdeddb",
+    "request_id": "270e86e9-10db-461e-bfc7-0d2157d9e679",
+    "source_pack_id": "4c4f289e-d424-417c-bbf4-f4c2c0c3bc23",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "[document_id: 0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3]は「先月、台湾周辺で中国船舶244隻が確認され、過去最多となった」と報じている。",
+          "claim_type": "fact",
+          "source_ref": "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+        },
+        {
+          "text": "中国側の艦艇・海警船の台湾周辺への接近頻度が、過去と比べて統計的に高い水準にあることが示唆される。",
+          "claim_type": "observation",
+          "source_ref": "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+        },
+        {
+          "text": "この高頻度接近は、単発の演習というより、台湾周辺海域における中国側プレゼンスの常態化と、台湾側の警戒・対応コストを引き上げることを目的としたグレーゾーン圧力である可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+        }
+      ],
+      "dynamics": "現時点で確認できる範囲では、中国側（指導部・人民解放軍・海警局）の海上プレゼンスと運用経験値が上がり、台湾側の警戒・対応コスト、人的負担、心理的圧力が高まる力学がある。一方、商船・航空・保険市場に対しては、少なくとも提供資料から直接確認できるレベルの「実際の通航阻害」までは観測されていない。米国・日本など同盟側は、こうした高頻度活動を「エスカレーションの前段階」として警戒しつつも、現時点では軍事的対抗措置よりも監視・情報発信・抑止シグナルに重点を置いていると推測されるが、これは一般的知識に基づく仮説であり、今回のSource Packから直接は確認できない。",
+      "stakeholders": [
+        {
+          "actor": "中国指導部（党中央・中央軍事委員会）",
+          "purpose": "中長期的には、台湾問題で主導権を握り、統一の最終目標を維持しつつ、国内の政権安定と国際環境の管理可能性を確保すること。",
+          "leverage": "国内政権安定・ナショナリズム",
+          "position": "現局面では、台湾新政権・国際社会に対し、中国が台湾周辺海域・空域で高いプレゼンスと運用能力を持つことを示し、台湾側の行動（独立志向・国際連携）を抑制する。",
+          "red_lines": "米軍・同盟国との直接的な武力衝突を招くような全面封鎖・攻撃。",
+          "confidence": "低",
+          "constraints_fears": "米国との軍事衝突回避",
+          "ability_to_move_or_block": "台湾周辺への艦艇・航空機・海警船の展開を増減させ、演習・封鎖訓練・検査などのレベルを引き上げることができる。"
+        },
+        {
+          "actor": "人民解放軍（特に海軍・ロケット軍）",
+          "purpose": "軍事的には台湾周辺での作戦能力・封鎖能力・対艦・対空能力を向上させる。",
+          "leverage": "能力向上・訓練ニーズ",
+          "position": "現局面では、台湾周辺での高頻度展開を通じて、封鎖能力・対艦・対空能力の運用経験を蓄積する。",
+          "red_lines": "米軍・台湾軍への致死的攻撃を伴う全面的な戦闘行動。",
+          "confidence": "低",
+          "constraints_fears": "国際反発・事故リスク",
+          "ability_to_move_or_block": "演習計画に基づき、台湾周辺への艦艇・航空機の展開を増減させる。"
+        },
+        {
+          "actor": "中国海警局",
+          "purpose": "中国の海洋権益・管轄権を拡大・維持する。",
+          "leverage": "海洋権益拡大",
+          "position": "現局面では、台湾周辺での海警プレゼンスを高め、将来的な検査・拿捕のオプションを準備する。",
+          "red_lines": "第三国商船の大規模拿捕・通航拒否。",
+          "confidence": "低",
+          "constraints_fears": "国際法・外交リスク",
+          "ability_to_move_or_block": "海警船を台湾周辺へ展開し、接近・警告・追尾などを行う。"
+        },
+        {
+          "actor": "台湾政府",
+          "purpose": "台湾の安全保障と国際的支持を維持し、中国の圧力に対抗する。",
+          "leverage": "国内世論・選挙",
+          "position": "現局面では、中国側の高頻度活動を「通常演習以上の圧力」として国際社会に訴え、支持を得る。",
+          "red_lines": "中国側活動を過小評価して防衛態勢を弱めること。",
+          "confidence": "低",
+          "constraints_fears": "経済・物流への影響回避",
+          "ability_to_move_or_block": "中国側活動を「封鎖訓練」「検疫」「演習」などと評価し、国内外に発信することでNarrativeを形成する。"
+        },
+        {
+          "actor": "米国政府",
+          "purpose": "台湾海峡の安定と米国の同盟信頼性維持。",
+          "leverage": "同盟信頼性維持",
+          "position": "現局面では、中国側活動を監視し、必要に応じて警告・抑止シグナルを発する。",
+          "red_lines": "中国による台湾への武力攻撃。",
+          "confidence": "判断不能",
+          "constraints_fears": "対中関係・経済",
+          "ability_to_move_or_block": "台湾海峡周辺への艦艇・航空機展開、声明・警告の発出。"
+        },
+        {
+          "actor": "日本政府",
+          "purpose": "自国の安全保障と海上交通の安定。",
+          "leverage": "海上交通の安定",
+          "position": "現局面では、中国側活動への懸念を表明しつつ、具体的な防衛・監視態勢を調整する。",
+          "red_lines": "台湾海峡での大規模な武力衝突。",
+          "confidence": "判断不能",
+          "constraints_fears": "対中経済関係",
+          "ability_to_move_or_block": "声明・警告・防衛演習・海上保安庁の監視活動。"
+        },
+        {
+          "actor": "商船会社・海運業界",
+          "purpose": "安全かつ効率的な貨物輸送とコスト管理。",
+          "leverage": "航路選択・寄港地選択を通じて、特定海域の経済的重要性を高めたり低下させたりする。",
+          "position": "現時点で台湾海峡を通常通り利用しているのか、迂回しているのかは不明。",
+          "priority": "台湾海峡を含む主要航路の安全確保と遅延回避。",
+          "red_lines": "乗組員の安全が脅かされるレベルの軍事・法執行行動。",
+          "confidence": "判断不能",
+          "constraints_fears": "拿捕・検査・通航拒否による遅延・コスト増、保険料上昇。",
+          "key_relationships": "各国政府の渡航・航行勧告、保険会社との契約条件。",
+          "ability_to_move_or_block": "多数の企業の分散的判断が集まることで、台湾海峡の実質的な利用度を変え得るが、単独企業の力は限定的。"
+        },
+        {
+          "actor": "保険会社（海上保険・戦争保険）",
+          "purpose": "リスクに見合った保険料設定と収益確保。",
+          "leverage": "保険料・補償条件を通じて、航路選択に影響を与える。",
+          "position": "台湾海峡の保険料を引き上げているかどうかは不明。",
+          "priority": "戦争リスク・通航阻害リスクの適切な価格付け。",
+          "red_lines": "政府勧告や国際機関の評価で「戦争リスク海域」と認定されるレベルの緊張。",
+          "confidence": "判断不能",
+          "constraints_fears": "予期せぬ大規模損害、顧客離れ。",
+          "key_relationships": "再保険市場、政府・国際機関のリスク評価。",
+          "ability_to_move_or_block": "保険料の急騰は特定海域の利用を事実上抑制し得る。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "中国船舶244隻の内訳には軍艦・海警船が含まれているが、商船・漁船も含まれている可能性がある。",
+          "現時点で商船・航空への広範な通航拒否・検査・拿捕は発生していないと仮定している（提供資料に記載がないため）。",
+          "米国・日本など同盟側は、監視・情報発信・抑止シグナルを行っているが、直接的な軍事対抗措置には踏み込んでいないと仮定している。"
+        ],
+        "description": "現局面は、as_of=2026-09-03の公開情報の範囲では、「中国側が台湾周辺で艦艇・海警船の高頻度・高密度プレゼンスを常態化させ、軍事能力向上とグレーゾーン圧力を同時に追求している局面」とみるのが最も整合的である。これは、単発の軍事演習や一時的な封鎖訓練ではなく、統計的に高い接近頻度（1か月で244隻）を通じて、台湾側の警戒・対応コストを引き上げ、台湾周辺海域を「中国の日常的活動空間」として既成事実化する動きと解釈できる。ただし、現時点で商船・航空への広範な通航阻害・検査・拿捕が確認されていない限り、これを「実質的な封鎖準備」と断定することはできず、封鎖能力の誇示・訓練とグレーゾーン圧力の組み合わせとして位置づけるのが妥当である。",
+        "evidence_class": "current_direct_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "台湾周辺で中国船舶244隻が確認されたという事実は、高頻度プレゼンスの常態化という主シナリオを直接裏付ける。",
+            "evidence_id": "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          }
+        ],
+        "selection_rationale": "提供資料の中で唯一具体的なCurrent Evidenceである「1か月で244隻」という高頻度接近は、単発の演習よりもプレゼンス常態化・強度引き上げを示す指標として最も直接的である。他の仮説（全面封鎖準備・検疫・隔離など）は、商船・航空への実務的通航阻害や検査・拿捕といった追加のEvidenceを必要とするが、現時点ではそれが提供されていないため、追加の未証明仮定を要する。Anti-overthinking ruleに従えば、最も直接的なEvidenceが支持するSurface解釈（高頻度プレゼンスの常態化＋グレーゾーン圧力）を主シナリオとして採用し、封鎖準備などの強い解釈は代替シナリオとして管理するのが妥当である。",
+        "supporting_evidence": [
+          "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+        ],
+        "observable_indicators": [
+          "今後数か月の中国艦艇・海警船の台湾周辺への接近頻度（統計的推移）。",
+          "商船・航空への検査・拿捕・通航拒否の具体的事例の有無。",
+          "保険料・運賃・航路変更など市場の反応。",
+          "米国・日本の公式声明・軍事プレゼンスの変化。"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": true,
+            "description": "南シナ海での中国海警・軍による高頻度プレゼンスとグレーゾーン法執行。",
+            "same_domain": false,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": true,
+            "analogy_source_precedent_id": null,
+            "same_institutional_structure": true
+          }
+        ],
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "現時点の情報だけでは、商船・航空・保険市場に具体的な運用変更が生じているかを確認できないため、直接影響は判断不能。ただし、台湾周辺での高頻度プレゼンスが継続し、商船・航空への検査・拿捕・通航拒否が発生した場合、海上保険料・運賃の上昇、航路変更によるリードタイム延長、台湾・周辺港湾の利用回避などを通じて、物流・コスト面で間接影響が生じ得る。",
+        "unrelated_note": "提供資料が限定的であり、自社の具体的な事業・サプライチェーンへの接続を直接示すEvidenceは含まれていないため、現時点で有意な直接リスクを断定することはできない。",
+        "environment_change": "台湾周辺での中国側プレゼンスの高頻度化は、東アジアの安全保障環境の「新しい通常状態」を示唆しており、中長期的には海上交通・保険・企業のリスク評価モデルに組み込むべき環境変化である。"
+      },
+      "initial_anomaly": "通常の「演習」や「示威」ではなく、1か月で244隻という異常に高い中国船舶（軍艦・海警・その他公船）の接近頻度が報じられている点。これは、単発の演習ではなく、常態化した高密度プレゼンスと、台湾側の海上・沿岸運用に対する継続的な圧力として読む必要がある。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "PRC_leadership",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては台湾・同盟国への圧力と国内向け強硬姿勢の誇示。Substanceとしては、現時点では「高頻度プレゼンスの常態化」と「軍事・法執行能力の訓練・誇示」にとどまり、実務的な封鎖・検疫には踏み込んでいる証拠は不足。",
+            "discretion": "現場指揮官には接近距離・警告方法など一定の裁量があるが、検査・拿捕などは指導部の政治判断に強く制約されると推測される。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "台湾周辺海域全般（詳細な海域区分は不明）。",
+            "stated_signal": "対外的には「演習」「訓練」「主権防衛」などの枠組みで説明される可能性が高いが、今回資料には公式文言は含まれていない。",
+            "concrete_measure": "1か月で244隻の中国船舶が台湾周辺で確認されたという高頻度展開。",
+            "enforcement_status": "商船・航空への具体的な検査・拿捕・通航拒否の有無は不明。",
+            "implementation_status": "高頻度展開が実際に行われていることは[0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3]で示唆される。",
+            "legal_or_policy_force": "中国国内法上は「管轄海域での法執行・防衛活動」と位置づけられる可能性があるが、国際法上の正当性は争点。"
+          },
+          "primary_audience": "台湾政府・台湾有権者",
+          "message_hypothesis": "台湾周辺海域・空域は中国が日常的に管轄し得る活動空間であり、台湾の行動自由度は中国のプレゼンスを前提にせよ、という圧力と既成事実化。",
+          "secondary_audience": "米国・日本など同盟国、国内世論",
+          "action_or_statement": "台湾周辺への艦艇・海警船の高頻度展開を継続させているとみられる（具体的指示内容は不明）。"
+        },
+        {
+          "actor_ref": "PLA",
+          "confidence": "低",
+          "action_substance": {
+            "assessment": "軍事的Substanceは「封鎖能力・作戦経験の蓄積」として意味があるが、現時点では実務的封鎖の発動ではなく、能力誇示と訓練の段階にとどまるとみるのが妥当。",
+            "discretion": "演習内容・ルート選定には軍の裁量があるが、商船への攻撃・拿捕は政治的に強く制約される。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "台湾周辺海域の主要航路・戦術上重要な海域。",
+            "stated_signal": "対内的には「戦備強化」「台湾独立勢力への警告」として宣伝される傾向があるが、今回資料には具体的な声明はない。",
+            "concrete_measure": "高頻度の艦艇展開（244隻のうち軍艦がどの程度含まれるかは不明）。",
+            "enforcement_status": "商船への直接的な軍事的阻害は確認されていない。",
+            "implementation_status": "展開自体は実施されている。",
+            "legal_or_policy_force": "中国側の国内法・作戦指示に基づく軍事演習。国際法上は緊張を高める行動。"
+          },
+          "primary_audience": "中国指導部（能力向上の報告対象）",
+          "message_hypothesis": "台湾周辺での封鎖・対艦・対空作戦を遂行し得る能力を持つことを示し、抑止・威圧を行う。",
+          "secondary_audience": "台湾・米国・日本",
+          "action_or_statement": "台湾周辺での艦艇展開・演習を高頻度で実施。"
+        },
+        {
+          "actor_ref": "PRC_CoastGuard",
+          "confidence": "低",
+          "action_substance": {
+            "assessment": "Signalとしては「いつでも検査・拿捕に移行し得る」潜在能力の誇示。Substanceとしては、現時点ではプレゼンス強化にとどまり、検疫・隔離と呼べるレベルの法執行は確認できない。",
+            "discretion": "現場での接近・警告には裁量があるが、拿捕・通航拒否は政治判断が必要。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "台湾周辺の漁場・航路。",
+            "stated_signal": "対外的には「違法活動取締り」「安全確保」と説明される可能性があるが、資料には記載なし。",
+            "concrete_measure": "海警船の高頻度展開が含まれていると推測されるが、内訳は不明。",
+            "enforcement_status": "検査・拿捕など具体的法執行の有無は不明。",
+            "implementation_status": "プレゼンス自体は高まっていると推測される。",
+            "legal_or_policy_force": "中国国内法に基づく海上法執行として位置づけられるが、台湾・第三国からは異議が出る領域。"
+          },
+          "primary_audience": "台湾・周辺国の船舶運航者",
+          "message_hypothesis": "台湾周辺海域を中国の管轄海域として扱う姿勢を示し、将来の検査・拿捕オプションを準備する。",
+          "secondary_audience": "国内世論・軍",
+          "action_or_statement": "台湾周辺への海警船展開（具体的行動内容は不明）。"
+        },
+        {
+          "actor_ref": "Taiwan_government",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signal重視の行動であり、Substanceは「統計公表」にとどまる。封鎖・検疫といった強いラベルを公式に用いているかは資料からは分からない。",
+            "discretion": "危機感をどの程度強調するかは政治的裁量。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "台湾周辺全域。",
+            "stated_signal": "「Record 244 Chinese ships spotted around Taiwan last month: report」という見出しで、異常な頻度を強調。",
+            "concrete_measure": "統計的な接近隻数の公表。",
+            "enforcement_status": "商船・航空への具体的勧告内容は不明。",
+            "implementation_status": "報道として実施済み。",
+            "legal_or_policy_force": "情報発信・世論形成であり、法的拘束力はない。"
+          },
+          "primary_audience": "台湾国民・有権者",
+          "message_hypothesis": "中国側活動が通常演習を超える高頻度・高密度の圧力であることを示し、国内の危機感と国際的支持を高める。",
+          "secondary_audience": "米国・日本など同盟国",
+          "action_or_statement": "台湾メディアを通じて「先月、中国船舶244隻が台湾周辺で確認された」と公表。"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "台湾周辺で中国船舶244隻が確認されるなど、高頻度・高密度のプレゼンスが報じられており、従来の単発演習よりも常態化した圧力行動の可能性が高まっている。",
+        "why_it_matters": "プレゼンスの常態化は、台湾の安全保障・東アジアの海上交通リスクを中長期的に引き上げる可能性があり、商船・航空・保険・企業のリスク評価モデルに影響し得る。",
+        "what_to_watch_decide": "今後の活動頻度の推移、商船・航空への実務的通航阻害の有無、保険・運賃・航路変更の動き、米国・日本の公式評価を継続的に監視し、「演習」から「封鎖能力の実証・準備」への質的変化が生じたかどうかを判断する必要がある。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "中国指導部（党中央・中央軍事委員会）",
+          "red_line": "米軍・同盟国との直接的な武力衝突を招くような全面封鎖・攻撃。",
+          "actor_ref": "PRC_leadership",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "国家安全保障・軍事方針の最終決定権を持ち、人民解放軍・海警局の作戦方針を承認・指示する。",
+          "evidence_ids": null,
+          "decision_power": "台湾周辺での軍事演習・海警活動の強度・頻度・ルールを決める実質的な最終決定権を持つ。",
+          "driving_forces": [
+            {
+              "force": "国内政権安定・ナショナリズム",
+              "direction": "supporting",
+              "description": "台湾問題で強い姿勢を示すことは、国内のナショナリズムや政権正統性を支える。"
+            },
+            {
+              "force": "米国との軍事衝突回避",
+              "direction": "constraining",
+              "description": "過度なエスカレーションは米国との衝突リスクを高めるため、活動強度には上限がある。"
+            }
+          ],
+          "ability_to_move": "台湾周辺への艦艇・航空機・海警船の展開を増減させ、演習・封鎖訓練・検査などのレベルを引き上げることができる。",
+          "issue_objective": "現局面では、台湾新政権・国際社会に対し、中国が台湾周辺海域・空域で高いプレゼンスと運用能力を持つことを示し、台湾側の行動（独立志向・国際連携）を抑制する。",
+          "observed_action": "台湾周辺で中国船舶244隻が確認されるなど、高頻度の艦艇・海警船展開が行われている。",
+          "vulnerabilities": [
+            "米国・同盟国の制裁・技術・市場への依存",
+            "国内経済・雇用への影響"
+          ],
+          "ability_to_block": "軍・海警の過度なエスカレーションを抑制し、国際反発や米国との衝突を避けるために活動を制限することができる。",
+          "action_substance": {
+            "assessment": "SignalとSubstanceのギャップがあり、現時点では「能力誇示＋圧力」であって「実務的封鎖」ではない。",
+            "discretion": "エスカレーションの上限は指導部が決める。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "台湾周辺海域全般。",
+            "stated_signal": "台湾周辺での高頻度活動を通じて、台湾問題での主導権と国内向け強硬姿勢を示す。",
+            "concrete_measure": "艦艇・海警船の継続的展開。",
+            "enforcement_status": "封鎖・検疫レベルの法執行は未確認。",
+            "implementation_status": "継続中と推測。",
+            "legal_or_policy_force": "国内的には正当化されるが、国際的には緊張を高める行動。"
+          },
+          "primary_audience": "台湾政府・台湾有権者",
+          "why_actor_matters": "中国指導部は台湾周辺での軍事・法執行活動の戦略的方向性を決める唯一の主体であり、プレゼンス強度・封鎖訓練の有無・商船への対応方針など、局面のエスカレーションレベルを最終的に規定する力を持つ。",
+          "available_leverage": [
+            "軍事演習・艦艇展開",
+            "海警局による法執行活動",
+            "経済・貿易カード",
+            "外交的圧力"
+          ],
+          "secondary_audience": "米国・日本など同盟国、国内世論",
+          "ultimate_objective": "中長期的には、台湾問題で主導権を握り、統一の最終目標を維持しつつ、国内の政権安定と国際環境の管理可能性を確保すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "台湾周辺での軍事・法執行活動を段階的に強化し、国際法上のグレーゾーンを利用しながら、台湾側の行動自由度を徐々に狭める志向。",
+          "preference_action_gap": "Persistent Preference（段階的プレゼンス強化）とObserved Action（高頻度展開）は整合的であり、大きなGapは確認できない。ただし、実際に商船・航空への通航阻害まで踏み込んでいない場合、完全な封鎖志向ではなく、グレーゾーン圧力にとどめる制約が働いている可能性がある。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "全面的な武力攻撃・封鎖（国際制裁・軍事衝突リスクが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "今回のSource Packには具体的な過去データが含まれていないため、モデル一般知識に基づく仮説である。",
+              "source": "一般的な公開報道・安全保障分析",
+              "claim_id": null,
+              "relevance": "台湾周辺でのプレゼンス強化の継続性を示す。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "過去数年にわたり、台湾周辺での中国軍機・艦艇の接近頻度が増加し、ADIZ侵入や中線越えが常態化していると報じられてきた。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国・日本との関係では、直接軍事衝突を避けつつ、台湾周辺でのプレゼンスを拡大し、既成事実を積み上げる形で影響力を強める志向があると一般には仮説化されている。"
+        },
+        {
+          "actor": "人民解放軍（特に海軍・ロケット軍）",
+          "red_line": "米軍・台湾軍への致死的攻撃を伴う全面的な戦闘行動。",
+          "actor_ref": "PLA",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "中国の軍事力を運用し、台湾周辺での演習・示威・封鎖訓練などを実施する。",
+          "evidence_ids": null,
+          "decision_power": "作戦レベルで艦艇・航空機の展開を決定し、現場のルール・交戦規則を運用する。",
+          "driving_forces": [
+            {
+              "force": "能力向上・訓練ニーズ",
+              "direction": "supporting",
+              "description": "高頻度展開は部隊の訓練・経験値向上に資する。"
+            },
+            {
+              "force": "国際反発・事故リスク",
+              "direction": "constraining",
+              "description": "接触事故や誤射は国際危機を招くため、一定の自制が必要。"
+            }
+          ],
+          "ability_to_move": "演習計画に基づき、台湾周辺への艦艇・航空機の展開を増減させる。",
+          "issue_objective": "現局面では、台湾周辺での高頻度展開を通じて、封鎖能力・対艦・対空能力の運用経験を蓄積する。",
+          "observed_action": "台湾周辺で中国船舶244隻が確認されるなど、高頻度の艦艇展開。",
+          "vulnerabilities": [
+            "技術・兵站・情報面での米軍優位",
+            "国内経済への負担"
+          ],
+          "ability_to_block": "指導部の政治判断に反する過度なエスカレーションを抑制することは難しいが、現場裁量で接触・拿捕を避けることは可能。",
+          "action_substance": {
+            "assessment": "通常演習より強度は高いが、封鎖能力の「実戦的発動」ではなく、訓練・誇示段階。",
+            "discretion": "接近距離・演習内容に裁量。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "主要航路・戦術海域。",
+            "stated_signal": "台湾周辺での作戦能力・封鎖能力を誇示。",
+            "concrete_measure": "高頻度艦艇展開。",
+            "enforcement_status": "商船への直接阻害は未確認。",
+            "implementation_status": "実施中。",
+            "legal_or_policy_force": "軍事演習。"
+          },
+          "primary_audience": "中国指導部（能力向上の報告対象）",
+          "why_actor_matters": "人民解放軍は、実際に艦艇・航空機を動かし、演習・封鎖訓練・示威を行う実施主体であり、プレゼンス強度・接触リスクを直接左右する。",
+          "available_leverage": [
+            "艦艇・航空機の展開",
+            "ミサイル発射演習",
+            "電子戦・情報戦"
+          ],
+          "secondary_audience": "台湾・米国・日本（抑止・威圧の対象）",
+          "ultimate_objective": "軍事的には台湾周辺での作戦能力・封鎖能力・対艦・対空能力を向上させる。",
+          "actor_model_challenge": null,
+          "persistent_preference": "演習・示威を通じて、台湾周辺での軍事プレゼンスと作戦経験を積み上げる。",
+          "preference_action_gap": "Persistent PreferenceとObserved Actionは整合的であり、Gapは小さい。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "実戦的攻撃（国際反発・制裁・戦争リスク）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "今回のSource Packには具体的な演習事例が含まれていない。",
+              "source": "一般的な安全保障報道",
+              "claim_id": null,
+              "relevance": "演習を通じた能力向上志向を示す。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "過去の大規模演習（環太平洋演習への参加、台湾周辺でのミサイル発射など）",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米軍との直接衝突を避けつつ、台湾周辺での軍事的優位を拡大する。"
+        },
+        {
+          "actor": "中国海警局",
+          "red_line": "第三国商船の大規模拿捕・通航拒否。",
+          "actor_ref": "PRC_CoastGuard",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "中国の海上法執行機関として、領海・管轄海域での取り締まり・検査・拿捕などを行う。",
+          "evidence_ids": null,
+          "decision_power": "現場レベルで商船・漁船への接近・警告・検査を行う裁量を持つが、台湾周辺での大規模行動は指導部・軍との調整が必要。",
+          "driving_forces": [
+            {
+              "force": "海洋権益拡大",
+              "direction": "supporting",
+              "description": "台湾周辺を自国管轄海域として扱う姿勢を強める。"
+            },
+            {
+              "force": "国際法・外交リスク",
+              "direction": "constraining",
+              "description": "過度な拿捕は国際紛争を招くため、指導部の政治判断が必要。"
+            }
+          ],
+          "ability_to_move": "海警船を台湾周辺へ展開し、接近・警告・追尾などを行う。",
+          "issue_objective": "現局面では、台湾周辺での海警プレゼンスを高め、将来的な検査・拿捕のオプションを準備する。",
+          "observed_action": "台湾周辺で中国船舶244隻が確認されており、その一部は海警船である可能性が高い。",
+          "vulnerabilities": [
+            "国際法違反とみなされるリスク",
+            "軍との調整負担"
+          ],
+          "ability_to_block": "商船・漁船への検査・拿捕を通じて、実務的な通航阻害を引き起こす潜在能力を持つ。",
+          "action_substance": {
+            "assessment": "「検疫・隔離」と呼べるほどのSubstanceは確認できず、現時点では潜在能力の誇示。",
+            "discretion": "拿捕・通航拒否は政治判断に依存。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "漁場・航路。",
+            "stated_signal": "海上法執行能力の誇示。",
+            "concrete_measure": "海警船の展開。",
+            "enforcement_status": "検査・拿捕の有無は不明。",
+            "implementation_status": "プレゼンス強化。",
+            "legal_or_policy_force": "国内法に基づく法執行。"
+          },
+          "primary_audience": "台湾・周辺国の船舶運航者",
+          "why_actor_matters": "海警局は、軍事演習と異なり、平時の法執行を通じて実務的な通航阻害を生み出し得る主体であり、「封鎖」「検疫」「隔離」といったNarrativeに実体を与える可能性がある。",
+          "available_leverage": [
+            "接近・警告",
+            "検査・拿捕",
+            "航路上でのプレゼンス"
+          ],
+          "secondary_audience": "国内世論・軍",
+          "ultimate_objective": "中国の海洋権益・管轄権を拡大・維持する。",
+          "actor_model_challenge": null,
+          "persistent_preference": "南シナ海などで見られるように、海警船を用いた接近・警告・拿捕を通じて、相手国の行動を制約する。",
+          "preference_action_gap": "現時点で商船への大規模な検査・拿捕が報じられていない場合、Persistent Preference（グレーゾーン法執行）に対して、まだ準備段階にとどまっている可能性がある。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "第三国商船への広範な通航拒否（国際制裁・紛争リスク）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "台湾周辺での具体的事例は今回のSource Packに含まれていない。",
+              "source": "一般的な国際報道",
+              "claim_id": null,
+              "relevance": "海警局がグレーゾーン法執行を用いる傾向を示す。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "南シナ海での他国漁船・船舶への接近・拿捕事例",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "軍と連携しつつ、グレーゾーンでの法執行を通じて、国際法上の立場を既成事実化する。"
+        },
+        {
+          "actor": "台湾政府",
+          "red_line": "中国側活動を過小評価して防衛態勢を弱めること。",
+          "actor_ref": "Taiwan_government",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "台湾の安全保障・外交・海上運用方針を決定し、中国側の活動への評価・対応を行う。",
+          "evidence_ids": null,
+          "decision_power": "自国の防衛態勢・警戒レベル・商船・航空への勧告を決める。",
+          "driving_forces": [
+            {
+              "force": "国内世論・選挙",
+              "direction": "supporting",
+              "description": "中国の圧力を強調することで、対中強硬姿勢への支持を得る。"
+            },
+            {
+              "force": "経済・物流への影響回避",
+              "direction": "constraining",
+              "description": "過度な危機感を煽ると経済に悪影響を与えるため、表現にはバランスが必要。"
+            }
+          ],
+          "ability_to_move": "中国側活動を「封鎖訓練」「検疫」「演習」などと評価し、国内外に発信することでNarrativeを形成する。",
+          "issue_objective": "現局面では、中国側の高頻度活動を「通常演習以上の圧力」として国際社会に訴え、支持を得る。",
+          "observed_action": "台湾メディアが「Record 244 Chinese ships spotted around Taiwan last month」と報じている。",
+          "vulnerabilities": [
+            "軍事力の相対的劣位",
+            "経済・物流の対外依存"
+          ],
+          "ability_to_block": "自国の商船・航空に対する航路変更・警戒強化を通じて、リスクを軽減する。",
+          "action_substance": {
+            "assessment": "Narrative形成が主目的であり、実務的な運航制限の有無は別途確認が必要。",
+            "discretion": "ラベル選択に裁量。",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "target_scope": "台湾周辺全域。",
+            "stated_signal": "中国側活動の異常性を国内外に訴える。",
+            "concrete_measure": "244隻という統計の公表。",
+            "enforcement_status": "航路変更などの実務措置は不明。",
+            "implementation_status": "実施済み。",
+            "legal_or_policy_force": "情報発信。"
+          },
+          "primary_audience": "台湾国民・有権者",
+          "why_actor_matters": "台湾政府は、中国側活動の評価・ラベリングを通じて、国内外のNarrativeを形成し、米国・日本の対応や商船・航空のリスク認識に影響を与える。",
+          "available_leverage": [
+            "国際発信・外交",
+            "防衛態勢の調整",
+            "商船・航空への勧告"
+          ],
+          "secondary_audience": "米国・日本など同盟国",
+          "ultimate_objective": "台湾の安全保障と国際的支持を維持し、中国の圧力に対抗する。",
+          "actor_model_challenge": null,
+          "persistent_preference": "中国側の高頻度活動を国際社会へ訴え、支持を得る。",
+          "preference_action_gap": "台湾政府がこれをどのようなラベルで評価しているか（封鎖訓練か、演習か）は今回の資料からは不明であり、Gap評価はできない。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "中国側への軍事的先制行動"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "今回のSource Packには台湾政府の具体的声明が含まれていない。",
+              "source": "一般的な報道",
+              "claim_id": null,
+              "relevance": "中国活動を国際問題化する志向。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "過去の中国軍機・艦艇の接近に対する台湾政府の公表・国際訴え",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国・日本など同盟国との連携を強化し、中国の圧力を国際問題として位置づける。"
+        },
+        {
+          "actor": "米国政府",
+          "red_line": "中国による台湾への武力攻撃。",
+          "actor_ref": "US_government",
+          "entity_id": null,
+          "confidence": "判断不能",
+          "formal_role": "台湾海峡の安全保障に関する抑止・監視・同盟調整を行う。",
+          "evidence_ids": null,
+          "decision_power": "軍事的プレゼンス・情報発信・制裁などを通じて、中国側のエスカレーションを抑止する。",
+          "driving_forces": [
+            {
+              "force": "同盟信頼性維持",
+              "direction": "supporting",
+              "description": "台湾防衛コミットメントを示す必要がある。"
+            },
+            {
+              "force": "対中関係・経済",
+              "direction": "constraining",
+              "description": "過度なエスカレーションは経済・外交に悪影響。"
+            }
+          ],
+          "ability_to_move": "台湾海峡周辺への艦艇・航空機展開、声明・警告の発出。",
+          "issue_objective": "現局面では、中国側活動を監視し、必要に応じて警告・抑止シグナルを発する。",
+          "observed_action": "今回のSource Packには米国政府の具体的行動は記載されていない。",
+          "vulnerabilities": [
+            "国内政治・選挙",
+            "対中経済関係"
+          ],
+          "ability_to_block": "中国側の過度なエスカレーションに対して制裁・軍事的抑止を行う。",
+          "primary_audience": "中国指導部",
+          "why_actor_matters": "米国政府は、中国側のエスカレーションを抑止し、台湾海峡の安定を維持する上で決定的な外部主体である。",
+          "available_leverage": [
+            "軍事プレゼンス",
+            "外交的警告",
+            "制裁"
+          ],
+          "secondary_audience": "台湾・日本・国内世論",
+          "ultimate_objective": "台湾海峡の安定と米国の同盟信頼性維持。",
+          "actor_model_challenge": null,
+          "persistent_preference": "中国側の高頻度活動を「挑発」として批判しつつ、軍事的抑止を行う。",
+          "preference_action_gap": "評価不能。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "直接的な武力衝突"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "中国との直接衝突を避けつつ、台湾防衛コミットメントを維持する。"
+        },
+        {
+          "actor": "日本政府",
+          "red_line": "台湾海峡での大規模な武力衝突。",
+          "actor_ref": "Japan_government",
+          "entity_id": null,
+          "confidence": "判断不能",
+          "formal_role": "台湾海峡周辺の安全保障・海上交通の安定に関心を持つ近隣国として、監視・情報発信・同盟調整を行う。",
+          "evidence_ids": null,
+          "decision_power": "自国の防衛態勢・海上保安庁の活動・外交的発信を決める。",
+          "driving_forces": [
+            {
+              "force": "海上交通の安定",
+              "direction": "supporting",
+              "description": "台湾海峡の緊張は日本のシーレーンに影響し得る。"
+            },
+            {
+              "force": "対中経済関係",
+              "direction": "constraining",
+              "description": "過度な対立は経済に影響。"
+            }
+          ],
+          "ability_to_move": "声明・警告・防衛演習・海上保安庁の監視活動。",
+          "issue_objective": "現局面では、中国側活動への懸念を表明しつつ、具体的な防衛・監視態勢を調整する。",
+          "observed_action": "今回のSource Packには日本政府の具体的行動は記載されていない。",
+          "vulnerabilities": [
+            "対中経済依存",
+            "国内世論"
+          ],
+          "ability_to_block": "限定的だが、国際世論形成や同盟調整を通じて中国側の行動に影響を与え得る。",
+          "primary_audience": "国内世論・米国",
+          "why_actor_matters": "日本政府は、台湾海峡の緊張が自国の安全保障・海上交通に直結するため、国際世論形成と同盟調整において重要な役割を持つ。",
+          "available_leverage": [
+            "外交的発信",
+            "防衛演習",
+            "海上保安庁の監視"
+          ],
+          "secondary_audience": "中国",
+          "ultimate_objective": "自国の安全保障と海上交通の安定。",
+          "actor_model_challenge": null,
+          "persistent_preference": "台湾海峡の緊張を懸念し、国際社会へ警鐘を鳴らす。",
+          "preference_action_gap": "評価不能。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "直接的な軍事介入"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国との同盟を維持しつつ、中国との経済関係を管理する。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "台湾周辺での中国艦艇・海警船の活動内容（接近距離・行動パターン・商船への対応）は具体的にどうなっているか。",
+          "rationale": "活動内容の具体像が分からなければ、「演習」と「封鎖準備」を区別できない。",
+          "related_hypothesis": "Main Scenario（高頻度プレゼンスの常態化）とAlternative Scenario 1（封鎖能力の実証）の区別。",
+          "recommended_sources": "台湾国防部・海巡署の公式発表、現地報道、商船会社の通報。"
+        },
+        {
+          "priority": "中",
+          "question": "商船・航空会社・保険会社は、台湾海峡周辺のリスクをどのように評価し、運用を変更しているか。",
+          "rationale": "市場の反応は、実務的な封鎖準備の有無を判断する重要な指標である。",
+          "related_hypothesis": "Alternative Scenario 1（封鎖能力の実証）",
+          "recommended_sources": "海運・航空業界誌、保険市場レポート、企業のIR資料。"
+        },
+        {
+          "priority": "中",
+          "question": "米国・日本政府は、最近の中国側活動についてどのような公式評価・警告を出しているか。",
+          "rationale": "同盟側の評価は、局面の国際的意味づけに影響する。",
+          "related_hypothesis": "Main ScenarioとAlternative Scenario 2（国内向けシグナル）。",
+          "recommended_sources": "各国政府・防衛省の公式声明、議会証言。"
+        },
+        {
+          "priority": null,
+          "question": "最近の中国側活動について、台湾政府・米国政府・日本政府はそれぞれどのような公式評価・ラベル（演習・封鎖訓練・検疫など）を用いているか。",
+          "rationale": "Narrativeの違いが単なる表現差か、異なるEvidence・Audienceを反映しているかを判断するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "商船・航空会社・保険会社は、台湾海峡周辺のリスクをどのように評価し、航路変更・保険料調整などの運用変更を行っているか。",
+          "rationale": "商業・保険・市場への実質的影響を判断するためのPrimary Indicator。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "唯一のCurrent Evidenceである244隻という高頻度接近は、プレゼンス強化を直接示すが、封鎖・検疫レベルの通航阻害を示す証拠はない。追加の未証明仮定を要しない最も普通の説明。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "現局面は「通常より強度の高い軍事・法執行演習が高頻度で行われているが、商船・航空への広範な通航阻害は発生していない」という高強度演習＋グレーゾーン圧力の状態である。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "封鎖能力の訓練・準備という解釈はもっともらしいが、商船への検査・拿捕など具体的Evidenceが不足しているため、支持・反証ともに決め手を欠く。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "中国側は、台湾周辺での高頻度活動を通じて、将来の封鎖作戦に備えた実務的準備（ルート掌握・商船対応手順の検証）を行っている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "過去数年のプレゼンス強化傾向と整合し、現在の高頻度展開もその延長線上にあるとみるのが自然。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "中国側活動の主目的は、台湾周辺でのプレゼンス常態化とグレーゾーン圧力であり、封鎖準備は副次的・長期的な可能性にとどまる。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "そのような短期要因を示すCurrent Evidenceがなく、244隻という数字だけから既存パターンの破綻を主張する根拠はない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "既存の「中国は段階的にプレゼンスを強化する」というActor Intelligenceが今回の局面には当てはまらず、突発的・短期的な要因（国内政治・特定事件）による一時的スパイクである可能性。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+          ]
+        },
+        {
+          "reason": "記事タイトルが「Chinese ships」としているものの、台湾周辺での安全保障上の懸念として扱われており、純粋な商業活動だけを指しているとは考えにくい。軍艦・海警船が含まれている可能性が高い。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "「封鎖」「検疫」「演習」といった安全保障フレーム自体が誤っており、実際には中国側の海上経済活動・漁業・商船の増加が統計に反映されているだけで、軍事的意味合いは限定的である可能性。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+          ]
+        }
+      ],
+      "one_line_assessment": "as_of=2026-09-03。提供資料は「中国船舶の接近頻度が過去最多級に達している」という一点のみであり、現時点では『高頻度・高密度のプレッシャー行動』は確認できるが、それを「本格的封鎖訓練」や「検疫・隔離の予行」と断定できるだけの公開Evidenceは不足している。主シナリオは、制度・政治・軍事の制約の中で、台湾周辺の常態化した高強度プレゼンスとグレーゾーン圧力を積み上げている局面と見るのが最も整合的である。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "unknown",
+        "evidence_class": "structural_reference",
+        "hinge_structure": {
+          "primary_hinge": "中国側が台湾周辺海域への高頻度プレゼンスを、どの程度の期間・強度で継続するか（常態化の度合い）",
+          "secondary_hinges": [
+            "この高頻度プレゼンスが商船・航空の運用に実務的な阻害を生むかどうか（検査・拿捕・通航拒否の発生）",
+            "米国・日本など同盟側が、どの程度の強度で抑止・監視・情報発信を行い、中国側のエスカレーションを抑えるか",
+            "台湾側の政治・世論が、このプレゼンス常態化をどの程度危機として位置づけるか（選挙・国内政治への影響）"
+          ]
+        },
+        "primary_key_point": "中国艦艇・海警船の台湾周辺への高頻度・高密度プレゼンスの常態化",
+        "evidence_relevance": null,
+        "rejected_candidates": [
+          {
+            "key_point": "台湾周辺海域での実際の通航阻害・検査・拿捕の有無",
+            "why_not_primary": "非常に重要なKey Pointだが、提供資料には商船・航空機への具体的な阻害行動の記述がなく、Current Evidenceとしては確認できないため、現時点でPrimaryとすることはできない。"
+          },
+          {
+            "key_point": "米国・日本など第三国の商船・航空会社・保険会社のリスク認識と運用変更",
+            "why_not_primary": "経済・物流影響を読む上で重要だが、今回のSource Packには市場・保険・航路変更に関する情報が含まれておらず、仮説にとどまる。"
+          },
+          {
+            "key_point": "Narrativeの違いそのもの（封鎖・検疫・演習）",
+            "why_not_primary": "分析上の重要な論点だが、現時点のEvidenceは行動ではなくラベルの違いに関する一般的説明に依存しており、局面を動かす「蝶番」としては、まず行動レベルのプレゼンス強度をPrimaryに置く方が再現性が高い。"
+          }
+        ],
+        "selection_rationale": "提供資料で唯一確認できる具体的なCurrent Evidenceは「1か月で244隻」という高頻度接近であり、これは単発の演習ではなく、プレゼンスの常態化・強度引き上げを示す指標として最も直接的である。他の候補（実際の通航阻害、第三国の市場反応、Narrative構造）は重要だが、現時点のSource Packからは直接観測できず、仮説レベルにとどまるため、Primary Key Pointとして採用するにはEvidenceが不足している。Anti-overthinking ruleに従えば、最も直接的なEvidenceが支持するSurface解釈（高頻度プレゼンスの常態化）を主軸に置くのが妥当である。",
+        "candidate_key_points": [
+          {
+            "key_point": "中国艦艇・海警船の台湾周辺への高頻度・高密度プレゼンスの常態化",
+            "control_type": "unknown",
+            "what_it_explains": "なぜ「封鎖」「検疫」「演習」など複数のラベルが飛び交うのかというNarrativeの混乱を、単にラベルの違いではなく、実際のプレゼンス強度の変化として説明できる。また、台湾側が危機感を高める一方で、商船の実務的な通航阻害がまだ限定的である状況とも整合する。",
+            "why_it_could_be_key": "単発の演習ではなく、1か月で244隻という統計的に異常な頻度が報じられていることは、台湾周辺海域における中国側プレゼンスの「新しい通常状態」を作ろうとしている可能性を示唆する。この常態化が進めば、台湾側の警戒コスト、商船の心理的負担、保険料などに中期的影響を与え得る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "なぜ今このタイミングで頻度が上がったのか（選挙・国内政治・国際イベントとの関係）、また中国側がどこまでエスカレーションする意図を持つのかといった上位目的までは直接説明しない。",
+            "control_structure_summary": null,
+            "supporting_knowledge_refs": [
+              {
+                "ref": "PRC_leadership",
+                "type": "actor_intelligence",
+                "field": "persistent_preference"
+              },
+              {
+                "ref": "PLA_Navy",
+                "type": "actor_intelligence",
+                "field": "decision_patterns"
+              }
+            ],
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "台湾周辺海域での実際の通航阻害・検査・拿捕の有無（実務的な封鎖行動の発生）",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜ一部の専門家やメディアが「封鎖訓練」と評価する一方で、保険市場や商船運航がまだ大きく変化していないのかというギャップを説明できる。実務的な阻害行動が限定的であれば、市場は「高リスク演習」として扱い続ける可能性が高い。",
+            "why_it_could_be_key": "「封鎖」「検疫」「封鎖訓練」といったNarrativeの違いを、言葉ではなく、商船・航空機に対する実際の阻害行動の有無で線引きできる。実務的な検査・拿捕・通航拒否が発生すれば、保険・運賃・航路変更など市場への直接影響が生じる。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "高頻度プレゼンス自体の意図や、中国側が将来どこまでエスカレートするかといった長期的戦略までは説明しない。",
+            "control_structure_summary": "中国側の海警局・海軍が、国内法や作戦指示に基づいてどこまで商船・航空機に対する検査・拿捕を実施するかは、指導部の政治判断と国際法・国際反応への配慮に制約される。単独の現場指揮官の裁量だけでは決められないため、制度的・政治的制約の強い領域である。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "PRC_CoastGuard",
+                "type": "institution_intelligence",
+                "field": "mandate"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米国・日本など第三国の商船・航空会社・保険会社のリスク認識と運用変更",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ安全保障専門家が強い言葉を使っても、市場価格や物流ルートが直ちに大きく変化しない場合があるのかを説明できる。",
+            "why_it_could_be_key": "中国側の行動が同じでも、第三国の商船・航空・保険がどのようにリスクを認識し、航路変更・保険料引き上げ・寄港回避などを行うかによって、実際の経済・物流への影響が大きく変わる。これは「軍事演習」から「実質的封鎖準備」へのNarrativeの切り替えに大きく影響する。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "中国側の軍事・法執行行動の意図や、台湾側の政治的反応そのものは説明しない。",
+            "control_structure_summary": "多数の商船会社・航空会社・保険会社が、それぞれのリスク評価モデル・顧客関係・政府勧告に基づいて分散的に意思決定するため、単一のActorが直接制御する構造ではない。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "Global_Shipping_Industry",
+                "type": "institution_intelligence",
+                "field": "risk_response_patterns"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "H0 vs H1 vs H2/H4：Narrativeの違いが『単なるラベル差』なのか、『異なるEvidence・Audience』を反映しているのか",
+            "control_type": "mixed",
+            "what_it_explains": "なぜ同じ事象に対して評価が割れているのか、どのNarrativeがどのAudienceを意識しているのかを整理する出発点になる。",
+            "why_it_could_be_key": "同じ事象に対して「演習」「封鎖訓練」「検疫」「封鎖準備」など異なる言葉が使われていること自体が、局面の理解を難しくしている。これを、H0（Surface: 高強度演習）、H1（Actor-intent: 封鎖能力誇示）、H2（Structural: 常態化プレゼンス）、H4（Frame-breaking: 実は別の目的）といった仮説の違いとして整理することが、主シナリオ選定のKey Pointになり得る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "実際の軍事・法執行行動そのものの強度や、商船・航空への具体的影響は直接説明しない。",
+            "control_structure_summary": "Narrativeは、政府・軍・メディア・専門家・市場など複数主体の相互作用で形成されるため、単一Actorの意思だけでは決まらない。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "Regional_Security_Media_Patterns",
+                "type": "media_intelligence",
+                "field": "framing_characteristics"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "今後数か月間、中国側の艦艇・海警船の台湾周辺への接近頻度が、過去の平均的演習レベルまで大きく低下し、統計的に「平常化」した場合、この局面を「高頻度プレゼンスの常態化」とみなすKey Pointの置き方自体を見直す必要がある。また、逆に商船・航空への実務的な通航阻害が急増し、保険・航路変更が広範に発生した場合には、Primary Key Pointを「封鎖能力の実証」へ切り替えることが必要になる。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": null,
+        "control_structure_summary": null,
+        "supporting_knowledge_refs": [
+          {
+            "ref": "PRC_leadership",
+            "type": "actor_intelligence",
+            "field": "persistent_preference"
+          },
+          {
+            "ref": "PLA_Navy",
+            "type": "actor_intelligence",
+            "field": "decision_patterns"
+          }
+        ],
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": {
+        "narrative_deviation": [
+          {
+            "source": "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3",
+            "evidence_ids": [
+              "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+            ],
+            "why_it_matters": "Narrativeがラベル中心か、量的指標中心かによって、読者のリスク認識（単発イベント vs 常態化した圧力）が変わる。",
+            "current_assessment": "unknown",
+            "source_attribution": "named",
+            "verification_method": "他の主要国際メディア・安全保障専門家の記事を比較し、ラベルと指標の扱いを確認する。",
+            "deviation_from_mainstream": "この報道は「隻数」という統計に焦点を当てており、「封鎖」「検疫」「演習」といったラベルよりも頻度の異常性を強調している。もし他メディアや専門家が「通常演習」「封鎖訓練」「検疫」などのラベルを用いている場合、それと比べてより量的・継続的な圧力としてフレーミングしている可能性がある。"
+          }
+        ],
+        "source_of_sources_note": null,
+        "media_editorial_context": [
+          {
+            "caveat": "Media Intelligence Packは提供されておらず、Taipei Timesの一般的傾向はモデル一般知識に基づく仮説であり、今回のCase固有のEvidenceではない。",
+            "outlet": "Taipei Times（想定）",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+                ],
+                "observation_text": "見出しに「Record 244 Chinese ships spotted around Taiwan last month: report」とあり、「Record（過去最多）」という語で頻度の異常性を強調している。",
+                "observation_type": "headline"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "partially_supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_headline",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "「Record 244」という表現で、通常演習を超える異常な頻度を読者に印象づけ、中国側活動を安全保障上の懸念として位置づけようとしている可能性がある。",
+                "corroboration_basis": "single_source_only",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に事実として過去最多であるため、そのまま見出しに反映しただけであり、特段の意図はない可能性もある。",
+                "supporting_evidence_ids": [
+                  "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              }
+            ],
+            "document_id": "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3",
+            "omitted_actor_analysis": null
+          }
+        ]
+      },
+      "unknown_or_uncertain": "最も重要な点である「中国側活動の具体的内容（接近距離・行動パターン・商船への対応）」と「商船・航空・保険市場の実務的反応」について、今回のSource Packには情報が含まれていないため、軍事演習と封鎖準備の線引き、実質的な経済・物流影響の有無を確定的に判断することはできない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "判断不能",
+          "description": "Alternative Scenario 1（封鎖能力の実証・準備）：中国側は、台湾周辺での高頻度艦艇・海警船展開を通じて、将来の封鎖作戦に必要な運用経験・ルート掌握・商船対応手順を実証・準備している。現時点では全面封鎖には踏み込んでいないが、限定的な検査・拿捕を行い、国際反応を試している可能性がある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "上記 strengthening_conditions が満たされ、商船・航空への実務的通航阻害が系統的に発生した場合、Main ScenarioからこのAlternativeへの切り替えが必要。"
+          ],
+          "weakening_conditions": [
+            "今後も高頻度展開は続くが、商船・航空への検査・拿捕・通航拒否が発生せず、保険・運賃・航路変更も平常にとどまる。",
+            "中国側が活動を一貫して「通常演習」「訓練」と説明し、封鎖・検疫という表現を避ける。"
+          ],
+          "strengthening_conditions": [
+            "台湾・第三国商船への検査・拿捕・通航拒否の具体的事例が複数の一次情報で確認される。",
+            "中国側公式発表で「封鎖訓練」「検疫」「隔離」など、通航制限を示唆する表現が用いられる。",
+            "海上保険料・運賃の上昇、台湾周辺航路の迂回など、市場の行動変化が観測される。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "Alternative Scenario 2（主に国内向け・政治的シグナル）：高頻度展開は、台湾周辺での実務的封鎖準備というより、国内向けに「台湾問題で強い姿勢を示している」ことをアピールするための政治的シグナルであり、実務的な通航阻害には意図的に踏み込んでいない。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "国内向け宣伝の強度が高い一方で、実務的通航阻害が観測されない状態が継続する場合、Main ScenarioよりこのAlternativeを重く見る必要が出てくる。"
+          ],
+          "weakening_conditions": [
+            "商船・航空への検査・拿捕・通航拒否が発生し、国際的な批判・制裁議論が高まる。",
+            "中国側が対外的にも「封鎖訓練」「検疫」など強い表現を用い始める。"
+          ],
+          "strengthening_conditions": [
+            "中国国内プロパガンダで台湾周辺活動が頻繁に取り上げられ、国内向けのナショナリズム喚起に利用されていることが確認される。",
+            "商船・航空への通航阻害が長期にわたり発生せず、市場の反応も限定的である。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "台湾周辺での中国艦艇・海警船の接近頻度の推移（統計）。",
+        "商船・航空への検査・拿捕・通航拒否の具体的事例。",
+        "海上保険料・運賃・航路変更の動き。",
+        "米国・日本など同盟側の公式声明・軍事プレゼンスの変化。",
+        "台湾政府・メディアによる評価ラベル（演習・封鎖訓練・検疫など）の変化。"
+      ],
+      "retraction_conditions": [
+        "今後の調査で、244隻の大半が通常の商船・漁船であり、軍艦・海警船の活動頻度は過去と大きく変わらないことが確認された場合。",
+        "商船・航空への通航阻害・検査・拿捕が全く発生しておらず、保険・運賃・航路変更など市場の反応も平常であることが確認された場合。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "提供資料が単一記事であり、活動内容の詳細（接近距離・行動パターン・商船への対応）が不明なため、主シナリオの確信度は低くならざるを得ない。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "台湾周辺での中国艦艇・海警船の活動内容（接近距離・行動パターン・商船への対応）は具体的にどうなっているか。",
+          "rationale": "Key Point（高頻度プレゼンスの常態化）とAlternative Scenario 1（封鎖能力の実証）の線引きに不可欠。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "最近の中国側活動について、台湾政府・米国政府・日本政府はそれぞれどのような公式評価・ラベル（演習・封鎖訓練・検疫など）を用いているか。",
+          "rationale": "Narrativeの違いが単なる表現差か、異なるEvidence・Audienceを反映しているかを判断するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "商船・航空会社・保険会社は、台湾海峡周辺のリスクをどのように評価し、航路変更・保険料調整などの運用変更を行っているか。",
+          "rationale": "商業・保険・市場への実質的影響を判断するためのPrimary Indicator。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "台湾周辺での中国艦艇・海警船の活動内容（単なる接近・航行なのか、検査・拿捕・通航拒否が行われているのか）に関する具体的Evidence。",
+          "gap_category": "deterministic",
+          "recommended_action": "一次情報・現地報道・商船会社の通報などを調査し、実際の阻害行動の有無を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "米国・日本政府の最近の公式声明・防衛態勢調整（台湾海峡に関するもの）。",
+          "gap_category": "deterministic",
+          "recommended_action": "各国政府・防衛省の公式発表・議会証言を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "商船・航空会社・保険会社の台湾海峡リスク認識と運用変更（航路変更・保険料・寄港回避など）。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "業界報道・保険市場レポート・船会社の運航情報を調査する。"
+        },
+        {
+          "priority": "中",
+          "description": "安全保障専門家・主要メディアによる「封鎖」「検疫」「演習」などの評価の具体的内容と、その根拠となるEvidence。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "専門誌・シンクタンクレポート・主要国際メディアの記事を比較し、Narrativeと根拠を整理する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "中国側の高頻度活動は、単に通常の軍事演習・訓練の一環であり、台湾周辺でのプレゼンス常態化やグレーゾーン圧力という解釈は過剰である可能性がある。244隻という数字も、艦艇・海警船だけでなく商船・漁船を含む広義の「中国船舶」であり、軍事的意味合いを過大評価しているかもしれない。",
+      "key_stakeholder_assessment": {
+        "rationale": "台湾海峡周辺の軍事・法執行活動は、中国指導部（党中央・中央軍事委員会）が戦略方針を決め、人民解放軍（特に海軍・ロケット軍）と海警局が具体的な運用を担う構造であり、中国側が明確なKey Stakeholderである。一方、台湾政府は自国の対応方針・警戒態勢・政治的メッセージを決める主体であり、米国・日本は抑止・監視・情報発信・同盟調整を通じて局面のエスカレーションを抑える力を持つ。意思決定は完全に分散しているわけではなく、中国側の指導部・軍が主導しつつ、台湾・米国・日本がそれに対する反応で局面を調整する「複数主体」構造とみなすのが妥当である。ただし、これらは一般的な制度・力学に基づく仮説であり、今回のSource Packから直接確認されたものではない。",
+        "confidence": "中",
+        "evidence_ids": null,
+        "determination": "multiple",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "PRC_leadership",
+          "PLA",
+          "PRC_CoastGuard",
+          "Taiwan_government",
+          "US_government",
+          "Japan_government"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "PRC_leadership",
+          "confidence": "低",
+          "evidence_ids": [
+            "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "台湾周辺での中国プレゼンスが「新しい通常」として受け入れられる。",
+          "issue_component": "高頻度プレゼンスの常態化",
+          "likely_reaction": "国際批判が高まっても、一定期間は高頻度展開を維持する可能性。",
+          "current_red_line": "米軍・同盟国との直接衝突を招くレベルのエスカレーション。",
+          "stated_preference": null,
+          "instrumental_value": "mixed",
+          "priority_rationale": "台湾問題での主導権確保と既成事実化に直結するため、中国指導部にとって重要。",
+          "currently_tradeable": "プレゼンス強度は交渉カードとして上下させ得る。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "軍事・海警プレゼンスの増減。",
+          "effect_on_actor_objective": "台湾の行動自由度を狭め、統一目標への圧力を高める方向に働く。",
+          "estimated_real_preference": "プレゼンスを高めつつ、全面封鎖には踏み込まない。",
+          "alternative_interpretation": "単なる訓練サイクルの一環であり、常態化を狙っていない可能性。",
+          "primary_binding_constraint": "米国との軍事衝突回避。",
+          "issue_component_description": "艦艇・海警船が台湾周辺に継続的に展開し、過去より高い頻度が維持される状態。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "PRC_CoastGuard",
+          "confidence": "判断不能",
+          "evidence_ids": null,
+          "evidence_class": "unsupported_assumption",
+          "desired_outcome": "限定的な検査・拿捕を通じて、相手の行動を制約しつつ、全面紛争は避ける。",
+          "issue_component": "商船・航空への実務的通航阻害",
+          "likely_reaction": "国際反応を見ながら、徐々に検査強度を上げる可能性。",
+          "current_red_line": "第三国商船の大規模拿捕。",
+          "stated_preference": null,
+          "instrumental_value": "negotiating_card",
+          "priority_rationale": "海警局の本質的な法執行機能に直結し、「封鎖」「検疫」といったNarrativeの実体となる。",
+          "currently_tradeable": "検査頻度・対象選定は交渉カードになり得る。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "unknown",
+          "primary_usable_leverage": "接近・警告・限定的検査。",
+          "effect_on_actor_objective": "中国の管轄権主張を強めるが、国際紛争リスクも高める。",
+          "estimated_real_preference": "現時点では準備段階にとどまり、大規模通航阻害には踏み込んでいない。",
+          "alternative_interpretation": "台湾周辺では南シナ海ほど積極的な法執行を行っていない。",
+          "primary_binding_constraint": "国際法・外交リスク。",
+          "issue_component_description": "検査・拿捕・通航拒否など、実際に航行・飛行を妨げる行動。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "Taiwan_government",
+          "confidence": "低",
+          "evidence_ids": [
+            "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "中国側活動が「通常演習以上の圧力」と認識される。",
+          "issue_component": "台湾政府によるラベリング（演習・封鎖訓練・検疫など）",
+          "likely_reaction": "高頻度活動が続けば、ラベルを徐々に強める可能性。",
+          "current_red_line": "中国側活動を過小評価して防衛態勢を弱めること。",
+          "stated_preference": null,
+          "instrumental_value": "domestic_signal",
+          "priority_rationale": "国際支持・国内世論形成に重要だが、軍事行動そのものを直接変えるわけではない。",
+          "currently_tradeable": "表現の強度は国際関係・経済への影響を見ながら調整可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "0ecc16ff-02ee-4bb6-a3cf-b19a70bf30c3"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "国際発信・外交。",
+          "effect_on_actor_objective": "中国の圧力を国際問題化し、支持を得る方向に働く。",
+          "estimated_real_preference": "危機感を強調しつつ、経済への過度な悪影響は避けたい。",
+          "alternative_interpretation": "選挙・国内政治の都合で危機感を過度に強調する可能性。",
+          "primary_binding_constraint": "経済・物流への影響回避。",
+          "issue_component_description": "中国側活動をどのような言葉で国内外に説明するか。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        }
+      ],
+      "decisive_power_and_leverage": "今回の局面全体を俯瞰すると、結果を決定づける力は「中国指導部と人民解放軍・海警局の運用判断」と「米国を含む同盟側の抑止・介入意思」の相互作用にある。ただし、現時点のEvidenceは中国側の活動頻度のみであり、米国・日本の具体的な対抗行動や商船・航空の実務的反応は確認できないため、「中国側がプレゼンスをどこまでエスカレートさせるか」が当面のPrimaryな決定要因とみなすのが妥当である。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "中国指導部・人民解放軍・海警局については、過去から仮説化される「台湾周辺でのプレゼンス強化・グレーゾーン圧力」というPersistent Preferenceと、今回観測された高頻度展開は整合的であり、大きなPreference-Action Gapは確認できない。一方、商船・航空への実務的通航阻害や全面封鎖までは踏み込んでいないと仮定すると、「能力誇示・圧力」と「全面封鎖回避」の間で、政治・国際制約による自制が働いている可能性がある。台湾・米国・日本側については、今回のSource Packに具体的行動が含まれていないため、Preference-Action Gapの評価はほぼ仮説にとどまる。"
+    },
+    "created_at": "2026-09-03T11:51:02.532371+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "cb516edc-064b-4782-91be-d43ae5524f80",
+    "response_id": "d680302e-0350-4d51-9b78-3262e8bdeddb",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=actor_intelligenceのref=PLA_Navyがkey_actor_profiles[].actor_refに実在しません",
+        "passed": false
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "main_scenario.descriptionに時点混乱の可能性がある表現（/as_of/）; one_line_assessmentに時点混乱の可能性がある表現（/as_of/）",
+        "passed": false
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 39,
+    "failed_count": 2,
+    "created_at": "2026-09-03T11:51:03.06294+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "supporting_knowledge_refs_grounded",
+      "temporal_hedge_language_not_present"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "supporting_knowledge_refs_grounded",
+      "temporal_hedge_language_not_present"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "media_editorial_context[0].hypotheses[0]"
+    ],
+    "control_type_adjustments": [
+      "key_point_assessment",
+      "key_point_assessment.candidate_key_points[0]"
+    ],
+    "actor_provenance_touched": [
+      "PRC_leadership",
+      "PLA",
+      "PRC_CoastGuard",
+      "Taiwan_government",
+      "US_government",
+      "Japan_government"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 85929,
+    "completion_tokens": 19584,
+    "total_tokens": 105513
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 124547,
+        "prompt_tokens": 39818,
+        "completion_tokens": 12564
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 58625,
+        "prompt_tokens": 46111,
+        "completion_tokens": 7020
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=actor_intelligenceのref=PLA_Navyがkey_actor_profiles[].actor_refに実在しません"
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "main_scenario.descriptionに時点混乱の可能性がある表現（/as_of/）; one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "insufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "insufficient",
+        "direct_evidence_count": 0,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=insufficient（Direct Evidence 0件、目安2件以上でsufficient候補）"
+        ]
+      },
+      "research_cycle": {
+        "triggered": true,
+        "search_calls_used": 1,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 1,
+      "final_sufficiency": {
+        "current_evidence": "partial",
+        "institutional_coverage": "not_evaluated",
+        "overall": "partial",
+        "direct_evidence_count": 1,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=partial（Direct Evidence 1件、目安2件以上でsufficient候補）"
+        ]
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

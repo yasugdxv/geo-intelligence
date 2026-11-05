@@ -20,6 +20,7 @@ import { Route as GeoExpertSessionRouteImport } from './routes/geo.expert-sessio
 import { Route as GeoIndicatorMonitorRouteImport } from './routes/geo.indicator-monitor'
 import { Route as GeoIntelligenceAiRouteImport } from './routes/geo.intelligence-ai'
 import { Route as GeoIntelligenceNeedsRouteImport } from './routes/geo.intelligence-needs'
+import { Route as GeoKnowledgeIntakeRouteImport } from './routes/geo.knowledge-intake'
 import { Route as GeoKnowledgeReviewRouteImport } from './routes/geo.knowledge-review'
 import { Route as GeoKnowledgeSearchRouteImport } from './routes/geo.knowledge-search'
 import { Route as GeoMonitoringRouteImport } from './routes/geo.monitoring'
@@ -111,6 +112,11 @@ const GeoIntelligenceAiRoute = GeoIntelligenceAiRouteImport.update({
 const GeoIntelligenceNeedsRoute = GeoIntelligenceNeedsRouteImport.update({
   id: '/geo/intelligence-needs',
   path: '/geo/intelligence-needs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeoKnowledgeIntakeRoute = GeoKnowledgeIntakeRouteImport.update({
+  id: '/geo/knowledge-intake',
+  path: '/geo/knowledge-intake',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GeoKnowledgeReviewRoute = GeoKnowledgeReviewRouteImport.update({
@@ -326,6 +332,7 @@ export interface FileRoutesByFullPath {
   '/geo/indicator-monitor': typeof GeoIndicatorMonitorRoute
   '/geo/intelligence-ai': typeof GeoIntelligenceAiRoute
   '/geo/intelligence-needs': typeof GeoIntelligenceNeedsRouteWithChildren
+  '/geo/knowledge-intake': typeof GeoKnowledgeIntakeRoute
   '/geo/knowledge-review': typeof GeoKnowledgeReviewRoute
   '/geo/knowledge-search': typeof GeoKnowledgeSearchRoute
   '/geo/monitoring': typeof GeoMonitoringRoute
@@ -376,6 +383,7 @@ export interface FileRoutesByTo {
   '/geo/indicator-monitor': typeof GeoIndicatorMonitorRoute
   '/geo/intelligence-ai': typeof GeoIntelligenceAiRoute
   '/geo/intelligence-needs': typeof GeoIntelligenceNeedsRouteWithChildren
+  '/geo/knowledge-intake': typeof GeoKnowledgeIntakeRoute
   '/geo/knowledge-review': typeof GeoKnowledgeReviewRoute
   '/geo/knowledge-search': typeof GeoKnowledgeSearchRoute
   '/geo/monitoring': typeof GeoMonitoringRoute
@@ -427,6 +435,7 @@ export interface FileRoutesById {
   '/geo/indicator-monitor': typeof GeoIndicatorMonitorRoute
   '/geo/intelligence-ai': typeof GeoIntelligenceAiRoute
   '/geo/intelligence-needs': typeof GeoIntelligenceNeedsRouteWithChildren
+  '/geo/knowledge-intake': typeof GeoKnowledgeIntakeRoute
   '/geo/knowledge-review': typeof GeoKnowledgeReviewRoute
   '/geo/knowledge-search': typeof GeoKnowledgeSearchRoute
   '/geo/monitoring': typeof GeoMonitoringRoute
@@ -479,6 +488,7 @@ export interface FileRouteTypes {
     | '/geo/indicator-monitor'
     | '/geo/intelligence-ai'
     | '/geo/intelligence-needs'
+    | '/geo/knowledge-intake'
     | '/geo/knowledge-review'
     | '/geo/knowledge-search'
     | '/geo/monitoring'
@@ -529,6 +539,7 @@ export interface FileRouteTypes {
     | '/geo/indicator-monitor'
     | '/geo/intelligence-ai'
     | '/geo/intelligence-needs'
+    | '/geo/knowledge-intake'
     | '/geo/knowledge-review'
     | '/geo/knowledge-search'
     | '/geo/monitoring'
@@ -579,6 +590,7 @@ export interface FileRouteTypes {
     | '/geo/indicator-monitor'
     | '/geo/intelligence-ai'
     | '/geo/intelligence-needs'
+    | '/geo/knowledge-intake'
     | '/geo/knowledge-review'
     | '/geo/knowledge-search'
     | '/geo/monitoring'
@@ -630,6 +642,7 @@ export interface RootRouteChildren {
   GeoIndicatorMonitorRoute: typeof GeoIndicatorMonitorRoute
   GeoIntelligenceAiRoute: typeof GeoIntelligenceAiRoute
   GeoIntelligenceNeedsRoute: typeof GeoIntelligenceNeedsRouteWithChildren
+  GeoKnowledgeIntakeRoute: typeof GeoKnowledgeIntakeRoute
   GeoKnowledgeReviewRoute: typeof GeoKnowledgeReviewRoute
   GeoKnowledgeSearchRoute: typeof GeoKnowledgeSearchRoute
   GeoMonitoringRoute: typeof GeoMonitoringRoute
@@ -739,6 +752,13 @@ declare module '@tanstack/react-router' {
       path: '/geo/intelligence-needs'
       fullPath: '/geo/intelligence-needs'
       preLoaderRoute: typeof GeoIntelligenceNeedsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/geo/knowledge-intake': {
+      id: '/geo/knowledge-intake'
+      path: '/geo/knowledge-intake'
+      fullPath: '/geo/knowledge-intake'
+      preLoaderRoute: typeof GeoKnowledgeIntakeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/geo/knowledge-review': {
@@ -1115,6 +1135,7 @@ const rootRouteChildren: RootRouteChildren = {
   GeoIndicatorMonitorRoute: GeoIndicatorMonitorRoute,
   GeoIntelligenceAiRoute: GeoIntelligenceAiRoute,
   GeoIntelligenceNeedsRoute: GeoIntelligenceNeedsRouteWithChildren,
+  GeoKnowledgeIntakeRoute: GeoKnowledgeIntakeRoute,
   GeoKnowledgeReviewRoute: GeoKnowledgeReviewRoute,
   GeoKnowledgeSearchRoute: GeoKnowledgeSearchRoute,
   GeoMonitoringRoute: GeoMonitoringRoute,

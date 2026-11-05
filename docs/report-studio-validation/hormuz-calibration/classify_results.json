@@ -1,0 +1,312 @@
+[
+  {
+    "cluster_id": "CL-C68A71AC3AFA61B2",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-4E84B7BE8247D603",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-62BA14543830C2C7",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-7F408A36A92C688C",
+    "narrative_id": "S1-N03",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-8570EF953B52450C",
+    "narrative_id": "S1-N03",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-BD905C79DBC8C3B5",
+    "narrative_id": "S1-N02",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-123D66208B601D31",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-167BFE957D66B0E3",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-3E1F6DC27CEE91C1",
+    "narrative_id": "S1-N02",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  },
+  {
+    "cluster_id": "CL-3FC858FB81E4B260",
+    "narrative_id": "S1-N03",
+    "validity_status": "PASS",
+    "checks": {
+      "dimension_without_evidence": {
+        "passed": true,
+        "detail": ""
+      },
+      "evidence_ids_not_fabricated": {
+        "passed": true,
+        "detail": ""
+      },
+      "unsafe_cluster_propagation": {
+        "passed": true,
+        "detail": ""
+      },
+      "semantic_dimension_conflicts": {
+        "passed": true,
+        "detail": ""
+      },
+      "translation_fidelity_failures": {
+        "passed": true,
+        "detail": ""
+      },
+      "overconservative_cluster_suppression": {
+        "passed": true,
+        "detail": ""
+      }
+    }
+  }
+]

@@ -1,0 +1,29 @@
+
+参照文書一覧（[document_id: ...]をCurrent Evidenceとして引用する際のIDとして使うこと。タイトル文字列を代わりに引用しない）:
+- [document_id: 0140af1e-3788-4fe5-97ff-c71bbb3aafe5] Mojtaba Khamenei's Iran and the Politics of Succession
+  出典: Gulf International Forum / 公開日時: 2026-05-01T00:00:00+00:00
+  抜粋: Gulf International Forum分析（要約、Web検索で確認、原文全文は未取得）: モジュタバ・ハメネイはIRGC内に強い人脈（アフマド・ヴァヒディ、元IRGC情報部門トップホセイン・タエブ等）を持つ中堅聖職者であり、体制内では以前から後継候補と目されていた。
+- [document_id: fc30753d-4762-4f4b-b8bb-2ecb451e382c] Iran's Supreme Leader No Longer Reigns Supreme
+  出典: TIME / 公開日時: 2026-04-21T00:00:00+00:00
+  抜粋: TIME報道（要約、Web検索で確認）: IRGC司令官アフマド・ヴァヒディ、国家安全保障最高評議会書記モハマド・バゲル・ゾルガドル等が「静かな構造的クーデター」を主導し、モジュタバ・ハメネイの権威を借りる形でIRGCが国家運営の実質的な決定権を握っているとみられる。モジュタバは就任以来検証可能な公の場での登場・音声・映像を一切公開していない。
+- [document_id: f1a5db81-3dba-49a0-875a-69ca6b306a17] Iran's Supreme Leader No Longer Reigns Supreme
+  出典: TIME / 公開日時: 2026-04-21T00:00:00+00:00
+  抜粋: TIME報道（要約、Web検索で確認）: 2026年2月28日の最高指導者ハメネイ師暗殺を受け、専門家会議は3月8日、次男のモジュタバ・ハメネイ師を後継の最高指導者に選出した。
+- [document_id: a9208a53-6674-4447-922b-5fb15ecdd2be] How China gets around the blockade of the Strait of Hormuz to get Iranian oil
+  出典: NPR / 公開日時: 2026-08-02T00:00:00+00:00
+  抜粋: NPR報道（要約、Web検索で確認）: 中国は開戦後、原油備蓄を年初から16%積み増し、封鎖期間中の輸入を日量500万バレル超削減して価格急騰を緩和した。4月の停戦後から7月MoU失効までの間隙には、イラン産原油タンカー60隻超が中国向けに出荷されたとみられる。
+- [document_id: 3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d] China's Wang Yi calls on Iran to ensure freedom and safe passage through Strait of Hormuz
+  出典: South China Morning Post / 公開日時: 2026-08-01T00:00:00+00:00
+  抜粋: SCMP報道（要約、Web検索で確認）: 中国の王毅外相はイランに対し、ホルムズ海峡における航行の自由と安全な通航を確保するよう要請した。今回の危機で中国がイランへ直接公に要請したのは初めてとされる。中国は「実利的中立」の姿勢を取り、米・イラン双方に自制を求めつつ対話再開を仲介している。
+- [document_id: 6b3e15d8-bb4c-4b47-a94c-41196ea5d282] Iran Seeks Bar on US Ships in Hormuz as Deal With Oman Advances
+  出典: Bloomberg / 公開日時: 2026-08-06T00:00:00+00:00
+  抜粋: Bloomberg報道（要約、Web検索で確認）: イランはオマーンとの交渉が進む枠組みの一部として米国船籍のホルムズ海峡における恒久的な航行禁止を求めている。
+- [document_id: d163ef87-de0e-41fc-bea5-366f7e5aa89f] US-Iran war: Trump says no talks, Hormuz blockade continues
+  出典: CNBC / 公開日時: 2026-08-18T00:00:00+00:00
+  抜粋: CNBC報道（要約、Web検索で確認）: トランプ大統領は2026年8月18日、イランとの対話は行わず、ホルムズ海峡の封鎖状態が続くと表明。UAEは同時期にイランからの弾道ミサイル探知を報告した。
+- [document_id: e522f821-0306-4ac3-bb7b-908341b19ced] Iran says agreement with Oman for Strait of Hormuz prohibits U.S. and Israeli vessels
+  出典: NPR / 公開日時: 2026-08-07T00:00:00+00:00
+  抜粋: NPR報道（要約、Web検索で確認）: イランはオマーンとの間で、ホルムズ海峡において米・イスラエル船籍を禁止し、違反船には貨物価値の最大20%の罰金を科すとする新たな枠組みで合意が進んでいると主張。米国はこの枠組みを拒否している。
+- [document_id: c8278119-f2c7-487c-ab06-cd3313026f0b] Strait of Hormuz: what has happened since the US-Iran MoU
+  出典: Al Jazeera / 公開日時: 2026-07-09T00:00:00+00:00
+  抜粋: Al Jazeera報道（要約、Web検索で確認）: イスラマバードMoUの60日間安全航行期限が近づく中、イランは事前承認なく通航した商船への攻撃を再開し、カタールのLNG船Al Rekayyatを含む9隻以上が被害を受けた。

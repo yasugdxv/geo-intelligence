@@ -1,0 +1,148 @@
+{
+ "US": {
+  "run_id": "73aa5253-f727-4b57-b0dc-25c4ae06aabc",
+  "execution_id": "79dddbdb-e46d-43f4-833b-e4579369d0f8",
+  "manifest_total": 209976,
+  "manifest_nonduplicate": 174655,
+  "record_id_manifest_rows": 209976,
+  "db_records_total": 209976,
+  "db_records_nondup": 174655,
+  "db_records_foreign_source_file(stale)": 0,
+  "db_records_by_signal_matches_manifest": true,
+  "by_signal": {
+   "S1": {
+    "expected": 11928,
+    "db": 11928
+   },
+   "S10": {
+    "expected": 5297,
+    "db": 5297
+   },
+   "S11": {
+    "expected": 1274,
+    "db": 1274
+   },
+   "S12": {
+    "expected": 5575,
+    "db": 5575
+   },
+   "S13": {
+    "expected": 2217,
+    "db": 2217
+   },
+   "S14": {
+    "expected": 28575,
+    "db": 28575
+   },
+   "S15": {
+    "expected": 26386,
+    "db": 26386
+   },
+   "S16": {
+    "expected": 30153,
+    "db": 30153
+   },
+   "S17": {
+    "expected": 4660,
+    "db": 4660
+   },
+   "S2": {
+    "expected": 6378,
+    "db": 6378
+   },
+   "S3": {
+    "expected": 5424,
+    "db": 5424
+   },
+   "S4": {
+    "expected": 21372,
+    "db": 21372
+   },
+   "S5": {
+    "expected": 9520,
+    "db": 9520
+   },
+   "S6": {
+    "expected": 2818,
+    "db": 2818
+   },
+   "S7": {
+    "expected": 25235,
+    "db": 25235
+   },
+   "S8": {
+    "expected": 13390,
+    "db": 13390
+   },
+   "S9": {
+    "expected": 9774,
+    "db": 9774
+   }
+  },
+  "db_analysis_clusters": 29951,
+  "db_sentiment_clusters": 34679,
+  "manifest_analysis_clusters": 29951,
+  "manifest_sentiment_clusters": 34679,
+  "db_executions_preprocess": [
+   [
+    "79dddbdb",
+    "completed"
+   ]
+  ],
+  "record_count_matches": true,
+  "nondup_matches": true,
+  "stale_zero": true,
+  "clusters_match": true
+ },
+ "EV": {
+  "run_id": "c4c1af44-511e-400c-8519-056c92be59c9",
+  "execution_id": "9fc627ed-a08f-40ab-9f7b-8422b2e9a60e",
+  "manifest_total": 391909,
+  "manifest_nonduplicate": 253157,
+  "record_id_manifest_rows": 391909,
+  "db_records_total": 391909,
+  "db_records_nondup": 253157,
+  "db_records_foreign_source_file(stale)": 0,
+  "db_records_by_signal_matches_manifest": true,
+  "by_signal": {
+   "S1": {
+    "expected": 17330,
+    "db": 17330
+   },
+   "S2": {
+    "expected": 94478,
+    "db": 94478
+   },
+   "S3": {
+    "expected": 10267,
+    "db": 10267
+   },
+   "S4": {
+    "expected": 7645,
+    "db": 7645
+   },
+   "S5": {
+    "expected": 105665,
+    "db": 105665
+   },
+   "S6": {
+    "expected": 156524,
+    "db": 156524
+   }
+  },
+  "db_analysis_clusters": 9643,
+  "db_sentiment_clusters": 12836,
+  "manifest_analysis_clusters": 9643,
+  "manifest_sentiment_clusters": 12836,
+  "db_executions_preprocess": [
+   [
+    "9fc627ed",
+    "completed"
+   ]
+  ],
+  "record_count_matches": true,
+  "nondup_matches": true,
+  "stale_zero": true,
+  "clusters_match": true
+ }
+}

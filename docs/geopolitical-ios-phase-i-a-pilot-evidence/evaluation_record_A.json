@@ -1,0 +1,77 @@
+{
+  "pilot_case_id": "pilot-a",
+  "theme": "米国の対中半導体・AI輸出規制の今後を分析したい",
+  "expert_review_is_real": false,
+  "notes": "Reviewer/Approver/Steward actions performed by Claude as an operational proxy only. Content-quality fields are expert_unverified.",
+  "steps": [
+    "analysis_session_created",
+    "scenarios_generated",
+    "scenario_selected",
+    "design_generated",
+    "design_refined",
+    "report_created",
+    "review_round_1_requested",
+    "review_round_1_completed_revision_requested",
+    "review_round_2_completed_approved",
+    "approved",
+    "published",
+    "learning_extraction_run"
+  ],
+  "timings_sec": {
+    "refine_design": 95.5,
+    "extract_learning": 42.2
+  },
+  "findings": [
+    {
+      "severity": "P0",
+      "category": "pilot_script_gap",
+      "text": "approve_in_app failed: 400 {'detail': 'report_project_id=e37f187f-dcb7-4b76-a3df-2d7cf9fe36a2にはまだCollection Runがありません（Report Studio側でRunを実行してからReviewを依頼してください）'}. Root cause: pilot driver omitted an explicit version_snapshot; the endpoint's auto-snapshot fallback requires a real Report Studio Collection Run, which this pilot deliberately never invoked. Fixed in the driver script (pilot_run.py / pilot_continue.py), not a product defect."
+    },
+    {
+      "severity": "P0",
+      "category": "infra_deployment_gap",
+      "text": "publish failed: 500 {'raw_text': 'Internal Server Error'}. Root cause: Phase E SQL migration (2026-09-16b_geo_ios_knowledge_publication.sql) had not actually been applied to the live DB despite two earlier user confirmations -- confirmed via direct PostgREST 42703 undefined_column errors on geo_knowledge_items.source_report_project_id and geo_ios_approval_events.publication_status. Resolved after user re-ran the migration a third time. Not a code defect; the code correctly assumed the documented additive schema."
+    },
+    {
+      "severity": "P1",
+      "category": "transient_infra",
+      "text": "extract_learning failed once: 500 {'raw_text': 'Internal Server Error'} immediately after publish succeeded (which itself immediately followed the migration/schema-cache-reload fix). Retried within ~1 minute via direct function call (no error) and then via the live HTTP endpoint (200 OK, idempotent_reuse=true, identical candidate). Likely a brief PostgREST schema-cache propagation window right after the NOTIFY pgrst reload; not reproducible, no code change made. Flagged for awareness (a real production pilot might want a retry-on-5xx for publish-adjacent calls), not for immediate action."
+    }
+  ],
+  "analysis_session_id": "6d6d69db-54d4-4cf1-b7be-9d2a4f1fe49d",
+  "cqas_total_candidates": 3,
+  "cqas_displayed_candidates": 3,
+  "selected_scenario_candidate_id": "a8fb207f-9fa5-4386-a4ed-2ba9b0cb552d",
+  "selected_scenario_rank": 1,
+  "design_v1_fields_present": {
+    "investigation_question": true,
+    "key_actors": true,
+    "hypotheses": true,
+    "watch_points": true,
+    "knowledge_gaps": true
+  },
+  "design_v2_version": 2,
+  "design_v2_changed_fields": [
+    "assumptions",
+    "evidence_needed",
+    "hypotheses",
+    "key_actors",
+    "knowledge_gaps",
+    "known_evidence",
+    "watch_points"
+  ],
+  "report_project_id": "e37f187f-dcb7-4b76-a3df-2d7cf9fe36a2",
+  "provenance_reverse_lookup_ok": true,
+  "review_round_1_id": "ab170744-bfe7-401a-93ba-7917131e226d",
+  "review_round_1_comment_count": 2,
+  "review_round_2_id": "c5575d91-709c-4921-80ae-9a85fd9666c3",
+  "approval_event_id": "6f4d1026-ea6e-4c6a-abb4-4827858b70f0",
+  "published_knowledge_item_id": "4ab3e368-b046-4734-9515-82baf58b4c71",
+  "human_visibility": "company",
+  "agent_sharing_policy": "geopolitics_only",
+  "published_knowledge_item_status_after_publish": "active",
+  "learning_candidates_created": 1,
+  "learning_extraction_reason": null,
+  "learning_candidate_ids": ["d02e1bca-0e0a-42f3-bcfe-5ab07bb6ba3a"],
+  "learning_extraction_idempotent_reuse_confirmed": true
+}

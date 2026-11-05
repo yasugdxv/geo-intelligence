@@ -1,0 +1,68 @@
+{
+  "case_id": "HORMUZ_BLOCKADE_SESSION3",
+  "case_name": "Hormuz Strait blockade — 死なばもろとも",
+  "source_session": "実際の一次資料はSession 3ではなく、2026-02-21付の実メール返信（M140）。Session 3（2026-09-15実施と見られる録音）の文字起こしは未入手のため、このケースでの扱いは未確認。",
+  "source_documents": {
+    "blind_input_source": "eguchi_expert_ai_final_v1_0/sources/M140.html（転送元CSISレポート抜粋、L35-L37のみ）",
+    "expert_gold_source": "eguchi_expert_ai_final_v1_0/sources/M140.html（江口さんの返信本文、L11-L13）",
+    "note": "M140.htmlはメール本文の逐語抜粋であり、Session1のPlaud要約やSession2のASR文字起こしより一次資料としての信頼度が高い。ただしSession 3固有の文字起こしではない点に注意。"
+  },
+  "source_gap_disclosure": "Session 3の文字起こし済みテキストが見つからなかったため、既に検証済みの2026-02-21のメール（M140）を代替の一次資料として使用した。Session 3で同じケースがどう扱われたか、また情勢進展によりM140時点の読みから変化があったかは未確認。推測で補完していない。",
+  "blind_input_file": "HORMUZ_BLOCKADE_SESSION3_BLIND_INPUT.md",
+  "session_faithful_input_file": "HORMUZ_BLOCKADE_SESSION3_SESSION_FAITHFUL_INPUT.md",
+  "expert_gold_file": "HORMUZ_BLOCKADE_SESSION3_EXPERT_GOLD.md",
+  "validation_rubric_file": "HORMUZ_BLOCKADE_SESSION3_VALIDATION_RUBRIC.md",
+  "_semantic_role_note": "全Gold Unitが独立したReading Cardとして出ることは要求しない。semantic_role=reading_candidate/primary_readingのみCQA Candidate Pool/S Ranking/Portfolio Rescue/Final Exposureで評価する。",
+  "_existing_model_mapping_note": "gold_reasoning_patterns内のexisting_model_mappingはevaluation-onlyのsoft mappingである。Generation Input（Runtime Prompt/Retrieval）へは絶対に渡さないこと。",
+  "gold_units": [
+    {
+      "unit_id": "GU1_peacetime_rationality_reversal_in_wartime",
+      "semantic_role": "reframe",
+      "title": "『封鎖は自国経済への自殺行為』という平時の合理性は、全面戦争下では反転しうる",
+      "summary": "イランが原油輸出を継続でき対価を受け取れるという前提の上に成り立つ『封鎖しない』という推論は、全面戦争化しその前提が崩れるなら反転しうる。",
+      "evaluation_axes": ["cue_hit", "question_reframe_hit", "step2_reasoning_exposure"]
+    },
+    {
+      "unit_id": "GU2_mutual_destruction_logic",
+      "semantic_role": "primary_reading",
+      "title": "通常時と封鎖時の得失が同じになるなら『死なばもろとも』という選択が合理化される",
+      "summary": "米国がイランの原油輸出・金融システムを止めるなら、開放と封鎖の得失差が消え、イランにとって封鎖の合理性が生まれる。",
+      "evaluation_axes": ["candidate_hit", "s_rank", "top3_retention", "top5_retention", "portfolio_rescue", "final_exposure_hit"],
+      "condition": "全面戦争化し、かつ米国がイランの原油輸出・金融システムを実際に遮断するという条件下でのみ成立する読み（平時や輸出ルートが機能している間は適用されない）"
+    }
+  ],
+  "gold_cues": [
+    "『専門家』の見方が全員一致していること自体への懐疑",
+    "CSISレポートの推論が『平時の経済合理性』という前提の上に成り立っている点"
+  ],
+  "gold_questions": [
+    "封鎖しないという結論の前提（平時の経済合理性）は、全面戦争化した状況でも成立するのか"
+  ],
+  "gold_actors": [
+    "Iran（イラン、封鎖の当事者）",
+    "US（米国、原油輸出・金融システムを止める側）",
+    "China（イラン産原油の輸入国、対価支払い主体）"
+  ],
+  "gold_relationships": [
+    {"from": "Iran", "to": "Hormuz Strait", "type": "conditional_blockade_incentive", "unit_id": "GU2_mutual_destruction_logic"},
+    {"from": "US", "to": "Iran oil exports / financial system", "type": "wartime_cutoff_precondition", "unit_id": "GU1_peacetime_rationality_reversal_in_wartime"}
+  ],
+  "gold_reasoning_patterns": [
+    {
+      "pattern_name_ja": "コンセンサスへの懐疑（全員一致していること自体を疑いの端緒とする）",
+      "pattern_description": "専門家の見方が一致していること自体を、検証すべき対象として扱う",
+      "unit_id": "GU1_peacetime_rationality_reversal_in_wartime",
+      "existing_model_mapping": "H4_frame_breaking（Expert AI hypothesis_typeタクソノミー、schemas/geo_expert_ai_response.schema.json）",
+      "mapping_confidence": "soft",
+      "mapping_note": "『前提の枠組みを破る』というH4の定義とテーマ的に近いが、一次資料内でこのラベルが使われているわけではない。evaluation-onlyの参考情報。"
+    },
+    {
+      "pattern_name_ja": "前提の時制検証（平時の合理性が非常時にも同じ形で成立するかを問う）",
+      "pattern_description": "ある結論の前提となる状況条件（平時/非常時等）が、現在の局面でも同一に成立するかを明示的に検証する",
+      "unit_id": "GU2_mutual_destruction_logic",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    }
+  ]
+}

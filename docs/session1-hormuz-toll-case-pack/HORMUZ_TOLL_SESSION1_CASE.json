@@ -1,0 +1,104 @@
+{
+  "case_id": "HORMUZ_TOLL_SESSION1",
+  "case_name": "Trump / Hormuz Strait 20% Toll Proposal",
+  "source_session": "Session 1 (2026-07-31 勉強会「地政学リスク分析の思考法に関する勉強会」、Plaud要約記録)",
+  "source_documents": {
+    "blind_input_source": "インタビュー流れ_20260731.docx（ケース1、事象説明＋背景参考のみ）",
+    "expert_gold_source": "江口さんsession1_Plaud (1).docx（【ケーススタディ1】セクション＋冒頭の基本スタンス・アプローチ）",
+    "note": "expert_gold_sourceはPlaud（AI議事録ツール）によるセッション要約記録であり、逐語書き起こしではない"
+  },
+  "blind_input_file": "HORMUZ_TOLL_SESSION1_BLIND_INPUT.md",
+  "session_faithful_input_file": "HORMUZ_TOLL_SESSION1_SESSION_FAITHFUL_INPUT.md",
+  "expert_gold_file": "HORMUZ_TOLL_SESSION1_EXPERT_GOLD.md",
+  "validation_rubric_file": "HORMUZ_TOLL_SESSION1_VALIDATION_RUBRIC.md",
+  "gold_readings": [
+    {
+      "reading_id": "R1_precedent_international_order_risk",
+      "semantic_role": "cue_implication",
+      "title": "通行料正当化＝国際秩序の先例リスクという読み",
+      "summary": "発言の核心は金額ではなく、天然の国際海峡（マラッカ海峡型）に人工運河（スエズ・パナマ型）の課金ロジックを持ち込んで正当化した点にあり、国際秩序の先例リスクをはらむ。",
+      "explains": "why_this_statement_matters",
+      "scope": "国際海峡通航料という枠組み一般への波及可能性",
+      "evaluation_axes": ["cue_hit", "question_reframe_hit", "step2_reasoning_exposure"]
+    },
+    {
+      "reading_id": "R2_negotiating_leverage_iran_withdrawal",
+      "semantic_role": "reading_candidate",
+      "title": "イランからの円滑な撤退のための交渉カードという裏読み",
+      "summary": "イランからの円滑な『無条件撤退』を目指すトランプ氏が、イラン側が最も望むホルムズ海峡の管理権を交渉カードとして提示した。",
+      "explains": "why_trump_made_this_statement",
+      "scope": "対イラン交渉・撤退プロセス",
+      "evaluation_axes": ["candidate_hit", "s_rank", "top3_retention", "top5_retention", "portfolio_rescue", "final_exposure_hit"]
+    },
+    {
+      "reading_id": "R3_economic_masterplan_energy_competitiveness",
+      "semantic_role": "reading_candidate",
+      "title": "中東産原油へのコスト上乗せによる米国産エネルギー競争力強化という読み",
+      "summary": "中東産原油にコストを上乗せして価格を上昇させ、競合する米国産エネルギーの競争力を高める経済的マスタープランの一環である可能性。",
+      "explains": "why_trump_made_this_statement",
+      "scope": "エネルギー市場・産業政策",
+      "note": "R2と並列提示された仮説であり、優先順位に関する記録上の明示はない",
+      "evaluation_axes": ["candidate_hit", "s_rank", "top3_retention", "top5_retention", "portfolio_rescue", "final_exposure_hit"]
+    },
+    {
+      "reading_id": "R4_domestic_two_tigers_retraction",
+      "semantic_role": "structural_explanation",
+      "title": "国内対イラン強硬勢力との『二匹の虎』バランスによる撤回という読み",
+      "summary": "国務省（1979年大使館人質事件の記憶）・国防総省（ベイルート海兵隊宿舎爆破事件の記憶）といった反イラン勢力の押し返しにより発言が撤回された。トランプ氏は経済的利益を追求する産業界と反イラン強硬勢力という『二匹の虎』のバランスを取っている。",
+      "explains": "why_this_statement_was_retracted",
+      "scope": "米国内Stakeholder構造",
+      "evaluation_axes": ["actor_relationship_hit", "causal_structure_hit", "step2_reasoning_story_exposure"]
+    }
+  ],
+  "_semantic_role_note": "全Gold Unitが独立したReading Cardとして出ることは要求しない。semantic_role=reading_candidateのみCQA Candidate Pool/S Ranking/Portfolio Rescue/Final Exposureで評価し、cue_implicationとstructural_explanationは別の評価軸で見る（HORMUZ_TOLL_SESSION1_VALIDATION_RUBRIC.md参照）。",
+  "gold_cues": [
+    "発言の核心は『20%という金額』ではなく『通行料徴収を正当化した』という点そのものにある",
+    "国際海峡（マラッカ海峡型）と人工運河（スエズ・パナマ型）とで通航料の国際法上の扱いが異なる",
+    "発言（提示）と翌日の撤回が一連の動きである"
+  ],
+  "gold_questions": [
+    "20%は高いか安いかではなく、なぜ国際法上前例のない通航料徴収という枠組みを、あえて正当化する形で持ち出したのか",
+    "なぜそれを即座に撤回したのか（提示と撤回を一体の動きとして読む）"
+  ],
+  "gold_actors": [
+    "Trump（米大統領）",
+    "Iran（イラン、交渉・撤退の相手方）",
+    "US State Department（国務省、対イラン強硬要因）",
+    "US Department of Defense / Pentagon（国防総省、対イラン強硬要因）",
+    "US domestic industry（米国産業界、経済的利害）",
+    "Israel-aligned anti-Iran hawks（イスラエル等を背後に持つ反イラン強硬勢力）"
+  ],
+  "gold_relationships": [
+    {"from": "Trump", "to": "Iran", "type": "negotiation_leverage", "reading_id": "R2_negotiating_leverage_iran_withdrawal"},
+    {"from": "Middle East oil", "to": "US domestic energy", "type": "price_competition", "reading_id": "R3_economic_masterplan_energy_competitiveness"},
+    {"from": "US State Department / DoD", "to": "Trump policy", "type": "institutional_pushback", "reading_id": "R4_domestic_two_tigers_retraction"},
+    {"from": "US domestic industry", "to": "Israel-aligned anti-Iran hawks", "type": "internal_support_base_balance", "reading_id": "R4_domestic_two_tigers_retraction"}
+  ],
+  "_existing_model_mapping_note": "gold_reasoning_patterns内のexisting_model_mappingはevaluation-onlyのsoft mappingである。Generation Input（Runtime Prompt/Retrieval）へは絶対に渡さないこと。",
+  "gold_reasoning_patterns": [
+    {
+      "pattern_name_ja": "金額ではなく正当化の論理そのものに異常性を見出す読み",
+      "pattern_description": "表面的な数値・条件よりも、その条件を『正当化する論理構造』自体が先例として持つ意味を重視する",
+      "reading_id": "R1_precedent_international_order_risk",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    },
+    {
+      "pattern_name_ja": "裏読み（表向きの発言を額面通り受け取らず、動機側から再構成する）",
+      "pattern_description": "発言をそのまま受け取らず、発言者の根源的な動機（何をしたいか）を起点にストーリーを再構築する",
+      "reading_id": "R2_negotiating_leverage_iran_withdrawal",
+      "existing_model_mapping": "H1_instrumental_indirect（Expert AI hypothesis_typeタクソノミー、schemas/geo_expert_ai_response.schema.json）",
+      "mapping_confidence": "soft",
+      "mapping_note": "『手段的・間接的』というH1の定義とテーマ的に近いが、Session記録内でこのラベルが使われているわけではない。参考情報として付記する。"
+    },
+    {
+      "pattern_name_ja": "二匹の虎（複数の支持基盤間のバランス調整として矛盾する言動を説明する）",
+      "pattern_description": "一見矛盾する行動を、単一主体の失策ではなく、複数の支持基盤・制約の間でバランスを取る政治的計算として説明する",
+      "reading_id": "R4_domestic_two_tigers_retraction",
+      "existing_model_mapping": "H3_constraint_domestic_driver（Expert AI hypothesis_typeタクソノミー）",
+      "mapping_confidence": "soft",
+      "mapping_note": "『国内制約要因』というH3の定義とテーマ的に近いが、Session記録内でこのラベルが使われているわけではない。参考情報として付記する。"
+    }
+  ]
+}

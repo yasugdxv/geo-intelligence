@@ -1,0 +1,167 @@
+{
+  "media_patterns": [
+    {
+      "knowledge_item_id": "2da57d4b-3f69-4ba1-8dd8-e887cf48eb66",
+      "pattern": "対立の当事者ではなく、対立の『話題そのものの主体』として巻き込まれた第三国は、対立を自国のナラティブ補強に利用する(Pilot1で観測された第三国の挙動)のではなく、むしろ自らが対立の焦点にならないよう意図的に抑制的な立場を取り、当事者性を薄める報道・外交姿勢を取ることがある",
+      "when_it_applies": "第三国が、自国に関する他国間の外交論争(自国自身の発言や行動ではなく、自国が『話題』として扱われる論争)に巻き込まれた場合",
+      "typical_source_pattern": "公式声明は実名だが、対象となっている論争そのものへの直接の評価・謝意表明を意図的に避ける",
+      "typical_framing_pattern": "自国を『対立の当事者』としてではなく『対立に巻き込まれた対象』として位置づける報道・分析構成(『unexpectedly pulled into the fray』)、または対立を『相手国自身の物語』として扱い自国の利害分析を前面に出さない",
+      "pattern_role": "exception",
+      "exception_conditions": [
+        "Pilot1の『第三国は対立を自国のナラティブ補強に利用する』という既定Patternは、第三国が対立の『部外者』(中国・トルコ・サウジのように当事国そのものではない)である場合に成立する。本Patternは、第三国が対立の『話題の主体』(台湾がJapan-China dispute自体の主題)である場合には、むしろ逆に自己の当事者性を薄める抑制的行動を取るという条件付きの例外を示す"
+      ],
+      "confidence": "中",
+      "evidence_episode_count": 4
+    },
+    {
+      "knowledge_item_id": "984a6ecc-8ea1-4ea1-811c-a6b79ab6d33f",
+      "pattern": "同一国内の報道機関の論調は、政治的立場(保守/リベラル/中道)に沿って明確に分岐する一方、通信社(ワイヤーサービス)は相対的に中立・事実伝達型の報道姿勢を保つ傾向がある",
+      "when_it_applies": "国内で意見が分かれる政府の政策的発言・行動が報じられる場合",
+      "typical_source_pattern": "意見分岐が観測される媒体は社説・世論調査という『機関としての意見表明』形式を伴うことが多く、通信社は当局者の実名発言をそのまま伝達する形式に留まる",
+      "typical_framing_pattern": "保守系は世論調査の支持率数値を前面に、リベラル系は手続き・慎重さへの懸念を、国際読者向け英字紙は国際的な報道コンセンサスへの同調を、それぞれ異なる軸で編集判断を行う",
+      "pattern_role": "default",
+      "exception_conditions": [
+        "通信社(Jiji)・経済専門紙(Nikkei)は、意見表明よりも事実伝達・独自ソースの追加取材を優先し、政治的立場に沿った論調の分岐を示さない"
+      ],
+      "confidence": "中",
+      "evidence_episode_count": 4
+    },
+    {
+      "knowledge_item_id": "a2f118ac-b22a-4141-8b00-b218212ef9c5",
+      "pattern": "国家系メディア・外交ルートは、単一のトーンではなく複数階層のEscalation Registerを使い分ける: 外交部/MFA(法的・手続き的、相手国名指しの抗議に終始)、党系機関紙(道徳的・歴史的糾弾、国内向け)、より対決的な国営メディア(人格攻撃・第三者/専門家引用による威嚇的framingのテスト、経済措置の具体名も辞さない)、通信社(経済措置の具体名を意図的に避け『非軍事的措置』等の抽象表現に終始)という4層構造",
+      "when_it_applies": "国家が他国の政策発言・行動に対し外交的抗議と経済的対抗措置の両方を行う局面",
+      "typical_source_pattern": "外交部報道官(named)、党機関紙(unattributed社説)、対決的国営メディア(named専門家・第三国識者引用)、通信社(unattributed解説+named引用の混在)という階層ごとに異なるSourcing Pattern",
+      "typical_framing_pattern": "階層が下がる(より非公式・非外交ルート)ほどFramingが率直・対決的になり、経済的対抗措置の具体名への言及も増える傾向",
+      "pattern_role": "default",
+      "exception_conditions": [],
+      "confidence": "高",
+      "evidence_episode_count": 5
+    },
+    {
+      "knowledge_item_id": "0fbf5bed-3de5-4f5f-82be-cf4a31435684",
+      "pattern": "単一の匿名情報源(当局者)に依拠した外交・軍事関連スクープは、独立した第三の情報源による裏取りが得られないまま、当事者側からの明確な公式否定・専門家の慎重な留保に直面することがある。この構図は特定の事案に固有ではなく、異なる地域・異なる媒体・異なる争点(戦況因果 vs 外交電話の内容)にまたがって再現された",
+      "when_it_applies": "単一媒体が匿名当局者を情報源として、検証困難な因果関係・非公開の会話内容を具体的に主張する場合",
+      "typical_source_pattern": "匿名の当局者・関係者(anonymous_official)が単一の情報源として使われ、他媒体による独立した実名裏取りが確認されない",
+      "typical_framing_pattern": "初報は具体的・断定的な表現(『原因で数百人死亡』『自制を促した』)を用いるが、後に(専門家の留保、または当事者の実名否定を受けて)より穏当な表現へ軟化することがある",
+      "pattern_role": "default",
+      "exception_conditions": [
+        "方法論的に独立した複数の専門家/OSINT機関が同じ留保表現に収斂する場合(Pilot1のISW/ACLED)は、単一情報源の過大主張パターンの例外として扱う"
+      ],
+      "confidence": "高",
+      "evidence_episode_count": 2
+    },
+    {
+      "knowledge_item_id": "ed37d3fb-bb98-480e-8ab9-4d83ea7b5ee5",
+      "pattern": "紛争当事国ではない第三国は、当事国間の公的対立の局面を、対立の実質的な是非への論評よりも自国の既存の戦略的ナラティブ・外交的立ち位置の補強に利用する傾向がある",
+      "when_it_applies": "自国が直接の当事者ではない大国間・同盟国間の公的対立が発生した場合",
+      "typical_source_pattern": "公式外交ルート(外交部・大使館等)は抑制的・中立的な発言に終始する一方、準公式論説・専門家コメント・仲介ホスト役等を通じて自国の立場強化が図られる",
+      "typical_framing_pattern": "対立そのものの是非には踏み込まず、『信頼できる同盟国とは何か』(中国)、『公平な仲介者としての自国』(トルコ)、『経済協力・外交的リハビリテーション』(サウジ)という自国中心の文脈へ転換する",
+      "pattern_role": "default",
+      "exception_conditions": [],
+      "confidence": "中",
+      "evidence_episode_count": 3
+    },
+    {
+      "knowledge_item_id": "7a6689bf-4282-4a53-85ae-177078f051c1",
+      "pattern": "同じ政治的立場(反体制・国外亡命系)に分類される複数の媒体でも、対立陣営(敵対国家)の公式反応をどこまで報道に含めるかという編集判断は一様ではない",
+      "when_it_applies": "国外亡命・反体制系メディアが、自国政府(敵対国家)の公式反応を含む国際反応の総括記事を作成する場合",
+      "typical_source_pattern": "いずれも実名引用中心だが、対立陣営公式反応の掲載可否が分岐点",
+      "typical_framing_pattern": "一部は敵対国家の公式反応も『世界の反応』の一部として客観的に併載し、一部は意図的か結果的かは不明だが完全に省略する",
+      "pattern_role": "exception",
+      "exception_conditions": [
+        "『反体制・亡命系メディアは敵対国家の公式反応を等しく扱う』という単純な前提は本Pilotの時点では成立しない。同一Lens内でも媒体ごとの編集判断の違いを均質化しないこと"
+      ],
+      "confidence": "低",
+      "evidence_episode_count": 1
+    },
+    {
+      "knowledge_item_id": "e6ea5741-3ce2-4acd-9cac-f2dcc7479a63",
+      "pattern": "同一国の報道機関(press)は、その国自身の公式首脳声明よりも感情的・道義的に強い『破局・屈辱』的framingを用いる傾向がある",
+      "when_it_applies": "同盟国間の公的な対立が可視化された局面で、報道機関と自国政府の双方が反応を発する場合",
+      "typical_source_pattern": "報道機関は各紙の見出し(named)、公式声明は首脳本人の実名発言",
+      "typical_framing_pattern": "報道機関: 『屈辱』『破局』『関係の終わり』等の感情的語彙。首脳声明: 『連帯』『支援継続』等の具体的コミットメントを伴う前向き表現",
+      "pattern_role": "default",
+      "exception_conditions": [],
+      "confidence": "低",
+      "evidence_episode_count": 2
+    },
+    {
+      "knowledge_item_id": "6d049e8c-3174-464f-bd78-83928086b460",
+      "pattern": "投資調査報道・一般ニュース報道は、同時期の軍事専門家・OSINT/紛争データソースが明示的に留保する因果関係を、より強い断定表現で主張することがある",
+      "when_it_applies": "戦況の変化と政策決定(援助停止等)の間の因果関係が、複数の交絡要因により実際には検証困難な局面",
+      "typical_source_pattern": "一般報道は匿名当局者・匿名将校への依存度が高く、専門家/OSINTソースは独自データ・複数分析の一致に基づくが、いずれもhedged languageを用いる",
+      "typical_framing_pattern": "一般報道は「〜が原因で」という直接因果の言い切り、専門家/OSINTは「時期的相関はあるが直接的因果は不明」という留保付き表現",
+      "pattern_role": "default",
+      "exception_conditions": [
+        "方法論的に独立したOSINT/紛争データ機関同士(ISW・ACLED)が同じ留保表現に収斂する場合は、この『過大な因果主張』パターンの例外(=専門家コミュニティ内では発生していない)として扱う"
+      ],
+      "confidence": "中",
+      "evidence_episode_count": 2
+    }
+  ],
+  "media_profiles": [
+    {
+      "knowledge_item_id": "173005e0-5b59-4435-9dce-627a6b33d7eb",
+      "source_id": "global_times",
+      "source_name": "Global Times",
+      "institutional_perspective": "中国の対外強硬シグナルテスト媒体、外交部公式トーンより踏み込んだ論調",
+      "historical_framing_characteristics": "外交部公式ルートは中立的な『建設的役割』表明に終始する一方、Global Times記事・関連論説では『対米追従のリスク』という台湾問題等を念頭に置いたとみられる間接的メッセージが繰り返し登場する(既存Actor Intelligence BuildのXi Jinpingstrategic_communication_patternで観測された『Xinhua/人民日報とGlobal Timesを異なる強度のシグナリングチャネルとして使い分ける』という既存知見と整合する)",
+      "use_for": [
+        "中国の対外強硬シグナルの検出",
+        "外交部公式トーンとの対比分析"
+      ],
+      "do_not_use_for": [
+        "中国政府の公式立場そのものの代替(それはfmprc.gov.cn等公式ルートを使う)"
+      ],
+      "known_limitations": [
+        "本Profileは1 Episodeのみに基づく暫定候補"
+      ],
+      "confidence": "中"
+    }
+  ],
+  "statuses_included": [
+    "active",
+    "candidate"
+  ],
+  "known_ids": [
+    "086b234a-94ac-4e08-9799-45ff6a143f20",
+    "0911f512-1ad6-4cb3-af4f-097f575193c8",
+    "09e50823-8df6-4cc2-af02-35cbdde246e2",
+    "0fbf5bed-3de5-4f5f-82be-cf4a31435684",
+    "173005e0-5b59-4435-9dce-627a6b33d7eb",
+    "28f97c59-5522-40ae-84ce-ca285c146f01",
+    "2afdf807-f363-48a9-abb8-129bcea8cb8e",
+    "2d23f061-d658-4b00-bc19-a44f89a6abff",
+    "2da57d4b-3f69-4ba1-8dd8-e887cf48eb66",
+    "38de7312-e585-4e7e-a57e-fea7e8217415",
+    "3e0c7078-10a2-4625-8067-53e2eb13e166",
+    "3ebcddbf-bca3-41aa-83d1-f76f42b0cfd2",
+    "3f2f1359-83e1-4ecd-915d-04600f6199c3",
+    "4f0e9268-7b94-4d86-bfc5-0cbcb80a1836",
+    "58801b07-8e6f-4749-825a-7fa78a45e192",
+    "60e32ca5-c1e4-4ebb-90fc-7d099ca9e224",
+    "613d5298-b784-4a91-a6cf-249bffd91ba5",
+    "6904631d-2ecf-497d-a39d-c9a96de691cf",
+    "6d049e8c-3174-464f-bd78-83928086b460",
+    "7a6689bf-4282-4a53-85ae-177078f051c1",
+    "832f846d-efc5-4d14-ac2b-252fb8f14a05",
+    "8d473116-9794-4895-b572-3487d4f8260e",
+    "984a6ecc-8ea1-4ea1-811c-a6b79ab6d33f",
+    "a2f118ac-b22a-4141-8b00-b218212ef9c5",
+    "a385c007-501e-4abf-a9f0-422328745d8d",
+    "b7d40c57-e785-4b68-8c25-f7d24a1b9ff8",
+    "c26597b7-4f6f-40ed-8981-94ed70b19bd9",
+    "c32e8641-8c55-49a9-9aae-843a4983ea20",
+    "c54635bb-6f95-4236-9d3f-e54eae5365c2",
+    "cdbed2ec-a82f-4b8a-9805-a7005f9a170d",
+    "d109f462-7049-4880-9601-300cc34fbcb9",
+    "e6ea5741-3ce2-4acd-9cac-f2dcc7479a63",
+    "ed37d3fb-bb98-480e-8ab9-4d83ea7b5ee5",
+    "f14e3afb-c51e-4c6b-8042-0c75e0996ea9",
+    "f6b60a5b-1bcf-4981-8366-881369fd1878",
+    "f75e6d9d-76ba-4fa1-b7a9-e4622ee4e274",
+    "f9e3f1d5-1d5f-4f35-8500-277407b2ba94",
+    "fa98e294-1c6b-45d3-a873-476268545a57",
+    "fe40eda6-b879-4e75-8b76-c9880de63651"
+  ]
+}

@@ -1,0 +1,773 @@
+{
+  "case_id": "d9d4b72a-42a6-491b-8e86-43c1a3420ba5",
+  "query_text": "米国の海上安全保障提供(海軍プレゼンス・護衛・封鎖解除)は、実際に湾岸諸国への費用負担要求というLeverageとして機能しているか、それとも2026年7月の20%補償料が湾岸諸国の反発でわずか1日で撤回されたことが示すように、行使可能性の低いLeverageにとどまっているか。",
+  "theme_id": "9a62d084-1442-45c9-96fc-50e2a0d3e1a9",
+  "profile": "deep",
+  "mode": "case_analysis",
+  "request_id": "60e5350d-596a-49db-9254-95c7bd647e7d",
+  "response_id": "ccf37d24-c15a-4019-9d3b-e3fb2bcbebc8",
+  "response_json": {
+    "claims": [
+      {
+        "text": "トランプ政権は2026年7月13日にホルムズ海峡通航貨物の20%相当の「補償料」導入を発表した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "この20％補償料構想は、湾岸諸国の反発により翌日撤回された。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "補償料構想撤回後、米国は対米投資協定の枠組みへ切り替えた。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "米国はホルムズ海峡周辺で海軍プレゼンスを維持し、海上安全保障（護衛・封鎖解除能力）を提供している。",
+        "claim_type": "observation",
+        "source_ref": null
+      },
+      {
+        "text": "湾岸産油国（サウジアラビア等）は原油輸出のほぼ全量をホルムズ海峡経由の海上輸送に依存しており、通航妨害・料金賦課は輸出収入へ直接的な打撃となる。",
+        "claim_type": "observation",
+        "source_ref": "Dependency: Saudi Arabia: export_market（severity: critical）"
+      },
+      {
+        "text": "米国とUAE等の間では、ホルムズ海峡での安全保障提供を根拠とする費用負担を巡り摩擦が生じ、20％補償料構想は即撤回された。",
+        "claim_type": "observation",
+        "source_ref": "Relationship: United States→United Arab Emirates: security_provider_cost_dispute"
+      },
+      {
+        "text": "2026年2月の米・イラン開戦と4月停戦後も、ホルムズ海峡の扱いを巡り軍事的緊張が継続している。",
+        "claim_type": "observation",
+        "source_ref": "Relationship: Iran→United States: active_conflict_ceasefire"
+      },
+      {
+        "text": "20％という高率かつ一国主導の補償料構想は、湾岸諸国にとって経済的負担だけでなく、主権・前例・他海峡への波及を懸念させる政治・外交コストが極めて大きかったと考えられる。",
+        "claim_type": "inference",
+        "source_ref": null
+      },
+      {
+        "text": "構想が1日で撤回され、より一般的な対米投資協定枠組みに切り替えられたことは、米国側も通航料・補償料という直接的な形でのLeverage行使が持続不可能であると判断したことを示唆する。",
+        "claim_type": "inference",
+        "source_ref": null
+      },
+      {
+        "text": "米国の海上安全保障プレゼンスは、湾岸諸国への費用負担要求のLeverageとして「理論上は」存在するが、直接的な通航料・補償料という形での行使は政治・外交コストが高く、現状では行使可能性の低いカードにとどまっている。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "実務的なコストシェアは、対米投資協定、武器購入、基地負担など、より間接的で政治的に受け入れやすい形が主なチャンネルとなっている。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "20％補償料構想は、湾岸諸国に対する交渉上の「アンカリング」や国内向けパフォーマンスとして打ち上げられた可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "今後、米国が政権交代や国際環境の変化を背景に、より低率かつ多国間枠組み（例：NATO型の分担金）として海上安全保障費用の分担スキームを再設計する可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "NATO型の分担金スキームは、直接の通航料徴収ではなく、加盟国が共通防衛のための予算負担を行う多国間枠組みの一例として参照されている。",
+        "claim_type": "illustration",
+        "source_ref": null
+      }
+    ],
+    "dynamics": "・米国はホルムズ海峡での海軍プレゼンスを通じて、湾岸諸国の輸出路を事実上守る安全保障提供者であり、理論上は「守っているのだからコストを負担せよ」という主張を行うLeverageを持つ。\n・一方、湾岸産油国（サウジ、UAE、カタール等）は輸出路の安全を米国に大きく依存しつつも、通航料・補償料という形での明示的な料金徴収は、主権・前例・他海峡への波及を懸念し強く拒否するインセンティブがある。\n・2026年7月の20％補償料構想は、米国がこのLeverageを「直接課金」という最も露骨な形で試みたが、湾岸側の反発と国際的な懸念により、米国自身が外交コストの高さを認識し、1日で撤回せざるを得なかった。\n・結果として、米国の交渉力は消えたわけではないが、「海軍プレゼンス＝通航料徴収」という単純な構図は成立せず、投資協定・武器購入・基地負担など、より見えにくい形でのコストシェアに回帰している。\n・イランとの軍事的緊張が続く中で、湾岸諸国は米国のプレゼンスを完全には手放しにくく、米国もエネルギー安全保障・同盟管理の観点からプレゼンスを維持せざるを得ないため、双方とも「完全な市場価格化」ではなく、政治的に処理しやすい間接的な負担スキームを選好しているとみられる。",
+    "stakeholders": [
+      {
+        "actor": "United States（トランプ政権）",
+        "purpose": "中東エネルギー動脈の安定と、米国の対湾岸影響力・同盟関係を維持しつつ、自国の負担（財政・軍事リスク）を抑制すること。",
+        "leverage": "支持基盤・国内世論",
+        "position": "ホルムズ海峡での米海軍プレゼンスを背景に、湾岸諸国から安全保障コストの一部を補償料・投資・その他の形で引き出すこと。",
+        "red_lines": "湾岸諸国との関係が決定的に悪化し、米国の中東エネルギー・安全保障上の利益が損なわれるような形での一方的な高率通航料徴収は避けたいとみられる。",
+        "confidence": "中",
+        "constraints_fears": "同盟管理・湾岸諸国との関係、国際制度・他海峡への波及",
+        "ability_to_move_or_block": "料金構想や投資協定など新たなコストシェア枠組みを提案し、海軍態勢の増減を通じて湾岸諸国の安全保障環境を変える能力。"
+      },
+      {
+        "actor": "Saudi Arabia",
+        "purpose": "原油輸出収入の安定確保と、主権・政策裁量を損なわない形での安全保障確保。",
+        "leverage": "輸出依存経済、主権・前例への懸念",
+        "position": "ホルムズ海峡の安全を確保しつつ、輸出収入を最大化し、主権や前例を損なう形での通航料・補償料徴収を回避すること。",
+        "red_lines": "ホルムズ海峡通航に対する高率の一方的料金徴収や、主権を侵害するような安全保障条件。",
+        "confidence": "中",
+        "constraints_fears": null,
+        "ability_to_move_or_block": "米国との二国間・多国間協議で、投資・武器購入・基地負担など代替的なコストシェア案を提示しうる。"
+      },
+      {
+        "actor": "United Arab Emirates",
+        "purpose": "輸出路の多様化と安全保障の確保を両立し、地政学的リスクを低減すること。",
+        "leverage": "輸出多様化ニーズ",
+        "position": "ホルムズ海峡リスクを低減しつつ、輸出を維持・拡大すること。",
+        "red_lines": "ホルムズ海峡通航に対する高率料金徴収や、輸出路を一方的に制約する措置。",
+        "confidence": "中",
+        "constraints_fears": null,
+        "ability_to_move_or_block": "代替パイプライン整備を加速し、ホルムズ依存度を下げることで、米国・イラン双方に対する脆弱性を低減しうる。"
+      }
+    ],
+    "main_scenario": {
+      "confidence": "中",
+      "assumptions": [
+        "湾岸諸国の反発は一時的な感情的反応ではなく、主権・前例・経済への構造的懸念に根ざしている。",
+        "米国政権は、ホルムズ海峡での料金徴収が他海峡への前例となる国際的コストを認識している。",
+        "対米投資協定・武器購入・基地負担など既存のコストシェア手段が、米国にとって一定程度満足できる代替となっている。"
+      ],
+      "description": "米国の海上安全保障プレゼンスは、湾岸諸国への費用負担要求のLeverageとして「理論上は」存在するものの、2026年7月の20％補償料構想が湾岸諸国の反発で1日で撤回された事実が示すように、通航料・補償料という直接的な形での行使は政治・外交コストが極めて高く、現状では行使可能性の低いカードにとどまっている。実務的なコストシェアは、対米投資協定、武器購入、基地負担など、より間接的で政治的に受け入れやすい形が主なチャンネルとなっており、「海軍プレゼンス＝即、通航料徴収の交渉力」という構図は成立していない。",
+      "selection_rationale": "このシナリオは、(1)20％補償料構想の極端な短命性、(2)撤回後に選ばれた対米投資協定という代替スキーム、(3)湾岸諸国の輸出依存と料金徴収への強い拒否、という観測事実を最も少ない追加仮定で説明できる。米国の安全保障プレゼンスが理論上のLeverageであることは否定せずつつも、その行使形態が直接課金ではなく間接的なコストシェアに限定されているという点で、他の仮説よりも現実の行動と整合的である。",
+      "supporting_evidence": [
+        "20％補償料構想が湾岸諸国の反発により1日で撤回されたという観測事実。",
+        "撤回後、より通常型の対米投資協定枠組みに切り替えられたこと。",
+        "湾岸産油国がホルムズ海峡経由の輸出に依存しつつも、通航料・補償料という形での明示的な料金徴収には強く反発したこと。",
+        "国際海峡での高率通航料徴収が他海峡への前例となりうるため、国際法・制度上の懸念が大きいと推測されること。"
+      ],
+      "observable_indicators": [
+        "今後、米国がホルムズ海峡に関して通航料・補償料の再提案を控え、代わりに投資・武器購入・基地負担などを通じたコストシェア要求を強調するか。",
+        "湾岸諸国の公式発言・協定文書において、通航料・補償料ではなく投資・防衛協力が安全保障コスト分担の主要手段として位置づけられるか。",
+        "国際法・専門家コミュニティで、ホルムズ海峡での料金徴収構想が否定的に評価され続けるか。"
+      ]
+    },
+    "business_impact": {
+      "direct": null,
+      "indirect": "ホルムズ海峡の安全保障コスト分担が直接の通航料・補償料ではなく、投資協定・武器購入・基地負担など間接チャネルにとどまる場合、企業にとっての短期的な直接コスト（通航料の急騰）は抑制される一方、湾岸諸国の財政負担増や防衛支出増が中長期的な税制・投資環境に影響する可能性がある。",
+      "unrelated_note": "本テーマはエネルギー・海運・防衛関連企業には高い関連性があるが、他業種への直接的影響は限定的であり、主にエネルギー価格・湾岸諸国の財政・投資環境を通じた間接影響として現れると考えられる。",
+      "environment_change": "米国が海軍プレゼンスを維持しつつも、費用負担要求の行使可能性に限界があることが明らかになれば、湾岸諸国はホルムズ依存度低減（パイプライン・代替ルート）や安全保障パートナー多様化を加速させる可能性があり、エネルギー物流・投資フローの地理的分布が変化しうる。"
+    },
+    "initial_anomaly": "ホルムズ海峡という国際エネルギー動脈に対し、米国が「通航貨物の20％補償料」という極めて高率かつ一国主導の料金構想を打ち上げたにもかかわらず、湾岸諸国の反発でわずか1日で撤回し、より通常型の対米投資協定枠組みに切り替えた点。安全保障提供を根拠とする費用負担要求としては異例の短命であり、「海軍プレゼンス＝通航料徴収の強力なLeverage」という直感的なイメージと実際の行使可能性のギャップが浮き彫りになっている。",
+    "review_findings": null,
+    "audience_analysis": [
+      {
+        "actor_ref": "US",
+        "confidence": "中",
+        "action_substance": {
+          "assessment": "Signalとしては非常に強いが、Substanceとしては1日で撤回されたため実効性は低い。実務的なSubstanceは投資協定・武器購入・基地負担など間接チャネルに移ったとみるのが妥当。",
+          "discretion": "米政権側に構想提示・撤回・条件調整の大きな裁量があるが、湾岸諸国の受容性が実質的な制約となる。",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡を通航する貨物全般（詳細設計は不明）および湾岸諸国からの対米投資・協力。",
+          "stated_signal": "20％という高率設定を通じて、米国が安全保障コストの大幅な増分担を求める強硬姿勢を誇示。撤回後は、実務的には投資協定等を通じた間接的コストシェアを追求する姿勢を示した。",
+          "concrete_measure": "20％補償料構想の発表（ただし1日で撤回）と、その後の対米投資協定枠組みへの切り替え。",
+          "enforcement_status": "補償料については執行なし。投資協定については今後の履行状況要確認。",
+          "implementation_status": "20％補償料は実施前に撤回。投資協定枠組みは詳細不明だが、協議・締結プロセスに移行したとされる。",
+          "legal_or_policy_force": "補償料構想自体は政権による一方的提案段階で、法制化・国際合意には至らず。投資協定枠組みは二国間・多国間の合意に基づく拘束力を持ちうる。"
+        },
+        "primary_audience": "湾岸産油国（サウジ、UAE等）",
+        "message_hypothesis": "湾岸諸国に対し『米国の安全保障には相応の対価が必要だ』というメッセージを送りつつ、国内には『同盟国にもっと払わせる』姿勢を示す。一方で、撤回と投資協定への切り替えにより、同盟関係を壊さない範囲でのコストシェア路線への軟着陸を図った。",
+        "secondary_audience": "米国内支持層・議会、他の同盟国（NATO等）",
+        "action_or_statement": "ホルムズ海峡通航貨物の20％補償料構想を発表し、翌日撤回して対米投資協定枠組みに切り替えた。"
+      }
+    ],
+    "executive_summary": {
+      "what_changed": "2026年7月の20％補償料構想が湾岸諸国の反発で1日で撤回され、米国はより通常型の対米投資協定枠組みに切り替えたことで、『米海軍プレゼンスを根拠にホルムズ通航に直接課金する』という最も露骨なLeverage行使が、現状では政治・外交的に持続困難であることが明らかになった。",
+      "why_it_matters": "ホルムズ海峡の安全保障コストが直接の通航料・補償料ではなく、投資・武器購入・基地負担など間接チャネルにとどまる場合、企業にとっての短期的な通航コストショックは抑制される一方、湾岸諸国の財政・投資戦略やエネルギー物流の地理が中長期的に変化する可能性がある。",
+      "what_to_watch_decide": "(1) 米国がホルムズ海峡に関する新たな料金・分担金スキームを再提案する兆候、(2) 対米投資協定・武器購入・基地負担の規模・条件の変化、(3) UAE等によるホルムズ迂回インフラ整備の進捗をモニターし、エネルギー価格・物流・湾岸投資環境への影響を評価すること。"
+    },
+    "key_actor_profiles": [
+      {
+        "actor": "United States（トランプ政権）",
+        "red_line": "湾岸諸国との関係が決定的に悪化し、米国の中東エネルギー・安全保障上の利益が損なわれるような形での一方的な高率通航料徴収は避けたいとみられる。",
+        "actor_ref": "US",
+        "entity_id": null,
+        "confidence": "中",
+        "formal_role": "ホルムズ海峡周辺での主要な海軍プレゼンスを持つ安全保障提供国。通航の安全確保、封鎖解除、対イラン抑止を担う。",
+        "evidence_ids": null,
+        "decision_power": "ホルムズ海峡での米海軍プレゼンスの規模・態勢を決定し、湾岸諸国への費用負担要求の有無・内容を一方的に打ち出すことができるが、持続可能性は同盟国・湾岸諸国・国内政治の制約を受ける。",
+        "driving_forces": [
+          {
+            "force": "支持基盤・国内世論",
+            "direction": "supporting",
+            "description": "「同盟国のただ乗り」批判や財政負担への不満が、費用負担要求を政治的に正当化する。"
+          },
+          {
+            "force": "同盟管理・湾岸諸国との関係",
+            "direction": "constraining",
+            "description": "湾岸諸国の強い反発や、他海峡への前例化懸念が、通航料・補償料という直接課金の継続を困難にする。"
+          },
+          {
+            "force": "国際制度・他海峡への波及",
+            "direction": "constraining",
+            "description": "ホルムズでの料金徴収が他の国際海峡にも波及する前例となることへの国際的懸念が、米国自身の行動を抑制する。"
+          }
+        ],
+        "ability_to_move": "料金構想や投資協定など新たなコストシェア枠組みを提案し、海軍態勢の増減を通じて湾岸諸国の安全保障環境を変える能力。",
+        "issue_objective": "ホルムズ海峡での米海軍プレゼンスを背景に、湾岸諸国から安全保障コストの一部を補償料・投資・その他の形で引き出すこと。",
+        "observed_action": "2026年7月13日にホルムズ海峡通航貨物の20％補償料構想を発表したが、湾岸諸国の反発を受けて翌日に撤回し、対米投資協定枠組みへ切り替えた。",
+        "vulnerabilities": [
+          "湾岸諸国との関係悪化によるエネルギー市場・安全保障への影響",
+          "国内外からの『国際海峡の私物化』批判"
+        ],
+        "ability_to_block": "海軍プレゼンスを縮小・撤退させることで、湾岸諸国の輸出路安全を低下させうる理論上の拒否権。",
+        "action_substance": {
+          "assessment": "安全保障プレゼンスを背景にしたコストシェア要求としては、直接課金は失敗し、間接チャネルに収れんしている。",
+          "discretion": "米政権に大きな裁量があるが、湾岸諸国の拒否権が実務上の制約。",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡通航貨物および湾岸諸国の対米経済協力。",
+          "stated_signal": "『米国の安全保障は無償ではない』というメッセージと、同盟国へのコストシェア要求の強化。",
+          "concrete_measure": "20％補償料構想（即撤回）＋対米投資協定枠組みへの転換。",
+          "enforcement_status": "不明。",
+          "implementation_status": "補償料は未実施。投資協定は詳細不明。",
+          "legal_or_policy_force": "補償料構想は法制化前に撤回。投資協定は合意次第で法的拘束力を持つ。"
+        },
+        "primary_audience": "湾岸産油国（サウジ、UAE等）と米国内の支持層（「同盟国にもっと払わせるべき」と考える有権者）。",
+        "why_actor_matters": "米国（トランプ政権）はホルムズ海峡での主要な安全保障提供者であり、海軍プレゼンスを増減させることで湾岸諸国の輸出路安全を左右できる唯一の大国に近い。したがって、費用負担要求というLeverageを実際に行使しうる起点は米国側にあり、その設計・強度・撤回判断が本件の方向性を決める。",
+        "available_leverage": [
+          "ホルムズ海峡での海軍プレゼンスの維持・増強・縮小",
+          "対イラン制裁・封鎖解除能力",
+          "対米投資協定・武器売却・基地負担交渉"
+        ],
+        "secondary_audience": "他の同盟国（NATO等）や中国・イランなど、米国の安全保障コスト分担要求の姿勢を注視する第三国。",
+        "ultimate_objective": "中東エネルギー動脈の安定と、米国の対湾岸影響力・同盟関係を維持しつつ、自国の負担（財政・軍事リスク）を抑制すること。",
+        "persistent_preference": "トランプ政権は、同盟国・パートナーに対し安全保障コストの増分担を繰り返し要求する一方、米軍プレゼンス自体は交渉カードとして維持する傾向があるとする仮説。",
+        "preference_action_gap": "安全保障コストの増分担を求めるPersistent Preferenceと、実際に20％という高率の補償料構想を打ち上げた行動は整合的だが、1日で撤回したことは「強硬な直接課金」よりも同盟管理・外交コスト回避を優先したことを示す。つまり、Preferenceは存在するが、行使可能な手段・強度には大きな制約がある。",
+        "relevant_decision_patterns": [
+          "同盟国に対する防衛費増分担要求を繰り返しつつも、最終的には同盟破棄までは踏み込まず、交渉カードとして用いる傾向。"
+        ],
+        "unavailable_or_costly_cards": [
+          "20％のような高率の一国主導通航料・補償料徴収（湾岸諸国・国際社会の反発が大きく持続困難）"
+        ],
+        "persistent_preference_change": null,
+        "persistent_preference_evidence": [
+          {
+            "caveat": "欧州NATOと湾岸産油国では制度・歴史が異なるため、完全なアナロジーではない。",
+            "source": "一般的に報じられているトランプ政権期のNATO防衛費要求",
+            "claim_id": null,
+            "relevance": "安全保障提供をテコに費用負担を求める行動パターンの例",
+            "evidence_id": null,
+            "date_or_period": "2017-2020頃",
+            "event_or_behavior": "NATO同盟国に対し防衛費GDP2％以上の負担を強く要求し、「ただ乗り」を批判してきた。",
+            "supports_or_contradicts": "supports"
+          },
+          {
+            "caveat": "構想は1日で撤回されており、持続的なPreferenceかは限定的。",
+            "source": "本ケースの観測事実",
+            "claim_id": null,
+            "relevance": "湾岸諸国に対しても安全保障コスト負担を直接求める志向の表れ",
+            "evidence_id": null,
+            "date_or_period": "2026-07-13",
+            "event_or_behavior": "2026年7月13日にホルムズ海峡通航貨物の20％補償料構想を打ち上げた。",
+            "supports_or_contradicts": "supports"
+          },
+          {
+            "caveat": "撤回がトランプ本人の判断か、政権内・同盟国からの圧力かは不明。",
+            "source": "本ケースの観測事実",
+            "claim_id": null,
+            "relevance": "強硬な費用負担要求よりも、同盟管理・外交コスト回避を優先した可能性を示唆",
+            "evidence_id": null,
+            "date_or_period": "2026-07-14",
+            "event_or_behavior": "湾岸諸国の反発を受け、20％補償料構想を翌日に撤回し、対米投資協定枠組みへ切り替えた。",
+            "supports_or_contradicts": "contradicts"
+          }
+        ],
+        "strategic_relationship_preference": "湾岸諸国とは安全保障をテコにしたパートナー関係を維持しつつ、費用負担や投資・武器購入を通じて「より公平な」コストシェアを求める志向があると推測される。"
+      },
+      {
+        "actor": "Saudi Arabia",
+        "red_line": "ホルムズ海峡通航に対する高率の一方的料金徴収や、主権を侵害するような安全保障条件。",
+        "actor_ref": "SAUDI",
+        "entity_id": null,
+        "confidence": "中",
+        "formal_role": "主要湾岸産油国として、ホルムズ海峡経由の原油輸出に依存する当事者。米国の安全保障提供の主要な受益者・費用負担対象。",
+        "evidence_ids": null,
+        "decision_power": "通航料・補償料スキームに対する受容・拒否を通じて、米国の料金構想の実現可能性を左右する実質的な拒否権を持つ。",
+        "driving_forces": [
+          {
+            "force": "輸出依存経済",
+            "direction": "supporting",
+            "description": "ホルムズ海峡の安全確保は最重要だが、輸出に直接課金される通航料は収入を削るため拒否インセンティブが強い。"
+          },
+          {
+            "force": "主権・前例への懸念",
+            "direction": "supporting",
+            "description": "一度通航料を認めると、他海峡や将来の料金引き上げを拒否しにくくなるため、初期段階で強く拒否する動機がある。"
+          }
+        ],
+        "ability_to_move": "米国との二国間・多国間協議で、投資・武器購入・基地負担など代替的なコストシェア案を提示しうる。",
+        "issue_objective": "ホルムズ海峡の安全を確保しつつ、輸出収入を最大化し、主権や前例を損なう形での通航料・補償料徴収を回避すること。",
+        "observed_action": "20％補償料構想に対し湾岸諸国として強く反発し、構想を短期間で撤回させた。",
+        "vulnerabilities": [
+          "ホルムズ海峡への輸出依存",
+          "米国安全保障への依存"
+        ],
+        "ability_to_block": "高率通航料・補償料構想に対し政治的に強く反発し、他の湾岸諸国と連携して受け入れを拒否することで、構想を短期間で撤回に追い込む能力。",
+        "primary_audience": "米国政権（トランプ政権）と国内のエリート・国民。",
+        "why_actor_matters": "サウジアラビアはホルムズ海峡を通る原油輸出の最大級の当事者であり、米国の費用負担要求の主要ターゲットでもある。その受容・拒否が料金スキームの実現可能性を左右するため、米国のLeverageが実効的かどうかを判断するうえで中核的なステークホルダーとなる。",
+        "available_leverage": [
+          "原油生産・輸出調整を通じた市場影響力",
+          "対米投資・武器購入・基地協定のカード"
+        ],
+        "secondary_audience": "他の湾岸諸国・OPECプラス諸国。",
+        "ultimate_objective": "原油輸出収入の安定確保と、主権・政策裁量を損なわない形での安全保障確保。",
+        "persistent_preference": "輸出路の安全保障については米国の軍事力を活用しつつも、料金徴収など主権や前例に関わる問題では強く拒否する傾向があるとする仮説。",
+        "preference_action_gap": "安全保障依存と料金徴収拒否の間に表面的なギャップがあるように見えるが、サウジにとっては『安全保障は必要だが、料金徴収という形ではなく他の手段でのコストシェアを選好する』という一貫したPreferenceと整合的。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "通航料・補償料の恒常的受け入れ（国内外の政治コストが高い）"
+        ],
+        "persistent_preference_change": null,
+        "persistent_preference_evidence": [
+          {
+            "caveat": "サウジ単独の行動か、湾岸諸国全体のコンセンサスかは不明。",
+            "source": "本ケースの観測事実（湾岸諸国の反発）",
+            "claim_id": null,
+            "relevance": "安全保障は必要だが、通航料・補償料という形での明示的な料金徴収には強く抵抗する姿勢を示す。",
+            "evidence_id": null,
+            "date_or_period": "2026-07-13〜14",
+            "event_or_behavior": "ホルムズ海峡通航貨物の20％補償料構想に対し、湾岸諸国の一員として強く反発し、構想を1日で撤回に追い込んだ。",
+            "supports_or_contradicts": "supports"
+          }
+        ],
+        "strategic_relationship_preference": "米国との安全保障関係を維持しつつも、過度な従属や一方的な費用負担要求は避けたい。複数の安全保障・経済パートナー（中国等）とのバランスも志向。"
+      },
+      {
+        "actor": "United Arab Emirates",
+        "red_line": "ホルムズ海峡通航に対する高率料金徴収や、輸出路を一方的に制約する措置。",
+        "actor_ref": "UAE",
+        "entity_id": null,
+        "confidence": "中",
+        "formal_role": "湾岸産油国の一つとしてホルムズ海峡に依存しつつ、代替パイプライン整備などで依存度低減を図る主体。米国の安全保障提供の受益者・費用負担対象。",
+        "evidence_ids": null,
+        "decision_power": "サウジと同様に、料金構想への受容・拒否を通じて米国の構想の実現可能性を左右する。",
+        "driving_forces": [
+          {
+            "force": "輸出多様化ニーズ",
+            "direction": "supporting",
+            "description": "ホルムズ封鎖リスクを低減するため、迂回パイプライン整備を急ぐインセンティブ。"
+          }
+        ],
+        "ability_to_move": "代替パイプライン整備を加速し、ホルムズ依存度を下げることで、米国・イラン双方に対する脆弱性を低減しうる。",
+        "issue_objective": "ホルムズ海峡リスクを低減しつつ、輸出を維持・拡大すること。",
+        "observed_action": "ホルムズ海峡を迂回するパイプライン整備を加速し、20％補償料構想には湾岸諸国として反発した。",
+        "vulnerabilities": [
+          "依然として残るホルムズ依存部分",
+          "米国・地域大国との関係悪化リスク"
+        ],
+        "ability_to_block": "湾岸諸国の一員として、20％補償料構想に反発し、構想撤回に寄与する能力。",
+        "primary_audience": "米国・湾岸諸国・国際市場。",
+        "why_actor_matters": "UAEはホルムズ依存度を下げるインフラ投資を進めることで、米国・イラン双方からのLeverageを相対的に弱めうる数少ない湾岸主体の一つであり、米国の海軍プレゼンスを費用負担Leverageとしてどこまで効かせられるかに影響する。",
+        "available_leverage": [
+          "ホルムズ迂回パイプラインの整備・運用",
+          "対米投資・安全保障協力"
+        ],
+        "secondary_audience": null,
+        "ultimate_objective": "輸出路の多様化と安全保障の確保を両立し、地政学的リスクを低減すること。",
+        "persistent_preference": "ホルムズ依存度を下げるインフラ投資（西東パイプライン等）を通じて、海峡リスクを回避しようとする傾向があるとする仮説。",
+        "preference_action_gap": "安全保障依存とホルムズ迂回インフラ投資は一見矛盾するが、実際には『米国の安全保障を活用しつつ、長期的には依存度を下げる』という一貫したリスク分散戦略と整合的。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "高率通航料の恒常的受け入れ"
+        ],
+        "persistent_preference_change": null,
+        "persistent_preference_evidence": [
+          {
+            "caveat": "具体的な能力・時期は参照文書本文を要確認。",
+            "source": "\"UAE fast tracks second West-East oil pipeline to bypass Strait of Hormuz\"という参照文書タイトル",
+            "claim_id": null,
+            "relevance": "ホルムズ依存度を下げることで、海峡を巡るリスクと他国のLeverageを低減しようとする行動。",
+            "evidence_id": null,
+            "date_or_period": "不明（参照文書タイトルより）",
+            "event_or_behavior": "ホルムズ海峡を迂回する第二の西東パイプライン整備を加速している。",
+            "supports_or_contradicts": "supports"
+          }
+        ],
+        "strategic_relationship_preference": "米国との安全保障関係を維持しつつも、インフラ多様化により交渉力を高めたい。"
+      }
+    ],
+    "root_premise_check": null,
+    "additional_research": [
+      {
+        "question": "20％補償料構想の具体的内容と、撤回に至る政権内・同盟国とのやり取りはどうだったか。",
+        "related_hypothesis": "main",
+        "recommended_sources": "米政府高官のブリーフィング記録、主要紙の詳細報道、関係者インタビュー。"
+      },
+      {
+        "question": "撤回後に締結された対米投資協定・武器購入・基地負担の規模・条件は、従来と比べてどの程度変化したか。",
+        "related_hypothesis": "main / alternative1",
+        "recommended_sources": "公式協定文書、議会資料、防衛産業レポート。"
+      },
+      {
+        "question": "国際法・専門家コミュニティは、ホルムズ海峡での料金徴収構想をどのように評価しているか。",
+        "related_hypothesis": "main / alternative2",
+        "recommended_sources": "国際法学者の論文、シンクタンクレポート、国際会議の議事録。"
+      }
+    ],
+    "one_line_assessment": "as_of=2026-08末。2026年7月の「20％補償料」構想が1日で撤回された事実から見る限り、米国の海上安全保障プレゼンスは湾岸諸国に対する直接的な通航料・補償料徴収のLeverageとしては行使可能性が低く、現状の実効的なコストシェア手段は投資協定・武器購入・基地負担など間接チャネルに偏っているとみるのが主シナリオとして最も整合的。ただし、海軍プレゼンス自体の交渉力は依然大きく、設計次第では将来の多国間・低率スキームとして再浮上する余地も残る。",
+    "relevant_mechanisms": [],
+    "relevant_precedents": [],
+    "media_source_context": null,
+    "unknown_or_uncertain": "20％補償料構想の内部意図（本気で徴収するつもりだったのか、アンカリングだったのか）、撤回を主導した具体的なアクター、撤回後の投資協定・武器購入の実質的な増分など、Leverageの強さを評価するうえで重要な情報が現時点では不足している。",
+    "alternative_scenarios": [
+      {
+        "confidence": "低",
+        "description": "20％補償料構想は最初から本気で徴収する目的ではなく、湾岸諸国に対する交渉上の「高めのアンカー」や米国内向けパフォーマンスとして打ち上げられたものであり、1日で撤回されたこと自体がLeverageの弱さを示すわけではない。実際のLeverageは、投資協定や武器購入などを通じて静かに行使されており、海軍プレゼンスは依然として湾岸諸国に対する強力な交渉カードである。",
+        "switch_conditions": [
+          "上記のような内部証言と、実質的なコストシェア増加の両方が確認され、20％構想が成功裏のアンカリングとして機能したと評価できる場合。"
+        ],
+        "weakening_conditions": [
+          "内部証言で、20％構想が本気で実施を目指していたが、湾岸諸国の予想外の強い反発で頓挫したとされる。",
+          "撤回後の投資協定・武器購入が従来と大差ない規模にとどまり、実質的なコストシェア増が見られない。"
+        ],
+        "strengthening_conditions": [
+          "政権内部の証言や報道で、20％という数字が意図的な『高めのアンカー』として設定され、最初から撤回・修正を前提としていたことが示される。",
+          "撤回後に締結された対米投資協定・武器購入・基地負担が、従来水準を大きく上回る規模・条件となっていることが確認される。"
+        ]
+      },
+      {
+        "confidence": "判断不能",
+        "description": "20％補償料構想の失敗は一時的なものであり、今後米国が政権交代や国際環境の変化を背景に、より低率かつ多国間枠組み（例：NATO型の分担金）として再設計することで、海上安全保障プレゼンスを費用負担要求の実効的Leverageへと再構築する。",
+        "switch_conditions": [
+          "実際にホルムズ海峡に関する多国間分担金スキームが合意・実施され、米国が安定的な費用負担を引き出していることが確認される。"
+        ],
+        "weakening_conditions": [
+          "主要国・国際機関が、国際海峡での料金徴収に一貫して否定的な立場を維持し、制度化の動きが見られない。",
+          "湾岸諸国がホルムズ依存度低減（パイプライン等）を進め、料金スキームのインセンティブが低下する。"
+        ],
+        "strengthening_conditions": [
+          "ホルムズ海峡の安全保障費用分担を議題とする多国間協議（米国・湾岸諸国・主要輸入国・国際機関）が立ち上がる。",
+          "国際法・専門家コミュニティで、低率・多国間・透明な枠組みであれば国際海峡での費用分担が正当化可能との議論が主流化する。"
+        ]
+      }
+    ],
+    "monitoring_indicators": [
+      "ホルムズ海峡に関する米国の新たな料金・補償料構想の有無と内容。",
+      "米国と湾岸諸国の間で締結される対米投資協定・武器購入・基地負担協定の規模・条件の変化。",
+      "UAEなどによるホルムズ迂回パイプライン・代替ルート整備の進捗。",
+      "国際法・専門家コミュニティにおけるホルムズ海峡料金徴収構想への評価の変化。"
+    ],
+    "retraction_conditions": [
+      "20％構想が意図的なアンカリングであり、撤回後に湾岸諸国が実質的に大幅なコストシェアを受け入れたことを示す強い証拠が出る。",
+      "ホルムズ海峡に関する新たな多国間料金・分担金スキームが実際に導入され、米国がそれを通じて安定的な費用負担を引き出していることが確認される。"
+    ],
+    "sources_and_citations": [
+      {
+        "result_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "5c99bd85-72e8-4278-b431-2c96595a8533",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+        "result_type": "document",
+        "citation_label": null
+      }
+    ],
+    "weakening_information": "20％構想撤回後の対米投資協定・武器購入・基地負担の実態が、従来と比べてほとんど増加していない、あるいは湾岸側に有利な条件であることが判明すれば、『間接チャネルで静かにLeverageが行使されている』という前提が弱まる。",
+    "contradicting_evidence": [
+      "政権内部の証言や報道で、20％構想が最初から『引き下げ前提の交渉用アンカー』として設計されていたとされる情報。",
+      "20％構想撤回後に締結された対米投資協定や武器購入契約が、過去と比べて顕著に増加しており、湾岸諸国が実質的に高いコストシェアを受け入れていることを示すデータ。",
+      "国際法・専門家コミュニティの中に、ホルムズ海峡での料金徴収を一定条件下で正当化する有力な見解が存在する場合。"
+    ],
+    "identified_knowledge_gaps": [
+      {
+        "priority": "高",
+        "description": "20％補償料構想の具体的な設計（対象貨物、徴収主体、法的根拠、期間など）。",
+        "gap_category": "deterministic",
+        "recommended_action": "当該構想に関する公式文書・発表・信頼できる報道を確認する。"
+      },
+      {
+        "priority": "高",
+        "description": "構想撤回の内部プロセス（誰がどのような理由で撤回を主導したか）。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "政権内関係者の証言や詳細報道、専門家分析を収集し、同盟管理・国内政治・国際法懸念などの要因を切り分ける。"
+      },
+      {
+        "priority": "中",
+        "description": "湾岸諸国（サウジ、UAE、カタール等）それぞれの公式反応と、国内政治・エネルギー政策上の位置づけ。",
+        "gap_category": "deterministic",
+        "recommended_action": "各国政府声明・議会発言・主要メディア論調を整理し、料金徴収に対するレッドラインを具体化する。"
+      },
+      {
+        "priority": "中",
+        "description": "対米投資協定枠組みへの切り替え内容（投資額、分野、安全保障とのリンク）。",
+        "gap_category": "deterministic",
+        "recommended_action": "投資協定の概要・条項を確認し、実質的なコストシェアの規模と性質を把握する。"
+      },
+      {
+        "priority": "中",
+        "description": "他の国際海峡（マラッカ、スエズ等）での料金徴収・安全保障費用分担の先例と国際法上の扱い。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "国際海洋法・海峡通航に関する専門文献・判例を参照し、ホルムズでの料金徴収がどの程度前例外れかを評価する。"
+      }
+    ],
+    "knowledge_gaps_referenced": [],
+    "strongest_counterargument": "20％補償料構想は、最初から本気で徴収するつもりのない「高めのアンカー」であり、1日で撤回されたのはLeverageの弱さではなく、交渉上の予定された調整に過ぎない。実際には、湾岸諸国はその後の投資協定・武器購入・基地負担などを通じて実質的なコストシェアを大幅に引き上げており、海軍プレゼンスは依然として強力な交渉カードとして機能している可能性がある。",
+    "key_stakeholder_assessment": {
+      "rationale": "ホルムズ海峡の海上安全保障プレゼンスをLeverageとして費用負担を求める構図では、(1)実際に海軍プレゼンスを提供し、補償料構想を打ち上げた米国（トランプ政権）が交渉の起点となる一方、(2)輸出路をホルムズに依存し、費用負担要求の主要な対象となるサウジアラビア、UAEなど湾岸産油国が強い拒否権を持つ。米国単独では料金徴収スキームを持続できず、湾岸側の政治的受容性がなければ成立しないため、Key Stakeholderは米国と主要湾岸産油国の複数主体とみなすのが妥当。",
+      "confidence": "中",
+      "evidence_ids": null,
+      "determination": "multiple",
+      "decision_structure": "米国（大統領・政権中枢）が料金構想を提示しうるが、サウジ・UAEなど主要湾岸産油国が強く反発すれば、構想は短期間で撤回に追い込まれる。制度上の最終決定権は米国側にあるように見えても、実務上の持続可能性は湾岸側の受容性に依存する分散構造。",
+      "selected_actor_ids": [
+        "US",
+        "SAUDI",
+        "UAE"
+      ]
+    },
+    "decisive_power_and_leverage": "このテーマに関して結果を決定づける力は、単独の一国ではなく、(1)ホルムズ海峡の安全保障を実力で提供できる米国（海軍プレゼンス・制裁・封鎖解除能力）と、(2)輸出路をホルムズに依存し、米国のプレゼンスを必要としつつも料金徴収に拒否権を持つ主要湾岸産油国（サウジアラビア、UAE、カタール等）の組み合わせにある。米国は「守らない」という脅しを理論上持つが、湾岸側の強い政治的拒否と国際的な制度・前例への懸念が、通航料・補償料という形でのLeverage行使を実務上大きく制約している。",
+    "assets_dependencies_leverage": [
+      {
+        "kind": "dependency",
+        "summary": "サウジアラビアを含む湾岸産油国は原油輸出のほぼ全量をホルムズ海峡経由の海上輸送に依存しており、通航妨害・料金賦課は輸出収入へ直接的な打撃となる"
+      }
+    ],
+    "preference_action_gap_summary": "米国（トランプ政権）は安全保障コストの増分担を求めるPersistent Preferenceを持つとみられるが、20％補償料構想を1日で撤回したことから、強硬な直接課金よりも同盟管理・外交コスト回避を優先せざるを得ない制約が明らかになった。一方、サウジ・UAEなど湾岸諸国は安全保障依存と料金徴収拒否を両立させており、『安全保障は必要だが、通航料という形ではなく他の手段でのコストシェアを選好する』という一貫したPreferenceを示している。結果として、「海軍プレゼンス＝通航料徴収の強力なLeverage」という単純な構図は成立していない。"
+  },
+  "key_stakeholder_assessment": {
+    "rationale": "ホルムズ海峡の海上安全保障プレゼンスをLeverageとして費用負担を求める構図では、(1)実際に海軍プレゼンスを提供し、補償料構想を打ち上げた米国（トランプ政権）が交渉の起点となる一方、(2)輸出路をホルムズに依存し、費用負担要求の主要な対象となるサウジアラビア、UAEなど湾岸産油国が強い拒否権を持つ。米国単独では料金徴収スキームを持続できず、湾岸側の政治的受容性がなければ成立しないため、Key Stakeholderは米国と主要湾岸産油国の複数主体とみなすのが妥当。",
+    "confidence": "中",
+    "evidence_ids": null,
+    "determination": "multiple",
+    "decision_structure": "米国（大統領・政権中枢）が料金構想を提示しうるが、サウジ・UAEなど主要湾岸産油国が強く反発すれば、構想は短期間で撤回に追い込まれる。制度上の最終決定権は米国側にあるように見えても、実務上の持続可能性は湾岸側の受容性に依存する分散構造。",
+    "selected_actor_ids": [
+      "US",
+      "SAUDI",
+      "UAE"
+    ]
+  },
+  "main_scenario": {
+    "confidence": "中",
+    "assumptions": [
+      "湾岸諸国の反発は一時的な感情的反応ではなく、主権・前例・経済への構造的懸念に根ざしている。",
+      "米国政権は、ホルムズ海峡での料金徴収が他海峡への前例となる国際的コストを認識している。",
+      "対米投資協定・武器購入・基地負担など既存のコストシェア手段が、米国にとって一定程度満足できる代替となっている。"
+    ],
+    "description": "米国の海上安全保障プレゼンスは、湾岸諸国への費用負担要求のLeverageとして「理論上は」存在するものの、2026年7月の20％補償料構想が湾岸諸国の反発で1日で撤回された事実が示すように、通航料・補償料という直接的な形での行使は政治・外交コストが極めて高く、現状では行使可能性の低いカードにとどまっている。実務的なコストシェアは、対米投資協定、武器購入、基地負担など、より間接的で政治的に受け入れやすい形が主なチャンネルとなっており、「海軍プレゼンス＝即、通航料徴収の交渉力」という構図は成立していない。",
+    "selection_rationale": "このシナリオは、(1)20％補償料構想の極端な短命性、(2)撤回後に選ばれた対米投資協定という代替スキーム、(3)湾岸諸国の輸出依存と料金徴収への強い拒否、という観測事実を最も少ない追加仮定で説明できる。米国の安全保障プレゼンスが理論上のLeverageであることは否定せずつつも、その行使形態が直接課金ではなく間接的なコストシェアに限定されているという点で、他の仮説よりも現実の行動と整合的である。",
+    "supporting_evidence": [
+      "20％補償料構想が湾岸諸国の反発により1日で撤回されたという観測事実。",
+      "撤回後、より通常型の対米投資協定枠組みに切り替えられたこと。",
+      "湾岸産油国がホルムズ海峡経由の輸出に依存しつつも、通航料・補償料という形での明示的な料金徴収には強く反発したこと。",
+      "国際海峡での高率通航料徴収が他海峡への前例となりうるため、国際法・制度上の懸念が大きいと推測されること。"
+    ],
+    "observable_indicators": [
+      "今後、米国がホルムズ海峡に関して通航料・補償料の再提案を控え、代わりに投資・武器購入・基地負担などを通じたコストシェア要求を強調するか。",
+      "湾岸諸国の公式発言・協定文書において、通航料・補償料ではなく投資・防衛協力が安全保障コスト分担の主要手段として位置づけられるか。",
+      "国際法・専門家コミュニティで、ホルムズ海峡での料金徴収構想が否定的に評価され続けるか。"
+    ]
+  },
+  "alternative_scenarios": [
+    {
+      "confidence": "低",
+      "description": "20％補償料構想は最初から本気で徴収する目的ではなく、湾岸諸国に対する交渉上の「高めのアンカー」や米国内向けパフォーマンスとして打ち上げられたものであり、1日で撤回されたこと自体がLeverageの弱さを示すわけではない。実際のLeverageは、投資協定や武器購入などを通じて静かに行使されており、海軍プレゼンスは依然として湾岸諸国に対する強力な交渉カードである。",
+      "switch_conditions": [
+        "上記のような内部証言と、実質的なコストシェア増加の両方が確認され、20％構想が成功裏のアンカリングとして機能したと評価できる場合。"
+      ],
+      "weakening_conditions": [
+        "内部証言で、20％構想が本気で実施を目指していたが、湾岸諸国の予想外の強い反発で頓挫したとされる。",
+        "撤回後の投資協定・武器購入が従来と大差ない規模にとどまり、実質的なコストシェア増が見られない。"
+      ],
+      "strengthening_conditions": [
+        "政権内部の証言や報道で、20％という数字が意図的な『高めのアンカー』として設定され、最初から撤回・修正を前提としていたことが示される。",
+        "撤回後に締結された対米投資協定・武器購入・基地負担が、従来水準を大きく上回る規模・条件となっていることが確認される。"
+      ]
+    },
+    {
+      "confidence": "判断不能",
+      "description": "20％補償料構想の失敗は一時的なものであり、今後米国が政権交代や国際環境の変化を背景に、より低率かつ多国間枠組み（例：NATO型の分担金）として再設計することで、海上安全保障プレゼンスを費用負担要求の実効的Leverageへと再構築する。",
+      "switch_conditions": [
+        "実際にホルムズ海峡に関する多国間分担金スキームが合意・実施され、米国が安定的な費用負担を引き出していることが確認される。"
+      ],
+      "weakening_conditions": [
+        "主要国・国際機関が、国際海峡での料金徴収に一貫して否定的な立場を維持し、制度化の動きが見られない。",
+        "湾岸諸国がホルムズ依存度低減（パイプライン等）を進め、料金スキームのインセンティブが低下する。"
+      ],
+      "strengthening_conditions": [
+        "ホルムズ海峡の安全保障費用分担を議題とする多国間協議（米国・湾岸諸国・主要輸入国・国際機関）が立ち上がる。",
+        "国際法・専門家コミュニティで、低率・多国間・透明な枠組みであれば国際海峡での費用分担が正当化可能との議論が主流化する。"
+      ]
+    }
+  ],
+  "additional_research": [
+    {
+      "question": "20％補償料構想の具体的内容と、撤回に至る政権内・同盟国とのやり取りはどうだったか。",
+      "related_hypothesis": "main",
+      "recommended_sources": "米政府高官のブリーフィング記録、主要紙の詳細報道、関係者インタビュー。"
+    },
+    {
+      "question": "撤回後に締結された対米投資協定・武器購入・基地負担の規模・条件は、従来と比べてどの程度変化したか。",
+      "related_hypothesis": "main / alternative1",
+      "recommended_sources": "公式協定文書、議会資料、防衛産業レポート。"
+    },
+    {
+      "question": "国際法・専門家コミュニティは、ホルムズ海峡での料金徴収構想をどのように評価しているか。",
+      "related_hypothesis": "main / alternative2",
+      "recommended_sources": "国際法学者の論文、シンクタンクレポート、国際会議の議事録。"
+    }
+  ],
+  "media_source_context": {
+    "media_editorial_context": null,
+    "narrative_deviation": null,
+    "source_of_sources_note": null
+  },
+  "quality_evaluation": {
+    "evaluation_id": "e6717124-6830-40c1-ba47-5b8f13a8fd98",
+    "response_id": "ccf37d24-c15a-4019-9d3b-e3fb2bcbebc8",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: United States（トランプ政権）, Saudi Arabia, United Arab Emirates",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 9,
+    "failed_count": 2,
+    "created_at": "2026-08-30T06:00:55.703982+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 56444,
+    "completion_tokens": 11843,
+    "total_tokens": 68287
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 94422,
+        "prompt_tokens": 24603,
+        "completion_tokens": 10101
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 16125,
+        "prompt_tokens": 31841,
+        "completion_tokens": 1742
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: United States（トランプ政権）, Saudi Arabia, United Arab Emirates"
+      }
+    ]
+  },
+  "actor_intelligence_block_text": "",
+  "actor_intelligence_pack_raw": null,
+  "captured_at_utc": "2026-08-30T06:00:56Z",
+  "note": "Session2 Reasoning Upgrade Phase0 Before-AI capture. Golden Case Expert Judgment provenanceは2026-08-30時点で未作成(ユーザーが後回しと判断)。本レコードはBefore AI応答の先行保存であり、Golden Case Rubric比較自体は未確定(暫定)。"
+}

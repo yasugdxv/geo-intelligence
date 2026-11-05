@@ -10,7 +10,6 @@ import {
   Home,
   Inbox,
   LayoutGrid,
-  Leaf,
   MessageSquare,
   Newspaper,
   Radar,
@@ -78,6 +77,7 @@ const GEO_KNOWLEDGE_ROUTES = [
   { key: "nav.geoSourcesDB", url: "/geo/source-library", icon: Database },
   { key: "nav.geoReportKnowledgeDB", url: "/geo/knowledge-search", icon: BookOpen },
   { key: "nav.geoIntelligenceNeeds", url: "/geo/intelligence-needs", icon: Inbox },
+  { key: "nav.geoKnowledgeIntake", url: "/geo/knowledge-intake", icon: Sparkles },
 ] as const;
 
 const GEO_EXTERNAL_NETWORK_ROUTES = [
@@ -112,11 +112,9 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarHeader className="px-4 pt-5 pb-3">
         <Link to="/geo" className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-sidebar-primary text-sidebar-primary-foreground">
-            <Leaf className="h-4.5 w-4.5" strokeWidth={2.2} />
-          </div>
+          <img src="/meridian-192.png" alt="Meridian" className="h-9 w-9 shrink-0 rounded-md" />
           <div className="flex flex-col leading-tight group-data-[collapsible=icon]:hidden">
-            <span className="text-editorial text-lg text-sidebar-foreground">Verdant</span>
+            <span className="text-editorial text-lg text-sidebar-foreground">Meridian</span>
             <span className="text-[10px] uppercase tracking-[0.18em] text-sidebar-foreground/60">
               Geopolitical Intelligence
             </span>

@@ -1,0 +1,1179 @@
+{
+  "request": {
+    "request_id": "6546be45-4f0a-483f-aa6f-13aa87965b1c",
+    "theme_id": null,
+    "case_id": "c3b7a640-5b03-4c44-9f71-0b8f9a56cffc",
+    "mode": "case_analysis",
+    "profile": "deep",
+    "query_text": "ネタニヤフの現在のIran・Gaza政策について、主要な目的、制約、意思決定力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-01T08:20:22.800765+00:00",
+    "run_config": {
+      "actor_profile_lookup_statuses": [
+        "active",
+        "candidate"
+      ],
+      "actor_profile_retrieval_status": null,
+      "candidate_snapshot_mode": "test-mode: active+candidate, retrieval_status unrestricted (matches Neutral v3)",
+      "actor_intelligence_enabled": true,
+      "media_intelligence_enabled": false,
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "fingerprints": {
+        "geo_expert_engine.py": "582aa324c7971b73",
+        "geo_expert_schema.py": "358640565bdd689c",
+        "geo_expert_quality_guard.py": "c8cbb2ecf9c21c29",
+        "geo_actor_intelligence_service.py": "a4728e75b6b9c3ab",
+        "geo_media_intelligence_service.py": "aa61f22f460b32a5",
+        "geo_knowledge_item_schemas.py": "5ab8d2935eebf4b7",
+        "schemas/geo_expert_ai_response.schema.json": "77a892d2bd1f777f",
+        "geo_persistent_preference_service.py": "47e2b31ccec1b1c5",
+        "geo_foundation_pack_service.py": "11dd58266c423f91"
+      },
+      "case_as_of_dates": {
+        "case1_trump_xi": "2026-08-31",
+        "case2_putin": "2026-08-31",
+        "case3_netanyahu": "2026-08-31",
+        "case4_mbs": "2026-08-31",
+        "case5_kim": "2026-08-31"
+      }
+    }
+  },
+  "source_pack": {
+    "source_pack_id": "222f8d99-dcae-4227-959e-6c14dd768439",
+    "request_id": "b26b3d96-1872-44b1-abc6-d1bcfa95ef3c",
+    "document_ids": [
+      "69e8064f-b236-42e8-89b1-e92a4c866987",
+      "e2fed736-6330-4d6c-83bf-740800dab58c",
+      "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+      "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+      "eba1d367-ab95-41c6-bebd-53a53903bd58",
+      "609a1837-e29b-4215-9660-93d1f96f8ebe",
+      "50a2a155-3437-46db-8cc3-5ea55b08a385",
+      "62010532-a2fc-4f6d-8384-4ab94401e852",
+      "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+      "b47f3ca0-a472-46ed-8031-a43590d9562a"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-09-01T08:20:19.286173+00:00"
+  },
+  "response": {
+    "response_id": "3e8cd816-ef16-4060-876d-64c7f87f3114",
+    "request_id": "b26b3d96-1872-44b1-abc6-d1bcfa95ef3c",
+    "source_pack_id": "222f8d99-dcae-4227-959e-6c14dd768439",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "Iranはホルムズ海峡に対し、IRGCによる機雷敷設・武装スピードボート・沿岸ミサイルを用いた実効的な航行妨害能力を持ち、2026年3月以降、実際に行使して海峡を封鎖した実績がある。",
+          "claim_type": "fact",
+          "source_ref": "Asset:Iran:strait_canal_control"
+        },
+        {
+          "text": "IranとUnited Statesの関係は、2026年2月開戦・4月停戦後も、ホルムズ海峡の扱いを巡り軍事的緊張が継続している。",
+          "claim_type": "fact",
+          "source_ref": "Relationship:Iran→United States:active_conflict_ceasefire"
+        },
+        {
+          "text": "Chinaは停戦の隙間期間に割引されたイラン産原油を大量調達しており、イランにとって数少ない安定した石油輸出先となっている。",
+          "claim_type": "fact",
+          "source_ref": "Relationship:China→Iran:major_oil_buyer_discount_purchaser"
+        },
+        {
+          "text": "オマーンはホルムズ海峡将来管理を巡るイランの直接交渉相手・仲介役を務めている。",
+          "claim_type": "fact",
+          "source_ref": "Relationship:Iran→Oman:mediation_negotiation_channel"
+        },
+        {
+          "text": "ネタニヤフは2015年の米政権の対イラン外交や2024年のICC逮捕状に対し、正当性を認めない立場を繰り返し表明してきた。",
+          "claim_type": "official_claim",
+          "source_ref": "ActorIntelligence:BenjaminNetanyahu:persistent_preference"
+        },
+        {
+          "text": "ネタニヤフは2020年のアブラハム合意の際、自らの連立の核心公約であったヨルダン川西岸併合を取引材料として柔軟に扱った。",
+          "claim_type": "observation",
+          "source_ref": "ActorIntelligence:BenjaminNetanyahu:persistent_preference"
+        },
+        {
+          "text": "ネタニヤフは2023年10月7日の安全保障上の重大な失敗後も、イスラエルが1973年戦争後に設置したアグラナト委員会のような独立調査委員会の設置を数年間回避し続けている。",
+          "claim_type": "observation",
+          "source_ref": "ActorIntelligence:BenjaminNetanyahu:persistent_preference"
+        },
+        {
+          "text": "ネタニヤフは、国際司法機関や一部の同盟国政府が主導するプロセスを自らの正当性を脅かすものと見なし、これらに対しては原則として非協力・不承認で臨む傾向がある。",
+          "claim_type": "inference",
+          "source_ref": "ActorIntelligence:BenjaminNetanyahu:decision_pattern"
+        },
+        {
+          "text": "ネタニヤフの現在の対イラン政策の主目的は、イランの核・ミサイル・代理勢力能力を完全に除去することではなく、イスラエル本土と主要インフラへの直接的脅威を抑止・管理可能な水準に保ちつつ、自身の政権生存と国内政治上の主導権を維持することにある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "ガザにおけるネタニヤフの政策は、ハマスの軍事能力を大幅に削ぐことと、イスラエル国内の右派・宗教政党の支持を維持することを優先し、長期的なガザ統治モデルやパレスチナ国家構想については意図的に曖昧さを残している。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "イランのホルムズ海峡封鎖能力と、米・イラン間の緊張継続は、ネタニヤフにとって対イラン強硬姿勢を正当化する外部環境として利用されている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "例えば、イランがホルムズ海峡での妨害行為を強める一方で、イスラエル本土への直接攻撃を控える場合、ネタニヤフは米国や湾岸諸国との協調を維持しつつ、イランの地域影響力を抑え込むための限定的な軍事・情報作戦を継続するシナリオが考えられる。",
+          "claim_type": "illustration",
+          "source_ref": null
+        }
+      ],
+      "dynamics": null,
+      "stakeholders": [
+        {
+          "actor": "Benjamin Netanyahu",
+          "purpose": "自身と連立政権の生存と、イスラエルの安全保障上の優位（特にイラン・ハマス・ヒズボラなどからの存在論的脅威の抑止）を維持すること。",
+          "leverage": "連立パートナー（極右・宗教政党）、国内世論と安全保障不安",
+          "position": "対イランではイランの核・ミサイル・代理勢力能力を抑止・遅延させること、対ガザではハマスの軍事能力を大幅に削ぎ、イスラエル国内の右派支持基盤を維持すること。",
+          "red_lines": "イランやハマスがイスラエル本土への大規模攻撃を行い、政権の存続が直接脅かされる事態。国際司法プロセスを通じて自身が拘束されるリスクもレッドラインに近い。",
+          "confidence": "中",
+          "constraints_fears": "米国の軍事・外交支援、国際司法・国際世論",
+          "ability_to_move_or_block": "対ガザ作戦の強度・タイミング、対イランに対する限定的な軍事・情報作戦、外交的なメッセージングを主導できる。"
+        },
+        {
+          "actor": "Iran（国家としてのイラン）",
+          "purpose": null,
+          "leverage": "IRGCと安全保障機構",
+          "position": null,
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": "中国など主要原油購入国",
+          "ability_to_move_or_block": "ホルムズ海峡での妨害行為の強度を調整し、米国・同盟国への圧力を高めたり緩めたりできる。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "イランがホルムズ海峡妨害能力を維持し続けること",
+          "米国が対イラン・対ガザでイスラエルへの支援を続けつつも、全面戦争には慎重であること",
+          "ネタニヤフが短期的には政権を維持し続けること"
+        ],
+        "description": "ネタニヤフの現在の対イラン・対ガザ政策は、イランのホルムズ海峡妨害能力と米・イラン間の緊張という構造的制約の下で、(1) イランの核・ミサイル・代理勢力能力を抑止・遅延させるための限定的な軍事・情報作戦と強硬なレトリックを維持しつつ、(2) ガザではハマスの軍事能力を大幅に削ぎ、国内右派支持基盤を維持するための長期作戦を続け、(3) 国際司法・同盟プロセスへの不承認を貫きながら、自身の法的リスクと政権生存を守る、という三重の目的を同時に追求している。全面的な対イラン戦争やガザでの完全な政治解決には踏み込まず、構造的制約と国内政治の間で「管理されたエスカレーション」を続ける方向性が主シナリオとして最も整合的である。",
+        "evidence_class": "structural_reference",
+        "selection_rationale": "このシナリオは、(1) イランの構造的レバレッジ（ホルムズ海峡）と米・イラン緊張という外部制約、(2) ネタニヤフのPersistent Preference（国際司法・同盟プロセスへの不承認と実利的取引志向）、(3) ガザでの長期作戦と国内政治の制約、という複数の観測を最も少ない追加仮定で説明できる。全面戦争や即時停戦を前提とするシナリオよりも、現在の制約と行動パターンに整合的である。",
+        "supporting_evidence": [
+          "Asset:Iran:strait_canal_control",
+          "Relationship:Iran→United States:active_conflict_ceasefire",
+          "Relationship:China→Iran:major_oil_buyer_discount_purchaser",
+          "Relationship:Iran→Oman:mediation_negotiation_channel",
+          "ActorIntelligence:BenjaminNetanyahu:persistent_preference",
+          "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+        ],
+        "observable_indicators": [
+          "ホルムズ海峡でのイランによる妨害行為の頻度・強度",
+          "米国による対イスラエル軍事支援の条件や制約に関する発言・措置",
+          "イスラエル国内での独立調査委員会設置に関する議論の進展",
+          "ガザでの作戦強度と停戦交渉の進展状況"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": false,
+            "description": "1973年戦争後のアグラナト委員会と現在の説明責任回避の対比",
+            "same_domain": true,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": false,
+            "analogy_source_precedent_id": null,
+            "same_institutional_structure": true
+          }
+        ],
+        "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "ホルムズ海峡を巡るイランの妨害能力と米・イラン緊張が続く限り、エネルギー価格・海上輸送コストの変動リスクが高まり、エネルギー多消費産業や海上輸送依存の高いサプライチェーンに間接的な影響が及ぶ可能性がある。",
+        "unrelated_note": null,
+        "environment_change": "中東の安全保障構造と国際司法・制裁プロセスの政治化が進むことで、企業にとってはエネルギー調達・物流・コンプライアンス（制裁・人権・国際人道法）に関する前提が変化し得る。"
+      },
+      "initial_anomaly": "イスラエルにとって存在論的な脅威であるイランとの軍事・核対立が続く中で、ネタニヤフは2023年10月7日の大失敗後も、1973年戦争後のアグラナト委員会のような独立調査を回避しつつ政権を維持している点が通常パターンから外れている。安全保障上の大失策の後であれば、通常は国内の説明責任と対外抑止の両立を図るが、彼は前者を極力先送りしつつ後者（対イラン・対ガザでの強硬姿勢）を維持している。",
+      "review_findings": null,
+      "audience_analysis": null,
+      "executive_summary": {
+        "what_changed": "イランのホルムズ海峡妨害能力が実際に行使され、米・イラン間の緊張が継続する中で、ネタニヤフの対イラン・対ガザ政策は、従来以上に構造的制約（エネルギー市場・米国の関与）に縛られつつも、国際司法・同盟プロセスへの不承認と国内政治の制約の下で「管理されたエスカレーション」を続けていると読む必要が出てきた。",
+        "why_it_matters": "ホルムズ海峡を巡る構造的リスクと、イスラエルの対イラン・対ガザ政策の方向性は、エネルギー価格・海上輸送・制裁・国際司法リスクを通じて企業のサプライチェーンとコンプライアンスに中期的な影響を与え得る。",
+        "what_to_watch_decide": "ホルムズ海峡での妨害行為の動向、米国の対イラン・対ガザ政策のレッドライン、イスラエル国内の政権安定性と説明責任プロセスの進展をモニタリングし、エネルギー調達・物流ルート・制裁コンプライアンスの前提を随時見直す必要がある。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Benjamin Netanyahu",
+          "red_line": "イランやハマスがイスラエル本土への大規模攻撃を行い、政権の存続が直接脅かされる事態。国際司法プロセスを通じて自身が拘束されるリスクもレッドラインに近い。",
+          "actor_ref": "netanyahu",
+          "entity_id": "585cc564-5a71-40ac-959b-3995d3a409c8",
+          "confidence": "低",
+          "formal_role": "イスラエル首相（戦時内閣の中心）",
+          "evidence_ids": null,
+          "decision_power": "国家安全保障政策・対イラン・対ガザ軍事作戦に関する最終的な政治責任と大きな裁量を持つが、連立パートナーと米国の支援に依存。",
+          "driving_forces": [
+            {
+              "force": "連立パートナー（極右・宗教政党）",
+              "direction": "supporting",
+              "description": "強硬な対ガザ・対イラン姿勢を支持し、譲歩を抑制する圧力となる。"
+            },
+            {
+              "force": "米国の軍事・外交支援",
+              "direction": "constraining",
+              "description": "イスラエルの軍事行動の上限を事実上設定し、特に対イランでの全面戦争を抑制する。"
+            },
+            {
+              "force": "国際司法・国際世論",
+              "direction": "constraining",
+              "description": "ICCや国連などのプロセスが、ガザでの作戦継続に対する法的・ reputational コストを高めている。"
+            },
+            {
+              "force": "国内世論と安全保障不安",
+              "direction": "supporting",
+              "description": "10月7日以降の安全保障不安が、強硬姿勢への支持を一定程度支えている一方、長期戦への疲労も蓄積している可能性がある。"
+            }
+          ],
+          "ability_to_move": "対ガザ作戦の強度・タイミング、対イランに対する限定的な軍事・情報作戦、外交的なメッセージングを主導できる。",
+          "issue_objective": "対イランではイランの核・ミサイル・代理勢力能力を抑止・遅延させること、対ガザではハマスの軍事能力を大幅に削ぎ、イスラエル国内の右派支持基盤を維持すること。",
+          "observed_action": "ICCや国連などの国際プロセスに対する強い反発、国内独立調査委員会の先送り、対ガザでの長期にわたる軍事作戦継続、対イランに対する強硬なレトリックと限定的な軍事・情報作戦。",
+          "vulnerabilities": [
+            "ICCなど国際司法プロセスによる個人的な法的リスク",
+            "10月7日失策に対する国内の説明責任要求",
+            "米国支援への高い依存度",
+            "連立パートナーの離反リスク"
+          ],
+          "ability_to_block": "国際的な停戦・調停プロセスへの完全な参加や、国内独立調査委員会の設置を先送りすることで、説明責任や政策転換を事実上ブロックしている。",
+          "primary_audience": "イスラエル国内の右派・宗教政党支持層と連立パートナー",
+          "why_actor_matters": "ネタニヤフはイスラエルの対イラン・対ガザ政策における中心的な政治決定者であり、国際司法プロセスへの不承認と実利的取引の両方を使い分けるパターンを持つため、現在の政策の方向性と限界を読む上で不可欠なActorである。",
+          "available_leverage": [
+            "対ガザ・対イランに対する軍事・情報作戦の指揮権",
+            "米国との安全保障関係を通じた外交レバレッジ",
+            "アブラハム合意型の地域外交カード"
+          ],
+          "secondary_audience": "米国政府・議会、アラブ諸国、イラン・ハマスなどの敵対勢力",
+          "ultimate_objective": "自身と連立政権の生存と、イスラエルの安全保障上の優位（特にイラン・ハマス・ヒズボラなどからの存在論的脅威の抑止）を維持すること。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "現時点の資料では、戦時内閣内の権力配分や軍・司法の影響力の詳細が不足しており、ネタニヤフ個人のパターンがどこまで支配的か判断できない。",
+            "challenge_question": "もしネタニヤフが国内政治的に極端に弱体化し、戦時内閣や軍・司法が実質的な決定権を握る状況になった場合、既存のActor Intelligence（ネタニヤフ中心モデル）はどこまで適用できるか"
+          },
+          "persistent_preference": "正当性を認めない国際・同盟プロセスには一貫して非妥協的だが、実利的な取引の機会があれば連立の核心公約さえ取引材料として柔軟に扱う。",
+          "preference_action_gap": "安全保障上の重大な失敗後であれば、通常は独立調査委員会を設置し説明責任を果たすことが、長期的な抑止力と同盟国の信頼維持に資する。しかしネタニヤフはこれを先送りし、対外的な強硬姿勢を維持している。このギャップは、国内政治（連立維持・個人の法的リスク回避）と国際司法プロセスへの不信が、伝統的なイスラエルの説明責任文化よりも優先されているためと推測される。",
+          "relevant_decision_patterns": [
+            "正当性を認めない国際・同盟プロセスへは一貫して非妥協的な不承認姿勢を取る",
+            "実利的な取引の機会が生じた場合、自らの連立の核心公約さえ取引材料として柔軟に扱う"
+          ],
+          "unavailable_or_costly_cards": [
+            "全面的な対イラン戦争（ホルムズ海峡封鎖と世界経済への打撃を招く可能性が高く、米国の支持も得にくい）",
+            "ICCや国連プロセスへの全面協力（自身の法的リスクを高める）"
+          ],
+          "confidence_adjustment_reason": "actor_intelligence_provenance.general_knowledge_used=true and this case has no current-case evidence_ids backing the assessment; confidence capped at low per the P0-1 General Knowledge Confidence Cap (a model-general-knowledge-only actor assumption must not be promoted to medium/high confidence).",
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [
+              "netanyahu_pattern_reject_illegitimate_process",
+              "netanyahu_pattern_tactical_flexibility_when_beneficial"
+            ],
+            "profile_source": "actor_intelligence_candidate",
+            "exception_episode_ids": [
+              "025b585d-fa3d-4944-9d4f-548b167569ff"
+            ],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "9fbfbc49-f321-412b-afbf-485badeaf0d7",
+              "ca89a713-a739-4b4e-803a-cb8fa7a4858f"
+            ],
+            "supporting_evidence_ids": [
+              "ActorIntelligence:BenjaminNetanyahu:persistent_preference"
+            ],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "詳細な一次資料は本ケースでは未参照",
+              "source": "Actor Intelligence Pack要約",
+              "claim_id": null,
+              "relevance": "対イラン外交プロセスへの不承認",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "2015年の米政権の対イラン外交（核合意）に対する米議会演説などを通じた強い反対と不承認姿勢",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": null,
+              "source": "Actor Intelligence Pack要約",
+              "claim_id": null,
+              "relevance": "実利的取引のために核心公約を柔軟に扱った例",
+              "evidence_id": null,
+              "date_or_period": "2020",
+              "event_or_behavior": "2020年アブラハム合意でヨルダン川西岸併合を事実上棚上げし、アラブ諸国との関係正常化を優先",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": null,
+              "source": "Actor Intelligence Pack",
+              "claim_id": "9fbfbc49-f321-412b-afbf-485badeaf0d7",
+              "relevance": "国際司法プロセスの正当性を認めない姿勢",
+              "evidence_id": null,
+              "date_or_period": "2024",
+              "event_or_behavior": "2024年ICC逮捕状への不承認対応",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "具体的な国内法制度との関係は未確認",
+              "source": "Actor Intelligence Pack要約",
+              "claim_id": null,
+              "relevance": "国内説明責任プロセスの先送り",
+              "evidence_id": null,
+              "date_or_period": "2023-2026",
+              "event_or_behavior": "2023年10月7日の大失敗後も独立調査委員会の設置を数年間回避",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "このパターンは現在も行動の方向性を示すが、戦時状況という例外的環境のため、完全な予測力は持たない。",
+              "pattern_id": null,
+              "applicability": "medium",
+              "pattern_summary": "国際司法・同盟プロセスへの不承認姿勢",
+              "current_differences": [
+                "対イラン・対ガザ戦という戦時状況であり、平時の外交案件とは重みが異なる"
+              ],
+              "current_similarities": [
+                "ICC逮捕状への不承認",
+                "独立調査委員会の先送り"
+              ],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "実利的取引志向は残るが、現在の連立構造と法的リスクの下でどこまで発揮できるかは不明。",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "実利的取引のために核心公約を柔軟に扱う",
+              "current_differences": [
+                "現在は国内政治基盤がより脆弱で、同様の柔軟性を発揮できるか不透明"
+              ],
+              "current_similarities": [
+                "アブラハム合意での併合棚上げ"
+              ],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "正当性を認めない国際・同盟プロセスへは一貫して非妥協的な不承認姿勢を取る",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "実利的な取引の機会が生じた場合、自らの連立の核心公約さえ取引材料として柔軟に扱う",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "米国との安全保障関係を維持しつつ、国際司法機関や一部同盟国の批判的プロセスには正当性を認めず、必要に応じてアラブ諸国との実利的合意（アブラハム合意型）を追求する。"
+        },
+        {
+          "actor": "Iran（国家としてのイラン）",
+          "red_line": null,
+          "actor_ref": "iran_state",
+          "entity_id": "63f60ff3-e318-42f4-9282-43d794e28f4a",
+          "confidence": "低",
+          "formal_role": "ホルムズ海峡沿岸国・地域大国として、IRGCを通じた海峡妨害能力と地域代理勢力への影響力を持つ。",
+          "evidence_ids": [],
+          "decision_power": "ホルムズ海峡の航行安全保障や地域のエネルギー供給に対し、実効的な妨害・抑止能力を持つ。",
+          "driving_forces": [
+            {
+              "force": "IRGCと安全保障機構",
+              "direction": "supporting",
+              "description": "海峡妨害能力の維持・強化を通じて、対外レバレッジを支える。"
+            },
+            {
+              "force": "中国など主要原油購入国",
+              "direction": "constraining",
+              "description": "イラン産原油への依存が高い中国などは、完全な封鎖よりも限定的な妨害を好む可能性があり、イランの行動を一定程度抑制する。"
+            }
+          ],
+          "ability_to_move": "ホルムズ海峡での妨害行為の強度を調整し、米国・同盟国への圧力を高めたり緩めたりできる。",
+          "issue_objective": null,
+          "observed_action": "2026年3月以降、ホルムズ海峡での航行妨害能力を実際に行使し、海峡を封鎖した実績がある。",
+          "vulnerabilities": [
+            "中国など少数の主要顧客への輸出依存",
+            "制裁による経済的脆弱性"
+          ],
+          "ability_to_block": "米国や同盟国による対イラン軍事行動や制裁強化に対し、報復として海峡封鎖や代理勢力を通じた攻撃を行うことで、相手の行動を抑制する拒否権的能力を持つ。",
+          "primary_audience": null,
+          "why_actor_matters": "イランはホルムズ海峡を通じた構造的レバレッジを持ち、対イラン・対ガザ政策の外部制約としてネタニヤフの選択肢を大きく左右するため。",
+          "available_leverage": [
+            "ホルムズ海峡での航行妨害能力",
+            "地域代理勢力を通じた攻撃能力"
+          ],
+          "secondary_audience": null,
+          "ultimate_objective": null,
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": null,
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "全面的な海峡封鎖の長期継続（自国経済と主要顧客への打撃が大きい）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "none_available",
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [
+              "Asset:Iran:strait_canal_control"
+            ],
+            "actor_intelligence_status": "insufficient"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "イスラエル戦時内閣内でのネタニヤフと他の閣僚・軍・司法の権限配分は具体的にどうなっているか",
+          "rationale": "ネタニヤフ個人のPersistent Preferenceがどこまで政策を規定しているかを確認するため。",
+          "related_hypothesis": "ネタニヤフ中心の意思決定モデル",
+          "recommended_sources": "イスラエル国内メディア、政府公式発表、信頼できるシンクタンクの分析"
+        },
+        {
+          "priority": "高",
+          "question": "イラン指導部の対イスラエル・対ホルムズ海峡政策に関する最新の公式声明と軍事行動は何か",
+          "rationale": "構造的制約の強度と方向性を確認するため。",
+          "related_hypothesis": "イランの構造的レバレッジがネタニヤフの選択肢を制約している",
+          "recommended_sources": "イラン政府・IRGCの公式声明、地域メディア、国際機関の報告"
+        },
+        {
+          "priority": null,
+          "question": "イラン指導部（最高指導者・IRGC）の対イスラエル・対ホルムズ海峡政策に関するPersistent Preferenceは何か",
+          "rationale": "構造的Key Point（ホルムズ海峡妨害能力）の運用方針を理解し、主シナリオの前提（イランがレバレッジを維持・活用し続ける）を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米国の対イラン・対ガザ関与における具体的なレッドライン（イスラエルの軍事行動に対する支援・制約の条件）は何か",
+          "rationale": "Key Point候補「米国の関与の強度と条件」の位置づけと、ネタニヤフの行動上限を規定する外部制約の強さを確認するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "Stage1で整理された主シナリオが、既存Evidenceと構造的制約（ホルムズ海峡・米イラン緊張）に最も整合的であり、追加仮定が比較的少ないため。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "ネタニヤフはイラン・ガザ双方に対し強硬姿勢を維持しつつも、全面戦争や即時停戦には踏み込まない「管理されたエスカレーション」を選好している。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "Asset:Iran:strait_canal_control",
+            "Relationship:Iran→United States:active_conflict_ceasefire",
+            "ActorIntelligence:BenjaminNetanyahu:persistent_preference"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "完全無力化を目指す強硬レトリックは存在するが、構造的制約（ホルムズ海峡・米国の関与）と国内政治リスクのため、どこまで本気で追求しているか判断できない。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "ネタニヤフの主目的は政権生存ではなく、イランの核・ミサイル能力とハマスを含む敵対勢力の完全な軍事的無力化であり、現在の行動はそのための長期戦略の一部である。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "ホルムズ海峡妨害能力・米イラン緊張・中国の原油購入など、複数の構造的Evidenceが存在し、イスラエル単独で変えにくい制約として機能しているため。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "対イラン・対ガザ政策の方向性は、ネタニヤフ個人よりも、ホルムズ海峡を巡る構造・米イラン関係・エネルギー市場といった構造要因によってほぼ決まっており、ネタニヤフはその中で限られた裁量しか持たない。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "Asset:Iran:strait_canal_control",
+            "Relationship:Iran→United States:active_conflict_ceasefire",
+            "Relationship:China→Iran:major_oil_buyer_discount_purchaser"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "ICC逮捕状への不承認や独立調査委員会の先送りなど、最近の行動はむしろ従来パターンの継続を示しており、協調的転換を裏付けるEvidenceが不足している。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "ネタニヤフのPersistent Preference（国際司法・同盟プロセスへの不承認）は、戦時状況と国内政治危機の中で既に変質しており、今後はより実利的・協調的な路線へ転換する可能性が高い。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+          ]
+        },
+        {
+          "reason": "戦時内閣内の権限配分に関する情報が不足しており、ネタニヤフの影響力低下を示す決定的Evidenceも、依然として支配的であることを示すEvidenceも不足している。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "対イラン・対ガザ政策の主導権は既にネタニヤフから軍・司法・他の政治勢力へ移っており、ネタニヤフ個人をKey Stakeholderとする枠組み自体が誤っている。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of=2026-08-31時点では、ネタニヤフの対Iran・Gaza政策は「イランの軍事能力と代理勢力への抑止・弱体化を優先しつつ、自身の政権生存と国際的な法的リスク回避を図る」ことが主軸だが、連立内の極右勢力・米国との関係・国際司法プロセスという制約の中で、完全な軍事エスカレーションにも全面停戦にも振り切れていないとみるのが妥当な仮説である（確信度：中）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "structural",
+        "evidence_class": "structural_reference",
+        "hinge_structure": {
+          "primary_hinge": "イランがホルムズ海峡妨害能力をどの程度行使・示威するか（実際の封鎖・限定的妨害・抑制）",
+          "secondary_hinges": [
+            "米国がイランの妨害行為に対しどの程度軍事・経済的に対抗するか（限定攻撃・制裁強化・外交交渉）",
+            "中国がイラン産原油への依存をどの程度維持・拡大するか（イランの経済的耐久力に影響）",
+            "オマーンを通じた米・イラン間の調停チャネルが機能し続けるかどうか"
+          ]
+        },
+        "primary_key_point": "イランのホルムズ海峡妨害能力とその行使実績",
+        "rejected_candidates": [
+          {
+            "key_point": "ネタニヤフの国際司法・同盟プロセスへの不承認というPersistent Preference",
+            "why_not_primary": "対ガザ・対イラン政策の説明力は高いが、これは主にイスラエル側の行動様式を規定する要因であり、イランの軍事能力や米国の関与といった外部構造を前提にしている。構造要因を上位に置くため、Primaryではなく重要な補助要因と位置づけた。"
+          },
+          {
+            "key_point": "米国の対イラン・対ガザ関与の強度と条件",
+            "why_not_primary": "米国の関与は極めて重要だが、その関与の強度自体がホルムズ海峡を含む地域安全保障構造（イランの妨害能力と世界のエネルギー依存）に影響されているため、一段下のヒンジとして扱う方が整合的と判断した。"
+          }
+        ],
+        "selection_rationale": "対イラン・対ガザ政策を中長期で見ると、ホルムズ海峡を巡るイランの構造的レバレッジが、米国を含む同盟国の対イラン軍事行動の上限を規定しており、その制約の中でネタニヤフがどこまでエスカレートできるかが決まるため。このKey Pointは、イスラエル単独の意思では変えられない構造要因として、他の候補（ネタニヤフ個人のPersistent Preferenceや米国の関与）よりも上位の制約として機能している。",
+        "candidate_key_points": [
+          {
+            "key_point": "イランのホルムズ海峡妨害能力とその行使実績",
+            "control_type": "structural",
+            "what_it_explains": "なぜ米国や湾岸諸国が対イラン全面戦争を避けつつ制裁・限定攻撃にとどまろうとするのか、またネタニヤフが対イランで完全な軍事解決を公然と掲げにくい理由を説明し得る。",
+            "why_it_could_be_key": "イランがホルムズ海峡を封鎖し得る能力を持ち、実際に行使した実績があることは、世界のエネルギー市場と米国を含む同盟国の安全保障計算に直接影響し、対イラン政策の強度とタイミングを大きく規定する。ネタニヤフにとっても、対イラン軍事行動がホルムズ海峡を巡る大規模な地域戦争に発展するリスクを常に意識せざるを得ない。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "Asset:Iran:strait_canal_control"
+            ],
+            "what_it_does_not_explain": "ガザにおける日々の作戦強度や、イスラエル国内の政治日程（選挙・連立交渉）に伴う短期的な政策変動までは説明しきれない。",
+            "control_structure_summary": "IRGCの軍事能力と地理的条件に基づく構造的レバレッジであり、特定の単一政治家の意思ではなく、軍事能力・地理・世界の石油依存構造が組み合わさって形成されている。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "ネタニヤフの国際司法・同盟プロセスへの不承認というPersistent Preference",
+            "control_type": "actor_controlled",
+            "what_it_explains": "なぜネタニヤフがICCや一部の国連決議に対して強い言葉で反発し、国内調査委員会の設置を先送りしつつも、同時に一部の実利的合意（アブラハム合意など）には応じるのかを説明できる。",
+            "why_it_could_be_key": "ICCや一部同盟国の外交プロセスを正当な裁き・調停と認めない姿勢は、ガザ戦や対イラン政策においても、国際的な停戦・調停枠組みへの参加の仕方、国内説明責任の取り方を大きく規定する。",
+            "controlling_entity_ids": [
+              "585cc564-5a71-40ac-959b-3995d3a409c8"
+            ],
+            "supporting_evidence_ids": [
+              "ActorIntelligence:BenjaminNetanyahu:persistent_preference"
+            ],
+            "what_it_does_not_explain": "イランやハマス側の軍事行動のタイミング・強度、また米国や湾岸諸国の政策変化といった外生要因は説明しない。",
+            "control_structure_summary": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": [
+              "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+            ]
+          },
+          {
+            "key_point": "米国の対イラン・対ガザ関与の強度と条件",
+            "control_type": "distributed",
+            "what_it_explains": "なぜイスラエルが対ガザ・対イランで米国の意向を完全には無視できず、米国の圧力が高まる局面で作戦強度や停戦交渉への姿勢を調整するのかを説明できる。",
+            "why_it_could_be_key": "イスラエルの軍事行動は、米国の軍事支援・外交支援・制裁枠組みへの依存度が高く、米国のレッドラインや国内政治（選挙・議会）の制約がネタニヤフの行動範囲を実質的に規定する。",
+            "controlling_entity_ids": [
+              "671eeb94-62df-45f9-a1e4-5e3fa89a71ba",
+              "585cc564-5a71-40ac-959b-3995d3a409c8"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "イスラエル国内の連立政治や宗教政党の要求といった、よりローカルな政治力学までは直接説明しない。",
+            "control_structure_summary": "米国行政府・議会・世論とイスラエル政府の相互依存関係により、対イラン・対ガザ政策は単独では決まらず、軍事支援・外交支援・制裁・停戦交渉など複数チャネルを通じた相互拘束構造になっている。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "イランがホルムズ海峡での妨害能力を長期にわたり完全に放棄し（軍事能力の解体や国際的な拘束条約への実効的参加）、かつ世界の石油市場がホルムズ依存から大きく脱却した場合、このKey Pointを構造的制約の中心に置く前提は崩れる。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "Asset:Iran:strait_canal_control",
+          "Relationship:Iran→United States:active_conflict_ceasefire",
+          "Relationship:China→Iran:major_oil_buyer_discount_purchaser",
+          "Relationship:Iran→Oman:mediation_negotiation_channel"
+        ],
+        "control_structure_summary": "ホルムズ海峡を巡る軍事・地理・エネルギー市場の構造が、米・イラン・中国・オマーンなど複数主体の行動を制約し、その中でイスラエル（ネタニヤフ）の対イラン・対ガザ政策の上限・下限が決まる構造。特定のActorの意思だけでは短期的に変えられない。",
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "本ケースでは、ガザでの具体的な軍事作戦内容や停戦交渉の詳細、イスラエル戦時内閣内の権限配分、イラン指導部の内部意思決定プロセスなど、重要な情報が不足している。そのため、ネタニヤフの意図と構造的制約の相対的な重みについては確信度を中にとどめ、今後のEvidenceで更新する必要がある。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "ネタニヤフが国内政治的に追い詰められ、連立崩壊や司法プロセスの進展により政権から退くか、戦時内閣内で権限を大きく制限される。その結果、対イラン・対ガザ政策はより制度化されたプロセス（軍・司法・新政権）に移行し、国際司法・同盟プロセスへの協調が相対的に強まる。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "戦時内閣の構成が大きく変わり、ネタニヤフ以外の人物が対イラン・対ガザ政策の主導権を握る",
+            "ネタニヤフが辞任・失職し、新政権が国際司法・同盟プロセスへの協調を公約に掲げる"
+          ],
+          "weakening_conditions": [
+            "連立パートナーがネタニヤフ支持を再確認し、政権基盤が短期的に安定する",
+            "司法プロセスが遅延・棚上げされる",
+            "戦時状況を理由に政権交代議論が周縁化される"
+          ],
+          "strengthening_conditions": [
+            "イスラエル国内での大規模な抗議や連立崩壊が発生する",
+            "ネタニヤフ個人に対する司法プロセスが進展し、職務継続が困難になる",
+            "早期選挙と政権交代が現実的な選択肢として浮上する"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "イランがホルムズ海峡妨害能力を大規模に行使し続け、世界のエネルギー市場と米国の安全保障計算が大きく変化する。その結果、米国とイスラエルが対イランでより大規模な軍事行動に踏み切り、対ガザ政策も対イラン戦略の一部として再構成される。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "ホルムズ海峡の封鎖が数カ月単位で継続し、世界経済への打撃が顕在化する",
+            "米国が対イラン大規模軍事行動の準備を公然と進める"
+          ],
+          "weakening_conditions": [
+            "イランがホルムズ海峡での妨害行為を抑制し、調停チャネルを通じた合意に応じる",
+            "中国など主要原油購入国がイランに対し封鎖自制を強く求める",
+            "米国が対イラン全面戦争を明確に否定し続ける"
+          ],
+          "strengthening_conditions": [
+            "ホルムズ海峡の長期的な封鎖が再発・継続する",
+            "イランが米軍・同盟国に対する大規模攻撃を行う",
+            "オマーンなどの調停チャネルが機能不全に陥る"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "ホルムズ海峡での航行妨害・封鎖の有無と強度",
+        "米国の対イラン・対ガザ政策に関する公式発表と議会動向",
+        "イスラエル国内での独立調査委員会設置や政権交代に関する動き",
+        "イランと中国の原油取引量や条件の変化"
+      ],
+      "retraction_conditions": [
+        "イランがホルムズ海峡妨害能力を放棄し、国際的な拘束条約に実効的に従うこと",
+        "ネタニヤフが国際司法・同盟プロセスへの協調を強め、独立調査委員会の設置など説明責任を積極的に果たす方向へ明確に転換すること",
+        "イスラエルの対イラン・対ガザ政策が、全面戦争や即時停戦など現在想定していない極端な方向に一貫して動くこと"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "69e8064f-b236-42e8-89b1-e92a4c866987",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "e2fed736-6330-4d6c-83bf-740800dab58c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "eba1d367-ab95-41c6-bebd-53a53903bd58",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "609a1837-e29b-4215-9660-93d1f96f8ebe",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "50a2a155-3437-46db-8cc3-5ea55b08a385",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "62010532-a2fc-4f6d-8384-4ab94401e852",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "b47f3ca0-a472-46ed-8031-a43590d9562a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "イラン側の内部政治や軍事ドクトリン、イスラエル戦時内閣内の権限配分に関する情報が不足しており、ネタニヤフ個人の意図と構造的制約の相対的な重みを精緻に評価できていない。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "イスラエル戦時内閣内でのネタニヤフと他の閣僚・軍・司法の権限配分は具体的にどうなっているか",
+          "rationale": "Key Actor（ネタニヤフ）モデルの妥当性と、対イラン・対ガザ政策における意思決定構造（Key Stakeholder）の精緻化に直結するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "イラン指導部（最高指導者・IRGC）の対イスラエル・対ホルムズ海峡政策に関するPersistent Preferenceは何か",
+          "rationale": "構造的Key Point（ホルムズ海峡妨害能力）の運用方針を理解し、主シナリオの前提（イランがレバレッジを維持・活用し続ける）を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米国の対イラン・対ガザ関与における具体的なレッドライン（イスラエルの軍事行動に対する支援・制約の条件）は何か",
+          "rationale": "Key Point候補「米国の関与の強度と条件」の位置づけと、ネタニヤフの行動上限を規定する外部制約の強さを確認するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "イスラエル戦時内閣内でのネタニヤフと他の閣僚・軍・司法の権限配分と、対イラン・対ガザ政策における具体的な意思決定プロセス",
+          "gap_category": "deterministic",
+          "recommended_action": "戦時内閣構成と主要決定のプロセスに関する一次情報・信頼できる分析を収集する。"
+        },
+        {
+          "priority": "高",
+          "description": "イラン指導部（最高指導者・IRGC）の対イスラエル・対ホルムズ海峡政策に関するPersistent Preferenceと、最近の行動パターン",
+          "gap_category": "deterministic",
+          "recommended_action": "イラン側の公式声明・軍事行動・外交交渉の記録を整理し、Actor Intelligenceを補完する。"
+        },
+        {
+          "priority": "中",
+          "description": "米国の対イラン・対ガザ関与の具体的なレッドライン（イスラエルの軍事行動に対する支援・制約の条件）",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "米政権・議会の発言、対イスラエル軍事支援・条件付き支援の実績を確認する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "ネタニヤフの主目的は政権生存ではなく、イランの核・ミサイル能力とハマスを含む敵対勢力の完全な軍事的無力化であり、現在の行動はそのための長期戦略の一部に過ぎないという見方。",
+      "key_stakeholder_assessment": {
+        "rationale": "対イラン・対ガザ局面では、イスラエル側のKey Stakeholderとしてネタニヤフ（および彼が率いる戦時内閣）が、イラン側では国家としてのイラン（特にIRGCを含む安全保障機構）が主要な意思決定主体となっていると考えられる。米国も重要な制約・支援主体だが、今回の問いはネタニヤフの政策に焦点があるため、イスラエル側とイラン側の2主体をKey Stakeholderとして優先的に扱う。",
+        "confidence": "低",
+        "evidence_ids": [],
+        "determination": "multiple",
+        "decision_structure": "イスラエル側ではネタニヤフが連立内の極右・宗教政党と戦時内閣を通じて軍事・外交政策を主導し、イラン側では最高指導者とIRGCがホルムズ海峡や地域代理勢力を通じたレバレッジを行使する。両者の間に米国・オマーンなどの調停・支援主体が挟まる多層構造となっている。",
+        "selected_actor_ids": [
+          "netanyahu",
+          "iran_state"
+        ]
+      },
+      "situation_actor_assessment": null,
+      "decisive_power_and_leverage": "as_of=2026-08-31時点での対Iran・Gaza局面では、最終的な軍事エスカレーション／抑制の決定力は、イスラエル側ではネタニヤフを中心とする戦時内閣と連立パートナー、対イランでは米国の関与とイランのIRGC能力、さらにホルムズ海峡を巡る米・イラン・オマーンの交渉構造に分散している。ネタニヤフ個人はイスラエル側の意思決定で大きなレバレッジを持つが、米国の軍事・外交支援とイランの報復能力という外部要因が、彼の選択肢を実質的に制約している。",
+      "assets_dependencies_leverage": [
+        {
+          "kind": "asset",
+          "summary": "IRGCによる機雷敷設・武装スピードボート・沿岸ミサイルを用いたホルムズ海峡への実効的な航行妨害能力（2026年3月以降、実際に行使され海峡を封鎖した実績がある）"
+        }
+      ],
+      "preference_action_gap_summary": "ネタニヤフについては、国際司法・同盟プロセスへの不承認というPersistent Preferenceと、実利的取引への柔軟性という例外パターンが共存している。現在の対イラン・対ガザ局面では、前者（不承認）が強く表に出ており、国内説明責任や国際調停への参加を先送りする一方で、米国や地域諸国との実利的取引の余地は残しているが、連立構造と法的リスクのために発揮しにくくなっている可能性がある。"
+    },
+    "created_at": "2026-09-01T08:20:19.667063+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "2db2790d-d966-4714-8d80-3b1a3757a42f",
+    "response_id": "3e8cd816-ef16-4060-876d-64c7f87f3114",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Benjamin Netanyahu, Iran（国家としてのイラン）",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 33,
+    "failed_count": 1,
+    "created_at": "2026-09-01T08:20:20.265514+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": [
+      "key_actor_profiles[0].evidence_ids=ActorIntelligence:BenjaminNetanyahu:persistent_preference",
+      "key_actor_profiles[1].evidence_ids=Asset:Iran:strait_canal_control",
+      "key_actor_profiles[1].evidence_ids=Relationship:Iran→United States:active_conflict_ceasefire",
+      "key_actor_profiles[1].evidence_ids=Relationship:China→Iran:major_oil_buyer_discount_purchaser",
+      "key_stakeholder_assessment.evidence_ids=ActorIntelligence:BenjaminNetanyahu:persistent_preference",
+      "key_stakeholder_assessment.evidence_ids=Asset:Iran:strait_canal_control",
+      "key_stakeholder_assessment.evidence_ids=Relationship:Iran→United States:active_conflict_ceasefire"
+    ],
+    "confidence_adjustments": [
+      "main_scenario",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "netanyahu",
+      "iran_state"
+    ],
+    "historical_evidence_separations": [
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ],
+    "actor_evidence_separations": [
+      "key_actor_profiles[0]:removed=['9fbfbc49-f321-412b-afbf-485badeaf0d7']"
+    ]
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 84825,
+    "completion_tokens": 12416,
+    "total_tokens": 97241
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 168562,
+        "prompt_tokens": 39109,
+        "completion_tokens": 10146
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 41592,
+        "prompt_tokens": 45716,
+        "completion_tokens": 2270
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Benjamin Netanyahu, Iran（国家としてのイラン）"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 270.5376965999603
+}

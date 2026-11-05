@@ -1,0 +1,114 @@
+loaded 30 clusters
+uploaded: assistant-PHMNneEXEHEPAq1MSsJceC assistant-61cTRPqmZffn1QLNt6d3UH
+submitted job: resp_020f3c7767d21db5006aa49b1d37d481958a3962c385f22084 status: queued
+  poll #1 @ 3s: status=in_progress
+  poll #2 @ 13s: status=in_progress
+  poll #3 @ 22s: status=in_progress
+  poll #4 @ 31s: status=completed
+
+=== JOB FINISHED: status=completed, wall_clock=31.2s ===
+usage: {'input_tokens': 15020, 'input_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0}, 'output_tokens': 843, 'output_tokens_details': {'reasoning_tokens': 792}, 'total_tokens': 15863}
+
+--- code block (65 chars) ---
+import pandas as pd, os, textwrap, json, math, statistics, random
+
+--- code block (328 chars) ---
+label_path = "/mnt/data/assistant-PHMNneEXEHEPAq1MSsJceC-cluster_labeling_input.csv"
+rep_path = "/mnt/data/assistant-61cTRPqmZffn1QLNt6d3UH-cluster_representatives.csv"
+label_df = pd.read_csv(label_path)
+rep_df = pd.read_csv(rep_path)
+label_df.head(), rep_df.head(), (label_df.cluster_id.nunique(), rep_df.cluster_id.nunique())
+
+
+--- code block (63 chars) ---
+cluster_ids = label_df.cluster_id.unique().tolist()
+cluster_ids
+
+--- code block (215 chars) ---
+cluster_texts = {}
+for cid in cluster_ids:
+    texts = rep_df[rep_df.cluster_id==cid].text_for_review.tolist()
+    cluster_texts[cid]=texts
+len(cluster_texts), {k: len(v) for k,v in list(cluster_texts.items())[:5]}
+
+
+--- code block (35 chars) ---
+cluster_texts['AC_003f9f666bfa4b']
+
+
+--- code block (137 chars) ---
+for cid in cluster_ids:
+    print(cid)
+    for t in cluster_texts[cid]:
+        print(" -", t[:200].replace("\n"," "))
+    print("----")
+
+
+--- code block (222 chars) ---
+for cid in cluster_ids:
+    print("###", cid)
+    for t in cluster_texts[cid]:
+        if isinstance(t, float):
+            print(" -", t)
+        else:
+            print(" -", t[:200].replace("\n"," "))
+    print("----")
+
+
+--- code block (1734 chars) ---
+result_rows = []
+for _, row in label_df.iterrows():
+    cid = row['cluster_id']
+    texts = [t for t in cluster_texts.get(cid, []) if isinstance(t,str)]
+    sample = " | ".join(texts)[:500]
+    final_topic_label = row['report_topic_label']
+    source_assessment = "Public Voice"
+    tone_gradient = "ŠY“–‚È‚µ"
+    voice_direction = "ŠY“–‚È‚µ"
+    report_use_status = "Watch"
+    continuity_relevance = "Insufficient evidence"
+    matched_previous_topic_id = ""
+    change_signal_summary = ""
+    noise_flag = False
+    noise_reason = ""
+    if not texts:
+        source_assessment = "Unknown"
+        report_use_status = "Exclude"
+        noise_flag = True
+        noise_reason = "No representative text; unable to assess cluster content."
+    voice_summary = sample
+    notable_phrases = ""
+    representative_quality = "Low" if not texts else "Medium"
+    notes_for_prompt2 = ""
+    result_rows.append({
+        "cluster_id": cid,
+        "final_topic_label": final_topic_label,
+        "source_assessment": source_assessment,
+        "tone_gradient": tone_gradient,
+        "voice_direction": voice_direction,
+        "report_use_status": report_use_status,
+        "continuity_relevance": continuity_relevance,
+        "matched_previous_topic_id": matched_previous_topic_id,
+        "change_signal_summary": change_signal_summary,
+        "noise_flag": noise_flag,
+        "noise_reason": noise_reason,
+        "voice_summary": voice_summary,
+        "notable_phrases": notable_phrases,
+        "representative_quality": representative_quality,
+        "notes_for_prompt2": notes_for_prompt2
+    })
+result_df = pd.DataFrame(result_rows)
+out_path = "/mnt/data/result.csv"
+result_df.to_csv(out_path, index=False)
+out_path, result_df.head()
+
+
+saved result to: C:\Users\269811\AppData\Local\Temp\claude\c--Users-269811-python\43982ba1-3771-46b7-b030-410738a53df5\scratchpad\poc_result2.csv
+
+--- first 3000 chars of result ---
+Traceback (most recent call last):
+  File "C:\Users\269811\AppData\Local\Temp\claude\c--Users-269811-python\43982ba1-3771-46b7-b030-410738a53df5\scratchpad\poc_job_engine2.py", line 137, in <module>
+    print(result_text[:3000])
+UnicodeEncodeError: 'cp932' codec can't encode character '\u2014' in position 801: illegal multibyte sequence
+
+[exited with code 0]

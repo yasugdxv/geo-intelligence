@@ -1,0 +1,1341 @@
+{
+  "request": {
+    "request_id": "b03eb20c-0d81-42c6-a60e-f366c97b2632",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "現在の米中間の半導体・AI規制をめぐる局面について、主要な意思決定主体、それぞれの目的、現在の力学、今後の方向性を分析してください。"
+  },
+  "source_pack": {
+    "source_pack_id": "3b27efcf-44fe-48b1-abfd-610c9e5ed5c9",
+    "request_id": "b03eb20c-0d81-42c6-a60e-f366c97b2632",
+    "document_ids": [
+      "713a3264-ba25-4cca-807e-a0b18366c4c7",
+      "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+      "dad5abe7-dee3-4363-a14e-2cc473329c16"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": []
+  },
+  "response": {
+    "response_id": "5502e843-bcbd-4fa5-a7aa-31f04078b37d",
+    "request_id": "b03eb20c-0d81-42c6-a60e-f366c97b2632",
+    "source_pack_id": "3b27efcf-44fe-48b1-abfd-610c9e5ed5c9",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "one_line_assessment": "現在の米中間の半導体・AI規制は、米国の対中技術封じ込めと国内産業・選挙政治、日本など同盟国の制度対応が絡み合う「立法化＋域外適用＋同盟国巻き込み」の局面にあり、BIS・米議会・政権中枢・中国指導部がそれぞれ異なる目的で制度と抜け穴をめぐる攻防を続けている（as_of: 2026年9月上旬、提供3文書ベース）。",
+      "initial_anomaly": "対中輸出規制が強化されているにもかかわらず、中国向け半導体需要・輸出が一定程度維持・増加しているというObservation（[document_id: 713a3264-ba25-4cca-807e-a0b18366c4c7]抜粋）と、米側でMATCH法などより強い立法化・域外適用が議論・進展しているという分析（[document_id: dad5abe7-dee3-4363-a14e-2cc473329c16]）の組み合わせ。通常なら「規制強化→貿易縮小」の単純図式になりそうなところが、制度・抜け穴・第三国経由・同盟国巻き込みによって複雑な均衡になっている点が重要。",
+      "claims": [
+        {
+          "claim_type": "fact",
+          "text": "米国は対中半導体・AI関連技術について、BISによる輸出管理規則（EAR）改正やエンティティリスト拡大などを通じて継続的に規制強化を進めている。",
+          "source_ref": "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+        },
+        {
+          "claim_type": "fact",
+          "text": "日本を含む同盟国の半導体関連輸出は、対中規制強化のなかでも中国向け需要が残存・一部増加しており、実務上は規制と需要の両方に対応する必要が生じている。",
+          "source_ref": "713a3264-ba25-4cca-807e-a0b18366c4c7"
+        },
+        {
+          "claim_type": "official_claim",
+          "text": "MATCH法（対中半導体輸出管理の立法化）に関する議論では、米議会・政策コミュニティから「中国への先端半導体供給をより包括的に制限し、同盟国にも協調を求めるべき」との主張が示されている。",
+          "source_ref": "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        },
+        {
+          "claim_type": "observation",
+          "text": "対中半導体輸出管理は、従来の行政裁量中心のBIS規則運用から、MATCH法などによる立法化・域外適用強化を通じて、より硬直的かつ政治的な枠組みへ移行しつつあると分析されている。",
+          "source_ref": "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        },
+        {
+          "claim_type": "inference",
+          "text": "米中間の半導体・AI規制は、単なる二国間の技術封じ込めではなく、日本など同盟国の輸出管理制度・産業政策を「挟撃」する形で再編しようとする経済安全保障戦略の一部として位置づけられる。",
+          "source_ref": "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        },
+        {
+          "claim_type": "hypothesis",
+          "text": "米国政権（大統領・国家安全保障チーム）は、対中技術封じ込めと同時に、米企業・同盟国企業の競争力維持、インフレ・雇用・選挙への悪影響回避を両立させる「選別的・段階的な規制」を志向している可能性が高い。",
+          "source_ref": null
+        },
+        {
+          "claim_type": "hypothesis",
+          "text": "中国指導部（Xi Jinping）は、対中半導体・AI規制を長期的な技術自立・国産化推進の圧力と捉えつつ、短期的には第三国経由調達・在庫積み増し・国内需要調整などで時間を稼ぐ戦略を取っている可能性がある。",
+          "source_ref": null
+        },
+        {
+          "claim_type": "illustration",
+          "text": "MATCH法が成立し、BISの裁量よりも議会が定めた包括的な対中半導体輸出禁止枠が優先する場合、日本企業は米国原産性・米技術含有の有無にかかわらず、対中取引の大幅な見直しを迫られる可能性がある、というシナリオが国問研コメントで例示されている。",
+          "source_ref": "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        }
+      ],
+      "dynamics": "米国側では、国家安全保障コミュニティ・議会強硬派・産業界・政権中枢の間で「どこまで対中技術封じ込めを徹底するか」と「米企業・同盟国企業の負担をどこまで許容するか」をめぐる綱引きが続いている。他方、中国側は規制を外圧として国内技術自立を正当化しつつ、短期的には調達ルートの多様化・在庫戦略で時間を稼ぐ。日本など同盟国は、米国の立法化・域外適用圧力と、自国産業・対中市場の維持の間で板挟みになり、「挟撃の経済安全保障」（[document_id: dad5abe7-dee3-4363-a14e-2cc473329c16]）という構図が生じている。",
+      "decisive_power_and_leverage": "この局面全体を決定づける力は、制度面では米国の輸出管理法制（MATCH法などの立法化＋BIS運用）にあり、政治面では米大統領・政権中枢と米議会の組み合わせが最終的な規制強度・同盟国への要求水準を決める。一方で、中国側の実際の調達能力・技術自立の進展度合いが、米国の規制がどれだけ実効性を持つかを左右するため、結果として「米国の制度＋中国の調達・技術能力＋同盟国の追随度合い」という分散した決定構造になっている。",
+      "key_point_assessment": {
+        "candidate_key_points": [
+          {
+            "key_point": "対中半導体・AI輸出管理の『立法化（MATCH法など）＋域外適用』がどこまで進むか",
+            "why_it_could_be_key": "行政裁量中心のBIS運用から、議会立法による硬直的な禁止枠へ移行するかどうかは、規制の強度・可逆性・同盟国への拘束力を大きく変え、日本企業を含むグローバルサプライチェーンに決定的な影響を与えるため。",
+            "control_type": "institutionally_constrained",
+            "controlling_entity_ids": null,
+            "control_structure_summary": "米議会の立法プロセスと、成立後の米国法体系（輸出管理法＋MATCH法）の拘束力により規定され、BISや政権の裁量はその枠内で運用される。",
+            "what_it_explains": "なぜ日本など同盟国に対し『政策的試練』としてMATCH法が論じられているのか、なぜ規制が政治化・硬直化しうるのかを説明できる。",
+            "what_it_does_not_explain": "中国側の調達ルートの実態や、規制にもかかわらず対中需要が維持・増加している理由（第三国経由・技術レベルの選別など）の詳細までは説明しない。",
+            "supporting_evidence_ids": [
+              "dad5abe7-dee3-4363-a14e-2cc473329c16"
+            ],
+            "supporting_knowledge_refs": [
+              {
+                "type": "actor_intelligence",
+                "ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+                "field": "mandate"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "中国向け半導体需要・調達能力が、規制強化にもかかわらず高水準で維持されていること",
+            "why_it_could_be_key": "需要・調達能力が高いままであれば、米国の規制強化は中国の技術自立を促す圧力にはなっても、短期的な供給遮断にはなりにくく、米側の追加規制・同盟国への圧力をさらに誘発する可能性があるため。",
+            "control_type": "structural",
+            "controlling_entity_ids": null,
+            "control_structure_summary": "中国国内の需要構造・産業政策・第三国サプライヤーの存在など、市場・産業構造に依存しており、単一Actorの意思では制御しきれない。",
+            "what_it_explains": "規制強化にもかかわらず対中輸出が一定程度続いているというObservation（[document_id: 713a3264-ba25-4cca-807e-a0b18366c4c7]）や、中国側の時間稼ぎ戦略の合理性を説明できる。",
+            "what_it_does_not_explain": "米国側の立法化・同盟国巻き込みの政治的動機や、具体的な制度設計の方向性までは説明しない。",
+            "supporting_evidence_ids": [
+              "713a3264-ba25-4cca-807e-a0b18366c4c7"
+            ],
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米国の対中技術封じ込め戦略が『安全保障目的』と『国内産業・選挙政治』の両方に縛られていること（H1: Actor-intent）",
+            "why_it_could_be_key": "安全保障だけでなく、米国内の雇用・インフレ・選挙・産業ロビーが規制の強度・対象範囲を左右するため、BISや政権が純粋な安全保障ロジックだけで動けない構造を説明できる。",
+            "control_type": "mixed",
+            "controlling_entity_ids": [
+              "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+              "c93580fd-99b1-44d9-b924-beb89a2e8378"
+            ],
+            "control_structure_summary": "BISなど官僚機構が技術的・安全保障的評価を行う一方、政権（大統領）と議会が選挙・産業・世論を踏まえて最終的な規制方針を決めるため、官僚と政治の混合制御。",
+            "what_it_explains": "なぜ規制が段階的・選別的であり、米企業・同盟国企業への配慮が入りつつも、選挙局面では強硬な立場が強まるのかを説明できる。",
+            "what_it_does_not_explain": "MATCH法の具体的条文内容や、日本への圧力の技術的細部など、制度レベルの詳細までは直接説明しない。",
+            "supporting_evidence_ids": [
+              "dad5abe7-dee3-4363-a14e-2cc473329c16"
+            ],
+            "supporting_knowledge_refs": [
+              {
+                "type": "actor_intelligence",
+                "ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+                "field": "persistent_preference"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "『挟撃の経済安全保障』というFrame自体が、米中対立を同盟国の制度・産業を再編する手段として捉えていること（H4: Frame-breaking）",
+            "why_it_could_be_key": "通常の『米中技術覇権争い』Frameではなく、米国が同盟国の輸出管理・産業政策を自国戦略へ組み込むプロセスとして読むことで、日本企業にとってのリスク・選択肢の見え方が変わるため。",
+            "control_type": "distributed",
+            "controlling_entity_ids": [
+              "63fa2294-ceca-488f-8e76-d4dae736a8ce"
+            ],
+            "control_structure_summary": "米国の制度設計と、日本など同盟国の政策対応・国内政治が相互に拘束し合う構造であり、単一Actorではなく複数政府・官僚機構の相互作用により形成される。",
+            "what_it_explains": "なぜ日本への『政策的試練』としてMATCH法が論じられ、同盟国の制度変更が米中対立の一部として扱われるのかを説明できる。",
+            "what_it_does_not_explain": "中国側の内部政治・技術自立戦略の詳細や、米国内の選挙政治の具体的力学までは説明しない。",
+            "supporting_evidence_ids": [
+              "dad5abe7-dee3-4363-a14e-2cc473329c16"
+            ],
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "primary_key_point": "対中半導体・AI輸出管理の『立法化（MATCH法など）＋域外適用』がどこまで進むか",
+        "selection_rationale": "提供文書のうち[document_id: dad5abe7-dee3-4363-a14e-2cc473329c16]がMATCH法と『挟撃の経済安全保障』を中心テーマとしており、日本への政策的試練を規定する蝶番として立法化・域外適用の進展度合いを位置づけているため。このKey Pointは、米側の安全保障・政治・官僚機構の力学を制度レベルで集約し、同盟国・企業への拘束力を直接変える決定点であり、他の候補（中国需要の構造、Actor意図、Frame自体）よりも、今後の具体的な規制強度・企業実務への影響を読むうえでdecision-sensitiveである。",
+        "rejected_candidates": [
+          {
+            "key_point": "中国向け半導体需要・調達能力が、規制強化にもかかわらず高水準で維持されていること",
+            "why_not_primary": "重要な背景構造だが、現時点の提供文書では需要・調達能力の定量的・構造的Evidenceが限定的であり、米側の制度変更・立法化に比べて直接的な政策レバーではないため。主に米側の追加規制・同盟国圧力を誘発する要因として補助的に扱う。"
+          },
+          {
+            "key_point": "米国の対中技術封じ込め戦略が『安全保障目的』と『国内産業・選挙政治』の両方に縛られていること",
+            "why_not_primary": "Actor意図レベルの仮説であり、提供文書は制度・政策分析が中心で、具体的な選挙・献金・産業ロビーのEvidenceが不足している。制度レベルの立法化・域外適用の方が、現時点では企業実務・同盟国政策への影響を直接規定する蝶番として扱いやすい。"
+          },
+          {
+            "key_point": "『挟撃の経済安全保障』というFrame自体が、米中対立を同盟国の制度・産業を再編する手段として捉えていること",
+            "why_not_primary": "Frameとして重要だが、これは分析の視点であり、具体的な次の規制強度・対象範囲を決める決定点ではない。主シナリオの説明枠組みとして採用しつつ、Primary Key PointはそのFrameの中で最も制度的に決定的な立法化・域外適用に置く。"
+          }
+        ],
+        "hinge_structure": {
+          "primary_hinge": "MATCH法など対中半導体輸出管理の立法化が、どの範囲・強度で成立するか（包括的禁止か、限定的・条件付きか、成立しないか）",
+          "secondary_hinges": [
+            "成立したMATCH法の域外適用範囲（米原産性・米技術含有の定義、第三国企業への適用条件）",
+            "BIS・政権による運用裁量の余地（例外許可・ライセンス運用）",
+            "日本など同盟国の国内法・ガイドラインの追随度合い（どこまで米法に整合させるか）"
+          ]
+        },
+        "control_type": "institutionally_constrained",
+        "controlling_entity_ids": null,
+        "control_structure_summary": "米議会の立法プロセスと、成立後の米国法体系により規定される。政権・BISはその枠内で規則・ライセンス運用を行い、日本など同盟国は自国法制を通じて追随・調整するため、制度上の制約が主導する構造。",
+        "supporting_evidence_ids": [
+          "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        ],
+        "supporting_knowledge_refs": [
+          {
+            "type": "actor_intelligence",
+            "ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+            "field": "mandate"
+          }
+        ],
+        "evidence_relevance": [
+          {
+            "evidence_id": "dad5abe7-dee3-4363-a14e-2cc473329c16",
+            "claim_relevance": "direct",
+            "source_type": "unknown",
+            "rationale": "MATCH法と『挟撃の経済安全保障』を直接論じ、対中半導体輸出管理の立法化が日本への政策的試練となると明示しているため。"
+          }
+        ],
+        "contradicting_evidence_ids": null,
+        "disconfirming_signal": "MATCH法など対中半導体輸出管理の立法化が議会で完全に頓挫し、今後もBISの限定的な行政裁量運用にとどまることが明確になれば、この局面を『立法化＋域外適用』を中心とするKey Pointとして読む枠組み自体を見直す必要がある。",
+        "confidence": "中",
+        "control_type_adjustment_reason": null,
+        "evidence_class": "current_indirect_evidence",
+        "historical_supporting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null,
+        "focus_selection": {
+          "trigger_types": [
+            "decision_power",
+            "premise_or_constraint_change",
+            "discriminating_hinge"
+          ],
+          "why_now": "MATCH法などの立法化は、米側の裁量ベースの規制から、法的拘束力の強い枠組みへの『前提条件の変化』をもたらし、誰がどこまで規制強度を決められるかというdecision_powerの構造を変える可能性がある。また、MATCH法が包括的に成立する場合と、骨抜き・不成立の場合では、次に起こる企業への影響・同盟国への圧力が大きく分岐するため、discriminating_hingeとしても意味がある。",
+          "decision_sensitive_outcome": "この論点の判断が変われば、米側の規制強度・同盟国への要求水準・日本企業の対中ビジネスの許容範囲・必要なコンプライアンス体制の規模など、今後のシナリオの中心部分が変わる。",
+          "discriminating_observation": "MATCH法の議会審議・採決の行方（成立・不成立・大幅修正）と、成立した場合の具体的な条文内容（対象技術・域外適用範囲・例外規定）が、各シナリオを分岐させる観測点となる。"
+        }
+      },
+      "key_stakeholder_assessment": {
+        "determination": "multiple",
+        "selected_actor_ids": [
+          "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+          "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "f34571d3-4742-41b7-8648-5b3ee13b7720"
+        ],
+        "rationale": "対中半導体・AI規制の具体的な設計・運用を動かすのは、米国のBIS（輸出管理官庁）と米政権（大統領・国家安全保障チーム）、および米議会（MATCH法など立法化の主体）である。他方、中国側のXi Jinpingは、規制への対応戦略（技術自立・調達ルート・国内産業政策）を決めることで、米規制の実効性と今後の追加規制の方向性に大きな影響を与える。提供されたEntityのうち、BIS・Donald Trump・Xi Jinpingはいずれも局面を動かし得るKey Stakeholderだが、制度上の決定権はBIS＋米政権・議会側にあり、中国側は対抗戦略を通じて結果を変える主体として位置づけられる。",
+        "decision_structure": "米側では、議会がMATCH法など立法化の是非・内容を決め、政権がそれを受けてBISに規則改正・ライセンス運用を指示する構造。中国側では、Xi Jinpingを頂点とする党・政府が技術自立戦略と調達方針を決め、企業・地方政府が実行する。両者の相互作用が、実際の技術フロー・規制強度・抜け穴の有無を決定する。",
+        "confidence": "中",
+        "evidence_ids": [
+          "dad5abe7-dee3-4363-a14e-2cc473329c16",
+          "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+        ]
+      },
+      "key_actor_profiles": [
+        {
+          "actor_ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+          "actor": "Bureau of Industry and Security (BIS)",
+          "entity_id": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+          "formal_role": "米商務省の下で輸出管理規則（EAR）の策定・改正、ライセンス発給・拒否などを行う規制機関。",
+          "decision_power": "対中半導体・AI関連技術の具体的な輸出許可・禁止を技術レベルで決める実務的決定権を持つが、法的枠組み（MATCH法など）と政権方針に制約される。",
+          "ability_to_move": "規則改正・エンティティリスト拡大・ライセンス方針変更を通じて、企業の対中取引を迅速に制限・許可できる。",
+          "ability_to_block": "安全保障上問題があると判断した取引をライセンス拒否・規則改正で阻止できる。",
+          "ultimate_objective": "米国の国家安全保障・対外政策に沿って、戦略的に重要な技術が敵対的主体へ流出することを防ぐこと。",
+          "strategic_relationship_preference": "同盟国の輸出管理当局と協調しつつ、米国主導の技術管理枠組みを維持・強化したいと推定される。",
+          "persistent_preference": "安全保障上の懸念がある技術については、企業・同盟国の負担があっても規制強化を優先する傾向。",
+          "persistent_preference_evidence": [
+            {
+              "event_or_behavior": "対中半導体・AI関連技術に関するエンティティリスト拡大と規則改正の継続",
+              "date_or_period": null,
+              "claim_id": null,
+              "evidence_id": "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+              "source": "経済産業省資料が参照する米側輸出管理動向",
+              "supports_or_contradicts": "supports",
+              "relevance": "BISが安全保障上の懸念を優先して規制強化を進めていることを示唆",
+              "caveat": "日本側資料経由の間接参照であり、BIS内部意図の一次情報ではない。"
+            }
+          ],
+          "issue_objective": "対中半導体・AI関連技術のうち、軍事・監視・戦略用途に直結するものを中心に、輸出を制限・管理すること。",
+          "observed_action": "エンティティリスト拡大、特定AI半導体・製造装置の対中輸出制限、ライセンス審査の厳格化。",
+          "preference_action_gap": "安全保障優先のPersistent Preferenceと、実際の規制強化は概ね整合しているが、政権・議会の政治的判断により、特定技術・企業への例外や段階的運用が求められる場面もありうる。",
+          "perceived_path": "安全保障上問題のある技術を特定し、規則改正・エンティティリスト・ライセンス運用を通じて対中流出を抑制すれば、米国の技術優位と安全保障を維持できると考えていると推定される。",
+          "event_role": {
+            "role_type": "constraint",
+            "explanation": "MATCH法など立法化は、BISの裁量を制約しつつ、対中規制をより包括的・政治的な枠組みへ移行させる制度的制約として機能する。"
+          },
+          "primary_audience": "米政権・議会・安全保障コミュニティ",
+          "secondary_audience": "同盟国の輸出管理当局・企業",
+          "driving_forces": [
+            {
+              "force": "国家安全保障コミュニティ",
+              "direction": "supporting",
+              "description": "国防総省・情報機関などからの安全保障上の懸念が規制強化を後押しする。"
+            },
+            {
+              "force": "米政権・議会",
+              "direction": "constraining",
+              "description": "選挙・産業・同盟国関係への配慮から、BISの規制強化に政治的制約がかかる。"
+            }
+          ],
+          "red_line": "軍事・監視用途に直結する先端半導体・AI技術の対中流出を容認すること。",
+          "confidence": "中",
+          "evidence_ids": [
+            "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+            "dad5abe7-dee3-4363-a14e-2cc473329c16"
+          ],
+          "persistent_preference_change": null,
+          "why_actor_matters": "BISは対中半導体・AI輸出管理の具体的な規則・ライセンス運用を担う実務機関であり、MATCH法など立法化が進んだ場合でも、その解釈・運用を通じて企業・同盟国への実際の影響を大きく左右するため。",
+          "available_leverage": [
+            "規則改正による対象技術の拡大・縮小",
+            "エンティティリストへの追加・削除",
+            "ライセンス審査方針の変更"
+          ],
+          "unavailable_or_costly_cards": [
+            "純粋な政治判断（選挙・外交）に基づく規制緩和・強化を単独で決めること"
+          ],
+          "vulnerabilities": [
+            "政権交代・議会立法による裁量の制約",
+            "企業・同盟国からの反発による政治的圧力"
+          ],
+          "relevant_decision_patterns": null,
+          "actor_intelligence_provenance": {
+            "actor_intelligence_status": "partial",
+            "profile_source": "actor_intelligence_candidate",
+            "historical_episode_ids": [],
+            "pattern_ids": [],
+            "exception_episode_ids": [],
+            "supporting_evidence_ids": [
+              "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+            ],
+            "general_knowledge_used": true
+          },
+          "pattern_applicability_assessment": null,
+          "actor_model_challenge": null,
+          "confidence_adjustment_reason": null,
+          "action_substance": {
+            "stated_signal": "対中先端半導体・AI技術の流出を安全保障上容認しない。",
+            "concrete_measure": "EAR改正、エンティティリスト拡大、ライセンス厳格化。",
+            "target_scope": "軍事・監視・戦略用途に直結する技術・装置。",
+            "legal_or_policy_force": "行政規則としての拘束力が高く、違反には制裁が伴う。",
+            "implementation_status": "継続的に改正・運用中。",
+            "enforcement_status": "一定の執行が行われていると推定。",
+            "discretion": "現状は裁量余地あり。MATCH法成立後は条文に応じて裁量が制約される可能性。",
+            "evidence_ids": [
+              "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+            ],
+            "assessment": "Substanceの強度が高く、Signalと整合的な安全保障主導の規制。"
+          }
+        },
+        {
+          "actor_ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "actor": "Donald Trump",
+          "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "formal_role": "（想定）米大統領または主要政治指導者として、対中政策・輸出管理方針に影響を与えうる。",
+          "decision_power": "政権トップとして、BIS・国家安全保障チームへ対中技術規制の方針を指示し、MATCH法など立法化への支持・拒否を通じて規制強度を左右しうる。",
+          "ability_to_move": "選挙キャンペーン・政権方針として対中強硬・規制強化を掲げることで、議会・官僚機構を動かすことができる。",
+          "ability_to_block": "MATCH法など強硬な立法化に対し拒否権・政治的圧力を行使し、規制の範囲・強度を調整・緩和しうる。",
+          "ultimate_objective": "自らの政治的地位・支持基盤の維持・拡大。",
+          "strategic_relationship_preference": "中国との関係を、直接交渉・取引の対象として扱い、強いカードを持ちながらも全面的な断絶は避けたいとする仮説が過去事例から示唆されているが、本ケースでは仮説としてのみ扱う。",
+          "persistent_preference": "対中政策を選挙・支持基盤向けの強硬姿勢と、実務的な取引・交渉の余地を残す手段として利用する傾向。",
+          "persistent_preference_evidence": [
+            {
+              "event_or_behavior": "過去の対中関税・制裁措置で強硬姿勢を示しつつ、交渉余地を残した事例",
+              "date_or_period": null,
+              "claim_id": null,
+              "evidence_id": null,
+              "source": "過去ケースライブラリ（他案件）",
+              "supports_or_contradicts": "supports",
+              "relevance": "対中政策を交渉カードとして使う傾向の仮説を支えるが、本ケースのCurrent Evidenceではない。",
+              "caveat": "本案件のSource Packには直接のCurrent Evidenceがなく、過去仮説の再利用にとどまる。"
+            }
+          ],
+          "issue_objective": "対中半導体・AI規制を、安全保障・産業・選挙政治のバランスを取りつつ、自身の政治的利益に資する形で運用すること。",
+          "observed_action": null,
+          "preference_action_gap": "本ケースのCurrent Evidenceが不足しており、具体的なObserved ActionとのGapは評価不能。",
+          "perceived_path": "対中技術規制を強硬に打ち出しつつ、交渉・取引の余地を残すことで、中国・同盟国・産業界から譲歩を引き出し、自身の政治的成果としてアピールする、という因果的信念を持つ可能性があるが、仮説にとどまる。",
+          "event_role": {
+            "role_type": "bargaining_card",
+            "explanation": "対中半導体・AI規制は、選挙・対中交渉・同盟国との取引における交渉カードとして位置づけられうる。"
+          },
+          "primary_audience": "米国内の支持基盤・有権者",
+          "secondary_audience": "中国指導部・同盟国指導者",
+          "driving_forces": [
+            {
+              "force": "有権者・支持団体",
+              "direction": "supporting",
+              "description": "対中強硬姿勢が支持基盤に受ける可能性。"
+            },
+            {
+              "force": "産業界・雇用",
+              "direction": "constraining",
+              "description": "半導体・AI産業への過度な規制が雇用・株価に悪影響を与える懸念。"
+            }
+          ],
+          "red_line": "自らの支持基盤にとって明確な政治的損失となる対中政策（過度な譲歩、または過度な経済損失）。",
+          "confidence": "低",
+          "evidence_ids": null,
+          "persistent_preference_change": null,
+          "why_actor_matters": "米大統領・主要政治指導者は、MATCH法など立法化への支持・拒否、BISへの方針指示を通じて、対中半導体・AI規制の強度・範囲を最終的に動かしうるため。",
+          "available_leverage": [
+            "大統領権限による行政措置",
+            "議会・支持基盤への影響力",
+            "メディア・世論への発信"
+          ],
+          "unavailable_or_costly_cards": [
+            "安全保障官僚の強い反対を無視した極端な規制緩和"
+          ],
+          "vulnerabilities": [
+            "選挙結果・支持率の変動",
+            "産業界・市場の反発"
+          ],
+          "relevant_decision_patterns": null,
+          "actor_intelligence_provenance": {
+            "actor_intelligence_status": "partial",
+            "profile_source": "actor_intelligence_candidate",
+            "historical_episode_ids": [],
+            "pattern_ids": [],
+            "exception_episode_ids": [],
+            "supporting_evidence_ids": null,
+            "general_knowledge_used": true
+          },
+          "pattern_applicability_assessment": null,
+          "actor_model_challenge": null,
+          "confidence_adjustment_reason": null,
+          "action_substance": {
+            "stated_signal": null,
+            "concrete_measure": null,
+            "target_scope": null,
+            "legal_or_policy_force": null,
+            "implementation_status": null,
+            "enforcement_status": null,
+            "discretion": null,
+            "evidence_ids": null,
+            "assessment": "本CaseのSource PackにTrumpの具体的Current Actionがなく、評価不能。"
+          }
+        },
+        {
+          "actor_ref": "f34571d3-4742-41b7-8648-5b3ee13b7720",
+          "actor": "Xi Jinping",
+          "entity_id": "f34571d3-4742-41b7-8648-5b3ee13b7720",
+          "formal_role": "中国共産党総書記・国家主席として、国家の技術自立戦略・対外経済政策を決定する。",
+          "decision_power": "対中半導体・AI規制への対応（技術自立・調達戦略・外交対応）を最終的に方向付ける権限を持つ。",
+          "ability_to_move": "国内の資源配分・産業政策・外交交渉を通じて、半導体・AI分野への投資・技術自立を加速させることができる。",
+          "ability_to_block": "対中規制に対する譲歩や、国内技術自立の減速を拒否し、長期的な対立を選択しうる。",
+          "ultimate_objective": "中国の長期的な技術自立・経済安全保障・政権維持。",
+          "strategic_relationship_preference": "米国との関係を、全面対立ではなく、技術・安全保障面での競合と、経済面での選択的協力を組み合わせた形で維持したい可能性があるが、仮説にとどまる。",
+          "persistent_preference": "外部からの技術・安全保障圧力を、国内の技術自立・産業強化の正当化材料として利用する傾向。",
+          "persistent_preference_evidence": [
+            {
+              "event_or_behavior": "過去の対米制裁・技術規制に対し、国内で『自主可控』を強調し投資を拡大した事例",
+              "date_or_period": null,
+              "claim_id": null,
+              "evidence_id": null,
+              "source": "一般的な中国政策分析（本CaseのSource Pack外）",
+              "supports_or_contradicts": "supports",
+              "relevance": "外圧を技術自立の推進材料として利用する傾向の仮説を支えるが、Current Evidenceではない。",
+              "caveat": "本案件のSource Packには直接のCurrent Evidenceがなく、過去一般知識の再利用にとどまる。"
+            }
+          ],
+          "issue_objective": "米国の対中半導体・AI規制の下でも、必要な技術・製品を確保しつつ、長期的な国産化・技術自立を進めること。",
+          "observed_action": null,
+          "preference_action_gap": "本CaseのCurrent Evidenceが不足しており、具体的なObserved ActionとのGapは評価不能。",
+          "perceived_path": "短期的には第三国経由調達・在庫積み増し・国内需要調整で時間を稼ぎつつ、長期的には国内投資・技術開発・人材育成を通じて米国依存を減らすことで、対中規制の影響を相対的に弱めると考えている可能性がある。",
+          "event_role": {
+            "role_type": "constraint",
+            "explanation": "米国の対中半導体・AI規制は、中国の技術自立戦略に対する外部制約であり、同時に国内で技術自立を正当化する材料としても機能する。"
+          },
+          "primary_audience": "中国国内の党・政府・産業界・国民",
+          "secondary_audience": "米国・同盟国政府",
+          "driving_forces": [
+            {
+              "force": "国内政権維持・ナショナリズム",
+              "direction": "supporting",
+              "description": "外圧への対抗・技術自立の強調が政権の正当性を支える。"
+            },
+            {
+              "force": "経済成長・雇用",
+              "direction": "constraining",
+              "description": "過度な対立・技術遮断が経済成長・雇用に悪影響を与える懸念。"
+            }
+          ],
+          "red_line": "中国の長期的な技術自立・安全保障を脅かすような一方的譲歩。",
+          "confidence": "低",
+          "evidence_ids": null,
+          "persistent_preference_change": null,
+          "why_actor_matters": "Xi Jinpingは、中国側の対中半導体・AI規制への対応戦略（技術自立・調達・外交）を決めることで、米規制の実効性と今後の追加規制の方向性に大きな影響を与えるため。",
+          "available_leverage": [
+            "国内投資・補助金による技術自立推進",
+            "外交・経済カードを通じた米・同盟国への圧力",
+            "第三国との協力"
+          ],
+          "unavailable_or_costly_cards": [
+            "米国の安全保障懸念を完全に無視した対立のエスカレーション（経済・軍事コストが高い）"
+          ],
+          "vulnerabilities": [
+            "先端技術・設備の対外依存",
+            "国内経済・雇用への影響"
+          ],
+          "relevant_decision_patterns": null,
+          "actor_intelligence_provenance": {
+            "actor_intelligence_status": "partial",
+            "profile_source": "actor_intelligence_candidate",
+            "historical_episode_ids": [],
+            "pattern_ids": [],
+            "exception_episode_ids": [],
+            "supporting_evidence_ids": null,
+            "general_knowledge_used": true
+          },
+          "pattern_applicability_assessment": null,
+          "actor_model_challenge": null,
+          "confidence_adjustment_reason": null,
+          "action_substance": {
+            "stated_signal": null,
+            "concrete_measure": null,
+            "target_scope": null,
+            "legal_or_policy_force": null,
+            "implementation_status": null,
+            "enforcement_status": null,
+            "discretion": null,
+            "evidence_ids": null,
+            "assessment": "本CaseのSource PackにXiの具体的Current Actionがなく、評価不能。"
+          }
+        }
+      ],
+      "preference_action_gap_summary": null,
+      "identified_knowledge_gaps": [
+        {
+          "description": "MATCH法の具体的な条文案・対象技術・域外適用範囲に関する一次情報（法案テキスト・議会審議記録）。",
+          "gap_category": "deterministic",
+          "priority": "高",
+          "recommended_action": "米議会・政府公式資料の確認。"
+        },
+        {
+          "description": "中国側の対中半導体・AI規制への具体的対応（第三国調達・在庫戦略・国内投資）の最新データ。",
+          "gap_category": "analytical_candidate",
+          "priority": "中",
+          "recommended_action": "中国政府・企業の公開資料、専門家分析の収集。"
+        },
+        {
+          "description": "米国内の選挙・産業ロビーが対中半導体・AI規制（MATCH法など）に与えている具体的影響。",
+          "gap_category": "analytical_candidate",
+          "priority": "中",
+          "recommended_action": "米議会ロビー活動・産業団体の声明・選挙区産業構造の分析。"
+        }
+      ],
+      "main_scenario": {
+        "description": "提供文書に基づく現時点の主シナリオは、米国が対中半導体・AI輸出管理をMATCH法などによって立法化し、BISの行政裁量を補強・部分的に拘束しつつ、同盟国（日本など）にも制度的追随を求める『挟撃の経済安全保障』路線を強めていくというもの。これに対し、中国側は短期的には第三国経由調達・在庫戦略で時間を稼ぎ、長期的には技術自立・国産化を加速させる。日本など同盟国は、米国法制への整合と自国産業・対中市場維持の間で板挟みとなり、輸出管理法制・産業政策の再設計を迫られる。",
+        "confidence": "中",
+        "supporting_evidence": [
+          "dad5abe7-dee3-4363-a14e-2cc473329c16",
+          "713a3264-ba25-4cca-807e-a0b18366c4c7",
+          "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+        ],
+        "evidence_relevance": [
+          {
+            "evidence_id": "dad5abe7-dee3-4363-a14e-2cc473329c16",
+            "claim_relevance": "direct",
+            "source_type": "unknown",
+            "rationale": "MATCH法と『挟撃の経済安全保障』を直接論じ、米国の立法化・同盟国巻き込みを主軸としている。"
+          },
+          {
+            "evidence_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "claim_relevance": "strongly_relevant",
+            "source_type": "unknown",
+            "rationale": "規制強化のなかでも対中需要・輸出が続いているというObservationを示し、中国側の時間稼ぎ・構造的需要の存在を裏付ける。"
+          },
+          {
+            "evidence_id": "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+            "claim_relevance": "structural",
+            "source_type": "unknown",
+            "rationale": "日本側から見た半導体政策・輸出管理の枠組みを示し、同盟国が米国の対中規制に制度的に組み込まれつつある構造を補完する。"
+          }
+        ],
+        "relevance_confidence_adjustment_reason": null,
+        "selection_rationale": "MATCH法と『挟撃の経済安全保障』を扱う国問研コメント（[document_id: dad5abe7-dee3-4363-a14e-2cc473329c16]）が、米側の立法化・同盟国巻き込みを中心に据えており、他の仮説（純粋な市場構造・Actor意図中心）よりも、提供Evidenceと整合的かつ企業実務への影響を直接説明できるため。",
+        "assumptions": [
+          "MATCH法など対中半導体輸出管理の立法化が一定程度進む（完全頓挫しない）。",
+          "中国側が短期的な調達・在庫戦略と長期的な技術自立を並行して追求する。",
+          "日本など同盟国が米国法制への一定の整合を図る。"
+        ],
+        "observable_indicators": [
+          "MATCH法の成立状況・条文内容（対象技術・域外適用範囲・例外規定）。",
+          "BISによる対中半導体・AI関連規則改正・エンティティリスト拡大の動き。",
+          "日本など同盟国の輸出管理法制・ガイドライン改正（米法との整合度）。",
+          "中国側の半導体・AI関連投資・国産化政策の強化状況。"
+        ],
+        "historical_analogies_used": null,
+        "evidence_class": "current_indirect_evidence",
+        "confidence_adjustment_reason": null
+      },
+      "alternative_scenarios": [
+        {
+          "description": "MATCH法など強硬な立法化が議会で頓挫し、対中半導体・AI規制はBISの行政裁量中心の段階的・選別的運用にとどまる。企業・同盟国は現行枠組みの延長線上で調整しつつ対中ビジネスを継続できる余地が広がる。",
+          "confidence": "低",
+          "strengthening_conditions": [
+            "議会審議でMATCH法が否決・棚上げされる。",
+            "政権・専門家が『現行BIS枠組みの維持』を明示する。"
+          ],
+          "weakening_conditions": [
+            "MATCH法の再提出・修正版の審議が継続する。",
+            "政権・議会から対中技術封じ込め強化の明確なシグナルが出る。"
+          ],
+          "switch_conditions": [
+            "MATCH法の不成立・骨抜き修正が確定し、米側が行政裁量中心の運用継続を公式に位置づける。"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "confidence_adjustment_reason": null
+        },
+        {
+          "description": "米国がMATCH法などを通じて対中半導体・AI規制をさらに強化し、先端技術供給をほぼ全面的に遮断する一方、中国側が第三国経由調達・技術自立を急速に進め、事実上の技術ブロック化が進行する。",
+          "confidence": "低",
+          "strengthening_conditions": [
+            "MATCH法が広範な対象技術・厳格な域外適用を伴って成立する。",
+            "追加立法・制裁により対中技術フローが大幅に縮小する。",
+            "中国側の国産化・第三国調達の急速な進展を示すデータが出る。"
+          ],
+          "weakening_conditions": [
+            "MATCH法が限定的な内容で成立し、BIS裁量が広く残る。",
+            "中国側の技術自立が想定より遅れ、対中規制が部分的緩和される。"
+          ],
+          "switch_conditions": [
+            "強硬なMATCH法成立と、それに続く追加規制・制裁の発動、および中国側の技術ブロック化を示す複数の観測。"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "strongest_counterargument": "MATCH法など立法化は象徴的な意味合いが強く、実務上はBISの裁量運用・企業のコンプライアンス対応が中心であり、制度の硬直化・同盟国への圧力は限定的にとどまる可能性がある、という反論。",
+      "weakening_information": null,
+      "contradicting_evidence": null,
+      "retraction_conditions": [
+        "MATCH法など対中半導体輸出管理の立法化が不成立・棚上げとなり、米政府・専門家が『行政裁量中心の現行枠組みを維持する』と明言する。",
+        "日本など同盟国が、米国の対中規制に対し制度的追随ではなく距離を置く方針を公式に示す。"
+      ],
+      "additional_research": [
+        {
+          "question": "MATCH法の具体的条文案・対象技術・域外適用範囲はどうなっているか。",
+          "related_hypothesis": "H0: 立法化＋域外適用が局面のKey Pointである。",
+          "recommended_sources": "米議会公式サイト・法案テキスト・専門家解説。",
+          "priority": "高",
+          "rationale": "主シナリオの制度的前提を検証するため。"
+        },
+        {
+          "question": "中国側の半導体・AI関連調達・在庫・国産化の最新動向はどうか。",
+          "related_hypothesis": "H2: 中国の需要・調達能力が規制の実効性を左右する。",
+          "recommended_sources": "中国政府・企業の公開資料、専門家分析。",
+          "priority": "中",
+          "rationale": "米規制の実効性と今後の追加規制の可能性を読むため。"
+        },
+        {
+          "question": "MATCH法の具体的条文案（対象技術・域外適用範囲・例外規定）はどうなっているか。",
+          "related_hypothesis": null,
+          "recommended_sources": null,
+          "priority": null,
+          "rationale": "Key Point（立法化＋域外適用）の実質的強度・企業影響を判断するため。"
+        },
+        {
+          "question": "中国向け半導体需要・輸出が規制強化の中でも維持・増加している具体的な品目・技術レベル・経路は何か。",
+          "related_hypothesis": null,
+          "recommended_sources": null,
+          "priority": null,
+          "rationale": "Structural Key Point（中国需要・調達能力）の実態を把握し、米規制の実効性・追加規制の可能性を読むため。"
+        },
+        {
+          "question": "米国内の選挙・産業ロビーがMATCH法など対中半導体・AI規制に与えている具体的影響は何か。",
+          "related_hypothesis": null,
+          "recommended_sources": null,
+          "priority": null,
+          "rationale": "Actor-intent仮説（安全保障＋選挙政治）の妥当性を検証するため。"
+        }
+      ],
+      "business_impact": {
+        "direct": null,
+        "indirect": "米国の対中半導体・AI規制の立法化・域外適用が進む場合、日本企業を含むグローバル半導体・AI関連企業は、米原産性・米技術含有の有無にかかわらず、対中取引の見直し・コンプライアンス強化・サプライチェーン再編を迫られる可能性が高い。",
+        "environment_change": "半導体・AI分野が、米中対立と同盟国巻き込みによる経済安全保障の中核領域として再編されつつあり、技術・市場戦略を安全保障・法制・同盟関係と一体で考える必要が高まっている。",
+        "unrelated_note": null
+      },
+      "monitoring_indicators": [
+        "MATCH法など対中半導体輸出管理関連法案の審議・採決状況。",
+        "BISによる対中半導体・AI関連規則改正・エンティティリスト拡大。",
+        "日本など同盟国の輸出管理法制・ガイドライン改正。",
+        "中国側の半導体・AI関連投資・国産化政策の強化状況。"
+      ],
+      "unknown_or_uncertain": "提供文書だけでは、米国内の選挙・産業ロビーの具体的な影響、中国側の最新の調達・在庫戦略、MATCH法の条文詳細などは判断できない。これらは追加調査が必要なKnowledge Gapとして扱う。",
+      "executive_summary": {
+        "what_changed": "対中半導体・AI規制が、BISの行政裁量中心から、MATCH法などによる立法化・域外適用を通じて、より政治化・硬直化した枠組みへ移行しつつある点。同時に、日本など同盟国が米国の経済安全保障戦略に制度的に組み込まれつつある。",
+        "why_it_matters": "規制の立法化・域外適用は、企業の対中ビジネス・サプライチェーンに対する拘束力を大きく高め、コンプライアンス・事業戦略・投資判断に直接影響する。日本など同盟国は、米国法制への整合と自国産業・市場維持の間で難しい選択を迫られる。",
+        "what_to_watch_decide": "MATCH法など関連法案の行方、BISの規則改正、日本の輸出管理法制改正、中国側の技術自立・調達動向を継続的にモニタリングし、自社の対中ビジネス・技術戦略・コンプライアンス体制の見直しタイミングを検討すること。"
+      },
+      "stakeholders": [
+        {
+          "actor": "Bureau of Industry and Security (BIS)",
+          "purpose": "米国の国家安全保障・対外政策に沿って、戦略的に重要な技術が敵対的主体へ流出することを防ぐこと。",
+          "constraints_fears": "米政権・議会",
+          "red_lines": "軍事・監視用途に直結する先端半導体・AI技術の対中流出を容認すること。",
+          "confidence": "中",
+          "position": "対中半導体・AI関連技術のうち、軍事・監視・戦略用途に直結するものを中心に、輸出を制限・管理すること。",
+          "leverage": "国家安全保障コミュニティ",
+          "ability_to_move_or_block": "規則改正・エンティティリスト拡大・ライセンス方針変更を通じて、企業の対中取引を迅速に制限・許可できる。"
+        },
+        {
+          "actor": "Donald Trump",
+          "purpose": "自らの政治的地位・支持基盤の維持・拡大。",
+          "constraints_fears": "産業界・雇用",
+          "red_lines": "自らの支持基盤にとって明確な政治的損失となる対中政策（過度な譲歩、または過度な経済損失）。",
+          "confidence": "低",
+          "position": "対中半導体・AI規制を、安全保障・産業・選挙政治のバランスを取りつつ、自身の政治的利益に資する形で運用すること。",
+          "leverage": "有権者・支持団体",
+          "ability_to_move_or_block": "選挙キャンペーン・政権方針として対中強硬・規制強化を掲げることで、議会・官僚機構を動かすことができる。"
+        },
+        {
+          "actor": "Xi Jinping",
+          "purpose": "中国の長期的な技術自立・経済安全保障・政権維持。",
+          "constraints_fears": "経済成長・雇用",
+          "red_lines": "中国の長期的な技術自立・安全保障を脅かすような一方的譲歩。",
+          "confidence": "低",
+          "position": "米国の対中半導体・AI規制の下でも、必要な技術・製品を確保しつつ、長期的な国産化・技術自立を進めること。",
+          "leverage": "国内政権維持・ナショナリズム",
+          "ability_to_move_or_block": "国内の資源配分・産業政策・外交交渉を通じて、半導体・AI分野への投資・技術自立を加速させることができる。"
+        },
+        {
+          "actor": "米議会（MATCH法などの立法主体）",
+          "purpose": "対中技術封じ込めを強化しつつ、国内安全保障・産業・選挙利益を反映した法制度を構築する。",
+          "priority": "対中強硬を求める議員・派閥にとっては安全保障優先、産業界重視派にとっては雇用・競争力維持。",
+          "constraints_fears": "過度な規制による国内産業・雇用への悪影響、同盟国との関係悪化。",
+          "red_lines": "中国への先端軍事・監視用途技術の無制限な供給。",
+          "key_relationships": "政権・BISとの政策調整、産業ロビー・選挙区産業との関係。",
+          "confidence": "低",
+          "position": "MATCH法などを通じて対中規制の立法化・域外適用を推進する強硬派と、慎重派が併存していると推定されるが、Source Packに具体的構成情報はない。",
+          "leverage": "立法権・予算権を通じた制度設計・BISへの枠組み付け。",
+          "ability_to_move_or_block": "法案の成立・修正・否決を通じて規制強度・範囲を動かす／止める力を持つ。"
+        },
+        {
+          "actor": "日本政府・輸出管理当局",
+          "purpose": "自国の安全保障・同盟関係を維持しつつ、半導体産業・対中市場を可能な範囲で守る。",
+          "priority": "米国との安全保障協調と産業競争力維持の両立。",
+          "constraints_fears": "米国法制への不整合による安全保障関係の悪化、過度な対中規制による産業・輸出への打撃。",
+          "red_lines": "自国安全保障を損なう対中技術供給、または産業基盤を大きく損なう過度な規制。",
+          "key_relationships": "米国政府・BISとの協調、中国市場・国内産業界との関係。",
+          "confidence": "中",
+          "position": "米国の対中規制に一定程度整合しつつ、日本独自の産業政策・輸出管理枠組みを維持しようとしている。",
+          "leverage": "自国輸出管理法制・ガイドラインの設計、対米協議・対中外交。",
+          "ability_to_move_or_block": "自国企業の対中輸出を規制・許可する力を持つが、米国法制との整合に制約される。"
+        }
+      ],
+      "sources_and_citations": [
+        {
+          "result_type": "document",
+          "result_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+          "citation_label": null
+        },
+        {
+          "result_type": "document",
+          "result_id": "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+          "citation_label": null
+        },
+        {
+          "result_type": "document",
+          "result_id": "dad5abe7-dee3-4363-a14e-2cc473329c16",
+          "citation_label": null
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "relevant_precedents": [],
+      "relevant_mechanisms": [],
+      "assets_dependencies_leverage": [],
+      "audience_analysis": [
+        {
+          "actor_ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+          "action_or_statement": "対中半導体・AI関連技術に関する規則改正・エンティティリスト拡大・ライセンス厳格化（EAR運用）",
+          "primary_audience": "米政権・議会・国家安全保障コミュニティ",
+          "secondary_audience": "同盟国輸出管理当局・半導体・AI関連企業",
+          "message_hypothesis": "安全保障上問題のある対中技術フローは抑制する一方、制度枠組みの範囲内で同盟国・企業と協調しつつ運用する意思を示す。",
+          "action_substance": {
+            "stated_signal": "対中先端技術の流出は容認しないという安全保障上の強い姿勢。",
+            "concrete_measure": "エンティティリスト拡大、特定AI半導体・製造装置の対中輸出制限、ライセンス審査の厳格化。",
+            "target_scope": "軍事・監視・戦略用途に直結する半導体・AI関連技術・装置。",
+            "legal_or_policy_force": "EARに基づく拘束力の高い行政規則。MATCH法成立後は法定枠組みによる追加拘束も想定。",
+            "implementation_status": "継続的に改正・運用中（詳細はMETI資料が参照）。",
+            "enforcement_status": "ライセンス審査・違反制裁を通じて一定程度実施されていると推定。",
+            "discretion": "現状はBIS裁量が比較的大きいが、立法化が進めば裁量余地は部分的に制約される可能性。",
+            "evidence_ids": [
+              "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+            ],
+            "assessment": "Signal・Substanceともに強く、安全保障コミュニティ主導の規制強化として位置づけられる。"
+          },
+          "confidence": "中"
+        },
+        {
+          "actor_ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "action_or_statement": "対中半導体・AI規制・MATCH法などへの支持・修正要求・拒否権行使の可能性（仮説）",
+          "primary_audience": "米国内支持基盤・有権者",
+          "secondary_audience": "議会・産業界・中国指導部・同盟国指導者",
+          "message_hypothesis": "対中強硬姿勢を示しつつ、国内経済・産業への過度な悪影響は避ける立場をアピールする可能性。",
+          "action_substance": {
+            "stated_signal": "選挙・支持基盤向けの対中強硬メッセージ。",
+            "concrete_measure": null,
+            "target_scope": null,
+            "legal_or_policy_force": null,
+            "implementation_status": null,
+            "enforcement_status": null,
+            "discretion": null,
+            "evidence_ids": null,
+            "assessment": "現時点のSource PackにはTrumpの具体的行動・発言に関するCurrent Evidenceがなく、Signal/Substanceの評価は仮説にとどまる。"
+          },
+          "confidence": "判断不能"
+        },
+        {
+          "actor_ref": "f34571d3-4742-41b7-8648-5b3ee13b7720",
+          "action_or_statement": "対中半導体・AI規制への対応としての第三国調達・在庫戦略・技術自立推進（仮説）",
+          "primary_audience": "中国国内の党・政府・産業界・国民",
+          "secondary_audience": "米国・同盟国政府",
+          "message_hypothesis": "外圧に屈せず技術自立を進める姿勢と、短期的な安定供給確保へのコミットメントを示す。",
+          "action_substance": {
+            "stated_signal": "『自主可控』・技術自立の強調。",
+            "concrete_measure": null,
+            "target_scope": null,
+            "legal_or_policy_force": null,
+            "implementation_status": null,
+            "enforcement_status": null,
+            "discretion": null,
+            "evidence_ids": null,
+            "assessment": "Source Packに中国側の具体的措置のCurrent Evidenceがなく、Signal/Substanceは一般的分析仮説にとどまる。"
+          },
+          "confidence": "判断不能"
+        }
+      ],
+      "media_source_context": null,
+      "situation_actor_assessment": [
+        {
+          "issue_component": "MATCH法の立法化の範囲・強度",
+          "issue_component_description": "対中半導体輸出管理を法定化し、BIS裁量を補強・制約する枠組み。",
+          "actor_ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+          "salience": "high",
+          "priority_rationale": "BISの運用裁量・技術評価が、MATCH法の条文により直接制約・補強されるため、同機関にとって制度環境の核心。",
+          "effect_on_actor_objective": "安全保障目的の達成手段が増える一方、政治的に定められた禁止枠に縛られ、柔軟な運用が難しくなる可能性。",
+          "desired_outcome": "安全保障上重要な技術については十分に強い法定枠組みを確保しつつ、技術的に不要な過度規制は避けたい。",
+          "instrumental_value": "mixed",
+          "current_red_line": "安全保障上重要な技術が法定枠組みから漏れ、裁量でも規制できない状態。",
+          "currently_tradeable": "部分的に条文修正・例外規定を通じて調整可能。",
+          "stated_preference": null,
+          "estimated_real_preference": "安全保障上重要な技術については強い立法化を支持しつつ、技術的に過度な包括禁止には慎重。",
+          "genuine_or_tactical": "mixed",
+          "primary_binding_constraint": "議会が定める法案内容。",
+          "primary_usable_leverage": "技術評価・安全保障リスク分析を通じた条文・運用への専門的インプット。",
+          "likely_reaction": null,
+          "actor_expected_response": null,
+          "analyst_expected_response": "BISは安全保障上重要な技術の厳格な立法化を支持しつつ、技術的に過度な包括禁止には専門的懸念を示す可能性。",
+          "confidence": "低",
+          "evidence_ids": [
+            "dad5abe7-dee3-4363-a14e-2cc473329c16"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "alternative_interpretation": null,
+          "alternative_interpretation_status": null,
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "日本など同盟国への域外適用・追随要求",
+          "issue_component_description": "MATCH法等を通じて米国法制を同盟国企業・制度へ広く適用する動き。",
+          "actor_ref": "63fa2294-ceca-488f-8e76-d4dae736a8ce",
+          "salience": "medium",
+          "priority_rationale": "同盟国協調は安全保障上重要だが、BIS自身は米国内制度運用が主であり、対外協調は政権・外交当局と分担。",
+          "effect_on_actor_objective": "同盟国の協調により規制の実効性が高まる一方、運用負担・政治的摩擦が増える。",
+          "desired_outcome": "主要同盟国が米国の安全保障評価に沿った輸出管理を採用すること。",
+          "instrumental_value": "instrumental",
+          "current_red_line": null,
+          "currently_tradeable": "外交・技術協議を通じて調整可能。",
+          "stated_preference": null,
+          "estimated_real_preference": "同盟国協調は望ましいが、外交当局主導で進めるべきと認識。",
+          "genuine_or_tactical": "unclear",
+          "primary_binding_constraint": "政権・外交当局の対同盟国方針。",
+          "primary_usable_leverage": "技術情報共有・安全保障評価。",
+          "likely_reaction": null,
+          "actor_expected_response": null,
+          "analyst_expected_response": "BISは技術情報提供・評価を通じて同盟国協調を支援するが、直接の政治圧力は政権側に委ねる。",
+          "confidence": "低",
+          "evidence_ids": [
+            "dad5abe7-dee3-4363-a14e-2cc473329c16"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "alternative_interpretation": null,
+          "alternative_interpretation_status": null,
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "対中半導体・AI規制の選挙政治への影響",
+          "issue_component_description": "対中強硬姿勢と国内産業・雇用への影響のバランス。",
+          "actor_ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "salience": "unknown",
+          "priority_rationale": "Source PackにTrumpのCurrent Evidenceがなく、どの程度この論点を優先しているか判断できない。",
+          "effect_on_actor_objective": "対中強硬は支持基盤に訴求し得るが、過度な規制は産業・雇用に悪影響を与え、支持率を損なう可能性。",
+          "desired_outcome": "対中強硬をアピールしつつ、国内経済への打撃を最小化。",
+          "instrumental_value": "domestic_signal",
+          "current_red_line": null,
+          "currently_tradeable": "規制強度・対象範囲を調整することで一定程度取引可能。",
+          "stated_preference": null,
+          "estimated_real_preference": "対中政策を選挙・支持基盤向けのメッセージとして利用しつつ、実務的には柔軟性を残したい。",
+          "genuine_or_tactical": "tactical",
+          "primary_binding_constraint": "選挙結果・支持率。",
+          "primary_usable_leverage": "大統領権限・メディア発信。",
+          "likely_reaction": null,
+          "actor_expected_response": null,
+          "analyst_expected_response": "選挙局面では対中強硬を前面に出し、政権運営では産業界との調整を図る可能性。",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "unsupported_assumption",
+          "alternative_interpretation": "安全保障官僚・議会強硬派に押され、選挙政治より安全保障優先に傾く可能性。",
+          "alternative_interpretation_status": "plausible",
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        },
+        {
+          "issue_component": "中国の技術自立・国産化戦略",
+          "issue_component_description": "対中規制を受けた長期的な技術自立・国産化の推進。",
+          "actor_ref": "f34571d3-4742-41b7-8648-5b3ee13b7720",
+          "salience": "high",
+          "priority_rationale": "Xiにとって長期的な技術自立・経済安全保障は政権維持の核心であり、対中規制はその推進材料にも制約にもなる。",
+          "effect_on_actor_objective": "技術自立が進めば対中規制の影響を相対的に弱められるが、短期的にはコスト・リスクが増大。",
+          "desired_outcome": "対中規制の下でも必要技術を確保し、長期的には米国依存を減らす。",
+          "instrumental_value": "intrinsic",
+          "current_red_line": "技術自立を阻害するような一方的譲歩。",
+          "currently_tradeable": "短期的な調達・在庫戦略は調整可能だが、長期的技術自立は譲歩しにくい。",
+          "stated_preference": null,
+          "estimated_real_preference": "外圧を利用して国内技術自立を加速させたい。",
+          "genuine_or_tactical": "genuine",
+          "primary_binding_constraint": "先端技術・設備の対外依存。",
+          "primary_usable_leverage": "国内投資・補助金・政策動員。",
+          "likely_reaction": null,
+          "actor_expected_response": null,
+          "analyst_expected_response": "短期的には第三国調達・在庫戦略で時間を稼ぎつつ、長期的には国産化投資を拡大する。",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "alternative_interpretation": "対中規制のコストが高まり、一定の妥協・部分的依存継続を選ぶ可能性。",
+          "alternative_interpretation_status": "plausible",
+          "media_salience_signal": "unknown",
+          "media_salience_basis": null,
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "investigation_questions": [
+        {
+          "question": "MATCH法の具体的条文案（対象技術・域外適用範囲・例外規定）はどうなっているか。",
+          "question_type": "knowledge_gap",
+          "rationale": "Key Point（立法化＋域外適用）の実質的強度・企業影響を判断するため。",
+          "can_current_evidence_answer": false,
+          "answer_if_yes": null,
+          "answer_evidence_ids": null
+        },
+        {
+          "question": "中国向け半導体需要・輸出が規制強化の中でも維持・増加している具体的な品目・技術レベル・経路は何か。",
+          "question_type": "knowledge_gap",
+          "rationale": "Structural Key Point（中国需要・調達能力）の実態を把握し、米規制の実効性・追加規制の可能性を読むため。",
+          "can_current_evidence_answer": false,
+          "answer_if_yes": null,
+          "answer_evidence_ids": null
+        },
+        {
+          "question": "米国内の選挙・産業ロビーがMATCH法など対中半導体・AI規制に与えている具体的影響は何か。",
+          "question_type": "knowledge_gap",
+          "rationale": "Actor-intent仮説（安全保障＋選挙政治）の妥当性を検証するため。",
+          "can_current_evidence_answer": false,
+          "answer_if_yes": null,
+          "answer_evidence_ids": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "description": "米国はMATCH法などを通じて対中半導体・AI輸出管理を立法化・域外適用し、BISの行政裁量を補強・部分的に拘束しつつ、同盟国にも制度的追随を求める『挟撃の経済安全保障』路線を強めている。",
+          "status": "retained",
+          "reason": "国問研コメントがこのFrameを中心に分析しており、提供Evidenceと整合的で企業影響を直接説明できる。",
+          "supporting_evidence_ids": [
+            "dad5abe7-dee3-4363-a14e-2cc473329c16"
+          ],
+          "contradicting_evidence_ids": null,
+          "confidence": "中"
+        },
+        {
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "description": "米国の対中技術封じ込め戦略は、安全保障目的だけでなく、選挙・産業ロビー・インフレ・雇用など国内政治要因に強く縛られており、MATCH法などもそのバランスの産物である。",
+          "status": "unresolved",
+          "reason": "一般的にはもっともらしいが、Source Packに選挙・ロビーの具体的Evidenceがなく、確度を上げられない。",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "confidence": "低"
+        },
+        {
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "description": "中国向け半導体需要・調達能力が規制強化にもかかわらず高水準で維持されており、市場・産業構造が米規制の実効性を制約している。",
+          "status": "retained",
+          "reason": "TIMEWELL記事が対中需要・輸出の残存・一部増加を示しており、構造的制約として重要。",
+          "supporting_evidence_ids": [
+            "713a3264-ba25-4cca-807e-a0b18366c4c7"
+          ],
+          "contradicting_evidence_ids": null,
+          "confidence": "低"
+        },
+        {
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "description": "既存のTrump・XiのActor Intelligence（対中強硬・技術自立推進など）が、半導体・AI規制という局面では当てはまらない可能性がある。",
+          "status": "rejected",
+          "reason": "本CaseのSource Packに両者のCurrent Evidenceがなく、既存仮説を更新・否定する材料もないため、現時点では採用・検証が困難。",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null,
+          "confidence": "判断不能"
+        },
+        {
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "description": "『米中技術覇権争い』という通常Frameではなく、『挟撃の経済安全保障』として、米中対立が同盟国の制度・産業を再編するプロセスであると捉えるべきであり、主な決定点は米中ではなく同盟国の追随度合いにある。",
+          "status": "retained",
+          "reason": "国問研コメントがこのFrameを提示しており、日本への政策的試練という観点から有用。ただし決定点がどこにあるかは今後のEvidence次第。",
+          "supporting_evidence_ids": [
+            "dad5abe7-dee3-4363-a14e-2cc473329c16"
+          ],
+          "contradicting_evidence_ids": null,
+          "confidence": "低"
+        }
+      ],
+      "directional_perceptions": null,
+      "root_premise_check": null,
+      "review_findings": null
+    }
+  },
+  "quality_evaluation": {
+    "evaluation_id": "f4d16fc8-4b39-4e0b-9e26-1d23da967ce7",
+    "response_id": "5502e843-bcbd-4fa5-a7aa-31f04078b37d",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "has_retraction_conditions",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "versions_recorded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "focus_selection_why_now_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "focus_selection_trigger_types_within_enum",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "focus_selection_anomaly_not_treated_as_conclusion",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "passed": false,
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      },
+      {
+        "name": "key_point_controllers_covered",
+        "passed": false,
+        "detail": "Primary Key Pointの制御構造が名指しした主体がKey Actorに見当たりません（Actor Discoveryの追従漏れの可能性）: 米議会"
+      },
+      {
+        "name": "primary_key_point_evidence_coverage",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "directional_perceptions_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "directional_perception_not_self_referential",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "passed": false,
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）"
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "actor_model_challenged",
+        "passed": true,
+        "detail": ""
+      }
+    ],
+    "passed_count": 45,
+    "failed_count": 3,
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "temporal_hedge_language_not_present",
+      "key_point_controllers_covered",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "temporal_hedge_language_not_present",
+      "key_point_controllers_covered",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 94863,
+    "completion_tokens": 17353,
+    "total_tokens": 112216
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment",
+        "directional_perception"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment', 'directional_perception']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 85858,
+        "prompt_tokens": 44758,
+        "completion_tokens": 11629
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment+directional_perception",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 37702,
+        "prompt_tokens": 50105,
+        "completion_tokens": 5724
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      },
+      {
+        "name": "key_point_controllers_covered",
+        "detail": "Primary Key Pointの制御構造が名指しした主体がKey Actorに見当たりません（Actor Discoveryの追従漏れの可能性）: 米議会"
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": false
+    }
+  },
+  "persistent_preference_candidates": []
+}

@@ -1,0 +1,167 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 81755,
+    "completion_tokens": 12682,
+    "total_tokens": 94437
+  },
+  "wall_clock_seconds": 217.20917963981628,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "北朝鮮の核・ミサイル能力をめぐる抑止・エスカレーションのバランス",
+    "selection_rationale": "北朝鮮の対露・対中・対米・対韓の全ての関係に共通しているのは、核・ミサイル能力をどう位置づけ、どの程度エスカレートさせるかという問題であり、他の候補（中国依存、ロシアとの取引、南北路線転換）はいずれもこの核・ミサイル戦略の上位または派生要因として整理できるため。",
+    "control_type": "mixed",
+    "confidence": "低",
+    "candidate_key_points_count": 4,
+    "candidate_key_points": [
+      "北朝鮮の核・ミサイル能力をめぐる抑止・エスカレーションのバランス",
+      "中国への経済的依存と国際制裁体制",
+      "ロシアとの軍事・政治取引の深化",
+      "南北関係の「敵対的2国家」路線への転換"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "中国への経済的依存と国際制裁体制",
+        "why_not_primary": "構造的に重要だが、対露関係の新展開や南北軍事緊張の高まりなど、軍事・安全保障面の具体的動きを直接規定しているのは核・ミサイル戦略であり、中国依存はその行動余地を制約する要因として位置づける方が整合的と判断した。"
+      },
+      {
+        "key_point": "ロシアとの軍事・政治取引の深化",
+        "why_not_primary": "ロシアとの取引は重要な新要素だが、ウクライナ戦争など外部要因に左右されやすく、北朝鮮の長期的な対外戦略の中核は依然として核・ミサイルによる抑止・交渉であると考えられるため、PrimaryではなくSecondaryなドライバーとした。"
+      },
+      {
+        "key_point": "南北関係の「敵対的2国家」路線への転換",
+        "why_not_primary": "南北路線転換は対韓関係に特化した枠組みであり、対露・対中・対米関係を含む全体像を説明するには射程が限定的であるため、核・ミサイル戦略の一部として扱う方が適切と判断した。"
+      }
+    ],
+    "disconfirming_signal": "北朝鮮が自発的に核・ミサイル計画の完全放棄を受け入れ、体制保証なしに非核化へ向かう、あるいは核・ミサイルをほとんど使わずに対外関係を安定化させる場合、このKey Point（核・ミサイル戦略が局面の蝶番であるという前提）は誤っていた可能性が高い。",
+    "evidence_class": "structural_reference"
+  },
+  "actors": [
+    {
+      "actor_ref": "kim_jong_un",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 2,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": true,
+      "has_actor_model_challenge": true,
+      "actor_model_challenge_outcome": "inconclusive",
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "unresolved": 2,
+    "rejected": 1
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "金正恩は、核・ミサイル能力を体制存続の最終保証と位置づけるPersistent Preferenceを維持しつつ、ロシアとの軍事・政治取引を通じて対外関係の自由度を高め、中国への過度な依存を相対的に緩和しようとしている。対米・対韓関係では、「敵対的2国家」路線を通じて南北関係を恒常的な対立状態として位置づけ、軍事的緊張と象徴的行動（挑発と部分的緊張緩和）を交渉カードとして用いる戦略を継続する可能性が高い。米国との直接対話や制裁緩和の余地は、核・ミサイル能力の完全放棄を前提としない形での限定的な取引にとどまり、全面的な非核化や関係正常化は主シナリオではない。",
+    "historical_analogies_used": [
+      {
+        "same_actor": true,
+        "description": "南北共同連絡事務所爆破とその後の軍事計画撤回というエスカレーションとデエスカレーションの組み合わせ。",
+        "same_domain": true,
+        "analogy_strength": "medium",
+        "same_constraints": false,
+        "same_leverage_mechanism": true,
+        "analogy_source_precedent_id": "464a87c2-b00c-4156-8202-2d735286ef5e",
+        "same_institutional_structure": true
+      }
+    ]
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 3,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "ロシアと北朝鮮の軍事・経済協力の具体的内容は何か。",
+      "rationale": "ロシアとの取引内容が明確になれば、北朝鮮の対露依存度と行動自由度の評価が精緻化できる。",
+      "related_hypothesis": "ロシアとの関係強化が北朝鮮の対外行動の自由度を高めているという仮説。",
+      "recommended_sources": "政府・国際機関の報告、信頼できるシンクタンクの分析。"
+    },
+    {
+      "priority": "中",
+      "question": "中国の対北制裁履行状況と経済支援の実態はどう変化しているか。",
+      "rationale": "中国の支援・圧力の実態が分かれば、北朝鮮の行動余地とリスク許容度の評価が改善する。",
+      "related_hypothesis": "中国への経済的依存が北朝鮮の行動を制約しているという仮説。",
+      "recommended_sources": "貿易統計、衛星データ、専門家レポート。"
+    },
+    {
+      "priority": null,
+      "question": "北朝鮮国内の経済・社会状況（食糧事情、エネルギー供給、エリート層の不満など）が金正恩の意思決定に与える影響はどの程度か。",
+      "rationale": "Persistent PreferenceとObserved ActionのGapを説明するDriving Forceとして、国内要因の重要性を評価する必要がある。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 3,
+  "quality_guard": {
+    "passed_count": 33,
+    "failed_count": 1,
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "confidence_adjustments": [
+      "main_scenario",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[3]"
+    ],
+    "historical_evidence_separations": [
+      "key_point_assessment",
+      "key_point_assessment.candidate_key_points[0]",
+      "key_point_assessment.candidate_key_points[3]"
+    ],
+    "actor_evidence_separations": [
+      "key_actor_profiles[0]:removed=['d81a21e5-b2ec-457a-8814-5e06ec9824fc', '464a87c2-b00c-4156-8202-2d735286ef5e']"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ]
+  },
+  "executive_summary": {
+    "what_changed": "北朝鮮は「敵対的2国家」路線宣言などを通じて南北関係を恒常的対立状態として位置づける一方、ロシアとの軍事・政治取引を強化し、中国への経済的依存を補完する新たな支援源を確保しつつある。",
+    "why_it_matters": "核・ミサイルを体制保証とする戦略が維持される中で、ロシア・中国との関係強化は北朝鮮の行動自由度を高め、東アジアの安全保障環境を一層不安定化させる可能性がある。",
+    "what_to_watch_decide": "ロシア・北朝鮮間の軍事協力の具体化、中国の対北支援・制裁履行の変化、北朝鮮の核・ミサイル実験のパターン、米韓の抑止姿勢の変化をモニタリングし、朝鮮半島有事リスクの前提を定期的に見直す必要がある。"
+  },
+  "one_line_assessment": "as_of=2026-08-31時点の暫定見立てとして、金正恩は「体制存続を核・ミサイルで保証しつつ、ロシアとの軍事・経済協力をテコに、中国への過度依存と対米・対韓の圧力バランスを調整する」方向に動いている可能性が高いが、内部情報不足により確信度は中程度にとどまる。",
+  "initial_anomaly": "北朝鮮は長年、中国への依存と対米抑止を軸にしてきたが、2023–24年の「敵対的2国家」路線宣言や南北共同連絡事務所爆破など、南北関係の完全な決裂を示唆する行動を取りつつ、一方でロシアとの関係を急速に強化している。この「中国一極依存から中露二重依存＋南北完全対立」へのシフトが、従来パターンからの大きな逸脱としての違和感であり、今後の方向性を読む鍵となる。"
+}

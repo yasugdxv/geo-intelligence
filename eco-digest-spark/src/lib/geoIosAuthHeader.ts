@@ -1,4 +1,5 @@
 import { API_BASE as API_BASE_URL } from "@/lib/apiBase";
+import { whenSsoReady } from "@/lib/ssoAuth";
 // Geopolitical Intelligence OS: Pilot-grade Authenticated Identity（Phase I-A.1）用の
 // X-IOS-CredentialヘッダーをlocalStorageから読んで付与する共有ヘルパー。
 //
@@ -60,6 +61,44 @@ export function setIosCredential(credential: string): void {
   }
 }
 
+/** SSO（Azure App Service の認証）でログイン中のユーザー。SSOが無効なとき（ローカル開発等）は null。 */
+export interface SsoUser {
+  identity_id: string;
+  display_name: string | null;
+  email: string | null;
+}
+let _ssoUser: SsoUser | null = null;
+
+export function getSsoUser(): SsoUser | null {
+  return _ssoUser;
+}
+
+/** サーバーに、いまのユーザーを尋ねる。SSOが有効なら、Azureのログインから対応づけたユーザーが返る。
+ * SSOなら、画面が使うIDを保存し、不要な古い資格情報は消す。SSOでなければ（または失敗したら）何もしない。 */
+async function detectSso(): Promise<void> {
+  try {
+    const res = await fetch(`${API_BASE}/api/geo/ios/identities/me`, {
+      headers: getIosAuthHeaders(),
+    });
+    if (!res.ok) return;
+    const me = (await res.json()) as SsoUser & { mode?: string };
+    if (me.mode !== "sso") return;
+    _ssoUser = {
+      identity_id: me.identity_id,
+      display_name: me.display_name ?? null,
+      email: me.email ?? null,
+    };
+    try {
+      localStorage.setItem(IOS_ACTOR_ID_KEY, me.identity_id);
+      localStorage.removeItem(IOS_CREDENTIAL_KEY); // SSOでは、資格情報を使わない
+    } catch {
+      // noop
+    }
+  } catch {
+    // noop: 通信失敗時は、従来の方式のまま進める
+  }
+}
+
 let _autoProvisionInFlight: Promise<void> | null = null;
 
 /** credentialが無ければ、低権限(analyst)のIdentityをサーバーから自動取得して保存する。
@@ -67,9 +106,12 @@ let _autoProvisionInFlight: Promise<void> | null = null;
  * 失敗しても例外は投げない——その場合は従来通りcredential無しのまま、既存の401挙動になる
  * （設定ダイアログからの手動設定は引き続き使える）。 */
 export function ensureIosIdentity(): Promise<void> {
-  if (getIosCredential()) return Promise.resolve();
+  if (_ssoUser) return Promise.resolve();
   if (_autoProvisionInFlight) return _autoProvisionInFlight;
   _autoProvisionInFlight = (async () => {
+    await whenSsoReady(); // SSO（OIDC）のログインが終わるまで待つ（終わる前は、トークンが無く、APIが401になるため）
+    await detectSso(); // SSOが有効なら、ここで確定する（資格情報の自動発行はしない）
+    if (_ssoUser || getIosCredential()) return;
     try {
       const res = await fetch(`${API_BASE}/api/geo/ios/identities/auto-provision`, { method: "POST" });
       if (!res.ok) return;

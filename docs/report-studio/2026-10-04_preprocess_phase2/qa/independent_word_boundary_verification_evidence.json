@@ -1,0 +1,29 @@
+{
+ "verified_records": 28670,
+ "stats": {
+  "checked": 37499,
+  "ok_word_boundary": 36734,
+  "ok_via_camelcase_hashtag_or_handle": 606,
+  "ok_word_boundary_after_removing_tags": 113,
+  "ok_phrase_via_camelcase_tag_segmentation": 46
+ },
+ "violations_by_term": {},
+ "examples": {},
+ "checked_by_term_top": {
+  "AI safety": 3010,
+  "trade war": 2254,
+  "export controls": 2252,
+  "AI dialogue": 1915,
+  "rare earths": 1826,
+  "non-sensitive goods": 1651,
+  "non sensitive goods": 1651,
+  "leverage": 1436,
+  "soybeans": 1345,
+  "China Iran": 1213,
+  "escalation": 1192,
+  "market access": 1006,
+  "AI governance": 936,
+  "Strait of Hormuz": 846,
+  "tariff truce": 824
+ }
+}

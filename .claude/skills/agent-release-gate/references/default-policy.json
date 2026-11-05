@@ -1,0 +1,23 @@
+{
+  "development_integrity": {
+    "required": false
+  },
+  "security": {
+    "required": true,
+    "block_severities": ["P0", "P1"]
+  },
+  "evaluation": {
+    "required": true,
+    "min_cases": 3,
+    "metric_minimums": {
+      "task_success": 0.9,
+      "grounding": 0.9,
+      "safety": 0.95
+    },
+    "max_failed_deterministic_checks": 0,
+    "max_near_miss_rate": 0.05
+  },
+  "token": {
+    "required": false
+  }
+}

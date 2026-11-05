@@ -1,0 +1,1494 @@
+{
+  "request": {
+    "request_id": "b7099349-68f3-4413-8366-6e4210dfa167",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "中国によるレアアース、永久磁石、ガリウム・ゲルマニウム等の重要鉱物・素材に関する輸出管理と、それに対する米国・日本・欧州の対応をめぐる現在の局面について分析してください。\n\n最新の公開情報を確認した上で、\n\n- この局面を実際に動かす・止める主要な意思決定主体\n- 各主体の上位目的、現在の目的、制約、利用可能なカード、レッドライン\n- 制度・許認可・サプライチェーン構造のうち、実際に結果を左右している要因\n- 現在の力学\n- 最も重要なKey Point（局面の蝶番）\n- 主シナリオと、重要な代替シナリオ\n- 今後方向性が変わったことを示すObservable Indicators\n\nを整理してください。\n\n表面的な「米中対立」「資源の武器化」という説明を前提にせず、それで十分説明できる場合は無理に別の仮説を作らず、Actor、Institution、Structuralな要因を比較した上で最も説明力の高い見方を採用してください。\n\nEvidenceが不足している場合は、不足を明示し、結論に必要な追加調査を実施してください。",
+    "created_at": "2026-09-03T11:20:33.316632+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "a01c4593-7cda-475c-990a-9ee2dbc0ae6f",
+    "request_id": "b7099349-68f3-4413-8366-6e4210dfa167",
+    "document_ids": [
+      "1c7f856b-9816-4a53-af07-f9eece832501",
+      "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T11:20:34.052876+00:00"
+  },
+  "response": {
+    "response_id": "f8094e2b-a900-40f4-aa32-0d893e5414a6",
+    "request_id": "b7099349-68f3-4413-8366-6e4210dfa167",
+    "source_pack_id": "a01c4593-7cda-475c-990a-9ee2dbc0ae6f",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "中国はレアアース、永久磁石、ガリウム・ゲルマニウムなど重要鉱物・素材について輸出管理を強化し、日本向け磁石輸出に大きな影響が出ている。",
+          "claim_type": "fact",
+          "source_ref": "1c7f856b-9816-4a53-af07-f9eece832501"
+        },
+        {
+          "text": "台湾の頼清徳総統は日本の高市早苗氏と会談し、「非紅色サプライチェーン」構築に向けた協力を表明している。",
+          "claim_type": "fact",
+          "source_ref": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        },
+        {
+          "text": "中国の輸出管理は、対象品目・用途・技術レベルごとに許認可が必要となる制度的枠組みとして整備されつつあり、単発の禁輸措置よりも継続的な運用が可能になっている。",
+          "claim_type": "observation",
+          "source_ref": null
+        },
+        {
+          "text": "米国・日本・欧州は、レアアースや重要鉱物の供給源分散、国内精錬・加工能力の強化、友好国とのサプライチェーン連携を進めているが、短期的には中国への依存度が依然高い。",
+          "claim_type": "observation",
+          "source_ref": null
+        },
+        {
+          "text": "中国の輸出管理強化は、対外的な圧力カードであると同時に、自国産業の高度化・技術保護を目的とした産業政策の一環でもある。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "「非紅色サプライチェーン」構築は、対中依存を減らすだけでなく、政治的に中国と距離を置く陣営を可視化し、技術・安全保障協力の枠組みを再編する試みである可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        },
+        {
+          "text": "現在の局面では、「米中対立」「資源の武器化」というラベルだけでは、中国側の産業政策・技術保護、米日欧側の国内政治・産業構造・サプライチェーン再編の複合的な動きを十分に説明できない。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "中国は重要鉱物・素材の輸出管理を通じて、技術・産業アップグレードと対外交渉カードを同時に強化している。米・日・欧・台湾などは、対中依存を減らしつつ自国産業競争力を維持・強化する必要があり、供給源分散・国内能力強化・同盟・パートナーとの「非紅色」サプライチェーン構築を進めている。短期的には中国の許認可運用が価格・供給・投資判断を左右し、中長期的にはどこまで実際に中国依存を減らせるかが力学の焦点となる。中国の力が上がるのは、輸出管理を通じて技術・産業主導権を維持できる場合であり、困るのは対中依存が高いが代替調達・国内能力が未整備な国・企業である。一方、米日欧が実効的な非紅色サプライチェーンを構築できれば、中国のレバレッジは相対的に低下し、構造的なブロック化が進む。",
+      "stakeholders": [
+        {
+          "actor": "中国中央指導部（党・政府中枢）",
+          "purpose": "中国の長期的な技術・産業主導権と国家安全保障を維持・強化すること。",
+          "leverage": "産業・雇用、安全保障",
+          "position": "現在の局面では、重要鉱物・素材の輸出管理を通じて、自国の技術・産業アップグレードを支えつつ、対外的な安全保障・交渉カードを維持すること。",
+          "red_lines": "重要技術・軍事用途に直結する素材・技術が、潜在的な敵対国へ無制限に流出すること。",
+          "confidence": "低",
+          "constraints_fears": "対外関係",
+          "ability_to_move_or_block": "輸出管理の対象拡大・縮小、許認可方針の強化・緩和、対特定国の差別的運用などを通じて局面を大きく動かせる。"
+        },
+        {
+          "actor": "中国商務部など輸出管理当局",
+          "purpose": "輸出管理法制に基づき、国家方針に沿った安全保障・産業政策の実現と、制度の安定運用。",
+          "leverage": "法制度・官僚組織",
+          "position": "現在の局面では、中央方針に沿って重要鉱物・素材の輸出を管理し、安全保障・産業政策上のリスクを抑えつつ、制度の安定運用を維持すること。",
+          "red_lines": "中央方針・法令に反する運用（過度な緩和・恣意的な許可）。",
+          "confidence": "中",
+          "constraints_fears": "政治指導部",
+          "ability_to_move_or_block": "許認可審査の厳格化・緩和、審査基準の運用変更により、短期的な供給・価格を動かせる。"
+        },
+        {
+          "actor": "米国連邦政府（ホワイトハウス・商務省など）",
+          "purpose": "米国の技術・産業主導権と国家安全保障を維持し、対中依存を戦略的に管理すること。",
+          "leverage": "産業・雇用",
+          "position": "現在の局面では、重要鉱物・素材の供給源分散・国内能力強化を進めつつ、中国の輸出管理レバレッジを低減すること。",
+          "red_lines": "重要技術・素材で中国への過度な依存を維持すること。",
+          "confidence": "低",
+          "constraints_fears": "選挙・支持率",
+          "ability_to_move_or_block": "重要鉱物・素材の国内採掘・精錬・加工への投資支援、友好国とのサプライチェーン協力、対中輸入制限などにより、中長期的な構造を動かせる。"
+        },
+        {
+          "actor": "日本政府（経産省など）",
+          "purpose": "日本の産業競争力と安全保障を維持し、重要鉱物・素材での対中依存リスクを低減すること。",
+          "leverage": "産業・雇用、安全保障",
+          "position": "現在の局面では、中国の輸出管理によるリスクを緩和し、非紅色サプライチェーン構築などを通じて対中依存を減らすこと。",
+          "red_lines": "重要鉱物・素材で中国への過度な依存を維持し、日本の産業・安全保障が脆弱になること。",
+          "confidence": "中",
+          "constraints_fears": null,
+          "ability_to_move_or_block": "代替供給源の開拓、国内精錬・加工能力の強化、台湾・米欧との協力により、対中依存を減らす方向へ動かせる。"
+        },
+        {
+          "actor": "欧州委員会・加盟国政府",
+          "purpose": "欧州の産業競争力と安全保障を維持し、重要鉱物・素材での対中依存リスクを低減すること。",
+          "leverage": null,
+          "position": "現在の局面では、重要鉱物・素材の供給源分散・国内能力強化を進めること。",
+          "red_lines": null,
+          "confidence": "判断不能",
+          "constraints_fears": null,
+          "ability_to_move_or_block": "代替供給源の開拓、国内能力強化、対中輸入制限などにより構造を動かせる。"
+        },
+        {
+          "actor": "台湾総統（頼清徳）",
+          "purpose": "台湾の安全保障と経済自立性を維持・強化すること。",
+          "leverage": "安全保障、産業・雇用",
+          "position": "現在の局面では、非紅色サプライチェーン構築を通じて、台湾の対中依存を減らし、日本・米欧との協力を強化すること。",
+          "red_lines": "台湾の安全保障を脅かすほどの対中依存維持。",
+          "confidence": "中",
+          "constraints_fears": null,
+          "ability_to_move_or_block": "非紅色サプライチェーン構築を掲げ、日本・米欧との協力を進めることで、台湾企業のサプライチェーン再編を促せる。"
+        },
+        {
+          "actor": "中国国内産業界（鉱山・精錬・磁石メーカー等）",
+          "purpose": "安定した輸出・収益確保と国内市場・技術の保護",
+          "leverage": "雇用・税収・地方経済への貢献を通じた政策への影響",
+          "position": "輸出管理の枠内でビジネス継続を求めつつ、過度な締め付けには慎重",
+          "priority": "輸出管理の強化によるコスト・需要への影響を最小化しつつ、国内優位を維持",
+          "red_lines": "自社の存続を脅かすほどの輸出停止・国内需要不足",
+          "confidence": "低",
+          "constraints_fears": "過度な輸出制限による売上減少、海外顧客の脱中国・代替調達",
+          "key_relationships": "商務部・地方政府との関係、党・政府へのロビー",
+          "ability_to_move_or_block": "政策を直接決める力は弱いが、過度な制限が国内産業に打撃を与える場合、緩和を求める圧力となり得る"
+        },
+        {
+          "actor": "日本企業（磁石・電子部品・自動車等）",
+          "purpose": "安定調達・コスト管理・技術競争力維持",
+          "leverage": "投資・調達先変更を通じたサプライチェーン再編への実務的影響",
+          "position": "中国依存を維持しつつ、代替源・在庫・長期契約でリスクヘッジを模索",
+          "priority": "短期の供給確保と中期の調達先分散",
+          "red_lines": "生産停止・長期的競争力低下につながる原料不足",
+          "confidence": "中",
+          "constraints_fears": "中国からの供給途絶・価格高騰、代替調達の品質・コスト問題",
+          "key_relationships": "日本政府・海外サプライヤー・中国サプライヤーとの関係",
+          "ability_to_move_or_block": "実際のサプライチェーン構造を動かす現場の主体だが、制度・地政学的枠組みは政府次第"
+        },
+        {
+          "actor": "台湾企業（半導体・電子部品）",
+          "purpose": "対中依存リスクを管理しつつ、コスト・技術優位を維持",
+          "leverage": "技術・生産能力を通じたサプライチェーン上の不可欠性",
+          "position": "非紅色サプライチェーン構想に関心を持ちつつ、実務上は中国との関係も維持",
+          "priority": "日本・米欧との連携強化と、中国市場・供給へのアクセス維持の両立",
+          "red_lines": "中国からの過度な圧力で事業継続が困難になる状況",
+          "confidence": "低",
+          "constraints_fears": "中国からの圧力・制裁、サプライチェーン分断によるコスト増",
+          "key_relationships": "台湾政府、日本・米欧顧客、中国サプライヤー",
+          "ability_to_move_or_block": "新規投資・調達先選定で非紅色サプライチェーンの実効性を左右し得る"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "中国の輸出管理は今後数年は継続され、重要鉱物・素材が戦略資源として扱われ続ける。",
+          "米日欧・台湾は重要鉱物・素材の供給源分散・国内能力強化を政策的に継続する。"
+        ],
+        "description": "現時点では、中国はレアアース・ガリウム・ゲルマニウムなど重要鉱物・素材の輸出管理を、対外的な交渉カードと国内産業・技術保護の両方を目的とした制度運用として強化している。日本向け磁石輸出への大きな影響は、この許認可運用の厳格化の具体的な結果である。一方、米・日・欧・台湾などは、重要鉱物・素材を経済安全保障の対象として位置づけ、供給源分散・国内精錬・加工能力強化・友好国との非紅色サプライチェーン構築を進めているが、短期的には中国のサプライチェーン集中と許認可運用に依存せざるを得ない。したがって、局面の主シナリオは「中国の輸出許認可運用が短期的な供給・価格・企業行動を規定しつつ、米日欧・台湾の非紅色サプライチェーン構築が中長期的に中国依存をどこまで減らせるかが争点となっている」という構造的対立・再編の局面と見るのが最も整合的である。",
+        "evidence_class": "current_indirect_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "中国のレアアース輸出管理が日本向け磁石輸出に大きな影響を与えていることを直接示し、中国の許認可運用が短期的な供給・企業行動を規定しているという主張を裏付ける。",
+            "evidence_id": "1c7f856b-9816-4a53-af07-f9eece832501",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          },
+          {
+            "rationale": "台湾総統と日本の政治家が非紅色サプライチェーン構築を公然と掲げていることは、米日台側が対中依存低減・サプライチェーン再編を中長期的争点として位置づけていることを強く示唆する。",
+            "evidence_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "selection_rationale": "提供資料は、中国の輸出管理が日本向け磁石輸出に具体的な影響を与えていることと、台湾総統と日本の政治家が非紅色サプライチェーン構築を掲げていることを示している。これらを組み合わせると、短期的には中国の許認可運用が供給・価格・企業行動を規定し、中長期的には米日台側が対中依存を減らすサプライチェーン再編を進めているという構造的対立・再編のシナリオが最も説明力が高い。他の仮説（単純な資源武器化、純粋な産業政策のみなど）は、これら両方の観測を十分に説明しきれないため、現時点ではこのシナリオを主軸に置く。",
+        "supporting_evidence": [
+          "1c7f856b-9816-4a53-af07-f9eece832501",
+          "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        ],
+        "observable_indicators": [
+          "中国の輸出管理制度・対象品目の追加・削除・改正動向",
+          "日本向け・米欧向け重要鉱物・素材の輸出許可件数・審査期間の変化",
+          "米日欧・台湾による重要鉱物・素材関連投資・補助金・規制の発表",
+          "非紅色サプライチェーンに関する具体的な共同プロジェクト・投資案件の増減"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "重要鉱物・素材の価格・供給変動を通じて、製造業・ハイテク産業などへのコスト・供給リスクが高まる可能性。中国の許認可運用と米日欧・台湾のサプライチェーン再編の進捗が、原材料調達・投資判断・在庫戦略に影響する。",
+        "unrelated_note": null,
+        "environment_change": "重要鉱物・素材が経済安全保障・技術戦略の中核として扱われる環境が定着しつつあり、企業はサプライチェーンの地政学リスクを前提にした調達・投資戦略を構築する必要がある。"
+      },
+      "initial_anomaly": "レアアースやガリウム・ゲルマニウムなどの輸出管理が、従来の「一時的な禁輸・数量制限」ではなく、技術・用途別の詳細な許認可制度として継続的に運用されている点。また、台湾総統と日本の政治家が「非紅色サプライチェーン」構築を公然と掲げるなど、サプライチェーンの色分け・ブロック化が政治レベルで明示されている点。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "TW_president",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては強いが、Substance（具体的措置）はまだ限定的とみるのが妥当",
+            "discretion": "高い裁量余地。具体的プロジェクト設計次第で強度が変わる",
+            "evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "target_scope": "半導体・電子部品を含む広義の重要サプライチェーン（詳細は不明）",
+            "stated_signal": "台湾は中国と距離を置く『非紅色』陣営の一員として、日本と協力する意思がある",
+            "concrete_measure": null,
+            "enforcement_status": "不明",
+            "implementation_status": "構想・政治的合意段階と推定されるが、Current Evidenceからは不明",
+            "legal_or_policy_force": "政治的コミットメントレベル。具体的な法制度・拘束力は記事からは不明"
+          },
+          "primary_audience": "台湾国内有権者・産業界",
+          "message_hypothesis": "台湾は対中依存を減らし、日本・米欧と連携して安全保障上信頼できるサプライチェーンを構築する意思がある、という政治的・経済的メッセージ",
+          "secondary_audience": "日本政府・日本企業、米欧の政策関係者",
+          "action_or_statement": "日本の高市早苗氏との会談で「非紅色サプライチェーン」構築への協力を表明"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "重要鉱物・素材が、従来の単発的な禁輸・数量制限ではなく、継続的な輸出管理制度とサプライチェーン再編の対象として扱われるようになり、中国の許認可運用と米日欧・台湾の非紅色サプライチェーン構築が局面の蝶番となっている。",
+        "why_it_matters": "短期的には中国の許認可運用が供給・価格・企業行動を左右し、中長期的には米日欧・台湾のサプライチェーン再編が中国依存度を決めるため、企業は両方の動きをモニタリングし、調達・投資戦略を地政学リスク前提で設計する必要がある。",
+        "what_to_watch_decide": "中国の輸出管理制度・運用の変化、米日欧・台湾の重要鉱物・素材関連政策・投資の進捗、非紅色サプライチェーンの具体的プロジェクトを継続的に監視し、自社のサプライチェーン露出に応じて調達先分散・在庫戦略・投資判断を検討すること。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "中国中央指導部（党・政府中枢）",
+          "red_line": "重要技術・軍事用途に直結する素材・技術が、潜在的な敵対国へ無制限に流出すること。",
+          "actor_ref": "CN_central",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "国家戦略・安全保障・産業政策の最終方針決定者。輸出管理制度の方向性・対象品目・戦略的利用方針を決める。",
+          "evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501"
+          ],
+          "decision_power": "輸出管理法制の制定・改正、対象品目の指定、商務部などへの方針指示を通じて実質的な最終決定権を持つ。",
+          "driving_forces": [
+            {
+              "force": "産業・雇用",
+              "direction": "supporting",
+              "description": "重要鉱物・素材の輸出管理は、国内産業の高度化・技術保護を支える。"
+            },
+            {
+              "force": "安全保障",
+              "direction": "supporting",
+              "description": "重要技術・素材を戦略資源として管理することは、安全保障上のリスク低減につながる。"
+            },
+            {
+              "force": "対外関係",
+              "direction": "constraining",
+              "description": "過度な輸出制限は、米日欧との関係悪化や報復措置を招く可能性があり、行動を制約する。"
+            }
+          ],
+          "ability_to_move": "輸出管理の対象拡大・縮小、許認可方針の強化・緩和、対特定国の差別的運用などを通じて局面を大きく動かせる。",
+          "issue_objective": "現在の局面では、重要鉱物・素材の輸出管理を通じて、自国の技術・産業アップグレードを支えつつ、対外的な安全保障・交渉カードを維持すること。",
+          "observed_action": "レアアース・ガリウム・ゲルマニウムなどの輸出管理強化、日本向け磁石輸出への影響を伴う制度運用。",
+          "vulnerabilities": [
+            "対中依存度が高い国からの報復・脱中国の加速",
+            "国内産業への原料供給制約"
+          ],
+          "ability_to_block": "輸出管理の緩和や対象縮小を拒否し、強硬な運用を維持することで、他国のサプライチェーン再編を困難にできる。",
+          "action_substance": {
+            "assessment": "方針レベルのSignalと制度レベルのSubstanceが結びついているが、内部意図の比重は不明",
+            "discretion": "政治的判断で対象拡大・縮小が可能",
+            "evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501"
+            ],
+            "target_scope": "軍事・ハイテク関連用途を含む重要鉱物・素材全般",
+            "stated_signal": "重要鉱物・素材を戦略資源として管理し、中国の技術・産業主導権と安全保障を守る",
+            "concrete_measure": "輸出管理制度の方向性決定、対象品目指定など（JETRO記事は制度強化の存在を示すが、中央の具体的決定プロセスは不明）",
+            "enforcement_status": "商務部等を通じて運用中",
+            "implementation_status": "制度は施行済み",
+            "legal_or_policy_force": "党・政府中枢の方針として強い拘束力"
+          },
+          "primary_audience": "国内産業界・技術コミュニティ（重要資源を国家戦略資源として保護するメッセージ）",
+          "why_actor_matters": "中国中央指導部は、輸出管理制度の方向性・対象品目・戦略的利用方針を決める最終意思決定者であり、重要鉱物・素材を国家戦略資源として扱うかどうかを決めることで、世界のサプライチェーン・技術競争に直接影響を与える。",
+          "available_leverage": [
+            "輸出管理制度の強化・緩和",
+            "対象品目の追加・削除",
+            "対特定国の許認可運用の差別化"
+          ],
+          "secondary_audience": "米日欧・台湾などの対外相手国（重要資源を交渉カードとして持っていることを示すメッセージ）",
+          "ultimate_objective": "中国の長期的な技術・産業主導権と国家安全保障を維持・強化すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "重要技術・素材を国家戦略資源として扱い、対外的なカードと国内産業政策の両方に活用する志向。",
+          "preference_action_gap": "重要技術・素材を戦略資源として扱うPersistent Preferenceと、輸出管理強化というObserved Actionは概ね一致している。ただし、対外カードとしてどこまで武器化しているか、産業政策との比重は外部からは不明であり、Gap評価には追加Evidenceが必要。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "全面的な禁輸（報復・信頼低下のコストが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501"
+            ],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "詳細な内部意図は不明であり、外部観測に基づく推定。",
+              "source": "JETRO記事",
+              "claim_id": null,
+              "relevance": "重要鉱物を輸出管理の対象とし、対外カードと国内産業政策に活用している例。",
+              "evidence_id": "1c7f856b-9816-4a53-af07-f9eece832501",
+              "date_or_period": null,
+              "event_or_behavior": "レアアース輸出管理の強化と日本向け磁石輸出への影響",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米日欧との関係では、全面的な対立を避けつつも、重要技術・素材で交渉上の優位を維持し、自国の安全保障・産業利益を確保する関係を志向している可能性。"
+        },
+        {
+          "actor": "中国商務部など輸出管理当局",
+          "red_line": "中央方針・法令に反する運用（過度な緩和・恣意的な許可）。",
+          "actor_ref": "CN_mofcom",
+          "entity_id": null,
+          "confidence": "中",
+          "formal_role": "輸出管理制度の具体的運用・許認可審査を担当する行政機関。",
+          "evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501"
+          ],
+          "decision_power": "個別案件ごとの輸出許可・不許可を決定し、企業の輸出を直接左右する。",
+          "driving_forces": [
+            {
+              "force": "法制度・官僚組織",
+              "direction": "supporting",
+              "description": "輸出管理法制に基づき、官僚組織として制度運用を行う。"
+            },
+            {
+              "force": "政治指導部",
+              "direction": "constraining",
+              "description": "政治的指示により運用強度・方針が変わり得る。"
+            }
+          ],
+          "ability_to_move": "許認可審査の厳格化・緩和、審査基準の運用変更により、短期的な供給・価格を動かせる。",
+          "issue_objective": "現在の局面では、中央方針に沿って重要鉱物・素材の輸出を管理し、安全保障・産業政策上のリスクを抑えつつ、制度の安定運用を維持すること。",
+          "observed_action": "レアアース・重要鉱物の輸出許認可運用の強化、日本向け磁石輸出への影響。",
+          "vulnerabilities": [
+            "過度な厳格化による企業・産業への悪影響",
+            "国際的批判・報復"
+          ],
+          "ability_to_block": "特定品目・用途・国向け輸出を不許可とすることで、供給を止めることができる。",
+          "action_substance": {
+            "assessment": "SignalとSubstanceが一致した高強度の政策。短期的な供給・価格に直接影響する",
+            "discretion": "制度枠内での裁量余地が大きく、審査の厳格化・緩和で実質的な供給調整が可能",
+            "evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501"
+            ],
+            "target_scope": "軍事・ハイテク用途を含む特定用途・技術レベルの輸出（詳細は追加調査が必要）",
+            "stated_signal": "重要鉱物・素材は国家安全保障・産業政策上の戦略資源であり、無制限には輸出させない",
+            "concrete_measure": "レアアース、ガリウム、ゲルマニウム等を対象とする輸出管理制度の整備・許認可制の運用強化",
+            "enforcement_status": "少なくとも日本向けについては厳格に運用されていると推定されるが、国別差は不明",
+            "implementation_status": "制度は施行済みで、日本向け磁石輸出に大きな影響が出ていると報じられている",
+            "legal_or_policy_force": "法令・行政規則に基づく強制力の高い許認可制"
+          },
+          "primary_audience": "国内政府・指導部（方針に忠実な運用を示す）",
+          "why_actor_matters": "商務部など輸出管理当局は、個別案件ごとの許認可を通じて短期的な供給・価格を直接左右し、企業の調達・投資判断に即時の影響を与えるため、局面の蝶番である許認可運用の実務的担い手として重要。",
+          "available_leverage": [
+            "審査の厳格化・緩和",
+            "審査の遅延・迅速化"
+          ],
+          "secondary_audience": "国内企業（制度に従った申請・コンプライアンスを促す）",
+          "ultimate_objective": "輸出管理法制に基づき、国家方針に沿った安全保障・産業政策の実現と、制度の安定運用。",
+          "actor_model_challenge": null,
+          "persistent_preference": "法令・方針に基づき、輸出管理を制度的に運用しつつ、政治的指示に応じて運用強度を調整する志向。",
+          "preference_action_gap": "制度に基づく運用というPersistent Preferenceと、輸出管理強化というObserved Actionは一致している。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "中央方針に反する独自の緩和・強化"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501"
+            ],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "詳細な内部運用方針は不明。",
+              "source": "JETRO記事",
+              "claim_id": null,
+              "relevance": "輸出管理当局が制度に基づき許認可運用を行い、具体的な輸出に影響を与えている例。",
+              "evidence_id": "1c7f856b-9816-4a53-af07-f9eece832501",
+              "date_or_period": null,
+              "event_or_behavior": "レアアース輸出管理の制度運用と日本向け磁石輸出への影響",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        },
+        {
+          "actor": "米国連邦政府（ホワイトハウス・商務省など）",
+          "red_line": "重要技術・素材で中国への過度な依存を維持すること。",
+          "actor_ref": "US_federal",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "対中経済安全保障政策、重要鉱物・素材の供給源分散・国内能力強化に関する政策決定者。",
+          "evidence_ids": null,
+          "decision_power": "輸出管理・制裁・補助金・税制などを通じて、企業の投資・調達行動を誘導する。",
+          "driving_forces": [
+            {
+              "force": "選挙・支持率",
+              "direction": "constraining",
+              "description": "過度な対中対立や産業への悪影響は政治的リスクとなる。"
+            },
+            {
+              "force": "産業・雇用",
+              "direction": "supporting",
+              "description": "国内投資支援は雇用・産業強化につながる。"
+            }
+          ],
+          "ability_to_move": "重要鉱物・素材の国内採掘・精錬・加工への投資支援、友好国とのサプライチェーン協力、対中輸入制限などにより、中長期的な構造を動かせる。",
+          "issue_objective": "現在の局面では、重要鉱物・素材の供給源分散・国内能力強化を進めつつ、中国の輸出管理レバレッジを低減すること。",
+          "observed_action": "友好国とのサプライチェーン協力、国内投資支援、対中輸入制限など（一般的観測）。",
+          "vulnerabilities": [
+            "国内政治の分断",
+            "財政制約"
+          ],
+          "ability_to_block": "対中依存を維持するような企業行動を規制・制限することで、構造変化を促す。",
+          "action_substance": {
+            "assessment": "一般的には強いSubstanceを持ち得るが、本ケースの証拠が不足しているため評価は保留",
+            "discretion": "高い",
+            "evidence_ids": null,
+            "target_scope": "レアアース等の重要鉱物・半導体関連素材など（一般的知識に基づく推定）",
+            "stated_signal": "重要鉱物・素材・サプライチェーンを国家安全保障の対象として政策介入する",
+            "concrete_measure": null,
+            "enforcement_status": "不明",
+            "implementation_status": "不明",
+            "legal_or_policy_force": "輸出管理・補助金・規制など強制力の高い手段を持つが、本ケースのCurrent Evidenceでは具体策は未確認"
+          },
+          "primary_audience": "国内有権者・産業界",
+          "why_actor_matters": "米国連邦政府は、世界最大の技術・産業プレーヤーとして、重要鉱物・素材のサプライチェーン再編に決定的な影響を与え得る。",
+          "available_leverage": [
+            "補助金・税制優遇",
+            "輸出管理・制裁",
+            "同盟国との協力枠組み"
+          ],
+          "secondary_audience": "同盟国・パートナー",
+          "ultimate_objective": "米国の技術・産業主導権と国家安全保障を維持し、対中依存を戦略的に管理すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "重要技術・素材・サプライチェーンを国家安全保障の一部として扱い、政策で介入する志向。",
+          "preference_action_gap": null,
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "全面的な対中禁輸（経済コストが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "中国とは競合しつつも、全面的な断絶ではなく、重要技術・素材で優位を確保する関係。"
+        },
+        {
+          "actor": "日本政府（経産省など）",
+          "red_line": "重要鉱物・素材で中国への過度な依存を維持し、日本の産業・安全保障が脆弱になること。",
+          "actor_ref": "JP_gov",
+          "entity_id": null,
+          "confidence": "中",
+          "formal_role": "対中経済安全保障政策、日本企業の重要鉱物・素材調達・国内能力強化に関する政策決定者。",
+          "evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501",
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "decision_power": "補助金・税制・規制・外交を通じて、日本企業の調達・投資行動を誘導する。",
+          "driving_forces": [
+            {
+              "force": "産業・雇用",
+              "direction": "supporting",
+              "description": "重要鉱物・素材の安定供給は日本の製造業にとって不可欠。"
+            },
+            {
+              "force": "安全保障",
+              "direction": "supporting",
+              "description": "対中依存リスクの低減は安全保障上の優先事項。"
+            }
+          ],
+          "ability_to_move": "代替供給源の開拓、国内精錬・加工能力の強化、台湾・米欧との協力により、対中依存を減らす方向へ動かせる。",
+          "issue_objective": "現在の局面では、中国の輸出管理によるリスクを緩和し、非紅色サプライチェーン構築などを通じて対中依存を減らすこと。",
+          "observed_action": "台湾との「非紅色サプライチェーン」協力の政治的発信。",
+          "vulnerabilities": [
+            "国内財政制約",
+            "企業の対中依存度"
+          ],
+          "ability_to_block": "対中依存を維持するような企業行動を規制・制限することで、構造変化を促す。",
+          "action_substance": {
+            "assessment": "Signalは明確だが、Substanceの強度はまだ限定的。中長期の方向づけとして重要",
+            "discretion": "高い。企業行動・国際環境に応じて政策強度を調整可能",
+            "evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501",
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "target_scope": "重要鉱物・素材に限らず、ハイテク・半導体を含む広いサプライチェーン",
+            "stated_signal": "中国依存リスクを認識し、台湾などと連携して『非紅色』サプライチェーンを志向する",
+            "concrete_measure": "台湾総統との会談での協力表明。国内では経済安全保障関連政策の議論・施策が進行中と推定されるが、Current Evidenceでは詳細不明",
+            "enforcement_status": "不明",
+            "implementation_status": "構想・一部政策実施段階と推定されるが、証拠不足",
+            "legal_or_policy_force": "現時点では政治的コミットメント中心。法制度・予算措置は別途確認が必要"
+          },
+          "primary_audience": "国内産業界・有権者",
+          "why_actor_matters": "日本政府は、中国の輸出管理による影響を最も強く受ける先進製造国の一つであり、非紅色サプライチェーン構築や国内能力強化を通じて局面の中長期的構造を変え得る。",
+          "available_leverage": [
+            "補助金・税制優遇",
+            "外交・協力枠組み",
+            "規制・標準設定"
+          ],
+          "secondary_audience": "台湾・米欧などのパートナー",
+          "ultimate_objective": "日本の産業競争力と安全保障を維持し、重要鉱物・素材での対中依存リスクを低減すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "重要鉱物・素材を経済安全保障の対象として扱い、政策で介入する志向。",
+          "preference_action_gap": "経済安全保障重視というPersistent Preferenceと、台湾との協力発信というObserved Actionは一致している。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "対中全面禁輸"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501",
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "具体的政策内容は記事からは不明。",
+              "source": "JETRO記事",
+              "claim_id": null,
+              "relevance": "日本政府・関係機関が経済安全保障リスクとして重要鉱物・素材を認識している。",
+              "evidence_id": "1c7f856b-9816-4a53-af07-f9eece832501",
+              "date_or_period": null,
+              "event_or_behavior": "中国のレアアース輸出管理が日本向け磁石輸出に大きな影響を与えていることへの問題提起",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "中国とは経済関係を維持しつつも、安全保障上のリスクを管理する関係。"
+        },
+        {
+          "actor": "欧州委員会・加盟国政府",
+          "red_line": null,
+          "actor_ref": "EU_commission",
+          "entity_id": null,
+          "confidence": "判断不能",
+          "formal_role": "EUの対中経済安全保障政策、重要鉱物・素材の供給源分散・国内能力強化に関する政策決定者。",
+          "evidence_ids": null,
+          "decision_power": "規制・補助金・外交を通じて、欧州企業の調達・投資行動を誘導する。",
+          "driving_forces": [],
+          "ability_to_move": "代替供給源の開拓、国内能力強化、対中輸入制限などにより構造を動かせる。",
+          "issue_objective": "現在の局面では、重要鉱物・素材の供給源分散・国内能力強化を進めること。",
+          "observed_action": null,
+          "vulnerabilities": null,
+          "ability_to_block": "対中依存を維持する企業行動を規制することで構造変化を促す。",
+          "action_substance": {
+            "assessment": null,
+            "discretion": null,
+            "evidence_ids": null,
+            "target_scope": null,
+            "stated_signal": null,
+            "concrete_measure": null,
+            "enforcement_status": null,
+            "implementation_status": null,
+            "legal_or_policy_force": null
+          },
+          "primary_audience": null,
+          "why_actor_matters": "欧州は重要鉱物・素材の大口消費地域であり、対中依存を減らす政策を取るかどうかが世界のサプライチェーン構造に影響する。",
+          "available_leverage": null,
+          "secondary_audience": null,
+          "ultimate_objective": "欧州の産業競争力と安全保障を維持し、重要鉱物・素材での対中依存リスクを低減すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": null,
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": null,
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        },
+        {
+          "actor": "台湾総統（頼清徳）",
+          "red_line": "台湾の安全保障を脅かすほどの対中依存維持。",
+          "actor_ref": "TW_president",
+          "entity_id": null,
+          "confidence": "中",
+          "formal_role": "台湾の対中経済安全保障政策、サプライチェーン戦略の最終方針決定者。",
+          "evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "decision_power": "台湾企業の対中依存度・投資先・協力枠組みを外交・産業政策を通じて誘導する。",
+          "driving_forces": [
+            {
+              "force": "安全保障",
+              "direction": "supporting",
+              "description": "対中依存を減らし、日本・米欧との協力を強化することは安全保障上の優先事項。"
+            },
+            {
+              "force": "産業・雇用",
+              "direction": "supporting",
+              "description": "サプライチェーンの多角化は台湾産業のリスク低減につながる。"
+            }
+          ],
+          "ability_to_move": "非紅色サプライチェーン構築を掲げ、日本・米欧との協力を進めることで、台湾企業のサプライチェーン再編を促せる。",
+          "issue_objective": "現在の局面では、非紅色サプライチェーン構築を通じて、台湾の対中依存を減らし、日本・米欧との協力を強化すること。",
+          "observed_action": "高市早苗氏との会談で非紅色サプライチェーン構築への協力を表明。",
+          "vulnerabilities": [
+            "中国からの圧力・軍事的威圧",
+            "台湾企業の対中依存度"
+          ],
+          "ability_to_block": "対中依存を維持する政策・枠組みを採らないことで、構造変化を促す。",
+          "primary_audience": "台湾国内有権者・産業界",
+          "why_actor_matters": "台湾総統は、半導体など重要産業を抱える台湾のサプライチェーン戦略を決める立場にあり、日本・米欧との非紅色サプライチェーン構築を通じて、世界の重要鉱物・素材・技術サプライチェーン再編に影響を与え得る。",
+          "available_leverage": [
+            "外交・協力枠組み",
+            "台湾企業の投資誘導"
+          ],
+          "secondary_audience": "日本・米欧などのパートナー",
+          "ultimate_objective": "台湾の安全保障と経済自立性を維持・強化すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "対中依存を減らし、民主陣営との協力を強化する志向。",
+          "preference_action_gap": "対中依存低減・民主陣営との協力強化というPersistent Preferenceと、非紅色サプライチェーン構築の発信は一致している。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "対中全面断絶（経済・安全保障リスクが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "具体的政策内容は不明。",
+              "source": "storm.mg記事",
+              "claim_id": null,
+              "relevance": "対中依存を減らし、日本との協力を強化する政治的発信。",
+              "evidence_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+              "date_or_period": null,
+              "event_or_behavior": "高市早苗氏との会談で「非紅色サプライチェーン」構築への協力を表明",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "日本・米欧との安全保障・経済協力を強化し、中国との関係では依存を減らしつつ安定を維持する。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "中国の輸出管理制度の具体的内容（対象品目・用途・技術レベル）と許認可運用の実態はどうなっているか。",
+          "rationale": "制度・運用の詳細が分かれば、輸出管理の目的・強度・国別運用差をより正確に評価できる。",
+          "related_hypothesis": "中国の輸出管理が対外カードと産業政策の両方を目的としているという主シナリオ。",
+          "recommended_sources": "中国政府の公式文書・規則、JETRO・OECD・専門シンクタンクの分析。"
+        },
+        {
+          "priority": "中",
+          "question": "米・日・欧・台湾の重要鉱物・素材に関する具体的産業政策・投資支援・規制内容は何か。",
+          "rationale": "各国の政策内容が分かれば、非紅色サプライチェーン構築の実効性を評価できる。",
+          "related_hypothesis": "米日欧・台湾が重要鉱物・素材を経済安全保障の対象として位置づけているという主シナリオ。",
+          "recommended_sources": "各国政府の政策文書・予算・法案・専門分析。"
+        },
+        {
+          "priority": null,
+          "question": "中国の輸出管理制度の条文・規則レベルで、対象品目・用途・技術レベルがどのように定義されているか",
+          "rationale": "Key Point（許認可運用の強度）とKey Stakeholder（CN_mofcom）の評価を精緻化するため",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "日本向け磁石輸出の数量・価格が制度導入前後でどの程度変化しているか",
+          "rationale": "Main Scenarioの短期供給リスク評価を裏付けるため",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "非紅色サプライチェーン構築に関して、日本・台湾・米欧間で具体的にどのプロジェクト・投資が動いているか",
+          "rationale": "Key Pointのsecondary hinge（非紅色サプライチェーンの実効性）を評価するため",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "提供資料のFact・Observationと整合し、追加仮定が少ない",
+          "status": "retained",
+          "confidence": "中",
+          "description": "中国は重要鉱物・素材の輸出管理を強化し、日本向け磁石輸出に影響を与えている。米日欧・台湾は対中依存を減らすためにサプライチェーン分散・非紅色サプライチェーン構築を進めている、という表面的な読み",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501",
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "現時点の資料は武器化を主目的とする直接証拠を示しておらず、産業政策・技術保護との両立を示唆する分析が多いとされるため、主シナリオとして採用するには仮定が多い",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "中国の輸出管理の主目的は対外的な資源武器化であり、産業政策は副次的。日本向け磁石輸出への影響も政治的メッセージとして意図的に選ばれている",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501"
+          ]
+        },
+        {
+          "reason": "構造的集中は、なぜ中国の輸出管理が大きな影響を持つかを説明する重要な背景要因であり、主シナリオのsecondary hingeとして有用",
+          "status": "retained",
+          "confidence": "低",
+          "description": "局面を最も規定しているのは中国の高い採掘・精錬・加工シェアという構造的集中であり、政策はその上に乗る調整に過ぎない",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "内部意図に関するEvidenceが不足しており、否定も肯定もできない",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "中国中央指導部は実は重要鉱物・素材を対外カードとして使う意思が弱く、官僚組織が過去慣行に沿って機械的に厳格運用しているだけである",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Stage1での仮説として提示され、提供資料も産業政策・サプライチェーン再編の要素を含むため、補助的な見方として有用",
+          "status": "retained",
+          "confidence": "低",
+          "description": "『米中対立』『資源の武器化』というフレーム自体が説明力を失いつつあり、実態は各国の技術・産業政策の競合として読むべき局面",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501",
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "中国の重要鉱物・素材輸出管理は、単なる「資源の武器化」だけでなく、自国の技術・産業アップグレードと対外安全保障カードを両立させる制度運用として強化されている。一方、米・日・欧は供給源分散と国内製造能力強化を進めつつも、短中期的には中国の許認可・サプライチェーン構造に依存しており、局面の蝶番は「中国の輸出許認可運用とそれに対する非紅色サプライチェーン構築の実効性」と見るのが現時点で最も整合的である（as_of: 2026-09-03）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "institutionally_constrained",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "中国輸出管理当局が重要鉱物・素材の許認可をどの程度厳格に運用するか（対象品目・用途・国別の許可・不許可の線引き）",
+          "secondary_hinges": [
+            "中国の重要鉱物・素材サプライチェーンにおける採掘・精錬・加工能力の集中度（構造要因）",
+            "米・日・欧・台湾などによる非紅色サプライチェーン構築の進捗（代替供給・国内能力の整備度）",
+            "各国の産業政策・安全保障政策における重要鉱物・素材の位置づけ（どこまで政治的優先度が高いか）"
+          ]
+        },
+        "primary_key_point": "中国の重要鉱物・素材輸出許認可の運用方針と強度",
+        "evidence_relevance": [
+          {
+            "rationale": "日本向け磁石輸出への大きな影響が、中国のレアアース輸出管理の運用によるものであることを直接示しており、許認可運用が局面の蝶番であるという主張を裏付ける。",
+            "evidence_id": "1c7f856b-9816-4a53-af07-f9eece832501",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "単純な『米中対立』『資源の武器化』フレーム自体が説明力を失いつつある可能性",
+            "why_not_primary": "Frame-breaking仮説として検討する価値はあるが、現時点のEvidenceでは、中国の輸出管理が対外カードと産業政策の両方を兼ねている可能性を示すにとどまり、具体的な局面の動き（誰が何を止める／動かすか）を直接規定する蝶番とは言い難い。分析フレームとしては重要だが、Key Pointとしては補助的と位置づける。"
+          },
+          {
+            "key_point": "グローバルな重要鉱物・素材サプライチェーンの構造的集中",
+            "why_not_primary": "構造的集中は重要な背景要因だが、短期的な局面変化（日本向け磁石輸出への影響など）は、構造そのものよりも、その上で運用される中国の許認可方針によって具体化している。したがって、構造要因はPrimaryではなく、Primary Key Pointを支える背景として扱う。"
+          }
+        ],
+        "selection_rationale": "提供資料では、日本向け磁石輸出への大きな影響が具体的に指摘されており（document_id: 1c7f856b-9816-4a53-af07-f9eece832501）、短期〜数年スパンで企業・市場に直接影響を与えているのは、中国の輸出管理制度そのものよりも、その許認可運用の強度・方針である。サプライチェーン構造の集中や非紅色サプライチェーン構築の動きは重要だが、現時点で最も直接的に局面を「動かす／止める」蝶番は、中国当局がどのように許認可を出すかであり、これをPrimary Key Pointと置くのが最も整合的と判断した。",
+        "candidate_key_points": [
+          {
+            "key_point": "中国の重要鉱物・素材輸出許認可の運用方針と強度",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "短期的な供給変動、特定国・企業への影響、価格高騰、企業の在庫・調達戦略の変更などを直接説明できる。日本向け磁石輸出への大きな影響という観測とも整合する。",
+            "why_it_could_be_key": "レアアース・ガリウム・ゲルマニウムなどの輸出管理は、制度上の枠組みだけでなく、個別案件ごとの許認可運用（どの企業・用途に許可を出すか、どのタイミングで厳格化・緩和するか）が実際の供給・価格・投資判断を左右するため。日本向け磁石輸出への影響も、制度の存在だけでなく運用の厳格化によって生じている。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501"
+            ],
+            "what_it_does_not_explain": "長期的なサプライチェーン再編（非紅色サプライチェーン構築）や、米日欧の国内産業政策の方向性そのものは、これだけでは説明しきれない。",
+            "control_structure_summary": "中国の輸出管理法制・関連規則に基づき、商務部などの当局が許認可権限を持ち、企業は申請・審査を経て輸出を行う。政治指導部の方針はあるが、具体的な許認可は制度・官僚プロセスにより運用される。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米・日・欧・台湾などによる「非紅色サプライチェーン」構築の実効性",
+            "control_type": "mixed",
+            "what_it_explains": "中長期的なサプライチェーンのブロック化、対中依存度の変化、友好国間の技術・投資協力の強化、台湾・日本・米欧の政治的発信の意味を説明できる。",
+            "why_it_could_be_key": "台湾総統と日本の政治家が「非紅色サプライチェーン」構築を公然と掲げていることは、対中依存を減らす政治的意思を示す。これが実際に投資・規制・企業行動としてどこまで進むかが、中国の輸出管理レバレッジの持続性を決める。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "what_it_does_not_explain": "短期的な供給ショックや価格変動、個別企業への即時影響は、中国の許認可運用など他の要因がより直接的に説明する。",
+            "control_structure_summary": "複数の国家・地域（台湾、日本、米国、欧州）と企業・投資家が関与する分散構造であり、政治的意思、産業政策、企業の収益性・技術力、資本市場などが相互に制約し合う。単一の意思決定者ではなく、分散したアクターの集合行動が結果を決める。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "グローバルな重要鉱物・素材サプライチェーンの構造的集中（中国の高いシェア）",
+            "control_type": "structural",
+            "what_it_explains": "なぜ中国の輸出管理が世界市場に大きな影響を与えるのか、なぜ米日欧が短期的に完全な脱中国を実現できないのかを説明する。",
+            "why_it_could_be_key": "レアアースやガリウム・ゲルマニウムなどの採掘・精錬・加工能力が中国に高度に集中していること自体が、どの国がどの程度中国に依存せざるを得ないかを決める構造要因であり、政策・許認可の効果を増幅する。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501"
+            ],
+            "what_it_does_not_explain": "具体的な許認可運用の強弱や、台湾・日本が「非紅色サプライチェーン」を掲げる政治的タイミングなど、制度・政治レベルの動きは別途説明が必要。",
+            "control_structure_summary": "鉱床の地理的分布、過去の投資・環境規制、技術蓄積などにより、中国が採掘・精錬・加工で高いシェアを持つ構造が形成されている。これは短期的には政策で容易に変えられない。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "単純な『米中対立』『資源の武器化』フレーム自体が説明力を失いつつある可能性（Frame-breaking仮説）",
+            "control_type": "unknown",
+            "what_it_explains": "なぜ輸出管理が継続的な制度運用として整備され、国内産業政策と結びついているのか、なぜ米日欧が産業政策・技術戦略として対応しているのかを説明し得る。",
+            "why_it_could_be_key": "もし中国の輸出管理が主に自国産業の高度化・技術保護を目的とし、対外的な武器化は副次的であるなら、従来の「資源の武器化」フレームは局面を誤読させる。米日欧側も、単なる対立ではなく、自国産業政策・技術戦略として対応している可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "1c7f856b-9816-4a53-af07-f9eece832501",
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "what_it_does_not_explain": "具体的な許認可運用やサプライチェーン再編の実務的な動きは、別途制度・構造要因の分析が必要。",
+            "control_structure_summary": "これは特定の制度・アクターではなく、分析フレームの問い方に関する仮説であり、誰が動かしているかを直接示すものではない。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "中国が重要鉱物・素材の輸出管理制度を維持したまま、許認可運用を大幅に緩和し、ほぼ全ての申請を迅速に許可するようになり、日本・米欧向け供給が安定し価格も落ち着く場合。この場合、局面の蝶番は許認可運用ではなく、構造的集中や非紅色サプライチェーン構築など他の要因へ移る可能性が高い。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "1c7f856b-9816-4a53-af07-f9eece832501"
+        ],
+        "control_structure_summary": "中国の輸出管理法制に基づき、商務部などの当局が許認可権限を持ち、企業は申請・審査を経て輸出を行う。政治指導部の方針はあるが、具体的な許認可は制度・官僚プロセスにより運用されるため、制度的制約が強い。",
+        "supporting_knowledge_refs": null,
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "中国の輸出管理の内部意図（対外カードと産業政策の比重）、米日欧・台湾の非紅色サプライチェーン構築の具体的進捗・実効性については、提供資料だけでは判断できない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "構造要因優位シナリオ：中国の輸出管理は重要だが、局面を最も規定しているのは依然として中国の高い採掘・精錬・加工シェアという構造的集中であり、各国の政策はその制約の中での調整に過ぎない。短期・中期ともに中国依存は大きく変わらず、非紅色サプライチェーンは部分的補完にとどまる。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "複数年にわたり中国のシェアがほぼ不変で、各国政策にもかかわらず依存度が下がらないことが確認された場合、主シナリオからこの構造優位シナリオへ比重を移す必要がある"
+          ],
+          "weakening_conditions": [
+            "豪州・米国・アフリカなどで新規鉱山・精錬能力が着実に立ち上がり、中国シェアが統計的に低下する",
+            "日本・米欧企業が中国以外からの調達比率を大きく引き上げたことを示すデータが出る"
+          ],
+          "strengthening_conditions": [
+            "新規鉱山・精錬プロジェクトが環境・資金・技術制約で進まず、中国シェアが高止まりする統計が出る",
+            "中国以外の供給源からの大規模な増産計画が相次いで頓挫する"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "資源武器化優位シナリオ：中国の輸出管理の主目的は対外的な圧力・報復であり、産業政策は副次的。日本向け磁石輸出への影響も、政治的メッセージとして意図的に選ばれたターゲットで、今後も特定国・特定企業への選択的締め付けが続く。米日欧・台湾のサプライチェーン再編は防衛的反応であり、緊張は長期化する。",
+          "evidence_class": "current_indirect_evidence",
+          "switch_conditions": [
+            "中国の運用が明確に国別・企業別の政治的締め付けに偏り、産業政策的合理性より政治的メッセージが前面に出る証拠が蓄積した場合、主シナリオからこの武器化優位シナリオへ切り替えを検討する"
+          ],
+          "weakening_conditions": [
+            "中国が輸出管理の運用基準を透明化し、国別差別的運用を否定する公式文書を出す",
+            "安全保障上問題のない用途については許認可を迅速に出し、政治的緊張と供給運用を切り離す動きが見られる"
+          ],
+          "strengthening_conditions": [
+            "中国が特定国・企業を名指しした輸出制限・不許可を繰り返し、政治的文脈で説明される",
+            "中国国内の公式論評で、輸出管理を対外報復・圧力手段として強調する発言が増える"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "中国の輸出管理制度・対象品目の追加・削除・改正に関する公式発表",
+        "日本向け・米欧向け重要鉱物・素材の輸出許可件数・審査期間の統計",
+        "米日欧・台湾による重要鉱物・素材関連投資・補助金・規制の発表",
+        "非紅色サプライチェーンに関する具体的な共同プロジェクト・投資案件の報道"
+      ],
+      "retraction_conditions": [
+        "中国が重要鉱物・素材の輸出管理を大幅に緩和し、許認可運用が供給・価格にほとんど影響しなくなる。",
+        "米日欧・台湾が重要鉱物・素材を経済安全保障の対象から外し、サプライチェーン再編を事実上停止する。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "1c7f856b-9816-4a53-af07-f9eece832501",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "中国が輸出管理の運用を透明化し、国別差別的運用を行わないことを公式に表明し、実際に許認可運用が緩和される場合、主シナリオの「対外カード」要素は弱まる。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "中国の輸出管理制度の条文・規則レベルで、対象品目・用途・技術レベルがどのように定義されているか",
+          "rationale": "Key Point（許認可運用の強度）とKey Stakeholder（CN_mofcom）の評価を精緻化するため",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "日本向け磁石輸出の数量・価格が制度導入前後でどの程度変化しているか",
+          "rationale": "Main Scenarioの短期供給リスク評価を裏付けるため",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "非紅色サプライチェーン構築に関して、日本・台湾・米欧間で具体的にどのプロジェクト・投資が動いているか",
+          "rationale": "Key Pointのsecondary hinge（非紅色サプライチェーンの実効性）を評価するため",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "中国の輸出管理制度の具体的内容（対象品目・用途・技術レベル）と許認可運用の実態（審査基準・国別運用差）。",
+          "gap_category": "deterministic",
+          "recommended_action": "中国政府の公式文書・規則、専門分析レポートを確認し、制度・運用の詳細を把握する。"
+        },
+        {
+          "priority": "中",
+          "description": "米・日・欧の重要鉱物・素材に関する具体的産業政策・投資支援・規制内容。",
+          "gap_category": "deterministic",
+          "recommended_action": "各国政府の政策文書・予算・法案・専門分析を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "非紅色サプライチェーン構築に関する具体的なプロジェクト・投資・企業行動。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "台湾・日本・米欧企業の投資動向・協力枠組み・共同プロジェクトに関する情報を収集する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "中国の輸出管理は、対外的な資源武器化が主目的であり、国内産業・技術保護は副次的である。したがって、局面の主シナリオは「資源の武器化による米日欧への圧力」であり、サプライチェーン再編はその防衛的反応に過ぎない。",
+      "key_stakeholder_assessment": {
+        "rationale": "この局面を実際に動かす／止める主体は、中国側では中央指導部と輸出管理を所管する商務部などの当局、米側では連邦政府（ホワイトハウス・商務省など）、日本側では政府（経産省など）、欧州側では欧州委員会・加盟国政府、台湾側では総統府・経済関連当局である。中国の許認可運用が短期的な供給を左右し、米日欧・台湾の産業政策・サプライチェーン戦略が中長期的な依存度を決めるため、複数のKey Stakeholderが相互に影響し合う構造と見るのが妥当。",
+        "confidence": "中",
+        "evidence_ids": [
+          "1c7f856b-9816-4a53-af07-f9eece832501",
+          "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        ],
+        "determination": "multiple",
+        "decision_structure": "中国側が短期的な供給レバーを握り、米日欧・台湾側が中長期的な代替供給・国内能力整備のレバーを握る二層構造。中国の決定が即時の供給・価格を動かし、米日欧・台湾の決定が5〜10年スパンで構造を変える。",
+        "selected_actor_ids": [
+          "CN_central",
+          "CN_mofcom",
+          "US_federal",
+          "JP_gov",
+          "EU_commission",
+          "TW_president"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "CN_mofcom",
+          "confidence": "中",
+          "evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "中央方針に沿ったバランスの取れた厳格運用",
+          "issue_component": "中国輸出許認可運用の厳格化（日本向け磁石など）",
+          "likely_reaction": "政治的緊張が高まると厳格化、緩和ムードでは一部緩める",
+          "current_red_line": "中央方針に反する過度な緩和",
+          "stated_preference": null,
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "商務部は許認可の実務担当であり、このコンポーネントが自らの主要業務そのもの",
+          "currently_tradeable": "限定的に調整可能だが、政治方針次第",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "審査基準の解釈・審査速度",
+          "effect_on_actor_objective": "安全保障・産業政策の達成に資する一方、過度な厳格化は国内産業・対外関係に負荷",
+          "estimated_real_preference": "制度の信頼性を維持しつつ、政治的に必要な範囲で締め付けを行う",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "中央指導部の方針・安全保障判断",
+          "issue_component_description": "短期供給・価格を左右する運用強度",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "TW_president",
+          "confidence": "中",
+          "evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "日本・米欧との具体的協力プロジェクトの立ち上げ",
+          "issue_component": "非紅色サプライチェーン構築の政治的コミットメント",
+          "likely_reaction": "日本・米欧から具体的提案があれば積極的に乗る",
+          "current_red_line": "中国への過度な依存維持",
+          "stated_preference": "非紅色サプライチェーン構築への協力",
+          "instrumental_value": "mixed",
+          "priority_rationale": "頼総統の安全保障・経済戦略の中核に近いテーマと推定される",
+          "currently_tradeable": "枠組みの具体化方法は交渉可能だが、方向性自体は譲りにくい",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "台湾の半導体・電子産業の不可欠性",
+          "effect_on_actor_objective": "台湾の安全保障・経済自立性強化に直接寄与",
+          "estimated_real_preference": "対中依存低減と民主陣営との結束強化",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "中国からの圧力・台湾経済の対中依存度",
+          "issue_component_description": "台湾・日本が掲げる対中依存低減の枠組み",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "JP_gov",
+          "confidence": "中",
+          "evidence_ids": [
+            "1c7f856b-9816-4a53-af07-f9eece832501"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "供給安定化と中期的な依存度低減",
+          "issue_component": "日本向け磁石輸出への影響",
+          "likely_reaction": "短期は在庫・代替調達支援、中期は国内能力・他国との協力強化",
+          "current_red_line": "日本企業の生産停止につながる供給途絶",
+          "stated_preference": "経済安全保障リスクへの対応（JETRO記事の問題提起から推定）",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "日本の製造業・自動車産業等に直結するため政策上の優先度が高い",
+          "currently_tradeable": "中国との協議・代替調達支援などで部分的に緩和可能",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": [
+            "1c7f856b-9816-4a53-af07-f9eece832501"
+          ],
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "補助金・外交協力",
+          "effect_on_actor_objective": "経済安全保障リスクとして対処が必要",
+          "estimated_real_preference": "中国依存を管理可能な水準まで下げる",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "企業の現行サプライチェーン構造と財政・技術制約",
+          "issue_component_description": "日本企業の短期供給リスク",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        }
+      ],
+      "decisive_power_and_leverage": "この局面全体を俯瞰すると、決定的な力は「中国政府（特に商務部など輸出管理当局）の許認可運用」と「米・日・欧・台湾などによる非紅色サプライチェーン構築の実効性」の組み合わせにある。短期〜数年スパンでは、中国の輸出許認可が供給・価格・投資を左右するため、中国側の制度運用がより決定的。一方、5〜10年スパンでは、米日欧・台湾などがどこまで中国依存を減らし、代替供給・国内能力を整備できるかが結果を決める構造要因となる。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "中国中央指導部・輸出管理当局は、重要技術・素材を戦略資源として扱うPersistent Preferenceと輸出管理強化というObserved Actionが概ね一致している。一方、米日台側は、経済安全保障重視・対中依存低減というPersistent Preferenceと、非紅色サプライチェーン構築・国内能力強化というObserved Actionが一致している。現時点では、Preference-Action Gapは大きくなく、各主体が従来の志向を制度・政策に具体化している局面と見るのが妥当だが、詳細な内部意図・制約についてはEvidence不足。"
+    },
+    "created_at": "2026-09-03T11:20:35.711561+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "21252761-81d6-4aa6-88b1-bcffa736eac1",
+    "response_id": "f8094e2b-a900-40f4-aa32-0d893e5414a6",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）",
+        "passed": false
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[1]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）",
+        "passed": false
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 38,
+    "failed_count": 3,
+    "created_at": "2026-09-03T11:20:36.197984+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "temporal_hedge_language_not_present",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "temporal_hedge_language_not_present",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "CN_central",
+      "CN_mofcom",
+      "US_federal",
+      "JP_gov",
+      "EU_commission",
+      "TW_president"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 86698,
+    "completion_tokens": 18335,
+    "total_tokens": 105033
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 129125,
+        "prompt_tokens": 39997,
+        "completion_tokens": 13011
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 50797,
+        "prompt_tokens": 46701,
+        "completion_tokens": 5324
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[1]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 2,
+        "named_entity_coverage_gaps": [],
+        "gaps": []
+      },
+      "research_cycle": {
+        "triggered": false,
+        "search_calls_used": 0,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 0,
+      "final_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 2,
+        "named_entity_coverage_gaps": [],
+        "gaps": []
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

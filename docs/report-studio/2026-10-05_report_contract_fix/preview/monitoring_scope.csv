@@ -1,0 +1,18 @@
+signal_source,theme_id,theme_name,trend_role,configured_start_date,actual_min_date,actual_max_date,nonduplicate_records,common_primary_graph_start,effective_start_date,effective_start_source,observation_start_date,observation_end_date,historical_trend_start_date
+S10,KY_SEN,Kentucky Senate,primary,2026-07-01,2026-09-07,2026-09-30,4591,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S11,SC_GOV,South Carolina Governor,primary,2026-07-01,2026-09-07,2026-09-30,1010,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S12,SC_SEN,South Carolina Senate,primary,2026-07-01,2026-09-07,2026-09-30,4578,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S13,MD_GOV,Maryland Governor,primary,2026-07-01,2026-09-07,2026-09-30,1494,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S14,IL_GOV,Illinois Governor,primary,2026-07-01,2026-09-07,2026-09-30,25903,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S15,NY_GOV,New York Governor,primary,2026-07-01,2026-09-07,2026-09-30,22895,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S16,TX_GOV,Texas Governor,primary,2026-07-01,2026-09-07,2026-09-30,25334,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S17,TX_SEN,Texas Senate,primary,2026-07-01,2026-09-07,2026-09-30,3400,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S1,AZ_GOV,Arizona Governor,primary,2026-07-01,2026-09-07,2026-09-30,10711,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S2,GA_SEN,Georgia Senate,primary,2026-07-01,2026-09-07,2026-09-30,5018,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S3,GA_GOV,Georgia Governor,primary,2026-07-01,2026-09-07,2026-09-30,4792,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S4,MI_SEN,Michigan Senate,primary,2026-07-01,2026-09-07,2026-09-30,14421,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S5,MI_GOV,Michigan Governor,primary,2026-07-01,2026-09-07,2026-09-30,8441,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S6,NV_GOV,Nevada Governor,primary,2026-07-01,2026-09-07,2026-09-30,2320,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S7,NC_SEN,North Carolina Senate,primary,2026-07-01,2026-09-07,2026-09-30,20346,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S8,PA_GOV,Pennsylvania Governor,primary,2026-07-01,2026-09-07,2026-09-30,10180,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01
+S9,WI_GOV,Wisconsin Governor,primary,2026-07-01,2026-09-07,2026-09-30,7985,2026-09-07,2026-09-07,run_period_start,2026-09-07,2026-09-30,2026-07-01

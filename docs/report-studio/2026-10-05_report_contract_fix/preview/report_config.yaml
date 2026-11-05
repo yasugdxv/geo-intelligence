@@ -1,0 +1,39 @@
+report_id: 2f863013-31ed-4d4e-a76f-8c4db7167a20
+report_title: US Midterm Election Monitor
+created_at: 2026-10-05T20:12:51+00:00
+analysis_policy: narrative_master_v4_final_streaming_cluster_review
+analysis_mode: public_voice_monitor
+analysis_contract: public_voice_monitor_v4_3
+report_kind: us_midterm_elections
+prompt1_profile: public_voice_monitor_prompt1_v4_3
+prompt2_profile: us_midterm_elections_prompt2_v4_3
+template_id: us_midterm_state_races
+template_hash: 2c0a489f73a59f40ac79515e1ead09bdde14d4a0926d40fa52b153d7869a2f7e
+observation_start_date: 2026-09-07
+observation_end_date: 2026-09-30
+historical_trend_start_date: 2026-07-01
+primary_graph_signals_source: design
+preprocess_period_filter: 2026-09-07..2026-09-30
+keyword_matcher: keyword_matcher_v2
+common_primary_graph_start: 2026-09-07
+primary_chart_start: 2026-09-07
+primary_graph_signals: S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16,S17
+final_graph_rule: source_class=Public Voice; attitude=positive|neutral|negative; duplicate=false; theme_relevance=relevant
+signals:
+  - S1
+  - S10
+  - S11
+  - S12
+  - S13
+  - S14
+  - S15
+  - S16
+  - S17
+  - S2
+  - S3
+  - S4
+  - S5
+  - S6
+  - S7
+  - S8
+  - S9

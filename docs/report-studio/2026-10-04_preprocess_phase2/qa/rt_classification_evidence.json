@@ -1,0 +1,48 @@
+{
+ "public_social_rows": 81070,
+ "kinds": {
+  "original_post": 40744,
+  "own_text_plus_quote_or_attachment": 23260,
+  "pure_rt": 16926,
+  "shared_post_only": 6,
+  "attachment_only": 127,
+  "empty_body": 7
+ },
+ "share": {
+  "original_post": 0.5026,
+  "own_text_plus_quote_or_attachment": 0.2869,
+  "pure_rt": 0.2088,
+  "shared_post_only": 0.0001,
+  "attachment_only": 0.0016,
+  "empty_body": 0.0001
+ },
+ "by_document_type": {
+  "TwitterSocialMedia": {
+   "original_post": 13880,
+   "own_text_plus_quote_or_attachment": 3849,
+   "pure_rt": 16926
+  },
+  "FacebookSocialMedia": {
+   "own_text_plus_quote_or_attachment": 19411,
+   "original_post": 1266,
+   "shared_post_only": 6,
+   "attachment_only": 127
+  },
+  "InstagramSocialMedia": {
+   "original_post": 4789
+  },
+  "YouTube": {
+   "original_post": 13197,
+   "empty_body": 1
+  },
+  "RedditSocialMedia": {
+   "original_post": 3157
+  },
+  "TikTok": {
+   "original_post": 1086
+  },
+  "WeiboSocialMedia": {
+   "original_post": 3303
+  }
+ }
+}

@@ -1,0 +1,1249 @@
+{
+  "request": {
+    "request_id": "81e143db-3bbd-440a-8091-5d5e47a45cf6",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "サウジアラビア、米国、イスラエルの間で進む安全保障・外交関係の再編について、現在の局面を分析してください。\n\n特に、サウジアラビアとイスラエルの関係正常化、安全保障保証、防衛協力、原子力協力、パレスチナ問題、イランへの対応などが相互にどう結びついているかを対象としてください。\n\n最新の公開情報を確認した上で、\n\n- 局面を動かすKey Actorsは誰か\n- 各Actorの長期的な上位目的と、この局面で実際に獲得したいもの\n- 各Actorにとって譲れない条件・レッドライン\n- 相手に対して持つLeverageと、実際には使いにくいカード\n- 公開発言と実際の行動・交渉ポジションにGapがあるか\n- Actor同士の目的がどこで一致し、どこで衝突しているか\n- 現局面を左右するPrimary Key Point\n- 最も蓋然性の高い方向性と代替シナリオ\n\nを分析してください。\n\n「正常化する／しない」という二分法だけで考えず、各Actorが最終合意そのものではなく、交渉プロセスから別の利益を得ようとしている可能性も検討してください。ただし、Evidenceのない裏読みを主シナリオに採用しないでください。",
+    "created_at": "2026-09-03T11:25:08.347835+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "1414869c-9e85-45bc-bee7-8fa3b393b216",
+    "request_id": "81e143db-3bbd-440a-8091-5d5e47a45cf6",
+    "document_ids": [
+      "233b550e-c99f-43e4-8511-5940d8d9072c"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T11:25:08.810511+00:00"
+  },
+  "response": {
+    "response_id": "914191ea-9fe6-4efd-9ab5-554428fe7305",
+    "request_id": "81e143db-3bbd-440a-8091-5d5e47a45cf6",
+    "source_pack_id": "1414869c-9e85-45bc-bee7-8fa3b393b216",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "米国とサウジアラビアの間で、原子力協力を含む包括的な安全保障パッケージ構想が検討されている。",
+          "claim_type": "fact",
+          "source_ref": "233b550e-c99f-43e4-8511-5940d8d9072c"
+        },
+        {
+          "text": "このパッケージは、サウジアラビアとイスラエルの関係正常化と連動して議論されている。",
+          "claim_type": "fact",
+          "source_ref": "233b550e-c99f-43e4-8511-5940d8d9072c"
+        },
+        {
+          "text": "米政府関係者は、サウジとの安全保障・原子力協力を含む枠組みが中東安定化と対イラン抑止に資すると主張している。",
+          "claim_type": "official_claim",
+          "source_ref": "233b550e-c99f-43e4-8511-5940d8d9072c"
+        },
+        {
+          "text": "サウジ政府は、米国からの安全保障保証と民生用原子力開発支援を求めていると報じられている。",
+          "claim_type": "official_claim",
+          "source_ref": "233b550e-c99f-43e4-8511-5940d8d9072c"
+        },
+        {
+          "text": "米国内では、サウジへの原子力協力が核拡散リスクを高めるとの懸念が専門家・議会から示されている。",
+          "claim_type": "observation",
+          "source_ref": "233b550e-c99f-43e4-8511-5940d8d9072c"
+        },
+        {
+          "text": "イスラエル政府は、対イラン抑止とパレスチナ問題に関する自国の安全保障上の要求を、サウジとの正常化パッケージに組み込もうとしていると報じられている。",
+          "claim_type": "observation",
+          "source_ref": "233b550e-c99f-43e4-8511-5940d8d9072c"
+        },
+        {
+          "text": "サウジ‐イスラエル正常化、安全保障保証、防衛協力、原子力協力、パレスチナ問題、イラン対応は、単独ではなく一体の交渉パッケージとして扱われている可能性が高い。",
+          "claim_type": "inference",
+          "source_ref": "233b550e-c99f-43e4-8511-5940d8d9072c"
+        },
+        {
+          "text": "各Actorは、最終合意の有無にかかわらず、交渉プロセス自体を通じて対イラン抑止、米国内政治上の得点、技術・資金獲得などの副次的利益を追求している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "現局面では、サウジは米の安全保障保証と原子力協力をてこに地域大国としての地位強化を狙い、イスラエルは対イラン抑止とパレスチナ問題での裁量維持を重視し、米国は中東関与の再設計と対イラン・対中国戦略の一環として三者関係を組み替えようとしている。利害一致は「対イラン抑止」「サウジ‐イスラエルの直接衝突回避」「米の同盟ネットワーク維持」にあり、対立は「サウジの核技術獲得と拡散懸念」「イスラエルのパレスチナ対応への国際的要求」「米議会・世論のサウジ・原子力協力への警戒」に集中している。",
+      "stakeholders": [
+        {
+          "actor": "Mohammed bin Salman",
+          "purpose": null,
+          "leverage": "対イラン安全保障、国内近代化・経済開発",
+          "position": "サウジ‐イスラエル正常化をてこに、米国からの安全保障保証と原子力協力を獲得し、対イラン抑止と国内近代化の基盤を強化すること（仮説）。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": "イスラム世界での正統性",
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "Benjamin Netanyahu",
+          "purpose": null,
+          "leverage": "対イラン安全保障",
+          "position": "サウジとの正常化を通じて対イラン抑止と地域的地位を強化しつつ、パレスチナ問題での安全保障上の裁量を維持すること（仮説）。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": "国内連立政治",
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "米国大統領・政権中枢",
+          "purpose": "中東関与を再設計しつつ、対イラン・対中国戦略の一環として同盟ネットワークを維持・強化する",
+          "leverage": "安全保障保証・原子力協力・外交的承認を提供する権限",
+          "position": "サウジとの包括的枠組みを模索しつつ、議会・専門家の懸念を織り込んだ条件設定を探る立場",
+          "priority": "国内政治（選挙・議会）と安全保障のバランスを取りながら、サウジとの枠組みを成立させること",
+          "red_lines": "核拡散リスクが高すぎる協力枠組み、議会承認が得られないほど政治的に不人気な取引",
+          "confidence": "中",
+          "constraints_fears": "議会・世論の反発、核拡散批判、対サウジ人権問題への批判が政権の政治的コストになること",
+          "key_relationships": "議会指導部、国防総省、エネルギー省・原子力規制機関、イスラエル・サウジ両政府",
+          "ability_to_move_or_block": "条約・安全保障枠組みの提案・署名権を持つが、議会承認が必要なため単独では完結しない"
+        },
+        {
+          "actor": "米議会・専門家コミュニティ",
+          "purpose": "核拡散防止と対サウジ政策の監視を通じて、米国の長期的安全保障利益を守る",
+          "leverage": "条約承認権、予算権、公聴会・立法を通じた条件付け",
+          "position": "原子力協力に慎重で、拡散防止条件の付与を求める立場",
+          "priority": "サウジへの原子力協力の条件を厳格化し、拡散リスクを抑えること",
+          "red_lines": "濃縮・再処理能力の付与など、拡散リスクが高い協力",
+          "confidence": "中",
+          "constraints_fears": "政権・ロビーからの圧力、地域安定化の必要性とのバランス",
+          "key_relationships": "政権中枢、専門家・シンクタンク、ロビー団体",
+          "ability_to_move_or_block": "原子力協力・安全保障保証の法的枠組みを承認・修正・拒否できる"
+        },
+        {
+          "actor": "イラン政府・代理勢力",
+          "purpose": "地域的影響力維持・拡大、対サウジ・対イスラエル抑止",
+          "leverage": "代理勢力を通じた地域不安定化、エネルギー・海峡リスクの高め方",
+          "position": "三者協力に反対しつつ、行動は局面次第で変動",
+          "priority": "三者の安全保障協力・正常化を牽制し、自国への包囲網形成を防ぐこと",
+          "red_lines": "自国への直接的軍事攻撃や体制転換を狙う枠組み",
+          "confidence": "低",
+          "constraints_fears": "経済制裁・軍事的圧力の強化、国内不安定化",
+          "key_relationships": "ヒズボラ等代理勢力、ロシア・中国など第三国",
+          "ability_to_move_or_block": "三者協力を完全に阻止する力は限定的だが、コストを高めることは可能"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "サウジ‐イスラエル正常化、安全保障保証、防衛協力、原子力協力、パレスチナ問題、イラン対応が一体の交渉パッケージとして扱われている程度が高いこと",
+          "米議会・専門家の核拡散懸念が、原子力協力の条件設定に実質的な影響を与えること"
+        ],
+        "description": "提供資料と既存知識の範囲では、現局面の主シナリオは「米国がサウジへの安全保障保証と原子力協力を含むパッケージを、議会・世論の制約の中でどこまで成立させられるかが、サウジ‐イスラエル正常化と対イラン抑止枠組みの成否を左右する」という見立てが最も整合的である。サウジは対イラン抑止と地域大国化のために米安全保障保証・原子力協力を求め、イスラエルは対イラン抑止とパレスチナ問題での裁量維持を重視し、米国は中東関与の再設計と対イラン・対中国戦略の一環として三者関係を組み替えようとしている。交渉プロセス自体も、米国内での対サウジ・核拡散議論を通じて政策枠組みを再定義する場となっており、最終合意に至らなくても、米の中東関与の形やサウジ・イスラエルの対イラン協力のあり方に影響を与え続ける可能性が高い。",
+        "evidence_class": "current_indirect_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "米サウジ核取引と三者関係の構造を分析しており、主シナリオの枠組みを支持する。",
+            "evidence_id": "233b550e-c99f-43e4-8511-5940d8d9072c",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "selection_rationale": "現時点で利用可能なEvidenceは限定的だが、米サウジ核取引がワシントンの制度・政治を巻き込んでいる構造と、サウジ‐イスラエル正常化・対イラン抑止がこのパッケージに連動しているという指摘があり、これを中心に据えると三者の目的・制約・レバレッジを一体として説明できる。他の仮説（イスラエル国内政治やイランの動きを主軸とするもの）は重要だが、提供資料から直接支えられる度合いが低いため、主シナリオでは補助的要因として扱う。",
+        "supporting_evidence": [
+          "233b550e-c99f-43e4-8511-5940d8d9072c"
+        ],
+        "observable_indicators": [
+          "米議会での対サウジ原子力協力に関する公聴会・法案の内容と通過状況",
+          "サウジ‐イスラエル正常化に関する公式声明で、パレスチナ問題・原子力協力・対イラン抑止がどのように言及されるか",
+          "米政府がサウジへの安全保障保証の法的形態（条約・覚書等）をどう設計するか"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "三者関係の再編により、中東の安全保障環境・原油価格・対イランリスクが変化し、エネルギーコスト・物流・地域市場への間接的影響が生じ得る。また、米サウジ原子力協力の進展は、原子力・エネルギー関連産業にとって新たな機会・規制リスクをもたらす可能性がある。",
+        "unrelated_note": "自社の具体的な事業・サプライチェーン・ブランドへの直接接続は、現時点の情報だけでは特定できないため、無理に重大リスクとして結論づけない。",
+        "environment_change": "米の中東関与の形（安全保障保証・原子力協力・対イラン抑止）が再設計されることで、長期的な地政学環境が変化し、エネルギー・安全保障・規制リスクの前提が変わる可能性がある。"
+      },
+      "initial_anomaly": "通常の二国間正常化交渉と異なり、サウジ‐イスラエル関係正常化が「米国によるサウジへの安全保障保証・原子力協力」と一体パッケージ化され、さらにパレスチナ問題・対イラン抑止・米国内政治（議会承認・核拡散懸念）まで巻き込んだ三角構造になっている点。正常化の是非だけでなく、米国の中東関与の形そのものを変え得る再編になっている。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては『責任ある原子力利用と同盟強化』を強調する一方、Substanceとしては核技術・安全保障保証という高価値カードを求めており、実質的強度は米側の承認次第で未確定",
+            "discretion": "米側の議会承認・規制条件に大きな裁量余地が残る",
+            "evidence_ids": [
+              "233b550e-c99f-43e4-8511-5940d8d9072c"
+            ],
+            "target_scope": "サウジ国内の原子力発電・関連インフラ、対イラン抑止に資する安全保障協力",
+            "stated_signal": "中東安定化と対イラン抑止のための『責任ある』原子力協力・安全保障枠組みを求めているというメッセージ",
+            "concrete_measure": "原子力協力を含む包括的安全保障パッケージ構想の提示",
+            "enforcement_status": "未定",
+            "implementation_status": "交渉継続中と報じられている段階",
+            "legal_or_policy_force": "現時点では構想・交渉段階であり、法的拘束力は未確定"
+          },
+          "primary_audience": "米政府・議会",
+          "message_hypothesis": "サウジは米国の長期的安全保障パートナーであり、対イラン抑止と地域安定に貢献する見返りとして安全保障保証と原子力協力を正当化する",
+          "secondary_audience": "国内支持層・湾岸諸国・イラン",
+          "action_or_statement": "米国との包括的安全保障・原子力協力パッケージを交渉し、それをイスラエルとの正常化と連動させる姿勢"
+        },
+        {
+          "actor_ref": "585cc564-5a71-40ac-959b-3995d3a409c8",
+          "confidence": "低",
+          "action_substance": {
+            "assessment": "Signalとしては『正常化支持＋安全保障重視』だが、Substanceとしてどこまでパレスチナで譲歩するかは不透明で、国内政治が強い制約",
+            "discretion": "連立内の政治力学により裁量余地が制約される可能性が高い",
+            "evidence_ids": [
+              "233b550e-c99f-43e4-8511-5940d8d9072c"
+            ],
+            "target_scope": "対イラン抑止枠組み、パレスチナ領域の治安・入植政策",
+            "stated_signal": "サウジとの正常化に前向きだが、イスラエルの安全保障と歴史的権利を損なう譲歩は受け入れないという立場",
+            "concrete_measure": "正常化交渉への参加と、パレスチナ関連条件の交渉（詳細は不明）",
+            "enforcement_status": "未定",
+            "implementation_status": "交渉中と報じられる段階",
+            "legal_or_policy_force": "イスラエル国内法・連立合意に拘束されるが、具体的合意は未形成"
+          },
+          "primary_audience": "イスラエル国内支持層・連立与党",
+          "message_hypothesis": "地域的地位と対イラン抑止を強化しつつ、パレスチナ問題では安全保障上の裁量を維持するというバランスを国内に示したい",
+          "secondary_audience": "米政府・サウジ政府",
+          "action_or_statement": "サウジとの正常化に前向きな姿勢を示しつつ、パレスチナ問題に関する条件設定で慎重な立場を取ると報じられている"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "サウジ‐イスラエル正常化が、米国のサウジへの安全保障保証・原子力協力と一体パッケージとして扱われ、米国内政治・核拡散懸念を巻き込む三角構造になっている点。",
+        "why_it_matters": "米の中東関与の形、対イラン抑止枠組み、原子力協力の拡散リスクが同時に動く可能性があり、エネルギー・安全保障・規制環境の長期的前提に影響し得る。",
+        "what_to_watch_decide": "米議会・専門家の対サウジ原子力協力への反応、サウジ‐イスラエル正常化条件（特にパレスチナ関連）の具体化、イラン・代理勢力の行動変化をモニタリングし、エネルギー・安全保障・規制リスクの前提変更が自社の意思決定に影響するかを検討する。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Mohammed bin Salman",
+          "red_line": null,
+          "actor_ref": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+          "entity_id": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+          "confidence": "低",
+          "formal_role": null,
+          "evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "decision_power": null,
+          "driving_forces": [
+            {
+              "force": "対イラン安全保障",
+              "direction": "supporting",
+              "description": "イランの地域的影響力と核開発への懸念が、米安全保障保証とイスラエルとの協力を求める動機を強めていると推定される。"
+            },
+            {
+              "force": "国内近代化・経済開発",
+              "direction": "supporting",
+              "description": "ビジョン2030等の国内近代化計画に必要な安定した安全保障環境とエネルギー・技術基盤の確保。"
+            },
+            {
+              "force": "イスラム世界での正統性",
+              "direction": "constraining",
+              "description": "パレスチナ問題への配慮やイスラム世界の世論が、イスラエルとの正常化条件に制約を与える可能性。"
+            }
+          ],
+          "ability_to_move": null,
+          "issue_objective": "サウジ‐イスラエル正常化をてこに、米国からの安全保障保証と原子力協力を獲得し、対イラン抑止と国内近代化の基盤を強化すること（仮説）。",
+          "observed_action": "米国との安全保障・原子力協力を含む包括的パッケージを交渉し、イスラエルとの関係正常化をその一部として位置づけていると報じられている。",
+          "vulnerabilities": [
+            "対イランの軍事・ミサイル脅威",
+            "国内正統性への批判（パレスチナ問題・人権問題）"
+          ],
+          "ability_to_block": null,
+          "action_substance": {
+            "assessment": "Signalは強いが、Substanceは米側制度制約により流動的で、実質強度はまだ低〜中",
+            "discretion": "米議会・規制機関の条件次第で大きな裁量余地",
+            "evidence_ids": [
+              "233b550e-c99f-43e4-8511-5940d8d9072c"
+            ],
+            "target_scope": "原子力発電・インフラ、対イラン抑止に資する安全保障協力",
+            "stated_signal": "サウジは責任ある原子力利用と米との安全保障連携を通じて地域安定に貢献する用意がある",
+            "concrete_measure": "原子力協力を含む包括的安全保障パッケージの交渉",
+            "enforcement_status": "未定",
+            "implementation_status": "構想・交渉段階",
+            "legal_or_policy_force": "合意成立までは政治的コミットメントにとどまり、法的拘束力は未確定"
+          },
+          "primary_audience": "米国政府・議会",
+          "why_actor_matters": "サウジの実質的支配者として、安全保障保証・原子力協力・イスラエルとの正常化の条件を決める権限を持ち、対イラン抑止と地域秩序の再編に大きな影響を与えるため。",
+          "available_leverage": [
+            "イスラエルとの正常化カード",
+            "原油生産・価格調整",
+            "投資・金融協力"
+          ],
+          "secondary_audience": "国内支持層・湾岸諸国・イラン",
+          "ultimate_objective": null,
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": null,
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "公然の対イスラエル軍事協力（国内・地域世論のコストが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "none_available",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "insufficient",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        },
+        {
+          "actor": "Benjamin Netanyahu",
+          "red_line": null,
+          "actor_ref": "585cc564-5a71-40ac-959b-3995d3a409c8",
+          "entity_id": "585cc564-5a71-40ac-959b-3995d3a409c8",
+          "confidence": "低",
+          "formal_role": null,
+          "evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "decision_power": null,
+          "driving_forces": [
+            {
+              "force": "国内連立政治",
+              "direction": "constraining",
+              "description": "連立与党内の強硬派・宗教勢力が、パレスチナ問題での譲歩を制約する可能性。"
+            },
+            {
+              "force": "対イラン安全保障",
+              "direction": "supporting",
+              "description": "イランの核・ミサイル能力への懸念が、サウジとの安全保障協力と米の関与を求める動機。"
+            }
+          ],
+          "ability_to_move": null,
+          "issue_objective": "サウジとの正常化を通じて対イラン抑止と地域的地位を強化しつつ、パレスチナ問題での安全保障上の裁量を維持すること（仮説）。",
+          "observed_action": "サウジとの正常化に前向きな姿勢を示しつつ、パレスチナ問題に関する条件設定で国内連立・安全保障ニーズを反映させていると報じられている。",
+          "vulnerabilities": [
+            "国内連立の不安定さ",
+            "国際世論によるパレスチナ政策への批判"
+          ],
+          "ability_to_block": null,
+          "action_substance": {
+            "assessment": "Signalは『前向きな正常化』だが、Substanceはパレスチナ条件次第で大きく変わり得る",
+            "discretion": "連立政治により裁量が制約される可能性が高い",
+            "evidence_ids": [
+              "233b550e-c99f-43e4-8511-5940d8d9072c"
+            ],
+            "target_scope": "対イラン抑止枠組み、パレスチナ領域の治安・入植政策",
+            "stated_signal": "サウジとの正常化を通じて対イラン抑止を強化するが、パレスチナ問題では安全保障上の裁量を維持する",
+            "concrete_measure": "正常化交渉への参加と条件設定",
+            "enforcement_status": "未定",
+            "implementation_status": "交渉中",
+            "legal_or_policy_force": "イスラエル国内法・連立合意に依存"
+          },
+          "primary_audience": "国内支持層・連立与党",
+          "why_actor_matters": "イスラエル政府の長として、サウジとの正常化条件、パレスチナ政策、対イラン戦略を決める権限を持ち、交渉の成否と内容に直接影響するため。",
+          "available_leverage": [
+            "イスラエルの軍事・情報能力",
+            "対イラン抑止における役割",
+            "米国内のイスラエル支持ネットワーク"
+          ],
+          "secondary_audience": "米国政府・サウジ政府",
+          "ultimate_objective": null,
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": null,
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "パレスチナ問題での大幅な譲歩（国内政治コストが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "none_available",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "insufficient",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "サウジ‐イスラエル正常化パッケージにおける具体的なパレスチナ関連条件は何か（国家承認、入植凍結、資金支援等）",
+          "rationale": "パレスチナ条件の具体像が分かれば、イスラエルの譲歩可能範囲と交渉の制約をより正確に評価できる。",
+          "related_hypothesis": "イスラエル国内政治が交渉の主要ボトルネックである可能性（H1）",
+          "recommended_sources": "一次情報（公式声明）、信頼できる国際・地域メディア、専門家分析"
+        },
+        {
+          "priority": "高",
+          "question": "米サウジ原子力協力の技術的範囲と、議会・専門家の具体的な懸念は何か",
+          "rationale": "原子力協力の具体的内容と懸念を確認することで、主シナリオの妥当性を検証できる。",
+          "related_hypothesis": "米制度的制約が蝶番であるという主シナリオ（H2）",
+          "recommended_sources": "議会公聴会記録、規制当局文書、専門家レポート"
+        },
+        {
+          "priority": "中",
+          "question": "イラン側の公式反応と代理勢力の行動変化が、三者交渉にどの程度影響しているか",
+          "rationale": "イランの行動が安全保障協力の加速要因かどうかを確認し、代替シナリオ2の蓋然性を評価する。",
+          "related_hypothesis": "対イラン抑止が交渉の主目的である可能性（H0/H2）",
+          "recommended_sources": "地域メディア、安全保障分析、シンクタンク報告"
+        },
+        {
+          "priority": null,
+          "question": "サウジ‐イスラエル正常化パッケージにおける具体的なパレスチナ関連条件（国家承認、入植凍結、資金支援等）は何か",
+          "rationale": "Key Actor（イスラエル・サウジ）の譲歩可能範囲とPreference-Action Gapを評価するための基礎情報",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米サウジ原子力協力の技術的範囲（濃縮・再処理の有無、IAEA追加議定書等）と議会・専門家の具体的な懸念は何か",
+          "rationale": "Primary Key Point（米サウジ安全保障・原子力パッケージ）の実質的強度と拡散リスクを評価するため",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "イラン側の公式反応と代理勢力（例: ヒズボラ等）の行動変化が、三者交渉にどの程度影響しているか",
+          "rationale": "代替シナリオ2（対イラン抑止優先シナリオ）の蓋然性を検証するため",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "提供資料がこの構造を示唆しており、追加仮定が比較的少ない",
+          "status": "retained",
+          "confidence": "低",
+          "description": "三者はサウジ‐イスラエル正常化と米サウジ安全保障・原子力協力を一体パッケージとして交渉しており、目的は対イラン抑止と地域安定化である",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Stage1で仮説として提示され、交渉長期化と制度的議論の活発化を説明し得るが、直接Evidenceは限定的",
+          "status": "retained",
+          "confidence": "低",
+          "description": "各Actorは最終合意よりも交渉プロセス自体から副次的利益（対イラン抑止の強化、国内政治上の得点、技術・資金獲得）を得ることを主目的としている",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "提供資料が『ワシントンを巻き込んでいる』構造を強調しており、Primary Key Pointとして採用された",
+          "status": "retained",
+          "confidence": "中",
+          "description": "現局面を規定する主因は米国内制度制約（議会承認・核拡散懸念）であり、三者の意図よりも制度上の上限が結果を決める",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Actor Intelligence Packがinsufficientであり、過去パターンからの推定に頼れない",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "既存のNetanyahu・MBSのActor Intelligenceは不十分であり、今回の局面では彼らが従来と異なる優先順位（例: パレスチナ問題での予想外の譲歩）を取る可能性がある",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "提供資料から直接支えられるEvidenceがなく、追加仮定が多い",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "現局面の主軸はサウジ‐イスラエル正常化ではなく、米の中東からの漸進的撤退と地域諸国の自律的安全保障枠組み形成であり、三者交渉はその一部に過ぎない",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ]
+        }
+      ],
+      "one_line_assessment": "as_of=2026-09-03。米・サウジ・イスラエル三者の安全保障・外交再編は、サウジ‐イスラエル正常化そのものよりも「サウジへの米安全保障保証＋原子力協力」と「イスラエルの対イラン・パレスチナ条件」をどう組み合わせるかが蝶番になっており、現時点では米国内政治とイスラエルのパレスチナ対応が最大の制約となっていると見るのが最も整合的である（詳細は仮説レベル）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "mixed",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "米国がサウジへの安全保障保証と原子力協力を含むパッケージを、議会・世論の許容範囲内でどこまで承認できるか",
+          "secondary_hinges": [
+            "イスラエル政府がパレスチナ問題でサウジが受け入れ可能な最低限の譲歩を提示できるか",
+            "サウジが原子力協力の条件（核燃料サイクル制限等）についてどこまで拡散懸念に配慮した妥協を受け入れるか",
+            "イラン側の反応が軍事的エスカレーションではなく抑止枠組みの強化にとどまるか"
+          ]
+        },
+        "primary_key_point": "米国によるサウジへの安全保障保証と原子力協力のパッケージの中身と承認可否",
+        "evidence_relevance": [
+          {
+            "rationale": "米サウジ核取引がワシントンの制度・政治を巻き込んでいる構造を直接論じており、パッケージの承認可否が局面の蝶番であることを示唆している。",
+            "evidence_id": "233b550e-c99f-43e4-8511-5940d8d9072c",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "イスラエル政府のパレスチナ問題に関する譲歩可能範囲",
+            "why_not_primary": "重要な制約だが、提供資料では米サウジ核取引とワシントンの巻き込まれ方が中心であり、イスラエルのパレスチナ譲歩範囲についての直接Evidenceが不足しているため、主シナリオの蝶番とするには材料が足りない。"
+          },
+          {
+            "key_point": "サウジアラビアの対イラン抑止と地域大国化の戦略的目標",
+            "why_not_primary": "サウジの長期目的としてもっともらしいが、現局面の動きは米側の制度的制約と原子力協力の可否に強く依存しており、サウジの目的だけでは交渉の成否や速度を十分説明できない。"
+          },
+          {
+            "key_point": "米国内政治（議会・世論）による対サウジ・原子力協力への制約",
+            "why_not_primary": "実質的にはprimary key pointと密接に結びついており、別個のKey Pointとして分けるよりも、米サウジ安全保障・原子力パッケージの承認可否の一部として扱う方が構造を簡潔に説明できるため。"
+          },
+          {
+            "key_point": "unresolved",
+            "why_not_primary": "現時点で他にFrame-breakingなKey Point（例: イランの行動が全てを規定する等）を置くための直接Evidenceが不足しており、無理に採用すると推測の比重が過度に高くなるため。"
+          }
+        ],
+        "selection_rationale": "提供資料では、米サウジ核取引がワシントンの制度・政治を巻き込んでいる構造が強調されており、サウジ‐イスラエル正常化や対イラン抑止もこのパッケージに連動していると示唆されている。イスラエルやサウジの内部政治も重要だが、現局面を最も大きく左右するのは、米国がどの程度の安全保障保証・原子力協力を制度的に承認し得るかであり、それが他の要素（正常化インセンティブ、対イラン枠組み、パレスチナ条件）の上限を決めるため。",
+        "candidate_key_points": [
+          {
+            "key_point": "米国によるサウジへの安全保障保証と原子力協力のパッケージの中身と承認可否",
+            "control_type": "mixed",
+            "what_it_explains": "なぜ交渉が長期化し、核拡散や議会政治が主要論点になるのか。サウジが原子力協力を強く求める理由、専門家が『米サウジ核取引がワシントンを巻き込んでいる』と評する構造。",
+            "why_it_could_be_key": "このパッケージが成立するかどうかで、サウジ‐イスラエル正常化のインセンティブ、対イラン抑止の枠組み、米の中東関与の形が大きく変わるため。米議会承認や核拡散懸念が強い制約となる。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "233b550e-c99f-43e4-8511-5940d8d9072c"
+            ],
+            "what_it_does_not_explain": "イスラエル国内のパレスチナ政策や連立政治の細部、イランの具体的な反応や代理勢力の動き。",
+            "control_structure_summary": "米大統領が交渉・合意を主導するが、条約・安全保障保証・原子力協力の多くは議会承認や規制機関の許認可に依存するため、行政府単独では完結しない。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+                "type": "actor_intelligence",
+                "field": "core_profile.structural_constraints"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "イスラエル政府のパレスチナ問題に関する譲歩可能範囲",
+            "control_type": "actor_controlled",
+            "what_it_explains": "なぜパレスチナ問題が正常化交渉の条件として繰り返し浮上し、イスラエル国内政治が交渉のボトルネックになり得るか。",
+            "why_it_could_be_key": "サウジはパレスチナ問題で一定の成果を求めるとされ、イスラエルの譲歩可能範囲が狭ければ正常化パッケージ全体が政治的に成立しにくくなるため。",
+            "controlling_entity_ids": [
+              "585cc564-5a71-40ac-959b-3995d3a409c8"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "米国内の核拡散懸念やサウジの原子力要求の背景。",
+            "control_structure_summary": null,
+            "supporting_knowledge_refs": [
+              {
+                "ref": "585cc564-5a71-40ac-959b-3995d3a409c8",
+                "type": "actor_intelligence",
+                "field": "selection_reasons"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "サウジアラビアの対イラン抑止と地域大国化の戦略的目標",
+            "control_type": "actor_controlled",
+            "what_it_explains": "サウジが原子力協力や安全保障保証を強く求める理由、対イラン抑止と国内近代化（ビジョン2030等）を結びつける動き。",
+            "why_it_could_be_key": "サウジがなぜイスラエルとの正常化と米安全保障保証・原子力協力を一体で求めるのかを説明し、交渉で何を最優先するかを規定する可能性があるため。",
+            "controlling_entity_ids": [
+              "c47c90e6-eda1-4f56-9c3e-2b3206fde945"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "米議会の承認プロセスや核拡散規範の制約。",
+            "control_structure_summary": null,
+            "supporting_knowledge_refs": [
+              {
+                "ref": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+                "type": "actor_intelligence",
+                "field": "selection_reasons"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米国内政治（議会・世論）による対サウジ・原子力協力への制約",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜ米サウジ核取引が『ワシントンを巻き込んでいる』と評されるか、専門家・議会の懸念が交渉の主要な制約となる構造。",
+            "why_it_could_be_key": "米議会の承認権と核拡散懸念が、どの程度の安全保障保証・原子力協力が政治的に可能かを決めるため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "233b550e-c99f-43e4-8511-5940d8d9072c"
+            ],
+            "what_it_does_not_explain": "サウジ・イスラエルの内部政治や対イランの軍事バランスの詳細。",
+            "control_structure_summary": "条約承認・予算・原子力協力の枠組みは、米憲法上の三権分立と議会の承認権により制度的に制約される。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+                "type": "actor_intelligence",
+                "field": "core_profile.structural_constraints"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "米国が議会・世論の大きな反発もなく、サウジへの広範な安全保障保証と原子力協力を迅速に承認し、パレスチナ問題や核拡散懸念がほとんど論点にならない形でパッケージが成立した場合、このKey Pointの置き方（米制度的制約が蝶番であるという見立て）は誤っていた可能性が高い。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "233b550e-c99f-43e4-8511-5940d8d9072c"
+        ],
+        "control_structure_summary": "米大統領府が交渉を主導する一方、条約・安全保障保証・原子力協力の多くは議会承認や規制機関の許認可に依存し、米国内の制度・政治構造がパッケージの上限を決める。サウジ・イスラエルはそれぞれの国内政治・安全保障ニーズから条件を提示するが、最終的な枠組みは米制度の許容範囲に制約される。",
+        "supporting_knowledge_refs": [
+          {
+            "ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+            "type": "actor_intelligence",
+            "field": "core_profile.structural_constraints"
+          }
+        ],
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": {
+        "narrative_deviation": [
+          {
+            "source": "233b550e-c99f-43e4-8511-5940d8d9072c",
+            "evidence_ids": [
+              "233b550e-c99f-43e4-8511-5940d8d9072c"
+            ],
+            "why_it_matters": "三者関係の再編を、単なる外交的正常化ではなく、米の安全保障保証・原子力協力・核拡散リスクを伴う構造変化として読む必要性を示唆する。",
+            "current_assessment": "部分的に妥当だが、提供資料が限定的なため、主流報道との位置づけは判断保留。",
+            "source_attribution": "named",
+            "verification_method": "他の専門家分析・一次情報（米政府・議会文書）と比較し、核協力が正常化パッケージの中でどの程度中心的役割を持つかを確認する。",
+            "deviation_from_mainstream": "一般的な『中東和平・正常化』報道に比べ、米サウジ核取引とワシントンの制度・政治への負担を中心に描いている点で、正常化を「平和プロセス」より「核拡散・安全保障パッケージ」としてフレーミングしている。"
+          }
+        ],
+        "source_of_sources_note": null,
+        "media_editorial_context": [
+          {
+            "caveat": "専門誌の分析記事であり、過去のパターンからの一般的傾向として参照。今回のケース固有の一次情報ではない可能性がある。",
+            "outlet": "thebulletin.org(想定)",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "233b550e-c99f-43e4-8511-5940d8d9072c"
+                ],
+                "observation_text": "見出しで『US-Saudi nuclear deal』『dragging Washington into』と核取引とワシントンの巻き込まれ方を強調している",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "233b550e-c99f-43e4-8511-5940d8d9072c"
+                ],
+                "observation_text": "本文抜粋で『isn't dead—It's dragging Washington into ...』と、取引の継続性と政治的負担を示唆する表現を用いている",
+                "observation_type": "wording"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "partially_supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_headline",
+                "evidence_class": "historical_media_pattern",
+                "hypothesis_text": "核取引の技術的側面よりも、米国内政治・制度への負担としての側面を読者に強調したい意図がある可能性",
+                "corroboration_basis": "behavioral_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "専門誌として核拡散リスクと政策決定過程の両方を扱う中で、政治的側面を分かりやすく示すための表現に過ぎない可能性",
+                "supporting_evidence_ids": [
+                  "233b550e-c99f-43e4-8511-5940d8d9072c"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              },
+              {
+                "status": "unknown",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_now",
+                "evidence_class": "unsupported_assumption",
+                "hypothesis_text": "米サウジ核協力構想が継続していること、またそれが米議会・専門家の議論を呼んでいるタイミングで、政策的警鐘を鳴らす目的がある可能性",
+                "corroboration_basis": "unclear",
+                "corroboration_target": "unclear",
+                "alternative_explanation": "定期的なテーマ特集の一環として取り上げただけの可能性",
+                "supporting_evidence_ids": [
+                  "233b550e-c99f-43e4-8511-5940d8d9072c"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": null
+              }
+            ],
+            "document_id": "233b550e-c99f-43e4-8511-5940d8d9072c",
+            "omitted_actor_analysis": null
+          }
+        ]
+      },
+      "unknown_or_uncertain": "サウジ‐イスラエル正常化パッケージの具体的条件（特にパレスチナ関連）と、米サウジ原子力協力の技術的範囲・法的枠組みについて、提供資料だけでは詳細が不明であり、主シナリオの確信度は低にとどまる。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "代替シナリオ1：米国内の核拡散懸念と対サウジ不信が強まり、原子力協力を含むパッケージは縮小または棚上げされる一方、サウジ‐イスラエル間では限定的な安全保障協力や非公式関係強化が進む。米の制度的制約が強く働き、三者関係の再編は『安全保障協力の漸進的拡大＋原子力協力の抑制』という形に落ち着く。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米サウジ原子力協力に関する法案・協定が議会で否決または大幅に縮小される",
+            "サウジが中国等との原子力協力に明確に軸足を移す動きが確認される"
+          ],
+          "weakening_conditions": [
+            "米議会が厳格な拡散防止条件付きで原子力協力を承認し、専門家の懸念が一定程度解消される",
+            "サウジが拡散防止条件を受け入れ、米との原子力協力が政治的に許容される枠組みで進む"
+          ],
+          "strengthening_conditions": [
+            "米議会・世論で対サウジ・原子力協力への反発が顕著に高まり、拡散懸念を理由に法的枠組みが否決・大幅修正される",
+            "サウジが原子力協力の条件（濃縮・再処理制限等）で妥協せず、代替供給国との協力を模索する動きが強まる"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "代替シナリオ2：イランの行動（核開発加速・地域的エスカレーション）が急激に強まり、三者は対イラン抑止を最優先にして安全保障協力を加速する一方、パレスチナ問題や原子力協力の条件は後回しにされる。正常化は『対イラン共同戦線』として進むが、パレスチナ問題の進展や核拡散懸念への対応は不十分なまま残る。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "イランの核・ミサイル能力に関する重大な新展開（例:濃縮レベルの大幅上昇）が確認される",
+            "イラン・代理勢力による地域的軍事エスカレーションが、三者の安全保障協力加速を直接促す形で発生する"
+          ],
+          "weakening_conditions": [
+            "イランの行動が抑制され、国際的な外交枠組み（例: 新たな核合意）が再構築される",
+            "国際社会・地域世論がパレスチナ問題や核拡散懸念への対応を強く求め、対イラン抑止一辺倒の枠組みが政治的に持続しにくくなる"
+          ],
+          "strengthening_conditions": [
+            "イランの核・ミサイル開発や代理勢力の行動が急激にエスカレートし、三者にとって安全保障上の緊急性が高まる",
+            "米・サウジ・イスラエルの公式声明で、対イラン抑止が正常化・協力の主目的として繰り返し強調される"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "米議会での対サウジ原子力協力に関する法案・公聴会の動向",
+        "サウジ・イスラエル・米国の公式声明におけるパレスチナ問題・対イラン抑止・原子力協力への言及の変化",
+        "イランおよび代理勢力の軍事・政治的行動のエスカレーション／抑制パターン"
+      ],
+      "retraction_conditions": [
+        "米サウジ原子力協力がごく限定的な技術協力にとどまり、正常化や対イラン抑止とほとんど連動しない形で合意される場合",
+        "サウジ‐イスラエル正常化が、米の安全保障保証・原子力協力とは切り離された二国間合意として急速に進む場合"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "233b550e-c99f-43e4-8511-5940d8d9072c",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "現時点で、サウジ‐イスラエル正常化に関する具体的なパレスチナ条件や各Actorの譲歩範囲についての一次情報が不足しており、主シナリオの説明力を定量的に検証できない。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "サウジ‐イスラエル正常化パッケージにおける具体的なパレスチナ関連条件（国家承認、入植凍結、資金支援等）は何か",
+          "rationale": "Key Actor（イスラエル・サウジ）の譲歩可能範囲とPreference-Action Gapを評価するための基礎情報",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米サウジ原子力協力の技術的範囲（濃縮・再処理の有無、IAEA追加議定書等）と議会・専門家の具体的な懸念は何か",
+          "rationale": "Primary Key Point（米サウジ安全保障・原子力パッケージ）の実質的強度と拡散リスクを評価するため",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "イラン側の公式反応と代理勢力（例: ヒズボラ等）の行動変化が、三者交渉にどの程度影響しているか",
+          "rationale": "代替シナリオ2（対イラン抑止優先シナリオ）の蓋然性を検証するため",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "サウジ‐イスラエル正常化パッケージにおける具体的なパレスチナ関連条件（国家承認、入植凍結、資金支援等）の内容と各Actorの立場",
+          "gap_category": "deterministic",
+          "recommended_action": "一次情報・信頼できる報道から、交渉で提示されている具体的条件を確認する。"
+        },
+        {
+          "priority": "高",
+          "description": "米サウジ原子力協力の技術的範囲（濃縮・再処理の有無、IAEA追加議定書等）と議会・専門家の具体的な懸念",
+          "gap_category": "deterministic",
+          "recommended_action": "専門家分析・議会証言・規制当局文書を確認し、拡散リスク評価を整理する。"
+        },
+        {
+          "priority": "中",
+          "description": "イラン側の公式反応と、代理勢力（例: ヒズボラ等）の行動変化が、三者交渉に与えている影響",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "地域メディア・安全保障分析を通じて、イラン・代理勢力の動きをモニタリングする。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "現局面の蝶番は米サウジ安全保障・原子力パッケージではなく、イスラエル国内政治とパレスチナ問題への譲歩可能範囲であり、これが動かない限りどのような米サウジパッケージも正常化を実現できないという見方。",
+      "key_stakeholder_assessment": {
+        "rationale": "現局面では、サウジのMohammed bin SalmanとイスラエルのBenjamin Netanyahuが、それぞれ自国の安全保障・外交方針を決める実質的な決定権を持ち、サウジ‐イスラエル正常化の可否を左右する。一方、米側は大統領と議会の分権構造であり、個別Actorとしては特定しにくいため、ここではサウジ・イスラエルの二者をKey Stakeholderとして扱う。",
+        "confidence": "低",
+        "evidence_ids": [
+          "233b550e-c99f-43e4-8511-5940d8d9072c"
+        ],
+        "determination": "multiple",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+          "585cc564-5a71-40ac-959b-3995d3a409c8"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+          "confidence": "低",
+          "evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "可能な限り広い技術的範囲の協力を獲得したいが、国際的批判とのバランスを取る必要がある",
+          "issue_component": "米サウジ原子力協力の技術的範囲",
+          "likely_reaction": "条件が厳しすぎれば代替供給国を模索する可能性",
+          "current_red_line": null,
+          "stated_preference": null,
+          "instrumental_value": "mixed",
+          "priority_rationale": "サウジにとって原子力協力は地域大国化・エネルギー多角化の象徴であり、対イラン抑止とも結びつくため重要",
+          "currently_tradeable": "条件付きで技術範囲の一部を交渉材料にできる可能性",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "原油・投資カードと正常化カードの組み合わせ",
+          "effect_on_actor_objective": "高度な技術獲得は目的達成に資するが、拡散懸念による国際的反発リスクも伴う",
+          "estimated_real_preference": "拡散懸念を抑えつつも、国内的には『先進的原子力国家』としての地位を示したい",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "米議会・規制機関の拡散防止条件",
+          "issue_component_description": "濃縮・再処理の有無、IAEA追加議定書など",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "585cc564-5a71-40ac-959b-3995d3a409c8",
+          "confidence": "低",
+          "evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "最小限の譲歩で最大限の正常化・安全保障利益を得たい",
+          "issue_component": "パレスチナ関連条件（国家承認・入植凍結等）",
+          "likely_reaction": "サウジ側要求が大きすぎれば交渉停滞の可能性",
+          "current_red_line": null,
+          "stated_preference": null,
+          "instrumental_value": "negotiating_card",
+          "priority_rationale": "イスラエル国内政治と安全保障に直結し、サウジ・イスラム世界の受容性を左右するため",
+          "currently_tradeable": "限定的な措置（象徴的な譲歩）は交渉材料になり得るが、根本的な政策変更は難しい可能性",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "対イラン抑止におけるイスラエルの役割",
+          "effect_on_actor_objective": "過度な譲歩は国内支持基盤を弱めるが、一定の譲歩は正常化・対イラン協力を可能にする",
+          "estimated_real_preference": "安全保障上の裁量を維持しつつ、国際的批判を管理できる範囲での譲歩にとどめたい",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "国内連立政治・強硬派の影響",
+          "issue_component_description": null,
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "confidence": "中",
+          "evidence_ids": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "evidence_class": "structural_reference",
+          "desired_outcome": "議会が承認可能な範囲で最大限の安全保障・外交成果を得たい",
+          "issue_component": "米国内制度制約（議会承認・核拡散懸念）",
+          "likely_reaction": "議会の反発が強ければ協力枠組みの修正・縮小を余儀なくされる",
+          "current_red_line": "議会が明確に拒否するような拡散リスクの高い協力枠組み",
+          "stated_preference": null,
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "米大統領にとって、どの程度の協力枠組みが政治的に可能かを決める決定的要因",
+          "currently_tradeable": "協力の範囲・条件は交渉材料になり得るが、制度制約自体は交渉不能",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": [
+            "233b550e-c99f-43e4-8511-5940d8d9072c"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "大統領の外交主導権と安全保障保証カード",
+          "effect_on_actor_objective": "制度制約を無視した取引は成立せず、政権の政治的コストを高める",
+          "estimated_real_preference": "制度制約を前提に、条件付き協力を模索する",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "憲法上の三権分立と議会承認権",
+          "issue_component_description": null,
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        }
+      ],
+      "decisive_power_and_leverage": "決定的なてこは、米国がサウジにどの程度の安全保障保証と原子力協力を与えるかを決める権限（大統領＋議会）と、イスラエル政府がパレスチナ問題・対イラン戦略でどこまで譲歩するかを決める権限の組み合わせにある。サウジは正常化カードと原油・投資をレバレッジとして持つが、最終的な条約承認・核協力の枠組みは米側の制度的制約に左右される。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-03T11:25:09.330625+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "fe2e8bab-1d29-46de-8402-2bc52f237c46",
+    "response_id": "914191ea-9fe6-4efd-9ab5-554428fe7305",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=actor_intelligenceのref=c93580fd-99b1-44d9-b924-beb89a2e8378がkey_actor_profiles[].actor_refに実在しません",
+        "passed": false
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）",
+        "passed": false
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "situation_actor_assessmentにkey_actor_profilesに存在しないactor_refがあります（創作の可能性、要人手確認）: c93580fd-99b1-44d9-b924-beb89a2e8378",
+        "passed": false
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 38,
+    "failed_count": 3,
+    "created_at": "2026-09-03T11:25:09.866148+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "supporting_knowledge_refs_grounded",
+      "temporal_hedge_language_not_present",
+      "situation_actor_assessment_grounded"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "supporting_knowledge_refs_grounded",
+      "temporal_hedge_language_not_present",
+      "situation_actor_assessment_grounded"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "media_editorial_context[0].hypotheses[0]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+      "585cc564-5a71-40ac-959b-3995d3a409c8"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82772,
+    "completion_tokens": 15277,
+    "total_tokens": 98049
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 86125,
+        "prompt_tokens": 40408,
+        "completion_tokens": 8550
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 56983,
+        "prompt_tokens": 42364,
+        "completion_tokens": 6727
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=actor_intelligenceのref=c93580fd-99b1-44d9-b924-beb89a2e8378がkey_actor_profiles[].actor_refに実在しません"
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "situation_actor_assessmentにkey_actor_profilesに存在しないactor_refがあります（創作の可能性、要人手確認）: c93580fd-99b1-44d9-b924-beb89a2e8378"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "insufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "insufficient",
+        "direct_evidence_count": 0,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=insufficient（Direct Evidence 0件、目安2件以上でsufficient候補）"
+        ]
+      },
+      "research_cycle": {
+        "triggered": true,
+        "search_calls_used": 1,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 1,
+      "final_sufficiency": {
+        "current_evidence": "partial",
+        "institutional_coverage": "not_evaluated",
+        "overall": "partial",
+        "direct_evidence_count": 1,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=partial（Direct Evidence 1件、目安2件以上でsufficient候補）"
+        ]
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

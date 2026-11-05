@@ -1,0 +1,191 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 83141,
+    "completion_tokens": 12595,
+    "total_tokens": 95736
+  },
+  "wall_clock_seconds": 272.2382345199585,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "イランのホルムズ海峡封鎖能力とその行使可能性",
+    "selection_rationale": "ネタニヤフの対イラン・ガザ政策を考える際、最も構造的で、かつイスラエルの軍事・外交オプションを制約する要因は、イランが実際に行使したホルムズ海峡封鎖能力である。これは米国との停戦枠組みや中国の原油購入よりも上位の構造条件として、エネルギー市場・海上輸送・同盟国の軍事行動を通じてイスラエルの行動範囲を規定する。国内政治要因（ネタニヤフの生存）は重要だが、この構造的制約の上に乗る形で作用しているとみる方が整合的である。",
+    "control_type": "structural",
+    "confidence": "中",
+    "candidate_key_points_count": 4,
+    "candidate_key_points": [
+      "イランのホルムズ海峡封鎖能力とその行使可能性",
+      "米国とイランの停戦・緊張管理枠組み（active_conflict_ceasefire）の維持",
+      "ネタニヤフ政権の国内政治生存（連立維持と司法・汚職リスク回避）",
+      "中国によるイラン産原油の大口購入とエネルギー市場構造"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "米国とイランの停戦・緊張管理枠組み",
+        "why_not_primary": "重要な分散的制約だが、その内容や強度自体がホルムズ海峡封鎖能力という構造的リスクに大きく依存していると考えられるため、一段下位の条件と位置づけた。"
+      },
+      {
+        "key_point": "ネタニヤフ政権の国内政治生存",
+        "why_not_primary": "対イラン・ガザ政策の多くを説明し得るが、ホルムズ海峡封鎖や世界エネルギー市場といった外部構造を無視して国内政治だけをKey Pointにすると、軍事・経済リスクの制約を過小評価する危険がある。"
+      },
+      {
+        "key_point": "中国によるイラン産原油の大口購入",
+        "why_not_primary": "イランの経済的耐久力を支える重要要因だが、ネタニヤフの具体的な軍事・外交オプションを直接規定するのはホルムズ海峡封鎖能力の方であり、こちらは補助的な構造条件と位置づけた。"
+      }
+    ],
+    "disconfirming_signal": "イランがホルムズ海峡封鎖能力を長期的に放棄する、あるいは第三国の軍事・技術介入により封鎖能力が実質的に無効化され、封鎖の脅威がエネルギー市場・海上輸送にほとんど影響しなくなった場合、このKey Point設定は見直しが必要となる。",
+    "evidence_class": "structural_reference"
+  },
+  "actors": [
+    {
+      "actor_ref": "netanyahu",
+      "profile_source": "none_available",
+      "general_knowledge_used": null,
+      "actor_intelligence_status": "insufficient",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    },
+    {
+      "actor_ref": "iran_state",
+      "profile_source": "none_available",
+      "general_knowledge_used": null,
+      "actor_intelligence_status": "insufficient",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 1,
+    "unresolved": 2,
+    "rejected": 2
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "rejected"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "中",
+    "description": "ネタニヤフの現在の対イラン・ガザ政策は、イランのホルムズ海峡封鎖能力と米国との停戦枠組みという構造的制約の下で、(1)対イランでは限定的な軍事・情報・サイバー手段と外交圧力を組み合わせた「優位な緊張状態」の維持、(2)ガザでは国内政治・抑止シグナルを意識した断続的な軍事行動と限定的な緩和措置の組み合わせ、(3)米国との同盟維持と国際的批判の管理、を同時に追求する「限定的エスカレーション＋国内政治生存」路線である。全面戦争やホルムズ海峡をめぐる大規模エスカレーションは避けつつ、イラン・ガザ双方に対して抑止と国内向け強硬イメージを維持することが主目的となっているとみられる。",
+    "historical_analogies_used": null
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 7,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "ネタニヤフ政権下での直近の対イラン・ガザ軍事行動の具体的内容と、その際の米国・イラン・国内政治の反応はどうか。",
+      "rationale": "実際の軍事行動パターンを確認することで、構造的制約と国内政治のどちらがより強く行動を規定しているかを検証できる。",
+      "related_hypothesis": "ネタニヤフが限定的エスカレーション路線を取っているという主シナリオ",
+      "recommended_sources": "イスラエル国防軍・政府の公式発表、米国政府の声明、信頼できる国際報道"
+    },
+    {
+      "priority": "高",
+      "question": "米国とイランの停戦枠組みの具体的内容と、イスラエルに課されている制約は何か。",
+      "rationale": "停戦枠組みの詳細を知ることで、イスラエルの行動余地をより正確に評価できる。",
+      "related_hypothesis": "米国との停戦枠組みがネタニヤフの対イラン政策を制約しているという仮説",
+      "recommended_sources": "米政府・議会文書、専門家分析"
+    },
+    {
+      "priority": null,
+      "question": "ネタニヤフ政権下での直近の対イラン・ガザ軍事行動（規模・頻度・対象）と、その際の米国・イラン・国内政治の反応はどうか。",
+      "rationale": "Main ScenarioのKey Point（限定的エスカレーション路線）とKey Actor（ネタニヤフ）のPreference-Action Gapを検証するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "米国とイランの停戦枠組みの具体的内容と、イスラエルに課されている明示・暗黙の制約は何か。",
+      "rationale": "Key Point候補（米国-イラン停戦枠組み）と構造的制約の強度を評価するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "ネタニヤフの過去の対イラン・ガザ政策におけるPersistent Preference（軍事・外交・国内政治のバランス）はどのようなパターンを持つか。",
+      "rationale": "Key ActorのPersistent Preference仮説を強化・修正するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "イランのホルムズ海峡封鎖行動（2026年3月以降）の具体的な期間・強度・対象と、その際の中国・湾岸諸国・米国の反応はどうか。",
+      "rationale": "Primary Key Point（ホルムズ海峡封鎖能力）の実際の行使パターンと構造的影響を検証するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "ガザ戦線でのイスラエル軍の作戦と国内世論・連立パートナーの反応の関係はどうか。",
+      "rationale": "ネタニヤフの国内政治生存をKey Point候補として評価するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 5,
+  "knowledge_gaps_count": 3,
+  "quality_guard": {
+    "passed_count": 30,
+    "failed_count": 4,
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_intelligence_provenance_present",
+      "actor_model_challenged"
+    ],
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_intelligence_provenance_present",
+      "actor_model_challenged"
+    ],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[2]"
+    ],
+    "historical_evidence_separations": [],
+    "actor_evidence_separations": [],
+    "pattern_applicability_fallbacks": []
+  },
+  "executive_summary": {
+    "what_changed": "2026年2月の対イラン開戦・4月停戦後も、ホルムズ海峡をめぐる緊張が続いており、イランの封鎖能力と中国の原油購入が構造的リスクとして固定化しつつある。ネタニヤフの対イラン・ガザ政策は、この新しい構造の下で再定義されている。",
+    "why_it_matters": "イランの海峡封鎖能力と中国の原油購入は、エネルギー・物流コストを通じて世界経済に波及し得る。ネタニヤフの政策が限定的エスカレーションにとどまるか、大規模戦争に向かうかは、エネルギー市場・サプライチェーン戦略にとって重要な前提となる。",
+    "what_to_watch_decide": "ホルムズ海峡での実際の封鎖・妨害の動き、イスラエルの対イラン・ガザ軍事行動の強度、米国との停戦枠組みの変化、中国のイラン産原油購入動向をモニタリングし、エネルギー調達・物流ルート・在庫戦略の前提を適宜見直す必要がある。"
+  },
+  "one_line_assessment": "as_of=2026-08-31時点で、ネタニヤフのIran・Gaza政策は「対イラン抑止と国内政治生存を最優先しつつ、米国との関係・停戦枠組み・地域経済構造に縛られた限定的エスカレーション路線」とみるのが最も整合的だが、Actor Intelligenceが不十分で確信度は中～低にとどまる。",
+  "initial_anomaly": "対イランとの2026年2月開戦・4月停戦後も、ホルムズ海峡をめぐる緊張が継続する中で、ネタニヤフ政権がガザ戦線・対イラン戦線の双方で強硬なレトリックを維持しつつ、全面戦争や米国との決定的対立には踏み込んでいない点。抑止・国内政治・同盟関係・経済構造の間でどこに「本当のレッドライン」があるのかが読みづらい。"
+}

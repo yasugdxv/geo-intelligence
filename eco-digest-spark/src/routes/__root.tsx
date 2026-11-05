@@ -16,6 +16,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { LanguageProvider } from "@/lib/i18n";
 import { ensureIosIdentity } from "@/lib/geoIosAuthHeader";
+import { SsoGateScreen, isSsoPassed, useSsoState } from "@/components/sso-gate";
 
 function NotFoundComponent() {
   return (
@@ -82,17 +83,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Verdant — Sustainability Intelligence" },
+      { title: "Meridian — Geopolitical Intelligence" },
       {
         name: "description",
         content:
-          "グローバルなサスティナビリティ関連ニュース・レポートをAIで収集・要約する、CSR/ESG部門のためのインテリジェンス・ダッシュボード。",
+          "地政学リスクに関するニュース・レポート・専門知識をAIで収集・分析する、地政学インテリジェンス・ダッシュボード。",
       },
-      { name: "author", content: "Verdant" },
-      { property: "og:title", content: "Verdant — Sustainability Intelligence" },
+      { name: "author", content: "Meridian" },
+      { property: "og:title", content: "Meridian — Geopolitical Intelligence" },
       {
         property: "og:description",
-        content: "サスティナビリティ担当者のためのAIインテリジェンス・ダッシュボード。",
+        content: "地政学リスクを読むための、AIインテリジェンス・ダッシュボード。",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -102,6 +103,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "icon", href: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { rel: "icon", href: "/favicon-48.png", type: "image/png", sizes: "48x48" },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       {
         rel: "stylesheet",
@@ -133,6 +136,7 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   const pathname = useRouterState({ select: (r) => r.location.pathname });
   const isGeo = pathname.startsWith("/geo");
+  const sso = useSsoState(); // SSO（OIDC）が有効なら、ログインが完了するまで、本体を表示しない
 
   // Dialog/Popover/Tooltip等のRadix Portalはdocument.body直下に描画されるため、
   // .geo-shellをラッパーdivに付けるだけではPortal配下に配色が継承されない。
@@ -152,13 +156,15 @@ function RootComponent() {
     if (isGeo) void ensureIosIdentity();
   }, [isGeo]);
 
+  if (!isSsoPassed(sso)) return <SsoGateScreen state={sso} />;
+
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <SidebarProvider>
           {/* geo.*ページ配下では.geo-shellでGeo Intelligence Platform配色に切り替える
               （AppSidebarもこの内側にあるため、サイドバーも含めて自動的にリスキンされる。
-              非geoページはこのクラスの外なので既存のVerdant配色のまま変わらない） */}
+              非geoページはこのクラスの外なので既存の配色のまま変わらない） */}
           <div className={`min-h-screen flex w-full bg-background ${isGeo ? "geo-shell" : ""}`}>
             <AppSidebar />
             <div className="flex-1 min-w-0 flex flex-col">

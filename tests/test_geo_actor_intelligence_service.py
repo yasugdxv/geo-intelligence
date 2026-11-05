@@ -475,6 +475,55 @@ def test_trim_to_char_budget_shrinks_when_over_budget():
     assert len(json.dumps(trimmed, ensure_ascii=False)) <= 500 or len(trimmed) <= 1
 
 
+def _big_pack(name, n):
+    """1人あたり約n文字になる、実データに近いPack（core_profile/decision_patternsに長文）。"""
+    return {
+        "entity_id": f"id-{name}", "canonical_name": name, "actor_intelligence_status": "partial",
+        "pattern_ids": ["pat-1", "pat-2"],
+        "core_profile": {"summary": "これは重要な人物の説明です。" * (n // 28),
+                         "objectives": ["目的その一です。" * 20, "目的その二です。" * 20]},
+        "decision_patterns": [{"pattern": "意思決定の型です。" * 30, "pattern_id": "pat-1"},
+                              {"pattern": "別の意思決定の型です。" * 30, "pattern_id": "pat-2"}],
+        "relevant_precedents": [{"knowledge_item_id": "k1", "title": "先例" * 40}],
+        "relevant_relationships": [],
+    }
+
+
+def test_compact_actor_packs_fits_per_actor_budget_and_keeps_all_fields():
+    import json
+    packs = [_big_pack("Trump", 6000), _big_pack("Putin", 4000)]
+    out = ai._compact_actor_packs(packs, per_actor_budget=3000)
+    for p in out:
+        assert len(json.dumps(p, ensure_ascii=False)) <= 3000
+        assert p["core_profile"]["summary"]  # 項目は消えない（短くなるだけ）
+        assert p["decision_patterns"]  # 空にならない
+    assert out[0]["entity_id"] == "id-Trump" and out[0]["pattern_ids"] == ["pat-1", "pat-2"]  # ID類は不変
+
+
+def test_compact_actor_packs_does_not_touch_small_pack_or_mutate_input():
+    small = {"entity_id": "e1", "canonical_name": "A", "core_profile": {"summary": "短い説明"}}
+    import copy, json as _j
+    snapshot = copy.deepcopy(small)
+    out = ai._compact_actor_packs([small], per_actor_budget=3000)
+    assert out == [snapshot] and small == snapshot
+
+
+def test_compact_actor_packs_shortens_at_sentence_boundary_with_marker():
+    text = "一文目です。二文目です。三文目です。" * 30
+    short = ai._shorten_text(text, 100)
+    assert short.endswith("…") and len(short) <= 101 and "。" in short[:-1]
+
+
+def test_pack_keeps_all_three_leaders_after_budget_fix():
+    """Trump/Putin/Xi相当の3人（合計14,000文字超）が、全員Packに残る（従来はTrumpのみ残っていた）。"""
+    import json
+    packs = [_big_pack("Trump", 6500), _big_pack("Putin", 4000), _big_pack("Xi", 4000)]
+    assert sum(len(json.dumps(p, ensure_ascii=False)) for p in packs) > 6000  # 旧予算を超える入力
+    out = ai._trim_to_char_budget(
+        ai._compact_actor_packs(packs, ai.ACTOR_PACK_PER_ACTOR_CHAR_BUDGET), ai.ACTOR_PACK_CHAR_BUDGET)
+    assert [p["canonical_name"] for p in out] == ["Trump", "Putin", "Xi"]
+
+
 # ── Tier1(Eguchi Expert AI Final v1.0対応): DirectionalPerceptionの入力側接続 ──────
 
 def test_relevant_relationships_include_direction_and_counterpart():

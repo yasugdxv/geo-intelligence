@@ -1,0 +1,29 @@
+{
+ "verified_records": 116732,
+ "stats": {
+  "checked": 177588,
+  "ok_word_boundary": 175936,
+  "ok_word_boundary_after_removing_tags": 465,
+  "ok_via_camelcase_hashtag_or_handle": 554,
+  "ok_phrase_via_camelcase_tag_segmentation": 633
+ },
+ "violations_by_term": {},
+ "examples": {},
+ "checked_by_term_top": {
+  "Trump": 11572,
+  "immigration": 7700,
+  "taxes": 7074,
+  "prices": 7057,
+  "scandal": 6591,
+  "crime": 5624,
+  "crimes": 4898,
+  "primary": 4720,
+  "leadership": 4372,
+  "economy": 4260,
+  "rally": 3715,
+  "healthcare": 3630,
+  "energy": 3434,
+  "data centers": 3272,
+  "independent": 3268
+ }
+}

@@ -19,7 +19,7 @@ from __future__ import annotations
 import os
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait
 from datetime import date, timedelta
 
 import geo_intelligence_ai_preset_i18n as i18n
@@ -167,6 +167,12 @@ HIDDEN_PRESETS: dict = {
                         "確認できていない切り口として「次に見ること」に書く。"),
         "sections": [("facts", "確認できる事実"), ("interpretation", "見立て（解釈）"), ("counterpoints", "反対の見方・異なる見方"),
                      ("next_steps", "次に見ること・確認すべきこと")],
+        # 速さのための設定（自由質問は、数十秒待たせない）:
+        "fast": True,                    # 情報ソースDBは、LLMの意味検索をせず、キーワード検索にする
+        "collect_deadline": 9,           # 収集の待ち時間の上限（秒）。超えたソースは「時間内に取得できませんでした」と明示して、残りで答える
+        "brevity": ("確認できる事実は最大3件、見立ては最大3件、反対の見方は最大2件、次に見ることは最大3件。"
+                    "各項目は1〜2文・80字以内、summaryは120字以内、warningsは最大2件で各60字以内。"
+                    "前置き・言い換えの繰り返しは書かない。根拠が無い見出しは、空にする。"),
     },
 }
 
@@ -486,9 +492,20 @@ def _collect(client, identity, requester_context, preset: dict, conditions: dict
     ctx = {"client": client, "identity": identity, "requester_context": requester_context, "terms": terms,
            "azure_client": azure_client, "model": model, "topic": conditions.get("topic"),
            "date_from": date_from, "region": None, "knowledge_group": preset.get("knowledge_group", "general"),
-           "web_question": _web_question(conditions), "period_days": wd}
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        results = list(pool.map(lambda k: sources.run_adapter(k, ctx), adapters))
+           "web_question": _web_question(conditions), "period_days": wd, "fast": bool(preset.get("fast"))}
+    pool = ThreadPoolExecutor(max_workers=max(4, len(adapters)))      # アダプターの数だけ同時に実行する（4つまでだと、残りが順番待ちになっていた）
+    futures = {k: pool.submit(sources.run_adapter, k, ctx) for k in adapters}
+    deadline = preset.get("collect_deadline")                         # 指定が無ければ、全部の完了を待つ（従来どおり）
+    wait(list(futures.values()), timeout=deadline)
+    results = []
+    for k in adapters:
+        f = futures[k]
+        if f.done():
+            results.append(f.result())
+        else:                                                         # 時間内に終わらなかったソースは、そう明示して、残りで答える
+            results.append({"source": k, "label": sources.SOURCE_LABELS[k], "status": "timeout",
+                            "reason": f"{deadline}秒以内に取得できませんでした（ほかのソースだけで答えています）", "items": []})
+    pool.shutdown(wait=False)
     if (conditions.get("scope") or "all") == "experts":        # 「専門家の分析・見解のみ」: 専門家の見解に当たるナレッジだけ残す
         for r in results:
             if r["source"] == "knowledge":
@@ -662,7 +679,9 @@ def run_preset(client, azure_client, model, *, identity, requester_context, pres
                    + "\n".join(f"- {k}: {v}" for k, v in cond.items() if v not in (None, "", False))
                    + (("\n# 前提\n" + "\n".join(assumptions)) if assumptions else "")
                    + "\n# 出力の見出し（keyで指定）\n" + "\n".join(f"- {k}: {t}" for k, t in preset["sections"])
-                   + f"\n# Evidence\n{_render_evidence(evidence)}" + i18n.m(lang, "output_lang"))
+                   + f"\n# Evidence\n{_render_evidence(evidence)}"
+                   + (("\n# 出力の上限（速さのため。必ず守る）\n" + preset["brevity"]) if preset.get("brevity") else "")
+                   + i18n.m(lang, "output_lang"))
     t3 = time.perf_counter()
     llm = geo_llm_common.call_llm_structured(
         azure_client, model, _SYSTEM_RULES, user_prompt, _analysis_schema(preset), f"geo_ia_preset_{preset_id}", max_attempts=3,

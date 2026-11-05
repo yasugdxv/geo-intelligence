@@ -1,0 +1,1161 @@
+{
+  "request": {
+    "request_id": "889675aa-23a0-4c03-a6e3-c31b72cec9e9",
+    "theme_id": null,
+    "mode": "case_analysis",
+    "query_text": "Netanyahuの現在のIran・Gaza政策について、主要な目的、制約、意思決定力学、今後の方向性を分析してください。",
+    "created_at": "2026-08-31T11:06:42.511164+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "d4b48227-75d5-4f1c-b551-58b5b62079ab",
+    "request_id": "889675aa-23a0-4c03-a6e3-c31b72cec9e9",
+    "document_ids": [
+      "4782ea75-15f2-47bb-a050-5408f186b989",
+      "5c99bd85-72e8-4278-b431-2c96595a8533",
+      "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+      "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+      "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+      "a9208a53-6674-4447-922b-5fb15ecdd2be",
+      "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+      "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+      "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+      "d163ef87-de0e-41fc-bea5-366f7e5aa89f"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-08-31T11:06:42.767494+00:00"
+  },
+  "response": {
+    "response_id": "b4e983e4-a446-4d9e-9bb1-0a8fbb926035",
+    "request_id": "889675aa-23a0-4c03-a6e3-c31b72cec9e9",
+    "source_pack_id": "d4b48227-75d5-4f1c-b551-58b5b62079ab",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "Foundation Pack上で、2026年2月に米国とイランの間で戦闘が発生し、4月に停戦したが、ホルムズ海峡の扱いを巡り軍事的緊張が継続しているとされる。",
+          "claim_type": "fact",
+          "source_ref": "Iran→United States: active_conflict_ceasefire"
+        },
+        {
+          "text": "Foundation Packによれば、イランはIRGCによる機雷敷設・武装スピードボート・沿岸ミサイルを用いたホルムズ海峡への実効的な航行妨害能力を持ち、2026年3月以降、実際に行使して海峡を封鎖した実績がある。",
+          "claim_type": "fact",
+          "source_ref": "Asset:strait_canal_control"
+        },
+        {
+          "text": "Actor Intelligence Packによれば、Netanyahuは2015年の米政権の外交や2024年のICC逮捕状に対して一貫して非妥協的な不承認姿勢を取ってきたと評価されている。",
+          "claim_type": "fact",
+          "source_ref": "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+        },
+        {
+          "text": "Actor Intelligence Packは、Netanyahuが2020年のアブラハム合意において、連立の核心公約であった併合を取引材料として柔軟に扱った先例を指摘している。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "Actor Intelligence Packは、Netanyahuが2023年10月7日の安全保障上の重大な失敗後も、イスラエルが過去に確立した説明責任の前例（1973年アグラナト委員会）とは異なり、独立調査委設置を数年間回避し続けていると評価している。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "Actor Intelligence Packは、Netanyahuが国際司法機関（ICCなど）や一部同盟国の外交プロセスの正当性を認めない姿勢を繰り返し示していると主張している。",
+          "claim_type": "official_claim",
+          "source_ref": "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+        },
+        {
+          "text": "Netanyahuは米議会演説など、通常の外交チャネルを越えた直接的なコミュニケーション手段を用いて、自身の立場を米国内政治へ訴える傾向があるとされる。",
+          "claim_type": "observation",
+          "source_ref": null
+        },
+        {
+          "text": "現在のIran・Gaza政策において、Netanyahuは国際司法・一部同盟国からの圧力に対し、制度的・政治的に抵抗しつつ、軍事的には対イラン抑止とガザでの作戦継続を優先している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "Netanyahuの最上位目的の一つは、自身の政権延命と個人的な法的リスクの回避であり、Iran・Gaza政策はその目的に従属して調整されている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "イランのホルムズ海峡封鎖能力と米国との緊張継続は、イスラエルにとってもエネルギー市場・地域安全保障上の構造的リスクであり、Netanyahuの対イラン政策の制約条件となっていると考えられる。",
+          "claim_type": "inference",
+          "source_ref": "Asset:strait_canal_control"
+        },
+        {
+          "text": "ホルムズ海峡を巡るイラン・米国・中国・オマーンの関係は、Netanyahuが対イラン政策を決める際に、イスラエル単独では動かせない構造的制約の例として参照できる。",
+          "claim_type": "illustration",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "現在のIran・Gaza政策をめぐる力学は、(1) Netanyahuとその連立政権が国内政治・司法リスクから身を守りつつ政権を維持したい力、(2) イランがホルムズ海峡封鎖能力や地域代理勢力を通じて抑止・影響力を維持したい力、(3) 米国が対イラン紛争の再燃を避けつつイスラエルへの支援とガザでの民間人被害抑制を両立させたい力、(4) 国際司法機関や欧州諸国などがガザでの戦闘行為に対する法的・政治的責任を追及したい力、の相互作用として現れていると考えられる。Netanyahuの強硬な言説は、国内支持層と一部同盟国向けのシグナルである一方、実務レベルでは停戦・人質交渉・限定的な作戦調整などの柔軟性も残されている可能性がある。",
+      "stakeholders": [
+        {
+          "actor": "Benjamin Netanyahu",
+          "purpose": "自身の政権延命と政治的・法的な生存（起訴・逮捕・強制退陣の回避）を最終的に守りたい目的として持っている可能性が高い。加えて、イスラエルの安全保障上の優位と敵対勢力（イラン・ガザの武装組織など）からの脅威抑止を維持したい。",
+          "leverage": "支持基盤・有権者",
+          "position": "現在のIran・Gaza政策において、対イラン抑止を維持しつつ、ガザでの軍事作戦を継続してハマスなど武装組織の能力を削ぐ一方、自身の政権延命と法的責任回避を確保すること。国際司法・一部同盟国からの圧力を制度的に押し返し、完全な敗北や早期退陣を避ける。",
+          "red_lines": "国際司法機関（ICCなど）の正当性を認めること、イスラエルの安全保障上の重大な敗北を認める形での早期退陣、イランやガザの武装組織に対する抑止力の大幅な低下を招く譲歩。",
+          "confidence": "中",
+          "constraints_fears": "司法・調査プロセス、米国との関係、イランの軍事能力・地域構造",
+          "ability_to_move_or_block": "対イラン抑止の強度（言説・秘密作戦・同盟国との協調）、ガザでの軍事作戦の継続・縮小・停戦交渉の方針、国際司法・同盟国への対応（協力・対決）の方向性を動かし得る。"
+        },
+        {
+          "actor": "Iran",
+          "purpose": "政権維持と地域的影響力の拡大、対米・対イスラエル抑止。",
+          "leverage": "ホルムズ海峡封鎖能力、地域代理勢力、原油供給。",
+          "position": "対イスラエル・対米抑止を維持しつつ、経済的生命線（原油輸出）を確保したい立場。",
+          "priority": "ホルムズ海峡封鎖能力と地域代理勢力を通じた抑止維持。",
+          "red_lines": "ホルムズ海峡での完全な軍事的敗北や、政権存続を脅かすレベルの攻撃。",
+          "confidence": "判断不能",
+          "constraints_fears": "米国との全面戦争、政権不安定化、経済制裁の深刻化。",
+          "key_relationships": "オマーンを通じた仲介チャネル、中国への割引原油輸出、米国との緊張関係。",
+          "ability_to_move_or_block": "海峡封鎖や緊張エスカレーションを通じて地域安全保障・エネルギー市場を大きく動かし得る。"
+        },
+        {
+          "actor": "United States",
+          "purpose": "中東での大規模戦争再燃を避けつつ、イスラエル支援と国際法・人権へのコミットメントを両立。",
+          "leverage": "軍事支援、外交圧力、制裁・保証。",
+          "position": "イスラエルへの支援を維持しつつ、ガザ作戦の強度に一定の制約をかけたい。",
+          "priority": "対イラン紛争の再燃回避、ガザでの民間人被害抑制、イスラエルとの同盟維持。",
+          "red_lines": "イランによるホルムズ海峡長期封鎖、ガザでの極端な人道危機。",
+          "confidence": "判断不能",
+          "constraints_fears": "国内政治の分断、同盟信頼の失墜、エネルギー市場の混乱。",
+          "key_relationships": "イスラエルとの安全保障同盟、湾岸諸国との関係、対イラン紛争。",
+          "ability_to_move_or_block": "イスラエルの作戦持続能力や対イラン政策の範囲を大きく左右し得る。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "Netanyahuが2026年時点でもイスラエル首相であり、安全保障政策・対イラン・対ガザ政策の主要な政治的決定権を保持している。",
+          "ICC逮捕状や独立調査委設置要求など、Netanyahuに対する国際司法・国内説明責任の圧力が継続している。",
+          "イランのホルムズ海峡封鎖能力と米国との緊張継続が、地域安全保障・エネルギー市場に対する構造的リスクとして残っている。"
+        ],
+        "description": "現時点では、NetanyahuのIran・Gaza政策は、(1) 自身の政権延命と法的責任回避を最上位目的とし、(2) イスラエルの安全保障上の脅威認識に基づく対イラン抑止と対ガザ軍事作戦の継続を優先しつつ、(3) 国際司法機関や一部同盟国からの圧力に対して制度的・政治的に抵抗する構造を持つ——という主シナリオが最も整合的である。具体的には、NetanyahuはICC逮捕状や独立調査委設置要求に対して不承認・回避の姿勢を維持しながら、対イランではホルムズ海峡封鎖能力や米国との関係を考慮して直接的な大規模軍事対決を避けつつ抑止を強化し、ガザではハマスなど武装組織の能力削減を目的とした作戦を継続しつつも、米国や国際社会からの圧力に応じて停戦交渉や人道的措置で限定的な柔軟性を示す可能性が高い。この政策構造は、NetanyahuのPersistent Preference（国際司法への不承認、説明責任回避、実利的取引の柔軟性）と、イランの構造的能力・米国との関係・国内政治・司法プロセスという制約を組み合わせて説明できる。",
+        "selection_rationale": "このシナリオは、(1) Actor Intelligence Packが示すNetanyahuのPersistent Preference（国際司法への不承認、説明責任回避、実利的取引の柔軟性）と整合し、(2) イランのホルムズ海峡封鎖能力や米国との関係といった構造的制約を考慮しても、対イラン抑止・対ガザ軍事作戦継続という安全保障優先の行動が合理的に説明できる。代替シナリオ（安全保障のみを最上位目的とする、あるいは国際司法への協力を優先するなど）は、Actor Intelligence Packの示す過去行動パターンと矛盾する部分が多く、現時点の材料からは主軸として採用しにくい。具体的な最新政策の細部が不足しているため確信度は中に留まるが、提供資料の範囲ではこのシナリオが最も多くの観測を説明し、不要な追加仮定が比較的少ない。",
+        "supporting_evidence": [
+          "9fbfbc49-f321-412b-afbf-485badeaf0d7",
+          "Asset:strait_canal_control"
+        ],
+        "observable_indicators": [
+          "NetanyahuのICCや国際司法機関に対する発言（正当性を認めるか否か）。",
+          "イスラエル政府による独立調査委員会設置の有無と権限。",
+          "ガザでの軍事作戦の強度と停戦交渉の進捗（作戦継続か、段階的縮小か）。",
+          "対イランに関するイスラエル政府の公式声明（抑止強化か、緊張緩和か）。",
+          "米国政府・議会からイスラエルへの軍事支援条件やガザでの民間人被害に関する圧力の強度。"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": true,
+            "description": "ICC逮捕状への不承認対応を現在の国際司法への態度の参考として用いている。",
+            "same_domain": false,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": false,
+            "analogy_source_precedent_id": "9fbfbc49-f321-412b-afbf-485badeaf0d7",
+            "same_institutional_structure": true
+          }
+        ]
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "NetanyahuのIran・Gaza政策が対イラン抑止・ホルムズ海峡の安定性・ガザ情勢に影響を与えることで、エネルギー価格・海上輸送リスク・地域の政治安定性に間接的な影響を及ぼし得る。特にイランのホルムズ海峡封鎖能力と米国との緊張継続は、原油価格の変動や海上保険料の上昇を通じて、エネルギーコスト・物流コストに波及する可能性がある。",
+        "unrelated_note": "今回の分析はNetanyahuのIran・Gaza政策の目的・制約・力学に焦点を当てており、特定企業への直接的な影響経路はSource Packからは確認できない。自社への具体的な接続は、別途エネルギー・物流・地域事業の露出を踏まえて評価する必要がある。",
+        "environment_change": "中長期的には、イスラエル・イラン・米国・湾岸諸国の関係変化が、中東地域の安全保障構造・エネルギー市場・国際司法の役割に影響を与え、企業の投資判断・サプライチェーン設計・リスク管理の前提を変える可能性がある。"
+      },
+      "initial_anomaly": "Netanyahuは、2023年10月7日の安全保障上の重大な失敗後も、イスラエルが過去に自ら確立した独立調査委員会による説明責任の前例（1973年アグラナト委員会）を踏襲せず、数年間にわたり独立調査委設置を回避しているとされる。この「イスラエル自身の基準線からの逸脱」が、現在のIran・Gaza政策を読むうえで重要な違和感となる。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "netanyahu",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalは非常に強いが、Substanceは米国・国際司法・地域構造の制約の下で調整されている可能性が高い。",
+            "discretion": "作戦強度・停戦交渉のタイミングについて、Netanyahuと安全保障内閣に大きな裁量余地。",
+            "evidence_ids": null,
+            "target_scope": "ガザ地区、イラン関連の地域的戦線（シリア・レバノンなど）を含む可能性。",
+            "stated_signal": "イスラエルは対イラン・対ガザで後退せず、国際的批判や司法プロセスにも屈しないという強硬な姿勢。",
+            "concrete_measure": "ガザでの作戦継続、対イランに関する秘密作戦・抑止措置（具体的措置は今回資料に欠如）。",
+            "enforcement_status": "イスラエル軍・治安機関による実施。",
+            "implementation_status": "継続中と推定されるが、最新の作戦状況は不明。",
+            "legal_or_policy_force": "イスラエル政府・安全保障内閣の決定として拘束力を持つが、国際法上の評価は争点。"
+          },
+          "primary_audience": "イスラエル国内の安全保障重視・右派支持層",
+          "message_hypothesis": "国内向けには「強さと継戦意思」を示し、敵対勢力には抑止メッセージを送り、米国・国際社会には『安全保障上やむを得ない行動』という枠組みを押し付ける意図がある可能性。",
+          "secondary_audience": "イラン・ガザの武装組織、米国議会・保守系世論、国際司法機関・欧州諸国",
+          "action_or_statement": "対イラン抑止強化とガザでの軍事作戦継続を支持する発言・政策（一般パターン。具体的文言は今回資料に未収載）"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "Actor Intelligence PackがNetanyahuのPersistent Preferenceとして、国際司法・同盟プロセスへの不承認、説明責任回避、実利的取引の柔軟性を明示しており、従来の「安全保障一辺倒」のイメージに対して、政権延命・法的リスク回避という個人的目的の重さがより明確になった。",
+        "why_it_matters": "NetanyahuのIran・Gaza政策を読む際、国家安全保障だけでなく、彼自身の政権延命・法的リスク回避が政策の優先順位を規定している可能性が高く、対イラン抑止・ガザ作戦・国際司法への対応がこの目的に従属して調整される。これは、中東情勢・エネルギー市場・国際司法の役割に影響し得るため、経営上の前提として重要である。",
+        "what_to_watch_decide": "(1) NetanyahuのICC・独立調査委への態度変化、(2) ガザでの軍事作戦と停戦交渉のバランス、(3) 対イラン政策の具体的な動き、(4) 米国の対イスラエル・対イラン政策の条件変更——を継続的に監視し、エネルギー・物流・地域投資への影響を評価する必要がある。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Benjamin Netanyahu",
+          "red_line": "国際司法機関（ICCなど）の正当性を認めること、イスラエルの安全保障上の重大な敗北を認める形での早期退陣、イランやガザの武装組織に対する抑止力の大幅な低下を招く譲歩。",
+          "actor_ref": "netanyahu",
+          "entity_id": "585cc564-5a71-40ac-959b-3995d3a409c8",
+          "confidence": "中",
+          "formal_role": "イスラエル首相。安全保障政策、対イラン・対ガザ政策、外交方針の最終的な政治的責任者。",
+          "evidence_ids": [
+            "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+          ],
+          "decision_power": "イスラエル政府の安全保障内閣を主導し、軍事作戦の大枠や停戦交渉の政治的条件を決定し得る。連立政権の維持・解散に関する重要な裁量を持つ。",
+          "driving_forces": [
+            {
+              "force": "支持基盤・有権者",
+              "direction": "supporting",
+              "description": "安全保障重視の右派支持層は、対イラン・対ガザでの強硬姿勢と国際司法への抵抗を支持し、Netanyahuの政権延命を支える。"
+            },
+            {
+              "force": "司法・調査プロセス",
+              "direction": "constraining",
+              "description": "ICC逮捕状や国内の説明責任要求は、Netanyahuにとって法的・政治的リスクであり、政策選択を制約する。"
+            },
+            {
+              "force": "米国との関係",
+              "direction": "constraining",
+              "description": "米国の軍事支援・外交圧力は、ガザでの作戦強度や対イラン政策の範囲に上限を設ける。"
+            },
+            {
+              "force": "イランの軍事能力・地域構造",
+              "direction": "constraining",
+              "description": "イランのホルムズ海峡封鎖能力や地域代理勢力は、イスラエルの対イラン政策に慎重さを強いる構造的制約となる。"
+            }
+          ],
+          "ability_to_move": "対イラン抑止の強度（言説・秘密作戦・同盟国との協調）、ガザでの軍事作戦の継続・縮小・停戦交渉の方針、国際司法・同盟国への対応（協力・対決）の方向性を動かし得る。",
+          "issue_objective": "現在のIran・Gaza政策において、対イラン抑止を維持しつつ、ガザでの軍事作戦を継続してハマスなど武装組織の能力を削ぐ一方、自身の政権延命と法的責任回避を確保すること。国際司法・一部同盟国からの圧力を制度的に押し返し、完全な敗北や早期退陣を避ける。",
+          "observed_action": "具体的な最新の発言・政策は今回のSource Packに含まれていないため、一般化は避ける。ただし、過去数年のパターンとして、ICC逮捕状への不承認、独立調査委設置の回避、米議会などへの直接訴え、ガザでの軍事作戦継続を支持する発言が観測されているとされる。",
+          "vulnerabilities": [
+            "ICC逮捕状など国際司法による法的リスク",
+            "国内の説明責任要求・抗議運動",
+            "連立政権の崩壊リスク"
+          ],
+          "ability_to_block": "独立調査委員会の設置、ICC等への協力、ガザでの早期停戦や大幅な譲歩を求める国内外の圧力を政治的に押し返す能力を持つ。",
+          "action_substance": {
+            "assessment": "Signal（国際司法への対決姿勢）は強く、Substanceとしても実際に協力を拒むなど一定のコストを払っているが、完全な決裂ではなく、将来の取引余地を残している可能性。",
+            "discretion": "国際司法への協力度合い、調査委の権限設計などに広い裁量。",
+            "evidence_ids": [
+              "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+            ],
+            "target_scope": "イスラエル国内司法・国際司法機関・主要同盟国。",
+            "stated_signal": "国際司法・一部同盟国のプロセスの正当性を認めず、安全保障上の必要性を前面に出す。",
+            "concrete_measure": "ICC逮捕状への不承認、独立調査委設置の回避、ガザ作戦継続の政治的支持。",
+            "enforcement_status": "国内政治・官僚機構を通じて実施。",
+            "implementation_status": "ICCへの協力拒否や調査委回避は継続中とされる。",
+            "legal_or_policy_force": "国内的には政府方針として一定の拘束力を持つが、国際法上の拘束力は限定的。"
+          },
+          "primary_audience": "イスラエル国内の支持層（安全保障重視・右派有権者）と、米国の議会・保守系世論。",
+          "why_actor_matters": "Netanyahuはイスラエル首相として、対イラン抑止・対ガザ軍事作戦・国際司法への対応を決める中心的な政治主体であり、Actor Intelligence Packでもveto_powerを持つKey Actorとして選定されている。彼のPersistent Preference（国際司法への不承認、説明責任回避、実利的取引の柔軟性）は、現在のIran・Gaza政策の方向性を理解するうえで不可欠な手掛かりであり、彼の政権延命・法的リスク回避の志向が政策の優先順位を規定している可能性が高い。",
+          "available_leverage": [
+            "イスラエル軍の作戦継続・停止の政治的決定権",
+            "米国・湾岸諸国との外交チャネル",
+            "国内支持層・連立政権の動員力"
+          ],
+          "secondary_audience": "イラン・ガザの武装組織（抑止メッセージ）、国際司法機関・欧州諸国（対決的シグナル）、イスラエル国内の司法・官僚組織。",
+          "ultimate_objective": "自身の政権延命と政治的・法的な生存（起訴・逮捕・強制退陣の回避）を最終的に守りたい目的として持っている可能性が高い。加えて、イスラエルの安全保障上の優位と敵対勢力（イラン・ガザの武装組織など）からの脅威抑止を維持したい。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "現時点のEvidenceではそのような行動は観測されていないため、仮にそうした行動が現れた場合には、Persistent Preference仮説を再評価し、政権延命・責任回避が最上位目的であるという見立てを修正する必要がある。",
+            "challenge_question": "もしNetanyahuが今後、ICCや独立調査委への全面協力を自ら主導し、政権延命よりも説明責任を優先するような行動を取った場合、現在のActor Intelligenceに基づくPersistent Preference仮説はどの程度維持可能か。"
+          },
+          "persistent_preference": "正当性を認めない国際・同盟プロセス（2015年の米政権の外交、2024年のICC）に対しては一貫して非妥協的だが、実利的な取引が生じる場面（2020年アブラハム合意）では自らの連立の核心公約（併合）さえ取引材料として柔軟に扱う。安全保障上の重大な失敗（2023年10月7日）後も、イスラエル自身が過去に確立した説明責任の前例（1973年アグラナト委員会）とは異なり、独立調査委設置を数年間回避し続けている。",
+          "preference_action_gap": "NetanyahuのPersistent Preference（国際司法・一部同盟プロセスへの不承認、説明責任回避、実利的取引の柔軟性）と、現在のIran・Gaza政策における行動は概ね整合的に見える。対イラン抑止・対ガザ軍事作戦の継続は安全保障優先の志向と一致し、ICCや独立調査委への抵抗は説明責任回避と一致する。一方で、停戦交渉や人質解放などで一定の譲歩を行う場面があれば、それは実利的取引の柔軟性に対応する。ただし、具体的な最新行動が不明なため、Gap評価の確度は中に留まる。",
+          "relevant_decision_patterns": [
+            "正当性を認めない国際・同盟プロセスへは一貫して非妥協的な不承認姿勢を取る",
+            "実利的な取引の機会が生じた場合、自らの連立の核心公約さえ取引材料として柔軟に扱う"
+          ],
+          "unavailable_or_costly_cards": [
+            "国際司法機関への全面協力（自身の法的リスクを高める）",
+            "安全保障上の失敗に関する即時の独立調査委設置（政権延命に不利）"
+          ],
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [
+              "netanyahu_pattern_reject_illegitimate_process",
+              "netanyahu_pattern_tactical_flexibility_when_beneficial"
+            ],
+            "profile_source": "actor_intelligence_candidate",
+            "exception_episode_ids": [
+              "025b585d-fa3d-4944-9d4f-548b167569ff"
+            ],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "9fbfbc49-f321-412b-afbf-485badeaf0d7",
+              "ca89a713-a739-4b4e-803a-cb8fa7a4858f"
+            ],
+            "supporting_evidence_ids": [
+              "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+            ],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": null,
+              "source": "Actor Intelligence Pack",
+              "claim_id": "9fbfbc49-f321-412b-afbf-485badeaf0d7",
+              "relevance": "国際司法機関の正当性を認めない姿勢の例",
+              "evidence_id": null,
+              "date_or_period": "2024",
+              "event_or_behavior": "ICC逮捕状(2024)への不承認対応",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "根拠先例数は1であり、パターンとしての確度は中に留まる。",
+              "source": "Actor Intelligence Pack",
+              "claim_id": null,
+              "relevance": "実利的取引の機会における柔軟性の例",
+              "evidence_id": null,
+              "date_or_period": "2020",
+              "event_or_behavior": "アブラハム合意(2020)における併合公約の柔軟な扱い",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "独立調査委設置の有無は今後変化し得るため、as_of時点の観測に基づく。",
+              "source": "Actor Intelligence Pack",
+              "claim_id": null,
+              "relevance": "説明責任回避・政権延命志向の例",
+              "evidence_id": null,
+              "date_or_period": "2023-2026",
+              "event_or_behavior": "2023年10月7日の安全保障上の失敗後の独立調査委設置回避",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "このパターンはNetanyahuの国際司法・一部同盟国への態度を説明するうえで有用だが、Iran・Gaza政策の全てを説明する独立した証明にはならない。安全保障・実務上の必要から部分的な柔軟性も残されている可能性がある。",
+              "pattern_id": null,
+              "applicability": "medium",
+              "pattern_summary": "正当性を認めない国際・同盟プロセスへは一貫して非妥協的な不承認姿勢を取る",
+              "current_differences": [
+                "対イラン・対ガザ政策では、実務レベルで一定の譲歩や停戦交渉が行われている可能性があり、完全な非妥協ではない"
+              ],
+              "current_similarities": [
+                "ICC逮捕状への不承認対応",
+                "安全保障上の失敗後の独立調査委設置回避"
+              ],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "国際司法機関や一部同盟国の外交プロセスの正当性を認めず、対決的な姿勢を取りがちだが、米国や湾岸諸国との関係では、実利的な取引の機会があれば柔軟に妥協することもある。米国とは、行政府だけでなく議会・世論へ直接訴える関係を好む傾向がある。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "Netanyahuの2026年時点の具体的な対イラン政策（秘密作戦、外交方針、イラン核問題へのスタンス）は何か。",
+          "rationale": "対イラン政策の具体的内容を確認することで、Netanyahuの安全保障優先と政権延命・責任回避のバランスを検証できる。",
+          "related_hypothesis": "Netanyahuの最上位目的が政権延命・責任回避であるという仮説",
+          "recommended_sources": "イスラエル政府の公式文書、信頼できる国際報道、専門家分析"
+        },
+        {
+          "priority": "高",
+          "question": "ガザにおける最新の軍事作戦の強度と停戦交渉の進捗はどうなっているか。",
+          "rationale": "ガザ政策の具体的な動きは、Netanyahuの国内政治・国際圧力への対応を評価するうえで重要である。",
+          "related_hypothesis": "Netanyahuがガザでの軍事作戦継続を政権延命と安全保障のために利用しているという仮説",
+          "recommended_sources": "国連・主要メディア・イスラエル政府・パレスチナ側の公式情報"
+        },
+        {
+          "priority": null,
+          "question": "イスラエル国内の連立構造・司法プロセスの最新動向は、NetanyahuのIran・Gaza政策にどの程度制約を与えているか。",
+          "rationale": "Key Stakeholderの制約構造（国内制度）を把握するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "Actor Intelligence Packが、国際司法・説明責任回避と政権延命・法的リスク回避を強調しており、安全保障のみを最上位目的とする説明では、ICC不承認や独立調査委回避の一貫性を十分に説明しきれない。",
+          "status": "rejected",
+          "confidence": "中",
+          "description": "Netanyahuは安全保障上の脅威認識に基づき、対イラン抑止とガザ作戦継続を優先している。国際司法への抵抗はその副次的結果である。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "Asset:strait_canal_control"
+          ],
+          "contradicting_evidence_ids": [
+            "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+          ]
+        },
+        {
+          "reason": "ICC不承認、独立調査委回避、実利的取引の柔軟性という過去行動パターンがこの仮説を支持している。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "Netanyahuの最上位目的は政権延命と法的責任回避であり、Iran・Gaza政策はこの目的に従属して調整されている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": [
+            "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "イランの能力は重要な制約だが、Netanyahuの国際司法への態度や説明責任回避は構造だけでは説明しきれない。",
+          "status": "unresolved",
+          "confidence": "中",
+          "description": "イランのホルムズ海峡封鎖能力や米国との関係など構造的要因が、NetanyahuのIran・Gaza政策の上限を規定しており、個人目的よりも構造が支配的である。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "Asset:strait_canal_control"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "現時点のEvidenceでは観測されていないが、将来の行動次第でActor IntelligenceのPersistent Preference仮説が破られる可能性。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "Netanyahuは今後、ICCや独立調査委への全面協力を自ら主導し、政権延命よりも説明責任を優先する可能性がある。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+          ]
+        },
+        {
+          "reason": "首相として安全保障内閣を主導し、軍事作戦の大枠や停戦交渉の政治的条件を決定し得る立場にあるため、完全な「顔役」に過ぎないと見るのは過度な単純化。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "NetanyahuのIran・Gaza政策は、彼個人ではなくイスラエル安全保障官僚・軍の集団意思により主導されており、彼は主として国内政治・コミュニケーションを担当しているだけである。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+          ]
+        }
+      ],
+      "one_line_assessment": "Netanyahuの現在のIran・Gaza政策は、(1) 自身と連立政権の延命、(2) イスラエルの安全保障上の脅威認識に基づく対イラン抑止・対ガザ軍事圧力維持、(3) 国際司法・一部同盟国からの圧力への制度的抵抗を組み合わせたものであり、軍事・外交・国内政治の制約の中で「完全勝利」よりも時間を稼ぎつつ責任追及を回避する方向に傾いている可能性が高い（ただし、具体的な最新政策の細部は今回資料に含まれておらず、仮説レベルに留まる）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "mixed",
+        "hinge_structure": {
+          "primary_hinge": "Netanyahu個人の政権延命と法的責任回避への強い志向",
+          "secondary_hinges": [
+            "イスラエル国内の連立政治・司法プロセスによる制約と柔軟性",
+            "米国との軍事支援・外交圧力のバランス",
+            "イランのホルムズ海峡封鎖能力と地域的軍事バランスによる構造的制約"
+          ]
+        },
+        "primary_key_point": "Netanyahu個人の政権延命と法的責任回避が、Iran・Gaza政策の優先順位を規定している可能性",
+        "rejected_candidates": [
+          {
+            "key_point": "イランのホルムズ海峡封鎖能力と地域的軍事バランス",
+            "why_not_primary": "対イラン政策の上限を規定する重要な構造的制約ではあるが、Netanyahuのガザ政策や国際司法への対応、国内政治・司法プロセスへの振る舞いを直接説明するには不十分であり、Netanyahuの行動パターンを中心に読む今回の分析では補助的条件（secondary hinge）として扱う方が適切と判断した。"
+          },
+          {
+            "key_point": "イスラエル国内の連立政治・司法プロセス",
+            "why_not_primary": "Netanyahuの政策選択にとって重要な制約であるものの、Actor Intelligence Packが示すように、彼は連立の核心公約さえ取引材料として柔軟に扱うことがあり、制度そのものよりも彼の個人的な目的・リスク認識が優先される場面がある。したがって、制度はprimaryではなく、個人目的に従属する制約として位置づける方が整合的と判断した。"
+          },
+          {
+            "key_point": "米国との関係（軍事支援・外交圧力）",
+            "why_not_primary": "米国との関係はイスラエルの行動範囲を大きく左右するが、Netanyahuは米国内政治へ直接働きかけることでこの制約を部分的に操作しようとしており、米国の意向が常に最上位ではない。彼の政権延命・責任回避目的をprimaryに置き、その下で米国との関係をレバレッジ・制約として扱う方が、Actor Intelligence Packの示すパターンと整合的である。"
+          }
+        ],
+        "selection_rationale": "提供されているActor Intelligence Packは、NetanyahuのPersistent Preferenceとして「正当性を認めない国際・同盟プロセスへの非妥協的な不承認姿勢」と「実利的な取引機会における柔軟性」、さらに安全保障上の重大な失敗後の独立調査委回避を強調している。これらは、彼の最上位目的の一つが自身の政権延命と法的・政治的責任回避であることを示唆しており、Iran・Gaza政策がその目的に従属して調整されていると見ると、(1) 国際司法・同盟国への強硬な言説、(2) 軍事作戦の継続と停戦交渉の扱い、(3) 国内政治・司法プロセスへの対応が一貫したストーリーとして説明しやすい。他の候補（イランの構造的能力、国内制度、米国との関係）は重要な制約・補助条件だが、Netanyahuの行動パターンを中心に読むと、これらは彼の上位目的に対する制約・レバレッジとして位置づけられるため、primary_hingeとしては個人の政権延命・責任回避を置くのが最も整合的と判断した。",
+        "candidate_key_points": [
+          {
+            "key_point": "Netanyahu個人の政権延命と法的責任回避が、Iran・Gaza政策の優先順位を規定している可能性",
+            "control_type": "actor_controlled",
+            "what_it_explains": "なぜNetanyahuが国際司法や一部同盟国の圧力に対して強硬な言説を維持しつつ、完全な勝利よりも時間を稼ぐような政策（停戦交渉の引き延ばし、限定的譲歩など）を選ぶのかを説明し得る。",
+            "why_it_could_be_key": "Actor Intelligence Packが、Netanyahuが安全保障上の重大な失敗後も独立調査委設置を回避し続けていること、ICC逮捕状に対して不承認姿勢を取っていることを指摘しており、個人的・政治的なリスク回避が強い動機であることを示唆しているため。",
+            "controlling_entity_ids": [
+              "585cc564-5a71-40ac-959b-3995d3a409c8"
+            ],
+            "supporting_evidence_ids": [
+              "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+            ],
+            "what_it_does_not_explain": "イラン側の行動（ホルムズ海峡封鎖、対イスラエル代理勢力の運用）や米国の対イラン・対イスラエル政策の変化など、構造的要因を十分には説明しない。",
+            "control_structure_summary": null,
+            "control_type_adjustment_reason": null
+          },
+          {
+            "key_point": "イランのホルムズ海峡封鎖能力と地域的軍事バランスが、Netanyahuの対イラン政策の上限を規定している構造的制約",
+            "control_type": "structural",
+            "what_it_explains": "Netanyahuが対イラン政策で全面戦争や直接攻撃の拡大に慎重にならざるを得ない理由、米国との協調や抑止重視の姿勢を取る必要性を説明し得る。",
+            "why_it_could_be_key": "Foundation Packが、イランのIRGCによるホルムズ海峡封鎖能力と実際の封鎖実績を示しており、イスラエルを含む地域諸国の安全保障・エネルギー市場に対する構造的リスクとなっているため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "Asset:strait_canal_control"
+            ],
+            "what_it_does_not_explain": "ガザ政策（地上作戦の強度、人道的配慮、停戦交渉）など、イスラエル側がより直接的にコントロールし得る領域の具体的選択を十分には説明しない。",
+            "control_structure_summary": "ホルムズ海峡の地理・軍事バランス、イランの能力、米国・中国・オマーンとの関係が複合的に決める構造であり、Netanyahu個人の意思では変えられない。",
+            "control_type_adjustment_reason": null
+          },
+          {
+            "key_point": "イスラエル国内の連立政治・司法プロセスが、NetanyahuのIran・Gaza政策の選択肢を制約しつつも、一定の柔軟性を残している",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜNetanyahuが一部政策で柔軟な取引を行い得るのか、またなぜ司法・調査委員会を回避しようとするのかを説明し得る。",
+            "why_it_could_be_key": "Netanyahuは連立政権の核心公約（併合）さえ取引材料として柔軟に扱った先例があり、国内政治・司法プロセスが制約であると同時に交渉の場でもあることを示しているため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              ""
+            ],
+            "what_it_does_not_explain": "イランやガザに対する具体的な軍事作戦のタイミング・強度など、軍事専門家・安全保障官僚の判断が大きく影響する部分を直接には説明しない。",
+            "control_structure_summary": "イスラエルの議会制民主主義、連立構造、司法制度が、Netanyahuの政策選択に制約と余地を与える。",
+            "control_type_adjustment_reason": null
+          },
+          {
+            "key_point": "米国との関係（軍事支援・外交圧力）が、NetanyahuのIran・Gaza政策の実行可能範囲を左右している",
+            "control_type": "mixed",
+            "what_it_explains": "なぜNetanyahuが米国向けに強い言葉を使いつつも、実務レベルでは米国の意向を無視しきれないのかを説明し得る。",
+            "why_it_could_be_key": "Netanyahuは米議会演説などを通じて米国内政治へ直接働きかけてきた先例があり、米国の支援・圧力がイスラエルの軍事・外交行動の重要な制約であるため。",
+            "controlling_entity_ids": [
+              "671eeb94-62df-45f9-a1e4-5e3fa89a71ba",
+              "585cc564-5a71-40ac-959b-3995d3a409c8"
+            ],
+            "supporting_evidence_ids": [
+              ""
+            ],
+            "what_it_does_not_explain": "イラン・ガザ側の主体的な行動や国際司法機関の独立した動きなど、米国とイスラエルの関係だけでは説明できない要素。",
+            "control_structure_summary": "米国の軍事支援・外交圧力とNetanyahuの対米ロビー活動が相互作用し、イスラエルのIran・Gaza政策の範囲を決める。",
+            "control_type_adjustment_reason": null
+          }
+        ],
+        "disconfirming_signal": "Netanyahuが、(1) 国際司法機関（ICCなど）の正当性を公然と認め、逮捕状や調査に全面的に協力する、(2) 2023年10月7日の失敗に関して、アグラナト委員会に匹敵する権限を持つ独立調査委員会の即時設置を自ら主導し、個人的な政治的・法的リスクを高める行動を取る、(3) 政権延命よりも自らの退陣と責任引受けを優先するような発言・行動を一貫して示す——といった観測が複数の信頼できるソースから確認された場合、今回の「政権延命・責任回避」をPrimary Key Pointとする見立て自体を再検討する必要が生じる。",
+        "controlling_entity_ids": [
+          "585cc564-5a71-40ac-959b-3995d3a409c8"
+        ],
+        "supporting_evidence_ids": [
+          "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+        ],
+        "control_structure_summary": "Primary Key PointはNetanyahu個人の目的に関わるためactor_controlledの側面が強いが、実際の政策は国内制度・米国との関係・イランの構造的能力など複数要因に制約されるため、全体としてはmixedな構造と見るのが妥当である。",
+        "contradicting_evidence_ids": null,
+        "control_type_adjustment_reason": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "Netanyahuの2026年時点の具体的な対イラン・対ガザ政策（個別作戦、交渉条件、国内政治の詳細）について、今回のSource Packには一次情報が含まれておらず、仮説レベルの評価に留まる。また、イスラエル国内の連立構造・司法プロセスの最新動向、米国の対イスラエル・対イラン政策の細部も不明であり、これらがNetanyahuの意思決定に与える影響の定量的評価は現時点ではできない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "Netanyahuが国家安全保障を最上位目的とし、政権延命・法的責任回避よりもイスラエルの長期的安全保障を優先する方向へシフトしているシナリオ。国際司法や独立調査委への一定の協力を受け入れ、対イラン・対ガザ政策を専門家主導で調整し、政権交代も選択肢として認める。",
+          "switch_conditions": [
+            "Netanyahuが説明責任を優先する行動を一貫して取り、政権延命より国家安全保障を前面に出すことが確認された場合。"
+          ],
+          "weakening_conditions": [
+            "ICC・独立調査委への協力拒否が継続し、説明責任回避が続く。",
+            "政権延命のために安全保障判断が歪められたと疑われる事例が増える。"
+          ],
+          "strengthening_conditions": [
+            "ICCや独立調査委への協力を公然と表明し、権限の強い調査機関を設置する。",
+            "安全保障上の失敗に関する個人的な責任を認める発言・行動が複数観測される。"
+          ]
+        },
+        {
+          "confidence": "中",
+          "description": "イスラエル国内の連立政治・司法プロセスが強まり、Netanyahu個人の意思決定力が相対的に弱まりつつあるシナリオ。対イラン・対ガザ政策は、連立パートナーや司法・官僚組織の制約により、より穏健な方向へ調整される。",
+          "switch_conditions": [
+            "連立崩壊や司法の強い介入により、Netanyahuの政策が大きく修正される事例が複数確認された場合。"
+          ],
+          "weakening_conditions": [
+            "連立パートナーがNetanyahuの強硬路線を支持し続け、司法・官僚組織が安全保障政策に対して実質的な拒否権を行使できない。"
+          ],
+          "strengthening_conditions": [
+            "連立政権内でNetanyahuに対する反乱や離脱が増え、彼の政治的基盤が弱体化する。",
+            "司法・官僚組織が安全保障政策に対して強い拒否権を行使し、Netanyahuの意向に反する政策変更が行われる。"
+          ]
+        }
+      ],
+      "monitoring_indicators": [
+        "NetanyahuのICCや国際司法機関に対する発言・行動。",
+        "イスラエル政府による独立調査委員会設置の有無と権限。",
+        "ガザでの軍事作戦の強度と停戦交渉の進捗。",
+        "対イランに関するイスラエル政府の公式声明と実際の軍事・情報活動。",
+        "米国政府・議会からイスラエルへの軍事支援条件やガザでの民間人被害に関する圧力の強度。",
+        "イランのホルムズ海峡封鎖能力の運用状況と米国・オマーン・中国との関係変化。"
+      ],
+      "retraction_conditions": [
+        "NetanyahuがICCや独立調査委への全面協力を自ら主導し、政権延命よりも説明責任を優先する行動を一貫して取る。",
+        "対イラン・対ガザ政策において、国際司法や同盟国の意向に従い、自身の政治的・法的リスクを高める決定を繰り返し行う。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "5c99bd85-72e8-4278-b431-2c96595a8533",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "Netanyahuが過去にアブラハム合意で連立の核心公約（併合）を柔軟に扱ったことは、彼が実利的取引のために政治的リスクを取ることもあり得ることを示しており、政権延命・責任回避だけが唯一の目的ではない可能性を示唆する。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "Netanyahuの2026年時点の具体的な対イラン政策（秘密作戦、外交方針、イラン核問題へのスタンス）は何か。",
+          "rationale": "Key ActorのIssue ObjectiveとPreference-Action Gapを検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ガザにおける最新の軍事作戦の強度と停戦交渉の進捗はどうなっているか。",
+          "rationale": "Key Point（政権延命・責任回避）と安全保障目的のバランスを評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "イスラエル国内の連立構造・司法プロセスの最新動向は、NetanyahuのIran・Gaza政策にどの程度制約を与えているか。",
+          "rationale": "Key Stakeholderの制約構造（国内制度）を把握するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "Netanyahuの2026年時点の具体的な対イラン政策（秘密作戦、外交方針、イラン核問題へのスタンス）に関する一次情報・詳細な報道が不足している。",
+          "gap_category": "deterministic",
+          "recommended_action": "信頼できる国際報道・イスラエル政府の公式文書・専門家分析を追加収集し、対イラン政策の具体的内容とNetanyahuの関与を確認する。"
+        },
+        {
+          "priority": "高",
+          "description": "ガザにおける最新の軍事作戦の強度、停戦交渉の進捗、人道的措置に関する具体的なデータが不足している。",
+          "gap_category": "deterministic",
+          "recommended_action": "国連・主要メディア・イスラエル政府・パレスチナ側の公式情報を照合し、現在のガザ情勢とNetanyahuの政策決定との関係を明らかにする。"
+        },
+        {
+          "priority": "中",
+          "description": "米国の対イスラエル・対イラン政策（軍事支援の条件、ガザでの民間人被害に対する圧力）の最新動向が不足している。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "米政府の公式声明・議会動向・主要メディアの分析を確認し、Netanyahuの政策に対する米国の制約・レバレッジを評価する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "Netanyahuの最上位目的は政権延命や法的責任回避ではなく、イスラエル国家の安全保障そのものであり、国際司法や説明責任への抵抗も、安全保障上の脅威（イラン・ガザの武装組織）に対処するための手段に過ぎないという見方。つまり、彼は国家安全保障のために不人気な決定を行っているのであり、個人的な生存が主目的ではない。",
+      "key_stakeholder_assessment": {
+        "rationale": "Actor Intelligence PackがNetanyahuをselection_reasons: issue_linked, veto_power/relevance_score: 5.0としており、対イラン・対ガザ政策においてイスラエル側の最終的な政治的決定権を大きく握っていると評価されている。イスラエルの制度上、首相は安全保障政策・軍事作戦の大枠を決定し、連立政権の維持・外交方針を統括する役割を持つため、この局面を実際に動かす／止めるKey StakeholderとしてNetanyahuをsingleで特定するのが妥当と判断した（as_of: 2026-08-31）。",
+        "confidence": "中",
+        "evidence_ids": [
+          "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+        ],
+        "determination": "single",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "netanyahu"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "netanyahu",
+          "confidence": "中",
+          "evidence_ids": [
+            "9fbfbc49-f321-412b-afbf-485badeaf0d7"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "国際司法の正当性を否定しつつ、自身への実際の法的拘束を回避する。",
+          "issue_component": "ICC・国際司法への対応",
+          "likely_reaction": "国際司法への協力要求が強まれば、言説をさらに強硬化しつつ、実務レベルで遅延・限定協力を図る可能性。",
+          "current_red_line": "ICCの正当性を公然と認め、逮捕状に従うこと。",
+          "stated_preference": "ICC逮捕状の不承認。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "自身の法的リスクと政権延命に直結するため、Netanyahuにとって極めて重要。",
+          "currently_tradeable": "低い（政権延命に直結するため）。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "国内支持層・連立政権の動員力。",
+          "effect_on_actor_objective": "協力すれば法的リスク増大、不承認を維持すれば国際的孤立と批判が増えるが政権延命には資する。",
+          "estimated_real_preference": "国際司法の拘束を受けない形で政治的生存を維持したい。",
+          "alternative_interpretation": "安全保障上の脅威を理由に、国際司法への協力を『国家防衛のために不可能』と位置づけているだけで、個人的生存が主目的ではない可能性。",
+          "primary_binding_constraint": "ICC・国内外世論による法的・政治的圧力。",
+          "issue_component_description": "逮捕状・調査への協力か不承認か。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "netanyahu",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "ハマスなど武装組織の能力を削ぎつつ、政権延命に必要な国内支持を維持。",
+          "issue_component": "ガザでの軍事作戦継続",
+          "likely_reaction": "圧力が強まれば、限定的停戦や人道措置で応じつつ、作戦の枠組みは維持する。",
+          "current_red_line": "ガザでの作戦を早期に全面停止し、ハマスに勝利を宣言させるような停戦。",
+          "stated_preference": "作戦継続と安全保障優先。",
+          "instrumental_value": "mixed",
+          "priority_rationale": "安全保障と国内政治支持の両方に直結する。",
+          "currently_tradeable": "限定的（人道措置や一時停戦など部分的譲歩はあり得る）。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "イスラエル軍の作戦能力。",
+          "effect_on_actor_objective": "強硬作戦は右派支持層を維持し、説明責任回避にも資するが、国際的批判と米国からの圧力を招く。",
+          "estimated_real_preference": "作戦を政権延命と安全保障の両方に資する形で維持したい。",
+          "alternative_interpretation": "ガザ作戦は主として安全保障専門家の判断に基づき、Netanyahuの国内政治目的は副次的である可能性。",
+          "primary_binding_constraint": "米国・国際社会からの人道的圧力。",
+          "issue_component_description": "作戦強度・停戦交渉の扱い。",
+          "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "netanyahu",
+          "confidence": "中",
+          "evidence_ids": [],
+          "evidence_class": "structural_reference",
+          "desired_outcome": "イランの脅威を抑止しつつ、直接対決は避ける。",
+          "issue_component": "対イラン抑止・ホルムズ海峡構造",
+          "likely_reaction": "イランのエスカレーションには、米国と協調した抑止強化で応じる。",
+          "current_red_line": "イランとの全面戦争を招くような直接攻撃。",
+          "stated_preference": "イランの脅威に対する強い警告。",
+          "instrumental_value": "deterrence",
+          "priority_rationale": "イスラエルにとって重要だが、直接のコントロールは限定的。",
+          "currently_tradeable": "抑止の強度や外交的メッセージは調整可能。",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "米国・湾岸諸国との安全保障協力。",
+          "effect_on_actor_objective": "過度な対決は地域戦争とエネルギー市場混乱を招き、政権延命に逆効果となり得る。",
+          "estimated_real_preference": "抑止を維持しつつ、構造的制約の中でリスクを管理したい。",
+          "alternative_interpretation": "対イラン政策は主として米国主導であり、Netanyahuの裁量は限定的。",
+          "primary_binding_constraint": "イランのホルムズ海峡封鎖能力と米国との関係。",
+          "issue_component_description": "イランの能力と地域構造を踏まえた対イラン政策。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        }
+      ],
+      "decisive_power_and_leverage": "この局面全体を俯瞰すると、結果を最終的に決定づける力は単一の主体に集中していない。Netanyahuはイスラエル側の対イラン・対ガザ政策を大きく左右し得るが、イランのホルムズ海峡封鎖能力や地域代理勢力、米国の軍事・外交支援と制約、国際司法機関の法的圧力が構造的に絡み合っている。したがって、決定的なレバレッジは「Netanyahu＋イスラエル国内政治」「イランの軍事能力」「米国の支援と圧力」の三者の組み合わせにあり、いずれか一方だけでは局面を完全には動かせないdistributed/mixedな構造と見るのが妥当である（as_of: 2026-08-31）。",
+      "assets_dependencies_leverage": [
+        {
+          "kind": "asset",
+          "summary": "IRGCによる機雷敷設・武装スピードボート・沿岸ミサイルを用いたホルムズ海峡への実効的な航行妨害能力（2026年3月以降、実際に行使され海峡を封鎖した実績がある）"
+        }
+      ],
+      "preference_action_gap_summary": "Netanyahuについては、国際司法・一部同盟プロセスへの不承認、説明責任回避、実利的取引の柔軟性というPersistent Preferenceと、対イラン抑止・対ガザ軍事作戦継続・ICCへの抵抗といった観測されている行動が概ね整合的に見える。ただし、停戦交渉や人質解放などでどの程度譲歩しているかの具体的Evidenceが今回のSource Packに含まれていないため、Preference-Action Gap評価の確度は中に留まる。"
+    },
+    "created_at": "2026-08-31T11:06:44.581475+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "402e292b-bf37-4846-8400-aa4847889c9c",
+    "response_id": "b4e983e4-a446-4d9e-9bb1-0a8fbb926035",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Benjamin Netanyahu, United States",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "Derived Intelligence（Actor/Media PatternやHistorical Episode自体のknowledge_item_id）が生Evidenceとして引用されています: key_point_assessment.supporting_evidence_ids=9fbfbc49-f321-412b-afbf-485badeaf0d7, situation_actor_assessment[0].evidence_ids=9fbfbc49-f321-412b-afbf-485badeaf0d7（PatternやEpisodeそのものはEvidenceではなく参照材料です）",
+        "passed": false
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）",
+        "passed": false
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 30,
+    "failed_count": 4,
+    "created_at": "2026-08-31T11:06:44.871808+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "evidence_attribution_not_conflated",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "evidence_attribution_not_conflated",
+      "unsupported_actor_assumption_not_promoted"
+    ],
+    "removed_fabricated_ids": [
+      "situation_actor_assessment[2].evidence_ids=Asset:strait_canal_control"
+    ],
+    "confidence_adjustments": [
+      "situation_actor_assessment[1]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "netanyahu"
+    ]
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82418,
+    "completion_tokens": 15379,
+    "total_tokens": 97797
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 92890,
+        "prompt_tokens": 36406,
+        "completion_tokens": 10948
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 38906,
+        "prompt_tokens": 46012,
+        "completion_tokens": 4431
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Benjamin Netanyahu, United States"
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "Derived Intelligence（Actor/Media PatternやHistorical Episode自体のknowledge_item_id）が生Evidenceとして引用されています: key_point_assessment.supporting_evidence_ids=9fbfbc49-f321-412b-afbf-485badeaf0d7, situation_actor_assessment[0].evidence_ids=9fbfbc49-f321-412b-afbf-485badeaf0d7（PatternやEpisodeそのものはEvidenceではなく参照材料です）"
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 182.9220000000205
+}

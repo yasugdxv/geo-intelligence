@@ -1,0 +1,1562 @@
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns:user="urn:user-namespace-here" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:hyweb="urn:gip-hyweb-com" xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>海洋委員會海巡署全球資訊網-海巡新聞</title>
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="Bookmark" href="images/favicon.png">
+<meta name="DC.Title" content="海巡新聞">
+<meta name="DC.Subject" content="海巡新聞">
+<meta name="DC.Creator" content="蘇建宇">
+<meta name="DC.Description" content="行政院海岸巡防署官方發佈相關訊息">
+<meta name="DC.Publisher" content="海巡署">
+<meta name="DC.Contributor" content="行政院海岸巡防署">
+<meta name="DC.Date" content="2009-11-02 00:00:00.0">
+<meta name="DC.Type" content="文字">
+<meta name="DC.Format" content="文字">
+<meta name="DC.Identifier" content="363000000C">
+<meta name="DC.Relation" content="與本署相關資訊">
+<meta name="DC.Source" content="行政院海岸巡防署">
+<meta name="DC.Language" content="中文">
+<meta name="DC.Coverage" content="2012-01-01">
+<meta name="DC.Rights" content="行政院海岸巡防署">
+<meta name="Category.Theme" content="1E0">
+<meta name="Category.Cake" content="170,F00">
+<meta name="Category.Service" content="I41">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/RWD/css/bootstrap-3.3.6.min.css">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/main.css?v=2">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/custom.css">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/slick/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/slick/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/fontS.css" title="small" cat="font">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/fontM.css" title="medium" cat="font">
+<link rel="stylesheet" type="text/css" href="styles/RWD/css/fontL.css" title="large" cat="font">
+<link rel="stylesheet" type="text/css" media="print" href="styles/RWD/css/print.css">
+<styleSwitcher cat="color"></styleSwitcher>
+<styleSwitcher cat="font"></styleSwitcher>
+<script type="text/javascript" src="js/globals.js"></script><script type="text/javascript" src="js/AutoTab.js"></script><script type="text/javascript" src="js/AC_RunActiveContent.js"></script><script type="text/javascript" src="js/mootools.v1.11.js"></script><script type="text/javascript" src="js/styleswitcher.js"></script><script type="text/javascript" src="js/multimenu.js"></script><script type="text/javascript" src="js/jscalendar-1.0/calendar.js"></script><script type="text/javascript" src="js/jscalendar-1.0/lang/calendar-en.js"></script><script type="text/javascript" src="js/jscalendar-1.0/lang/calendar-big5-utf8.js"></script><script type="text/javascript" src="js/jscalendar-1.0/calendar-setup.js"></script><script type="text/javascript" src="styles/RWD/js/jquery-3.6.0.min.js"></script><script type="text/javascript" src="styles/RWD/js/slick/slick/slick.js"></script><script type="text/javascript" src="styles/RWD/js/main.js?v=1"></script><script type="text/javascript" src="styles/RWD/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="app">
+<div class="overlay-menu hide">
+<a href="javascript:void(0)" class="closebtn" onclick="closeMobileMenu()">
+                        &times;
+                    </a>
+<div class="overlay-content"><ul class="top-nav">
+    <li class="accesskey"><a href="#u" accesskey="U" name="U" title="上方導覽區塊">:::</a></li>
+    <li><a href="mp?mp=999">回首頁</a></li>
+    <li><a href="sitemap?mp=999">網站導覽</a></li>
+    <li><a href="lp?ctNode=492&amp;mp=999">常見問答</a></li>
+    <li><a href="lp?ctNode=1556&amp;mp=999">雙語詞彙</a></li>
+    <li><a href="mp?mp=eng">English</a></li>
+    <li class="last"><a href="javascript:;" title="搜尋" class="search" data-toggle="collapse" data-target="header .search-form"><i class="fa fa-search"> </i> <span class="sr-only">搜尋</span></a>        <a href="javascript:setActiveStyleSheet('small', 'font');" title="文字縮小" role="button" aria-pressed="false" cat="font"><span>小</span></a>        <a href="javascript:setActiveStyleSheet('medium', 'font');" title="文字中等" role="button" aria-pressed="true" cat="font"><span class="active">中</span></a>        <a href="javascript:setActiveStyleSheet('large', 'font');" title="文字放大" role="button" aria-pressed="false" cat="font"><span>大</span></a></li>
+</ul><div class="mobile-nav text-left">
+<nav class="no class">
+<p style="display: none;">menu-none</p>
+<div class="accordion" id="accordion">
+<div>
+<div data-toggle="collapse" data-target="#a1_1" data-parent="#aaccordion">
+<a title="海巡簡介" class="overlink">海巡簡介<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a1_1">
+<div>
+<div data-toggle="collapse" data-target="#a1_1_1" data-parent="#a1_1">
+<a title="本署簡介" class="overlink">本署簡介<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a1_1_1">
+<div>
+<a href="np?ctNode=782&mp=999&idPath=600_601_781_782" title="緣起" class="overlink">緣起</a>
+</div>
+<div>
+<a href="lp?ctNode=890&mp=999&idPath=600_601_781_890" title="組織架構" class="overlink">組織架構</a>
+</div>
+<div>
+<a href="np?ctNode=783&mp=999&idPath=600_601_781_783" title="業務職掌" class="overlink">業務職掌</a>
+</div>
+<div>
+<a href="lp?ctNode=1013&mp=999&idPath=600_601_781_1013" title="所屬機關簡介" class="overlink">所屬機關簡介</a>
+</div>
+<div>
+<a href="np?ctNode=891&mp=999&idPath=600_601_781_891" title="執法範圍" class="overlink">執法範圍</a>
+</div>
+<div>
+<a href="lp?ctNode=1557&mp=999&idPath=600_601_781_1557" title="歷年重大事紀摘要" class="overlink">歷年重大事紀摘要</a>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a1_1_7_1" data-parent="#a1_1_1">
+<a title="典藏專區" class="overlink">典藏專區<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a1_1_7_1">
+<div>
+<a href="lp?ctNode=11567&mp=999&idPath=600_601_781_11563_11567" title="活動照片" class="overlink">活動照片</a>
+</div>
+<div>
+<a href="lp?ctNode=11568&mp=999&idPath=600_601_781_11563_11568" title="活動影片" class="overlink">活動影片</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<a href="np?ctNode=778&mp=999&idPath=600_601_778" title="署徽意涵" class="overlink">署徽意涵</a>
+</div>
+<div>
+<a href="np?ctNode=1374&mp=999&idPath=600_601_1374" title="舷側標誌" class="overlink">舷側標誌</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a2_1" data-parent="#aaccordion">
+<a title="重大政策" class="overlink">重大政策<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a2_1">
+<div>
+<a href="lp?ctNode=7958&mp=999&idPath=600_7957_7958" title="海洋委員會重大政策" class="overlink">海洋委員會重大政策</a>
+</div>
+<div>
+<a href="lp?ctNode=7959&mp=999&idPath=600_7957_7959" title="本署重大政策" class="overlink">本署重大政策</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a3_1" data-parent="#aaccordion">
+<a title="施政績效" class="overlink">施政績效<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a3_1">
+<div>
+<a href="np?ctNode=11362&mp=999&idPath=600_603_11362" title="年度施政績效報告" class="overlink">年度施政績效報告</a>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a3_2_1" data-parent="#a3_1">
+<a title="原行政院海岸巡防署各年度施政績效報告歷史資料" class="overlink">原行政院海岸巡防署各年度施政績效報告歷史資料<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a3_2_1">
+<div>
+<a href="lp?ctNode=12088&mp=999&idPath=600_603_12087_12088" title="106年度" class="overlink">106年度</a>
+</div>
+<div>
+<a href="np?ctNode=12089&mp=999&idPath=600_603_12087_12089" title="105年度" class="overlink">105年度</a>
+</div>
+<div>
+<a href="lp?ctNode=12090&mp=999&idPath=600_603_12087_12090" title="104年度" class="overlink">104年度</a>
+</div>
+<div>
+<a href="lp?ctNode=12091&mp=999&idPath=600_603_12087_12091" title="103年度" class="overlink">103年度</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a3_3_1" data-parent="#a3_1">
+<a title="本署列管個案計畫評核結果" class="overlink">本署列管個案計畫評核結果<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a3_3_1">
+<div>
+<a href="lp?ctNode=13486&mp=999&idPath=600_603_11122_13486" title="114年度" class="overlink">114年度</a>
+</div>
+<div>
+<a href="lp?ctNode=13342&mp=999&idPath=600_603_11122_13342" title="113年度" class="overlink">113年度</a>
+</div>
+<div>
+<a href="lp?ctNode=12096&mp=999&idPath=600_603_11122_12096" title="112年度" class="overlink">112年度</a>
+</div>
+<div>
+<a href="lp?ctNode=11889&mp=999&idPath=600_603_11122_11889" title="111年度" class="overlink">111年度</a>
+</div>
+<div>
+<a href="lp?ctNode=11595&mp=999&idPath=600_603_11122_11595" title="110年度" class="overlink">110年度</a>
+</div>
+<div>
+<a href="lp?ctNode=11515&mp=999&idPath=600_603_11122_11515" title="109年度" class="overlink">109年度</a>
+</div>
+<div>
+<a href="lp?ctNode=11374&mp=999&idPath=600_603_11122_11374" title="108年度" class="overlink">108年度</a>
+</div>
+<div>
+<a href="lp?ctNode=11123&mp=999&idPath=600_603_11122_11123" title="107年度" class="overlink">107年度</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a4_1" data-parent="#aaccordion">
+<a title="海巡統計" class="overlink">海巡統計<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a4_1">
+<div>
+<div data-toggle="collapse" data-target="#a4_1_1" data-parent="#a4_1">
+<a title="性別統計專區" class="overlink">性別統計專區<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a4_1_1">
+<div>
+<div data-toggle="collapse" data-target="#a4_1_1_1" data-parent="#a4_1_1">
+<a title="性別統計指標" class="overlink">性別統計指標<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a4_1_1_1">
+<div>
+<a href="lp?ctNode=7127&mp=999&idPath=600_604_7125_7126_7127" title="業務績效統計" class="overlink">業務績效統計</a>
+</div>
+<div>
+<a href="np?ctNode=7129&mp=999&idPath=600_604_7125_7126_7129" title="性平政策綱領" class="overlink">性平政策綱領</a>
+</div>
+<div>
+<a href="np?ctNode=8989&mp=999&idPath=600_604_7125_7126_8989" title="其他性別統計" class="overlink">其他性別統計</a>
+</div>
+</div>
+</div>
+<div>
+<a href="lp?ctNode=7130&mp=999&idPath=600_604_7125_7130" title="性別統計分析" class="overlink">性別統計分析</a>
+</div>
+<div>
+<a href="https://www.stat.gov.tw/ct.asp?xItem=33333&ctNode=6021&mp=4" title="各部會性別統計 (另開新視窗)" class="overlink" target="_blank">各部會性別統計</a>
+</div>
+</div>
+</div>
+<div>
+<a href="/GipOpen/wSite/public/Data/f2024041209381.pdf?ab=b&idPath=600_604_664" title="統計名詞解釋 (另開新視窗)" class="overlink" target="_blank">統計名詞解釋</a>
+</div>
+<div>
+<a href="https://www.stat.gov.tw/cp.aspx?n=3867&s=1226&selorg=46" title="資料發布時間 (另開新視窗)" class="overlink" target="_blank">資料發布時間</a>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a4_4_1" data-parent="#a4_1">
+<a title="海巡統計書刊" class="overlink">海巡統計書刊<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a4_4_1">
+<div>
+<div data-toggle="collapse" data-target="#a4_4_1_1" data-parent="#a4_4_1">
+<a title="海巡統計年報" class="overlink">海巡統計年報<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a4_4_1_1">
+<div>
+<a href="lp?ctNode=13480&mp=999&idPath=600_604_8755_11882_13480" title="114年海巡統計年報" class="overlink">114年海巡統計年報</a>
+</div>
+<div>
+<a href="lp?ctNode=13336&mp=999&idPath=600_604_8755_11882_13336" title="113年海巡統計年報" class="overlink">113年海巡統計年報</a>
+</div>
+<div>
+<a href="lp?ctNode=12094&mp=999&idPath=600_604_8755_11882_12094" title="112年海巡統計年報" class="overlink">112年海巡統計年報</a>
+</div>
+<div>
+<a href="lp?ctNode=11887&mp=999&idPath=600_604_8755_11882_11887" title="111年海巡統計年報" class="overlink">111年海巡統計年報</a>
+</div>
+<div>
+<a href="lp?ctNode=11592&mp=999&idPath=600_604_8755_11882_11592" title="110年海巡統計年報" class="overlink">110年海巡統計年報</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a4_4_2_1" data-parent="#a4_4_1">
+<a title="績效統計月報" class="overlink">績效統計月報<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a4_4_2_1">
+<div>
+<a href="lp?ctNode=13498&mp=999&idPath=600_604_8755_8757_13498" title="115年05月績效統計月報" class="overlink">115年05月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13492&mp=999&idPath=600_604_8755_8757_13492" title="115年04月績效統計月報" class="overlink">115年04月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13489&mp=999&idPath=600_604_8755_8757_13489" title="115年03月績效統計月報" class="overlink">115年03月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13481&mp=999&idPath=600_604_8755_8757_13481" title="115年02月績效統計月報" class="overlink">115年02月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13462&mp=999&idPath=600_604_8755_8757_13462" title="115年01月績效統計月報" class="overlink">115年01月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13458&mp=999&idPath=600_604_8755_8757_13458" title="114年12月績效統計月報" class="overlink">114年12月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13425&mp=999&idPath=600_604_8755_8757_13425" title="114年11月績效統計月報" class="overlink">114年11月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13423&mp=999&idPath=600_604_8755_8757_13423" title="114年10月績效統計月報" class="overlink">114年10月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13368&mp=999&idPath=600_604_8755_8757_13368" title="114年9月績效統計月報" class="overlink">114年9月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13366&mp=999&idPath=600_604_8755_8757_13366" title="114年8月績效統計月報" class="overlink">114年8月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13363&mp=999&idPath=600_604_8755_8757_13363" title="114年7月績效統計月報" class="overlink">114年7月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13356&mp=999&idPath=600_604_8755_8757_13356" title="114年6月績效統計月報" class="overlink">114年6月績效統計月報</a>
+</div>
+<div>
+<a href="lp?ctNode=13353&mp=999&idPath=600_604_8755_8757_13353" title="114年5月績效統計月報" class="overlink">114年5月績效統計月報</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/wralawgip/" title="海巡法規 (另開新視窗)" class="overlink" target="_blank">海巡法規</a>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a6_1" data-parent="#aaccordion">
+<a title="核心任務" class="overlink">核心任務<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a6_1">
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10088&mp=999" title="維護漁權" class="overlink">維護漁權</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10089&mp=999" title="救生救難" class="overlink">救生救難</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10090&mp=999" title="海域治安" class="overlink">海域治安</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=80516&ctNode=8114&mp=999" title="海洋事務" class="overlink">海洋事務</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/mp?mp=marine" title="海洋保育" class="overlink">海洋保育</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a7_1" data-parent="#aaccordion">
+<a title="便民資訊" class="overlink">便民資訊<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a7_1">
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=11585&ctNode=8450&mp=999" title="政府資訊公開" class="overlink">政府資訊公開</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=8453&mp=999&idPath=1168_8448_8453" title="政府資料開放" class="overlink">政府資料開放</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=11462&mp=999&idPath=1277_11462" title="服務據點" class="overlink">服務據點</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=9909&mp=999" title="線上申辦" class="overlink">線上申辦</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=157754&ctNode=1283&mp=999" title="多元服務" class="overlink">多元服務</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=1279&mp=999&idPath=1277_1279" title="射擊通報" class="overlink">射擊通報</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=113950&ctNode=9949&mp=999" title="檔案應用" class="overlink">檔案應用</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=11234&mp=cgapiw&idPath=5560_11234" title="廉政園地" class="overlink">廉政園地</a>
+</div>
+<div>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=12144&mp=999&idPath=1277_12144" title="生態檢核專區" class="overlink">生態檢核專區</a>
+</div>
+<div>
+<a href="np?ctNode=13357&mp=999&idPath=600_12046_13357" title="廠商推薦勤(業)務科技設(裝)備產品申辦須知" class="overlink">廠商推薦勤(業)務科技設(裝)備產品申辦須知</a>
+</div>
+<div>
+<a href="np?ctNode=13500&mp=999&idPath=600_12046_13500" title="因應國際情勢強化經濟社會及民生國安韌性專區" class="overlink">因應國際情勢強化經濟社會及民生國安韌性專區</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a8_1" data-parent="#aaccordion">
+<a title="灰帶專區" class="overlink">灰帶專區<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a8_1">
+<div>
+<div data-toggle="collapse" data-target="#a8_1_1" data-parent="#a8_1">
+<a title="115年" class="overlink">115年<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a8_1_1">
+<div>
+<a href="lp?ctNode=13427&mp=999&idPath=600_13347_13426_13427" title="1月" class="overlink">1月</a>
+</div>
+<div>
+<a href="lp?ctNode=13428&mp=999&idPath=600_13347_13426_13428" title="2月" class="overlink">2月</a>
+</div>
+<div>
+<a href="lp?ctNode=13429&mp=999&idPath=600_13347_13426_13429" title="3月" class="overlink">3月</a>
+</div>
+<div>
+<a href="lp?ctNode=13430&mp=999&idPath=600_13347_13426_13430" title="4月" class="overlink">4月</a>
+</div>
+<div>
+<a href="lp?ctNode=13431&mp=999&idPath=600_13347_13426_13431" title="5月" class="overlink">5月</a>
+</div>
+<div>
+<a href="lp?ctNode=13432&mp=999&idPath=600_13347_13426_13432" title="6月" class="overlink">6月</a>
+</div>
+<div>
+<a href="lp?ctNode=13433&mp=999&idPath=600_13347_13426_13433" title="7月" class="overlink">7月</a>
+</div>
+<div>
+<a href="lp?ctNode=13434&mp=999&idPath=600_13347_13426_13434" title="8月" class="overlink">8月</a>
+</div>
+<div>
+<a href="lp?ctNode=13435&mp=999&idPath=600_13347_13426_13435" title="9月" class="overlink">9月</a>
+</div>
+<div>
+<a href="lp?ctNode=13436&mp=999&idPath=600_13347_13426_13436" title="10月" class="overlink">10月</a>
+</div>
+<div>
+<a href="lp?ctNode=13437&mp=999&idPath=600_13347_13426_13437" title="11月" class="overlink">11月</a>
+</div>
+<div>
+<a href="lp?ctNode=13438&mp=999&idPath=600_13347_13426_13438" title="12月" class="overlink">12月</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a8_2_1" data-parent="#a8_1">
+<a title="114年" class="overlink">114年<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a8_2_1">
+<div>
+<a href="lp?ctNode=13350&mp=999&idPath=600_13347_13349_13350" title="1月" class="overlink">1月</a>
+</div>
+<div>
+<a href="lp?ctNode=13371&mp=999&idPath=600_13347_13349_13371" title="2月" class="overlink">2月</a>
+</div>
+<div>
+<a href="lp?ctNode=13372&mp=999&idPath=600_13347_13349_13372" title="3月" class="overlink">3月</a>
+</div>
+<div>
+<a href="lp?ctNode=13373&mp=999&idPath=600_13347_13349_13373" title="4月" class="overlink">4月</a>
+</div>
+<div>
+<a href="lp?ctNode=13374&mp=999&idPath=600_13347_13349_13374" title="5月" class="overlink">5月</a>
+</div>
+<div>
+<a href="lp?ctNode=13375&mp=999&idPath=600_13347_13349_13375" title="6月" class="overlink">6月</a>
+</div>
+<div>
+<a href="lp?ctNode=13376&mp=999&idPath=600_13347_13349_13376" title="7月" class="overlink">7月</a>
+</div>
+<div>
+<a href="lp?ctNode=13377&mp=999&idPath=600_13347_13349_13377" title="8月" class="overlink">8月</a>
+</div>
+<div>
+<a href="lp?ctNode=13378&mp=999&idPath=600_13347_13349_13378" title="9月" class="overlink">9月</a>
+</div>
+<div>
+<a href="lp?ctNode=13379&mp=999&idPath=600_13347_13349_13379" title="10月" class="overlink">10月</a>
+</div>
+<div>
+<a href="lp?ctNode=13380&mp=999&idPath=600_13347_13349_13380" title="11月" class="overlink">11月</a>
+</div>
+<div>
+<a href="lp?ctNode=13381&mp=999&idPath=600_13347_13349_13381" title="12月" class="overlink">12月</a>
+</div>
+</div>
+</div>
+<div>
+<div data-toggle="collapse" data-target="#a8_3_1" data-parent="#a8_1">
+<a title="113年" class="overlink">113年<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a>
+</div>
+<div class="collapse collapse-bg" id="a8_3_1">
+<div>
+<a href="lp?ctNode=13370&mp=999&idPath=600_13347_13369_13370" title="1月" class="overlink">1月</a>
+</div>
+<div>
+<a href="lp?ctNode=13382&mp=999&idPath=600_13347_13369_13382" title="2月" class="overlink">2月</a>
+</div>
+<div>
+<a href="lp?ctNode=13383&mp=999&idPath=600_13347_13369_13383" title="3月" class="overlink">3月</a>
+</div>
+<div>
+<a href="lp?ctNode=13384&mp=999&idPath=600_13347_13369_13384" title="4月" class="overlink">4月</a>
+</div>
+<div>
+<a href="lp?ctNode=13385&mp=999&idPath=600_13347_13369_13385" title="5月" class="overlink">5月</a>
+</div>
+<div>
+<a href="lp?ctNode=13386&mp=999&idPath=600_13347_13369_13386" title="6月" class="overlink">6月</a>
+</div>
+<div>
+<a href="lp?ctNode=13387&mp=999&idPath=600_13347_13369_13387" title="7月" class="overlink">7月</a>
+</div>
+<div>
+<a href="lp?ctNode=13388&mp=999&idPath=600_13347_13369_13388" title="8月" class="overlink">8月</a>
+</div>
+<div>
+<a href="lp?ctNode=13389&mp=999&idPath=600_13347_13369_13389" title="9月" class="overlink">9月</a>
+</div>
+<div>
+<a href="lp?ctNode=13390&mp=999&idPath=600_13347_13369_13390" title="10月" class="overlink">10月</a>
+</div>
+<div>
+<a href="lp?ctNode=13391&mp=999&idPath=600_13347_13369_13391" title="11月" class="overlink">11月</a>
+</div>
+<div>
+<a href="lp?ctNode=13392&mp=999&idPath=600_13347_13369_13392" title="12月" class="overlink">12月</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<header class="home page">
+<div class="container">
+<div class="row">
+<div id="zone.head" class="top ee">
+<div class="col-md-4 col-xs-10">
+<a href="#C" id="gotocenter" title="跳到主要內容 Skip to main content" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容 Skip to main content</a>
+<noscript>
+				 您的瀏覽器已關閉Javascript語法，開啟後即可正常瀏覽！ 
+				 JavaScript has been deactivated on your browser, once turned on, you can browse normally!
+				</noscript>
+<h1>
+<a title="海洋委員會海巡署" href="mp?mp=999"><img src="public/LayoutDesign/1525076763995.png" alt="海洋委員會海巡署"></a>
+</h1>
+</div>
+<div class="col-md-8 col-xs-2">
+<div class="menu-mobile">
+<a onclick="openMobileMenu()" title="手機板選單" role="button" aria-expanded="false"><i class="fa fa-bars"></i><span style="display: none;">手機板選單</span></a>
+</div>
+<div class="hidden-xs hidden-sm"><ul class="top-nav">
+    <li class="accesskey"><a href="#u" accesskey="U" name="U" title="上方導覽區塊">:::</a></li>
+    <li><a href="mp?mp=999">回首頁</a></li>
+    <li><a href="sitemap?mp=999">網站導覽</a></li>
+    <li><a href="lp?ctNode=492&mp=999">常見問答</a></li>
+    <li><a href="lp?ctNode=1556&mp=999">雙語詞彙</a></li>
+    <li><a href="mp?mp=eng">English</a></li>
+    <li class="last"><a href="javascript:;" title="搜尋" class="search" data-toggle="collapse" data-target="header .search-form"><i class="fa fa-search"> </i> <span class="sr-only">搜尋</span></a>        <a href="javascript:setActiveStyleSheet('small', 'font');" title="文字縮小" role="button" aria-pressed="false" cat="font"><span>小</span></a>        <a href="javascript:setActiveStyleSheet('medium', 'font');" title="文字中等" role="button" aria-pressed="true" cat="font"><span class="active">中</span></a>        <a href="javascript:setActiveStyleSheet('large', 'font');" title="文字放大" role="button" aria-pressed="false" cat="font"><span>大</span></a></li>
+</ul><form class="collapse search-form" method="get" target="_blank" action="https://cse.google.com/cse" aria-expanded="true">
+    <label for="site-search" style="display: none;">全站搜尋</label>        <input type="hidden" name="cx" value="905567252f92dc8b1" />        <input type="hidden" name="ie" value="utf8" />        <input type="hidden" name="全站搜尋" value="全站搜尋" />        <input type="text" name="q" id="site-search" title="關鍵字搜尋" />        <input type="submit" value="搜尋" />        <input type="button" onclick="window.open('https://www.google.com.tw/advanced_search?hl=zh-TW&fg=1&as_sitesearch=www.cga.gov.tw')" onkeypress="window.open('https://www.google.com.tw/advanced_search?hl=zh-TW&fg=1&as_sitesearch=www.cga.gov.tw')" title="進階搜尋(另開視窗)" name="進階搜尋" value="進階搜尋" />
+    <p><b style="color: black">常用關鍵字搜尋</b>                <a title="出海申請(另開視窗)" target="_blank" href="https://www.google.com.tw/search?q=%E5%87%BA%E6%B5%B7%E7%94%B3%E8%AB%8B+site%3Awww.cga.gov.tw">出海申請</a>                <a title="線上申辦(另開視窗)" target="_blank" href="https://www.google.com.tw/search?q=%E7%B7%9A%E4%B8%8A%E7%94%B3%E8%BE%A6+site%3Awww.cga.gov.tw">線上申辦</a>                <a title="艦艇(另開視窗)" target="_blank" href="https://www.google.com.tw/search?q=%E8%89%A6%E8%89%87+site%3Awww.cga.gov.tw">艦艇</a>                <a title="人才招募(另開視窗)" target="_blank" href="https://www.google.com.tw/search?q=%E4%BA%BA%E6%89%8D%E6%8B%9B%E5%8B%9F+site%3Awww.cga.gov.tw">人才招募</a>                <a title="海巡機關(另開視窗)" target="_blank" href="https://www.google.com.tw/search?q=%E6%B5%B7%E5%B7%A1%E6%A9%9F%E9%97%9C+site%3Awww.cga.gov.tw">海巡機關</a></p>
+</form></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<nav class="home">
+<p style="display: none;">home-nav-none</p>
+<ul class="nav-header">
+<li class="dropdown">
+<a href="np?ctNode=601&mp=999&idPath=600_601" title="海巡簡介">海巡簡介</a>
+<ul class="dropdown-menu">
+<li class="dropdown">
+<a href="np?ctNode=781&mp=999&idPath=600_601_781" title="本署簡介">本署簡介</a>
+<ul class="dropdown-menu">
+<li>
+<a href="np?ctNode=782&mp=999&idPath=600_601_781_782" title="緣起">緣起</a>
+</li>
+<li>
+<a href="lp?ctNode=890&mp=999&idPath=600_601_781_890" title="組織架構">組織架構</a>
+</li>
+<li>
+<a href="np?ctNode=783&mp=999&idPath=600_601_781_783" title="業務職掌">業務職掌</a>
+</li>
+<li>
+<a href="lp?ctNode=1013&mp=999&idPath=600_601_781_1013" title="所屬機關簡介">所屬機關簡介</a>
+</li>
+<li>
+<a href="np?ctNode=891&mp=999&idPath=600_601_781_891" title="執法範圍">執法範圍</a>
+</li>
+<li>
+<a href="lp?ctNode=1557&mp=999&idPath=600_601_781_1557" title="歷年重大事紀摘要">歷年重大事紀摘要</a>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=11563&mp=999&idPath=600_601_781_11563" title="典藏專區">典藏專區</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=11567&mp=999&idPath=600_601_781_11563_11567" title="活動照片">活動照片</a>
+</li>
+<li>
+<a href="lp?ctNode=11568&mp=999&idPath=600_601_781_11563_11568" title="活動影片">活動影片</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="np?ctNode=778&mp=999&idPath=600_601_778" title="署徽意涵">署徽意涵</a>
+</li>
+<li>
+<a href="np?ctNode=1374&mp=999&idPath=600_601_1374" title="舷側標誌">舷側標誌</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=7957&mp=999&idPath=600_7957" title="重大政策">重大政策</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=7958&mp=999&idPath=600_7957_7958" title="海洋委員會重大政策">海洋委員會重大政策</a>
+</li>
+<li>
+<a href="lp?ctNode=7959&mp=999&idPath=600_7957_7959" title="本署重大政策">本署重大政策</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=603&mp=999&idPath=600_603" title="施政績效">施政績效</a>
+<ul class="dropdown-menu">
+<li>
+<a href="np?ctNode=11362&mp=999&idPath=600_603_11362" title="年度施政績效報告">年度施政績效報告</a>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=12087&mp=999&idPath=600_603_12087" title="原行政院海岸巡防署各年度施政績效報告歷史資料">原行政院海岸巡防署各年度施政績效報告歷史資料</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=12088&mp=999&idPath=600_603_12087_12088" title="106年度">106年度</a>
+</li>
+<li>
+<a href="np?ctNode=12089&mp=999&idPath=600_603_12087_12089" title="105年度">105年度</a>
+</li>
+<li>
+<a href="lp?ctNode=12090&mp=999&idPath=600_603_12087_12090" title="104年度">104年度</a>
+</li>
+<li>
+<a href="lp?ctNode=12091&mp=999&idPath=600_603_12087_12091" title="103年度">103年度</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=11122&mp=999&idPath=600_603_11122" title="本署列管個案計畫評核結果">本署列管個案計畫評核結果</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=13486&mp=999&idPath=600_603_11122_13486" title="114年度">114年度</a>
+</li>
+<li>
+<a href="lp?ctNode=13342&mp=999&idPath=600_603_11122_13342" title="113年度">113年度</a>
+</li>
+<li>
+<a href="lp?ctNode=12096&mp=999&idPath=600_603_11122_12096" title="112年度">112年度</a>
+</li>
+<li>
+<a href="lp?ctNode=11889&mp=999&idPath=600_603_11122_11889" title="111年度">111年度</a>
+</li>
+<li>
+<a href="lp?ctNode=11595&mp=999&idPath=600_603_11122_11595" title="110年度">110年度</a>
+</li>
+<li>
+<a href="lp?ctNode=11515&mp=999&idPath=600_603_11122_11515" title="109年度">109年度</a>
+</li>
+<li>
+<a href="lp?ctNode=11374&mp=999&idPath=600_603_11122_11374" title="108年度">108年度</a>
+</li>
+<li>
+<a href="lp?ctNode=11123&mp=999&idPath=600_603_11122_11123" title="107年度">107年度</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=604&mp=999&idPath=600_604" title="海巡統計">海巡統計</a>
+<ul class="dropdown-menu">
+<li class="dropdown">
+<a href="np?ctNode=7125&mp=999&idPath=600_604_7125" title="性別統計專區">性別統計專區</a>
+<ul class="dropdown-menu">
+<li class="dropdown">
+<a href="np?ctNode=7126&mp=999&idPath=600_604_7125_7126" title="性別統計指標">性別統計指標</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=7127&mp=999&idPath=600_604_7125_7126_7127" title="業務績效統計">業務績效統計</a>
+</li>
+<li>
+<a href="np?ctNode=7129&mp=999&idPath=600_604_7125_7126_7129" title="性平政策綱領">性平政策綱領</a>
+</li>
+<li>
+<a href="np?ctNode=8989&mp=999&idPath=600_604_7125_7126_8989" title="其他性別統計">其他性別統計</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="lp?ctNode=7130&mp=999&idPath=600_604_7125_7130" title="性別統計分析">性別統計分析</a>
+</li>
+<li>
+<a href="https://www.stat.gov.tw/ct.asp?xItem=33333&ctNode=6021&mp=4" title="各部會性別統計 (另開新視窗)" target="_blank">各部會性別統計</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/GipOpen/wSite/public/Data/f2024041209381.pdf?ab=b&idPath=600_604_664" title="統計名詞解釋 (另開新視窗)" target="_blank">統計名詞解釋</a>
+</li>
+<li>
+<a href="https://www.stat.gov.tw/cp.aspx?n=3867&s=1226&selorg=46" title="資料發布時間 (另開新視窗)" target="_blank">資料發布時間</a>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=8755&mp=999&idPath=600_604_8755" title="海巡統計書刊">海巡統計書刊</a>
+<ul class="dropdown-menu">
+<li class="dropdown">
+<a href="np?ctNode=11882&mp=999&idPath=600_604_8755_11882" title="海巡統計年報">海巡統計年報</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=13480&mp=999&idPath=600_604_8755_11882_13480" title="114年海巡統計年報">114年海巡統計年報</a>
+</li>
+<li>
+<a href="lp?ctNode=13336&mp=999&idPath=600_604_8755_11882_13336" title="113年海巡統計年報">113年海巡統計年報</a>
+</li>
+<li>
+<a href="lp?ctNode=12094&mp=999&idPath=600_604_8755_11882_12094" title="112年海巡統計年報">112年海巡統計年報</a>
+</li>
+<li>
+<a href="lp?ctNode=11887&mp=999&idPath=600_604_8755_11882_11887" title="111年海巡統計年報">111年海巡統計年報</a>
+</li>
+<li>
+<a href="lp?ctNode=11592&mp=999&idPath=600_604_8755_11882_11592" title="110年海巡統計年報">110年海巡統計年報</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=8757&mp=999&idPath=600_604_8755_8757" title="績效統計月報">績效統計月報</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=13498&mp=999&idPath=600_604_8755_8757_13498" title="115年05月績效統計月報">115年05月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13492&mp=999&idPath=600_604_8755_8757_13492" title="115年04月績效統計月報">115年04月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13489&mp=999&idPath=600_604_8755_8757_13489" title="115年03月績效統計月報">115年03月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13481&mp=999&idPath=600_604_8755_8757_13481" title="115年02月績效統計月報">115年02月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13462&mp=999&idPath=600_604_8755_8757_13462" title="115年01月績效統計月報">115年01月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13458&mp=999&idPath=600_604_8755_8757_13458" title="114年12月績效統計月報">114年12月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13425&mp=999&idPath=600_604_8755_8757_13425" title="114年11月績效統計月報">114年11月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13423&mp=999&idPath=600_604_8755_8757_13423" title="114年10月績效統計月報">114年10月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13368&mp=999&idPath=600_604_8755_8757_13368" title="114年9月績效統計月報">114年9月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13366&mp=999&idPath=600_604_8755_8757_13366" title="114年8月績效統計月報">114年8月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13363&mp=999&idPath=600_604_8755_8757_13363" title="114年7月績效統計月報">114年7月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13356&mp=999&idPath=600_604_8755_8757_13356" title="114年6月績效統計月報">114年6月績效統計月報</a>
+</li>
+<li>
+<a href="lp?ctNode=13353&mp=999&idPath=600_604_8755_8757_13353" title="114年5月績效統計月報">114年5月績效統計月報</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/wralawgip/" title="海巡法規 (另開新視窗)" target="_blank">海巡法規</a>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=12015&mp=999&idPath=600_12015" title="核心任務">核心任務</a>
+<ul class="dropdown-menu">
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10088&mp=999" title="維護漁權">維護漁權</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10089&mp=999" title="救生救難">救生救難</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10090&mp=999" title="海域治安">海域治安</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=80516&ctNode=8114&mp=999" title="海洋事務">海洋事務</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/mp?mp=marine" title="海洋保育">海洋保育</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=12046&mp=999&idPath=600_12046" title="便民資訊">便民資訊</a>
+<ul class="dropdown-menu">
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=11585&ctNode=8450&mp=999" title="政府資訊公開">政府資訊公開</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=8453&mp=999&idPath=1168_8448_8453" title="政府資料開放">政府資料開放</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=11462&mp=999&idPath=1277_11462" title="服務據點">服務據點</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=9909&mp=999" title="線上申辦">線上申辦</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=157754&ctNode=1283&mp=999" title="多元服務">多元服務</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=1279&mp=999&idPath=1277_1279" title="射擊通報">射擊通報</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=113950&ctNode=9949&mp=999" title="檔案應用">檔案應用</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=11234&mp=cgapiw&idPath=5560_11234" title="廉政園地">廉政園地</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=12144&mp=999&idPath=1277_12144" title="生態檢核專區">生態檢核專區</a>
+</li>
+<li>
+<a href="np?ctNode=13357&mp=999&idPath=600_12046_13357" title="廠商推薦勤(業)務科技設(裝)備產品申辦須知">廠商推薦勤(業)務科技設(裝)備產品申辦須知</a>
+</li>
+<li>
+<a href="np?ctNode=13500&mp=999&idPath=600_12046_13500" title="因應國際情勢強化經濟社會及民生國安韌性專區">因應國際情勢強化經濟社會及民生國安韌性專區</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=13347&mp=999&idPath=600_13347" title="灰帶專區">灰帶專區</a>
+<ul class="dropdown-menu">
+<li class="dropdown">
+<a href="np?ctNode=13426&mp=999&idPath=600_13347_13426" title="115年">115年</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=13427&mp=999&idPath=600_13347_13426_13427" title="1月">1月</a>
+</li>
+<li>
+<a href="lp?ctNode=13428&mp=999&idPath=600_13347_13426_13428" title="2月">2月</a>
+</li>
+<li>
+<a href="lp?ctNode=13429&mp=999&idPath=600_13347_13426_13429" title="3月">3月</a>
+</li>
+<li>
+<a href="lp?ctNode=13430&mp=999&idPath=600_13347_13426_13430" title="4月">4月</a>
+</li>
+<li>
+<a href="lp?ctNode=13431&mp=999&idPath=600_13347_13426_13431" title="5月">5月</a>
+</li>
+<li>
+<a href="lp?ctNode=13432&mp=999&idPath=600_13347_13426_13432" title="6月">6月</a>
+</li>
+<li>
+<a href="lp?ctNode=13433&mp=999&idPath=600_13347_13426_13433" title="7月">7月</a>
+</li>
+<li>
+<a href="lp?ctNode=13434&mp=999&idPath=600_13347_13426_13434" title="8月">8月</a>
+</li>
+<li>
+<a href="lp?ctNode=13435&mp=999&idPath=600_13347_13426_13435" title="9月">9月</a>
+</li>
+<li>
+<a href="lp?ctNode=13436&mp=999&idPath=600_13347_13426_13436" title="10月">10月</a>
+</li>
+<li>
+<a href="lp?ctNode=13437&mp=999&idPath=600_13347_13426_13437" title="11月">11月</a>
+</li>
+<li>
+<a href="lp?ctNode=13438&mp=999&idPath=600_13347_13426_13438" title="12月">12月</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=13349&mp=999&idPath=600_13347_13349" title="114年">114年</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=13350&mp=999&idPath=600_13347_13349_13350" title="1月">1月</a>
+</li>
+<li>
+<a href="lp?ctNode=13371&mp=999&idPath=600_13347_13349_13371" title="2月">2月</a>
+</li>
+<li>
+<a href="lp?ctNode=13372&mp=999&idPath=600_13347_13349_13372" title="3月">3月</a>
+</li>
+<li>
+<a href="lp?ctNode=13373&mp=999&idPath=600_13347_13349_13373" title="4月">4月</a>
+</li>
+<li>
+<a href="lp?ctNode=13374&mp=999&idPath=600_13347_13349_13374" title="5月">5月</a>
+</li>
+<li>
+<a href="lp?ctNode=13375&mp=999&idPath=600_13347_13349_13375" title="6月">6月</a>
+</li>
+<li>
+<a href="lp?ctNode=13376&mp=999&idPath=600_13347_13349_13376" title="7月">7月</a>
+</li>
+<li>
+<a href="lp?ctNode=13377&mp=999&idPath=600_13347_13349_13377" title="8月">8月</a>
+</li>
+<li>
+<a href="lp?ctNode=13378&mp=999&idPath=600_13347_13349_13378" title="9月">9月</a>
+</li>
+<li>
+<a href="lp?ctNode=13379&mp=999&idPath=600_13347_13349_13379" title="10月">10月</a>
+</li>
+<li>
+<a href="lp?ctNode=13380&mp=999&idPath=600_13347_13349_13380" title="11月">11月</a>
+</li>
+<li>
+<a href="lp?ctNode=13381&mp=999&idPath=600_13347_13349_13381" title="12月">12月</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="np?ctNode=13369&mp=999&idPath=600_13347_13369" title="113年">113年</a>
+<ul class="dropdown-menu">
+<li>
+<a href="lp?ctNode=13370&mp=999&idPath=600_13347_13369_13370" title="1月">1月</a>
+</li>
+<li>
+<a href="lp?ctNode=13382&mp=999&idPath=600_13347_13369_13382" title="2月">2月</a>
+</li>
+<li>
+<a href="lp?ctNode=13383&mp=999&idPath=600_13347_13369_13383" title="3月">3月</a>
+</li>
+<li>
+<a href="lp?ctNode=13384&mp=999&idPath=600_13347_13369_13384" title="4月">4月</a>
+</li>
+<li>
+<a href="lp?ctNode=13385&mp=999&idPath=600_13347_13369_13385" title="5月">5月</a>
+</li>
+<li>
+<a href="lp?ctNode=13386&mp=999&idPath=600_13347_13369_13386" title="6月">6月</a>
+</li>
+<li>
+<a href="lp?ctNode=13387&mp=999&idPath=600_13347_13369_13387" title="7月">7月</a>
+</li>
+<li>
+<a href="lp?ctNode=13388&mp=999&idPath=600_13347_13369_13388" title="8月">8月</a>
+</li>
+<li>
+<a href="lp?ctNode=13389&mp=999&idPath=600_13347_13369_13389" title="9月">9月</a>
+</li>
+<li>
+<a href="lp?ctNode=13390&mp=999&idPath=600_13347_13369_13390" title="10月">10月</a>
+</li>
+<li>
+<a href="lp?ctNode=13391&mp=999&idPath=600_13347_13369_13391" title="11月">11月</a>
+</li>
+<li>
+<a href="lp?ctNode=13392&mp=999&idPath=600_13347_13369_13392" title="12月">12月</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12"></div>
+</div>
+</div>
+</header>
+<section class="section-page">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-left">
+<div class="accesskey">
+<a href="#C" accesskey="C" name="C" title="中央內容區塊">:::</a>
+</div>
+<div class="breadcrumbs">現在位置：<a href="mp?mp=999" title="首頁">首頁</a><span>></span><a href="np?ctNode=650&mp=999" title="海巡新聞" class="active">海巡新聞</a>
+</div>
+</div>
+<div class="col-md-12 text-right">
+<a href="javascript:history.back();" class="btn-normalize right" title="回上頁">
+<div class="btn-back">
+<div class="more">回上頁</div>
+<div class="arrow">
+<img src="/GipOpen/wSite/styles/RWD/images/right-arrow.svg" alt=""></div>
+<noscript>當script無法執行時可按"alt + &larr;"鍵替代</noscript>
+</div>
+</a><a class="btn-normalize right" id="fbShareLink" title="Facebook分享" href="" target="_blank">
+<div class="btn-back">
+<div class="more">
+									Facebook分享
+								</div>
+<div class="arrow">
+<img src="/GipOpen/wSite/styles/RWD/images/share-icon.svg" alt=""></div>
+</div>
+</a><a class="btn-normalize right" id="lineShareLink" title="Line分享" href="" target="_blank">
+<div class="btn-back">
+<div class="more">
+									Line分享
+								</div>
+<div class="arrow">
+<img src="/GipOpen/wSite/styles/RWD/images/share-icon.svg" alt=""></div>
+</div>
+</a><script>
+							$(function($){
+							var fbShare="https://www.facebook.com/sharer.php?u=";
+							var lineShare="https://social-plugins.line.me/lineit/share?url=";
+							var currentUrl =encodeURIComponent(window.location.href);
+
+							$("#fbShareLink").attr("href",fbShare+currentUrl);
+							$("#lineShareLink").attr("href",lineShare+currentUrl);
+							});
+						
+						</script>
+</div>
+</div>
+<div id="zone.content">
+<div class="lp commonlp_rwd">
+<div class="options">
+<div class="accesskey"></div>
+<a class="tab-hr text-center active" href="lp?ctNode=650&mp=999">
+<p class="option-para">全部</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=01&mp=999">
+<p class="option-para">查緝槍毒</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=02&mp=999">
+<p class="option-para">查緝非法入出國</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=03&mp=999">
+<p class="option-para">查緝菸酒農畜品、動物活體</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=08&mp=999">
+<p class="option-para">取締非法越區捕魚</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=04&mp=999">
+<p class="option-para">救生救難救溺</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=05&mp=999">
+<p class="option-para">海洋保育(護永專案)</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=06&mp=999">
+<p class="option-para">澄清說明</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=09&mp=999">
+<p class="option-para">海巡服務</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=10&mp=999">
+<p class="option-para">對應中國海警</p>
+<div class="dots"></div>
+</a><a class="tab-hr text-center" href="lp?ctNode=650&mp=999&xq_xCat=07&mp=999">
+<p class="option-para">其他</p>
+<div class="dots"></div>
+</a>
+</div>
+<h2>
+<span>海巡新聞</span>
+</h2>
+<div class="rss">
+<a target="_rss_" title="RSS訂閱" href="rss?ctNode=650&mp=999"><img src="images/rss.gif" alt="RSS訂閱" title="RSS訂閱"></a>
+</div>
+<section class="section-news">
+<div class="news-wrapper">
+<div class="vertical-hr" style="height:100%"></div>
+<a class="news-list" href="ct?xItem=168608&ctNode=650&mp=999" title="【望安民眾頭部意外受傷 澎湖海巡急赴後送就醫" alt="【望安民眾頭部意外受傷 澎湖海巡急赴後送就醫"><span class="dots"></span><span class="date">115/08/02</span><span class="content">【望安民眾頭部意外受傷 澎湖海巡急赴後送就醫</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168607&ctNode=650&mp=999" title="【花嶼民眾頭部意外受傷 澎湖海巡急赴後送就醫】" alt="【花嶼民眾頭部意外受傷 澎湖海巡急赴後送就醫】"><span class="dots"></span><span class="date">115/08/01</span><span class="content">【花嶼民眾頭部意外受傷 澎湖海巡急赴後送就醫】</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168602&ctNode=650&mp=999" title="中國海警今（31）日聲稱「秀山艦編隊位臺灣以東海域依法開展常態化執法巡查」一事，海巡署調派「台北艦」等艦艇全程掌握與監控，並嚴正駁斥中國「假執法、真擴權」等認知作戰如下：" alt="中國海警今（31）日聲稱「秀山艦編隊位臺灣以東海域依法開展常態化執法巡查」一事，海巡署調派「台北艦」等艦艇全程掌握與監控，並嚴正駁斥中國「假執法、真擴權」等認知作戰如下："><span class="dots"></span><span class="date">115/07/31</span><span class="content">中國海警今（31）日聲稱「秀山艦編隊位臺灣以東海域依法開展常態化執法巡查」一事，海巡署調派「台北艦」等艦艇全程掌握與監控，並嚴正駁斥中國「假執法、真擴權」等認知作戰如下：</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168592&ctNode=650&mp=999" title="海巡署緝毒肅槍　查獲毒品及改造槍械　溯源斷根展現執法決心" alt="海巡署緝毒肅槍　查獲毒品及改造槍械　溯源斷根展現執法決心"><span class="dots"></span><span class="date">115/07/31</span><span class="content">海巡署緝毒肅槍　查獲毒品及改造槍械　溯源斷根展現執法決心</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168591&ctNode=650&mp=999" title="西拉雅原住民族身分獲國家認定 海巡首艘高緯度遠洋巡護船即將承名啟航" alt="西拉雅原住民族身分獲國家認定 海巡首艘高緯度遠洋巡護船即將承名啟航"><span class="dots"></span><span class="date">115/07/30</span><span class="content">西拉雅原住民族身分獲國家認定 海巡首艘高緯度遠洋巡護船即將承名啟航</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168580&ctNode=650&mp=999" title="海巡科技輔勤立功 即刻救援挽回寶貴生命" alt="海巡科技輔勤立功 即刻救援挽回寶貴生命"><span class="dots"></span><span class="date">115/07/29</span><span class="content">海巡科技輔勤立功 即刻救援挽回寶貴生命</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168581&ctNode=650&mp=999" title="中國海警再擾金門海域 海巡強勢驅離捍衛主權" alt="中國海警再擾金門海域 海巡強勢驅離捍衛主權"><span class="dots"></span><span class="date">115/07/29</span><span class="content">中國海警再擾金門海域 海巡強勢驅離捍衛主權</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168576&ctNode=650&mp=999" title="美國在台協會（AIT）於臉書發布聲明，指出「美國海岸防衛隊與臺灣海巡署正緊密協調多項共同的海事目標」案，海洋委員會海巡署說明具體推動成果如下：" alt="美國在台協會（AIT）於臉書發布聲明，指出「美國海岸防衛隊與臺灣海巡署正緊密協調多項共同的海事目標」案，海洋委員會海巡署說明具體推動成果如下："><span class="dots"></span><span class="date">115/07/28</span><span class="content">美國在台協會（AIT）於臉書發布聲明，指出「美國海岸防衛隊與臺灣海巡署正緊密協調多項共同的海事目標」案，海洋委員會海巡署說明具體推動成果如下：</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168577&ctNode=650&mp=999" title="塔瓦溪師生遭蜂螫  海巡即時救援協助送醫" alt="塔瓦溪師生遭蜂螫  海巡即時救援協助送醫"><span class="dots"></span><span class="date">115/07/28</span><span class="content">塔瓦溪師生遭蜂螫  海巡即時救援協助送醫</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168574&ctNode=650&mp=999" title="一袋熱血一份愛 海巡挽袖傳遞溫暖" alt="一袋熱血一份愛 海巡挽袖傳遞溫暖"><span class="dots"></span><span class="date">115/07/28</span><span class="content">一袋熱血一份愛 海巡挽袖傳遞溫暖</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168525&ctNode=650&mp=999" title="綠島漁船驚傳濃煙        海巡消防即時應處" alt="綠島漁船驚傳濃煙        海巡消防即時應處"><span class="dots"></span><span class="date">115/07/26</span><span class="content">綠島漁船驚傳濃煙        海巡消防即時應處</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168526&ctNode=650&mp=999" title="海巡攜手公益 陪伴身障朋友擁抱海洋" alt="海巡攜手公益 陪伴身障朋友擁抱海洋"><span class="dots"></span><span class="date">115/07/26</span><span class="content">海巡攜手公益 陪伴身障朋友擁抱海洋</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168531&ctNode=650&mp=999" title="海象惡劣漁船翻覆　海巡漁友聯手救援" alt="海象惡劣漁船翻覆　海巡漁友聯手救援"><span class="dots"></span><span class="date">115/07/25</span><span class="content">海象惡劣漁船翻覆　海巡漁友聯手救援</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168522&ctNode=650&mp=999" title="颱風警戒執意出港  海巡依法蒐證舉發" alt="颱風警戒執意出港  海巡依法蒐證舉發"><span class="dots"></span><span class="date">115/07/25</span><span class="content">颱風警戒執意出港  海巡依法蒐證舉發</span></a>
+<hr class="divider" style="width:98%">
+<a class="news-list" href="ct?xItem=168523&ctNode=650&mp=999" title="海巡深夜馳援小琉球醫療後送　爭分奪秒護送病患就醫" alt="海巡深夜馳援小琉球醫療後送　爭分奪秒護送病患就醫"><span class="dots"></span><span class="date">115/07/25</span><span class="content">海巡深夜馳援小琉球醫療後送　爭分奪秒護送病患就醫</span></a>
+<hr class="divider" style="width:98%">
+</div>
+</section>
+<div class="page row paginate">
+<div class="col-md-3 label-page">
+<div>共&nbsp;<em>691</em>&nbsp;筆資料第&nbsp;<em>1/47</em>&nbsp;頁</div>
+</div>
+<div class="col-md-6 text-center">
+<a class="prev-btn-last" href="lp?ctNode=650&mp=999&nowPage=1&pagesize=15" title="第一頁"><img src="/GipOpen/wSite/styles/RWD/images/right-arrow-last.svg" alt="第一頁" title="第一頁"></a><a class="active numbering">1</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=2&pagesize=15">2</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=3&pagesize=15">3</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=4&pagesize=15">4</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=5&pagesize=15">5</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=6&pagesize=15">6</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=7&pagesize=15">7</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=8&pagesize=15">8</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=9&pagesize=15">9</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=10&pagesize=15">10</a><a class="next-btn" href="lp?ctNode=650&mp=999&nowPage=2&pagesize=15" title="下一頁"><img src="/GipOpen/wSite/styles/RWD/images/right-arrow.svg" alt="下一頁" title="下一頁"></a><a class="next-btn-last" href="lp?ctNode=650&mp=999&nowPage=47&pagesize=15" title="最後一頁"><img src="/GipOpen/wSite/styles/RWD/images/right-arrow-last.svg" alt="最後一頁" title="最後一頁"></a>
+</div>
+<div class="col-md-3 label-page">
+<span>每頁顯示&nbsp;
+							
+								<a href="javascript:;" class="active numbering">15</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=1&pagesize=45" title="每頁顯示45筆">45</a><a class="numbering" href="lp?ctNode=650&mp=999&nowPage=1&pagesize=300" title="每頁顯示300筆">300</a>筆</span>
+</div>
+<div class="condition">
+<a href="qp?ctNode=650&mp=999" title="條件查詢">條件查詢</a>
+</div>
+</div>
+</div>
+<div class="button-area">
+<a href="#gotocenter" class="gotop btn-normalize left">
+<div class="btn-back">
+<div class="arrow">
+<img src="/GipOpen/wSite/styles/RWD/images/right-arrow.svg" alt=""></div>
+<div class="more">回頁首</div>
+</div>
+</a><a href="javascript:history.back();" class="btn-normalize right">
+<div class="btn-back btn-forward">
+<div class="more">回上頁</div>
+<div class="arrow">
+<img src="/GipOpen/wSite/styles/RWD/images/right-arrow.svg" alt=""></div>
+</div>
+</a>
+<noscript>當script無法執行時可按"alt + &larr;"鍵替代</noscript>
+<div style="display:none;">lp.xsl:NoDeptLPRwd,cp.xsl:NoPoCpRwd</div>
+</div>
+</div>
+</div>
+</section>
+<div id="zone.footer">
+<script type="text/javascript">
+         
+        $(function() {
+            $('.footer-toggle').click(function() {
+                $('.footer-top').slideToggle();
+                $(this).toggleClass('collapse');
+            });
+        });
+        </script>
+<section class="container">
+<div class="row text-center">
+<div class="col-md-12">
+<a href="javascript:;" class="backtop-bg footer-toggle" title="關閉頁腳選單 Close Fatfooter" role="button"><img src="/GipOpen/wSite/styles/RWD/images/top-arrow.svg" alt="關閉頁腳選單 Close Fatfooter"></a>
+</div>
+</div>
+</section>
+<footer>
+<section class="footer-top">
+<div class="container">
+<div class="">
+<div class="footer-wrap">
+<div class="visible-xs visible-sm">
+	                            		<div class="row" style="position:relative;"><hr/>
+
+	                            	<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=601&mp=999&idPath=600_601" title="海巡簡介">海巡簡介</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=781&mp=999&idPath=600_601_781" title="本署簡介">本署簡介</a>
+</li>
+<li>
+<a href="np?ctNode=778&mp=999&idPath=600_601_778" title="署徽意涵">署徽意涵</a>
+</li>
+<li>
+<a href="np?ctNode=1374&mp=999&idPath=600_601_1374" title="舷側標誌">舷側標誌</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=7957&mp=999&idPath=600_7957" title="重大政策">重大政策</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="lp?ctNode=7958&mp=999&idPath=600_7957_7958" title="海洋委員會重大政策">海洋委員會重大政策</a>
+</li>
+<li>
+<a href="lp?ctNode=7959&mp=999&idPath=600_7957_7959" title="本署重大政策">本署重大政策</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=603&mp=999&idPath=600_603" title="施政績效">施政績效</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=11362&mp=999&idPath=600_603_11362" title="年度施政績效報告">年度施政績效報告</a>
+</li>
+<li>
+<a href="np?ctNode=12087&mp=999&idPath=600_603_12087" title="原行政院海岸巡防署各年度施政績效報告歷史資料">原行政院海岸巡防署各年度施政績效報告歷史資料</a>
+</li>
+<li>
+<a href="np?ctNode=11122&mp=999&idPath=600_603_11122" title="本署列管個案計畫評核結果">本署列管個案計畫評核結果</a>
+</li>
+</ul>
+</div>
+	                            		</div>
+	                            	
+	                            		<div class="row" style="position:relative;"><hr/>
+
+	                            	<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=604&mp=999&idPath=600_604" title="海巡統計">海巡統計</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=7125&mp=999&idPath=600_604_7125" title="性別統計專區">性別統計專區</a>
+</li>
+<li>
+<a href="/GipOpen/wSite/public/Data/f2024041209381.pdf?ab=b&idPath=600_604_664" title="統計名詞解釋 (另開新視窗)" target="_blank">統計名詞解釋</a>
+</li>
+<li>
+<a href="https://www.stat.gov.tw/cp.aspx?n=3867&s=1226&selorg=46" title="資料發布時間 (另開新視窗)" target="_blank">資料發布時間</a>
+</li>
+<li>
+<a href="np?ctNode=8755&mp=999&idPath=600_604_8755" title="海巡統計書刊">海巡統計書刊</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="http://www.cga.gov.tw/wralawgip/" title="海巡法規 (另開新視窗)" target="_blank">海巡法規</a>
+</p>
+<div class="dots"></div>
+<ul></ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=12015&mp=999&idPath=600_12015" title="核心任務">核心任務</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10088&mp=999" title="維護漁權">維護漁權</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10089&mp=999" title="救生救難">救生救難</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10090&mp=999" title="海域治安">海域治安</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=80516&ctNode=8114&mp=999" title="海洋事務">海洋事務</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/mp?mp=marine" title="海洋保育">海洋保育</a>
+</li>
+</ul>
+</div>
+	                            		</div>
+	                            	
+	                            		<div class="row" style="position:relative;"><hr/>
+
+	                            	<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=12046&mp=999&idPath=600_12046" title="便民資訊">便民資訊</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=11585&ctNode=8450&mp=999" title="政府資訊公開">政府資訊公開</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=8453&mp=999&idPath=1168_8448_8453" title="政府資料開放">政府資料開放</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=11462&mp=999&idPath=1277_11462" title="服務據點">服務據點</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=9909&mp=999" title="線上申辦">線上申辦</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=157754&ctNode=1283&mp=999" title="多元服務">多元服務</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=1279&mp=999&idPath=1277_1279" title="射擊通報">射擊通報</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=113950&ctNode=9949&mp=999" title="檔案應用">檔案應用</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=11234&mp=cgapiw&idPath=5560_11234" title="廉政園地">廉政園地</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=12144&mp=999&idPath=1277_12144" title="生態檢核專區">生態檢核專區</a>
+</li>
+<li>
+<a href="np?ctNode=13357&mp=999&idPath=600_12046_13357" title="廠商推薦勤(業)務科技設(裝)備產品申辦須知">廠商推薦勤(業)務科技設(裝)備產品申辦須知</a>
+</li>
+<li>
+<a href="np?ctNode=13500&mp=999&idPath=600_12046_13500" title="因應國際情勢強化經濟社會及民生國安韌性專區">因應國際情勢強化經濟社會及民生國安韌性專區</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=13347&mp=999&idPath=600_13347" title="灰帶專區">灰帶專區</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=13426&mp=999&idPath=600_13347_13426" title="115年">115年</a>
+</li>
+<li>
+<a href="np?ctNode=13349&mp=999&idPath=600_13347_13349" title="114年">114年</a>
+</li>
+<li>
+<a href="np?ctNode=13369&mp=999&idPath=600_13347_13369" title="113年">113年</a>
+</li>
+</ul>
+</div>
+	                            		</div>
+	                            	</div>
+<div class="hidden-xs hidden-sm">
+	                            		<div class="row" style="position:relative;"><hr/>
+	                            	<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=601&mp=999&idPath=600_601" title="海巡簡介">海巡簡介</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=781&mp=999&idPath=600_601_781" title="本署簡介">本署簡介</a>
+</li>
+<li>
+<a href="np?ctNode=778&mp=999&idPath=600_601_778" title="署徽意涵">署徽意涵</a>
+</li>
+<li>
+<a href="np?ctNode=1374&mp=999&idPath=600_601_1374" title="舷側標誌">舷側標誌</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=7957&mp=999&idPath=600_7957" title="重大政策">重大政策</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="lp?ctNode=7958&mp=999&idPath=600_7957_7958" title="海洋委員會重大政策">海洋委員會重大政策</a>
+</li>
+<li>
+<a href="lp?ctNode=7959&mp=999&idPath=600_7957_7959" title="本署重大政策">本署重大政策</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=603&mp=999&idPath=600_603" title="施政績效">施政績效</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=11362&mp=999&idPath=600_603_11362" title="年度施政績效報告">年度施政績效報告</a>
+</li>
+<li>
+<a href="np?ctNode=12087&mp=999&idPath=600_603_12087" title="原行政院海岸巡防署各年度施政績效報告歷史資料">原行政院海岸巡防署各年度施政績效報告歷史資料</a>
+</li>
+<li>
+<a href="np?ctNode=11122&mp=999&idPath=600_603_11122" title="本署列管個案計畫評核結果">本署列管個案計畫評核結果</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=604&mp=999&idPath=600_604" title="海巡統計">海巡統計</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=7125&mp=999&idPath=600_604_7125" title="性別統計專區">性別統計專區</a>
+</li>
+<li>
+<a href="/GipOpen/wSite/public/Data/f2024041209381.pdf?ab=b&idPath=600_604_664" title="統計名詞解釋 (另開新視窗)" target="_blank">統計名詞解釋</a>
+</li>
+<li>
+<a href="https://www.stat.gov.tw/cp.aspx?n=3867&s=1226&selorg=46" title="資料發布時間 (另開新視窗)" target="_blank">資料發布時間</a>
+</li>
+<li>
+<a href="np?ctNode=8755&mp=999&idPath=600_604_8755" title="海巡統計書刊">海巡統計書刊</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="http://www.cga.gov.tw/wralawgip/" title="海巡法規 (另開新視窗)" target="_blank">海巡法規</a>
+</p>
+<div class="dots"></div>
+<ul></ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=12015&mp=999&idPath=600_12015" title="核心任務">核心任務</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10088&mp=999" title="維護漁權">維護漁權</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10089&mp=999" title="救生救難">救生救難</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=10090&mp=999" title="海域治安">海域治安</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=80516&ctNode=8114&mp=999" title="海洋事務">海洋事務</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/mp?mp=marine" title="海洋保育">海洋保育</a>
+</li>
+</ul>
+</div>
+	                            		</div>
+	                            	
+	                            		<div class="row" style="position:relative;"><hr/>
+	                            	<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=12046&mp=999&idPath=600_12046" title="便民資訊">便民資訊</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=11585&ctNode=8450&mp=999" title="政府資訊公開">政府資訊公開</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=8453&mp=999&idPath=1168_8448_8453" title="政府資料開放">政府資料開放</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/np?ctNode=11462&mp=999&idPath=1277_11462" title="服務據點">服務據點</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=9909&mp=999" title="線上申辦">線上申辦</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=157754&ctNode=1283&mp=999" title="多元服務">多元服務</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=1279&mp=999&idPath=1277_1279" title="射擊通報">射擊通報</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=113950&ctNode=9949&mp=999" title="檔案應用">檔案應用</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=11234&mp=cgapiw&idPath=5560_11234" title="廉政園地">廉政園地</a>
+</li>
+<li>
+<a href="http://www.cga.gov.tw/GipOpen/wSite/lp?ctNode=12144&mp=999&idPath=1277_12144" title="生態檢核專區">生態檢核專區</a>
+</li>
+<li>
+<a href="np?ctNode=13357&mp=999&idPath=600_12046_13357" title="廠商推薦勤(業)務科技設(裝)備產品申辦須知">廠商推薦勤(業)務科技設(裝)備產品申辦須知</a>
+</li>
+<li>
+<a href="np?ctNode=13500&mp=999&idPath=600_12046_13500" title="因應國際情勢強化經濟社會及民生國安韌性專區">因應國際情勢強化經濟社會及民生國安韌性專區</a>
+</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-4">
+<p class="p-no-title-css">
+<a href="np?ctNode=13347&mp=999&idPath=600_13347" title="灰帶專區">灰帶專區</a>
+</p>
+<div class="dots"></div>
+<ul>
+<li>
+<a href="np?ctNode=13426&mp=999&idPath=600_13347_13426" title="115年">115年</a>
+</li>
+<li>
+<a href="np?ctNode=13349&mp=999&idPath=600_13347_13349" title="114年">114年</a>
+</li>
+<li>
+<a href="np?ctNode=13369&mp=999&idPath=600_13347_13369" title="113年">113年</a>
+</li>
+</ul>
+</div>
+	                            		</div>
+	                            	</div>
+</div>
+</div>
+</div>
+</section>
+<section class="footer-bottom">
+<div class="container">
+<div class="row">
+<div class="col-md-9"><ul>
+    <li><a href="ct?xItem=5203&ctNode=1193&mp=999">隱私權保護宣告</a></li>
+    <li><a href="ct?xItem=4277&ctNode=1194&mp=999">資通安全政策</a></li>
+    <li><a href="ct?xItem=28755&ctNode=3233&mp=999">資料開放宣告</a></li>
+</ul>
+<p>海洋委員會海巡署版權所有 copyright 2009  海巡報案專線：118<br />
+地址：116080台北市文山區興隆路3段296號　電話：(02)2239-9201<br />
+本網站支援IE、Firefox及Chrome瀏覽器，最佳瀏覽解析度 1024x768</p>
+<p class="accessibility">
+
+<a target="_blank" href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260604155009" title="無障礙網站">
+<img src="/GipOpen/wSite/images/aa.png" border="0" width="88" height="31" alt=通過AA檢測等級無障礙網頁檢測" /></a>
+<a target="_blank" href="https://www.gov.tw/" title="我的e政府(另開新視窗)">
+    <img src="/GipOpen/wSite/images/EV2.png" border="0"  alt="我的e政府" /></a>
+</p><span class="update">更新日期<em>115年08月02日</em></span>
+        &nbsp;
+        
+        <span class="visitor">瀏覽人次<em>66975095</em></span>
+</div>
+<div class="col-md-3"></div>
+</div>
+</div>
+</section>
+</footer>
+</div>
+</div>
+<script type="text/javascript">
+				(function($)
+				{
+					jQuery.fn.setfocus = function(){
+						return this.each(function(){
+							var dom = this;
+							setTimeout(function(){
+								try { dom.focus(); } 
+								catch (e) { } 
+							}, 0);
+						});
+					};
+				})(jQuery);
+				
+				$(document).ready(function() {
+					var pathname = location.pathname;
+					var search = location.search;
+					if(pathname.indexOf("sitemap") >= 0){
+						if(search.indexOf("mp=en") == -1){
+							document.title = document.title + "-網站導覽";
+						}else{
+                            document.title = document.title + "-sitemap";
+                        }
+					}
+					
+					//重新設定首頁tab順序
+					//head and menu and banner = 100起跳
+					$('#zone\\.head,#home\\.menu,#home\\.banner').find('a').each(function(item, value) {
+						//Mod by 佳諭 20230614 tabindex順序問題
+                        
+                        $(this).attr('tabindex', 0);
+					});
+					
+					//全站搜尋
+					$(".search").click(function () {
+						var tabindex = $(this).attr('tabindex');
+						$('input[id="site-search"]').attr('tabindex', tabindex);
+						$('input[value="搜尋"]').attr('tabindex', tabindex);
+						$('input[name="進階搜尋"]').attr('tabindex', tabindex);
+						$('a[href^="https://www.google.com.tw/search"]').each(function() {
+							$(this).attr('tabindex', tabindex);
+						});
+						$('input[id="site-search"]').setfocus();
+					});
+						
+					$('a[title="海巡機關(另開視窗)"]').blur(function () {
+						$(".search").trigger("click");
+					});
+				});
+			</script>
+</body>
+</html>

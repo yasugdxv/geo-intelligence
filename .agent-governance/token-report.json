@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "scope_status": "partial",
+  "generated_at": "2026-09-16T07:20:00Z",
+  "source_revision": "e08567c8492a3d5d7e5245424725b72392190a29+uncommitted (see integrity-report.json)",
+  "confidence": "MEDIUM",
+  "baseline": {
+    "type": "measured",
+    "measured_latencies_sec": {
+      "generate_scenarios": [87.4],
+      "refine_design": [95.5, 86.6, 90.6],
+      "extract_learning": [42.2, 41.3, 12.7]
+    },
+    "note": "Latency only -- this pilot's real HTTP client did not capture provider-side token/usage counters (no usage JSONL exists for these calls), so no cost_usd or exact input/output token split is reported. Do not infer cost from latency alone."
+  },
+  "findings": [
+    {
+      "id": "TOK-1",
+      "waste_dimensions": ["reliability"],
+      "evidence_type": "measured",
+      "confidence": "HIGH",
+      "title": "generate-scenarios and refine-design each take 87-96 seconds per call with no client-visible progress signal, and this pilot directly observed a mid-flight server restart destroying one such in-flight call",
+      "evidence": "evaluation_record_A/B/C.json timings_sec; the Case C ConnectionResetError incident during refine-design (see security-report.json REL-2)",
+      "recommendation": "Not a token-count issue -- the latency is dominated by the underlying Expert AI engine's own multi-stage reasoning (out of this IOS effort's scope to change, per the absolute condition against touching Expert AI core). The actionable item is purely operational: any real pilot client calling these IOS endpoints should set a generous timeout (>=180s, matching this project's own existing WEEKLY_MONITORING_TIMEOUT_SECONDS precedent in geo_intelligence_api.py) and a resume-from-session-id pattern (already present in this pilot's own driver script) rather than retry-from-scratch."
+    },
+    {
+      "id": "TOK-2",
+      "waste_dimensions": ["cost", "reliability"],
+      "evidence_type": "measured",
+      "confidence": "MEDIUM",
+      "title": "build_learning_source_package (geo_ios_learning_extraction_service.py:49-75) fetches full scenario_candidates and the entire design_history list from the DB on every extract-learning call, but _build_user_prompt (line 239) only ever reads design_history[0] and design_history[-1] and never touches scenario_candidates at all",
+      "evidence": "geo_ios_learning_extraction_service.py:56-60 (fetches session_service.list_scenario_candidates + full list_design_history) vs. :242-243 (only index [0] and [-1] used) and :268 (scenario_candidates never referenced)",
+      "recommendation": "Not an LLM token/cost issue (the unused data is never sent to the model -- _build_user_prompt is already appropriately lean, sending only a 3-field initial/final design summary plus eligible comments). This is a pure DB round-trip waste: an extra Postgrest query and payload transfer for data that is immediately discarded. Low priority (P3) since it does not affect LLM cost or output quality, and the extra round-trip is small relative to the 12-42s the LLM call itself takes -- but simple to fix by not calling list_scenario_candidates at all here, and having list_design_history accept a way to fetch only first+last if this becomes a real cost concern."
+    },
+    {
+      "id": "TOK-3",
+      "waste_dimensions": ["quality"],
+      "evidence_type": "measured",
+      "confidence": "HIGH",
+      "title": "_build_user_prompt's design-summary payload is well-scoped (investigation_question/key_actors/hypotheses only, not the full Analysis Design object with watch_points/knowledge_gaps/assumptions/evidence_needed/known_evidence)",
+      "evidence": "geo_ios_learning_extraction_service.py:256-270",
+      "recommendation": "No change needed -- flagged as a positive finding, not a waste finding, since this project's own convention elsewhere (e.g. Phase E/G Problem Solving notes) shows deliberate attention to prompt scoping. Recorded so a future reviewer doesn't have to re-derive that this was already checked."
+    }
+  ],
+  "limitations": [
+    {"item": "No provider-side token/usage counters were captured during this pilot (no usage JSONL instrumentation exists for the IOS endpoints today)", "reason": "out of scope for Phase I-A per the user's instruction not to add new instrumentation/tuning during the pilot; latency was the only metric this pilot's driver script happened to capture", "by_design": true},
+    {"item": "Did not review Expert AI's own internal prompt construction (geo_expert_engine.py/geo_expert_schema.py) even though it is the actual dominant cost/latency driver for generate-scenarios/refine-design", "reason": "absolute condition of this whole effort: do not touch or audit Expert AI core reasoning as part of the IOS work; those files are also outside this conversation's authorship per integrity-report.json", "by_design": true}
+  ]
+}

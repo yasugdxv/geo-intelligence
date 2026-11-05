@@ -1,0 +1,183 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82542,
+    "completion_tokens": 11964,
+    "total_tokens": 94506
+  },
+  "wall_clock_seconds": 823.2699043750763,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "米国の対中先端半導体・AI輸出規制（および関連投資規制）の強度と範囲",
+    "selection_rationale": "提供情報が限定される中でも、半導体・AI規制の局面を最も直接的に規定しているのは、米国がどの技術・製品・企業をどの程度の強度で規制対象にしているかという点であり、これが中国側の対応や企業の戦略、同盟国の追随・距離感を左右する中核変数と考えられるため。中国の技術自立や米国内政治、安全保障環境も重要だが、現時点では米国の規制枠組みが最も政策的に可視化され、企業行動に直結している。",
+    "control_type": "institutionally_constrained",
+    "confidence": "低",
+    "candidate_key_points_count": 4,
+    "candidate_key_points": [
+      "米国の対中先端半導体・AI輸出規制（および関連投資規制）の強度と範囲",
+      "中国の「技術自立・国産化」戦略の進捗と実効性",
+      "米国内政治（選挙・議会・支持基盤）における対中強硬・産業保護のコンセンサス",
+      "台湾海峡・東アジア安全保障環境の緊張水準"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "中国の「技術自立・国産化」戦略の進捗と実効性",
+        "why_not_primary": "長期的には決定的な要因だが、現時点での観測可能性が低く、短期の政策変化や企業のコンプライアンス判断を直接規定する変数としては、米国の規制強度・範囲ほど即時性が高くないため。"
+      },
+      {
+        "key_point": "米国内政治（選挙・議会・支持基盤）における対中強硬・産業保護のコンセンサス",
+        "why_not_primary": "規制の方向性を制約する重要な背景だが、具体的な規制内容・タイミングは依然として行政機関・大統領の裁量に左右される部分が大きく、Key Pointとしては一段上位の政治環境要因と位置づけた。"
+      }
+    ],
+    "disconfirming_signal": "米国が対中先端半導体・AI輸出規制を大幅に撤廃・緩和し、代わりに別の手段（例：完全な関税撤廃や全面的な技術協力）へと転換するような公式決定が行われた場合、Key Pointを「米国規制の強度と範囲」に置く前提自体を見直す必要が生じる。",
+    "evidence_class": "model_general_knowledge"
+  },
+  "actors": [
+    {
+      "actor_ref": "trump",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 2,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": true,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    },
+    {
+      "actor_ref": "xi",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 2,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": true,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "unresolved": 2,
+    "rejected": 1
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "米中間の半導体・AI規制は、米国の制度化された輸出管理・投資規制を軸に、中国の技術自立戦略と相互作用しながら、中長期的な技術・産業分断プロセスとして進行している。米国側では、政権交代や個々の指導者の取引志向にもかかわらず、議会・安全保障コミュニティ・世論の対中強硬コンセンサスが規制の大枠を維持し、中国側では、経済コストを負いつつも先端技術の国産化・迂回路構築を進める。短期的には、交渉や経済状況に応じて規制の強度・対象が調整されるが、全体としては「完全な緩和」よりも「管理されたデカップリング」に近い方向へ進む可能性が高い。",
+    "historical_analogies_used": [
+      {
+        "same_actor": false,
+        "description": "冷戦期の対ソ連輸出規制（CoCom）と技術デカップリング",
+        "same_domain": false,
+        "analogy_strength": "weak",
+        "same_constraints": false,
+        "same_leverage_mechanism": true,
+        "analogy_source_precedent_id": null,
+        "same_institutional_structure": false
+      }
+    ]
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 5,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "現在有効な対中半導体・AI輸出規制の具体的内容と改定履歴は何か",
+      "rationale": "規制の具体的内容を把握することで、主シナリオの実証的裏付けを強化できる。",
+      "related_hypothesis": "米国規制が構造的な技術分断を進めているという主シナリオ",
+      "recommended_sources": "米商務省・財務省の公式文書、専門情報ベンダーの制裁・輸出管理データベース"
+    },
+    {
+      "priority": "高",
+      "question": "中国の先端半導体・AI技術自立の実際の進捗はどの程度か",
+      "rationale": "中国の実力次第で、規制の実効性と長期的な分断の程度が大きく変わる。",
+      "related_hypothesis": "中国が技術自立を通じて米国規制の効果を相殺しようとしているという仮説",
+      "recommended_sources": "技術分析レポート、業界データ、専門家インタビュー"
+    },
+    {
+      "priority": null,
+      "question": "現在有効な対中半導体・AI輸出規制の具体的内容（対象技術・企業・地域）と直近の改定動向は何か。",
+      "rationale": "Key Point（米国規制の強度と範囲）とMain Scenarioの実証的裏付けを強化するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "米国内での対中技術規制に関する議会・産業ロビー・安全保障コミュニティの立場はどのように分布しているか。",
+      "rationale": "Key Stakeholder（議会・産業界）の目的と制約を精緻化し、Preference-Action Gapの説明力を高めるため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "中国の先端半導体製造・設計能力（ノード世代・生産量・装置調達）の実際の進捗はどの程度か。",
+      "rationale": "中国の技術自立戦略（Secondary Hinge）の実効性を評価し、米国規制の長期的効果を判断するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 3,
+  "quality_guard": {
+    "passed_count": 32,
+    "failed_count": 2,
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "confidence_adjustments": [
+      "key_point_assessment"
+    ],
+    "control_type_adjustments": [],
+    "historical_evidence_separations": [],
+    "actor_evidence_separations": [],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]",
+      "key_actor_profiles[1]"
+    ]
+  },
+  "executive_summary": {
+    "what_changed": "安全保障・通商・産業政策が一体化した「技術地政学」の中で、半導体・AI規制が米中関係の中心的な争点となりつつあり、政権交代や個々の指導者の意向にかかわらず、構造的な技術覇権競争が続く可能性が高まっている。",
+    "why_it_matters": "半導体・AIは多くの産業の基盤であり、規制・制裁の強化は、企業のサプライチェーン・投資・市場戦略に中長期的な影響を与える。特に中国市場や中国由来のサプライチェーンに依存する事業では、規制の方向性が事業継続性に直結する。",
+    "what_to_watch_decide": "最新の対中半導体・AI規制の内容・改定、米国内政治・中国の技術自立の進捗、台湾海峡・東アジアの安全保障環境を継続的にモニタリングし、自社のサプライチェーン・投資・市場ポートフォリオをどの程度「中国依存」から多角化するかを検討する必要がある。"
+  },
+  "one_line_assessment": "現在の米中間の半導体・AI規制は、「米国による対中先端技術アクセス制限」と「中国側の技術自立・迂回路構築」が相互に強化し合う構造にあり、単発の制裁ではなく中長期の技術・産業分断プロセスとして進行している可能性が高い（ただし、提供情報は限定的であり、詳細は仮説レベル）。",
+  "initial_anomaly": "半導体・AI規制が、従来の安全保障・軍事転用リスクだけでなく、国内雇用保護や産業政策、対中交渉カードとしても使われており、「安全保障規制」と「産業保護・取引材料」が混在している点。"
+}

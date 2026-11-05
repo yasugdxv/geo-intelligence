@@ -1,0 +1,945 @@
+{
+  "request": {
+    "request_id": "b0a6b689-a8d4-4849-8988-41606ccea11b",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "EUの対ロシア制裁パッケージの更新・延長プロセスをめぐる現在の局面について、主要な意思決定主体、それぞれの目的、現在の力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-03T05:12:06.686948+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "2032c6e2-c71c-4b9f-9893-e9736e40026e",
+    "request_id": "b0a6b689-a8d4-4849-8988-41606ccea11b",
+    "document_ids": [
+      "498d8c74-8c28-4809-b411-e842848ee242"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T05:12:07.702167+00:00"
+  },
+  "response": {
+    "response_id": "89db0b5f-ae25-45b0-9446-f1269e8ea35f",
+    "request_id": "b0a6b689-a8d4-4849-8988-41606ccea11b",
+    "source_pack_id": "2032c6e2-c71c-4b9f-9893-e9736e40026e",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "EU理事会は、ロシアのウクライナに対する侵略戦争に対応する経済制裁を延長する決定を行った。",
+          "claim_type": "official_claim",
+          "source_ref": "498d8c74-8c28-4809-b411-e842848ee242"
+        },
+        {
+          "text": "対ロシア制裁の決定・延長は、EU条約に基づき、加盟国政府が参加する理事会（通常は外相会合または首脳会合）で採択される。",
+          "claim_type": "fact",
+          "source_ref": "498d8c74-8c28-4809-b411-e842848ee242"
+        },
+        {
+          "text": "EUはロシアの侵略開始以降、複数回にわたり制裁パッケージを更新・拡張しつつ、既存措置の延長を繰り返している。",
+          "claim_type": "observation",
+          "source_ref": "498d8c74-8c28-4809-b411-e842848ee242"
+        },
+        {
+          "text": "現時点での延長決定は、EUとして対ロ抑止・ウクライナ支援の政治的コミットメントを維持する意思を示すものであり、制裁疲れよりも安全保障上の懸念が優先されていることを示唆する。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "制裁延長プロセスでは、制裁の枠組み自体の維持には大きな異論は少ない一方、個別品目・例外・エネルギー関連・第三国経由の迂回対策などをめぐり、加盟国間で調整・駆け引きが続いている可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "対ロ制裁の維持・強化によって、(1) ロシア政府・軍・関連産業の資金調達・技術アクセスが制約される一方、(2) EU域内ではエネルギー価格・特定産業（化学、金属、機械など）・対ロ輸出企業に負担が生じる。安全保障上は、東欧・北欧諸国（ポーランド、バルト三国など）の対ロ抑止志向が強く、制裁維持・強化を支持しやすい。他方、エネルギー依存度が高かった国や、対ロ経済関係の大きい国（ドイツ、イタリア、ハンガリーなど）は、制裁の設計・例外・タイミングに関して慎重姿勢を取りやすい。結果として、EU理事会内で「制裁枠組み維持は合意しつつ、細部での調整・取引」が続く構造になっていると推定される。",
+      "stakeholders": [
+        {
+          "actor": "EU理事会（加盟国政府の集合としての主体）",
+          "purpose": "EU全体としての安全保障・法の支配・対外政策の一貫性を維持しつつ、加盟国の利益を調整すること。",
+          "leverage": "加盟国の安全保障認識",
+          "position": "今回の延長局面では、対ロ制裁枠組みを維持しつつ、加盟国間の負担・例外・新規措置を調整し、全加盟国が受け入れ可能な延長案を採択すること。",
+          "red_lines": "ロシアの侵略戦争が継続し、重大な戦争犯罪・領土占領が続く限り、対ロ制裁枠組み自体の全面解除は受け入れにくいと推定される。",
+          "confidence": "低",
+          "constraints_fears": "エネルギー・産業負担",
+          "ability_to_move_or_block": "加盟国間の合意が形成されれば、制裁の延長・強化・緩和を制度的に決定できる。"
+        },
+        {
+          "actor": "東欧・北欧の安全保障フロントライン諸国（ポーランド、バルト三国、フィンランドなど）",
+          "purpose": "対ロ抑止を最大化し、自国領域とNATO/EU東側の安全保障を確保する。",
+          "leverage": "安全保障フロントラインとしての発言力、NATO内での役割、対ロ脅威認識の高さを背景にした道義的レバレッジ。",
+          "position": "制裁延長・強化を一貫して支持し、理事会内で『最低ライン』を高める方向に働きやすい。",
+          "priority": "高い安全保障優先度のもと、制裁維持・強化を支持する立場を維持する可能性が高い。",
+          "red_lines": "ロシアへの大幅な制裁緩和や、ウクライナ支援の明確な後退。",
+          "confidence": "中",
+          "constraints_fears": "ロシアの軍事的・ハイブリッドな圧力の増大、同盟国の制裁疲れによる対ロ抑止の弱体化。",
+          "key_relationships": "ドイツ・フランスなど大国との協調、米国・NATOとの安全保障連携。",
+          "ability_to_move_or_block": "単独で決定を動かす力は限定的だが、集団として強硬ラインを形成することで、制裁緩和案を政治的に通しにくくする力を持つ。"
+        },
+        {
+          "actor": "ドイツ・フランスなどEU大国",
+          "purpose": "欧州全体の安定と自国経済・産業の維持を両立させつつ、対ロ抑止と対ウクライナ支援を継続する。",
+          "leverage": "EU内での経済規模・政治的影響力、理事会・欧州理事会での議題設定力。",
+          "position": "制裁延長には賛成しつつ、例外・負担軽減措置の組み込みを重視する調整役。",
+          "priority": "安全保障と経済のバランスを取りながら、制裁枠組み維持を基本線としつつ、負担管理に高い優先度を置く。",
+          "red_lines": "ロシアへの全面的な制裁解除や、EUの対ロ抑止姿勢の根本的後退。",
+          "confidence": "中",
+          "constraints_fears": "エネルギー・産業負担が国内政治不安定化や産業競争力低下につながること。",
+          "key_relationships": "東欧・北欧諸国との安全保障協調、南欧諸国との経済協調、米国との同盟関係。",
+          "ability_to_move_or_block": "複数国と連携することで制裁パッケージの方向性を大きく動かす力を持つが、単独で延長を阻止する構造ではない。"
+        },
+        {
+          "actor": "エネルギー依存度が高く、対ロ経済関係の大きい加盟国（例：ハンガリーなど）",
+          "purpose": "自国のエネルギー安全保障と経済利益を守りつつ、EU内での政治的ポジションを維持する。",
+          "leverage": "理事会での一致要件を背景にした『遅延・拒否権的』レバレッジ。",
+          "position": "制裁延長には形式的に同意しつつ、例外・猶予・特別扱いを求める条件付き支持の立場を取りやすい。",
+          "priority": "制裁による自国負担の軽減・例外確保に高い優先度を置く。",
+          "red_lines": "自国にとって致命的なエネルギー・産業負担を伴う制裁強化。",
+          "confidence": "中",
+          "constraints_fears": "エネルギー価格高騰や供給不安による国内不満、EU内での孤立。",
+          "key_relationships": "近隣諸国とのエネルギー協力、EU内での交渉関係。",
+          "ability_to_move_or_block": "単独で延長を完全に阻止するかは制度詳細次第だが、決定を遅らせたり、内容修正を迫る力を持ち得る。"
+        },
+        {
+          "actor": "欧州委員会",
+          "purpose": "EU全体の対ロ制裁政策を一貫性・法的安定性をもって設計・実施する。",
+          "leverage": "制裁案の起草権、実施・監視に関する行政能力。",
+          "position": "延長・更新の技術的設計を主導しつつ、加盟国の政治的要求を織り込む調整役。",
+          "priority": "制裁枠組みの技術的整合性と迂回対策の強化、加盟国間の調整支援。",
+          "red_lines": "EU法に反する制裁緩和や、制度的枠組みの崩壊。",
+          "confidence": "中",
+          "constraints_fears": "加盟国間の分裂により、制裁政策の信頼性が損なわれること。",
+          "key_relationships": "EU理事会、加盟国政府、企業・金融機関との関係。",
+          "ability_to_move_or_block": "法的枠組みの設計を通じて制裁の形を大きく動かせるが、延長の有無そのものは理事会決定に依存する。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "ロシアのウクライナに対する侵略戦争が継続しており、EUの安全保障認識に大きな変化がない。",
+          "EU理事会の制裁決定手続き（コンセンサス要件）は現状維持であり、制度変更が行われていない。",
+          "加盟国間に制裁疲れや負担への不満は存在するものの、完全な解除を求める多数派は形成されていない。"
+        ],
+        "description": "提供資料に基づく現時点の主シナリオは、EUの対ロ経済制裁は大枠維持・延長が基本線であり、EU理事会のコンセンサス要件のもとで、加盟国間の安全保障認識・エネルギー・産業負担・対米・対ウクライナ関係を調整しながら、定期的に延長決定が行われているというものである。制裁枠組みの解除・大幅緩和は、ロシアの軍事行動の大きな変化（停戦・撤退など）や、EU内部の政治的地殻変動がない限り、短期的には主シナリオとしては蓋然性が低い。今後も、延長を前提としたパッケージ更新が続きつつ、第三国経由の迂回対策や新技術・金融手段への制裁拡張などが議論される局面が続くとみられる。",
+        "evidence_class": "current_direct_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "理事会が対ロ制裁の延長を決定したという事実は、「制裁枠組みの維持・延長が基本線」という主シナリオを直接裏付ける。",
+            "evidence_id": "498d8c74-8c28-4809-b411-e842848ee242",
+            "source_type": "primary_official",
+            "claim_relevance": "direct"
+          }
+        ],
+        "selection_rationale": "H0（制度上の自動延長・ルーチン）と、H2（安全保障構造）、H1（加盟国の負担分配をめぐる駆け引き）を比較すると、提供資料が直接示すのは「理事会による延長決定」という結果であり、これを最も普通に読むと「EUは対ロ制裁枠組みを維持し続ける方針で、定期的に延長している」となる。解除・大幅緩和を主シナリオとするには、ロシアの行動やEU内部政治の大きな変化に関する追加Evidenceが必要だが、現時点では提示されていないため、延長維持シナリオを主軸とした。",
+        "supporting_evidence": [
+          "498d8c74-8c28-4809-b411-e842848ee242"
+        ],
+        "observable_indicators": [
+          "EU理事会・欧州委員会による次回制裁パッケージの案内・延長決定の頻度と内容。",
+          "加盟国政府の公式声明（対ロ制裁の維持・強化・緩和に関する立場）。",
+          "ロシアの軍事行動・停戦交渉の進展状況。",
+          "EU域内のエネルギー価格・産業指標と、それに対する政治的反応（抗議、ロビー活動など）。"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "対ロ制裁枠組みの維持・延長は、ロシアとの貿易・投資・金融取引に関わる企業に継続的な制約を与えるほか、エネルギー価格・特定原材料の供給に影響し得る。特に、ロシア産エネルギー・金属・化学品への依存度が高い企業・サプライチェーンでは、代替調達・価格変動リスクへの対応が必要となる。",
+        "unrelated_note": null,
+        "environment_change": "EUの対ロ制裁が中期的に維持される前提は、欧州市場におけるロシア関連リスクを「構造的前提」として組み込む必要があることを意味する。新規投資・長期契約・サプライチェーン設計において、ロシア関連の制裁リスク・政治リスクを恒常的要因として扱う必要がある。"
+      },
+      "initial_anomaly": "ロシアの侵略開始から時間が経過しても、EUが大規模な経済制裁パッケージを繰り返し延長し続けている点。通常であれば、エネルギー・産業への負担や加盟国間の温度差から制裁疲れ・緩和圧力が強まりやすいが、公式には「延長」が比較的一貫して打ち出されている。これは、政治的・制度的な制約と、対ロ抑止・対米・対ウクライナ関係を優先する力学が依然として強いことを示唆する。",
+      "review_findings": null,
+      "audience_analysis": [],
+      "executive_summary": {
+        "what_changed": "EU理事会が対ロ経済制裁の延長を決定したことで、対ロ制裁枠組みが中期的に維持されるという前提が再確認された。",
+        "why_it_matters": "対ロ制裁の維持は、欧州の安全保障・対米・対ウクライナ関係に加え、エネルギー・原材料・金融取引に関わる企業の事業環境を規定する。延長が続く限り、ロシア関連リスクは一時的なものではなく構造的前提として扱う必要がある。",
+        "what_to_watch_decide": "次回以降の制裁パッケージの内容と、主要加盟国の立場の変化をモニタリングし、自社のロシア関連エクスポージャー（貿易・サプライチェーン・金融取引）を棚卸しした上で、代替調達・リスク分散・契約条件の見直しなどの選択肢を検討する。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "EU理事会（加盟国政府の集合としての主体）",
+          "red_line": "ロシアの侵略戦争が継続し、重大な戦争犯罪・領土占領が続く限り、対ロ制裁枠組み自体の全面解除は受け入れにくいと推定される。",
+          "actor_ref": "EU_Council_collective",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "EU条約に基づき、対外制裁を含む共通外交・安全保障政策に関する決定を採択する。",
+          "evidence_ids": [
+            "498d8c74-8c28-4809-b411-e842848ee242"
+          ],
+          "decision_power": "対ロ制裁パッケージの採択・延長・修正について、加盟国政府の合意に基づき最終決定権を持つ。",
+          "driving_forces": [
+            {
+              "force": "加盟国の安全保障認識",
+              "direction": "supporting",
+              "description": "ロシアの侵略戦争を重大な脅威とみなす加盟国が多いことが、制裁延長への支持を支える。"
+            },
+            {
+              "force": "エネルギー・産業負担",
+              "direction": "constraining",
+              "description": "制裁による経済負担が大きい加盟国では、延長の内容・例外をめぐる慎重姿勢が生じる。"
+            }
+          ],
+          "ability_to_move": "加盟国間の合意が形成されれば、制裁の延長・強化・緩和を制度的に決定できる。",
+          "issue_objective": "今回の延長局面では、対ロ制裁枠組みを維持しつつ、加盟国間の負担・例外・新規措置を調整し、全加盟国が受け入れ可能な延長案を採択すること。",
+          "observed_action": "対ロ経済制裁の延長決定を公式に発表した。",
+          "vulnerabilities": [
+            "加盟国間の不一致が強まると、延長決定が遅延・修正される構造的脆弱性"
+          ],
+          "ability_to_block": "加盟国のいずれかが強く反対する場合、理事会としての決定が遅延・修正されるため、理事会全体としても「合意がない限り動けない」という構造的なブロック要因を内包する。",
+          "primary_audience": "加盟国政府・EU市民・ウクライナ政府・米国など同盟国。",
+          "why_actor_matters": "EU理事会は、対ロ制裁の延長・更新に関する制度上の最終決定権を持つ集団主体であり、加盟国間の合意形成を通じて制裁枠組みの維持・強化・緩和を左右するため、この局面を実際に動かすKey Stakeholderとして扱う必要がある。",
+          "available_leverage": [
+            "対ロ制裁の延長・強化・緩和を決定する権限"
+          ],
+          "secondary_audience": "ロシア政府・第三国（制裁迂回の懸念がある国々）。",
+          "ultimate_objective": "EU全体としての安全保障・法の支配・対外政策の一貫性を維持しつつ、加盟国の利益を調整すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "ロシアの侵略戦争開始以降、対ロ制裁枠組みを維持・延長し続けているという行動パターンから、理事会として「対ロ制裁を安全保障政策の中核手段として維持する」志向が暫定的に推定される。",
+          "preference_action_gap": "理事会としての安全保障上の志向（対ロ抑止・ウクライナ支援）と、今回の延長決定は整合的であり、大きなギャップは確認できない。ただし、内部では負担分配や例外をめぐる調整が行われている可能性が高く、その詳細は現時点では不明。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "加盟国の合意なしに一方的に制裁枠組みを変更すること"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "他の時期の決定や内部議論の詳細は未確認であり、現時点では単一事例に近い。",
+              "source": "www.consilium.europa.eu の公式発表",
+              "claim_id": null,
+              "relevance": "対ロ制裁枠組みの維持・延長という行動が、理事会の安全保障上のPersistent Preferenceを示唆する。",
+              "evidence_id": "498d8c74-8c28-4809-b411-e842848ee242",
+              "date_or_period": null,
+              "event_or_behavior": "ロシアの侵略戦争に対応する対ロ経済制裁の延長決定",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "対ロ関係では抑止と圧力を維持しつつ、対米・対ウクライナとの連携を重視する傾向があると推定されるが、加盟国間で温度差が存在する。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "今回の制裁延長パッケージに含まれる具体的な措置（対象品目、金融制裁、迂回対策など）は何か。",
+          "rationale": "制裁枠組みの維持・延長が基本線であっても、具体的な内容によって企業・産業への影響が大きく変わるため。",
+          "related_hypothesis": null,
+          "recommended_sources": "EU公式制裁文書、専門シンクタンクの分析レポート"
+        },
+        {
+          "priority": "中",
+          "question": "主要加盟国（ドイツ、フランス、イタリア、ポーランド、ハンガリーなど）の対ロ制裁に関する国内政治状況と立場はどう変化しているか。",
+          "rationale": "コンセンサス要件の下で、どの国が延長・強化・緩和のいずれの方向へ動いているかを把握することで、今後の延長プロセスの安定性を評価できる。",
+          "related_hypothesis": null,
+          "recommended_sources": "各国政府の公式声明、議会討論、信頼できる国内報道"
+        },
+        {
+          "priority": null,
+          "question": "今回の延長パッケージに含まれる具体的な措置（対象品目、金融制裁、迂回対策など）は何か。",
+          "rationale": "Key Point（コンセンサス要件）とMain Scenario（枠組み維持）の下で、企業影響を評価するには内容の詳細が不可欠。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "主要加盟国（ドイツ、フランス、ポーランド、ハンガリーなど）は今回の延長に際してどのような立場・条件を示したか。",
+          "rationale": "Key Stakeholder構造がdistributedであるため、各国のポジションを把握することでPreference-Action Gapと今後の方向性を検証できる。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "エネルギー・産業負担に関する加盟国別の国内政治状況（支持率、産業ロビー、世論）は、制裁延長への支持・反発にどう影響しているか。",
+          "rationale": "Key Pointのsecondary hinge（負担の国内政治的許容度）を具体化するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "提供資料は『延長決定』のみを示し、解除・大幅緩和・劇的強化の証拠は含まれていないため、最も普通の説明として維持。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "EUの対ロ制裁延長は、制度上の定期更新・自動延長メカニズムに沿ったルーチン的決定であり、特段の大きな路線変更を伴わない。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "498d8c74-8c28-4809-b411-e842848ee242"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Stage1での仮説として合理的だが、具体的な国別ポジションのEvidenceが不足しているため、確信度は限定的。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "加盟国の一部は制裁疲れや負担軽減を強く望んでいるが、対ロ抑止・対米・対ウクライナ関係を考慮し、延長に同意する代わりに例外・猶予・負担分配で譲歩を得ている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "安全保障上の脅威認識が高いことは一般的に指摘されており、延長決定と整合的だが、今回資料単独では詳細な裏付けはない。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "ロシアの侵略戦争とNATO/EUの安全保障構造が、加盟国の選択肢を構造的に制約しており、制裁枠組み維持が『前提』となっている。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "498d8c74-8c28-4809-b411-e842848ee242"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "今回の延長プロセスに関する国別行動のEvidenceが無く、既存モデルが崩れているかどうか判断できない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "従来『制裁緩和志向』と見られてきた一部加盟国（例：ハンガリーなど）が、今回に限っては延長に比較的スムーズに同意している可能性があり、既存Actor Intelligenceがそのまま適用できない局面かもしれない。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "延長というラベルだけでは強度・実質が分からず、企業影響の観点では中身が蝶番になり得るため、検証すべき仮説として残す。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "『延長か解除か』という二分法自体が誤っており、実際には制裁枠組みの中身（対象・例外・迂回対策）が大きく変化している可能性がある。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of 2024-06頃の公開情報に基づけば、EUの対ロシア経済制裁は大枠維持・自動延長を基本線としつつ、加盟国間の負担・例外・新規措置をめぐる調整が続く局面にあり、決定権はEU理事会（加盟国政府）のコンセンサス構造に分散しているとみるのが最も整合的である。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "institutionally_constrained",
+        "evidence_class": "current_direct_evidence",
+        "hinge_structure": {
+          "primary_hinge": "EU理事会で全加盟国が受け入れ可能な制裁延長案に合意できるかどうか",
+          "secondary_hinges": [
+            "ロシアの軍事行動・エスカレーションの度合い（安全保障脅威認識）",
+            "加盟国ごとのエネルギー・産業負担への国内政治的許容度",
+            "米国・NATOとの対ロ政策の整合性と同盟圧力"
+          ]
+        },
+        "primary_key_point": "EU理事会における制裁延長決定のコンセンサス要件",
+        "evidence_relevance": [
+          {
+            "rationale": "理事会が制裁延長を決定したという公式発表は、理事会の決定権とコンセンサス構造が蝶番であることを強く示唆する。",
+            "evidence_id": "498d8c74-8c28-4809-b411-e842848ee242",
+            "source_type": "primary_official",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "対ロ抑止・ウクライナ支援をEUの安全保障上の優先課題とする政治的コンセンサス",
+            "why_not_primary": "制裁延長の方向性を支える重要な背景だが、具体的な延長決定の成否・内容は、依然として理事会での合意形成に左右される。安全保障コンセンサスがあっても、負担分配や例外をめぐる対立が激しければ、延長決定が遅延・修正される可能性があるため、より直接的な蝶番としてはコンセンサス要件を優先した。"
+          },
+          {
+            "key_point": "加盟国間のエネルギー・産業負担の分配をめぐる内部調整",
+            "why_not_primary": "制裁の設計・強度・例外を左右する重要な要因だが、延長そのものが成立するかどうかは、これらの調整がコンセンサス要件を満たす形で収束するかに依存する。負担分配はコンセンサス形成を通じて処理される要素であり、蝶番というよりコンセンサス要件に影響を与えるドライバーと位置づける方が整合的。"
+          },
+          {
+            "key_point": "EU制裁枠組みの法的・制度的自動延長メカニズム",
+            "why_not_primary": "最も普通の説明（H0）として、延長がルーチン化している可能性は高いが、そのルーチンが成立する前提として、加盟国が延長に反対しないというコンセンサスが必要である。したがって、自動延長メカニズムはコンセンサス要件に依存する二次的な構造とみなし、Primaryではなく補助的説明とした。"
+          }
+        ],
+        "selection_rationale": "提供資料が示すのは「制裁の延長」という結果であり、その背後にある最も直接的な蝶番は、EU理事会での合意形成プロセスと制度上のコンセンサス要件であるとみるのが自然である。対ロ抑止という構造的要因（安全保障コンセンサス）は重要だが、それだけでは具体的な延長決定のタイミング・内容を説明しきれず、またエネルギー・産業負担の分配も重要な要素だが、最終的に延長が成立するかどうかは「全加盟国が最低限受け入れられる案に到達できるか」に依存する。最も普通の説明（H0 Surface）としての自動延長メカニズムも存在するが、その自動性自体がコンセンサス要件に支えられているため、制度上のコンセンサス構造をPrimary Key Pointとした。",
+        "candidate_key_points": [
+          {
+            "key_point": "EU理事会における制裁延長決定のコンセンサス要件",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜ制裁枠組み自体は維持され続ける一方で、細部（品目、例外、タイミング）で妥協・調整が繰り返されるのかを説明できる。制裁疲れがあっても、完全な解除に至りにくい理由も、コンセンサス要件と安全保障上の最低ラインの組み合わせとして説明可能。",
+            "why_it_could_be_key": "対ロ制裁の更新・延長は、加盟国政府が参加する理事会での合意が必要であり、単一国の反対・留保がプロセス全体を左右し得るため。誰がどれだけ強硬かよりも、「全員が最低限受け入れられるライン」がどこに引かれるかが局面の蝶番になっている可能性が高い。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "498d8c74-8c28-4809-b411-e842848ee242"
+            ],
+            "what_it_does_not_explain": "個別加盟国がなぜ特定の例外や緩和を求めるのか、またなぜ特定の新規措置（例：第三国迂回対策）が採用されるかといった細部の動機までは説明しきれない。",
+            "control_structure_summary": "共通外交・安全保障政策（CFSP）に関わる制裁決定は、原則として加盟国の一致（または特定の多数決ルール）を要する。したがって、制度上のコンセンサス要件が、制裁延長の有無・内容を規定する主要な制約となる。",
+            "supporting_knowledge_refs": [],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "対ロ抑止・ウクライナ支援をEUの安全保障上の優先課題とする政治的コンセンサス",
+            "control_type": "structural",
+            "what_it_explains": "時間が経過しても制裁が大枠維持されること、東欧・北欧諸国が強硬姿勢を取り続けること、対米関係・NATOとの整合性を重視する動きなどを説明できる。",
+            "why_it_could_be_key": "ロシアの侵略戦争を重大な安全保障脅威とみなし、ウクライナ支援と対ロ抑止をEUの戦略的優先課題とする政治的コンセンサスがある限り、制裁枠組みの維持・延長は「前提」となり、議論は主に強度・例外・実施方法へ移る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "498d8c74-8c28-4809-b411-e842848ee242"
+            ],
+            "what_it_does_not_explain": "具体的な制裁パッケージの内容（どの品目を追加・除外するか）、エネルギー関連措置の細部、第三国への二次制裁の有無など、技術的・経済的な設計までは説明しきれない。",
+            "control_structure_summary": "ロシアの行動とそれに対するNATO・EUの安全保障認識が、加盟国の国内政治・世論・同盟関係を通じて構造的に制約を与えている。単一のActorではなく、脅威認識と同盟構造が制裁維持の方向性を規定。",
+            "supporting_knowledge_refs": [],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "加盟国間のエネルギー・産業負担の分配をめぐる内部調整",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ制裁パッケージごとに、エネルギー関連措置や特定産業への配慮が組み込まれるのか、またなぜ一部加盟国が延長・強化に対して条件付き支持や遅延戦術を取るのかを説明できる。",
+            "why_it_could_be_key": "制裁維持・強化は、エネルギー価格や特定産業への負担を通じて加盟国ごとに異なる影響を与える。負担分配の調整がうまくいかない場合、制裁延長への政治的支持が弱まり、拒否権的な行動が出やすくなるため、内部調整が制裁プロセスの蝶番になり得る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "対ロ抑止・ウクライナ支援という上位目的そのもの、また米国・NATOとの関係など、より広い安全保障文脈は直接説明しない。",
+            "control_structure_summary": "複数の加盟国政府・産業界・有権者が相互に制約し合う構造。特定国が強く反対すれば、他国が補償措置や例外を提案するなど、分散した交渉の結果として制裁パッケージの形が決まる。",
+            "supporting_knowledge_refs": [],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "EU制裁枠組みの法的・制度的自動延長メカニズム（H0 Surface）",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜニュースとしては「延長」が繰り返し報じられるが、毎回大きな政治危機として扱われないのか、また延長決定が比較的スムーズに行われることが多い理由を説明できる。",
+            "why_it_could_be_key": "通常、EUの制裁措置は一定期間ごとに延長決定が必要だが、実務上は「延長を前提とした定期更新」として扱われることが多い。最も普通の説明として、今回も既存枠組みの延長がルーチン的に行われた可能性が高い。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "498d8c74-8c28-4809-b411-e842848ee242"
+            ],
+            "what_it_does_not_explain": "延長のたびにどのような内部議論・交渉があったか、また新規制裁項目の追加・削除の詳細までは説明しない。",
+            "control_structure_summary": "制裁の有効期限と更新手続きが制度上定められており、特段の政治的決裂がない限り、延長がデフォルト選択肢となる。",
+            "supporting_knowledge_refs": [],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "今後、EU理事会の正式な決定を経ずに、欧州委員会や一部加盟国の判断だけで対ロ制裁が延長・解除される、あるいは理事会内で明確な多数派・少数派の投票構造に移行し、単一国の反対が延長を阻止できなくなるといった制度変更が観測されれば、「コンセンサス要件が蝶番」という見立て自体を修正する必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "498d8c74-8c28-4809-b411-e842848ee242"
+        ],
+        "control_structure_summary": "制裁延長は、EU理事会の制度上の決定手続き（コンセンサス要件）に拘束されており、単一のActorの意思ではなく、加盟国全体の合意形成によって決まる。安全保障認識や負担分配、同盟関係など複数要因がこの合意形成に影響を与えるが、蝶番としては「合意に到達できるか」が中心。",
+        "supporting_knowledge_refs": [],
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": {
+        "narrative_deviation": null,
+        "source_of_sources_note": null,
+        "media_editorial_context": [
+          {
+            "caveat": "EU理事会自身の公式広報であり、編集意図は『EU公式立場の提示』が主だが、内部の異論や交渉過程は反映されない。",
+            "outlet": "www.consilium.europa.eu (Council of the EU公式サイト)",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "498d8c74-8c28-4809-b411-e842848ee242"
+                ],
+                "observation_text": "ロシアの侵略戦争に対する経済制裁の延長を前面に出した見出し構成。",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "498d8c74-8c28-4809-b411-e842848ee242"
+                ],
+                "observation_text": "情報源はEU理事会自身であり、加盟国個別政府や企業・市民団体の見解は本文に含まれない。",
+                "observation_type": "source_selection"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "supported",
+                "category": "editorial_framing",
+                "confidence": "中",
+                "question_type": "why_this_topic",
+                "evidence_class": "current_direct_evidence",
+                "hypothesis_text": "理事会は対ロ制裁延長を、EUとしての対ロ抑止・ウクライナ支援の継続的コミットメントとして明示する必要があり、延長決定を単独のニュースとして扱っている。",
+                "corroboration_basis": "official_confirmation",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に制度上の定期更新を告知しているだけであり、特段の政治的メッセージ性は限定的という見方もあり得る。",
+                "supporting_evidence_ids": [
+                  "498d8c74-8c28-4809-b411-e842848ee242"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": null
+              }
+            ],
+            "document_id": "498d8c74-8c28-4809-b411-e842848ee242",
+            "omitted_actor_analysis": null
+          },
+          {
+            "caveat": null,
+            "outlet": null,
+            "observed": null,
+            "hypotheses": null,
+            "document_id": null,
+            "omitted_actor_analysis": null
+          }
+        ]
+      },
+      "unknown_or_uncertain": "どの加盟国が今回の延長決定に際してどのような立場・条件を提示したか、また具体的な制裁パッケージの内容（品目・金融措置・迂回対策など）は、提供資料からは特定できない。これらは追加情報が必要な論点であり、現時点では仮説以上には踏み込まない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "制裁枠組みは維持されるが、延長のたびに例外・猶予・対象縮小が積み重なり、実質的な制裁強度が徐々に弱まっていくシナリオ。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "延長決定のたびに、対象品目の削減や適用除外の拡大が確認される。",
+            "複数の加盟国が『制裁の見直し・緩和』を公然と主張し、それが理事会合意に反映される。"
+          ],
+          "weakening_conditions": [
+            "新たなロシアの軍事エスカレーションや戦争犯罪に対し、加盟国が追加制裁を迅速に合意し、例外より強化措置が前面に出る。",
+            "エネルギー価格や産業指標が安定し、制裁負担が政治的争点として後景化する。"
+          ],
+          "strengthening_conditions": [
+            "主要加盟国で制裁によるエネルギー・産業負担が政権支持率低下や社会不安に直結するという具体的事例が増える。",
+            "理事会決定文や加盟国声明で、延長と同時に『例外』『柔軟な適用』『見直し』といった文言が目立つようになる。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "ロシア側の行動や国際世論の変化により、EUが対ロ制裁をさらに強化し、第三国経由の迂回対策や新技術分野への制裁拡張を進めるシナリオ。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "EU理事会・欧州委員会が、迂回対策や新分野への制裁拡張を含む『追加パッケージ』を公式に提案・採択する。",
+            "東欧・北欧諸国などが、現行制裁では不十分とする強い政治的キャンペーンを展開し、他加盟国がそれに同調する。"
+          ],
+          "weakening_conditions": [
+            "戦線が凍結状態となり、EU内で『紛争管理』へのシフトが議論される。",
+            "第三国との関係悪化や経済コストへの懸念から、加盟国が二次制裁に慎重姿勢を強める。"
+          ],
+          "strengthening_conditions": [
+            "ロシアによる大規模な軍事エスカレーションや新たな重大な戦争犯罪が国際的に確認される。",
+            "米国・NATOから、対ロ制裁強化や第三国への二次制裁に関する強い同盟圧力が示される。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "EU理事会・欧州委員会による次回制裁パッケージの案内・延長決定の内容。",
+        "主要加盟国政府の対ロ制裁に関する公式声明・議会討論。",
+        "ロシアの軍事行動・停戦交渉の進展状況。",
+        "EU域内のエネルギー価格・産業指標と、それに対する政治的反応。"
+      ],
+      "retraction_conditions": [
+        "EU理事会が対ロ制裁の大幅緩和・解除を決定したという公式情報が出る。",
+        "加盟国の中で、制裁枠組み自体への反対が多数派となり、延長決定が行われない、またはごく短期の暫定延長にとどまる。",
+        "EUの安全保障戦略文書などで、対ロ抑止・ウクライナ支援が優先課題から外れる、または大幅に格下げされる。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "498d8c74-8c28-4809-b411-e842848ee242",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "主要加盟国で制裁に対する世論の支持が低下している、あるいは制裁による経済負担が政権支持率に明確な悪影響を与えているという具体的なEvidenceが出れば、延長維持シナリオの確信度は弱まる。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "今回の延長パッケージに含まれる具体的な措置（対象品目、金融制裁、迂回対策など）は何か。",
+          "rationale": "Key Point（コンセンサス要件）とMain Scenario（枠組み維持）の下で、企業影響を評価するには内容の詳細が不可欠。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "主要加盟国（ドイツ、フランス、ポーランド、ハンガリーなど）は今回の延長に際してどのような立場・条件を示したか。",
+          "rationale": "Key Stakeholder構造がdistributedであるため、各国のポジションを把握することでPreference-Action Gapと今後の方向性を検証できる。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "エネルギー・産業負担に関する加盟国別の国内政治状況（支持率、産業ロビー、世論）は、制裁延長への支持・反発にどう影響しているか。",
+          "rationale": "Key Pointのsecondary hinge（負担の国内政治的許容度）を具体化するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "中",
+          "description": "どの加盟国が今回の制裁延長に際して、強化・維持・緩和のいずれの立場を取ったか（具体的な国名とポジション）。",
+          "gap_category": "deterministic",
+          "recommended_action": "EU理事会議事録・加盟国政府の公式声明・信頼できる報道を確認し、主要国の立場を特定する。"
+        },
+        {
+          "priority": "高",
+          "description": "今回の延長パッケージに含まれる具体的な新規措置・例外・技術的修正の内容。",
+          "gap_category": "deterministic",
+          "recommended_action": "制裁パッケージの公式文書・専門分析を参照し、対象品目・金融措置・迂回対策などの詳細を把握する。"
+        },
+        {
+          "priority": "中",
+          "description": "エネルギー・産業負担に関する加盟国別の国内政治状況（支持率、産業ロビー、世論）と制裁延長への影響。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "主要加盟国の国内報道・政策文書・産業団体の声明を調査し、制裁負担と政治的許容度の関係を分析する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "エネルギー・産業負担や制裁疲れが既に深刻であり、加盟国間の不一致が強まっているため、今後の延長プロセスは必ずしもスムーズではなく、制裁枠組みの維持自体が中期的には揺らぎ得るという見方。",
+      "key_stakeholder_assessment": {
+        "rationale": "対ロ制裁の延長・更新は、EU理事会に参加する全加盟国政府の合意に依存しており、単一のKey Actorが一方的に決める構造ではない。理事会という集団主体（加盟国政府の集合）が制度上の決定権を持ち、内部ではドイツ・フランスなど大国、東欧・北欧の安全保障フロントライン諸国、エネルギー依存度の高い国などがそれぞれ重要な役割を持つが、いずれか一国のみをKey Stakeholderとして特定する根拠は、現時点の提供資料からは不足しているため、「理事会全体」を代表する集団ActorをKeyとして扱いつつ、構造としては「distributed」とした。",
+        "confidence": "中",
+        "evidence_ids": [
+          "498d8c74-8c28-4809-b411-e842848ee242"
+        ],
+        "determination": "distributed",
+        "decision_structure": "EU理事会での制裁決定は、加盟国政府の合意（原則一致）を要する。欧州委員会が案を設計し、加盟国が交渉・修正を行い、最終的に理事会が採択する。特定加盟国が強く反対すれば、決定が遅延・修正される可能性があり、複数国の組み合わせ（例：ドイツ＋フランス＋東欧諸国）が実質的な方向性を形成する。",
+        "selected_actor_ids": [
+          "EU_Council_collective"
+        ]
+      },
+      "situation_actor_assessment": null,
+      "decisive_power_and_leverage": "最終的な結果を決定づける力は、EU理事会（加盟国政府）のコンセンサス構造にあり、特にドイツ・フランスなど大国と、東欧・北欧の安全保障上のフロントライン諸国の組み合わせが、制裁維持・強化の方向性を規定しているとみられる。欧州委員会は制裁案の設計・技術的調整で大きな影響力を持つが、法的決定権は理事会にあり、個別加盟国（例：ハンガリーなど）が拒否権的にプロセスを遅らせたり、例外を求めたりする余地も残る。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-03T05:12:54.764796+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "e138d0ff-c5ac-4ee7-9afc-16a162f53272",
+    "response_id": "89db0b5f-ae25-45b0-9446-f1269e8ea35f",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: EU理事会（加盟国政府の集合としての主体）, 東欧・北欧の安全保障フロントライン諸国（ポーランド、バルト三国、フィンランドなど）, ドイツ・フランスなどEU大国, エネルギー依存度が高く、対ロ経済関係の大きい加盟国（例：ハンガリーなど）, 欧州委員会",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）",
+        "passed": false
+      }
+    ],
+    "passed_count": 37,
+    "failed_count": 2,
+    "created_at": "2026-09-03T05:12:55.206634+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "key_stakeholder_v12_fields_present",
+      "supporting_knowledge_refs_grounded"
+    ],
+    "repair_attempted": true,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "EU_Council_collective"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 3,
+    "prompt_tokens": 126752,
+    "completion_tokens": 20108,
+    "total_tokens": 146860
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": true
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 63952,
+        "prompt_tokens": 39509,
+        "completion_tokens": 7191
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 34233,
+        "prompt_tokens": 39954,
+        "completion_tokens": 4151
+      },
+      {
+        "stage": "repair:stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 46077,
+        "prompt_tokens": 47289,
+        "completion_tokens": 8766
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 東欧・北欧の安全保障フロントライン諸国（ポーランド、バルト三国、フィンランドなど）, ドイツ・フランスなどEU大国, エネルギー依存度が高く、対ロ経済関係の大きい加盟国（例：ハンガリーなど）, 欧州委員会"
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "determination=distributedの場合はkey_actor_profilesが1件以上必要です"
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=institution_intelligenceのref=EU_Councilがsubject_type=institutionのkey_actor_profiles[].entity_idに実在しません"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "insufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "insufficient",
+        "direct_evidence_count": 0,
+        "gaps": [
+          "current_evidence=insufficient（Direct Evidence 0件、目安2件以上でsufficient候補）"
+        ]
+      },
+      "research_cycle": {
+        "triggered": true,
+        "search_calls_used": 1,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 1,
+      "final_sufficiency": {
+        "current_evidence": "partial",
+        "institutional_coverage": "not_evaluated",
+        "overall": "partial",
+        "direct_evidence_count": 1,
+        "gaps": [
+          "current_evidence=partial（Direct Evidence 1件、目安2件以上でsufficient候補）"
+        ]
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

@@ -1,0 +1,2393 @@
+{
+  "artifact_type": "phase_i_b0_regression_freeze",
+  "generated_at": "2026-09-16",
+  "governing_instruction": "Phase I-A/I-B0/I-B0.1: Claude is an operational proxy only, never a domain-expert judge. All content-quality fields remain expert_unverified until a real Phase I-B1 expert review completes. CQAS/Prompt/Expert AI logic was not modified in producing this artifact.",
+  "cases": [
+    {
+      "case_id": "ib0-hungary",
+      "t0": "2026-04-12",
+      "input_theme": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。",
+      "as_of_policy": "none applied (T0 generated same-day; DB search for Hungary/Orban/Tisza/Fidesz keywords returned zero rows, so no as-of harness was needed for this case)",
+      "excluded_future_sources": "not applicable (no matching DB rows existed to exclude)",
+      "cqas_all_candidates": [
+        {
+          "scenario_candidate_id": "973749d0-0c9b-434d-a0d7-05a1d3455da5",
+          "analysis_session_id": "b62e343d-80dd-4996-adef-23990565a3a1",
+          "rank": 1,
+          "title": "ティサ党政権は、オルバン政権期に問題視されてきた法の支配・人権・民主主義の後退を是正しつつ、対ロシア・対中国・EU・NATO政策でEU主流への部分的回帰を図るが",
+          "content": {
+            "raw": {
+              "confidence": "低",
+              "assumptions": [
+                "ティサ党はEU・NATOとの関係改善を重要な政治的目標とみなす。",
+                "エネルギー・投資依存や国内保守層への配慮から、対ロ・対中政策の急激な断絶は避ける。",
+                "EU中核はハンガリー政権交代を歓迎しつつ、法の支配・人権基準を維持する。"
+              ],
+              "description": "ティサ党政権は、オルバン政権期に問題視されてきた法の支配・人権・民主主義の後退を是正しつつ、対ロシア・対中国・EU・NATO政策でEU主流への部分的回帰を図るが、エネルギー・投資依存や国内保守層への配慮から、急激な断絶ではなく漸進的な調整にとどまる。これにより、EU・NATO内で「オルバン例外」とされてきた足並みの乱れは一定程度緩和され、対ロ制裁・ウクライナ支援・対中政策・法の支配・人権・通商政策の統一性がわずかに高まる。",
+              "evidence_class": "model_general_knowledge",
+              "evidence_relevance": null,
+              "selection_rationale": "提供された情報が限定的であり、ティサ党の具体的政策綱領・支持基盤・EU側の反応が不明なため、確信度は低にとどめる必要がある。それでも、オルバン政権期のハンガリーがEU・NATO内で例外的存在だったこと、ティサ党が中道右派とされ憲法改正可能な多数を得たことから、完全なオルバン路線継続よりも、EU主流への部分的回帰と漸進的調整を主シナリオとして置くのが現時点で最も整合的と判断した。",
+              "supporting_evidence": [],
+              "observable_indicators": [
+                "ティサ党政権の公式政策綱領・選挙公約における対ロ・対中・EU・NATO・法の支配・人権・通商政策の位置づけ。",
+                "EU中核の歓迎・条件付き支援・懸念を示す公式声明。",
+                "ハンガリー新政権による最初の対ロ制裁・ウクライナ支援・対中投資・インフラプロジェクトに関する具体的決定。",
+                "国内司法・メディア・選挙制度・汚職対策に関する法案・憲法改正の内容と速度。"
+              ],
+              "historical_analogies_used": null,
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "低",
+            "key_actors": [
+              "ティサ党指導部（新首相・主要閣僚）",
+              "EU中核（欧州委員会・主要加盟国）"
+            ],
+            "source_cqas": {
+              "request_id": "35f2c284-0e74-4995-8730-50074868e49f",
+              "response_id": "47a62691-fa2e-4fab-ade6-1403112c8aac"
+            },
+            "why_this_matters": "提供された情報が限定的であり、ティサ党の具体的政策綱領・支持基盤・EU側の反応が不明なため、確信度は低にとどめる必要がある。それでも、オルバン政権期のハンガリーがEU・NATO内で例外的存在だったこと、ティサ党が中道右派とされ憲法改正可能な多数を得たことから、完全なオルバン路線継続よりも、EU主流への部分的回帰と漸進的調整を主シナリオとして置くのが現時点で最も整合的と判断した。",
+            "analysis_question": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T08:56:45.365383+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T08:56:45.828576+00:00"
+        },
+        {
+          "scenario_candidate_id": "1e127197-df4a-493f-91d7-cf4032bd0e94",
+          "analysis_session_id": "b62e343d-80dd-4996-adef-23990565a3a1",
+          "rank": 2,
+          "title": "ティサ党政権は、国内保守層・フィデス支持基盤への配慮や、エネルギー・投資依存を重視し、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期と大き",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "ティサ党政権は、国内保守層・フィデス支持基盤への配慮や、エネルギー・投資依存を重視し、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期と大きく変わらない路線を維持する。政権交代は主に国内汚職・メディア環境の調整にとどまり、EU・NATO内での「オルバン例外」は継続する。",
+              "switch_conditions": [
+                "ティサ党の公式政策綱領・選挙公約が、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期とほぼ同じ立場を示していることが確認された場合。",
+                "EU中核がハンガリー新政権に対して強い懸念や失望を表明し、法の支配・人権・通商政策での対立が継続する場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "ティサ党指導部（新首相・主要閣僚）",
+              "EU中核（欧州委員会・主要加盟国）"
+            ],
+            "source_cqas": {
+              "request_id": "35f2c284-0e74-4995-8730-50074868e49f",
+              "response_id": "47a62691-fa2e-4fab-ade6-1403112c8aac"
+            },
+            "why_this_matters": "この分岐が有力になる条件: ティサ党の公式政策綱領・選挙公約が、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期とほぼ同じ立場を示していることが確認された場合。 / EU中核がハンガリー新政権に対して強い懸念や失望を表明し、法の支配・人権・通商政策での対立が継続する場合。",
+            "analysis_question": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T08:56:45.365383+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T08:56:45.828576+00:00"
+        },
+        {
+          "scenario_candidate_id": "79c9bb80-18a8-4da6-a090-e1169da66630",
+          "analysis_session_id": "b62e343d-80dd-4996-adef-23990565a3a1",
+          "rank": 3,
+          "title": "ティサ党政権は、オルバン期の対ロ・対中・EU・NATO・法の支配・人権・通商政策を強く批判し、急進的な改革と対外路線の転換（対ロ・対中関係の大幅な縮小、EU・N",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "ティサ党政権は、オルバン期の対ロ・対中・EU・NATO・法の支配・人権・通商政策を強く批判し、急進的な改革と対外路線の転換（対ロ・対中関係の大幅な縮小、EU・NATO主流への全面回帰）を短期間で進める。これにより、国内保守層・フィデス支持基盤との対立が激化し、政治的不安定要因となる。",
+              "switch_conditions": [
+                "ティサ党政権が短期間で対ロ・対中関係の大幅な縮小や、EU・NATO主流への全面回帰を示す具体的政策を連続的に打ち出す場合。",
+                "国内で大規模な抗議・政治的対立が発生し、改革の速度・方向が政治的リスク要因となる場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "ティサ党指導部（新首相・主要閣僚）",
+              "EU中核（欧州委員会・主要加盟国）"
+            ],
+            "source_cqas": {
+              "request_id": "35f2c284-0e74-4995-8730-50074868e49f",
+              "response_id": "47a62691-fa2e-4fab-ade6-1403112c8aac"
+            },
+            "why_this_matters": "この分岐が有力になる条件: ティサ党政権が短期間で対ロ・対中関係の大幅な縮小や、EU・NATO主流への全面回帰を示す具体的政策を連続的に打ち出す場合。 / 国内で大規模な抗議・政治的対立が発生し、改革の速度・方向が政治的リスク要因となる場合。",
+            "analysis_question": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T08:56:45.365383+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T08:56:45.828576+00:00"
+        }
+      ],
+      "top5_displayed": [
+        {
+          "scenario_candidate_id": "973749d0-0c9b-434d-a0d7-05a1d3455da5",
+          "analysis_session_id": "b62e343d-80dd-4996-adef-23990565a3a1",
+          "rank": 1,
+          "title": "ティサ党政権は、オルバン政権期に問題視されてきた法の支配・人権・民主主義の後退を是正しつつ、対ロシア・対中国・EU・NATO政策でEU主流への部分的回帰を図るが",
+          "content": {
+            "raw": {
+              "confidence": "低",
+              "assumptions": [
+                "ティサ党はEU・NATOとの関係改善を重要な政治的目標とみなす。",
+                "エネルギー・投資依存や国内保守層への配慮から、対ロ・対中政策の急激な断絶は避ける。",
+                "EU中核はハンガリー政権交代を歓迎しつつ、法の支配・人権基準を維持する。"
+              ],
+              "description": "ティサ党政権は、オルバン政権期に問題視されてきた法の支配・人権・民主主義の後退を是正しつつ、対ロシア・対中国・EU・NATO政策でEU主流への部分的回帰を図るが、エネルギー・投資依存や国内保守層への配慮から、急激な断絶ではなく漸進的な調整にとどまる。これにより、EU・NATO内で「オルバン例外」とされてきた足並みの乱れは一定程度緩和され、対ロ制裁・ウクライナ支援・対中政策・法の支配・人権・通商政策の統一性がわずかに高まる。",
+              "evidence_class": "model_general_knowledge",
+              "evidence_relevance": null,
+              "selection_rationale": "提供された情報が限定的であり、ティサ党の具体的政策綱領・支持基盤・EU側の反応が不明なため、確信度は低にとどめる必要がある。それでも、オルバン政権期のハンガリーがEU・NATO内で例外的存在だったこと、ティサ党が中道右派とされ憲法改正可能な多数を得たことから、完全なオルバン路線継続よりも、EU主流への部分的回帰と漸進的調整を主シナリオとして置くのが現時点で最も整合的と判断した。",
+              "supporting_evidence": [],
+              "observable_indicators": [
+                "ティサ党政権の公式政策綱領・選挙公約における対ロ・対中・EU・NATO・法の支配・人権・通商政策の位置づけ。",
+                "EU中核の歓迎・条件付き支援・懸念を示す公式声明。",
+                "ハンガリー新政権による最初の対ロ制裁・ウクライナ支援・対中投資・インフラプロジェクトに関する具体的決定。",
+                "国内司法・メディア・選挙制度・汚職対策に関する法案・憲法改正の内容と速度。"
+              ],
+              "historical_analogies_used": null,
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "低",
+            "key_actors": [
+              "ティサ党指導部（新首相・主要閣僚）",
+              "EU中核（欧州委員会・主要加盟国）"
+            ],
+            "source_cqas": {
+              "request_id": "35f2c284-0e74-4995-8730-50074868e49f",
+              "response_id": "47a62691-fa2e-4fab-ade6-1403112c8aac"
+            },
+            "why_this_matters": "提供された情報が限定的であり、ティサ党の具体的政策綱領・支持基盤・EU側の反応が不明なため、確信度は低にとどめる必要がある。それでも、オルバン政権期のハンガリーがEU・NATO内で例外的存在だったこと、ティサ党が中道右派とされ憲法改正可能な多数を得たことから、完全なオルバン路線継続よりも、EU主流への部分的回帰と漸進的調整を主シナリオとして置くのが現時点で最も整合的と判断した。",
+            "analysis_question": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T08:56:45.365383+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T08:56:45.828576+00:00"
+        },
+        {
+          "scenario_candidate_id": "1e127197-df4a-493f-91d7-cf4032bd0e94",
+          "analysis_session_id": "b62e343d-80dd-4996-adef-23990565a3a1",
+          "rank": 2,
+          "title": "ティサ党政権は、国内保守層・フィデス支持基盤への配慮や、エネルギー・投資依存を重視し、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期と大き",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "ティサ党政権は、国内保守層・フィデス支持基盤への配慮や、エネルギー・投資依存を重視し、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期と大きく変わらない路線を維持する。政権交代は主に国内汚職・メディア環境の調整にとどまり、EU・NATO内での「オルバン例外」は継続する。",
+              "switch_conditions": [
+                "ティサ党の公式政策綱領・選挙公約が、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期とほぼ同じ立場を示していることが確認された場合。",
+                "EU中核がハンガリー新政権に対して強い懸念や失望を表明し、法の支配・人権・通商政策での対立が継続する場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "ティサ党指導部（新首相・主要閣僚）",
+              "EU中核（欧州委員会・主要加盟国）"
+            ],
+            "source_cqas": {
+              "request_id": "35f2c284-0e74-4995-8730-50074868e49f",
+              "response_id": "47a62691-fa2e-4fab-ade6-1403112c8aac"
+            },
+            "why_this_matters": "この分岐が有力になる条件: ティサ党の公式政策綱領・選挙公約が、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期とほぼ同じ立場を示していることが確認された場合。 / EU中核がハンガリー新政権に対して強い懸念や失望を表明し、法の支配・人権・通商政策での対立が継続する場合。",
+            "analysis_question": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T08:56:45.365383+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T08:56:45.828576+00:00"
+        },
+        {
+          "scenario_candidate_id": "79c9bb80-18a8-4da6-a090-e1169da66630",
+          "analysis_session_id": "b62e343d-80dd-4996-adef-23990565a3a1",
+          "rank": 3,
+          "title": "ティサ党政権は、オルバン期の対ロ・対中・EU・NATO・法の支配・人権・通商政策を強く批判し、急進的な改革と対外路線の転換（対ロ・対中関係の大幅な縮小、EU・N",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "ティサ党政権は、オルバン期の対ロ・対中・EU・NATO・法の支配・人権・通商政策を強く批判し、急進的な改革と対外路線の転換（対ロ・対中関係の大幅な縮小、EU・NATO主流への全面回帰）を短期間で進める。これにより、国内保守層・フィデス支持基盤との対立が激化し、政治的不安定要因となる。",
+              "switch_conditions": [
+                "ティサ党政権が短期間で対ロ・対中関係の大幅な縮小や、EU・NATO主流への全面回帰を示す具体的政策を連続的に打ち出す場合。",
+                "国内で大規模な抗議・政治的対立が発生し、改革の速度・方向が政治的リスク要因となる場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "ティサ党指導部（新首相・主要閣僚）",
+              "EU中核（欧州委員会・主要加盟国）"
+            ],
+            "source_cqas": {
+              "request_id": "35f2c284-0e74-4995-8730-50074868e49f",
+              "response_id": "47a62691-fa2e-4fab-ade6-1403112c8aac"
+            },
+            "why_this_matters": "この分岐が有力になる条件: ティサ党政権が短期間で対ロ・対中関係の大幅な縮小や、EU・NATO主流への全面回帰を示す具体的政策を連続的に打ち出す場合。 / 国内で大規模な抗議・政治的対立が発生し、改革の速度・方向が政治的リスク要因となる場合。",
+            "analysis_question": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T08:56:45.365383+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T08:56:45.828576+00:00"
+        }
+      ],
+      "selected_candidate_id": "973749d0-0c9b-434d-a0d7-05a1d3455da5",
+      "analysis_design": {
+        "analysis_design_id": "540e883e-64ed-4def-adfd-c53f9b7101f4",
+        "analysis_session_id": "b62e343d-80dd-4996-adef-23990565a3a1",
+        "version": 1,
+        "investigation_question": "2026年4月12日、ハンガリー議会選挙が実施された。野党ティサ党(中道右派)が得票率54%・138議席(定数の3分の2超)を獲得する歴史的勝利を収め、与党フィデス党(オルバン首相、16年間政権を維持)は得票率38%・55議席で大敗し、オルバン首相は即日敗北を宣言した。この政権交代の地政学的含意を分析してください。",
+        "scope": null,
+        "key_actors": [
+          "ティサ党指導部（新首相・主要閣僚）",
+          "EU中核（欧州委員会・主要加盟国）"
+        ],
+        "analytical_lenses": [],
+        "hypotheses": [
+          "ティサ党政権は、オルバン政権期に問題視されてきた法の支配・人権・民主主義の後退を是正しつつ、対ロシア・対中国・EU・NATO政策でEU主流への部分的回帰を図るが、エネルギー・投資依存や国内保守層への配慮から、急激な断絶ではなく漸進的な調整にとどまる。これにより、EU・NATO内で「オルバン例外」とされてきた足並みの乱れは一定程度緩和され、対ロ制裁・ウクライナ支援・対中政策・法の支配・人権・通商政策の統一性がわずかに高まる。"
+        ],
+        "alternative_hypotheses": [
+          "ティサ党政権は、国内保守層・フィデス支持基盤への配慮や、エネルギー・投資依存を重視し、対ロ・対中・EU・NATO・法の支配・人権・通商政策でオルバン政権期と大きく変わらない路線を維持する。政権交代は主に国内汚職・メディア環境の調整にとどまり、EU・NATO内での「オルバン例外」は継続する。",
+          "ティサ党政権は、オルバン期の対ロ・対中・EU・NATO・法の支配・人権・通商政策を強く批判し、急進的な改革と対外路線の転換（対ロ・対中関係の大幅な縮小、EU・NATO主流への全面回帰）を短期間で進める。これにより、国内保守層・フィデス支持基盤との対立が激化し、政治的不安定要因となる。"
+        ],
+        "evidence_needed": [
+          "ティサ党の具体的な政策綱領（対ロ・対中・EU・NATO・法の支配・人権・通商政策）と、選挙キャンペーンでの主要公約。",
+          "ティサ党の支持基盤（都市部・農村部・産業・世代・価値観）の構成と、フィデス支持層との違い。",
+          "EU中核（欧州委員会・主要加盟国）がハンガリー新政権に対してどのような条件付き支援・期待を表明しているか。"
+        ],
+        "known_evidence": [],
+        "knowledge_gaps": [
+          "ティサ党の具体的な政策綱領（対ロ・対中・EU・NATO・法の支配・人権・通商政策）と、選挙キャンペーンでの主要公約。",
+          "ティサ党の支持基盤（都市部・農村部・産業・世代・価値観）の構成と、フィデス支持層との違い。",
+          "EU中核（欧州委員会・主要加盟国）がハンガリー新政権に対してどのような条件付き支援・期待を表明しているか。"
+        ],
+        "watch_points": [
+          "ティサ党政権の公式政策綱領・選挙公約の公表内容（対ロ・対中・EU・NATO・法の支配・人権・通商政策）。",
+          "選挙後のEU中核（欧州委員会・主要加盟国）の公式声明・外交発言。",
+          "ハンガリー新政権による最初の対ロ・対中・EU・NATO関連の具体的政策決定（制裁・防衛協力・投資・インフラプロジェクトなど）。",
+          "国内司法・メディア・選挙制度・汚職対策に関する法案・憲法改正の動き。"
+        ],
+        "report_structure": {},
+        "confidence": "低",
+        "assumptions": [
+          "ティサ党はEU・NATOとの関係改善を重要な政治的目標とみなす。",
+          "エネルギー・投資依存や国内保守層への配慮から、対ロ・対中政策の急激な断絶は避ける。",
+          "EU中核はハンガリー政権交代を歓迎しつつ、法の支配・人権基準を維持する。"
+        ],
+        "change_note": "選択したScenario CandidateのCQAS Runから初版を生成",
+        "created_by": "phase_ib0_retrospective_proxy",
+        "created_at": "2026-09-16T08:56:51.325933+00:00"
+      },
+      "expert_dimensions": [
+        {
+          "dimension": "EU decision-making unblocked (Orban's veto/obstruction function disappears) -> smoother sanctions/Ukraine-support consensus",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (Taketsushi draft, Eguchi published under his name)",
+          "classification": "validated_dimension",
+          "evidence": "AI candidate #1 (selected, rank 1): '対ロ制裁・ウクライナ支援・対中政策・法の支配・人権・通商政策の統一性がわずかに高まる' -- same substantive claim (unblocked EU consensus), though framed as gradual policy convergence rather than the specific 'veto removal' mechanism Eguchi's material used.",
+          "confidence": "MEDIUM -- coverage of the outcome is present; the causal mechanism (veto power specifically) is not named"
+        },
+        {
+          "dimension": "Trump/MAGA linkage -- Orban's fall as an inflection point prompting other European right-wing populists to reconsider their relationship with the Trump/MAGA camp",
+          "expert_origin_status": "EXPERT_GENERATED (Eguchi's own unique addition -- the single highest-value original contribution in this case per the benchmark doc)",
+          "classification": "generation_miss_candidate",
+          "evidence": "Trump, MAGA, and Vance do not appear anywhere in any of the 3 AI-generated candidates' key_actors, descriptions, or the resulting Analysis Design's key_actors list (['ティサ党指導部', 'EU中核'] only). The entire cross-national populist-movement / US-alignment dimension that was Eguchi's own distinctive analytical move is absent from generation, not merely mis-ranked.",
+          "confidence": "HIGH"
+        },
+        {
+          "dimension": "Russia/Putin implications -- Putin loses his most significant EU-level supporter; Magyar maintains 'practical relations' while reducing dependency by 2035",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+          "classification": "generation_miss_candidate",
+          "evidence": "AI candidates reference '対ロシア' policy direction generically (as one of several policy axes) but never name Putin as an actor, and never articulate the specific claim that the EU's most prominent internal supporter of Russia is gone. The topic-level direction (Russia policy) is touched; the actor-specific framing is not.",
+          "confidence": "MEDIUM -- partial, topic present but the specific actor-centered claim is missing"
+        },
+        {
+          "dimension": "'Not the end of populism' caveat -- this is an anti-incumbent economic-discontent vote, not an ideological rightward reversal; Tisza itself leans European-right, not centrist; other countries' right-wing/far-right governments continue",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (body conclusion, drafted by Taketsushi, adopted by Eguchi)",
+          "classification": "expert_added_dimension",
+          "evidence": "None of the 3 AI candidates articulate this middle-ground reading. AI's 3 candidates form a spectrum of 'how far does the new government pivot' (gradual/none/radical), but none frame the result as 'anti-incumbent, not anti-ideology' with an explicit caution against over-generalizing to 'European populism is receding.' This is a genuine analytical nuance present in the expert material and absent from AI's candidate set.",
+          "confidence": "HIGH"
+        },
+        {
+          "dimension": "Domestic causal factors (economic stagnation, corruption/amnesty scandal) as the actual driver of the election outcome",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+          "classification": "ambiguous",
+          "evidence": "AI's Analysis Design does not assert a causal explanation for the outcome (appropriately, since CQAS candidates are forward-looking scenarios, not retrospective causal accounts) but DOES correctly flag 'ティサ党の支持基盤の構成' as a knowledge_gap/evidence_needed rather than fabricating a cause. This is a structural difference in artifact TYPE (forward scenario vs. retrospective causal narrative) more than a like-for-like miss -- the AI's epistemic honesty here (flagging as unknown rather than guessing) is itself a positive, separate from whether it 'covered' this dimension.",
+          "confidence": "LOW -- not a clean comparison, flagged as ambiguous per instruction not to force a verdict"
+        }
+      ],
+      "report_design_findings": {
+        "investigation_question": "AI's investigation_question is the raw input theme carried forward verbatim, with no analytical re-framing. Eguchi's real practice (per the reference doc) was to immediately add a declarative framing paragraph asserting WHY this matters (3-dimension significance). The AI's Design does not produce an equivalent distinct 'framing' artifact -- the raw question and the 'framed' question are identical in this run.",
+        "key_actors_ai": [
+          "ティサ党指導部（新首相・主要閣僚）",
+          "EU中核（欧州委員会・主要加盟国）"
+        ],
+        "key_actors_expert": [
+          "Orban (Fidesz)",
+          "Magyar (Tisza)",
+          "Putin",
+          "Trump/MAGA/Vance",
+          "EU (as sanctions/Ukraine-support decision unit)"
+        ],
+        "key_actor_gap": "AI's actor list (2 entries) is materially narrower than the expert's (5 entries) -- Orban himself (outgoing leader, still analytically relevant), Putin, and the entire Trump/MAGA/Vance axis are absent from AI's Design.",
+        "ai_originally_had": "EU/NATO 'mainstream return' framing, gradual-vs-status-quo-vs-radical spectrum, appropriately low confidence given limited retrieved evidence",
+        "expert_added": "Trump/MAGA cross-national populist linkage; explicit anti-incumbent-vs-ideological-reversal caveat; Putin-specific EU-supporter-loss framing",
+        "expert_removed_or_would_correct": "not applicable in this retrospective-proxy mode (no actual expert correction occurred; this is AI-vs-real-material coverage, not AI-output-reviewed-by-expert)"
+      },
+      "evaluation_labels_summary": {
+        "validated_dimension": "EU decision-making unblocked (Orban's veto/obstruction function disappears) -> smoother sanctions/Ukraine-support consensus",
+        "generation_miss_candidate": "Russia/Putin implications -- Putin loses his most significant EU-level supporter; Magyar maintains 'practical relations' while reducing dependency by 2035",
+        "expert_added_dimension": "'Not the end of populism' caveat -- this is an anti-incumbent economic-discontent vote, not an ideological rightward reversal; Tisza itself leans European-right, not centrist; other countries' right-wing/far-right governments continue",
+        "ambiguous": "Domestic causal factors (economic stagnation, corruption/amnesty scandal) as the actual driver of the election outcome"
+      },
+      "limitations": [
+        "Single-case; no statistical claims.",
+        "Theme leakage mitigation was partial: the auditing agent's own report to Claude necessarily quoted fragments of Eguchi's real framing before T0 generation; the T0 theme text was deliberately written using only objective, dated public facts to minimize (not eliminate) this exposure."
+      ]
+    },
+    {
+      "case_id": "ib0-bc-strategy",
+      "t0": "2026-02-19",
+      "input_theme": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。",
+      "as_of_policy": "eval_harness.AsOfEvaluationClient, as_of_date=2026-02-19 (see eval_harness/as_of_evaluation_client.py for the full table-by-table policy)",
+      "excluded_future_sources": {
+        "as_of_date": "2026-02-19",
+        "tables": {
+          "geo_events": {
+            "policy": "_policy_geo_events",
+            "included_count": 0,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_documents": {
+            "policy": "_policy_geo_documents",
+            "included_count": 0,
+            "excluded_future_count": 8,
+            "excluded_unverified_count": 5
+          },
+          "geo_ios_analysis_sessions": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 3,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_ios_scenario_candidates": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 2,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_expert_responses": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 1,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_ios_analysis_designs": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 0,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          }
+        }
+      },
+      "leakage_audit": {
+        "t0": "2026-02-19",
+        "without_proxy_iran_doc_count": 9,
+        "without_proxy_future_dated": [
+          {
+            "document_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+            "published_at": "2026-05-01T00:00:00+00:00",
+            "title": "Mojtaba Khamenei's Iran and the Politics of Succession"
+          },
+          {
+            "document_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+            "published_at": "2026-08-01T00:00:00+00:00",
+            "title": "China's Wang Yi calls on Iran to ensure freedom and safe pas"
+          },
+          {
+            "document_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+            "published_at": "2026-08-06T00:00:00+00:00",
+            "title": "Iran Seeks Bar on US Ships in Hormuz as Deal With Oman Advan"
+          },
+          {
+            "document_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+            "published_at": "2026-08-02T00:00:00+00:00",
+            "title": "How China gets around the blockade of the Strait of Hormuz t"
+          },
+          {
+            "document_id": "c8278119-f2c7-487c-ab06-cd3313026f0b",
+            "published_at": "2026-07-09T00:00:00+00:00",
+            "title": "Strait of Hormuz: what has happened since the US-Iran MoU"
+          },
+          {
+            "document_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+            "published_at": "2026-08-18T00:00:00+00:00",
+            "title": "US-Iran war: Trump says no talks, Hormuz blockade continues"
+          },
+          {
+            "document_id": "e522f821-0306-4ac3-bb7b-908341b19ced",
+            "published_at": "2026-08-07T00:00:00+00:00",
+            "title": "Iran says agreement with Oman for Strait of Hormuz prohibits"
+          },
+          {
+            "document_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+            "published_at": "2026-04-21T00:00:00+00:00",
+            "title": "Iran's Supreme Leader No Longer Reigns Supreme"
+          },
+          {
+            "document_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+            "published_at": "2026-04-21T00:00:00+00:00",
+            "title": "Iran's Supreme Leader No Longer Reigns Supreme"
+          }
+        ],
+        "with_proxy_iran_doc_count": 0,
+        "with_proxy_future_dated_leaked": [],
+        "2026-05_doc_excluded_without_proxy_count": 1,
+        "2026-08_doc_excluded_without_proxy_count": 5,
+        "2026-05_doc_present_with_proxy": false,
+        "2026-08_doc_present_with_proxy": false,
+        "audit_report": {
+          "as_of_date": "2026-02-19",
+          "tables": {
+            "geo_documents": {
+              "policy": "_policy_geo_documents",
+              "included_count": 0,
+              "excluded_future_count": 9,
+              "excluded_unverified_count": 0
+            }
+          }
+        },
+        "PASS": true
+      },
+      "cqas_all_candidates": [
+        {
+          "scenario_candidate_id": "ee7ff25a-7606-48d9-896c-4da57bab38b1",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 1,
+          "title": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "assumptions": [
+                "米国が対イラン軍事オプションを少なくとも理論上は検討している。",
+                "イラン・イスラエル情勢が米国内政治・同盟関係・エネルギー市場・対中戦略・台湾情勢に影響し得る。"
+              ],
+              "description": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業・政策側としては、両方のシナリオが持ち得る影響（エネルギー市場・物流・米中関係・台湾抑止）を仮説として整理し、上記のモニタリング指標を通じて、どちらの方向性が強まりつつあるかを継続的に確認する体制を整えることが重要である。",
+              "evidence_class": null,
+              "evidence_relevance": null,
+              "selection_rationale": null,
+              "supporting_evidence": [],
+              "observable_indicators": [
+                "対イラン・対イスラエルに関する米政権の公式発言のトーン変化（抑止・制裁から軍事オプション言及へのシフト）。",
+                "イスラエル側の対イラン軍事行動に関する発言・軍事態勢の変化。",
+                "原油価格・海上保険料・海運運賃の急激な変動。",
+                "米軍の中東への部隊増派・演習計画の変更。",
+                "米中間選挙での対イラン・対イスラエル・対中政策の争点化状況。"
+              ],
+              "historical_analogies_used": null,
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": null,
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        },
+        {
+          "scenario_candidate_id": "4ccd76d2-2b5b-4e92-9753-de1faba6111c",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 2,
+          "title": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+              "switch_conditions": [
+                "米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。",
+                "原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。 / 原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。",
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        },
+        {
+          "scenario_candidate_id": "1490809a-b14a-4813-a5fc-1f7beac6441e",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 3,
+          "title": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+              "switch_conditions": [
+                "米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。",
+                "イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。 / イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。",
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        },
+        {
+          "scenario_candidate_id": "f9fb58ff-1295-441b-bd6e-7b2b6089a98c",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 4,
+          "title": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+              "switch_conditions": [
+                "米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。",
+                "イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。 / イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。",
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        }
+      ],
+      "top5_displayed": [
+        {
+          "scenario_candidate_id": "ee7ff25a-7606-48d9-896c-4da57bab38b1",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 1,
+          "title": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "assumptions": [
+                "米国が対イラン軍事オプションを少なくとも理論上は検討している。",
+                "イラン・イスラエル情勢が米国内政治・同盟関係・エネルギー市場・対中戦略・台湾情勢に影響し得る。"
+              ],
+              "description": "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業・政策側としては、両方のシナリオが持ち得る影響（エネルギー市場・物流・米中関係・台湾抑止）を仮説として整理し、上記のモニタリング指標を通じて、どちらの方向性が強まりつつあるかを継続的に確認する体制を整えることが重要である。",
+              "evidence_class": null,
+              "evidence_relevance": null,
+              "selection_rationale": null,
+              "supporting_evidence": [],
+              "observable_indicators": [
+                "対イラン・対イスラエルに関する米政権の公式発言のトーン変化（抑止・制裁から軍事オプション言及へのシフト）。",
+                "イスラエル側の対イラン軍事行動に関する発言・軍事態勢の変化。",
+                "原油価格・海上保険料・海運運賃の急激な変動。",
+                "米軍の中東への部隊増派・演習計画の変更。",
+                "米中間選挙での対イラン・対イスラエル・対中政策の争点化状況。"
+              ],
+              "historical_analogies_used": null,
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": null,
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        },
+        {
+          "scenario_candidate_id": "4ccd76d2-2b5b-4e92-9753-de1faba6111c",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 2,
+          "title": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+              "switch_conditions": [
+                "米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。",
+                "原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米政権・議会・同盟国の間で、軍事行動のコストが高すぎるとのコンセンサスが形成される。 / 原油価格・世界経済への影響を考慮し、軍事行動よりも制裁・外交を優先する方針が明示される。",
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        },
+        {
+          "scenario_candidate_id": "1490809a-b14a-4813-a5fc-1f7beac6441e",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 3,
+          "title": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+              "switch_conditions": [
+                "米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。",
+                "イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米政権が抑止・核開発制限を上位目的とし、体制転換を明示的に否定する。 / イスラエル・湾岸諸国が限定的抑止攻撃を主に求めていることが確認される。",
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        },
+        {
+          "scenario_candidate_id": "f9fb58ff-1295-441b-bd6e-7b2b6089a98c",
+          "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+          "rank": 4,
+          "title": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。",
+              "switch_conditions": [
+                "米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。",
+                "イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [],
+            "source_cqas": {
+              "request_id": "dea0c1e1-b78f-4849-9897-7686e7acb88e",
+              "response_id": "b0891d73-58c5-4397-968d-bb5a7a374b40"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米政権が体制転換を上位目的として公言する、または信頼できる一次情報でその方針が確認される。 / イスラエル・湾岸諸国が体制転換を強く求めていることが確認される。",
+            "analysis_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:13:04.229265+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:13:04.571468+00:00"
+        }
+      ],
+      "selected_candidate_id": "ee7ff25a-7606-48d9-896c-4da57bab38b1",
+      "analysis_design": {
+        "analysis_design_id": "b1e6fcec-7e70-431b-ac65-f10875953aad",
+        "analysis_session_id": "8e890286-ad3d-4462-8f8d-9c596fa79577",
+        "version": 1,
+        "investigation_question": "2026年2月19日、訪日中の米共和党系コンサルティング会社の代表と、米国政府関係者を含む複数名で面談を行った。面談の主題は、米国によるイランへの軍事攻撃切迫の可能性、攻撃オプション（限定攻撃か体制転換か）、米国内の政治力学、及びイラン・イスラエル情勢が米中間選挙・日本の対米投資・米中関係・台湾問題に与える波及について。この局面の地政学的含意を分析してください。",
+        "scope": null,
+        "key_actors": [],
+        "analytical_lenses": [],
+        "hypotheses": [
+          "現時点では、米国が対イラン軍事オプションを検討している可能性は否定できないが、限定攻撃と体制転換のいずれかを主シナリオとして確定できる材料は無い。そのため、企業・政策側としては、両方のシナリオが持ち得る影響（エネルギー市場・物流・米中関係・台湾抑止）を仮説として整理し、上記のモニタリング指標を通じて、どちらの方向性が強まりつつあるかを継続的に確認する体制を整えることが重要である。"
+        ],
+        "alternative_hypotheses": [
+          "対イラン軍事攻撃は検討されているものの、最終的には外交・制裁強化に留まり、軍事行動は行われない。",
+          "対イラン軍事攻撃が限定的抑止攻撃として行われ、中東情勢・エネルギー市場に短期的なショックを与えるが、体制転換には至らない。",
+          "対イラン軍事攻撃が体制転換志向の大規模作戦として行われ、中東情勢・エネルギー市場・米中関係・台湾抑止に長期的な影響を与える。"
+        ],
+        "evidence_needed": [
+          "現在の米政権（大統領・国家安全保障チーム）が対イラン政策で何を最上位目的としているか（抑止・核開発制限・同盟防衛・体制転換など）。",
+          "イスラエル政府・軍がイランに対してどの程度の軍事行動を求めているか、また米国に対してどのような協力・関与を期待しているか。",
+          "2026年米中間選挙において、対イラン・対イスラエル政策がどの程度争点化しているか、また有権者・主要候補のスタンス。",
+          "対イラン軍事行動が行われた場合の原油価格・海上輸送リスクへの影響のレンジ。",
+          "対イラン軍事行動が米中関係・台湾抑止に与える影響（米軍の部隊配備・演習計画・外交的関与のシフト）。"
+        ],
+        "known_evidence": [],
+        "knowledge_gaps": [
+          "現在の米政権（大統領・国家安全保障チーム）が対イラン政策で何を最上位目的としているか（抑止・核開発制限・同盟防衛・体制転換など）。",
+          "イスラエル政府・軍がイランに対してどの程度の軍事行動を求めているか、また米国に対してどのような協力・関与を期待しているか。",
+          "2026年米中間選挙において、対イラン・対イスラエル政策がどの程度争点化しているか、また有権者・主要候補のスタンス。",
+          "対イラン軍事行動が行われた場合の原油価格・海上輸送リスクへの影響のレンジ。",
+          "対イラン軍事行動が米中関係・台湾抑止に与える影響（米軍の部隊配備・演習計画・外交的関与のシフト）。"
+        ],
+        "watch_points": [
+          "米政権（大統領・国務長官・国防長官）の対イラン・対イスラエルに関する公式発言のトーンと具体性。",
+          "イスラエル政府・軍の対イラン発言・軍事態勢・米国との協議に関する報道。",
+          "原油価格・中東航路の海上保険料・海運運賃の動向。",
+          "米インド太平洋軍の部隊配備・演習計画の変化（中東へのシフトの有無）。",
+          "2026年米中間選挙における対イラン・対イスラエル・対中政策の争点化状況（主要候補の発言・世論調査）。",
+          "台湾周辺の軍事活動（米中双方）の変化と、米国の台湾抑止に関する発言。"
+        ],
+        "report_structure": {},
+        "confidence": "判断不能",
+        "assumptions": [
+          "米国が対イラン軍事オプションを少なくとも理論上は検討している。",
+          "イラン・イスラエル情勢が米国内政治・同盟関係・エネルギー市場・対中戦略・台湾情勢に影響し得る。"
+        ],
+        "change_note": "選択したScenario CandidateのCQAS Runから初版を生成(I-B0.1 as-of run)",
+        "created_by": "phase_ib0_1_retrospective_proxy",
+        "created_at": "2026-09-16T09:13:07.150785+00:00"
+      },
+      "expert_dimensions": [
+        {
+          "dimension": "Attack option binary: limited strike (nuclear/missile facilities only) vs. regime change (remove Khamenei)",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (Cooper's analysis)",
+          "classification": "validated_dimension",
+          "evidence": "AI candidate #3 (limited deterrent strike, no regime change) and candidate #4 (regime-change-oriented large operation) directly mirror this exact binary, independently of any retrieved evidence -- this framing appears to come from the model's general reasoning about the topic type, not from retrieval.",
+          "confidence": "MEDIUM-HIGH -- a genuine structural match, though the AI could not evidence WHY Cooper considered regime-change more likely (the 'problem recurs in a year' rationale) since Cooper's own view was never retrievable"
+        },
+        {
+          "dimension": "2026 US midterm elections as a driver of Trump's decision timing (political comeback motive)",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+          "classification": "validated_dimension",
+          "evidence": "AI's Design explicitly lists '2026年米中間選挙における対イラン・対イスラエル・対中政策の争点化状況' as both an evidence_needed item and a watch_point.",
+          "confidence": "MEDIUM -- the topic-level connection is present; the specific causal claim (military action as an electoral 'comeback' move) is not articulated"
+        },
+        {
+          "dimension": "Spillover to US-China relations and Taiwan deterrence",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+          "classification": "validated_dimension",
+          "evidence": "AI's Design explicitly includes Taiwan-related watch_points and evidence_needed ('対イラン軍事行動が米中関係・台湾抑止に与える影響').",
+          "confidence": "MEDIUM -- topic present, none of the specific mechanisms (Xiaomi-Ford JV, Vance's remark, a Trump-Xi Taiwan promise) are captured"
+        },
+        {
+          "dimension": "All named actors: Trump, Khamenei, Zack Cooper, Witkoff, McConnell/Graham, Netanyahu/Israel, Takaichi, Xi, Vance, NSC Asia director",
+          "expert_origin_status": "mixed (mostly EXPERT_ADOPTED_EXTERNAL, Cooper-originated)",
+          "classification": "generation_miss_candidate",
+          "evidence": "key_actors=[] in all 4 AI candidates and in the resulting Design -- a complete absence of named actors, more severe than Hungary's partial miss. Directly attributable, at least in part, to the near-total absence of retrievable T0-scoped evidence (0 documents, 0 events available to ground any specific actor claim).",
+          "confidence": "LOW-MEDIUM -- cannot cleanly separate 'CQAS failed to name actors' from 'CQAS correctly declined to name actors without evidence'; both readings are plausible given the retrieval context"
+        },
+        {
+          "dimension": "Carrier strike group deployment (Gerald R. Ford, arriving within 1-2 days) as the specific observable timing indicator",
+          "expert_origin_status": "EXPERT_GENERATED (Eguchi's own addition, the case's highest-value original contribution)",
+          "classification": "generation_miss_candidate",
+          "evidence": "AI's watch_points mention '米インド太平洋軍の部隊配備' generically but never a specific carrier/naval deployment as a concrete, near-term timing signal. This is the BC Strategy analogue of Hungary's Trump/MAGA miss -- the one dimension that was genuinely Eguchi's own original analytical move, absent from AI's output.",
+          "confidence": "MEDIUM -- a real gap, though a specific ship name/deployment could not plausibly have been retrieved without a matching geo_events row, none of which existed for this theme regardless of the as-of filter"
+        },
+        {
+          "dimension": "\"Trump escalates when mocked\" actor behavior pattern (Venezuela precedent applied to Iran, from Cooper's analysis)",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (Tier1, explicitly present in Cooper's own analysis, not a Tier2 reconstruction)",
+          "classification": "generation_miss_candidate",
+          "evidence": "No historical-analogy or actor-behavior-pattern content appears anywhere in AI's 4 candidates (historical_analogies_used=null throughout). Consistent with the complete absence of named actors.",
+          "confidence": "LOW-MEDIUM -- same evidence-starvation caveat as above"
+        },
+        {
+          "dimension": "Japan/Takaichi investment-commitment-size mismatch as a specific US-Japan friction point",
+          "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+          "classification": "ambiguous",
+          "evidence": "The T0 theme text explicitly mentioned '日本の対米投資' as a topic, yet none of AI's 4 candidates or the Design engage with Japan specifically at all (no mention of Takaichi, investment figures, or tariff risk). Given zero retrievable documents, it's unclear whether this reflects a reasoning gap or simply nothing to retrieve; flagged ambiguous rather than forced into generation_miss.",
+          "confidence": "LOW"
+        }
+      ],
+      "report_design_findings": {
+        "investigation_question": "Same pattern as Hungary: AI carries the raw input theme forward verbatim as investigation_question, with no distinct analytical re-framing paragraph.",
+        "key_actors_ai": [],
+        "key_actors_expert": [
+          "Trump",
+          "Khamenei",
+          "Zack Cooper (BC Strategy)",
+          "Witkoff",
+          "McConnell/Graham",
+          "Netanyahu/Israel",
+          "Takaichi",
+          "Xi",
+          "Vance",
+          "NSC Asia director"
+        ],
+        "key_actor_gap": "Total: AI's actor list is completely empty vs. the expert's 10-actor list. The most severe actor-coverage gap of the two I-B0 cases so far.",
+        "ai_originally_had": "An appropriately hedged, low-confidence, options-framed structure (limited-strike vs. diplomacy-only vs. regime-change) with sensible generic watch_points",
+        "expert_added": "Every specific actor; the carrier-deployment indicator; the Trump-escalation behavior pattern; the Japan investment-mismatch leverage point",
+        "expert_removed_or_would_correct": "not applicable in this retrospective-proxy mode"
+      },
+      "evaluation_labels_summary": {
+        "validated_dimension": "Spillover to US-China relations and Taiwan deterrence",
+        "generation_miss_candidate": "\"Trump escalates when mocked\" actor behavior pattern (Venezuela precedent applied to Iran, from Cooper's analysis)",
+        "ambiguous": "Japan/Takaichi investment-commitment-size mismatch as a specific US-Japan friction point"
+      },
+      "limitations": [
+        "Single-case; no statistical claims.",
+        "CRITICAL: unlike Hungary, retrieval under the as-of proxy returned ZERO geo_documents for this case (8 excluded as future-dated, 5 excluded as unverified/no published_at, 0 included; geo_events also returned 0). All findings below carry LOWER confidence than Hungary's -- misses may reflect genuine CQAS/generation limitations, OR may simply be the expected, appropriate consequence of an information-starved T0 reconstruction (the system correctly declining to fabricate actor names/specifics it had no retrievable T0 evidence for), OR may partly reflect the harness's own conservative 'exclude if published_at is null' policy removing sources that were actually valid at T0. This ambiguity could not be resolved within this pass and is treated as a limitation of the evaluation, not of the product."
+      ]
+    },
+    {
+      "case_id": "ib0-2-iran-hormuz",
+      "t0": "2026-05-14",
+      "input_theme": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。",
+      "blinding_note": "T0 theme built ONLY from R006->R002 (2026-03-25, Pollack/Vatanka MEI analysis, adopted-external) plus bare situational framing. Does NOT include M086's conclusion, rejection reasoning, indicators, or framing; does NOT include any post-T0 fact (e.g. Islamabad MoU, confirmed present in this DB as a 2026-07-01-dated document, excluded both from the theme text and by the as-of proxy).",
+      "as_of_policy": "eval_harness.AsOfEvaluationClient, as_of_date=2026-05-14",
+      "excluded_future_sources": {
+        "as_of_date": "2026-05-14",
+        "tables": {
+          "geo_events": {
+            "policy": "_policy_geo_events",
+            "included_count": 0,
+            "excluded_future_count": 1,
+            "excluded_unverified_count": 0
+          },
+          "geo_documents": {
+            "policy": "_policy_geo_documents",
+            "included_count": 0,
+            "excluded_future_count": 19,
+            "excluded_unverified_count": 11
+          },
+          "geo_ios_analysis_sessions": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 3,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_ios_scenario_candidates": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 2,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_expert_responses": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 1,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_ios_analysis_designs": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 0,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          }
+        }
+      },
+      "leakage_audit": {
+        "t0": "2026-05-14",
+        "keywords": [
+          "Iran",
+          "Hormuz",
+          "Khamenei",
+          "Tehran"
+        ],
+        "by_keyword": {
+          "Iran": {
+            "geo_documents": {
+              "without_proxy_count": 9,
+              "without_proxy_future_dated": [
+                {
+                  "document_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+                  "published_at": "2026-08-01T00:00:00+00:00",
+                  "title": "China's Wang Yi calls on Iran to ensure freedom and safe passage through Strait of Hormuz"
+                },
+                {
+                  "document_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+                  "published_at": "2026-08-06T00:00:00+00:00",
+                  "title": "Iran Seeks Bar on US Ships in Hormuz as Deal With Oman Advances"
+                },
+                {
+                  "document_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+                  "published_at": "2026-08-02T00:00:00+00:00",
+                  "title": "How China gets around the blockade of the Strait of Hormuz to get Iranian oil"
+                },
+                {
+                  "document_id": "c8278119-f2c7-487c-ab06-cd3313026f0b",
+                  "published_at": "2026-07-09T00:00:00+00:00",
+                  "title": "Strait of Hormuz: what has happened since the US-Iran MoU"
+                },
+                {
+                  "document_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+                  "published_at": "2026-08-18T00:00:00+00:00",
+                  "title": "US-Iran war: Trump says no talks, Hormuz blockade continues"
+                },
+                {
+                  "document_id": "e522f821-0306-4ac3-bb7b-908341b19ced",
+                  "published_at": "2026-08-07T00:00:00+00:00",
+                  "title": "Iran says agreement with Oman for Strait of Hormuz prohibits U.S. and Israeli vessels"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 2,
+              "without_proxy_future_created": [
+                {
+                  "knowledge_item_id": "69e1a205-c807-4f19-9861-517e0a6aee6e",
+                  "title": "Iran Actor Profile (v1.2検証用シード)",
+                  "created_at": "2026-08-28T07:03:46.137991+00:00",
+                  "as_of_date": "2026-08-28"
+                },
+                {
+                  "knowledge_item_id": "67959f6c-4bf2-446c-ba21-c898bb79a399",
+                  "title": "Iran Actor Profile (v1.2検証用シード)",
+                  "created_at": "2026-08-28T07:07:04.9009+00:00",
+                  "as_of_date": "2026-08-28"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "Hormuz": {
+            "geo_documents": {
+              "without_proxy_count": 10,
+              "without_proxy_future_dated": [
+                {
+                  "document_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+                  "published_at": "2026-07-14T00:00:00+00:00",
+                  "title": "Trump backs off 20% fee for Strait of Hormuz shipments"
+                },
+                {
+                  "document_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+                  "published_at": "2026-08-01T00:00:00+00:00",
+                  "title": "China's Wang Yi calls on Iran to ensure freedom and safe passage through Strait of Hormuz"
+                },
+                {
+                  "document_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+                  "published_at": "2026-07-14T00:00:00+00:00",
+                  "title": "Trump Backs Off 20% Fee for Strait of Hormuz Shipments"
+                },
+                {
+                  "document_id": "5c99bd85-72e8-4278-b431-2c96595a8533",
+                  "published_at": "2026-05-15T00:00:00+00:00",
+                  "title": "UAE fast tracks second West-East oil pipeline to bypass Strait of Hormuz"
+                },
+                {
+                  "document_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+                  "published_at": "2026-08-06T00:00:00+00:00",
+                  "title": "Iran Seeks Bar on US Ships in Hormuz as Deal With Oman Advances"
+                },
+                {
+                  "document_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+                  "published_at": "2026-08-02T00:00:00+00:00",
+                  "title": "How China gets around the blockade of the Strait of Hormuz to get Iranian oil"
+                },
+                {
+                  "document_id": "bce3a535-8b82-41b5-8e3b-9800719cd253",
+                  "published_at": "2026-07-01T00:00:00+00:00",
+                  "title": "The Strait of Hormuz: Islamabad MoU and its terms"
+                },
+                {
+                  "document_id": "c8278119-f2c7-487c-ab06-cd3313026f0b",
+                  "published_at": "2026-07-09T00:00:00+00:00",
+                  "title": "Strait of Hormuz: what has happened since the US-Iran MoU"
+                },
+                {
+                  "document_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+                  "published_at": "2026-08-18T00:00:00+00:00",
+                  "title": "US-Iran war: Trump says no talks, Hormuz blockade continues"
+                },
+                {
+                  "document_id": "e522f821-0306-4ac3-bb7b-908341b19ced",
+                  "published_at": "2026-08-07T00:00:00+00:00",
+                  "title": "Iran says agreement with Oman for Strait of Hormuz prohibits U.S. and Israeli vessels"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 0,
+              "without_proxy_future_created": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "Khamenei": {
+            "geo_documents": {
+              "without_proxy_count": 1,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 0,
+              "without_proxy_future_created": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "Tehran": {
+            "geo_documents": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 0,
+              "without_proxy_future_created": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          }
+        },
+        "audit_report": {
+          "as_of_date": "2026-05-14",
+          "tables": {
+            "geo_documents": {
+              "policy": "_policy_geo_documents",
+              "included_count": 0,
+              "excluded_future_count": 16,
+              "excluded_unverified_count": 4
+            },
+            "geo_events": {
+              "policy": "_policy_geo_events",
+              "included_count": 0,
+              "excluded_future_count": 0,
+              "excluded_unverified_count": 0
+            },
+            "geo_knowledge_items": {
+              "policy": "_policy_geo_knowledge_items",
+              "included_count": 0,
+              "excluded_future_count": 2,
+              "excluded_unverified_count": 0
+            }
+          }
+        },
+        "PASS": true
+      },
+      "cqas_all_candidates": [
+        {
+          "scenario_candidate_id": "c84b701f-1572-4998-bf11-5b9a897cc1b5",
+          "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+          "rank": 1,
+          "title": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張し",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "assumptions": [
+                "米国は大規模地上侵攻・長期占領までは志向していない。",
+                "イランは体制生存を最優先し、一定の段階で交渉に応じるインセンティブを持つ。",
+                "イスラエル・湾岸諸国は対イラン抑止強化を求めつつも、全面戦争には慎重である。"
+              ],
+              "description": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張しつつあるが、全面的なレジームチェンジ戦略として固定されたとまでは言えない、という中間的なシナリオを主軸に置く。この場合、ホルムズ海峡の不安定化とエネルギー・海上輸送リスクは一定期間続きつつも、最終的には何らかの交渉枠組み（核・地域行動に関する合意）に収れんする可能性が高い。",
+              "evidence_class": "model_general_knowledge",
+              "evidence_relevance": [],
+              "selection_rationale": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+              "supporting_evidence": [
+                "専門家が「体制転換的な性格」を指摘しているという記述",
+                "ホルムズ海峡での掃討作戦継続と「後手」評価",
+                "情勢が2026年5月時点でも継続し、交渉かエスカレーションかが不透明とされている点"
+              ],
+              "observable_indicators": [
+                "米国が体制転換を明示的に掲げるか否か。",
+                "イラン体制の中枢（最高指導者・革命防衛隊）を直接標的とする行動の有無。",
+                "ホルムズ海峡でのインシデント頻度とエネルギー価格の推移。",
+                "米・イラン間の秘密・公開チャネルでの交渉報道の有無。"
+              ],
+              "historical_analogies_used": [
+                {
+                  "same_actor": false,
+                  "description": "2003年イラク戦争（大量破壊兵器問題から体制転換戦争へ移行した例）との比較。",
+                  "same_domain": true,
+                  "analogy_strength": "weak",
+                  "same_constraints": false,
+                  "same_leverage_mechanism": true,
+                  "analogy_source_precedent_id": null,
+                  "same_institutional_structure": false
+                }
+              ],
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "米国政権（大統領・国家安全保障チーム）",
+              "イラン指導部（最高指導者・革命防衛隊）",
+              "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+            ],
+            "source_cqas": {
+              "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+              "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+            },
+            "why_this_matters": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+            "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:33:57.574109+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:33:57.905591+00:00"
+        },
+        {
+          "scenario_candidate_id": "62ef8351-089b-4503-aa51-07cec6145754",
+          "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+          "rank": 2,
+          "title": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高まるが、中期的には緩和される。",
+              "switch_conditions": [
+                "米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。",
+                "ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "米国政権（大統領・国家安全保障チーム）",
+              "イラン指導部（最高指導者・革命防衛隊）",
+              "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+            ],
+            "source_cqas": {
+              "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+              "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。 / ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。",
+            "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:33:57.574109+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:33:57.905591+00:00"
+        },
+        {
+          "scenario_candidate_id": "9ebc2350-6b2b-40bd-8e55-be98d75729a2",
+          "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+          "rank": 3,
+          "title": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレ",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレーション」シナリオ。エネルギー・海上輸送・地域安全保障への影響は構造的に深刻化する。",
+              "switch_conditions": [
+                "米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。",
+                "ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "米国政権（大統領・国家安全保障チーム）",
+              "イラン指導部（最高指導者・革命防衛隊）",
+              "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+            ],
+            "source_cqas": {
+              "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+              "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。 / ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。",
+            "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:33:57.574109+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:33:57.905591+00:00"
+        }
+      ],
+      "top5_displayed": [
+        {
+          "scenario_candidate_id": "c84b701f-1572-4998-bf11-5b9a897cc1b5",
+          "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+          "rank": 1,
+          "title": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張し",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "assumptions": [
+                "米国は大規模地上侵攻・長期占領までは志向していない。",
+                "イランは体制生存を最優先し、一定の段階で交渉に応じるインセンティブを持つ。",
+                "イスラエル・湾岸諸国は対イラン抑止強化を求めつつも、全面戦争には慎重である。"
+              ],
+              "description": "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張しつつあるが、全面的なレジームチェンジ戦略として固定されたとまでは言えない、という中間的なシナリオを主軸に置く。この場合、ホルムズ海峡の不安定化とエネルギー・海上輸送リスクは一定期間続きつつも、最終的には何らかの交渉枠組み（核・地域行動に関する合意）に収れんする可能性が高い。",
+              "evidence_class": "model_general_knowledge",
+              "evidence_relevance": [],
+              "selection_rationale": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+              "supporting_evidence": [
+                "専門家が「体制転換的な性格」を指摘しているという記述",
+                "ホルムズ海峡での掃討作戦継続と「後手」評価",
+                "情勢が2026年5月時点でも継続し、交渉かエスカレーションかが不透明とされている点"
+              ],
+              "observable_indicators": [
+                "米国が体制転換を明示的に掲げるか否か。",
+                "イラン体制の中枢（最高指導者・革命防衛隊）を直接標的とする行動の有無。",
+                "ホルムズ海峡でのインシデント頻度とエネルギー価格の推移。",
+                "米・イラン間の秘密・公開チャネルでの交渉報道の有無。"
+              ],
+              "historical_analogies_used": [
+                {
+                  "same_actor": false,
+                  "description": "2003年イラク戦争（大量破壊兵器問題から体制転換戦争へ移行した例）との比較。",
+                  "same_domain": true,
+                  "analogy_strength": "weak",
+                  "same_constraints": false,
+                  "same_leverage_mechanism": true,
+                  "analogy_source_precedent_id": null,
+                  "same_institutional_structure": false
+                }
+              ],
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "米国政権（大統領・国家安全保障チーム）",
+              "イラン指導部（最高指導者・革命防衛隊）",
+              "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+            ],
+            "source_cqas": {
+              "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+              "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+            },
+            "why_this_matters": "限定攻撃から体制転換的キャンペーンへの完全なシフトと断定するには根拠が不足している一方、短期限定攻撃で終わると見るには、ホルムズ海峡の不安定化と情勢継続という観測が重い。両者の中間として、「強圧的だが交渉余地を残したキャンペーン」というシナリオが、現時点で最も説明力が高い。",
+            "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:33:57.574109+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:33:57.905591+00:00"
+        },
+        {
+          "scenario_candidate_id": "62ef8351-089b-4503-aa51-07cec6145754",
+          "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+          "rank": 2,
+          "title": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高まるが、中期的には緩和される。",
+              "switch_conditions": [
+                "米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。",
+                "ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "米国政権（大統領・国家安全保障チーム）",
+              "イラン指導部（最高指導者・革命防衛隊）",
+              "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+            ],
+            "source_cqas": {
+              "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+              "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を明確に否定し、限定目的を強調する公式声明を出す。 / ホルムズ海峡でのインシデントが減少し、保険料・運賃・エネルギー価格が安定化する。",
+            "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:33:57.574109+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:33:57.905591+00:00"
+        },
+        {
+          "scenario_candidate_id": "9ebc2350-6b2b-40bd-8e55-be98d75729a2",
+          "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+          "rank": 3,
+          "title": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレ",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレーション」シナリオ。エネルギー・海上輸送・地域安全保障への影響は構造的に深刻化する。",
+              "switch_conditions": [
+                "米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。",
+                "ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "米国政権（大統領・国家安全保障チーム）",
+              "イラン指導部（最高指導者・革命防衛隊）",
+              "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+            ],
+            "source_cqas": {
+              "request_id": "6f205ca5-d981-4933-af98-c971e096631c",
+              "response_id": "b1f6f419-3b3e-44d0-8302-39dfa10cd3d1"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米国が体制転換を示唆・表明する、またはイラン指導部の排除を狙った行動を取る。 / ホルムズ海峡での実質的な封鎖状態や、複数地域での大規模代理戦争が発生する。",
+            "analysis_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:33:57.574109+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:33:57.905591+00:00"
+        }
+      ],
+      "selected_candidate_id": "c84b701f-1572-4998-bf11-5b9a897cc1b5",
+      "analysis_design": {
+        "analysis_design_id": "c4fffc4c-c84d-42b9-ac3a-bf68ea82e305",
+        "analysis_session_id": "78fda924-3db7-4940-82f4-52e3f3cb31d1",
+        "version": 1,
+        "investigation_question": "2026年2月頃、米国はイランの核施設に対する軍事攻撃を実施した。3月下旬時点の専門家分析によれば、当初は限定的な核施設破壊を意図していたとみられる米国の軍事行動は、体制転換的な性格を帯びつつあるとの見方が示されている。ホルムズ海峡においては掃討作戦が続くものの後手に回っているとの評価もある。イスラエル国内世論は対イラン軍事行動を支持しているが、これは必ずしもネタニヤフ首相個人への支持を意味するものではないとされる。2026年5月中旬時点で、この情勢は依然として継続しており、今後の展開(交渉による緊張緩和か、軍事的対立の更なる激化か)は不透明である。この局面の地政学的含意を分析してください。",
+        "scope": null,
+        "key_actors": [
+          "米国政権（大統領・国家安全保障チーム）",
+          "イラン指導部（最高指導者・革命防衛隊）",
+          "イスラエル政権（ネタニヤフ首相と安全保障閣僚）"
+        ],
+        "analytical_lenses": [],
+        "hypotheses": [
+          "現時点では、米国の対イラン軍事行動は「核施設への限定攻撃」から一歩踏み出し、イランの核・軍事能力と地域影響力を大きく削ぐことを狙った強圧的キャンペーンへと拡張しつつあるが、全面的なレジームチェンジ戦略として固定されたとまでは言えない、という中間的なシナリオを主軸に置く。この場合、ホルムズ海峡の不安定化とエネルギー・海上輸送リスクは一定期間続きつつも、最終的には何らかの交渉枠組み（核・地域行動に関する合意）に収れんする可能性が高い。"
+        ],
+        "alternative_hypotheses": [
+          "米国が早期に軍事行動を縮小・停止し、イランとの間で限定的な核・地域合意に達する「管理されたディエスカレーション」シナリオ。エネルギー・海上輸送リスクは一時的に高まるが、中期的には緩和される。",
+          "米国が事実上の体制転換戦略に踏み込み、イラン体制の中枢を標的とする軍事行動を拡大、イランもホルムズ海峡封鎖や代理勢力を通じた広域攻撃で応じる「長期・広域エスカレーション」シナリオ。エネルギー・海上輸送・地域安全保障への影響は構造的に深刻化する。"
+        ],
+        "evidence_needed": [
+          "米国の対イラン軍事行動に関する公式声明・議会決議・国防総省ブリーフィングが、目的（核能力抑止 vs 体制転換）をどのように位置づけているか。",
+          "ホルムズ海峡での具体的な軍事行動（機雷掃海、護衛船団、攻撃・拿捕事案）の時系列と、商船運航・保険料・運賃の変化。",
+          "イスラエル国内世論調査における「対イラン軍事行動支持」と「ネタニヤフ個人支持」の具体的な数値と推移。"
+        ],
+        "known_evidence": [
+          "専門家が「体制転換的な性格」を指摘しているという記述",
+          "ホルムズ海峡での掃討作戦継続と「後手」評価",
+          "情勢が2026年5月時点でも継続し、交渉かエスカレーションかが不透明とされている点"
+        ],
+        "knowledge_gaps": [
+          "米国の対イラン軍事行動に関する公式声明・議会決議・国防総省ブリーフィングが、目的（核能力抑止 vs 体制転換）をどのように位置づけているか。",
+          "ホルムズ海峡での具体的な軍事行動（機雷掃海、護衛船団、攻撃・拿捕事案）の時系列と、商船運航・保険料・運賃の変化。",
+          "イスラエル国内世論調査における「対イラン軍事行動支持」と「ネタニヤフ個人支持」の具体的な数値と推移。"
+        ],
+        "watch_points": [
+          "米国政府・議会による対イラン軍事行動の目的に関する公式発言（体制転換言及の有無）。",
+          "ホルムズ海峡での攻撃・拿捕・機雷等のインシデント件数と海上保険料・運賃の推移。",
+          "原油・LNG価格の水準とボラティリティ。",
+          "イランによる地域代理勢力を通じた攻撃の頻度・対象。",
+          "イスラエル国内の世論調査における対イラン軍事行動支持とネタニヤフ個人支持の推移。"
+        ],
+        "report_structure": {},
+        "confidence": "判断不能",
+        "assumptions": [
+          "米国は大規模地上侵攻・長期占領までは志向していない。",
+          "イランは体制生存を最優先し、一定の段階で交渉に応じるインセンティブを持つ。",
+          "イスラエル・湾岸諸国は対イラン抑止強化を求めつつも、全面戦争には慎重である。"
+        ],
+        "change_note": "選択したScenario CandidateのCQAS Runから初版を生成(I-B0.2 as-of run)",
+        "created_by": "phase_ib0_2_retrospective_proxy",
+        "created_at": "2026-09-16T09:34:00.330525+00:00"
+      },
+      "selection_rejection_evaluation": {
+        "expert_selected_hypothesis": "War resumption likely (M086 point 7: 'The possibility of renewed war is high')",
+        "expert_selected_vs_ai": "AI's rank-3 alternative (long-term/broad escalation, US pushes toward regime change, Iran retaliates via Hormuz blockade/proxies) is the closest semantic match. AI's OWN top-ranked/SELECTED main_scenario (a middle path converging toward some negotiated framework) does NOT match what the real expert actually concluded.",
+        "classification": "ranked_top5 (generated and displayed, but not the AI's own main/selected pick)",
+        "significance": "This is the single most concrete finding across all 3 retrospective cases: the AI's OWN internal ranking (main_scenario vs alternative_scenario) diverged from the real expert's actual conclusion, even though the correct-direction content WAS generated somewhere in the candidate set. This does not fit cleanly into 'generation_miss' (it was generated) or the classic 'ranking_miss' definition (it WAS in the displayed Top N, since all 3 candidates were displayed) -- it is better described as a main-scenario-selection divergence: the CQAS pipeline's own main/alternative assignment (main_scenario=rank1 always, per geo_ios_expert_ai_adapter's design of 'reusing Expert AI's own primary/alternative judgment as-is') did not converge on the expert's real answer.",
+        "expert_rejected_hypothesis_1": "Phased negotiation (Hormuz reopening first, nuclear issue later) -- REJECTED by Eguchi because of Trump's face-maintenance difficulty (M086 point 2: '面子維持が困難')",
+        "ai_treatment_of_hypothesis_1": "AI's rank-2 alternative ('managed de-escalation') is essentially the same path (early US pullback, negotiated settlement) -- but AI presents it as a live, undismissed alternative with purely operational switch_conditions (official statements, Hormuz incident counts), with NO reference to Trump's psychological/face-maintenance dynamics as a reason it might NOT happen.",
+        "classification_1": "generated (the hypothesis itself), but the REJECTION REASONING itself (why an expert would rule this out) is completely absent -- AI has no mechanism visible here for representing 'a plausible-sounding path an expert would actually rule out for actor-psychology reasons'",
+        "expert_rejected_hypothesis_2": "Stalemate without agreement -- REJECTED because of (a) US economic/midterm-election cost of prolonged conflict and (b) risk of Iran expanding attacks across the Gulf (M086 point 6)",
+        "ai_treatment_of_hypothesis_2": "No AI candidate describes a pure frozen-stalemate state distinctly; the Gulf-attack-expansion risk element appears folded into candidate 3's escalation scenario, but the midterm-election-cost linkage is entirely absent from this case's output (notable since BC Strategy's output DID reference midterms).",
+        "classification_2": "not_generated (as a distinct hypothesis); Gulf-attack-expansion risk element partially present inside a different candidate"
+      },
+      "indicator_evaluation": [
+        {
+          "expert_indicator": "'Iran cannot endure reduced oil production' theory -- explicitly REJECTED by most experts per M086, used as part of the reasoning against the stalemate hypothesis",
+          "ai_treatment": "AI's watch_points/observable_indicators include generic oil/LNG price level and volatility monitoring, without engaging the specific 'can Iran endure a production cut' debate or that the expert consensus rejects it as a real constraint.",
+          "grade": "B (semantically near indicator generated, but the specific debate/rejection is not captured)"
+        },
+        {
+          "expert_indicator": "US economic cost / midterm election political cost as a factor working against prolonged stalemate",
+          "ai_treatment": "Absent from this case's watch_points and evidence_needed entirely.",
+          "grade": "D (complete absence)"
+        },
+        {
+          "expert_indicator": "Iran's risk of expanding attacks across the Gulf region via proxies",
+          "ai_treatment": "Present, folded into candidate 3's escalation-scenario description ('代理勢力を通じた広域攻撃').",
+          "grade": "B (semantically near, present within one candidate's narrative rather than as a standalone cross-cutting watch_point)"
+        }
+      ],
+      "actor_evaluation": [
+        {
+          "expert_actor": "Trump",
+          "ai_treatment": "'米国政権（大統領・国家安全保障チーム）'",
+          "classification": "implicitly_covered",
+          "note": "role-level, not named"
+        },
+        {
+          "expert_actor": "Khamenei",
+          "ai_treatment": "'イラン指導部（最高指導者・革命防衛隊）'",
+          "classification": "implicitly_covered",
+          "note": "role-level, not named"
+        },
+        {
+          "expert_actor": "Netanyahu",
+          "ai_treatment": "'イスラエル政権（ネタニヤフ首相と安全保障閣僚）'",
+          "classification": "explicitly_generated",
+          "note": "FIRST instance across all 3 retrospective cases of a specific named individual appearing in AI's key_actors -- a partial, notable exception to the H1 pattern"
+        },
+        {
+          "expert_actor": "Xi Jinping / China",
+          "ai_treatment": "absent",
+          "classification": "not_applicable",
+          "note": "the T0 theme (deliberately, per blinding design) scoped the situation to the US-Iran-Israel triangle and did not include the China/Trump-Xi-summit thread from M032 -- this thread belongs to a different part of the continuous Iran situation than what this specific T0 input covered, so its absence is not a fair miss against this theme"
+        },
+        {
+          "expert_actor": "Ghalibaf (parliament speaker, negotiation channel)",
+          "ai_treatment": "absent",
+          "classification": "missing"
+        },
+        {
+          "expert_actor": "Pollack / Vatanka (MEI analysts)",
+          "ai_treatment": "n/a",
+          "classification": "not_applicable",
+          "note": "these are source-attribution figures (external analysts), not geopolitical actors in the situation itself"
+        }
+      ],
+      "h1_h4_cross_reference": {
+        "H1_actor_selection": {
+          "status": "inconclusive",
+          "note": "partial improvement (Netanyahu named) alongside continued genericness for Trump/Khamenei and missing secondary actors (Xi, Ghalibaf) -- mixed result, does not cleanly support or contradict the prior n=2 pattern"
+        },
+        "H2_indicator_reasoning": {
+          "status": "supports",
+          "note": "one indicator matched semantically (oil price), one completely missed (midterm linkage), consistent with H2's 'weak at concrete/specific indicators' hypothesis"
+        },
+        "H3_counter_hypothesis_nuance": {
+          "status": "supports",
+          "note": "new instance: AI generated the REJECTED hypothesis's content but not the expert's REASON for rejecting it (Trump face-maintenance psychology) -- same underlying pattern as Hungary's 'not the end of populism' miss, applied to rejection-logic rather than a standalone nuance"
+        },
+        "H4_investigation_question_reframing": {
+          "status": "supports",
+          "note": "3rd consecutive case where investigation_question is the raw input theme verbatim"
+        }
+      },
+      "limitations": [
+        "Single addition to n=3 total; NOT an independent 3rd data point relative to BC Strategy (same case family, see cross_case_comparison.case_families below).",
+        "Same evidence-starvation pattern as BC Strategy: 0 geo_documents included (19 excluded future, 11 excluded unverified), 0 geo_events included (1 excluded future). Confidence on findings below is capped at MEDIUM at most for this reason -- the DB simply has no Iran/Hormuz documents dated before 2026-05-15 at all (earliest is 1 day after T0), so this is a structural feature of how this dataset happens to be seeded, not something a different T0 choice within the Feb-May window could have avoided.",
+        "T0 theme blinding could not be perfectly verified against Claude's own prior exposure to the Iran case reference material read earlier in this same conversation (for corpus-audit purposes) -- mitigated by deliberately excluding M086's conclusion/rejection-reasoning/indicators/framing from the theme text, but not a hard technical guarantee the way the AsOfEvaluationClient's DB-level filtering is."
+      ]
+    },
+    {
+      "case_id": "ib0-3-us-china-absence-signal",
+      "t0": "2026-05-12",
+      "input_theme": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。",
+      "case_family": "Family C: US-China summit / absence-anomaly detection (independent of Family A=Hungary and Family B=BC Strategy/Iran)",
+      "blinding_note": "T0 theme states ONLY the objective, publicly-knowable delegation roster fact (Tim Cook/Larry Fink/Schwarzman) and the planned-summit timing (a scheduled fact, not an outcome). Does NOT state or hint at Eguchi's own interpretive move (that the ABSENCE of auto/pharma representation is itself the significant signal) -- that interpretive leap, if made, must come from the AI itself.",
+      "as_of_policy": "eval_harness.AsOfEvaluationClient, as_of_date=2026-05-12",
+      "excluded_future_sources": {
+        "as_of_date": "2026-05-12",
+        "tables": {
+          "geo_events": {
+            "policy": "_policy_geo_events",
+            "included_count": 0,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_documents": {
+            "policy": "_policy_geo_documents",
+            "included_count": 0,
+            "excluded_future_count": 4,
+            "excluded_unverified_count": 0
+          },
+          "geo_ios_analysis_sessions": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 3,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_ios_scenario_candidates": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 2,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_expert_responses": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 1,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          },
+          "geo_ios_analysis_designs": {
+            "policy": "_policy_passthrough_no_filter",
+            "included_count": 0,
+            "excluded_future_count": 0,
+            "excluded_unverified_count": 0
+          }
+        }
+      },
+      "leakage_audit": {
+        "t0": "2026-05-12",
+        "keywords": [
+          "China",
+          "Trump",
+          "Xi",
+          "summit",
+          "visit",
+          "Hass"
+        ],
+        "by_keyword": {
+          "China": {
+            "geo_documents": {
+              "without_proxy_count": 15,
+              "without_proxy_future_dated": [
+                {
+                  "document_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+                  "published_at": "2026-08-01T00:00:00+00:00",
+                  "title": "China's Wang Yi calls on Iran to ensure freedom and safe passage through Strait of Hormuz"
+                },
+                {
+                  "document_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+                  "published_at": "2026-08-02T00:00:00+00:00",
+                  "title": "How China gets around the blockade of the Strait of Hormuz to get Iranian oil"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 3,
+              "without_proxy_future_created": [
+                {
+                  "knowledge_item_id": "60e32ca5-c1e4-4ebb-90fc-7d099ca9e224",
+                  "title": "[Media Episode] mep_china_global_times_mfa",
+                  "created_at": "2026-08-31T00:29:27.225314+00:00",
+                  "as_of_date": "2026-08-31"
+                },
+                {
+                  "knowledge_item_id": "613d5298-b784-4a91-a6cf-249bffd91ba5",
+                  "title": "[Media Episode] mep2_china_mfa_escalation_ladder",
+                  "created_at": "2026-08-31T04:43:25.932051+00:00",
+                  "as_of_date": "2026-08-31"
+                },
+                {
+                  "knowledge_item_id": "79db455f-7217-41de-a0ec-98eded00e547",
+                  "title": "[Media Profile] South China Morning Post",
+                  "created_at": "2026-09-02T01:02:23.627743+00:00",
+                  "as_of_date": "2026-09-02"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "Trump": {
+            "geo_documents": {
+              "without_proxy_count": 4,
+              "without_proxy_future_dated": [
+                {
+                  "document_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+                  "published_at": "2026-07-14T00:00:00+00:00",
+                  "title": "Trump backs off 20% fee for Strait of Hormuz shipments"
+                },
+                {
+                  "document_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+                  "published_at": "2026-07-14T00:00:00+00:00",
+                  "title": "Trump Backs Off 20% Fee for Strait of Hormuz Shipments"
+                },
+                {
+                  "document_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+                  "published_at": "2026-08-18T00:00:00+00:00",
+                  "title": "US-Iran war: Trump says no talks, Hormuz blockade continues"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 3,
+              "without_proxy_future_created": [
+                {
+                  "knowledge_item_id": "65bbd686-f627-4b9b-b1c6-15fa33820dbe",
+                  "title": "Donald Trump",
+                  "created_at": "2026-08-30T09:49:16.708733+00:00",
+                  "as_of_date": "2026-08-30"
+                },
+                {
+                  "knowledge_item_id": "2ec18b13-f115-4a4d-a47f-dc11263b6704",
+                  "title": "Donald Trump",
+                  "created_at": "2026-09-07T07:19:48.477475+00:00",
+                  "as_of_date": "2026-09-07"
+                },
+                {
+                  "knowledge_item_id": "6fdacbcf-808e-46ea-9048-f31b38aff29e",
+                  "title": "Donald Trump",
+                  "created_at": "2026-08-28T11:14:14.242122+00:00",
+                  "as_of_date": "2026-08-28"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "Xi": {
+            "geo_documents": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 5,
+              "without_proxy_future_created": [
+                {
+                  "knowledge_item_id": "3434a15c-b8c2-47be-887e-6ba3afa6a732",
+                  "title": "Xi Jinping",
+                  "created_at": "2026-08-30T23:25:52.764284+00:00",
+                  "as_of_date": "2026-08-31"
+                },
+                {
+                  "knowledge_item_id": "7a6689bf-4282-4a53-85ae-177078f051c1",
+                  "title": "[Media Pattern] media_pattern_exile_media_kremlin_reaction_inclusion_diverges",
+                  "created_at": "2026-08-31T00:31:02.644007+00:00",
+                  "as_of_date": "2026-08-31"
+                },
+                {
+                  "knowledge_item_id": "832f846d-efc5-4d14-ac2b-252fb8f14a05",
+                  "title": "[Media Episode] mep2_xinhua_restrained_avoids_measures",
+                  "created_at": "2026-08-31T04:44:17.539771+00:00",
+                  "as_of_date": "2026-08-31"
+                },
+                {
+                  "knowledge_item_id": "f44aac12-a2a1-42f0-9508-0620fa7ba3bc",
+                  "title": "Xi Jinping",
+                  "created_at": "2026-09-07T06:48:44.696543+00:00",
+                  "as_of_date": "2026-09-07"
+                },
+                {
+                  "knowledge_item_id": "2aae845f-2d85-4e01-8a04-375caec5ebdd",
+                  "title": "Xi Jinping",
+                  "created_at": "2026-08-28T11:14:30.3395+00:00",
+                  "as_of_date": "2026-08-28"
+                }
+              ],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "summit": {
+            "geo_documents": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 0,
+              "without_proxy_future_created": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "visit": {
+            "geo_documents": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 0,
+              "without_proxy_future_created": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          },
+          "Hass": {
+            "geo_documents": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_events": {
+              "without_proxy_count": 0,
+              "without_proxy_future_dated": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            },
+            "geo_knowledge_items": {
+              "without_proxy_count": 0,
+              "without_proxy_future_created": [],
+              "with_proxy_count": 0,
+              "with_proxy_future_leaked": []
+            }
+          }
+        },
+        "audit_report": {
+          "as_of_date": "2026-05-12",
+          "tables": {
+            "geo_documents": {
+              "policy": "_policy_geo_documents",
+              "included_count": 0,
+              "excluded_future_count": 5,
+              "excluded_unverified_count": 14
+            },
+            "geo_events": {
+              "policy": "_policy_geo_events",
+              "included_count": 0,
+              "excluded_future_count": 0,
+              "excluded_unverified_count": 0
+            },
+            "geo_knowledge_items": {
+              "policy": "_policy_geo_knowledge_items",
+              "included_count": 0,
+              "excluded_future_count": 11,
+              "excluded_unverified_count": 0
+            }
+          }
+        },
+        "PASS": true
+      },
+      "cqas_all_candidates": [
+        {
+          "scenario_candidate_id": "62b58320-9517-4667-acbb-884ce51c95ad",
+          "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+          "rank": 1,
+          "title": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テク",
+          "content": {
+            "raw": {
+              "confidence": "低",
+              "assumptions": [
+                "米中双方が経済・投資関係の安定化・再構築に一定のインセンティブを持っている。",
+                "企業・金融トップの同行は象徴的な意味だけでなく、何らかの実務的議題・期待を伴っている。"
+              ],
+              "description": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テクノロジー・資本市場・投資フローの再調整』の場として位置づける動きと見るのが最も整合的である。米中双方は、完全なデカップリングではなく、分野ごとの選別的関与・再構築を模索しており、企業・金融界を巻き込んだ形で対中ビジネス・投資関係の新たな枠組みを探る可能性がある。ただし、具体的な議題・合意内容が不明なため、確信度は低にとどまる。",
+              "evidence_class": "model_general_knowledge",
+              "evidence_relevance": [],
+              "selection_rationale": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+              "supporting_evidence": [
+                "VISIT_DELEGATION_COMPOSITION"
+              ],
+              "observable_indicators": [
+                "共同声明や事後発表で、関税・輸出管理・対中投資規制・サプライチェーン・金融市場に関する具体的な合意・協議枠組みが示されるか。",
+                "Apple・BlackRock・Blackstoneが訪中後に、中国での投資・製造・サービス展開に関する具体的な動きやコメントを出すか。"
+              ],
+              "historical_analogies_used": [
+                {
+                  "same_actor": false,
+                  "description": "過去の米中首脳会談や首脳訪問に企業トップが同行し、関税・投資・市場アクセスに関する合意や協議枠組みが形成された事例一般。",
+                  "same_domain": true,
+                  "analogy_strength": "medium",
+                  "same_constraints": false,
+                  "same_leverage_mechanism": true,
+                  "analogy_source_precedent_id": null,
+                  "same_institutional_structure": true
+                }
+              ],
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "低",
+            "key_actors": [
+              "トランプ大統領（米国）",
+              "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+              "中国指導部"
+            ],
+            "source_cqas": {
+              "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+              "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+            },
+            "why_this_matters": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+            "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:48:45.413387+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:48:45.78925+00:00"
+        },
+        {
+          "scenario_candidate_id": "6a35bf48-d2ab-4b06-a531-917f9065d633",
+          "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+          "rank": 2,
+          "title": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+              "switch_conditions": [
+                "首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "トランプ大統領（米国）",
+              "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+              "中国指導部"
+            ],
+            "source_cqas": {
+              "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+              "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。",
+            "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:48:45.413387+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:48:45.78925+00:00"
+        },
+        {
+          "scenario_candidate_id": "2b2dbeb4-275d-4c34-86ee-eec3a3afd932",
+          "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+          "rank": 3,
+          "title": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+          "content": {
+            "raw": {
+              "confidence": "低",
+              "description": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+              "switch_conditions": [
+                "米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "低",
+            "key_actors": [
+              "トランプ大統領（米国）",
+              "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+              "中国指導部"
+            ],
+            "source_cqas": {
+              "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+              "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。",
+            "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:48:45.413387+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:48:45.78925+00:00"
+        }
+      ],
+      "top5_displayed": [
+        {
+          "scenario_candidate_id": "62b58320-9517-4667-acbb-884ce51c95ad",
+          "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+          "rank": 1,
+          "title": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テク",
+          "content": {
+            "raw": {
+              "confidence": "低",
+              "assumptions": [
+                "米中双方が経済・投資関係の安定化・再構築に一定のインセンティブを持っている。",
+                "企業・金融トップの同行は象徴的な意味だけでなく、何らかの実務的議題・期待を伴っている。"
+              ],
+              "description": "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テクノロジー・資本市場・投資フローの再調整』の場として位置づける動きと見るのが最も整合的である。米中双方は、完全なデカップリングではなく、分野ごとの選別的関与・再構築を模索しており、企業・金融界を巻き込んだ形で対中ビジネス・投資関係の新たな枠組みを探る可能性がある。ただし、具体的な議題・合意内容が不明なため、確信度は低にとどまる。",
+              "evidence_class": "model_general_knowledge",
+              "evidence_relevance": [],
+              "selection_rationale": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+              "supporting_evidence": [
+                "VISIT_DELEGATION_COMPOSITION"
+              ],
+              "observable_indicators": [
+                "共同声明や事後発表で、関税・輸出管理・対中投資規制・サプライチェーン・金融市場に関する具体的な合意・協議枠組みが示されるか。",
+                "Apple・BlackRock・Blackstoneが訪中後に、中国での投資・製造・サービス展開に関する具体的な動きやコメントを出すか。"
+              ],
+              "historical_analogies_used": [
+                {
+                  "same_actor": false,
+                  "description": "過去の米中首脳会談や首脳訪問に企業トップが同行し、関税・投資・市場アクセスに関する合意や協議枠組みが形成された事例一般。",
+                  "same_domain": true,
+                  "analogy_strength": "medium",
+                  "same_constraints": false,
+                  "same_leverage_mechanism": true,
+                  "analogy_source_precedent_id": null,
+                  "same_institutional_structure": true
+                }
+              ],
+              "derived_from_hypothesis_id": null,
+              "confidence_adjustment_reason": null,
+              "relevance_confidence_adjustment_reason": null
+            },
+            "origin": "main_scenario",
+            "main_lens": null,
+            "confidence": "低",
+            "key_actors": [
+              "トランプ大統領（米国）",
+              "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+              "中国指導部"
+            ],
+            "source_cqas": {
+              "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+              "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+            },
+            "why_this_matters": "提供された唯一の事実（訪中団構成）から最も自然に導けるのは、米中首脳会談が経済・投資関係の再調整を重要な軸としているという読みであり、他の仮説（対米制裁緩和の試みなど）はその派生として位置づけられるため。",
+            "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:48:45.413387+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:48:45.78925+00:00"
+        },
+        {
+          "scenario_candidate_id": "6a35bf48-d2ab-4b06-a531-917f9065d633",
+          "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+          "rank": 2,
+          "title": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+          "content": {
+            "raw": {
+              "confidence": "判断不能",
+              "description": "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+              "switch_conditions": [
+                "首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "判断不能",
+            "key_actors": [
+              "トランプ大統領（米国）",
+              "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+              "中国指導部"
+            ],
+            "source_cqas": {
+              "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+              "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 首脳会談後の発表で、具体的な経済・投資・テクノロジー・金融関連の成果がほぼ示されない場合。",
+            "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:48:45.413387+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:48:45.78925+00:00"
+        },
+        {
+          "scenario_candidate_id": "2b2dbeb4-275d-4c34-86ee-eec3a3afd932",
+          "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+          "rank": 3,
+          "title": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+          "content": {
+            "raw": {
+              "confidence": "低",
+              "description": "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。",
+              "switch_conditions": [
+                "米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。"
+              ]
+            },
+            "origin": "alternative_scenario",
+            "main_lens": null,
+            "confidence": "低",
+            "key_actors": [
+              "トランプ大統領（米国）",
+              "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+              "中国指導部"
+            ],
+            "source_cqas": {
+              "request_id": "4e45b81d-1774-4984-ab42-d3f16771dc43",
+              "response_id": "55169e85-ce3c-4a59-9d11-cc9769288c1e"
+            },
+            "why_this_matters": "この分岐が有力になる条件: 米企業・金融界が対中関係の緩和を公然と支持する一方で、米議会・安全保障コミュニティが強く反発する構図が明確になった場合。",
+            "analysis_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。"
+          },
+          "displayed": true,
+          "selected": false,
+          "generated_at": "2026-09-16T09:48:45.413387+00:00",
+          "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+          "prompt_version": "geo-expert-v1.2-staged-phaseA",
+          "cqas_knowledge_version": "3b31db8e2355",
+          "created_at": "2026-09-16T09:48:45.78925+00:00"
+        }
+      ],
+      "selected_candidate_id": "62b58320-9517-4667-acbb-884ce51c95ad",
+      "analysis_design": {
+        "analysis_design_id": "b45337d8-ef3f-4f9c-acba-01fc8a099ebc",
+        "analysis_session_id": "0df13313-28a3-46b9-a2f7-687d763bc473",
+        "version": 1,
+        "investigation_question": "2026年5月12日、トランプ大統領の訪中団メンバーの一部が判明した。確認された同行者には、Apple(ティム・クック氏)、Blackrock(ラリー・フィンク氏)、Blackstone(シュワルツマン氏)が含まれる。この訪中は、5月中旬に予定されている米中首脳会談に合わせたものである。この訪中団の構成が持つ地政学的・経済的な含意を分析してください。",
+        "scope": null,
+        "key_actors": [
+          "トランプ大統領（米国）",
+          "Apple（ティム・クック）、BlackRock（ラリー・フィンク）、Blackstone（シュワルツマン）など訪中団企業トップ",
+          "中国指導部"
+        ],
+        "analytical_lenses": [],
+        "hypotheses": [
+          "現時点では、トランプ訪中団にApple・BlackRock・Blackstoneのトップが含まれる構成は、米中首脳会談を『安全保障・関税交渉』だけでなく、『テクノロジー・資本市場・投資フローの再調整』の場として位置づける動きと見るのが最も整合的である。米中双方は、完全なデカップリングではなく、分野ごとの選別的関与・再構築を模索しており、企業・金融界を巻き込んだ形で対中ビジネス・投資関係の新たな枠組みを探る可能性がある。ただし、具体的な議題・合意内容が不明なため、確信度は低にとどまる。"
+        ],
+        "alternative_hypotheses": [
+          "訪中団構成は主に象徴的・政治的な意味を持ち、実質的な経済・投資合意はほとんどなく、米中双方が国内向けに『対話継続』をアピールするための演出にとどまる。",
+          "中国側が米企業・金融界を通じて対米制裁・輸出管理の緩和を図るが、米国内の対中強硬世論・議会・安全保障コミュニティの抵抗により、実質的な緩和は限定的にとどまる。"
+        ],
+        "evidence_needed": [
+          "訪中団の正式なメンバーリスト（他に誰が含まれるか、軍・安全保障関係者や他産業の代表の有無）。",
+          "米中首脳会談および訪中団に関する公式議題（経済・投資・テクノロジー・金融のどの分野が含まれるか）。",
+          "Apple・BlackRock・Blackstoneが今回の訪中で想定している具体的な目的（投資案件、規制緩和要望、サプライチェーン協議など）。"
+        ],
+        "known_evidence": [
+          "VISIT_DELEGATION_COMPOSITION"
+        ],
+        "knowledge_gaps": [
+          "訪中団の正式なメンバーリスト（他に誰が含まれるか、軍・安全保障関係者や他産業の代表の有無）。",
+          "米中首脳会談および訪中団に関する公式議題（経済・投資・テクノロジー・金融のどの分野が含まれるか）。",
+          "Apple・BlackRock・Blackstoneが今回の訪中で想定している具体的な目的（投資案件、規制緩和要望、サプライチェーン協議など）。"
+        ],
+        "watch_points": [
+          "訪中団の正式メンバーリストと肩書き（軍・安全保障関係者、他産業代表の有無）。",
+          "米中首脳会談前後の公式議題・共同声明における経済・投資・テクノロジー・金融関連項目の有無・比重。",
+          "Apple・BlackRock・Blackstoneによる訪中前後のコメント（対中投資・サプライチェーン・規制に関する発言）。",
+          "米中間で新たに発表される関税・輸出管理・対中投資規制の変更や協議枠組み。"
+        ],
+        "report_structure": {},
+        "confidence": "低",
+        "assumptions": [
+          "米中双方が経済・投資関係の安定化・再構築に一定のインセンティブを持っている。",
+          "企業・金融トップの同行は象徴的な意味だけでなく、何らかの実務的議題・期待を伴っている。"
+        ],
+        "change_note": "選択したScenario CandidateのCQAS Runから初版を生成(I-B0.3 as-of run)",
+        "created_by": "phase_ib0_3_retrospective_proxy",
+        "created_at": "2026-09-16T09:48:48.171364+00:00"
+      },
+      "absence_signal_result": {
+        "expert_signal": "The ABSENCE of automotive (ex-Tesla) and pharmaceutical sector representation from the delegation is itself treated as the primary analytical signal -- 'what industries are conspicuously NOT sending their leaders reveals which sectors are excluded from this round of US-China rapprochement.'",
+        "ai_candidates_all_3": "None of the 3 candidates reference which sectors/companies are absent, or draw any inference from an omission. All 3 interpretations are built entirely from POSITIVE presence (who IS on the list) -- tech/capital-market reset (rank1, selected), symbolic-only messaging (rank2), sanctions-relief attempt (rank3).",
+        "classification": "D. missing (complete absence) -- across all 3 candidates and the resulting Design, with no exception",
+        "significance": "This is the cleanest, most decisive finding across all 4 retrospective cases: the CQAS pipeline generated zero absence/anomaly-detection reasoning despite the T0 input itself containing the exact structural cue (a partial, named roster with an implicit gap) that prompted the real expert's signature analytical move. This was not a close call diluted by evidence scarcity -- it is a complete, unambiguous type-of-reasoning gap.",
+        "confidence": "HIGH (unlike other findings in this effort, this one is NOT meaningfully weakened by the retrieval evidence-scarcity caveat, since the signal was available directly in the T0 input text itself, not dependent on retrieval)"
+      },
+      "actor_evaluation": [
+        {
+          "expert_actor": "Trump",
+          "ai_treatment": "'トランプ大統領（米国）'",
+          "classification": "explicit_actor"
+        },
+        {
+          "expert_actor": "Xi Jinping",
+          "ai_treatment": "never named; only '中国指導部' (Chinese leadership, generic)",
+          "classification": "implicit_institutional_actor",
+          "note": "notable: Xi is the actual summit counterpart head of state and is never named specifically, despite Trump being named specifically -- an asymmetry worth flagging"
+        },
+        {
+          "expert_actor": "US administration (broader)",
+          "ai_treatment": "folded entirely into 'トランプ大統領'",
+          "classification": "implicit_institutional_actor"
+        },
+        {
+          "expert_actor": "Chinese leadership (broader)",
+          "ai_treatment": "'中国指導部'",
+          "classification": "implicit_institutional_actor"
+        },
+        {
+          "expert_actor": "Tim Cook / Larry Fink / Schwarzman (delegation members, given directly in the T0 input)",
+          "ai_treatment": "carried forward verbatim into key_actors as a single grouped label ('Apple/BlackRock/Blackstoneなど訪中団企業トップ')",
+          "classification": "explicit_actor (names present) but treated as ONE collective bloc, not as individually distinct decision-relevant variables -- e.g. no candidate differentiates what Cook (hardware/China manufacturing exposure) vs Fink (capital markets) vs Schwarzman (private equity) each specifically represent or want, which is closer to what would be needed to notice the auto/pharma absence in the first place"
+        }
+      ],
+      "reframing_evaluation": {
+        "level_reached": "A. input restatement",
+        "evidence": "investigation_question is the T0 theme text verbatim, identical to all 3 prior cases (4th consecutive occurrence)."
+      },
+      "counter_hypothesis_evaluation": {
+        "alternative_interpretations_generated": [
+          "Substantive re-engagement: summit reframes US-China relations around tech/capital-market recalibration (rank1, selected)",
+          "Symbolic-only: delegation is domestic-audience theater, no substantive economic outcome expected (rank2)",
+          "Adversarial-instrumental: China uses US business/finance figures as a channel to seek sanctions/export-control relief, resisted by US hawks (rank3)"
+        ],
+        "quality_assessment": "A genuinely differentiated set of 3 interpretations along a 'how substantive is this diplomatic gesture' axis -- comparable in spirit to the 'summit preparation progressing vs. stalled' framing suggested as an example. This is a real strength: multi-hypothesis generation itself is not the gap here.",
+        "gap": "None of the 3 hypotheses include 'the absence itself is strategic signaling' as an interpretive category -- the counter-hypothesis generation is good WITHIN the presence-based framing, but does not extend to the absence-based framing at all."
+      },
+      "h1_h5_cross_reference": {
+        "H1_actor_selection": {
+          "status": "inconclusive",
+          "note": "Trump and the 3 named delegation members are explicit; but Xi -- arguably the single most important counterpart actor for a bilateral summit -- is never named, only referred to generically. Consistent with the broader H1 pattern of under-specifying actors who are structurally important but not directly supplied in the input text."
+        },
+        "H2_indicator_reasoning": {
+          "status": "not_applicable",
+          "note": "This case's core test is absence-signal detection, not concrete-indicator specificity; watch_points generated (official statement content, company post-visit comments) are reasonable and not obviously weaker than other cases, so H2 is not meaningfully exercised here."
+        },
+        "H3_counter_hypothesis_rejection_logic": {
+          "status": "does_not_support",
+          "note": "Unlike Hungary/Iran, this case shows GOOD counter-hypothesis generation (3 genuinely distinct interpretations). H3 as originally framed (weak at generating nuanced alternative readings) is NOT supported by this case -- worth noting as a case where the pattern breaks."
+        },
+        "H4_investigation_question_reframing": {
+          "status": "supports",
+          "note": "4th consecutive case of verbatim restatement."
+        },
+        "H5_main_scenario_ranking_divergence": {
+          "status": "not_applicable",
+          "note": "No Selection-Logic-bearing expert ground truth exists for this case (M016 is a single interpretive comment, not a multi-hypothesis selection-with-rejection-reasoning artifact like M086) -- cannot be evaluated here, consistent with the instruction not to force H5 evaluation without matching expert evidence."
+        }
+      },
+      "limitations": [
+        "Single case, independent Family C -- n=1 for this family.",
+        "Phase I-B0.3: production pipeline run unmodified, DB client substituted with an as-of-date-filtering read proxy. NOT an 'AI output reviewed by expert' case, NOT Phase I-B1."
+      ]
+    }
+  ],
+  "cross_case_comparison": {
+    "recurring_actor_selection_gap": {
+      "pattern": "AI's key_actors list is materially narrower than the expert's real material in BOTH cases (Hungary: 2 vs 5 named actors; BC Strategy: 0 vs 10 named actors).",
+      "cases_showing_it": [
+        "ib0-hungary",
+        "ib0-bc-strategy"
+      ],
+      "n": "2/2 available cases -- directional signal only, not a statistical claim."
+    },
+    "recurring_generation_miss_pattern": {
+      "pattern": "In both cases, the ONE dimension that was the expert's own most distinctively original contribution (Hungary: Trump/MAGA cross-national populist linkage; BC Strategy: the carrier-deployment observable indicator) was completely absent from AI's generated candidates -- not merely mis-ranked, absent from generation entirely.",
+      "cases_showing_it": [
+        "ib0-hungary",
+        "ib0-bc-strategy"
+      ],
+      "n": "2/2 available cases -- directional signal only."
+    },
+    "recurring_investigation_question_non_reframing": {
+      "pattern": "AI's Analysis Design investigation_question is the raw input theme verbatim in both cases; neither produces a distinct declarative significance-framing paragraph the way the expert's real practice does.",
+      "cases_showing_it": [
+        "ib0-hungary",
+        "ib0-bc-strategy"
+      ],
+      "n": "2/2 available cases."
+    },
+    "one_off_case_specific_findings": [
+      {
+        "case": "ib0-bc-strategy",
+        "finding": "Near-total evidence starvation under the as-of filter (0 of 8+5 candidate documents survived); this is a retrieval-content-availability artifact of how this particular DB happens to be seeded/dated for this theme, not demonstrated to be a systematic product behavior across other themes."
+      },
+      {
+        "case": "ib0-hungary",
+        "finding": "A specific expert-added analytical nuance (anti-incumbent-vote-not-ideological-reversal caveat) with no BC Strategy analogue -- case-specific, not recurring."
+      }
+    ],
+    "explicit_non_action": "No CQAS prompt, ranking, or Expert AI logic change was made based on these 2 cases. Per instruction, a 2-case recurring pattern is treated as directional evidence warranting a Phase I-B1 (real expert) check, not as sufficient grounds for a tuning decision.",
+    "case_families": {
+      "family_A_independent_political_transition": [
+        "ib0-hungary"
+      ],
+      "family_B_iran_escalation_related": [
+        "ib0-bc-strategy",
+        "ib0-2-iran-hormuz"
+      ],
+      "interpretation_rule": "Treat as 2 independent case families, not 3 independent cases. A pattern appearing in both BC Strategy AND Iran counts as ONE family-level observation (they share the same underlying real-world situation and overlapping actors/topics), not two independent replications. Only a pattern appearing in BOTH family A (Hungary) and family B (BC Strategy/Iran) constitutes genuine 2-family replication. Family C (US-China) is fully independent of both A and B -- different topic, different actors, different underlying real-world situation.",
+      "family_C_us_china_absence_detection": [
+        "ib0-3-us-china-absence-signal"
+      ]
+    },
+    "updated_recurring_patterns_by_family": {
+      "actor_selection_narrowness (H1)": {
+        "family_A_hungary": "present (2 vs 5 actors)",
+        "family_B_bc_strategy": "present, severe (0 vs 10 actors)",
+        "family_B_iran": "mixed -- partial improvement (Netanyahu named specifically for the first time) alongside continued genericness elsewhere",
+        "cross_family_replication": "2 of 2 families show SOME form of this pattern, but family B's own internal cases (BC Strategy vs Iran) do not even agree with each other on severity -- weakens confidence that this is a single clean, stable pattern"
+      },
+      "expert_unique_contribution_generation_miss (H2/H3 combined)": {
+        "family_A_hungary": "present (Trump/MAGA cross-populist linkage entirely absent)",
+        "family_B_bc_strategy": "present (carrier-deployment indicator absent)",
+        "family_B_iran": "present (Trump face/pride rejection-reasoning absent for the de-escalation alternative)",
+        "cross_family_replication": "2 of 2 families show this pattern -- the closest to genuine cross-family replication found in this effort"
+      },
+      "investigation_question_reframing_miss (H4)": {
+        "family_A_hungary": "present",
+        "family_B_bc_strategy": "present",
+        "family_B_iran": "present",
+        "cross_family_replication": "2 of 2 families, 3 of 3 total cases -- the most consistently replicated finding, though still small-sample"
+      },
+      "main_scenario_ranking_divergence (NEW, Iran-specific so far)": {
+        "family_A_hungary": "not assessed (no comparable Selection Logic material existed for Hungary)",
+        "family_B_bc_strategy": "not assessed (BC Strategy's real material lacked an explicit expert conclusion to compare against)",
+        "family_B_iran": "present -- AI's own selected main_scenario diverged from the real expert's actual conclusion",
+        "cross_family_replication": "n=1, only observable in Iran because it is the only case with a genuine Selection-Logic-bearing expert artifact (M086) -- cannot yet be called a pattern, flagged as a new, high-value finding warranting a dedicated check in Phase I-B1"
+      }
+    },
+    "final_cross_family_summary": {
+      "families": {
+        "A (Hungary)": "independent political transition case, n=1",
+        "B (BC Strategy + Iran)": "Iran-escalation related case family, n=2 internally correlated (not independent replications of each other)",
+        "C (US-China)": "independent absence/anomaly-detection case, n=1"
+      },
+      "patterns_by_cross_family_replication": {
+        "investigation_question_reframing_miss (H4)": "4/4 total cases, 3/3 families -- the ONLY pattern replicated across all three independent families. Strongest finding in the whole I-B0 series.",
+        "expert_unique_contribution_generation_miss (H2/H3, narrowly defined as: the ONE most distinctive expert insight per case is absent)": "present in family A (Trump/MAGA linkage) and family B (carrier indicator, face-saving rejection logic); ABSENCE-SIGNAL version present in family C (auto/pharma omission) -- 3/3 families, but the SHAPE of the miss differs enough by family (nuance vs. indicator vs. absence-detection) that this is better read as 'CQAS tends to miss whichever single move required the LEAST literal/explicit textual support in the input' rather than one single defect.",
+        "actor_selection_narrowness (H1)": "present with varying severity in all 3 families (Hungary 2v5, BC Strategy 0v10 severe, Iran mixed/improved, US-China: Xi never named specifically) -- 3/3 families show SOME form, but severity is inconsistent even within family B, weakening confidence this is one clean, single mechanism",
+        "counter_hypothesis_generation_quality (H3, broadly defined as: can multiple genuine alternative interpretations be generated at all)": "MIXED across families -- Hungary/Iran showed a specific nuance-miss (rejection reasoning absent), but US-China showed GOOD multi-hypothesis generation (3 genuinely distinct interpretations). This suggests general counter-hypothesis GENERATION is not systematically weak; the more specific and consistent gap is generating the ONE unusual/absence-based/psychologically-grounded reading, not multi-hypothesis generation as such."
+      },
+      "single_most_replicated_finding": "H4 (investigation_question reframing miss) -- 4/4 cases, 3/3 independent families. This is the only finding in the entire I-B0 series that meets a genuinely strong cross-family replication bar."
+    }
+  }
+}

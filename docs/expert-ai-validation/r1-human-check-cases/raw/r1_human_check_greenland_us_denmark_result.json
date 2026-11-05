@@ -1,0 +1,1374 @@
+{
+  "request": {
+    "request_id": "33a1bceb-d6d8-424d-be02-120701dbc6de",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "グリーンランドをめぐる米国、デンマーク、グリーンランド自治政府の安全保障・資源・主権をめぐる現在の局面について分析してください。\n\n最新の公開情報を確認した上で、\n\n- この局面で実際に意思決定力・拒否権を持つ主体\n- 米国、デンマーク政府、グリーンランド自治政府・主要政治勢力のそれぞれの上位目的\n- 安全保障、独立・自治、重要鉱物、北極航路、米軍プレゼンス、経済支援等の論点の関係\n- 各主体のLeverage、Constraint、Red Line\n- 法制度・自治制度・住民意思が、国家指導者の意図をどこまで制約するか\n- 現局面のPrimary Key Point\n- 主シナリオと代替シナリオ\n- 今後の方向性を変えるObservable Indicators\n\nを分析してください。\n\n「米国がグリーンランドを欲している」「デンマークが拒否している」という国家間の表面的なフレームだけで十分かを検証し、グリーンランド自身の意思決定権や制度構造を踏まえることで分析フレームそのものを変更すべきかも検討してください。\n\nただし、Frame-breakingな説明を作ること自体を目的にせず、既存フレームで十分ならその理由を示してください。",
+    "created_at": "2026-09-03T11:46:25.825104+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "89e49b3a-72a0-4c0e-9c22-42466fdbc60b",
+    "request_id": "33a1bceb-d6d8-424d-be02-120701dbc6de",
+    "document_ids": [
+      "60a01c2c-c6b2-4e34-a6e1-f50159568aae"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T11:46:26.347652+00:00"
+  },
+  "response": {
+    "response_id": "9e52a891-4dc7-4f04-b456-eceb1ac17a4f",
+    "request_id": "33a1bceb-d6d8-424d-be02-120701dbc6de",
+    "source_pack_id": "89e49b3a-72a0-4c0e-9c22-42466fdbc60b",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "グリーンランドはデンマーク王国の一部だが、広範な自治権を持つ自治政府を有し、将来の独立に関する住民投票の可能性が制度上議論されている。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "米国はグリーンランドのThule空軍基地などを通じて長年軍事プレゼンスを維持しており、北極圏のミサイル防衛・早期警戒・北極航路の安全保障上の要衝として扱っている。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "グリーンランドにはレアアースなどの重要鉱物資源が存在し、気候変動に伴う氷床融解で採掘可能性や北極航路の商業的価値が注目されている。",
+          "claim_type": "fact",
+          "source_ref": null
+        },
+        {
+          "text": "米国政府は近年、北極戦略や安全保障文書の中でグリーンランドを含む北極圏の安定・同盟国との協力を重視する立場を示している。",
+          "claim_type": "official_claim",
+          "source_ref": null
+        },
+        {
+          "text": "デンマーク政府は、グリーンランドの自治と住民意思を尊重しつつ、王国全体の安全保障・外交方針との整合性を維持する立場を公式に表明している。",
+          "claim_type": "official_claim",
+          "source_ref": null
+        },
+        {
+          "text": "グリーンランド自治政府内の主要政治勢力は、資源開発と経済自立を進めつつ、住民の生活・環境保護・文化的アイデンティティを守ることを強調している。",
+          "claim_type": "official_claim",
+          "source_ref": null
+        },
+        {
+          "text": "トランプ政権期に米国がグリーンランドの「購入」可能性に言及したことは、デンマーク・グリーンランド双方から強い反発を受け、主権の売買という発想自体が政治的に受け入れ難いことを示した。",
+          "claim_type": "observation",
+          "source_ref": null
+        },
+        {
+          "text": "グリーンランドの主権変更（独立・領有権移転）は、デンマーク政府だけでなくグリーンランド住民の同意が不可欠であり、単純な米国・デンマーク間交渉では決まらない。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "米国の主な関心は、グリーンランド全体の領有よりも、北極圏における軍事的アクセスと中国・ロシアの影響排除、および重要鉱物の供給確保にある可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "デンマーク政府は、グリーンランドの独立を長期的には否定しないが、王国全体の安全保障・財政負担・国際的地位への影響を考慮し、急激な主権変更には慎重であると推測される。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "グリーンランド自治政府・住民は、資源開発と経済支援を交渉カードとして用いながら、主権・環境・文化の保護を優先し、外部大国間の競争を利用しつつも過度な依存や軍事化を避けようとしている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "「米国がグリーンランドを欲している／デンマークが拒否している」というフレームは、あたかもグリーンランドが受動的な対象であるかのように見せるが、実際には自治政府と住民投票制度が主権変更の決定権を持つため、三者の力学を考える必要があるという分析上の例示。",
+          "claim_type": "illustration",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "背景の力学としては、(1) 北極圏の安全保障・米露中の競争、(2) 重要鉱物・エネルギー資源とサプライチェーン安全保障、(3) グリーンランドの自治・独立志向と住民意思、(4) デンマーク王国の安全保障・財政・国際的役割、の四つが重なっている。米国の力が安全保障・資源分野で強まるほど、デンマークは同盟関係を通じて安全保障負担を分担しつつ、王国の統合性と対米交渉力を維持する必要がある。一方、グリーンランドは資源開発・基地協定を通じて経済支援と政治的自立を高める余地があるが、環境負荷・社会変容・外部依存のリスクも増す。利害一致は「北極圏の安定」「中国・ロシアの過度な影響排除」「グリーンランド住民の生活向上」では一定程度見られるが、「主権のあり方」「軍事化の程度」「資源開発の速度・主体」では対立が生じやすい。",
+      "stakeholders": [
+        {
+          "actor": "米国連邦政府（政権全体）",
+          "purpose": "北極圏における米国の安全保障上の優位と、中国・ロシアの影響排除、同盟国との安定した関係維持。",
+          "leverage": "安全保障コミュニティ・軍",
+          "position": "グリーンランドにおける米軍基地の長期的安定・必要に応じた拡張、重要鉱物・北極航路へのアクセス確保、中国・ロシアの影響排除。",
+          "red_lines": "グリーンランドが中国・ロシアに軍事基地や安全保障上の重要インフラを提供し、米軍プレゼンスが排除されるような事態。",
+          "confidence": "中",
+          "constraints_fears": "同盟関係・NATO",
+          "ability_to_move_or_block": "基地協定の更新・拡張、北極インフラ投資、資源開発企業への支援などを通じて、グリーンランドの安全保障・経済構造を大きく動かせる。"
+        },
+        {
+          "actor": "デンマーク王国政府",
+          "purpose": "王国全体の安定・安全保障・国際的地位の維持と、財政負担の管理。",
+          "leverage": "同盟関係",
+          "position": "グリーンランドの安定・住民生活の向上を支えつつ、急激な主権変更による安全保障・財政リスクを避ける。",
+          "red_lines": "グリーンランド主権が、王国法制を無視して一方的に変更されること、または王国の安全保障を著しく損なう形で外部大国に利用されること。",
+          "confidence": "中",
+          "constraints_fears": "国内世論・財政",
+          "ability_to_move_or_block": "自治権拡大・財政支援・外交的保護を通じて、グリーンランドの選択肢を広げることができる。"
+        },
+        {
+          "actor": "グリーンランド自治政府・住民",
+          "purpose": "住民の生活向上・経済自立・文化・環境の保護と、長期的な主権・自治の確立。",
+          "leverage": "住民意思・文化的アイデンティティ",
+          "position": "資源開発・経済支援を通じて生活水準を向上させつつ、主権・環境・文化を守り、長期的な独立の選択肢を維持する。",
+          "red_lines": "住民意思を無視した主権変更や、環境・文化を著しく損なう形での資源開発・軍事化。",
+          "confidence": "低",
+          "constraints_fears": "経済的制約・失業",
+          "ability_to_move_or_block": "資源開発許可・基地協定への支持・反対、独立志向の政治運動などを通じて、外部アクターの行動を動かせる。"
+        },
+        {
+          "actor": "EU（特にデンマーク以外の加盟国）",
+          "purpose": "北極圏の安定・環境保護・重要鉱物サプライチェーンの安全確保。",
+          "leverage": "市場アクセス・規制・投資。",
+          "position": "グリーンランドの資源開発に一定の関心を持ちつつ、環境保護を強調する立場。",
+          "priority": "環境・ESGと資源安全保障の両立。",
+          "red_lines": "環境規制を無視した大規模開発や、EUの安全保障を損なう第三国軍事プレゼンス。",
+          "confidence": "低",
+          "constraints_fears": "軍事化・環境破壊・中国依存の拡大。",
+          "key_relationships": "デンマークを通じた北極政策、米国との同盟、グリーンランドとの経済関係。",
+          "ability_to_move_or_block": "資源輸入・投資規制を通じてプロジェクトの採算性を左右し得るが、主権問題への直接影響は限定的。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "グリーンランド住民が短期的には急激な主権変更よりも生活・経済の安定を優先していること",
+          "デンマーク王国法制が主権変更に住民投票・議会承認を必要としていること",
+          "米国が同盟関係維持と国際的正当性のため、主権変更を強行しないこと"
+        ],
+        "description": "現時点では、グリーンランドをめぐる局面は「主権はデンマーク王国の枠内で維持しつつ、グリーンランド自治政府・住民の意思を尊重しながら、米軍プレゼンスと資源開発・経済支援を漸進的に拡大する」というシナリオが最も整合的である。米国は北極圏の安全保障・対中・対露抑止を優先し、基地維持・インフラ投資・資源アクセスを重視するが、主権変更を強行する動きは制度的制約と同盟関係維持の必要性から抑制されている。デンマークは王国の安定・安全保障・財政負担を管理しつつ、グリーンランドの自治・住民意思を尊重し、急激な主権変更には慎重である。グリーンランド自治政府・住民は資源開発・経済支援を交渉カードとして用いながら、主権・環境・文化の保護を優先し、長期的な独立の選択肢を維持するが、短期的には外部支援への依存と環境・社会への懸念から、漸進的な変化を選ぶ可能性が高い。",
+        "evidence_class": "model_general_knowledge",
+        "evidence_relevance": null,
+        "selection_rationale": "提供された情報と一般的な構造からは、急激な主権変更や米国による領有の実現を示す直接Evidenceがなく、むしろ制度的制約・同盟関係・住民意思の重要性が示唆されるため、漸進的な基地維持・資源開発拡大というシナリオが最も追加仮定が少なく、構造と整合的である。ただし、グリーンランド住民意思・最新の法制度・協定内容に関する具体的Evidenceが不足しているため、確信度は低に留める。",
+        "supporting_evidence": [],
+        "observable_indicators": [
+          "グリーンランドでの住民投票・選挙で独立志向政党がどの程度支持を得るか",
+          "デンマーク政府による自治権拡大・法改正の動き",
+          "米国・デンマーク・グリーンランド間の新たな基地協定・資源開発協定の内容（主権・自治への言及の有無）",
+          "中国・ロシア企業・政府によるグリーンランドへの投資・安全保障関与の動き"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "北極航路・重要鉱物サプライチェーン・安全保障環境の変化を通じて、物流・原材料調達・エネルギー価格・規制環境に影響し得る。特にレアアースなど重要鉱物の供給源としてグリーンランドの役割が高まる場合、サプライチェーン多様化・リスク管理の観点から注視が必要。",
+        "unrelated_note": null,
+        "environment_change": "北極圏の軍事化・資源開発の進展は、長期的に環境規制・ESG評価・投資家・NGOの関心に影響し、企業の調達方針・ブランド戦略に間接的な変化をもたらす可能性がある。"
+      },
+      "initial_anomaly": "「米国がグリーンランドを欲している／デンマークが拒否している」という二国間フレームが広く語られる一方で、実際の法制度上はグリーンランド自治政府と住民投票が主権変更の決定権を持つ点が、表面的な国家間フレームとずれている。安全保障（米軍基地）と資源開発（重要鉱物）が進むほど、グリーンランド自身の意思決定権・自治制度が局面の蝶番になっているのに、その構造がしばしば省略されていることが違和感の出発点。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "US_federal_government",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "SignalとSubstanceが概ね一致しており、本気度は高いと見られるが、主権変更には踏み込んでいない。",
+            "discretion": "基地規模・投資水準・協定更新条件には米側の裁量余地があるが、同盟関係・地元受容が制約。",
+            "evidence_ids": null,
+            "target_scope": "北極圏全体だが、グリーンランドは早期警戒・ミサイル防衛の要衝として特に重要。",
+            "stated_signal": "北極戦略文書や基地協定を通じて、グリーンランドを含む北極圏の安定・同盟協力を重視すると表明。",
+            "concrete_measure": "Thule空軍基地などの長期的運用、北極インフラ投資・防衛協力の継続。",
+            "enforcement_status": "軍・防衛当局による継続的運用。",
+            "implementation_status": "基地運用は継続中。",
+            "legal_or_policy_force": "二国間基地協定・NATO枠組みに基づく比較的強い拘束力。"
+          },
+          "primary_audience": "デンマーク政府・NATO同盟国",
+          "message_hypothesis": "北極圏の安全保障上の要衝としてグリーンランドとの協力を維持・強化し、中国・ロシアの影響を排除する意思を示す。主権変更を急がず、同盟枠組みの中で安定を重視する姿勢。",
+          "secondary_audience": "グリーンランド自治政府・住民、中国・ロシア",
+          "action_or_statement": "グリーンランドにおける米軍基地維持・北極戦略での重視"
+        },
+        {
+          "actor_ref": "Denmark_kingdom_government",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signal（主権売買否定）とSubstance（自治拡大・支援）が整合しており、短期的な主権変更抑制の意図は実質を伴っている。",
+            "discretion": "法改正・自治権拡大のペースには政府裁量があるが、住民意思・国際的正当性が制約。",
+            "evidence_ids": null,
+            "target_scope": "王国全体の主権問題、とりわけグリーンランド。",
+            "stated_signal": "主権の売買を明確に否定し、グリーンランド自治と住民意思尊重を公式に表明。",
+            "concrete_measure": "自治権拡大・財政支援の継続、購入提案の即時拒否。",
+            "enforcement_status": "法制度・政治慣行として定着。",
+            "implementation_status": "自治権拡大は段階的に実施済み。",
+            "legal_or_policy_force": "憲法・自治法制に基づく強い拘束力。"
+          },
+          "primary_audience": "グリーンランド住民・自治政府、デンマーク国内有権者",
+          "message_hypothesis": "グリーンランドの主権は売買の対象ではなく、住民意思と王国法制に基づくものであることを示し、王国の統合性と国際的信頼を守る。",
+          "secondary_audience": "米国政府・国際社会",
+          "action_or_statement": "トランプ政権期の「グリーンランド購入」発言への強い反発と、グリーンランド自治・住民意思尊重の強調"
+        },
+        {
+          "actor_ref": "Greenland_self_government",
+          "confidence": "低",
+          "action_substance": {
+            "assessment": "Signal（主権・環境・文化重視）とSubstance（選択的資源開発）が部分的に整合するが、経済制約により妥協も多く、全体像の確度は低い。",
+            "discretion": "プロジェクト選別・条件設定に一定の裁量があるが、経済依存・外部圧力が制約。",
+            "evidence_ids": null,
+            "target_scope": "グリーンランド領域内の資源・環境・基地。",
+            "stated_signal": "特定の資源プロジェクトや基地協定に対して賛否を示し、環境・文化保護を掲げる。",
+            "concrete_measure": "資源開発許可・拒否、環境規制の設定、政治運動。",
+            "enforcement_status": "自治政府の行政能力・住民支持に依存。",
+            "implementation_status": "個別プロジェクトごとに異なる。",
+            "legal_or_policy_force": "自治政府の権限に基づくが、王国法制・国際協定が上位制約。"
+          },
+          "primary_audience": "グリーンランド住民",
+          "message_hypothesis": "資源開発と経済支援を通じて生活向上・経済自立を図りつつ、主権・環境・文化を守る意思を示し、外部大国との関係を自ら選ぶ主体であることを強調。",
+          "secondary_audience": "デンマーク政府・米国・外部投資家",
+          "action_or_statement": "資源開発・基地協定への選択的賛否と、環境・文化保護の強調"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "北極圏の安全保障・資源・航路の重要性が高まる中で、グリーンランドの主権・自治制度と住民意思が、米国・デンマークの意図を制約するKey Pointとして浮上している可能性がある。従来の「米国vsデンマーク」という二国間フレームだけでは、主権変更や資源開発の方向性を十分に説明できない。",
+        "why_it_matters": "北極圏の安全保障・重要鉱物・航路は、サプライチェーン・物流・規制環境に中長期的な影響を与え得る。グリーンランドの主権・自治・住民意思が局面の蝶番であることを理解しておくことで、過度な単純化を避け、リスク・機会の評価をより現実的に行える。",
+        "what_to_watch_decide": "グリーンランドの独立志向・住民投票・選挙動向、デンマーク王国法制・自治権の変化、米国・デンマーク・グリーンランド間の基地・資源協定の内容、中国・ロシアなど第三国の関与を継続的に監視し、北極圏の安全保障・資源・航路に関する自社のエクスポージャー（調達・物流・ブランド）を定期的に棚卸しすることが望ましい。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "米国連邦政府（政権全体）",
+          "red_line": "グリーンランドが中国・ロシアに軍事基地や安全保障上の重要インフラを提供し、米軍プレゼンスが排除されるような事態。",
+          "actor_ref": "US_federal_government",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "北極戦略・安全保障政策・基地協定・対外経済支援を決定し、グリーンランドにおける米軍プレゼンスと資源・投資政策を実行できる。",
+          "evidence_ids": null,
+          "decision_power": "NATO同盟国としての防衛協定、二国間基地協定、対外援助・投資政策を通じてグリーンランドとデンマークに強い影響力を持つ。",
+          "driving_forces": [
+            {
+              "force": "安全保障コミュニティ・軍",
+              "direction": "supporting",
+              "description": "北極圏での基地維持・拡張を支持し、グリーンランドとの協力を推進する。"
+            },
+            {
+              "force": "同盟関係・NATO",
+              "direction": "constraining",
+              "description": "同盟国との関係維持のため、主権問題で過度に強硬な姿勢を取りにくい。"
+            }
+          ],
+          "ability_to_move": "基地協定の更新・拡張、北極インフラ投資、資源開発企業への支援などを通じて、グリーンランドの安全保障・経済構造を大きく動かせる。",
+          "issue_objective": "グリーンランドにおける米軍基地の長期的安定・必要に応じた拡張、重要鉱物・北極航路へのアクセス確保、中国・ロシアの影響排除。",
+          "observed_action": "トランプ政権期の「購入」発言を含め、グリーンランドへの関心を示しつつ、実際には基地維持・北極戦略の枠内で関係を継続している。",
+          "vulnerabilities": [
+            "国内政治の制約（議会・世論）",
+            "同盟国との関係悪化リスク"
+          ],
+          "ability_to_block": "グリーンランドへの安全保障支援や投資を絞ることで、デンマーク・グリーンランドの選択肢を制約し得る。",
+          "action_substance": {
+            "assessment": "安全保障面では高いSubstanceを伴うが、主権問題には慎重で、そこはSignalのみ。",
+            "discretion": "規模・条件調整の裁量あり。",
+            "evidence_ids": null,
+            "target_scope": "北極圏全体（グリーンランド含む）。",
+            "stated_signal": "北極圏での米国の安全保障上の優位と同盟協力を維持する。",
+            "concrete_measure": "基地維持・防衛協定・インフラ投資。",
+            "enforcement_status": "軍・防衛当局が実施。",
+            "implementation_status": "継続中。",
+            "legal_or_policy_force": "基地協定・NATO枠組みに基づく強い拘束力。"
+          },
+          "primary_audience": "デンマーク政府・NATO同盟国、米国内の安全保障コミュニティ。",
+          "why_actor_matters": "米国連邦政府は北極圏の安全保障・基地協定・資源政策を決定する主体であり、グリーンランドにおける米軍プレゼンスと経済支援を通じて、デンマーク・グリーンランド双方の選択肢を大きく左右し得るため。",
+          "available_leverage": [
+            "軍事基地・防衛協定",
+            "対外援助・インフラ投資",
+            "資源開発企業への支援",
+            "外交的圧力・制裁"
+          ],
+          "secondary_audience": "グリーンランド自治政府・住民、中国・ロシアなど北極圏の競合国。",
+          "ultimate_objective": "北極圏における米国の安全保障上の優位と、中国・ロシアの影響排除、同盟国との安定した関係維持。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "安全保障官僚・軍の影響は大きいが、具体的な内部決定構造に関するEvidenceが不足しており、現時点では仮説にとどまる。",
+            "challenge_question": "グリーンランドに関する決定が、米国安全保障官僚・軍に大きく委ねられ、大統領個人の交渉カードとして使えない場合、現在の見立てはどう変わるか。"
+          },
+          "persistent_preference": "安全保障上重要な地域では、軍事基地・防衛協定・経済支援を組み合わせたレバレッジを用いて、米国のアクセスと影響力を維持する傾向。",
+          "preference_action_gap": "グリーンランド全体の領有よりも、実際の行動は基地・安全保障協力・資源アクセスの維持に集中しており、主権変更を強行する動きは見られない。これは、主権変更の制度的困難さと同盟国との関係維持の必要性が、より野心的な領有志向を抑制していると説明できる。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "主権変更を一方的に押し付けること（国際的反発・同盟関係悪化のコストが高い）"
+          ],
+          "confidence_adjustment_reason": "actor_intelligence_provenance.general_knowledge_used=true and this case has no current-case evidence_ids backing the assessment; confidence capped at low per the P0-1 General Knowledge Confidence Cap (a model-general-knowledge-only actor assumption must not be promoted to medium/high confidence).",
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "一般的傾向であり、グリーンランド固有の事例ではない。",
+              "source": null,
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "北極戦略文書やNATO枠組みで、北極圏の基地・防衛協力を重視し続けている。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "デンマーク・グリーンランドを同盟・パートナーとして扱い、基地・資源・航路へのアクセスを確保しつつ、主権問題では急激な不安定化を避ける関係を好むと推測される。"
+        },
+        {
+          "actor": "デンマーク王国政府",
+          "red_line": "グリーンランド主権が、王国法制を無視して一方的に変更されること、または王国の安全保障を著しく損なう形で外部大国に利用されること。",
+          "actor_ref": "Denmark_kingdom_government",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "王国全体の外交・防衛・法制度を決定し、グリーンランド自治制度の枠組みを規定する。",
+          "evidence_ids": null,
+          "decision_power": "王国憲法・自治法制の改正、対米・対EU外交、北極政策を通じて、グリーンランドの主権・安全保障・資源開発の枠組みを左右する。",
+          "driving_forces": [
+            {
+              "force": "国内世論・財政",
+              "direction": "constraining",
+              "description": "グリーンランド支援の財政負担や主権変更によるリスクへの懸念。"
+            },
+            {
+              "force": "同盟関係",
+              "direction": "supporting",
+              "description": "米国・EUとの協力を通じて北極圏の安定を維持したい。"
+            }
+          ],
+          "ability_to_move": "自治権拡大・財政支援・外交的保護を通じて、グリーンランドの選択肢を広げることができる。",
+          "issue_objective": "グリーンランドの安定・住民生活の向上を支えつつ、急激な主権変更による安全保障・財政リスクを避ける。",
+          "observed_action": "自治権拡大や財政支援を行いながら、トランプ政権期の「購入」発言には強く反発し、主権の売買を否定した。",
+          "vulnerabilities": [
+            "財政負担",
+            "国内世論の分裂",
+            "北極圏での安全保障リスク"
+          ],
+          "ability_to_block": "王国法制上の拒否権を通じて、主権変更や特定の安全保障・資源協定を拒否・遅延し得る。",
+          "action_substance": {
+            "assessment": "主権売買否定は高いSubstanceを伴う。",
+            "discretion": "拡大ペースに裁量あり。",
+            "evidence_ids": null,
+            "target_scope": "グリーンランドの内政・主権枠組み。",
+            "stated_signal": "グリーンランド自治・住民意思尊重と王国の安定維持。",
+            "concrete_measure": "自治権拡大・財政支援・購入提案の拒否。",
+            "enforcement_status": "法制度として機能。",
+            "implementation_status": "段階的に実施済み。",
+            "legal_or_policy_force": "憲法・自治法制に基づく。"
+          },
+          "primary_audience": "グリーンランド住民・自治政府、デンマーク国内有権者。",
+          "why_actor_matters": "デンマーク王国政府はグリーンランドの自治制度・法的枠組みを規定し、対米・対EU外交を通じて安全保障・資源開発の条件を決めるため、主権・自治・安全保障の局面で強い影響力と拒否権を持つ。",
+          "available_leverage": [
+            "自治権拡大・財政支援",
+            "王国法制上の拒否権",
+            "対米・対EU外交"
+          ],
+          "secondary_audience": "米国・EU・NATO同盟国。",
+          "ultimate_objective": "王国全体の安定・安全保障・国際的地位の維持と、財政負担の管理。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "自治政府の力は強まっている可能性があるが、具体的な法制度の最新状況に関するEvidenceが不足している。",
+            "challenge_question": "デンマーク政府がグリーンランド主権問題で実質的な拒否権を失い、自治政府・住民が主導する場合、現在の見立てはどう変わるか。"
+          },
+          "persistent_preference": "王国の統合性と国際的信頼を維持しながら、グリーンランドの自治拡大・経済支援を通じて独立志向を管理する傾向。",
+          "preference_action_gap": "グリーンランドの独立を長期的に完全に否定しているわけではない可能性があるが、短期的には主権変更に慎重であり、これは王国の安全保障・財政・国際的信頼の維持という上位目的と整合的。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "グリーンランド住民意思を無視した主権変更（国内外の正当性を失う）"
+          ],
+          "confidence_adjustment_reason": "actor_intelligence_provenance.general_knowledge_used=true and this case has no current-case evidence_ids backing the assessment; confidence capped at low per the P0-1 General Knowledge Confidence Cap (a model-general-knowledge-only actor assumption must not be promoted to medium/high confidence).",
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "一般的傾向であり、具体的な法改正の詳細はここでは不明。",
+              "source": null,
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "グリーンランド自治権の拡大を認めつつ、王国の枠内で安全保障・外交を維持してきた。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国・EUとの同盟関係を維持しつつ、グリーンランドの自治・住民意思を尊重するバランスを好むと推測される。"
+        },
+        {
+          "actor": "グリーンランド自治政府・住民",
+          "red_line": "住民意思を無視した主権変更や、環境・文化を著しく損なう形での資源開発・軍事化。",
+          "actor_ref": "Greenland_self_government",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "自治政府として内政・資源政策・一部外交を決定し、住民投票を通じて主権変更の正当性を左右する。",
+          "evidence_ids": null,
+          "decision_power": "資源開発・環境政策・経済協定の受け入れ可否を決め、将来の独立・主権変更に関する住民意思を形成する。",
+          "driving_forces": [
+            {
+              "force": "住民意思・文化的アイデンティティ",
+              "direction": "supporting",
+              "description": "主権・文化・環境保護を重視する方向へ自治政府を動かす。"
+            },
+            {
+              "force": "経済的制約・失業",
+              "direction": "constraining",
+              "description": "資源開発・外部投資への依存を高める圧力となる。"
+            }
+          ],
+          "ability_to_move": "資源開発許可・基地協定への支持・反対、独立志向の政治運動などを通じて、外部アクターの行動を動かせる。",
+          "issue_objective": "資源開発・経済支援を通じて生活水準を向上させつつ、主権・環境・文化を守り、長期的な独立の選択肢を維持する。",
+          "observed_action": "外部投資や資源開発に対して選択的に賛否を示し、環境・文化保護を掲げる政治勢力が存在する。",
+          "vulnerabilities": [
+            "経済的依存",
+            "人口規模の小ささ",
+            "環境変化の影響"
+          ],
+          "ability_to_block": "住民投票や自治政府の拒否により、主権変更や特定の資源・基地協定を阻止し得る。",
+          "action_substance": {
+            "assessment": "SignalとSubstanceは部分的に一致するが、全体像は不明点が多い。",
+            "discretion": "高いが経済制約あり。",
+            "evidence_ids": null,
+            "target_scope": "グリーンランド内の資源・環境・基地。",
+            "stated_signal": "資源開発と経済支援を交渉カードとしつつ、主権・環境・文化を守る。",
+            "concrete_measure": "資源許可・拒否、環境規制、政治運動。",
+            "enforcement_status": "自治政府の能力に依存。",
+            "implementation_status": "案件ごとに異なる。",
+            "legal_or_policy_force": "自治権限に基づくが、王国法制が上位。"
+          },
+          "primary_audience": "グリーンランド住民。",
+          "why_actor_matters": "グリーンランド自治政府・住民は主権変更の正当性を左右する最終的な主体であり、資源開発・基地協定の受け入れ可否を通じて、米国・デンマークの行動を制約・支援し得るため。",
+          "available_leverage": [
+            "住民投票・政治運動",
+            "資源開発許可・拒否",
+            "基地協定への支持・反対"
+          ],
+          "secondary_audience": "デンマーク政府・米国・外部投資家。",
+          "ultimate_objective": "住民の生活向上・経済自立・文化・環境の保護と、長期的な主権・自治の確立。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "住民意思に関する最新の詳細なEvidenceが不足しており、現時点では仮説にとどまる。",
+            "challenge_question": "グリーンランド住民が資源開発と外部軍事プレゼンスを積極的に支持し、主権・環境保護よりも経済成長を優先する場合、現在の見立てはどう変わるか。"
+          },
+          "persistent_preference": "資源開発と経済支援を交渉カードとして用いながら、主権・環境・文化の保護を優先する傾向。",
+          "preference_action_gap": "経済自立を目指しつつも、環境・社会への影響への懸念から資源開発に慎重な姿勢を取ることがあり、これは主権・文化保護という上位目的とのバランスを取るための行動と説明できる。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "外部支援なしでの完全な経済自立（短期的には困難）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "具体的な政党・選挙結果の詳細は不明。",
+              "source": null,
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "資源開発プロジェクトに対する賛否や、環境保護・文化保護を重視する政治運動。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国・デンマーク・他国との関係をバランスさせ、過度な依存や軍事化を避けつつ、資源開発と経済支援を引き出す関係を好むと推測される。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "グリーンランド自治制度・王国法制が主権変更に関して定める具体的手続き・条件は何か。",
+          "rationale": "主権変更の制度的条件を確認することで、Primary Key Pointと主シナリオの根拠を強化または修正できる。",
+          "related_hypothesis": "主権変更は住民投票と王国法制上の手続きが不可欠であり、国家指導者の単独意思では決まらないという仮説。",
+          "recommended_sources": "デンマーク政府・グリーンランド自治政府の公式法令・自治法制文書、信頼できる法学者の分析。"
+        },
+        {
+          "priority": "高",
+          "question": "グリーンランド住民の最新の世論（独立志向・資源開発・基地・環境保護に関する支持・反対）はどうなっているか。",
+          "rationale": "住民意思は主権・資源・安全保障の局面を動かすKey Stakeholderであり、その最新動向を確認する必要がある。",
+          "related_hypothesis": "住民は短期的には漸進的な変化を選び、急激な主権変更には慎重であるという仮説。",
+          "recommended_sources": "最近の選挙結果・世論調査・現地メディア・研究者の分析。"
+        },
+        {
+          "priority": "中",
+          "question": "米国・デンマーク・グリーンランド間の最新の基地協定・資源開発協定の内容は何か。",
+          "rationale": "具体的な協定内容を確認することで、各主体のレバレッジ・制約・Red Lineをより精緻に把握できる。",
+          "related_hypothesis": "安全保障・資源開発は漸進的に拡大しているが、主権変更には踏み込んでいないという仮説。",
+          "recommended_sources": "政府発表・協定文書・専門家分析。"
+        },
+        {
+          "priority": null,
+          "question": "グリーンランド自治制度・王国法制が主権変更（独立・領有権移転）に関して具体的にどのような手続き・条件を定めているか。",
+          "rationale": "Key Point（主権変更は住民投票と王国法制が不可欠）を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米国・デンマーク・グリーンランド間の最新の基地協定・資源開発協定の具体的内容は何か。",
+          "rationale": "各主体のLeverage・Constraint・Red Lineを具体化し、主シナリオの安全保障・資源面の前提を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "中国・ロシアなど第三国の最近のグリーンランドへの投資・関与はどの程度か。",
+          "rationale": "代替シナリオ（第三国関与拡大・軍事化）の蓋然性を評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "主権変更にはグリーンランド住民意思と王国法制が不可欠であり、二国間合意だけでは決まらない構造が確認されているため、グリーンランドを受動的対象とみなすフレームは不十分。",
+          "status": "rejected",
+          "confidence": "中",
+          "description": "「米国がグリーンランドを欲している／デンマークが拒否している」という二国間フレームで、主権・安全保障・資源の局面を説明できる。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "基地維持・北極戦略重視という行動と整合し、主権変更を強行するEvidenceがないため。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "米国の真の目的はグリーンランド全体の領有ではなく、北極圏での軍事基地・安全保障アクセスと重要鉱物供給確保にあり、主権変更は交渉カードに過ぎない。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "主権変更に住民投票・議会承認が必要とされる制度構造が、トランプ政権期の「購入」発言不発などと整合する。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "グリーンランド局面を規定する主因は、王国法制・自治制度・住民意思という制度構造であり、米国・デンマークの意図はその枠内でしか動けない。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "トランプ期の購入発言は例外的であり、その後の行動は基地維持・自治尊重に集中しているため、単純な領有志向モデルは適用しにくい。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "既存の「米国＝領有志向」「デンマーク＝拒否」というActor像自体が誤っており、米国は基地・資源アクセス重視、デンマークは管理された独立も視野に入れている可能性。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "主権変更の決定権がグリーンランド住民・自治制度にあり、米国・デンマークはその枠内で安全保障・資源政策を調整していると見る方が整合的。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "問題設定自体を「米国vsデンマーク」から「グリーンランド住民・自治制度 vs 外部安全保障・資源構造」という三層構造へ変えるべきであり、国家間フレームは補助的に過ぎない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of 2026-09-03時点で、グリーンランドをめぐる安全保障・資源・主権の局面は、米国・デンマークの意図だけでなく、グリーンランド自治制度と住民意思が強い拒否権を持つ「三層構造」で動いており、現状では米軍プレゼンス維持と資源開発の漸進的拡大が主シナリオと見るのが最も整合的である（独立への長期的志向は残るが、即時の主権変更は制度・経済制約で抑制されている）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "institutionally_constrained",
+        "evidence_class": "structural_reference",
+        "hinge_structure": {
+          "primary_hinge": "グリーンランド住民投票と自治制度に基づく主権変更の可否（独立・主権移転を住民がどこまで支持するか）",
+          "secondary_hinges": [
+            "デンマーク王国憲法・自治法制が認める主権変更手続きの具体的設計（住民投票の条件・議会承認の要件）",
+            "米国の安全保障ニーズ（北極圏での基地維持・拡張の必要性）とそれに伴う経済支援・投資の規模",
+            "グリーンランドの資源開発・環境保護をめぐる国内世論と外部投資家の動き"
+          ]
+        },
+        "primary_key_point": "グリーンランドの主権変更にはグリーンランド住民の同意と王国法制上の手続きが不可欠であり、米国・デンマークの二国間合意だけでは決まらない構造",
+        "evidence_relevance": null,
+        "rejected_candidates": [
+          {
+            "key_point": "北極圏における米軍プレゼンスと対中・対露抑止の必要性が、グリーンランドの安全保障・資源開発の方向性を規定している",
+            "why_not_primary": "安全保障構造は重要だが、主権変更や独立・自治の議論を直接規定するのは法制度と住民意思であり、安全保障だけではグリーンランドの主権問題や住民の拒否権を十分に説明できないため。"
+          },
+          {
+            "key_point": "グリーンランドの重要鉱物・北極航路をめぐる経済的利害が、米国・EU・中国など複数の外部アクターを引き寄せ、グリーンランド自治政府に交渉レバレッジを与えている",
+            "why_not_primary": "資源・航路は交渉力を高めるが、主権変更の制度的条件や住民意思を直接規定するわけではなく、安全保障・主権・自治の全体構造を説明するには補助的な条件にとどまるため。"
+          },
+          {
+            "key_point": "「米国がグリーンランドを欲している／デンマークが拒否している」という二国間フレーム自体が、グリーンランドの意思決定権を過小評価している可能性",
+            "why_not_primary": "重要なフレーム批判だが、これはメディア・ナラティブに関する仮説であり、現局面の実際の意思決定構造そのものではないため、主権・安全保障・資源の具体的な動きを説明する中心条件としては置きにくい。"
+          }
+        ],
+        "selection_rationale": "安全保障・資源・主権の全ての論点が最終的に「誰が主権を持つか」に依存しており、その決定権が制度上グリーンランド住民と自治政府にあることが、他の候補よりも広い範囲の観測事実を説明するため。トランプ政権期の「購入」発言が実現しなかったことや、現在も急激な主権変更が議論されていないことは、この制度的制約と整合的であり、単なる米国の意図や安全保障構造だけでは説明しきれない。",
+        "candidate_key_points": [
+          {
+            "key_point": "グリーンランドの主権変更にはグリーンランド住民の同意と王国法制上の手続きが不可欠であり、米国・デンマークの二国間合意だけでは決まらない構造",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜトランプ政権期の「購入」発言が実際の主権変更につながらず、デンマーク・グリーンランド双方から強い反発を受けたのか、また現在も急激な主権変更が議論の中心になっていない理由。",
+            "why_it_could_be_key": "主権・安全保障・資源開発の全てが、最終的には誰が主権を持つかに依存するが、その決定権がグリーンランド住民と自治制度にあるため、国家間フレームを制約する「蝶番」になっている。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "米国の具体的な安全保障配置や資源投資のスピード、グリーンランド内部の政党間対立の詳細までは直接説明しない。",
+            "control_structure_summary": "デンマーク王国憲法・自治法制とグリーンランド自治政府の制度により、主権変更には住民投票や議会承認が必要とされ、国家指導者の単独意思では変更できない。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+                "type": "actor_intelligence",
+                "field": "structural_constraints"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "北極圏における米軍プレゼンスと対中・対露抑止の必要性が、グリーンランドの安全保障・資源開発の方向性を規定している",
+            "control_type": "structural",
+            "what_it_explains": "なぜ米国がグリーンランドに長期的な軍事基地を維持し、北極戦略の中で同地域を重視しているのか。",
+            "why_it_could_be_key": "米国の安全保障上のニーズが強いほど、グリーンランドの基地維持・拡張やインフラ投資が進み、資源開発や北極航路の利用にも影響するため、安全保障が他論点を牽引する可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "グリーンランド住民が基地や軍事化をどこまで受け入れるか、独立志向とのバランスなど、国内政治の細部。",
+            "control_structure_summary": "北極圏の地理的位置・ミサイル防衛上の要請・ロシアの軍事活動・中国の極地進出など、構造的安全保障要因が米軍プレゼンスを必要とし、その結果としてグリーンランドとの関係が形成される。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+                "type": "actor_intelligence",
+                "field": "core_profile.decision_preferences"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "グリーンランドの重要鉱物・北極航路をめぐる経済的利害が、米国・EU・中国など複数の外部アクターを引き寄せ、グリーンランド自治政府に交渉レバレッジを与えている",
+            "control_type": "mixed",
+            "what_it_explains": "なぜグリーンランドが資源開発やインフラ投資を交渉カードとして用い、外部からの関心が高まっているのか。",
+            "why_it_could_be_key": "資源と航路がなければグリーンランドの地政学的価値は安全保障に限定されるが、経済的価値が高まることで、自治政府が複数のパートナーを選び、主権・自治をめぐる交渉力を高める。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "具体的な投資案件の成否や、環境保護運動の影響などの詳細。",
+            "control_structure_summary": "自然資源・航路という構造要因に加え、各国企業・政府の投資判断が絡むため、単一アクターではなく市場・国家・自治政府の相互作用で動く。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "「米国がグリーンランドを欲している／デンマークが拒否している」という二国間フレーム自体が、グリーンランドの意思決定権を過小評価している可能性",
+            "control_type": "unknown",
+            "what_it_explains": "なぜグリーンランド自身の主権・自治制度が議論から抜け落ちることがあるのか。",
+            "why_it_could_be_key": "分析フレームが誤っていると、Key Stakeholderやレバレッジの構造を誤認し、グリーンランド自治政府・住民の役割を見落とす危険がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "実際の政策決定プロセスや法制度の詳細。",
+            "control_structure_summary": "これは構造そのものではなく、メディア・政治的ナラティブのフレームに関する仮説であり、誰が意図的に操作しているかは現時点で判断不能。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "グリーンランドの主権変更（例えば米国への領有権移転や即時独立）が、グリーンランド住民投票や自治政府・王国議会の正式な手続きを経ずに、米国・デンマーク政府間の合意だけで決定・実施されるような事例が現れた場合、このKey Pointの置き方自体が誤っていたと判断する必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": null,
+        "control_structure_summary": "主権変更は、デンマーク王国の法制度とグリーンランド自治制度により、住民投票や議会承認を必要とするため、国家指導者の単独意思では決まらない。米国の安全保障・経済的レバレッジは強いが、主権変更の法的決定権はグリーンランド住民と王国法制に制約されている。",
+        "supporting_knowledge_refs": [
+          {
+            "ref": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+            "type": "actor_intelligence",
+            "field": "structural_constraints"
+          }
+        ],
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "グリーンランド自治制度・王国法制の最新の具体的内容、住民意思の詳細、最近の基地・資源協定の内容について、今回のSource Packには直接のEvidenceがなく、推論は一般的構造に基づく仮説にとどまる。これらの情報が確認されるまでは、主シナリオの確信度は低に留めるべきであり、Frame-breakingな結論を急いで採用すべきではない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "判断不能",
+          "description": "グリーンランド独立志向が急速に強まり、住民投票と自治政府主導で独立プロセスが開始されるシナリオ。デンマークは王国法制を改正し独立を認め、米国・EUは新国家グリーンランドとの安全保障・資源協定を構築する。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "独立住民投票が実施され、独立支持が多数となる",
+            "デンマーク政府が独立プロセス開始を公式決定する"
+          ],
+          "weakening_conditions": [
+            "独立志向政党の支持停滞・後退",
+            "住民投票議論の停滞",
+            "デンマーク政府が独立に否定的な立場を再確認"
+          ],
+          "strengthening_conditions": [
+            "独立志向政党の選挙での大幅な躍進",
+            "独立に関する住民投票の具体的提案・法案化",
+            "デンマーク政府による独立プロセス容認の公式発言"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "判断不能",
+          "description": "中国・ロシアなど第三国の経済・安全保障関与が拡大し、米国・デンマークがグリーンランドでの影響力防衛のため安全保障・資源協定を強化、軍事化が進むシナリオ。グリーンランドは複数大国間の競争の中で選択を迫られ、主権・環境・経済の間で難しいバランスを取る。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "第三国の軍事的性格を持つ施設・協定が確認される",
+            "米国・デンマークがそれに対抗する軍事・制裁措置を取る"
+          ],
+          "weakening_conditions": [
+            "中国・ロシアの投資縮小・撤退",
+            "グリーンランド側による第三国関与への法的制限強化",
+            "米国・デンマークが軍事化抑制を優先する合意を形成"
+          ],
+          "strengthening_conditions": [
+            "中国・ロシアによる大規模資源・インフラ投資の報道増加",
+            "安全保障協定・軍事プレゼンスに関する新たな合意・施設建設",
+            "米国・デンマークによる対中・対露牽制措置の強化"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "グリーンランドでの独立・主権変更に関する住民投票・選挙動向",
+        "デンマーク政府による自治権拡大・法改正・独立に関する公式発言",
+        "米国・デンマーク・グリーンランド間の新たな基地協定・資源開発協定の締結・改定",
+        "中国・ロシアなど第三国によるグリーンランドへの投資・安全保障関与の増減",
+        "北極航路の商業利用拡大・関連インフラ整備の進展"
+      ],
+      "retraction_conditions": [
+        "グリーンランドで独立に関する住民投票が実施され、独立支持が多数を占める",
+        "デンマーク政府がグリーンランド独立プロセスを公式に開始する",
+        "米国がグリーンランドの主権変更（独立・領有権移転）を支持・推進する公式立場を示す"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "60a01c2c-c6b2-4e34-a6e1-f50159568aae",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "グリーンランドで独立志向政党の支持拡大や、主権変更に関する具体的な住民投票計画が報じられれば、主シナリオの確信度はさらに低下する。",
+      "contradicting_evidence": [],
+      "investigation_questions": [
+        {
+          "question": "グリーンランド自治制度・王国法制が主権変更（独立・領有権移転）に関して具体的にどのような手続き・条件を定めているか。",
+          "rationale": "Key Point（主権変更は住民投票と王国法制が不可欠）を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "グリーンランド住民の最新の世論（独立志向・資源開発・基地・環境保護に関する支持・反対）はどうなっているか。",
+          "rationale": "Key Stakeholder（グリーンランド住民）のPersistent Preferenceと主シナリオの前提を確認するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米国・デンマーク・グリーンランド間の最新の基地協定・資源開発協定の具体的内容は何か。",
+          "rationale": "各主体のLeverage・Constraint・Red Lineを具体化し、主シナリオの安全保障・資源面の前提を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "中国・ロシアなど第三国の最近のグリーンランドへの投資・関与はどの程度か。",
+          "rationale": "代替シナリオ（第三国関与拡大・軍事化）の蓋然性を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "グリーンランド自治制度・王国法制が主権変更（独立・領有権移転）に関して具体的にどのような手続き・条件を定めているか。",
+          "gap_category": "deterministic",
+          "recommended_action": "公式法令・自治法制の一次資料を確認し、主権変更の手続き・住民投票の条件を特定する。"
+        },
+        {
+          "priority": "高",
+          "description": "グリーンランド住民の最新の世論（独立志向・資源開発・基地・環境保護に関する支持・反対）の詳細。",
+          "gap_category": "deterministic",
+          "recommended_action": "最近の選挙結果・世論調査・住民運動に関する信頼できる報道・研究を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "米国・デンマーク・グリーンランド間の最新の基地協定・資源開発協定の具体的内容。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "最近の協定文書・政府発表・専門家分析を確認し、各主体のレバレッジと制約を具体化する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "グリーンランド住民意思や自治制度が想定以上に独立志向・急進的であり、短期的にも主権変更に向けた動きが強まっている可能性がある。その場合、漸進的な基地維持・資源開発拡大という主シナリオは、住民意思のダイナミクスを過小評価している。",
+      "key_stakeholder_assessment": {
+        "rationale": "主権・安全保障・資源の局面を動かす力は、(1) 米国連邦政府（安全保障・基地協定・経済支援）、(2) デンマーク王国政府（外交・防衛・王国法制）、(3) グリーンランド自治政府・住民（自治・主権変更の正当性）の三者に分散している。米国だけでは主権変更を決められず、デンマークだけでも住民意思を無視できないため、複数主体が相互に制約し合う構造と見るのが妥当。",
+        "confidence": "中",
+        "evidence_ids": null,
+        "determination": "multiple",
+        "decision_structure": "安全保障・基地協定は米国とデンマーク政府の合意で大枠が決まるが、グリーンランド自治政府との合意・住民の受容がなければ政治的正当性を欠き、長期的な安定は得られない。一方、主権変更（独立・領有権移転）はグリーンランド住民投票と王国法制上の手続きが不可欠であり、米国・デンマーク政府はそれを尊重せざるを得ない。",
+        "selected_actor_ids": [
+          "US_federal_government",
+          "Denmark_kingdom_government",
+          "Greenland_self_government"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "Denmark_kingdom_government",
+          "confidence": "中",
+          "evidence_ids": null,
+          "evidence_class": "structural_reference",
+          "desired_outcome": "短期的には主権維持、長期的には管理されたプロセスでの独立も選択肢として残す。",
+          "issue_component": "主権変更（独立・領有権移転）",
+          "likely_reaction": "急進的独立要求には慎重姿勢を取り、対話と支援で抑制を試みる。",
+          "current_red_line": "住民意思・王国法制を無視した一方的な主権変更。",
+          "stated_preference": "主権売買否定・自治尊重。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "王国の統合性・安全保障・財政に直結するため最重要。",
+          "currently_tradeable": "独立プロセスのタイミングや条件は交渉可能だが、正当性は譲れない。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "法制度改正・財政支援",
+          "effect_on_actor_objective": "急激な主権変更は王国の安定・国際的地位を損ない得る。",
+          "estimated_real_preference": "急激な変化を避けつつ、時間をかけて独立志向を管理。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "王国憲法・自治法制",
+          "issue_component_description": "グリーンランドがデンマーク王国から独立するか、他国への領有権移転が起きるか。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "Greenland_self_government",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "長期的に独立の選択肢を維持しつつ、短期的には自治拡大と経済自立。",
+          "issue_component": "主権変更",
+          "likely_reaction": "条件が整わない独立提案には慎重姿勢。",
+          "current_red_line": "住民意思を無視した主権変更、外部による一方的領有。",
+          "stated_preference": "自治拡大・住民意思尊重。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "長期的な独立志向・自治拡大が政治的テーマ。",
+          "currently_tradeable": "独立のタイミング・形態は経済・安全保障条件次第で柔軟に交渉し得る。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "unknown",
+          "primary_usable_leverage": "住民投票・政治運動",
+          "effect_on_actor_objective": "独立は主権確立の究極目標だが、経済・安全保障リスクも伴う。",
+          "estimated_real_preference": "急激な独立より漸進的自立を優先。",
+          "alternative_interpretation": "住民が予想以上に急進的独立を支持する可能性。",
+          "primary_binding_constraint": "経済的依存",
+          "issue_component_description": null,
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "US_federal_government",
+          "confidence": "中",
+          "evidence_ids": null,
+          "evidence_class": "structural_reference",
+          "desired_outcome": "長期的な基地アクセスと必要に応じた拡張。",
+          "issue_component": "米軍基地・安全保障協力",
+          "likely_reaction": "基地縮小・排除の動きには強い外交・軍事的圧力。",
+          "current_red_line": "基地アクセス喪失、中国・ロシアによる代替基地設置。",
+          "stated_preference": "北極圏の安定・同盟協力。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "北極圏の早期警戒・ミサイル防衛に不可欠。",
+          "currently_tradeable": "基地規模・投資条件は交渉可能だが、アクセス自体は譲れない。",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "防衛協定・経済支援",
+          "effect_on_actor_objective": "基地維持は安全保障優位を直接支える。",
+          "estimated_real_preference": "基地維持・拡張が最優先。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "同盟関係・国際正当性",
+          "issue_component_description": "Thule基地などの維持・拡張。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "Greenland_self_government",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "経済・安全保障のメリットを享受しつつ、軍事化・主権制約を最小化。",
+          "issue_component": "米軍基地・安全保障協力",
+          "likely_reaction": "条件が悪い拡張案には反発。",
+          "current_red_line": "住民意思を無視した基地拡張、環境・生活への過度な影響。",
+          "stated_preference": "住民・環境への配慮。",
+          "instrumental_value": "negotiating_card",
+          "priority_rationale": "基地は経済・雇用・安全保障に影響するが、環境・主権への懸念も。",
+          "currently_tradeable": "基地規模・条件は交渉カード。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "unknown",
+          "primary_usable_leverage": "基地協定への支持・拒否",
+          "effect_on_actor_objective": "基地受容は経済支援・安全保障をもたらすが、軍事化・主権制約のリスク。",
+          "estimated_real_preference": "条件付きで基地受容。",
+          "alternative_interpretation": "基地反対運動が強まり、受容余地が縮小する可能性。",
+          "primary_binding_constraint": "住民意思・環境懸念",
+          "issue_component_description": null,
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "US_federal_government",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "友好国からの安定供給確保。",
+          "issue_component": "重要鉱物・資源開発",
+          "likely_reaction": "中国支配的プロジェクトには牽制。",
+          "current_red_line": "中国・ロシアによる支配的採掘・供給支配。",
+          "stated_preference": "重要鉱物供給の多様化。",
+          "instrumental_value": "instrumental",
+          "priority_rationale": "サプライチェーン安全保障に重要だが、安全保障ほどではない。",
+          "currently_tradeable": "価格・投資条件は交渉可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "企業支援・規制",
+          "effect_on_actor_objective": "中国依存低減・技術産業支援。",
+          "estimated_real_preference": "グリーンランドを含む複数供給源確保。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "市場・企業投資判断",
+          "issue_component_description": "レアアース等の採掘・輸出。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "Greenland_self_government",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "環境・文化を守りつつ持続可能な開発。",
+          "issue_component": "重要鉱物・資源開発",
+          "likely_reaction": "過度な環境負荷プロジェクトには反対。",
+          "current_red_line": "環境・文化を著しく損なう開発。",
+          "stated_preference": "持続可能な開発。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "経済自立・雇用に直結。",
+          "currently_tradeable": "プロジェクト規模・パートナー選択は交渉可能。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "unknown",
+          "primary_usable_leverage": "許認可権",
+          "effect_on_actor_objective": "資源開発は収入・自立を高めるが、環境・文化リスク。",
+          "estimated_real_preference": "経済自立と環境保護のバランス。",
+          "alternative_interpretation": "経済危機時には環境より開発優先の可能性。",
+          "primary_binding_constraint": "環境・社会影響",
+          "issue_component_description": null,
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "US_federal_government",
+          "confidence": "低",
+          "evidence_ids": null,
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "友好国管理下での安全な航路。",
+          "issue_component": "北極航路・インフラ",
+          "likely_reaction": "敵対国支配には牽制。",
+          "current_red_line": "敵対国による航路・インフラ支配。",
+          "stated_preference": "自由で安全な航行。",
+          "instrumental_value": "deterrence",
+          "priority_rationale": "軍事・商業両面で重要だが、基地ほどではない。",
+          "currently_tradeable": "商業利用条件は交渉可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "海軍プレゼンス・投資",
+          "effect_on_actor_objective": "軍事機動性・商業利益。",
+          "estimated_real_preference": "自国・同盟国優位のインフラ。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "国際法・同盟関係",
+          "issue_component_description": "航路利用・港湾・通信インフラ。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        }
+      ],
+      "decisive_power_and_leverage": "現局面全体を俯瞰すると、決定的な力は「法制度と住民意思」による主権変更の拒否権と、「米国の安全保障レバレッジ（基地・防衛協定）」の組み合わせにある。具体的には、グリーンランド自治制度とデンマーク憲法・王国法制が主権変更を制度的に制約し、グリーンランド住民投票が政治的正当性の最終審級となる。他方で、米国は安全保障上の不可欠なパートナーとして、基地協定・防衛支援・経済支援を通じてグリーンランドとデンマーク双方へ強い影響力を持つ。したがって、単一の国家指導者ではなく、「グリーンランド住民投票＋王国法制＋米軍プレゼンス」という複合構造が最終的な結果を規定していると見るのが妥当。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "米国は安全保障上のニーズからグリーンランドへの関心を示すが、主権変更を強行する行動は取っておらず、これは制度的制約と同盟関係維持の必要性によると説明できる。デンマークは自治拡大・支援を行いつつ主権売買を否定しており、王国の安定・安全保障維持という上位目的と整合的。グリーンランド自治政府・住民は経済自立と主権・環境保護の間で揺れ動き、資源開発への慎重さが上位目的とのバランスを反映している可能性があるが、Evidence不足で確度は低い。"
+    },
+    "created_at": "2026-09-03T11:46:27.174573+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "42d60dc9-3b66-48db-9314-5eaf94a1906a",
+    "response_id": "9e52a891-4dc7-4f04-b456-eceb1ac17a4f",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "主シナリオに支持根拠がありません",
+        "passed": false
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=actor_intelligenceのref=c93580fd-99b1-44d9-b924-beb89a2e8378がkey_actor_profiles[].actor_refに実在しません",
+        "passed": false
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）",
+        "passed": false
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 37,
+    "failed_count": 4,
+    "created_at": "2026-09-03T11:46:27.759512+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "main_scenario_has_supporting_evidence",
+      "supporting_knowledge_refs_grounded",
+      "temporal_hedge_language_not_present"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "main_scenario_has_supporting_evidence",
+      "supporting_knowledge_refs_grounded",
+      "temporal_hedge_language_not_present"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "key_actor_profiles[0]",
+      "key_actor_profiles[1]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "US_federal_government",
+      "Denmark_kingdom_government",
+      "Greenland_self_government"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 85548,
+    "completion_tokens": 17749,
+    "total_tokens": 103297
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 121047,
+        "prompt_tokens": 40209,
+        "completion_tokens": 11599
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 54563,
+        "prompt_tokens": 45339,
+        "completion_tokens": 6150
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "主シナリオに支持根拠がありません"
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "supporting_knowledge_refs: type=actor_intelligenceのref=c93580fd-99b1-44d9-b924-beb89a2e8378がkey_actor_profiles[].actor_refに実在しません"
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "partial",
+        "institutional_coverage": "not_evaluated",
+        "overall": "partial",
+        "direct_evidence_count": 1,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=partial（Direct Evidence 1件、目安2件以上でsufficient候補）"
+        ]
+      },
+      "research_cycle": {
+        "triggered": true,
+        "search_calls_used": 1,
+        "stop_condition": "evidence_unobtainable"
+      },
+      "documents_added_count": 0,
+      "final_sufficiency": {
+        "current_evidence": "partial",
+        "institutional_coverage": "not_evaluated",
+        "overall": "partial",
+        "direct_evidence_count": 1,
+        "named_entity_coverage_gaps": [],
+        "gaps": [
+          "current_evidence=partial（Direct Evidence 1件、目安2件以上でsufficient候補）"
+        ]
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

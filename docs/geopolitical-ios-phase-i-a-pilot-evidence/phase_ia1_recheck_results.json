@@ -1,0 +1,116 @@
+{
+  "no_credential": {
+    "status": 401,
+    "body": {
+      "detail": "無効または未指定のX-IOS-Credentialです"
+    }
+  },
+  "unknown_credential": {
+    "status": 401,
+    "body": {
+      "detail": "無効または未指定のX-IOS-Credentialです"
+    }
+  },
+  "analyst_spoofing_approver": {
+    "status": 403,
+    "body": {
+      "detail": "この操作には('approver',)のいずれかのroleが必要です（現在のrole: analyst）"
+    }
+  },
+  "real_approver_with_downgrade_claim": {
+    "status": 200,
+    "body": {
+      "approval_event_id": "22135882-1a01-45a5-9e95-d8a0c6446d06",
+      "report_project_id": "cb2715f8-1113-4fd0-a5c8-afcba25cdae6",
+      "version_label": null,
+      "version_snapshot": {
+        "run_id": "recheck",
+        "syntheses": [
+          {
+            "final_html": "<p>recheck</p>",
+            "final_status": "PILOT"
+          }
+        ]
+      },
+      "approval_status": "approved",
+      "approver": "recheck-real-approver",
+      "approval_date": "2026-09-16T07:56:05.205851+00:00",
+      "approval_source": "in_app",
+      "notes": null,
+      "created_at": "2026-09-16T07:56:05.205851+00:00",
+      "publication_status": "not_published",
+      "published_knowledge_item_id": null,
+      "_role_mismatch_warning": "payload claimed_role='analyst' != authenticated assigned_role='approver' (authorization used assigned_role only)"
+    }
+  },
+  "publish_with_real_knowledge_steward": {
+    "status": 200,
+    "body": {
+      "knowledge_item_id": "68e3b2d8-fb51-43e3-b7ec-d55ef81974c6",
+      "publication_status": "published",
+      "knowledge_item": {
+        "knowledge_item_id": "68e3b2d8-fb51-43e3-b7ec-d55ef81974c6",
+        "knowledge_type": "approved_report",
+        "title": "Phase I-A.1 Trust Boundary Recheck (temporary)",
+        "summary": null,
+        "structured_content": {
+          "run_id": "recheck",
+          "approver": "recheck-real-approver",
+          "source_file": null,
+          "source_type": "report_studio",
+          "uploaded_by": null,
+          "report_title": "Phase I-A.1 Trust Boundary Recheck (temporary)",
+          "approval_date": "2026-09-16T07:56:05.205851+00:00",
+          "source_report_id": null,
+          "approval_event_id": "22135882-1a01-45a5-9e95-d8a0c6446d06",
+          "report_project_id": "cb2715f8-1113-4fd0-a5c8-afcba25cdae6",
+          "syntheses_summary": [
+            "<p>recheck</p>"
+          ]
+        },
+        "status": "active",
+        "confidence": "中",
+        "confidence_rationale": null,
+        "information_class": "internal_hypothesis",
+        "valid_from": null,
+        "valid_to": null,
+        "as_of_date": "2026-09-16",
+        "created_by": "recheck-steward",
+        "reviewed_by": "recheck-steward",
+        "approved_by": "recheck-steward",
+        "supersedes_id": null,
+        "version": 3,
+        "next_review_at": null,
+        "stale_after_days": null,
+        "duplicate_of_id": null,
+        "conflicting_ids": [],
+        "is_demo": false,
+        "created_at": "2026-09-16T07:56:08.572622+00:00",
+        "updated_at": "2026-09-16T07:56:11.928101+00:00",
+        "embedding": null,
+        "search_vector": "'1':5 'a':4 'boundary':7 'i':3 'i-a':2 'phase':1 'recheck':8 'temporary':9 'trust':6",
+        "last_evidence_at": null,
+        "retrieval_status": "available",
+        "origin": null,
+        "derived_from_review_session_id": null,
+        "derived_from_change_id": null,
+        "usage_count": 0,
+        "support_count": 0,
+        "last_used_at": null,
+        "last_confirmed_at": null,
+        "human_visibility": "company",
+        "agent_sharing_policy": "geopolitics_only",
+        "source_report_project_id": "cb2715f8-1113-4fd0-a5c8-afcba25cdae6",
+        "source_report_version_label": null,
+        "source_approval_event_id": "22135882-1a01-45a5-9e95-d8a0c6446d06",
+        "source_report_id": null
+      }
+    }
+  },
+  "publish_with_wrong_role_approver": {
+    "status": 403,
+    "body": {
+      "detail": "この操作には('knowledge_steward',)のいずれかのroleが必要です（現在のrole: approver）"
+    }
+  }
+}

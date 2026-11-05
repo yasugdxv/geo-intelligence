@@ -50,6 +50,7 @@ import geo_official_crawler  # noqa: E402
 import geo_expert_schema  # noqa: E402
 import geo_expert_engine  # noqa: E402
 import geo_knowledge_api  # noqa: E402
+import geo_knowledge_intake_api  # noqa: E402
 import geo_expert_review_api  # noqa: E402
 import geo_external_signal_api  # noqa: E402
 import geo_cors  # noqa: E402
@@ -98,6 +99,10 @@ _geo_client = GeoSupabaseClient(_config)
 geo_router = APIRouter(prefix="/api/geo")
 
 app = FastAPI(title="Geopolitics Intelligence API")
+
+# SSO（OIDC）有効時に、/api/ 配下へ有効なIDトークンを求める（CORSより内側＝先に追加。無効時は何もしない）
+import geo_sso_gate  # noqa: E402
+geo_sso_gate.install(app)
 
 app.add_middleware(
     CORSMiddleware,
@@ -888,6 +893,7 @@ def geo_expert_submit_feedback(response_id: str, req: GeoExpertFeedbackRequest):
 
 app.include_router(geo_router)
 app.include_router(geo_knowledge_api.geo_knowledge_router)
+app.include_router(geo_knowledge_intake_api.geo_knowledge_intake_router)
 app.include_router(geo_expert_review_api.geo_expert_review_router)
 app.include_router(geo_external_signal_api.geo_external_signal_router)
 app.include_router(geo_external_event_api.geo_external_intelligence_router)

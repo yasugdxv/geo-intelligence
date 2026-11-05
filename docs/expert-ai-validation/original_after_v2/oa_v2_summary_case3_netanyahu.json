@@ -1,0 +1,177 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 84825,
+    "completion_tokens": 12416,
+    "total_tokens": 97241
+  },
+  "wall_clock_seconds": 270.5376965999603,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "イランのホルムズ海峡妨害能力とその行使実績",
+    "selection_rationale": "対イラン・対ガザ政策を中長期で見ると、ホルムズ海峡を巡るイランの構造的レバレッジが、米国を含む同盟国の対イラン軍事行動の上限を規定しており、その制約の中でネタニヤフがどこまでエスカレートできるかが決まるため。このKey Pointは、イスラエル単独の意思では変えられない構造要因として、他の候補（ネタニヤフ個人のPersistent Preferenceや米国の関与）よりも上位の制約として機能している。",
+    "control_type": "structural",
+    "confidence": "中",
+    "candidate_key_points_count": 3,
+    "candidate_key_points": [
+      "イランのホルムズ海峡妨害能力とその行使実績",
+      "ネタニヤフの国際司法・同盟プロセスへの不承認というPersistent Preference",
+      "米国の対イラン・対ガザ関与の強度と条件"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "ネタニヤフの国際司法・同盟プロセスへの不承認というPersistent Preference",
+        "why_not_primary": "対ガザ・対イラン政策の説明力は高いが、これは主にイスラエル側の行動様式を規定する要因であり、イランの軍事能力や米国の関与といった外部構造を前提にしている。構造要因を上位に置くため、Primaryではなく重要な補助要因と位置づけた。"
+      },
+      {
+        "key_point": "米国の対イラン・対ガザ関与の強度と条件",
+        "why_not_primary": "米国の関与は極めて重要だが、その関与の強度自体がホルムズ海峡を含む地域安全保障構造（イランの妨害能力と世界のエネルギー依存）に影響されているため、一段下のヒンジとして扱う方が整合的と判断した。"
+      }
+    ],
+    "disconfirming_signal": "イランがホルムズ海峡での妨害能力を長期にわたり完全に放棄し（軍事能力の解体や国際的な拘束条約への実効的参加）、かつ世界の石油市場がホルムズ依存から大きく脱却した場合、このKey Pointを構造的制約の中心に置く前提は崩れる。",
+    "evidence_class": "structural_reference"
+  },
+  "actors": [
+    {
+      "actor_ref": "netanyahu",
+      "profile_source": "actor_intelligence_candidate",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 2,
+      "pattern_ids_count": 2,
+      "has_pattern_applicability_assessment": true,
+      "has_actor_model_challenge": true,
+      "actor_model_challenge_outcome": "inconclusive",
+      "persistent_preference_present": true
+    },
+    {
+      "actor_ref": "iran_state",
+      "profile_source": "none_available",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "insufficient",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": false
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "unresolved": 2,
+    "rejected": 1
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "rejected"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "unresolved"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "ネタニヤフの現在の対イラン・対ガザ政策は、イランのホルムズ海峡妨害能力と米・イラン間の緊張という構造的制約の下で、(1) イランの核・ミサイル・代理勢力能力を抑止・遅延させるための限定的な軍事・情報作戦と強硬なレトリックを維持しつつ、(2) ガザではハマスの軍事能力を大幅に削ぎ、国内右派支持基盤を維持するための長期作戦を続け、(3) 国際司法・同盟プロセスへの不承認を貫きながら、自身の法的リスクと政権生存を守る、という三重の目的を同時に追求している。全面的な対イラン戦争やガザでの完全な政治解決には踏み込まず、構造的制約と国内政治の間で「管理されたエスカレーション」を続ける方向性が主シナリオとして最も整合的である。",
+    "historical_analogies_used": [
+      {
+        "same_actor": false,
+        "description": "1973年戦争後のアグラナト委員会と現在の説明責任回避の対比",
+        "same_domain": true,
+        "analogy_strength": "medium",
+        "same_constraints": false,
+        "same_leverage_mechanism": false,
+        "analogy_source_precedent_id": null,
+        "same_institutional_structure": true
+      }
+    ]
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 4,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "イスラエル戦時内閣内でのネタニヤフと他の閣僚・軍・司法の権限配分は具体的にどうなっているか",
+      "rationale": "ネタニヤフ個人のPersistent Preferenceがどこまで政策を規定しているかを確認するため。",
+      "related_hypothesis": "ネタニヤフ中心の意思決定モデル",
+      "recommended_sources": "イスラエル国内メディア、政府公式発表、信頼できるシンクタンクの分析"
+    },
+    {
+      "priority": "高",
+      "question": "イラン指導部の対イスラエル・対ホルムズ海峡政策に関する最新の公式声明と軍事行動は何か",
+      "rationale": "構造的制約の強度と方向性を確認するため。",
+      "related_hypothesis": "イランの構造的レバレッジがネタニヤフの選択肢を制約している",
+      "recommended_sources": "イラン政府・IRGCの公式声明、地域メディア、国際機関の報告"
+    },
+    {
+      "priority": null,
+      "question": "イラン指導部（最高指導者・IRGC）の対イスラエル・対ホルムズ海峡政策に関するPersistent Preferenceは何か",
+      "rationale": "構造的Key Point（ホルムズ海峡妨害能力）の運用方針を理解し、主シナリオの前提（イランがレバレッジを維持・活用し続ける）を検証するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "米国の対イラン・対ガザ関与における具体的なレッドライン（イスラエルの軍事行動に対する支援・制約の条件）は何か",
+      "rationale": "Key Point候補「米国の関与の強度と条件」の位置づけと、ネタニヤフの行動上限を規定する外部制約の強さを確認するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 3,
+  "quality_guard": {
+    "passed_count": 33,
+    "failed_count": 1,
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "confidence_adjustments": [
+      "main_scenario",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "historical_evidence_separations": [
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "actor_evidence_separations": [
+      "key_actor_profiles[0]:removed=['9fbfbc49-f321-412b-afbf-485badeaf0d7']"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ]
+  },
+  "executive_summary": {
+    "what_changed": "イランのホルムズ海峡妨害能力が実際に行使され、米・イラン間の緊張が継続する中で、ネタニヤフの対イラン・対ガザ政策は、従来以上に構造的制約（エネルギー市場・米国の関与）に縛られつつも、国際司法・同盟プロセスへの不承認と国内政治の制約の下で「管理されたエスカレーション」を続けていると読む必要が出てきた。",
+    "why_it_matters": "ホルムズ海峡を巡る構造的リスクと、イスラエルの対イラン・対ガザ政策の方向性は、エネルギー価格・海上輸送・制裁・国際司法リスクを通じて企業のサプライチェーンとコンプライアンスに中期的な影響を与え得る。",
+    "what_to_watch_decide": "ホルムズ海峡での妨害行為の動向、米国の対イラン・対ガザ政策のレッドライン、イスラエル国内の政権安定性と説明責任プロセスの進展をモニタリングし、エネルギー調達・物流ルート・制裁コンプライアンスの前提を随時見直す必要がある。"
+  },
+  "one_line_assessment": "as_of=2026-08-31時点では、ネタニヤフの対Iran・Gaza政策は「イランの軍事能力と代理勢力への抑止・弱体化を優先しつつ、自身の政権生存と国際的な法的リスク回避を図る」ことが主軸だが、連立内の極右勢力・米国との関係・国際司法プロセスという制約の中で、完全な軍事エスカレーションにも全面停戦にも振り切れていないとみるのが妥当な仮説である（確信度：中）。",
+  "initial_anomaly": "イスラエルにとって存在論的な脅威であるイランとの軍事・核対立が続く中で、ネタニヤフは2023年10月7日の大失敗後も、1973年戦争後のアグラナト委員会のような独立調査を回避しつつ政権を維持している点が通常パターンから外れている。安全保障上の大失策の後であれば、通常は国内の説明責任と対外抑止の両立を図るが、彼は前者を極力先送りしつつ後者（対イラン・対ガザでの強硬姿勢）を維持している。"
+}

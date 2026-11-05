@@ -1,0 +1,87 @@
+[
+  {
+    "cluster_id": "CL-0B11E7DB82569249",
+    "narrative_id": "S1-N04",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-0DB146C4C969793D",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-0F98D7BFA86B1328",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-1E0460AB581868CD",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-2627221EF13ABDA8",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-482A8CAEDB169E43",
+    "narrative_id": "S1-N04",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-53BDD3132FE3EF26",
+    "narrative_id": "S1-N04",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-6095198BD5ED0D52",
+    "narrative_id": "S1-N03",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-76DA3A647DA50D17",
+    "narrative_id": "S1-N02",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-899F1CD7F63E1658",
+    "narrative_id": "S1-N02",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-91D23A12EC91B953",
+    "narrative_id": "S1-N02",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-9ADB1B13BB9CFF86",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-A30D9CE746CA1485",
+    "narrative_id": "S1-N01",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-AF442FB702C4BA74",
+    "narrative_id": "S1-N03",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-BACC973EC0E91472",
+    "narrative_id": "S1-N99",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-CAC866DB4C9A6DAC",
+    "narrative_id": "S1-N02",
+    "validity_status": "PASS"
+  },
+  {
+    "cluster_id": "CL-DF1A96735CBB1C58",
+    "narrative_id": "S1-N02",
+    "validity_status": "PASS"
+  }
+]

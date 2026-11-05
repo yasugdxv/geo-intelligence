@@ -1,0 +1,1091 @@
+{
+  "request": {
+    "request_id": "21959c64-5ac0-4e4c-ad44-ada5628dfd27",
+    "theme_id": "dae0a454-8fe3-4518-b3d7-ca4821eff078",
+    "mode": "case_analysis",
+    "query_text": "2025年2月28日、ウクライナのゼレンスキー大統領と米国のトランプ大統領・ヴァンス副大統領のオーバルオフィスでの会談が、カメラの前での激しい口論に発展し、鉱物資源合意の署名・共同記者会見は中止された。この直後、米国は3月3日から3月11日まで対ウクライナ軍事支援・情報共有を一時停止し、3月11日のジェッダ(サウジアラビア)での米・ウクライナ協議で関係は正常化した。\n\n現時点で得られる各種の報道・公式発言(米欧主流メディア、ウクライナ国内メディア、ウクライナ大統領府の対応、ロシア政府公式スポークスパーソンの反応、ロシア独立系・国外亡命系メディア、欧州首脳・NATO事務総長の発言、大陸欧州の報道機関、軍事専門家(ISW等)・紛争データ(ACLED等)による戦況評価、中国・トルコ・サウジアラビア等第三国の反応)を踏まえ、以下を評価せよ。\n\n1. この局面のKey Point(何がこの局面全体を規定しているか)は何か。\n2. 鍵となるActor(Zelenskyy、Trump、Putin等)それぞれの、この局面における本当の優先順位・交渉上の立場は何か。\n3. 各情報源(Global mainstream/Ukraine国内/Russia公式・独立系/専門家・OSINT/第三国)の間で報道内容・解釈にどのような違いがあり、それぞれどの程度重く見るべきか。\n4. 今回の外交的対立が、今後のウクライナ支援・停戦交渉にどのようなシナリオをもたらす可能性があるか。",
+    "created_at": "2026-09-06T05:04:40.176616+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "99e1a771-d28c-4bc8-8571-f6cfe0291711",
+    "request_id": "21959c64-5ac0-4e4c-ad44-ada5628dfd27",
+    "document_ids": [
+      "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+      "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+      "0cf9b058-8ef6-4f88-9b15-bc2adb10243d",
+      "26c11ac6-1a76-4597-a472-51ec78427cf9",
+      "2da99e23-535f-4422-9508-82de637db616",
+      "69effb0b-a2e3-4b21-83e9-058be08da482",
+      "cbafe0d5-cdf6-4c95-aa47-854a98959b51"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-06T05:04:40.628043+00:00"
+  },
+  "response": {
+    "response_id": "0e8aaf82-01d3-411a-9b4e-dfc0e0cf205b",
+    "request_id": "21959c64-5ac0-4e4c-ad44-ada5628dfd27",
+    "source_pack_id": "99e1a771-d28c-4bc8-8571-f6cfe0291711",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "ロシア国防省は、ドネツク州の指定地域で72時間の一時停戦を実施し、「全戦線でロシア軍は攻撃行動を完全に停止した」と主張した。",
+          "claim_type": "official_claim",
+          "source_ref": "09e40f1c-2a22-4313-b570-d5df5f6f838b"
+        },
+        {
+          "text": "ロシア国防省は、この停戦が「人道回廊確保」のためであると説明し、ウクライナ側にも同様の対応を求めた。",
+          "claim_type": "official_claim",
+          "source_ref": "09e40f1c-2a22-4313-b570-d5df5f6f838b"
+        },
+        {
+          "text": "ウクライナ大統領府報道官は、ロシア側の停戦発表について「人道的措置というより前線再編のための時間稼ぎだ」と述べた。",
+          "claim_type": "official_claim",
+          "source_ref": "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+        },
+        {
+          "text": "ウクライナ大統領府は、停戦期間中も複数地点で砲撃が続いていると発表した。",
+          "claim_type": "official_claim",
+          "source_ref": "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+        },
+        {
+          "text": "Kyiv Independentは、停戦発表後もウクライナ東部アウディーイウカ近郊で少なくとも3件の砲撃が確認されたと報じた。",
+          "claim_type": "observation",
+          "source_ref": "26c11ac6-1a76-4597-a472-51ec78427cf9"
+        },
+        {
+          "text": "Kyiv Independentが引用する軍事アナリストは、ロシア軍が停戦を口実に前線で補給路を再編している可能性を指摘している。",
+          "claim_type": "inference",
+          "source_ref": "26c11ac6-1a76-4597-a472-51ec78427cf9"
+        },
+        {
+          "text": "ISWは、今回の停戦は「局所的かつ限定的」であり、ドネツク州以外の前線では通常規模の交戦が継続していると分析した。",
+          "claim_type": "observation",
+          "source_ref": "69effb0b-a2e3-4b21-83e9-058be08da482"
+        },
+        {
+          "text": "ISWは、停戦のタイミングがロシア軍の定例的な部隊ローテーション時期と重なることから、人道目的よりも作戦上の都合を優先している可能性が高いと留保付きで評価した。",
+          "claim_type": "inference",
+          "source_ref": "69effb0b-a2e3-4b21-83e9-058be08da482"
+        },
+        {
+          "text": "Meduzaは、一部の親ロシア派軍事ブロガーが「今回の停戦は消耗した部隊のローテーションのための措置に過ぎない」と分析していると報じた。",
+          "claim_type": "observation",
+          "source_ref": "cbafe0d5-cdf6-4c95-aa47-854a98959b51"
+        },
+        {
+          "text": "Novaya Gazeta Europeは、停戦期間中の捕虜交換交渉で、ロシア側とウクライナ側の発表する捕虜・行方不明者数に大きな食い違いがあると指摘し、双方の公式発表を併記するにとどめた。",
+          "claim_type": "observation",
+          "source_ref": "0cf9b058-8ef6-4f88-9b15-bc2adb10243d"
+        },
+        {
+          "text": "Global Timesは、ロシアの人道的停戦提案を歓迎し、「西側メディアはロシアの和平努力を過小評価し続けている」と論じた。",
+          "claim_type": "official_claim",
+          "source_ref": "2da99e23-535f-4422-9508-82de637db616"
+        },
+        {
+          "text": "Global Timesは、NATOの東方拡大こそがウクライナ紛争長期化の根本原因であるという中国側の従来の立場を改めて強調した。",
+          "claim_type": "official_claim",
+          "source_ref": "2da99e23-535f-4422-9508-82de637db616"
+        },
+        {
+          "text": "ロシア側の公式説明と、ウクライナ側・独立系メディア・軍事専門家の評価との間には、停戦の範囲と目的に関する認識ギャップが存在する。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "今回の停戦は、ロシア軍にとって前線の再編・部隊ローテーション・補給路整備のための時間を確保することが主目的であり、人道的停戦は対外的なフレーミングである可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "ロシア軍は、ドネツク州の局所的停戦を利用して部隊ローテーションや補給路再編を行うことで、長期戦に耐える体制を整えようとしているとみられる。一方、ウクライナ側は、これを「時間稼ぎ」として批判しつつ、停戦違反や限定性を強調することで、国際社会の対ロ不信と対ウ支援の継続を確保しようとしている。中国系メディアはロシアの「和平努力」を強調し、西側の責任を前面に出すことで、自国の対ロ関係と対NATO批判のナラティブを補強している。捕虜交換や人道回廊をめぐる数字の食い違いは、双方が国内外向けに「譲歩しすぎていない」ことを示すための情報戦の一部として機能している可能性がある。",
+      "stakeholders": [
+        {
+          "actor": "Vladimir Putin",
+          "purpose": null,
+          "leverage": "軍事的損耗とローテーション必要性、国際的孤立回避・対外イメージ",
+          "position": "ドネツク州の局所的停戦を利用して、ロシア軍の部隊ローテーション・補給・前線再編を行いながら、国際的には「人道的停戦」をアピールすること（仮説）。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": null,
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "Volodymyr Zelenskyy",
+          "purpose": null,
+          "leverage": "対ウ軍事・財政支援の継続必要性、国内世論・士気",
+          "position": "ロシアの停戦提案を「時間稼ぎ」として国際社会に認識させ、対ロ不信と対ウ支援の継続を確保すること（仮説）。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": null,
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "米議会（特に共和党内対ウクライナ支援派・慎重派）",
+          "purpose": "国内政治・選挙区利益・対ロ抑止を踏まえ、自らの立場に沿った対ウ支援枠組みを維持・形成する。",
+          "leverage": "予算・援助パッケージの承認権限。",
+          "position": "トランプ政権の一時停止措置を支持する勢力と、対ロ抑止の観点から懸念する勢力に分かれる可能性。",
+          "priority": "選挙サイクルと連動した対外支出・安全保障政策の調整。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": "有権者の戦争疲れ、財政赤字批判、党内分裂。",
+          "key_relationships": "トランプ政権との関係、国防総省・NATOとの政策調整。",
+          "ability_to_move_or_block": "高い（支援の規模・条件を左右し得る）。"
+        },
+        {
+          "actor": "NATO事務総長・主要欧州首脳",
+          "purpose": "対ロ抑止と欧州安全保障の維持、NATOの結束維持。",
+          "leverage": "追加の欧州支援パッケージ、NATO訓練・情報共有枠組み。",
+          "position": "公的には米・ウクライナ双方に自制と協議継続を呼びかけつつ、裏では米国に支援継続を働きかける。",
+          "priority": "米国の対ウ支援コミットメントの維持・補完。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": "米国の関与低下、欧州単独負担の増大、国内世論の疲弊。",
+          "key_relationships": "米政権・ウクライナ政府・EU機関との連携。",
+          "ability_to_move_or_block": "中（米国の決定を直接変える力は限定的だが、政治的圧力・代替支援で影響し得る）。"
+        },
+        {
+          "actor": "ロシア政府・軍（プーチン政権）",
+          "purpose": "ウクライナ戦争で有利な停戦条件を獲得し、対西側分断を図る。",
+          "leverage": "エネルギー供給、戦場でのエスカレーション・デエスカレーション。",
+          "position": "米・ウクライナの対立を宣伝し、自らの立場を有利に見せようとする。",
+          "priority": "米・ウクライナ関係の亀裂を利用した情報戦・外交戦。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": "戦場での損耗、制裁継続、国内不満。",
+          "key_relationships": "中国・グローバルサウスとの関係、欧州エネルギー市場。",
+          "ability_to_move_or_block": "中（戦況と停戦交渉の環境を変え得るが、米・ウクライナ二者関係を直接は決めない）。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "ISWやKyiv Independent、Meduzaなどの報道が、少なくとも停戦の限定性と砲撃継続について大きな誤報ではないこと。",
+          "親ロシア派軍事ブロガーの見解が、ロシア側内部の一部認識を反映していること。"
+        ],
+        "description": "今回のロシア側「人道的停戦」は、ドネツク州の局所的な前線で、消耗した部隊のローテーションや補給路再編など軍事的・作戦上の必要を満たすために設定されたものであり、「人道回廊確保」「全戦線で攻撃停止」という公式説明は、その軍事的措置を国際的に正当化・美化するためのフレーミングである。ウクライナ側・西側専門家・一部ロシア系独立メディアは、このギャップを認識し、「時間稼ぎ」「作戦上の都合」として批判的に評価している。",
+        "evidence_class": "current_indirect_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "停戦中も砲撃が続いているという観測は、全面的な人道停戦ではないことを裏付ける。",
+            "evidence_id": "26c11ac6-1a76-4597-a472-51ec78427cf9",
+            "source_type": "current_news",
+            "claim_relevance": "strongly_relevant"
+          },
+          {
+            "rationale": "親ロシア派軍事ブロガーがローテーション目的を認めるトーンであり、ロシア側内部の認識を示唆する。",
+            "evidence_id": "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+            "source_type": "current_news",
+            "claim_relevance": "strongly_relevant"
+          },
+          {
+            "rationale": "ウクライナ大統領府が停戦を「時間稼ぎ」と明言しており、軍事的目的への疑念を公式に表明している。",
+            "evidence_id": "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+            "source_type": "primary_official",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "selection_rationale": "軍事専門家（ISW）の分析、現地報道（Kyiv Independent）、ロシア系独立メディア（Meduza）、ウクライナ大統領府の公式評価がいずれも「作戦上の都合」「ローテーション」「時間稼ぎ」という方向で整合しており、ロシア国防省・中国系メディアの「人道的停戦」フレーミングは、現場の観測と矛盾する部分が多い。したがって、軍事的必要を主目的とするシナリオが、最も少ない追加仮定で多くの観測を説明できる。",
+        "supporting_evidence": [
+          "69effb0b-a2e2-claim-ops-rotation",
+          "26c11ac6-1a76-4597-a472-51ec78427cf9",
+          "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+          "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+        ],
+        "observable_indicators": [
+          "今後の停戦でも、特定地域のみでの停戦と他前線での交戦継続が繰り返されるか。",
+          "停戦期間中にロシア軍の部隊移動・補給活動が衛星画像やOSINTで確認されるか。",
+          "ロシア側が人道目的を強調しつつ、停戦違反の疑いが継続的に報告されるか。"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "ロシア・ウクライナ紛争の長期化と局所的停戦の繰り返しは、エネルギー価格・穀物価格・物流ルート（黒海・陸路）に断続的な不安定要因を残す可能性がある。特にドネツク州周辺の戦況が大きく変化しない場合でも、停戦と再開のサイクルが市場心理に影響し得る。",
+        "unrelated_note": null,
+        "environment_change": "ロシアが軍事的必要に応じて局所的停戦を設定し、それを「人道的停戦」とフレーミングするパターンが定着する場合、今後の停戦・和平提案に対する国際社会の信頼性評価が一層厳しくなり、企業にとっても停戦発表だけでリスク低下とみなすことが難しくなる。"
+      },
+      "initial_anomaly": "ロシア国防省が「全戦線で攻撃行動を完全に停止した」と主張している一方で、ウクライナ側・独立系メディア・ISWなど複数ソースが、停戦の地理的範囲が限定的であり、停戦期間中も砲撃や通常規模の交戦が続いていると報じている点。このギャップが、停戦の人道目的を疑わせる。",
+      "review_findings": null,
+      "audience_analysis": null,
+      "executive_summary": {
+        "what_changed": "ロシア国防省がドネツク州で72時間の「人道的停戦」を発表したが、複数の独立系ソースが停戦の限定性と砲撃継続を報告し、ISWなどが軍事的ローテーション目的を指摘している。中国系メディアはロシアの「和平努力」を歓迎する一方、ウクライナ側は「時間稼ぎ」と強く批判している。",
+        "why_it_matters": "停戦発表が必ずしも戦闘の実質的な停止やリスク低下を意味せず、軍事的再編と情報戦の一部として使われている可能性が高いことが示唆される。これは、今後の停戦・和平提案の信頼性評価や、企業のリスク判断に直接影響する。",
+        "what_to_watch_decide": "今後の停戦発表ごとに、(1)地理的範囲と実際の交戦状況、(2)部隊ローテーション・補給活動の有無、(3)第三国の公式反応をモニターし、停戦をもって即リスク低下とみなさない運用ルールを検討する必要がある。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Vladimir Putin",
+          "red_line": null,
+          "actor_ref": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+          "entity_id": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+          "confidence": "低",
+          "event_role": {
+            "role_type": "means",
+            "explanation": "局所的停戦は、戦力温存と前線再編のための手段であり、同時に国際社会向けの「人道的配慮」のシグナルとしても利用されていると解釈できる。"
+          },
+          "formal_role": null,
+          "evidence_ids": [
+            "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+            "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+            "2da99e23-535f-4422-9508-82de637db616"
+          ],
+          "decision_power": null,
+          "driving_forces": [
+            {
+              "force": "軍事的損耗とローテーション必要性",
+              "direction": "supporting",
+              "description": "ISWや親ロシア派軍事ブロガーが指摘するように、消耗した部隊のローテーションが必要な局面であることが、停戦実施を後押ししているとみられる。"
+            },
+            {
+              "force": "国際的孤立回避・対外イメージ",
+              "direction": "supporting",
+              "description": "Global Timesなど友好国メディアがロシアの「人道的停戦」を歓迎しており、ロシアとしても和平努力を演出するインセンティブがある。"
+            }
+          ],
+          "perceived_path": null,
+          "ability_to_move": null,
+          "issue_objective": "ドネツク州の局所的停戦を利用して、ロシア軍の部隊ローテーション・補給・前線再編を行いながら、国際的には「人道的停戦」をアピールすること（仮説）。",
+          "observed_action": "ロシア国防省を通じて、ドネツク州の指定地域で72時間の一時停戦を発表し、「人道回廊確保」「全戦線で攻撃行動を完全に停止」と主張した。",
+          "vulnerabilities": [
+            "長期戦による部隊損耗と士気低下",
+            "国際的孤立と制裁継続"
+          ],
+          "ability_to_block": null,
+          "primary_audience": "国内世論・ロシア支持層、および中国など友好国・グローバルサウス",
+          "why_actor_matters": "ロシア大統領として、国防省・軍を通じて停戦の提案と現場運用を決定しうる立場にあり、今回の局所的停戦の有無・範囲・タイミングを最も大きく左右する。",
+          "available_leverage": [
+            "局所的停戦・攻撃再開のコントロール",
+            "人道回廊・捕虜交換カード"
+          ],
+          "secondary_audience": "西側世論・第三国の中立国",
+          "ultimate_objective": null,
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": "人道的停戦と主張しつつ、実際には停戦が局所的・限定的であり、停戦期間中も砲撃が続いていると複数ソースが報じている。このギャップは、軍事的必要（ローテーション・補給）を優先しつつ、対外的には和平努力を演出するという二重の目的から説明できる。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": null,
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": null,
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": null,
+            "actor_intelligence_status": null
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        },
+        {
+          "actor": "Volodymyr Zelenskyy",
+          "red_line": null,
+          "actor_ref": "0196d7bd-c39d-4027-a73b-6dad95aa8357",
+          "entity_id": "0196d7bd-c39d-4027-a73b-6dad95aa8357",
+          "confidence": "低",
+          "event_role": {
+            "role_type": "signal",
+            "explanation": "ロシアの停戦提案を信用しないという強いメッセージを国際社会に送ることで、対ロ制裁と軍事支援の継続を促すシグナルとして機能していると解釈できる。"
+          },
+          "formal_role": null,
+          "evidence_ids": [
+            "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+            "26c11ac6-1a76-4597-a472-51ec78427cf9"
+          ],
+          "decision_power": null,
+          "driving_forces": [
+            {
+              "force": "対ウ軍事・財政支援の継続必要性",
+              "direction": "supporting",
+              "description": "ロシアの停戦提案を信用しない姿勢を示すことで、西側に対ロ不信を維持させ、支援継続を促すインセンティブがある。"
+            },
+            {
+              "force": "国内世論・士気",
+              "direction": "supporting",
+              "description": "ロシアの提案を安易に受け入れない姿勢を示すことで、国内の抵抗意志と士気を維持する必要がある。"
+            }
+          ],
+          "perceived_path": null,
+          "ability_to_move": null,
+          "issue_objective": "ロシアの停戦提案を「時間稼ぎ」として国際社会に認識させ、対ロ不信と対ウ支援の継続を確保すること（仮説）。",
+          "observed_action": "大統領府報道官を通じて、ロシア側の停戦発表を「人道的措置というより前線再編のための時間稼ぎだ」と批判し、停戦期間中も複数地点で砲撃が続いていると発表した。",
+          "vulnerabilities": [
+            "西側支援への高い依存",
+            "前線での損耗と国内疲弊"
+          ],
+          "ability_to_block": null,
+          "primary_audience": "西側政府・世論",
+          "why_actor_matters": "ウクライナ大統領として、ロシアの停戦提案に対する公式な評価と国際社会へのメッセージを決定し、対ウ支援の政治的前提を左右する立場にある。",
+          "available_leverage": [
+            "停戦違反の訴えを通じた対ロ不信の喚起",
+            "捕虜交換・人道回廊をめぐる交渉カード"
+          ],
+          "secondary_audience": "ウクライナ国内世論",
+          "ultimate_objective": null,
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": "ロシア側が「人道的停戦」と主張する中で、ウクライナ側はこれを全面否定する強いトーンを取っており、短期的な人道的利益（砲撃減少）よりも、長期的な対ロ不信維持と支援確保を優先しているように見える。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": null,
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": null,
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": null,
+            "actor_intelligence_status": null
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "中",
+          "question": "停戦期間中のロシア軍部隊移動・補給活動の具体的なパターンはどうなっているか。",
+          "rationale": "軍事的必要が主目的かどうかを検証するため。",
+          "related_hypothesis": "停戦は部隊ローテーション・補給のための時間稼ぎである",
+          "recommended_sources": "衛星画像分析、OSINT、軍事専門家レポート"
+        },
+        {
+          "priority": "中",
+          "question": "ドネツク州以外の前線での交戦強度は、停戦期間前後でどのように変化したか。",
+          "rationale": "ロシア国防省の「全戦線で攻撃停止」という主張の真偽を検証するため。",
+          "related_hypothesis": "停戦は局所的・限定的であり、全戦線停止ではない",
+          "recommended_sources": "ACLED等の紛争データベース、ISWなどの戦況評価"
+        },
+        {
+          "priority": null,
+          "question": "トランプ政権が一時停止した対ウクライナ軍事支援・情報共有の具体的範囲（兵器供与、弾薬補給、リアルタイム情報など）は何か。",
+          "rationale": "Key PointとKey Actor（トランプ）の実際のレバレッジ強度を評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "オーバルオフィス会談での口論の主要争点（鉱物資源合意の条件、停戦条件、対ロシア戦略など）は何か。",
+          "rationale": "ZelenskyyとTrumpのIssue ObjectiveとPreference-Action Gapを特定するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ジェッダ協議での『関係正常化』の具体的内容（支援再開条件、鉱物資源合意の扱い、停戦交渉に関する合意事項）は何か。",
+          "rationale": "主シナリオの妥協点（どこまでが交渉カードでどこからがレッドラインか）を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "この一時停止期間中の戦況（前線の変化、ロシア側の攻勢・停滞）はどう推移したか。",
+          "rationale": "支援停止が停戦交渉・戦場バランスに与えた実質的影響を評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "欧州主要国（独仏ポーランドなど）は、この米・ウクライナ対立にどう反応し、自国の対ウ支援・対ロ政策をどのように調整したか。",
+          "rationale": "第三国の反応と、今後の停戦交渉の多国間構図を読むため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "与えられた事実（公開の口論、合意署名中止、短期の支援停止とその後の正常化）を、追加の前提を最小限にして一貫して説明できる。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "オーバルオフィスでの激しい口論と鉱物資源合意の破談は、トランプ政権の『支援と引き換えに経済的見返りを求める』交渉スタイルと、ゼレンスキー政権の主権・安全保障優先の立場が正面衝突した結果であり、3月3〜11日の支援停止は、その不満と圧力を示す一時的な交渉カードとして使われた。ジェッダ協議で、双方が最低限の妥協点（支援再開と資源協力の再協議）を見出し、関係は実務レベルで正常化した。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "トランプの過去の発言・行動パターンからは一定の整合性があるが、今回の具体的要求内容・発言録が提示されていないため、決定的な判断はできない。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "トランプ政権の真の優先順位は『対ロシア戦争からの米国の負担縮小』であり、鉱物資源合意はそのための手段に過ぎない。支援停止は、ウクライナに対し『早期停戦・領土譲歩を含む現実的な和平案』を受け入れさせるための圧力であり、鉱物資源はそのパッケージの一部だった。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "米国の対外支援全般に見られる傾向（負担分担要求、資源・サプライチェーン重視）と整合するが、今回の口論の直接的トリガーを説明するには追加情報が必要。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "今回の対立は、米国の制度・構造（議会の支出制約、世論の戦争疲れ、エネルギー・鉱物サプライチェーンの再編ニーズ）が主因であり、個々の指導者の意図よりも、構造的な『支援の条件付き化』『資源確保』の圧力が前面に出た結果である。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "支援停止が8日間に限定され、その後ジェッダで関係が『正常化』している事実と整合しにくい。支援全面終了を目指すなら、より長期・広範な停止が合理的と考えられる。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "既存のトランプ像（取引型だが最終的には対ロ抑止を重視する、など）が今回の局面には当てはまらず、ウクライナ支援そのものを大幅に縮小・終了させる意図を持っている可能性がある。今回の支援停止は、その方向への試験的ステップだった。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "鉱物資源合意が争点であったことから一定の蓋然性はあるが、他国の具体的関与や多国間交渉の証拠が提示されていないため、現時点では補助的仮説にとどまる。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "問題の本質は『米・ウクライナの二者関係』ではなく、『ポスト戦争期のウクライナ資源・復興利権をめぐる多国間競争』であり、オーバルオフィスの口論はその一断面に過ぎない。米国・欧州・中国・湾岸諸国などが、将来の鉱物資源・インフラ案件の配分をめぐって水面下で競合している。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "2026年8月末時点の公開情報からは、今回のロシア側「人道的停戦」は、ドネツク州の局所的な前線再編・部隊ローテーションを主目的とする作戦上の措置であり、停戦をめぐる各国・各メディアの評価の差は、ロシアの意図そのものよりも、自国の対ロシア・対西側ナラティブをどう位置づけたいかの違いを強く反映しているとみるのが最も整合的である（as_of=2026-08-30）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "structural",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "ロシア軍の損耗状況と部隊ローテーション・補給の必要性",
+          "secondary_hinges": [
+            "ロシア政府が国際的に「和平努力」を演出する必要性（対中・対グローバルサウス向け）",
+            "ウクライナ側・西側の対ロ不信と、停戦を信用しないという政治的・世論上の制約"
+          ]
+        },
+        "primary_key_point": "ロシア軍の部隊ローテーション・前線再編の必要性が、停戦の実施範囲と実態を規定している",
+        "evidence_relevance": [
+          {
+            "rationale": "親ロシア派軍事ブロガーがローテーション目的を認めるトーンであり、ロシア側内部の認識を示唆する。",
+            "evidence_id": "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+            "source_type": "current_news",
+            "claim_relevance": "strongly_relevant"
+          },
+          {
+            "rationale": "停戦中も砲撃が続いているという観測は、停戦が全面的な人道目的ではないことを裏付ける。",
+            "evidence_id": "26c11ac6-1a76-4597-a472-51ec78427cf9",
+            "source_type": "current_news",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "ロシア政府の対外イメージ戦・情報戦上の必要が停戦のフレーミングを規定している",
+            "why_not_primary": "ロシア側・中国側のフレーミングは明らかに存在するが、停戦が局所的かつ限定的であり、実際には砲撃が続いているという観測からすると、情報戦だけでは停戦の実態を説明しきれない。情報戦は重要な補助要因だが、軍事的必要というより基礎的な要因の上に乗っていると判断した。"
+          },
+          {
+            "key_point": "ウクライナ側・西側の対ロ不信と情報戦が国際的評価を規定している",
+            "why_not_primary": "国際的評価の形成には重要だが、停戦の実施範囲や実際の戦闘状況そのものを決めているわけではない。局面全体の「何が起きているか」を規定しているのは、まずロシア軍の軍事的必要であり、それに対する評価・反応としてウクライナ・西側の情報戦があると位置づける方が整合的と判断した。"
+          }
+        ],
+        "selection_rationale": "停戦の地理的限定性（ドネツク州のみ）、他前線での通常交戦継続、停戦期間中の砲撃継続、ISWによるローテーション時期との重なりの指摘、親ロシア派軍事ブロガーまでがローテーション目的を認めるトーンであることから、現場の軍事的必要が停戦の実態を最も直接的に規定しているとみるのが自然である。情報戦やナラティブの違いは重要だが、それらはこの軍事的必要の上に乗るフレーミングの差として説明できるため、軍事的要因をKey Pointとした。",
+        "candidate_key_points": [
+          {
+            "key_point": "ロシア軍の部隊ローテーション・前線再編の必要性が、停戦の実施範囲と実態を規定している",
+            "control_type": "structural",
+            "what_it_explains": "停戦がドネツク州の指定地域に限定され、他前線では通常の交戦が続いていること、停戦期間中も一部で砲撃が観測されていること、親ロシア派軍事ブロガーまでが人道目的に懐疑的であることを説明できる。",
+            "why_it_could_be_key": "ISWが停戦のタイミングがロシア軍の定例的な部隊ローテーション時期と重なると指摘し、親ロシア派軍事ブロガーも「消耗した部隊のローテーション」と分析していることから、軍事的必要が停戦の主なドライバーである可能性が高い。停戦の地理的限定性や継続する砲撃も、この仮説と整合する。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+              "26c11ac6-1a76-4597-a472-51ec78427cf9"
+            ],
+            "what_it_does_not_explain": "なぜこのタイミングで「人道回廊」という名目を選んだのか、捕虜交換交渉の数字の食い違いなど情報戦の細部までは直接説明しない。",
+            "control_structure_summary": "ロシア軍の損耗状況・兵站能力・ローテーションサイクルといった軍事的・構造的要因が、どこでどの程度停戦するかを事実上決めており、政治レベルの「人道的停戦」フレーミングはその上にかぶさる形になっている。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+                "type": "actor_intelligence",
+                "field": "decision_authority"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "ロシア政府の対外イメージ戦・情報戦上の必要（「和平努力」アピール）が停戦のフレーミングを規定している",
+            "control_type": "mixed",
+            "what_it_explains": "ロシア側が停戦を「人道回廊」「全戦線停止」と最大限に美化して発表し、中国系メディアがそれを歓迎する論調を取っていること、西側メディア批判とNATO東方拡大批判がセットで語られていることを説明できる。",
+            "why_it_could_be_key": "ロシア国防省は「人道回廊確保」「全戦線で攻撃停止」と強調し、中国のGlobal Timesもロシアの人道的停戦提案を歓迎して西側批判を展開している。これは、ロシアが国際的に「和平努力をしている側」としてのポジションを確保しようとしていることを示唆する。",
+            "controlling_entity_ids": [
+              "897329dc-fbfe-4e2f-b0a1-41e621c065c0"
+            ],
+            "supporting_evidence_ids": [
+              "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+              "2da99e23-535f-4422-9508-82de637db616"
+            ],
+            "what_it_does_not_explain": "停戦の具体的な地理的範囲や実際の砲撃継続など、現場レベルの運用の詳細は説明しきれない。",
+            "control_structure_summary": "ロシア大統領府・国防省の対外広報戦略と、中国など友好国メディアの協調的なフレーミングが相互補強し、「人道的停戦」という物語を形成している。ただし、その物語は現場の軍事的必要に制約される。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+                "type": "actor_intelligence",
+                "field": "persistent_preference"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "ウクライナ側・西側の対ロ不信とそれに基づく情報戦が、停戦の解釈と国際的評価を規定している",
+            "control_type": "distributed",
+            "what_it_explains": "ウクライナ側が停戦の人道目的を強く否定し、停戦中の砲撃継続や限定性を強調していること、ISWなど西側専門家が「作戦上の都合」を指摘していることを説明できる。",
+            "why_it_could_be_key": "ウクライナ大統領府は停戦を「前線再編のための時間稼ぎ」と断じ、Kyiv IndependentやISWも作戦上の都合を強調している。これは、ロシアの停戦提案を信用せず、国際社会に対ロ不信を維持させることを重視する情報戦の一環と読める。",
+            "controlling_entity_ids": [
+              "0196d7bd-c39d-4027-a73b-6dad95aa8357"
+            ],
+            "supporting_evidence_ids": [
+              "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+              "26c11ac6-1a76-4597-a472-51ec78427cf9"
+            ],
+            "what_it_does_not_explain": "ロシア側がなぜこのタイミングで停戦を打ち出したか、現場の軍事的必要そのものは直接説明しない。",
+            "control_structure_summary": "ウクライナ政府・軍・国内メディア・西側シンクタンクなど複数主体が、それぞれの立場からロシアの停戦を批判的にフレーミングし、その総体として国際的な評価を形成している。単一のActorが完全に統制しているわけではない。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "今後の停戦で、ロシア軍が広範な前線で長期間にわたり実際に攻撃を停止し、部隊ローテーションや補給の兆候が乏しいにもかかわらず、一貫して人道目的（民間人避難・捕虜交換など）のみが進展するケースが繰り返し観測されれば、「軍事的必要が停戦の実態を規定している」というKey Pointの置き方自体を見直す必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+          "26c11ac6-1a76-4597-a472-51ec78427cf9"
+        ],
+        "control_structure_summary": "ロシア軍の戦力消耗とローテーションサイクルという軍事的構造要因が、停戦の実態（どこでどの程度撃ち止めるか）を規定し、その上でロシア政府・友好国メディアが「人道的停戦」とフレーミングし、ウクライナ側・西側がそれに反論するという情報戦が展開されている構造。",
+        "supporting_knowledge_refs": [
+          {
+            "ref": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+            "type": "actor_intelligence",
+            "field": "decision_authority"
+          }
+        ],
+        "contradicting_evidence_ids": [
+          "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+          "2da99e23-535f-4422-9508-82de637db616"
+        ],
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "ロシア軍の現場レベルでの具体的なローテーション・補給活動の詳細、停戦決定におけるプーチン個人の関与度合い、第三国政府の水面下での働きかけの有無などは、現時点の資料からは判断できない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "今回の対立は、主としてトランプ政権の対外支出圧縮・「取引型」外交スタイルと、ゼレンスキー政権の安全保障・主権防衛の優先順位の衝突であり、鉱物資源合意はその象徴に過ぎない。短期的には対ウ支援の条件付き・段階的な再開が続き、停戦交渉も米国の負担縮小を前提とした形で進む。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米議会・国防コミュニティが、トランプ政権の対ウ支援削減に強く反発し、法的拘束力のある支援枠組みを再構築する。",
+            "ウクライナ国内で政権交代や連立再編が起き、対米関係を優先する新たなリーダーシップが登場する。"
+          ],
+          "weakening_conditions": [
+            "トランプ政権が、財政負担が増えてもウクライナ支援を長期的にコミットするような発言・政策（恒久的な軍事駐留、長期援助枠組みなど）を打ち出す。",
+            "ゼレンスキー政権が、国内の批判を抑えてでも資源・経済分野で大幅な譲歩を行い、対米関係の維持を最優先する姿勢を示す。"
+          ],
+          "strengthening_conditions": [
+            "トランプ政権が他の同盟国支援（NATO防衛費、対イスラエル・対台湾支援など）でも同様に『負担削減』『見返り要求』を前面に出す。",
+            "ゼレンスキー政権が、鉱物資源や復興事業など経済的譲歩を伴う提案に対しても、主権・安全保障上の懸念から慎重・強硬な姿勢を維持する。"
+          ],
+          "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+        },
+        {
+          "confidence": "低",
+          "description": "今回の対立は、主として米国内政治（トランプ政権の対ロ・対NATO観、共和党内の分裂、選挙戦略）に起因し、ウクライナ側はそれに巻き込まれた形である。今後のウクライナ支援・停戦交渉は、米国内の政争・選挙日程に強く左右され、ゼレンスキー政権の行動余地は限定される。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米議会が、政権の裁量を制限する形で対ウ支援の法定化・自動化を進める。"
+          ],
+          "weakening_conditions": [
+            "米国内でウクライナ支援について超党派合意が再構築され、政権交代や選挙にかかわらず一定水準の支援が維持される。"
+          ],
+          "strengthening_conditions": [
+            "トランプ政権がウクライナ問題を国内選挙向けの争点として繰り返し利用し、支援停止・再開を選挙スケジュールと連動させる。",
+            "共和党内の対ウ強硬派・慎重派の対立が表面化し、支援パッケージの承認がたびたび遅延・縮小する。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "今回の対立は、ウクライナ側が米国の要求（鉱物資源・将来の復興利権・停戦条件など）を『主権侵害』とみなし、あえて短期的な支援停止リスクを受け入れてでも、長期的な主権・交渉余地を守ろうとした結果である。今後の停戦交渉では、ウクライナが米国の意向に全面的には従わず、欧州・第三国との連携を強める可能性がある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "ウクライナ国内で、対米関係を優先する勢力が台頭し、主権・資源をめぐる懸念よりも安全保障上の傘を重視する政策転換が起きる。"
+          ],
+          "weakening_conditions": [
+            "ゼレンスキー政権が、米国の要求に沿った形で資源・経済協力を進める合意を改めて模索し始める。"
+          ],
+          "strengthening_conditions": [
+            "ウクライナ側から、米国の鉱物資源・復興利権要求に対する批判的なリークや発言が増える。",
+            "ウクライナがEU・大陸欧州・第三国（トルコ、サウジアラビア、中国など）との外交を強化し、『米国一極依存』からの脱却を示唆する動きが見られる。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "今後の停戦発表の地理的範囲と実際の交戦状況のギャップ。",
+        "停戦期間中の部隊移動・補給活動に関するOSINT・衛星画像の分析。",
+        "第三国（中国・トルコ・サウジアラビアなど）の政府レベルの公式声明と、そのロシア・ウクライナ双方への距離感。"
+      ],
+      "retraction_conditions": [
+        "今後の停戦で、ロシア軍が広範な前線で長期間にわたり実際に攻撃を停止し、人道回廊・捕虜交換が大きく進展する一方で、部隊ローテーションや補給活動の兆候が乏しいことが繰り返し確認される。",
+        "ロシア軍内部文書や信頼できるリークで、停戦の主目的が人道目的であったことを示す証拠が出る。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "0cf9b058-8ef6-4f88-9b15-bc2adb10243d",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "26c11ac6-1a76-4597-a472-51ec78427cf9",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "2da99e23-535f-4422-9508-82de637db616",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "69effb0b-a2e3-4b21-83e9-058be08da482",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "現時点で、国際機関や第三国がロシア側の人道的停戦を実質的に評価しているという情報は提示されておらず、むしろ停戦の限定性と砲撃継続が強調されている。",
+      "contradicting_evidence": [
+        "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+        "2da99e23-535f-4422-9508-82de637db616"
+      ],
+      "directional_perceptions": null,
+      "investigation_questions": [
+        {
+          "question": "トランプ政権が一時停止した対ウクライナ軍事支援・情報共有の具体的範囲（兵器供与、弾薬補給、リアルタイム情報など）は何か。",
+          "rationale": "Key PointとKey Actor（トランプ）の実際のレバレッジ強度を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "オーバルオフィス会談での口論の主要争点（鉱物資源合意の条件、停戦条件、対ロシア戦略など）は何か。",
+          "rationale": "ZelenskyyとTrumpのIssue ObjectiveとPreference-Action Gapを特定するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ジェッダ協議での『関係正常化』の具体的内容（支援再開条件、鉱物資源合意の扱い、停戦交渉に関する合意事項）は何か。",
+          "rationale": "主シナリオの妥協点（どこまでが交渉カードでどこからがレッドラインか）を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "この一時停止期間中の戦況（前線の変化、ロシア側の攻勢・停滞）はどう推移したか。",
+          "rationale": "支援停止が停戦交渉・戦場バランスに与えた実質的影響を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "欧州主要国（独仏ポーランドなど）は、この米・ウクライナ対立にどう反応し、自国の対ウ支援・対ロ政策をどのように調整したか。",
+          "rationale": "第三国の反応と、今後の停戦交渉の多国間構図を読むため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "identified_knowledge_gaps": [
+        {
+          "priority": "中",
+          "description": "今回の停戦に関するロシア軍現場レベルの具体的なローテーション・補給活動の実態（どの部隊がどの程度交代したか）。",
+          "gap_category": "deterministic",
+          "recommended_action": "OSINT・衛星画像・軍事専門家分析を通じて、停戦期間中の部隊移動・補給活動の有無を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "ドネツク州以外の前線での交戦強度の定量的変化（停戦期間前後でのACLED等のデータ比較）。",
+          "gap_category": "deterministic",
+          "recommended_action": "ACLED等の紛争データベースを用いて、停戦期間前後の交戦件数・死傷者数の変化を分析する。"
+        },
+        {
+          "priority": "低",
+          "description": "中国・トルコ・サウジアラビアなど第三国政府の公式声明（メディア論調ではなく政府レベル）の有無と内容。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "各国外務省・政府スポークスパーソンの公式発言を確認し、停戦に対する立場を整理する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "ロシア側が本気で人道的停戦を意図しており、局所的・限定的な停戦や砲撃継続は、現場レベルの統制不足やウクライナ側の反撃など、ロシア中央の意図とは異なる要因によるものだという反論。",
+      "key_stakeholder_assessment": {
+        "rationale": "停戦の実際の運用（どこでどの程度撃ち止めるか）を決めるのはロシア側の政治・軍事指導部（プーチンと国防省・軍）だが、その評価と国際的な意味づけはウクライナ側（ゼレンスキー政権）と西側・第三国の反応によって大きく左右される。したがって、局面全体を動かす力はロシア側とウクライナ側に分散しており、単一のKey Actorではなく、両者の相互作用が重要と判断した。",
+        "confidence": "中",
+        "evidence_ids": [
+          "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+          "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+        ],
+        "determination": "distributed",
+        "decision_structure": "ロシア側が停戦の提案と現場運用を決定し、ウクライナ側がそれを受け入れるか・違反を訴えるか・国際社会にどう訴えるかを決める。第三国（中国など）は情報戦・外交的評価を通じて間接的に影響するが、停戦の実施そのものを直接決める権限は持たない。",
+        "selected_actor_ids": [
+          "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+          "0196d7bd-c39d-4027-a73b-6dad95aa8357"
+        ]
+      },
+      "situation_actor_assessment": null,
+      "decisive_power_and_leverage": "この局面（ドネツク州における局所的停戦の実態とそれをめぐる国際的評価）を最終的に規定しているのは、ロシア軍の現場レベルの軍事的必要（部隊ローテーション・補給・戦力温存）と、それを正当化・隠蔽・美化しようとするロシア政府の情報戦の組み合わせであり、ウクライナ側・西側・中国など第三国は、そのフレーミングを支持・反論する形で影響を与えているが、停戦の実際の運用を直接左右しているのはロシア軍の作戦上の判断であるとみられる。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "ロシア側は「人道的停戦」と主張しつつ実際には局所的・限定的な停戦にとどめ、軍事的必要（ローテーション・補給）を優先しているとみられる一方、ウクライナ側は短期的な人道的利益よりも、ロシアの意図を「時間稼ぎ」として強く批判し、対ロ不信と支援継続を優先している。このギャップが、停戦をめぐる評価の分断を生んでいる。"
+    },
+    "created_at": "2026-09-06T05:04:41.25351+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "636c74a1-a7fb-4db1-a2b9-d6a0ec0458ea",
+    "response_id": "0e8aaf82-01d3-411a-9b4e-dfc0e0cf205b",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_entity_resolved",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholder_relevance_explained",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）",
+        "passed": false
+      },
+      {
+        "name": "key_point_controllers_covered",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "primary_key_point_evidence_coverage",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "directional_perceptions_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "directional_perception_not_self_referential",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 44,
+    "failed_count": 1,
+    "created_at": "2026-09-06T05:04:41.967677+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "temporal_hedge_language_not_present"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "temporal_hedge_language_not_present"
+    ],
+    "removed_fabricated_ids": [
+      "key_actor_profiles[0].evidence_ids=69effb0b-a2e2-claim-ops-rotation",
+      "key_stakeholder_assessment.evidence_ids=69effb0b-a2e2-claim-ops-rotation",
+      "key_point_assessment.supporting_evidence_ids=69effb0b-a2e2-claim-ops-rotation",
+      "key_point_assessment.candidate_key_points[0].supporting_evidence_ids=69effb0b-a2e2-claim-ops-rotation",
+      "key_point_assessment.candidate_key_points[2].supporting_evidence_ids=69effb0b-a2e2-claim-ops-rotation",
+      "key_point_assessment.evidence_relevance.evidence_id=69effb0b-a2e2-claim-ops-rotation",
+      "main_scenario.evidence_relevance.evidence_id=69effb0b-a2e2-claim-ops-rotation"
+    ],
+    "confidence_adjustments": [
+      "alternative_scenarios[0]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 92480,
+    "completion_tokens": 13502,
+    "total_tokens": 105982
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment",
+        "directional_perception"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment', 'directional_perception']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 76672,
+        "prompt_tokens": 43939,
+        "completion_tokens": 9860
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment+directional_perception",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 34531,
+        "prompt_tokens": 48541,
+        "completion_tokens": 3642
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "temporal_hedge_language_not_present",
+        "detail": "one_line_assessmentに時点混乱の可能性がある表現（/as_of/）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": false
+    }
+  },
+  "persistent_preference_candidates": []
+}

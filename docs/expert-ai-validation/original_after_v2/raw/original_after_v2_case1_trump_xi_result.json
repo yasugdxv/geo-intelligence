@@ -1,0 +1,1098 @@
+{
+  "request": {
+    "request_id": "98199ea7-14e3-41a2-86de-92cdf3316309",
+    "theme_id": null,
+    "case_id": "61447d94-e5cc-48f9-9352-31df72af9628",
+    "mode": "case_analysis",
+    "profile": "deep",
+    "query_text": "現在の米中間の半導体・AI規制をめぐる局面について、主要な意思決定主体、それぞれの目的、現在の力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-01T08:10:57.934781+00:00",
+    "run_config": {
+      "actor_profile_lookup_statuses": [
+        "active",
+        "candidate"
+      ],
+      "actor_profile_retrieval_status": null,
+      "candidate_snapshot_mode": "test-mode: active+candidate, retrieval_status unrestricted (matches Neutral v3)",
+      "actor_intelligence_enabled": true,
+      "media_intelligence_enabled": false,
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "fingerprints": {
+        "geo_expert_engine.py": "582aa324c7971b73",
+        "geo_expert_schema.py": "358640565bdd689c",
+        "geo_expert_quality_guard.py": "c8cbb2ecf9c21c29",
+        "geo_actor_intelligence_service.py": "a4728e75b6b9c3ab",
+        "geo_media_intelligence_service.py": "aa61f22f460b32a5",
+        "geo_knowledge_item_schemas.py": "5ab8d2935eebf4b7",
+        "schemas/geo_expert_ai_response.schema.json": "77a892d2bd1f777f",
+        "geo_persistent_preference_service.py": "47e2b31ccec1b1c5",
+        "geo_foundation_pack_service.py": "11dd58266c423f91"
+      },
+      "case_as_of_dates": {
+        "case1_trump_xi": "2026-08-31",
+        "case2_putin": "2026-08-31",
+        "case3_netanyahu": "2026-08-31",
+        "case4_mbs": "2026-08-31",
+        "case5_kim": "2026-08-31"
+      }
+    }
+  },
+  "source_pack": {
+    "source_pack_id": "0ec556df-f8a9-4394-a357-dbe24d2d9e19",
+    "request_id": "3893d752-c242-4835-b96e-6434adbc8c66",
+    "document_ids": [
+      "69e8064f-b236-42e8-89b1-e92a4c866987",
+      "e2fed736-6330-4d6c-83bf-740800dab58c",
+      "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+      "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+      "eba1d367-ab95-41c6-bebd-53a53903bd58",
+      "609a1837-e29b-4215-9660-93d1f96f8ebe",
+      "50a2a155-3437-46db-8cc3-5ea55b08a385",
+      "62010532-a2fc-4f6d-8384-4ab94401e852",
+      "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+      "b47f3ca0-a472-46ed-8031-a43590d9562a"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-09-01T08:10:55.420784+00:00"
+  },
+  "response": {
+    "response_id": "842545cf-51a4-4a92-b325-eb1c53c4dbfa",
+    "request_id": "3893d752-c242-4835-b96e-6434adbc8c66",
+    "source_pack_id": "0ec556df-f8a9-4394-a357-dbe24d2d9e19",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "米国は対中半導体・AI規制を通じて、中国の軍事・監視用途への先端技術アクセスを制限しつつ、自国（および同盟国）の半導体産業・雇用を守る意図を併せ持っていると推測される。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "中国は米国の規制を前提条件として、先端半導体の国産化・サプライチェーン多角化・第三国経由の技術アクセスなど、技術自立と迂回路構築を進めていると考えられる。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "現在の米中半導体・AI規制の局面は、単発の制裁応酬ではなく、10年以上続く「技術覇権競争」の一局面であり、規制の緩和・再強化が政治日程や交渉状況に応じて繰り返される可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "Donald Trump政権（または同様の取引志向の米政権）は、対中半導体・AI規制を「恒久的なデカップリング」よりも、「取引材料としての強いカード」として位置づける可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "Xi Jinping指導部は、対米関係の安定と経済成長を維持したい一方で、台湾問題や国内統制上のレッドラインから、先端技術分野での対米依存を減らす方向へ構造的に動かざるを得ない。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "米国側では、連邦政府（大統領・行政機関）と議会、産業界、安全保障コミュニティが、それぞれ異なる優先順位（安全保障・雇用・企業競争力）から対中規制を押し引きしている。一方、中国側では、党・政府・軍・国有企業が「技術自立」を共通目標としつつも、短期の成長・雇用・金融安定とのトレードオフに直面している。結果として、規制強化は安全保障官僚・対中強硬派の力を相対的に高め、グローバル企業や自由貿易志向の主体の影響力を相対的に弱める力学が働いていると推測される。",
+      "stakeholders": [
+        {
+          "actor": "Donald Trump",
+          "purpose": "国内製造業・雇用の保護を通じて、自身の政治基盤と支持率を維持・強化すること（Actor Intelligence Pack core_objectives、仮説）。",
+          "leverage": "支持基盤・有権者（国内製造業・雇用）",
+          "position": "対中半導体・AI規制を通じて、中国の軍事・技術的台頭を抑制しつつ、米国内の製造業・雇用を守り、交渉上の優位を確保すること（仮説）。",
+          "red_lines": "対中政策で「弱腰」と見なされ、支持基盤を失うことは避けたいと推測される。",
+          "confidence": "低",
+          "constraints_fears": "議会・制度",
+          "ability_to_move_or_block": "対中半導体・AI規制の強化・緩和を交渉カードとして提示し、企業や同盟国に対するシグナルを発する能力が高いと推測される。"
+        },
+        {
+          "actor": "Xi Jinping",
+          "purpose": "経済発展と技術的自立を並行して進め、党の支配と国家の安定を維持すること（Actor Intelligence Pack core_objectives）。",
+          "leverage": "党内合意・軍",
+          "position": "米国の半導体・AI規制の影響を最小化し、先端技術の国産化・サプライチェーン多角化を通じて、対米依存を減らすこと。",
+          "red_lines": "台湾の独立志向の動き、および中国の技術自立を阻むと見なされる対中包囲的な措置（Actor Intelligence Pack red_lines）。",
+          "confidence": "低",
+          "constraints_fears": "経済・雇用",
+          "ability_to_move_or_block": "国家戦略としての半導体・AI産業育成、資金投入、規制・補助金政策を通じて、技術自立の方向へ大きく動かす能力がある。"
+        },
+        {
+          "actor": "米国議会（超党派の対中強硬派）",
+          "purpose": "国家安全保障と国内産業保護を掲げつつ、対中強硬姿勢を通じて有権者・支持基盤へのアピールと政治的影響力の維持・拡大を図る。",
+          "leverage": "立法権（対中技術・投資規制法案）、予算権、監視・公聴会を通じた行政への圧力。",
+          "position": "対中半導体・AI規制の強化・恒久化を支持し、政権の緩和志向に対する牽制役。",
+          "priority": "対中技術・投資規制の法制化・恒久化（政権交代に左右されない枠組み作り）。",
+          "red_lines": "中国の軍事・監視用途に直結する先端技術の輸出容認、または対中依存度の高いサプライチェーンの維持を容認するような政策。",
+          "confidence": "低",
+          "constraints_fears": "過度な規制による米企業競争力の低下や同盟国離反、また規制緩和に伴う「対中弱腰」批判。",
+          "key_relationships": "安全保障コミュニティ、産業ロビー（半導体・防衛産業など）、選挙区の雇用・産業構造。",
+          "ability_to_move_or_block": "規制枠組みを法制化し、政権交代後も維持させる力がある一方、規制緩和を阻止・遅延させる能力が高い。"
+        },
+        {
+          "actor": "米国行政機関（商務省・財務省など）",
+          "purpose": "国家安全保障と産業競争力のバランスを取りつつ、輸出管理・制裁の実務運用を安定的に行う。",
+          "leverage": "規則制定権、個別ライセンス付与・拒否、ガイダンス発出。",
+          "position": "規制の技術的詳細を詰めつつ、例外・ライセンス制度を通じて一定の柔軟性を確保しようとする中間的立場。",
+          "priority": "技術的に実効性のある規制設計と、企業にとって予見可能なルールの提供。",
+          "red_lines": "安全保障上重大とされる技術の無規制状態や、執行不能なほど広範な規制。",
+          "confidence": "低",
+          "constraints_fears": "過度に複雑・広範な規制による執行負担の増大、企業からの反発、同盟国との足並みの乱れ。",
+          "key_relationships": "ホワイトハウス、議会、安全保障コミュニティ、産業界、同盟国の規制当局。",
+          "ability_to_move_or_block": "規制の実務設計・運用を通じて、実質的な規制強度を調整できるが、政治的方向性を単独で変える力は限定的。"
+        },
+        {
+          "actor": "中国の技術・産業官僚（工業情報化部など）",
+          "purpose": "国家戦略としての技術自立・国産化を推進し、国内産業の競争力と雇用を維持・強化する。",
+          "leverage": "産業政策（補助金・税制・規制）、国家プロジェクトの立ち上げ。",
+          "position": "米国規制を前提に、国産化・第三国経由調達・標準化戦略など複線的な対応を模索。",
+          "priority": "先端半導体・AI分野での国産技術・設備の開発・導入、サプライチェーン多角化。",
+          "red_lines": "対米依存が長期的に続き、制裁リスクに晒され続ける状態。",
+          "confidence": "低",
+          "constraints_fears": "技術・装置のボトルネック、資金効率の悪化、過剰投資・バブル、外資・民間企業の信頼低下。",
+          "key_relationships": "党・政府中枢、国有企業、地方政府、民間ハイテク企業。",
+          "ability_to_move_or_block": "技術自立プロジェクトを推進する力は大きいが、対外政策・安全保障方針を単独で変える力は限定的。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "米国議会・安全保障コミュニティの対中強硬姿勢が中期的に継続する",
+          "中国が技術自立を国家戦略として維持し続ける",
+          "大規模な軍事衝突や政権崩壊などの極端なショックが発生しない"
+        ],
+        "description": "米中間の半導体・AI規制は、米国の制度化された輸出管理・投資規制を軸に、中国の技術自立戦略と相互作用しながら、中長期的な技術・産業分断プロセスとして進行している。米国側では、政権交代や個々の指導者の取引志向にもかかわらず、議会・安全保障コミュニティ・世論の対中強硬コンセンサスが規制の大枠を維持し、中国側では、経済コストを負いつつも先端技術の国産化・迂回路構築を進める。短期的には、交渉や経済状況に応じて規制の強度・対象が調整されるが、全体としては「完全な緩和」よりも「管理されたデカップリング」に近い方向へ進む可能性が高い。",
+        "evidence_class": "model_general_knowledge",
+        "selection_rationale": "提供情報が限定的であるため確信度は低いが、米中双方のActor Intelligenceが示す持続的志向（米側の経済レバレッジ志向、中国側の技術自立志向）と、近年の世界的な技術・安全保障環境を踏まえると、「一時的な制裁応酬」よりも「構造的な技術覇権競争」として読む方が、より多くの観測（規制強化・サプライチェーン再編・企業の投資シフト）を説明し得るため。",
+        "supporting_evidence": [
+          "Actor Intelligence PackにおけるTrumpの取引志向・経済レバレッジ志向",
+          "Actor Intelligence PackにおけるXiの技術自立・経済発展の並行追求"
+        ],
+        "observable_indicators": [
+          "米国・同盟国による新たな対中半導体・AI規制の発表・改定",
+          "中国の先端半導体製造能力（ノード世代・生産量）の変化",
+          "グローバル企業の対中投資・サプライチェーン再編の動向"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": false,
+            "description": "冷戦期の対ソ連輸出規制（CoCom）と技術デカップリング",
+            "same_domain": false,
+            "analogy_strength": "weak",
+            "same_constraints": false,
+            "same_leverage_mechanism": true,
+            "analogy_source_precedent_id": null,
+            "same_institutional_structure": false
+          }
+        ],
+        "confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "半導体・AI規制は、先端チップ・AIサービスへのアクセスコスト・供給安定性に影響し、製造業・デジタルサービス・AI活用ビジネス全般に間接的な影響を与える。特に、中国市場向け製品・サービスや、中国由来のサプライチェーンに依存する事業では、規制強化・緩和の動きに応じたリスク管理が必要となる。",
+        "unrelated_note": null,
+        "environment_change": "技術・安全保障・通商が一体化した「技術地政学」の環境が強まり、企業は単にコスト・技術だけでなく、規制・制裁リスク・政治リスクを織り込んだサプライチェーン・投資戦略を求められる。"
+      },
+      "initial_anomaly": "半導体・AI規制が、従来の安全保障・軍事転用リスクだけでなく、国内雇用保護や産業政策、対中交渉カードとしても使われており、「安全保障規制」と「産業保護・取引材料」が混在している点。",
+      "review_findings": null,
+      "audience_analysis": [],
+      "executive_summary": {
+        "what_changed": "安全保障・通商・産業政策が一体化した「技術地政学」の中で、半導体・AI規制が米中関係の中心的な争点となりつつあり、政権交代や個々の指導者の意向にかかわらず、構造的な技術覇権競争が続く可能性が高まっている。",
+        "why_it_matters": "半導体・AIは多くの産業の基盤であり、規制・制裁の強化は、企業のサプライチェーン・投資・市場戦略に中長期的な影響を与える。特に中国市場や中国由来のサプライチェーンに依存する事業では、規制の方向性が事業継続性に直結する。",
+        "what_to_watch_decide": "最新の対中半導体・AI規制の内容・改定、米国内政治・中国の技術自立の進捗、台湾海峡・東アジアの安全保障環境を継続的にモニタリングし、自社のサプライチェーン・投資・市場ポートフォリオをどの程度「中国依存」から多角化するかを検討する必要がある。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Donald Trump",
+          "red_line": "対中政策で「弱腰」と見なされ、支持基盤を失うことは避けたいと推測される。",
+          "actor_ref": "trump",
+          "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+          "confidence": "低",
+          "formal_role": null,
+          "evidence_ids": null,
+          "decision_power": "米国大統領として、輸出管理・制裁・関税など経済的レバレッジの発動・調整に大きな裁量を持つが、議会立法・司法審査・同盟国との関係に制約される（Actor Intelligence Packより）。",
+          "driving_forces": [
+            {
+              "force": "支持基盤・有権者（国内製造業・雇用）",
+              "direction": "supporting",
+              "description": "対中強硬姿勢と国内雇用保護を求める支持層は、半導体・AI規制を支持する可能性が高い。"
+            },
+            {
+              "force": "議会・制度",
+              "direction": "constraining",
+              "description": "議会の対中強硬法制や監督権限が、規制の大幅な緩和を難しくする。"
+            }
+          ],
+          "ability_to_move": "対中半導体・AI規制の強化・緩和を交渉カードとして提示し、企業や同盟国に対するシグナルを発する能力が高いと推測される。",
+          "issue_objective": "対中半導体・AI規制を通じて、中国の軍事・技術的台頭を抑制しつつ、米国内の製造業・雇用を守り、交渉上の優位を確保すること（仮説）。",
+          "observed_action": "具体的な最新行動は提供されていないが、Actor Intelligence Packから、関税・制裁を交渉カードとして用いる傾向が示唆されている。",
+          "vulnerabilities": [
+            "国内政治（選挙・支持率）への依存",
+            "議会・司法による制約"
+          ],
+          "ability_to_block": "議会や官僚組織が進める対中規制の一部を拒否・修正する拒否権的能力を持つが、完全な無効化には政治的コストが伴う。",
+          "primary_audience": "米国内の支持基盤（製造業・雇用を重視する有権者）と対中強硬派の議会・メディア。",
+          "why_actor_matters": "Donald Trumpは、対中半導体・AI規制に関する最終的な政治判断（強化・緩和・取引への転用）に大きな影響を持つ可能性があり、特に関税・制裁を交渉カードとして用いる過去のパターンから、規制を単なる安全保障措置ではなく取引材料として再構成するリスク／機会の両方を持つため。",
+          "available_leverage": [
+            "関税・制裁の発動・緩和",
+            "輸出管理の強化・例外付与",
+            "同盟国への圧力・インセンティブ付与"
+          ],
+          "secondary_audience": "中国指導部および同盟国（規制を交渉カードとして見せる相手）。",
+          "ultimate_objective": "国内製造業・雇用の保護を通じて、自身の政治基盤と支持率を維持・強化すること（Actor Intelligence Pack core_objectives、仮説）。",
+          "actor_model_challenge": null,
+          "persistent_preference": "関税・制裁などの経済的レバレッジを交渉の初期段階から積極的に用い、相手に圧力をかけた上で取引をまとめる傾向。",
+          "preference_action_gap": "取引志向（最終的には合意を目指す）と、強い対中規制（デカップリングに近い措置）との間にギャップが生じる可能性がある。これは、国内政治（対中強硬世論・議会）や安全保障官僚の圧力により、本人の取引志向以上に強い規制を維持せざるを得ない状況として説明できる。",
+          "relevant_decision_patterns": [
+            "関税・制裁を先に強く打ち出し、その後取引で一部緩和するパターン（対中貿易戦争・NATO防衛費問題など）"
+          ],
+          "unavailable_or_costly_cards": [
+            "完全な対中協調（国内政治コストが高い）",
+            "規制の全面撤廃（安全保障コミュニティ・議会の反発）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "actor_intelligence_active",
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "887cb52b-ce3b-4caf-abc2-ebd996454173",
+              "3072929e-a953-4062-9f09-5d0f2211e02e"
+            ],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "今回の半導体・AI規制は安全保障色が強く、単純な関税交渉とは異なる可能性がある。",
+              "source": "Actor Intelligence Pack（external_assessment）",
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "対中貿易戦争で高関税を発動し、その後第一段階合意を通じて部分的な取引を行った行動パターン",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "関税・制裁を先に強く打ち出し、その後取引で一部緩和するパターン（対中貿易戦争・NATO防衛費問題など）",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "多国間枠組みよりも二国間交渉を重視し、強い交渉カードを用いて相手から譲歩を引き出す「取引（ディール）」志向（Actor Intelligence Pack worldview）。"
+        },
+        {
+          "actor": "Xi Jinping",
+          "red_line": "台湾の独立志向の動き、および中国の技術自立を阻むと見なされる対中包囲的な措置（Actor Intelligence Pack red_lines）。",
+          "actor_ref": "xi",
+          "entity_id": "f34571d3-4742-41b7-8648-5b3ee13b7720",
+          "confidence": "低",
+          "formal_role": null,
+          "evidence_ids": null,
+          "decision_power": "中国共産党総書記・国家主席として、国家戦略（技術自立・対外政策）を決定する最終的な政治権限を持つが、党内合意・経済状況・社会安定などの制約を受ける（Actor Intelligence Packより）。",
+          "driving_forces": [
+            {
+              "force": "党内合意・軍",
+              "direction": "supporting",
+              "description": "技術自立・対米強硬姿勢は、党・軍の支持を得やすい。"
+            },
+            {
+              "force": "経済・雇用",
+              "direction": "constraining",
+              "description": "過度な対立は成長・雇用・金融安定に悪影響を与えるため、完全なデカップリングには慎重にならざるを得ない。"
+            }
+          ],
+          "ability_to_move": "国家戦略としての半導体・AI産業育成、資金投入、規制・補助金政策を通じて、技術自立の方向へ大きく動かす能力がある。",
+          "issue_objective": "米国の半導体・AI規制の影響を最小化し、先端技術の国産化・サプライチェーン多角化を通じて、対米依存を減らすこと。",
+          "observed_action": "提供情報には具体的な最新行動は含まれていないが、Actor Intelligence Packから、対米貿易戦争への報復関税や技術自立戦略の推進が示唆されている。",
+          "vulnerabilities": [
+            "輸入技術・装置への依存",
+            "国内経済・雇用・金融安定への影響"
+          ],
+          "ability_to_block": "対米協調や規制緩和に対して、国家安全保障・台湾問題などを理由に拒否する能力が高い。",
+          "primary_audience": "国内の党・軍・国有企業・国民（党の正統性と国家主権を強調）。",
+          "why_actor_matters": "Xi Jinpingは、中国の技術自立戦略と対米交渉方針を最終的に決定する立場にあり、半導体・AI規制への対応（報復・迂回・協調）を通じて、米国規制の実効性と長期的な技術覇権競争の行方を左右するため。",
+          "available_leverage": [
+            "国内市場アクセスの付与・制限",
+            "国有企業・金融支援を通じた技術産業育成",
+            "対米・対同盟国への報復措置"
+          ],
+          "secondary_audience": "米国・同盟国・グローバル企業（中国が技術自立を進める決意を示す）。",
+          "ultimate_objective": "経済発展と技術的自立を並行して進め、党の支配と国家の安定を維持すること（Actor Intelligence Pack core_objectives）。",
+          "actor_model_challenge": null,
+          "persistent_preference": "台湾を中国の不可分の一部と位置づけ、統一を長期的国家目標とする公式立場を維持しつつ、対外依存を減らす方向で技術自立を進める傾向。",
+          "preference_action_gap": "経済発展と技術自立を同時に追求する中で、米国規制に対抗するための強硬措置（報復・国内統制強化）が、外資・技術流入を抑制し、短期的な成長を損なう可能性がある。このギャップは、国内政治・安全保障上の優先順位（台湾・党支配）によって、経済合理性よりも安全保障・統制が優先されることで説明できる。",
+          "relevant_decision_patterns": [
+            "対米貿易戦争での報復関税と部分的合意",
+            "党大会での権力集中と長期目標の強調"
+          ],
+          "unavailable_or_costly_cards": [
+            "対米全面協調（国内政治・安全保障上のコストが高い）",
+            "台湾問題での大幅な譲歩"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "actor_intelligence_active",
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "3496e3e8-1771-4a89-9b66-8da95eebaaf3",
+              "4be45f9c-25ff-4e1a-b9f1-24a4dfcd01dc"
+            ],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "技術政策と台湾政策の具体的な連結は、公開情報だけでは限定的にしか把握できない。",
+              "source": "Actor Intelligence Pack（actor_claim, external_assessment）",
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "第20回党大会での3期目続投と、台湾統一を強調する公式文書・演説",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "対米貿易戦争での報復関税と部分的合意",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "党大会での権力集中と長期目標の強調",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "対米関係を完全な対立ではなく管理された競争・協調の組み合わせとして維持しつつ、台湾問題などのレッドラインでは譲歩しない姿勢（仮説）。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "現在有効な対中半導体・AI輸出規制の具体的内容と改定履歴は何か",
+          "rationale": "規制の具体的内容を把握することで、主シナリオの実証的裏付けを強化できる。",
+          "related_hypothesis": "米国規制が構造的な技術分断を進めているという主シナリオ",
+          "recommended_sources": "米商務省・財務省の公式文書、専門情報ベンダーの制裁・輸出管理データベース"
+        },
+        {
+          "priority": "高",
+          "question": "中国の先端半導体・AI技術自立の実際の進捗はどの程度か",
+          "rationale": "中国の実力次第で、規制の実効性と長期的な分断の程度が大きく変わる。",
+          "related_hypothesis": "中国が技術自立を通じて米国規制の効果を相殺しようとしているという仮説",
+          "recommended_sources": "技術分析レポート、業界データ、専門家インタビュー"
+        },
+        {
+          "priority": null,
+          "question": "現在有効な対中半導体・AI輸出規制の具体的内容（対象技術・企業・地域）と直近の改定動向は何か。",
+          "rationale": "Key Point（米国規制の強度と範囲）とMain Scenarioの実証的裏付けを強化するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米国内での対中技術規制に関する議会・産業ロビー・安全保障コミュニティの立場はどのように分布しているか。",
+          "rationale": "Key Stakeholder（議会・産業界）の目的と制約を精緻化し、Preference-Action Gapの説明力を高めるため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "中国の先端半導体製造・設計能力（ノード世代・生産量・装置調達）の実際の進捗はどの程度か。",
+          "rationale": "中国の技術自立戦略（Secondary Hinge）の実効性を評価し、米国規制の長期的効果を判断するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "Actor Intelligence Packが示す米側の経済レバレッジ志向と中国側の技術自立志向に整合し、近年の規制強化・サプライチェーン再編の動きとも整合的なため（ただし根拠は一般モデル知識に依存し、確信度は低）。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "米中間の半導体・AI規制は、米国の制度化された輸出管理・投資規制を軸に、中国の技術自立戦略と相互作用しながら、中長期的な「管理されたデカップリング」として進行している。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Actor Intelligence Packの取引志向・経済レバレッジ志向とは整合するが、半導体・AI規制に特化した具体的Evidenceが不足している。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "米国（特にTrumpのような取引志向の指導者）は、対中半導体・AI規制を恒久的なデカップリングではなく、将来の大規模取引のための交渉カードとして位置づけている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Stage1でのKey Point AssessmentとDecisive Power評価が示すように、制度・構造の影響が大きいと考える方が、政権交代にもかかわらず規制が継続・強化されている近年の傾向と整合する。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "個々の指導者の意図よりも、米国の制度化された輸出管理・制裁枠組みと、中国の国家戦略としての技術自立という構造要因が局面を支配しており、政権交代や短期的な交渉は周辺的な調整にとどまる。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "提供情報が限定的であり、半導体・AI規制におけるTrump・Xiの具体的関与度合いを確認できないため、Actorモデルの適用可能性を完全には検証できない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "Actor Intelligence Packに基づくTrump・XiのPersistent Preference仮説が、半導体・AI規制という特定ドメインには適用できず、実際には別の主体（官僚組織・軍・企業）が主導している。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "提供されたActor Intelligence PackとStage1の前提では、半導体・AI規制が明確に米中間の技術・安全保障競争の文脈で扱われており、他の規制潮流だけで説明するのは不十分。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "半導体・AI規制は米中対立の文脈ではなく、気候変動・サステナ規制・EUの産業政策など他のグローバル規制潮流の一部として理解すべきであり、米中二国間の技術覇権競争という枠組み自体が過大評価されている。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "現在の米中間の半導体・AI規制は、「米国による対中先端技術アクセス制限」と「中国側の技術自立・迂回路構築」が相互に強化し合う構造にあり、単発の制裁ではなく中長期の技術・産業分断プロセスとして進行している可能性が高い（ただし、提供情報は限定的であり、詳細は仮説レベル）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "低",
+        "control_type": "institutionally_constrained",
+        "evidence_class": "model_general_knowledge",
+        "hinge_structure": {
+          "primary_hinge": "米国輸出管理・投資規制の具体的な内容（対象技術・企業・地域）と運用強度",
+          "secondary_hinges": [
+            "中国側の技術自立・迂回路構築の進捗",
+            "米国内政治（選挙・議会）の対中強硬コンセンサス",
+            "台湾海峡・東アジア安全保障環境の緊張水準"
+          ]
+        },
+        "primary_key_point": "米国の対中先端半導体・AI輸出規制（および関連投資規制）の強度と範囲",
+        "rejected_candidates": [
+          {
+            "key_point": "中国の「技術自立・国産化」戦略の進捗と実効性",
+            "why_not_primary": "長期的には決定的な要因だが、現時点での観測可能性が低く、短期の政策変化や企業のコンプライアンス判断を直接規定する変数としては、米国の規制強度・範囲ほど即時性が高くないため。"
+          },
+          {
+            "key_point": "米国内政治（選挙・議会・支持基盤）における対中強硬・産業保護のコンセンサス",
+            "why_not_primary": "規制の方向性を制約する重要な背景だが、具体的な規制内容・タイミングは依然として行政機関・大統領の裁量に左右される部分が大きく、Key Pointとしては一段上位の政治環境要因と位置づけた。"
+          }
+        ],
+        "selection_rationale": "提供情報が限定される中でも、半導体・AI規制の局面を最も直接的に規定しているのは、米国がどの技術・製品・企業をどの程度の強度で規制対象にしているかという点であり、これが中国側の対応や企業の戦略、同盟国の追随・距離感を左右する中核変数と考えられるため。中国の技術自立や米国内政治、安全保障環境も重要だが、現時点では米国の規制枠組みが最も政策的に可視化され、企業行動に直結している。",
+        "candidate_key_points": [
+          {
+            "key_point": "米国の対中先端半導体・AI輸出規制（および関連投資規制）の強度と範囲",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜ特定の半導体・AI関連技術が中国向けに制限され、企業がどの程度まで中国市場から撤退・縮小を迫られているかを説明できる。",
+            "why_it_could_be_key": "規制の強度・範囲が、中国の先端技術アクセス、グローバル半導体サプライチェーン、同盟国の追随・離反を直接左右し、局面の緊張度・交渉余地を規定するため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "中国側の対応（国産化・迂回路）や、第三国の立場、企業個別の戦略までは直接説明しきれない。",
+            "control_structure_summary": "米国の輸出管理法制（例：輸出管理規則、対敵国制裁法等）と議会立法に基づき、商務省・財務省などの行政機関が規則を策定・運用する構造。大統領の裁量はあるが、議会・司法・同盟国との調整に制約される。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "中国の「技術自立・国産化」戦略の進捗と実効性",
+            "control_type": "structural",
+            "what_it_explains": "米国の規制にもかかわらず、中国が一定のAI・半導体能力を維持・向上し得る理由や、その限界を説明できる。",
+            "why_it_could_be_key": "米国の規制がどれだけ効果を持つかは、中国側がどの程度自前で先端半導体・AIインフラを構築できるかに大きく依存するため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "短期的な外交交渉や一時的な譲歩・報復措置など、政治的タイミングに左右される動きは直接説明しない。",
+            "control_structure_summary": "国家戦略としての技術自立は、党・政府・国有企業・研究機関・地方政府など多数の主体が関与する長期プロジェクトであり、単一の意思決定で急停止・急加速しにくい構造要因。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米国内政治（選挙・議会・支持基盤）における対中強硬・産業保護のコンセンサス",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ政権交代があっても対中技術規制が大きく緩まないのか、またなぜ規制が選挙キャンペーンの一部として利用されるのかを説明できる。",
+            "why_it_could_be_key": "どの政権であっても、対中強硬・国内製造業保護を求める有権者・議会の圧力が強い場合、半導体・AI規制を大幅に緩和する政治的余地は限られるため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "個別の規則の技術的な中身や、同盟国との調整の詳細までは説明しない。",
+            "control_structure_summary": "大統領、上下両院議会、州政府、産業ロビー、有権者世論など複数主体の相互拘束により、対中政策の「右への制約」が形成されている構造。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "台湾海峡・東アジア安全保障環境の緊張水準",
+            "control_type": "structural",
+            "what_it_explains": "なぜ半導体・AI規制が単なる貿易問題ではなく安全保障問題として扱われるのかを説明できる。",
+            "why_it_could_be_key": "半導体・AI規制は、台湾有事リスクや東アジアの軍事バランスと密接に関連しており、緊張が高まるほど技術規制の安全保障的正当化が強まるため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "具体的な規制リストや企業ごとの影響度など、ミクロな政策設計までは説明しない。",
+            "control_structure_summary": "地理・軍事バランス・同盟構造・台湾海峡の緊張など、安全保障上の構造要因が、技術規制の強度に影響する。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "米国が対中先端半導体・AI輸出規制を大幅に撤廃・緩和し、代わりに別の手段（例：完全な関税撤廃や全面的な技術協力）へと転換するような公式決定が行われた場合、Key Pointを「米国規制の強度と範囲」に置く前提自体を見直す必要が生じる。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": null,
+        "control_structure_summary": "米国の輸出管理・制裁は、議会立法と行政規則に基づく制度的枠組みであり、政権交代や個人の意向だけでは大きく変えにくい。商務省・財務省などの官僚組織が技術的詳細を設計し、司法・議会・同盟国との関係が運用を制約する。",
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "提供されたSource Packには、半導体・AI規制に関する具体的な法令・日付・対象技術などの詳細が含まれていないため、上記分析はActor Intelligence Packと一般的な地政学的文脈に基づく仮説にとどまる。現時点では、具体的な規制内容・企業別影響・同盟国の足並みなどについて確定的な判断はできない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "米国政権（Trumpなど）が対中半導体・AI規制を部分的に緩和しつつ、関税・市場アクセス・為替など他の経済カードと組み合わせて「取引パッケージ」として再構成する。規制は完全撤廃ではなく、対象技術・企業を絞り込み、象徴的な緩和と新たな圧力を組み合わせる形になる。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米中首脳会談などで包括的な経済・技術パッケージ交渉が立ち上がる",
+            "米国内で対中協調を掲げる政治勢力が政権・議会で優位に立つ"
+          ],
+          "weakening_conditions": [
+            "台湾海峡の緊張が高まり、安全保障上の懸念が経済的利益より優先される",
+            "中国側が対米・対同盟国企業に対する報復的措置を強化し、協調的枠組みへの信頼が低下する"
+          ],
+          "strengthening_conditions": [
+            "米国内で景気減速やインフレ懸念が強まり、対中貿易・投資を通じた経済刺激の政治的魅力が高まる",
+            "主要米企業・業界ロビーが、対中規制のコストを強く訴え、政権に対し規制の再設計を求める",
+            "安全保障コミュニティが、特定技術については監視・検証付きの限定協力を容認する枠組みを提示する"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "判断不能",
+          "description": "台湾海峡や東アジアで重大な安全保障危機が発生し、米中双方が半導体・AI分野で急速なデカップリングに向かう。米国は包括的な対中技術禁輸・金融制裁を拡大し、中国も対米・対同盟国企業へのアクセス制限・国有化・技術国産化を加速する。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "台湾有事に近いレベルの危機が発生し、既存の輸出管理枠組みでは抑止・管理が不十分と判断される"
+          ],
+          "weakening_conditions": [
+            "米中双方が危機管理チャンネルを強化し、台湾・東アジアでの軍事的エスカレーションを抑制する合意を形成する",
+            "企業・市場の反発が強く、全面的デカップリングのコストが政治的に受け入れ難い水準と認識される"
+          ],
+          "strengthening_conditions": [
+            "台湾周辺での軍事衝突や封鎖に近い事態が発生する",
+            "米国・同盟国がNATO型の集団的対中制裁枠組みを構築する動きが強まる"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "米国・同盟国による新たな対中半導体・AI規制の発表・改定",
+        "中国の先端半導体製造能力・AIインフラの進捗に関する信頼できる技術レポート",
+        "米国内の対中政策を巡る主要法案・議会証言・選挙キャンペーンの内容",
+        "台湾海峡・東アジアにおける軍事的緊張の変化"
+      ],
+      "retraction_conditions": [
+        "米国が対中半導体・AI規制を大幅に撤廃し、長期的な技術協力枠組みを構築する公式合意が成立する",
+        "中国が対外依存を維持する方向へ政策転換し、技術自立戦略を明確に後退させる"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "69e8064f-b236-42e8-89b1-e92a4c866987",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "e2fed736-6330-4d6c-83bf-740800dab58c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "eba1d367-ab95-41c6-bebd-53a53903bd58",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "609a1837-e29b-4215-9660-93d1f96f8ebe",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "50a2a155-3437-46db-8cc3-5ea55b08a385",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "62010532-a2fc-4f6d-8384-4ab94401e852",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "b47f3ca0-a472-46ed-8031-a43590d9562a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "中国の技術自立が予想以上に進まず、米国の規制が限定的な効果しか持たない場合、または米国内で対中協調を求める政治勢力が台頭した場合、主シナリオの「管理されたデカップリング」方向性は弱まる。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "現在有効な対中半導体・AI輸出規制の具体的内容（対象技術・企業・地域）と直近の改定動向は何か。",
+          "rationale": "Key Point（米国規制の強度と範囲）とMain Scenarioの実証的裏付けを強化するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米国内での対中技術規制に関する議会・産業ロビー・安全保障コミュニティの立場はどのように分布しているか。",
+          "rationale": "Key Stakeholder（議会・産業界）の目的と制約を精緻化し、Preference-Action Gapの説明力を高めるため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "中国の先端半導体製造・設計能力（ノード世代・生産量・装置調達）の実際の進捗はどの程度か。",
+          "rationale": "中国の技術自立戦略（Secondary Hinge）の実効性を評価し、米国規制の長期的効果を判断するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "現在有効な対中半導体・AI輸出規制（米国・同盟国）の具体的なリストと、その改定履歴",
+          "gap_category": "deterministic",
+          "recommended_action": "専門ベンダーや公式文書から最新の規制リスト・改定履歴を取得し、対象技術・企業・地域をマッピングする。"
+        },
+        {
+          "priority": "高",
+          "description": "中国の先端半導体・AI技術自立の実際の進捗（製造能力・設計能力・装置調達など）",
+          "gap_category": "deterministic",
+          "recommended_action": "技術分析レポート・業界データを用いて、中国の実際の技術水準とボトルネックを評価する。"
+        },
+        {
+          "priority": "中",
+          "description": "米国内の議会・産業ロビー・安全保障コミュニティの間での対中技術規制に関するコンセンサスの実態",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "主要法案・議会証言・業界団体の声明を分析し、どの主体がどの程度規制強化・緩和を支持しているかを整理する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "米中双方とも、経済成長・雇用・金融安定への依存が大きいため、完全なデカップリングや長期的な技術分断は自らの利益に反し、最終的には何らかの形で協調・共存の枠組み（限定的な技術協力・相互依存の維持）へ回帰する可能性が高いという反論。",
+      "key_stakeholder_assessment": {
+        "rationale": "半導体・AI規制の局面は、単一の指導者ではなく、米国側の大統領・行政機関・議会、中国側の最高指導部・官僚組織・国有企業など複数主体の相互作用で決まる。今回のActor Intelligence PackではDonald TrumpとXi Jinpingが主要な意思決定主体として挙げられているが、いずれも制度・構造に制約されており、「誰か一人」が全体を決める状況ではないため、distributedと判断する。",
+        "confidence": "低",
+        "evidence_ids": null,
+        "determination": "distributed",
+        "decision_structure": "米国側では、大統領（Trump）と商務省・財務省などの行政機関が規制設計・運用を主導するが、議会の対中強硬法制や予算・監督権限が強い制約となる。中国側では、Xi Jinpingを頂点とする党・政府・軍の指導部が技術自立戦略を決定するが、経済成長・雇用・金融安定などの制約がスピードと手段を制限する。両国の決定は相互に影響し合い、完全な一方的決定は困難。",
+        "selected_actor_ids": [
+          "trump",
+          "xi"
+        ]
+      },
+      "situation_actor_assessment": [],
+      "decisive_power_and_leverage": "この局面全体を決定づける力は、単一の人物ではなく、米国側の制度化された輸出管理・制裁枠組み（議会立法＋行政規則）と、中国側の国家主導の産業・技術政策（国家戦略としての技術自立）という構造にある。個々の指導者（Trump、Xi）は方向性やスピードを変えることはできるが、技術覇権競争そのものを止める決定権は限定的であり、構造的な対立が基調を規定しているとみるのが妥当。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "米国側では、Trumpのような取引志向の指導者が、強い対中規制を交渉カードとして維持しつつも、最終的には取引を志向する可能性があり、その間に国内政治・安全保障官僚が規制強化を押し進めることでギャップが生じる。中国側では、経済発展と技術自立を同時に追求する中で、対米強硬措置が短期的な経済コストを伴うギャップが存在する。両者のギャップが、規制の一時的な緩和・再強化・迂回路構築などの複雑な動きとして現れる可能性がある。"
+    },
+    "created_at": "2026-09-01T08:10:56.21344+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "ec4db171-2dac-4108-a542-53342a09dd4f",
+    "response_id": "842545cf-51a4-4a92-b325-eb1c53c4dbfa",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Donald Trump, Xi Jinping, 米国議会（超党派の対中強硬派）, 米国行政機関（商務省・財務省など）, 中国の技術・産業官僚（工業情報化部など）",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）",
+        "passed": false
+      }
+    ],
+    "passed_count": 32,
+    "failed_count": 2,
+    "created_at": "2026-09-01T08:10:56.618952+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "key_point_assessment"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "trump",
+      "xi"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]",
+      "key_actor_profiles[1]"
+    ],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82542,
+    "completion_tokens": 11964,
+    "total_tokens": 94506
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 741452,
+        "prompt_tokens": 38718,
+        "completion_tokens": 8750
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 48327,
+        "prompt_tokens": 43824,
+        "completion_tokens": 3214
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Donald Trump, Xi Jinping, 米国議会（超党派の対中強硬派）, 米国行政機関（商務省・財務省など）, 中国の技術・産業官僚（工業情報化部など）"
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 823.2699043750763
+}

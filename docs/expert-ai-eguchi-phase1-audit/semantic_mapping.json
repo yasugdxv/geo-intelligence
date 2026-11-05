@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0",
+  "document_type": "semantic_mapping_audit_result_not_migration",
+  "source_design_package": "eguchi_expert_ai_final_v1_0",
+  "audit_date": "2026-09-06",
+  "audit_scope": "AUDIT_AND_PLAN only. No code/DB/config changes made.",
+  "status_legend": {
+    "existing": "同義の意味が既存フィールド・関数で既に表現できている",
+    "disconnected": "既存フィールド・ロジックはあるが、互いに接続されていない、または生成後にDB/次段へ活かされていない",
+    "semantically_incomplete": "既存フィールドはあるが、design docが要求する分離・粒度・軸を満たしていない",
+    "missing": "同義のフィールド・仕組みがリポジトリ内に見つからない(not found)",
+    "out_of_scope": "design docが明示的に今回対象外としている",
+    "violation": "既存実装がdesign docの絶対制約と明確に矛盾する（監査で新規発見）"
+  },
+  "mappings": [
+    {
+      "requirement_id": "RQ03",
+      "semantic_object": "SituationFrame",
+      "existing_path_function": "geo_expert_schema.py (key_point_assessment definition); geo_expert_engine.py:1501-1524",
+      "existing_field": "key_point_assessment.primary_key_point / candidate_key_points / selection_rationale / rejected_candidates / hinge_structure",
+      "status": "semantically_incomplete",
+      "smallest_change": "frame_id / as_of / prior_frame_ref を case_response の optional extension として追加し、既存 key_point_assessment を参照する形で連結する。新テーブルは作らない。",
+      "compatibility": "旧responseはこれらのfieldを持たなくても正常。null許容。",
+      "risk": "Case内Frameバージョニングの保存境界(どこまで永続化するか)は設計判断が必要。安易にCase Table拡張すると既存Report Studio消費側に影響しうる。",
+      "test_ids": ["T06"]
+    },
+    {
+      "requirement_id": "RQ04",
+      "semantic_object": "HumanModel",
+      "existing_path_function": "geo_knowledge_item_schemas.py:449-460 (ACTOR_PROFILE_SCHEMA.core_profile); geo_actor_intelligence_service.py",
+      "existing_field": "core_profile.worldview / core_objectives / decision_preferences / red_lines / preferred_instruments / structural_constraints",
+      "status": "existing",
+      "smallest_change": "変更不要。欲求・選好・適用範囲・confidence・反例は既に十分。",
+      "compatibility": "N/A",
+      "risk": "collective(Institution)への単一感情付与は既にProfile分離により防止済み(良好、変更禁止)。",
+      "test_ids": ["T04"]
+    },
+    {
+      "requirement_id": "RQ04",
+      "semantic_object": "DirectionalPerception",
+      "existing_path_function": "not found (searched geo_relationship_service.py, geo_actor_intelligence_service.py, geo_knowledge_item_schemas.py全体)",
+      "existing_field": "geo_relationship_service.create_relationship の from_entity_id/to_entity_id/dependency_direction は近似だが、主観的認識の帰属構造(belief_holder/attributed_by)ではない",
+      "status": "missing",
+      "smallest_change": "situation_actor_assessment または key_actor_profiles へ、belief_holder(=actor自身のentity_id, 暗黙)/perception_target(entity_id)/perceived_attribute/attributed_by/source_directnessを持つoptional配列を追加。新規Reasoning moduleやDBテーブルではなく、既存Stage2出力へのschema extensionとして最小実装可能。",
+      "compatibility": "旧responseに無くて正常。追加時はfeature flag配下(既定OFF)。",
+      "risk": "A→BとB→Aの取り違え防止バリデーションを同時に入れないと、既存の弱いガード(_evidence_substitution_detected)だけでは再発する。design docの絶対制約(A→BをB→Aへ反転しない)に直結する箇所のため優先度が高い。",
+      "test_ids": ["T03", "T04"]
+    },
+    {
+      "requirement_id": "RQ05",
+      "semantic_object": "ActorFlow",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:285-424 (key_actor_profiles)",
+      "existing_field": "ultimate_objective / strategic_relationship_preference / issue_objective / observed_action / preference_action_gap / primary_audience / secondary_audience / driving_forces / action_substance",
+      "status": "semantically_incomplete",
+      "smallest_change": "event_role / perceived_path / current_state,current_blockers,current_need を key_actor_profiles の optional extension として追加。既存目的階層(ultimate→strategic→issue→observed)とは矛盾しないため接続で足りる。",
+      "compatibility": "旧responseに無くて正常。",
+      "risk": "persistent_preference(恒久)とissue_objective(一時的経路)の既存分離を壊さないよう、新フィールドは案件内(case_response)スコープに限定すること。",
+      "test_ids": ["T05", "T06"]
+    },
+    {
+      "requirement_id": "RQ06",
+      "semantic_object": "InterpretationCandidate",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:789-809 (hypothesis_register); geo_expert_quality_guard.py:1336-1354 (_hypothesis_pruning_present); geo_case_service.py:75-131 (geo_case_hypotheses, 別物)",
+      "existing_field": "hypothesis_register[].hypothesis_type / status / reason / supporting_evidence_ids / contradicting_evidence_ids",
+      "status": "semantically_incomplete",
+      "smallest_change": "candidate_relations(exclusive/compatible/subfactor/unknown)を hypothesis_register item へ optional追加。operator_ids等のOperator適用根拠追跡は今回は見送り候補(design doc 9.2の不採用方針と整合、Prompt強化のみで対応)。",
+      "compatibility": "旧responseに無くて正常。",
+      "risk": "hypothesis_register(Case内競合仮説)とgeo_case_hypotheses(Case横断永続仮説)の命名衝突に注意。新フィールド追加時にどちらのテーブル/スキーマかを明示すること。",
+      "test_ids": ["T07", "T08"]
+    },
+    {
+      "requirement_id": "RQ07",
+      "semantic_object": "FeasibilityAssessment",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:34-48 (action_substance); geo_expert_engine.py:1216-1226 (_derive_assets_dependencies_leverage)",
+      "existing_field": "action_substance.stated_signal / legal_or_policy_force / implementation_status / enforcement_status / discretion / assessment",
+      "status": "semantically_incomplete",
+      "smallest_change": "action_substance へ expected_response / effect の2フィールドをoptional追加し、既存assessment(自由記述)から構造化して切り出す。",
+      "compatibility": "旧responseはassessment自由記述のみで正常動作継続。",
+      "risk": "action_substanceはkey_actor_profilesとaudience_analysisの両方から$refで共有されている(schema:342,437)ため、拡張は両モードへ影響する。",
+      "test_ids": ["T09", "T10"]
+    },
+    {
+      "requirement_id": "RQ07",
+      "semantic_object": "FeasibilityAssessment (identified_knowledge_gaps接続)",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:532-534 (identified_knowledge_gaps); geo_knowledge_gap_service.py (geo_knowledge_gaps table)",
+      "existing_field": "identified_knowledge_gaps (DBへ自動書き込みしない設計)",
+      "status": "disconnected",
+      "smallest_change": "案件内出力のidentified_knowledge_gapsを、既存geo_knowledge_gap_serviceのgap_typeへ変換するオプションの接続関数を追加(承認/書込み許可がある場合のみ)。自動書込みは禁止のまま。",
+      "compatibility": "既定OFF。",
+      "risk": "Cで扱う範囲(承認後統合)であり、A段階では接続方針の記録のみに留める。",
+      "test_ids": ["T09"]
+    },
+    {
+      "requirement_id": "RQ08",
+      "semantic_object": "DominantFlow",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json (key_stakeholder_assessment.determination); geo_expert_schema.py (key_point_assessment.control_type); geo_expert_quality_guard.py:904 (normalize_control_type)",
+      "existing_field": "determination(single/multiple/distributed/unclear) + control_type(actor_controlled/institutionally_constrained/structural/distributed/mixed/unknown)",
+      "status": "existing",
+      "smallest_change": "変更不要、または2軸の対応関係をdocs化するのみ。単一dominant_flowフィールドへの統合は行わない(既存2つのGuardロジック再設計が必要になり影響大)。",
+      "compatibility": "N/A",
+      "risk": "無理に統合すると既存normalize_control_typeとkey_stakeholder_assessment双方のGuardを壊す。",
+      "test_ids": ["T27"]
+    },
+    {
+      "requirement_id": "RQ08",
+      "semantic_object": "ConditionalDevelopment",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:699-788 (main_scenario/alternative_scenarios); geo_expert_quality_guard.py:951 (cap_confidence_by_evidence_class)",
+      "existing_field": "confidence / supporting_evidence / evidence_relevance / switch_conditions / observable_indicators / evidence_class",
+      "status": "semantically_incomplete",
+      "smallest_change": "situation_actor_assessment.likely_reactionを actor_expected_response と analyst_expected_response の2フィールドへ分離(optional、旧likely_reactionは非推奨だが残す)。",
+      "compatibility": "旧likely_reactionを読む既存消費側は継続動作。",
+      "risk": "分離により既存の暗黙の記述が二重生成扱いされないよう、プロンプト側の指示を同時に調整する必要がある。",
+      "test_ids": ["T13", "T26"]
+    },
+    {
+      "requirement_id": "RQ09",
+      "semantic_object": "EvidenceUse",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:216-227,712-721 (evidence_relevance); geo_expert_engine.py:217-261 (_evidence_source_types); geo_expert_quality_guard.py:1017 (cap_confidence_by_claim_relevance)",
+      "existing_field": "evidence_id / claim_relevance(direct/strongly_relevant/structural/peripheral) / source_type / rationale",
+      "status": "semantically_incomplete",
+      "smallest_change": "evidence_relevance item へ usage(premise/feasibility/discrimination/model_update/editorial_context相当)と discriminates_between(候補ID配列)をoptional追加。",
+      "compatibility": "旧responseはclaim_relevanceのみで正常動作継続。",
+      "risk": "cap_confidence_by_claim_relevanceが用途と信頼度を部分的に混同する既存運用があるため、usage追加時にconfidenceとの二重補正にならないよう調整が必要。",
+      "test_ids": ["T11", "T12"]
+    },
+    {
+      "requirement_id": "RQ10",
+      "semantic_object": "ResearchNeed",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:502-527 (investigation_questions); geo_knowledge_gap_service.py (DETERMINISTIC_GAP_TYPES/ANALYTICAL_GAP_TYPES); geo_expert_research_service.py:83-148 (assess_research_sufficiency), :359-399 (run_research_cycle, stop_condition)",
+      "existing_field": "question / question_type / can_current_evidence_answer / stop_condition(sufficient_comparison/no_new_evidence/evidence_unobtainable/budget_limit)",
+      "status": "semantically_incomplete",
+      "smallest_change": "assess_research_sufficiencyの判定軸へ「識別力(discrimination)」を追加し、acquired_not_discriminatingという新しいstop_condition値を導入。gap_typeの4分類(premise/feasibility/discrimination/scope)を既存20種ドメイン分類の上位ラベルとしてoptional追加。",
+      "compatibility": "既存stop_condition値は維持、新規値を追加するのみ。",
+      "risk": "研究予算(下記violationと合わせて)の再設計が絡むため、B段階でのみ着手。",
+      "test_ids": ["T09", "T12", "T14"]
+    },
+    {
+      "requirement_id": "RQ10",
+      "semantic_object": "CallBudget accounting",
+      "existing_path_function": "geo_expert_engine.py:1148-1166 (CallBudget total=3); geo_expert_research_service.py:359-365 (run_research_cycle search_budget=2)",
+      "existing_field": "CallBudget.total=3 / search_budget=2 (別立て、docstringで明記)",
+      "status": "violation",
+      "smallest_change": "【要ユーザー判断】(a) search_budgetをCallBudgetへ統合し合計を再定義する、または(b) 現状を意図的な設計として文書化し合計上限=5と明記する、のいずれかを選ぶ。今回の監査ではどちらも実装しない。",
+      "compatibility": "統合する場合は既存のCallBudget消費側ログ・テストへ影響。",
+      "risk": "design doc絶対制約(02プロンプト55行目)との明確な不一致。ユーザー承認なしに変更しない。decision_logで確認要求。",
+      "test_ids": ["T15"]
+    },
+    {
+      "requirement_id": "RQ11",
+      "semantic_object": "Media (content/handling/origin/reaction separation)",
+      "existing_path_function": "geo_knowledge_item_schemas.py:775-824 (MEDIA_EPISODE_SCHEMA); schemas/geo_expert_ai_response.schema.json:559-614 (observations/hypotheses)",
+      "existing_field": "observable_framing(Observed) / hypothesized_information_role(Hypothesis) / corroboration_basis(independent_corroboration/official_confirmation/.../single_source_only/unclear)",
+      "status": "existing",
+      "smallest_change": "変更不要。内容と扱いの分離は既に良好。",
+      "compatibility": "N/A",
+      "risk": "変更しない。",
+      "test_ids": []
+    },
+    {
+      "requirement_id": "RQ11",
+      "semantic_object": "Media (origin dedup mechanism)",
+      "existing_path_function": "geo_expert_quality_guard.py:456-479 (_anonymous_sourced_hypothesis_confidence_capped), :692-714 (apply_confidence_weighting_fix)",
+      "existing_field": "corroboration_basis (LLM自己申告のみ、機械的な同一起源クラスタリングなし)",
+      "status": "semantically_incomplete",
+      "smallest_change": "Prompt強化(corroboration_basis選択時の同一起源注意)を第一候補とする。機械的なorigin_family検出(URL/通信社パターンマッチ)は費用対効果を見てB段階で検討。",
+      "compatibility": "N/A",
+      "risk": "機械的クラスタリングを急ぐと誤判定リスクがあるため、まずPrompt強化のみに留めるのが安全。",
+      "test_ids": ["T18"]
+    },
+    {
+      "requirement_id": "RQ11",
+      "semantic_object": "Media (silence/omission observation scope)",
+      "existing_path_function": "schemas/geo_expert_ai_response.schema.json:627-645 (omitted_actor_analysis); geo_expert_quality_guard.py:482-500 (_media_omitted_actor_analysis_grounded)",
+      "existing_field": "omission_hypothesis (根拠の質を問わない自由記述)",
+      "status": "missing",
+      "smallest_change": "omitted_actor_analysis item へ observation_scope(検索範囲・期間・取得可否)のoptionalフィールドを追加し、未取得と観測された欠落を区別可能にする。",
+      "compatibility": "旧responseに無くて正常。",
+      "risk": "低(独立した追加フィールドで既存ロジックへの影響は小さい)。",
+      "test_ids": ["T19"]
+    },
+    {
+      "requirement_id": "RQ12",
+      "semantic_object": "Temporal/provenance (evidence separation)",
+      "existing_path_function": "geo_expert_quality_guard.py:1109 (separate_historical_evidence_in_key_point), :1158 (separate_historical_evidence_in_actor_and_situation_assessment), :1605 (_temporal_hedge_language_check)",
+      "existing_field": "historical_supporting_evidence_ids / _TEMPORAL_HEDGE_PATTERNS",
+      "status": "existing",
+      "smallest_change": "変更不要。",
+      "compatibility": "N/A",
+      "risk": "変更しない。",
+      "test_ids": ["T20", "T21"]
+    },
+    {
+      "requirement_id": "RQ13",
+      "semantic_object": "AnomalyAndUpdate / Knowledge update approval path",
+      "existing_path_function": "geo_persistent_preference_service.py:81-145 (propose_persistent_preference_candidates); geo_knowledge_service.review_knowledge_item",
+      "existing_field": "persistent_preference_candidates (status=candidate、人間review_knowledge_item呼び出しまでactive化されない)",
+      "status": "existing",
+      "smallest_change": "変更不要。ただしseed_actor_profile/seed_institution_profileのactivate=True経路(geo_actor_intelligence_service.py:166-239等)がSeed/CLI限定であることをdocs化し、本番導線から呼ばれないことを確認するテストを追加。",
+      "compatibility": "N/A",
+      "risk": "Seed経路の誤用(本番フローからactivate=True付きで呼ばれる)を防ぐガードが明示的にコード上に無い。",
+      "test_ids": ["T16", "T17"]
+    },
+    {
+      "requirement_id": "RQ14",
+      "semantic_object": "ACL / active-available filter",
+      "existing_path_function": "geo_actor_intelligence_service.py:319-349,508-540 (profile_lookup_statuses=('active',), profile_retrieval_status='available')",
+      "existing_field": "profile_lookup_statuses / profile_retrieval_status (デフォルト引数)",
+      "status": "existing",
+      "smallest_change": "変更不要。",
+      "compatibility": "N/A",
+      "risk": "変更しない。デフォルト引数を緩める呼び出しが将来追加されないよう回帰テストを維持。",
+      "test_ids": ["T24"]
+    },
+    {
+      "requirement_id": "RQ14",
+      "semantic_object": "access_scope (internal use vs external send)",
+      "existing_path_function": "geo_claim_service.py:14 / geo_knowledge_service.py:51 (retrieval_status: available/restricted/deprecated/archived); geo_expert_research_service.run_external_research:211-235",
+      "existing_field": "retrieval_status (単一軸、internal/external送信可否の区別なし)",
+      "status": "missing",
+      "smallest_change": "既存retrieval_statusとは別に、Source/EvidenceUseへaccess_scope(internal_only/public_safe)のoptionalフィールドを追加し、run_external_researchの送信ペイロード組み立て時に強制フィルタとして適用する。現状は「結果的に機微情報を含めていない」だけで強制ガードが無い。",
+      "compatibility": "既定値=internal_only(安全側)。既存挙動は変更しない限り維持。",
+      "risk": "外部送信直前の強制チェックを入れないと、将来のプロンプト変更で機微情報が混入するリスクが残る。優先度は高い。",
+      "test_ids": ["T22", "T23"]
+    },
+    {
+      "requirement_id": "RQ15",
+      "semantic_object": "Backward compatibility / execution mode",
+      "existing_path_function": "geo_expert_engine.py:1769 (execution_mode staged/monolithic, env var rollback); geo_expert_schema.py:231 (profile quick/standard/deep)",
+      "existing_field": "execution_mode / profile / GEO_EXPERT_EXECUTION_MODE",
+      "status": "existing",
+      "smallest_change": "新機能は既定OFFのfeature flagとして追加する(既存規約に従う)。",
+      "compatibility": "N/A",
+      "risk": "変更しない。",
+      "test_ids": ["T02", "T33"]
+    },
+    {
+      "requirement_id": "RQ16",
+      "semantic_object": "ReviewTrace reviewer_type",
+      "existing_path_function": "geo_expert_review_service.py (reviewer_id, reviewer_label: 自由文字列); sql/2026-08-19_geo_phase2b2_external_reference.sql:124-125",
+      "existing_field": "reviewer_id / reviewer_label (human/AI/externalの区別なし)",
+      "status": "missing",
+      "smallest_change": "geo_expert_review_changesまたはgeo_expert_review_sessionsへreviewer_type(human/ai_self_review/external_commentary)のoptionalフィールド(既定値=human、既存データとの後方互換)を追加。",
+      "compatibility": "既存行はreviewer_type=humanとして扱う(デフォルト値での後方互換)。",
+      "risk": "低〜中。マイグレーションはadditive columnのみで既存クエリに影響しない設計にする必要がある(DBスキーマ変更を伴うためC/B段階での実施、承認必須)。",
+      "test_ids": ["T28"]
+    },
+    {
+      "requirement_id": "RQ16",
+      "semantic_object": "Report Studio production approval gate",
+      "existing_path_function": "geo_report_synthesis_service.py:474-485 (run_expert_review, AI self-review); geo_report_studio_api.py:328-404,392-398 (run_synthesize_narrative, promote_synthesis auto-call)",
+      "existing_field": "review_verdict(approved/revised/needs_human_review) — needs_human_reviewでも処理をブロックしない",
+      "status": "violation",
+      "smallest_change": "【要ユーザー判断】run_synthesize_narrativeにおいて、verdict=='needs_human_review'の場合はpromote_synthesisの自動呼び出しをスキップし、人間の明示的な承認操作を待つよう分岐を追加する。既存のgeo_report_service.start_report_review_and_versionが持つ人間ゲートパターンを踏襲する。",
+      "compatibility": "既定動作を変更するため、Report Studioの運用フローへの影響についてユーザー確認が必要。",
+      "risk": "design doc RQ16(構造検査・意味品質・実環境・本番承認の分離)に対する明確な不一致。ただし現在の運用でこれがどう扱われているか(人間が別途確認しているか)をユーザーに確認する必要がある。",
+      "test_ids": ["T33", "T34"]
+    },
+    {
+      "requirement_id": "RQ16",
+      "semantic_object": "Evaluation leakage prevention (T29相当)",
+      "existing_path_function": "not found in reviewed files (geo_expert_review_service.py, geo_report_synthesis_service.py)",
+      "existing_field": "N/A",
+      "status": "missing",
+      "smallest_change": "専用の評価ハーネス(Golden Case Expert Review、既存メモリのpending blockerと一致)側で対応する課題であり、アプリ本体コードへの変更は不要と考えられる。実装対象外、評価運用側の課題として記録。",
+      "compatibility": "N/A",
+      "risk": "低(アプリコード側の問題ではない可能性が高いが、次回L人手評価実施時に再確認要)。",
+      "test_ids": ["T29", "T34"]
+    }
+  ]
+}

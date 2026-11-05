@@ -1,0 +1,1351 @@
+{
+  "case_id": "a26560a5-f265-424f-8677-ada5774be085",
+  "query_text": "イランは2026年6月のイスラマバードMoUに基づき、ホルムズ海峡の自由な通航を実際に許容していく方向に向かうか、それとも通航料徴収・自国管轄の主張という形で海峡管理への実効支配・覇権的関与を継続しようとするか。",
+  "theme_id": "9a62d084-1442-45c9-96fc-50e2a0d3e1a9",
+  "profile": "deep",
+  "mode": "case_analysis",
+  "request_id": "bdc3e54b-195b-4bf5-a228-b0ff34b085a2",
+  "response_id": "24b1a29c-6be5-443b-8c44-dcc5362fdc53",
+  "response_json": {
+    "claims": [
+      {
+        "text": "2026年6月17日のイスラマバードMoUは、米が海軍封鎖を解除しイランが60日間の無料安全航行を約束する一方、海峡の長期管理体制はイラン・オマーン間協議に委ねる暫定合意だった。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "イランはMoU後まもなく（2026年7月7日前後）、事前承認なく通航した商船複数隻への攻撃を再開した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "Al Jazeera（7/9）は「カタールのLNG船Al Rekayyatを含む9隻以上」が攻撃されたと報じているが、この隻数・船名の詳細は同記事要約にのみ依拠しており、他の一次資料での確認はできていない。",
+        "claim_type": "official_claim",
+        "source_ref": null
+      },
+      {
+        "text": "トランプ政権は2026年7月13日にホルムズ海峡通航貨物の20%相当の「補償料」導入を発表したが、湾岸諸国の反発により翌日撤回し、対米投資協定の枠組みへ切り替えた。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "2026年2月28日のイラン最高指導者暗殺を受け、専門家会議が3月8日、モジュタバ・ハメネイ師を後継の最高指導者に選出した。",
+        "claim_type": "fact",
+        "source_ref": null
+      },
+      {
+        "text": "トランプ大統領は2026年8月18日、イランとの対話を行わず封鎖状態が続くと表明した。",
+        "claim_type": "official_claim",
+        "source_ref": null
+      },
+      {
+        "text": "イランはオマーンとの交渉枠組みの一部として、米国船籍の恒久的な航行禁止を求めている。",
+        "claim_type": "official_claim",
+        "source_ref": null
+      },
+      {
+        "text": "イランは、米・イスラエル船籍を禁止し違反時に貨物価値最大20%の罰金を科す新枠組みでオマーンと合意が進んでいると主張しているが、米国はこれを拒否している。",
+        "claim_type": "official_claim",
+        "source_ref": null
+      },
+      {
+        "text": "IRGCがモジュタバ・ハメネイ選出プロセスを主導し、体制運営における実質的な決定権を掌握しているとみられる。モジュタバは就任以来、公の場での登場・音声・映像を一切公開しておらず、政権は書面声明とAI生成とみられる画像のみに依存している。",
+        "claim_type": "observation",
+        "source_ref": "TIME"
+      },
+      {
+        "text": "モジュタバ・ハメネイはIRGC司令官アフマド・ヴァヒディや元IRGC情報部門トップのホセイン・タエブ等と強い人脈を持つ中堅聖職者であり、体制内で以前から後継候補と目されていた。",
+        "claim_type": "observation",
+        "source_ref": "Gulf International Forum"
+      },
+      {
+        "text": "中国は停戦の隙間期間に割引されたイラン産原油を大量調達しており、イランにとって数少ない安定した石油輸出先となっている。",
+        "claim_type": "observation",
+        "source_ref": null
+      },
+      {
+        "text": "サウジアラビアを含む湾岸産油国は原油輸出のほぼ全量をホルムズ海峡経由の海上輸送に依存しており、通航妨害・料金賦課は輸出収入へ直接的な打撃となる。",
+        "claim_type": "observation",
+        "source_ref": null
+      },
+      {
+        "text": "IRGCは機雷敷設・武装スピードボート・沿岸ミサイルを用いたホルムズ海峡への実効的な航行妨害能力を有し、2026年3月以降、実際に行使して海峡を封鎖した実績がある。",
+        "claim_type": "observation",
+        "source_ref": null
+      },
+      {
+        "text": "IRGCはホルムズ海峡を、対米抑止・湾岸諸国への圧力・国内正統性維持のための戦略的レバレッジとして維持しようとしている可能性が高い。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "イスラマバードMoUの「60日無料安全航行」は、長期管理体制の先送りと引き換えに一時的な緊張緩和を図る停戦的措置であり、イラン側は通航料・制限カードを放棄する意図までは持っていなかった可能性がある。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      },
+      {
+        "text": "トランプ政権による20％補償料構想の即時撤回は、湾岸諸国の反発と米国の安全保障提供者としての立場へのダメージを考慮し、費用負担要求カードの使い方に限界があることを示した。",
+        "claim_type": "hypothesis",
+        "source_ref": null
+      }
+    ],
+    "dynamics": "ホルムズ海峡を巡る力学は、(1)イラン（実務はIRGC）が軍事的封鎖能力と通航妨害のカードを持ち、(2)湾岸産油国が輸出依存ゆえに通航妨害に極めて脆弱であり、(3)米国が安全保障提供者として軍事力と制裁・投資枠組みをレバレッジにし、(4)中国など主要輸入国が安定供給を求めつつイラン原油割引の受益者でもある、という多層構造になっている。イランがグレーゾーンでの実効支配を強めるほど、湾岸・米・中国のコストは上がるが、全面戦争の閾値も意識されるため、各国はイランのカードを完全には無効化できていない。",
+    "stakeholders": [
+      {
+        "actor": "Iranian state leadership (Supreme Leader institution + government)",
+        "purpose": "体制の生存と地域的影響力の維持、対米・対湾岸での抑止力確保。",
+        "leverage": "国内支持基盤・IRGC",
+        "position": "ホルムズ海峡におけるイランの関与・主権的役割を制度的に認めさせつつ、全面戦争や致命的制裁を避ける。",
+        "red_lines": "イランの主権的関与を完全に否定する多国間自由通航レジーム（イランが管理・検査・料金徴収のいかなる役割も持たない形）。",
+        "confidence": "中",
+        "constraints_fears": "経済・制裁コスト、主要輸入国（中国等）",
+        "ability_to_move_or_block": "オマーンとの協議で通航管理レジーム案を提示・修正し、通航料・罰金・船籍制限の制度化を進めることができる。"
+      },
+      {
+        "actor": "Islamic Revolutionary Guard Corps (IRGC)",
+        "purpose": "体制防衛と組織としての権限・予算・影響力の維持・拡大。",
+        "leverage": "組織としての権限・予算",
+        "position": "ホルムズ海峡を通じて対米・対湾岸抑止を維持し、自らの役割を不可欠なものとして固定する。",
+        "red_lines": "ホルムズ海峡におけるIRGCの役割を完全に排除する多国間管理枠組み。",
+        "confidence": "中",
+        "constraints_fears": "経済・制裁コスト",
+        "ability_to_move_or_block": "短期間で通航妨害を再開・強化できる。"
+      },
+      {
+        "actor": "Oman",
+        "purpose": "地域安定と自国の仲介者としての地位維持。",
+        "leverage": "仲介者としての地位",
+        "position": "イランの関与を一定程度認めつつも、全面封鎖や高コスト通航を避けるバランス型レジームを構築する。",
+        "red_lines": "自国が完全に排除され、イランと米国など他国だけで管理枠組みが決まること。",
+        "confidence": "低",
+        "constraints_fears": "地域安定と自国安全保障",
+        "ability_to_move_or_block": "イラン案を緩和した多国間管理案を提示し、第三国（湾岸・中国・米国）を巻き込むことができる。"
+      },
+      {
+        "actor": "United States（トランプ政権）",
+        "purpose": "中東での安全保障負担を抑えつつ、対イラン抑止と湾岸同盟国防衛を維持",
+        "leverage": "制裁・金融アクセス、軍事プレゼンス（艦隊・航空戦力）、湾岸諸国への安全保障保証",
+        "position": "表向きは封鎖継続・対話拒否など強硬姿勢を取りつつ、20%補償料構想の即時撤回からは湾岸との対立激化を避けたい姿勢も見える",
+        "priority": "対イラン強硬姿勢の国内政治的アピールと、湾岸諸国からの安全保障コスト回収",
+        "red_lines": "米軍・同盟国船舶への大規模攻撃、ホルムズの完全封鎖が長期化する事態",
+        "confidence": "中",
+        "constraints_fears": "長期的な軍事関与のコスト、湾岸諸国との関係悪化、エネルギー価格高騰による国内経済への悪影響",
+        "key_relationships": "湾岸諸国との安全保障関係、中国との大国間競争、イスラエルとの同盟",
+        "ability_to_move_or_block": "大規模軍事行動や追加制裁でホルムズレジームを大きく変える能力がある一方、湾岸・国内政治の制約から行使には閾値がある"
+      },
+      {
+        "actor": "Gulf oil exporters（Saudi Arabia, UAE, Qatarなど）",
+        "purpose": "原油・LNG輸出の安定と収入維持",
+        "leverage": "原油・LNG供給の調整、UAEの西東パイプラインなど代替ルート整備、対米・対中ロビー",
+        "position": "イラン・米国双方の『料金・封鎖カード』に反発しつつ、短期的には軍事エスカレーションを避けたい立場",
+        "priority": "ホルムズ通航の安全確保と輸送コストの抑制",
+        "red_lines": "長期的な高率通航料や頻繁な攻撃・拿捕で輸出が大きく阻害されること",
+        "confidence": "中",
+        "constraints_fears": "ホルムズ封鎖・通航料賦課による輸出収入減、イランとの直接軍事衝突、米国との関係悪化",
+        "key_relationships": "米国との安全保障関係、中国・他アジア諸国とのエネルギー貿易",
+        "ability_to_move_or_block": "イラン案に対する外交圧力や代替ルート投資で中期的にレジームを変える力はあるが、短期の軍事封鎖を直接止める力は限定的"
+      },
+      {
+        "actor": "China",
+        "purpose": "安定した割安原油供給の確保と中東での影響力拡大",
+        "leverage": "原油購入量・投資・外交的後ろ盾",
+        "position": "イラン原油の割引購入で利益を得つつも、表向きは自由通航と海峡の安定を支持する立場",
+        "priority": "ホルムズ通航の安定とイラン・湾岸双方との関係維持",
+        "red_lines": "長期的な供給途絶や極端な通航料で中国経済に重大な影響が出ること",
+        "confidence": "低",
+        "constraints_fears": "ホルムズ封鎖によるエネルギー供給ショック、米国との対立激化",
+        "key_relationships": "イランからの割引原油購入、湾岸諸国とのエネルギー・投資関係、米国との戦略競争",
+        "ability_to_move_or_block": "イランへの経済・外交圧力で行動を抑制し得るが、軍事的には直接関与を避ける傾向"
+      },
+      {
+        "actor": "International shipping & insurance sector",
+        "purpose": "安全で予測可能な航路と保険リスクの管理",
+        "leverage": "保険料設定・航路選択を通じた市場シグナル",
+        "position": "リスクプレミアムを上乗せしつつ、状況次第でルート変更や寄港地変更を検討",
+        "priority": "ホルムズ通航リスクの価格反映と代替ルートの確保",
+        "red_lines": "攻撃頻度が高まり保険引き受けが困難になる水準",
+        "confidence": "低",
+        "constraints_fears": "攻撃・拿捕による損害、保険料高騰、船員安全",
+        "key_relationships": "船主・荷主・保険会社・各国政府",
+        "ability_to_move_or_block": "国家ではないためレジームを直接決められないが、コスト構造を通じて各国の行動に間接的影響を与える"
+      }
+    ],
+    "main_scenario": {
+      "confidence": "中",
+      "assumptions": [
+        "イラン体制内でIRGCの影響力が短期的に大きく低下しないこと",
+        "中国・湾岸諸国がイランとの関係悪化を避けつつも、全面封鎖や極端な通航料には反対し続けること",
+        "米国が当面、全面戦争を避けつつ封鎖解除状態を維持すること"
+      ],
+      "description": "イランはホルムズ海峡の完全な自由通航原則を長期的に受け入れる方向には向かわず、イスラマバードMoUの暫定性とオマーンとの協議枠組みを活用して、自国が関与する通航管理・罰金・船籍制限を制度化しようとする。一方で、米国・湾岸諸国・中国など主要輸入国の反発と軍事的抑止により、全面封鎖や極端な高率通航料には踏み込まず、選択的攻撃・船籍差別・中程度の罰金制度など「グレーゾーン」の実効支配を維持する形にとどまる可能性が高い。",
+      "selection_rationale": "提供された事実と既存仮説の範囲では、(1)MoU後の攻撃再開と強硬な新枠組み主張が、自由通航原則への長期的シフトと整合しないこと、(2)一方でトランプ政権の20％補償料構想が湾岸の反発で即撤回されており、米側も過度な費用負担要求が難しいこと、(3)IRGC主導とされる体制内権力構造が、ホルムズをレバレッジとして使い続けるインセンティブを強めていること、から、イランがグレーゾーン実効支配を維持しつつ制度化を図るシナリオが最も観測と整合的である。",
+      "supporting_evidence": [
+        "MoUが長期管理をイラン・オマーン協議に委ねる暫定合意であること",
+        "MoU後短期間での商船攻撃再開",
+        "イランが米・イスラエル船籍禁止と最大20％罰金を含む新枠組みを主張していること",
+        "IRGCが体制内で実質的決定権を掌握しているとされる外部評価",
+        "湾岸産油国のホルムズ依存とイランの封鎖能力という構造的レバレッジ"
+      ],
+      "observable_indicators": [
+        "イラン・オマーン協議から、米・イスラエル船籍禁止や罰金制度を含む具体案がリークされるか",
+        "IRGCによる選択的攻撃・拿捕が継続するか、対象船籍に偏りがあるか",
+        "中国・湾岸諸国がイラン案に対して公的・非公的にどの程度反発するか",
+        "国際海運保険料や船会社のルート変更が、イランのグレーゾーン支配を織り込んだ形で定着するか"
+      ]
+    },
+    "business_impact": {
+      "direct": null,
+      "indirect": "ホルムズ海峡を通る原油・LNG・製品の輸送コスト上昇（保険料・迂回ルート）、一時的な供給途絶リスク、価格ボラティリティの高まり。特に湾岸依存度の高いエネルギー・石油化学・海運関連事業への影響が想定される。",
+      "unrelated_note": null,
+      "environment_change": "ホルムズ海峡が長期的に『無料の国際公共財』ではなく、グレーゾーンのレバレッジ空間として扱われる前提が強まる可能性がある。企業は中長期的に、供給源・ルート分散、在庫戦略、価格ヘッジの前提を見直す必要がある。"
+    },
+    "initial_anomaly": "「60日間の無料安全航行」を約束したイスラマバードMoU直後に、イランが事前承認なし通航船舶への攻撃を再開している点と、米国側も20％補償料構想を一日で撤回している点。双方とも『自由通航原則』を掲げつつ、実務では料金・制限・封鎖カードを手放していない。",
+    "review_findings": null,
+    "audience_analysis": [
+      {
+        "actor_ref": "iran_state",
+        "confidence": "中",
+        "action_substance": {
+          "assessment": "Signalとしては協調的だが、Substanceとしては短期停戦に近く、長期レジームを拘束しない限定的措置にとどまる",
+          "discretion": "長期管理を協議に委ねる設計により、イラン側に将来の運用裁量が大きく残されている",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡を通航する全船舶（条文詳細は未確認）",
+          "stated_signal": "『60日間の無料安全航行』を通じて、国際社会に対しイランが海峡の安全確保に協力する姿勢をアピール",
+          "concrete_measure": "60日間の無料安全航行を約束し、米国の海軍封鎖解除とリンクさせた暫定措置",
+          "enforcement_status": "イラン側が自らの行動で部分的に反故にしており、完全履行とは言い難い",
+          "implementation_status": "MoU締結直後に一時的な緊張緩和が生じたが、数週間以内に攻撃再開",
+          "legal_or_policy_force": "MoUに基づく政治合意レベルの拘束力（国際条約レベルかは不明）"
+        },
+        "primary_audience": "米国・湾岸諸国",
+        "message_hypothesis": "短期的には緊張緩和と封鎖解除に応じる意思を示しつつ、長期管理を先送りすることでホルムズを交渉カードとして保持する姿勢を示した可能性",
+        "secondary_audience": "中国など主要輸入国と国内世論",
+        "action_or_statement": "イスラマバードMoUで60日間の無料安全航行を約束しつつ、長期管理をイラン・オマーン協議に委ねた"
+      },
+      {
+        "actor_ref": "iran_state",
+        "confidence": "中",
+        "action_substance": {
+          "assessment": "強いSignalかつ実質的なSubstanceを伴う行動であり、自由通航原則からの明確な逸脱",
+          "discretion": "対象船籍・タイミングを選別している可能性が高く、イラン側の裁量が大きい",
+          "evidence_ids": null,
+          "target_scope": "事前承認なく通航したとイランがみなす船舶（具体的基準は不明）",
+          "stated_signal": "『イランの事前承認なき通航は安全ではない』という暗黙のメッセージ",
+          "concrete_measure": "商船複数隻への攻撃（Al Jazeera要約では9隻以上とされるが一次確認は未了）",
+          "enforcement_status": "IRGCが現場で実力行使しているとみられる",
+          "implementation_status": "MoU後数週間で実施されており、短期的には現実のリスクとして認識されている",
+          "legal_or_policy_force": "国際法上の正当性は乏しいが、事実上の威圧手段として機能"
+        },
+        "primary_audience": "米国・湾岸諸国",
+        "message_hypothesis": "イランが依然としてホルムズ封鎖・妨害能力を保持し、必要に応じて行使する意思があることを示し、MoUがイランのレバレッジ放棄ではないと強調するシグナル",
+        "secondary_audience": "国内のIRGC・強硬派支持基盤",
+        "action_or_statement": "MoU後まもなく事前承認なく通航した商船複数隻への攻撃を再開"
+      },
+      {
+        "actor_ref": "iran_state",
+        "confidence": "中",
+        "action_substance": {
+          "assessment": "Signalとしては非常に強硬だが、Substanceはまだ制度化前段階の交渉ポジション。最終レジームでは緩和される可能性が高い",
+          "discretion": "対象船籍や罰金率の設定に大きな裁量余地があり、交渉カードとしての性格が強い",
+          "evidence_ids": null,
+          "target_scope": "米・イスラエル船籍を中心とする特定国船籍",
+          "stated_signal": "『米・イスラエル船籍は歓迎しない』『イランの安全保障上の懸念を制度に反映させる』という強硬な立場",
+          "concrete_measure": "米・イスラエル船籍の航行禁止、違反時に貨物価値最大20%の罰金を科す枠組み案",
+          "enforcement_status": "実際の罰金徴収や恒久禁止はまだ観測されていない",
+          "implementation_status": "交渉中の案であり、制度化はされていない",
+          "legal_or_policy_force": "現時点ではイラン側の提案・主張にとどまり、オマーン・米国などの同意は得られていない"
+        },
+        "primary_audience": "米国・イスラエル・湾岸諸国",
+        "message_hypothesis": "ホルムズ海峡におけるイランの主権的関与と敵対国への差別的扱いを制度的に認めさせたいという意図の表明",
+        "secondary_audience": "国内強硬派と一部第三国（自国優遇を期待する国）",
+        "action_or_statement": "オマーンとの交渉枠組みの一部として、米国船籍の恒久的な航行禁止と、米・イスラエル船籍禁止＋貨物価値最大20%罰金を含む新枠組みを主張"
+      },
+      {
+        "actor_ref": "irgc_core",
+        "confidence": "中",
+        "action_substance": {
+          "assessment": "SignalとSubstanceがほぼ一致しており、イランのレバレッジの中核",
+          "discretion": "攻撃の頻度・対象・エスカレーションレベルをIRGCが相当程度コントロール可能",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡を通航する主要タンカー・商船（対象選別の詳細は不明）",
+          "stated_signal": "『イランを軍事的・経済的に追い詰めれば、ホルムズを止めることができる』という抑止メッセージ",
+          "concrete_measure": "機雷敷設・武装スピードボート・沿岸ミサイルを用いた実際の封鎖・攻撃",
+          "enforcement_status": "IRGCが継続的に実行能力を維持しているとみられる",
+          "implementation_status": "2026年3月以降、実際に封鎖が行われた実績あり",
+          "legal_or_policy_force": "国際法上は違法性が高いが、事実上の軍事力として機能"
+        },
+        "primary_audience": "米国・湾岸諸国・イスラエル",
+        "message_hypothesis": "IRGCがホルムズ封鎖能力を現実に行使し得ることを示し、対外抑止と国内での権威を強化する意図",
+        "secondary_audience": "国内支持基盤（革命防衛隊・強硬派）",
+        "action_or_statement": "2026年3月以降のホルムズ海峡封鎖と、MoU後の攻撃再開"
+      },
+      {
+        "actor_ref": "donald_trump",
+        "confidence": "中",
+        "action_substance": {
+          "assessment": "Signalは強かったが、Substanceは極めて弱く、湾岸の反発と外交コストの高さが露呈した",
+          "discretion": "米政権側の裁量で容易に方針転換された",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡を通る全ての通航貨物（詳細は不明）",
+          "stated_signal": "『米国はただで安全保障を提供しない』というメッセージ",
+          "concrete_measure": "ホルムズ海峡通航貨物の20%相当の補償料を徴収する構想を発表",
+          "enforcement_status": "実際の徴収は行われていない",
+          "implementation_status": "発表から1日で撤回され、対米投資協定枠組みへ切り替え",
+          "legal_or_policy_force": "正式な法制化前の構想段階であり、実施前に撤回"
+        },
+        "primary_audience": "湾岸諸国・米国内支持層",
+        "message_hypothesis": "米国がホルムズ安全保障提供のコストを湾岸諸国にも負担させたいという意向と、国内向けに『タフな交渉者』像を示す意図",
+        "secondary_audience": "イラン・中国など第三国",
+        "action_or_statement": "2026年7月13日のホルムズ海峡通航貨物20%補償料構想と翌日の撤回"
+      },
+      {
+        "actor_ref": "donald_trump",
+        "confidence": "低",
+        "action_substance": {
+          "assessment": "Signal色が強く、Substanceは現時点の資料では読み切れない",
+          "discretion": "発言と実務のギャップを残す余地が大きい",
+          "evidence_ids": null,
+          "target_scope": "対イラン関係全般",
+          "stated_signal": "『イランとは交渉しない』『封鎖を続ける』という強硬なレトリック",
+          "concrete_measure": "具体的な新措置は示されておらず、既存の軍事プレゼンス・制裁の継続を示唆するにとどまる可能性",
+          "enforcement_status": "新たな軍事行動や封鎖強化が伴ったかは資料からは不明",
+          "implementation_status": "MoU後の実際の封鎖状態との整合性は不明（要追加確認）",
+          "legal_or_policy_force": "大統領発言としての政治的拘束力はあるが、政策詳細は不明"
+        },
+        "primary_audience": "米国内強硬派・支持基盤",
+        "message_hypothesis": "対イランで譲歩しない強硬姿勢を国内外に示しつつ、実務レベルではMoUに基づく封鎖解除と矛盾する可能性もあるため、ポジショニング色が強い",
+        "secondary_audience": "イラン・湾岸諸国・イスラエル",
+        "action_or_statement": "2026年8月18日の『イランとの対話を行わず封鎖状態が続く』との表明"
+      }
+    ],
+    "executive_summary": {
+      "what_changed": "イスラマバードMoUで一時的な無料安全航行が約束されたにもかかわらず、イランは短期間で攻撃を再開し、米・イスラエル船籍禁止と罰金制度を含む新枠組みを主張している。トランプ政権の20％補償料構想も湾岸の反発で即撤回され、ホルムズを巡る『料金・封鎖カード』が双方で試されつつも、制度化には至っていない。",
+      "why_it_matters": "ホルムズ海峡が今後も完全な自由通航原則に戻らず、イラン関与型のグレーゾーン管理が続く場合、エネルギー・物流コストと供給リスクの構造的な上振れ要因となる。企業のエネルギー調達・サプライチェーン戦略にとって前提条件の変更となり得る。",
+      "what_to_watch_decide": "(1) イラン・オマーン協議から出てくる通航管理案の中身、(2) IRGCの攻撃・拿捕パターン、(3) 中国・湾岸・米国の反応と圧力の強さをモニターし、ホルムズ依存度の高い事業については、代替調達・在庫・価格ヘッジのオプションを検討する。"
+    },
+    "key_actor_profiles": [
+      {
+        "actor": "Iranian state leadership (Supreme Leader institution + government)",
+        "red_line": "イランの主権的関与を完全に否定する多国間自由通航レジーム（イランが管理・検査・料金徴収のいかなる役割も持たない形）。",
+        "actor_ref": "iran_state",
+        "entity_id": "63f60ff3-e318-42f4-9282-43d794e28f4a",
+        "confidence": "中",
+        "formal_role": "ホルムズ海峡に関する国家方針・国際合意（MoU、オマーンとの協議枠組み）を決定する公式主体。",
+        "evidence_ids": null,
+        "decision_power": "最高指導者制度と政府が対外政策の最終決定権を持つが、現状はIRGCの影響が強いと外部評価されている。",
+        "driving_forces": [
+          {
+            "force": "国内支持基盤・IRGC",
+            "direction": "supporting",
+            "description": "ホルムズをレバレッジとして使う強硬姿勢を後押し。"
+          },
+          {
+            "force": "経済・制裁コスト",
+            "direction": "constraining",
+            "description": "全面封鎖や過度な通航妨害は追加制裁や軍事攻撃を招き得るため、グレーゾーンにとどまる圧力。"
+          },
+          {
+            "force": "主要輸入国（中国等）",
+            "direction": "constraining",
+            "description": "安定供給を求める中国などからの圧力は、完全封鎖や過度な料金引き上げを抑制し得る。"
+          }
+        ],
+        "ability_to_move": "オマーンとの協議で通航管理レジーム案を提示・修正し、通航料・罰金・船籍制限の制度化を進めることができる。",
+        "issue_objective": "ホルムズ海峡におけるイランの関与・主権的役割を制度的に認めさせつつ、全面戦争や致命的制裁を避ける。",
+        "observed_action": "MoUで60日無料安全航行を約束しつつ、短期間で攻撃を再開。オマーンとの枠組みで米・イスラエル船籍禁止と最大20％罰金を含む新レジームを主張。",
+        "vulnerabilities": [
+          "石油輸出への依存と制裁による財政圧迫",
+          "IRGCと文民指導部の潜在的対立",
+          "主要輸入国からの外交・経済圧力"
+        ],
+        "ability_to_block": "IRGCに指示して攻撃・拿捕を停止させることで、自由通航に近い状態を作ることも理論上は可能。",
+        "action_substance": {
+          "assessment": "協調と強硬を組み合わせたグレーゾーン運用であり、自由通航原則の全面受容には至っていない",
+          "discretion": "対象船籍・罰金率・攻撃タイミングなど、イラン側の裁量余地が大きい",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡を通航する船舶全般、とりわけ米・イスラエル船籍",
+          "stated_signal": "ホルムズ海峡の安全確保に一定程度協力するが、長期管理では主権的関与を主張する",
+          "concrete_measure": "60日無料安全航行の約束と、その後の攻撃再開・罰金・船籍制限案の提示",
+          "enforcement_status": "IRGCによる実力行使が継続している一方、制度化は未了",
+          "implementation_status": "短期的な無料安全航行と、その後の選択的攻撃が実施済み。新レジームは交渉中",
+          "legal_or_policy_force": "MoUに基づく暫定合意＋イラン側の一方的主張"
+        },
+        "primary_audience": "国内の体制支持基盤（IRGC・強硬派）と米国・湾岸諸国。",
+        "why_actor_matters": "イラン国家はホルムズ海峡に関する国際合意の署名主体であり、IRGCの行動を合法化・制約する唯一の制度的枠組みを提供し得るため。",
+        "available_leverage": [
+          "ホルムズ海峡での通航妨害・攻撃カード",
+          "オマーンとの協議枠組みを通じた制度設計",
+          "中国などへの割引原油供給"
+        ],
+        "secondary_audience": "中国など主要原油輸入国。",
+        "ultimate_objective": "体制の生存と地域的影響力の維持、対米・対湾岸での抑止力確保。",
+        "persistent_preference": "ホルムズ海峡を含む地理的優位を安全保障・外交レバレッジとして活用し、完全な自由通航原則には抵抗する傾向。",
+        "preference_action_gap": "レバレッジ維持というPersistent Preferenceと、MoUでの一時的譲歩（60日無料安全航行）は一見矛盾するが、長期管理を先送りすることでカードを保持しつつ、短期的な軍事緊張緩和と制裁回避を図った折衷と解釈できる。攻撃再開は、国内強硬派やIRGCへの配慮、および米国・湾岸への抑止シグナルとして説明可能。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "全面封鎖の長期継続（軍事報復・制裁激化リスク）",
+          "国際的に公然とした高率通航税（広範な反発と代替ルート加速を招く）"
+        ],
+        "persistent_preference_change": null,
+        "persistent_preference_evidence": [
+          {
+            "caveat": "具体的事例の一次資料は本パックには含まれていない。",
+            "source": null,
+            "claim_id": null,
+            "relevance": "ホルムズをレバレッジとみなす傾向を示唆。",
+            "evidence_id": null,
+            "date_or_period": null,
+            "event_or_behavior": "過去にもタンカー拿捕や機雷敷設などを通じてホルムズ海峡を交渉カードとして用いてきた。",
+            "supports_or_contradicts": "supports"
+          },
+          {
+            "caveat": null,
+            "source": null,
+            "claim_id": null,
+            "relevance": "通航カードを完全には放棄していない。",
+            "evidence_id": null,
+            "date_or_period": "2026-06-17",
+            "event_or_behavior": "イスラマバードMoUで60日無料安全航行を約束しつつ、長期管理をイラン・オマーン協議に委ねる形で先送りした。",
+            "supports_or_contradicts": "supports"
+          },
+          {
+            "caveat": "攻撃対象・隻数の詳細はAl Jazeera要約以外で未確認。",
+            "source": null,
+            "claim_id": null,
+            "relevance": "無料安全航行の約束を実務で限定的に反故にしている。",
+            "evidence_id": null,
+            "date_or_period": "2026-07-07頃",
+            "event_or_behavior": "MoU後まもなく、事前承認なく通航した商船複数隻への攻撃を再開した。",
+            "supports_or_contradicts": "supports"
+          }
+        ],
+        "strategic_relationship_preference": "米国とは直接対話を避けつつも、全面戦争は回避し、制裁緩和や経済的余地を確保したい。湾岸諸国とは競合しつつも、完全な孤立は避けたい。"
+      },
+      {
+        "actor": "Islamic Revolutionary Guard Corps (IRGC)",
+        "red_line": "ホルムズ海峡におけるIRGCの役割を完全に排除する多国間管理枠組み。",
+        "actor_ref": "irgc_core",
+        "entity_id": "c64c2995-37df-41d0-8758-059117e71fe1",
+        "confidence": "中",
+        "formal_role": "イランの軍事・安全保障組織としてホルムズ海峡での作戦行動（機雷敷設・拿捕・攻撃）を実行。",
+        "evidence_ids": null,
+        "decision_power": "実務上、ホルムズ海峡でのエスカレーション／デエスカレーションの即時判断を左右し得る。",
+        "driving_forces": [
+          {
+            "force": "組織としての権限・予算",
+            "direction": "supporting",
+            "description": "ホルムズでの緊張はIRGCの必要性を高める。"
+          },
+          {
+            "force": "経済・制裁コスト",
+            "direction": "constraining",
+            "description": "過度なエスカレーションは体制全体へのリスクとなり、政治指導部からの制約を受け得る。"
+          }
+        ],
+        "ability_to_move": "短期間で通航妨害を再開・強化できる。",
+        "issue_objective": "ホルムズ海峡を通じて対米・対湾岸抑止を維持し、自らの役割を不可欠なものとして固定する。",
+        "observed_action": "MoU後も短期間で攻撃を再開し、米・イスラエル船籍禁止や罰金制度を含む強硬な枠組みを推進。",
+        "vulnerabilities": [
+          "米軍・同盟国による軍事報復",
+          "国内経済悪化に伴う体制への不満がIRGCにも波及するリスク"
+        ],
+        "ability_to_block": "攻撃・拿捕を控えることで緊張緩和を実現することも可能。",
+        "action_substance": {
+          "assessment": "実質的なレバレッジの中核であり、制度レジームの議論にも影響を与える",
+          "discretion": "エスカレーションの度合いを段階的に調整可能",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡を通る商船・タンカー（選択的）",
+          "stated_signal": "ホルムズ封鎖能力を背景に、対外抑止と国内権威を維持する",
+          "concrete_measure": "封鎖実績とMoU後の攻撃再開",
+          "enforcement_status": "IRGCが継続的に運用",
+          "implementation_status": "既に複数回行使されている",
+          "legal_or_policy_force": "事実上の軍事力行使であり、国際法上の正当性は乏しい"
+        },
+        "primary_audience": "国内の支持基盤（IRGC内部・強硬派）、米国・湾岸諸国。",
+        "why_actor_matters": "実際に船舶攻撃・拿捕を行う主体であり、イランの通航料・制限要求に信憑性を与える軍事的裏付けを握るため。",
+        "available_leverage": [
+          "機雷敷設・拿捕・攻撃能力",
+          "沿岸ミサイル・小型艇による威圧行動"
+        ],
+        "secondary_audience": "中国など主要輸入国（イランのカードの現実性を認識させる）。",
+        "ultimate_objective": "体制防衛と組織としての権限・予算・影響力の維持・拡大。",
+        "persistent_preference": "軍事的レバレッジ（ホルムズ封鎖能力）を誇示し、必要に応じて限定的に行使することで、対外交渉力と国内正統性を維持する傾向。",
+        "preference_action_gap": "Persistent Preference（レバレッジ誇示）とObserved Action（攻撃再開・強硬案推進）は整合的であり、ギャップは小さい。MoUでの一時的譲歩は、政治指導部の判断に従った戦術的後退とみなしている可能性。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "米軍との全面戦争を招くような大規模攻撃",
+          "中国・湾岸の輸送を長期にわたり全面停止させる封鎖"
+        ],
+        "persistent_preference_change": null,
+        "persistent_preference_evidence": [
+          {
+            "caveat": null,
+            "source": null,
+            "claim_id": null,
+            "relevance": "封鎖能力を実際に行使している。",
+            "evidence_id": null,
+            "date_or_period": "2026-03以降",
+            "event_or_behavior": "2026年3月以降、実際にホルムズ海峡を封鎖した実績がある。",
+            "supports_or_contradicts": "supports"
+          },
+          {
+            "caveat": "外部評価であり内部構造の確定情報ではない。",
+            "source": "TIME",
+            "claim_id": null,
+            "relevance": "政治的影響力の拡大。",
+            "evidence_id": null,
+            "date_or_period": "2026-03以降",
+            "event_or_behavior": "モジュタバ・ハメネイ選出プロセスを主導し、体制運営における実質的な決定権を掌握していると外部評価されている。",
+            "supports_or_contradicts": "supports"
+          }
+        ],
+        "strategic_relationship_preference": "米国・イスラエル・湾岸諸国に対しては強い抑止姿勢を維持し、弱腰と見なされることを避けたい。"
+      },
+      {
+        "actor": "Oman",
+        "red_line": "自国が完全に排除され、イランと米国など他国だけで管理枠組みが決まること。",
+        "actor_ref": "oman_state",
+        "entity_id": "000a5072-097d-413a-b63e-d2bf7ae4bba2",
+        "confidence": "低",
+        "formal_role": "イスラマバードMoUに基づき、ホルムズ海峡の長期管理体制を巡るイランの直接交渉相手・仲介役。",
+        "evidence_ids": null,
+        "decision_power": "管理枠組みの制度設計に関する協議で重要な発言権を持つが、軍事力は限定的。",
+        "driving_forces": [
+          {
+            "force": "地域安定と自国安全保障",
+            "direction": "constraining",
+            "description": "過度にイラン寄りの枠組みは湾岸・米国との関係を損ない得る。"
+          },
+          {
+            "force": "仲介者としての地位",
+            "direction": "supporting",
+            "description": "ホルムズ管理協議を主導することはオマーンの外交的プレゼンスを高める。"
+          }
+        ],
+        "ability_to_move": "イラン案を緩和した多国間管理案を提示し、第三国（湾岸・中国・米国）を巻き込むことができる。",
+        "issue_objective": "イランの関与を一定程度認めつつも、全面封鎖や高コスト通航を避けるバランス型レジームを構築する。",
+        "observed_action": "イスラマバードMoUで長期管理をイラン・オマーン協議に委ねる枠組みを受け入れた。",
+        "vulnerabilities": [
+          "軍事力の弱さ",
+          "経済的依存関係（湾岸・外資）"
+        ],
+        "ability_to_block": "イラン主導の過度に一方的な枠組み（高率罰金・広範な船籍禁止）を受け入れないことで、制度化を遅らせることができる。",
+        "action_substance": {
+          "assessment": "制度設計面で重要だが、軍事的Substanceは限定的",
+          "discretion": "イラン案をどこまで受け入れるか、第三国をどの程度巻き込むかで裁量がある",
+          "evidence_ids": null,
+          "target_scope": "ホルムズ海峡の長期管理レジーム全体",
+          "stated_signal": "中立的仲介者としてホルムズ管理協議を主導する意思",
+          "concrete_measure": "イスラマバードMoUで長期管理をイラン・オマーン協議に委ねる枠組みを受け入れ",
+          "enforcement_status": "軍事力ではなく外交的影響力に依存",
+          "implementation_status": "協議が進行中とみられるが、具体案は不明",
+          "legal_or_policy_force": "MoUに基づく協議枠組みとしての政治的拘束力"
+        },
+        "primary_audience": "イランと湾岸諸国。",
+        "why_actor_matters": "MoU上、長期管理レジームの制度設計をイランと協議する唯一の明示的パートナーであり、イラン案を緩和・修正する潜在的なフィルターとなるため。",
+        "available_leverage": [
+          "仲介者としての外交的信用",
+          "湾岸・米国・中国との関係を通じた圧力の橋渡し"
+        ],
+        "secondary_audience": "米国・中国など主要輸入国。",
+        "ultimate_objective": "地域安定と自国の仲介者としての地位維持。",
+        "persistent_preference": "中立的仲介者としての役割を維持し、緊張緩和に貢献する傾向。",
+        "preference_action_gap": "仲介・安定志向とMoUでの役割受諾は整合的。イランの強硬案（米・イスラエル船籍禁止・20％罰金）をどこまで受け入れるかは不明。",
+        "relevant_decision_patterns": null,
+        "unavailable_or_costly_cards": [
+          "イランへの公然とした対抗措置（軍事的・経済的）",
+          "米国・湾岸からの距離を取りすぎること"
+        ],
+        "persistent_preference_change": null,
+        "persistent_preference_evidence": [
+          {
+            "caveat": "他の事例は本パックには含まれていない。",
+            "source": null,
+            "claim_id": null,
+            "relevance": "仲介役としての役割。",
+            "evidence_id": null,
+            "date_or_period": null,
+            "event_or_behavior": "ホルムズ海峡将来管理を巡るイランの直接交渉相手・仲介役を務めている。",
+            "supports_or_contradicts": "supports"
+          }
+        ],
+        "strategic_relationship_preference": "イラン・湾岸・米国・中国の間でバランスを取り、どの側とも決定的対立を避ける。"
+      }
+    ],
+    "root_premise_check": null,
+    "additional_research": [
+      {
+        "priority": "高",
+        "question": "イスラマバードMoUの条文上、60日無料安全航行の条件と違反時の扱いはどう規定されているか。",
+        "rationale": "MoUの性格を誤ると、イランの行動を過度に裏切りと評価するか、逆に過小評価するリスクがある。",
+        "related_hypothesis": "MoUは長期管理を先送りする停戦的措置に過ぎないという仮説",
+        "recommended_sources": "MoU原文、関係国政府の公式説明、国際法専門家の分析"
+      },
+      {
+        "priority": "高",
+        "question": "イラン・オマーン協議で具体的にどのような通航管理案が検討されているか（罰金率・対象船籍・検査権限）。",
+        "rationale": "制度案の中身が分かれば、グレーゾーン支配の実務的強度をより正確に評価できる。",
+        "related_hypothesis": "イランが通航料・船籍制限の制度化を目指しているという仮説",
+        "recommended_sources": "オマーン政府・湾岸諸国・中国側のリークや専門機関レポート"
+      },
+      {
+        "priority": "中",
+        "question": "中国・湾岸諸国はイランのホルムズ政策に対してどの程度の圧力をかけているか。",
+        "rationale": "主要輸入国の圧力の強さは、イランが自由通航に軟着陸する可能性を左右する。",
+        "related_hypothesis": "経済・外交コストがイランの行動をグレーゾーンにとどめているという仮説",
+        "recommended_sources": "中国外務省・湾岸諸国の公式声明、エネルギー専門機関の分析"
+      },
+      {
+        "priority": null,
+        "question": "イスラマバードMoUの条文上、60日無料安全航行の条件・対象船舶・違反時の扱い、および長期管理協議の手続きはどのように規定されているか。",
+        "rationale": "Key Point（MoU暫定性）とKey Actor（イラン国家）のPreference-Action Gapを正確に評価するための基礎情報",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "2026年7月7日前後に攻撃された商船の隻数・船籍・被害状況、およびイラン側の公式説明は何か。",
+        "rationale": "Key Pointの観測（MoU後の攻撃再開）の強度と、IRGCのエスカレーションパターンを確認するため",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "イラン・オマーン協議で具体的にどのような通航管理案（罰金率・対象船籍・検査権限）がテーブルに上っているか。",
+        "rationale": "Key Point（協議の暫定性）から主シナリオ（グレーゾーン制度化）への橋渡しとなる核心情報",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "中国および主要湾岸産油国は、イランの罰金・船籍制限案に対してどの程度の外交・経済圧力をかけているか。",
+        "rationale": "Secondary hinge（第三国の許容線）がイランの行動をどこまで制約しているかを測るため",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      },
+      {
+        "priority": null,
+        "question": "IRGCのホルムズ政策に対する最終決定権は、最高指導者・政府との関係でどの程度自律的か。",
+        "rationale": "Key Stakeholder（IRGC vs イラン国家）の力学とPreference-Action Gapを理解するため",
+        "related_hypothesis": null,
+        "recommended_sources": null
+      }
+    ],
+    "one_line_assessment": "as_of 2026-08末時点では、イスラマバードMoU後もイランはホルムズ海峡の完全な自由通航原則を長期的に受け入れる方向には向かわず、オマーン枠組みを通じた通航管理・罰金・船籍制限を制度化しつつ、軍事的抑止に縛られた「グレーゾーン実効支配」を維持しようとしているとみるのが最も整合的である（確信度：中）。",
+    "relevant_mechanisms": [],
+    "relevant_precedents": [],
+    "key_point_assessment": {
+      "confidence": "中",
+      "control_type": "institutionally_constrained",
+      "hinge_structure": {
+        "primary_hinge": "イスラマバードMoU後のイラン・オマーン協議で、イラン主導の通航管理・罰金・船籍制限がどこまで制度化されるか（暫定合意がどの方向に固定化されるか）。",
+        "secondary_hinges": [
+          "IRGCがどの程度、ホルムズ政策の最終決定権を握り続けるか（体制内権力バランス）",
+          "湾岸諸国・中国・他主要輸入国が、イランのグレーゾーン支配にどの程度まで経済的・外交的コストを払って対抗する意思を持つか",
+          "米国が軍事的再介入や一方的管理をどの閾値で選択するか"
+        ]
+      },
+      "primary_key_point": "イスラマバードMoUで長期管理体制をイラン・オマーン協議に先送りした暫定性",
+      "rejected_candidates": [
+        {
+          "key_point": "IRGCが保有するホルムズ海峡の軍事的封鎖・妨害能力の維持と行使意欲",
+          "why_not_primary": "イランの軍事能力は既知であり、2026年以前から存在していた。今回の局面変化（MoU後の攻撃再開や通航料構想）は、この能力そのものよりも、MoUの設計と体制内権力シフトによってカードの使い方が変わった結果とみる方が説明力が高い。"
+        },
+        {
+          "key_point": "ホルムズ海峡通航に対する湾岸産油国の構造的依存と脆弱性",
+          "why_not_primary": "湾岸の構造的依存は長年変わらない背景要因であり、今回のMoU→攻撃再開→通航料構想という短期の動きの変曲点を直接規定しているわけではない。"
+        },
+        {
+          "key_point": "イラン体制内でのIRGCによる実質的な決定権掌握（『静かな構造的クーデター』）",
+          "why_not_primary": "体制内権力シフトは重要だが、外部からは程度や不可逆性が不明であり、MoUの制度設計ほど確定的な条件として扱いにくい。MoUの暫定性があるからこそ、IRGC主導の強硬路線が海峡レジームに反映されやすくなっていると位置づける。"
+        }
+      ],
+      "selection_rationale": "現時点の問いは「イランが自由通航原則を受け入れる方向に向かうか、それとも通航料・管轄主張を継続するか」という制度レジームの方向性であり、軍事能力そのものよりも、MoUが長期管理を先送りした構造がイランにカード保持を許している点が局面の蝶番になっていると判断したため。IRGCの軍事能力や体制内権力シフトは重要な背景だが、それらがあってもMoUが長期管理を多国間・第三国管理に固定していればイランの制度化余地は小さくなっていたはずであり、「暫定性」がイランのグレーゾーン継続を可能にしている。",
+      "candidate_key_points": [
+        {
+          "key_point": "IRGCが保有するホルムズ海峡の軍事的封鎖・妨害能力の維持と行使意欲",
+          "control_type": "actor_controlled",
+          "what_it_explains": "イスラマバードMoU後も攻撃再開に踏み切れた理由、米国・湾岸諸国が全面封鎖を恐れつつもグレーゾーン支配を容認せざるを得ない構図。",
+          "why_it_could_be_key": "実際に海峡を封鎖・妨害できるかどうかが、イランの通航料・船籍制限要求の信憑性と交渉力の源泉になっているため。",
+          "controlling_entity_ids": [
+            "c64c2995-37df-41d0-8758-059117e71fe1"
+          ],
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "イランがどこまで通航料・罰金制度を制度化するか、オマーンや中国の外交的働きかけの具体的な影響。",
+          "control_structure_summary": null
+        },
+        {
+          "key_point": "ホルムズ海峡通航に対する湾岸産油国の構造的依存と脆弱性",
+          "control_type": "structural",
+          "what_it_explains": "湾岸諸国がトランプ政権の20％補償料構想に反発しつつも、イランのカードを完全には無効化できない理由。UAEが西東パイプラインを加速させる動き。",
+          "why_it_could_be_key": "サウジなど湾岸産油国が海峡に依存しているため、イランの妨害や通航料要求に対して強く反発しつつも、短期的には軍事エスカレーションを避けたいインセンティブがある。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "イラン内部でのIRGCと文民指導部の意思決定や、米国の対イラン強硬姿勢の詳細。",
+          "control_structure_summary": "地理と輸出インフラの配置に起因する構造的依存であり、短期には政治家や軍の意思で変えにくい。"
+        },
+        {
+          "key_point": "イスラマバードMoUで長期管理体制をイラン・オマーン協議に先送りした暫定性",
+          "control_type": "institutionally_constrained",
+          "what_it_explains": "MoU後短期間で攻撃再開が起きたこと、イランがオマーンとの枠組みで米・イスラエル船籍禁止や罰金制度を主張し続けていること。",
+          "why_it_could_be_key": "長期レジームが未定のため、イランはMoUを一時的停戦とみなし、通航料・制限カードを保持し続けるインセンティブがある。",
+          "controlling_entity_ids": null,
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "イランが将来的にどこまで譲歩し得るか、米国がどの時点で軍事的再介入を選ぶか。",
+          "control_structure_summary": "MoU自体が長期管理を先送りする暫定合意であり、60日無料安全航行の後のレジームは協議次第という制度設計。"
+        },
+        {
+          "key_point": "イラン体制内でのIRGCによる実質的な決定権掌握（『静かな構造的クーデター』）",
+          "control_type": "mixed",
+          "what_it_explains": "MoU後の攻撃再開や、米国船籍恒久禁止・罰金制度など強硬な海峡管理案が出てくる背景。",
+          "why_it_could_be_key": "最高指導者暗殺後、モジュタバ・ハメネイが表に出ず、IRGCが実務を主導しているとされるため、ホルムズ政策も軍事・安全保障組織の論理に強く引きずられる可能性が高い。",
+          "controlling_entity_ids": [
+            "63f60ff3-e318-42f4-9282-43d794e28f4a",
+            "c64c2995-37df-41d0-8758-059117e71fe1"
+          ],
+          "supporting_evidence_ids": null,
+          "what_it_does_not_explain": "IRGC内部の穏健派・強硬派のバランスや、経済官僚・外務省の影響力の具体的な程度。",
+          "control_structure_summary": "形式上はイラン国家・最高指導者が決定権を持つが、実務・安全保障面ではIRGCが主導していると外部評価されている。"
+        }
+      ],
+      "disconfirming_signal": "イランがオマーンおよび第三国と、イランの通航料・罰金・船籍制限を一切認めない多国間自由通航レジーム（例えば国連安保理決議や多国間条約に基づく管理）に自発的に署名・履行し、かつIRGCによる攻撃・拿捕が長期にわたり完全に停止することが確認された場合、この「暫定性が蝶番」という見立ては誤りだった可能性が高まる。",
+      "controlling_entity_ids": null,
+      "supporting_evidence_ids": null,
+      "control_structure_summary": "MoUは長期管理をイラン・オマーン協議に委ねる暫定合意であり、60日無料安全航行後のレジームは条文上固定されていない。この制度的空白が、イランに通航料・罰金・船籍制限を交渉カードとして保持させている。協議の結果次第で、イラン関与型管理、多国間管理、事実上の自由通航などに振れ得る。",
+      "contradicting_evidence_ids": null
+    },
+    "media_source_context": null,
+    "unknown_or_uncertain": "イスラマバードMoUの条文詳細、7月の商船攻撃の一次情報、イラン・オマーン協議の具体的内容、中国・湾岸諸国の非公開圧力の強さなど、現時点で確認できない要素が多い。これらが判明すれば、イランがどこまで自由通航を受け入れ得るかの見立ては更新され得る。",
+    "alternative_scenarios": [
+      {
+        "confidence": "低",
+        "description": "イランが経済的・外交的コストの高まりを受けて、ホルムズ海峡の自由通航原則をより広く受け入れ、オマーンや第三国を前面に出した多国間管理枠組みへ軟着陸するシナリオ。イランは象徴的な発言や限定的な検査権限を維持しつつ、実務的には無料または低コストの通航を容認する。",
+        "switch_conditions": [
+          "イランが攻撃・拿捕を長期にわたり停止し、オマーンや第三国主導の低コスト多国間管理案に合意する具体的兆候が現れる",
+          "中国・湾岸諸国がイラン案に対し公然と反対し、代替ルート整備や投資凍結など具体的圧力を行使する"
+        ],
+        "weakening_conditions": [
+          "IRGCが体制内でさらに権限を拡大し、強硬路線を正当化する国内ナラティブが強まる",
+          "中国・湾岸諸国がイランのグレーゾーン支配を事実上容認し、強い圧力をかけない",
+          "米国が対イラン制裁・軍事圧力を強化し、イランが安全保障上の脅威を優先する"
+        ],
+        "strengthening_conditions": [
+          "イラン経済指標の悪化（通貨下落・インフレ・失業）とそれに対する政権の危機感が高まる",
+          "中国・湾岸諸国がイランに対し、ホルムズでの緊張緩和と自由通航受容を制裁緩和・投資・長期原油購入契約とリンクさせる",
+          "IRGCの政治的影響力が相対的に低下し、外務・経済官僚が対外政策で主導権を強める"
+        ]
+      },
+      {
+        "confidence": "低",
+        "description": "米国とイランの対立がさらに激化し、イスラマバードMoUが事実上崩壊、イランがより広範な攻撃・拿捕を行い、米国が大規模な軍事行動や海峡の一方的管理を試みる『準封鎖〜戦争』シナリオ。この場合、自由通航もイランの選択的支配も崩れ、軍事力による一時的な支配が前面に出る。",
+        "switch_conditions": [
+          "MoUが明示的に破棄される、または実質的に無効化されるほどの大規模軍事衝突が発生する",
+          "米国がホルムズ海峡の一方的管理や大規模空爆・封鎖を公然と検討・準備している信頼できる証拠が現れる"
+        ],
+        "weakening_conditions": [
+          "米国が中東からの軍事的関与を相対的に縮小し、同盟国や多国間枠組みに負担を移そうとする",
+          "イランが米軍・同盟国船舶への直接攻撃を避け、主に象徴的・限定的な行動にとどめる",
+          "第三国（欧州・中国など）が強い仲介外交を展開し、エスカレーションを抑制する"
+        ],
+        "strengthening_conditions": [
+          "IRGCまたは米軍による大規模な軍事行動（多数の死傷者・船舶喪失）が発生する",
+          "米国内で対イラン強硬派が政治的主導権を握り、軍事行動への閾値が下がる",
+          "イランが米軍艦船や主要同盟国船舶を直接攻撃し、限定的衝突からエスカレーションする"
+        ]
+      }
+    ],
+    "monitoring_indicators": [
+      "イラン・オマーン協議に関する具体的な案のリーク（罰金率・対象船籍・検査権限）",
+      "IRGCによる攻撃・拿捕の頻度と対象船籍の変化",
+      "中国・湾岸諸国の公式声明（イラン案への支持・反対）",
+      "米国の軍事プレゼンス（艦隊配置・演習）と対イラン発言のトーン",
+      "UAEなどによるホルムズ迂回パイプライン計画の進捗"
+    ],
+    "retraction_conditions": [
+      "イランがホルムズ海峡に関する多国間自由通航レジーム（イランの通航料・罰金・船籍制限を認めない枠組み）に自発的に参加し、長期にわたり攻撃・拿捕が発生しないことが確認される",
+      "IRGCの影響力が大きく低下し、文民政府・外務省がホルムズ政策を主導していることを示す信頼できる証拠が複数現れる"
+    ],
+    "sources_and_citations": [
+      {
+        "result_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "5c99bd85-72e8-4278-b431-2c96595a8533",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+        "result_type": "document",
+        "citation_label": null
+      },
+      {
+        "result_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+        "result_type": "document",
+        "citation_label": null
+      }
+    ],
+    "weakening_information": "イランが今後、攻撃・拿捕を完全に停止し、オマーンや第三国を前面に出した低コスト多国間管理案を受け入れる動きが出れば、グレーゾーン実効支配維持シナリオの確度は下がる。",
+    "contradicting_evidence": null,
+    "investigation_questions": [
+      {
+        "question": "イスラマバードMoUの条文上、60日無料安全航行の条件・対象船舶・違反時の扱い、および長期管理協議の手続きはどのように規定されているか。",
+        "rationale": "Key Point（MoU暫定性）とKey Actor（イラン国家）のPreference-Action Gapを正確に評価するための基礎情報",
+        "answer_if_yes": null,
+        "question_type": "evidence_check",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "2026年7月7日前後に攻撃された商船の隻数・船籍・被害状況、およびイラン側の公式説明は何か。",
+        "rationale": "Key Pointの観測（MoU後の攻撃再開）の強度と、IRGCのエスカレーションパターンを確認するため",
+        "answer_if_yes": null,
+        "question_type": "evidence_check",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "イラン・オマーン協議で具体的にどのような通航管理案（罰金率・対象船籍・検査権限）がテーブルに上っているか。",
+        "rationale": "Key Point（協議の暫定性）から主シナリオ（グレーゾーン制度化）への橋渡しとなる核心情報",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "中国および主要湾岸産油国は、イランの罰金・船籍制限案に対してどの程度の外交・経済圧力をかけているか。",
+        "rationale": "Secondary hinge（第三国の許容線）がイランの行動をどこまで制約しているかを測るため",
+        "answer_if_yes": null,
+        "question_type": "knowledge_gap",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      },
+      {
+        "question": "IRGCのホルムズ政策に対する最終決定権は、最高指導者・政府との関係でどの程度自律的か。",
+        "rationale": "Key Stakeholder（IRGC vs イラン国家）の力学とPreference-Action Gapを理解するため",
+        "answer_if_yes": null,
+        "question_type": "analytical_question",
+        "answer_evidence_ids": null,
+        "can_current_evidence_answer": false
+      }
+    ],
+    "identified_knowledge_gaps": [
+      {
+        "priority": "高",
+        "description": "イスラマバードMoUの正確な条文（特に60日無料安全航行の条件、違反時の扱い、長期管理協議の手続き）。",
+        "gap_category": "deterministic",
+        "recommended_action": "MoU原文または信頼できる全文要約を入手し、条文レベルで確認する。"
+      },
+      {
+        "priority": "高",
+        "description": "2026年7月7日前後の商船攻撃の詳細（隻数・船籍・航路・被害状況）と、イラン側の公式説明。",
+        "gap_category": "deterministic",
+        "recommended_action": "海運会社・保険会社・各国政府の発表や衛星画像など一次情報に近いソースを確認する。"
+      },
+      {
+        "priority": "高",
+        "description": "イラン・オマーン協議で具体的にどのような通航管理案（罰金率・対象船籍・検査権限）がテーブルに上っているか。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "オマーン政府・湾岸諸国・中国側のリークや分析レポートを収集し、案の中身を特定する。"
+      },
+      {
+        "priority": "中",
+        "description": "中国・湾岸諸国がイランの罰金・船籍制限案に対してどの程度の圧力（外交・経済）をかけているか。",
+        "gap_category": "analytical_candidate",
+        "recommended_action": "中国外務省・湾岸諸国の公式声明や背景報道を確認する。"
+      }
+    ],
+    "knowledge_gaps_referenced": [],
+    "strongest_counterargument": "イランは既に戦争と制裁で深刻な経済的ダメージを受けており、中国や湾岸諸国との関係維持を最優先するなら、ホルムズをレバレッジとして使い続けるよりも、自由通航原則を受け入れて投資・貿易を回復させる方が合理的であり、現在の攻撃再開や罰金案は主に国内向けの強硬ポーズに過ぎない可能性がある。",
+    "key_stakeholder_assessment": {
+      "rationale": "ホルムズ海峡レジームを実際に動かす主体は、(1)軍事的妨害能力と通航料・制限要求を持つイラン国家（実務はIRGC）、(2)MoU上の協議相手かつ管理枠組みの「顔」となり得るオマーン、の少なくとも二者である。米国は安全保障提供者として重要だが、現時点の問い（イランが自由通航を受け入れるか／通航料・管轄主張を継続するか）は、まずイラン側の意図とオマーンとの協議枠組みで規定されるため、Key Stakeholderとしてはイラン国家＋IRGCとオマーンを優先した。",
+      "confidence": "中",
+      "evidence_ids": null,
+      "determination": "multiple",
+      "decision_structure": "形式上はイラン国家（最高指導者・政府）がホルムズ政策を決定し、IRGCが軍事的実行主体となる。MoU上の長期管理レジームはイラン・オマーン協議に委ねられており、オマーンは第三国・湾岸・中国・米国との橋渡し役として制度設計に影響力を持つ。一方、米国は軍事的再介入や制裁強化を通じてレジームを押し返す拒否権的役割を持つが、現局面ではMoUにより一時的に封鎖を解除している。",
+      "selected_actor_ids": [
+        "iran_state",
+        "irgc_core",
+        "oman_state"
+      ]
+    },
+    "situation_actor_assessment": [
+      {
+        "salience": "high",
+        "actor_ref": "iran_state",
+        "confidence": "中",
+        "evidence_ids": null,
+        "desired_outcome": "イランの関与と一定の罰金・検査権限が国際的に黙示的にでも認められるレジーム",
+        "issue_component": "通航料・罰金制度の制度化",
+        "likely_reaction": "強い反発を受けつつも、交渉の中で一部要素を残そうとする",
+        "current_red_line": "イランの関与を完全に排除する自由通航レジーム",
+        "stated_preference": "米・イスラエル船籍禁止と最大20%罰金を主張",
+        "instrumental_value": "mixed",
+        "priority_rationale": "ホルムズを持続的なレバレッジ源とし、敵対国にコストを課すことは体制の安全保障・財政面で重要",
+        "currently_tradeable": "罰金率や対象船籍の範囲は交渉可能だが、イラン関与ゼロは受け入れ難い",
+        "genuine_or_tactical": "mixed",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "ホルムズ封鎖・妨害能力",
+        "effect_on_actor_objective": "制度化に成功すれば、対米・対湾岸抑止と財政収入の両面でプラス。ただし過度な負担は制裁・軍事行動を誘発し得る",
+        "estimated_real_preference": "最大20%は高めの起点であり、実際にはより低い率や限定的対象への妥協も視野に入れている可能性",
+        "alternative_interpretation": "主張は国内向けポーズであり、実際には制度化を本気で目指していない可能性",
+        "primary_binding_constraint": "制裁・軍事行動リスク",
+        "issue_component_description": "イランが提案する米・イスラエル船籍禁止と貨物価値最大20%罰金などの枠組みをどこまで正式レジームに組み込むか",
+        "alternative_interpretation_status": "plausible"
+      },
+      {
+        "salience": "high",
+        "actor_ref": "irgc_core",
+        "confidence": "中",
+        "evidence_ids": null,
+        "desired_outcome": "IRGCが実務運用に深く関与する形での管理・検査・制裁権限の確立",
+        "issue_component": "通航料・罰金制度の制度化",
+        "likely_reaction": "制度化が進まない場合、実力行使で圧力を高める誘惑が強まる",
+        "current_red_line": "IRGCの役割を排除する管理枠組み",
+        "stated_preference": "強硬な船籍禁止・罰金案を支持していると推定される",
+        "instrumental_value": "intrinsic",
+        "priority_rationale": "罰金・制限制度はIRGCの安全保障上の役割と予算・権限を強化し得る",
+        "currently_tradeable": "罰金率や対象船籍の細部は交渉材料になり得るが、IRGC排除は不可",
+        "genuine_or_tactical": "genuine",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "封鎖・攻撃能力",
+        "effect_on_actor_objective": "制度化されればIRGCの存在意義が高まり、組織としての利益に合致",
+        "estimated_real_preference": "ホルムズを通じた恒常的なレバレッジ維持が主目的で、収入は副次的",
+        "alternative_interpretation": "IRGC内に経済コストを懸念する慎重派が存在し、制度化には消極的な可能性",
+        "primary_binding_constraint": "米軍との軍事バランス",
+        "issue_component_description": null,
+        "alternative_interpretation_status": "weak"
+      },
+      {
+        "salience": "medium",
+        "actor_ref": "oman_state",
+        "confidence": "低",
+        "evidence_ids": null,
+        "desired_outcome": "イランの面子を保ちつつ、実務的には低コスト・広範な自由通航を維持する折衷案",
+        "issue_component": "通航料・罰金制度の制度化",
+        "likely_reaction": "極端な案には慎重姿勢を示し、第三国を巻き込んだ修正を試みる",
+        "current_red_line": "オマーンが完全に排除される枠組み",
+        "stated_preference": "公には中立・安定志向を強調",
+        "instrumental_value": "instrumental",
+        "priority_rationale": "過度にイラン寄りの制度は湾岸・米国との関係を損なう一方、イランの関与を完全否定する案も受け入れにくい",
+        "currently_tradeable": "罰金率や対象船籍の調整には柔軟に対応し得る",
+        "genuine_or_tactical": "genuine",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "仲介者としての外交的信用",
+        "effect_on_actor_objective": "バランスを欠く制度はオマーンの仲介者としての地位を損なう",
+        "estimated_real_preference": "イラン案を緩和しつつ、湾岸・米国が受け入れ可能なラインを模索",
+        "alternative_interpretation": "イランとの二国間関係を優先し、実務的にはイラン寄りの制度を受け入れる可能性",
+        "primary_binding_constraint": "軍事力の欠如と対外関係のバランス",
+        "issue_component_description": null,
+        "alternative_interpretation_status": "plausible"
+      },
+      {
+        "salience": "high",
+        "actor_ref": "iran_state",
+        "confidence": "中",
+        "evidence_ids": null,
+        "desired_outcome": "形式的には自由通航を尊重しつつ、実務では一定の管理・検査・罰金権限を保持",
+        "issue_component": "ホルムズ海峡の自由通航原則の受容度",
+        "likely_reaction": "経済・外交コストが高まれば、形式的自由通航＋限定的関与への軟化もあり得る",
+        "current_red_line": "イランの関与ゼロの完全自由通航",
+        "stated_preference": "MoUで60日無料安全航行を約束しつつ、攻撃再開と制限案を主張",
+        "instrumental_value": "mixed",
+        "priority_rationale": "自由通航の受容度は制裁緩和・投資誘致とホルムズレバレッジ維持のトレードオフに直結",
+        "currently_tradeable": "検査頻度や対象、象徴的な関与の程度は調整可能",
+        "genuine_or_tactical": "genuine",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "ホルムズ封鎖能力",
+        "effect_on_actor_objective": "自由通航受容は経済にはプラスだが、安全保障レバレッジの低下を伴う",
+        "estimated_real_preference": "完全自由通航の長期受容には消極的で、グレーゾーン維持を志向",
+        "alternative_interpretation": "現在の強硬姿勢は一時的で、長期的には自由通航受容に向かう過渡期の揺り戻しに過ぎない",
+        "primary_binding_constraint": "経済制裁と国内正統性の両立",
+        "issue_component_description": "イランが長期的にどこまで自由通航原則を受け入れるか",
+        "alternative_interpretation_status": "plausible"
+      },
+      {
+        "salience": "high",
+        "actor_ref": "irgc_core",
+        "confidence": "中",
+        "evidence_ids": null,
+        "desired_outcome": "自由通航が名目上維持されても、IRGCが実務上の安全保障・検査・抑止役として不可欠である状態",
+        "issue_component": "ホルムズ海峡の自由通航原則の受容度",
+        "likely_reaction": "自由通航への圧力が強まれば、象徴的な行動でレバレッジ維持を図る",
+        "current_red_line": "IRGCの役割を否定する自由通航レジーム",
+        "stated_preference": "強硬な抑止姿勢と封鎖能力の誇示",
+        "instrumental_value": "intrinsic",
+        "priority_rationale": "自由通航の完全受容はIRGCのレバレッジと役割を弱める",
+        "currently_tradeable": "形式的な自由通航宣言は、実務上の関与が維持される限り受け入れ可能",
+        "genuine_or_tactical": "genuine",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "軍事力",
+        "effect_on_actor_objective": "自由通航受容はIRGCの組織的利益に反する",
+        "estimated_real_preference": "グレーゾーン支配の維持",
+        "alternative_interpretation": "IRGCも経済悪化を懸念し、一定の自由通航受容に傾く可能性",
+        "primary_binding_constraint": "体制全体の生存と経済状況",
+        "issue_component_description": null,
+        "alternative_interpretation_status": "weak"
+      },
+      {
+        "salience": "high",
+        "actor_ref": "oman_state",
+        "confidence": "低",
+        "evidence_ids": null,
+        "desired_outcome": "イランの面子を保ちつつ、実務的には自由通航に近い状態",
+        "issue_component": "ホルムズ海峡の自由通航原則の受容度",
+        "likely_reaction": "自由通航を損なう動きには慎重な姿勢を示し、緩和策を模索",
+        "current_red_line": "イラン・米国など他国だけで管理が決まり、オマーンが排除されること",
+        "stated_preference": "安定と対話を重視する姿勢",
+        "instrumental_value": "intrinsic",
+        "priority_rationale": "自由通航はオマーンの安全保障と経済に直結し、中立仲介者としての立場とも整合",
+        "currently_tradeable": "イランの象徴的関与は受け入れ可能だが、実務的な妨害・高コスト化は避けたい",
+        "genuine_or_tactical": "genuine",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "仲介役としてのポジション",
+        "effect_on_actor_objective": "自由通航受容はオマーンの目的に合致",
+        "estimated_real_preference": "自由通航原則の維持",
+        "alternative_interpretation": "イランとの関係維持を優先し、自由通航よりも二国間関係を重視する可能性",
+        "primary_binding_constraint": "イラン・湾岸・米国との関係バランス",
+        "issue_component_description": null,
+        "alternative_interpretation_status": "plausible"
+      },
+      {
+        "salience": "medium",
+        "actor_ref": "iran_state",
+        "confidence": "中",
+        "evidence_ids": null,
+        "desired_outcome": "米国船籍に対する何らかの差別的扱いが制度に残ること（完全禁止でなくとも）",
+        "issue_component": "米国船籍の扱い",
+        "likely_reaction": "交渉の中で要求を引き下げつつ、象徴的な差別措置を残そうとする",
+        "current_red_line": "米国船籍を完全に他国と同等に扱うこと",
+        "stated_preference": "恒久的航行禁止を要求",
+        "instrumental_value": "negotiating_card",
+        "priority_rationale": "米国との対立の象徴であり、交渉カードとしての価値が高いが、実務的には限定的",
+        "currently_tradeable": "完全禁止から高コスト・追加検査などへの後退はあり得る",
+        "genuine_or_tactical": "tactical",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "ホルムズでのリスク付与能力",
+        "effect_on_actor_objective": "象徴的には対米強硬姿勢を示せるが、実務的な経済効果は限定的",
+        "estimated_real_preference": "完全禁止は最大要求であり、実際にはより緩い差別措置でも受け入れ可能",
+        "alternative_interpretation": "米国船籍問題は国内向けポーズであり、最終的には撤回される可能性",
+        "primary_binding_constraint": "米国の軍事・制裁対応",
+        "issue_component_description": "イランが米国船籍の恒久的航行禁止を求めている点",
+        "alternative_interpretation_status": "plausible"
+      },
+      {
+        "salience": "medium",
+        "actor_ref": "irgc_core",
+        "confidence": "低",
+        "evidence_ids": null,
+        "desired_outcome": "米国船籍に対する高いリスク認識を維持しつつ、全面戦争は回避",
+        "issue_component": "米国船籍の扱い",
+        "likely_reaction": "米国の出方を見ながら、直接攻撃は慎重に選択",
+        "current_red_line": "米国船籍を完全に安全な対象とすること",
+        "stated_preference": "対米強硬姿勢",
+        "instrumental_value": "deterrence",
+        "priority_rationale": "米国船籍への強硬措置は抑止と国内正統性に資するが、軍事衝突リスクも高い",
+        "currently_tradeable": "実務上は米国船籍への直接攻撃を避け、間接的圧力にとどめる可能性",
+        "genuine_or_tactical": "mixed",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "攻撃能力",
+        "effect_on_actor_objective": "象徴的にはプラスだが、エスカレーション管理が難しくなる",
+        "estimated_real_preference": "直接衝突は避けつつ抑止を維持",
+        "alternative_interpretation": "IRGCが米国船籍への直接攻撃も辞さない強硬路線に傾く可能性",
+        "primary_binding_constraint": "米軍との軍事バランス",
+        "issue_component_description": null,
+        "alternative_interpretation_status": "plausible"
+      },
+      {
+        "salience": "medium",
+        "actor_ref": "iran_state",
+        "confidence": "低",
+        "evidence_ids": null,
+        "desired_outcome": "圧力を最小限に抑えつつ、一定のレバレッジを維持",
+        "issue_component": "湾岸・中国からの圧力",
+        "likely_reaction": "圧力が強まれば、行動をグレーゾーン内に抑える傾向",
+        "current_red_line": "イラン経済を致命的に損なう制裁・投資停止",
+        "stated_preference": "表向きは外圧に屈しない姿勢",
+        "instrumental_value": "instrumental",
+        "priority_rationale": "主要輸入国からの圧力は経済的に無視し難いが、安全保障レバレッジとのトレードオフ",
+        "currently_tradeable": "一部ホルムズでの行動を自制する代わりに経済的譲歩を得る可能性",
+        "genuine_or_tactical": "mixed",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "原油供給と地域不安定化リスク",
+        "effect_on_actor_objective": "強い圧力はホルムズカードの行使を抑制し得る",
+        "estimated_real_preference": "実務的には外圧を考慮して行動を調整",
+        "alternative_interpretation": "外圧を過小評価し、強硬路線を優先する可能性",
+        "primary_binding_constraint": "制裁・投資動向",
+        "issue_component_description": "イランのホルムズ政策に対する第三国の経済・外交圧力",
+        "alternative_interpretation_status": "plausible"
+      },
+      {
+        "salience": "medium",
+        "actor_ref": "oman_state",
+        "confidence": "低",
+        "evidence_ids": null,
+        "desired_outcome": "湾岸・中国が受け入れ可能なレジームをイランに飲ませる",
+        "issue_component": "湾岸・中国からの圧力",
+        "likely_reaction": "湾岸・中国の強い反発があれば、イラン案の修正を働きかける",
+        "current_red_line": "どちらか一方に偏りすぎて仲介者としての信頼を失うこと",
+        "stated_preference": "バランス外交",
+        "instrumental_value": "instrumental",
+        "priority_rationale": "オマーンは湾岸・中国との関係を重視し、彼らの懸念を協議に反映させる必要がある",
+        "currently_tradeable": "イラン寄り・湾岸寄りのバランスを状況に応じて調整",
+        "genuine_or_tactical": "genuine",
+        "media_salience_basis": null,
+        "media_salience_signal": "unknown",
+        "primary_usable_leverage": "外交的信用",
+        "effect_on_actor_objective": "第三国の圧力をうまく調整できれば、仲介者としての価値が高まる",
+        "estimated_real_preference": "第三国の懸念を強く意識した制度設計",
+        "alternative_interpretation": "オマーンが外圧を十分に反映できず、イラン寄りと見なされる可能性",
+        "primary_binding_constraint": "自国の安全保障と経済依存",
+        "issue_component_description": null,
+        "alternative_interpretation_status": "plausible"
+      }
+    ],
+    "decisive_power_and_leverage": "最終的にホルムズ海峡の通航レジームを決定づける力は、短期的にはIRGCが握る軍事的妨害能力と、それに対抗し得る米軍の制海力との相互抑止にある。一方で、中期的には湾岸産油国と中国など主要輸入国がどこまでイランのグレーゾーン支配を容認するか（代替ルート整備・投資・外交圧力）によって、イランのカードの価値が制約される。制度設計面ではオマーンが管理枠組みの「顔」として重要だが、実効支配の蝶番は依然としてIRGCの軍事能力とそれを巡る米・湾岸・中国の許容線にある。",
+    "assets_dependencies_leverage": [
+      {
+        "kind": "asset",
+        "summary": "IRGCによる機雷敷設・武装スピードボート・沿岸ミサイルを用いたホルムズ海峡への実効的な航行妨害能力（2026年3月以降、実際に行使され海峡を封鎖した実績がある）"
+      },
+      {
+        "kind": "dependency",
+        "summary": "サウジアラビアを含む湾岸産油国は原油輸出のほぼ全量をホルムズ海峡経由の海上輸送に依存しており、通航妨害・料金賦課は輸出収入へ直接的な打撃となる"
+      }
+    ],
+    "preference_action_gap_summary": "イラン国家・IRGCはホルムズをレバレッジとして使うPersistent Preferenceを持ち、MoUで一時的に無料安全航行を約束したものの、長期管理を先送りしたことでカードを保持し続けている。攻撃再開や罰金・船籍制限案の推進は、このレバレッジ志向と整合的であり、ギャップは主に「どこまでエスカレートするか」の度合いにある。オマーンは安定志向だが、軍事力の欠如によりイラン・IRGCの行動を直接制約できず、制度設計を通じた間接的な制約にとどまる。"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "fd973cd4-1e2a-4e8c-af3f-4566ce9ab189",
+    "response_id": "24b1a29c-6be5-443b-8c44-dcc5362fdc53",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Iranian state leadership (Supreme Leader institution + government), Islamic Revolutionary Guard Corps (IRGC), United States（トランプ政権）, Gulf oil exporters（Saudi Arabia, UAE, Qatarなど）, International shipping & insurance sector",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 22,
+    "failed_count": 2,
+    "created_at": "2026-08-30T06:28:07.305935+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 71357,
+    "completion_tokens": 21198,
+    "total_tokens": 92555
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 100657,
+        "prompt_tokens": 29998,
+        "completion_tokens": 11354
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 83437,
+        "prompt_tokens": 41359,
+        "completion_tokens": 9844
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Iranian state leadership (Supreme Leader institution + government), Islamic Revolutionary Guard Corps (IRGC), United States（トランプ政権）, Gulf oil exporters（Saudi Arabia, UAE, Qatarなど）, International shipping & insurance sector"
+      }
+    ]
+  },
+  "actor_intelligence_block_text": "",
+  "captured_at_utc": "2026-08-30T06:28:07Z",
+  "note": "Session2 Reasoning Upgrade Phase5 After-AI capture (Phase1-4適用後の実行結果)。"
+}

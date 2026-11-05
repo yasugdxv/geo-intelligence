@@ -1,0 +1,176 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 81500,
+    "completion_tokens": 10267,
+    "total_tokens": 91767
+  },
+  "wall_clock_seconds": 184.78072118759155,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "サウジの安全保障保証と政権安定に対する米国依存度の再設計",
+    "selection_rationale": "対米・対中・地域外交の多くが、「どの程度米国の安全保障傘に依存し続けるか」「どこまで自律性と代替パートナー（中国等）を確保するか」という問題に収れんしていると考えられるため。このKey Pointは、MBSの国内権力基盤強化（候補3）とエネルギー構造要因（候補2）を包含しつつ、対米・対中・地域外交の方向性を最も直接的に規定する蝶番として機能していると判断した。",
+    "control_type": "mixed",
+    "confidence": "低",
+    "candidate_key_points_count": 3,
+    "candidate_key_points": [
+      "サウジの安全保障保証と政権安定に対する米国依存度の再設計",
+      "エネルギー転換と原油市場の構造変化への対応",
+      "国内権力基盤強化と反対勢力抑圧の必要性"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "エネルギー転換と原油市場の構造変化への対応",
+        "why_not_primary": "重要な構造要因だが、対米・対中・地域外交の安全保障・政治的側面を十分に説明できず、MBSの裁量が働く余地を捉えきれないため、PrimaryではなくSecondaryな制約として扱う方が適切と判断。"
+      },
+      {
+        "key_point": "国内権力基盤強化と反対勢力抑圧の必要性",
+        "why_not_primary": "MBSの行動パターンを説明するうえで重要だが、対米・対中・地域外交の具体的な配置（米国との安全保障再交渉、中国との関係強化、地域仲介役の演出）を直接規定するのは、むしろ外部安全保障構造と米国依存度の再設計であると考えたため。"
+      }
+    ],
+    "disconfirming_signal": "サウジが米国との安全保障関係を大きく維持したまま、中国や他のパートナーとの関係をほとんど利用せずに一方的に米国側へ再コミットし、同時に地域外交でも米国の意向に全面的に従う形で長期的に安定する場合。この場合、米国依存度の再設計ではなく「米国への再従属」がKey Pointであった可能性が高まる。",
+    "evidence_class": "current_indirect_evidence"
+  },
+  "actors": [
+    {
+      "actor_ref": "MBS",
+      "profile_source": "actor_intelligence_candidate",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 2,
+      "pattern_ids_count": 2,
+      "has_pattern_applicability_assessment": true,
+      "has_actor_model_challenge": true,
+      "actor_model_challenge_outcome": "inconclusive",
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "unresolved": 1,
+    "rejected": 2
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "rejected"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "MBSは、王政と自身の権力基盤の長期的存続を最上位目的とし、対米・対中・地域外交を「米国依存度の再設計」と「多極的バランス戦略」の組み合わせとして運用している。具体的には、米国との安全保障関係を維持しつつも、議会制約や人権問題によるリスクを認識し、中国や他の大国との関係を強化してレバレッジを確保する。同時に、イランとの国交正常化など地域緊張の緩和を通じて、サウジを地域秩序の設計者・仲介者として位置づけ、国内外での正統性を高めようとしている。対外的には多極的バランス、国内的には反腐敗・近代化・治安を名目にした権力集中という二重構造が続く。",
+    "historical_analogies_used": [
+      {
+        "same_actor": true,
+        "description": "中国仲介によるイランとの国交正常化を、多極的バランス戦略の一例として参照。",
+        "same_domain": true,
+        "analogy_strength": "medium",
+        "same_constraints": false,
+        "same_leverage_mechanism": false,
+        "analogy_source_precedent_id": "4e4c23bd-cba6-4db3-885d-71dd554fc564",
+        "same_institutional_structure": true
+      }
+    ]
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 5,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "最近のサウジ・米国間の安全保障協定や武器供与契約の具体的条件は何か。",
+      "rationale": "安全保障協定の内容は、サウジの対米依存度と自律性のバランスを直接示す。",
+      "related_hypothesis": "米国依存度の再設計がKey Pointであるという仮説",
+      "recommended_sources": "米政府・サウジ政府の公式文書、議会報告書、信頼できるシンクタンクの分析"
+    },
+    {
+      "priority": "中",
+      "question": "サウジ・中国間のエネルギー・インフラ・技術協力の規模と内容はどの程度か。",
+      "rationale": "対中協力の実態は、サウジがどこまで中国を代替パートナーとして位置づけているかを測る指標となる。",
+      "related_hypothesis": "対中関係をレバレッジとして用いる多極的バランス戦略",
+      "recommended_sources": "中国・サウジの共同声明、企業レベルの契約情報、専門家分析"
+    },
+    {
+      "priority": null,
+      "question": "直近3〜5年のサウジ・米国間の安全保障協定・武器供与契約の具体的条件はどう変化しているか。",
+      "rationale": "Key Point（米国依存度の再設計）とMain Scenarioの検証に直結する。条件の変化はMBSの対米依存度調整の実態を示す。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "サウジ・中国間のエネルギー・インフラ・技術協力（特に防衛・デジタル・原子力）の規模と内容はどの程度か。",
+      "rationale": "対中関係をレバレッジとして用いる多極的バランス戦略（Main Scenario）の強度を測るために必要。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "イランとの国交正常化後、サウジがイエメン・スーダン等でどの程度実質的な仲介・停戦実績を積んでいるか。",
+      "rationale": "MBSが『地域秩序の設計者』として振る舞うというHypothesisの検証に必要。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 2,
+  "quality_guard": {
+    "passed_count": 32,
+    "failed_count": 2,
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "confidence_adjustments": [
+      "main_scenario",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "historical_evidence_separations": [
+      "key_point_assessment",
+      "key_point_assessment.candidate_key_points[0]",
+      "key_point_assessment.candidate_key_points[2]"
+    ],
+    "actor_evidence_separations": [
+      "key_actor_profiles[0]:removed=['4e4c23bd-cba6-4db3-885d-71dd554fc564', '335560c6-e331-4ea8-a836-6ae3ed98d5e3']"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ]
+  },
+  "executive_summary": {
+    "what_changed": "サウジは従来の『米国一極依存』から、中国を含む多極的環境を利用したバランス戦略へと移行しつつあり、MBSがその中心的意思決定者として対米・対中・地域外交を再設計している。",
+    "why_it_matters": "エネルギー市場、地域安全保障、対米・対中関係の三つがサウジを軸に再構成されつつあり、企業のエネルギー調達・中東拠点・対米・対中戦略に影響する可能性がある。",
+    "what_to_watch_decide": "サウジと米国・中国の間で結ばれる具体的な安全保障・投資・技術協力の枠組みと、サウジが地域紛争でどの程度仲介役を果たすかをモニタリングし、自社のエネルギー・投資・リスク管理戦略の前提を適宜更新すること。"
+  },
+  "one_line_assessment": "as_of=2026-08-31時点の暫定見立てとして、MBSは対米・対中・地域外交を「王政存続と自身の権力基盤維持」を最上位目的とする多極的バランス戦略として運用しており、対外的には大国間の競争をレバレッジ化しつつ、国内的には反腐敗・近代化・治安を名目に権力集中を進める構図が続いているとみるのが最も整合的である（確信度：中）。",
+  "initial_anomaly": "サウジが中国仲介でイランと国交正常化（2023）しつつ、依然として米国との安全保障関係を維持・再交渉し、同時に地域仲介役（イエメン停戦、スーダン等）として振る舞うという、一見矛盾する対外姿勢の同居。従来の「米国一極依存」から、米中双方と距離を取りつつレバレッジを高める方向への構造変化が違和感の出発点となる。"
+}

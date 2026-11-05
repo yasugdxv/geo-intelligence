@@ -1,0 +1,61 @@
+{
+  "case_id": "ib0-hungary",
+  "evaluation_mode": "retrospective_proxy_directional",
+  "formal_phase_i_b_status": "NOT_COMPLETE -- this is Phase I-B0 only, not an AI-output-reviewed-by-expert case",
+  "theme": "2026-04-12 Hungary parliamentary election (Tisza 54%/138 seats vs Fidesz/Orban 38%/55 seats)",
+  "t0_date": "2026-04-12",
+  "source_artifacts": {
+    "initial_candidates": "3 CQAS scenario candidates (analysis_session_id=b62e343d-80dd-4996-adef-23990565a3a1)",
+    "displayed_top5": "all 3 (fewer than 5 generated)",
+    "selected_candidate": "rank 1 (EU/NATO mainstream partial return, gradual)",
+    "analysis_design": "design_id=540e883e-64ed-4def-adfd-c53f9b7101f4, version 1",
+    "expert_ground_truth": "docs/expert-reference-benchmark/hungary_case_reference.md (real Eguchi framing paragraph in R004 + adopted-external body content from Taketsushi's draft)"
+  },
+  "expert_dimensions_evaluated": [
+    {
+      "dimension": "EU decision-making unblocked (Orban's veto/obstruction function disappears) -> smoother sanctions/Ukraine-support consensus",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (Taketsushi draft, Eguchi published under his name)",
+      "classification": "validated_dimension",
+      "evidence": "AI candidate #1 (selected, rank 1): '対ロ制裁・ウクライナ支援・対中政策・法の支配・人権・通商政策の統一性がわずかに高まる' -- same substantive claim (unblocked EU consensus), though framed as gradual policy convergence rather than the specific 'veto removal' mechanism Eguchi's material used.",
+      "confidence": "MEDIUM -- coverage of the outcome is present; the causal mechanism (veto power specifically) is not named"
+    },
+    {
+      "dimension": "Trump/MAGA linkage -- Orban's fall as an inflection point prompting other European right-wing populists to reconsider their relationship with the Trump/MAGA camp",
+      "expert_origin_status": "EXPERT_GENERATED (Eguchi's own unique addition -- the single highest-value original contribution in this case per the benchmark doc)",
+      "classification": "generation_miss_candidate",
+      "evidence": "Trump, MAGA, and Vance do not appear anywhere in any of the 3 AI-generated candidates' key_actors, descriptions, or the resulting Analysis Design's key_actors list (['ティサ党指導部', 'EU中核'] only). The entire cross-national populist-movement / US-alignment dimension that was Eguchi's own distinctive analytical move is absent from generation, not merely mis-ranked.",
+      "confidence": "HIGH"
+    },
+    {
+      "dimension": "Russia/Putin implications -- Putin loses his most significant EU-level supporter; Magyar maintains 'practical relations' while reducing dependency by 2035",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+      "classification": "generation_miss_candidate",
+      "evidence": "AI candidates reference '対ロシア' policy direction generically (as one of several policy axes) but never name Putin as an actor, and never articulate the specific claim that the EU's most prominent internal supporter of Russia is gone. The topic-level direction (Russia policy) is touched; the actor-specific framing is not.",
+      "confidence": "MEDIUM -- partial, topic present but the specific actor-centered claim is missing"
+    },
+    {
+      "dimension": "'Not the end of populism' caveat -- this is an anti-incumbent economic-discontent vote, not an ideological rightward reversal; Tisza itself leans European-right, not centrist; other countries' right-wing/far-right governments continue",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL (body conclusion, drafted by Taketsushi, adopted by Eguchi)",
+      "classification": "expert_added_dimension",
+      "evidence": "None of the 3 AI candidates articulate this middle-ground reading. AI's 3 candidates form a spectrum of 'how far does the new government pivot' (gradual/none/radical), but none frame the result as 'anti-incumbent, not anti-ideology' with an explicit caution against over-generalizing to 'European populism is receding.' This is a genuine analytical nuance present in the expert material and absent from AI's candidate set.",
+      "confidence": "HIGH"
+    },
+    {
+      "dimension": "Domestic causal factors (economic stagnation, corruption/amnesty scandal) as the actual driver of the election outcome",
+      "expert_origin_status": "EXPERT_ADOPTED_EXTERNAL",
+      "classification": "ambiguous",
+      "evidence": "AI's Analysis Design does not assert a causal explanation for the outcome (appropriately, since CQAS candidates are forward-looking scenarios, not retrospective causal accounts) but DOES correctly flag 'ティサ党の支持基盤の構成' as a knowledge_gap/evidence_needed rather than fabricating a cause. This is a structural difference in artifact TYPE (forward scenario vs. retrospective causal narrative) more than a like-for-like miss -- the AI's epistemic honesty here (flagging as unknown rather than guessing) is itself a positive, separate from whether it 'covered' this dimension.",
+      "confidence": "LOW -- not a clean comparison, flagged as ambiguous per instruction not to force a verdict"
+    }
+  ],
+  "report_design_findings": {
+    "investigation_question": "AI's investigation_question is the raw input theme carried forward verbatim, with no analytical re-framing. Eguchi's real practice (per the reference doc) was to immediately add a declarative framing paragraph asserting WHY this matters (3-dimension significance). The AI's Design does not produce an equivalent distinct 'framing' artifact -- the raw question and the 'framed' question are identical in this run.",
+    "key_actors_ai": ["ティサ党指導部（新首相・主要閣僚）", "EU中核（欧州委員会・主要加盟国）"],
+    "key_actors_expert": ["Orban (Fidesz)", "Magyar (Tisza)", "Putin", "Trump/MAGA/Vance", "EU (as sanctions/Ukraine-support decision unit)"],
+    "key_actor_gap": "AI's actor list (2 entries) is materially narrower than the expert's (5 entries) -- Orban himself (outgoing leader, still analytically relevant), Putin, and the entire Trump/MAGA/Vance axis are absent from AI's Design.",
+    "ai_originally_had": "EU/NATO 'mainstream return' framing, gradual-vs-status-quo-vs-radical spectrum, appropriately low confidence given limited retrieved evidence",
+    "expert_added": "Trump/MAGA cross-national populist linkage; explicit anti-incumbent-vs-ideological-reversal caveat; Putin-specific EU-supporter-loss framing",
+    "expert_removed_or_would_correct": "not applicable in this retrospective-proxy mode (no actual expert correction occurred; this is AI-vs-real-material coverage, not AI-output-reviewed-by-expert)"
+  },
+  "cross_case_note": "Single case; no cross-case pattern claims are made (small-sample warning applies, this is directional pilot evidence only)."
+}

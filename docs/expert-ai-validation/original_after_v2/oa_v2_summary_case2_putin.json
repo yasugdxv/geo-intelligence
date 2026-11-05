@@ -1,0 +1,182 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82003,
+    "completion_tokens": 14272,
+    "total_tokens": 96275
+  },
+  "wall_clock_seconds": 294.2891900539398,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "NATOのウクライナ加盟・安全保障上の位置づけ（事実上の加盟状態を含む）",
+    "selection_rationale": "Actor Intelligence Packで明示されているプーチンの世界観・レッドラインがNATO東方拡大、とりわけウクライナを含む旧ソ連圏への拡大に集中していることから、ウクライナ戦争の目的・方向性を最も直接的に規定する蝶番は「ウクライナがNATO安全保障枠組みの中でどの位置に置かれるか」であると考えられる。他の候補（国内政権安定、エネルギー収入、ウクライナ抵抗・西側支援）は重要な制約・補助条件だが、戦争開始の動機や公式説明と最も整合的なのはNATO問題である。",
+    "control_type": "distributed",
+    "confidence": "低",
+    "candidate_key_points_count": 4,
+    "candidate_key_points": [
+      "NATOのウクライナ加盟・安全保障上の位置づけ（事実上の加盟状態を含む）",
+      "ロシア国内政権安定（プーチン体制の存続とエリート支配の維持）",
+      "ロシアのエネルギー輸出と財政持続性",
+      "ウクライナ国内の抵抗意志と西側軍事支援の持続性"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "ロシア国内政権安定（プーチン体制の存続とエリート支配の維持）",
+        "why_not_primary": "ワグネル反乱などから政権安定が極めて重要な制約であることは確かだが、これは戦争の「目的」よりも「手段・強度・時間軸」を制約する要因として機能していると見る方が自然であり、開戦理由や対外的正当化の中心に置かれてはいないため。"
+      },
+      {
+        "key_point": "ロシアのエネルギー輸出と財政持続性",
+        "why_not_primary": "エネルギー依存は戦争継続能力を規定する構造的要因だが、ウクライナ戦争に固有の目的ではなく、ロシア経済全体に共通する制約である。NATO拡大問題ほどウクライナ戦争の開始・継続の説明力は持たない。"
+      },
+      {
+        "key_point": "ウクライナ国内の抵抗意志と西側軍事支援の持続性",
+        "why_not_primary": "これはロシア側の目的ではなく、ロシアの目的達成可能性を左右する外部条件であり、プーチンの戦争目的そのものを規定する蝶番とは言い難い。"
+      }
+    ],
+    "disconfirming_signal": "もしロシアが、ウクライナのNATO正式加盟やNATO並みの安全保障保証を事実上容認しつつ、戦争を自発的に終結させる、あるいは大きな反発なく受け入れるような行動を取れば、「NATO拡大阻止」がKey Pointであるという前提自体を見直す必要がある。",
+    "evidence_class": "current_indirect_evidence"
+  },
+  "actors": [
+    {
+      "actor_ref": "putin",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 2,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": true,
+      "has_actor_model_challenge": true,
+      "actor_model_challenge_outcome": "inconclusive",
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 3,
+  "situation_actor_assessment_evidence_class_distribution": {
+    "current_indirect_evidence": 3
+  },
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "rejected": 2,
+    "unresolved": 1
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "rejected"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "プーチンのウクライナ戦争に対する主目的は、ウクライナ国家の完全占領や即時の政権転覆ではなく、「ウクライナのNATO・EU完全統合を阻止し、旧ソ連圏に対するロシアの影響力を維持・拡大しつつ、自身の政権を安定的に維持すること」である。そのために、ウクライナの一部領土（クリミア・ドンバス等）の実効支配と、ウクライナの安全保障・外交上の選択肢に対するロシアの拒否権を確保しようとしている。今後の方向性としては、(1) 現在の戦線を維持しつつ、ウクライナと西側の疲弊を待ちながら、自国に有利な凍結紛争・停戦を模索する「長期消耗戦＋凍結シナリオ」が主軸となる可能性が高い。プーチンは全面動員や核使用といった極端な手段には慎重であり、国内政権安定・エネルギー収入・制裁回避といった制約の下で、戦争の強度を調整しながら時間を味方につけようとしていると考えられる。",
+    "historical_analogies_used": [
+      {
+        "same_actor": false,
+        "description": "旧ソ連時代やポスト冷戦期における「凍結紛争」（ジョージア、モルドバ等）を通じた影響力維持の手法。",
+        "same_domain": true,
+        "analogy_strength": "medium",
+        "same_constraints": false,
+        "same_leverage_mechanism": true,
+        "analogy_source_precedent_id": null,
+        "same_institutional_structure": false
+      }
+    ]
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 5,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "プーチンが直近の演説やインタビューで、ウクライナ戦争の「勝利条件」や「受け入れ可能な妥協ライン」をどのように定義しているか。",
+      "rationale": "公式発言の変化は、Persistent Preferenceやレッドラインの修正を示す可能性がある。",
+      "related_hypothesis": "プーチンの主目的がNATO拡大阻止と影響圏維持であるという仮説。",
+      "recommended_sources": null
+    },
+    {
+      "priority": "中",
+      "question": "ロシア国内の世論・エリート・軍・治安機関の間で、戦争継続・拡大・縮小に関する意見分布はどうなっているか。",
+      "rationale": "内部支持構造の変化は、プーチンの選択肢とリスク認識に直接影響する。",
+      "related_hypothesis": "政権安定が戦争の強度と時間軸を制約しているという仮説。",
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "プーチンが直近の主要演説で、ウクライナ戦争の「勝利条件」や「受け入れ可能な妥協ライン」をどのように定義しているか。",
+      "rationale": "Key Point（NATO拡大阻止）とPersistent Preference仮説の検証。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "ロシア国内エリート・軍・治安機関内で、戦争継続・拡大・縮小に関する意見分布はどうなっているか。",
+      "rationale": "Preference-Action Gap（政権安定と戦争強度）の説明精度向上。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "ロシアのエネルギー輸出収入と制裁回避の現状は、戦費と社会支出をどの程度支えられているか。",
+      "rationale": "Key Point候補「エネルギー輸出と財政持続性」の強さ評価。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 2,
+  "quality_guard": {
+    "passed_count": 33,
+    "failed_count": 1,
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "confidence_adjustments": [
+      "main_scenario",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "historical_evidence_separations": [
+      "key_point_assessment",
+      "key_point_assessment.candidate_key_points[0]",
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "actor_evidence_separations": [
+      "key_actor_profiles[0]:removed=['d0ef206d-d8d0-4697-8781-bc310387fc31', 'c7582597-f5fe-4bf9-a521-b9cbac5e7dd8']",
+      "situation_actor_assessment[1]:removed=['d0ef206d-d8d0-4697-8781-bc310387fc31']"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ]
+  },
+  "executive_summary": {
+    "what_changed": null,
+    "why_it_matters": null,
+    "what_to_watch_decide": null
+  },
+  "one_line_assessment": "as_of 2026-08-31時点で、プーチンのウクライナ戦争に対する主目的は、ウクライナの完全占領ではなく「NATO東方拡大を阻止しつつ、旧ソ連圏への影響力を維持・拡大し、自身の政権安定を確保する形で戦争を自国に有利な凍結状態または段階的譲歩を引き出すこと」とみるのが最も整合的だが、その達成手段と時間軸には複数のシナリオが残る。",
+  "initial_anomaly": "ロシアが大規模侵攻から2年以上経過しても、明確な勝利条件や出口戦略を公表せず、戦線を維持しつつも全面動員や総力戦レベルには踏み込んでいない点。これは「ウクライナ国家の完全破壊」よりも、「NATO拡大阻止と影響圏維持」という中長期目的と、国内政権安定・経済制約とのバランスを優先している可能性を示唆する。"
+}

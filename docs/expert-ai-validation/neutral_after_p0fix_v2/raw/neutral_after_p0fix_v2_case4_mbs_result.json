@@ -1,0 +1,1010 @@
+{
+  "request": {
+    "request_id": "e51accfa-b36e-43ad-99e1-7200b01b3533",
+    "theme_id": null,
+    "mode": "case_analysis",
+    "query_text": "Saudi Arabiaの現在の対米・対中・地域外交について、MBSの意思決定という観点から分析してください。",
+    "created_at": "2026-09-01T00:25:33.604099+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "ec2b9cb1-8c6e-49b7-97e5-996de832d1d5",
+    "request_id": "e51accfa-b36e-43ad-99e1-7200b01b3533",
+    "document_ids": [
+      "4782ea75-15f2-47bb-a050-5408f186b989",
+      "5c99bd85-72e8-4278-b431-2c96595a8533",
+      "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+      "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+      "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+      "a9208a53-6674-4447-922b-5fb15ecdd2be",
+      "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+      "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+      "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+      "d163ef87-de0e-41fc-bea5-366f7e5aa89f"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-09-01T00:25:34.788965+00:00"
+  },
+  "response": {
+    "response_id": "064190dd-e8bc-4036-a409-dcb451934078",
+    "request_id": "e51accfa-b36e-43ad-99e1-7200b01b3533",
+    "source_pack_id": "ec2b9cb1-8c6e-49b7-97e5-996de832d1d5",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "MBSは対米関係を完全に代替する意図で対中接近を進めているのではなく、米国の安全保障傘を維持したまま、対中・対地域外交を交渉カードとして用い、自律性と体制保証を高めようとしている。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "MBSの大型外交イニシアチブ（対イラン関係正常化、地域調停役の演出など）は、公式には「地域安定」「経済ビジョン」の文脈で語られるが、実際には王位継承の正当性と国内外での指導者としての地位を強化する機能を持つ。",
+          "claim_type": "hypothesis",
+          "source_ref": "4e4c23bd-cba6-4db3-885d-71dd554fc564"
+        },
+        {
+          "text": "MBSは対米・対中のいずれか一方への全面的な陣営選択を避け、両者の競争を利用して投資・技術・安全保障コミットメントを引き出す「バランシング外交」を志向している可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "MBSは中国仲介によるイランとの国交正常化（2023年）を受け入れた。",
+          "claim_type": "fact",
+          "source_ref": "4e4c23bd-cba6-4db3-885d-71dd554fc564"
+        },
+        {
+          "text": "ジャマル・カショギ殺害事件（2018年）をめぐり、サウジ当局の公式説明は時間の経過とともに変化し、より高位の関与を示唆しかねない要素を段階的に後退させるパターンを示した。",
+          "claim_type": "fact",
+          "source_ref": "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+        },
+        {
+          "text": "カショギ事件での公式説明の変遷は、MBSが国際的な批判と国内権力維持の双方を勘案しつつ、責任の範囲を調整する「段階的後退」のコミュニケーションパターンを持つ可能性を示唆する。",
+          "claim_type": "inference",
+          "source_ref": "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+        },
+        {
+          "text": "中国仲介によるイランとの国交正常化は、MBSが中国を「安全保障の全面的代替」ではなく、「地域安定と対米レバレッジを高める補完的パートナー」として位置づけている可能性を示す。",
+          "claim_type": "inference",
+          "source_ref": "4e4c23bd-cba6-4db3-885d-71dd554fc564"
+        },
+        {
+          "text": "ホルムズ海峡をめぐるイラン・米国・湾岸諸国の過去の対立事例は、海峡・エネルギー輸送路が地域外交と対米・対イラン関係のてことして繰り返し利用されてきたことを示すが、これはサウジの現在の対米・対中外交を直接説明する証拠ではなく、構造的制約の例示にとどまる。",
+          "claim_type": "illustration",
+          "source_ref": "Trump Backs Off 20% Fee for Strait of Hormuz Shipments"
+        }
+      ],
+      "dynamics": null,
+      "stakeholders": [
+        {
+          "actor": "Mohammed bin Salman",
+          "purpose": "自身の王位継承とサウジ王政の体制保証（国内外での正当性と安全保障の確保）",
+          "leverage": "国内権力基盤（王族・治安機構・ビジネスエリート）、中国との経済・技術関係",
+          "position": "対米・対中・地域外交において、体制保証と王位継承の正当性を損なわない範囲で、自律性と経済・技術・安全保障上のレバレッジを最大化すること。",
+          "red_lines": "体制の存続や自身の王位継承に直接的なリスクをもたらすような対外関係の変化（例：米国の安全保障傘の喪失を伴う急激な陣営転換）は避けるとみられる。",
+          "confidence": "中",
+          "constraints_fears": "米国との安全保障関係",
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "米国政府（行政府・議会）",
+          "purpose": "中東における安全保障とエネルギー市場の安定を確保しつつ、対中戦略競争の文脈で同盟・パートナーの行動を管理すること。",
+          "leverage": "兵器供給、防空・情報協力、安全保障保証、ドル決済・制裁権限。",
+          "position": "サウジとの安全保障関係を維持しつつ、人権・対中関係をめぐる条件付けを強める方向。",
+          "priority": "対中戦略競争と同盟管理が上位にあり、その一環としてサウジとの関係を位置づける。",
+          "red_lines": "サウジによる中国との高度な軍事・情報協力（防空システム、基地提供など）で、米軍の運用や技術安全保障が脅かされること。",
+          "confidence": "中",
+          "constraints_fears": "サウジへの過度な譲歩が国内政治（人権問題）で批判されること、サウジが対中軍事協力を拡大し米国の技術・情報が流出すること。",
+          "key_relationships": "イスラエル、湾岸諸国、イラン政策、米中戦略競争全体との連関。",
+          "ability_to_move_or_block": "サウジの防空能力や対外軍事行動に大きな影響を与え得るが、完全な関係断絶は自らの利益も損なうため制約付き。"
+        },
+        {
+          "actor": "中国政府",
+          "purpose": "エネルギー安全保障の確保と、中東における政治・経済的プレゼンス拡大を通じて、多極化世界での影響力を強めること。",
+          "leverage": "大型投資、インフラ・技術協力、エネルギー輸入市場としての重要性。",
+          "position": "サウジとの経済・技術協力を拡大しつつ、安全保障面では段階的・限定的な関与にとどめる。",
+          "priority": "エネルギー供給の安定と「一帯一路」的な経済・インフラ関係の拡大。",
+          "red_lines": "自国企業・投資への重大なリスク、またはサウジが対中関係を米国との交渉カードとしてのみ利用し、実質的な協力が進まない状態。",
+          "confidence": "中",
+          "constraints_fears": "米国との直接対立を招く形での軍事プレゼンス拡大は慎重。中東での過度な関与が他地域の優先課題を圧迫すること。",
+          "key_relationships": "イランとの関係、湾岸諸国全体とのエネルギー・インフラ協力。",
+          "ability_to_move_or_block": "サウジの経済多角化や対米レバレッジに影響を与え得るが、安全保障面ではまだ決定的ではない。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "MBSが引き続きサウジの実質的な支配者であり続けること。",
+          "米国がサウジ王政に対する安全保障コミットメントを完全には撤回しないこと。",
+          "中国が湾岸地域での経済・政治的プレゼンスを拡大し続けること。"
+        ],
+        "description": "as_of 2026-08-31、MBSは対米・対中・地域外交を「体制保証と王位継承の正当性確保」を最上位目的として設計しているとみるのが最も整合的である。具体的には、米国との安全保障関係を維持しつつ、人権問題や石油政策をめぐる摩擦を利用して交渉レバレッジを高める一方、中国との経済・技術協力やイランとの関係正常化を通じて、自律性と地域内での調停役としての地位を強化している。対米・対中のいずれか一方への全面的な陣営選択は避け、両者の競争を利用する「バランシング外交」を志向しているが、その目的はイデオロギー的な非同盟ではなく、MBS個人とサウジ王政の体制保証を最大化することにある。",
+        "selection_rationale": "提供されているActor Intelligence Packは部分的だが、MBSのPersistent Preferenceとして権力基盤強化と体制保証を優先するパターンが示唆されている。中国仲介によるイランとの国交正常化は、対中関係を利用して地域安定と自国の安全保障環境を改善しつつ、米国へのレバレッジを高める動きとして解釈できる。カショギ事件での公式説明の変遷は、国際的批判と国内権力維持のバランスを取りながら責任の範囲を調整するコミュニケーションパターンを示しており、対米・対中・地域外交でも同様に、公式ナラティブと実際の目的の間にギャップを持たせる可能性がある。他の仮説（例えば、対中陣営への全面的なシフトや純粋な経済合理性のみでの外交設計）は、現時点のEvidenceでは説明力が劣るため、本シナリオを主軸とした。",
+        "supporting_evidence": [
+          "4e4c23bd-cba6-4db3-885d-71dd554fc564",
+          "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+        ],
+        "observable_indicators": [
+          "サウジと米国の間で新たな防衛協定や兵器供給契約が結ばれるか、その条件（人権条項など）の有無。",
+          "サウジと中国の間で大型投資・インフラ・技術協力プロジェクトがどの程度進展するか。",
+          "サウジがイラン・イスラエル・トルコなど地域諸国との関係で調停役を自認する発言や行動をどの程度継続するか。"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": false,
+            "description": "湾岸諸国が過去に米国の安全保障傘を維持しつつ、他大国（ソ連、中国等）との関係を利用してレバレッジを高めた事例。",
+            "same_domain": true,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": true,
+            "analogy_source_precedent_id": null,
+            "same_institutional_structure": true
+          }
+        ]
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "サウジの対米・対中・地域外交がバランシング志向である場合、エネルギー市場の急激な分断リスクは一定程度抑制される一方、米中対立や地域緊張の高まりに応じて、石油価格や供給の変動が続く可能性がある。エネルギーコストや湾岸地域への投資・サプライチェーンを持つ企業にとっては、中期的な価格変動と規制環境の変化を前提としたリスク管理が必要となる。",
+        "unrelated_note": null,
+        "environment_change": "サウジが対米・対中・地域外交を通じて自律性を高める場合、エネルギー市場・投資環境・規制枠組みが多極化する可能性があり、企業は特定陣営への過度な依存を避ける戦略が求められる。"
+      },
+      "initial_anomaly": null,
+      "review_findings": null,
+      "audience_analysis": [],
+      "executive_summary": {
+        "what_changed": null,
+        "why_it_matters": null,
+        "what_to_watch_decide": null
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Mohammed bin Salman",
+          "red_line": "体制の存続や自身の王位継承に直接的なリスクをもたらすような対外関係の変化（例：米国の安全保障傘の喪失を伴う急激な陣営転換）は避けるとみられる。",
+          "actor_ref": "MBS",
+          "entity_id": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+          "confidence": "低",
+          "formal_role": null,
+          "evidence_ids": null,
+          "decision_power": null,
+          "driving_forces": [
+            {
+              "force": "国内権力基盤（王族・治安機構・ビジネスエリート）",
+              "direction": "supporting",
+              "description": "反腐敗キャンペーンや対外政策を通じてライバルを排除し、忠誠心を高めることで、体制保証を支える。"
+            },
+            {
+              "force": "米国との安全保障関係",
+              "direction": "constraining",
+              "description": "防空・兵器供給・情報共有などで米国に依存しているため、対中接近や地域外交の範囲には限界がある。"
+            },
+            {
+              "force": "中国との経済・技術関係",
+              "direction": "supporting",
+              "description": "投資・インフラ・技術協力を通じて、経済多角化と対米レバレッジを高める手段となる。"
+            }
+          ],
+          "ability_to_move": null,
+          "issue_objective": "対米・対中・地域外交において、体制保証と王位継承の正当性を損なわない範囲で、自律性と経済・技術・安全保障上のレバレッジを最大化すること。",
+          "observed_action": "中国仲介によるイランとの国交正常化を受け入れ、地域安定と調停役としてのイメージを強調する一方、米国との安全保障関係を維持し続けている。",
+          "vulnerabilities": [
+            "石油依存の高い財政構造とエネルギー転換への脆弱性",
+            "米国の防空・兵器供給への依存",
+            "カショギ事件など人権問題をめぐる国際的批判と制裁リスク"
+          ],
+          "ability_to_block": null,
+          "primary_audience": "国内の王族・エリート層および一般国民（体制の安定と経済的将来への期待を示すため）",
+          "why_actor_matters": "MBSはサウジの実質的な支配者であり、外交・安全保障・経済改革の主要決定を主導している。対米・対中・地域外交は、王位継承と体制保証に直結するため、彼の意思決定が局面を直接動かす。Actor Intelligence Packでも、彼が反腐敗キャンペーンや対外軍事介入を通じてライバル排除と権力基盤強化を進めてきたことが示唆されており、今回の対外関係も同様のパターンで理解する必要がある。",
+          "available_leverage": [
+            "石油生産調整とOPEC+枠組みを通じた世界市場への影響力",
+            "対イラン関係正常化や地域調停役としてのポジション",
+            "対中・対米双方との経済・安全保障関係を利用したバランシング"
+          ],
+          "secondary_audience": "米国・中国・地域諸国（サウジが不可欠なパートナーであり、地域安定の鍵であることを示すため）",
+          "ultimate_objective": "自身の王位継承とサウジ王政の体制保証（国内外での正当性と安全保障の確保）",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "サウジの制度構造上、王族・安全保障機構の影響は無視できないが、Actor Intelligence PackではMBSが主要政策を主導してきたことが示唆されており、現時点では彼個人をKey Actorとするモデルを完全に否定する証拠はない。",
+            "challenge_question": "もしMBSの対外政策が、王室内や安全保障機構の集団的意思に大きく制約されており、彼個人の裁量が想定より小さい場合、現在のActor中心モデルはどの程度有効か。"
+          },
+          "persistent_preference": "公式には反腐敗・対テロ・経済改革などの制度的・道義的目標を掲げつつ、実際にはライバル排除・権力基盤強化を同時に達成する行動パターン。壮大なビジョン（Vision 2030、NEOM等）を掲げる一方で、実行段階では規模や内容を調整し、その縮小を明確には説明しない傾向。",
+          "preference_action_gap": "体制保証と権力基盤強化を最優先するPersistent Preferenceと、対イラン関係正常化や対中接近という行動は整合的に見える。対米関係での一部緊張（人権問題など）にもかかわらず、米国との安全保障関係を維持している点も、体制保証を優先する行動として説明可能であり、大きなギャップは確認できない。",
+          "relevant_decision_patterns": [
+            "公式には反腐敗・治安上の措置として説明される行動が、実際にはライバル・対抗勢力の排除という機能を果たす",
+            "壮大な当初目標を掲げた看板プロジェクトは、実行段階で大幅に縮小されるが、その縮小は公式には明確に説明されない"
+          ],
+          "unavailable_or_costly_cards": [
+            "米国の安全保障傘を完全に放棄して対中陣営に全面的に移行すること（体制保証リスクが高い）"
+          ],
+          "confidence_adjustment_reason": "actor_intelligence_provenance.general_knowledge_used=true and this case has no current-case evidence_ids backing the assessment; confidence capped at low per the P0-1 General Knowledge Confidence Cap (a model-general-knowledge-only actor assumption must not be promoted to medium/high confidence).",
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [
+              "mbs_pattern_official_framing_vs_rival_removal",
+              "mbs_pattern_grand_goal_quiet_scaledown"
+            ],
+            "profile_source": "actor_intelligence_candidate",
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "4e4c23bd-cba6-4db3-885d-71dd554fc564",
+              "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+            ],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "具体的な拘束対象や内部力学の詳細は本Packには含まれておらず、一般的な評価に依拠している可能性がある。",
+              "source": null,
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "リッツカールトン拘束を伴う「反腐敗」キャンペーンで、王族・ビジネスエリートを拘束し、権力基盤を強化したとされる。",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": null,
+              "source": null,
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": "335560c6-e331-4ea8-a836-6ae3ed98d5e3",
+              "date_or_period": "2018",
+              "event_or_behavior": "ジャマル・カショギ殺害事件をめぐる公式説明の変遷（計画性の認定から裁判での否定など）は、責任の範囲を段階的に後退させるコミュニケーションパターンを示唆する。",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "縮小の具体的内容や時期については本Packでは詳細不明。",
+              "source": null,
+              "claim_id": null,
+              "relevance": null,
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "Vision 2030やNEOMなどの大型プロジェクトで、当初の壮大な目標が実行段階で調整・縮小される一方、その縮小が公式には明確に説明されないとされる。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "このパターンは、MBSが対外外交でも公式説明と実際の機能の間にギャップを持たせる可能性を示唆するが、今回のケースでは外部構造要因も大きく、単独の証明にはならない。",
+              "pattern_id": null,
+              "applicability": "medium",
+              "pattern_summary": "公式には反腐敗・治安上の措置として説明される行動が、実際にはライバル・対抗勢力の排除という機能を果たす。",
+              "current_differences": [
+                "対外外交は国内粛清とは異なり、多数の外部アクター（米国・中国・イラン等）が関与するため、MBS単独の意図だけで結果が決まるわけではない。"
+              ],
+              "current_similarities": [
+                "対イラン関係正常化や地域調停役としての外交イニシアチブが、公式には地域安定や経済ビジョンのためと説明される一方、MBSの国際的地位と体制正当性を高める機能を持つ可能性がある。"
+              ],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "公式には反腐敗・治安上の措置として説明される行動が、実際にはライバル・対抗勢力の排除という機能を果たす",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "壮大な当初目標を掲げた看板プロジェクトは、実行段階で大幅に縮小されるが、その縮小は公式には明確に説明されない",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "米国との安全保障関係を維持しつつ、対中・対地域関係を拡大して自律性と交渉レバレッジを高める「多角化・バランシング」志向である可能性が高いが、Actor Intelligence Packは部分的であり確度は中。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "直近5年程度のサウジ・米国間の防衛協定・兵器供給契約の内容と変化は何か。",
+          "rationale": "対米安全保障関係の実質的な変化を把握することで、MBSのバランシング戦略の制約と余地を評価できる。",
+          "related_hypothesis": null,
+          "recommended_sources": "米国政府の公式文書、議会報告書、信頼できる防衛専門メディア。"
+        },
+        {
+          "priority": "高",
+          "question": "サウジ・中国間の大型投資・インフラ・技術協力プロジェクトの実行状況と、そこに含まれる安全保障関連要素は何か。",
+          "rationale": "対中関係の実質的な深さと性質（経済中心か、安全保障要素を含むか）を確認することで、代替シナリオの蓋然性を評価できる。",
+          "related_hypothesis": null,
+          "recommended_sources": "中国・サウジの公式発表、国際機関の報告、専門家分析。"
+        },
+        {
+          "priority": null,
+          "question": "サウジ国内での対中接近・対米関係調整に対する王族・治安機構・宗教勢力の反応はどうか。",
+          "rationale": "Key Stakeholderモデル（MBS個人中心）がどこまで妥当かを検証するための内部力学情報。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "Actor Intelligence Packに示されたPersistent Preference（権力基盤強化・体制保証）と、対イラン関係正常化などの観測事例が整合的であり、他仮説より少ない追加仮定で説明力が高い。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "MBSは体制保証と王位継承の正当性確保を最上位目的とし、対米・対中・地域外交をバランシングしながら自律性とレバレッジを最大化している。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "4e4c23bd-cba6-4db3-885d-71dd554fc564",
+            "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Actor Intelligence Packでは、反腐敗キャンペーンやカショギ事件など、体制保証・権力基盤強化を優先する行動パターンが強調されており、純粋な経済合理性だけでは説明しきれない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "MBSの対外政策は、体制保証よりも経済合理性（石油市場・投資・技術）を最上位目的としており、対米・対中・地域外交は主に経済要因で決まっている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+          ]
+        },
+        {
+          "reason": "構造的要因の影響は大きいが、MBSが反腐敗キャンペーンや対外軍事介入を主導してきた事実から、個人の裁量も無視できない。現時点のEvidenceでは、どちらが支配的かを決定できない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "サウジの対外政策は、MBS個人の意図よりも、米中対立・石油市場・エネルギー転換といった構造的要因によってほぼ自動的に決まっており、個人のPersistent Preferenceを中心に据えるのは過大評価である。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "4e4c23bd-cba6-4db3-885d-71dd554fc564"
+          ]
+        },
+        {
+          "reason": "サウジの制度構造上、集団的意思の影響はあり得るが、Actor Intelligence PackではMBSが主要政策を主導してきたことが示唆されている。追加Evidenceが必要。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "MBSの対外政策は、王室内や安全保障機構の集団的意思に大きく制約されており、彼個人の裁量は想定より小さい。したがって、MBS個人をKey Actorとするモデルは過大評価である。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+          ]
+        },
+        {
+          "reason": "興味深いが、現時点のEvidenceでは、従来の安全保障同盟・エネルギー市場構造の枠内でのバランシングとして説明可能であり、新たな枠組みを採用する必要性は高くない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "対米・対中・地域外交を「バランシング」か「陣営選択」かで捉える枠組み自体が誤っており、MBSはむしろ「ポスト同盟」的な柔軟な取引ネットワーク構築を目指している。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "4e4c23bd-cba6-4db3-885d-71dd554fc564"
+          ]
+        }
+      ],
+      "one_line_assessment": "as_of 2026-08-31時点で、Mohammed bin Salman（MBS）は対米・対中・地域外交を「安全保障上の米国依存を維持しつつ、対中・対地域関係をてこに自律性とレバレッジを最大化する」方向で多角化しているとみるのが最も整合的だが、その動きは一貫した長期戦略というより、権力基盤強化と短期的な交渉レバレッジ確保を優先する漸進的・取引志向の意思決定パターンに沿っているとみるべきであり、確信度は中。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "低",
+        "control_type": "actor_controlled",
+        "evidence_class": "historical_actor_pattern",
+        "hinge_structure": {
+          "primary_hinge": "MBSが自身の王位継承と体制保証を最優先し続けるかどうか",
+          "secondary_hinges": [
+            "米国がサウジ王政に対する安全保障コミットメントをどの程度維持するか",
+            "中国が湾岸地域でどの程度安全保障・経済的プレゼンスを拡大するか",
+            "地域内（イラン・イスラエル・トルコ等）の緊張水準と紛争リスク"
+          ]
+        },
+        "primary_key_point": "MBSの体制保証と王位継承の正当性確保",
+        "rejected_candidates": [
+          {
+            "key_point": "サウジの安全保障の最終保証人としての米国の役割がどこまで維持されるか",
+            "why_not_primary": "対米安全保障関係は極めて重要だが、MBSがどのように対中・対地域外交を組み合わせるかは、最終的には自身の体制保証・王位継承戦略に従属しているとみられる。米国のコミットメントが一定程度変動しても、MBSが体制保証を最優先する限り、対米・対中・地域外交の組み合わせを調整する余地は残るため、「蝶番」としては一段下位の制約条件と位置づけた。"
+          },
+          {
+            "key_point": "米中戦略競争の長期化と湾岸への波及",
+            "why_not_primary": "米中対立はサウジ外交の選択肢を外生的に制約するが、MBSがどの程度バランシングを行うか、どのタイミングでどのカードを切るかは、体制保証・王位継承の優先順位によって変わり得る。構造的背景として重要だが、MBSの行動を直接規定する蝶番とまでは言い難い。"
+          }
+        ],
+        "selection_rationale": "提供されているActor Intelligence Packでは、MBSの行動パターンとして「反腐敗・対テロなどの制度的・道義的目標を掲げた措置が、実際にはライバル排除・権力基盤強化という機能を同時に果たす」「壮大な当初目標が実行段階で縮小されるが、その縮小は公式には明確に説明されない」といった、権力維持・体制保証を中核とするPersistent Preferenceが示唆されている。対米・対中・地域外交も、この体制保証の文脈で理解すると、対イラン関係正常化や対中接近、対米関係調整といった一見ばらばらな動きが、MBS個人の王位継承と体制安定を最大化するための手段として一貫していると解釈しやすい。安全保障の最終保証人としての米国の役割や米中戦略競争は重要な制約だが、それらはMBSが体制保証を追求する際の外生条件として位置づけられるため、「何がこの局面を規定する蝶番か」という観点では、MBSの体制保証志向をPrimaryと置くのが最も説明力が高いと判断した。",
+        "candidate_key_points": [
+          {
+            "key_point": "サウジの安全保障の最終保証人としての米国の役割がどこまで維持されるか",
+            "control_type": "mixed",
+            "what_it_explains": "MBSが対中・対地域外交を拡大しつつも、完全な対米決別には踏み込まず、米国との安全保障関係を維持しようとするバランシング行動を説明し得る。",
+            "why_it_could_be_key": "サウジは対イラン抑止、防空、兵器供給、情報共有などで長年米国に依存してきた。MBSが対中接近や地域外交をどれだけ大胆に進められるかは、米国の安全保障コミットメントがどの程度維持されるか、あるいは条件付きで続くかに大きく依存する。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "国内権力基盤強化やVision 2030など、対外関係以外の要因による外交選好の変化は直接説明しない。",
+            "control_structure_summary": "米国の政権・議会・防衛産業と、サウジ側のMBSの選好・OPEC+内での行動が相互に影響し合う構造であり、単一のアクターだけでは決まらない。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": [
+              "4e4c23bd-cba6-4db3-885d-71dd554fc564"
+            ]
+          },
+          {
+            "key_point": "MBSの体制保証と王位継承の正当性確保",
+            "control_type": "actor_controlled",
+            "what_it_explains": "対イラン関係正常化、中国との関係強化、米国との関係調整などが、いずれも体制の安定とMBS個人の地位強化に資する範囲で行われていることを説明し得る。",
+            "why_it_could_be_key": "MBSは事実上の支配者として、自身の王位継承と体制の安定を最優先しているとみられる。対米・対中・地域外交は、最終的にはこの体制保証を最大化するための手段として選択される可能性が高い。",
+            "controlling_entity_ids": [
+              "c47c90e6-eda1-4f56-9c3e-2b3206fde945"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "石油市場や米中対立など、MBSの意図だけでは制御できない外生ショックへの対応の制約は直接説明しない。",
+            "control_structure_summary": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": [
+              "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+            ]
+          },
+          {
+            "key_point": "米中戦略競争の長期化と湾岸への波及",
+            "control_type": "structural",
+            "what_it_explains": "サウジが対中経済関係を拡大しつつも、米国との安全保障関係を維持しようとする「二股」戦略の背景にある構造的圧力を説明し得る。",
+            "why_it_could_be_key": "米中対立が長期化するほど、サウジはどちらか一方への過度な依存を避けつつ、双方からの圧力と誘因の間でバランスを取る必要が高まる。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "MBSがどのタイミングでどの程度リスクを取るかといった具体的な意思決定の差異は説明しない。",
+            "control_structure_summary": "米中双方の長期的な戦略競争と、それに伴う制裁・技術規制・同盟構造の変化が、サウジの選択肢を外生的に規定する。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "石油市場とエネルギー転換の構造変化",
+            "control_type": "structural",
+            "what_it_explains": "MBSがVision 2030などの経済多角化を掲げつつ、対米・対中双方から投資・技術を引き出そうとする動機を説明し得る。",
+            "why_it_could_be_key": "石油需要の長期的な不確実性とエネルギー転換の進展は、サウジの財政と国内経済モデルに直接影響し、対外関係（投資・技術・市場アクセス）の再設計を迫る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "短期的な外交カード（対イラン関係、イスラエルとの関係など）の具体的な組み合わせは直接説明しない。",
+            "control_structure_summary": "世界的なエネルギー転換、OPEC+枠組み、価格動向など、サウジ単独では制御できない市場構造が外交の制約条件となる。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "MBSが自身の王位継承や体制保証に明確なリスクを伴うにもかかわらず、国内外での人気や象徴的レガシーを優先して、対米・対中・地域外交で大きな譲歩やリスクテイクを行う（例えば、米国の安全保障傘を失う可能性が高いにもかかわらず、対中軍事同盟に近い枠組みに踏み込むなど）場合、このKey Pointの置き方自体を見直す必要が生じる。",
+        "controlling_entity_ids": [
+          "c47c90e6-eda1-4f56-9c3e-2b3206fde945"
+        ],
+        "supporting_evidence_ids": null,
+        "control_structure_summary": null,
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": [
+          "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+        ]
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "本分析はActor Intelligence Pack（partial）と限られた過去事例に基づく仮説であり、直近の具体的な合意内容や内部力学については情報不足が大きい。特に、サウジ国内の王族・治安機構・宗教勢力の反応や、米国・中国側の内部判断については、追加情報なしに断定できない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "MBSが対中関係を安全保障面まで大幅に拡大し、米国の安全保障傘への依存を意図的に減らす「部分的陣営転換」シナリオ。中国との軍事協力や防空システム導入などを通じて、米国の影響力を相対的に低下させる。",
+          "switch_conditions": [
+            "サウジが中国製防空システムや軍事基地提供など、米国が明確に問題視するレベルの軍事協力に踏み込む。"
+          ],
+          "weakening_conditions": [
+            "米国がサウジに対する安全保障保証を再確認し、対中軍事協力に明確なレッドラインを示す。",
+            "中国が湾岸地域での軍事プレゼンス拡大に慎重となり、主に経済協力にとどまる。"
+          ],
+          "strengthening_conditions": [
+            "米国が人権問題や石油政策を理由にサウジへの安全保障コミットメントを大幅に縮小する。",
+            "中国が湾岸地域での安全保障プレゼンスを拡大し、サウジにとって現実的な代替オプションとなる。"
+          ]
+        },
+        {
+          "confidence": "低",
+          "description": "MBSが対米関係の修復と強化を最優先し、対中関係を限定的な経済協力にとどめる「再同盟化」シナリオ。イスラエルとの関係正常化や対イラン強硬姿勢を通じて、米国との戦略的パートナーシップを再強化する。",
+          "switch_conditions": [
+            "サウジ・米国間で、対中軍事協力の制限と引き換えに安全保障保証を明文化した新たな枠組みが結ばれる。"
+          ],
+          "weakening_conditions": [
+            "米国が中東への関与をさらに縮小し、サウジへの安全保障コミットメントを曖昧にし続ける。",
+            "米国内政治要因により、サウジへの兵器供給や安全保障協力が繰り返し停止・遅延する。"
+          ],
+          "strengthening_conditions": [
+            "イランの行動などにより地域の安全保障環境が悪化し、米国との同盟強化が体制保証の観点から最も合理的になる。",
+            "米国がサウジに対して明確な安全保障保証と経済・技術支援を提供し、対中関係の制限を条件とする。"
+          ]
+        }
+      ],
+      "monitoring_indicators": [
+        "サウジと米国の新たな防衛協定・兵器供給契約の発表内容。",
+        "サウジと中国の間で発表される大型投資・インフラ・技術協力プロジェクト。",
+        "サウジがイラン・イスラエル・トルコなどとの関係で調停役を自認する発言や行動。"
+      ],
+      "retraction_conditions": [
+        "MBSが対米・対中・地域外交で、自身の体制保証に明確なリスクを伴うにもかかわらず、象徴的レガシーや短期的な人気取りを優先して大きな譲歩やリスクテイクを行うことが繰り返し観測される。",
+        "サウジの対外政策が、MBSの交代や権力基盤の変化にもかかわらず、ほぼ同じパターンで継続し、個人よりも制度・構造要因が支配的であることを示すEvidenceが蓄積される。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "5c99bd85-72e8-4278-b431-2c96595a8533",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": null,
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "直近5年程度のサウジ・米国間の防衛協定・兵器供給契約の内容と変化は何か。",
+          "rationale": "Key Point（MBSの体制保証志向）とKey Stakeholder（MBS）の制約条件として、対米安全保障関係の実質を確認する必要がある。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "サウジ・中国間の大型投資・インフラ・技術協力プロジェクトの実行状況と、そこに含まれる安全保障関連要素は何か。",
+          "rationale": "Main Scenarioと代替シナリオ（部分的陣営転換）の分岐点となるため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "サウジ国内での対中接近・対米関係調整に対する王族・治安機構・宗教勢力の反応はどうか。",
+          "rationale": "Key Stakeholderモデル（MBS個人中心）がどこまで妥当かを検証するための内部力学情報。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "MBSの対米・対中外交に関する具体的な最近の合意内容（防衛協定、投資・技術協力など）の詳細。",
+          "gap_category": "deterministic",
+          "recommended_action": "公式声明・信頼できる報道・専門家分析を通じて、直近の対米・対中合意の内容と拘束力を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "サウジ国内での対中接近・対米関係調整に対する王族・治安機構・宗教勢力の反応。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "現地報道・専門家インタビューを通じて、国内エリート層の反応と内部力学を把握する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "MBSの対外政策は、体制保証や王位継承よりも、石油市場やエネルギー転換、米中対立といった構造的要因によってほぼ自動的に決まっており、彼個人のPersistent Preferenceを中心に据えるのは過大評価であるという反論。",
+      "key_stakeholder_assessment": {
+        "rationale": "サウジの政治体制上、国王および皇太子が外交・安全保障政策の最終決定権を持つ。Actor Intelligence Packでは、Mohammed bin Salmanが実質的な支配者として、反腐敗キャンペーンや対外軍事介入（イエメン）など主要政策を主導してきたことが示唆されており、対米・対中・地域外交も彼の意思決定に強く依存しているとみるのが妥当である。議会や独立した司法による強い制約は存在せず、王室内の他勢力は過去の粛清等により影響力が低下していると推定されるため、この局面を実際に動かすKey StakeholderはMBS一人と判断する。",
+        "confidence": "中",
+        "evidence_ids": [
+          "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+        ],
+        "determination": "single",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "MBS"
+        ]
+      },
+      "situation_actor_assessment": null,
+      "decisive_power_and_leverage": "as_of 2026-08-31、サウジの対米・対中・地域外交の方向性を最終的に決定づける力は、王位継承と国家安全保障を事実上掌握するMohammed bin Salman個人に集中しているとみるのが妥当だが、その行動は米国の安全保障傘（軍事・防空・兵器供給）と石油市場・OPEC+枠組みという構造的制約に強く縛られている。MBSは対中・対地域関係をレバレッジとして用い、米国からの安全保障・技術・投資コミットメントの条件を引き上げる一方、米国側も防空・兵器供給・政治的庇護を通じてサウジの行動を一定程度制約している。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-01T00:25:35.928966+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "8191c472-4a9c-44cc-b717-bcdd001fab91",
+    "response_id": "064190dd-e8bc-4036-a409-dcb451934078",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Mohammed bin Salman, 米国政府（行政府・議会）, 中国政府",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 33,
+    "failed_count": 1,
+    "created_at": "2026-09-01T00:25:36.347475+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "key_point_assessment",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "MBS"
+    ],
+    "historical_evidence_separations": [
+      "key_point_assessment",
+      "key_point_assessment.candidate_key_points[0]",
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ],
+    "actor_evidence_separations": [
+      "key_actor_profiles[0]:removed=['4e4c23bd-cba6-4db3-885d-71dd554fc564', '335560c6-e331-4ea8-a836-6ae3ed98d5e3']"
+    ]
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 80829,
+    "completion_tokens": 11388,
+    "total_tokens": 92217
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 130375,
+        "prompt_tokens": 37844,
+        "completion_tokens": 8539
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 47359,
+        "prompt_tokens": 42985,
+        "completion_tokens": 2849
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Mohammed bin Salman, 米国政府（行政府・議会）, 中国政府"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 229.64100000006147
+}

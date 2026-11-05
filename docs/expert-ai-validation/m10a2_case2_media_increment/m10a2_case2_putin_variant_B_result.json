@@ -1,0 +1,1183 @@
+{
+  "request": {
+    "request_id": "32ac1ff2-9639-4b6c-8169-6d314ff69cd9",
+    "theme_id": null,
+    "case_id": "d9252cae-1b8d-48d0-ae04-96392cf3b0bd",
+    "mode": "case_analysis",
+    "profile": "deep",
+    "query_text": "現在のプーチンのウクライナ戦争に対する目的と、今後取り得る方向性を分析してください。",
+    "created_at": "2026-09-02T00:21:36.809024+00:00",
+    "run_config": {
+      "variant": "B (Actor + Thinking OS + Evidence Discipline + Media Intelligence)",
+      "case": "case2_putin",
+      "actor_profile_lookup_statuses": [
+        "active",
+        "candidate"
+      ],
+      "actor_profile_retrieval_status": null,
+      "media_intelligence_statuses": [
+        "active",
+        "candidate"
+      ],
+      "actor_intelligence_enabled": true,
+      "media_intelligence_enabled": true,
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "fingerprints": {
+        "geo_expert_engine.py": "a35011e9309dea48",
+        "geo_expert_schema.py": "358640565bdd689c",
+        "geo_expert_quality_guard.py": "c8cbb2ecf9c21c29",
+        "geo_actor_intelligence_service.py": "a4728e75b6b9c3ab",
+        "geo_media_intelligence_service.py": "aa61f22f460b32a5",
+        "geo_knowledge_item_schemas.py": "5ab8d2935eebf4b7",
+        "schemas/geo_expert_ai_response.schema.json": "77a892d2bd1f777f",
+        "geo_persistent_preference_service.py": "47e2b31ccec1b1c5",
+        "geo_foundation_pack_service.py": "11dd58266c423f91"
+      },
+      "case_as_of_date": "2026-08-31"
+    }
+  },
+  "source_pack": {
+    "source_pack_id": "17800601-6f60-4b77-9b0b-b807a7aaf997",
+    "request_id": "6b806bd7-348b-4e5f-a055-54f1730f12cf",
+    "document_ids": [
+      "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+      "2da99e23-535f-4422-9508-82de637db616",
+      "26c11ac6-1a76-4597-a472-51ec78427cf9",
+      "0cf9b058-8ef6-4f88-9b15-bc2adb10243d",
+      "69effb0b-a2e3-4b21-83e9-058be08da482",
+      "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+      "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+      "eba1d367-ab95-41c6-bebd-53a53903bd58"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-02T00:21:33.948161+00:00"
+  },
+  "response": {
+    "response_id": "81eb81c2-70bf-41a8-a613-8103c1291cf6",
+    "request_id": "6b806bd7-348b-4e5f-a055-54f1730f12cf",
+    "source_pack_id": "17800601-6f60-4b77-9b0b-b807a7aaf997",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "ロシア国防省は、ドネツク州の指定地域で72時間の一時停戦を実施し、「全戦線でロシア軍は攻撃行動を完全に停止した」と主張した。",
+          "claim_type": "official_claim",
+          "source_ref": "09e40f1c-2a22-4313-b570-d5df5f6f838b"
+        },
+        {
+          "text": "ロシア国防省は停戦の目的を「人道回廊確保」のためと説明し、ウクライナ側にも同様の対応を求めた。",
+          "claim_type": "official_claim",
+          "source_ref": "09e40f1c-2a22-4313-b570-d5df5f6f838b"
+        },
+        {
+          "text": "ウクライナ大統領府報道官は、ロシア側の停戦発表について「人道的措置というより前線再編のための時間稼ぎだ」と述べた。",
+          "claim_type": "official_claim",
+          "source_ref": "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+        },
+        {
+          "text": "ウクライナ大統領府は、停戦期間中も複数地点で砲撃が続いていると発表した。",
+          "claim_type": "observation",
+          "source_ref": "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+        },
+        {
+          "text": "Kyiv Independentは、停戦発表後もウクライナ東部アウディーイウカ近郊で少なくとも3件の砲撃が確認されたと報じた。",
+          "claim_type": "observation",
+          "source_ref": "26c11ac6-1a76-4597-a472-51ec78427cf9"
+        },
+        {
+          "text": "Kyiv Independentは、軍事アナリストの見解として、ロシア軍が停戦を口実に前線で補給路を再編している可能性を指摘した。",
+          "claim_type": "inference",
+          "source_ref": "26c11ac6-1a76-4597-a472-51ec78427cf9"
+        },
+        {
+          "text": "ISWは、今回の停戦が「局所的かつ限定的」であり、ドネツク州以外の前線では通常規模の交戦が継続していると分析した。",
+          "claim_type": "observation",
+          "source_ref": "69effb0b-a2e3-4b21-83e9-058be08da482"
+        },
+        {
+          "text": "ISWは、停戦のタイミングがロシア軍の定例的な部隊ローテーション時期と重なっている点を根拠に、人道目的よりも作戦上の都合を優先している可能性が高いと留保付きで評価した。",
+          "claim_type": "inference",
+          "source_ref": "69effb0b-a2e3-4b21-83e9-058be08da482"
+        },
+        {
+          "text": "Meduzaは、一部の親ロシア派軍事ブロガーが「今回の停戦は消耗した部隊のローテーションのための措置に過ぎない」と分析していると報じた。",
+          "claim_type": "observation",
+          "source_ref": "cbafe0d5-cdf6-4c95-aa47-854a98959b51"
+        },
+        {
+          "text": "Global Timesは、ロシアの人道的停戦提案を歓迎し、「西側メディアはロシアの和平努力を過小評価し続けている」と論じた。",
+          "claim_type": "official_claim",
+          "source_ref": "2da99e23-535f-4422-9508-82de637db616"
+        },
+        {
+          "text": "Global Timesは、NATOの東方拡大こそがウクライナでの紛争長期化の根本原因であるという中国側の従来の立場を改めて強調した。",
+          "claim_type": "official_claim",
+          "source_ref": "2da99e23-535f-4422-9508-82de637db616"
+        },
+        {
+          "text": "Novaya Gazeta Europeは、停戦期間中の捕虜交換交渉で、ロシア側とウクライナ側の発表する捕虜・行方不明者数に大きな食い違いがあると指摘し、双方の公式発表を併記するにとどめた。",
+          "claim_type": "observation",
+          "source_ref": "0cf9b058-8ef6-4f88-9b15-bc2adb10243d"
+        },
+        {
+          "text": "プーチンはNATO東方拡大を安全保障上の脅威として位置づける公式立場を取っている。",
+          "claim_type": "official_claim",
+          "source_ref": null
+        },
+        {
+          "text": "プーチンのコア目的として、近隣国（旧ソ連圏）に対する影響力の維持・強化が指摘されている。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "プーチンはNATOの旧ソ連圏（特にウクライナ）へのさらなる拡大を明確な一線（レッドライン）として扱っているとされる。",
+          "claim_type": "official_claim",
+          "source_ref": null
+        },
+        {
+          "text": "ロシアはエネルギー輸出収入への財政的依存が構造的制約として存在する。",
+          "claim_type": "observation",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "停戦をめぐる今回の局面では、ロシア側は「人道的停戦」を掲げつつ、実際には前線の再編・部隊ローテーション・補給路整備のための時間を確保している可能性が高く、戦場の主導権維持に有利な形で戦闘強度を調整しているとみられる。他方、ウクライナ側は停戦の実効性に疑義を呈しつつ、国際世論に対してロシアの意図を「時間稼ぎ」と位置づけることで、対ロ制裁・軍事支援の継続を正当化しようとしている。中国系メディア（Global Times）はロシアの停戦を「和平努力」として歓迎し、NATO拡大批判の自国ナラティブを補強している。ISWや独立系メディア、親ロ軍事ブロガーの分析は、ロシア国防省の公式説明と乖離しており、ロシア国内でも作戦目的を優先する見方が存在することを示唆する。",
+      "stakeholders": [
+        {
+          "actor": "Vladimir Putin",
+          "purpose": "ロシア体制の維持と自身の権力の継続、旧ソ連圏におけるロシアの影響圏の維持・拡大、NATO東方拡大の抑止。",
+          "leverage": "国内体制維持・エリート統制、NATO東方拡大への警戒",
+          "position": "現在の局面では、ドネツク州を含む占領地の戦線を維持しつつ、消耗した部隊のローテーションと前線再編を行い、戦争継続能力と交渉ポジションを強化すること。中期的には、ウクライナの完全な西側統合（NATO加盟・安全保障保証）を阻止し、自国に有利な停戦線・政治的取り決めを固定すること。",
+          "red_lines": "ウクライナのNATO加盟や、ロシアが占領する重要地域（クリミア・ドネツクなど）の完全な喪失を伴う和平案。",
+          "confidence": "中",
+          "constraints_fears": "人的損耗・部隊疲弊、エネルギー輸出依存と制裁",
+          "ability_to_move_or_block": "戦闘強度の調整、限定的停戦の発動・延長、動員・予算配分、外交的提案（停戦・和平案）を通じて局面を動かせる。"
+        },
+        {
+          "actor": "ウクライナ政府",
+          "purpose": "ウクライナの主権・領土の防衛と、対ロ制裁・軍事支援の継続確保",
+          "leverage": "戦場での抵抗と、被害・停戦違反の情報発信による世論喚起",
+          "position": "今回の停戦を『前線再編のための時間稼ぎ』と批判し、実効性に疑義を呈することで、対ロ強硬姿勢と支援継続の正当化を図っている。",
+          "priority": "戦場での防衛と西側支援の維持",
+          "red_lines": "ロシアによる占領地の合法化を前提とする和平案",
+          "confidence": "中",
+          "constraints_fears": "領土喪失の固定化、支援疲れによる西側の関与縮小",
+          "key_relationships": "西側主要国との安全保障・経済関係",
+          "ability_to_move_or_block": "ロシアの停戦提案を受け入れず、戦線維持を続けることで、ロシアの望む停戦線固定を阻止し得るが、戦争終結条件を単独で決める力は限定的。"
+        },
+        {
+          "actor": "西側主要国（米国・EU）",
+          "purpose": "欧州安全保障秩序の維持と、ロシアによる一方的な勢力圏拡大の抑止",
+          "leverage": "軍事・経済支援、制裁、外交的承認・保証",
+          "position": "現時点ではロシアの限定的停戦を本格的和平への転換とは見なさず、制裁・支援継続の立場を維持していると推定される（今回資料には直接の公式反応は含まれず）。",
+          "priority": "対ロ制裁・ウクライナ支援の継続と、自国のコスト管理",
+          "red_lines": "ロシアによる大規模なさらなる領土拡大やNATO加盟国への直接攻撃",
+          "confidence": "中",
+          "constraints_fears": "戦争拡大・核エスカレーション、国内の支援疲れ",
+          "key_relationships": "NATO同盟、ウクライナ政府、国内世論",
+          "ability_to_move_or_block": "ウクライナ戦争の持続可能性に決定的影響を与え得るが、ロシア側の戦闘強度調整・停戦カードの運用を直接制御することはできない。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "プーチンの世界観（NATO拡大阻止・影響圏維持）は2026年時点でも大きく変化していない。",
+          "ロシア軍の部隊ローテーション・補給・前線再編は、限定的停戦と結びついて運用されている。",
+          "国内体制維持・エリート統制は、戦争完全停止よりも管理された長期戦を選好する方向に働いている。"
+        ],
+        "description": "現時点では、プーチンのウクライナ戦争に対する目的は、NATO東方拡大を抑止しつつウクライナの主権と戦場の現状を自国に有利な形で固定・管理することにあり、戦争を完全停止するのではなく、戦闘強度を調整しながら長期戦を継続することで、占領地の維持・停戦線の固定・ウクライナの西側統合阻止を図っているとみるのが最も整合的である。今回のドネツク州での72時間停戦は、「人道的停戦」という名目で国内外向けに和平努力を演出しつつ、実際には部隊ローテーション・補給・前線再編のための時間を確保する限定的措置であり、今後も類似の限定停戦・戦闘強度調整を繰り返しながら、戦線維持と交渉ポジション強化を目指す方向性が蓋然性が高い。",
+        "evidence_class": "current_indirect_evidence",
+        "selection_rationale": "複数の現地報道・ISW・親ロ軍事ブロガーが、停戦の局所性・限定性と部隊ローテーション・前線再編との結びつきを指摘しており、ロシア国防省の「全戦線で攻撃停止」「人道回廊確保」という公式説明と乖離している。Actor Intelligence Packが示すプーチンの世界観（NATO拡大阻止・影響圏維持）と組み合わせると、戦争を完全停止するよりも、戦闘強度を調整しつつ戦線維持・停戦線固定を図る長期戦志向が整合的であり、今回の限定停戦はその一環として説明できる。他の仮説（本気の和平志向・短期的戦線拡大志向）は、現時点の資料では支持材料が限定的であり、主シナリオとして置くには説明力が劣る。",
+        "supporting_evidence": [
+          "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+          "69effb0b-a2e3-4b21-83e9-058be08da482",
+          "26c11ac6-1a76-4597-a472-51ec78427cf9",
+          "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+          "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+          "2da99e23-535f-4422-9508-82de637db616"
+        ],
+        "observable_indicators": [
+          "今後の停戦発表の範囲・頻度（局所的・限定的か、広範囲か）。",
+          "ISWや現地報道による停戦実態（砲撃停止の有無・部隊ローテーションとの重なり）。",
+          "ロシア側の公式・準公式発言で、停戦線・占領地維持を前提とした政治的取り決めを示唆する動き。",
+          "西側・ウクライナ側の軍事支援・制裁の継続・強度の変化。"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": false,
+            "description": "過去の紛争で、限定的停戦が部隊ローテーション・補給・前線再編のために利用された事例（一般的な戦争パターン）。",
+            "same_domain": true,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": true,
+            "analogy_source_precedent_id": null,
+            "same_institutional_structure": false
+          }
+        ],
+        "confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "ウクライナ戦争の長期化と戦闘強度調整は、エネルギー価格・物流・制裁環境に継続的な不確実性をもたらし、原材料調達・輸送コスト・サプライチェーン設計に影響し得る。特にエネルギー輸出依存と制裁の組み合わせは、欧州向けエネルギー供給・価格変動を通じて企業のコスト構造に波及する可能性がある。",
+        "unrelated_note": null,
+        "environment_change": "戦争が完全終結せず、限定的停戦・戦闘強度調整が続く場合、企業は長期的な地政学リスクとしてウクライナ戦争を前提に組み込む必要があり、エネルギー・物流・制裁リスクを織り込んだレジリエンス設計が重要になる。"
+      },
+      "initial_anomaly": "ロシア国防省が「全戦線で攻撃行動を完全に停止した」と主張する一方で、ウクライナ側・独立系メディア・ISW・親ロ軍事ブロガーの複数ソースが、停戦が局所的・限定的であり、砲撃継続や部隊ローテーションと結びついていると報じている点。人道目的とされる停戦の実態が、作戦上の再編・消耗部隊の休養に近い可能性が示唆されている。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "putin",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては『人道的停戦・和平努力』を強く打ち出しているが、Substanceとしては局所的・限定的な戦闘強度調整と部隊ローテーションの色彩が強く、本格的な停戦とは言い難い。",
+            "discretion": "現場指揮官レベルで停戦範囲・履行度合いに裁量が残されている可能性が高い",
+            "evidence_ids": [
+              "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+              "69effb0b-a2e3-4b21-83e9-058be08da482",
+              "26c11ac6-1a76-4597-a472-51ec78427cf9",
+              "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+            ],
+            "target_scope": "公式説明上は『全戦線』だが、実態としてはドネツク州の一部に限定されていると複数ソースが示唆",
+            "stated_signal": "人道回廊確保と全戦線での攻撃停止を通じた和平志向・人道的配慮のアピール",
+            "concrete_measure": "ドネツク州の指定地域で72時間の一時停戦を宣言",
+            "enforcement_status": "停戦違反とみられる砲撃が複数報告されており、統一的な厳格履行とは言い難い",
+            "implementation_status": "ISWや現地報道によれば、ドネツク州以外では通常規模の交戦が継続し、一部地域では砲撃も確認されている",
+            "legal_or_policy_force": "国防省声明としての国内的拘束力はあるが、国際法上の正式な停戦合意ではない"
+          },
+          "primary_audience": "国内世論・支持層、および第三国を含む国際世論",
+          "message_hypothesis": "ロシアは責任ある大国として人道的配慮と和平努力を行っている、というイメージを示しつつ、戦場の主導権を維持していることを暗に伝える。",
+          "secondary_audience": "ウクライナ政府と西側諸国",
+          "action_or_statement": "ドネツク州で72時間の一時停戦を「人道回廊確保」の名目で発表し、全戦線で攻撃停止と主張"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "ロシア国防省によるドネツク州での72時間停戦発表と、その実態が局所的・限定的であり、部隊ローテーション・前線再編と結びついている可能性が複数ソースから示された。",
+        "why_it_matters": "プーチンが戦争を完全停止するのではなく、戦闘強度を調整しつつ長期戦を継続する方向性を維持している可能性が高く、占領地維持・停戦線固定・ウクライナの西側統合阻止を目的とする戦略が続くとすれば、エネルギー・物流・制裁環境の不確実性が長期化する。",
+        "what_to_watch_decide": "ロシア側の今後の停戦発表と実態、プーチンの公式・準公式発言での最終目標の示唆、西側・ウクライナ側の支援・制裁の継続・強度を監視し、長期戦前提のレジリエンス設計と、和平模索シナリオへの備えを検討する。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Vladimir Putin",
+          "red_line": "ウクライナのNATO加盟や、ロシアが占領する重要地域（クリミア・ドネツクなど）の完全な喪失を伴う和平案。",
+          "actor_ref": "putin",
+          "entity_id": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+          "confidence": "中",
+          "formal_role": "ロシア連邦大統領。国家安全保障・外交・軍事政策の最終決定権を持つ。",
+          "evidence_ids": [
+            "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+            "69effb0b-a2e3-4b21-83e9-058be08da482",
+            "2da99e23-535f-4422-9508-82de637db616"
+          ],
+          "decision_power": "ウクライナ戦争に関する戦略目標・停戦・動員・交渉方針について最終的な決定権と拒否権を持つ。",
+          "driving_forces": [
+            {
+              "force": "国内体制維持・エリート統制",
+              "direction": "supporting",
+              "description": "ワグネル反乱後、軍事・準軍事組織の統制と体制維持が最優先となっており、戦争を完全停止せず管理された強度で継続することが権力維持に資する。"
+            },
+            {
+              "force": "NATO東方拡大への警戒",
+              "direction": "supporting",
+              "description": "ウクライナの完全な西側統合を阻止するため、戦線維持と停戦線の固定が重要となる。"
+            },
+            {
+              "force": "人的損耗・部隊疲弊",
+              "direction": "constraining",
+              "description": "長期戦による部隊の消耗が戦争継続能力を制約しており、限定的停戦やローテーションが必要。"
+            },
+            {
+              "force": "エネルギー輸出依存と制裁",
+              "direction": "constraining",
+              "description": "制裁とエネルギー市場の変動が財政的余地を制約し、戦闘強度調整・停戦カードの使い方に影響。"
+            }
+          ],
+          "ability_to_move": "戦闘強度の調整、限定的停戦の発動・延長、動員・予算配分、外交的提案（停戦・和平案）を通じて局面を動かせる。",
+          "issue_objective": "現在の局面では、ドネツク州を含む占領地の戦線を維持しつつ、消耗した部隊のローテーションと前線再編を行い、戦争継続能力と交渉ポジションを強化すること。中期的には、ウクライナの完全な西側統合（NATO加盟・安全保障保証）を阻止し、自国に有利な停戦線・政治的取り決めを固定すること。",
+          "observed_action": "ロシア国防省を通じてドネツク州で72時間の一時停戦を「人道回廊確保」の名目で発表し、「全戦線で攻撃行動を完全に停止した」と主張する一方、実際には局所的な砲撃継続や部隊ローテーションと重なる限定的停戦を運用していると複数ソースが報じている。",
+          "vulnerabilities": [
+            "長期戦による人的損耗と部隊疲弊",
+            "制裁とエネルギー輸出依存による財政・経済の脆弱性",
+            "ワグネル反乱に示されたような準軍事組織・エリート間の不満"
+          ],
+          "ability_to_block": "ロシア軍の全面撤退・譲歩的和平案・NATOとの妥協的合意を拒否し、戦争継続や戦線固定を選択することで、他主体の和平努力を阻止し得る。",
+          "action_substance": {
+            "assessment": "人道的停戦というラベルに比べ、実質は戦闘強度調整と部隊ローテーションのための限定措置であり、和平プロセスへの本格的コミットメントとは距離がある。",
+            "discretion": "現場裁量が大きく、停戦の運用は不均一",
+            "evidence_ids": [
+              "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+              "69effb0b-a2e3-4b21-83e9-058be08da482",
+              "26c11ac6-1a76-4597-a472-51ec78427cf9",
+              "cbafe0d5-cdf6-4c95-aa47-854a98959b51"
+            ],
+            "target_scope": "ドネツク州の一部前線に事実上限定",
+            "stated_signal": "ロシアは人道的配慮と和平努力を行っているという対内外向けシグナル",
+            "concrete_measure": "ドネツク州指定地域での72時間停戦宣言",
+            "enforcement_status": "停戦違反とみられる砲撃が複数報告されている",
+            "implementation_status": "局所的には停戦が機能している可能性があるが、他前線では交戦継続",
+            "legal_or_policy_force": "国防省声明レベルの一時的措置"
+          },
+          "primary_audience": "国内世論とロシア支持層、および第三国（中国など）と国際世論に対して、ロシアが「人道的停戦」「和平努力」を行っているというイメージを示す。",
+          "why_actor_matters": "プーチンはウクライナ戦争に関するロシア側の戦略目標・戦闘強度・停戦カードの使い方を決める最終意思決定者であり、NATO拡大阻止・旧ソ連圏への影響圏維持という長期目的を持つ。彼の判断は、戦争の継続・拡大・限定停戦・交渉入りのいずれにおいても決定的であり、他のロシア国内主体（軍・安全保障機構）はその枠内で行動するため、現在の目的と今後の方向性を読むうえで中心的なActorとなる。",
+          "available_leverage": [
+            "戦闘強度の調整（攻勢・防御・限定停戦）",
+            "動員・予算配分による戦争継続能力の強化",
+            "対西側・第三国への情報戦・ナラティブ発信",
+            "エネルギー輸出・資源外交を通じた経済的レバレッジ"
+          ],
+          "secondary_audience": "ウクライナ側と西側諸国に対して、戦場での主導権と戦争継続能力を誇示しつつ、停戦カードを交渉材料として提示する。",
+          "ultimate_objective": "ロシア体制の維持と自身の権力の継続、旧ソ連圏におけるロシアの影響圏の維持・拡大、NATO東方拡大の抑止。",
+          "actor_model_challenge": null,
+          "persistent_preference": "旧ソ連圏（特にウクライナ・ジョージア）に対するロシアの影響圏維持と、NATO東方拡大の阻止を安全保障上の最優先事項とみなし、軍事力・情報戦・外交を組み合わせてこれを追求する傾向。",
+          "preference_action_gap": "上位の世界観・目的（NATO拡大阻止・影響圏維持）と、今回の限定的停戦は整合的である。戦争を完全停止するのではなく、戦闘強度を調整しつつ戦線を維持することは、長期目的に沿った行動であり、表向きの「人道的停戦」と実質的な作戦目的の間にギャップがある。ギャップは主にAudience向けのシグナル（人道的イメージ・第三国向け和平努力の演出）と、実質的な軍事目的（部隊ローテーション・補給）の違いとして説明できる。",
+          "relevant_decision_patterns": [
+            "NATO拡大を脅威とみなし、軍事力・情報戦・外交を組み合わせて影響圏維持を図るパターン",
+            "国内の挑戦者（プリゴジンなど）に対して最終的に強硬な対応を取るパターン"
+          ],
+          "unavailable_or_costly_cards": [
+            "全面的な戦争停止と占領地からの撤退（国内体制・安全保障上のコストが高い）",
+            "ウクライナのNATO加盟容認（レッドラインに反する）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "actor_intelligence_active",
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8",
+              "d0ef206d-d8d0-4697-8781-bc310387fc31"
+            ],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "過去の発言であり、現在も同じ強度で維持されているかは追加確認が必要。",
+              "source": "Actor Intelligence Pack（knowledge_item_id: c7582597-f5fe-4bf9-a521-b9cbac5e7dd8）",
+              "claim_id": null,
+              "relevance": "NATO拡大阻止を上位目的とする世界観の継続性を示す。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "NATO東方拡大を安全保障上の脅威として位置づける公式発言・戦略的コミュニケーション（Direct Line/Valdai Club等）",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "ウクライナ戦争そのものの目的ではなく、国内権力維持の側面。",
+              "source": "Actor Intelligence Pack（knowledge_item_id: d0ef206d-d8d0-4697-8781-bc310387fc31）",
+              "claim_id": null,
+              "relevance": "体制維持・権力集中を最優先し、軍事・準軍事組織を統制下に置こうとする傾向を示す。",
+              "evidence_id": null,
+              "date_or_period": "2023年6〜8月",
+              "event_or_behavior": "ワグネル反乱後のプリゴジンの死と、体制への挑戦に対する強硬な対応",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "NATO拡大を脅威とみなし、軍事力・情報戦・外交を組み合わせて影響圏維持を図るパターン",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "国内の挑戦者（プリゴジンなど）に対して最終的に強硬な対応を取るパターン",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "NATO・米欧との関係では、ロシアの安全保障上の要求（勢力圏・不拡大）を認めさせる形での緊張管理を志向し、ウクライナを完全な西側陣営に組み込ませない関係を好むと推定される。中国など第三国とは、対西側ナラティブの補強・経済・エネルギー協力を通じた戦略的パートナー関係を志向。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "プーチンが現在想定しているウクライナ戦争の最終的な領土線・政治的取り決めは何か。",
+          "rationale": "最終目的が分からないと、限定的停戦が長期戦の一環なのか、和平への前段階なのかを判断できない。",
+          "related_hypothesis": "プーチンは占領地維持とウクライナの西側統合阻止を目的として戦線固定を目指している。",
+          "recommended_sources": "信頼できるロシア専門家の分析、ロシア側の公式・準公式発言、欧米情報機関の公開評価。"
+        },
+        {
+          "priority": "中",
+          "question": "ロシア国内世論・エリート間で、限定的停戦や戦争長期化がどのように受け止められているか。",
+          "rationale": "国内の支持・不満の度合いは、プーチンの今後の方向性（長期戦継続か和平模索か）に影響する。",
+          "related_hypothesis": "体制維持・エリート統制が戦争継続を支持している。",
+          "recommended_sources": "ロシア国内世論調査、エリート発言、独立系メディア分析。"
+        },
+        {
+          "priority": null,
+          "question": "限定的停戦と部隊ローテーションの結びつきは、他の前線・時期でも一貫して観測されているか。",
+          "rationale": "Primary Key Point（戦闘強度調整と限定停戦運用）の妥当性確認。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "複数ソースが停戦の局所性・限定性と部隊ローテーションとの結びつきを示唆し、Actor Intelligence Packの世界観とも整合する。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "プーチンはNATO拡大阻止と影響圏維持を目的に、戦闘強度を調整しつつ長期戦を継続し、限定的停戦を部隊ローテーション・前線再編のために利用している。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "69effb0b-a2e3-4b21-83e9-058be08da482",
+            "26c11ac6-1a76-4597-a472-51ec78427cf9",
+            "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+            "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+          ],
+          "contradicting_evidence_ids": [
+            "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+            "0cf9b058-8ef6-4f88-9b15-bc2adb10243d"
+          ]
+        },
+        {
+          "reason": "現時点の資料では広範な停戦・具体的和平案の兆候が乏しく、停戦が局所的・限定的であることがむしろ作戦目的優先を示唆している。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "プーチンは戦争長期化による損耗・制裁・国内不満を受けて、本気で広範な停戦・政治的合意への道を模索し始めており、限定的停戦は制度・現場の混乱や不信による履行不完全さに過ぎない。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": [
+            "0cf9b058-8ef6-4f88-9b15-bc2adb10243d"
+          ],
+          "contradicting_evidence_ids": [
+            "69effb0b-a2e3-4b21-83e9-058be08da482",
+            "26c11ac6-1a76-4597-a472-51ec78427cf9"
+          ]
+        },
+        {
+          "reason": "構造要因の重要性は高いが、今回の停戦発表・運用にはプーチンと軍の意思決定も関与しているとみられ、どこまで構造要因が主導しているかは今回資料からは判断不能。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "ウクライナ戦争の現在の局面は、プーチン個人の意思よりも、エネルギー輸出依存・制裁・人的損耗といった構造要因によって自動的に戦闘強度調整・限定停戦が選択されている。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "09e40f1c-2a22-4313-b570-d5df5f6f838b"
+          ]
+        },
+        {
+          "reason": "今回資料にはそのような優先順位変更を示す証拠がなく、Global TimesのNATO批判などは従来ナラティブの継続を示している。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "プーチンのNATO拡大阻止・影響圏維持というPersistent Preference自体が変化しつつあり、現在は経済再建・国内安定を優先している。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "2da99e23-535f-4422-9508-82de637db616"
+          ]
+        },
+        {
+          "reason": "ワグネル反乱後の権力統制は重要だが、今回資料は停戦の戦場上の運用と部隊ローテーションに焦点を当てており、国内権力闘争が主目的であることを示す直接証拠はない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "今回の停戦は、ウクライナ戦争そのものではなく、ロシア国内の権力闘争や軍内部の再編を主目的とする行動であり、戦場はその副次的舞台に過ぎない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "69effb0b-a2e3-4b21-83e9-058be08da482",
+            "cbafe0d5-cdf6-4c95-aa47-854a98959b51"
+          ]
+        }
+      ],
+      "one_line_assessment": "現時点の公開資料からは、プーチンのウクライナ戦争に対する目的は、NATO東方拡大を抑止しつつウクライナの主権と戦場の現状を自国に有利な形で固定・管理することにあり、今回の「人道的停戦」は戦略的・作戦的な余裕を確保するための限定的カードとして使われている可能性が高いが、最終的な領土線・戦争終結条件については不確実性が大きい。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "mixed",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "プーチンとロシア軍が、戦闘強度と限定的停戦をどの程度の範囲・頻度で運用しつつ部隊ローテーション・補給・前線再編を進めるか",
+          "secondary_hinges": [
+            "西側・ウクライナ側の軍事支援と制裁の継続・強度（戦争継続能力と交渉ポジションに影響）",
+            "国内政治・世論・エリート間力学（ワグネル反乱後の統制維持と損耗許容度）",
+            "エネルギー輸出収入・経済制裁の実効性（長期戦の持続可能性）"
+          ]
+        },
+        "primary_key_point": "ロシア軍による戦闘強度の調整と限定的停戦の運用",
+        "rejected_candidates": [
+          {
+            "key_point": "NATO東方拡大を安全保障上の脅威とみなすプーチンの世界観とレッドライン",
+            "why_not_primary": "戦争の根本原因・長期目的を説明するうえでは重要だが、今回の限定停戦の具体的タイミング・範囲・運用を直接規定しているわけではなく、短期の行動選択を読む蝶番としては一段上位の背景要因にとどまる。"
+          },
+          {
+            "key_point": "ロシアのエネルギー輸出依存と戦争継続能力",
+            "why_not_primary": "戦争継続の財政的制約として重要だが、今回の停戦が部隊ローテーションと重なっているという観測との直接の紐付けが資料内に示されておらず、現局面の具体的行動選択を説明するには補助的な構造要因にとどまる。"
+          },
+          {
+            "key_point": "第三国（中国）によるロシアナラティブの補強",
+            "why_not_primary": "情報戦・外交戦の文脈では重要だが、停戦の実際の運用や戦闘強度調整はロシア軍・プーチンの決定に依存しており、中国メディアの論調はそれを外側から補強する要素であって、局面の蝶番とは言い難い。"
+          }
+        ],
+        "selection_rationale": "今回の資料群は、ドネツク州での72時間停戦という具体的事象と、その実態が局所的・限定的であり、部隊ローテーション・前線再編と結びついているという複数ソースの観測に集中している。プーチンの世界観やエネルギー依存は戦争全体の背景として重要だが、現在の局面（限定停戦）を直接動かしている蝶番は、戦闘強度の調整と停戦カードの運用であり、これがプーチンの短期的目的と今後の方向性（追加停戦・部分的エスカレーション・戦線固定）を読む鍵になるため。",
+        "candidate_key_points": [
+          {
+            "key_point": "ロシア軍による戦闘強度の調整と限定的停戦の運用",
+            "control_type": "actor_controlled",
+            "what_it_explains": "なぜ停戦が「局所的かつ限定的」であり、ドネツク州以外で交戦が継続しているのか（ISWの分析）。なぜ親ロ軍事ブロガーやウクライナ側が停戦を部隊ローテーション・前線再編のための措置と見ているのか。プーチンが戦争を完全停止せず、管理された強度で継続している理由。",
+            "why_it_could_be_key": "プーチンは戦争全体のエスカレーション/デスカレーションを、自国の損耗・国内政治・対西側関係を勘案しながら管理する必要があり、今回の局所的停戦は戦闘強度を調整しつつ部隊ローテーション・補給を行うための手段として機能している可能性が高い。戦闘強度の調整は、戦争継続能力と交渉ポジションの両方に直結する。",
+            "controlling_entity_ids": [
+              "897329dc-fbfe-4e2f-b0a1-41e621c065c0"
+            ],
+            "supporting_evidence_ids": [
+              "69effb0b-a2e3-4f21-83e9-058be08da482",
+              "26c11ac6-1a76-4597-a472-51ec78427cf9",
+              "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+              "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+            ],
+            "what_it_does_not_explain": "ロシアの最終的な領土目標（占領地の維持か拡大か）、ウクライナ側・西側の今後の対応、停戦が国内世論にどう受け止められているか。",
+            "control_structure_summary": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "NATO東方拡大を安全保障上の脅威とみなすプーチンの世界観とレッドライン",
+            "control_type": "structural",
+            "what_it_explains": "なぜロシアがウクライナ戦争を継続し、NATO拡大を紛争長期化の根本原因とするナラティブ（Global Times記事に反映）を維持しているのか。なぜプーチンがウクライナの完全な西側統合を受け入れ難いのか。",
+            "why_it_could_be_key": "Actor Intelligence Packによれば、プーチンはNATO東方拡大を安全保障上の脅威と位置づけ、旧ソ連圏（特にウクライナ）へのさらなる拡大をレッドラインとしている。この世界観は、ウクライナ戦争の発生・継続・停戦カードの使い方に一貫して影響していると考えられ、戦争の目的を「領土拡大」だけでなく「NATO拡大の阻止・影響圏維持」として読む鍵になる。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "2da99e23-535f-4422-9508-82de637db616"
+            ],
+            "what_it_does_not_explain": "具体的な戦場での停戦の範囲・タイミング、捕虜交換交渉の詳細、国内政治の短期的動き。",
+            "control_structure_summary": "プーチン個人の世界観とロシア安全保障エリートの長年の認識が重なり、NATO拡大を脅威とみなす構造的な認識枠組みが形成されている。これは単発の意思決定ではなく、長期的な戦略文化・安全保障ドクトリンに根ざした構造要因であり、個々の停戦や戦術的動きの背後にある。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": [
+              "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8"
+            ]
+          },
+          {
+            "key_point": "ロシアのエネルギー輸出依存と戦争継続能力",
+            "control_type": "structural",
+            "what_it_explains": "なぜロシアが戦争を完全停止せず、制裁下でもエネルギー輸出ルートの維持・多角化に努めるのか。戦争が長期化する中で、戦闘強度調整や限定停戦が財政・人的損耗の管理手段となる理由。",
+            "why_it_could_be_key": "ロシアはエネルギー輸出収入に財政的に依存しており、戦争継続には財政・経済基盤が不可欠である。制裁・エネルギー価格・輸出ルートの変化は、プーチンの戦争目的と戦闘強度調整に制約を与える構造要因となる。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "今回のドネツク州限定停戦の具体的タイミングや範囲、捕虜交換交渉の詳細。",
+            "control_structure_summary": "世界のエネルギー市場構造とロシアの輸出依存が、戦争継続の財政的余地を規定している。プーチン個人の意思だけでなく、価格・需要・制裁の組み合わせが戦争の持続可能性を制約する。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "第三国（中国）によるロシアナラティブの補強",
+            "control_type": "distributed",
+            "what_it_explains": "なぜGlobal Timesがロシアの停戦を歓迎し、NATO拡大批判を繰り返しているのか。プーチンにとって、第三国のメディアが自国ナラティブを補強することが情報戦上のレバレッジになる点。",
+            "why_it_could_be_key": "Media Intelligence Packによれば、紛争当事国ではない第三国は、当事国間の対立を自国の戦略的ナラティブ補強に利用する傾向がある。Global Timesはロシアの停戦を「和平努力」として歓迎し、NATO拡大批判を強調している。これはプーチンの対西側情報戦・外交戦にとって重要な支援要素となり得る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "2da99e23-535f-4422-9508-82de637db616"
+            ],
+            "what_it_does_not_explain": "ロシア国内の意思決定プロセス、停戦の具体的運用、プーチンの短期的軍事目標。",
+            "control_structure_summary": "ロシアと中国のナラティブが相互補強し、西側の対ロ認識・制裁・支援に影響を与える可能性がある。これは単一のActorではなく、複数国家系メディア・外交チャネルの相互作用による。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "今後の停戦発表が広範囲にわたり、ISWや現地報道・ウクライナ側の発表でも実際に砲撃停止・前線活動の大幅な縮小が一貫して確認され、人道目的が主であることを示す証拠が積み重なった場合には、「戦闘強度調整と作戦上の都合が主目的」というKey Pointの置き方自体を見直す必要がある。",
+        "controlling_entity_ids": [
+          "897329dc-fbfe-4e2f-b0a1-41e621c065c0"
+        ],
+        "supporting_evidence_ids": [
+          "69effb0b-a2e3-4b21-83e9-058be08da482",
+          "26c11ac6-1a76-4597-a472-51ec78427cf9",
+          "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+          "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+        ],
+        "control_structure_summary": "戦闘強度と限定停戦の運用は、プーチンとロシア軍の意思決定により直接制御される一方で、西側支援・制裁、国内政治、経済構造といった制度・構造要因に制約される複合構造である。",
+        "contradicting_evidence_ids": [
+          "09e40f1c-2a22-4313-b570-d5df5f6f838b"
+        ],
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null
+      },
+      "media_source_context": {
+        "narrative_deviation": [
+          {
+            "source": "Global Times",
+            "evidence_ids": [
+              "2da99e23-535f-4422-9508-82de637db616"
+            ],
+            "why_it_matters": "プーチンの世界観（NATO拡大を脅威とみなす）と整合的な第三国ナラティブが形成されており、対西側情報戦・外交戦でロシアの立場を補強する役割を果たし得る。",
+            "current_assessment": "中国側の既存ナラティブ補強としては整合的だが、停戦の実態評価としては偏ったフレーミングであり、戦場の事実を直接裏付けるものではない。",
+            "source_attribution": "named",
+            "verification_method": "中国外交部公式声明や他の中国系メディア論調との比較、ISW等第三者評価とのクロスチェック",
+            "deviation_from_mainstream": "ロシアの停戦提案を『人道的・和平努力』として歓迎し、紛争長期化の根本原因をNATO東方拡大に求める点で、ISWやウクライナ側・独立系メディアの『作戦上の時間稼ぎ』評価と大きく異なる。"
+          }
+        ],
+        "source_of_sources_note": null,
+        "media_editorial_context": [
+          {
+            "caveat": "Media Pattern Candidatesに基づく一般的傾向参照であり、今回記事の全文は未取得",
+            "outlet": "Global Times(想定)",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "2da99e23-535f-4422-9508-82de637db616"
+                ],
+                "observation_text": "ロシアの人道的停戦提案を歓迎し、西側メディア批判とNATO拡大批判を強調",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "2da99e23-535f-4422-9508-82de637db616"
+                ],
+                "observation_text": "『和平努力』『西側メディアはロシアの和平努力を過小評価』など、ロシア側に好意的な表現を使用",
+                "observation_type": "wording"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_framing",
+                "evidence_class": "historical_media_pattern",
+                "hypothesis_text": "中国系国家メディアとして、ロシアの停戦提案を『人道的・和平努力』として肯定的に描き、西側メディアを批判することで、自国の既存ナラティブ（NATO拡大批判・西側の偏向報道批判）を補強している可能性が高い。",
+                "corroboration_basis": "behavioral_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": null,
+                "supporting_evidence_ids": [
+                  "2da99e23-535f-4422-9508-82de637db616"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              },
+              {
+                "status": "partially_supported",
+                "category": "source_signaling",
+                "confidence": "低",
+                "question_type": "intended_audience",
+                "evidence_class": "historical_media_pattern",
+                "hypothesis_text": "主な対象は中国国内世論とグローバル・サウスの読者であり、ロシアと中国がNATO拡大批判で足並みを揃えていることを示す対外シグナルとして機能している可能性がある。",
+                "corroboration_basis": "single_source_only",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単にロシア寄りの論調を維持する通常運転であり、特段の新しいシグナルではない可能性。",
+                "supporting_evidence_ids": [
+                  "2da99e23-535f-4422-9508-82de637db616"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": null
+              }
+            ],
+            "document_id": "2da99e23-535f-4422-9508-82de637db616",
+            "omitted_actor_analysis": null
+          }
+        ]
+      },
+      "unknown_or_uncertain": "プーチンが現在のウクライナ戦争において、最終的にどの領土線・政治的取り決めを受け入れる用意があるのかは、今回の資料からは判断できない。また、国内世論・エリート間の支持・不満の度合いも不明であり、長期戦継続と和平模索の間の優先順位を確定することはできない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "限定的停戦は、プーチンが戦争長期化による損耗・制裁・国内不満を受けて、占領地の一部維持と引き換えにより広範な停戦・政治的合意を模索し始めている前段階であり、国際世論向けの『和平努力』演出と交渉ポジション調整に使われている。",
+          "evidence_class": "current_indirect_evidence",
+          "switch_conditions": [
+            "広範囲な停戦が継続し、複数の独立ソースで戦闘停止が確認される。",
+            "譲歩を含む具体的和平案が提示・履行される。"
+          ],
+          "weakening_conditions": [
+            "限定的停戦が部隊ローテーションと結びついた局所的措置として繰り返されるが、広範な停戦・政治的合意の具体案が提示されない。",
+            "ロシア側の発言で、領土拡大や停戦線固定へのこだわりが強調され続ける。"
+          ],
+          "strengthening_conditions": [
+            "ロシア側から、停戦線・安全保障保証・ウクライナの中立化などを含む具体的な和平案が提示される。",
+            "広範囲な停戦が実際に履行され、ISWや現地報道でも戦闘停止が確認される。",
+            "プーチンの公式・準公式発言で、経済再建・国内安定を前面に出した新たな優先順位が繰り返し示される。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "プーチンが、現在の限定的停戦を利用して戦力再編・補給を行い、近い将来に特定戦線での攻勢強化・領土拡大を目指している可能性。停戦は一時的な準備期間であり、長期戦よりも短期的な戦果獲得を優先している。",
+          "evidence_class": "current_indirect_evidence",
+          "switch_conditions": [
+            "停戦直後に大規模攻勢が確認され、占領地拡大が明確になる。"
+          ],
+          "weakening_conditions": [
+            "停戦後も戦闘強度が大きく変化せず、戦線維持・消耗戦が続く。",
+            "ロシア側の発言で、戦果拡大よりも戦線維持・停戦線固定が強調される。"
+          ],
+          "strengthening_conditions": [
+            "停戦終了後に特定戦線での大規模攻勢が観測される。",
+            "ロシア側の公式・準公式発言で、新たな領土目標や戦果拡大への言及が増える。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "今後のロシア側による停戦発表の範囲・頻度・名目。",
+        "ISWや現地報道による停戦実態（砲撃停止・部隊ローテーション・前線再編）。",
+        "ロシア側の公式・準公式発言での最終目標（領土線・政治的取り決め）の示唆。",
+        "西側・ウクライナ側の軍事支援・制裁の継続・強度。"
+      ],
+      "retraction_conditions": [
+        "ロシア側から、占領地の大幅な返還やウクライナの安全保障保証を含む譲歩的和平案が提示され、それが実際に履行される。",
+        "広範囲な停戦が継続し、ISWや現地報道・ウクライナ側の発表でも戦闘停止が一貫して確認される。",
+        "プーチンの公式・準公式発言で、NATO拡大阻止・影響圏維持よりも経済再建・国内安定を優先する新たな世界観が示される。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "bd4afb08-09c6-422b-99a3-10f624f9b23b",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "2da99e23-535f-4422-9508-82de637db616",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "26c11ac6-1a76-4597-a472-51ec78427cf9",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "0cf9b058-8ef6-4f88-9b15-bc2adb10243d",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "69effb0b-a2e3-4b21-83e9-058be08da482",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "eba1d367-ab95-41c6-bebd-53a53903bd58",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "Novaya Gazeta Europeが捕虜交換交渉の食い違いを報じつつ真偽判断を避けている点は、停戦期間中の人道措置の実態が不透明であり、ロシア側の意図を一義的に「作戦目的優先」と断定しにくいことを示している。",
+      "contradicting_evidence": [
+        "0cf9b058-8ef6-4f88-9b15-bc2adb10243d"
+      ],
+      "investigation_questions": [
+        {
+          "question": "プーチンが現在想定しているウクライナ戦争の最終的な領土線・政治的取り決めは何か。",
+          "rationale": "Key Actorの最終目的とMain Scenarioの前提を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ロシア国内世論・エリート間で、限定的停戦や戦争長期化がどのように受け止められているか。",
+          "rationale": "Preference-Action Gapと今後の方向性（長期戦継続か和平模索か）を読むため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "限定的停戦と部隊ローテーションの結びつきは、他の前線・時期でも一貫して観測されているか。",
+          "rationale": "Primary Key Point（戦闘強度調整と限定停戦運用）の妥当性確認。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "プーチンが現在のウクライナ戦争において、最終的な領土線（占領地の維持・拡大・縮小）をどのように設定しているかの具体的な目標。",
+          "gap_category": "deterministic",
+          "recommended_action": "信頼できる専門家分析・ロシア側の公式・準公式発言の追加収集。"
+        },
+        {
+          "priority": "中",
+          "description": "ロシア国内世論・エリート間で、限定的停戦や戦争長期化がどのように受け止められているか。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "ロシア国内世論調査・エリート発言・独立系メディア分析の参照。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "限定的停戦は、部隊ローテーションや前線再編のための作戦上の措置ではなく、戦争長期化による損耗・制裁・国内不満を受けて、プーチンが本気で広範な停戦・政治的合意への道を模索し始めている兆候であり、現時点の局所的・限定的な実態は、制度・現場の混乱や双方の不信による履行の不完全さに過ぎないという見方。",
+      "key_stakeholder_assessment": {
+        "rationale": "ウクライナ戦争におけるロシア側の最終的な戦争目的・戦闘強度・停戦カードの使い方は、制度上も実質的にもロシア大統領プーチンに強く集中している。Actor Intelligence Packでも、プーチンは旧ソ連圏への影響力維持・NATO拡大阻止をコア目的とし、ウクライナ戦争に関する決定権と拒否権を持つ主体として位置づけられているため、今回の局所的停戦と今後の方向性を読むうえでKey Stakeholderとみなすのが妥当である。",
+        "confidence": "中",
+        "evidence_ids": [
+          "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+          "69effb0b-a2e3-4b21-83e9-058be08da482",
+          "2da99e23-535f-4422-9508-82de637db616"
+        ],
+        "determination": "single",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "putin"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "putin",
+          "confidence": "中",
+          "evidence_ids": [
+            "09e40f1c-2a22-4313-b570-d5df5f6f838b",
+            "69effb0b-a2e3-4b21-83e9-058be08da482",
+            "26c11ac6-1a76-4597-a472-51ec78427cf9",
+            "cbafe0d5-cdf6-4c95-aa47-854a98959b51",
+            "bd4afb08-09c6-422b-99a3-10f624f9b23b"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "部隊の再編・補給を行いながら戦線を維持し、戦果を失わずに長期戦を継続できる状態。",
+          "issue_component": "限定的停戦の運用（ドネツク州72時間停戦）",
+          "likely_reaction": "戦況や損耗状況に応じて、今後も類似の限定停戦を断続的に用いる可能性が高い。",
+          "current_red_line": "停戦によって戦線が不利な形で後退する、あるいは占領地からの撤退を強いられることは避けたい。",
+          "stated_preference": "人道回廊確保のための停戦",
+          "instrumental_value": "instrumental",
+          "priority_rationale": "戦場の損耗管理と戦線維持、交渉ポジション形成に直結するため、プーチンにとって極めて重要なツール。",
+          "currently_tradeable": "交渉カードとして停戦範囲・期間を調整することはあり得るが、占領地防衛を損なう形での広範停戦は現時点では取引しにくい。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "2da99e23-535f-4422-9508-82de637db616"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "戦闘強度の調整と停戦カードの発動",
+          "effect_on_actor_objective": "戦争継続能力を維持しつつ、占領地防衛と停戦線固定を図ることに資する。",
+          "estimated_real_preference": "戦闘強度調整と部隊ローテーションのための限定的停戦運用",
+          "alternative_interpretation": "限定的停戦は、国際世論向けの和平志向演出が主目的であり、軍事的には副次的な意味しか持たない可能性。",
+          "primary_binding_constraint": "人的損耗と部隊疲弊",
+          "issue_component_description": "戦闘強度調整と部隊ローテーションのための局所的停戦カード",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "putin",
+          "confidence": "低",
+          "evidence_ids": [
+            "2da99e23-535f-4422-9508-82de637db616"
+          ],
+          "evidence_class": "historical_actor_pattern",
+          "desired_outcome": "ウクライナがNATOに加盟せず、ロシアの安全保障上許容可能な政治・軍事的地位にとどまること。",
+          "issue_component": "NATO東方拡大阻止",
+          "likely_reaction": "戦線維持・停戦線固定を通じて、ウクライナの安全保障オプションを制約し続ける。",
+          "current_red_line": "ウクライナのNATO加盟や、ロシアが占領する重要地域の完全喪失を伴う和平案。",
+          "stated_preference": "NATO東方拡大は安全保障上の脅威",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "Actor Intelligence Packでレッドラインとして示されており、ウクライナ戦争の根本目的に関わる。",
+          "currently_tradeable": "形式的なNATO加盟を避けつつ、別形態の安全保障保証を巡る妥協の余地は理論上あり得るが、現時点の資料からは判断不能。",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "戦場での支配領域と戦争継続能力",
+          "effect_on_actor_objective": "達成されればロシアの影響圏維持と体制の安全保障が強化される。",
+          "estimated_real_preference": "ウクライナの完全な西側統合阻止と影響圏維持",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "西側の安全保障政策とウクライナの主権意思",
+          "issue_component_description": "ウクライナの完全な西側統合を防ぐ長期的安全保障目標",
+          "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract.",
+          "alternative_interpretation_status": "unsupported"
+        }
+      ],
+      "decisive_power_and_leverage": "ウクライナ戦争全体の結果を最終的に左右し得る決定力は、ロシア側ではプーチンと安全保障・軍事機構（国防省・軍参謀本部）に集中しており、ウクライナ側ではゼレンスキー政権と西側支援国（特に米国・EU主要国）の軍事・経済支援決定に分散している。今回の限定停戦のような局面では、プーチンが戦場の強度・停戦カードの使い方を決める実質的権限を持ち、これに対してウクライナ側と西側が制裁・支援・外交的圧力で応答する構図になっている。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "プーチンの上位目的（NATO拡大阻止・影響圏維持・体制維持）と、今回の限定的停戦・戦闘強度調整は整合的であり、ギャップは主に「人道的停戦」という表向きの説明と、実質的な軍事目的（部隊ローテーション・前線再編）の違いとして現れている。"
+    },
+    "created_at": "2026-09-02T00:21:34.481596+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "e3e8461f-2f47-43ef-8b44-951092ea7889",
+    "response_id": "81eb81c2-70bf-41a8-a613-8103c1291cf6",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Vladimir Putin, ウクライナ政府, 西側主要国（米国・EU）",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "situation_actor_assessment[1]: alternative_interpretation_status=unsupportedですがalternative_interpretationが空です",
+        "passed": false
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）",
+        "passed": false
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）",
+        "passed": false
+      }
+    ],
+    "passed_count": 29,
+    "failed_count": 5,
+    "created_at": "2026-09-02T00:21:34.8047+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "cross_intelligence_contradiction_not_silently_dropped",
+      "unsupported_actor_assumption_not_promoted",
+      "actor_model_challenged"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "cross_intelligence_contradiction_not_silently_dropped",
+      "unsupported_actor_assumption_not_promoted",
+      "actor_model_challenged"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "situation_actor_assessment[1]",
+      "media_editorial_context[0].hypotheses[0]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "putin"
+    ],
+    "historical_evidence_separations": [
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 88019,
+    "completion_tokens": 16250,
+    "total_tokens": 104269
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 78280,
+        "prompt_tokens": 40537,
+        "completion_tokens": 10564
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 41516,
+        "prompt_tokens": 47482,
+        "completion_tokens": 5686
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Vladimir Putin, ウクライナ政府, 西側主要国（米国・EU）"
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "situation_actor_assessment[1]: alternative_interpretation_status=unsupportedですがalternative_interpretationが空です"
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "key_actor_profiles[0]: general_knowledge_used=trueなのにconfidence=中です（unsupported assumptionをMedium/High confidenceへ昇格させないこと）"
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 177.87043738365173
+}

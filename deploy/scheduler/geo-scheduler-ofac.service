@@ -1,0 +1,14 @@
+# OFAC（約19,500件・非常に遅い）は専用枠。他Jobの周期をブロックしないよう、別のunitで動かす。
+[Unit]
+Description=Geo Intelligence Scheduler - OFAC (dedicated, long-running)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/geo/geopolitical_monitor_dashboard
+ExecStart=/opt/geo/.venv/bin/python geo_scheduler_cli.py tick --only COLLECTION_OFAC
+# Phase Aの実測で30時間超。YAMLのstale_after_hours(48h)と揃える
+TimeoutStartSec=48h
+User=geo
+StandardOutput=journal
+StandardError=journal

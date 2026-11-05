@@ -1,0 +1,89 @@
+
+> dev
+> vite dev
+
+Port 8080 is in use, trying another one...
+
+  VITE v8.1.5  ready in 5966 ms
+
+  ➜  Local:   http://localhost:8081/
+  ➜  Network: http://10.149.23.161:8081/
+  ➜  Network: http://192.168.1.205:8081/
+7:25:53 [vite] (ssr) connected.
+14:56:43 [vite] (client) hmr update /src/styles.css?direct
+14:56:43 [vite] (client) hmr update /src/styles.css?direct
+14:56:43 [vite] (client) hmr update /src/styles.css?direct
+14:56:43 [vite] (client) hmr update /src/styles.css?direct
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/article.$id.tsx
+14:56:44 [vite] (ssr) page reload src/routes/article.$id.tsx
+14:56:44 [vite] (ssr) program reload
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/category.$slug.tsx
+14:56:44 [vite] (ssr) page reload src/routes/category.$slug.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/chat.tsx
+14:56:44 [vite] (ssr) page reload src/routes/chat.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/competitors.changes.tsx
+14:56:44 [vite] (ssr) page reload src/routes/competitors.changes.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/competitors.companies.$companyId.tsx
+14:56:44 [vite] (ssr) page reload src/routes/competitors.companies.$companyId.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/competitors.companies.tsx
+14:56:44 [vite] (ssr) page reload src/routes/competitors.companies.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/competitors.initiatives.tsx
+14:56:44 [vite] (ssr) page reload src/routes/competitors.initiatives.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/competitors.overview.tsx
+14:56:44 [vite] (ssr) page reload src/routes/competitors.overview.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/competitors.targets.tsx
+14:56:44 [vite] (ssr) page reload src/routes/competitors.targets.tsx
+14:56:44 [vite] (client) hmr update /src/styles.css?direct, /src/routes/search.tsx
+14:56:44 [vite] (ssr) page reload src/routes/search.tsx
+14:56:45 [vite] (client) page reload src/routeTree.gen.ts
+14:56:45 [vite] (ssr) page reload src/routeTree.gen.ts
+14:56:53 [vite] (client) hmr update /src/styles.css?direct, /src/routes/index.tsx
+14:56:53 [vite] (ssr) page reload src/routes/index.tsx
+14:57:02 [vite] (client) hmr update /src/styles.css?direct, /src/components/top-bar.tsx
+14:57:03 [vite] (ssr) page reload src/components/top-bar.tsx
+14:57:20 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.intelligence-needs.tsx
+14:57:20 [vite] (ssr) page reload src/routes/geo.intelligence-needs.tsx
+14:57:22 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.cases.tsx
+14:57:22 [vite] (ssr) page reload src/routes/geo.cases.tsx
+14:57:23 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.index.tsx, /src/routes/geo.index.tsx?tsr-split=component
+14:57:23 [vite] (ssr) page reload src/routes/geo.index.tsx
+14:57:24 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.expert.tsx
+14:57:24 [vite] (ssr) page reload src/routes/geo.expert.tsx
+14:57:26 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.cases.$id.tsx
+14:57:26 [vite] (ssr) page reload src/routes/geo.cases.$id.tsx
+14:57:27 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.indicator-monitor.tsx
+14:57:27 [vite] (ssr) page reload src/routes/geo.indicator-monitor.tsx
+14:57:28 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.monitoring.tsx, /src/routes/geo.monitoring.tsx?tsr-split=component
+14:57:28 [vite] (ssr) page reload src/routes/geo.monitoring.tsx
+14:57:29 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.knowledge-review.tsx
+14:57:29 [vite] (ssr) page reload src/routes/geo.knowledge-review.tsx
+14:57:31 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.report-studio.tsx, /src/routes/geo.report-studio.tsx?tsr-split=component
+14:57:31 [vite] (ssr) page reload src/routes/geo.report-studio.tsx
+14:57:32 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.knowledge-search.tsx, /src/routes/geo.knowledge-search.tsx?tsr-split=component
+14:57:32 [vite] (ssr) page reload src/routes/geo.knowledge-search.tsx
+14:57:33 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.intelligence-ai.tsx, /src/routes/geo.intelligence-ai.tsx?tsr-split=component
+14:57:33 [vite] (ssr) page reload src/routes/geo.intelligence-ai.tsx
+14:57:35 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.theme.$themeId.indicator.$indicatorId.tsx
+14:57:35 [vite] (ssr) page reload src/routes/geo.theme.$themeId.indicator.$indicatorId.tsx
+14:57:36 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.sources-documents.tsx
+14:57:36 [vite] (ssr) page reload src/routes/geo.sources-documents.tsx
+14:57:49 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.intelligence-needs.$id.tsx
+14:57:49 [vite] (ssr) page reload src/routes/geo.intelligence-needs.$id.tsx
+14:57:50 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.intelligence-needs.$id.tsx
+14:57:50 [vite] (ssr) page reload src/routes/geo.intelligence-needs.$id.tsx
+14:58:12 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.theme.$themeId.indicator.$indicatorId.tsx
+14:58:12 [vite] (ssr) page reload src/routes/geo.theme.$themeId.indicator.$indicatorId.tsx
+14:58:21 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.theme.$themeId.tsx
+14:58:21 [vite] (ssr) page reload src/routes/geo.theme.$themeId.tsx
+14:58:29 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.report-studio.$projectId.tsx
+14:58:29 [vite] (ssr) page reload src/routes/geo.report-studio.$projectId.tsx
+14:59:39 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.index.tsx?tsr-split=component, /src/components/top-bar.tsx, /src/routes/geo.monitoring.tsx?tsr-split=component, /src/routes/geo.intelligence-ai.tsx?tsr-split=component, /src/components/geo/geo-ai-chat.tsx, /src/routes/geo.knowledge-search.tsx?tsr-split=component
+14:59:39 [vite] (ssr) page reload src/lib/api.ts
+15:00:23 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.index.tsx?tsr-split=component, /src/components/top-bar.tsx, /src/routes/geo.monitoring.tsx?tsr-split=component, /src/routes/geo.intelligence-ai.tsx?tsr-split=component, /src/components/geo/geo-ai-chat.tsx, /src/routes/geo.knowledge-search.tsx?tsr-split=component
+15:00:23 [vite] (ssr) page reload src/lib/api.ts
+15:00:41 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.index.tsx?tsr-split=component, /src/components/top-bar.tsx, /src/routes/geo.monitoring.tsx?tsr-split=component, /src/routes/geo.intelligence-ai.tsx?tsr-split=component, /src/components/geo/geo-ai-chat.tsx, /src/routes/geo.knowledge-search.tsx?tsr-split=component
+15:00:41 [vite] (ssr) page reload src/lib/api.ts
+15:00:47 [vite] (client) hmr update /src/styles.css?direct, /src/routes/geo.index.tsx?tsr-split=component, /src/components/top-bar.tsx, /src/routes/geo.monitoring.tsx?tsr-split=component, /src/routes/geo.intelligence-ai.tsx?tsr-split=component, /src/components/geo/geo-ai-chat.tsx, /src/routes/geo.knowledge-search.tsx?tsr-split=component
+15:00:47 [vite] (ssr) page reload src/lib/api.ts
+15:01:43 [vite] (client) hmr update /src/styles.css?direct, /src/lib/i18n.tsx
+15:01:43 [vite] (ssr) page reload src/lib/i18n.tsx

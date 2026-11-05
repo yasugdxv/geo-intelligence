@@ -1,0 +1,36 @@
+TOP LEVEL KEYS: ['claims', 'dynamics', 'stakeholders', 'main_scenario', 'business_impact', 'initial_anomaly', 'review_findings', 'audience_analysis', 'executive_summary', 'key_actor_profiles', 'root_premise_check', 'additional_research', 'one_line_assessment', 'relevant_mechanisms', 'relevant_precedents', 'key_point_assessment', 'media_source_context', 'unknown_or_uncertain', 'alternative_scenarios', 'monitoring_indicators', 'retraction_conditions', 'sources_and_citations', 'weakening_information', 'contradicting_evidence', 'investigation_questions', 'actor_intelligence_status', 'identified_knowledge_gaps', 'knowledge_gaps_referenced', 'strongest_counterargument', 'key_stakeholder_assessment', 'situation_actor_assessment', 'decisive_power_and_leverage', 'assets_dependencies_leverage', 'preference_action_gap_summary']
+
+alternative_scenarios present: True True
+[
+  {
+    "confidence": "低",
+    "description": "支援停止は戦況評価・予算・技術的問題に基づく一時調整であり、鉱物資源合意や公開口論との因果は弱い。",
+    "switch_conditions": [
+      "一次情報で支援停止の理由が技術的要因のみと確認され、交渉カードとしての位置づけが否定される。"
+    ],
+    "weakening_conditions": [
+      "ホワイトハウス・国防総省・議会証言で、鉱物資源合意やゼレンスキーの態度が支援停止決定に影響したと示唆される。",
+      "ジェッダ協議後の声明に、資源合意・支援枠組みの条件調整が明記される。"
+    ],
+    "strengthening_conditions": [
+      "米政府・議会が支援停止の理由として鉱物資源合意やゼレンスキーとの対立を明確に否定し、戦況評価・技術的問題のみを挙げる一次情報が確認される。",
+      "ジェッダ協議の内容が、資源合意や停戦条件ではなく兵器供給ロジスティクス・予算措置に限定されていることが確認される。"
+    ]
+  },
+  {
+    "confidence": "中",
+    "description": "今回の対立と支援停止は、米国が対ロ戦争から距離を取りウクライナ支援縮小へ向かう構造的転換の初期兆候であり、今後支援削減・停戦圧力が強まる。",
+    "switch_conditions": [
+      "複数年にわたり米支援が縮小し、停戦圧力が顕著に強まることが確認される。"
+    ],
+    "weakening_conditions": [
+      "支援停止後、米国の支援が元の水準または増加に戻り、縮小傾向が見られない。",
+      "トランプ政権が停戦条件でウクライナの主権・領土防衛を強調し、不利な譲歩を求めない。"
+    ],
+    "strengthening_conditions": [
+      "支援停止後も米国の対ウクライナ支援規模・質が継続的に縮小する。",
+      "トランプ政権が領土譲歩など不利な停戦条件を公然とウクライナに迫る。",
+      "NATO・欧州が米国の支援縮小に懸念を示しつつも完全には補完できない状況が続く。"
+    ]
+  }
+]

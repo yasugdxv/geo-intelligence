@@ -1,0 +1,151 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 76212,
+    "completion_tokens": 5797,
+    "total_tokens": 82009
+  },
+  "wall_clock_seconds": 114.93735671043396,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "サウジの対米・対中・地域外交は、石油市場構造とエネルギー価格・需要見通しという構造要因に大きく規定される、という構造要因仮説",
+    "selection_rationale": "MBS個人の意思決定スタイルは重要と考えられるが、今回のSource PackにはMBSに関する直接Evidenceが全く無く、Actor Intelligenceもinsufficientである。一方、サウジ外交がエネルギー市場構造に強く制約されるという構造要因は、一般的な地政学知識として広く共有されており、個人情報が欠落している状況では、より安全側の出発点となるため。",
+    "control_type": "structural",
+    "confidence": "低",
+    "candidate_key_points_count": 2,
+    "candidate_key_points": [
+      "サウジの対外路線は、Mohammed bin Salman個人の意思決定スタイルと国内権力集中の度合いに強く依存している可能性",
+      "サウジの対米・対中・地域外交は、石油市場構造とエネルギー価格・需要見通しという構造要因に規定されている可能性"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "サウジの対外路線は、Mohammed bin Salman個人の意思決定スタイルと国内権力集中の度合いに強く依存している可能性",
+        "why_not_primary": "MBSに関するCurrent Evidenceがゼロであり、Actor Intelligenceもinsufficientのため、個人要因をPrimary Key Pointに置くと、今回のケースではモデル一般知識に過度依存するリスクが高い。"
+      }
+    ],
+    "disconfirming_signal": "サウジが世界の石油需要・価格・OPEC+協調と無関係に、対米・対中・地域外交を大きく振らせる（例えば、明確な市場不利を伴う一方的な政治的選好だけで動く）行動を繰り返すことが確認されれば、この構造要因をPrimaryとする前提は見直しが必要になる。",
+    "evidence_class": "model_general_knowledge"
+  },
+  "actors": [
+    {
+      "actor_ref": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+      "profile_source": "none_available",
+      "general_knowledge_used": null,
+      "actor_intelligence_status": "insufficient",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": false
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "unresolved": 2,
+    "rejected": 1
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "判断不能",
+    "description": "今回のSource PackではMBSやサウジ外交に関する直接Evidenceが存在しないため、MBSの意思決定に基づく対米・対中・地域外交の「現在像」を描くことはできない。暫定的には、サウジ外交はエネルギー市場構造（石油需要・価格・OPEC+協調）という構造要因に強く制約され、その枠内でMBSが対米安全保障関係と対中経済協力をバランスさせる多極的バランシングを志向している可能性がある、という低確度の仮説にとどめるべきである。",
+    "historical_analogies_used": null
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 1,
+  "additional_research_count": 5,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "MBSは直近5年で、対米安全保障関係と対中経済協力のどのような具体的合意・行動を取っているか。",
+      "rationale": "MBSのObserved Actionを把握しない限り、対米・対中外交の現状を評価できないため。",
+      "related_hypothesis": null,
+      "recommended_sources": "サウジ政府・米政府・中国政府の公式発表、信頼できる国際報道"
+    },
+    {
+      "priority": "中",
+      "question": "OPEC+におけるサウジの発言・行動は、対米・対中関係とどのように連動しているか。",
+      "rationale": "エネルギー市場構造仮説の妥当性を検証するため。",
+      "related_hypothesis": null,
+      "recommended_sources": "OPEC+会合のコミュニケ、エネルギー専門メディア"
+    },
+    {
+      "priority": null,
+      "question": "直近5〜10年のMBSによる主要な対米・対中・地域外交決定（安全保障協定、投資合意、仲介外交など）は何か。",
+      "rationale": "Key ActorのObserved Actionが欠落しており、Persistent Preferenceや現在の対外路線を評価できないため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "サウジの原油生産・価格政策（OPEC+内での立場）は、対米・対中関係の変化とどの程度連動しているか。",
+      "rationale": "Primary Key Pointとして置いたエネルギー市場構造仮説の妥当性を検証するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "MBSの対米安全保障観（米軍駐留・防衛コミットメント）と対中経済観（投資・技術協力）について、過去発言・行動から一貫したパターンは抽出できるか。",
+      "rationale": "Persistent Preference仮説を構築するための基礎情報が不足しているため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 2,
+  "quality_guard": {
+    "passed_count": 31,
+    "failed_count": 3,
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "main_scenario_has_supporting_evidence",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "main_scenario_has_supporting_evidence",
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [],
+    "historical_evidence_separations": [],
+    "actor_evidence_separations": [],
+    "pattern_applicability_fallbacks": []
+  },
+  "executive_summary": {
+    "what_changed": null,
+    "why_it_matters": null,
+    "what_to_watch_decide": null
+  },
+  "one_line_assessment": "as_of=2026-09-01時点で、提供されたSource Packにはサウジ・MBS・対米/対中/地域外交に関する直接Evidenceが存在せず、MBSの意思決定パターンについて確度の高い主シナリオを構成できないため、「判断不能」を前提に、一般的に知られた構造要因レベルの暫定仮説にとどめる必要がある。",
+  "initial_anomaly": "今回のSource Packは台湾海巡署・中国海警・米沿岸警備隊に関する未検証Eventのみで構成されており、ユーザー質問で求められているサウジアラビア・MBS・対米/対中/地域外交に関するFact/Observationが一切含まれていない。このギャップ自体が最大の違和感であり、MBS分析の基礎となるEvidenceがゼロに近い。"
+}

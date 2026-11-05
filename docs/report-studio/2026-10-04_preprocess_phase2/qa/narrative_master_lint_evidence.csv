@@ -1,0 +1,344 @@
+﻿signal_id,narrative_id,term,term_type,issue_type,collision_example,severity,recommended_action
+S1,S1-N1,会談を『関係安定化』『危機管理』『ガードレール構築』として位置づける発言や社説。,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S1,S1-N1,US-China summit,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N1,tariff-only deal,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N1,trade-only deal,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,"S1-N1,S1-N4",guardrails,,include_exclude_cross_conflict,,WARNING,あるNarrativeのincludeが別Narrativeのexcludeに同じ表記で存在する（意図確認）。
+S1,"S1-N1,S1-N4",managed competition,,include_exclude_cross_conflict,,WARNING,あるNarrativeのincludeが別Narrativeのexcludeに同じ表記で存在する（意図確認）。
+S1,S1-N2,会談を『取引』『ディール』『経済パッケージ』として語り、関税・購入コミットメント,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S1,S1-N2,US-China summit,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N2,climate-only talks,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N2,security-only talks,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N3,『フォトオポ』『象徴的イベント』『実質に乏しい』といった表現で、会談の中身よりも,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S1,S1-N3,US-China summit,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N3,photo-op,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N3,treaty-level,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N4,会談を『失敗すれば危機』『対立の激化』『戦争リスク』と結び付けて語る声。例: 「,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S1,S1-N4,confrontation,include,inflection_not_covered,confrontational(151);confrontations(60),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N4,confrontation,split_term,inflection_not_covered,confrontational(151);confrontations(60),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N4,constructive,exclude,inflection_not_covered,constructively(49);constructives(7);constructiveness(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N4,escalation,split_term,inflection_not_covered,escalations(65),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N4,failure,split_term,inflection_not_covered,failures(204),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N4,stabilize,exclude,inflection_not_covered,stabilized(77);stabilizes(7);stabilizers(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N4,US-China summit,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N5,会談の目的を『選挙向けのメッセージ』『支持層へのアピール』『国内世論向けパフォー,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S1,S1-N5,campaign,split_term,inflection_not_covered,campaigns(278);campaigners(98);campaigned(28);campaigning(23),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N5,election,split_term,inflection_not_covered,elections(2159),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-N5,US-China summit,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-N5,long-term strategy,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-NF,安定化・ディール・緊張など複数の要素が同時に語られ、どのシナリオにも明確に分類し,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S1,S1-NF,mixed signals|unclear outcome|both stabilization and confrontation,include,fallback_has_include,,WARNING,Fallback行のinclude_keywordsはmatch_masterで無視される（Fallbackは通常のマッチ対象外）。
+S1,S1-NF,complex,split_term,inflection_not_covered,complexity(129);complexes(29);complexing(2),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S1,S1-NF,US-China summit,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-NF,purely security-focused,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S1,S1-NF,purely trade-focused,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S2,,rare earths,,high_hit_rate,,WARNING,このincludeがS2の5.2%（1808件）にヒット。汎用語による過剰マッチの疑い。
+S2,,trade war,,high_hit_rate,,WARNING,このincludeがS2の6.5%（2238件）にヒット。汎用語による過剰マッチの疑い。
+S2,,,,multilingual_keywords_missing,,WARNING,入力の19%が非ラテン文字言語だが、キーワードはラテン文字のみ。これらの記録はほぼFallbackへ回る。
+S2,S2-N1,increase,split_term,inflection_not_covered,increased(1603);increases(472),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N1,reduction,split_term,inflection_not_covered,reductions(1566),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N1,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N2,corn,include,inflection_not_covered,corner(159);corners(22);corning(18);cornish(5),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N2,deal,required_context,inflection_not_covered,deals(1704);dealing(659);dealings(224);dealers(132),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N2,trade,required_context,inflection_not_covered,traders(899);traded(802);trades(150),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N3,escalation,include,inflection_not_covered,escalations(65),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N3,escalation,split_term,inflection_not_covered,escalations(65),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N3,joke,exclude,inflection_not_covered,joked(134);jokes(53);jokey(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N3,leverage,include,inflection_not_covered,leveraged(63);leverages(49),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N3,trade,required_context,inflection_not_covered,traders(899);traded(802);trades(150),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N3,counter-tariffs,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S2,S2-N4,business,required_context,inflection_not_covered,businesses(2182),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N4,trade,required_context,inflection_not_covered,traders(899);traded(802);trades(150),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-N4,non-tariff barriers,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S2,S2-NF,US-China trade|US China trade|tariffs,include,fallback_has_include,,WARNING,Fallback行のinclude_keywordsはmatch_masterで無視される（Fallbackは通常のマッチ対象外）。
+S2,S2-NF,tariffs,include,generic_word,,WARNING,単独語をやめ、意味を確定できる句または文脈条件に置き換える
+S2,S2-NF,government,required_context,inflection_not_covered,governments(2658);governmental(93),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S2,S2-NF,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,,congress,,high_hit_rate,,WARNING,このincludeがS3の5.4%（400件）にヒット。汎用語による過剰マッチの疑い。
+S3,,lawmakers,,high_hit_rate,,WARNING,このincludeがS3の6.2%（466件）にヒット。汎用語による過剰マッチの疑い。
+S3,S3-N1,Trump,required_context,inflection_not_covered,trumps(366);trumped(6);trumping(3);trumpy(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N1,Xi,required_context,inflection_not_covered,xis(142),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N1,meeting,required_context,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N1,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N1,Xi,required_context,short_keyword,,WARNING,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S3,S3-N2,Trump,required_context,inflection_not_covered,trumps(366);trumped(6);trumping(3);trumpy(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N2,Xi,required_context,inflection_not_covered,xis(142),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N2,escalation,include,inflection_not_covered,escalations(65),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N2,escalation,split_term,inflection_not_covered,escalations(65),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N2,meeting,required_context,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N2,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N2,war,split_term,inflection_not_covered,wars(1600);wary(132);ward(64);warship(22),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N2,Xi,required_context,short_keyword,,WARNING,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S3,S3-N3,Trump,required_context,inflection_not_covered,trumps(366);trumped(6);trumping(3);trumpy(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N3,US,required_context,inflection_not_covered,used(4667);using(2818);user(1421);usd(910),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N3,meeting,required_context,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N3,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N3,US-China,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S3,S3-N3,Taiwan,required_context,required_exclude_overlap,,WARNING,required('Taiwan')とexclude('campaign rally without Taiwan')が包含関係にあり、互いを打ち消し得る。
+S3,S3-N3,Taiwan,required_context,required_exclude_overlap,,WARNING,required('Taiwan')とexclude('local constituency issues not mentioning Taiwan')が包含関係にあり、互いを打ち消し得る。
+S3,S3-N4,首脳会談の主要テーマとしては通商・技術・イランなどが強調され、台湾は象徴的・短時,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S3,S3-N4,Trump,required_context,inflection_not_covered,trumps(366);trumped(6);trumping(3);trumpy(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N4,Xi,required_context,inflection_not_covered,xis(142),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N4,meeting,required_context,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N4,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-N4,US-China,required_context,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S3,S3-N4,full-scale crisis over Taiwan,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S3,S3-N4,Taiwan,required_context,required_exclude_overlap,,WARNING,required('Taiwan')とexclude('full-scale crisis over Taiwan')が包含関係にあり、互いを打ち消し得る。
+S3,S3-N4,Xi,required_context,short_keyword,,WARNING,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S3,S3-NF,台湾・台湾海峡・US-China首脳会談に言及しているが、抑止・レッドライン・議,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S3,S3-NF,Taiwan|Taiwan Strait|US-China,include,fallback_has_include,,WARNING,Fallback行のinclude_keywordsはmatch_masterで無視される（Fallbackは通常のマッチ対象外）。
+S3,S3-NF,summit,include,generic_word,,WARNING,単独語をやめ、意味を確定できる句または文脈条件に置き換える
+S3,S3-NF,Taiwan,include,include_equals_required,,WARNING,includeまたはrequiredのどちらかを別の語にする
+S3,S3-NF,Trump,include,inflection_not_covered,trumps(366);trumped(6);trumping(3);trumpy(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-NF,Xi,include,inflection_not_covered,xis(142),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-NF,meeting,include,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-NF,summit,include,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S3,S3-NF,Xi,include,short_keyword,,WARNING,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S4,,china and iran,,high_hit_rate,,WARNING,このincludeがS4の14.5%（744件）にヒット。汎用語による過剰マッチの疑い。
+S4,,china iran,,high_hit_rate,,WARNING,このincludeがS4の23.6%（1213件）にヒット。汎用語による過剰マッチの疑い。
+S4,,cooperation,,high_hit_rate,,WARNING,このincludeがS4の8.8%（449件）にヒット。汎用語による過剰マッチの疑い。
+S4,,iranian oil,,high_hit_rate,,WARNING,このincludeがS4の6.1%（315件）にヒット。汎用語による過剰マッチの疑い。
+S4,,oil prices,,high_hit_rate,,WARNING,このincludeがS4の9.5%（489件）にヒット。汎用語による過剰マッチの疑い。
+S4,,strait of hormuz,,high_hit_rate,,WARNING,このincludeがS4の16.5%（846件）にヒット。汎用語による過剰マッチの疑い。
+S4,S4-N1,US,required_context,inflection_not_covered,used(4667);using(2818);user(1421);usd(910),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N1,negotiation,required_context,inflection_not_covered,negotiations(3002),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N1,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N2,US,required_context,inflection_not_covered,used(4667);using(2818);user(1421);usd(910),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N2,escalation,split_term,inflection_not_covered,escalations(65),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N2,oil,required_context,inflection_not_covered,oils(222);oily(2);oiling(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N2,oil,required_context,short_keyword,,WARNING,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S4,S4-N3,China,required_context,inflection_not_covered,chinas(458);chinaship(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N3,US,required_context,inflection_not_covered,used(4667);using(2818);user(1421);usd(910),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N3,negotiation,required_context,inflection_not_covered,negotiations(3002),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N3,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N4,China,required_context,inflection_not_covered,chinas(458);chinaship(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N4,US,required_context,inflection_not_covered,used(4667);using(2818);user(1421);usd(910),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N4,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-N4,US-China cooperation on Iran,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S4,S4-NF,米中・中国・米国・イラン・ホルムズが同時に言及されているが、上記ナラティブのいず,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S4,S4-NF,US China Iran|US-China Iran|China Iran,include,fallback_has_include,,WARNING,Fallback行のinclude_keywordsはmatch_masterで無視される（Fallbackは通常のマッチ対象外）。
+S4,S4-NF,negotiation,required_context,inflection_not_covered,negotiations(3002),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S4,S4-NF,policy,required_context,required_exclude_overlap,,WARNING,required('policy')とexclude('purely historical analysis with no current policy relevance')が包含関係にあり、互いを打ち消し得る。
+S5,,,,multilingual_keywords_missing,,WARNING,入力の24%が非ラテン文字言語だが、キーワードはラテン文字のみ。これらの記録はほぼFallbackへ回る。
+S5,S5-N1,Washington,required_context,inflection_not_covered,washingtons(77);washingtoner(6),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-N1,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-N1,cutting-edge semiconductors,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S5,S5-N1,engineering how-to,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S5,S5-N2,産業界・業界団体・企業が、過度な輸出管理による売上・イノベーション・雇用への影響,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S5,S5-N2,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-N2,carve-outs,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S5,S5-N2,non-sensitive technologies,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S5,S5-N3,AI安全性・誤作動・軍事利用リスクなどへの懸念とともに、対話継続・ホットライン・,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S5,S5-N3,AI,split_term,inflection_not_covered,aid(503);ais(132);airs(8);aiic(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-N3,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-N3,engineering how-to,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S5,S5-N4,米中が別々の技術エコシステム・標準・サプライチェーンを形成しつつあることへの言及,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S5,S5-N4,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-N4,long-term tech rivalry,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S5,S5-N4,short-term market volatility,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S5,S5-NF,AI・技術・デジタル規制に関する議論だが、国家安全保障・産業影響・協力枠組み・長,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S5,S5-NF,technology controls|tech restrictions|AI regulation,include,fallback_has_include,,WARNING,Fallback行のinclude_keywordsはmatch_masterで無視される（Fallbackは通常のマッチ対象外）。
+S5,S5-NF,regulation,required_context,inflection_not_covered,regulations(907),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-NF,regulation,split_term,inflection_not_covered,regulations(907),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S5,S5-NF,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,,,,multilingual_keywords_missing,,WARNING,入力の25%が非ラテン文字言語だが、キーワードはラテン文字のみ。これらの記録はほぼFallbackへ回る。
+S6,S6-N1,meeting,required_context,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N1,regulation,split_term,inflection_not_covered,regulations(907),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N1,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N1,visit,required_context,inflection_not_covered,visits(1744);visited(1400);visiting(1222);visites(30),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N2,flashpoint,split_term,inflection_not_covered,flashpoints(192),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N2,meeting,required_context,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N2,regional,split_term,inflection_not_covered,regionally(44);regionales(6);regionaler(1),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N2,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N3,『貿易だけの問題ではない』『安全保障と経済が絡み合っている』『技術と人権が同時に,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S6,S6-N3,complex,split_term,inflection_not_covered,complexity(129);complexes(29);complexing(2),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N3,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N3,cross-cutting issue,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S6,S6-N3,cross-cutting risk,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S6,S6-N3,multi-issue controversy,include,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S6,S6-N4,『誰も予想していなかった』『議題に入るとは思っていなかった』『これが首脳会談で取,cue,cues_not_phrases,,WARNING,cueは本文に出る短いキーフレーズにする
+S6,S6-N4,unexpected issue|surprise issue|unforeseen issue,include,fallback_has_include,,WARNING,Fallback行のinclude_keywordsはmatch_masterで無視される（Fallbackは通常のマッチ対象外）。
+S6,S6-N4,dispute,split_term,inflection_not_covered,disputes(1964);disputed(274),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N4,meeting,required_context,inflection_not_covered,meetings(3074),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N4,summit,required_context,inflection_not_covered,summits(954),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N4,surprise,split_term,inflection_not_covered,surprised(178);surprises(47),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N4,unexpected,split_term,inflection_not_covered,unexpectedly(163),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N4,visit,required_context,inflection_not_covered,visits(1744);visited(1400);visiting(1222);visites(30),WARNING,語形をmasterに明示する（例: `term*`、または`term; terms; termed`のように列挙）。matcherは語幹展開しない
+S6,S6-N4,purely personal opinion unrelated to US-China,exclude,punctuation_variant,,WARNING,照合は句読点・ハイフンを吸収するが、引用符・連続記号などの表記を確認する
+S6,S6-N4,US-China,required_context,required_exclude_overlap,,WARNING,required('US-China')とexclude('purely personal opinion unrelated to US-China')が包含関係にあり、互いを打ち消し得る。
+S6,S6-N4,summit,required_context,required_exclude_overlap,,WARNING,required('summit')とexclude('generic political rant without summit reference')が包含関係にあり、互いを打ち消し得る。
+S1,S1-N4,crisis,include,substring_collision,energycrisis(9);middleeastcrisis(8);polycrisis(6);hormuzcrisis(4),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S1,S1-N4,crisis,split_term,substring_collision,energycrisis(9);middleeastcrisis(8);polycrisis(6);hormuzcrisis(4),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S1,S1-N4,stabilize,exclude,substring_collision,stabilizer(114);destabilize(48);destabilized(11);restabilize(3),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S1,S1-N5,election,split_term,substring_collision,selection(246);reelection(64);punjabelection2022(13);selections(10),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S1,S1-NF,complex,split_term,substring_collision,complexities(75);militaryindustrialcomplex(4);complexe(3);complexit(2),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N1,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N2,deal,required_context,required_inside_include,,INFO,required('deal')がinclude('sectoral deal')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-N2,corn,include,substring_collision,cornerstone(97);scorn(77);cornyn(36);cornell(34),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N2,deal,required_context,substring_collision,dealt(104);ideal(57);tradedeal(42);ideally(30),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N2,trade,required_context,substring_collision,tradewar(676);globaltrade(140);uschinatrade(106);trader(99),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N3,tariffs,required_context,required_inside_include,,INFO,required('tariffs')がinclude('retaliatory tariffs')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-N3,tariffs,required_context,required_inside_include,,INFO,required('tariffs')がinclude('counter-tariffs')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-N3,tariffs,required_context,required_inside_include,,INFO,required('tariffs')がinclude('punitive tariffs')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-N3,trade,required_context,required_inside_include,,INFO,required('trade')がinclude('trade war')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-N3,sanctions,required_context,substring_collision,russiasanctions(26);iransanctions(16);ussanctions(10);energysanctions(1),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N3,tariffs,required_context,substring_collision,trumptariffs(22);ustariffs(17);uschinatariffs(7);chinatariffs(7),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N3,trade,required_context,substring_collision,tradewar(676);globaltrade(140);uschinatrade(106);trader(99),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N4,trade,required_context,required_inside_include,,INFO,required('trade')がinclude('trade facilitation')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-N4,business,required_context,substring_collision,businessnews(506);businessman(168);businesswire(101);agribusiness(44),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-N4,trade,required_context,substring_collision,tradewar(676);globaltrade(140);uschinatrade(106);trader(99),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-NF,US China,required_context,required_inside_include,,INFO,required('US China')がinclude('US China trade')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-NF,US-China,required_context,required_inside_include,,INFO,required('US-China')がinclude('US-China trade')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-NF,negotiations,required_context,required_inside_include,,INFO,required('negotiations')がinclude('trade negotiations')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S2,S2-NF,government,required_context,substring_collision,intergovernmental(64);nongovernmental(6);modigovernment(2);scottishgovernment(2),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-NF,policy,required_context,substring_collision,policymakers(1114);foreignpolicy(171);policymaking(111);tradepolicy(34),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-NF,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-NF,tariffs,include,substring_collision,trumptariffs(22);ustariffs(17);uschinatariffs(7);chinatariffs(7),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S2,S2-NF,tariffs,split_term,substring_collision,trumptariffs(22);ustariffs(17);uschinatariffs(7);chinatariffs(7),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N1,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('guardrails on Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N1,Taiwan,required_context,substring_collision,taiwanese(590);taiwanstrait(46);taiwannews(19);taiwanplusnews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N1,Trump,required_context,substring_collision,donaldtrump(901);trumpxi(464);trumpxisummit(138);trumpximeeting(115),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N1,Xi,required_context,substring_collision,xinhua(2355);xijinping(1816);existing(1655);weixin(1351),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N1,deter,include,substring_collision,determine(614);determination(303);deterrence(276);determined(253),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N1,meeting,required_context,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N1,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N1,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('war over Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N2,Taiwan,required_context,substring_collision,taiwanese(590);taiwanstrait(46);taiwannews(19);taiwanplusnews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,Trump,required_context,substring_collision,donaldtrump(901);trumpxi(464);trumpxisummit(138);trumpximeeting(115),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,Xi,required_context,substring_collision,xinhua(2355);xijinping(1816);existing(1655);weixin(1351),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,crisis,include,substring_collision,energycrisis(9);middleeastcrisis(8);polycrisis(6);hormuzcrisis(4),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,crisis,split_term,substring_collision,energycrisis(9);middleeastcrisis(8);polycrisis(6);hormuzcrisis(4),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,meeting,required_context,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N2,war,split_term,substring_collision,toward(3967);forward(2518);warned(2260);warning(2147),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,Congress,include,include_names_only_term,,INFO,名前・役職名だけのincludeが含まれる。requiredが同じ名前だと文脈ゲートにならない。
+S3,S3-N3,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('hardline on Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N3,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('sanctions over Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N3,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('bipartisan support for Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N3,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('Taiwan Relations Act')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N3,US,required_context,short_keyword,,INFO,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S3,S3-N3,Congress,include,substring_collision,congressional(778);congressman(112);congressionally(18);congresswoman(16),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,Congress,split_term,substring_collision,congressional(778);congressman(112);congressionally(18);congresswoman(16),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,Taiwan,required_context,substring_collision,taiwanese(590);taiwanstrait(46);taiwannews(19);taiwanplusnews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,Trump,required_context,substring_collision,donaldtrump(901);trumpxi(464);trumpxisummit(138);trumpximeeting(115),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,US,required_context,substring_collision,house(13221);just(8394);business(7785);because(6389),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,meeting,required_context,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,sanctions,split_term,substring_collision,russiasanctions(26);iransanctions(16);ussanctions(10);energysanctions(1),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N3,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N4,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('Taiwan not central')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('Taiwan sidelined')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('limited discussion on Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('brief mention of Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('focus on trade not Taiwan')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('avoid detailed Taiwan talks')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('keep Taiwan off the table')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,talks,required_context,required_inside_include,,INFO,required('talks')がinclude('avoid detailed Taiwan talks')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-N4,Taiwan,required_context,substring_collision,taiwanese(590);taiwanstrait(46);taiwannews(19);taiwanplusnews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N4,Trump,required_context,substring_collision,donaldtrump(901);trumpxi(464);trumpxisummit(138);trumpximeeting(115),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N4,Xi,required_context,substring_collision,xinhua(2355);xijinping(1816);existing(1655);weixin(1351),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N4,meeting,required_context,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N4,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-N4,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,Taiwan,required_context,required_inside_include,,INFO,required('Taiwan')がinclude('Taiwan Strait')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S3,S3-NF,Taiwan,include,substring_collision,taiwanese(590);taiwanstrait(46);taiwannews(19);taiwanplusnews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,Taiwan,required_context,substring_collision,taiwanese(590);taiwanstrait(46);taiwannews(19);taiwanplusnews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,Trump,include,substring_collision,donaldtrump(901);trumpxi(464);trumpxisummit(138);trumpximeeting(115),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,Xi,include,substring_collision,xinhua(2355);xijinping(1816);existing(1655);weixin(1351),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,meeting,include,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,sports,exclude,substring_collision,passports(25);sportsmanship(20);sportswear(12);esports(11),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,summit,include,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S3,S3-NF,talks,include,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N1,China Iran|US China Iran|US-China Iran,include,include_names_only_term,,INFO,名前・役職名だけのincludeが含まれる。requiredが同じ名前だと文脈ゲートにならない。
+S4,S4-N1,US,required_context,required_inside_include,,INFO,required('US')がinclude('US China Iran')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N1,US,required_context,required_inside_include,,INFO,required('US')がinclude('US-China Iran')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N1,sanctions,required_context,required_inside_include,,INFO,required('sanctions')がinclude('China secondary sanctions')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N1,US,required_context,short_keyword,,INFO,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S4,S4-N1,US,required_context,substring_collision,house(13221);just(8394);business(7785);because(6389),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N1,sanctions,required_context,substring_collision,russiasanctions(26);iransanctions(16);ussanctions(10);energysanctions(1),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N1,sanctions,split_term,substring_collision,russiasanctions(26);iransanctions(16);ussanctions(10);energysanctions(1),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N1,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N1,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,"S4-N1,S4-N3",china iranian oil,,alias_collision,,INFO,同じincludeが複数Narrativeにある。priority重み+ヒット長+cueのスコア差でどちらかへ決まり、同点なら先に定義された行が勝つ（順序依存）。
+S4,S4-N2,US,required_context,short_keyword,,INFO,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S4,S4-N2,Iran,required_context,substring_collision,iranian(2779);iranwar(88);iranians(86);iranischen(77),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N2,US,required_context,substring_collision,house(13221);just(8394);business(7785);because(6389),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N2,oil,required_context,substring_collision,soil(331);turmoil(248);spoils(107);oilseed(98),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N3,China,required_context,required_inside_include,,INFO,required('China')がinclude('China Iranian oil')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N3,Iran,required_context,required_inside_include,,INFO,required('Iran')がinclude('Iranian oil')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N3,Iran,required_context,required_inside_include,,INFO,required('Iran')がinclude('China Iranian oil')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N3,US,required_context,short_keyword,,INFO,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S4,S4-N3,China,required_context,substring_collision,uschina(1874);uschinarelations(379);chinaus(128);aperturechina(127),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N3,Iran,required_context,substring_collision,iranian(2779);iranwar(88);iranians(86);iranischen(77),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N3,US,required_context,substring_collision,house(13221);just(8394);business(7785);because(6389),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N3,energy,required_context,substring_collision,energysecurity(35);energycrisis(9);qatarenergy(7);bioenergy(7),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N3,security,split_term,substring_collision,cybersecurity(738);nationalsecurity(74);insecurity(47);globalsecurity(40),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N3,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N3,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N4,Iran talks,include,include_names_only_term,,INFO,名前・役職名だけのincludeが含まれる。requiredが同じ名前だと文脈ゲートにならない。
+S4,S4-N4,China,required_context,required_inside_include,,INFO,required('China')がinclude('US-China cooperation on Iran')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N4,Iran,required_context,required_inside_include,,INFO,required('Iran')がinclude('Iran talks')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N4,Iran,required_context,required_inside_include,,INFO,required('Iran')がinclude('US-China cooperation on Iran')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N4,US,required_context,required_inside_include,,INFO,required('US')がinclude('US-China cooperation on Iran')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N4,talks,required_context,required_inside_include,,INFO,required('talks')がinclude('Iran talks')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-N4,US,required_context,short_keyword,,INFO,3文字以下のLatin語。大文字のアクロニムはcase-sensitive exact tokenで一致する（小文字表記は別語として明示）。普通名詞は句に広げる
+S4,S4-N4,China,required_context,substring_collision,uschina(1874);uschinarelations(379);chinaus(128);aperturechina(127),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N4,Iran,required_context,substring_collision,iranian(2779);iranwar(88);iranians(86);iranischen(77),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N4,US,required_context,substring_collision,house(13221);just(8394);business(7785);because(6389),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N4,diplomacy,required_context,substring_collision,gastrodiplomacy(110);pandadiplomacy(19);techdiplomacy(12);indiadiplomacy(10),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N4,stability,split_term,substring_collision,instability(460);strategicstability(8);globalstability(5);photostability(3),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N4,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-N4,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-NF,sanctions,required_context,required_inside_include,,INFO,required('sanctions')がinclude('secondary sanctions')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S4,S4-NF,Hormuz,include,substring_collision,straitofhormuz(39);hormuzletter(15);hormuzcrisis(4);hormuzi(1),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-NF,policy,required_context,substring_collision,policymakers(1114);foreignpolicy(171);policymaking(111);tradepolicy(34),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-NF,sanctions,required_context,substring_collision,russiasanctions(26);iransanctions(16);ussanctions(10);energysanctions(1),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-NF,security,required_context,substring_collision,cybersecurity(738);nationalsecurity(74);insecurity(47);globalsecurity(40),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S4,S4-NF,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N1,Washington,required_context,substring_collision,washingtondc(105);washingtonpost(90);washingtonsummit(10);washingtonul(10),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N1,chips,split_term,substring_collision,microchips(40);mikrochips(26);hochleistungschips(26);aichips(7),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N1,cyber,split_term,substring_collision,cyberattacks(779);cybersecurity(738);cyberattack(111);cyberspace(91),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N1,military,cue,substring_collision,usmilitary(45);paramilitary(25);chinamilitary(24);militarynews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N1,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N1,telecom,split_term,substring_collision,telecommunications(306);telecommunication(11);telecomunicaciones(2);telecomunica(2),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N2,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N3,AI talks,include,include_names_only_term,,INFO,名前・役職名だけのincludeが含まれる。requiredが同じ名前だと文脈ゲートにならない。
+S5,S5-N3,AI,split_term,substring_collision,said(23516);taiwan(9301);against(7986);remain(6072),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N3,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-N4,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-NF,regulation,required_context,required_inside_include,,INFO,required('regulation')がinclude('AI regulation')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S5,S5-NF,regulation,required_context,required_inside_include,,INFO,required('regulation')がinclude('digital regulation')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S5,S5-NF,rules,required_context,required_inside_include,,INFO,required('rules')がinclude('AI rules')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S5,S5-NF,rules,required_context,required_inside_include,,INFO,required('rules')がinclude('data rules')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S5,S5-NF,rules,required_context,required_inside_include,,INFO,required('rules')がinclude('cyber rules')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S5,S5-NF,regulation,required_context,substring_collision,airegulation(54);deregulation(25);overregulation(3);airegulations(2),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-NF,regulation,split_term,substring_collision,airegulation(54);deregulation(25);overregulation(3);airegulations(2),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S5,S5-NF,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N1,summit issues,include,include_names_only_term,,INFO,名前・役職名だけのincludeが含まれる。requiredが同じ名前だと文脈ゲートにならない。
+S6,S6-N1,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('summit agenda')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N1,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('summit issues')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N1,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('summit sticking points')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N1,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('summit controversy')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N1,meeting,required_context,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N1,policy,split_term,substring_collision,policymakers(1114);foreignpolicy(171);policymaking(111);tradepolicy(34),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N1,regulation,split_term,substring_collision,airegulation(54);deregulation(25);overregulation(3);airegulations(2),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N1,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N1,visit,required_context,substring_collision,visitors(466);visita(343);visite(136);visitor(123),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N2,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('summit regional security')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N2,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('summit security agenda')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N2,meeting,required_context,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N2,military,split_term,substring_collision,usmilitary(45);paramilitary(25);chinamilitary(24);militarynews(18),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N2,regional,split_term,substring_collision,regionale(36);regionalen(24);interregional(10);regionalsecurity(6),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N2,security,split_term,substring_collision,cybersecurity(738);nationalsecurity(74);insecurity(47);globalsecurity(40),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N2,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N2,talks,required_context,substring_collision,tradetalks(40);uschinatalks(14);aitalks(9);bilateraltalks(8),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N3,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('complex summit dispute')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N3,complex,split_term,substring_collision,complexities(75);militaryindustrialcomplex(4);complexe(3);complexit(2),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N3,issues,required_context,substring_collision,tissues(49);politicalissues(1);hotissuesgeopolitics(1);thematicissues(1),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N3,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N4,summit,required_context,required_inside_include,,INFO,required('summit')がinclude('unexpected summit topic')の部分文字列。includeがヒットすれば必ずrequiredも満たされ、required gateは追加の絞り込みにならない（無害な冗長性）。
+S6,S6-N4,meeting,required_context,substring_collision,trumpximeeting(115);xitrumpmeeting(13);modiximeeting(8);bilateralmeeting(5),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N4,summit,required_context,substring_collision,trumpxisummit(138);uschinasummit(58);bricssummit(51);summitry(33),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する
+S6,S6-N4,visit,required_context,substring_collision,visitors(466);visita(343);visite(136);visitor(123),INFO,matcher v2のexact-token照合で回避済み。`*`を付けて語頭一致にする場合は衝突語を再確認する

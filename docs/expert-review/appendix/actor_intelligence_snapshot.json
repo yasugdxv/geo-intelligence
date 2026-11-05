@@ -1,0 +1,504 @@
+{
+  "zelenskyy": {
+    "entity_id": "0196d7bd-c39d-4027-a73b-6dad95aa8357",
+    "red_lines": [],
+    "objectives": [
+      "ロシアとの戦争における国家主権・領土一体性の維持",
+      "西側同盟国からの継続的な軍事・財政支援の確保"
+    ],
+    "veto_power": null,
+    "constraints": [],
+    "core_profile": {
+      "red_lines": [],
+      "worldview": [],
+      "core_objectives": [],
+      "decision_preferences": [],
+      "preferred_instruments": [],
+      "structural_constraints": []
+    },
+    "core_interests": [
+      "国家存続",
+      "戦時の統治正当性の維持"
+    ],
+    "coverage_notes": "10 Key Actors Historical Intelligence Build Gate3 Pilotで新規構築。Historical Episode 5件に基づく",
+    "current_posture": null,
+    "issue_positions": [],
+    "needs_enrichment": [
+      "current_posture未整備",
+      "issue_positions未整備(個別Case実データ確認後に追加)"
+    ],
+    "decision_patterns": [
+      {
+        "pattern": "同盟依存度が高い相手との交渉でも、核心的なRed Line(停戦条件への不信)は公開の対立コストを負ってでも譲らない",
+        "confidence": "高",
+        "pattern_id": "zelenskyy_pattern_red_line_holds",
+        "pattern_role": "default",
+        "last_reviewed_at": null,
+        "default_pattern_ref": null,
+        "counter_evidence_ids": [],
+        "exception_conditions": [],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "c847ef10-48ee-4866-a22a-c472aeb05226"
+        ]
+      },
+      {
+        "pattern": "対米圧力の強弱に応じて、国内制度的論点(選挙実施)への公式立場を複数回変化させる",
+        "confidence": "高",
+        "pattern_id": "zelenskyy_pattern_conditional_flexibility",
+        "pattern_role": "default",
+        "last_reviewed_at": null,
+        "default_pattern_ref": null,
+        "counter_evidence_ids": [],
+        "exception_conditions": [],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "6e859562-4dfb-46da-a4bf-a64a6aed1aec"
+        ]
+      },
+      {
+        "pattern": "2022年の同盟国向け訴求は説得型(各国の歴史的記憶への訴え)だったが、2025年以降は対立受容型へ移行した(相手側の姿勢変化に応じた対応パターンの変化)",
+        "confidence": "中",
+        "pattern_id": "zelenskyy_pattern_persuasion_to_confrontation",
+        "pattern_role": "exception",
+        "last_reviewed_at": null,
+        "default_pattern_ref": "zelenskyy_pattern_red_line_holds",
+        "counter_evidence_ids": [],
+        "exception_conditions": [],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "60b6267c-c757-4297-b93f-edba74f813eb",
+          "c847ef10-48ee-4866-a22a-c472aeb05226"
+        ]
+      }
+    ],
+    "default_importance": null,
+    "persistent_preference": {
+      "as_of": "2026-08-31",
+      "statement": "対米関係において、支援を求める側でありながら核心的な交渉条件(検証なきロシア停戦への不信)は公然たる対立のコストを負ってでも譲らない。ただし選挙延期という国内制度的論点については、対米圧力の強弱に応じて公式立場を複数回変化させており、全ての局面で一貫して強硬というわけではない。",
+      "confidence": "中",
+      "supporting_evidence": [
+        {
+          "source": "c847ef10-48ee-4866-a22a-c472aeb05226",
+          "event_or_behavior": "2025年オーバルオフィス衝突",
+          "supports_or_contradicts": "supports"
+        },
+        {
+          "source": "6e859562-4dfb-46da-a4bf-a64a6aed1aec",
+          "event_or_behavior": "選挙延期を巡る立場の変遷",
+          "supports_or_contradicts": "supports"
+        }
+      ],
+      "evidence_fingerprints": [],
+      "contradicting_evidence": []
+    },
+    "strategic_communication_pattern": {
+      "confidence": "低",
+      "typical_channels": [
+        "各国議会でのオンライン演説(国別に歴史的記憶を使い分ける)",
+        "オフィシャルサイト・SNSでの即応的発信"
+      ],
+      "signaling_tendencies": [
+        "各国固有の歴史的記憶(英国=バトル・オブ・ブリテン、米国=公民権運動)にカスタマイズした訴求"
+      ],
+      "trial_balloon_history": [],
+      "ambiguity_or_deniability_tendency": "「弾薬が必要だ、送迎ではない」という広く引用される発言は、実際には米当局者の匿名リークが初出であり本人の同時代的な確認はできていない(2年後に本人が趣旨を追認)。引用の正確性には留保が必要",
+      "information_channel_relationship_ids": [],
+      "domestic_vs_international_messaging_gap": null
+    }
+  },
+  "putin": {
+    "entity_id": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+    "objectives": [
+      "ロシアの大国としての地位・影響圏の維持"
+    ],
+    "core_profile": {
+      "red_lines": [
+        {
+          "statement": "NATOの旧ソ連圏（特にウクライナ）へのさらなる拡大を明確な一線として扱う",
+          "confidence": "中",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "actor_claim"
+        }
+      ],
+      "worldview": [
+        {
+          "statement": "NATO東方拡大を安全保障上の脅威として位置づける公式立場",
+          "confidence": "高",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "actor_claim"
+        }
+      ],
+      "core_objectives": [
+        {
+          "statement": "近隣国（旧ソ連圏）に対する影響力の維持・強化",
+          "confidence": "中",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "external_assessment"
+        }
+      ],
+      "decision_preferences": [],
+      "preferred_instruments": [],
+      "core_interests_summary": [
+        "政権・体制の安定",
+        "旧ソ連圏における影響力"
+      ],
+      "structural_constraints": [
+        {
+          "statement": "エネルギー輸出収入への財政的依存",
+          "confidence": "中",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "external_assessment"
+        }
+      ],
+      "core_objectives_summary": [
+        "ロシアの大国としての地位・影響圏の維持"
+      ]
+    },
+    "core_interests": [
+      "政権・体制の安定",
+      "旧ソ連圏における影響力"
+    ],
+    "coverage_notes": "Core Profileのみ、広く確立された構造的事実に限定して収録。Phase AI-1 Seedの初期投入分",
+    "current_posture": null,
+    "issue_positions": [],
+    "needs_enrichment": [
+      "current_postureが未整備",
+      "issue_positionsが未整備",
+      "decision_patternsが未整備"
+    ],
+    "decision_patterns": [
+      {
+        "pattern": "軍事的現状変更を当初は否認・限定的に説明しつつ実行し、後に段階的に事実を認める",
+        "confidence": "中",
+        "pattern_id": "putin_pattern_deny_then_admit",
+        "pattern_role": "default",
+        "last_reviewed_at": null,
+        "default_pattern_ref": null,
+        "counter_evidence_ids": [
+          "d0ef206d-d8d0-4697-8781-bc310387fc31"
+        ],
+        "exception_conditions": [],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "29eb3c53-a7de-4f31-85da-616807eb6224",
+          "c8f3d1ee-2f5f-476b-987f-9b484ae0fe47"
+        ]
+      },
+      {
+        "pattern": "多国間合意には署名しつつ核心的な履行(部隊撤収等)は先延ばしにする",
+        "confidence": "中",
+        "pattern_id": "putin_pattern_sign_but_delay",
+        "pattern_role": "default",
+        "last_reviewed_at": null,
+        "default_pattern_ref": null,
+        "counter_evidence_ids": [],
+        "exception_conditions": [],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "1ec7f6a9-4eb5-4de4-abec-cd570cf5cb94"
+        ]
+      },
+      {
+        "pattern": "威嚇的な公式発言の水準と、実際に行動に移す水準の間に乖離がある(ワグネル反乱での即時恩赦、動員令の非公式な終了宣言)",
+        "confidence": "中",
+        "pattern_id": "putin_pattern_rhetoric_action_gap",
+        "pattern_role": "exception",
+        "last_reviewed_at": null,
+        "default_pattern_ref": "putin_pattern_deny_then_admit",
+        "counter_evidence_ids": [],
+        "exception_conditions": [
+          "トップダウンの厳格な統制という通常イメージは、ワグネル反乱での抵抗を受けない長距離進軍という事実によって相対化される必要がある"
+        ],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "5d61f084-2dc9-43e7-8b62-e699347bc2bc",
+          "d0ef206d-d8d0-4697-8781-bc310387fc31"
+        ]
+      }
+    ],
+    "default_importance": null,
+    "persistent_preference": {
+      "as_of": "2026-08-31",
+      "statement": "重要な行動(軍事介入・現状変更)については当初否認・限定的説明を行い、後に段階的に事実を認める、または公式説明を修正するという一貫したパターンがある(クリミア併合の関与否認→事後認定、ウクライナ侵攻の「非ナチ化」目標の事実上の後退)。ただしワグネル反乱では威嚇的発言からわずか半日で恩赦へ転換しており、トップダウンの統制力には現実の限界があることも同時に確認されている。",
+      "confidence": "中",
+      "supporting_evidence": [
+        {
+          "source": "29eb3c53-a7de-4f31-85da-616807eb6224",
+          "event_or_behavior": "クリミア併合の関与否認→事後認定",
+          "supports_or_contradicts": "supports"
+        },
+        {
+          "source": "c8f3d1ee-2f5f-476b-987f-9b484ae0fe47",
+          "event_or_behavior": "ウクライナ侵攻の非ナチ化目標の後退",
+          "supports_or_contradicts": "supports"
+        },
+        {
+          "source": "d0ef206d-d8d0-4697-8781-bc310387fc31",
+          "event_or_behavior": "ワグネル反乱での即時恩赦",
+          "supports_or_contradicts": "supports"
+        }
+      ],
+      "evidence_fingerprints": [],
+      "contradicting_evidence": []
+    },
+    "strategic_communication_pattern": {
+      "confidence": "低",
+      "typical_channels": [
+        "Direct Line(年次、国内向けの問題解決者イメージ演出)",
+        "Valdai Club演説(国際的な政策発信)",
+        "国営メディア(TASS/RIA Novosti等)"
+      ],
+      "signaling_tendencies": [
+        "統制されたチャネルで物語を先にコントロールし、後から必要に応じて説明を修正する"
+      ],
+      "trial_balloon_history": [],
+      "ambiguity_or_deniability_tendency": "クリミア併合における当初の完全否認は、事後的な訂正を前提とした曖昧化戦略の一例である可能性がある(assessment)",
+      "information_channel_relationship_ids": [],
+      "domestic_vs_international_messaging_gap": "国内向けは大規模Q&A形式での「問題解決者」演出、国際向けはValdaiでの体系的な政策教義発信と使い分ける"
+    }
+  },
+  "trump": {
+    "entity_id": "c93580fd-99b1-44d9-b924-beb89a2e8378",
+    "objectives": [
+      "米国第一（America First）路線での再選後の政策遂行"
+    ],
+    "core_profile": {
+      "red_lines": [],
+      "worldview": [
+        {
+          "statement": "取引（ディール）的な二国間交渉を、多国間枠組みより優先する傾向",
+          "confidence": "中",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "external_assessment"
+        }
+      ],
+      "core_objectives": [
+        {
+          "statement": "国内製造業・雇用の保護を対外交渉の優先目標に位置づける",
+          "confidence": "中",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "external_assessment"
+        }
+      ],
+      "decision_patterns": [
+        {
+          "pattern": "圧力・関税・対決的レトリックを先制的に用いて相手の実質的譲歩を引き出す（相手が米国への安全保障・経済的依存を持つ場合に機能する）",
+          "confidence": "中",
+          "pattern_id": "trump_pattern_pressure_leverage_dependent_counterpart",
+          "pattern_role": "default",
+          "last_reviewed_at": null,
+          "default_pattern_ref": null,
+          "counter_evidence_ids": [
+            "cad8cfef-729d-4a59-9590-53dc4d196bdb"
+          ],
+          "exception_conditions": [
+            "相手が北朝鮮のように米国への構造的依存を持たない場合、同じ圧力戦術は交渉決裂（合意なしでの離脱、Episode3ハノイ）に終わる可能性が高い"
+          ],
+          "supporting_evidence_ids": [],
+          "supporting_precedent_ids": [
+            "3072929e-a953-4062-9f09-5d0f2211e02e",
+            "31f53d2e-c521-44b1-b962-c5b9d7e3889c"
+          ]
+        },
+        {
+          "pattern": "多国間・低拘束力の枠組みでは、再交渉の可能性を示唆しつつ実質的な再交渉は追求せず、一方的離脱そのものを目的化する",
+          "confidence": "中",
+          "pattern_id": "trump_pattern_unilateral_exit_low_dependency_framework",
+          "pattern_role": "default",
+          "last_reviewed_at": null,
+          "default_pattern_ref": null,
+          "counter_evidence_ids": [],
+          "exception_conditions": [
+            "対象がイランの核問題のように安全保障上の懸念を伴う場合、単純な離脱に留まらず第二期では直接軍事行動へエスカレートする例外的展開が観測された（Episode2）"
+          ],
+          "supporting_evidence_ids": [],
+          "supporting_precedent_ids": [
+            "d9de59f3-c00e-47c1-a0cf-4f7c8f923eb6",
+            "22319c64-ed4f-4623-bcf3-3c7232d56cc1"
+          ]
+        },
+        {
+          "pattern": "脅し・コミットメント縮小の示唆の水準と、実際に行動へ移す水準に一貫した乖離がある（脅しはするが正式な離脱・不履行の手続きを開始しないケースが多い）",
+          "confidence": "低",
+          "pattern_id": "trump_pattern_threat_action_gap",
+          "pattern_role": "exception",
+          "last_reviewed_at": null,
+          "default_pattern_ref": "trump_pattern_pressure_leverage_dependent_counterpart",
+          "counter_evidence_ids": [
+            "d9de59f3-c00e-47c1-a0cf-4f7c8f923eb6",
+            "22319c64-ed4f-4623-bcf3-3c7232d56cc1"
+          ],
+          "exception_conditions": [
+            "NATOへの脱退言及は一度も正式手続きに至っていないが、パリ協定・イラン核合意では実際に離脱を完遂しており、本パターンは対象（同盟 vs 多国間枠組み）によって適用可否が分かれる（単一のconfidenceでは評価しきれない不確実性が残る）"
+          ],
+          "supporting_evidence_ids": [],
+          "supporting_precedent_ids": [
+            "3072929e-a953-4062-9f09-5d0f2211e02e"
+          ]
+        }
+      ],
+      "decision_preferences": [
+        {
+          "statement": "関税・制裁等の経済的レバレッジを交渉の初期段階で用いる傾向",
+          "confidence": "中",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "external_assessment"
+        }
+      ],
+      "preferred_instruments": [],
+      "core_interests_summary": [
+        "国内支持基盤の維持",
+        "対外関与コストの最小化"
+      ],
+      "structural_constraints": [
+        {
+          "statement": "米国憲法上の三権分立・議会の予算/条約承認権による制約",
+          "confidence": "高",
+          "observed_at": null,
+          "reviewed_by": null,
+          "evidence_ids": [],
+          "last_reviewed_at": null,
+          "information_class": "observed_fact"
+        }
+      ],
+      "core_objectives_summary": [
+        "米国第一（America First）路線での再選後の政策遂行"
+      ]
+    },
+    "core_interests": [
+      "国内支持基盤の維持",
+      "対外関与コストの最小化"
+    ],
+    "coverage_notes": "Core Profileのみ、広く確立された構造的事実に限定して収録。Phase AI-1 Seedの初期投入分",
+    "current_posture": null,
+    "issue_positions": [],
+    "needs_enrichment": [
+      "current_posture（直近の具体的な言動に基づく現在の姿勢）が未整備",
+      "issue_positions（案件別の具体的立場）が未整備。個別Caseで実データ確認後に追加する",
+      "decision_patterns（複数の先例から導出したパターン）が未整備。関連Precedent登録後に追加する"
+    ],
+    "decision_patterns": [
+      {
+        "pattern": "圧力・関税・対決的レトリックを先制的に用いて相手の実質的譲歩を引き出す（相手が米国への安全保障・経済的依存を持つ場合に機能する）",
+        "confidence": "中",
+        "pattern_id": "trump_pattern_pressure_leverage_dependent_counterpart",
+        "pattern_role": "default",
+        "last_reviewed_at": null,
+        "default_pattern_ref": null,
+        "counter_evidence_ids": [
+          "cad8cfef-729d-4a59-9590-53dc4d196bdb"
+        ],
+        "exception_conditions": [
+          "相手が北朝鮮のように米国への構造的依存を持たない場合、同じ圧力戦術は交渉決裂（合意なしでの離脱、Episode3ハノイ）に終わる可能性が高い"
+        ],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "3072929e-a953-4062-9f09-5d0f2211e02e",
+          "31f53d2e-c521-44b1-b962-c5b9d7e3889c"
+        ]
+      },
+      {
+        "pattern": "多国間・低拘束力の枠組みでは、再交渉の可能性を示唆しつつ実質的な再交渉は追求せず、一方的離脱そのものを目的化する",
+        "confidence": "中",
+        "pattern_id": "trump_pattern_unilateral_exit_low_dependency_framework",
+        "pattern_role": "default",
+        "last_reviewed_at": null,
+        "default_pattern_ref": null,
+        "counter_evidence_ids": [],
+        "exception_conditions": [
+          "対象がイランの核問題のように安全保障上の懸念を伴う場合、単純な離脱に留まらず第二期では直接軍事行動へエスカレートする例外的展開が観測された（Episode2）"
+        ],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "d9de59f3-c00e-47c1-a0cf-4f7c8f923eb6",
+          "22319c64-ed4f-4623-bcf3-3c7232d56cc1"
+        ]
+      },
+      {
+        "pattern": "脅し・コミットメント縮小の示唆の水準と、実際に行動へ移す水準に一貫した乖離がある（脅しはするが正式な離脱・不履行の手続きを開始しないケースが多い）",
+        "confidence": "低",
+        "pattern_id": "trump_pattern_threat_action_gap",
+        "pattern_role": "exception",
+        "last_reviewed_at": null,
+        "default_pattern_ref": "trump_pattern_pressure_leverage_dependent_counterpart",
+        "counter_evidence_ids": [
+          "d9de59f3-c00e-47c1-a0cf-4f7c8f923eb6",
+          "22319c64-ed4f-4623-bcf3-3c7232d56cc1"
+        ],
+        "exception_conditions": [
+          "NATOへの脱退言及は一度も正式手続きに至っていないが、パリ協定・イラン核合意では実際に離脱を完遂しており、本パターンは対象（同盟 vs 多国間枠組み）によって適用可否が分かれる（単一のconfidenceでは評価しきれない不確実性が残る）"
+        ],
+        "supporting_evidence_ids": [],
+        "supporting_precedent_ids": [
+          "3072929e-a953-4062-9f09-5d0f2211e02e"
+        ]
+      }
+    ],
+    "default_importance": null,
+    "persistent_preference": {
+      "as_of": "2026-08-30",
+      "statement": "相手が米国の安全保障提供に構造的に依存する局面（同盟国、NATO等）では、公然とした対決的圧力（名指し批判・コミットメント縮小の示唆）を用い、最終的に相手の実質的譲歩を引き出す傾向がある。一方、相手にその依存が無い多国間・低拘束力の枠組み（パリ協定、イラン核合意）では、再交渉の可能性を示唆しつつも実質的な再交渉は追求せず、一方的離脱そのものを目的化する傾向がある。両者は表面上は同じ「圧力先行」に見えるが、相手の構造的依存の有無によって帰結が大きく異なる（Episode1・2 vs Episode5の対比）。",
+      "confidence": "中",
+      "supporting_evidence": [
+        {
+          "source": "d9de59f3-c00e-47c1-a0cf-4f7c8f923eb6",
+          "event_or_behavior": "パリ協定離脱(2017,2025)",
+          "supports_or_contradicts": "supports"
+        },
+        {
+          "source": "22319c64-ed4f-4623-bcf3-3c7232d56cc1",
+          "event_or_behavior": "イラン核合意離脱→最大限の圧力→直接軍事攻撃(2018-2025)",
+          "supports_or_contradicts": "supports"
+        },
+        {
+          "source": "3072929e-a953-4062-9f09-5d0f2211e02e",
+          "event_or_behavior": "NATO防衛費増額圧力→2025年5%合意",
+          "supports_or_contradicts": "supports"
+        }
+      ],
+      "evidence_fingerprints": [],
+      "contradicting_evidence": []
+    },
+    "strategic_communication_pattern": {
+      "confidence": "中",
+      "typical_channels": [
+        "Twitter/Truth Social（強硬な初期姿勢・交渉開始前の対決的レトリックの発信）",
+        "公式声明・大統領令（政策の正式決定の発表）",
+        "集会演説（支持基盤動員、Episode6の1月6日演説等）",
+        "首脳会談後の記者会見（交渉結果のフレーミング）"
+      ],
+      "signaling_tendencies": [
+        "非公式チャネル（SNS）で極端な初期姿勢を先に発信し、その後正式な政策行動に移る（例: 「貿易戦争は良いことで簡単に勝てる」ツイート→関税賦課、NATO「delinquent」ツイート→ブリュッセルでの公然批判）",
+        "支持基盤向け集会演説では対立的・扇動的トーンを用いる一方、事後的な責任回避の余地を残す発言（「平和的に行進する」との付言等）を伴うことがある"
+      ],
+      "trial_balloon_history": [
+        "NATO GDP比4%目標の提起(2018年、当時は不採用)→後年5%として実現(2025年)"
+      ],
+      "ambiguity_or_deniability_tendency": "扇動的な発言と事後的な責任回避の余地を残す言い回しを同時に用いる場合がある（Episode6、information_class=assessment、単一の発言のみからの断定は避ける）",
+      "information_channel_relationship_ids": [],
+      "domestic_vs_international_messaging_gap": "国内向け（集会・SNS）では対立的・断定的トーン、国際的な公式声明・首脳会談後の発言ではより制度的な言葉遣いを使い分ける傾向がある"
+    }
+  }
+}

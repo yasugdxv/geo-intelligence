@@ -1,0 +1,1077 @@
+{
+  "request": {
+    "request_id": "2d2da1b2-2439-4f68-8042-1b5c5e06190f",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "日本の高市早苗政権が進めている、対中・台湾関連の経済安全保障政策（半導体サプライチェーン、輸出管理、投資審査等）について、主要な意思決定主体、それぞれの目的、現在の力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-03T05:02:42.88805+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "12ac673f-4fd1-4e20-9a28-3ce761adaa54",
+    "request_id": "2d2da1b2-2439-4f68-8042-1b5c5e06190f",
+    "document_ids": [
+      "713a3264-ba25-4cca-807e-a0b18366c4c7",
+      "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+      "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+      "dad5abe7-dee3-4363-a14e-2cc473329c16"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T05:02:43.287894+00:00"
+  },
+  "response": {
+    "response_id": "ace4bb0a-b303-418b-a550-3617c7cfed86",
+    "request_id": "2d2da1b2-2439-4f68-8042-1b5c5e06190f",
+    "source_pack_id": "12ac673f-4fd1-4e20-9a28-3ce761adaa54",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "台湾の頼清徳総統と日本の高市早苗氏が会談し、「非紅色サプライチェーン」構築への協力を確認した。",
+          "claim_type": "fact",
+          "source_ref": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        },
+        {
+          "text": "日本政府（経済産業省）は半導体産業を国家戦略上の重要産業と位置づけ、補助金・規制・国際連携を通じて産業育成と安全保障を図っている。",
+          "claim_type": "fact",
+          "source_ref": "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+        },
+        {
+          "text": "対中半導体輸出管理の立法化として、米国のMATCH法が議論・進展しており、日本への政策的試練として論じられている。",
+          "claim_type": "fact",
+          "source_ref": "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        },
+        {
+          "text": "規制強化にもかかわらず、中国向け半導体需要は依然大きく、日本・台湾企業は対中輸出管理の実務対応を迫られている。",
+          "claim_type": "observation",
+          "source_ref": "713a3264-ba25-4cca-807e-a0b18366c4c7"
+        },
+        {
+          "text": "「非紅色サプライチェーン」構築は、台湾側・日本側の政治指導者による対中依存低減と安全保障強化の方針として打ち出されている。",
+          "claim_type": "official_claim",
+          "source_ref": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        },
+        {
+          "text": "高市早苗政権の対中・台湾関連経済安全保障政策は、米国のMATCH法など同盟国の制度と連動しつつ、日本の半導体産業保護・育成を図る方向にあるとみられる。",
+          "claim_type": "inference",
+          "source_ref": "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        },
+        {
+          "text": "高市政権は、対中ハイエンド半導体輸出の安全保障リスクを抑えつつ、台湾との連携を通じて「中国抜き」ではなく「中国を選別する」形のサプライチェーン再編を志向している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "現時点の力学は、(1) 米国・同盟側の対中半導体輸出管理（MATCH法等）が制度的な枠組みを規定し、(2) 日本の政権中枢（高市首相想定）・官邸が安全保障レベルの方針を決め、(3) 経産省・安全保障官僚が具体的な輸出管理・投資審査制度を設計・運用し、(4) 半導体・装置・素材メーカーが中国・台湾・米国市場の需要と収益を背景にロビー・調整を行う構図とみられる。台湾側は「非紅色サプライチェーン」構築を通じて日本との連携を強化し、中国依存を相対的に下げたい一方、日本企業は対中ビジネス継続と安全保障規制の両立を求める。安全保障コミュニティは対中技術流出抑制を重視し、政権は選挙・支持率・産業政策とのバランスを取る必要がある。",
+      "stakeholders": [
+        {
+          "actor": "高市早苗",
+          "purpose": null,
+          "leverage": "安全保障コミュニティ（対中技術流出への警戒）",
+          "position": "対中・台湾関連の経済安全保障（半導体サプライチェーン、輸出管理、投資審査）について、日本の安全保障リスクを抑えつつ、半導体産業の競争力と台湾との連携を強化すること（仮説）。",
+          "red_lines": null,
+          "confidence": "低",
+          "constraints_fears": "半導体産業界（対中・台湾・米国市場への依存）",
+          "ability_to_move_or_block": null
+        },
+        {
+          "actor": "経済産業省",
+          "purpose": "半導体産業を含む日本の産業競争力・技術基盤の維持・強化。",
+          "leverage": "補助金・規制設計・許認可権限を通じた産業界への影響力。",
+          "position": "対中輸出管理・投資審査の制度設計を担いつつ、産業育成との両立を図る中間的立場。",
+          "priority": "半導体を国家戦略上の重要産業として育成しつつ、対中・台湾・米国市場とのバランスを取る。",
+          "red_lines": "国内半導体産業の基盤を損なうような急激な対中ビジネス遮断。",
+          "confidence": "低",
+          "constraints_fears": "過度な対中規制による国内企業の収益・投資減退、国際競争力低下。",
+          "key_relationships": "官邸・安全保障官僚・半導体企業・業界団体との調整役。",
+          "ability_to_move_or_block": "制度設計・運用を通じて規制強度を実質的に調整できる。"
+        },
+        {
+          "actor": "安全保障官僚（外務・防衛・内閣官房など）",
+          "purpose": "対中技術流出・軍事転用リスクの抑制、同盟関係維持。",
+          "leverage": "安全保障評価・同盟国との情報共有を通じた政策提言。",
+          "position": "対中規制強化を求める立場だが、産業界・経産省との調整が必要。",
+          "priority": "ハイエンド半導体・関連技術の対中流出を防ぎ、台湾・同盟国との安全保障協力を強化。",
+          "red_lines": "軍事転用可能な技術・装置の対中無制限輸出。",
+          "confidence": "低",
+          "constraints_fears": "規制が弱く、対中技術流出が続くことによる安全保障リスク。",
+          "key_relationships": "官邸・経産省・同盟国政府との安全保障政策調整。",
+          "ability_to_move_or_block": "安全保障上の懸念を理由に特定案件の許可を止める影響力を持ち得る。"
+        },
+        {
+          "actor": "半導体・装置・素材メーカー",
+          "purpose": "収益・技術開発・国際市場での競争力維持。",
+          "leverage": "雇用・投資・技術力を通じた政策への影響力。",
+          "position": "規制強化には慎重で、選別的管理・例外措置を求める。",
+          "priority": "対中・台湾・米国市場へのアクセス維持と、規制によるビジネス影響の最小化。",
+          "red_lines": "主要顧客・サプライチェーンへのアクセスが突然遮断されること。",
+          "confidence": "低",
+          "constraints_fears": "対中規制強化による売上減少・投資機会喪失。",
+          "key_relationships": "経産省・官邸・業界団体を通じたロビー活動。",
+          "ability_to_move_or_block": "強い反発・投資計画変更を通じて過度な規制案を押し返すことがあり得る。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "高市早苗が首相・官邸として対中・台湾関連経済安全保障政策に実質的な意思決定権を持つこと。",
+          "日本が同盟側の対中半導体輸出管理枠組み（MATCH法等）に一定程度整合化すること。",
+          "半導体産業界が対中ビジネスを完全には放棄せず、選別的管理を求めること。"
+        ],
+        "description": "現時点では、高市早苗政権の対中・台湾関連経済安全保障政策は、米国MATCH法など同盟側の対中半導体輸出管理枠組みへの整合化を前提に、(1) 対中ハイエンド半導体・関連技術の輸出管理・投資審査を強化しつつ、(2) 台湾との「非紅色サプライチェーン」構築を通じて中国依存を相対的に低減し、(3) 日本の半導体産業の競争力・投資を維持・強化する方向にあるとみるのが最も整合的である。安全保障レトリックは強めつつも、サプライチェーン構造と産業界の利害から、完全な対中デカップリングではなく選別的な管理・投資審査が主軸となる可能性が高い。",
+        "evidence_class": "current_indirect_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "MATCH法と日本への政策的試練を直接論じており、日本の対中半導体輸出管理の方向性に関する分析。",
+            "evidence_id": "dad5abe7-dee3-4363-a14e-2cc473329c16",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          },
+          {
+            "rationale": "高市氏と頼清徳総統の会談で「非紅色サプライチェーン」構築が確認されており、台湾連携と対中依存低減の方向性を示す。",
+            "evidence_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          },
+          {
+            "rationale": "規制強化にもかかわらず対中需要が大きいことを示し、選別的管理の必要性という構造要因を裏付ける。",
+            "evidence_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "source_type": "unknown",
+            "claim_relevance": "structural"
+          },
+          {
+            "rationale": "経産省が半導体を国家戦略上の重要産業と位置づけていることを示し、産業育成と安全保障の両立という政策文脈を支える。}],",
+            "evidence_id": "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+            "source_type": "unknown",
+            "claim_relevance": "structural"
+          },
+          {
+            "rationale": "対中需要の継続を示し、完全デカップリングが現実的でないことを示唆する。",
+            "evidence_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "source_type": "unknown",
+            "claim_relevance": "structural"
+          }
+        ],
+        "selection_rationale": "提供資料の範囲では、MATCH法と日本への政策的試練（dad5abe7-…）、高市氏と頼清徳総統の「非紅色サプライチェーン」会談（a59bdc0a-…）、対中需要継続と輸出管理実務（713a3264-…）、経産省の半導体戦略的位置づけ（b6d95473-…）が整合的に、対中輸出管理強化・台湾連携・産業育成の三要素を示している。他の仮説（例えば日本が独自に対中緩和路線を取る、台湾連携が象徴的にとどまる等）は、現時点のEvidenceでは支持材料が弱く、追加の未証明仮定を要するため、主シナリオとしては採用しない。",
+        "supporting_evidence": [
+          "dad5abe7-dee3-4363-a14e-2cc473329c16",
+          "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+          "713a3264-ba25-4cca-807e-a0b18366c4c7",
+          "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+        ],
+        "observable_indicators": [
+          "MATCH法など同盟側制度への日本の法制度上の追随状況（国内法・政令・通達の内容）。",
+          "日本政府による対中半導体・関連装置・素材の輸出管理強化（対象品目・技術レベル）の具体的発表。",
+          "日本政府による対中投資審査制度の強化（対象分野・閾値）の動き。",
+          "台湾との「非紅色サプライチェーン」構築に関する具体的な協定・共同プロジェクトの発表。",
+          "日本の半導体企業による対中投資・輸出の見直し（縮小・再編）の動き。"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "対中半導体輸出管理・投資審査の強化は、日本企業の対中ビジネス（半導体・装置・素材・関連投資）に影響し得る。MATCH法など同盟側制度への整合化により、特定品目・技術レベルの対中輸出・投資が制限される可能性があり、サプライチェーン再編・投資先変更・技術開発の方向性に影響する。台湾との「非紅色サプライチェーン」構築が進めば、台湾・日本間の協力プロジェクト・投資機会が増える一方、中国市場への依存度調整が必要になる。",
+        "unrelated_note": null,
+        "environment_change": "対中・台湾関連経済安全保障政策の強化は、半導体産業を含む広範な産業にとって、対中ビジネスの前提・リスク評価・投資戦略を見直す必要性を高める。企業は、対中輸出管理・投資審査の枠組み、台湾との連携機会、同盟側制度との整合化を前提に、サプライチェーン・技術開発・市場戦略を再設計する必要がある。"
+      },
+      "initial_anomaly": "半導体輸出規制が強化される一方で、対中需要は依然として大きく、台湾・日本ともに中国市場への依存を残しつつ「非紅色サプライチェーン」構築を掲げている点。安全保障レトリックと実務上の輸出・投資の継続とのギャップが、この局面の重要な違和感。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては強いが、Substance（具体的拘束力）は現時点では限定的。",
+            "discretion": "日本側・台湾側ともに、具体的な対象品目・企業・投資案件の選定に広い裁量が残るとみられる。",
+            "evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "target_scope": "半導体を含む「紅色」（中国共産党・中国国有企業等）への依存度が高いサプライチェーン全般。",
+            "stated_signal": "対中依存低減と台湾との協力強化を掲げる安全保障レトリック。",
+            "concrete_measure": "具体的な協定・プロジェクト内容は提供資料からは不明だが、少なくとも政治レベルでの協力方針確認。",
+            "enforcement_status": "不明。",
+            "implementation_status": "協力方針の確認段階。具体的な実施計画・タイムラインは不明。",
+            "legal_or_policy_force": "現時点では政治的コミットメントレベルであり、法的拘束力のある条約・国内法改正までは確認できない。"
+          },
+          "primary_audience": "台湾政府・頼清徳総統",
+          "message_hypothesis": "台湾との連携を通じて対中依存を相対的に下げる意志を示しつつ、日本が同盟側の経済安全保障枠組みに積極的に参加する姿勢を示す。",
+          "secondary_audience": "日本国内の安全保障重視層・対中警戒層、日本の半導体産業界、米国など同盟国",
+          "action_or_statement": "台湾・頼清徳総統との会談で「非紅色サプライチェーン」構築への協力を確認した。"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "MATCH法など同盟側の対中半導体輸出管理枠組みが進展し、日本に対しても対中半導体輸出管理・投資審査の整合化が政策的試練として突きつけられている。同時に、高市早苗氏が台湾の頼清徳総統と「非紅色サプライチェーン」構築を確認し、日本・台湾間の連携強化が進みつつある。",
+        "why_it_matters": "日本企業にとって、対中半導体ビジネス・投資の前提が変わり得る局面であり、対中輸出管理・投資審査の強化と台湾・同盟国との連携強化が、サプライチェーン・市場戦略・技術開発に影響する。",
+        "what_to_watch_decide": "MATCH法など同盟側制度への日本の法制度上の追随状況、対中半導体・関連技術の輸出管理・投資審査強化の具体的内容、台湾との「非紅色サプライチェーン」構築の実務的進展、日本企業の対中投資・輸出見直し動向を継続的に監視し、自社のサプライチェーン・投資戦略・技術開発計画への影響を評価する必要がある。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "高市早苗",
+          "red_line": null,
+          "actor_ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+          "entity_id": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+          "confidence": "低",
+          "formal_role": null,
+          "evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "decision_power": null,
+          "driving_forces": [
+            {
+              "force": "安全保障コミュニティ（対中技術流出への警戒）",
+              "direction": "supporting",
+              "description": "対中ハイエンド半導体輸出の抑制と台湾との連携強化を支持する可能性が高い。"
+            },
+            {
+              "force": "半導体産業界（対中・台湾・米国市場への依存）",
+              "direction": "constraining",
+              "description": "過度な規制強化による収益・投資への影響を懸念し、選別的な管理を求める可能性がある。"
+            }
+          ],
+          "ability_to_move": null,
+          "issue_objective": "対中・台湾関連の経済安全保障（半導体サプライチェーン、輸出管理、投資審査）について、日本の安全保障リスクを抑えつつ、半導体産業の競争力と台湾との連携を強化すること（仮説）。",
+          "observed_action": "台湾の頼清徳総統と会談し、「非紅色サプライチェーン」構築への協力を確認した。",
+          "vulnerabilities": [
+            "半導体産業界からの反発・投資減退",
+            "対中関係悪化による経済的影響"
+          ],
+          "ability_to_block": null,
+          "action_substance": {
+            "assessment": "Substanceも伴う産業政策だが、対中・台湾関連経済安全保障との接続は今後の制度設計次第。",
+            "discretion": "経産省・官邸の裁量で対象企業・プロジェクトの選定が行われる。",
+            "evidence_ids": [
+              "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+            ],
+            "target_scope": "国内半導体製造・装置・素材産業全般。",
+            "stated_signal": "日本の半導体産業を国家戦略上の重要産業として位置づけ、育成と安全保障を両立させる。",
+            "concrete_measure": "経産省による補助金・規制・国際連携の枠組み（詳細はb6d95473-…参照）。",
+            "enforcement_status": "政策運用中。",
+            "implementation_status": "既に複数の補助金・支援策が実施されていると推定されるが、提供資料では詳細不明。",
+            "legal_or_policy_force": "経産省の政策として一定の法的・予算的拘束力を持つ。"
+          },
+          "primary_audience": "国内の安全保障重視層・対中警戒層、および台湾側政治指導者。",
+          "why_actor_matters": "Actor Intelligence Packでは、高市早苗がissue_linked・veto_powerとして選定されており、対中・台湾関連経済安全保障政策において重要な政治的意思決定権・拒否権を持つ可能性が示唆されている。首相・官邸として、対中半導体輸出管理や台湾とのサプライチェーン連携に関する方針を決め、経産省・安全保障官僚へ指示を出す立場にあるため、この局面を動かす・止めるKey Actorとなり得る。",
+          "available_leverage": [
+            "安全保障レトリック・政策方針の発信",
+            "官邸としての法案・制度設計への関与",
+            "台湾との政治的連携の強化"
+          ],
+          "secondary_audience": "日本の半導体産業界・同盟国（米国など）。",
+          "ultimate_objective": null,
+          "actor_model_challenge": null,
+          "persistent_preference": null,
+          "preference_action_gap": "現時点の資料からは、高市氏の長期的Persistent Preferenceが十分に確認できないため、Preference-Action Gapは仮説レベルに留まる。台湾との連携強化は対中依存低減・安全保障強化と整合し得るが、対中ビジネス継続とのバランスをどう取るかは不明。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "対中半導体輸出の全面停止（産業・市場へのコストが大きい）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "none_available",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "insufficient",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": null
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "高市早苗政権の具体的な対中半導体輸出管理・投資審査・台湾連携に関する政策パッケージは何か。",
+          "rationale": "具体的措置の有無・強度により、主シナリオの妥当性を検証できる。",
+          "related_hypothesis": "主シナリオ",
+          "recommended_sources": "官邸・経産省・安全保障関連の公式文書・発言、国会審議資料。"
+        },
+        {
+          "priority": "中",
+          "question": "日本国内の官邸・経産省・安全保障官僚・産業界の間で、対中・台湾関連経済安全保障政策に関する力学はどうなっているか。",
+          "rationale": "誰がどこまで押し返せるかにより、運用強度の見通しが変わる。",
+          "related_hypothesis": "主シナリオと代替シナリオ",
+          "recommended_sources": "専門家ヒアリング、業界団体の声明、政策研究機関の分析。"
+        },
+        {
+          "priority": null,
+          "question": "高市早苗政権が具体的に検討・実施している対中半導体輸出管理・投資審査・台湾連携の政策パッケージは何か。",
+          "rationale": "Key ActorのIssue ObjectiveとMain Scenarioの妥当性を検証するために不可欠。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "MATCH法など同盟側の対中半導体輸出管理枠組みに対し、日本政府はどの程度法制度上の整合化を進めているか。",
+          "rationale": "Primary Key Point（制度枠組みが基本線を規定する）の強さを確認するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "日本国内で、官邸・経産省・安全保障官僚・産業界のどの主体が、対中・台湾関連経済安全保障政策の運用強度に最も強い拒否権・調整力を持つか。",
+          "rationale": "Preference-Action Gapと分散構造の具体像を把握するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "台湾との「非紅色サプライチェーン」構築に関して、具体的な協定・共同プロジェクト・対象分野は既に合意・実施されているか。",
+          "rationale": "台湾連携がSignalにとどまるのか、Substanceを伴うのかを判定するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "日本の半導体企業にとって、対中市場・台湾市場・米国市場の売上・投資比率はどの程度か。",
+          "rationale": "サプライチェーン構造（構造的制約）が政策選択肢へ与える影響を定量的に把握するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "提供資料の範囲で、MATCH法と日本への政策的試練、台湾との会談、対中需要継続、経産省の半導体戦略的位置づけが整合的にこのシナリオを支持している。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "高市政権は、同盟側の対中半導体輸出管理枠組み（MATCH法等）に整合化しつつ、対中ハイエンド半導体輸出・投資を選別的に制限し、台湾との「非紅色サプライチェーン」構築と国内半導体産業育成を並行させる。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "dad5abe7-dee3-4363-a14e-2cc473329c16",
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+            "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "安全保障レトリックは確認できるが、対中需要継続・産業育成方針が示されており、現時点のEvidenceだけでは「最優先」レベルの強硬路線を支持する材料が不足している。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "高市政権は安全保障コミュニティの意向を強く受け、対中ハイエンド半導体輸出・投資を想定以上に厳しく制限し、台湾・米国との連携を優先する「安全保障最優先」路線を志向している。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "contradicting_evidence_ids": [
+            "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+          ]
+        },
+        {
+          "reason": "対中需要継続と企業の中国市場への組み込みが示されており、完全デカップリングが非現実的であることを説明する構造仮説として有力。ただし、政権意図・同盟制度も重要なため、単独の主説明ではない。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "日本・台湾・中国間の半導体サプライチェーン構造（需要・生産能力・技術レベル）が政策の現実的選択肢を支配しており、政権の意図よりも構造的制約が政策を決めている。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "713a3264-ba25-4cca-807e-a0b18366c4c7"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Actor Intelligence Packがinsufficientと明示されており、Persistent Preference・決定パターンの具体的Evidenceが欠如している。",
+          "status": "retained",
+          "confidence": "高",
+          "description": "既存の高市早苗に関するActor Intelligenceがinsufficientであり、過去のパターンから現在の対中・台湾政策を推定することはできないため、政権意図に関する一般的なラベル（対中強硬派等）は今回のケースに適用できない。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "提供資料は半導体輸出管理・サプライチェーンを中心に論じており、他分野が主軸であることを示すEvidenceがない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "日本の対中・台湾関連経済安全保障政策の主軸は半導体ではなく、他の分野（データ・AI・インフラ等）に移りつつあり、半導体は象徴的な一部に過ぎない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+          ]
+        }
+      ],
+      "one_line_assessment": "as_of=2026-09-03。高市早苗政権の対中・台湾関連経済安全保障は、「対中ハイエンド半導体・関連技術の絞り込みと、台湾・同盟国との『非紅色サプライチェーン』構築を並行させる」方向にあり、政権中枢（首相・官邸）と経産省・安全保障コミュニティ・産業界の力学の中で運用強度が決まる局面とみられる。現時点では、米国MATCH法など同盟側の制度・市場構造がKey Pointであり、高市政権はその枠内で日本の裁量と産業利益を確保しようとしている可能性が高い。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "institutionally_constrained",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "米国MATCH法など対中半導体輸出管理の国際枠組みの具体的内容と発効・運用状況。",
+          "secondary_hinges": [
+            "日本国内でのMATCH法等への法制度上の追随・整合化の度合い（国内法・政令・通達など）",
+            "日本・台湾・中国間の半導体サプライチェーン構造（需要・技術・投資）の変化",
+            "日本国内の官邸・経産省・安全保障官僚・産業界の間の調整結果（どの品目・投資をどこまで制限するか）"
+          ]
+        },
+        "primary_key_point": "米国MATCH法など同盟側の対中半導体輸出管理枠組みが、日本の対中・台湾関連経済安全保障政策の基本線を規定する。",
+        "evidence_relevance": [
+          {
+            "rationale": "MATCH法と日本への政策的試練を直接論じており、日本の対中半導体輸出管理が外部制度に制約されることを示している。",
+            "evidence_id": "dad5abe7-dee3-4363-a14e-2cc473329c16",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "高市早苗政権の政治的方針が単独で政策方向を決める。",
+            "why_not_primary": "政権トップの意図は重要だが、MATCH法など外部制度と国内官僚・産業界の分散構造が強い制約となるため、「単独で決める」という形でのKey Pointは過大評価と判断した。"
+          },
+          {
+            "key_point": "国内官僚・産業界の分散構造が最上位のKey Pointである。",
+            "why_not_primary": "分散構造は運用強度を説明するが、そもそもの政策の方向性（対中輸出管理の立法化・台湾連携）は同盟側制度と政権方針により規定されており、現時点では第二層の説明とみる方が整合的。}],"
+          },
+          {
+            "key_point": "unresolved",
+            "why_not_primary": "N/A"
+          }
+        ],
+        "selection_rationale": "提供資料の中で、MATCH法と日本への政策的試練が明示されており（dad5abe7-…）、日本の対中半導体輸出管理が外部制度に強く制約されることが直接示唆されている。一方、サプライチェーン構造や国内分散構造は重要だが、現時点のEvidenceでは制度枠組みほど直接的に日本の政策方向を規定しているとは言い切れないため、主軸はH2（構造的だが制度起点）に近いこのKey Pointとした。高市政権のActor意図（H1）は重要だが、Actor Intelligence Packがinsufficientであり、現在の具体的政策一式が提示されていないため、現時点では制度枠組みより下位の説明と位置づける。",
+        "candidate_key_points": [
+          {
+            "key_point": "米国MATCH法など同盟側の対中半導体輸出管理枠組みが、日本の対中・台湾関連経済安全保障政策の基本線を規定する。",
+            "control_type": "institutionally_constrained",
+            "what_it_explains": "なぜ日本側で対中半導体輸出管理の立法化・制度化が議論され、政策的試練として認識されているのか（日本の裁量が外部制度に制約される）。",
+            "why_it_could_be_key": "日本単独では対中半導体輸出管理の枠組みを完結できず、米国の制度・制裁に追随・連動する必要があるため、日本政権の裁量はこの枠組みの中で行使される可能性が高い。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "dad5abe7-dee3-4363-a14e-2cc473329c16"
+            ],
+            "what_it_does_not_explain": "日本国内での具体的な運用強度（どこまで厳格に適用するか）や、台湾との連携の細部までは直接説明しない。",
+            "control_structure_summary": "米国議会・政権がMATCH法等を通じて対中半導体輸出管理の制度を形成し、それに同盟国が協調する構造。日本は安全保障・同盟の枠組み上、一定の追随・整合性を求められる。",
+            "supporting_knowledge_refs": [
+              {
+                "ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+                "type": "actor_intelligence",
+                "field": "persistent_preference"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "日本・台湾・中国間の半導体サプライチェーン構造（需要・生産能力・技術レベル）が、政策の現実的な選択肢を制約する。",
+            "control_type": "structural",
+            "what_it_explains": "なぜ「非紅色サプライチェーン」構築が掲げられつつも、対中輸出管理の実務では需要継続への対応が必要とされるのか。",
+            "why_it_could_be_key": "規制強化にもかかわらず対中需要が大きく、台湾・日本企業が中国市場に深く組み込まれているため、完全なデカップリングではなく選別的な管理しか現実的でない可能性が高い。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "713a3264-ba25-4cca-807e-a0b18366c4c7"
+            ],
+            "what_it_does_not_explain": "誰がどの政治的優先順位で規制強化・緩和を選ぶかという意思決定の政治的側面。",
+            "control_structure_summary": "市場需要・技術能力・既存のサプライチェーン配置が、政策の実効性とコストを規定する構造要因。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "高市早苗政権（首相・官邸）が、対中強硬な安全保障レトリックと産業育成・台湾連携を組み合わせる政治的方針を採る。",
+            "control_type": "actor_controlled",
+            "what_it_explains": "「非紅色サプライチェーン」構築などの台湾との連携強化と、対中技術流出抑制の組み合わせという政治的メッセージ。",
+            "why_it_could_be_key": "政権トップの政治的選好・安全保障観が、対中・台湾関連経済安全保障政策の方向性（どこまで強硬か、どこまで産業保護か）を左右する可能性がある。",
+            "controlling_entity_ids": [
+              "e4ef0935-f7b0-430a-88be-cad36388f3b9"
+            ],
+            "supporting_evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "what_it_does_not_explain": "経産省・産業界との具体的な調整結果（どの品目・どの投資が実際に止まるか）。",
+            "control_structure_summary": null,
+            "supporting_knowledge_refs": [
+              {
+                "ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+                "type": "actor_intelligence",
+                "field": "mandate"
+              }
+            ],
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "日本国内の官邸・経産省・安全保障官僚・産業界の間の分散した意思決定構造が、輸出管理・投資審査の運用強度を決める。",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ安全保障レトリックと比べて、実務上の輸出管理・投資審査が必ずしも最大限強硬にならない可能性があるのか。",
+            "why_it_could_be_key": "法制度が整備されても、実際の許認可・審査・例外運用は官僚機構と産業界の相互作用で決まり、政権トップの方針だけでは決まらないため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "b6d95473-6eb5-49dc-9d99-afae09aa0244"
+            ],
+            "what_it_does_not_explain": "米国など外部制度からの制約の強さ。",
+            "control_structure_summary": "官邸の政治方針、経産省の産業政策、安全保障官僚のリスク評価、産業界のロビーが相互に制約し合う分散構造。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "MATCH法など同盟側の対中半導体輸出管理枠組みが成立せず、あるいは日本がそれに追随せず独自路線で対中半導体輸出を自由化・拡大する公式方針を採る場合、このKey Pointの置き方自体を見直す必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        ],
+        "control_structure_summary": "米国など同盟側の対中半導体輸出管理制度が形成され、それに日本が安全保障・同盟の観点から整合化を求められる構造。日本政権はこの枠内で裁量を行使するが、枠組み自体は日本単独では変更しにくい。",
+        "supporting_knowledge_refs": [
+          {
+            "ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+            "type": "actor_intelligence",
+            "field": "persistent_preference"
+          }
+        ],
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "高市早苗政権の具体的な政策パッケージ（法案・政令・運用方針）と、国内官邸・経産省・安全保障官僚・産業界の間の力学の詳細は、提供資料からは判断できない。Actor Intelligence Packもinsufficientであり、高市氏のPersistent Preferenceや過去の決定パターンを現在の事案へ適用することはできない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "安全保障最優先路線：高市政権が安全保障コミュニティの意向を強く受け、対中ハイエンド半導体輸出・投資を想定以上に厳しく制限し、台湾・米国との連携を優先する。産業界の反発は補助金・国内投資支援で一定程度緩和されるが、対中ビジネスは大幅に縮小。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "日本政府が対中半導体輸出・投資に関する大幅な制限措置（広範な禁止・厳格な審査）を公式に発表し、台湾・米国との共同プロジェクトを安全保障軸で優先する。"
+          ],
+          "weakening_conditions": [
+            "日本経済・半導体産業の対中依存度が高く、強硬制限が大きな雇用・投資コストを伴うことが明確になる。",
+            "同盟側制度の運用が柔軟で、日本に例外・緩和の裁量が広く認められる。"
+          ],
+          "strengthening_conditions": [
+            "対中技術流出事件や安全保障上の重大インシデントが発生し、国内世論・官僚機構が強硬路線を支持する。",
+            "MATCH法など同盟側制度が厳格な運用を求め、日本が追随しない場合に同盟関係へ明確なコストが生じる。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "産業保護優先路線：高市政権が産業界の懸念を重視し、対中半導体輸出管理・投資審査を形式的に整備しつつ、実務上は例外・緩和措置を多用して対中ビジネス継続を優先する。台湾との「非紅色サプライチェーン」構築は象徴的な意味合いが強く、実務上の再編は限定的。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "日本政府が対中半導体輸出管理・投資審査制度を整備しつつ、運用指針・通達で広範な例外・緩和措置を認めることが明らかになる。"
+          ],
+          "weakening_conditions": [
+            "安全保障コミュニティ・同盟国から、日本の対中ビジネス継続に対する強い批判・圧力が生じる。",
+            "国内世論が対中技術流出への懸念を強め、緩い運用が政治的にコストとなる。"
+          ],
+          "strengthening_conditions": [
+            "対中市場が日本半導体企業の売上・投資にとって不可欠であり、規制強化が国内景気・雇用へ悪影響を与える懸念が強い。",
+            "同盟側制度が日本に広い裁量を認め、形式的な整合化で十分とされる。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "MATCH法など同盟側制度への日本の法制度上の追随状況。",
+        "日本政府による対中半導体・関連技術の輸出管理・投資審査強化の具体的発表。",
+        "台湾との「非紅色サプライチェーン」構築に関する具体的協定・共同プロジェクト。",
+        "日本の半導体企業による対中投資・輸出の見直し動向。"
+      ],
+      "retraction_conditions": [
+        "日本がMATCH法など同盟側制度への整合化を行わず、対中半導体輸出・投資をむしろ拡大する政策を採る公式決定が出る。",
+        "台湾との「非紅色サプライチェーン」構築が頓挫し、対中依存低減ではなく対中依存維持・拡大が明確な方針となる。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "dad5abe7-dee3-4363-a14e-2cc473329c16",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "日本政府が対中半導体輸出管理・投資審査について、MATCH法など同盟側制度への整合化を明確に否定し、独自路線で柔軟な運用を行うと公式に表明した場合。",
+      "contradicting_evidence": [
+        "713a3264-ba25-4cca-807e-a0b18366c4c7"
+      ],
+      "investigation_questions": [
+        {
+          "question": "高市早苗政権が具体的に検討・実施している対中半導体輸出管理・投資審査・台湾連携の政策パッケージは何か。",
+          "rationale": "Key ActorのIssue ObjectiveとMain Scenarioの妥当性を検証するために不可欠。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "MATCH法など同盟側の対中半導体輸出管理枠組みに対し、日本政府はどの程度法制度上の整合化を進めているか。",
+          "rationale": "Primary Key Point（制度枠組みが基本線を規定する）の強さを確認するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "日本国内で、官邸・経産省・安全保障官僚・産業界のどの主体が、対中・台湾関連経済安全保障政策の運用強度に最も強い拒否権・調整力を持つか。",
+          "rationale": "Preference-Action Gapと分散構造の具体像を把握するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "台湾との「非紅色サプライチェーン」構築に関して、具体的な協定・共同プロジェクト・対象分野は既に合意・実施されているか。",
+          "rationale": "台湾連携がSignalにとどまるのか、Substanceを伴うのかを判定するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "日本の半導体企業にとって、対中市場・台湾市場・米国市場の売上・投資比率はどの程度か。",
+          "rationale": "サプライチェーン構造（構造的制約）が政策選択肢へ与える影響を定量的に把握するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "高市早苗政権の具体的な対中半導体輸出管理・投資審査・台湾連携に関する政策パッケージ（法案・政令・運用方針）の詳細。",
+          "gap_category": "deterministic",
+          "recommended_action": "官邸・経産省・安全保障関連の公式文書・発言を収集し、具体的措置と対象品目・投資範囲を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "日本国内の官邸・経産省・安全保障官僚・産業界の間で、対中・台湾関連経済安全保障政策に関する力学（誰がどこまで押し返せるか）の具体像。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "専門家ヒアリングや業界団体の声明を通じて、各主体の立場・レバレッジ・拒否権の有無を確認する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "日本の対中・台湾関連経済安全保障政策は、MATCH法など同盟側制度よりも、国内政治（選挙・支持率）と産業界の利害によって決まり、対中輸出管理強化・台湾連携は象徴的な意味合いが強く、実務上は従来路線から大きく変わらない可能性がある。",
+      "key_stakeholder_assessment": {
+        "rationale": "提供資料では日本国内の具体的な役職者一覧は示されていないが、対中・台湾関連の経済安全保障（半導体サプライチェーン・輸出管理・投資審査）は、(1) 政権トップ（高市早苗首相想定）・官邸、(2) 経済産業省、(3) 安全保障官僚（外務・防衛・内閣官房など）、(4) 産業界が主要な意思決定主体となるのが一般的である。現時点ではActor Intelligence Packが高市早苗のみであり、他主体の詳細プロファイルが無いため、Key Actorとしては高市早苗に絞りつつ、実際の決定は官邸・経産省・安全保障官僚・産業界の分散構造で行われるとみるのが妥当。",
+        "confidence": "低",
+        "evidence_ids": [
+          "b6d95473-6eb5-49dc-9d99-afae09aa0244",
+          "dad5abe7-dee3-4363-a14e-2cc473329c16"
+        ],
+        "determination": "multiple",
+        "decision_structure": "官邸が安全保障レベルの方針と政治的優先順位を示し、経産省が半導体産業政策・輸出管理制度を設計・運用、安全保障官僚が対中リスク評価を行い、産業界が実務上の影響を踏まえてロビー・調整を行う分散構造。法制度・同盟枠組みが上位制約として存在する。",
+        "selected_actor_ids": [
+          "e4ef0935-f7b0-430a-88be-cad36388f3b9"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+          "confidence": "低",
+          "evidence_ids": [
+            "dad5abe7-dee3-4363-a14e-2cc473329c16",
+            "713a3264-ba25-4cca-807e-a0b18366c4c7"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "安全保障上問題の大きい技術の輸出を抑えつつ、産業界が許容可能な範囲に留める。",
+          "issue_component": "対中ハイエンド半導体輸出管理の強度",
+          "likely_reaction": "安全保障コミュニティは支持、産業界は慎重姿勢。",
+          "current_red_line": null,
+          "stated_preference": null,
+          "instrumental_value": "mixed",
+          "priority_rationale": "安全保障レトリックと台湾連携を掲げる以上、対中ハイエンド半導体輸出管理の強度は高市政権にとって重要な象徴・実質の両面を持つ。",
+          "currently_tradeable": "部分的に交渉材料となり得る（対象技術の線引き）。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "安全保障レトリックと国内法制度設計。",
+          "effect_on_actor_objective": "強い制限は安全保障コミュニティ・対中警戒層の支持を得るが、産業界・雇用へのコストを伴う。",
+          "estimated_real_preference": "選別的な強化（全面禁止ではなく、技術レベルで線引き）。",
+          "alternative_interpretation": "高市政権が安全保障最優先で、産業界の懸念を相対的に軽視する可能性もある。",
+          "primary_binding_constraint": "同盟側制度（MATCH法等）への整合性。",
+          "issue_component_description": "どの技術レベル・品目まで対中輸出を制限するか。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+          "confidence": "低",
+          "evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+            "713a3264-ba25-4cca-807e-a0b18366c4c7"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "台湾との協力を通じて、中国依存を徐々に低減しつつ、サプライチェーンの安定性・競争力を維持。",
+          "issue_component": "台湾との「非紅色サプライチェーン」構築",
+          "likely_reaction": "台湾側は歓迎、中国側は警戒、国内産業界は慎重。",
+          "current_red_line": null,
+          "stated_preference": "「非紅色サプライチェーン」構築への協力。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "頼清徳総統との会談で明示的に掲げており、政権の対中・台湾政策の象徴的柱。",
+          "currently_tradeable": "協力の具体的範囲・速度は交渉材料となり得る。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "台湾との政治的関係・共同プロジェクト。",
+          "effect_on_actor_objective": "台湾との関係強化・同盟側との連携強化に資する一方、対中関係には緊張要因。",
+          "estimated_real_preference": "安全保障と産業政策を両立させる形での段階的再編。",
+          "alternative_interpretation": "象徴的な政治メッセージにとどまり、実務上の再編は限定的となる可能性。",
+          "primary_binding_constraint": "サプライチェーン構造（対中需要・既存投資）。",
+          "issue_component_description": "台湾との協力により、中国依存を相対的に下げるサプライチェーン再編。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "e4ef0935-f7b0-430a-88be-cad36388f3b9",
+          "confidence": "判断不能",
+          "evidence_ids": null,
+          "evidence_class": "unsupported_assumption",
+          "desired_outcome": "安全保障上問題のある投資のみを選別的に制限。",
+          "issue_component": "対中投資審査制度の強化",
+          "likely_reaction": "産業界は慎重、官僚機構は負担増を懸念。",
+          "current_red_line": null,
+          "stated_preference": null,
+          "instrumental_value": "instrumental",
+          "priority_rationale": "輸出管理と並び重要だが、提供資料では具体的動きが明示されていない。",
+          "currently_tradeable": "審査基準・対象分野は交渉材料となり得る。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "unknown",
+          "primary_usable_leverage": "審査権限。",
+          "effect_on_actor_objective": "安全保障リスクを抑えつつ、企業の投資自由度を制約。",
+          "estimated_real_preference": "輸出管理ほど強くはないが、一定の審査強化。",
+          "alternative_interpretation": "投資審査は象徴的に整備されるが、運用は緩やかになる可能性。",
+          "primary_binding_constraint": "国内法制度・官僚機構の運用能力。",
+          "issue_component_description": "中国向け投資・合弁・技術移転の審査枠組み。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        }
+      ],
+      "decisive_power_and_leverage": "決定的な力は、(1) 米国を中心とする同盟側の対中半導体輸出管理枠組み（MATCH法など）と、(2) 日本国内では首相・官邸と経産省・安全保障官僚の組み合わせにあるとみられる。高市早苗政権が政治的方向性と優先順位を決め、経産省・安全保障コミュニティが制度設計・運用で実質的な強度を決める一方、産業界は雇用・投資・技術力を通じて規制の具体的中身を押し返す・調整するレバレッジを持つ。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-03T05:02:43.931591+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "2a73572b-b09f-48e1-ab07-9700b391ef37",
+    "response_id": "ace4bb0a-b303-418b-a550-3617c7cfed86",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 安全保障官僚（外務・防衛・内閣官房など）, 半導体・装置・素材メーカー",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 38,
+    "failed_count": 1,
+    "created_at": "2026-09-03T05:02:44.32819+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "e4ef0935-f7b0-430a-88be-cad36388f3b9"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82146,
+    "completion_tokens": 14120,
+    "total_tokens": 96266
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 82984,
+        "prompt_tokens": 40190,
+        "completion_tokens": 8440
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 62015,
+        "prompt_tokens": 41956,
+        "completion_tokens": 5680
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 安全保障官僚（外務・防衛・内閣官房など）, 半導体・装置・素材メーカー"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 4,
+        "gaps": []
+      },
+      "research_cycle": {
+        "triggered": false,
+        "search_calls_used": 0,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 0,
+      "final_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 4,
+        "gaps": []
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

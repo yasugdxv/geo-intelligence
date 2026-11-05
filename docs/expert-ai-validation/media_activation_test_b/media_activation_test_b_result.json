@@ -1,0 +1,1294 @@
+{
+  "request": {
+    "request_id": "52622c83-33fc-4d99-a3ce-5f3d18e60802",
+    "theme_id": null,
+    "case_id": null,
+    "mode": "case_analysis",
+    "profile": "deep",
+    "query_text": "ホルムズ海峡におけるイラン・オマーン間の新たな航行枠組み交渉について、関係国（中国等）の反応を分析してください。",
+    "created_at": "2026-09-02T01:21:47.849802+00:00",
+    "run_config": {
+      "variant": "Media Activation Test — Condition B (same situation, no fact conflict, framing/emphasis differs)",
+      "doc_ids": [
+        "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+        "a9208a53-6674-4447-922b-5fb15ecdd2be",
+        "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+      ],
+      "query_text": "ホルムズ海峡におけるイラン・オマーン間の新たな航行枠組み交渉について、関係国（中国等）の反応を分析してください。",
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "fingerprints": {
+        "geo_expert_engine.py": "7f929af90cd1f591",
+        "geo_expert_schema.py": "358640565bdd689c",
+        "geo_expert_quality_guard.py": "c8cbb2ecf9c21c29",
+        "geo_actor_intelligence_service.py": "a4728e75b6b9c3ab",
+        "geo_media_intelligence_service.py": "2bebc9176bf7008d",
+        "geo_knowledge_item_schemas.py": "5ab8d2935eebf4b7",
+        "schemas/geo_expert_ai_response.schema.json": "77a892d2bd1f777f",
+        "geo_persistent_preference_service.py": "47e2b31ccec1b1c5",
+        "geo_foundation_pack_service.py": "11dd58266c423f91"
+      }
+    },
+    "fixed_document_ids": [
+      "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+      "a9208a53-6674-4447-922b-5fb15ecdd2be",
+      "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+    ]
+  },
+  "source_pack": {
+    "source_pack_id": "ff1271f6-28c2-453b-8126-f481e8c051ad",
+    "request_id": "a186edbb-888a-48f3-afe8-b4a35077edee",
+    "document_ids": [
+      "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+      "a9208a53-6674-4447-922b-5fb15ecdd2be",
+      "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-02T01:21:00.707026+00:00"
+  },
+  "response": {
+    "response_id": "557ab5a5-0da2-4c46-987c-1bd1e0b389e9",
+    "request_id": "a186edbb-888a-48f3-afe8-b4a35077edee",
+    "source_pack_id": "ff1271f6-28c2-453b-8126-f481e8c051ad",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "中国の王毅外相はイランに対し、ホルムズ海峡における航行の自由と安全な通航を確保するよう要請した。",
+          "claim_type": "fact",
+          "source_ref": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+        },
+        {
+          "text": "今回の危機で中国がイランへ直接公に要請したのは初めてとされる。",
+          "claim_type": "fact",
+          "source_ref": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+        },
+        {
+          "text": "中国は開戦後、原油備蓄を年初から16%積み増し、封鎖期間中の輸入を日量500万バレル超削減して価格急騰を緩和した。",
+          "claim_type": "fact",
+          "source_ref": "a9208a53-6674-4447-922b-5fb15ecdd2be"
+        },
+        {
+          "text": "4月の停戦後から7月MoU失効までの間隙には、イラン産原油タンカー60隻超が中国向けに出荷されたとみられる。",
+          "claim_type": "fact",
+          "source_ref": "a9208a53-6674-4447-922b-5fb15ecdd2be"
+        },
+        {
+          "text": "イランはオマーンとの交渉が進む枠組みの一部として米国船籍のホルムズ海峡における恒久的な航行禁止を求めている。",
+          "claim_type": "fact",
+          "source_ref": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+        },
+        {
+          "text": "中国はホルムズ海峡危機において『実利的中立』の姿勢を取り、米・イラン双方に自制を求めつつ対話再開を仲介していると報じられている。",
+          "claim_type": "official_claim",
+          "source_ref": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+        },
+        {
+          "text": "中国はホルムズ封鎖期間中に輸入を削減しつつ備蓄を積み増すことで、原油価格急騰の緩和に一定の役割を果たした。",
+          "claim_type": "observation",
+          "source_ref": "a9208a53-6674-4447-922b-5fb15ecdd2be"
+        },
+        {
+          "text": "中国はホルムズ海峡の長期的安定と航行の自由を、自国のエネルギー安全保障と国際経済安定の観点から重視していると推定される。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "イランの『米国船籍恒久禁止』要求は、交渉上の最大値として提示されたものであり、最終的な枠組みでは何らかの形で修正・限定される可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "中国の『実利的中立』とされる姿勢は、イランとのエネルギー関係維持と、米国との全面対立回避の両立を図るためのバランス行動であり、ホルムズ新枠組みに対しても原則論（航行の自由）と実務（自国タンカーの安全）を組み合わせた反応になる可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "イランはホルムズ海峡を通航する権利の選別（米国船籍の排除）を交渉カードとして用い、自国の安全保障・対米抑止・国内政治上の正統性を強化しようとしている。一方、中国はエネルギー輸入国として、海峡の封鎖や選別的通航制限が長期化すれば自国経済と国際市場への打撃が大きいため、航行の自由原則を前面に出しつつ、イランとの関係を維持しながら危機を収束させたい。オマーンは海峡管理の共同枠組みを通じて地域仲介者・安定供給ルートとしての地位を高めるインセンティブがある。米国は自国船籍の排除要求を受け入れ難く、軍事的プレゼンスと同盟国防衛の観点からホルムズの自由航行を維持しようとする。結果として、ホルムズ海峡の制度原則（航行の自由・無差別性）をめぐり、イランの選別的要求と第三国（中国を含む）・西側の原則維持志向がせめぎ合う力学が生じている。",
+      "stakeholders": [
+        {
+          "actor": "中国（王毅外相・外交当局）",
+          "purpose": "自国の長期的なエネルギー安全保障と国際経済の安定を維持すること。",
+          "leverage": "エネルギー安全保障・原油輸入依存",
+          "position": "ホルムズ海峡の新枠組みが自国タンカーの安全な通航と航行の自由原則を維持し、エネルギー供給と価格安定を確保するように誘導すること。",
+          "red_lines": "ホルムズ海峡の長期的封鎖や、中国向けタンカーの安全な通航が実質的に阻害される状態は受け入れ難いと推定される（仮説）。",
+          "confidence": "低",
+          "constraints_fears": "対米関係・大国間競争",
+          "ability_to_move_or_block": "イランへの公然の要請や仲介提案を通じて、航行の自由原則を維持する方向へ交渉空間を動かす能力。"
+        },
+        {
+          "actor": "イラン（政権・交渉当局）",
+          "purpose": "対米抑止力と国内政治上の正統性を維持しつつ、ホルムズ海峡を通じた自国の安全保障と経済利益を確保すること。",
+          "leverage": "国内政治・正統性維持",
+          "position": "ホルムズ海峡の新枠組みを通じて、米国の軍事的プレゼンスと通航権を制約し、自国の安全保障と国内正統性を強化すること。",
+          "red_lines": "米国の軍事的プレゼンスと通航権が完全に自由なまま維持される枠組みは、国内政治上受け入れ難いと推定される（仮説）。",
+          "confidence": "低",
+          "constraints_fears": "制裁下での経済・エネルギー輸出",
+          "ability_to_move_or_block": "米国船籍の恒久的航行禁止など強硬要求を提示し、交渉空間の上限を設定する能力。"
+        },
+        {
+          "actor": "Oman",
+          "purpose": "ホルムズ海峡の安定的管理と、自国を地域仲介者・安全な通航ルートとして位置づけること。",
+          "leverage": "地理的な位置と海峡管理に関する実務的役割。",
+          "position": "イランの強硬要求と米国・第三国の原則維持志向の間で、妥協案を模索する仲介的立場。",
+          "priority": "高",
+          "red_lines": "自国の主権・海峡管理権限を著しく損なう枠組みや、特定国への過度な偏り。",
+          "confidence": "低",
+          "constraints_fears": "海峡管理をめぐるイラン・米国間の対立に巻き込まれ、自国の安全保障・経済に悪影響が及ぶことを避けたい。",
+          "key_relationships": "イランとの交渉パートナー、米国・湾岸諸国との安全保障関係。",
+          "ability_to_move_or_block": "枠組み合意の成否に重要な影響を持つが、軍事的自由航行を単独で左右する力は限定的。"
+        },
+        {
+          "actor": "United States",
+          "purpose": "ホルムズ海峡における自国船籍・軍事プレゼンスの自由航行を維持し、同盟国のエネルギー安全保障を確保すること。",
+          "leverage": "軍事力（海軍）、制裁・外交圧力。",
+          "position": "イランの米国船籍恒久禁止要求に強く反対し、軍事的自由航行作戦と外交圧力で原則維持を図る方向と推定されるが、具体的発言はSource Packにない。",
+          "priority": "高",
+          "red_lines": "米国船籍・軍艦の自由航行に対する恒久的・包括的な禁止。",
+          "confidence": "低",
+          "constraints_fears": "米国船籍の排除が前例となり、他海峡・国際水路での自由航行原則が弱体化すること。",
+          "key_relationships": "同盟国（欧州、日本、湾岸諸国）、イランとの対立関係、中国との競合・協調。",
+          "ability_to_move_or_block": "ホルムズ海峡の実際の自由航行維持に大きな影響力を持つ。"
+        },
+        {
+          "actor": "Other major importers (Japan, South Korea, India, EU states)",
+          "purpose": "エネルギー安全保障と海上輸送の安定を確保すること。",
+          "leverage": "市場規模・長期契約・外交関係。",
+          "position": "航行の自由原則を支持しつつ、イランとの関係悪化を避ける慎重な立場と推定されるが、具体的声明は不明。",
+          "priority": "高",
+          "red_lines": "自国船籍・企業への選別的通航制限や、航行の自由原則の大幅な弱体化。",
+          "confidence": "低",
+          "constraints_fears": "ホルムズ海峡の長期的混乱による原油価格高騰と供給不安定化。",
+          "key_relationships": "米国との安全保障関係、中国との経済関係、湾岸産油国とのエネルギー関係。",
+          "ability_to_move_or_block": "枠組みへの受容性・市場反応を通じて間接的に影響するが、単独で枠組みを決定づける力は限定的。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "イランの米国船籍恒久禁止要求は交渉上の最大値であり、最終枠組みでは何らかの修正が行われる可能性が高い。",
+          "中国の『実利的中立』とされる姿勢は、ホルムズ海峡の長期的安定と自国エネルギー安全保障を重視するPersistent Preferenceと整合している。",
+          "他の主要輸入国も、航行の自由原則の弱体化に対しては基本的に否定的であり、イランの選別的要求を支持しない。"
+        ],
+        "description": "提供資料の範囲では、ホルムズ海峡の新たな航行枠組み交渉に対する中国など第三国の反応は、(1)航行の自由と安全な通航の維持を強調しつつ、(2)イランとのエネルギー関係を維持し、(3)米国との全面対立を避ける『実利的中立』の姿勢として現れる、という見立てが最も整合的である。具体的には、中国は王毅外相の発言に見られるように、イランに対し公然と航行の自由確保を求めつつ、対話再開の仲介を試みることで、ホルムズ海峡の制度原則（航行の自由・無差別性）が大きく損なわれないよう働きかけると推定される。他の主要輸入国も、米国船籍のみを恒久的に排除するような枠組みに対しては慎重・否定的な立場を取り、イランの最大要求を交渉過程で引き下げる方向に圧力をかける可能性が高い。一方で、イランの対米抑止・国内正統性維持の必要性から、何らかの形で米国船籍に対する制約（例えば期間限定・条件付きの制限）が残る妥協案が模索される余地もある。中国など第三国は、ホルムズ海峡をめぐる対立の『当事者』ではなく、エネルギー輸入国としての利害を持つ第三者として、自国が対立の焦点にならないよう抑制的なトーンで反応しつつ、航行の自由原則とエネルギー安全保障の両立を図る方向で行動すると見るのが現時点では妥当である。",
+        "evidence_class": "current_indirect_evidence",
+        "selection_rationale": "中国の王毅外相による航行の自由・安全な通航の公然要請（SCMP）、中国の原油備蓄積み増しと輸入削減による市場安定化行動（NPR）、イランの米国船籍恒久禁止要求（Bloomberg）という三つの観測を同時に説明できる仮説であり、第三国の反応を『航行の自由原則＋エネルギー安全保障＋対立当事者化の回避』という三つの要素の組み合わせとして読むのが、他の仮説よりも整合的であるため。",
+        "supporting_evidence": [
+          "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "a9208a53-6674-4447-922b-5fb15ecdd2be",
+          "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+        ],
+        "observable_indicators": [
+          "中国外交部・王毅外相による追加発言で、ホルムズ海峡の『航行の自由・無差別性』への言及が続くかどうか。",
+          "イラン・オマーンの新枠組み案において、米国船籍の扱いが『恒久禁止』から『条件付き・期間限定』などへ修正されるかどうか。",
+          "日本、韓国、インド、EUなど主要輸入国が、ホルムズ新枠組みに関する声明で『航行の自由』を明示的に強調するかどうか。",
+          "米国政府・軍が、ホルムズ海峡の自由航行維持を明示的にレッドラインとして位置づけるかどうか。"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": false,
+            "description": "過去のホルムズ海峡危機やスエズ運河閉鎖などで、主要輸入国が航行の自由原則とエネルギー安全保障を同時に重視し、沿岸国の強硬要求を交渉で引き下げた事例を参考にしているが、具体的事例IDは今回のSource Packには含まれていない。",
+            "same_domain": true,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": true,
+            "analogy_source_precedent_id": null,
+            "same_institutional_structure": true
+          }
+        ],
+        "confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "ホルムズ海峡の新枠組みが航行の自由原則を弱めたり、特定国船籍の選別的制限を導入した場合、原油・石油製品の運賃・保険料の上昇、供給不安定化を通じて世界市場価格に影響し得る。中国など主要輸入国の備蓄調整・輸入削減は価格急騰の緩和要因となり得るが、封鎖・緊張が長期化すれば、エネルギーコスト上昇を通じて多くの産業に間接的影響が及ぶ可能性がある。",
+        "unrelated_note": null,
+        "environment_change": "ホルムズ海峡の制度原則（航行の自由・無差別性）が交渉対象となり、沿岸国・大国・輸入国の力学で再定義される可能性があること自体が、長期的なエネルギー安全保障・海上輸送リスクの前提を変える環境変化といえる。企業は、特定海峡への依存度、代替ルート・備蓄戦略、保険・運賃の変動リスクを中長期的に再評価する必要がある。"
+      },
+      "initial_anomaly": "イランがオマーンとの新枠組み交渉の一部として「米国船籍の恒久的な航行禁止」を求める一方、中国はイランに対し『航行の自由と安全な通航』を公然と要請している点。従来のイラン支持・米国牽制という単純な構図から外れ、中国がホルムズ海峡の制度原則（航行の自由）を前面に出し始めていることが重要な違和感。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "China",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては、航行の自由原則を前面に出しつつ『実利的中立』を示す中程度の強度。Substanceとしては、制度や現場行動を直接変える力は弱く、イラン・他国への外交的働きかけにとどまる。",
+            "discretion": "中国はイランとの関係維持や対米関係を踏まえ、要請のトーンや具体性を調整する裁量が大きい。",
+            "evidence_ids": [
+              "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+            ],
+            "target_scope": "ホルムズ海峡を通航する全ての船舶に対する一般原則だが、実務的には中国向けタンカーの安全確保が主な関心。",
+            "stated_signal": "中国はホルムズ海峡の航行の自由と安全な通航を支持し、イランに自制と国際原則の尊重を求める『実利的中立』の立場にある。",
+            "concrete_measure": "具体的な制裁や軍事行動ではなく、外交的要請と対話仲介の意思表示。",
+            "enforcement_status": "中国単独での強制力は限定的であり、実際の通航安全は沿岸国・海軍力を持つ国の行動に依存。",
+            "implementation_status": "外交発言として既に行われている。",
+            "legal_or_policy_force": "法的拘束力はなく、外交的圧力・説得にとどまる。"
+          },
+          "primary_audience": "Iran",
+          "message_hypothesis": "イランに対し、ホルムズ海峡の封鎖や選別的通航制限を長期化させないよう促しつつ、中国が航行の自由原則を重視していることを国際社会に示す。",
+          "secondary_audience": "International energy-importing states and markets",
+          "action_or_statement": "王毅外相がイランに対し、ホルムズ海峡における航行の自由と安全な通航を確保するよう公然と要請した。"
+        },
+        {
+          "actor_ref": "Iran",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしては非常に強い対米抑止・国内向け強硬姿勢。Substanceとしては、現時点では交渉上の最大要求であり、最終枠組みでどこまで実現するかは不透明。",
+            "discretion": "イランは交渉過程で要求の強度（恒久→期間限定・条件付き）を調整する裁量を持つが、国内政治・対米抑止の制約も受ける。",
+            "evidence_ids": [
+              "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+            ],
+            "target_scope": "米国船籍に限定されるが、実務上は同盟国・関連企業にも波及し得る。",
+            "stated_signal": "米国船籍の恒久的排除を求めることで、ホルムズ海峡における米国の自由航行・軍事的プレゼンスを根本から否定する姿勢を示している。",
+            "concrete_measure": "交渉上の要求として提示されているが、実際に合意・実施されているかは不明。",
+            "enforcement_status": "合意に至らない限り、実際の強制力は限定的であり、軍事的対立を伴う可能性もある。",
+            "implementation_status": "Bloomberg報道によれば、交渉の一部として提示されている段階。",
+            "legal_or_policy_force": "現時点では交渉上の要求であり、国際的に認められた法的拘束力はない。"
+          },
+          "primary_audience": "United States",
+          "message_hypothesis": "米国に対しホルムズ海峡での軍事・政治的プレゼンスを制約する強い抑止メッセージを送り、国内向けには対米強硬姿勢と革命防衛体制の正統性を誇示する。",
+          "secondary_audience": "Domestic Iranian audience and regional actors (including Oman)",
+          "action_or_statement": "オマーンとの交渉枠組みの一部として、米国船籍のホルムズ海峡における恒久的な航行禁止を求めている。"
+        },
+        {
+          "actor_ref": "China",
+          "confidence": "高",
+          "action_substance": {
+            "assessment": "Signalとしては『市場安定化能力』を示す中〜強度。Substanceとしては、世界市場価格に実際の影響を与える実務的な強い措置。",
+            "discretion": "中国は備蓄水準・輸入量を市場状況に応じて調整する高い裁量を持つ。",
+            "evidence_ids": [
+              "a9208a53-6674-4447-922b-5fb15ecdd2be"
+            ],
+            "target_scope": "中国の原油輸入全体と世界市場価格。",
+            "stated_signal": "中国はホルムズ海峡危機に際し、輸入調整と備蓄活用により市場安定化に寄与できる能力を持つ。",
+            "concrete_measure": "年初から16%の備蓄積み増し、封鎖期間中の日量500万バレル超の輸入削減。",
+            "enforcement_status": "中国政府の統制下で実行されている。",
+            "implementation_status": "NPR報道によれば既に実施済み。",
+            "legal_or_policy_force": "国内政策決定に基づく実務的措置であり、国際法的拘束力は関係しない。"
+          },
+          "primary_audience": "Domestic Chinese economic and political stakeholders",
+          "message_hypothesis": "国内向けにはエネルギー安全保障を確保し市場ショックを抑えた能力を示し、対外的には責任ある大国として原油市場安定に貢献していることを示す。",
+          "secondary_audience": "Global markets and energy exporters (including Iran)",
+          "action_or_statement": "ホルムズ封鎖期間中に輸入削減と備蓄積み増しを行い、価格急騰を緩和した。"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "ホルムズ海峡の新たな航行枠組み交渉の中で、イランが米国船籍の恒久的航行禁止を求める一方、中国がイランに対し『航行の自由と安全な通航』を公然と要請している。ホルムズ海峡の制度原則（航行の自由・無差別性）が交渉対象となり、第三国（中国等）が原則維持を前面に出し始めた点が従来構図からの変化。",
+        "why_it_matters": "ホルムズ海峡は世界の原油輸送の要衝であり、航行の自由原則の弱体化や特定国船籍の選別的制限は、エネルギー価格・海上輸送コスト・安全保障環境に広範な影響を及ぼし得る。中国など主要輸入国の反応は、イランの強硬要求がどこまで現実化するか、危機がどこまで緩和されるかを左右する。",
+        "what_to_watch_decide": "(1) イラン・オマーン新枠組みの具体条項（米国船籍の扱い、航行の自由原則の位置づけ）、(2) 中国・他の主要輸入国の公式声明での『航行の自由』への言及、(3) 米国のレッドラインと軍事的自由航行作戦の動向、(4) 原油価格・運賃・保険料の変動。企業としては、ホルムズ海峡リスクの長期化可能性を前提に、代替調達・輸送ルート・備蓄戦略のオプションを検討することが望ましい（具体的判断は社内専門家・経営陣が行う）。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "中国（王毅外相・外交当局）",
+          "red_line": "ホルムズ海峡の長期的封鎖や、中国向けタンカーの安全な通航が実質的に阻害される状態は受け入れ難いと推定される（仮説）。",
+          "actor_ref": "actor_china",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "ホルムズ海峡の直接の沿岸国ではないが、主要原油輸入国として外交ルートを通じてイランに要請・仲介を行う。",
+          "evidence_ids": [
+            "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+            "a9208a53-6674-4447-922b-5fb15ecdd2be"
+          ],
+          "decision_power": "ホルムズ海峡の制度を直接決める権限はないが、エネルギー市場への影響力と外交的発言を通じてイラン・オマーンの行動に一定の影響を与え得る。",
+          "driving_forces": [
+            {
+              "force": "エネルギー安全保障・原油輸入依存",
+              "direction": "supporting",
+              "description": "ホルムズ海峡経由の原油輸入と価格安定が中国経済にとって重要であり、航行の自由維持を求める動機となる。"
+            },
+            {
+              "force": "対米関係・大国間競争",
+              "direction": "constraining",
+              "description": "米国との全面対立を避けつつ、自国の立場を強化する必要があり、イラン支持を過度に前面に出すことは制約される。"
+            }
+          ],
+          "ability_to_move": "イランへの公然の要請や仲介提案を通じて、航行の自由原則を維持する方向へ交渉空間を動かす能力。",
+          "issue_objective": "ホルムズ海峡の新枠組みが自国タンカーの安全な通航と航行の自由原則を維持し、エネルギー供給と価格安定を確保するように誘導すること。",
+          "observed_action": "王毅外相がイランに対し、ホルムズ海峡における航行の自由と安全な通航を確保するよう公然と要請し、米・イラン双方に自制と対話再開を求めている。",
+          "vulnerabilities": [
+            "原油輸入への依存度の高さ",
+            "ホルムズ海峡リスクによる価格変動への感応度"
+          ],
+          "ability_to_block": "枠組みそのものを拒否する法的権限はないが、中国向け原油取引・備蓄調整を通じて、実務的な成立可能性に影響を与えることはできる。",
+          "primary_audience": "イラン政府（交渉当事者）",
+          "why_actor_matters": "中国はホルムズ海峡を経由する主要原油輸入国であり、封鎖期間中の輸入削減と備蓄積み増しで市場安定化に一定の役割を果たしたと報じられている。また、王毅外相がイランに対し航行の自由と安全な通航を公然と要請し、対話仲介を試みていることから、ホルムズ新枠組みの方向性に影響を与え得る第三国として重要である。",
+          "available_leverage": [
+            "イラン向け原油輸入の規模と条件",
+            "原油備蓄の積み増し・取り崩しによる市場安定化",
+            "外交的要請・仲介提案"
+          ],
+          "secondary_audience": "国際社会・原油市場関係者（中国が危機安定化に貢献しているという印象）",
+          "ultimate_objective": "自国の長期的なエネルギー安全保障と国際経済の安定を維持すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "エネルギー輸入ルートの安定と価格急騰の回避を重視し、危機局面では備蓄調整や外交仲介を通じて市場安定化を図る傾向があると推定される（仮説）。",
+          "preference_action_gap": "Persistent Preference仮説（エネルギー安全保障と市場安定の重視）と、今回の航行の自由要請・仲介行動は整合的であり、大きなGapは確認できない。ただし、対米関係の詳細な優先順位や、イランへの圧力の強度については資料不足であり、どこまで踏み込むかは不明。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "軍事的自由航行作戦への直接参加（沿岸国ではなく、政治的コストが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": null,
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": null,
+            "actor_intelligence_status": null
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "他の局面での一貫性は今回資料からは確認できない。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "ホルムズ危機における市場安定化行動としてPersistent Preference仮説を補強する。",
+              "evidence_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+              "date_or_period": null,
+              "event_or_behavior": "ホルムズ封鎖期間中に輸入削減と備蓄積み増しで価格急騰を緩和したと報じられている。",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "『実利的中立』というラベル自体はメディアの要約であり、中国政府の公式定義ではない。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "危機局面で航行の自由と対話仲介を重視する行動としてPersistent Preference仮説を補強する。",
+              "evidence_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+              "date_or_period": null,
+              "event_or_behavior": "王毅外相がイランに対し航行の自由と安全な通航を公然と要請し、対話再開の仲介を試みていると報じられている。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "イランとのエネルギー関係を維持しつつ、米国との全面対立を避ける『実利的中立』的な関係を好むと推定される（仮説）。"
+        },
+        {
+          "actor": "イラン（政権・交渉当局）",
+          "red_line": "米国の軍事的プレゼンスと通航権が完全に自由なまま維持される枠組みは、国内政治上受け入れ難いと推定される（仮説）。",
+          "actor_ref": "actor_iran",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "ホルムズ海峡沿岸国として、新たな航行枠組み交渉の当事者。",
+          "evidence_ids": [
+            "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+          ],
+          "decision_power": "オマーンとの交渉を通じて、新枠組みの条文・運用に大きな影響力を持つ。",
+          "driving_forces": [
+            {
+              "force": "国内政治・正統性維持",
+              "direction": "supporting",
+              "description": "対米強硬姿勢を示すことで、政権の正統性と支持を維持する必要がある。"
+            },
+            {
+              "force": "制裁下での経済・エネルギー輸出",
+              "direction": "constraining",
+              "description": "中国などへの原油輸出を維持する必要があり、過度な緊張や封鎖は自国経済に打撃となるため、最終的な妥協を迫る制約となる。"
+            }
+          ],
+          "ability_to_move": "米国船籍の恒久的航行禁止など強硬要求を提示し、交渉空間の上限を設定する能力。",
+          "issue_objective": "ホルムズ海峡の新枠組みを通じて、米国の軍事的プレゼンスと通航権を制約し、自国の安全保障と国内正統性を強化すること。",
+          "observed_action": "オマーンとの交渉が進む枠組みの一部として、米国船籍のホルムズ海峡における恒久的な航行禁止を求めている。",
+          "vulnerabilities": [
+            "制裁下での経済脆弱性",
+            "原油輸出への依存度",
+            "国内政治の不安定化リスク"
+          ],
+          "ability_to_block": "自国領海・管理水域における通航を制限することで、枠組みの成立や実施を事実上阻止し得る。",
+          "primary_audience": "国内支持層・安全保障機関（革命防衛隊など）",
+          "why_actor_matters": "イランはホルムズ海峡沿岸国として新枠組み交渉の当事者であり、米国船籍の恒久的航行禁止を求めるなど、交渉空間の上限を設定する強硬要求を提示している。イランの要求の強度と修正余地が、第三国（中国等）の反応や最終枠組みの形を左右するため、局面のKey Actorとして重要である。",
+          "available_leverage": [
+            "ホルムズ海峡における通航管理・制限の実務的権限",
+            "米国船籍に対する強硬要求を通じた交渉カード"
+          ],
+          "secondary_audience": "米国政府・軍（対米抑止シグナル）",
+          "ultimate_objective": "対米抑止力と国内政治上の正統性を維持しつつ、ホルムズ海峡を通じた自国の安全保障と経済利益を確保すること。",
+          "actor_model_challenge": null,
+          "persistent_preference": "対米強硬姿勢とホルムズ海峡を交渉カードとして用いる傾向があると推定されるが、今回資料だけでは過去事例との一貫性は確認できない（仮説）。",
+          "preference_action_gap": "対米抑止・国内正統性維持という仮説上のPersistent Preferenceと、米国船籍恒久禁止要求という強硬行動は整合的に見える。一方で、経済・外交制約から最終的にどこまで要求を維持できるかは不明であり、交渉過程での修正余地が存在する可能性が高い。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "長期的な全面封鎖（自国の原油輸出と経済に大きな打撃を与える）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": null,
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": null,
+            "actor_intelligence_status": null
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "『恒久禁止』要求が交渉上の最大値なのか、最終目的なのかは不明。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "対米抑止・国内向け強硬姿勢の一例としてPersistent Preference仮説を補強する。",
+              "evidence_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+              "date_or_period": null,
+              "event_or_behavior": "オマーンとの交渉が進む枠組みの一部として米国船籍のホルムズ海峡における恒久的な航行禁止を求めている。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国との対立構図を維持しつつ、オマーンや中国などとの関係を通じて制裁下でもエネルギー輸出を継続することを好むと推定される（仮説）。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "イラン・オマーン間の新枠組み案の具体条項（米国船籍以外の扱い、料金徴収、安全管理措置）はどうなっているか。",
+          "rationale": "枠組みの具体内容が分からなければ、第三国の反応の合理性・強度を評価できないため。",
+          "related_hypothesis": "ホルムズ新枠組みが航行の自由原則をどこまで維持するかがKey Pointであるという仮説",
+          "recommended_sources": "Bloomberg続報、オマーン・イラン政府公式発表、湾岸地域専門シンクタンク（Gulf International Forum等）の分析"
+        },
+        {
+          "priority": "中",
+          "question": "中国以外の主要輸入国は、ホルムズ海峡新枠組みとイランの米国船籍排除要求に対しどのような公式立場を取っているか。",
+          "rationale": "中国以外の反応を確認することで、第三国の行動パターンが一般化可能かを検証できる。",
+          "related_hypothesis": "第三国全体が航行の自由原則とエネルギー安全保障を重視するという仮説",
+          "recommended_sources": "各国外務省・エネルギー当局の声明、主要メディア（通信社・経済紙）の報道"
+        },
+        {
+          "priority": "高",
+          "question": "米国政府・軍は、ホルムズ海峡新枠組み交渉に対しどのようなレッドラインと交渉姿勢を示しているか。",
+          "rationale": "米国のレッドラインが不明なままでは、イランの要求がどこまで現実的か、第三国の仲介余地がどこにあるかを判断しにくいため。",
+          "related_hypothesis": "航行の自由原則がこの局面のKey Pointであるという仮説",
+          "recommended_sources": "米国政府・国防総省の公式声明、議会公聴会記録、軍事専門家・シンクタンク（ISW等）の分析"
+        },
+        {
+          "priority": null,
+          "question": "中国以外の主要輸入国（日本、韓国、インド、EU諸国）は、ホルムズ海峡新枠組みとイランの米国船籍排除要求に対しどのような公式立場を取っているか。",
+          "rationale": "第三国全体の反応がMain Scenario（航行の自由＋エネルギー安全保障＋当事者化回避）と整合するかを確認するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "中国の外交発言と市場調整行動、イランの強硬要求を同時に説明できるため。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "第三国（中国等）の反応は、航行の自由確保と自国のエネルギー安全保障を最優先しつつ、対立当事者にならないよう抑制的・仲介的な姿勢を取るという見立て。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+            "a9208a53-6674-4447-922b-5fb15ecdd2be",
+            "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "中国の備蓄調整とイラン産原油の大量出荷は、イランとの関係強化の側面もあり得るが、現時点の資料だけでは優先順位を確定できない。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "中国など第三国は、航行の自由原則よりもイランとのエネルギー取引拡大と対米牽制を優先しており、米国船籍排除要求に対しても実務的利益を重視して柔軟に対応する。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": [
+            "a9208a53-6674-4447-922b-5fb15ecdd2be"
+          ],
+          "contradicting_evidence_ids": [
+            "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+          ]
+        },
+        {
+          "reason": "NPR報道が示すように、中国の行動は市場構造に強く制約されており、構造要因は重要な補助説明として維持すべき。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "世界原油市場の構造（需給・備蓄・輸送能力）が各国の行動を支配しており、個別の外交発言よりも市場構造がホルムズ海峡新枠組みの方向性を決める。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "a9208a53-6674-4447-922b-5fb15ecdd2be"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "提供資料では、中国がイランに対し航行の自由確保を公然と要請しており、イランの強硬要求をそのまま支持している証拠はない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "中国の『実利的中立』というラベルは誤解であり、実際には中国はイラン側に大きく傾いた立場を取っている可能性がある。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+          ]
+        },
+        {
+          "reason": "Stage1で設定したKey Pointと逆方向の仮説だが、枠組み条文が不明なため完全には棄却できない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "ホルムズ海峡新枠組みの中心争点は航行の自由原則ではなく、料金徴収や技術的安全管理であり、米国船籍排除要求は周辺的な交渉カードに過ぎない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+          ]
+        }
+      ],
+      "one_line_assessment": "現時点の材料では、ホルムズ海峡の新枠組み交渉に対する中国など第三国の反応は、航行の自由確保と自国のエネルギー安全保障を最優先しつつ、対立当事者にならないよう抑制的・仲介的な姿勢を取る方向が主シナリオとして最も整合的と見られる（意図・内部力学は仮説）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "distributed",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "ホルムズ海峡新枠組みが、国際的な『航行の自由・無差別性』原則をどの程度維持するか（米国船籍のみの排除か、より広範な選別か、あるいは原則維持か）",
+          "secondary_hinges": [
+            "イランが米国船籍恒久禁止要求をどこまで交渉で引き下げるか（期間限定・条件付きへの修正など）",
+            "中国など主要輸入国が、航行の自由原則の弱体化に対しどの程度公然と反対・圧力をかけるか",
+            "米国・同盟国が軍事的プレゼンスと外交圧力を通じて、ホルムズ海峡の自由航行維持をどこまで実質的に担保するか"
+          ]
+        },
+        "primary_key_point": "ホルムズ海峡における『航行の自由』原則を新枠組みがどこまで維持するか",
+        "rejected_candidates": [
+          {
+            "key_point": "世界原油市場の価格安定と中国など主要輸入国のエネルギー安全保障",
+            "why_not_primary": "重要な構造要因だが、提供資料は中国の具体的外交発言（航行の自由要請）とイランの具体的交渉要求（米国船籍恒久禁止）に焦点を当てており、市場構造そのものよりも制度原則の扱いが直接的な争点として前面に出ている。"
+          },
+          {
+            "key_point": "イランの対米抑止・国内正統性維持のための強硬要求（米国船籍恒久禁止）",
+            "why_not_primary": "イラン側のIssue Objectiveとしては重要だが、第三国（中国等）の反応を説明するには、イランの要求単体よりも、それが航行の自由原則をどう変えるかという制度的影響を中心に置いた方が説明力が高い。"
+          },
+          {
+            "key_point": "中国の『実利的中立』と仲介姿勢",
+            "why_not_primary": "中国の行動様式を説明する鍵ではあるものの、その『実利』が何に基づくか（航行の自由・エネルギー安全保障）を規定する上位のKey Pointとして、航行の自由原則を置いた方が階層構造として整理しやすい。"
+          }
+        ],
+        "selection_rationale": "提供資料の範囲では、中国の王毅外相がイランに対し『航行の自由と安全な通航』を公然と要請していること、イランが米国船籍の恒久禁止を求めていることから、ホルムズ海峡の制度原則（航行の自由・無差別性）が交渉の中心争点となっていると見るのが最も整合的である。原油市場構造やイランの国内政治目的も重要だが、第三国（中国等）の反応を読むうえでは、まず新枠組みが航行の自由原則をどこまで維持・修正するかが蝶番になっていると置くのが妥当。",
+        "candidate_key_points": [
+          {
+            "key_point": "ホルムズ海峡における『航行の自由』原則を新枠組みがどこまで維持するか",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ中国がイランに対し公然と航行の自由を要請したのか、なぜイランが米国船籍の恒久禁止という強い要求を交渉カードとして提示しているのか、第三国が新枠組みに関心を持つ理由を説明できる。",
+            "why_it_could_be_key": "海峡の制度原則が変われば、米国船籍だけでなく他国船舶の扱い、保険料、運賃、軍事プレゼンスの正当化など、多数の派生効果が生じる。中国の王毅外相がイランに『航行の自由と安全な通航』を公然と要請していることからも、この原則が第三国の主要関心事であることが示唆される。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+              "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+            ],
+            "what_it_does_not_explain": "イラン国内政治（革命防衛隊など）の細かな力学や、オマーン国内の意思決定構造までは直接説明しない。",
+            "control_structure_summary": "イラン・オマーンの交渉内容、米国・同盟国の軍事的関与、中国など輸入国の外交圧力が相互に制約し合うため、航行の自由原則は複数主体の合意と力関係の結果として決まる。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "世界原油市場の価格安定と中国など主要輸入国のエネルギー安全保障",
+            "control_type": "structural",
+            "what_it_explains": "なぜ中国が封鎖期間中に輸入削減と備蓄積み増しという調整行動を取ったのか、なぜ第三国がホルムズ海峡の安定に強い関心を持つのかを説明できる。",
+            "why_it_could_be_key": "NPR報道によれば、中国は封鎖期間中に輸入削減と備蓄積み増しで価格急騰を緩和しており、ホルムズ海峡の混乱が世界市場に直結することが示されている。主要輸入国のエネルギー安全保障が脅かされれば、イラン・オマーンの枠組みに対する圧力が高まる。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "a9208a53-6674-4447-922b-5fb15ecdd2be"
+            ],
+            "what_it_does_not_explain": "イランの『米国船籍恒久禁止』という政治的要求の具体的な文言や、オマーンとの交渉の詳細な条件までは説明しない。",
+            "control_structure_summary": "原油市場の需給構造と輸入国の依存度という構造的要因が、各国の行動を制約する。個別の指導者の意思だけでなく、市場価格・備蓄水準・輸送能力が行動の限界線を決める。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "イランの対米抑止・国内正統性維持のための強硬要求（米国船籍恒久禁止）",
+            "control_type": "unknown",
+            "what_it_explains": "なぜ交渉の一部として米国船籍の恒久禁止という極端な要求が出ているのか、米国との対立構図を説明できる。",
+            "why_it_could_be_key": "Bloomberg報道によれば、イランはオマーンとの枠組みの一部として米国船籍の恒久的航行禁止を求めている。これは対米抑止と国内向け強硬姿勢のシグナルであり、新枠組みの交渉空間を規定する『最大要求』として機能している可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+            ],
+            "what_it_does_not_explain": "第三国（中国、湾岸諸国、欧州）の具体的な反応や、航行の自由原則全体の扱いまでは説明しない。",
+            "control_structure_summary": "イラン政権内部（最高指導者・革命防衛隊・外務省など）の意思決定により提示される要求だが、外部からの圧力や経済制約により修正され得る。",
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "中国の『実利的中立』と仲介姿勢",
+            "control_type": "unknown",
+            "what_it_explains": "なぜ中国がイランに対し公然と航行の自由を要請しつつ、対話仲介を試みているのかを説明できる。",
+            "why_it_could_be_key": "SCMP報道では、中国が米・イラン双方に自制を求めつつ対話再開を仲介しているとされる。中国がホルムズ海峡の新枠組みに対し、どの程度積極的に関与するかは、イランの要求の現実性や第三国の受容性に影響し得る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+            ],
+            "what_it_does_not_explain": "ホルムズ海峡の制度原則そのものの最終形や、米国の軍事的対応までは説明しない。",
+            "control_structure_summary": "中国外交当局の方針と指導部の戦略判断により、『実利的中立』の具体的運用（どこまでイランを支持し、どこまで航行の自由を強調するか）が決まる。",
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "イラン・オマーンの新枠組みが、米国船籍の扱いを含め航行の自由原則にほとんど触れず、むしろ料金徴収や技術的安全管理のみを中心とする合意として成立し、主要輸入国（中国等）がそれに対し航行の自由原則をほとんど問題視しない場合、この局面のKey Pointを『航行の自由原則の維持度合い』と置いた見立ては誤りだったと判断する必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+        ],
+        "control_structure_summary": "航行の自由原則の扱いは、イラン・オマーンの交渉結果だけでなく、米国・同盟国の軍事的関与、中国など輸入国の外交姿勢、保険・船会社のリスク評価が相互に制約し合う分散構造で決まる。単一のActorが一方的に決めるというより、多数の主体の合意と力関係の結果として形成される。",
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null
+      },
+      "media_source_context": {
+        "narrative_deviation": [
+          {
+            "source": "Bloomberg",
+            "evidence_ids": [
+              "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+            ],
+            "why_it_matters": "他の媒体がより慎重な表現（期間限定・条件付きの可能性）を用いる場合、このBloombergの framing は市場に過大なリスク認識を与える可能性があるため、裏取りが必要。",
+            "current_assessment": "現時点では、Bloombergの報道を交渉上の要求としての事実と認識しつつ、その恒久性・実現可能性については慎重な留保が必要。",
+            "source_attribution": "named",
+            "verification_method": "イラン・オマーン政府の公式発表や、他の信頼できる通信社・地域専門メディアの報道と比較し、要求の具体的文言と交渉文脈を確認する。",
+            "deviation_from_mainstream": "イランが米国船籍の『恒久的』航行禁止を求めているという強い要求を前面に出し、交渉上の最大値としての性格よりも、投資家にとってのリスク要因として強調している可能性がある。"
+          }
+        ],
+        "source_of_sources_note": null,
+        "media_editorial_context": [
+          {
+            "caveat": "SCMPは中国政府公式見解の直接代替ではなく、中国関連事案の国際的受け止め方を示す媒体として扱う。",
+            "outlet": "South China Morning Post (想定)",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+                ],
+                "observation_text": "中国の王毅外相によるイランへの『航行の自由と安全な通航』確保要請を主要トピックとして報じている。",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+                ],
+                "observation_text": "中国の姿勢を『実利的中立』と表現し、米・イラン双方に自制を求めつつ対話再開を仲介していると要約している。",
+                "observation_type": "wording"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "partially_supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_framing",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "SCMPは、中国のホルムズ海峡危機への関与を『実利的中立』として描くことで、中国が対立当事者ではなく安定志向の仲介者であるという国際的イメージを補強している可能性がある。",
+                "corroboration_basis": "behavioral_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に中国外交部の公式発言を要約した結果として『実利的中立』という表現を用いている可能性もあり、編集意図を断定はできない。",
+                "supporting_evidence_ids": [
+                  "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              },
+              {
+                "status": "supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "intended_audience",
+                "evidence_class": "historical_media_pattern",
+                "hypothesis_text": "SCMPの英語報道は、中国のホルムズ海峡危機への関与を国際読者（特にアジア・欧米の政策関係者）に伝えることを主な目的としており、中国政府の公式立場そのものではなく、国際的な窓口としての framing を優先している可能性がある。",
+                "corroboration_basis": "documentary_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": null,
+                "supporting_evidence_ids": [
+                  "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              }
+            ],
+            "document_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+            "omitted_actor_analysis": null
+          },
+          {
+            "caveat": "NPRは一般ニュース・解説媒体であり、軍事専門OSINTではない。",
+            "outlet": "NPR (想定)",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "a9208a53-6674-4447-922b-5fb15ecdd2be"
+                ],
+                "observation_text": "中国がホルムズ封鎖下でどのようにイラン産原油を確保しつつ市場ショックを緩和したかを主要テーマとしている。",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "a9208a53-6674-4447-922b-5fb15ecdd2be"
+                ],
+                "observation_text": "中国の備蓄積み増しと輸入削減を、価格急騰の緩和要因として位置づけている。",
+                "observation_type": "wording"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_topic",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "NPRはホルムズ海峡封鎖の軍事的側面よりも、中国のエネルギー調整行動と世界市場への影響に焦点を当てることで、米国視聴者にとって重要な『原油価格・市場安定』の観点から危機を説明しようとしている可能性がある。",
+                "corroboration_basis": "behavioral_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "ホルムズ海峡の軍事面については他稿で扱っており、本稿は経済面に特化しているだけの可能性もある。",
+                "supporting_evidence_ids": [
+                  "a9208a53-6674-4447-922b-5fb15ecdd2be"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              }
+            ],
+            "document_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+            "omitted_actor_analysis": null
+          },
+          {
+            "caveat": "Bloombergは投資・経済志向の報道であり、外交・軍事因果を過大に断定するリスクがある。",
+            "outlet": "Bloomberg (想定)",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+                ],
+                "observation_text": "イランがオマーンとの交渉の一部として米国船籍の恒久的航行禁止を求めていることを主要ニュースとして報じている。",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+                ],
+                "observation_text": "『恒久的な航行禁止』という強い表現を用い、投資家にとってのリスク要因として強調している。",
+                "observation_type": "wording"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "partially_supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "who_benefits",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "イランの米国船籍恒久禁止要求を強調することで、Bloombergは投資家に対しホルムズ海峡リスクの上振れ可能性を警告し、エネルギー市場のボラティリティを意識させている可能性がある。",
+                "corroboration_basis": "behavioral_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に交渉内容の事実を報じているだけであり、投資家向けのリスク強調は副次的な結果に過ぎない可能性もある。",
+                "supporting_evidence_ids": [
+                  "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              }
+            ],
+            "document_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+            "omitted_actor_analysis": null
+          }
+        ]
+      },
+      "unknown_or_uncertain": "イラン・オマーン新枠組みの具体内容、米国・他の主要輸入国の詳細な反応、イラン国内の意思決定力学（革命防衛隊・政府・最高指導者の関係）については、今回のSource Packには情報がなく、現時点では仮説以上のことは言えない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "イランの米国船籍恒久禁止要求がほぼ維持され、ホルムズ海峡新枠組みが『米国船籍排除＋その他国への限定的航行保証』として成立し、中国など第三国は原則論よりも自国の通航確保と対米・対イラン関係のバランスを優先する。",
+          "evidence_class": "current_indirect_evidence",
+          "switch_conditions": [
+            "新枠組みの条文で米国船籍恒久禁止が確認され、第三国の反応がそれを事実上容認する方向に傾く。"
+          ],
+          "weakening_conditions": [
+            "イランの要求が期間限定・条件付き制限へと明確に引き下げられる。",
+            "中国や他の輸入国が、米国船籍排除を国際原則への重大な違反として公然と批判する。"
+          ],
+          "strengthening_conditions": [
+            "イラン・オマーン最終合意で、米国船籍の恒久禁止が明記される。",
+            "中国など主要輸入国が、米国船籍排除に対し強い公的反対を示さず、自国船籍・企業の安全確保に焦点を当てたコメントを出す。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "中",
+          "description": "ホルムズ海峡新枠組み交渉が決裂し、イラン・米国間の軍事的緊張が再燃することで、第三国の反応が『航行の自由原則』よりも『停戦・危機管理』に集中する。中国などは停戦仲介と市場安定化に重点を移し、制度原則の細部への関与は後景に退く。",
+          "evidence_class": "current_indirect_evidence",
+          "switch_conditions": [
+            "交渉決裂と軍事的緊張再燃が確認され、各国の声明が停戦・危機管理にシフトする。"
+          ],
+          "weakening_conditions": [
+            "交渉が順調に進展し、具体的な枠組み案が公表される。",
+            "軍事的インシデントが発生せず、各国の声明が制度設計・航行原則に焦点を当て続ける。"
+          ],
+          "strengthening_conditions": [
+            "イラン・オマーン交渉決裂の報道が出る。",
+            "ホルムズ海峡で拿捕・威嚇射撃・限定攻撃など緊張のエスカレーションが再発する。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "イラン・オマーン新枠組みの具体条項に関する公式発表・信頼できる報道。",
+        "中国外交部・王毅外相の追加発言で、ホルムズ海峡の『航行の自由・安全な通航』への言及が続くかどうか。",
+        "主要輸入国のホルムズ海峡に関する公式声明（航行の自由原則への言及の有無）。",
+        "米国政府・軍のホルムズ海峡に関するレッドライン・自由航行作戦の動向。",
+        "原油価格・運賃・保険料の変動（ホルムズ海峡リスクプレミアムの有無）。"
+      ],
+      "retraction_conditions": [
+        "イラン・オマーン新枠組みが、航行の自由原則にほとんど触れず、米国船籍排除も含まない技術的・料金的枠組みとして成立し、第三国の反応も航行の自由原則ではなく料金・安全管理に集中する場合。",
+        "中国など主要輸入国が、ホルムズ海峡に関する声明で航行の自由原則をほとんど言及せず、イランの強硬要求に対しても明確な反対を示さない場合。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "現時点で、中国以外の主要輸入国の公式反応が確認できておらず、第三国全体が航行の自由原則をどこまで前面に出しているかは不明である点。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "イラン・オマーン間の新枠組み案の具体条項（米国船籍以外の扱い、料金徴収、安全管理措置）はどうなっているか。",
+          "rationale": "Key Point（航行の自由原則の維持度合い）とMain Scenarioの妥当性を検証するために不可欠。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "中国以外の主要輸入国（日本、韓国、インド、EU諸国）は、ホルムズ海峡新枠組みとイランの米国船籍排除要求に対しどのような公式立場を取っているか。",
+          "rationale": "第三国全体の反応がMain Scenario（航行の自由＋エネルギー安全保障＋当事者化回避）と整合するかを確認するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米国政府・軍は、ホルムズ海峡新枠組み交渉に対しどのようなレッドラインと交渉姿勢を示しているか。",
+          "rationale": "Key Point（航行の自由原則）に対する米国の位置づけと、イランの要求の現実性を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "イラン・オマーン間の新枠組み交渉の具体的内容（米国船籍以外の扱い、料金徴収、安全管理措置など）が不明であり、第三国の反応を精緻に評価できない。",
+          "gap_category": "deterministic",
+          "recommended_action": "Bloomberg等の続報やオマーン・イラン政府の公式発表を確認し、枠組み案の具体条項を把握する。"
+        },
+        {
+          "priority": "中",
+          "description": "中国以外の主要輸入国のホルムズ新枠組みに対する公式反応・外交姿勢が不明。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "各国外務省・エネルギー当局の声明、主要メディア報道を調査し、航行の自由原則・米国船籍扱いに関する立場を確認する。"
+        },
+        {
+          "priority": "高",
+          "description": "米国政府・軍のホルムズ海峡新枠組み交渉に対する具体的な反応（受け入れ可能な条件、レッドライン）が不明。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "米国政府・国防総省の公式声明、議会の反応、軍事専門家の分析を確認し、米国のレッドラインと交渉姿勢を把握する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "中国など第三国は、ホルムズ海峡の制度原則（航行の自由）よりも、自国のエネルギー取引と対米・対イラン関係のバランスを優先しており、イランの米国船籍排除要求に対しても、原則論より実務的利益を重視して柔軟に対応する可能性がある。その場合、航行の自由原則をKey Pointとする見立ては、第三国の実際の優先順位を過大評価している。",
+      "key_stakeholder_assessment": {
+        "rationale": "提供資料はイラン・オマーン間の新枠組み交渉と、中国の外交的反応、原油市場への影響を示しているが、誰が最終的にホルムズ海峡の新制度を決めるかについては明示していない。制度上はイラン・オマーンが枠組みの当事者だが、米国・同盟国の軍事的プレゼンス、中国など輸入国の市場・外交レバレッジが強く影響するため、意思決定は分散していると見るのが妥当であり、単一のKey Actorを特定する根拠は不足している。ここでは、Source Packに直接現れている主体として、中国とイランを代表的なKey Actor候補として暫定的に選定し、分散構造の中での役割を整理する。",
+        "confidence": "低",
+        "evidence_ids": [
+          "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "a9208a53-6674-4447-922b-5fb15ecdd2be",
+          "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+        ],
+        "determination": "distributed",
+        "decision_structure": "イラン・オマーンが新枠組みの条文・運用を交渉・合意する一方、米国・同盟国は軍事的自由航行作戦や外交圧力を通じて受け入れ可能な範囲を示し、中国など輸入国は市場調整と外交要請（航行の自由確保）を通じて枠組みの方向性に影響する。保険会社・船会社もリスク評価を通じて実務的な通航パターンを決めるため、結果として複数の意思決定ノードが相互拘束する分散構造となる。",
+        "selected_actor_ids": [
+          "actor_china",
+          "actor_iran"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "China",
+          "confidence": "中",
+          "evidence_ids": [
+            "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+            "a9208a53-6674-4447-922b-5fb15ecdd2be"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "航行の自由・無差別性が維持され、自国タンカーの安全な通航が確保される枠組み。",
+          "issue_component": "航行の自由原則の扱い",
+          "likely_reaction": "原則維持を訴えつつ、イラン・オマーンと実務的な安全確保を協議する。",
+          "current_red_line": "中国船籍・企業への選別的通航制限が導入されることは受け入れ難いと推定される。",
+          "stated_preference": "王毅外相の発言で航行の自由と安全な通航を重視する姿勢。",
+          "instrumental_value": "mixed",
+          "priority_rationale": "中国はエネルギー輸入国としてホルムズ海峡の長期的安定に依存しており、航行の自由原則の弱体化は自国経済に直接影響するため。",
+          "currently_tradeable": "原則論の一部（例えば米国船籍への限定的制約）については、実務的利益との交換余地がある可能性。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d"
+          ],
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "市場規模と備蓄調整による価格安定化。",
+          "effect_on_actor_objective": "原則維持は中国のエネルギー安全保障と国際的安定志向に合致し、弱体化はコスト増とリスク増につながる。",
+          "estimated_real_preference": "原則維持を望みつつ、自国のエネルギー取引と対米・対イラン関係のバランスを取る柔軟な立場。",
+          "alternative_interpretation": "中国は原則維持よりも自国の通航確保を優先し、米国船籍排除を黙認する可能性もある。",
+          "primary_binding_constraint": "自国のエネルギー輸入依存と国内経済安定。",
+          "issue_component_description": "ホルムズ海峡新枠組みが国際的な航行の自由・無差別性原則をどの程度維持するか。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "Iran",
+          "confidence": "中",
+          "evidence_ids": [
+            "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "米国の軍事的プレゼンスと経済的影響力をホルムズ海峡から排除するか、少なくとも大幅に制約する。",
+          "issue_component": "米国船籍恒久禁止要求",
+          "likely_reaction": "交渉過程で要求の強度を調整しつつ、象徴的な制限を残そうとする。",
+          "current_red_line": "米国船籍の完全な自由航行を認めることは、現時点では受け入れ難いと推定される。",
+          "stated_preference": "米国船籍の恒久的航行禁止。",
+          "instrumental_value": "negotiating_card",
+          "priority_rationale": "対米抑止と国内正統性維持の象徴的要求であり、交渉空間を規定する最大カード。",
+          "currently_tradeable": "恒久禁止から期間限定・条件付き制限への修正は交渉余地としてあり得る。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "6b3e15d8-bb4c-4b47-a94c-41196ea5d282"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "ホルムズ海峡の地理的支配と通航リスク。",
+          "effect_on_actor_objective": "要求維持は国内支持と対米抑止に資するが、国際的孤立と経済コストを高める。",
+          "estimated_real_preference": "米国の軍事的・政治的プレゼンスを制約する何らかの形の制限。",
+          "alternative_interpretation": "要求は純粋に国内向けの象徴であり、実務的には撤回される可能性もある。",
+          "primary_binding_constraint": "国内政治（革命防衛隊・強硬派）と対米抑止ニーズ。",
+          "issue_component_description": "イランが提示している米国船籍の恒久的航行禁止要求。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "China",
+          "confidence": "高",
+          "evidence_ids": [
+            "a9208a53-6674-4447-922b-5fb15ecdd2be"
+          ],
+          "evidence_class": "current_direct_evidence",
+          "desired_outcome": "価格急騰を抑えつつ、必要なエネルギー供給を確保する。",
+          "issue_component": "市場安定化行動（備蓄・輸入調整）",
+          "likely_reaction": "今後の緊張に応じて備蓄・輸入を再調整する。",
+          "current_red_line": "備蓄枯渇や過度な輸入削減による国内供給不足。",
+          "stated_preference": "明示的な声明は不明だが、行動として市場安定化を重視。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "原油価格急騰を緩和し、自国経済と世界市場の安定に直接寄与するため。",
+          "currently_tradeable": "備蓄放出や輸入調整は交渉カードとしても利用可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "a9208a53-6674-4447-922b-5fb15ecdd2be"
+          ],
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "備蓄放出・輸入調整。",
+          "effect_on_actor_objective": "市場安定化は中国の経済成長と国際的責任ある大国イメージに資する。",
+          "estimated_real_preference": "市場ショックを抑えつつ、自国の交渉力を高める。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "備蓄容量と国内需要。",
+          "issue_component_description": "中国がホルムズ封鎖期間中に行った備蓄積み増しと輸入削減。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        }
+      ],
+      "decisive_power_and_leverage": "この局面全体を決定づける力は、(1)ホルムズ海峡沿岸国としてのイラン・オマーンの実務的管理権限、(2)米国を含む海軍力を持つ国の航行の自由維持能力、(3)中国など主要輸入国の市場・外交レバレッジの組み合わせに分散している。単一の国家が一方的に枠組みを決めるというより、イランの強硬要求がどこまで第三国（中国、湾岸諸国、欧米）から押し返されるか、そしてそれに応じてイランがどこまで修正するかが、結果を左右する分散構造と見るのが妥当。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-02T01:21:47.086654+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "c4452198-b7bb-4d10-b2c4-088c748b4837",
+    "response_id": "557ab5a5-0da2-4c46-987c-1bd1e0b389e9",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 中国（王毅外相・外交当局）, イラン（政権・交渉当局）, United States, Other major importers (Japan, South Korea, India, EU states)",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "situation_actor_assessmentにkey_actor_profilesに存在しないactor_refがあります（創作の可能性、要人手確認）: China, Iran",
+        "passed": false
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）",
+        "passed": false
+      }
+    ],
+    "passed_count": 31,
+    "failed_count": 3,
+    "created_at": "2026-09-02T01:21:47.431878+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "key_stakeholder_v12_fields_present",
+      "situation_actor_assessment_grounded"
+    ],
+    "repair_attempted": true,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "situation_actor_assessment_grounded",
+      "actor_model_challenged"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "media_editorial_context[0].hypotheses[0]",
+      "media_editorial_context[0].hypotheses[1]",
+      "media_editorial_context[1].hypotheses[0]",
+      "media_editorial_context[2].hypotheses[0]"
+    ],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[2]",
+      "key_point_assessment.candidate_key_points[3]"
+    ],
+    "actor_provenance_touched": [],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 3,
+    "prompt_tokens": 132650,
+    "completion_tokens": 29048,
+    "total_tokens": 161698
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": true
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 56546,
+        "prompt_tokens": 39589,
+        "completion_tokens": 8539
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 49406,
+        "prompt_tokens": 44368,
+        "completion_tokens": 8476
+      },
+      {
+        "stage": "repair:stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 45718,
+        "prompt_tokens": 48693,
+        "completion_tokens": 12033
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: United States, Other major importers (Japan, South Korea, India, EU states)"
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "determination=distributedの場合はkey_actor_profilesが1件以上必要です"
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "situation_actor_assessmentにkey_actor_profilesに存在しないactor_refがあります（創作の可能性、要人手確認）: China, Iran"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 157.49710726737976
+}

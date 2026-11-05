@@ -1,0 +1,82 @@
+{
+  "mbs": {
+    "entity_id": "c47c90e6-eda1-4f56-9c3e-2b3206fde945",
+    "available_only": {
+      "profile_found": false,
+      "profile_knowledge_item_id": null,
+      "profile_status": null,
+      "profile_retrieval_status": null,
+      "precedent_count": 0,
+      "precedent_ids": [],
+      "why_not_retrieved": [
+        "no_profile_matching_status_and_retrieval_status",
+        "no_precedent_matching_status_and_retrieval_status"
+      ]
+    },
+    "unrestricted": {
+      "profile_found": true,
+      "profile_knowledge_item_id": "91d88ab7-207d-41a6-8b64-ea2de9cbb304",
+      "profile_status": "candidate",
+      "profile_retrieval_status": "restricted",
+      "precedent_count": 2,
+      "precedent_ids": [
+        "4e4c23bd-cba6-4db3-885d-71dd554fc564",
+        "335560c6-e331-4ea8-a836-6ae3ed98d5e3"
+      ],
+      "why_not_retrieved": []
+    }
+  },
+  "netanyahu": {
+    "entity_id": "585cc564-5a71-40ac-959b-3995d3a409c8",
+    "available_only": {
+      "profile_found": false,
+      "profile_knowledge_item_id": null,
+      "profile_status": null,
+      "profile_retrieval_status": null,
+      "precedent_count": 0,
+      "precedent_ids": [],
+      "why_not_retrieved": [
+        "no_profile_matching_status_and_retrieval_status",
+        "no_precedent_matching_status_and_retrieval_status"
+      ]
+    },
+    "unrestricted": {
+      "profile_found": true,
+      "profile_knowledge_item_id": "fe79618d-e6b2-4f9c-bd55-a88786c619d2",
+      "profile_status": "candidate",
+      "profile_retrieval_status": "restricted",
+      "precedent_count": 2,
+      "precedent_ids": [
+        "9fbfbc49-f321-412b-afbf-485badeaf0d7",
+        "ca89a713-a739-4b4e-803a-cb8fa7a4858f"
+      ],
+      "why_not_retrieved": []
+    }
+  },
+  "putin": {
+    "entity_id": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+    "available_only": {
+      "profile_found": true,
+      "profile_knowledge_item_id": "b4133e96-303f-4853-8cc3-3793e8145913",
+      "profile_status": "active",
+      "profile_retrieval_status": "available",
+      "precedent_count": 0,
+      "precedent_ids": [],
+      "why_not_retrieved": [
+        "no_precedent_matching_status_and_retrieval_status"
+      ]
+    },
+    "unrestricted": {
+      "profile_found": true,
+      "profile_knowledge_item_id": "b4133e96-303f-4853-8cc3-3793e8145913",
+      "profile_status": "active",
+      "profile_retrieval_status": "available",
+      "precedent_count": 2,
+      "precedent_ids": [
+        "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8",
+        "d0ef206d-d8d0-4697-8781-bc310387fc31"
+      ],
+      "why_not_retrieved": []
+    }
+  }
+}

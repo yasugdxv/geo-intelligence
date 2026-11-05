@@ -6,6 +6,8 @@ import {
   Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger,
 } from "@/components/ui/dialog";
 import { useLanguage } from "@/lib/i18n";
+import { ensureIosIdentity, getSsoUser, type SsoUser } from "@/lib/geoIosAuthHeader";
+import { ssoLogout } from "@/lib/ssoAuth";
 
 // TopBarの歯車アイコン（元々は未配線の飾りボタンだった）から開く設定ダイアログ。
 // あなたの名前/ID（geo_ios_actor_id、既存の各IOS画面がaudit/created_by用に読んでいる
@@ -25,9 +27,11 @@ export function GeoSettingsDialog({ children }: { children: React.ReactNode }) {
   const [actorId, setActorId] = useState("");
   const [credential, setCredential] = useState("");
   const [hasStoredCredential, setHasStoredCredential] = useState(false);
+  const [sso, setSso] = useState<SsoUser | null>(null);
 
   const load = () => {
     if (typeof window === "undefined") return;
+    void ensureIosIdentity().then(() => setSso(getSsoUser())); // SSOでログイン中なら、そのユーザー（SSO無効なら null）
     setActorId(localStorage.getItem(ACTOR_ID_KEY) ?? "");
     setCredential("");
     setHasStoredCredential(!!localStorage.getItem(CREDENTIAL_KEY));
@@ -57,7 +61,22 @@ export function GeoSettingsDialog({ children }: { children: React.ReactNode }) {
           <DialogTitle>{t("geo.settings.title")}</DialogTitle>
           <DialogDescription>{t("geo.settings.description")}</DialogDescription>
         </DialogHeader>
-        <div className="space-y-4">
+        {sso && (
+          <div className="space-y-3 text-sm">
+            <div className="rounded-md border border-border bg-muted/30 px-3 py-2.5 space-y-0.5">
+              <div className="text-xs text-muted-foreground">{t("geo.settings.ssoLoggedIn")}</div>
+              <div className="font-medium">{sso.display_name ?? sso.email ?? sso.identity_id}</div>
+              {sso.email && sso.display_name && (
+                <div className="text-xs text-muted-foreground">{sso.email}</div>
+              )}
+            </div>
+            <p className="text-xs text-muted-foreground">{t("geo.settings.ssoNote")}</p>
+            <Button variant="outline" size="sm" onClick={() => void ssoLogout()}>
+              {t("geo.settings.ssoLogout")}
+            </Button>
+          </div>
+        )}
+        <div className={sso ? "hidden" : "space-y-4"}>
           <div className="space-y-1.5">
             <label className="text-xs font-medium text-muted-foreground">{t("geo.settings.actorIdLabel")}</label>
             <Input value={actorId} onChange={(e) => setActorId(e.target.value)} placeholder={t("geo.settings.actorIdPlaceholder")} />
@@ -76,7 +95,7 @@ export function GeoSettingsDialog({ children }: { children: React.ReactNode }) {
             )}
           </div>
         </div>
-        <DialogFooter>
+        <DialogFooter className={sso ? "hidden" : undefined}>
           <Button onClick={save}>{t("geo.settings.save")}</Button>
         </DialogFooter>
       </DialogContent>

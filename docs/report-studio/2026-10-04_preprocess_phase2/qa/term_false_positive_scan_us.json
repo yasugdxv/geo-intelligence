@@ -1,0 +1,254 @@
+{
+ "records": 209976,
+ "terms": {
+  "ICE": {
+   "legacy_hits": 105731,
+   "false_positive_removed": 92328,
+   "v2_hits": 13403
+  },
+  "govern": {
+   "legacy_hits": 84824,
+   "false_positive_removed": 84309,
+   "v2_hits": 515
+  },
+  "rent": {
+   "legacy_hits": 37273,
+   "false_positive_removed": 36130,
+   "v2_hits": 1143
+  },
+  "lose": {
+   "legacy_hits": 34721,
+   "false_positive_removed": 28278,
+   "v2_hits": 6445,
+   "v2_only": 2
+  },
+  "beat": {
+   "legacy_hits": 10689,
+   "v2_hits": 2741,
+   "false_positive_removed": 7948
+  },
+  "ad": {
+   "legacy_hits": 166749,
+   "v2_hits": 17872,
+   "false_positive_removed": 148877
+  },
+  "unity": {
+   "legacy_hits": 22684,
+   "false_positive_removed": 21341,
+   "v2_hits": 1343
+  },
+  "unite": {
+   "legacy_hits": 24666,
+   "false_positive_removed": 23453,
+   "v2_hits": 1213
+  },
+  "trade": {
+   "legacy_hits": 9436,
+   "v2_hits": 8398,
+   "false_positive_removed": 1038
+  }
+ },
+ "extra": {
+  "govern_legacy_via_Governor_only": 69339
+ },
+ "top_false_positive_words": {
+  "ICE": [
+   [
+    "office",
+    17708
+   ],
+   [
+    "prices",
+    11411
+   ],
+   [
+    "vice",
+    8056
+   ],
+   [
+    "bice",
+    5447
+   ],
+   [
+    "service",
+    5177
+   ]
+  ],
+  "govern": [
+   [
+    "governor",
+    61654
+   ],
+   [
+    "government",
+    15920
+   ],
+   [
+    "governors",
+    1991
+   ],
+   [
+    "governments",
+    1653
+   ],
+   [
+    "governing",
+    561
+   ]
+  ],
+  "rent": [
+   [
+    "different",
+    8130
+   ],
+   [
+    "current",
+    6964
+   ],
+   [
+    "currently",
+    6830
+   ],
+   [
+    "parents",
+    2782
+   ],
+   [
+    "concurrent",
+    1423
+   ]
+  ],
+  "lose": [
+   [
+    "close",
+    11995
+   ],
+   [
+    "closely",
+    4056
+   ],
+   [
+    "closed",
+    3181
+   ],
+   [
+    "loses",
+    2378
+   ],
+   [
+    "closer",
+    1983
+   ]
+  ],
+  "beat": [
+   [
+    "beatty",
+    5563
+   ],
+   [
+    "beating",
+    1367
+   ],
+   [
+    "beats",
+    237
+   ],
+   [
+    "beaten",
+    205
+   ],
+   [
+    "heartbeat",
+    123
+   ]
+  ],
+  "ad": [
+   [
+    "had",
+    9108
+   ],
+   [
+    "made",
+    5975
+   ],
+   [
+    "adams",
+    5368
+   ],
+   [
+    "ahead",
+    4370
+   ],
+   [
+    "administration",
+    4136
+   ]
+  ],
+  "unity": [
+   [
+    "community",
+    12872
+   ],
+   [
+    "opportunity",
+    7798
+   ],
+   [
+    "immunity",
+    514
+   ],
+   [
+    "impunity",
+    46
+   ],
+   [
+    "4humanunity",
+    41
+   ]
+  ],
+  "unite": [
+   [
+    "united",
+    22279
+   ],
+   [
+    "demsunited",
+    473
+   ],
+   [
+    "unitedhealthcare",
+    382
+   ],
+   [
+    "dunitedgraphics",
+    65
+   ],
+   [
+    "statunitensi",
+    46
+   ]
+  ],
+  "trade": [
+   [
+    "trades",
+    292
+   ],
+   [
+    "traded",
+    243
+   ],
+   [
+    "trademark",
+    228
+   ],
+   [
+    "traders",
+    89
+   ],
+   [
+    "trader",
+    53
+   ]
+  ]
+ }
+}

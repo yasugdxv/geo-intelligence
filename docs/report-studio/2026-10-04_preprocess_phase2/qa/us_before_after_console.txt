@@ -1,0 +1,59 @@
+== old_matcher_old_master
+   total_records                                    209976
+   nonduplicate_records                             174655
+   matched                                          141328
+   fallback                                         33327
+   analysis_clusters                                30434
+   sentiment_clusters                               35794
+   representatives_analysis                         75803
+   records_matching_ICE                             19604
+   records_matching_govern                          22916
+   records_with_short_token_match(<=3 Latin chars)  19604
+== v2_matcher_old_master
+   total_records                                    209976
+   nonduplicate_records                             174655
+   matched                                          108360
+   fallback                                         66295
+   analysis_clusters                                27493
+   sentiment_clusters                               32195
+   representatives_analysis                         75506
+   records_matching_ICE                             3151
+   records_matching_govern                          150
+   records_with_short_token_match(<=3 Latin chars)  3151
+== v2_matcher_v2_master
+   total_records                                    209976
+   nonduplicate_records                             174655
+   matched                                          116732
+   fallback                                         57923
+   analysis_clusters                                29951
+   sentiment_clusters                               34679
+   representatives_analysis                         77245
+   records_matching_ICE                             3196
+   records_matching_govern                          0
+   records_with_short_token_match(<=3 Latin chars)  3196
+
+Narrative(番号別, 全17 Signal合算, 非重複)
+No.             old v2+oldMaster  v2+v2Master
+00            33327        66295        57923
+01             1072         2198         2119
+02             2443         2721         2337
+03             7551         2738         2652
+04             5490         5375         6280
+05               75          180          174
+06              108          137          132
+07            27088        23687        24394
+08            48294        38308        41430
+09             8234         5669         6848
+10            33428        16647        18626
+11             7545        10700        11740
+
+Driver Top3 changed (old -> final): 14 of 17 signals
+
+record-level transitions (old -> final):
+   unchanged narrative                                            97913
+   fallback unchanged                                             33048
+   matched->fallback: only legacy-collision terms (expected)      24262
+   narrative changed                                              18540
+   matched->fallback: other terms involved (review)               613
+   fallback->matched (new variants/recall)                        279
+terms behind 'other terms involved' (top 12): [('honest', 188), ('independent', 59), ('trump', 43), ('immigration', 33), ('interview', 29), ('democracy', 28), ('crime', 28), ('maga', 26), ('competitive', 20), ('jobs', 16), ('corrupt', 14), ('prices', 11)]

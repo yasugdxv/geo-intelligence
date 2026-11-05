@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExpertAIGapRecord",
+  "description": "Session3 Expert Review完了後、AI vs Expertの差分を構造化して保存するためのSchema。専門家コメントをそのままPromptへ追加しない（21章原則）——必ずgap_type/gap_originで分類してからチューニング方針を決定する。",
+  "type": "object",
+  "required": ["dimension", "ai_assessment", "expert_assessment", "agreement", "gap_type", "gap_origin", "tuning_candidate"],
+  "properties": {
+    "dimension": {
+      "type": "string",
+      "description": "どのAI分析項目についての差分か（例: 'key_point_assessment.primary_key_point', 'key_actor_profiles[trump].estimated_real_preference', 'media_source_context.hypotheses[1]'）"
+    },
+    "ai_assessment": {"type": "string", "description": "AIの実際の出力内容（要約可、原文参照idを含めてよい）"},
+    "expert_assessment": {"type": "string", "description": "専門家の実際の回答内容"},
+    "agreement": {
+      "type": "string",
+      "enum": ["agree", "partial", "disagree", "missing", "over_interpreted"],
+      "description": "03_expert_review_form.mdのRating欄と対応"
+    },
+    "gap_type": {
+      "type": "string",
+      "enum": [
+        "key_point_selection",
+        "key_actor_selection",
+        "actor_objective",
+        "actor_current_priority",
+        "real_preference_inference",
+        "intrinsic_vs_instrumental",
+        "red_line",
+        "tradeability",
+        "constraint",
+        "leverage",
+        "decision_dynamics",
+        "media_interpretation",
+        "source_selection",
+        "evidence_weighting",
+        "alternative_hypothesis",
+        "scenario_derivation",
+        "leading_indicator",
+        "over_interpretation",
+        "missing_context"
+      ],
+      "description": "差分の性質分類（依頼書19章）"
+    },
+    "gap_origin": {
+      "type": "string",
+      "enum": [
+        "reasoning_gap",
+        "actor_intelligence_gap",
+        "media_intelligence_gap",
+        "foundation_gap",
+        "source_gap",
+        "evidence_weighting_gap",
+        "implementation_bug",
+        "expert_tacit_knowledge"
+      ],
+      "description": "差分の原因分類（依頼書20章）。次のチューニング方針（Thinking OS/Actor Intelligence/Media Intelligence/Evidence Weighting/Foundation拡張のどこを優先するか）を決めるための一次分類"
+    },
+    "expert_reasoning": {"type": ["string", "null"], "description": "専門家がその判断に至った理由（自由記述、暗黙知の言語化）"},
+    "expert_preferred_evidence": {
+      "type": "array", "items": {"type": "string"},
+      "description": "専門家が重視する（またはAIが軽視すべきと考える）Evidence・Source・観測項目の一覧"
+    },
+    "tuning_candidate": {
+      "type": "boolean",
+      "description": "このGapを次のチューニング対象として扱うべきか。gap_originが'expert_tacit_knowledge'のみの場合、単一Caseからの過学習を避けるため複数Caseでの再現確認を経てからtrueにすることを推奨（05_session3_review_guide.md参照）"
+    },
+    "case_id": {"type": "string", "description": "どのReview Caseに紐づくか（例: 'zelenskyy_oval_office_clash'）"},
+    "reviewer": {"type": "string"},
+    "review_date": {"type": "string", "format": "date"}
+  }
+}

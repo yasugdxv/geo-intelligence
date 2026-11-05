@@ -35,6 +35,33 @@ def auto_provision():
     return geo_ios_identity.auto_provision_identity(_client)
 
 
+@geo_ios_identity_router.get("/sso-config")
+def sso_config():
+    """画面が、SSOの方式（OIDC）とテナントID・クライアントIDを知るための設定。**認証なしで公開**（ログインの前に必要なため）。
+    テナントID・クライアントIDは、秘密情報ではない。シークレットは、そもそも持たない。"""
+    return geo_ios_identity.sso_public_config()
+
+
+@geo_ios_identity_router.get("/me")
+def me(identity: geo_ios_identity.IosIdentity = Depends(geo_ios_identity.verify_ios_identity)):
+    """いま認証されているユーザー（画面が、自分のID・表示名・ログイン方式を知るため）。
+    SSOが有効なときは、Azureのログインから対応づけたユーザー。資格情報は、返さない。"""
+    row = {}
+    try:
+        rows = _client.select("geo_ios_identities", {"select": "identity_id,email,display_name",
+                                                      "identity_id": f"eq.{identity.identity_id}", "limit": "1"})
+        row = rows[0] if rows else {}
+    except Exception:  # noqa: BLE001 — SSO用の列が無い環境でも、IDとロールは返す
+        try:
+            rows = _client.select("geo_ios_identities", {"select": "identity_id,display_name",
+                                                          "identity_id": f"eq.{identity.identity_id}", "limit": "1"})
+            row = rows[0] if rows else {}
+        except Exception:  # noqa: BLE001
+            row = {}
+    return {"identity_id": identity.identity_id, "role": identity.assigned_role, "display_name": row.get("display_name"),
+            "email": row.get("email"), "mode": "sso" if geo_ios_identity.sso_enabled() else "credential"}
+
+
 @geo_ios_identity_router.get("")
 def list_identities(
     role: str | None = None,

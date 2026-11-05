@@ -1,0 +1,1220 @@
+{
+  "request": {
+    "request_id": "4de52ab6-61cf-426d-9ca5-653efb3e5334",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "台湾のTSMCおよび貿易・産業当局が、米国の対中半導体輸出規制の実務的な遵守・執行にどう対応しているかという局面について、主要な意思決定主体、それぞれの目的、現在の力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-03T05:09:10.345062+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "befafe01-54f9-469a-9652-345147d7e3dc",
+    "request_id": "4de52ab6-61cf-426d-9ca5-653efb3e5334",
+    "document_ids": [
+      "713a3264-ba25-4cca-807e-a0b18366c4c7",
+      "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T05:09:10.74033+00:00"
+  },
+  "response": {
+    "response_id": "1ab3abe0-6a8b-435f-b54b-1cd79f845d71",
+    "request_id": "4de52ab6-61cf-426d-9ca5-653efb3e5334",
+    "source_pack_id": "befafe01-54f9-469a-9652-345147d7e3dc",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "[document_id: a59bdc0a-5b84-424b-8f0d-630f5d6073fe]は、台湾の頼清徳総統が日本の高市早苗氏と会談し、「非紅色サプライチェーン」構築へ協力する方針を示したニュースである。",
+          "claim_type": "fact",
+          "source_ref": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        },
+        {
+          "text": "[document_id: 713a3264-ba25-4cca-807e-a0b18366c4c7]は、中国・台湾・日本の半導体輸出2026に関するレポートであり、タイトル抜粋から「規制強化でも増える対中需要と輸出管理の実務」というテーマを扱っていることが分かる。",
+          "claim_type": "fact",
+          "source_ref": "713a3264-ba25-4cca-807e-a0b18366c4c7"
+        },
+        {
+          "text": "台湾総統が日本側と「非紅色サプライチェーン」協力を掲げていることは、台湾政府が中国依存を減らし、日米など民主陣営とのサプライチェーン再編を重視していることを示唆する。",
+          "claim_type": "observation",
+          "source_ref": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        },
+        {
+          "text": "「規制強化でも増える対中需要と輸出管理の実務」というテーマ設定は、米国の対中半導体輸出規制が強化される中でも、中国向け需要が依然として大きく、企業・当局が実務的な輸出管理対応を迫られている状況を示唆する。",
+          "claim_type": "observation",
+          "source_ref": "713a3264-ba25-4cca-807e-a0b18366c4c7"
+        },
+        {
+          "text": "台湾のTSMCは、米国の対中輸出規制を順守しつつ、中国向け需要を可能な範囲で維持し、自社の収益と技術ロードマップを守ることを優先している可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "台湾の貿易・産業当局は、米国の安全保障上の要請と台湾経済・雇用・税収への影響のバランスを取りながら、対中輸出管理を運用している可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "「非紅色サプライチェーン」協力の掲げ方から、台湾政府は日本との連携を通じて、中国以外の供給・需要ルートを強化し、米国の対中規制に対応しやすい産業構造を志向していると推測できる。",
+          "claim_type": "inference",
+          "source_ref": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        },
+        {
+          "text": "米国の対中半導体輸出規制の実務的な遵守・執行は、台湾当局とTSMCの間で継続的な調整・情報共有が行われており、形式的な法令順守と実務上の柔軟性の両立を図るプロセスになっている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "現時点の材料からは、米国の対中半導体輸出規制が構造的な制約として存在し、その下で台湾政府・TSMC・日本側が「非紅色サプライチェーン」や対中需要への対応を巡って動いている構図が見える。米国は安全保障・技術覇権の観点から対中規制を強化し、台湾政府は安全保障上の米国との関係維持と、自国経済・産業競争力の維持の両立を図る必要がある。TSMCは、米国規制順守とグローバル顧客（含む中国）への供給維持の間で調整し、自社の技術ロードマップ・収益・株主価値を守ることを重視していると推測される。日本側（高市氏など）は、台湾との連携を通じて中国依存を減らし、自国の半導体・関連産業の安全保障と競争力を高める方向で動いている。結果として、米国の規制が構造的な「天井」となり、その範囲内で日台企業・当局がサプライチェーン再編と対中需要対応を行う力学になっている可能性が高い。",
+      "stakeholders": [
+        {
+          "actor": "台湾政府（頼清徳政権の貿易・産業当局を含む）",
+          "purpose": "台湾の安全保障と経済・産業競争力の両立（中国からの軍事・経済圧力に耐えつつ、半導体産業を成長させる）",
+          "leverage": "台湾経済・雇用・税収、日台経済連携・投資",
+          "position": "米国の対中半導体輸出規制を順守しつつ、台湾経済・半導体産業への打撃を最小化し、日台連携を通じて「非紅色サプライチェーン」を構築する。",
+          "red_lines": "米国の安全保障上の要請を完全に無視して対中半導体輸出を拡大し、台湾の安全保障・米国との関係を危うくするような政策は取りにくいと推測される（仮説）。",
+          "confidence": "低",
+          "constraints_fears": "安全保障（中国からの軍事・経済圧力）、米国との同盟的関係・安全保障保証",
+          "ability_to_move_or_block": "国内法制・運用を通じて対中輸出管理の厳格化・緩和（米国枠内での裁量）を行い、日台連携・投資誘導などを推進できる"
+        },
+        {
+          "actor": "TSMC",
+          "purpose": "企業価値・収益・技術優位の維持・強化",
+          "leverage": "中国市場からの需要・収益、技術ロードマップ・設備投資計画",
+          "position": "米国の対中半導体輸出規制を順守しつつ、中国を含むグローバル顧客への供給を最適化し、自社の収益・技術ロードマップを維持する。",
+          "red_lines": "米国規制を明確に違反し、制裁・輸出禁止などを招くような対中供給拡大は避けたいと推測される（仮説）。",
+          "confidence": "低",
+          "constraints_fears": "米国の対中輸出規制・制裁リスク",
+          "ability_to_move_or_block": "対中輸出の構成・技術ノードを調整し、米国規制枠組みの範囲内で中国向け供給を維持・縮小・再配分することができる。また、米国・日本・その他への投資を通じてサプライチェーン再編に影響を与える。"
+        },
+        {
+          "actor": "米国政府（輸出管理・制裁当局）",
+          "purpose": "対中技術覇権競争で優位を維持し、中国の軍事・AI能力向上を抑制する。",
+          "leverage": "輸出管理法制・制裁権限・ドル決済・米市場アクセス。",
+          "position": "対中半導体輸出規制を強化しつつ、同盟国との協調を模索する立場。",
+          "priority": "対中先端半導体・製造装置の流入抑制。",
+          "red_lines": "中国軍事・AI用途への先端半導体供給を容認すること。",
+          "confidence": "中",
+          "constraints_fears": "同盟国・企業からの反発、米企業・市場への悪影響、過度なデカップリングによるコスト増。",
+          "key_relationships": "台湾政府・TSMC・日本政府・米半導体企業との関係を通じて規制を実施。",
+          "ability_to_move_or_block": "規制強化・緩和を通じて台湾・TSMCの対中供給余地を直接左右できる。"
+        },
+        {
+          "actor": "日本政府・産業政策当局",
+          "purpose": "自国の半導体・関連産業の安全保障と競争力を高め、中国依存を減らす。",
+          "leverage": "補助金・税制優遇・国内市場・技術協力。",
+          "position": "「非紅色サプライチェーン」協力を掲げ、台湾との連携を強調する立場。",
+          "priority": "台湾との連携強化、国内投資誘致。",
+          "red_lines": "中国市場を完全に失うような急激なデカップリング。",
+          "confidence": "低",
+          "constraints_fears": "国内産業基盤の弱さ、財政制約、中国との経済関係悪化。",
+          "key_relationships": "台湾政府・TSMC・日本企業・米国政府。",
+          "ability_to_move_or_block": "台湾との共同プロジェクト・投資を通じてサプライチェーン再編を後押しできるが、米国規制枠組みを直接変える力は持たない。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "米国の対中半導体輸出規制が2026年時点でも一定程度維持・強化されていること",
+          "TSMCが中国市場から完全には撤退しておらず、規制枠内で対中供給を続けていること",
+          "台湾政府が米国の安全保障要請に沿って輸出管理運用を行いつつ、日台連携を通じて中国依存低減を図っていること"
+        ],
+        "description": "提供資料の範囲では、米国の対中半導体輸出規制枠組みが構造的な制約として存在し、その下で台湾政府（貿易・産業当局を含む）とTSMCが、それぞれの目的に沿って最適化を図っていると見るのが最も整合的である。台湾政府は、安全保障と産業競争力の両立を目指し、「非紅色サプライチェーン」協力を通じて中国依存を減らしつつ、米国の要請に沿った輸出管理運用を行う方向にあると推測される。TSMCは、米国規制を順守しつつ、中国を含むグローバル顧客への供給を可能な範囲で維持し、自社の収益・技術ロードマップを守るために、技術ノード・顧客構成・投資配分を調整している可能性が高い。結果として、対中需要は規制強化の中でも一定程度残り、台湾側の実務対応は「規制枠内での対中供給維持」と「非紅色サプライチェーン構築による長期的な中国依存低減」の二つの軸で動いているとみなせる。",
+        "evidence_class": "current_indirect_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "「規制強化でも増える対中需要と輸出管理の実務」というテーマが、米国規制枠組みの下で対中需要と実務対応が続いている状況を示唆するため。",
+            "evidence_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          },
+          {
+            "rationale": "「非紅色サプライチェーン」協力が、台湾政府の中国依存低減と日台連携強化志向を示し、長期的なサプライチェーン再編の軸を補強しているため。",
+            "evidence_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "selection_rationale": "H0（Surface解釈）として、米国規制枠組みの下で台湾政府・TSMCが対中需要と安全保障・産業競争力のバランスを取っているという説明が、提供資料の観測（規制強化でも増える対中需要、非紅色サプライチェーン協力）と最も整合的であり、追加の未証明の仮定を最小限に抑えつつ、局面の主要な動きを説明できるため。H1（Actor-intent）やH4（Frame-breaking）も検討したが、現時点のEvidenceでは、より複雑な意図や枠組み変更を主軸に据える必要性は高くないと判断した。",
+        "supporting_evidence": [
+          "713a3264-ba25-4cca-807e-a0b18366c4c7",
+          "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+        ],
+        "observable_indicators": [
+          "台湾政府による輸出管理法制・運用の具体的な変更（対象技術・許認可プロセス）",
+          "TSMCの決算説明・IR資料における対中売上構成・規制対応の説明",
+          "日台間で発表される具体的な「非紅色サプライチェーン」関連プロジェクト・投資案件"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "米国の対中半導体輸出規制枠組みの下で、TSMC・台湾政府が対中供給と日台連携をどう調整するかは、日本企業にとっても半導体調達・投資機会・共同プロジェクトの形に影響し得る。特に、非紅色サプライチェーン構築が具体化すれば、中国以外の供給ルート・共同投資機会が増える一方、対中供給の制約が強まれば、中国市場向け製品の半導体調達リスクが高まる可能性がある。",
+        "unrelated_note": null,
+        "environment_change": "長期的には、米国規制枠組みと日台連携を通じて、半導体サプライチェーンが中国依存を減らし、日米台中心の構造へシフトする可能性があり、これが日本企業の調達戦略・投資判断の前提を変える。"
+      },
+      "initial_anomaly": "米国の対中半導体輸出規制が強化されているにもかかわらず、[document_id: 713a3264-ba25-4cca-807e-a0b18366c4c7]の抜粋タイトルが示すように「規制強化でも増える対中需要」とされている点。また、[document_id: a59bdc0a-5b84-424b-8f0d-630f5d6073fe]で台湾総統と日本側が「非紅色サプライチェーン」協力を掲げている一方で、現実には中国向け輸出が続いている可能性がある点。このギャップが、TSMCと台湾当局の実務対応・優先順位を読む上での違和感となる。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "Taiwan_Gov",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalとしての意味合いが強く、Substance（具体的政策・投資）は今後の実施次第。現時点では政治的方向性の表明段階にあるとみるのが妥当。",
+            "discretion": "台湾政府・日本政府ともに、どの産業・案件を「非紅色」と位置づけるかについて広い裁量を持つと推測される。",
+            "evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "target_scope": "半導体を含む広義の戦略産業サプライチェーン（日台間・民主陣営間）。",
+            "stated_signal": "「非紅色サプライチェーン」という言葉を用いることで、中国を排除したサプライチェーン再編への政治的コミットメントを示す。",
+            "concrete_measure": "現時点の抜粋からは具体的プロジェクト・投資内容は不明。協力方針レベルの表明にとどまる可能性がある。",
+            "enforcement_status": "不明。",
+            "implementation_status": "具体的案件への落とし込みはCurrent Evidenceからは不明。",
+            "legal_or_policy_force": "会談での方針表明であり、直ちに拘束力のある法令・協定ではないと推測される。"
+          },
+          "primary_audience": "米国・日本など同盟・準同盟国",
+          "message_hypothesis": "台湾は中国依存を減らしつつ、米日との連携を強化し、半導体サプライチェーンを民主陣営中心へ再編する意志があることを示す。中国に対しては「完全なデカップリングではなく、管理された距離」を取りたいというシグナルになり得る。",
+          "secondary_audience": "台湾国内の産業界・有権者、および中国政府",
+          "action_or_statement": "日本側と「非紅色サプライチェーン」構築協力を掲げた会談（[document_id: a59bdc0a-5b84-424b-8f0d-630f5d6073fe]）"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "米国の対中半導体輸出規制が強化される中でも、中国向け需要が続いており、台湾政府・TSMCが「規制枠内での対中供給維持」と「非紅色サプライチェーン構築による中国依存低減」の二つの軸で対応している可能性が示唆される。",
+        "why_it_matters": "日本企業にとって、半導体調達・投資・共同プロジェクトの前提が、米国規制枠組みと日台連携の動きによって変わり得る。対中供給の制約が強まれば中国市場向け製品のリスクが増し、非紅色サプライチェーンが具体化すれば中国以外の供給・投資機会が広がる。",
+        "what_to_watch_decide": "TSMCの対中供給実態、台湾政府の輸出管理運用、日台間の具体的なサプライチェーン協力案件、米国の対中規制の追加・緩和を継続的にモニタリングし、自社の調達・投資戦略の前提としてどのシナリオが強まりつつあるかを判断することが重要。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "台湾政府（頼清徳政権の貿易・産業当局を含む）",
+          "red_line": "米国の安全保障上の要請を完全に無視して対中半導体輸出を拡大し、台湾の安全保障・米国との関係を危うくするような政策は取りにくいと推測される（仮説）。",
+          "actor_ref": "Taiwan_Gov",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "輸出管理法制の整備・運用、産業政策・対外経済関係の決定、TSMCなど国内企業への政策的方向付け",
+          "evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "decision_power": "米国規制に整合する国内ルール・運用を決める権限を持ち、TSMCを含む企業に対する行政指導・支援・制約を行える",
+          "driving_forces": [
+            {
+              "force": "安全保障（中国からの軍事・経済圧力）",
+              "direction": "constraining",
+              "description": "中国の圧力が強いため、米日との連携を強化しつつ対中依存を減らす必要がある。"
+            },
+            {
+              "force": "米国との同盟的関係・安全保障保証",
+              "direction": "constraining",
+              "description": "米国の対中規制・安全保障政策に一定程度従う必要があり、独自路線の余地は限定される。"
+            },
+            {
+              "force": "台湾経済・雇用・税収",
+              "direction": "supporting",
+              "description": "半導体産業の成長・輸出維持は台湾経済にとって重要であり、対中需要を完全に切ることは難しい。"
+            },
+            {
+              "force": "日台経済連携・投資",
+              "direction": "supporting",
+              "description": "日本との連携は中国依存低減と産業高度化に資するため、非紅色サプライチェーン協力を推進する動機となる。"
+            }
+          ],
+          "ability_to_move": "国内法制・運用を通じて対中輸出管理の厳格化・緩和（米国枠内での裁量）を行い、日台連携・投資誘導などを推進できる",
+          "issue_objective": "米国の対中半導体輸出規制を順守しつつ、台湾経済・半導体産業への打撃を最小化し、日台連携を通じて「非紅色サプライチェーン」を構築する。",
+          "observed_action": "日本側との会談で「非紅色サプライチェーン」協力を掲げ、対中依存低減と日台連携を公に打ち出している。",
+          "vulnerabilities": [
+            "中国からの軍事・経済圧力",
+            "米国への安全保障依存",
+            "半導体産業への過度な依存"
+          ],
+          "ability_to_block": "国内許認可・監督権限を通じて、TSMCなどの対中輸出・投資を一定程度制限・停止することができる（ただし米国規制枠組みを超える裁量は限定的）",
+          "action_substance": {
+            "assessment": "Signal優位。Substanceは今後の国内法制・日台協力案件の具体化次第。",
+            "discretion": "台湾政府には、米国規制枠組みの範囲内でどの程度中国依存を減らすかを調整する裁量がある。",
+            "evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "target_scope": "半導体を含む戦略産業のサプライチェーン全体。",
+            "stated_signal": "中国依存低減と日台連携強化へのコミットメント。米国の対中規制に対応しやすい産業構造へのシフトを示唆。",
+            "concrete_measure": "「非紅色サプライチェーン」協力方針の表明。具体的な法令改正・投資案件はCurrent Evidenceからは確認できない。",
+            "enforcement_status": "不明。",
+            "implementation_status": "不明。",
+            "legal_or_policy_force": "政治レベルの方針表明であり、拘束力は限定的。今後の政策・協定に反映されるかが鍵。"
+          },
+          "primary_audience": "米国・日本など同盟・準同盟国、および台湾国内の産業界・有権者",
+          "why_actor_matters": "台湾政府（貿易・産業当局を含む）は、米国の対中規制を国内でどう運用するか、TSMCなど企業にどのような方針を示すかを決める主体であり、台湾側の実務的な輸出管理対応・サプライチェーン再編を動かす鍵となるため。",
+          "available_leverage": [
+            "国内輸出管理法制・許認可権限",
+            "産業政策・補助金・税制優遇",
+            "日米との外交・経済連携カード"
+          ],
+          "secondary_audience": "中国政府・中国市場（台湾が完全な対中デカップリングではなく、管理された距離を取ろうとしていることを示す可能性）",
+          "ultimate_objective": "台湾の安全保障と経済・産業競争力の両立（中国からの軍事・経済圧力に耐えつつ、半導体産業を成長させる）",
+          "actor_model_challenge": null,
+          "persistent_preference": "中国依存を徐々に減らしつつ、台湾の半導体産業を国際的な戦略資産として位置づけ、米日との連携を通じて安全保障と経済を両立させる志向があると推測される（仮説）。",
+          "preference_action_gap": "現時点の資料では、台湾政府の上位志向（安全保障と産業競争力の両立）と観測された行動（非紅色サプライチェーン協力）は整合的であり、大きなGapは確認できない。米国規制への具体的な国内運用の詳細が不明なため、その部分のGapは評価不能。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "米国規制枠組みの一方的な拒否",
+            "対中半導体輸出の急拡大"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "単一事例であり、Persistent Preferenceを確定するには追加Evidenceが必要。",
+              "source": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+              "claim_id": null,
+              "relevance": "台湾政府の中国依存低減・日台連携強化志向を示す事例",
+              "evidence_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+              "date_or_period": null,
+              "event_or_behavior": "頼清徳総統が日本の高市早苗氏と会談し、「非紅色サプライチェーン」構築へ協力を掲げた。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国・日本など民主陣営との安全保障・経済連携を強化しつつ、中国とは緊張を管理し、過度な依存を減らす方向"
+        },
+        {
+          "actor": "TSMC",
+          "red_line": "米国規制を明確に違反し、制裁・輸出禁止などを招くような対中供給拡大は避けたいと推測される（仮説）。",
+          "actor_ref": "TSMC",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "世界最大級の半導体ファウンドリとして、グローバル顧客への供給・投資・技術ロードマップを決定する企業主体",
+          "evidence_ids": [
+            "713a3264-ba25-4cca-807e-a0b18366c4c7"
+          ],
+          "decision_power": "どの技術ノードをどの顧客・地域に供給するか、どこに新工場を建設するかなど、グローバル半導体供給に大きな影響を与える決定権を持つ",
+          "driving_forces": [
+            {
+              "force": "米国の対中輸出規制・制裁リスク",
+              "direction": "constraining",
+              "description": "規制違反は重大な法的・事業リスクとなるため、順守が必要。"
+            },
+            {
+              "force": "中国市場からの需要・収益",
+              "direction": "supporting",
+              "description": "中国向け需要は収益源であり、可能な範囲で維持したい。"
+            },
+            {
+              "force": "技術ロードマップ・設備投資計画",
+              "direction": "supporting",
+              "description": "長期的な技術開発・設備投資の計画があり、規制環境に合わせて地域・顧客配分を調整する必要がある。"
+            }
+          ],
+          "ability_to_move": "対中輸出の構成・技術ノードを調整し、米国規制枠組みの範囲内で中国向け供給を維持・縮小・再配分することができる。また、米国・日本・その他への投資を通じてサプライチェーン再編に影響を与える。",
+          "issue_objective": "米国の対中半導体輸出規制を順守しつつ、中国を含むグローバル顧客への供給を最適化し、自社の収益・技術ロードマップを維持する。",
+          "observed_action": "提供資料からTSMC固有の具体的行動は直接は確認できないが、「規制強化でも増える対中需要と輸出管理の実務」というテーマから、対中需要に対応しつつ輸出管理実務を運用している企業群の一員として位置づけられる。",
+          "vulnerabilities": [
+            "米国規制・制裁への依存",
+            "設備投資の固定コスト",
+            "中国市場への依存度"
+          ],
+          "ability_to_block": "特定顧客・地域への供給を停止・縮小することで、その地域の半導体調達に大きな影響を与え得る（ただし米国規制・台湾政府方針の制約を受ける）。",
+          "action_substance": {
+            "assessment": "TSMCのSignal/Substanceは今回の資料からは直接評価不能。一般モデルとして「規制順守と対中需要維持の両立」を図っている可能性が高いが、仮説にとどまる。",
+            "discretion": "TSMCは米国規制・台湾政府方針の枠内で、顧客構成・技術ノード配分・投資先を調整する裁量を持つと推測される。",
+            "evidence_ids": [
+              "713a3264-ba25-4cca-807e-a0b18366c4c7"
+            ],
+            "target_scope": null,
+            "stated_signal": null,
+            "concrete_measure": null,
+            "enforcement_status": null,
+            "implementation_status": "TSMC固有の具体的措置はCurrent Evidenceからは確認できない。",
+            "legal_or_policy_force": null
+          },
+          "primary_audience": "株主・顧客（米国・中国・その他）、米国・台湾など規制当局",
+          "why_actor_matters": "TSMCは台湾の半導体輸出の中心企業であり、対中輸出規制の実務的な遵守・執行が、最終的にどの製品・技術が中国へ供給されるかを左右するため。この企業の判断が、台湾側の実務対応の具体的な姿を決定づける。",
+          "available_leverage": [
+            "供給停止・縮小・再配分の決定権",
+            "複数地域への投資カード",
+            "技術優位を背景とした交渉力"
+          ],
+          "secondary_audience": "日本など投資先国・パートナー企業",
+          "ultimate_objective": "企業価値・収益・技術優位の維持・強化",
+          "actor_model_challenge": null,
+          "persistent_preference": "規制環境の変化に対応しつつ、技術ロードマップと収益を最大化するために、複数地域への投資・供給を分散させる志向があると推測される（仮説）。",
+          "preference_action_gap": "TSMCの上位志向（収益・技術優位の維持）と推定される行動（対中需要への対応と規制順守の両立）は整合的に見えるが、TSMC固有の具体的行動Evidenceが不足しているため、Gap評価の確信度は低い。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "米国規制の一方的な無視",
+            "対中供給の急拡大"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [
+              "713a3264-ba25-4cca-807e-a0b18366c4c7"
+            ],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "TSMC固有の行動事例がCurrent Evidenceとして提示されていないため、企業全体の傾向との区別がつかない。",
+              "source": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+              "claim_id": null,
+              "relevance": "TSMCなど企業が対中需要と規制順守の両立を図る志向を示唆するが、TSMC固有のPersistent Preferenceとして確定するには不足。",
+              "evidence_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+              "date_or_period": null,
+              "event_or_behavior": "中国・台湾・日本の半導体輸出2026に関するレポートが「規制強化でも増える対中需要と輸出管理の実務」をテーマとしていることは、TSMCを含む企業が対中需要を完全には切らず、規制枠内で対応している状況を示唆する。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国・主要顧客との関係を維持しつつ、中国市場も可能な範囲で維持するバランス志向があると推測される（仮説）。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "TSMCの対中売上構成・技術ノード別供給状況は、米国規制強化後にどのように変化しているか。",
+          "rationale": "TSMCの対中供給実態を把握することで、主シナリオ（規制枠内でのバランス）と代替シナリオ（対中ビジネス維持優先・縮小）のどちらが妥当かを検証できる。",
+          "related_hypothesis": "主シナリオおよびActor-intent Alternative",
+          "recommended_sources": "TSMCのIR資料・決算説明、専門アナリストレポート"
+        },
+        {
+          "priority": "高",
+          "question": "台湾政府の輸出管理法制・運用は、米国の対中半導体規制にどの程度整合しているか。",
+          "rationale": "国内制度・運用の整合度を確認することで、台湾政府が米国規制枠組みをどの程度受け入れているかを評価できる。",
+          "related_hypothesis": "主シナリオ",
+          "recommended_sources": "台湾政府の公式文書・法令、専門レポート"
+        },
+        {
+          "priority": "中",
+          "question": "日台間の「非紅色サプライチェーン」協力は、具体的にどのプロジェクト・投資に結びついているか。",
+          "rationale": "具体的案件を確認することで、長期的なサプライチェーン再編の実質を評価できる。",
+          "related_hypothesis": "主シナリオおよびStructural Alternative",
+          "recommended_sources": "日台政府・企業の公式発表、ニュース・専門分析"
+        },
+        {
+          "priority": null,
+          "question": "TSMCの対中売上構成・技術ノード別供給状況は、米国規制強化後にどう変化しているか。",
+          "rationale": "Key Actor（TSMC）のPreference-Action Gapと主シナリオの妥当性を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "台湾の輸出管理法制・運用は、米国の対中半導体規制にどの程度整合しているか。",
+          "rationale": "Key Point（米国規制枠組み）と台湾政府の対応度合いを評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "「非紅色サプライチェーン」協力は、具体的にどの産業・プロジェクト・投資に結びついているか。",
+          "rationale": "台湾政府の長期的産業政策（Persistent Preference仮説）を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "提供資料のタイトル・ニュース抜粋と最も整合的であり、追加の未証明仮定が比較的少ない。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "米国の対中半導体輸出規制枠組みという構造的制約の下で、台湾政府・TSMCが対中需要と安全保障・産業競争力のバランスを取りつつ、規制枠内で最適化している。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "一般モデルとしては成立し得るが、Current Evidenceが不足しており支持・反証いずれもできない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "台湾政府・TSMCは米国規制を形式的には順守しつつ、実務上は対中ビジネス維持・拡大を優先し、抜け穴・グレーゾーンを活用している。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "将来シナリオとしてはあり得るが、2026時点のCurrent Evidenceからはまだ確認できない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "米国の対中半導体輸出規制が今後さらに厳格化され、TSMC・台湾政府が対中供給を大幅に縮小し、日米中心のサプライチェーンへ急速にシフトする。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "現時点の資料では、頼総統が「非紅色サプライチェーン」協力を掲げており、既存仮説と矛盾する行動は観測されていない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "既存の「台湾政府は中国依存を減らしつつ米日連携を強化する」というActor Intelligence仮説が、頼政権の具体的行動には当てはまらず、別の優先順位（例：短期経済・選挙）が支配している可能性。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ]
+        },
+        {
+          "reason": "「非紅色サプライチェーン」協力という表現が、サプライチェーン再編の重要性を示唆しており、輸出規制だけでは説明しきれない長期軸が存在する可能性がある。ただし、輸出規制実務も依然重要であり、完全な枠組み置き換えには至らない。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "対中輸出規制遵守よりも、長期的なサプライチェーン再編・技術移転管理が主戦場であり、「輸出規制実務」を局面の中心に置く枠組み自体がずれている。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of 2026-09-03、提供資料の範囲では、台湾政府・TSMCともに「米国の対中規制を形式的には順守しつつ、対中需要と自国・日台連携の産業競争力を最大化する」方向で動いている可能性が高いが、具体的な運用実務・内部調整の詳細はCurrent Evidenceが不足しており、主シナリオの確信度は中程度にとどまる。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "structural",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "米国政府が対中半導体輸出規制（対象技術・エンティティ・ライセンス条件）をどの水準で維持・強化・緩和するか",
+          "secondary_hinges": [
+            "台湾政府がどの程度まで米国の要請に沿って国内法制・運用を整合させるか",
+            "TSMCが対中需要と米国規制順守のバランスをどう取るか（技術ノード・顧客構成・投資配分）",
+            "日台間の「非紅色サプライチェーン」協力がどの程度具体的な投資・共同プロジェクトに結びつくか"
+          ]
+        },
+        "primary_key_point": "米国の対中半導体輸出規制枠組みそのもの",
+        "evidence_relevance": [
+          {
+            "rationale": "レポートタイトルが「規制強化でも増える対中需要と輸出管理の実務」をテーマとしており、米国規制枠組みが台湾・TSMCの実務対応の前提となっていることを示唆するため。",
+            "evidence_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "台湾政府の安全保障・産業政策としての「非紅色サプライチェーン」志向",
+            "why_not_primary": "重要なDriving Forceではあるが、[document_id: 713a3264-ba25-4cca-807e-a0b18366c4c7]が示すように米国規制枠組みが実務の前提となっており、台湾政府の志向はその枠内での対応方針と位置づける方が整合的であるため、PrimaryではなくSecondary要因とした。"
+          },
+          {
+            "key_point": "TSMCのグローバル顧客構成と技術ロードマップに基づく企業戦略",
+            "why_not_primary": "TSMCの企業戦略は局面の重要な要素だが、米国規制枠組みを無視して独自に決定できるわけではなく、規制枠組みの制約の下で最適化する立場にあるため、構造的制約より上位のKey Pointとは言い難い。"
+          },
+          {
+            "key_point": "H4(Frame-breaking)仮説：対中輸出規制遵守よりもサプライチェーン再編・技術移転管理が主戦場である可能性",
+            "why_not_primary": "サプライチェーン再編が重要であることは示唆されるものの、提供資料のタイトル・内容からは「輸出規制の実務」が依然として中心テーマであり、Frame-breaking仮説を主軸に据えるだけの直接的Evidenceが不足しているため、補助的な視点として留めた。"
+          }
+        ],
+        "selection_rationale": "提供資料の中心テーマが「規制強化でも増える対中需要と輸出管理の実務」であり、台湾・TSMCの対応が米国の規制枠組みを前提として語られていることから、この枠組みが局面の構造的な「天井」となっていると読むのが最も自然であり、Current Evidenceとも整合的であるため。台湾政府の「非紅色サプライチェーン」志向やTSMCの企業戦略は重要な要素だが、いずれも米国規制枠組みの下位に位置づけられると考える方が説明力が高い。H4のFrame-breaking仮説も検討したが、現時点の資料では「輸出規制遵守」が依然として重要なテーマであり、完全に枠組みを置き換える根拠には不足している。",
+        "candidate_key_points": [
+          {
+            "key_point": "米国の対中半導体輸出規制枠組みそのもの",
+            "control_type": "structural",
+            "what_it_explains": "なぜ台湾側が「規制強化でも増える対中需要」に対して実務的な輸出管理対応を迫られているのか、なぜ「非紅色サプライチェーン」などの代替構築が議題になるのかを説明できる。",
+            "why_it_could_be_key": "台湾のTSMCおよび貿易・産業当局の実務対応は、米国が設定する対中輸出規制（対象技術・エンティティ・ライセンス条件）に直接拘束されるため、この枠組みが局面の「天井」となっている可能性が高い。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "713a3264-ba25-4cca-807e-a0b18366c4c7"
+            ],
+            "what_it_does_not_explain": "TSMCや台湾当局が具体的にどのような運用裁量・解釈を用いているか、また日台連携の具体的な産業政策の中身までは直接説明しない。",
+            "control_structure_summary": "米国の輸出管理法制・制裁権限に基づく対中半導体規制は、米国政府の政策決定により変動するが、台湾当局・TSMCからは直接変更できない構造的制約として作用する。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "台湾政府の安全保障・産業政策としての「非紅色サプライチェーン」志向",
+            "control_type": "unknown",
+            "what_it_explains": "台湾政府がなぜ日本との協力を強調し、中国以外のサプライチェーン再編を進めようとしているのか、TSMCに対する政策的方向性を説明し得る。",
+            "why_it_could_be_key": "頼清徳総統が日本側と「非紅色サプライチェーン」構築協力を掲げていることから、台湾政府が中国依存を減らし、日米などとの連携を強化する産業政策を上位目的としている可能性があり、TSMCや輸出管理運用に影響を与える。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "what_it_does_not_explain": "米国規制の具体的な枠組みや、対中需要の強さそのものは説明しない。また、TSMCの企業戦略（収益・技術ロードマップ）をどこまで優先するかの内部調整までは直接説明しない。",
+            "control_structure_summary": null,
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "TSMCのグローバル顧客構成と技術ロードマップに基づく企業戦略",
+            "control_type": "unknown",
+            "what_it_explains": "なぜTSMCが対中需要を完全には切らず、米国規制の範囲内で供給を続けようとするのか、またどの技術ノードをどの地域に供給するかといった実務判断の方向性を説明し得る。",
+            "why_it_could_be_key": "TSMCは世界最大級のファウンドリとして、多数の顧客（米国・中国・その他）と高度な技術ロードマップを持ち、その企業戦略が対中輸出の実務対応・ライン配分・投資判断に大きく影響する可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "米国規制の枠組みや台湾政府の安全保障・外交方針そのものは説明しない。企業戦略だけでは、国家安全保障上の判断や日台連携の政治的側面を十分に説明できない。",
+            "control_structure_summary": null,
+            "supporting_knowledge_refs": [
+              {
+                "ref": "TSMC",
+                "type": "actor_intelligence",
+                "field": null
+              }
+            ],
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "H4(Frame-breaking)仮説：対中輸出規制遵守よりも、サプライチェーン再編・技術移転管理が主戦場であり、「輸出規制遵守」を中心に読む枠組み自体がずれている可能性",
+            "control_type": "mixed",
+            "what_it_explains": "なぜ「非紅色サプライチェーン」などサプライチェーン再編の言葉が前面に出ているのか、なぜ規制強化の中でも対中需要が続くのかを、「輸出規制遵守」だけでなく構造再編の文脈から説明し得る。",
+            "why_it_could_be_key": "もし米国・台湾・日本の主眼が、個別輸出案件の規制遵守よりも、長期的なサプライチェーン再編・技術移転管理・投資誘導に移っている場合、「対中輸出規制の実務遵守」を局面の中心に置く読み方自体が枠組みとして誤っている可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "713a3264-ba25-4cca-807e-a0b18366c4c7",
+              "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+            ],
+            "what_it_does_not_explain": "具体的な輸出管理実務（ライセンス審査・社内コンプライアンス体制）そのものの詳細は説明しない。",
+            "control_structure_summary": "米国政府の構造的制約（規制）と、台湾・日本・企業側の長期的なサプライチェーン再編戦略が組み合わさった複合構造。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "米国が対中半導体輸出規制を大幅に緩和または撤回し、台湾・TSMCの対中輸出がほぼ自由化される、あるいは米国規制が形骸化して台湾側の判断が事実上優越する状況が確認された場合、このKey Pointの置き方（米国規制枠組みが構造的な天井であるという前提）は誤っていたと判断する必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "713a3264-ba25-4cca-807e-a0b18366c4c7"
+        ],
+        "control_structure_summary": "米国の対中半導体輸出規制は、米国政府の政策決定に基づく構造的制約として存在し、台湾政府・TSMC・日本側はその枠組みの中でサプライチェーン再編・対中需要対応を行う。台湾側からこの枠組みを直接変更することはできず、交渉・ロビー・同盟関係を通じて影響を与えることはできるが、最終決定権は米国にある。",
+        "supporting_knowledge_refs": null,
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": {
+        "narrative_deviation": null,
+        "source_of_sources_note": null,
+        "media_editorial_context": [
+          {
+            "caveat": "[document_id: 713a3264-ba25-4cca-807e-a0b18366c4c7]のタイトル抜粋のみが提供されており、本文の編集判断・詳細は不明。以下はタイトルレベルの観測に限る。",
+            "outlet": "timewell.jp（想定）",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "713a3264-ba25-4cca-807e-a0b18366c4c7"
+                ],
+                "observation_text": "「規制強化でも増える対中需要と輸出管理の実務」というテーマ設定。米国規制強化と対中需要増加の両方を並置している。",
+                "observation_type": "headline"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "partially_supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_framing",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "対中輸出規制を単なる抑制要因としてではなく、「依然大きい対中需要」とのギャップを強調することで、企業・当局向けに『実務対応が重要』というメッセージを発している可能性がある。",
+                "corroboration_basis": "single_source_only",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に現状を説明的にまとめただけで、特段の編集意図はない可能性もある。",
+                "supporting_evidence_ids": [
+                  "713a3264-ba25-4cca-807e-a0b18366c4c7"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              }
+            ],
+            "document_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+            "omitted_actor_analysis": null
+          },
+          {
+            "caveat": "[document_id: a59bdc0a-5b84-424b-8f0d-630f5d6073fe]は会談ニュースの抜粋のみ。紙面配置・他記事との相対位置は不明。",
+            "outlet": "japan.storm.mg（想定）",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+                ],
+                "observation_text": "頼清徳総統と高市早苗氏の会談を「非紅色サプライチェーン」協力というフレーズで報じている。",
+                "observation_type": "headline"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_headline",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "「非紅色サプライチェーン」という政治的に強い言葉を前面に出すことで、台湾の対中依存低減・日台連携強化の姿勢を読者に印象づけようとしている可能性がある。",
+                "corroboration_basis": "single_source_only",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に会談で使われたキーワードをそのまま見出しに採用しただけの可能性もある。",
+                "supporting_evidence_ids": [
+                  "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              }
+            ],
+            "document_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+            "omitted_actor_analysis": null
+          }
+        ]
+      },
+      "unknown_or_uncertain": "TSMC固有の具体的な対中輸出管理実務（社内体制・顧客選別・技術ノード配分）と、台湾貿易・産業当局の国内運用の詳細は、今回のSource Packには含まれておらず、推測以上のことは言えない。主シナリオは構造モデルに依存しており、Actor固有の意図・内部力学については判断不能の部分が多い。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "台湾政府・TSMCが米国規制を形式的には順守しつつ、実務上は対中供給維持を優先し、抜け穴・グレーゾーンを積極的に活用しているActor-intentシナリオ。表向きの「非紅色サプライチェーン」協力は主に米日向けの政治的シグナルであり、実質的には対中ビジネス維持が上位目的。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "TSMC・台湾政府が対中ビジネス維持を優先している内部意図を示すリークや専門分析が複数の独立ソースで裏付けられる場合"
+          ],
+          "weakening_conditions": [
+            "TSMCの対中売上比率が明確に縮小し、主要技術ノードの対中供給が減少していること",
+            "台湾政府が対中輸出管理違反に対して厳格な国内制裁・摘発を行っている事例が確認されること"
+          ],
+          "strengthening_conditions": [
+            "TSMCの対中売上比率が規制強化後も高水準で維持・拡大していることを示す具体的データ",
+            "台湾企業・当局が第三国経由・技術ノードの細分化などを用いて米国規制を迂回していることを示す信頼できる調査報道",
+            "米国当局から台湾企業へのコンプライアンス問題に関する警告・制裁事例が増加すること"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "米国の対中半導体輸出規制がさらに厳格化され、TSMC・台湾政府が対中供給を大幅に縮小し、日米向け供給・投資へ急速にシフトするStructuralシナリオ。対中需要は存在するが、規制・制裁リスクが優越し、中国市場からの事実上のデカップリングが進む。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "米国・TSMC・台湾政府から、対中供給縮小・撤退を示す複数の公式発表・行動が確認される場合"
+          ],
+          "weakening_conditions": [
+            "米国が対中半導体規制を部分的に緩和し、中国向け供給の余地を広げること",
+            "TSMCが中国向け新規投資・供給拡大を発表すること"
+          ],
+          "strengthening_conditions": [
+            "米国が主要技術ノードの対中供給をほぼ全面禁止する新たな規制を発表すること",
+            "TSMCが対中売上縮小・中国拠点の投資見直しを公式に表明すること",
+            "台湾政府が対中半導体輸出の大幅制限・停止を政策として掲げること"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "TSMCの対中売上比率・技術ノード別供給状況に関する公開データ",
+        "台湾政府の輸出管理法制・運用変更に関する公式発表",
+        "日台間で発表される具体的な「非紅色サプライチェーン」関連プロジェクト・投資案件",
+        "米国の対中半導体輸出規制の追加・緩和に関する公式発表"
+      ],
+      "retraction_conditions": [
+        "TSMCの対中供給が米国規制を事実上無視する形で拡大していることを示す信頼できるEvidenceが出る場合",
+        "台湾政府が米国の対中規制に公然と反対し、対中半導体輸出拡大を政策目標として掲げる場合",
+        "逆に、台湾政府・TSMCが対中供給のほぼ全面停止・撤退を公式に打ち出し、「規制枠内での対中供給維持」という前提が崩れる場合"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "713a3264-ba25-4cca-807e-a0b18366c4c7",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "TSMC固有の行動・台湾政府の具体的な輸出管理運用に関するCurrent Evidenceが欠如している点。これにより、主シナリオは一般的な構造モデルに依存せざるを得ず、確信度を高められない。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "TSMCの対中売上構成・技術ノード別供給状況は、米国規制強化後にどう変化しているか。",
+          "rationale": "Key Actor（TSMC）のPreference-Action Gapと主シナリオの妥当性を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "台湾の輸出管理法制・運用は、米国の対中半導体規制にどの程度整合しているか。",
+          "rationale": "Key Point（米国規制枠組み）と台湾政府の対応度合いを評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "「非紅色サプライチェーン」協力は、具体的にどの産業・プロジェクト・投資に結びついているか。",
+          "rationale": "台湾政府の長期的産業政策（Persistent Preference仮説）を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "TSMCが米国の対中半導体輸出規制に対して具体的にどのような社内コンプライアンス体制・顧客選別・技術ノード配分を行っているかの詳細。",
+          "gap_category": "deterministic",
+          "recommended_action": "TSMCの公開資料・決算説明・専門レポートなどから、対中輸出管理の具体的運用事例を収集する。"
+        },
+        {
+          "priority": "高",
+          "description": "台湾の貿易・産業当局が米国規制に整合するために採用している具体的な国内法制・運用（許認可プロセス・監督体制）の内容。",
+          "gap_category": "deterministic",
+          "recommended_action": "台湾政府の公式文書・法令・政策説明資料を確認し、輸出管理制度の詳細を把握する。"
+        },
+        {
+          "priority": "中",
+          "description": "日台間の「非紅色サプライチェーン」協力が、具体的にどの産業・プロジェクト・投資に結びついているか。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "日台双方の政府・企業発表、関連ニュース・専門分析を調査し、具体的案件を特定する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "提供資料はタイトル・ニュース抜粋のみであり、TSMCや台湾当局の具体的な実務対応・内部意図を直接示すEvidenceがないため、「米国規制枠組みの下でバランスを取っている」という主シナリオは、もっともらしい一般モデルに依存しており、実際には台湾側が対中ビジネス維持をより強く優先している、あるいは逆に対中供給を急速に縮小している可能性も十分に残る。",
+      "key_stakeholder_assessment": {
+        "rationale": "この局面では、米国政府が構造的制約を設定しているものの、ユーザー依頼の焦点は「台湾のTSMCおよび貿易・産業当局」が米国規制の実務遵守・執行にどう対応しているかであり、台湾政府（貿易・産業当局を含む）とTSMCが、台湾側の実務対応を具体的に動かすKey Stakeholderとみなすのが妥当である。米国政府は上位構造として重要だが、今回の分析対象としての「実務対応」を直接運用する主体は台湾側の二者であるため、multipleとした。",
+        "confidence": "中",
+        "evidence_ids": [
+          "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+          "713a3264-ba25-4cca-807e-a0b18366c4c7"
+        ],
+        "determination": "multiple",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "Taiwan_Gov",
+          "TSMC"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "Taiwan_Gov",
+          "confidence": "低",
+          "evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe",
+            "713a3264-ba25-4cca-807e-a0b18366c4c7"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "米国を満足させる水準での規制整合と、台湾産業への過度な打撃回避のバランス。",
+          "issue_component": "対中半導体輸出規制の国内運用（台湾）",
+          "likely_reaction": "米国規制強化には基本的に追随しつつ、国内産業界と調整しながら段階的に運用を変更。",
+          "current_red_line": "米国の安全保障要請を明確に拒否するような緩い運用。",
+          "stated_preference": null,
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "台湾政府は輸出管理法制・許認可を所管しており、米国規制への整合度がTSMCの実務対応を左右するため。",
+          "currently_tradeable": "限定的に調整可能（対象技術・審査プロセスの細部）。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "台湾半導体産業の戦略的重要性。",
+          "effect_on_actor_objective": "安全保障と産業競争力の両立に直接影響する。厳格すぎれば産業に打撃、緩すぎれば米国との関係悪化。",
+          "estimated_real_preference": "米国と歩調を合わせつつ、国内産業への影響を緩和する中庸路線。",
+          "alternative_interpretation": "台湾政府が国内産業保護を優先し、米国規制への整合度を意図的に低く保つ可能性もある。",
+          "primary_binding_constraint": "米国の安全保障・規制要求。",
+          "issue_component_description": "米国規制枠組みを台湾国内でどう法制化・運用するか。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "TSMC",
+          "confidence": "低",
+          "evidence_ids": [
+            "713a3264-ba25-4cca-807e-a0b18366c4c7"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "規制枠内で最大限の対中売上を維持しつつ、先端ノードは米国・同盟国向けに集中。",
+          "issue_component": "TSMCの対中顧客・技術ノード配分",
+          "likely_reaction": "規制強化に応じて先端ノードの対中供給を抑制しつつ、成熟ノードで対中需要を維持。",
+          "current_red_line": "米国規制に明確に違反する先端ノードの対中供給。",
+          "stated_preference": null,
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "TSMCの収益・技術ロードマップに直結し、米国規制順守と対中需要維持のバランスを決める中核要素。",
+          "currently_tradeable": "一部ノード・顧客構成は交渉カードになり得る。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "TSMCの技術優位・供給能力。",
+          "effect_on_actor_objective": "収益・技術優位維持に大きく寄与する一方、規制違反リスクも伴う。",
+          "estimated_real_preference": "対中売上を急減させず、段階的に技術ノードをシフトする。",
+          "alternative_interpretation": "TSMCが対中リスクを重く見て、対中売上をより急速に縮小している可能性。",
+          "primary_binding_constraint": "米国輸出規制・制裁リスク。",
+          "issue_component_description": "どの技術ノードを中国顧客に供給するか、どの程度売上を維持するか。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "Taiwan_Gov",
+          "confidence": "低",
+          "evidence_ids": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "evidence_class": "model_general_knowledge",
+          "desired_outcome": "日本との共同投資・技術協力を通じた中国以外の供給ルート拡充。",
+          "issue_component": "日台「非紅色サプライチェーン」協力の具体化",
+          "likely_reaction": "象徴的プロジェクトから着手し、徐々に拡大。",
+          "current_red_line": null,
+          "stated_preference": "「非紅色サプライチェーン」構築協力。",
+          "instrumental_value": "mixed",
+          "priority_rationale": "長期的な中国依存低減・日台連携強化に重要だが、短期の輸出管理実務より時間軸が長い。",
+          "currently_tradeable": "プロジェクト選定・規模は交渉可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "a59bdc0a-5b84-424b-8f0d-630f5d6073fe"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "台湾の半導体・日本の製造基盤。",
+          "effect_on_actor_objective": "安全保障と産業競争力の長期的強化に資する。",
+          "estimated_real_preference": "中国依存を徐々に減らしつつ、日台双方の産業利益を高める。",
+          "alternative_interpretation": "政治的シグナルにとどまり、実質的な再編は限定的に終わる可能性。",
+          "primary_binding_constraint": "財政・投資余力、企業の参加意欲。",
+          "issue_component_description": "どの産業・プロジェクトで中国を外したサプライチェーンを構築するか。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        }
+      ],
+      "decisive_power_and_leverage": "この局面全体を俯瞰すると、最終的な決定力は米国政府（輸出管理・制裁権限）にあり、台湾政府・TSMC・日本側はその枠組みの中で最適化を図る立場にあると見るのが自然である。ただし、TSMCの技術・供給能力は米国にとっても不可欠なレバレッジであり、台湾政府も地政学的位置と半導体産業を通じて一定の交渉力を持つため、「米国の一方的支配」ではなく、米国の構造的制約の下で日台側も交渉カードを持つ相互依存的な関係と整理するのが妥当である（確信度：中、Current Evidence不足のため）。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "台湾政府は安全保障と産業競争力の両立を志向しつつ、「非紅色サプライチェーン」協力を掲げており、上位志向と観測行動は整合的に見える。一方、TSMCについては、対中需要と規制順守の両立を図る企業志向が推測されるが、具体的行動Evidenceが不足しており、Preference-Action Gapの評価は確信度が低い。全体として、米国規制枠組みという構造的制約の下で、台湾政府・TSMCがそれぞれの目的に沿って最適化を図っているという仮説が主軸となる。"
+    },
+    "created_at": "2026-09-03T05:09:11.609066+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "e9823f1f-6d0b-4dcf-96f3-25b6124515fd",
+    "response_id": "1ab3abe0-6a8b-435f-b54b-1cd79f845d71",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 台湾政府（頼清徳政権の貿易・産業当局を含む）, TSMC, 米国政府（輸出管理・制裁当局）, 日本政府・産業政策当局",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）",
+        "passed": false
+      }
+    ],
+    "passed_count": 37,
+    "failed_count": 2,
+    "created_at": "2026-09-03T05:09:12.058877+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "media_editorial_context[0].hypotheses[0]",
+      "media_editorial_context[1].hypotheses[0]"
+    ],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[1]",
+      "key_point_assessment.candidate_key_points[2]"
+    ],
+    "actor_provenance_touched": [
+      "Taiwan_Gov",
+      "TSMC"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 83892,
+    "completion_tokens": 16669,
+    "total_tokens": 100561
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 95765,
+        "prompt_tokens": 39727,
+        "completion_tokens": 10988
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 42516,
+        "prompt_tokens": 44165,
+        "completion_tokens": 5681
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 台湾政府（頼清徳政権の貿易・産業当局を含む）, TSMC, 米国政府（輸出管理・制裁当局）, 日本政府・産業政策当局"
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 2,
+        "gaps": []
+      },
+      "research_cycle": {
+        "triggered": false,
+        "search_calls_used": 0,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 0,
+      "final_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 2,
+        "gaps": []
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

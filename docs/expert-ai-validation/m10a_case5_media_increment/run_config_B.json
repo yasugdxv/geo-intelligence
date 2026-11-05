@@ -1,0 +1,27 @@
+{
+  "variant": "B (Actor + Thinking OS + Evidence Discipline + Media Intelligence)",
+  "actor_profile_lookup_statuses": [
+    "active",
+    "candidate"
+  ],
+  "actor_profile_retrieval_status": null,
+  "media_intelligence_statuses": [
+    "active",
+    "candidate"
+  ],
+  "actor_intelligence_enabled": true,
+  "media_intelligence_enabled": true,
+  "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+  "fingerprints": {
+    "geo_expert_engine.py": "582aa324c7971b73",
+    "geo_expert_schema.py": "358640565bdd689c",
+    "geo_expert_quality_guard.py": "c8cbb2ecf9c21c29",
+    "geo_actor_intelligence_service.py": "a4728e75b6b9c3ab",
+    "geo_media_intelligence_service.py": "aa61f22f460b32a5",
+    "geo_knowledge_item_schemas.py": "5ab8d2935eebf4b7",
+    "schemas/geo_expert_ai_response.schema.json": "77a892d2bd1f777f",
+    "geo_persistent_preference_service.py": "47e2b31ccec1b1c5",
+    "geo_foundation_pack_service.py": "11dd58266c423f91"
+  },
+  "case_as_of_date": "2026-08-31"
+}

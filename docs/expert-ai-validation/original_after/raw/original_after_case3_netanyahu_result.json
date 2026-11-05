@@ -1,0 +1,1117 @@
+{
+  "request": {
+    "request_id": "639233ce-fda8-4f93-b2f8-009b19b8c674",
+    "theme_id": null,
+    "case_id": "c3b7a640-5b03-4c44-9f71-0b8f9a56cffc",
+    "mode": "case_analysis",
+    "profile": "deep",
+    "query_text": "ネタニヤフの現在のIran・Gaza政策について、主要な目的、制約、意思決定力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-01T06:06:09.156609+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "17269a8b-4811-4734-ac78-13313eb9b55f",
+    "request_id": "2d38c8d1-b637-48ff-898e-9b846c9c4160",
+    "document_ids": [
+      "69e8064f-b236-42e8-89b1-e92a4c866987",
+      "e2fed736-6330-4d6c-83bf-740800dab58c",
+      "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+      "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+      "eba1d367-ab95-41c6-bebd-53a53903bd58",
+      "609a1837-e29b-4215-9660-93d1f96f8ebe",
+      "50a2a155-3437-46db-8cc3-5ea55b08a385",
+      "62010532-a2fc-4f6d-8384-4ab94401e852",
+      "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+      "b47f3ca0-a472-46ed-8031-a43590d9562a"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-09-01T06:06:06.936893+00:00"
+  },
+  "response": {
+    "response_id": "7e59d437-0e1c-4173-a5f4-6d3b16ac6041",
+    "request_id": "2d38c8d1-b637-48ff-898e-9b846c9c4160",
+    "source_pack_id": "17269a8b-4811-4734-ac78-13313eb9b55f",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "Foundation Packによれば、2026年2月に対イラン戦争が発生し、4月に停戦したが、ホルムズ海峡の扱いを巡り軍事的緊張が継続している。",
+          "claim_type": "fact",
+          "source_ref": "relationship:Iran-UnitedStates-active_conflict_ceasefire"
+        },
+        {
+          "text": "イランはIRGCによる機雷敷設・武装スピードボート・沿岸ミサイルを用いたホルムズ海峡への実効的な航行妨害能力を持ち、2026年3月以降、実際に行使し海峡を封鎖した実績がある。",
+          "claim_type": "fact",
+          "source_ref": "asset:Iran-strait_canal_control"
+        },
+        {
+          "text": "オマーンはホルムズ海峡将来管理を巡るイランの直接交渉相手・仲介役を務めている。",
+          "claim_type": "fact",
+          "source_ref": "relationship:Iran-Oman-mediation_negotiation_channel"
+        },
+        {
+          "text": "中国は停戦の隙間期間に割引されたイラン産原油を大量調達しており、イランにとって数少ない安定した石油輸出先となっている。",
+          "claim_type": "fact",
+          "source_ref": "relationship:China-Iran-major_oil_buyer_discount_purchaser"
+        },
+        {
+          "text": "対イランとの停戦後も、ホルムズ海峡の安全保障をめぐる緊張が続いており、イスラエルにとってもエネルギー価格・海上輸送・同盟国の軍事行動を通じて間接的な制約となっていると考えられる。",
+          "claim_type": "observation",
+          "source_ref": null
+        },
+        {
+          "text": "ネタニヤフの対イラン・ガザ政策は、イランの海峡封鎖能力や米国との停戦枠組み、地域エネルギー市場の構造的制約の下で、全面戦争を避けつつ抑止力を誇示する「限定的エスカレーション」を志向している可能性が高い。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "ネタニヤフのUltimate Objectiveは、自身の政権生存とイスラエルの安全保障上の優位（特にイランの核・ミサイル能力の抑制）を維持することであり、ガザ戦線はその一部として国内政治的な正当性・強硬イメージを支える役割も果たしている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "ガザにおける軍事行動の強度・頻度は、イランやその代理勢力（ヒズボラ等）への抑止シグナルと、国内右派・連立パートナーへのアピールという二重のAudienceを意識して調整されている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "対イラン政策では、米国との停戦枠組み・軍事協力・対イラン制裁体制を維持する必要から、ネタニヤフは米国のレッドライン（ホルムズ海峡の長期封鎖や米軍への重大被害）を越えない範囲での軍事・情報・サイバー手段を優先している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "イランのホルムズ海峡封鎖能力と中国の大口原油購入という構造的要因は、ネタニヤフの対イラン政策において、軍事オプションのコストを引き上げ、外交・秘密工作・制裁強化など間接的手段の比重を高める方向に働いている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": null,
+      "stakeholders": [
+        {
+          "actor": "Benjamin Netanyahu",
+          "purpose": "イスラエル国家の安全保障（特にイランの核・ミサイル・代理勢力からの脅威抑止）と、自身の政権生存・政治的レガシーの維持。",
+          "leverage": "国内連立政治・右派支持基盤",
+          "position": "現局面では、(1)イランのホルムズ海峡封鎖・代理勢力による攻撃を抑止しつつ、(2)ガザにおける武装勢力の能力を削ぎ、(3)国内右派・連立パートナーの支持を維持すること。",
+          "red_lines": "イランの核兵器保有・実戦配備、イスラエル本土への大規模ミサイル攻撃、ガザからの継続的な大規模攻撃などがレッドライン候補だが、Evidence不足のため仮説にとどまる。",
+          "confidence": "低",
+          "constraints_fears": "米国との同盟・軍事支援、イランのホルムズ海峡封鎖能力",
+          "ability_to_move_or_block": "ガザでの軍事作戦強度、対イランへの秘密工作・空爆・サイバー攻撃の承認、米国との協調・距離の取り方などを調整する能力。"
+        },
+        {
+          "actor": "Iran（国家）",
+          "purpose": "政権生存と地域覇権の拡大、対米・対イスラエル抑止力の維持・強化。",
+          "leverage": "対米・対イスラエル抑止",
+          "position": "現局面では、(1)ホルムズ海峡封鎖能力をテコに対米・対イスラエル抑止を維持し、(2)中国等への原油輸出を通じて経済を維持しつつ、(3)政権生存と地域影響力を確保すること。",
+          "red_lines": "政権生存を脅かすレベルの軍事攻撃や体制転換試み、ホルムズ海峡への他国の恒久的軍事支配。",
+          "confidence": "中",
+          "constraints_fears": "中国への原油輸出依存",
+          "ability_to_move_or_block": "ホルムズ海峡での航行妨害・封鎖、代理勢力を通じたイスラエル・米軍・湾岸諸国への攻撃、核・ミサイル開発の加速・抑制。"
+        },
+        {
+          "actor": "United States",
+          "purpose": "中東における同盟ネットワークと海上交通路（特にホルムズ海峡）の安定確保、対イラン核・ミサイル開発の抑制。",
+          "leverage": "軍事支援（兵器供与・情報共有）、外交支援（国連・二国間協議）、対イラン制裁・停戦枠組み。",
+          "position": "ネタニヤフに対しては、対イラン・ガザでの行動を一定程度容認しつつ、ホルムズ海峡をめぐる大規模エスカレーションは抑制する立場。",
+          "priority": "対イランとの停戦枠組み維持とホルムズ海峡の開放性確保が高優先度。イスラエル支援も重要だが、海峡封鎖による世界経済への打撃は避けたい。",
+          "red_lines": "ホルムズ海峡の長期的・全面的封鎖、イランの核兵器保有・実戦配備、米軍への大規模攻撃。",
+          "confidence": "中",
+          "constraints_fears": "ホルムズ海峡の長期封鎖、米軍への重大被害、原油価格高騰による国内経済・政治コスト。イスラエルとの関係悪化も避けたい。",
+          "key_relationships": "イスラエルへの軍事・外交支援、イランとの停戦・緊張管理枠組み、中国・湾岸諸国とのエネルギー・安全保障協議。",
+          "ability_to_move_or_block": "イスラエルへの軍事支援調整や外交圧力を通じて、ネタニヤフのエスカレーションを抑制・誘導する力を持つ。"
+        },
+        {
+          "actor": "China",
+          "purpose": "割引されたイラン産原油の安定調達と、世界エネルギー市場の価格安定。対米・対欧との関係を損なわない範囲でイランとの関係を活用する。",
+          "leverage": "原油購入量・価格調整、投資・インフラ協力。",
+          "position": "イランに対しては封鎖カードの行使を抑制しつつ、割引原油購入を継続する立場。イスラエルとは直接対立を避ける。",
+          "priority": "エネルギー安全保障と国内経済安定が高優先度。中東での直接軍事関与は避けたい。",
+          "red_lines": "長期的な原油供給途絶、イラン政権崩壊による不安定化。",
+          "confidence": "中",
+          "constraints_fears": "ホルムズ海峡封鎖による原油供給途絶・価格高騰、対イラン関係強化が対米関係悪化を招くこと。",
+          "key_relationships": "イランへの主要原油購入者としての経済レバレッジ、湾岸諸国とのエネルギー関係。",
+          "ability_to_move_or_block": "イランの経済的耐久力を支えることで、対イラン制裁・軍事圧力の効果を間接的に調整できる。"
+        },
+        {
+          "actor": "Oman",
+          "purpose": "ホルムズ海峡の安定管理と、自国の仲介役としての外交的地位・安全保障を維持すること。",
+          "leverage": "外交仲介チャネル、海峡管理に関する信頼。",
+          "position": "イランと米国・他国の間で停戦・緊張管理を仲介する中立的立場。",
+          "priority": "海峡の開放性と地域緊張の緩和が高優先度。",
+          "red_lines": "自国領海・領空を無視した一方的な軍事行動、海峡管理からの排除。",
+          "confidence": "中",
+          "constraints_fears": "海峡をめぐる大国間対立に巻き込まれること、自国領域が軍事衝突の舞台になること。",
+          "key_relationships": "イランとの仲介チャネル、米国・湾岸諸国との信頼関係。",
+          "ability_to_move_or_block": "停戦・緊張管理枠組みの設計・維持に影響を与え得るが、軍事行動そのものを止める力は限定的。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "ネタニヤフ政権が米国との同盟・軍事支援を維持することを最優先の一つと見なしている。",
+          "イランがホルムズ海峡封鎖能力を完全には放棄せず、抑止カードとして維持し続ける。",
+          "中国がイラン産原油の主要購入者であり続け、イランの経済的耐久力を一定程度支える。"
+        ],
+        "description": "ネタニヤフの現在の対イラン・ガザ政策は、イランのホルムズ海峡封鎖能力と米国との停戦枠組みという構造的制約の下で、(1)対イランでは限定的な軍事・情報・サイバー手段と外交圧力を組み合わせた「優位な緊張状態」の維持、(2)ガザでは国内政治・抑止シグナルを意識した断続的な軍事行動と限定的な緩和措置の組み合わせ、(3)米国との同盟維持と国際的批判の管理、を同時に追求する「限定的エスカレーション＋国内政治生存」路線である。全面戦争やホルムズ海峡をめぐる大規模エスカレーションは避けつつ、イラン・ガザ双方に対して抑止と国内向け強硬イメージを維持することが主目的となっているとみられる。",
+        "evidence_class": "structural_reference",
+        "selection_rationale": "このシナリオは、(1)イランのホルムズ海峡封鎖能力という構造的制約、(2)米国との停戦枠組み・同盟関係、(3)ネタニヤフの国内政治上の必要性（強硬イメージ維持）という三つの要素を同時に説明できる。全面戦争・完全抑制といった極端なシナリオよりも、現実の制約と抑止・国内政治のバランスを反映しており、観測されている（と推定される）限定的エスカレーション・緊張管理のパターンと整合的である。",
+        "supporting_evidence": [
+          "relationship:Iran-UnitedStates-active_conflict_ceasefire",
+          "asset:Iran-strait_canal_control",
+          "relationship:China-Iran-major_oil_buyer_discount_purchaser"
+        ],
+        "observable_indicators": [
+          "対イランに対するイスラエルの軍事行動が限定的（空爆・サイバー・秘密工作中心）にとどまり、ホルムズ海峡封鎖を誘発するような大規模攻撃が避けられているか。",
+          "ガザでの軍事作戦が断続的に行われつつも、完全占領や長期駐留ではなく、特定目標への限定攻撃と停戦・緩和措置のサイクルになっているか。",
+          "米国との間で対イラン・ガザに関する緊密な協議・調整が継続しているか（共同声明・軍事協力など）。"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "対イラン・ガザをめぐる限定的エスカレーションが続く場合、ホルムズ海峡のリスクプレミアムや原油価格の変動、海上保険・輸送コストの上昇を通じて、エネルギーコスト・物流コストに間接的な影響が出る可能性がある。特に紅海・ホルムズ海峡リスクと組み合わさると、サプライチェーン全体の脆弱性が高まる。",
+        "unrelated_note": null,
+        "environment_change": "イランの海峡封鎖能力と中国の原油購入という構造が続く限り、中東のエネルギー・海上輸送リスクは高止まりし、企業の長期的なエネルギー調達・物流戦略（代替ルート・在庫・多元調達）の前提として考慮すべき環境要因となる。"
+      },
+      "initial_anomaly": "対イランとの2026年2月開戦・4月停戦後も、ホルムズ海峡をめぐる緊張が継続する中で、ネタニヤフ政権がガザ戦線・対イラン戦線の双方で強硬なレトリックを維持しつつ、全面戦争や米国との決定的対立には踏み込んでいない点。抑止・国内政治・同盟関係・経済構造の間でどこに「本当のレッドライン」があるのかが読みづらい。",
+      "review_findings": null,
+      "audience_analysis": null,
+      "executive_summary": {
+        "what_changed": "2026年2月の対イラン開戦・4月停戦後も、ホルムズ海峡をめぐる緊張が続いており、イランの封鎖能力と中国の原油購入が構造的リスクとして固定化しつつある。ネタニヤフの対イラン・ガザ政策は、この新しい構造の下で再定義されている。",
+        "why_it_matters": "イランの海峡封鎖能力と中国の原油購入は、エネルギー・物流コストを通じて世界経済に波及し得る。ネタニヤフの政策が限定的エスカレーションにとどまるか、大規模戦争に向かうかは、エネルギー市場・サプライチェーン戦略にとって重要な前提となる。",
+        "what_to_watch_decide": "ホルムズ海峡での実際の封鎖・妨害の動き、イスラエルの対イラン・ガザ軍事行動の強度、米国との停戦枠組みの変化、中国のイラン産原油購入動向をモニタリングし、エネルギー調達・物流ルート・在庫戦略の前提を適宜見直す必要がある。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Benjamin Netanyahu",
+          "red_line": "イランの核兵器保有・実戦配備、イスラエル本土への大規模ミサイル攻撃、ガザからの継続的な大規模攻撃などがレッドライン候補だが、Evidence不足のため仮説にとどまる。",
+          "actor_ref": "netanyahu",
+          "entity_id": "585cc564-5a71-40ac-959b-3995d3a409c8",
+          "confidence": "低",
+          "formal_role": "イスラエル首相として、対イラン・ガザを含む安全保障政策の最終決定権を持つ（制度上）。",
+          "evidence_ids": null,
+          "decision_power": "内閣・安全保障内閣を通じて軍事作戦・停戦交渉・対外メッセージを主導し得るが、連立パートナー・軍・情報機関の影響も受ける。",
+          "driving_forces": [
+            {
+              "force": "国内連立政治・右派支持基盤",
+              "direction": "supporting",
+              "description": "強硬な対イラン・ガザ政策は右派支持層・連立パートナーの支持を維持する。"
+            },
+            {
+              "force": "米国との同盟・軍事支援",
+              "direction": "constraining",
+              "description": "米国の軍事支援・外交支援に依存するため、米国のレッドラインを越える行動は取りにくい。"
+            },
+            {
+              "force": "イランのホルムズ海峡封鎖能力",
+              "direction": "constraining",
+              "description": "海峡封鎖による世界経済・同盟国への影響を考慮し、大規模な対イラン攻撃には慎重にならざるを得ない。"
+            }
+          ],
+          "ability_to_move": "ガザでの軍事作戦強度、対イランへの秘密工作・空爆・サイバー攻撃の承認、米国との協調・距離の取り方などを調整する能力。",
+          "issue_objective": "現局面では、(1)イランのホルムズ海峡封鎖・代理勢力による攻撃を抑止しつつ、(2)ガザにおける武装勢力の能力を削ぎ、(3)国内右派・連立パートナーの支持を維持すること。",
+          "observed_action": "本Caseでは具体的行動の詳細Evidenceが不足しているが、一般にガザでの軍事作戦継続・対イランへの強硬レトリック・米国との協調維持を組み合わせていると推定される。",
+          "vulnerabilities": [
+            "国内連立崩壊・汚職裁判・司法問題",
+            "米国からの軍事・外交支援の縮小",
+            "長期戦によるイスラエル社会・経済への負担"
+          ],
+          "ability_to_block": "軍・情報機関が提案する大規模作戦を拒否する、米国・国際社会からの停戦圧力に対して抵抗する能力。",
+          "primary_audience": "国内右派有権者・連立パートナー・イスラエル軍・情報機関。",
+          "why_actor_matters": "イスラエル側で対イラン・ガザ政策を実際に動かす最終的な政治的ハブであり、軍事作戦・停戦・外交シグナルの方向性を決める権限を持つため。",
+          "available_leverage": [
+            "イスラエル軍の軍事力（空軍・特殊部隊・サイバー）",
+            "米国との安全保障協力・ロビー",
+            "ガザ・レバノン・シリアでの限定的軍事行動"
+          ],
+          "secondary_audience": "イラン・その代理勢力、米国政府・議会、湾岸諸国。",
+          "ultimate_objective": "イスラエル国家の安全保障（特にイランの核・ミサイル・代理勢力からの脅威抑止）と、自身の政権生存・政治的レガシーの維持。",
+          "actor_model_challenge": null,
+          "persistent_preference": "対イラン・ガザに関して、軍事力を用いた抑止・先制的行動を重視し、国際的批判よりも安全保障・国内右派支持を優先する傾向があると推定される。",
+          "preference_action_gap": "安全保障上は米国との協調・緊張管理が合理的である一方、国内政治上は強硬姿勢が求められるため、対イラン・ガザで強い言葉・限定的軍事行動を取りつつ、全面戦争や米国との決定的対立は避けるというギャップが存在すると考えられる。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "イラン本土への大規模地上侵攻（軍事・政治コストが極めて高い）",
+            "米国の反対を無視した単独の大規模戦争エスカレーション"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "none_available",
+            "exception_episode_ids": [],
+            "general_knowledge_used": null,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "insufficient"
+          },
+          "persistent_preference_evidence": [],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国との安全保障同盟を維持しつつ、対イランでは抑止・攻勢的防衛を組み合わせた「優位な緊張状態」を好むと推定されるが、Actor Intelligenceが不十分なため仮説にとどまる。"
+        },
+        {
+          "actor": "Iran（国家）",
+          "red_line": "政権生存を脅かすレベルの軍事攻撃や体制転換試み、ホルムズ海峡への他国の恒久的軍事支配。",
+          "actor_ref": "iran_state",
+          "entity_id": "63f60ff3-e318-42f4-9282-43d794e28f4a",
+          "confidence": "中",
+          "formal_role": "ホルムズ海峡沿岸国として、IRGC等を通じて海峡封鎖・航行妨害能力を保有し、地域安全保障に大きな影響力を持つ。",
+          "evidence_ids": [],
+          "decision_power": "政権・IRGCがホルムズ海峡封鎖・解除、対イスラエル・対米攻撃の有無・強度を決定し得る。",
+          "driving_forces": [
+            {
+              "force": "中国への原油輸出依存",
+              "direction": "constraining",
+              "description": "過度な封鎖は主要顧客の不満を招くため、完全封鎖には慎重にならざるを得ない。"
+            },
+            {
+              "force": "対米・対イスラエル抑止",
+              "direction": "supporting",
+              "description": "封鎖能力を誇示・限定行使することで抑止力を維持しようとする。"
+            }
+          ],
+          "ability_to_move": "ホルムズ海峡での航行妨害・封鎖、代理勢力を通じたイスラエル・米軍・湾岸諸国への攻撃、核・ミサイル開発の加速・抑制。",
+          "issue_objective": "現局面では、(1)ホルムズ海峡封鎖能力をテコに対米・対イスラエル抑止を維持し、(2)中国等への原油輸出を通じて経済を維持しつつ、(3)政権生存と地域影響力を確保すること。",
+          "observed_action": "ホルムズ海峡封鎖の実施、対米停戦枠組みへの参加、中国への割引原油輸出。",
+          "vulnerabilities": [
+            "制裁・経済依存",
+            "国内不満・抗議",
+            "軍事的劣勢（通常戦力）"
+          ],
+          "ability_to_block": "海峡封鎖・代理勢力の動員を通じて、米国・イスラエルの軍事行動や制裁強化に対する抑止・コスト増大を図る能力。",
+          "primary_audience": "米国・イスラエル・湾岸諸国。",
+          "why_actor_matters": "ホルムズ海峡封鎖能力と代理勢力ネットワークを通じて、ネタニヤフの対イラン・ガザ政策に対する最大の外部制約・抑止要因となるため。",
+          "available_leverage": [
+            "ホルムズ海峡封鎖・航行妨害",
+            "代理勢力による攻撃",
+            "核・ミサイル開発の加速・抑制",
+            "中国等への原油輸出カード"
+          ],
+          "secondary_audience": "中国・ロシア・国内支持層。",
+          "ultimate_objective": "政権生存と地域覇権の拡大、対米・対イスラエル抑止力の維持・強化。",
+          "actor_model_challenge": null,
+          "persistent_preference": "ホルムズ海峡封鎖能力や代理勢力を用いた非対称戦を通じて、直接戦争を避けつつ抑止・影響力を行使する傾向。",
+          "preference_action_gap": "抑止を維持したい一方で、過度な封鎖は中国等主要顧客や第三国の反発を招くため、封鎖の強度・期間を調整する必要がある。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "イスラエル本土への全面戦争（政権生存リスクが高い）"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "none_available",
+            "exception_episode_ids": [],
+            "general_knowledge_used": null,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "insufficient"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "封鎖の詳細な政治判断プロセスは不明。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "非対称的な海峡封鎖能力を抑止・交渉カードとして用いる傾向を示す。",
+              "evidence_id": null,
+              "date_or_period": "2026-03以降",
+              "event_or_behavior": "2026年3月以降、IRGCがホルムズ海峡を実際に封鎖した実績",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "米国・イスラエルとは敵対的抑止関係を維持しつつ、中国・ロシア・一部湾岸諸国との関係をテコに制裁回避・経済維持を図ると推定される。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "ネタニヤフ政権下での直近の対イラン・ガザ軍事行動の具体的内容と、その際の米国・イラン・国内政治の反応はどうか。",
+          "rationale": "実際の軍事行動パターンを確認することで、構造的制約と国内政治のどちらがより強く行動を規定しているかを検証できる。",
+          "related_hypothesis": "ネタニヤフが限定的エスカレーション路線を取っているという主シナリオ",
+          "recommended_sources": "イスラエル国防軍・政府の公式発表、米国政府の声明、信頼できる国際報道"
+        },
+        {
+          "priority": "高",
+          "question": "米国とイランの停戦枠組みの具体的内容と、イスラエルに課されている制約は何か。",
+          "rationale": "停戦枠組みの詳細を知ることで、イスラエルの行動余地をより正確に評価できる。",
+          "related_hypothesis": "米国との停戦枠組みがネタニヤフの対イラン政策を制約しているという仮説",
+          "recommended_sources": "米政府・議会文書、専門家分析"
+        },
+        {
+          "priority": null,
+          "question": "ネタニヤフ政権下での直近の対イラン・ガザ軍事行動（規模・頻度・対象）と、その際の米国・イラン・国内政治の反応はどうか。",
+          "rationale": "Main ScenarioのKey Point（限定的エスカレーション路線）とKey Actor（ネタニヤフ）のPreference-Action Gapを検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "米国とイランの停戦枠組みの具体的内容と、イスラエルに課されている明示・暗黙の制約は何か。",
+          "rationale": "Key Point候補（米国-イラン停戦枠組み）と構造的制約の強度を評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ネタニヤフの過去の対イラン・ガザ政策におけるPersistent Preference（軍事・外交・国内政治のバランス）はどのようなパターンを持つか。",
+          "rationale": "Key ActorのPersistent Preference仮説を強化・修正するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "イランのホルムズ海峡封鎖行動（2026年3月以降）の具体的な期間・強度・対象と、その際の中国・湾岸諸国・米国の反応はどうか。",
+          "rationale": "Primary Key Point（ホルムズ海峡封鎖能力）の実際の行使パターンと構造的影響を検証するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ガザ戦線でのイスラエル軍の作戦と国内世論・連立パートナーの反応の関係はどうか。",
+          "rationale": "ネタニヤフの国内政治生存をKey Point候補として評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "構造的制約（ホルムズ海峡封鎖能力・停戦枠組み）と国内政治要因を同時に説明でき、極端なシナリオよりも観測されうる行動パターンと整合的。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "ネタニヤフの対イラン・ガザ政策は、イランのホルムズ海峡封鎖能力と米国との停戦枠組みという構造的制約の下で、限定的エスカレーションと国内政治生存を両立させる路線である。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "asset:Iran-strait_canal_control",
+            "relationship:Iran-UnitedStates-active_conflict_ceasefire",
+            "relationship:China-Iran-major_oil_buyer_discount_purchaser"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "国内政治要因が強いことは想定されるが、構造的制約を無視して行動した具体的事例が提供されていない。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "ネタニヤフの対イラン・ガザ政策は、構造的制約よりも国内政治（連立維持・汚職裁判）にほぼ全面的に規定されており、ホルムズ海峡や米国との停戦枠組みは二次的要因に過ぎない。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "asset:Iran-strait_canal_control"
+          ]
+        },
+        {
+          "reason": "ホルムズ海峡封鎖能力は重要だが、イスラエルの軍事・外交行動や国内政治の影響を完全に無視するのは過度な構造決定論となる。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "対イラン・ガザをめぐる局面は、ネタニヤフ個人ではなく、イランのホルムズ海峡封鎖能力と世界エネルギー市場構造によってほぼ一方的に規定されており、イスラエルの裁量は限定的である。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "asset:Iran-strait_canal_control"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "Actor Intelligence Packがinsufficientであり、最近の行動パターンを裏付けるEvidenceが不足している。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "既存のネタニヤフ像（強硬・抑止重視）は現在の局面には当てはまらず、実際には大幅な抑制・妥協志向に転じている。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "制度上の最終決定権と政治責任は首相にあり、完全な傀儡とみなす根拠はない。軍・連立の影響は大きいが、Key Stakeholderから外すほどではない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "対イラン・ガザ政策の主な決定要因はネタニヤフではなく、イスラエル軍・情報機関や連立パートナーであり、首相は結果を追認しているに過ぎない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of=2026-08-31時点で、ネタニヤフのIran・Gaza政策は「対イラン抑止と国内政治生存を最優先しつつ、米国との関係・停戦枠組み・地域経済構造に縛られた限定的エスカレーション路線」とみるのが最も整合的だが、Actor Intelligenceが不十分で確信度は中～低にとどまる。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "structural",
+        "evidence_class": "structural_reference",
+        "hinge_structure": {
+          "primary_hinge": "イランがホルムズ海峡封鎖能力をどの程度・どの頻度で行使するか（再封鎖の脅威の強度）",
+          "secondary_hinges": [
+            "米国とイランの停戦・緊張管理枠組みの安定性",
+            "世界原油市場・代替ルートの余力（封鎖時の価格ショック耐性）",
+            "イスラエル国内の政治状況（ネタニヤフ政権の安定度）"
+          ]
+        },
+        "primary_key_point": "イランのホルムズ海峡封鎖能力とその行使可能性",
+        "rejected_candidates": [
+          {
+            "key_point": "米国とイランの停戦・緊張管理枠組み",
+            "why_not_primary": "重要な分散的制約だが、その内容や強度自体がホルムズ海峡封鎖能力という構造的リスクに大きく依存していると考えられるため、一段下位の条件と位置づけた。"
+          },
+          {
+            "key_point": "ネタニヤフ政権の国内政治生存",
+            "why_not_primary": "対イラン・ガザ政策の多くを説明し得るが、ホルムズ海峡封鎖や世界エネルギー市場といった外部構造を無視して国内政治だけをKey Pointにすると、軍事・経済リスクの制約を過小評価する危険がある。"
+          },
+          {
+            "key_point": "中国によるイラン産原油の大口購入",
+            "why_not_primary": "イランの経済的耐久力を支える重要要因だが、ネタニヤフの具体的な軍事・外交オプションを直接規定するのはホルムズ海峡封鎖能力の方であり、こちらは補助的な構造条件と位置づけた。"
+          }
+        ],
+        "selection_rationale": "ネタニヤフの対イラン・ガザ政策を考える際、最も構造的で、かつイスラエルの軍事・外交オプションを制約する要因は、イランが実際に行使したホルムズ海峡封鎖能力である。これは米国との停戦枠組みや中国の原油購入よりも上位の構造条件として、エネルギー市場・海上輸送・同盟国の軍事行動を通じてイスラエルの行動範囲を規定する。国内政治要因（ネタニヤフの生存）は重要だが、この構造的制約の上に乗る形で作用しているとみる方が整合的である。",
+        "candidate_key_points": [
+          {
+            "key_point": "イランのホルムズ海峡封鎖能力とその行使可能性",
+            "control_type": "structural",
+            "what_it_explains": "対イラン停戦後もネタニヤフが全面戦争に踏み込まず、限定的な軍事・情報・サイバー手段を選好する合理性、米国・湾岸諸国との協調を重視せざるを得ない背景を説明し得る。",
+            "why_it_could_be_key": "イランはIRGCによる機雷・ミサイル・スピードボートを用いてホルムズ海峡を実際に封鎖した実績があり、再封鎖の脅威は原油価格・海上輸送・米軍展開に直結する。ネタニヤフの対イラン・ガザ政策は、この構造的リスクを前提に軍事行動の強度・タイミングを決めざるを得ない。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "asset:Iran-strait_canal_control",
+              "relationship:Iran-UnitedStates-active_conflict_ceasefire"
+            ],
+            "what_it_does_not_explain": "ガザ戦線での具体的な作戦選択や、国内政治日程（選挙・裁判）に応じた強硬・緩和のタイミングなど、イスラエル内部要因に起因する変動までは説明しきれない。",
+            "control_structure_summary": "イラン国家・IRGCが技術的・地理的に保有する海峡封鎖能力は、特定の単一政治家の意思ではなく、軍事能力・地理・世界のエネルギー依存構造から生じる構造的要因として機能している。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米国とイランの停戦・緊張管理枠組み（active_conflict_ceasefire）の維持",
+            "control_type": "distributed",
+            "what_it_explains": "ネタニヤフが対イランで米国との協調・情報共有を重視し、単独で大規模攻撃に踏み切りにくい理由を説明し得る。",
+            "why_it_could_be_key": "2026年2月開戦・4月停戦後も、米国とイランの間でホルムズ海峡をめぐる緊張管理枠組みが続いており、イスラエルの対イラン行動はこの枠組みを崩さない範囲で調整される可能性が高い。",
+            "controlling_entity_ids": [
+              "671eeb94-62df-45f9-a1e4-5e3fa89a71ba",
+              "63f60ff3-e318-42f4-9282-43d794e28f4a"
+            ],
+            "supporting_evidence_ids": [
+              "relationship:Iran-UnitedStates-active_conflict_ceasefire"
+            ],
+            "what_it_does_not_explain": "ガザにおける日々の軍事行動や、イスラエル国内の政治力学（連立維持・抗議デモ）など、停戦枠組みとは直接関係しない要素。",
+            "control_structure_summary": "米国とイラン双方が停戦枠組みの維持・破綻のコントロールに関与しており、イスラエルはこの二者の関係に強く制約される立場にある。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "ネタニヤフ政権の国内政治生存（連立維持と司法・汚職リスク回避）",
+            "control_type": "unknown",
+            "what_it_explains": "ガザでの強硬姿勢や対イランへの強いレトリックが、必ずしも軍事的合理性だけでなく国内政治上の必要性から選ばれている可能性を説明し得る。",
+            "why_it_could_be_key": "ネタニヤフは長期政権の中で汚職裁判・司法改革をめぐる国内対立に直面しており、対イラン・ガザ政策が国内右派・連立パートナーの支持維持に不可欠なツールとなっている可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "ホルムズ海峡や世界エネルギー市場の構造的制約、米国との停戦枠組みなど、イスラエル外部の要因。",
+            "control_structure_summary": null,
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "中国によるイラン産原油の大口購入とエネルギー市場構造",
+            "control_type": "structural",
+            "what_it_explains": "対イラン制裁・軍事圧力だけではイランの行動変容が限定的であり、ネタニヤフが外交・秘密工作・地域同盟構築など多面的手段を組み合わせる必要性。",
+            "why_it_could_be_key": "中国がイラン産原油の主要な割引購入者となっており、イランの経済的耐久力を支えている。これにより対イラン制裁・軍事圧力の効果が限定され、ネタニヤフの対イラン戦略も長期戦・間接戦を前提にせざるを得ない。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "relationship:China-Iran-major_oil_buyer_discount_purchaser"
+            ],
+            "what_it_does_not_explain": "ガザ戦線の短期的な軍事行動や、イスラエル国内の政治日程との連動。",
+            "control_structure_summary": "世界エネルギー市場と中国の需要構造が、イランの経済的持久力を支える構造的要因として機能している。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "イランがホルムズ海峡封鎖能力を長期的に放棄する、あるいは第三国の軍事・技術介入により封鎖能力が実質的に無効化され、封鎖の脅威がエネルギー市場・海上輸送にほとんど影響しなくなった場合、このKey Point設定は見直しが必要となる。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "asset:Iran-strait_canal_control",
+          "relationship:Iran-UnitedStates-active_conflict_ceasefire"
+        ],
+        "control_structure_summary": "ホルムズ海峡封鎖能力は、イランの軍事力・地理的位置・世界のエネルギー依存構造から生じる構造的要因であり、特定の政治家の意思だけでは変えにくい。ネタニヤフの対イラン・ガザ政策は、この構造的リスクの下で米国・湾岸諸国との協調や限定的軍事行動を選択せざるを得ない。",
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "本Caseでは、ネタニヤフの具体的な最近の発言・行動、イスラエル国内政治の詳細、ガザでの作戦内容などの一次情報が提供されておらず、Actor Intelligence Packもinsufficientである。そのため、ネタニヤフのPersistent Preferenceや具体的なレッドラインについては仮説レベルにとどまり、確信度は中～低である。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "国内政治優先エスカレーション：ネタニヤフが連立崩壊や汚職裁判の進展など深刻な政権危機に直面した場合、対イラン・ガザで大規模な軍事エスカレーションに踏み切り、「国家安全保障危機」を利用して支持結集を図るシナリオ。ホルムズ海峡リスクや米国のレッドラインを一時的に過小評価する可能性がある。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "イスラエル国内で政権崩壊寸前の政治危機が顕在化し、同時にネタニヤフが対イラン・ガザで大規模作戦を開始し、米国の明確な反対を無視した場合。"
+          ],
+          "weakening_conditions": [
+            "連立内での妥協や司法プロセスの遅延により、ネタニヤフの短期的な政権生存リスクが低下する。",
+            "米国が軍事支援・外交支援をテコに、イスラエルの大規模エスカレーションを事前に強く牽制する。",
+            "イラン側がホルムズ海峡封鎖や代理勢力攻撃を抑制し、エスカレーションの口実が減る。"
+          ],
+          "strengthening_conditions": [
+            "イスラエル国内で大規模な反政府デモや連立崩壊が発生し、早期選挙や政権交代のリスクが急上昇する。",
+            "汚職裁判・司法問題でネタニヤフ個人の法的リスクが高まり、「政治的生存のための賭け」に出るインセンティブが強まる。",
+            "米国政権との関係が悪化し、既に軍事・外交支援のレバレッジが弱まっている。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "構造的緊張緩和：イランがホルムズ海峡封鎖能力の行使を抑制し、中国等との経済関係を優先することで、対イラン・ガザをめぐる緊張が徐々に緩和されるシナリオ。ネタニヤフも対イラン・ガザでの軍事行動を抑制し、湾岸諸国・米国・第三国仲介（オマーン等）を通じた外交・経済協力を重視する方向へシフトする。",
+          "evidence_class": "structural_reference",
+          "switch_conditions": [
+            "ホルムズ海峡での封鎖・妨害が長期的に停止し、国際的な海峡管理枠組みが機能し始めると同時に、イスラエルの対イラン・ガザ軍事行動が明確に抑制され、外交・経済協力の枠組みが拡大した場合。"
+          ],
+          "weakening_conditions": [
+            "イランが再びホルムズ海峡封鎖を行い、抑止カードとしての行使頻度が高まる。",
+            "イスラエルまたは米国がイラン本土や主要インフラへの大規模攻撃を行い、報復の連鎖が始まる。",
+            "ガザやレバノンでの大規模衝突が頻発し、緊張緩和の政治的余地が縮小する。"
+          ],
+          "strengthening_conditions": [
+            "イランがホルムズ海峡封鎖を長期的に停止し、第三国の監視・管理枠組みに参加するなど、封鎖カードの行使を自制する動きが確認される。",
+            "中国・湾岸諸国がエネルギー安定供給のために、イラン・イスラエル双方に対し緊張緩和を強く働きかける。",
+            "米国が対イラン・対イスラエル双方に対し、軍事エスカレーションよりも地域経済安定を優先する枠組み（海峡安全保障合意など）を提示する。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "ホルムズ海峡での航行妨害・封鎖の頻度・強度",
+        "イスラエルによる対イラン・ガザ軍事行動の規模・頻度・対象",
+        "米国とイスラエル・イランの間の公式声明・軍事協力の変化",
+        "中国によるイラン産原油輸入量・契約の変化"
+      ],
+      "retraction_conditions": [
+        "イランがホルムズ海峡封鎖能力を長期的に放棄し、第三国管理に委ねるなど、構造的制約が大きく変化した場合。",
+        "ネタニヤフが対イラン・ガザで米国の強い反対を無視した大規模戦争に踏み切り、構造的制約よりも国内政治が優先されていることが明確になった場合。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "69e8064f-b236-42e8-89b1-e92a4c866987",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "e2fed736-6330-4d6c-83bf-740800dab58c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "eba1d367-ab95-41c6-bebd-53a53903bd58",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "609a1837-e29b-4215-9660-93d1f96f8ebe",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "50a2a155-3437-46db-8cc3-5ea55b08a385",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "62010532-a2fc-4f6d-8384-4ab94401e852",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "b47f3ca0-a472-46ed-8031-a43590d9562a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "ネタニヤフが国内政治危機の際に、米国や構造的制約を無視して大規模エスカレーションに踏み切った事例が確認されれば、本シナリオの確信度は低下する。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "ネタニヤフ政権下での直近の対イラン・ガザ軍事行動（規模・頻度・対象）と、その際の米国・イラン・国内政治の反応はどうか。",
+          "rationale": "Main ScenarioのKey Point（限定的エスカレーション路線）とKey Actor（ネタニヤフ）のPreference-Action Gapを検証するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米国とイランの停戦枠組みの具体的内容と、イスラエルに課されている明示・暗黙の制約は何か。",
+          "rationale": "Key Point候補（米国-イラン停戦枠組み）と構造的制約の強度を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ネタニヤフの過去の対イラン・ガザ政策におけるPersistent Preference（軍事・外交・国内政治のバランス）はどのようなパターンを持つか。",
+          "rationale": "Key ActorのPersistent Preference仮説を強化・修正するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "イランのホルムズ海峡封鎖行動（2026年3月以降）の具体的な期間・強度・対象と、その際の中国・湾岸諸国・米国の反応はどうか。",
+          "rationale": "Primary Key Point（ホルムズ海峡封鎖能力）の実際の行使パターンと構造的影響を検証するため。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ガザ戦線でのイスラエル軍の作戦と国内世論・連立パートナーの反応の関係はどうか。",
+          "rationale": "ネタニヤフの国内政治生存をKey Point候補として評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "ネタニヤフ政権の具体的な対イラン・ガザ軍事行動（作戦名・規模・期間）と、その際の米国・イラン・国内政治の反応。",
+          "gap_category": "deterministic",
+          "recommended_action": "公式声明・軍報告・信頼できる報道を収集し、時系列で整理する。"
+        },
+        {
+          "priority": "中",
+          "description": "ネタニヤフの過去の対イラン・ガザ政策におけるPersistent Preference（軍事・外交・国内政治のバランス）の詳細。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "過去の戦争・作戦（例：過去のガザ作戦、対イラン秘密工作）を整理し、共通パターンを抽出する。"
+        },
+        {
+          "priority": "高",
+          "description": "米国の対イラン停戦枠組みの具体的内容と、イスラエルに課されている暗黙・明示の制約。",
+          "gap_category": "deterministic",
+          "recommended_action": "米政府・議会の公式文書・信頼できる分析を確認する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "ネタニヤフの対イラン・ガザ政策は、構造的制約よりも国内政治（連立維持・汚職裁判）にほぼ全面的に規定されており、ホルムズ海峡や米国との停戦枠組みは二次的要因に過ぎないという反論。",
+      "key_stakeholder_assessment": {
+        "rationale": "対イラン・ガザ政策を実際に動かす／止める主体として、(1)イスラエル側の最終決定権を持つネタニヤフ首相、(2)ホルムズ海峡封鎖能力と地域代理勢力を通じて抑止・エスカレーションを左右するイラン国家（政権・IRGC）が中核と考えられる。米国は重要な制約・支援主体だが、今回の問い（ネタニヤフの政策）では補助的な制約として扱う。",
+        "confidence": "中",
+        "evidence_ids": [],
+        "determination": "multiple",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "netanyahu",
+          "iran_state"
+        ]
+      },
+      "situation_actor_assessment": null,
+      "decisive_power_and_leverage": "as_of=2026-08-31時点で、対イラン・ガザをめぐる局面全体を決定づける力は、単独のActorではなく、(1)イスラエル首相（ネタニヤフ）と連立パートナーが持つ国内政治・軍事決定権、(2)米国が持つ軍事支援・外交枠組み・対イラン停戦管理のレバレッジ、(3)イランのホルムズ海峡封鎖能力という構造的カードの三者の相互拘束に分散しているとみるのが妥当。ネタニヤフはガザ・対イランに関するイスラエル側の行動を動かす主要な政治的ハブだが、米国の支援・停戦枠組みとイランの海峡カードが行使可能な軍事オプションの範囲を大きく制約している。",
+      "assets_dependencies_leverage": [
+        {
+          "kind": "asset",
+          "summary": "IRGCによる機雷敷設・武装スピードボート・沿岸ミサイルを用いたホルムズ海峡への実効的な航行妨害能力（2026年3月以降、実際に行使され海峡を封鎖した実績がある）"
+        }
+      ],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-01T06:06:07.513823+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "3cebc2b9-89c5-4d2d-ad9d-76bf1831f1fa",
+    "response_id": "7e59d437-0e1c-4173-a5f4-6d3b16ac6041",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります",
+        "passed": false
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Benjamin Netanyahu, Iran（国家）, United States, China, Oman",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "key_actor_profiles[0]: Actor Intelligenceが利用不可(profile_source=none_available)なのにpersistent_preference/relevant_decision_patternsが生成されており、general_knowledge_usedが明示されていません",
+        "passed": false
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）",
+        "passed": false
+      }
+    ],
+    "passed_count": 30,
+    "failed_count": 4,
+    "created_at": "2026-09-01T06:06:08.227571+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_intelligence_provenance_present",
+      "actor_model_challenged"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_intelligence_provenance_present",
+      "actor_model_challenged"
+    ],
+    "removed_fabricated_ids": [
+      "key_actor_profiles[1].evidence_ids=asset:Iran-strait_canal_control",
+      "key_actor_profiles[1].evidence_ids=relationship:China-Iran-major_oil_buyer_discount_purchaser",
+      "key_actor_profiles[1].persistent_preference_evidence[0].evidence_id=asset:Iran-strait_canal_control",
+      "key_stakeholder_assessment.evidence_ids=relationship:Iran-UnitedStates-active_conflict_ceasefire",
+      "key_stakeholder_assessment.evidence_ids=asset:Iran-strait_canal_control"
+    ],
+    "confidence_adjustments": [],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[2]"
+    ],
+    "actor_provenance_touched": [
+      "netanyahu",
+      "iran_state"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 83141,
+    "completion_tokens": 12595,
+    "total_tokens": 95736
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 135391,
+        "prompt_tokens": 38832,
+        "completion_tokens": 9114
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 55437,
+        "prompt_tokens": 44309,
+        "completion_tokens": 3481
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "Fact/Official Claim/Observationに根拠参照(source_ref)が無い主張があります"
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Benjamin Netanyahu, Iran（国家）, United States, China, Oman"
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "key_actor_profiles[0]: Actor Intelligenceが利用不可(profile_source=none_available)なのにpersistent_preference/relevant_decision_patternsが生成されており、general_knowledge_usedが明示されていません"
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 272.2382345199585
+}

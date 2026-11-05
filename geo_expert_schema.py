@@ -844,6 +844,24 @@ _KEY_STAKEHOLDER_FIRST_NOTE = (
 # Session2 Reasoning Upgrade: key_point_assessmentは全モード・常時生成（Stage1所有）。
 # key_stakeholder_assessmentより先に行う分析ステップであり、Reasoning Loopの起点として
 # 常時・静的にsystem promptへ含める（_ACTOR_INTELLIGENCE_NOTEと同じ理由）。
+# ---- 意図と行動原則（2026-11-04追加、最優先の指針） ---------------------------------------------
+# 背景: 新モデルは、個別の規則を文字どおり実行し、「何のための分析か」という意図を汲まない傾向がある
+# （読みを出さず『不明/未確認』でぼかす、仮説を決着させない、内部ラベルや『採用した場合』という差分で書く、
+# 観点が制度・手続きに偏る、材料が薄いと読みを0件にする）。個別規則へのパッチではなく、振る舞いを決める
+# 上位の指針として、システムプロンプトの冒頭に置く。特定のケースの結論や専門家の言い回しは含めない。
+EXPERT_INTENT_NOTE = (
+    "【この分析の目的と、あなたの振る舞い（最優先の指針）】\n"
+    "あなたの出力は、専門家（分析者）が「この局面をどう読み得るか」を短時間で把握し、次に何を確かめるかを決めるための材料です。以下の姿勢で書いてください。個別の指示と食い違うように見える場合も、この目的を優先してください。\n"
+    "1. 主体の意思・思惑・利害関係から読み、読みを出す: 出来事や情勢ではなく、主体（個人に限らず、国・政府・組織・陣営などの団体も含む）を主語にして読む。各主体の意思（何をしようとしているか）、思惑（本音・狙い・見せ方）、利害関係（誰にどんな得失があり、何に縛られているか）、相手への見方、主体どうしの関係から、因果の物語として具体的に書く。出来事・情勢は、主体の意思や力学が表に出た結果として位置づける。無難な要約や両論併記、「判断できない」で終えない。\n"
+    "2. 最有力を決める: 根拠が不完全でも、現時点で最も説明力の高い読みを1つ選び、最有力（retained）として示す。拮抗する読みは捨てずに代替として並べる。unresolvedは、どの読みも他より優位と言えない場合に限る。\n"
+    "3. 読みは互いに独立させる: 各読みは、他の読みを参照しなくても、それだけで読める文章にする。内部ラベル（H0・H1等）、『採用した場合』のような比較の書き方、as_ofなどのメタ情報を、本文に書かない。\n"
+    "4. 読みの幅（エッジ）を持つ: 本線が主流の読みでも、あえて異なる視点やマイナーな切り口（別の主体、別の動機、国内の事情、制度や先例への影響、悪化・無秩序化、域外への波及、前提を疑う読み など）の読みを、エッジとして1〜2件、代替に含める。Evidenceが薄い・無いという理由だけで、エッジを棄却しない（unresolvedとして、確度を低く明示して残す）。成立し得ないものは、無理に作らない。\n"
+    "5. 材料が薄くても出す: 入力が短い・資料が乏しい場合も、与えられた状況から言える構造的な仮説として、確度を低く明示して出す。「不明」「未確認」で止めず、何が分かれば読みが変わるか（観測点）を具体的に書く。人物の内面（目的の実現経路、制約、相手への認識、期待）も同様に、根拠が薄ければ分析者の仮説（確度は低）として書き、空欄で済ませない。\n"
+    "6. 不確実性の表し方: 不確実性は、確度・弱化情報・切替条件で表し、本文を曖昧な語で埋めない。\n"
+    "7. 守ること: 事実・数値・引用・IDを創作しない（下記の厳守事項）。仮説は仮説として明示する。\n"
+)
+
+
 _KEY_POINT_NOTE = (
     "Key Point Selection: key_stakeholder_assessmentで個別Actorを検討する前に、まず"
     "key_point_assessmentで「この局面を規定する蝶番（Key Point）は何か」を検討すること。"
@@ -852,7 +870,8 @@ _KEY_POINT_NOTE = (
     "institutionally_constrained/structural/distributed/mixed/unknown、Key Pointを"
     "『誰が』ではなく『何が』動かしているかの分類）をまず判定した上で、Primaryを選んだ"
     "理由（selection_rationale）と他候補を棄却した理由（rejected_candidates、1〜3件）を"
-    "明示すること。地政学のKey Pointは必ずしも単一Actorの意思で動くとは限らない"
+    "明示すること。candidate_key_pointsの候補は、互いに『支配する要因の種類』が異なる観点から立てること（例: 制度・手続き／実力・資源／外部の主体や域外への波及／悪化・無秩序化の連鎖、のうち複数）。同じ種類の観点の言い換えを並べないこと。"
+    "地政学のKey Pointは必ずしも単一Actorの意思で動くとは限らない"
     "（選挙結果・司法判断・原油価格・制度上の期限・軍事的能力・複数組織の相互拘束等）ため、"
     "Actorを無理に登場させず、control_type=institutionally_constrained/structuralの場合は"
     "controlling_entity_idsを空のままにしcontrol_structure_summaryで説明すること。"
@@ -1028,7 +1047,9 @@ _EXPERT_REASONING_CHECKS_NOTE = (
     "局面もある）。\n"
     "role_choreography_check（Q06A Role Choreography）: 2名以上の具体的Actorが局面に"
     "存在し、同一政権・同盟・陣営など協調可能な関係にあり、同一Counterparty/Issueに"
-    "対して異なるトーンまたは行動を取っている場合のみapplicable=true。trigger_basisに"
+    "対して異なるトーンまたは行動を取っている場合、または、そのような関係にある2名以上の間に"
+    "公開の批判・不一致が見られ、それが本物の内部対立か、第三者（相手国・国内・市場）を動かす"
+    "ための意図的な役割分担（演出）かを現在のEvidenceでは区別できない場合に、applicable=true。trigger_basisに"
     "は該当する2名以上のActor名を含めること。単独Actorの言行不一致だけでは"
     "applicable=falseとすること。Question基本形:『これは本当の内部対立なのか、それとも"
     "相手を動かすための意図的な役割分担なのか』。\n"
@@ -1259,6 +1280,8 @@ _SITUATION_ACTOR_ASSESSMENT_NOTE = (
     "primary_binding_constraint/primary_usable_leverageは複数列挙せず、最重要な1つに絞る"
     "こと。推論的な判断（estimated_real_preference/genuine_or_tactical/current_red_line/"
     "instrumental_value）についてconfidence=高とする場合はevidence_idsを伴わせること。"
+    "key_actor_profiles[]に登録した主要Actorそれぞれについて、少なくとも1行は記入すること（材料が薄い場合も、"
+    "salience=unknown・confidenceは低のまま、estimated_real_preferenceを分析者の仮説として書く）。"
 )
 
 # Session2 Reasoning Upgrade（Phase3）: media_source_contextがStage2 Schemaに含まれる場合
@@ -1390,7 +1413,8 @@ _TARGETED_EXPERT_QUESTION_NOTE = (
     "ていない場合。Ask: 実行主体は実際にそれを行う能力を持つか、具体的に何が必要か。\n"
     "[G06] Role Choreography Trigger: 同一issueについて、既に役割分担の関係（同盟・"
     "同一政権内・同一ブロック内等）があるとみなせる2名以上のActorが、異なるトーン・"
-    "行動を見せている場合。単独Actorの言行不一致だけでは発火しないこと——もう一方の"
+    "行動を見せている場合、またはそのような2名の間の公開の批判・不一致が、本物の対立か第三者を動かす"
+    "役割分担かを区別できない場合。単独Actorの言行不一致だけでは発火しないこと——もう一方の"
     "相方Actorがkey_actor_profiles等で局面に明示されていることを条件とする。Ask: "
     "両者の差は意図された役割分担か、それとも純粋な不一致か。\n"
     "[G01] Premise Challenge Trigger: 『専門家は皆この見方で一致している』のような"
@@ -1476,8 +1500,11 @@ _COMPETING_HYPOTHESES_NOTE = (
     "H4_frame_breakingを検討する際は、単に『前提を疑う』だけでなく、既存Actor "
     "Intelligence（Historical Pattern/Persistent Preference）が今回のCaseに適用でき"
     "ない具体的な理由をreasonへ記述すること。H4は面白い結論を出すためではなく探索空間を"
-    "広げるために使い、必ずEvidence Competitionを通し、Evidenceが無ければ"
-    "status=rejectedとして棄却すること（棄却した仮説も削除せず記録として残す）。各仮説"
+    "広げるために使う（読みの幅＝エッジを保つ）。H2〜H4は、本線とは異なる視点・マイナーな切り口を"
+    "あえて立てるための枠であり、必ずEvidence Competitionを通すが、Evidenceが無い・薄いこと"
+    "だけを理由にstatus=rejectedにしない（その場合はstatus=unresolvedとして保持し、"
+    "evidence_statusと確度を正直に示す）。status=rejectedは、Evidenceと明確に矛盾する、または"
+    "物理・制度・能力的に成立しない場合に限る（棄却した仮説も削除せず記録として残す）。各仮説"
     "にstatus(retained/rejected/unresolved)を必ず付け、全件がretainedのみにならない"
     "ようにすること（少なくとも1件は棄却または未解決として扱う）。質問文がAlternative"
     "を与えていない場合でも、H1〜H4は自力で生成すること（Neutral Promptでの検証対象）。\n"
@@ -1539,7 +1566,9 @@ _COMPETING_HYPOTHESES_NOTE = (
     "Facts/制度的制約を特定する→(3)そこからmain_scenarioを導出し、main_scenario."
     "derived_from_hypothesis_idへその仮説のhypothesis_idを記録する→(4)拮抗する"
     "仮説があれば、採用した場合に何が変わるかをalternative_scenarios（該当する"
-    "derived_from_hypothesis_idも記録）へ反映する、という順序を実際に踏むこと。"
+    "derived_from_hypothesis_idも記録）へ反映する。各シナリオ（main_scenario/alternative_scenarios）のdescriptionは、H0/H1等の内部ラベルや『採用した場合』という書き方を使わず、他の仮説を参照しなくても読める独立した読み筋（誰が・なぜ・どう動き・その結果どうなるか）として書くこと。本線との違いはswitch_conditionsに書くこと。"
+    "alternative_scenariosには、主シナリオと結果の方向が大きく異なるもの（悪化・無秩序化・合意の空洞化・当事者の意図と逆の結果など）が、与えられた状況から根拠を持って成立し得る場合は、少なくとも1つ含めること（無理に作らず、成立し得ない場合は含めなくてよい）。"
+    "という順序を実際に踏むこと。"
     "business_impact（Executive Implication、この読み筋なら経営は何に備えるべきか）"
     "とmonitoring_indicators（Watch、何が観測されたらPrimary Storylineを変更すべき"
     "か）を、選定したPrimary Storylineと整合させること。\n"
@@ -1657,7 +1686,9 @@ _PERCEIVED_PATH_EVENT_ROLE_NOTE = (
     "シグナルかを特定できる場合、intended_target_actor_refへkey_actor_profiles[]."
     "actor_refで記入すること（例: bargaining_card/signalであれば、それが向けられて"
     "いる相手）。特定の相手を想定しない、または相手を特定できない場合はnullのままで"
-    "よい。根拠が薄い場合は無理に埋めず、いずれもnullのままにしてよい。\n"
+    "よい。根拠が薄い場合も、perceived_path/event_roleは分析者の仮説として（confidenceは低く、事実として"
+    "書かずに）記入すること。nullにしてよいのは、そのActorの目的がまったく推定できない場合と、"
+    "intended_target_actor_refで相手を特定できない場合に限る。\n"
     "Phase F(Human Interaction Analytical Gate): event_roleは、観測された行動が"
     "どういう機能（役割）を果たすかの分類であり、Aの主観的認識(directional_"
     "perceptions)やAの期待(situation_actor_assessment)そのものではない。event_role."
@@ -1683,7 +1714,9 @@ _DIRECTIONAL_PERCEPTION_NOTE = (
     "低にすること)。issue_scopeでこの認識が及ぶ争点・領域を明示し、無限定な人格特性へ"
     "一般化しないこと。key_actor_profiles[]に登録されていない主体をobserver_actor_ref/"
     "target_actor_refに使わないこと（架空のactor_refを作らない）。根拠のあるペアを"
-    "特定できない場合は空配列のままでよい。【Actor Intelligence Pack】が提供されている"
+    "特定できない場合でも、key_actor_profiles[]に2名以上いる場合は、主要な関係（協調・対立・従属・仲介など）"
+    "にあるペアについて、claim_type=analyst_hypothesis（confidenceは低）として少なくとも1〜3件記録すること"
+    "（空配列は、Key Actorが1名以下の場合に限る）。【Actor Intelligence Pack】が提供されている"
     "場合、各Actorのrelevant_relationships（相手・方向(この主体→相手/相手→この主体)・"
     "dependency_direction・leverage_direction・confidenceを含む、既存Relationship DB"
     "からの決定的な取得結果）を、directional_perceptionsを組み立てる際の根拠材料として"
@@ -2024,7 +2057,7 @@ REASONING_PIPELINE_V2_DECIDE_NOTE = (
     "説明できるか)／F.Evidence Compatibility(Evidenceと大きく矛盾しないか)／"
     "G.Assumption Burden(未証明の追加仮定を大量に要しないか)。\n"
     "3. Top 3〜5 Shortlist: Pruning後に残った候補のうち、互いに識別可能な読みを"
-    "3〜5件程度まで残す（数を合わせるために弱い候補を無理に残さない）。\n"
+    "3〜5件程度まで残す（数を合わせるために弱い候補を無理に残さない）。ただし、本線と異なる視点・マイナーな切り口（エッジ）は、読みの幅を保つため、Evidenceが薄くてもunresolvedとして1〜2件残す。\n"
     "4. Composition: 異なる因果レイヤーを説明する要素は1つの仮説へ統合してよいが"
     "（Composition）、同じ現象への競合する説明（例: 本物の対立 vs 意図的な演出）は"
     "無理に1つへ合成せず別々に残す（Competing）。\n"

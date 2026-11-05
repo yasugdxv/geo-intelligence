@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "scope_status": "complete",
+  "generated_at": "2026-09-16T07:05:00Z",
+  "source_revision": "e08567c8492a3d5d7e5245424725b72392190a29+uncommitted (see integrity-report.json limitations -- no true base commit exists)",
+  "confidence": "MEDIUM",
+  "limitations": [
+    {"item": "config.json contents (Supabase service_role_key, Azure OpenAI key, api_keys registry values)", "reason": "safety rule: never read/print secret values; existence/shape checked programmatically without printing values", "by_design": true},
+    {"item": "Full-repository review", "reason": "scope for this pass is the Phase B-I IOS additions (geo_ios_*.py, geo_knowledge_access_policy.py, geo_intelligence_auth.py CallerIdentity change, geo_notification_service.py, the new frontend routes/lib/components) plus their immediate integration points (api_server.py wiring, geo_intelligence_service.py caller_identity plumbing). Pre-existing Expert AI / Report Studio internals were explicitly out of scope for this IOS effort and are excluded here too.", "by_design": true},
+    {"item": "node_modules and other vendor/build directories", "reason": "pre-allowlisted vendor code, not this project's own attack surface", "by_design": true},
+    {"item": "scripts/scan_security_surface.py's own static pattern scan produced 1956 hits across the whole repo, of which only 6 touched IOS files, and all 6 were comment-text false positives (Japanese doc-comments matched by loose keyword patterns), not real code paths -- this static tool is a weak signal for this codebase's style and was used only as a inventory aid, not as the review method", "reason": "noted for transparency, not a coverage gap", "by_design": true}
+  ],
+  "summary": {"severity_counts": {"P0": 0, "P1": 3, "P2": 2, "P3": 1}},
+  "findings": [
+    {
+      "id": "SEC-1",
+      "severity": "P1",
+      "severity_rationale": "Vulnerability=real (zero access control) x Reachability=full (same network reachability as every other endpoint in this API, no auth layer distinguishes it) x Exposure=depends on deployment (currently localhost-only dev pilot, but the code has no built-in restriction to that) x Action Criticality=HIGH (this is the single gate the whole spec calls the 'Approval Gate' -- 'Approval無しでOfficial Knowledgeにしない' is stated as an absolute condition of the entire IOS design, and this endpoint IS that gate). Net: P1, not P0, because today's actual deployment is localhost dev and every sibling endpoint in this same app has the identical baseline auth-free exposure -- this finding is about internal inconsistency and no safety net, not a uniquely-exposed hole.",
+      "title": "POST /api/geo/ios/approval/in-app and /approval/upload accept a free-form 'approver' string with zero role/permission check, unlike every other mutating action in the same feature",
+      "evidence": "geo_ios_approval_api.py:17-71 (RecordApprovalRequest/RecordUploadApprovalRequest have no role field at all); geo_ios_approval_service.py (grep for require_role/geo_role_guard -> 0 matches in the whole file)",
+      "attack_failure_path": "any caller who can reach api_server.py -> POST /api/geo/ios/approval/in-app with approval_status='approved' and approver='<any string, e.g. an impersonated real reviewer's name>' -> record_approval_event writes an approval_event row -> that approval_event_id is immediately usable by /api/geo/ios/knowledge-publication/report-studio to publish the report project as Official Knowledge (status=active), with the only remaining check being knowledge-publication's own publisher_role param (which itself is self-reported, see SEC-2)",
+      "impact": "A caller with no real authority can move a report all the way from 'never reviewed' to 'published as active, retrievable Official Knowledge' by self-labeling both the approver and (per SEC-2) the publisher, defeating the human-in-the-loop guarantee that is this whole subsystem's stated reason to exist",
+      "confidence": "HIGH",
+      "recommended_fix": "Add an approver_role parameter to RecordApprovalRequest/RecordUploadApprovalRequest and enforce it via geo_role_guard.require_role(approver_role, APPROVER_ROLES) in geo_ios_approval_service.py, mirroring the existing pattern already used by geo_ios_learning_candidate_service.approve_candidate/reject_candidate and geo_ios_knowledge_publication_service's publisher_role check. This closes the internal-consistency gap even before real authentication exists.",
+      "verification_step": "After the fix, re-run this pilot's approval step with an invalid/missing approver_role and confirm a 403, then with a valid one and confirm success -- mirror the existing test_geo_intelligence_phase_f_trust_boundary.py anti-spoofing test pattern for this endpoint"
+    },
+    {
+      "id": "SEC-2",
+      "severity": "P1",
+      "severity_rationale": "Vulnerability=real (self-reported role, no authentication backing it) x Reachability=full x Exposure=same as SEC-1 x Action Criticality=HIGH (this is the actual publish-to-Official-Knowledge action). Distinguished from SEC-1 only by already having a role *parameter* -- but geo_role_guard.require_role itself is explicitly documented in its own docstring as dev-only/self-reported/non-authenticated, so the parameter is a labelling convention, not a real control.",
+      "title": "publisher_role / reviewer_role / created_by_role / actor_role checks throughout the IOS Learning + Publication + Knowledge Review pipeline rely on geo_role_guard.require_role, which is self-reported and non-authenticated by the module's own documented design",
+      "evidence": "geo_role_guard.py module docstring (dev-only, self-reported, non-authenticated, per this project's own established convention); geo_ios_knowledge_publication_api.py publisher_role param; geo_ios_learning_api.py reviewer_role/created_by_role params",
+      "attack_failure_path": "any caller -> passes publisher_role='knowledge_steward' (or reviewer_role='knowledge_steward') as a plain string, with no proof of actually holding that role -> require_role compares the string against an allowlist and passes",
+      "impact": "The entire Approval->Publish->Learning-Candidate-approval chain's access control is currently a naming convention, not an enforced boundary -- consistent with (and not a new discovery beyond) this project's own long-standing, explicitly-documented dev-mode posture, but worth restating here as a Phase I release-readiness input since this pilot exercised the real production-shaped pipeline end-to-end for the first time",
+      "confidence": "HIGH",
+      "recommended_fix": "Before any Controlled Production Pilot (real external users, not just Claude-as-operational-proxy), replace geo_role_guard.require_role's self-reported check with the same CallerIdentity-style authenticated-principal pattern already built for geo_intelligence_auth.py (Phase F) -- extending that pattern to the IOS human-actor endpoints, not just the agent-to-agent boundary.",
+      "verification_step": "Confirm via a spoofing test analogous to test_geo_intelligence_phase_f_trust_boundary.py: an unauthenticated caller claiming knowledge_steward should be rejected once a real identity layer exists"
+    },
+    {
+      "id": "SEC-3",
+      "severity": "P1",
+      "severity_rationale": "Vulnerability=configuration gap, not a code defect x Reachability=full x Exposure=this specific pilot's own environment x Action Criticality=HIGH (this is precisely the control Phase F was built to enforce). Rated P1 rather than P0 because the fallback behavior (trusting self-reported requester_app/source_department) is itself the project's own pre-existing, explicitly-documented dev-mode default, not a silent/surprising hole -- but a real Cross-Agent pilot cannot claim the Phase F fix is validated in this environment while it is unconfigured.",
+      "title": "geo_intelligence.api_keys is not configured in this environment, so /api/v1/geo-intelligence/query runs in dev-no-auth mode -- Phase F's authenticated CallerIdentity spoofing fix is present in code (and covered by 16 unit tests) but is NOT exercised end-to-end by this live pilot",
+      "evidence": "config_utils.load_config()['geo_intelligence']['api_keys'] == [] (checked programmatically, no key values printed); geo_intelligence_auth.py module docstring confirms api_keys-unset => dev-no-auth mode with caller_app/caller_domain always None",
+      "attack_failure_path": "n/a (this is an unexercised-control finding, not an active exploit path) -- but the practical consequence is: the Cross-Agent Pilot (Phase I-A Section 15) run in this session validated agent_sharing_policy enforcement only via the *unauthenticated* self-reported requester_app/source_department fallback path, not via the authenticated CallerIdentity path the Phase F fix actually protects",
+      "impact": "Release-readiness claims about the Cross-Agent trust boundary should not cite this pilot's Section 15 results as end-to-end validation of the authenticated path -- only of the pre-existing self-reported fallback and the underlying access-policy functions (which were separately verified directly against real published data)",
+      "confidence": "HIGH",
+      "recommended_fix": "Before a Controlled Production Pilot with real external caller apps (Sustainability/ERM/SCM/PA), populate geo_intelligence.api_keys with real caller_app/caller_domain bindings for each external app and re-run an authenticated-path Cross-Agent check (a legitimate cross-domain caller succeeds via its real key; a caller attempting to claim a different domain via body-only requester_app is rejected, per test_geo_intelligence_phase_f_trust_boundary.py's existing pattern).",
+      "verification_step": "Configure a test api_keys entry, re-run the exact Case A/B/C query patterns from this pilot with X-API-Key set, confirm caller_identity.authenticated=True and caller_identity.caller_domain overrides any conflicting body-supplied source_department"
+    }
+  ],
+  "reliability_findings": [
+    {
+      "id": "REL-1",
+      "severity": "P2",
+      "category": "reliability",
+      "title": "extract-learning (and likely other real-Azure-OpenAI-call IOS endpoints) has no retry-on-transient-error wrapper around the outbound LLM call",
+      "evidence": "Reproduced twice live in this pilot (Case A and Case B): the first extract-learning call for a brand-new report_project_id returned a raw 500 'Internal Server Error' (Starlette's default unhandled-exception response, meaning something threw and nothing caught it), and an immediate retry with zero code changes succeeded both times. Case C's first attempt succeeded with no retry needed. Most consistent with a transient corporate-proxy/TLS hiccup on the outbound call (config_utils proxy settings, verify=False), not a deterministic bug -- direct reproduction via a standalone script also succeeded without incident.",
+      "production_reachability": "production_reachable",
+      "recommended_fix": "Wrap the geo_llm_common.call_llm_structured invocation inside extract_learning_candidates (and audit sibling real-LLM-call endpoints such as generate-scenarios/generate-design/refine-design for the same gap) with a single bounded retry on connection-level exceptions, distinct from the project's already-known 'bare except Exception retry amplification' anti-pattern flagged in the sibling world_monitor_dashboard project's token-optimizer review -- retry only on transport-layer failures, not on any exception.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "REL-2",
+      "severity": "P2",
+      "category": "reliability",
+      "title": "api_server.py has no client-visible resilience story for a mid-request server restart",
+      "evidence": "During this pilot, the running api_server.py process was restarted by an unrelated actor (most likely the concurrent Report Studio rewrite session sharing this same working tree/environment) while a refine-design call (a 60-100s real LLM call) was in flight, surfacing to the pilot script as a raw ConnectionResetError with no partial-progress recovery. Data itself was safe (Supabase-backed), but the in-flight HTTP call was simply lost.",
+      "production_reachability": "production_reachable",
+      "recommended_fix": "Not a code fix per se (a single dev-mode process restarting mid-request is expected in this specific concurrent-session environment) -- but worth a documented operational note for any future Controlled Production Pilot that long-running LLM-backed endpoints (60-240s) should be called from a client with its own timeout+retry, since the server has no request-level durability today.",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "amendments": [],
+  "needs_verification": [
+    {
+      "item": "Whether api_server.py is ever deployed reachable beyond localhost in any current or planned environment",
+      "reason": "SEC-1/SEC-2's severity rationale explicitly depends on this; this pilot's own environment is localhost-only, but the finding's forward-looking severity for a Controlled/Broad Production Pilot depends on the actual planned network exposure, which this session has no visibility into.",
+      "confidence": "LOW"
+    },
+    {
+      "item": "The two unattributed-authorship files from integrity-report.json (geo_expert_schema.py, geo_expert_engine.py) were not reviewed for security content here since they are outside this IOS effort's declared scope and content-grep confirmed zero IOS references",
+      "reason": "out of scope by design, cross-referenced from the integrity report rather than re-investigated here",
+      "confidence": "HIGH"
+    }
+  ],
+  "scope": "Phase B-I Geopolitical Intelligence OS additions only: geo_ios_*.py (11 files), geo_knowledge_access_policy.py, geo_notification_service.py, the Phase F CallerIdentity change to geo_intelligence_auth.py/geo_intelligence_api.py/geo_intelligence_service.py, the Phase E changes to geo_knowledge_api.py/geo_knowledge_item_schemas.py/geo_department_intelligence_service.py, api_server.py's additive wiring, and the new eco-digest-spark frontend routes/lib/components under geo.ios.*. Pre-existing Expert AI core and Report Studio internals are explicitly excluded, consistent with this whole effort's absolute conditions (verified untouched in integrity-report.json)."
+}

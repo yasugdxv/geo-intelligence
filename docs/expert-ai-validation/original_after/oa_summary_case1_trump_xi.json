@@ -1,0 +1,195 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82740,
+    "completion_tokens": 12636,
+    "total_tokens": 95376
+  },
+  "wall_clock_seconds": 238.73074054718018,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "先端半導体・AI向け技術の対中輸出・投資をどこまで制度的に制限するか（米国および同盟国の輸出管理・投資規制の設計と運用）",
+    "selection_rationale": "半導体・AI規制の現局面は、個別の関税や一時的な政治シグナルではなく、輸出管理・投資規制という制度枠組みの中で運用されている。これは、政権交代や個別事件があっても継続しやすく、企業・同盟国・中国側の行動を長期的に拘束する。国内政治や中国の技術自立、台湾の安全保障リスクは重要な補助要因だが、いずれも最終的には「どのような制度的制限が設計・実施されるか」に収れんするため、このKey PointをPrimaryとした。",
+    "control_type": "institutionally_constrained",
+    "confidence": "低",
+    "candidate_key_points_count": 4,
+    "candidate_key_points": [
+      "先端半導体・AI向け技術の対中輸出・投資をどこまで制度的に制限するか（米国および同盟国の輸出管理・投資規制の設計と運用）",
+      "米国内の産業・雇用・選挙政治が、対中半導体・AI規制の強度と方向をどこまで押し上げるか（国内政治・産業ロビー構造）",
+      "中国側の技術自立・国産化戦略がどこまで実効性を持つか（国家主導の技術・産業政策）",
+      "台湾・周辺海域の安全保障リスクが、米側の対中技術依存リスク認識をどこまで高めるか"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "米国内の産業・雇用・選挙政治が、対中半導体・AI規制の強度と方向をどこまで押し上げるか",
+        "why_not_primary": "重要なDriving Forceだが、最終的には輸出管理・投資規制という制度に反映される中間要因であり、制度そのもの（Primary Key Point）を通じて企業・同盟国・中国側の行動を拘束する点で一段下位の位置づけとした。"
+      },
+      {
+        "key_point": "中国側の技術自立・国産化戦略がどこまで実効性を持つか",
+        "why_not_primary": "米規制の実効性と長期的なパワーバランスを左右するが、米側の制度設計そのものを直接決めるわけではない。むしろ、米規制に対する中国の応答として位置づけられるため、Primary Key Pointの結果に対する反応要因と見なした。"
+      },
+      {
+        "key_point": "台湾・周辺海域の安全保障リスクが、米側の対中技術依存リスク認識をどこまで高めるか",
+        "why_not_primary": "安全保障リスクは規制強化の正当化要因として重要だが、規制の具体的な設計・運用は依然として輸出管理・投資規制制度に委ねられている。したがって、構造的背景としては重要だが、制度設計そのものほど直接的な蝶番ではないと判断した。"
+      }
+    ],
+    "disconfirming_signal": "米国および主要同盟国が、対中先端半導体・AI向け輸出・投資規制を大幅に緩和または撤廃し、制度としての拘束力を弱める一方で、代わりに短期的・個別的な政治シグナルや関税に依存する形へと明確に転換した場合、このKey Pointの置き方（制度設計中心）が誤っていた可能性が高まる。",
+    "evidence_class": "model_general_knowledge"
+  },
+  "actors": [
+    {
+      "actor_ref": "trump",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": null,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    },
+    {
+      "actor_ref": "xi",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": null,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "rejected": 2,
+    "unresolved": 1
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "rejected"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "米中の半導体・AI規制は、米国および主要同盟国の輸出管理・投資規制制度を中核とする「制度化された技術管理枠組み」として定着しつつあり、米側は対中技術流出抑制と国内産業・雇用保護を、 中側は技術自立・国産化と台湾を含む安全保障目標を優先する。短期的には、政権交代や個別の安全保障事案（例：台湾周辺の緊張）に応じて規制の強度や対象範囲が調整されるが、全体としては「長期的な管理競争」として続き、全面的な緩和よりも、対象技術の細分化・第三国経由の迂回対策・国内産業政策との連動が進む。",
+    "historical_analogies_used": null
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 8,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "現在の米国の対中半導体・AI輸出管理・投資規制の具体的内容と、その法的根拠・運用状況はどうなっているか。",
+      "rationale": "制度の具体的内容を把握することで、主シナリオの前提を検証できる。",
+      "related_hypothesis": "主シナリオ（制度化された技術管理枠組み）",
+      "recommended_sources": "米商務省・財務省の公式文書、議会報告書、専門レポート"
+    },
+    {
+      "priority": "中",
+      "question": "Trump政権（またはTrump個人）が半導体・AI規制に関して過去にどのような具体的措置・発言を行ったか。",
+      "rationale": "Actor Intelligence Packを補強し、Trumpの行動パターンと現在の仮説の整合性を検証する。",
+      "related_hypothesis": "TrumpのPersistent Preference仮説",
+      "recommended_sources": "過去の政策・発言記録、専門分析"
+    },
+    {
+      "priority": "高",
+      "question": "Xi Jinping政権下での半導体・AI分野の具体的な技術自立・国産化政策（投資額、対象分野、進捗）はどうなっているか。",
+      "rationale": "中国側の技術自立戦略の実効性を評価し、主シナリオと代替シナリオのどちらが妥当かを検証する。",
+      "related_hypothesis": "Xiの技術自立・国産化Persistent Preference仮説",
+      "recommended_sources": "中国政府の公式文書、産業政策、専門分析"
+    },
+    {
+      "priority": null,
+      "question": "現在の米国の対中半導体・AI輸出管理・投資規制の具体的内容（対象技術・企業・閾値）と、その法的根拠・運用状況はどうなっているか。",
+      "rationale": "Key Point（制度設計中心）とMain Scenarioの検証に直結する。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "Trumpが過去に半導体・AI規制や対中技術管理についてどのような具体的発言・措置を取ったか。",
+      "rationale": "Key Actor（Trump）のPersistent Preferenceと現在の仮説の整合性を検証する。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "Xi Jinping政権下での半導体・AI分野の技術自立・国産化政策の具体的進捗（投資額・成果）はどうか。",
+      "rationale": "Key Actor（Xi）の技術自立Persistent Preferenceと、中国側の実際の能力・制約を評価するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "台湾・周辺海域の安全保障リスクが、米議会・行政の半導体・AI規制議論でどの程度明示的に言及されているか。",
+      "rationale": "Key Pointのsecondary_hinge（台湾リスク→技術規制）仮説の強さを測る。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "同盟国（日本・韓国・EUなど）の対中半導体・AI輸出管理・投資規制が、米国とどの程度整合しているか。",
+      "rationale": "Primary Key Pointの「米国および主要同盟国の制度設計」という前提を検証する。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 5,
+  "knowledge_gaps_count": 4,
+  "quality_guard": {
+    "passed_count": 32,
+    "failed_count": 2,
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "confidence_adjustments": [
+      "key_point_assessment",
+      "main_scenario"
+    ],
+    "control_type_adjustments": [],
+    "historical_evidence_separations": [],
+    "actor_evidence_separations": [],
+    "pattern_applicability_fallbacks": []
+  },
+  "executive_summary": {
+    "what_changed": "半導体・AI規制が、単発の制裁や関税ではなく、輸出管理・投資規制・同盟協調・国内産業政策を含む「制度化された技術管理枠組み」として定着しつつある点。",
+    "why_it_matters": "この枠組みは、政権交代や個別事件だけでは大きく方向転換しにくく、企業のサプライチェーン・投資・技術開発戦略に長期的な制約を与える。",
+    "what_to_watch_decide": "自社の半導体・AI関連サプライチェーン・技術開発・市場展開が、米中双方の規制・産業政策・安全保障リスクにどの程度露出しているかを把握し、規制の対象技術・企業・閾値の変化を継続的にモニタリングする必要がある。"
+  },
+  "one_line_assessment": "現時点では、米中の半導体・AI規制は「米側の対中技術流出抑制と国内産業保護」対「中側の技術自立・迂回経路確保」という構図で、制度・同盟・市場構造に支えられた長期的な構造対立として固定化しつつあり、単一指導者の短期的判断だけでは大きく緩まない可能性が高い（as_of: 2026-08-31、提供情報は部分的）。",
+  "initial_anomaly": "半導体・AI規制が、単発の制裁や関税ではなく、輸出管理・投資規制・同盟国との足並み・国内産業政策を含む「構造化された枠組み」として定着しつつある点。これは、政権交代や個別事件だけでは大きく方向転換しにくいことを示唆する。"
+}

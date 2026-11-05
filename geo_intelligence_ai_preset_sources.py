@@ -18,6 +18,7 @@ Web検索には「調査テーマの文言」だけを送る（社内資料・�
 from __future__ import annotations
 
 import re
+from concurrent.futures import ThreadPoolExecutor
 
 import geo_external_network_service as ext_net
 import geo_intelligence_ai_search_service as search_service
@@ -100,10 +101,14 @@ def search_reports(ctx: dict) -> dict:
         filters["region"] = ctx["region"]
     searched = _toks(ctx)[:4]
     by_key: dict = {}
-    for term in searched:                                 # 全文検索はAND一致のため、語ごとに検索して統合する
-        res = search_service.search(
+
+    def _search_term(term):
+        return search_service.search(
             ctx["client"], term, requester_context=ctx["requester_context"], include_demo=False,
             limit=DEFAULT_LIMIT, filters=filters or None)
+    with ThreadPoolExecutor(max_workers=max(1, len(searched))) as pool:       # 語ごとの検索は、互いに独立なので並列に行う
+        term_results = list(pool.map(_search_term, searched))
+    for res in term_results:                              # 全文検索はAND一致のため、語ごとに検索して統合する
         for r in res["results"]:
             key = (r["source_type"], r.get("report_id") or r.get("knowledge_item_id"))
             entry = by_key.setdefault(key, {"hits": 0, "row": r})
@@ -135,18 +140,24 @@ def search_knowledge(ctx: dict) -> dict:
     types = KNOWLEDGE_TYPES_BY_GROUP[group]
     client, rc = ctx["client"], ctx["requester_context"]
     eligible: set = set()
-    for ktype in types:
-        eligible |= search_service.resolve_eligible_knowledge_item_ids(
-            client, requester_context=rc, include_demo=False, knowledge_type=ktype)
+    with ThreadPoolExecutor(max_workers=max(1, len(types))) as pool:         # 種類ごとの権限内ID取得は、互いに独立なので並列に
+        for ids in pool.map(lambda kt: search_service.resolve_eligible_knowledge_item_ids(
+                client, requester_context=rc, include_demo=False, knowledge_type=kt), types):
+            eligible |= ids
     if not eligible:
         return _result("searched", "権限内で検索できる共通ナレッジがありません")
     hits: dict = {}
     counts: dict = {}
     searched = _toks(ctx)[:4]
-    for term in searched:
-        rows = client.rpc("search_geo_knowledge_items", {
+    eligible_sorted = sorted(eligible)
+
+    def _rpc(term):
+        return client.rpc("search_geo_knowledge_items", {
             "p_query": term, "p_status": ["active"], "p_knowledge_types": types, "p_include_demo": False,
-            "p_limit": DEFAULT_LIMIT, "p_eligible_ids": sorted(eligible)}) or []
+            "p_limit": DEFAULT_LIMIT, "p_eligible_ids": eligible_sorted}) or []
+    with ThreadPoolExecutor(max_workers=max(1, len(searched))) as pool:
+        rpc_rows = list(pool.map(_rpc, searched))
+    for rows in rpc_rows:
         for h in rows:
             if h.get("knowledge_item_id") in eligible:            # 二重チェック（既存検索と同じ防御）
                 hits.setdefault(h["knowledge_item_id"], h)
@@ -352,7 +363,10 @@ def search_source_library(ctx: dict) -> dict:
     """Source Libraryの既存の自然言語検索（意味検索。AI未設定ならキーワード検索）をそのまま使う。
     これは『世の中の出来事の根拠』ではなく『確認すべき情報源の候補』。回答では、確認ポイント・Watchpointsに使う。"""
     import geo_source_search_service as source_search
-    res = source_search.search_sources(ctx["client"], ctx.get("azure_client"), ctx.get("model"), ctx.get("topic") or " ".join(ctx["terms"]))
+    azure = None if ctx.get("fast") else ctx.get("azure_client")      # fast: LLMの意味検索をせず、キーワード検索にする
+    # fast（キーワード検索）のときは、質問文全体ではなく、検索語（日英のキーワード）を渡す。文のままだと、一致せず0件になる
+    text = " ".join(t for t in ctx["terms"] if t) if ctx.get("fast") else (ctx.get("topic") or " ".join(ctx["terms"]))
+    res = source_search.search_sources(ctx["client"], azure, ctx.get("model"), text)
     items = []
     for r in (res.get("sources") or [])[:6]:
         desc = (r.get("description") or "").replace("【AI生成・要確認】", "").strip()

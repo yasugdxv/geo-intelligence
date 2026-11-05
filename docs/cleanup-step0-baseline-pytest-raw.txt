@@ -1,0 +1,50 @@
+........................................................................ [ 18%]
+........................................................................ [ 37%]
+.......................................................................F [ 56%]
+........................................................................ [ 75%]
+...............................................................FFFFF.... [ 93%]
+........................                                                 [100%]
+================================== FAILURES ===================================
+______________ test_crawl_source_creates_events_and_observation _______________
+tests\test_geo_official_crawler.py:60: in test_crawl_source_creates_events_and_observation
+    assert results[-1]["raw_value"] == 1.0
+E   assert None == 1.0
+_______ test_list_weekly_picks_excludes_not_selected_and_sorts_by_score _______
+..\world_monitor_dashboard\tests\test_sustainability_article_selector.py:184: in test_list_weekly_picks_excludes_not_selected_and_sorts_by_score
+    ???
+E   AssertionError: assert [] == ['c1', 'c3']
+E     
+E     Right contains 2 more items, first extra item: 'c1'
+E     Use -v to get more diff
+_______________ test_list_weekly_picks_truncates_to_target_max ________________
+..\world_monitor_dashboard\tests\test_sustainability_article_selector.py:193: in test_list_weekly_picks_truncates_to_target_max
+    assert [p["article_cluster_id"] for p in picks] == ["c1", "c3"]
+E   assert 0 == 3
+E    +  where 0 = len([])
+__________ test_list_weekly_picks_keeps_only_latest_run_per_cluster ___________
+..\world_monitor_dashboard\tests\test_sustainability_article_selector.py:203: in test_list_weekly_picks_keeps_only_latest_run_per_cluster
+    assert [p["total_score"] for p in picks] == [100, 99, 98]
+E   assert 0 == 1
+E    +  where 0 = len([])
+______________ test_list_weekly_picks_filters_by_expert_version _______________
+..\world_monitor_dashboard\tests\test_sustainability_article_selector.py:216: in test_list_weekly_picks_filters_by_expert_version
+    ???
+E   AssertionError: assert [] == ['c2']
+E     
+E     Right contains one more item: 'c2'
+E     Use -v to get more diff
+________ test_list_weekly_picks_excludes_stale_runs_outside_since_days ________
+..\world_monitor_dashboard\tests\test_sustainability_article_selector.py:225: in test_list_weekly_picks_excludes_stale_runs_outside_since_days
+    assert [p["article_cluster_id"] for p in picks] == ["c2"]
+E   AssertionError: assert [] == ['c2']
+E     
+E     Right contains one more item: 'c2'
+E     Use -v to get more diff
+=========================== short test summary info ===========================
+FAILED tests/test_geo_official_crawler.py::test_crawl_source_creates_events_and_observation
+FAILED tests/test_sustainability_article_selector.py::test_list_weekly_picks_excludes_not_selected_and_sorts_by_score
+FAILED tests/test_sustainability_article_selector.py::test_list_weekly_picks_truncates_to_target_max
+FAILED tests/test_sustainability_article_selector.py::test_list_weekly_picks_keeps_only_latest_run_per_cluster
+FAILED tests/test_sustainability_article_selector.py::test_list_weekly_picks_filters_by_expert_version
+FAILED tests/test_sustainability_article_selector.py::test_list_weekly_picks_excludes_stale_runs_outside_since_days
+6 failed, 378 passed in 7.97s

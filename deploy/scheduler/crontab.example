@@ -1,0 +1,5 @@
+# cronで動かす場合の例（systemd timerが使えない環境向け）。crontab -e で登録する。
+# 15分ごとのtick（収集系Job）。tick自身が二重起動を防ぐ（ロックファイル＋DBのrunning行）。
+*/15 * * * * cd /opt/geo/geopolitical_monitor_dashboard && /opt/geo/.venv/bin/python geo_scheduler_cli.py tick >> logs/scheduler_tick.log 2>&1
+# OFAC専用枠（毎日18:00 UTC = 03:00 JST）
+0 18 * * * cd /opt/geo/geopolitical_monitor_dashboard && /opt/geo/.venv/bin/python geo_scheduler_cli.py tick --only COLLECTION_OFAC >> logs/scheduler_ofac.log 2>&1

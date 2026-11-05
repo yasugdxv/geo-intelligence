@@ -1,0 +1,109 @@
+{
+  "case_id": "RUSSIA_SANCTIONS_SESSION2",
+  "case_name": "米国の対ロ制裁強化を巡る政治力学",
+  "source_session": "Session 2 (2026-08-25、江口さんインタビュー２、Teams/Plaud文字起こし生データ)、テーマ1",
+  "source_documents": {
+    "blind_input_source": "テーマ1_0824.docx（Section 1〜4、Stakeholder Table。GPT初期分析ドラフト＋背景ファクト）",
+    "expert_gold_source": "江口さんインタビュー２ (1).docx（テーマ1に関する発言部分、ASR生データ）",
+    "note": "expert_gold_sourceはTeams/Plaudの音声認識による文字起こし生データであり、Session1のPlaud要約とは異なり逐語に近い。ただし言い淀み等をASRが正しく認識できていない箇所がある。"
+  },
+  "blind_input_file": "RUSSIA_SANCTIONS_SESSION2_BLIND_INPUT.md",
+  "session_faithful_input_file": "RUSSIA_SANCTIONS_SESSION2_SESSION_FAITHFUL_INPUT.md",
+  "expert_gold_file": "RUSSIA_SANCTIONS_SESSION2_EXPERT_GOLD.md",
+  "validation_rubric_file": "RUSSIA_SANCTIONS_SESSION2_VALIDATION_RUBRIC.md",
+  "_semantic_role_note": "全Gold Unitが独立したReading Cardとして出ることは要求しない。semantic_role=reading_candidateのみCQA Candidate Pool/S Ranking/Portfolio Rescue/Final Exposureで評価する。",
+  "_existing_model_mapping_note": "gold_reasoning_patterns内のexisting_model_mappingはevaluation-onlyのsoft mappingである。Generation Input（Runtime Prompt/Retrieval）へは絶対に渡さないこと。",
+  "gold_units": [
+    {
+      "unit_id": "GU1_premise_challenge_trump_sanction_desire",
+      "semantic_role": "reframe",
+      "title": "そもそもTrumpは強い対ロ制裁をしたいのか、という前提への疑問",
+      "summary": "初期分析のStakeholder Tableは『Trump=強い対ロ圧力を望む』ことを前提にしているが、その前提自体が誤っている可能性が高いという疑義。",
+      "evaluation_axes": ["cue_hit", "question_reframe_hit", "step2_reasoning_exposure"]
+    },
+    {
+      "unit_id": "GU2_trump_strongman_dealmaking_preference",
+      "semantic_role": "actor_insight",
+      "title": "力を持った強い者同士で物事を決めたいというTrumpの基本的性向",
+      "summary": "Trumpは実際に決定権を持つ強いリーダー同士での直接取引を志向し、決定権のない相手との交渉を嫌う。プーチン・習近平・金正恩に対して同様の態度。",
+      "evaluation_axes": ["actor_relationship_hit", "causal_structure_hit", "step2_reasoning_story_exposure"]
+    },
+    {
+      "unit_id": "GU3_first_term_track_record_method",
+      "semantic_role": "evidence_practice",
+      "title": "現在の発言だけでなく第一期政権での当該国への実際の行動履歴を参照する",
+      "summary": "Trumpの対ロ姿勢を読む際、現在の発言だけでなく第一期政権時のロシアゲート疑惑（後に濡れ衣と判明）という歴史的経緯を踏まえる必要がある。",
+      "evaluation_axes": ["cue_hit", "step2_reasoning_exposure"]
+    },
+    {
+      "unit_id": "GU4_hollow_out_if_forced",
+      "semantic_role": "reading_candidate",
+      "title": "どうしても制裁をしないといけないなら骨抜きにしたいという読み",
+      "summary": "Trumpは政治的に制裁を避けられない場合、自らの裁量で実質的な適用・強度を弱めることを志向する。",
+      "evaluation_axes": ["candidate_hit", "s_rank", "top3_retention", "top5_retention", "portfolio_rescue", "final_exposure_hit"]
+    },
+    {
+      "unit_id": "GU5_congress_trump_compromise_different_objectives",
+      "semantic_role": "structural_explanation",
+      "title": "議会の『制度化したい』とTrumpの『裁量を残したい』という異なる目的の両立",
+      "summary": "法案可決は対ロ強硬派の勝利ではなく、議会の恒久的圧力制度志向とTrumpの裁量温存志向という異なる目的が条文設計によって両立された結果。",
+      "evaluation_axes": ["actor_relationship_hit", "causal_structure_hit", "step2_reasoning_story_exposure"]
+    },
+    {
+      "unit_id": "GU6_audience_strength_matrix",
+      "semantic_role": "diagnostic_question",
+      "title": "『誰に見せたいか』×『実際の措置の強さ』で本気度を判定する方法",
+      "summary": "強硬姿勢の本気度は、発信対象（相手国か自国支持者か）と措置の実際の強度を掛け合わせて判定するという汎用的な方法論。",
+      "note": "記録上はベッセントの対イラン制裁を具体例に説明されたが、江口さん自身が一般的な判断ルールとして述べているため対ロ制裁ケースにも採録する。",
+      "evaluation_axes": ["cue_hit", "question_reframe_hit", "step2_reasoning_exposure"]
+    }
+  ],
+  "gold_cues": [
+    "Stakeholder Tableの『Trump=強い対ロ圧力を望む』という前提自体への疑義",
+    "アラスカ会談でTrumpがプーチンとの握手を望んでいたという既知の事実との整合性"
+  ],
+  "gold_questions": [
+    "Trumpはそもそも強い対ロ制裁を望んでいるのか",
+    "Trumpが本当に欲しかったものは何か（Stakeholder Table上の目的欄そのものへの疑問）"
+  ],
+  "gold_actors": [
+    "Trump（米大統領）",
+    "Vladimir Putin（ロシア大統領）",
+    "Graham（共和党対ロ強硬派上院議員）",
+    "Blumenthal / Shaheen（超党派制裁派）",
+    "上院共和党指導部",
+    "Bessent（財務長官）",
+    "関税権限に慎重な議員"
+  ],
+  "gold_relationships": [
+    {"from": "Trump", "to": "Putin", "type": "strongman_to_strongman_dealmaking", "unit_id": "GU2_trump_strongman_dealmaking_preference"},
+    {"from": "US Congress", "to": "Trump", "type": "institutionalization_vs_discretion_tradeoff", "unit_id": "GU5_congress_trump_compromise_different_objectives"},
+    {"from": "Trump", "to": "US domestic voters", "type": "toughness_signaling", "unit_id": "GU6_audience_strength_matrix"}
+  ],
+  "gold_reasoning_patterns": [
+    {
+      "pattern_name_ja": "前提そのものを疑う（Stakeholder Tableの目的欄を所与としない）",
+      "pattern_description": "初期分析が前提としているActorの目的自体を検証対象とし、所与としない",
+      "unit_id": "GU1_premise_challenge_trump_sanction_desire",
+      "existing_model_mapping": "H4_frame_breaking（Expert AI hypothesis_typeタクソノミー、schemas/geo_expert_ai_response.schema.json）",
+      "mapping_confidence": "soft",
+      "mapping_note": "『前提の枠組みを破る』というH4の定義とテーマ的に近いが、Session記録内でこのラベルが使われているわけではない。evaluation-onlyの参考情報。"
+    },
+    {
+      "pattern_name_ja": "Persistent Preferenceに立ち返る（現在の局面固有ではなく、行為者の一貫した性向から読む）",
+      "pattern_description": "特定局面の利害だけでなく、行為者が繰り返し示す一貫した性向・選好から現在の行動を説明する",
+      "unit_id": "GU2_trump_strongman_dealmaking_preference",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    },
+    {
+      "pattern_name_ja": "第一期政権の履歴を参照するEvidence Practice",
+      "pattern_description": "現在の発言・行動だけでなく、同一行為者が過去に同一相手に対して取った行動履歴を評価材料とする",
+      "unit_id": "GU3_first_term_track_record_method",
+      "existing_model_mapping": null,
+      "mapping_confidence": "none",
+      "mapping_note": "既存Reasoning Model/hypothesis_typeへの明確な対応は確認できていない。無理な当てはめはしない。"
+    }
+  ]
+}

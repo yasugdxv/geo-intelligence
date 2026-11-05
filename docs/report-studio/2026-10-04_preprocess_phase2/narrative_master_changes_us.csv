@@ -1,0 +1,1415 @@
+﻿signal_id,narrative_id,field,change_type,old_term,new_terms,reason,legacy_hits_sample,v2_hits_sample
+S1,S1-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S1,S1-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S1,S1-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S1,S1-03,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S1,S1-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S1,S1-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S1,S1-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S1,S1-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S1,S1-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S1,S1-04,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S1,S1-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S1,S1-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S1,S1-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S1,S1-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S1,S1-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S1,S1-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S1,S1-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S1,S1-07,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S1,S1-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S1,S1-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S1,S1-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S1,S1-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S1,S1-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S1,S1-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S1,S1-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S1,S1-08,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S1,S1-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S1,S1-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S1,S1-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S1,S1-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S1,S1-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S1,S1-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S1,S1-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S1,S1-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S1,S1-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S1,S1-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S1,S1-09,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S1,S1-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S1,S1-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S1,S1-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S1,S1-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S1,S1-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S1,S1-10,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S1,S1-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S1,S1-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S1,S1-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S1,S1-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S1,S1-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S1,S1-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S1,S1-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S1,S1-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S1,S1-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S1,S1-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S1,S1-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S1,S1-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S1,S1-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S1,S1-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S1,S1-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S1,S1-11,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S1,S1-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S1,S1-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S1,S1-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S1,S1-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S1,S1-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S1,S1-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S1,S1-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S1,S1-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S1,S1-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S1,S1-00,required_context_keywords,replace,Arizona,Arizona; Arizonans,required context。`Arizonans`(旧で112件が部分一致)を維持,3757,3607
+S1,S1-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S1,S1-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S1,S1-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S1,S1-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S2,S2-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S2,S2-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S2,S2-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S2,S2-03,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S2,S2-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S2,S2-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S2,S2-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S2,S2-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S2,S2-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S2,S2-04,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S2,S2-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S2,S2-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S2,S2-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S2,S2-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S2,S2-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S2,S2-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S2,S2-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S2,S2-07,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S2,S2-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S2,S2-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S2,S2-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S2,S2-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S2,S2-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S2,S2-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S2,S2-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S2,S2-08,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S2,S2-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S2,S2-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S2,S2-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S2,S2-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S2,S2-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S2,S2-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S2,S2-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S2,S2-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S2,S2-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S2,S2-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S2,S2-09,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S2,S2-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S2,S2-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S2,S2-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S2,S2-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S2,S2-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S2,S2-10,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S2,S2-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S2,S2-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S2,S2-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S2,S2-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S2,S2-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S2,S2-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S2,S2-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S2,S2-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S2,S2-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S2,S2-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S2,S2-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S2,S2-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S2,S2-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S2,S2-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S2,S2-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S2,S2-11,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S2,S2-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S2,S2-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S2,S2-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S2,S2-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S2,S2-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S2,S2-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S2,S2-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S2,S2-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S2,S2-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S2,S2-00,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S2,S2-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S2,S2-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S2,S2-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S3,S3-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S3,S3-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S3,S3-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S3,S3-03,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S3,S3-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S3,S3-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S3,S3-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S3,S3-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S3,S3-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S3,S3-04,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S3,S3-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S3,S3-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S3,S3-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S3,S3-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S3,S3-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S3,S3-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S3,S3-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S3,S3-07,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S3,S3-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S3,S3-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S3,S3-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S3,S3-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S3,S3-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S3,S3-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S3,S3-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S3,S3-08,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S3,S3-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S3,S3-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S3,S3-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S3,S3-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S3,S3-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S3,S3-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S3,S3-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S3,S3-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S3,S3-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S3,S3-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S3,S3-09,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S3,S3-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S3,S3-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S3,S3-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S3,S3-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S3,S3-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S3,S3-10,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S3,S3-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S3,S3-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S3,S3-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S3,S3-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S3,S3-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S3,S3-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S3,S3-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S3,S3-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S3,S3-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S3,S3-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S3,S3-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S3,S3-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S3,S3-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S3,S3-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S3,S3-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S3,S3-11,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S3,S3-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S3,S3-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S3,S3-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S3,S3-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S3,S3-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S3,S3-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S3,S3-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S3,S3-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S3,S3-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S3,S3-00,required_context_keywords,replace,Georgia,Georgia; Georgians,required context。`Georgians`を維持（形容詞`Georgian`は足さない）,7363,7257
+S3,S3-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S3,S3-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S3,S3-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S3,S3-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S4,S4-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S4,S4-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S4,S4-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S4,S4-03,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S4,S4-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S4,S4-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S4,S4-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S4,S4-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S4,S4-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S4,S4-04,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S4,S4-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S4,S4-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S4,S4-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S4,S4-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S4,S4-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S4,S4-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S4,S4-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S4,S4-07,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S4,S4-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S4,S4-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S4,S4-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S4,S4-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S4,S4-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S4,S4-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S4,S4-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S4,S4-08,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S4,S4-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S4,S4-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S4,S4-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S4,S4-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S4,S4-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S4,S4-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S4,S4-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S4,S4-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S4,S4-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S4,S4-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S4,S4-09,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S4,S4-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S4,S4-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S4,S4-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S4,S4-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S4,S4-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S4,S4-10,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S4,S4-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S4,S4-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S4,S4-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S4,S4-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S4,S4-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S4,S4-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S4,S4-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S4,S4-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S4,S4-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S4,S4-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S4,S4-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S4,S4-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S4,S4-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S4,S4-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S4,S4-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S4,S4-11,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S4,S4-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S4,S4-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S4,S4-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S4,S4-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S4,S4-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S4,S4-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S4,S4-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S4,S4-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S4,S4-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S4,S4-00,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S4,S4-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S4,S4-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S4,S4-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S5,S5-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S5,S5-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S5,S5-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S5,S5-03,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S5,S5-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S5,S5-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S5,S5-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S5,S5-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S5,S5-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S5,S5-04,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S5,S5-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S5,S5-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S5,S5-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S5,S5-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S5,S5-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S5,S5-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S5,S5-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S5,S5-07,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S5,S5-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S5,S5-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S5,S5-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S5,S5-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S5,S5-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S5,S5-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S5,S5-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S5,S5-08,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S5,S5-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S5,S5-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S5,S5-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S5,S5-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S5,S5-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S5,S5-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S5,S5-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S5,S5-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S5,S5-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S5,S5-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S5,S5-09,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S5,S5-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S5,S5-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S5,S5-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S5,S5-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S5,S5-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S5,S5-10,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S5,S5-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S5,S5-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S5,S5-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S5,S5-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S5,S5-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S5,S5-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S5,S5-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S5,S5-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S5,S5-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S5,S5-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S5,S5-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S5,S5-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S5,S5-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S5,S5-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S5,S5-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S5,S5-11,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S5,S5-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S5,S5-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S5,S5-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S5,S5-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S5,S5-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S5,S5-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S5,S5-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S5,S5-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S5,S5-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S5,S5-00,required_context_keywords,replace,Michigan,Michigan; Michiganders,required context。`Michiganders`を維持,7085,7005
+S5,S5-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S5,S5-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S5,S5-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S5,S5-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S6,S6-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S6,S6-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S6,S6-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S6,S6-03,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S6,S6-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S6,S6-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S6,S6-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S6,S6-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S6,S6-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S6,S6-04,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S6,S6-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S6,S6-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S6,S6-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S6,S6-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S6,S6-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S6,S6-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S6,S6-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S6,S6-07,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S6,S6-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S6,S6-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S6,S6-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S6,S6-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S6,S6-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S6,S6-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S6,S6-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S6,S6-08,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S6,S6-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S6,S6-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S6,S6-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S6,S6-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S6,S6-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S6,S6-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S6,S6-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S6,S6-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S6,S6-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S6,S6-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S6,S6-09,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S6,S6-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S6,S6-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S6,S6-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S6,S6-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S6,S6-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S6,S6-10,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S6,S6-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S6,S6-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S6,S6-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S6,S6-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S6,S6-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S6,S6-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S6,S6-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S6,S6-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S6,S6-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S6,S6-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S6,S6-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S6,S6-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S6,S6-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S6,S6-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S6,S6-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S6,S6-11,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S6,S6-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S6,S6-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S6,S6-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S6,S6-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S6,S6-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S6,S6-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S6,S6-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S6,S6-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S6,S6-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S6,S6-00,required_context_keywords,replace,Nevada,Nevada; Nevadans,required context。`Nevadans`を維持,2615,2533
+S6,S6-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S6,S6-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S6,S6-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S6,S6-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S7,S7-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S7,S7-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S7,S7-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S7,S7-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S7,S7-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S7,S7-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S7,S7-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S7,S7-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S7,S7-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S7,S7-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S7,S7-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S7,S7-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S7,S7-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S7,S7-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S7,S7-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S7,S7-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S7,S7-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S7,S7-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S7,S7-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S7,S7-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S7,S7-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S7,S7-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S7,S7-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S7,S7-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S7,S7-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S7,S7-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S7,S7-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S7,S7-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S7,S7-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S7,S7-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S7,S7-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S7,S7-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S7,S7-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S7,S7-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S7,S7-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S7,S7-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S7,S7-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S7,S7-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S7,S7-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S7,S7-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S7,S7-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S7,S7-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S7,S7-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S7,S7-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S7,S7-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S7,S7-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S7,S7-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S7,S7-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S7,S7-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S7,S7-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S7,S7-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S7,S7-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S7,S7-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S7,S7-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S7,S7-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S7,S7-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S7,S7-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S7,S7-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S7,S7-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S7,S7-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S7,S7-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S7,S7-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S7,S7-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S7,S7-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S7,S7-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S7,S7-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S7,S7-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S7,S7-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S7,S7-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S7,S7-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S7,S7-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S8,S8-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S8,S8-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S8,S8-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S8,S8-03,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S8,S8-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S8,S8-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S8,S8-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S8,S8-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S8,S8-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S8,S8-04,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S8,S8-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S8,S8-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S8,S8-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S8,S8-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S8,S8-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S8,S8-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S8,S8-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S8,S8-07,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S8,S8-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S8,S8-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S8,S8-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S8,S8-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S8,S8-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S8,S8-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S8,S8-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S8,S8-08,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S8,S8-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S8,S8-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S8,S8-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S8,S8-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S8,S8-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S8,S8-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S8,S8-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S8,S8-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S8,S8-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S8,S8-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S8,S8-09,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S8,S8-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S8,S8-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S8,S8-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S8,S8-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S8,S8-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S8,S8-10,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S8,S8-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S8,S8-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S8,S8-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S8,S8-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S8,S8-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S8,S8-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S8,S8-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S8,S8-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S8,S8-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S8,S8-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S8,S8-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S8,S8-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S8,S8-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S8,S8-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S8,S8-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S8,S8-11,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S8,S8-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S8,S8-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S8,S8-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S8,S8-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S8,S8-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S8,S8-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S8,S8-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S8,S8-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S8,S8-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S8,S8-00,required_context_keywords,replace,Pennsylvania,Pennsylvania; Pennsylvanians,required context。`Pennsylvanians`(旧で21件のcontext欠落)を維持,2509,2374
+S8,S8-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S8,S8-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S8,S8-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S8,S8-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S9,S9-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S9,S9-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S9,S9-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S9,S9-03,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S9,S9-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S9,S9-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S9,S9-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S9,S9-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S9,S9-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S9,S9-04,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S9,S9-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S9,S9-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S9,S9-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S9,S9-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S9,S9-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S9,S9-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S9,S9-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S9,S9-07,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S9,S9-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S9,S9-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S9,S9-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S9,S9-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S9,S9-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S9,S9-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S9,S9-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S9,S9-08,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S9,S9-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S9,S9-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S9,S9-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S9,S9-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S9,S9-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S9,S9-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S9,S9-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S9,S9-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S9,S9-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S9,S9-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S9,S9-09,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S9,S9-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S9,S9-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S9,S9-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S9,S9-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S9,S9-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S9,S9-10,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S9,S9-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S9,S9-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S9,S9-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S9,S9-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S9,S9-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S9,S9-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S9,S9-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S9,S9-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S9,S9-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S9,S9-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S9,S9-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S9,S9-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S9,S9-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S9,S9-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S9,S9-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S9,S9-11,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S9,S9-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S9,S9-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S9,S9-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S9,S9-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S9,S9-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S9,S9-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S9,S9-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S9,S9-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S9,S9-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S9,S9-00,required_context_keywords,replace,Wisconsin,Wisconsin; Wisconsinites,required context。`Wisconsinites`を維持,2596,2532
+S9,S9-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S9,S9-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S9,S9-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S9,S9-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S10,S10-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S10,S10-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S10,S10-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S10,S10-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S10,S10-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S10,S10-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S10,S10-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S10,S10-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S10,S10-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S10,S10-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S10,S10-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S10,S10-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S10,S10-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S10,S10-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S10,S10-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S10,S10-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S10,S10-07,include_keywords,replace,trade,trade; trades,貿易。旧: `trademark`・`trader`に当たる,948,765
+S10,S10-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S10,S10-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S10,S10-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S10,S10-07,cluster_split_terms,replace,trade,trade; trades,貿易。旧: `trademark`・`trader`に当たる,948,765
+S10,S10-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S10,S10-08,include_keywords,replace,education,education; educational,教育。語形を維持,2240,2051
+S10,S10-08,include_keywords,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S10,S10-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S10,S10-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S10,S10-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S10,S10-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S10,S10-08,public_voice_cues,replace,education,education; educational,教育。語形を維持,2240,2051
+S10,S10-08,public_voice_cues,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S10,S10-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S10,S10-08,cluster_split_terms,replace,education,education; educational,教育。語形を維持,2240,2051
+S10,S10-08,cluster_split_terms,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S10,S10-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S10,S10-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S10,S10-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S10,S10-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S10,S10-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S10,S10-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S10,S10-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S10,S10-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S10,S10-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S10,S10-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S10,S10-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S10,S10-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S10,S10-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S10,S10-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S10,S10-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S10,S10-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S10,S10-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S10,S10-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S10,S10-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S10,S10-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S10,S10-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S10,S10-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S10,S10-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S10,S10-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S10,S10-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S10,S10-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S10,S10-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S10,S10-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S10,S10-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S10,S10-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S10,S10-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S10,S10-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S10,S10-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S10,S10-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S10,S10-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S10,S10-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S10,S10-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S11,S11-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S11,S11-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S11,S11-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S11,S11-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S11,S11-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S11,S11-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S11,S11-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S11,S11-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S11,S11-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S11,S11-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S11,S11-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S11,S11-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S11,S11-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S11,S11-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S11,S11-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S11,S11-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S11,S11-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S11,S11-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S11,S11-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S11,S11-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S11,S11-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S11,S11-08,include_keywords,replace,education,education; educational,教育。語形を維持,2240,2051
+S11,S11-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S11,S11-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S11,S11-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S11,S11-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S11,S11-08,public_voice_cues,replace,education,education; educational,教育。語形を維持,2240,2051
+S11,S11-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S11,S11-08,cluster_split_terms,replace,education,education; educational,教育。語形を維持,2240,2051
+S11,S11-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S11,S11-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S11,S11-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S11,S11-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S11,S11-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S11,S11-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S11,S11-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S11,S11-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S11,S11-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S11,S11-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S11,S11-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S11,S11-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S11,S11-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S11,S11-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S11,S11-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S11,S11-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S11,S11-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S11,S11-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S11,S11-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S11,S11-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S11,S11-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S11,S11-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S11,S11-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S11,S11-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S11,S11-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S11,S11-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S11,S11-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S11,S11-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S11,S11-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S11,S11-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S11,S11-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S11,S11-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S11,S11-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S11,S11-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S11,S11-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S11,S11-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S11,S11-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S11,S11-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S12,S12-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S12,S12-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S12,S12-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S12,S12-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S12,S12-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S12,S12-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S12,S12-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S12,S12-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S12,S12-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S12,S12-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S12,S12-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S12,S12-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S12,S12-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S12,S12-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S12,S12-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S12,S12-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S12,S12-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S12,S12-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S12,S12-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S12,S12-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S12,S12-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S12,S12-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S12,S12-08,include_keywords,replace,education,education; educational,教育。語形を維持,2240,2051
+S12,S12-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S12,S12-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S12,S12-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S12,S12-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S12,S12-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S12,S12-08,public_voice_cues,replace,education,education; educational,教育。語形を維持,2240,2051
+S12,S12-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S12,S12-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S12,S12-08,cluster_split_terms,replace,education,education; educational,教育。語形を維持,2240,2051
+S12,S12-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S12,S12-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S12,S12-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S12,S12-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S12,S12-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S12,S12-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S12,S12-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S12,S12-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S12,S12-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S12,S12-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S12,S12-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S12,S12-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S12,S12-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S12,S12-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S12,S12-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S12,S12-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S12,S12-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S12,S12-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S12,S12-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S12,S12-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S12,S12-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S12,S12-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S12,S12-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S12,S12-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S12,S12-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S12,S12-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S12,S12-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S12,S12-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S12,S12-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S12,S12-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S12,S12-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S12,S12-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S12,S12-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S12,S12-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S12,S12-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S12,S12-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S12,S12-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S13,S13-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S13,S13-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S13,S13-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S13,S13-03,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S13,S13-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S13,S13-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S13,S13-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S13,S13-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S13,S13-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S13,S13-04,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S13,S13-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S13,S13-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S13,S13-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S13,S13-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S13,S13-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S13,S13-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S13,S13-07,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S13,S13-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S13,S13-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S13,S13-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S13,S13-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S13,S13-08,include_keywords,replace,education,education; educational,教育。語形を維持,2240,2051
+S13,S13-08,include_keywords,replace,environment,environment; environmental; environments,環境。`environmental`(688)を維持,1762,1037
+S13,S13-08,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S13,S13-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S13,S13-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S13,S13-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S13,S13-08,public_voice_cues,replace,education,education; educational,教育。語形を維持,2240,2051
+S13,S13-08,public_voice_cues,replace,environment,environment; environmental; environments,環境。`environmental`(688)を維持,1762,1037
+S13,S13-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S13,S13-08,cluster_split_terms,replace,education,education; educational,教育。語形を維持,2240,2051
+S13,S13-08,cluster_split_terms,replace,environment,environment; environmental; environments,環境。`environmental`(688)を維持,1762,1037
+S13,S13-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S13,S13-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S13,S13-09,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S13,S13-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S13,S13-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S13,S13-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S13,S13-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S13,S13-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S13,S13-10,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S13,S13-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S13,S13-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S13,S13-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S13,S13-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S13,S13-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S13,S13-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S13,S13-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S13,S13-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S13,S13-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S13,S13-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S13,S13-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S13,S13-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S13,S13-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S13,S13-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S13,S13-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S13,S13-11,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S13,S13-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S13,S13-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S13,S13-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S13,S13-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S13,S13-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S13,S13-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S13,S13-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S13,S13-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S13,S13-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S13,S13-00,required_context_keywords,replace,Maryland,Maryland; Marylanders,required context。`Marylanders`を維持,2537,2498
+S13,S13-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S13,S13-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S13,S13-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S13,S13-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S14,S14-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S14,S14-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S14,S14-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S14,S14-03,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S14,S14-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S14,S14-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S14,S14-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S14,S14-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S14,S14-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S14,S14-04,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S14,S14-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S14,S14-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S14,S14-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S14,S14-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S14,S14-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S14,S14-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S14,S14-07,include_keywords,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S14,S14-07,include_keywords,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S14,S14-07,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S14,S14-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S14,S14-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S14,S14-07,public_voice_cues,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S14,S14-07,cluster_split_terms,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S14,S14-07,cluster_split_terms,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S14,S14-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S14,S14-08,include_keywords,replace,education,education; educational,教育。語形を維持,2240,2051
+S14,S14-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S14,S14-08,include_keywords,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S14,S14-08,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S14,S14-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S14,S14-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S14,S14-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S14,S14-08,public_voice_cues,replace,education,education; educational,教育。語形を維持,2240,2051
+S14,S14-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S14,S14-08,public_voice_cues,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S14,S14-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S14,S14-08,cluster_split_terms,replace,education,education; educational,教育。語形を維持,2240,2051
+S14,S14-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S14,S14-08,cluster_split_terms,replace,union,union; unions,労組。旧: `reunion`に当たる,881,760
+S14,S14-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S14,S14-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S14,S14-09,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S14,S14-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S14,S14-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S14,S14-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S14,S14-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S14,S14-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S14,S14-10,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S14,S14-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S14,S14-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S14,S14-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S14,S14-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S14,S14-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S14,S14-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S14,S14-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S14,S14-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S14,S14-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S14,S14-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S14,S14-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S14,S14-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S14,S14-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S14,S14-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S14,S14-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S14,S14-11,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S14,S14-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S14,S14-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S14,S14-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S14,S14-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S14,S14-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S14,S14-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S14,S14-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S14,S14-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S14,S14-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S14,S14-00,required_context_keywords,replace,Illinois,Illinois; Illinoisans,required context。住民表記を維持,1741,1710
+S14,S14-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S14,S14-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S14,S14-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S14,S14-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S15,S15-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S15,S15-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S15,S15-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S15,S15-03,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S15,S15-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S15,S15-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S15,S15-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S15,S15-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S15,S15-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S15,S15-04,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S15,S15-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S15,S15-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S15,S15-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S15,S15-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S15,S15-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S15,S15-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S15,S15-07,include_keywords,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S15,S15-07,include_keywords,replace,employment,employment; unemployment,雇用。旧が拾っていた`unemployment`を維持,314,243
+S15,S15-07,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S15,S15-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S15,S15-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S15,S15-07,public_voice_cues,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S15,S15-07,public_voice_cues,replace,employment,employment; unemployment,雇用。旧が拾っていた`unemployment`を維持,314,243
+S15,S15-07,cluster_split_terms,replace,rent,rent; rents; rental; rentals; renter; renters,"家賃・住宅費。旧: `current`(2,119)・`different`(1,959)・`parent`に当たる。旧が拾っていた正しい語形のみ明示",8720,288
+S15,S15-07,cluster_split_terms,replace,employment,employment; unemployment,雇用。旧が拾っていた`unemployment`を維持,314,243
+S15,S15-08,include_keywords,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S15,S15-08,include_keywords,replace,education,education; educational,教育。語形を維持,2240,2051
+S15,S15-08,include_keywords,replace,data center,data center; data centers,データセンター。`data centers`(981)を維持,2657,1690
+S15,S15-08,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S15,S15-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S15,S15-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S15,S15-08,public_voice_cues,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S15,S15-08,public_voice_cues,replace,education,education; educational,教育。語形を維持,2240,2051
+S15,S15-08,public_voice_cues,replace,data center,data center; data centers,データセンター。`data centers`(981)を維持,2657,1690
+S15,S15-08,cluster_split_terms,replace,crime,crime; crimes,犯罪。`crimes`(535)を維持,3306,2740
+S15,S15-08,cluster_split_terms,replace,education,education; educational,教育。語形を維持,2240,2051
+S15,S15-08,cluster_split_terms,replace,data center,data center; data centers,データセンター。`data centers`(981)を維持,2657,1690
+S15,S15-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S15,S15-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S15,S15-09,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S15,S15-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S15,S15-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S15,S15-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S15,S15-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S15,S15-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S15,S15-10,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S15,S15-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S15,S15-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S15,S15-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S15,S15-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S15,S15-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S15,S15-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S15,S15-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S15,S15-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S15,S15-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S15,S15-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S15,S15-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S15,S15-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S15,S15-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S15,S15-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S15,S15-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S15,S15-11,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S15,S15-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S15,S15-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S15,S15-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S15,S15-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S15,S15-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S15,S15-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S15,S15-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S15,S15-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S15,S15-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S15,S15-00,required_context_keywords,replace,New York,New York; New Yorker; New Yorkers,required context。`New Yorkers`(旧で54件のcontext欠落)を維持,3603,3463
+S15,S15-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S15,S15-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S15,S15-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S15,S15-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S16,S16-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S16,S16-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S16,S16-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S16,S16-03,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S16,S16-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S16,S16-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S16,S16-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S16,S16-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S16,S16-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S16,S16-04,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S16,S16-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S16,S16-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S16,S16-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S16,S16-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S16,S16-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S16,S16-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S16,S16-07,include_keywords,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S16,S16-07,include_keywords,replace,water,water; waters,水問題。旧: `watermark`・`bridgewater`・`underwater`に当たる,3002,1450
+S16,S16-07,include_keywords,replace,data center,data center; data centers,データセンター。`data centers`(981)を維持,2657,1690
+S16,S16-07,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S16,S16-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S16,S16-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S16,S16-07,public_voice_cues,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S16,S16-07,cluster_split_terms,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S16,S16-07,cluster_split_terms,replace,water,water; waters,水問題。旧: `watermark`・`bridgewater`・`underwater`に当たる,3002,1450
+S16,S16-07,cluster_split_terms,replace,data center,data center; data centers,データセンター。`data centers`(981)を維持,2657,1690
+S16,S16-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S16,S16-08,include_keywords,add,ICE,ICE raids; ICE agents; ICE detention; immigration enforcement,ICE(Immigration and Customs Enforcement)。`ICE`はcase-sensitiveなexact tokenで一致するため、小文字表記の投稿は句（`ICE raids`等、case-insensitive）と`immigration enforcement`で補う,21868,704
+S16,S16-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S16,S16-08,include_keywords,replace,education,education; educational,教育。語形を維持,2240,2051
+S16,S16-08,include_keywords,replace,water,water; waters,水問題。旧: `watermark`・`bridgewater`・`underwater`に当たる,3002,1450
+S16,S16-08,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S16,S16-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S16,S16-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S16,S16-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S16,S16-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S16,S16-08,public_voice_cues,replace,education,education; educational,教育。語形を維持,2240,2051
+S16,S16-08,public_voice_cues,replace,water,water; waters,水問題。旧: `watermark`・`bridgewater`・`underwater`に当たる,3002,1450
+S16,S16-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S16,S16-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S16,S16-08,cluster_split_terms,replace,education,education; educational,教育。語形を維持,2240,2051
+S16,S16-08,cluster_split_terms,replace,water,water; waters,水問題。旧: `watermark`・`bridgewater`・`underwater`に当たる,3002,1450
+S16,S16-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S16,S16-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S16,S16-09,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S16,S16-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S16,S16-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S16,S16-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S16,S16-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S16,S16-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S16,S16-10,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S16,S16-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S16,S16-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S16,S16-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S16,S16-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S16,S16-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S16,S16-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S16,S16-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S16,S16-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S16,S16-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S16,S16-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S16,S16-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S16,S16-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S16,S16-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S16,S16-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S16,S16-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S16,S16-11,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S16,S16-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S16,S16-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S16,S16-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S16,S16-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S16,S16-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S16,S16-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S16,S16-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S16,S16-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S16,S16-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S16,S16-00,required_context_keywords,replace,Governor,Governor; Governors,required context。`governors`(旧で51件のcontext欠落)を維持。`governorship`等は足さない,15045,14680
+S16,S16-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S16,S16-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S16,S16-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S17,S17-03,include_keywords,replace,division,division; divisions,党内分裂。旧: `subdivision`に当たる,437,313
+S17,S17-03,include_keywords,replace,unite,unite; unites,"party reunification。旧: `united`(3,221、`United States`等)に当たる",3707,218
+S17,S17-03,required_context_keywords,replace,Democrat,Democrat*,"required context。旧が拾っていた`democrats`(5,702)・`democratic`(4,195)を語頭一致で維持",16409,6053
+S17,S17-03,cluster_split_terms,replace,defection,defection; defections,split term。`defections`を維持,284,18
+S17,S17-04,include_keywords,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S17,S17-04,include_keywords,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S17,S17-04,include_keywords,replace,swing voter,swing voter; swing voters,スイング票。`swing voters`(193)を維持,195,2
+S17,S17-04,include_keywords,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S17,S17-04,include_keywords,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S17,S17-04,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S17,S17-04,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S17,S17-04,public_voice_cues,replace,independent,independent; independents,無党派。`independents`(553)を維持,2914,2194
+S17,S17-04,public_voice_cues,replace,moderate,moderate; moderates,穏健派。旧: `moderated`(316)に当たる,963,559
+S17,S17-04,public_voice_cues,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S17,S17-04,public_voice_cues,replace,switch,switch; switches; switched; switching,支持の切り替え。語形を維持,488,265
+S17,S17-04,cluster_split_terms,replace,undecided,undecided; undecideds,未決定層。語形を維持,1087,1007
+S17,S17-07,include_keywords,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S17,S17-07,include_keywords,replace,trade,trade; trades,貿易。旧: `trademark`・`trader`に当たる,948,765
+S17,S17-07,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S17,S17-07,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S17,S17-07,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S17,S17-07,public_voice_cues,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S17,S17-07,cluster_split_terms,replace,property tax,property tax; property taxes,固定資産税。`property taxes`(347)を維持,881,552
+S17,S17-07,cluster_split_terms,replace,trade,trade; trades,貿易。旧: `trademark`・`trader`に当たる,948,765
+S17,S17-08,include_keywords,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S17,S17-08,include_keywords,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S17,S17-08,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S17,S17-08,required_context_keywords,replace,trust,trust; trusts; trusted; trusting,"required context。旧は`trustintrump47`(ハンドル名、1,218)・`antitrust`・`distrust`にも当たっていた。語形のみ明示",3032,976
+S17,S17-08,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S17,S17-08,public_voice_cues,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S17,S17-08,public_voice_cues,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S17,S17-08,cluster_split_terms,replace,border,border; borders,国境。`borders`(252)を維持,1142,861
+S17,S17-08,cluster_split_terms,replace,abortion,abortion; abortions,中絶。語形を維持,1247,1235
+S17,S17-09,include_keywords,replace,beat,beat; beats; beating; beaten,electability（誰かを破る）。旧: `Beatty`(558)・`heartbeat`に当たる,2197,1123
+S17,S17-09,include_keywords,replace,lose,lose; loses,"electability（勝てない/負ける）。旧: `close`(3,155)・`closed`・`disclosed`に当たる。旧でも拾えなかった`losing`は足さない",7463,862
+S17,S17-09,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+S17,S17-10,include_keywords,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S17,S17-10,include_keywords,replace,govern,governance; governs; governed,"governing ability / governance criticism。旧: `Governor`(13,374)・`government`(3,007)に当たりContext `Governor`と同一surfaceで自己発火。`governing`は既にinclude済み。`government`は候補者の統治能力ではなく政府一般なので含めない",17858,183
+S17,S17-10,include_keywords,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S17,S17-10,include_keywords,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S17,S17-10,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S17,S17-10,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S17,S17-10,public_voice_cues,replace,competent,competent; incompetent,cue。旧が拾っていた`incompetent`を維持,233,114
+S17,S17-10,public_voice_cues,replace,corrupt,corrupt; corruption; corrupted; corrupting,"腐敗。`corruption`(1,421)を維持",3128,1679
+S17,S17-10,public_voice_cues,replace,honest,honest; honesty; honestly,誠実さ。語形を維持（`dishonest`は別語として拾わない）,546,268
+S17,S17-10,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S17,S17-10,cluster_split_terms,replace,competence,competence; incompetence,split term。旧が拾っていた`incompetence`(429)を維持,455,26
+S17,S17-10,cluster_split_terms,replace,experience,experience; experiences; experienced,split term。語形を維持,1830,1168
+S17,S17-10,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S17,S17-11,include_keywords,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S17,S17-11,include_keywords,replace,campaign ad,campaign ad; campaign ads,選挙広告。語形を維持,301,102
+S17,S17-11,include_keywords,replace,attack ad,attack ad; attack ads,攻撃広告。語形を維持,194,77
+S17,S17-11,include_keywords,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S17,S17-11,include_keywords,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S17,S17-11,include_keywords,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S17,S17-11,include_keywords,replace,speech,speech; speeches,演説。`speeches`を維持,1034,880
+S17,S17-11,include_keywords,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S17,S17-11,required_context_keywords,replace,campaign,campaign*,required context。`campaigns`/`campaigning`を維持,10324,9568
+S17,S17-11,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S17,S17-11,public_voice_cues,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S17,S17-11,public_voice_cues,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S17,S17-11,cluster_split_terms,replace,debate,debate; debates,討論会。`debates`を維持,2039,1794
+S17,S17-11,cluster_split_terms,replace,ad,ad; ads,"cluster split term（広告）。旧: `had`(2,027)・`head`・`already`・`administration`に当たり36,667件中31,799件が誤ヒット",36667,4868
+S17,S17-11,cluster_split_terms,replace,endorsement,endorsement; endorsements,支持表明。語形を維持,1121,951
+S17,S17-11,cluster_split_terms,replace,rally,rally; rallying,集会。旧: `generally`(418)・`literally`に当たる,2634,1259
+S17,S17-11,cluster_split_terms,replace,interview,interview; interviews; interviewed; interviewing,インタビュー。語形を維持,1855,1313
+S17,S17-11,cluster_split_terms,replace,scandal,scandal; scandals,スキャンダル。語形を維持,1426,1230
+S17,S17-00,required_context_keywords,replace,election,election*,"required context。`elections`(1,737)を維持",14586,12082
+S17,S17-00,required_context_keywords,replace,candidate,candidate*,"required context。`candidates`(4,141)を維持",12147,8004
+S17,S17-00,required_context_keywords,replace,vote,vote*,"required context。`voters`(5,960)・`voted`(1,958)・`votes`を維持。`devoted`には当たらない",20332,10178
+(all),(all),include_keywords,reviewed_no_change,unity,unity,"旧: `community`(3,169)・`opportunity`(2,098)に当たる。v2のexact tokenで解消、語形追加不要",5482,141
+(all),(all),public_voice_cues,reviewed_no_change,unity,unity,"旧: `community`(3,169)・`opportunity`(2,098)に当たる。v2のexact tokenで解消、語形追加不要",5482,141
+(all),(all),public_voice_cues,reviewed_no_change,leaning,leaning,cue。旧: `cleaning`に当たる。v2で解消,700,610
+(all),(all),include_keywords,reviewed_no_change,ICE,ICE,アクロニム。v2ではcase-sensitive exact token（office/justice/police/priceに当たらない）。上記の句を追加,21868,704
+(all),(all),include_keywords,reviewed_no_change,healthcare,healthcare,旧: `unitedhealthcare`に当たる。v2で解消,2452,2413
+(all),(all),public_voice_cues,reviewed_no_change,healthcare,healthcare,旧: `unitedhealthcare`に当たる。v2で解消,2452,2413
+(all),(all),cluster_split_terms,reviewed_no_change,healthcare,healthcare,旧: `unitedhealthcare`に当たる。v2で解消,2452,2413
+(all),(all),required_context_keywords,reviewed_no_change,James,James,候補者名。旧: ハンドル名の一部に当たる。v2で解消,6462,5874
+(all),(all),required_context_keywords,reviewed_no_change,Ford,Ford,"候補者名。旧: `affordability`(1,900)・`afford`に当たる。v2のexact tokenで解消",6615,1358
+(all),(all),required_context_keywords,reviewed_no_change,Cooper,Cooper,候補者名。旧: `cooperation`に当たる。v2で解消,2501,1997
+(all),(all),required_context_keywords,reviewed_no_change,Barr,Barr,候補者名。旧: `barrow`・`barred`・`barrett`に当たる。v2で解消,4981,2084
+(all),(all),include_keywords,reviewed_no_change,labor,labor,旧: `laboratory`・`collaboration`に当たる。v2で解消,1664,1078
+(all),(all),cluster_split_terms,reviewed_no_change,labor,labor,旧: `laboratory`・`collaboration`に当たる。v2で解消,1664,1078
+(all),(all),public_voice_cues,reviewed_no_change,labor,labor,旧: `laboratory`・`collaboration`に当たる。v2で解消,1664,1078
+(all),(all),public_voice_cues,reviewed_no_change,ICE,ICE,アクロニム。v2ではcase-sensitive exact token（office/justice/police/priceに当たらない）。上記の句を追加,21868,704
+(all),(all),cluster_split_terms,reviewed_no_change,ICE,ICE,アクロニム。v2ではcase-sensitive exact token（office/justice/police/priceに当たらない）。上記の句を追加,21868,704
+(all),(all),include_keywords,reviewed_no_change,transit,transit,旧: `transition`(171)に当たる。v2で解消,568,277
+(all),(all),public_voice_cues,reviewed_no_change,transit,transit,旧: `transition`(171)に当たる。v2で解消,568,277
+(all),(all),cluster_split_terms,reviewed_no_change,transit,transit,旧: `transition`(171)に当たる。v2で解消,568,277
+(all),(all),include_keywords,reviewed_no_change,gender,gender,旧: `transgender`(410)に当たる。意図が不明のため追加しない（必要ならmasterで`transgender`を明示）,752,310
+(all),(all),include_keywords,reviewed_no_change,religion,religion,v2で解消（`religions`は旧では拾えていたが影響小）,161,145
+(all),(all),include_keywords,reviewed_no_change,faith,faith,旧: `faithful`に当たる。v2で解消,522,458
+(all),(all),public_voice_cues,reviewed_no_change,gender,gender,旧: `transgender`(410)に当たる。意図が不明のため追加しない（必要ならmasterで`transgender`を明示）,752,310
+(all),(all),cluster_split_terms,reviewed_no_change,gender,gender,旧: `transgender`(410)に当たる。意図が不明のため追加しない（必要ならmasterで`transgender`を明示）,752,310
+(all),(all),cluster_split_terms,reviewed_no_change,religion,religion,v2で解消（`religions`は旧では拾えていたが影響小）,161,145
+(all),(all),cluster_split_terms,reviewed_no_change,faith,faith,旧: `faithful`に当たる。v2で解消,522,458

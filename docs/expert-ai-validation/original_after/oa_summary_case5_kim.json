@@ -1,0 +1,147 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 80107,
+    "completion_tokens": 11098,
+    "total_tokens": 91205
+  },
+  "wall_clock_seconds": 502.5556011199951,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "北朝鮮体制存続の最終保証としての核・ミサイル戦力維持",
+    "selection_rationale": "Actor Intelligence Packが直接示しているのは「核・ミサイル能力を体制存続の最終保証と位置づける」というKim Jong Unの世界観であり、これは対ロ・対中・対米・対韓の全ての関係を貫く上位目的と整合する。国際制裁や中国依存、ロシアとの協力、バランス外交は重要な制約・手段だが、いずれも「核戦力を維持し体制を守る」という目的の下位に位置づけられるため、主たる蝶番としては核・ミサイル戦力維持をPrimary Key Pointとするのが最も構造的にシンプルで説明力が高い。",
+    "control_type": "mixed",
+    "confidence": "低",
+    "candidate_key_points_count": 4,
+    "candidate_key_points": [
+      "北朝鮮体制存続の最終保証としての核・ミサイル戦力維持",
+      "国際制裁と中国依存に基づく北朝鮮経済の構造的制約",
+      "ロシアとの軍事・経済協力の深化",
+      "中国との関係を完全な従属にしないためのバランス外交"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "国際制裁と中国依存に基づく北朝鮮経済の構造的制約",
+        "why_not_primary": "制裁・中国依存は重要な制約だが、Kim Jong Unが核・ミサイルを体制保証とみなすという上位志向がなければ、制裁や依存の意味づけも変わり得る。制約は重要な背景だが、目的そのものではないためPrimaryではなくSecondaryの位置づけとした。"
+      },
+      {
+        "key_point": "ロシアとの軍事・経済協力の深化",
+        "why_not_primary": "ロシアとの協力は近年の重要な変化要因だが、今回のSource Packには具体的Evidenceがなく、またロシアとの関係は核・ミサイル戦力維持という上位目的を支える手段の一つに過ぎないと考えられるため、Primaryではなく補助的なKey Pointとした。"
+      }
+    ],
+    "disconfirming_signal": "Kim Jong Unが核・ミサイル計画の完全放棄を前提とする非核化合意を自発的かつ不可逆的に受け入れ、その後も体制が安定して維持されるような事例が確認されれば、「核・ミサイル戦力維持が体制存続の最終保証」というKey Point自体を見直す必要が生じる。",
+    "evidence_class": "historical_actor_pattern"
+  },
+  "actors": [
+    {
+      "actor_ref": "kim",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": true,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "unresolved": 1,
+    "rejected": 2
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "rejected"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "Kim Jong Unは、核・ミサイル能力を体制存続の最終保証とするPersistent Preferenceを維持しつつ、ロシアとの軍事・経済協力を強化して制裁環境下での軍事・経済的余地を広げ、中国への経済依存を利用しながらも完全な従属を避けるバランス外交を追求しているとみられる。対米・対韓関係では、全面戦争を避けつつ、核・ミサイル実験や軍事演習などの挑発と、対話・交渉のシグナルを織り交ぜることで、制裁緩和や安全保障上の譲歩を引き出すことを狙う「管理された緊張」戦略を今後も継続する可能性が高い。",
+    "historical_analogies_used": null
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 3,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "2024-2026年における北朝鮮とロシアの軍事・経済協力の具体的内容（砲弾供給、技術移転、エネルギー支援など）は何か。",
+      "rationale": "ロシアとの協力の実態が分かれば、ロシア軸シナリオの現実性とKim Jong Unのレバレッジ構造をより精密に評価できる。",
+      "related_hypothesis": "ロシアとの軍事・経済協力の深化が北朝鮮の対外戦略の柱になっている",
+      "recommended_sources": null
+    },
+    {
+      "priority": "中",
+      "question": "中国の対北朝鮮政策（貿易・エネルギー供給・政治的支援）は2024-2026年にどのように変化しているか。",
+      "rationale": "中国の支援レベルが分かれば、北朝鮮の自律性とロシア・米国との関係カードの価値を評価しやすくなる。",
+      "related_hypothesis": "中国依存とバランス外交が北朝鮮の行動を制約している",
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "北朝鮮の2024-2026年の核・ミサイル実験、軍事演習、対話提案のタイムラインはどうなっているか。",
+      "rationale": "Persistent PreferenceとObserved ActionのGapを具体的に評価するため。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 1,
+  "quality_guard": {
+    "passed_count": 31,
+    "failed_count": 3,
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "confidence_adjustments": [
+      "key_point_assessment",
+      "main_scenario",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "historical_evidence_separations": [],
+    "actor_evidence_separations": [],
+    "pattern_applicability_fallbacks": []
+  },
+  "executive_summary": {
+    "what_changed": null,
+    "why_it_matters": null,
+    "what_to_watch_decide": null
+  },
+  "one_line_assessment": "as_of 2026-08-31時点で、Kim Jong Unは体制存続と核戦力維持を最上位目的としつつ、ロシアとの軍事・経済協力をテコに対米・対韓抑止力を強化し、中国との関係を完全な従属にしない程度に維持・調整する多極依存戦略を取っているとみるのが最も整合的だが、提供Evidenceが限定的なため確信度は中程度にとどまる。",
+  "initial_anomaly": "今回提供されたEventは台湾海巡と中国海警・米沿岸警備隊の事案であり、北朝鮮・Kim Jong Unに直接関係する一次Evidenceが含まれていない。このため、通常ならActor Intelligence PackやCase Contextにあるはずの北朝鮮関連Evidenceが欠落した状態で、Kim Jong Unの意思決定を推定せざるを得ない点が最大の違和感であり、分析の確度を意図的に抑える必要がある。"
+}

@@ -8,6 +8,7 @@ json_schema構造化出力を優先し、失敗時は手動JSON抽出+Schema検�
 """
 
 import json
+import os
 import random
 import re
 import time
@@ -129,6 +130,15 @@ def _extract_json_object(text: str) -> dict:
     return json.loads(text[start:])
 
 
+# 推論の強さ(reasoning_effort)を環境変数で指定できる(未設定なら何も渡さない=従来どおり)。非対応のモデルでは
+# 400を検知して外す。2026-11-04追加（推論型モデルの既定は推論が浅いため、深さの検証用）。
+_REASONING_EFFORT_ENV = "GEO_LLM_REASONING_EFFORT"
+_REASONING_EFFORT_UNSUPPORTED = False
+
+# temperatureを受け付けないモデル(例: gpt-6系は既定値1のみ)では、400を検知して以後は付けない。
+_TEMPERATURE_UNSUPPORTED = False
+
+
 def call_llm_structured(client, model: str, system_prompt: str, user_prompt: str,
                          schema: dict, schema_name: str, *, max_attempts: int = 3,
                          strict: bool = False, timeout: float | None = None) -> dict:
@@ -212,14 +222,33 @@ def _call_llm_structured_once(client, model: str, system_prompt: str, user_promp
         再raiseする（既存動作を維持——429はfallbackへ進んでも同じ理由で即座にまた429に
         なるだけと実機確認済み）。"""
         attempt_started = time.monotonic()
-        kwargs = dict(model=model, messages=messages, temperature=0.2,
+        global _TEMPERATURE_UNSUPPORTED, _REASONING_EFFORT_UNSUPPORTED
+        kwargs = dict(model=model, messages=messages,
                       max_completion_tokens=_MAX_COMPLETION_TOKENS)
+        if not _TEMPERATURE_UNSUPPORTED:
+            kwargs["temperature"] = 0.2
+        _effort = os.environ.get(_REASONING_EFFORT_ENV, "").strip()
+        if _effort and not _REASONING_EFFORT_UNSUPPORTED:
+            kwargs["reasoning_effort"] = _effort
         if response_format is not None:
             kwargs["response_format"] = response_format
         if timeout is not None:
             kwargs["timeout"] = timeout
         try:
-            resp = client.chat.completions.create(**kwargs)
+            try:
+                resp = client.chat.completions.create(**kwargs)
+            except openai.BadRequestError as bre:
+                # temperature / reasoning_effort 非対応モデル: 該当の指定を外して1回だけやり直す
+                if "temperature" in kwargs and "temperature" in str(bre):
+                    _TEMPERATURE_UNSUPPORTED = True
+                    kwargs.pop("temperature")
+                    resp = client.chat.completions.create(**kwargs)
+                elif "reasoning_effort" in kwargs and "reasoning_effort" in str(bre):
+                    _REASONING_EFFORT_UNSUPPORTED = True
+                    kwargs.pop("reasoning_effort")
+                    resp = client.chat.completions.create(**kwargs)
+                else:
+                    raise
         except openai.RateLimitError:
             raise
         except Exception as exc:  # noqa: BLE001 — timeout/connection error等を分類・記録する

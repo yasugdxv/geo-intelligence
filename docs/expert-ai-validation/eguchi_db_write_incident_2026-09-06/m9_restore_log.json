@@ -1,0 +1,7 @@
+{
+  "restored_at": "2026-09-06T05:37:25.247835+00:00",
+  "case_id": "4d6e7894-cd39-48d2-8f9e-1efbcf74b294",
+  "action": "restored geo_cases.final_output to pre-run backup value (_m9_case_full.json), field-only, no timestamp manipulation",
+  "post_restore_updated_at": "2026-09-06T05:37:23.990838+00:00",
+  "exact_match_confirmed": true
+}

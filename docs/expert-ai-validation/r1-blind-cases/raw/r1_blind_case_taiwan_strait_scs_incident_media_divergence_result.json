@@ -1,0 +1,1327 @@
+{
+  "request": {
+    "request_id": "cbebfd6a-f349-483c-9d60-9313b4bc1869",
+    "theme_id": "05064de8-48f8-484a-8243-f8c837c5a735",
+    "mode": "case_analysis",
+    "query_text": "南シナ海のセカンド・トーマス礁（仁愛礁）をめぐる、中国海警局とフィリピンとの最近の対立事案について、主要な意思決定主体、それぞれの目的、現在の力学、今後の方向性を分析してください。",
+    "created_at": "2026-09-03T05:32:01.399901+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "eae6f66b-32d8-4533-bb69-08756541c627",
+    "request_id": "cbebfd6a-f349-483c-9d60-9313b4bc1869",
+    "document_ids": [
+      "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb",
+      "07552930-6794-4104-a3e4-3f4254abc558"
+    ],
+    "event_ids": [],
+    "evidence_ids": [],
+    "observation_snapshot": [],
+    "created_at": "2026-09-03T05:32:02.29747+00:00"
+  },
+  "response": {
+    "response_id": "304ee051-7a16-46a2-a317-ebc65862b5ce",
+    "request_id": "cbebfd6a-f349-483c-9d60-9313b4bc1869",
+    "source_pack_id": "eae6f66b-32d8-4533-bb69-08756541c627",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "南シナ海のセカンド・トーマス礁（仁愛礁／Ayungin Shoal）周辺で、中国海警局とフィリピン側の船舶が対峙し、補給任務をめぐる緊張が続いている。",
+          "claim_type": "fact",
+          "source_ref": "07552930-6794-4104-a3e4-3f4254abc558"
+        },
+        {
+          "text": "フィリピンはセカンド・トーマス礁の座礁艦（BRP Sierra Madre）に駐留する兵士への補給・ローテーションのため、定期的に補給船を派遣している。",
+          "claim_type": "fact",
+          "source_ref": "07552930-6794-4104-a3e4-3f4254abc558"
+        },
+        {
+          "text": "最近の補給任務において、フィリピン側はAyungin Shoalへの補給ミッションを実施したと報じられている。",
+          "claim_type": "fact",
+          "source_ref": "07552930-6794-4104-a3e4-3f4254abc558"
+        },
+        {
+          "text": "中国側は、南シナ海での「こん棒暴行」などフィリピン側の行為に関して強く抗議し、フィリピン大使を呼びつけたと報じられている。",
+          "claim_type": "official_claim",
+          "source_ref": "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+        },
+        {
+          "text": "フィリピン側は、自国の補給活動が正当なものであり、中国側の妨害行為が国際法違反だと主張していると報じられている。",
+          "claim_type": "official_claim",
+          "source_ref": "07552930-6794-4104-a3e4-3f4254abc558"
+        },
+        {
+          "text": "中国は外交ルート（フィリピン大使召喚）と海上での海警局活動の両方を用いて、セカンド・トーマス礁周辺でのフィリピンの行動に圧力をかけている。",
+          "claim_type": "observation",
+          "source_ref": "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+        },
+        {
+          "text": "フィリピンは、補給ミッションを継続しつつ、国内外メディアを通じて中国側の行動を批判し、国際世論・同盟国の支持を得ようとしているとみられる。",
+          "claim_type": "observation",
+          "source_ref": "07552930-6794-4104-a3e4-3f4254abc558"
+        },
+        {
+          "text": "セカンド・トーマス礁をめぐる最近の対立は、フィリピンの実効支配維持（駐留兵士と座礁艦の存在）と、中国の南シナ海における権利主張・行動規範の既成事実化との衝突として位置づけられる。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "中国海警局の行動は、軍事衝突を避けつつもフィリピンの補給活動コストを高め、将来的な撤退や補給制限を誘うことを狙った「グレーゾーン」戦術である可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "フィリピン政府は、米比同盟や国際仲裁裁判所の2016年判決を背景に、セカンド・トーマス礁での実効支配を象徴的拠点として維持し、中国の圧力に屈しない姿勢を国内外に示すことを重視している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": "現時点の力学は、(1)フィリピンが補給ミッションを継続し、座礁艦と駐留兵士を維持することで実効支配を守ろうとする力、(2)中国が海警局・外交圧力を通じてフィリピンの行動を制約し、自らの権利主張を既成事実化しようとする力、のせめぎ合いである。フィリピン側は米比同盟・国際世論をレバレッジとして活用し、中国側は海警局・海軍・国内ナショナリズムを背景に圧力を強める。直接軍事衝突は双方とも避けたいが、現場レベルの暴力や事故がエスカレーションの引き金になり得る。",
+      "stakeholders": [
+        {
+          "actor": "フィリピン政府・軍（Ayungin Shoal補給を決定・実施する主体）",
+          "purpose": "南シナ海における自国の権利・実効支配を維持し、領土・主権の侵食を防ぐこと（仮説）。",
+          "leverage": "国内世論・ナショナリズム、安全保障・同盟関係",
+          "position": "セカンド・トーマス礁の座礁艦と駐留兵士への補給・ローテーションを維持し、中国の圧力に屈せず実効支配を継続すること。",
+          "red_lines": "セカンド・トーマス礁からの完全撤退や、補給停止による駐留兵士の危機的状況は、政治的に受け入れ難いレッドラインである可能性が高い（仮説）。",
+          "confidence": "低",
+          "constraints_fears": "軍事・安全保障リスク",
+          "ability_to_move_or_block": "補給ミッションを増減させることで、現場の緊張を高めたり下げたりできる。"
+        },
+        {
+          "actor": "中国指導部・海警局",
+          "purpose": "南シナ海における自国の権利主張・管轄権を既成事実化し、他国の行動を自国のルールに従わせること（仮説）。",
+          "leverage": "国内ナショナリズム・主権意識",
+          "position": "フィリピンの補給ミッションを制約し、セカンド・トーマス礁でのフィリピンの実効支配を弱める一方、自国の権利主張を国際的に認めさせること。",
+          "red_lines": "フィリピンによるセカンド・トーマス礁での恒久的な軍事施設強化や、米軍の常駐などは、中国にとって受け入れ難いレッドラインとなり得る（仮説）。",
+          "confidence": "低",
+          "constraints_fears": "国際イメージ・外交関係",
+          "ability_to_move_or_block": "海警局のプレゼンスと妨害強度を高めることで、フィリピンの補給ミッションを困難にし、現場の力学を変えられる。"
+        },
+        {
+          "actor": "米国政府・軍",
+          "purpose": "インド太平洋での航行の自由・同盟信頼性維持（一般的目的、今回資料からは詳細不明）。",
+          "leverage": "同盟条約・軍事プレゼンス・外交声明などを通じた抑止・後ろ盾提供（一般論）。",
+          "position": "今回事案への具体的関与は資料に記載がなく、立場は不明。",
+          "priority": "南シナ海全体の安定と同盟国防衛が構造的優先事項と推定されるが、本件への個別優先度は不明。",
+          "red_lines": "同盟国への明白な武力攻撃には対応せざるを得ない可能性があるが、今回資料からは具体的レッドラインは不明。",
+          "confidence": "低",
+          "constraints_fears": "中国との直接軍事衝突回避、同盟国への過度な期待を煽らないことなど（仮説）。",
+          "key_relationships": "フィリピンとの同盟関係、中国との競合・抑止関係。",
+          "ability_to_move_or_block": "関与レベル次第でフィリピンの行動選択と中国のエスカレーション余地を大きく左右し得るが、今回資料からは具体的影響は判断不能。"
+        },
+        {
+          "actor": "フィリピン国内世論・政治勢力",
+          "purpose": "主権・領土保全、政権の正当性維持。",
+          "leverage": "選挙・世論圧力を通じて政府方針に影響。",
+          "position": "補給継続への支持・懸念の度合いは不明。",
+          "priority": "中国への非譲歩姿勢と安全保障リスク回避のバランスが争点になり得る。",
+          "red_lines": "露骨な譲歩や撤退は政権への政治的打撃となり得る。",
+          "confidence": "低",
+          "constraints_fears": "兵士の犠牲・経済への悪影響・対中関係悪化。",
+          "key_relationships": "政府・軍・メディアとの相互作用。",
+          "ability_to_move_or_block": "政権の対中姿勢・補給方針を間接的に動かし得る。"
+        },
+        {
+          "actor": "中国国内世論・ナショナリズム",
+          "purpose": "南シナ海での強硬姿勢・主権防衛の期待。",
+          "leverage": "ナショナリズム動員を通じて指導部の行動を後押し・制約。",
+          "position": "セカンド・トーマス礁事案への具体的反応は不明。",
+          "priority": "領土問題での譲歩回避が高い優先度を持つ可能性。",
+          "red_lines": "明白な譲歩やフィリピン・米国のプレゼンス拡大。",
+          "confidence": "低",
+          "constraints_fears": "弱腰批判・政権への不満。",
+          "key_relationships": "中国指導部・メディアとの関係。",
+          "ability_to_move_or_block": "対外政策の柔軟性を狭めることで、妥協を難しくし得る。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "双方とも直接軍事衝突は避けたいという安全保障上のインセンティブがある。",
+          "フィリピンはセカンド・トーマス礁を象徴的拠点として重視している。",
+          "中国は海警局をグレーゾーンツールとして活用し続ける。"
+        ],
+        "description": "現時点では、セカンド・トーマス礁（Ayungin Shoal）をめぐる局面は、フィリピンが座礁艦と駐留兵士への補給ミッションを継続し、中国海警局がこれを妨害しつつ外交的抗議を強める「グレーゾーン対立」が続くシナリオが最も整合的である。フィリピンは実効支配維持と国内・同盟国向けの強硬姿勢を重視し、中国は権利主張の既成事実化と他国行動の制約を狙うが、双方とも直接軍事衝突は避けたいとみられる。そのため、今後も危険な接近・放水・身体的接触などの事案が断続的に発生しつつ、外交抗議・国際世論戦が並行する状態が続く可能性が高い（意図・内部力学は仮説）。",
+        "evidence_class": "current_indirect_evidence",
+        "evidence_relevance": [
+          {
+            "rationale": "Ayungin Shoalへの補給ミッション実施という事実が、フィリピンの実効支配維持と中国の妨害という構図を直接裏付ける。",
+            "evidence_id": "07552930-6794-4104-a3e4-3f4254abc558",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          },
+          {
+            "rationale": "中国によるフィリピン大使召喚と強い抗議が、外交的圧力と「真実攻防」の側面を示し、グレーゾーン対立の一部を裏付ける。",
+            "evidence_id": "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb",
+            "source_type": "unknown",
+            "claim_relevance": "strongly_relevant"
+          }
+        ],
+        "selection_rationale": "このシナリオは、提供された2つの資料に記載された具体的事象（補給ミッション実施と中国の強い抗議）を最も少ない仮定で説明し、フィリピン・中国双方の行動と上位目的仮説（実効支配維持・権利主張強化）と整合する。代替シナリオ（補給停止・急激なエスカレーションなど）は、現時点のEvidenceでは支持材料が限定的であり、追加の未証明仮定を多く要するため、現段階では補助的仮説として扱う。",
+        "supporting_evidence": [
+          "07552930-6794-4104-a3e4-3f4254abc558",
+          "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+        ],
+        "observable_indicators": [
+          "フィリピンの補給ミッション頻度・規模の変化",
+          "中国海警局の現場行動の強度（接近距離、放水、身体的接触の有無）",
+          "米比同盟に基づく共同演習・声明などの動き",
+          "国際メディアでの「こん棒暴行」など暴力事案への扱いと各国政府の反応"
+        ],
+        "historical_analogies_used": null,
+        "confidence_adjustment_reason": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "南シナ海の特定海域での緊張が続くことで、航路選択・保険料・リードタイムに間接的な影響が出る可能性はあるが、現時点の資料からはセカンド・トーマス礁事案が主要商船航路に直ちに大きな制約を与えている証拠はない。",
+        "unrelated_note": "現時点の資料だけでは、特定企業への直接的な供給途絶・拠点閉鎖などの影響経路は確認できないため、無理に重大リスクとして結論づけない。",
+        "environment_change": "南シナ海におけるグレーゾーン対立と海警局の役割強化は、地域の安全保障環境の一部として、長期的には海上リスク評価・保険・企業の航路戦略に影響し得る。"
+      },
+      "initial_anomaly": "通常の危険な接近・放水・進路妨害に加え、「こん棒暴行」など身体的暴力の疑惑が報じられ、中国側がフィリピン大使を呼びつけて強く抗議している点（[document_id: 1b5f0a7c-84a0-49fd-ac38-33d8232da5bb]）。従来の物理的威圧より一段踏み込んだ行為・表現であり、双方が「真実攻防」を行っていることが緊張の質を変え得る。",
+      "review_findings": null,
+      "audience_analysis": [
+        {
+          "actor_ref": "PH_gov",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signal・Substanceとも一定の強度があり、象徴性の高い実質行動。",
+            "discretion": "補給頻度・ルート・護衛態勢など運用裁量はフィリピン政府・軍にあるが、外的制約（中国の妨害・天候）も大きい。",
+            "evidence_ids": [
+              "07552930-6794-4104-a3e4-3f4254abc558"
+            ],
+            "target_scope": "セカンド・トーマス礁の座礁艦と駐留兵士に限定されるが、南シナ海の自国権利全般の象徴的意味を持つ。",
+            "stated_signal": "セカンド・トーマス礁はフィリピンの管轄下にあり、補給活動は正当で継続されるという主張。",
+            "concrete_measure": "兵士への食料・物資・人員ローテーションを行う補給船派遣。",
+            "enforcement_status": "自国船舶・軍に対しては実施されているが、中国側の妨害により現場での達成度は制約され得る。",
+            "implementation_status": "直近ミッションは実施済みと報じられている。",
+            "legal_or_policy_force": "フィリピン側は自国の権利と2016年仲裁判決など国際法を根拠に正当性を主張していると報じられている。"
+          },
+          "primary_audience": "国内世論・軍・政治支持基盤",
+          "message_hypothesis": "中国の圧力に屈せず南シナ海での自国権利・実効支配を守る意思を示し、国内支持と同盟国の後ろ盾を確保する。",
+          "secondary_audience": "米国など同盟国、中国政府・国際社会",
+          "action_or_statement": "Ayungin Shoalへの補給ミッション継続（座礁艦BRP Sierra Madreへの補給・ローテーション）"
+        },
+        {
+          "actor_ref": "CN_leadership",
+          "confidence": "中",
+          "action_substance": {
+            "assessment": "Signalの比重が大きく、Substanceは外交圧力として中程度。",
+            "discretion": "抗議の強度・表現は中国側の裁量が大きい。",
+            "evidence_ids": [
+              "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+            ],
+            "target_scope": "セカンド・トーマス礁周辺でのフィリピン側の特定行為（「こん棒暴行」疑惑など）に焦点。",
+            "stated_signal": "フィリピン側の行為は容認できず、中国は強く反対し責任を問う姿勢である。",
+            "concrete_measure": "フィリピン大使を呼びつけて抗議する外交措置。",
+            "enforcement_status": "海警局の現場行動と組み合わさることで、フィリピン側への圧力として機能。",
+            "implementation_status": "実施済みと報じられている。",
+            "legal_or_policy_force": "外交的抗議であり法的拘束力はないが、二国間関係・今後の行動に影響し得る政治的圧力。"
+          },
+          "primary_audience": "フィリピン政府",
+          "message_hypothesis": "フィリピン側の行為を非難し、自国の権利主張と被害者ポジションを強調することで、フィリピンの行動抑制と国内支持確保を図る。",
+          "secondary_audience": "国内世論・国際社会",
+          "action_or_statement": "フィリピン大使召喚と「こん棒暴行」への強い抗議"
+        },
+        {
+          "actor_ref": "CN_leadership",
+          "confidence": "低",
+          "action_substance": {
+            "assessment": "Substanceとしては高強度のグレーゾーン行動、Signalとしては権利主張の一貫。",
+            "discretion": "現場指揮官の裁量と上級方針の組み合わせ。",
+            "evidence_ids": [
+              "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+            ],
+            "target_scope": "フィリピン補給船・小型船舶。",
+            "stated_signal": "中国はセカンド・トーマス礁周辺での行動を自国の管理下に置こうとしている。",
+            "concrete_measure": "危険な接近・進路妨害・放水など（一般的南シナ海事案のパターンに基づく仮説。今回資料では具体的手段は詳細不明）。",
+            "enforcement_status": "現場で一定程度実施されているが、完全封鎖には至っていないと推定される。",
+            "implementation_status": "妨害行動が続いていると報じられている。",
+            "legal_or_policy_force": "中国側は自国の権利主張に基づく取締りと位置づける可能性があるが、国際法上の評価は対立している。"
+          },
+          "primary_audience": "フィリピン政府・現場部隊",
+          "message_hypothesis": "フィリピンの補給活動は中国の許容範囲外であり、実力を背景に制約する意思があることを示す。",
+          "secondary_audience": "国内世論・周辺諸国",
+          "action_or_statement": "海警局によるセカンド・トーマス礁周辺での妨害・圧力行動"
+        }
+      ],
+      "executive_summary": {
+        "what_changed": "セカンド・トーマス礁（Ayungin Shoal）で、フィリピンの補給ミッションと中国海警局の妨害・外交抗議が再び顕在化し、「こん棒暴行」など身体的暴力の疑惑を含む真実攻防が報じられている。",
+        "why_it_matters": "フィリピンの実効支配維持と中国の権利主張強化がぶつかる象徴的拠点であり、補給継続の可否とエスカレーション管理が南シナ海の緊張レベル・同盟関係・海上リスクに影響し得る。",
+        "what_to_watch_decide": "フィリピンの補給方針、中国海警局の妨害強度、米比同盟・第三国の関与レベル、重大な暴力事案の発生有無を継続的に監視し、南シナ海全体のリスク評価・航路戦略への反映を検討する。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "フィリピン政府・軍（Ayungin Shoal補給を決定・実施する主体）",
+          "red_line": "セカンド・トーマス礁からの完全撤退や、補給停止による駐留兵士の危機的状況は、政治的に受け入れ難いレッドラインである可能性が高い（仮説）。",
+          "actor_ref": "PH_gov",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "国家として南シナ海における自国の権利・実効支配を主張し、軍・沿岸警備隊を通じて補給・防衛行動を決定・実施する。",
+          "evidence_ids": [
+            "07552930-6794-4104-a3e4-3f4254abc558"
+          ],
+          "decision_power": "セカンド・トーマス礁への補給ミッションの有無・頻度・方法を決める権限を持つ。",
+          "driving_forces": [
+            {
+              "force": "国内世論・ナショナリズム",
+              "direction": "supporting",
+              "description": "中国に譲歩せず自国の権利を守ることを求める世論が、補給継続を後押ししている可能性がある（仮説）。"
+            },
+            {
+              "force": "安全保障・同盟関係",
+              "direction": "supporting",
+              "description": "米比同盟や国際法判決が、補給継続の政治的正当性を支えていると推定される（仮説）。"
+            },
+            {
+              "force": "軍事・安全保障リスク",
+              "direction": "constraining",
+              "description": "現場での衝突・負傷・死亡リスクが、補給ミッションの頻度や方法に制約を与える。"
+            }
+          ],
+          "ability_to_move": "補給ミッションを増減させることで、現場の緊張を高めたり下げたりできる。",
+          "issue_objective": "セカンド・トーマス礁の座礁艦と駐留兵士への補給・ローテーションを維持し、中国の圧力に屈せず実効支配を継続すること。",
+          "observed_action": "Ayungin Shoalへの補給ミッションを実施し、中国側の妨害にもかかわらず補給を試みている。",
+          "vulnerabilities": [
+            "海上での軍事力・船舶数で中国に劣る可能性",
+            "経済的対中依存（仮説）"
+          ],
+          "ability_to_block": "自国船舶の行動を制限することで、衝突リスクを抑えることもできるが、他国（中国）の行動を直接止める力は限定的。",
+          "action_substance": {
+            "assessment": "象徴性と実務性を兼ねる中〜高強度のSubstance。",
+            "discretion": "頻度・方法に裁量。",
+            "evidence_ids": [
+              "07552930-6794-4104-a3e4-3f4254abc558"
+            ],
+            "target_scope": "座礁艦と駐留兵士。",
+            "stated_signal": "セカンド・トーマス礁でのプレゼンス維持と中国への非譲歩姿勢。",
+            "concrete_measure": "定期的補給ミッションの継続。",
+            "enforcement_status": "自国側では履行、中国側妨害により部分的制約。",
+            "implementation_status": "直近ミッション実施。",
+            "legal_or_policy_force": "自国権利・仲裁判決を根拠とすると報じられている。"
+          },
+          "primary_audience": "国内世論・軍・政治支持基盤、および米国など同盟国。",
+          "why_actor_matters": "フィリピン政府・軍は、セカンド・トーマス礁への補給ミッションを決定・実施する主体であり、補給継続の可否というPrimary Key Pointを直接動かせるため、この局面の方向性に大きな影響を与える。",
+          "available_leverage": [
+            "補給ミッションの継続・頻度調整",
+            "国際世論・同盟国への訴え"
+          ],
+          "secondary_audience": "中国政府・国際社会。",
+          "ultimate_objective": "南シナ海における自国の権利・実効支配を維持し、領土・主権の侵食を防ぐこと（仮説）。",
+          "actor_model_challenge": null,
+          "persistent_preference": "セカンド・トーマス礁に座礁艦と兵士を残し、定期的な補給を行うことで実効支配を維持しようとする志向（仮説）。",
+          "preference_action_gap": "実効支配維持というPersistent Preferenceと、補給ミッション実施というObserved Actionは整合的であり、顕著なGapは確認できない。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "軍事的エスカレーション（武力行使）は高コストで、国際的批判や戦争リスクを伴う。"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "過去の長期的パターンではなく、直近事例のみを根拠としている。",
+              "source": "The Manila Times記事",
+              "claim_id": null,
+              "relevance": "セカンド・トーマス礁での実効支配維持へのコミットメントを示す。",
+              "evidence_id": "07552930-6794-4104-a3e4-3f4254abc558",
+              "date_or_period": null,
+              "event_or_behavior": "Ayungin Shoalへの補給ミッションを継続している。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "中国とは対立を管理しつつ、自国の権利を守る関係を志向し、米比同盟を安全保障の柱とする傾向があると推定されるが、今回資料からは詳細不明。"
+        },
+        {
+          "actor": "中国指導部・海警局",
+          "red_line": "フィリピンによるセカンド・トーマス礁での恒久的な軍事施設強化や、米軍の常駐などは、中国にとって受け入れ難いレッドラインとなり得る（仮説）。",
+          "actor_ref": "CN_leadership",
+          "entity_id": null,
+          "confidence": "低",
+          "formal_role": "中国の南シナ海政策を決定し、海警局・海軍を通じて海上での権利主張・取締り・妨害行動を実施する。",
+          "evidence_ids": [
+            "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+          ],
+          "decision_power": "セカンド・トーマス礁周辺での海警局の行動方針（接近距離、放水、進路妨害、身体的接触の許容範囲など）を決める権限を持つと推定される。",
+          "driving_forces": [
+            {
+              "force": "国内ナショナリズム・主権意識",
+              "direction": "supporting",
+              "description": "南シナ海での強硬姿勢は国内支持を得やすく、指導部の行動を後押しする可能性がある。"
+            },
+            {
+              "force": "国際イメージ・外交関係",
+              "direction": "constraining",
+              "description": "過度な暴力や衝突は国際的批判や対中包囲網強化を招くため、行動の上限を制約する。"
+            }
+          ],
+          "ability_to_move": "海警局のプレゼンスと妨害強度を高めることで、フィリピンの補給ミッションを困難にし、現場の力学を変えられる。",
+          "issue_objective": "フィリピンの補給ミッションを制約し、セカンド・トーマス礁でのフィリピンの実効支配を弱める一方、自国の権利主張を国際的に認めさせること。",
+          "observed_action": "フィリピン大使を召喚し、「こん棒暴行」などフィリピン側の行為に強く抗議し、海上では海警局がフィリピン船舶に対して圧力をかけていると報じられている。",
+          "vulnerabilities": [
+            "国際的イメージ悪化による外交・経済コスト",
+            "米比同盟による抑止"
+          ],
+          "ability_to_block": "一定の範囲でフィリピン船舶の接近・補給を妨害できるが、完全な封鎖は国際的批判や軍事衝突リスクを高めるため制約がある。",
+          "action_substance": {
+            "assessment": "Signal重視だが、現場行動が伴うためSubstanceも中程度。",
+            "discretion": "表現・強度に裁量。",
+            "evidence_ids": [
+              "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+            ],
+            "target_scope": "フィリピン政府・船舶。",
+            "stated_signal": "フィリピン行動への強い不満と自国権利の主張。",
+            "concrete_measure": "大使召喚・抗議、海警局による現場圧力。",
+            "enforcement_status": "継続的圧力。",
+            "implementation_status": "実施済み。",
+            "legal_or_policy_force": "外交的・準法執行的措置。"
+          },
+          "primary_audience": "フィリピン政府（抑止・警告）、国内世論。",
+          "why_actor_matters": "中国指導部・海警局は、セカンド・トーマス礁周辺での海上行動と外交抗議を決定・実施する主体であり、フィリピンの補給ミッションに対する圧力の強度を左右するため、この局面の緊張レベルとフィリピンの選択肢に直接影響する。",
+          "available_leverage": [
+            "海警局による接近・放水・進路妨害などのグレーゾーン行動",
+            "外交的抗議・大使召喚",
+            "国内世論動員"
+          ],
+          "secondary_audience": "米国・国際社会。",
+          "ultimate_objective": "南シナ海における自国の権利主張・管轄権を既成事実化し、他国の行動を自国のルールに従わせること（仮説）。",
+          "actor_model_challenge": null,
+          "persistent_preference": "海警局など非軍事的手段を用いて、グレーゾーンで他国の行動を制約し、自国の権利主張を強める志向（仮説）。",
+          "preference_action_gap": "権利主張強化というPersistent Preferenceと、海警局による妨害・外交抗議というObserved Actionは整合的であり、顕著なGapは確認できない。",
+          "relevant_decision_patterns": null,
+          "unavailable_or_costly_cards": [
+            "直接的な軍事攻撃は国際的非難・制裁・戦争リスクを伴い高コスト。"
+          ],
+          "confidence_adjustment_reason": null,
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "subject_type": "person",
+            "actor_coverage": "none",
+            "profile_source": "not_evaluated",
+            "institution_coverage": "none",
+            "exception_episode_ids": [],
+            "person_actor_coverage": "none",
+            "general_knowledge_used": true,
+            "historical_episode_ids": [],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "not_evaluated",
+            "effective_intelligence_coverage": "none"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "他の南シナ海事案との比較は今回資料からはできない。",
+              "source": "中央日報記事",
+              "claim_id": null,
+              "relevance": "グレーゾーン的な圧力と外交抗議の組み合わせを示す。",
+              "evidence_id": "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb",
+              "date_or_period": null,
+              "event_or_behavior": "セカンド・トーマス礁でのフィリピン側の行動に対し、海警局を用いて妨害し、外交的抗議を行っている。",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": null,
+          "strategic_relationship_preference": "フィリピンとの関係では、自国の権利主張を譲らず、相手の行動を制約しつつ、全面的軍事衝突は避ける関係を志向している可能性がある。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "米比同盟はセカンド・トーマス礁事案にどこまで具体的に関与しているか（共同演習、航行の自由作戦、声明など）。",
+          "rationale": "同盟の関与レベルはフィリピンの行動選択と中国の抑止認識を大きく左右し、主シナリオの持続性評価に不可欠。",
+          "related_hypothesis": "フィリピンの補給継続は米比同盟の後ろ盾に依存している。",
+          "recommended_sources": "米政府・フィリピン政府の公式声明、信頼できる安全保障専門メディア。"
+        },
+        {
+          "priority": "中",
+          "question": "フィリピン国内世論・政治勢力はセカンド・トーマス礁事案をどう捉えているか。",
+          "rationale": "国内政治の制約・支援を把握することで、フィリピンの行動の持続性を評価できる。",
+          "related_hypothesis": "国内ナショナリズムが補給継続を後押ししている。",
+          "recommended_sources": "フィリピン国内メディア、世論調査、政治分析レポート。"
+        },
+        {
+          "priority": null,
+          "question": "セカンド・トーマス礁事案に対する米国の具体的反応（声明・軍事プレゼンス・共同演習など）は何か。",
+          "rationale": "Key Stakeholder外だが、Primary Key Pointのsecondary hinge（同盟後ろ盾）に関わる。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "フィリピン国内世論・主要政党はセカンド・トーマス礁での補給継続にどの程度支持・懸念を示しているか。",
+          "rationale": "PH_govのPersistent Preferenceの持続性と、今後の補給方針変更可能性を評価するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "中国海警局の指揮系統・裁量範囲はどうなっており、今回事案に関する具体的方針は示されているか。",
+          "rationale": "CN_leadershipの妨害強度決定メカニズム（Key Stakeholderの行動余地）を理解するため。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "両資料に記載された具体的行動を最も少ない仮定で説明し、双方の上位目的仮説と整合。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "フィリピンはセカンド・トーマス礁での実効支配維持のため補給を継続し、中国は海警局と外交抗議でこれを妨害するグレーゾーン対立が続く。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "07552930-6794-4104-a3e4-3f4254abc558",
+            "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "国内向けシグナルの可能性はあるが、現場行動の詳細が不明で検証できない。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "中国側の強い抗議・「こん棒暴行」強調は、主に国内向け強硬アピールであり、実際の現場妨害は抑制されている。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": [
+            "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "構造要因は重要だが、今回資料では直接証拠が乏しく、主シナリオの補助的説明として扱う。",
+          "status": "retained",
+          "confidence": "低",
+          "description": "米比同盟・国際法判決など構造要因が局面を規定しており、個々の補給・妨害はその枠内の表現に過ぎない。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "現場行動の抑制を示すEvidenceがなく、今回資料からは判断できないため主たる説明には採用しない。",
+          "status": "rejected",
+          "confidence": "判断不能",
+          "description": "既存の「中国は常にグレーゾーンで圧力を強める」という一般的Actorモデルが今回当てはまらず、むしろ抑制的行動を取っている可能性。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+          ]
+        },
+        {
+          "reason": "国内政治・世論の具体的情報がなく、完全には検証できないが、メディア上の真実攻防という側面は一定の説明力を持つ。",
+          "status": "unresolved",
+          "confidence": "低",
+          "description": "セカンド・トーマス礁の拠点維持そのものより、両国とも国内向け強硬アピールが主目的であり、実際の支配状態は大きく変わらない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": [
+            "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb",
+            "07552930-6794-4104-a3e4-3f4254abc558"
+          ],
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of=2026-09-03。セカンド・トーマス礁（仁愛礁／Ayungin Shoal）をめぐる最近の中国海警局とフィリピンの対立は、フィリピンの実効支配維持と中国の権利主張強化がぶつかる局面であり、補給任務の継続可否と衝突エスカレーション管理が当面の鍵になるとみられる（意図・内部力学は仮説）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "中",
+        "control_type": "mixed",
+        "evidence_class": "current_direct_evidence",
+        "hinge_structure": {
+          "primary_hinge": "フィリピン政府・軍が危険を承知で補給ミッションを継続する政治的意思を維持できるか",
+          "secondary_hinges": [
+            "中国海警局の妨害強度が、フィリピン側の能力・意思を上回るかどうか",
+            "米比同盟・国際世論がフィリピンの補給継続をどこまで実質的に支えるか"
+          ]
+        },
+        "primary_key_point": "フィリピンがセカンド・トーマス礁への補給ミッションを継続できるかどうか",
+        "evidence_relevance": [
+          {
+            "rationale": "Ayungin Shoalへの補給ミッション実施という事実が、補給継続の可否を局面の中心事象として位置づける根拠になっている。",
+            "evidence_id": "07552930-6794-4104-a3e4-3f4254abc558",
+            "source_type": "unknown",
+            "claim_relevance": "direct"
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "key_point": "中国が海警局を通じてどこまで物理的妨害・暴力をエスカレートさせるか",
+            "why_not_primary": "妨害強度は重要だが、現時点の資料では具体的なエスカレーション段階や今後の方針に関する直接証拠が乏しく、補給ミッションという観測された行動に比べて説明の中心として置くには追加仮定が多い。補給可否の方が、両者の行動をより直接的に結びつけて説明できる。"
+          },
+          {
+            "key_point": "H4 Frame-breaking候補：拠点維持より国内向け強硬アピールが主目的",
+            "why_not_primary": "国内政治・世論の影響はあり得るが、今回の資料には具体的な世論動向や国内政治イベントの記載がなく、Frame-breaking仮説を主軸に置くには根拠が不足している。補給ミッションという具体的行動を中心に据える方が、現時点のEvidenceに忠実である。"
+          }
+        ],
+        "selection_rationale": "提供資料では、Ayungin Shoalへの補給ミッション実施（[document_id: 07552930-6794-4104-a3e4-3f4254abc558]）と、それに対する中国側の強い抗議（[document_id: 1b5f0a7c-84a0-49fd-ac38-33d8232da5bb]）が中心的事象として描かれている。補給の成否がフィリピンの実効支配維持に直結し、中国側の圧力もこの補給を標的としているため、現局面を最も直接的に規定する蝶番は「補給継続の可否」とみるのが、追加仮定が少なく、観測事実と整合的である。米比同盟・国際法などの構造要因は重要だが、今回の具体的事象（補給ミッションと妨害）を説明するうえでは補給可否がより直接的である。",
+        "candidate_key_points": [
+          {
+            "key_point": "フィリピンがセカンド・トーマス礁への補給ミッションを継続できるかどうか",
+            "control_type": "mixed",
+            "what_it_explains": "なぜ中国が補給ミッションに焦点を当てて圧力をかけるのか、なぜフィリピンが危険を冒してまで補給を試みるのかという行動を説明できる。",
+            "why_it_could_be_key": "座礁艦と駐留兵士の維持がフィリピンの実効支配の核心であり、補給が途絶すれば拠点維持が困難になるため、この可否が局面の帰趨を直接規定し得る。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "07552930-6794-4104-a3e4-3f4254abc558"
+            ],
+            "what_it_does_not_explain": "中国が「こん棒暴行」などの表現を用いて外交的抗議を強めている理由（国内世論・国際イメージ管理など）までは直接説明しない。",
+            "control_structure_summary": "フィリピン政府・軍の意思決定（補給継続の政治的決断）と、中国海警局の妨害強度、さらに天候・海況などの物理的条件が組み合わさって補給の成否が決まるため、単一アクターの完全支配ではない。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "中国が海警局を通じてどこまで物理的妨害・暴力をエスカレートさせるか",
+            "control_type": "unknown",
+            "what_it_explains": "フィリピン大使召喚や「こん棒暴行」への抗議など、中国側の強い反応と、海上での圧力強化の動きを説明し得る。",
+            "why_it_could_be_key": "妨害の強度が高まれば補給のコスト・危険が増し、フィリピンの行動選択を制約する一方、過度な暴力は国際的非難や米比同盟の関与強化を招き、中国にとって逆効果になり得るため、エスカレーション管理が局面の鍵となる。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+            ],
+            "what_it_does_not_explain": "フィリピン側の国内政治・世論が補給継続に与える影響までは説明しない。",
+            "control_structure_summary": "中国海警局の現場裁量と、中国指導部・関連機関の方針により妨害強度が決まると推定されるが、今回資料には具体的な指揮系統情報がないため、controlling_entity_idsは空とする。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": "control_type declared a controlling actor/structure but the required controlling_entity_ids / control_structure_summary evidence was empty; downgraded to 'unknown' to avoid an unsupported control-structure claim.",
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米比同盟・国際法（2016年仲裁判決など）を背景としたフィリピンの対中姿勢の持続性",
+            "control_type": "structural",
+            "what_it_explains": "フィリピンが補給ミッションを継続し、中国の圧力に対して国際法や同盟を根拠に反論している姿勢を説明し得る。",
+            "why_it_could_be_key": "フィリピンがどこまで対中強硬姿勢を維持するかは、同盟・国際法をどれだけ実質的な後ろ盾とみなすかに依存し、これが弱まればセカンド・トーマス礁での譲歩や補給制限に傾く可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "現場レベルの具体的な暴力行為や、その表現の選び方（「こん棒暴行」など）には直接触れない。",
+            "control_structure_summary": "同盟条約・国際法判決という制度的枠組みと、米国など第三国の関与意欲という構造的要因がフィリピンの選択肢を広げたり狭めたりする。フィリピン単独の意思だけでは変えにくい。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "H4 Frame-breaking候補：セカンド・トーマス礁の拠点維持そのものより、国内政治・世論向けの対中強硬アピールが主目的である可能性",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ双方が「真実攻防」をメディア上で展開し、強い言葉を用いるのかという側面を説明し得る。",
+            "why_it_could_be_key": "もし両国とも拠点の実質的価値より国内向けの強硬イメージを優先しているなら、補給・妨害は主に国内政治の演出であり、実際の支配状態は大きく変わらない可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "補給ミッションの具体的な運用や、海上での危険な接近・暴力の実態までは説明しない。",
+            "control_structure_summary": "中国・フィリピン双方の国内世論・メディア・ナショナリズムが指導部の行動を制約し、相互に強硬姿勢を促す構造。",
+            "supporting_knowledge_refs": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "フィリピンが公式にセカンド・トーマス礁への補給停止・撤退を決定したにもかかわらず、局面の緊張や中国の圧力がほとんど変化しない場合、このKey Point（補給継続可否が蝶番である）自体を見直す必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "07552930-6794-4104-a3e4-3f4254abc558"
+        ],
+        "control_structure_summary": "補給継続はフィリピン政府・軍の意思決定に大きく依存するが、中国海警局の妨害や第三国の支援・抑止など外部要因にも左右されるため、単一アクターの完全支配ではなく複合的な構造で決まる。",
+        "supporting_knowledge_refs": null,
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": null,
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": null,
+        "relevance_confidence_adjustment_reason": null
+      },
+      "media_source_context": {
+        "narrative_deviation": [
+          {
+            "source": "Joongang Ilbo / 中央日報記事",
+            "evidence_ids": [
+              "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+            ],
+            "why_it_matters": "現場での暴力レベルが上がっているなら、エスカレーションリスクや国際世論の反応が変わり得る。",
+            "current_assessment": "現時点では単一記事の抜粋のみであり、暴力疑惑の程度・真偽は判断不能。",
+            "source_attribution": "unattributed",
+            "verification_method": "フィリピン・中国双方の公式発表、他主要国メディアの報道、映像・写真など一次情報の有無を確認。",
+            "deviation_from_mainstream": "「こん棒暴行」など身体的暴力疑惑を強調し、真実攻防として描いている点は、単なる危険接近・放水報道より一段強いトーン。"
+          }
+        ],
+        "source_of_sources_note": null,
+        "media_editorial_context": [
+          {
+            "caveat": "韓国メディアの日本語版であり、一次当事国メディアではない。",
+            "outlet": "Joongang Ilbo / 中央日報（オンライン日本語版）",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+                ],
+                "observation_text": "見出しで「こん棒暴行」「真実攻防」「強く抗議」といった強い言葉を用いている。",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+                ],
+                "observation_text": "中国側のフィリピン大使召喚・抗議という外交的反応を中心に報じている。",
+                "observation_type": "source_selection"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "partially_supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_headline",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "身体的暴力疑惑と「真実攻防」を強調することで、南シナ海緊張の深刻さとドラマ性を読者に印象づけようとしている可能性。",
+                "corroboration_basis": "behavioral_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に事案の特徴的要素（暴力疑惑）を事実として強調しただけの可能性もある。",
+                "supporting_evidence_ids": [
+                  "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              },
+              {
+                "status": "weak",
+                "category": "source_signaling",
+                "confidence": "低",
+                "question_type": "who_benefits",
+                "evidence_class": "unsupported_assumption",
+                "hypothesis_text": "中国側の強い抗議を詳細に伝えることで、中国の立場・不満を地域読者に認識させる効果があるが、それが意図的な肩入れかどうかは不明。",
+                "corroboration_basis": "single_source_only",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "ニュース価値の高い外交抗議を通常通り報じているだけ。",
+                "supporting_evidence_ids": [
+                  "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": null
+              }
+            ],
+            "document_id": "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb",
+            "omitted_actor_analysis": [
+              {
+                "confidence": "判断不能",
+                "why_expected": "南シナ海・フィリピン関連の緊張事案では、米比同盟や米国の反応がしばしば重要な文脈となるため。",
+                "expected_actor_name": "米国",
+                "omission_hypothesis": "今回の記事は事案の当事者（中国・フィリピン）の真実攻防に焦点を絞り、第三国の反応は別記事で扱う編集方針の可能性。",
+                "supporting_evidence_ids": null,
+                "expected_actor_entity_id": "US_alliance_generic"
+              }
+            ]
+          },
+          {
+            "caveat": "フィリピン国内英字紙。政府寄りかどうかなどの詳細なメディアプロファイルは今回資料からは不明。",
+            "outlet": "The Manila Times",
+            "observed": [
+              {
+                "evidence_ids": [
+                  "07552930-6794-4104-a3e4-3f4254abc558"
+                ],
+                "observation_text": "Ayungin Shoalへのresupply missionを前面に出し、フィリピン側の行動を中心に報じている。",
+                "observation_type": "headline"
+              },
+              {
+                "evidence_ids": [
+                  "07552930-6794-4104-a3e4-3f4254abc558"
+                ],
+                "observation_text": "記事抜粋の範囲では、中国側の詳細な主張や国内世論の反応はほとんど記載されていない。",
+                "observation_type": "absence_in_content"
+              }
+            ],
+            "hypotheses": [
+              {
+                "status": "partially_supported",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_this_topic",
+                "evidence_class": "model_general_knowledge",
+                "hypothesis_text": "フィリピン軍の補給ミッション成功・継続を強調することで、国内読者に対中強硬かつ能動的な姿勢を示す意図がある可能性。",
+                "corroboration_basis": "behavioral_corroboration",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "単に重要な安全保障ニュースとして事実を報じているだけ。",
+                "supporting_evidence_ids": [
+                  "07552930-6794-4104-a3e4-3f4254abc558"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+              },
+              {
+                "status": "weak",
+                "category": "editorial_framing",
+                "confidence": "低",
+                "question_type": "why_omit_actor",
+                "evidence_class": "unsupported_assumption",
+                "hypothesis_text": "中国側の詳細な立場よりも、フィリピン側の行動・正当性を前面に出すことで、国内読者の支持・誇りを喚起する狙いがある可能性。",
+                "corroboration_basis": "single_source_only",
+                "corroboration_target": "underlying_event_only",
+                "alternative_explanation": "紙面制約や記事構成上、中国側の詳細は別記事に委ねているだけ。",
+                "supporting_evidence_ids": [
+                  "07552930-6794-4104-a3e4-3f4254abc558"
+                ],
+                "contradicting_evidence_ids": null,
+                "confidence_adjustment_reason": null
+              }
+            ],
+            "document_id": "07552930-6794-4104-a3e4-3f4254abc558",
+            "omitted_actor_analysis": [
+              {
+                "confidence": "判断不能",
+                "why_expected": "中国側の行動には国内世論が影響し得るが、フィリピン紙の記事抜粋では触れられていない。",
+                "expected_actor_name": "中国国内世論",
+                "omission_hypothesis": "フィリピン読者にとって優先度が低いため、国内紙では中国世論の詳細まで扱っていない可能性。",
+                "supporting_evidence_ids": null,
+                "expected_actor_entity_id": "CN_domestic_public"
+              }
+            ]
+          }
+        ]
+      },
+      "unknown_or_uncertain": "中国海警局の具体的な指揮系統・裁量範囲、フィリピン・中国双方の国内世論の詳細、米比同盟の現時点での具体的関与レベルについては、今回の資料からは判断できない。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "フィリピンが補給ミッションの頻度を減らし、象徴的最低限のプレゼンス維持にとどめることで、衝突リスクを抑えつつ外交・法的手段へ軸足を移すシナリオ。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "フィリピン政府が補給頻度削減・一時停止を公式に示唆・決定する。"
+          ],
+          "weakening_conditions": [
+            "米比同盟がセカンド・トーマス礁事案への強い支持・関与を明示する。",
+            "国内世論が補給継続・対中強硬姿勢を強く支持する。"
+          ],
+          "strengthening_conditions": [
+            "フィリピン国内で補給ミッションに対する安全保障懸念・批判が高まる。",
+            "米比同盟からの具体的支援が期待ほど得られないと認識される。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "現場で重大な負傷・死亡事案が発生し、米比同盟や国際社会が強く反応することで、中国側が妨害行動を一時的に抑制し、緊張緩和措置やルール作りが進むシナリオ。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "国際的に注目される重大インシデントと、それに続く高位級外交交渉・合意の発生。"
+          ],
+          "weakening_conditions": [
+            "暴力事案が小規模にとどまり、国際社会の反応が限定的。",
+            "中国側が国内ナショナリズムを優先し、外圧にもかかわらず妨害を継続・強化する。"
+          ],
+          "strengthening_conditions": [
+            "重大な暴力事案・事故の発生。",
+            "米国など第三国による強い外交圧力・軍事的シグナル。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "Ayungin Shoal周辺での新たな暴力事案・負傷者発生の有無",
+        "フィリピン政府の補給ミッション方針（継続・頻度・方法）の変更",
+        "中国海警局の行動パターンの変化（妨害強度の増減）",
+        "米比同盟・第三国の関与レベル（声明・演習・航行の自由作戦など）"
+      ],
+      "retraction_conditions": [
+        "フィリピンが公式にセカンド・トーマス礁からの撤退・補給停止を決定する。",
+        "中国が海警局の妨害行動を大幅に緩和し、ルール作りや共同管理に向かう具体的措置を取る。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "07552930-6794-4104-a3e4-3f4254abc558",
+          "result_type": "document",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "フィリピンが補給ミッションの成功よりも安全確保を優先する発言や、中国側が妨害行動を自制する方針を示す公式声明が出れば、現行の緊張持続シナリオの蓋然性は弱まる。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "セカンド・トーマス礁事案に対する米国の具体的反応（声明・軍事プレゼンス・共同演習など）は何か。",
+          "rationale": "Key Stakeholder外だが、Primary Key Pointのsecondary hinge（同盟後ろ盾）に関わる。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "フィリピン国内世論・主要政党はセカンド・トーマス礁での補給継続にどの程度支持・懸念を示しているか。",
+          "rationale": "PH_govのPersistent Preferenceの持続性と、今後の補給方針変更可能性を評価するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "中国海警局の指揮系統・裁量範囲はどうなっており、今回事案に関する具体的方針は示されているか。",
+          "rationale": "CN_leadershipの妨害強度決定メカニズム（Key Stakeholderの行動余地）を理解するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "insufficient",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "セカンド・トーマス礁事案に対する米国・他同盟国の具体的な反応（声明、軍事プレゼンス、共同演習など）。",
+          "gap_category": "deterministic",
+          "recommended_action": "米政府・同盟国の公式声明・行動に関する一次情報・信頼できる報道を確認する。"
+        },
+        {
+          "priority": "中",
+          "description": "フィリピン国内の世論・政治勢力がセカンド・トーマス礁事案にどう反応しているか（支持率、抗議活動、議会の動きなど）。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "フィリピン国内メディア・世論調査・政治分析を参照し、補給継続への政治的制約・支援を把握する。"
+        },
+        {
+          "priority": "中",
+          "description": "中国海警局の具体的な指揮系統・裁量範囲、および今回事案に関する内部方針。",
+          "gap_category": "deterministic",
+          "recommended_action": "中国側の公式文書・専門家分析を通じて海警局の制度・指揮構造を確認する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "セカンド・トーマス礁の象徴的価値は高いものの、フィリピン・中国双方にとって軍事・外交コストが増大しすぎれば、いずれ一方が譲歩や妥協（補給制限・妨害緩和）に向かう可能性があり、現在のようなグレーゾーン対立が長期的に続くとは限らない。",
+      "key_stakeholder_assessment": {
+        "rationale": "セカンド・トーマス礁の局面を実際に動かす主体は、(1)フィリピン政府・軍（補給ミッション継続・停止、現場ルール設定）、(2)中国指導部・海警局（妨害強度・外交圧力の方針）であり、両者が相互に行動を制約し合っている。米国など第三国も構造的に影響するが、今回資料には直接の行動が記載されていないため、Key Stakeholderとしてはフィリピンと中国の2主体を優先する。",
+        "confidence": "中",
+        "evidence_ids": [
+          "07552930-6794-4104-a3e4-3f4254abc558",
+          "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+        ],
+        "determination": "multiple",
+        "decision_structure": "フィリピン側は政府・軍が補給計画を立案・実施し、中国側は海警局が現場で妨害を行い、外交当局が抗議・メッセージを発する。両者の行動が現場で直接ぶつかり、事故・暴力が発生すれば、国内世論や第三国の反応を通じて次の意思決定にフィードバックされる分散構造。",
+        "selected_actor_ids": [
+          "PH_gov",
+          "CN_leadership"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "PH_gov",
+          "confidence": "中",
+          "evidence_ids": [
+            "07552930-6794-4104-a3e4-3f4254abc558"
+          ],
+          "evidence_class": "current_direct_evidence",
+          "desired_outcome": "補給を安全かつ継続的に実施できる状態。",
+          "issue_component": "補給ミッション継続",
+          "likely_reaction": "妨害が強まっても一定の範囲で補給継続を試みるが、重大事故があれば見直しの可能性。",
+          "current_red_line": "補給完全停止や兵士の危機的状況は避けたい（仮説）。",
+          "stated_preference": "補給活動は正当で継続されるべきと主張していると報じられている。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "Primary Key Pointとして、フィリピン政府・軍にとって実効支配維持の核心。",
+          "currently_tradeable": "補給頻度・方法の調整はあり得るが、完全停止は政治的に困難。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "07552930-6794-4104-a3e4-3f4254abc558"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "国際世論・同盟国への訴え。",
+          "effect_on_actor_objective": "補給継続は実効支配維持という目的を直接支える。",
+          "estimated_real_preference": "実効支配維持のため可能な限り補給を続けたい。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "現場の安全保障リスク（中国の妨害）。",
+          "issue_component_description": "セカンド・トーマス礁への定期的補給・ローテーションの維持。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        },
+        {
+          "salience": "high",
+          "actor_ref": "CN_leadership",
+          "confidence": "低",
+          "evidence_ids": [
+            "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+          ],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "フィリピン補給を困難にしつつ、国際的非難・軍事衝突は回避。",
+          "issue_component": "海警局妨害強度",
+          "likely_reaction": "フィリピンが補給を続ける限り、妨害を継続・場合により強化。",
+          "current_red_line": "直接的致死的武力行使は避けたい可能性。",
+          "stated_preference": "フィリピン行為への強い抗議。",
+          "instrumental_value": "deterrence",
+          "priority_rationale": "フィリピン補給のコスト・危険を左右し、中国の権利主張の実効性に直結。",
+          "currently_tradeable": "妨害強度は状況に応じて調整可能。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": [
+            "1b5f0a7c-84a0-49fd-ac38-33d8232da5bb"
+          ],
+          "media_salience_signal": "amplified",
+          "primary_usable_leverage": "海警局のプレゼンスと接近行動。",
+          "effect_on_actor_objective": "強い妨害はフィリピン行動を制約し目的を支えるが、過度な暴力は国際的コストを増やす。",
+          "estimated_real_preference": "グレーゾーンで圧力を維持しつつ、エスカレーションを管理したい。",
+          "alternative_interpretation": "国内向け強硬アピールが主で、実際の妨害は限定的に抑える可能性。",
+          "primary_binding_constraint": "国際イメージ・対外関係のコスト。",
+          "issue_component_description": "接近距離・放水・身体的接触などのレベル。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "PH_gov",
+          "confidence": "判断不能",
+          "evidence_ids": null,
+          "evidence_class": "unsupported_assumption",
+          "desired_outcome": "同盟国からの明確な支持・抑止。",
+          "issue_component": "米比同盟の後ろ盾",
+          "likely_reaction": "米国の関与が弱ければ、補給方針の見直し圧力が高まる可能性。",
+          "current_red_line": null,
+          "stated_preference": null,
+          "instrumental_value": "instrumental",
+          "priority_rationale": "構造的には重要だが、今回資料では具体的関与が不明。",
+          "currently_tradeable": "同盟の見せ方・期待値調整はあり得る。",
+          "genuine_or_tactical": "unclear",
+          "media_salience_basis": null,
+          "media_salience_signal": "unknown",
+          "primary_usable_leverage": "同盟条約・共同演習。",
+          "effect_on_actor_objective": "強い後ろ盾があれば補給継続に自信を持てる。",
+          "estimated_real_preference": "同盟の実質的支援を確保したい。",
+          "alternative_interpretation": null,
+          "primary_binding_constraint": "米国の優先順位・対中戦略。",
+          "issue_component_description": "米国の関与レベルがフィリピン行動に与える影響。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": null
+        }
+      ],
+      "decisive_power_and_leverage": "この局面の結果（セカンド・トーマス礁の実効支配の維持・変更、緊張のエスカレーション／管理）を最終的に左右する力は、短期的にはフィリピン政府の「補給を続けるか・止めるか」の決定と、中国指導部・海警局の「どこまで妨害を強めるか」の裁量に分散している。構造的には、米比同盟と米国の関与レベル（抑止・後ろ盾）がフィリピンの行動選択を大きく規定し、中国側のエスカレーション余地を制約するため、決定的レバレッジは「米国がどこまで関与意思を示すか」にも依存する（ただし、今回の資料には米国の具体的行動は記載されておらず、ここは仮説）。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "フィリピン側はセカンド・トーマス礁での実効支配維持を志向し、補給ミッションを継続している点でPersistent PreferenceとObserved Actionは整合的。中国側も南シナ海での権利主張強化を志向し、海警局による妨害と外交抗議を行っている点で整合的であり、現時点の資料からは両者のPreference-Action Gapは大きくは見えない。ギャップが生じるとすれば、今後フィリピンが補給を控える、または中国が妨害を緩める場合であり、その際は国内政治・第三国関与などのDriving Forceを再評価する必要がある。"
+    },
+    "created_at": "2026-09-03T05:32:02.694436+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "15936174-cb17-4f8c-bfe2-40d01ee37c9e",
+    "response_id": "304ee051-7a16-46a2-a317-ebc65862b5ce",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: フィリピン政府・軍（Ayungin Shoal補給を決定・実施する主体）, 中国指導部・海警局, 米国政府・軍, フィリピン国内世論・政治勢力, 中国国内世論・ナショナリズム",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "claim_evidence_semantic_relevance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "direct_evidence_present_for_primary_key_point",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "supporting_knowledge_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_candidates_not_homogeneous",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_not_selected_for_novelty",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "omitted_actor_analysis.expected_actor_entity_idにStage1へ提示していないentity_idがあります（創作の可能性、要人手確認）: media_editorial_context[0].omitted_actor_analysis[0]=US_alliance_generic, media_editorial_context[1].omitted_actor_analysis[0]=CN_domestic_public",
+        "passed": false
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）",
+        "passed": false
+      }
+    ],
+    "passed_count": 36,
+    "failed_count": 3,
+    "created_at": "2026-09-03T05:32:03.076258+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "media_omitted_actor_analysis_grounded",
+      "actor_model_challenged"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack",
+      "media_omitted_actor_analysis_grounded",
+      "actor_model_challenged"
+    ],
+    "removed_fabricated_ids": [],
+    "confidence_adjustments": [
+      "media_editorial_context[0].hypotheses[0]",
+      "media_editorial_context[1].hypotheses[0]"
+    ],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "actor_provenance_touched": [
+      "PH_gov",
+      "CN_leadership"
+    ],
+    "historical_evidence_separations": [],
+    "pattern_applicability_fallbacks": [],
+    "actor_evidence_separations": []
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82544,
+    "completion_tokens": 16751,
+    "total_tokens": 99295
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 84422,
+        "prompt_tokens": 39671,
+        "completion_tokens": 9776
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 53764,
+        "prompt_tokens": 42873,
+        "completion_tokens": 6975
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: フィリピン政府・軍（Ayungin Shoal補給を決定・実施する主体）, 中国指導部・海警局, 米国政府・軍, フィリピン国内世論・政治勢力, 中国国内世論・ナショナリズム"
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "omitted_actor_analysis.expected_actor_entity_idにStage1へ提示していないentity_idがあります（創作の可能性、要人手確認）: media_editorial_context[0].omitted_actor_analysis[0]=US_alliance_generic, media_editorial_context[1].omitted_actor_analysis[0]=CN_domestic_public"
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "persistent_preference/relevant_decision_patternsを伴う実質的なActor Assessmentがあるにもかかわらず、全件でactor_model_challengeが空です（既存Actor Intelligence自体が今回のCaseに適用できない可能性を、最低1名について検討してください）"
+      }
+    ],
+    "research": {
+      "sufficiency_gate_enabled": true,
+      "initial_sufficiency": {
+        "current_evidence": "insufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "insufficient",
+        "direct_evidence_count": 0,
+        "gaps": [
+          "current_evidence=insufficient（Direct Evidence 0件、目安2件以上でsufficient候補）"
+        ]
+      },
+      "research_cycle": {
+        "triggered": true,
+        "search_calls_used": 1,
+        "stop_condition": "sufficient_comparison"
+      },
+      "documents_added_count": 2,
+      "final_sufficiency": {
+        "current_evidence": "sufficient",
+        "institutional_coverage": "not_evaluated",
+        "overall": "sufficient",
+        "direct_evidence_count": 2,
+        "gaps": []
+      }
+    }
+  },
+  "persistent_preference_candidates": []
+}

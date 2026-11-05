@@ -1,0 +1,25 @@
+{
+  "A_sustainability_cred_spoofing_geopolitics": {
+    "status": 200,
+    "knowledge_sufficiency": "partial",
+    "references_count": 16,
+    "error": null
+  },
+  "D_unknown_credential": {
+    "status": 401,
+    "body": {
+      "detail": "無効または未指定のX-API-Keyです"
+    }
+  },
+  "E_missing_credential": {
+    "status": 401,
+    "body": {
+      "detail": "無効または未指定のX-API-Keyです"
+    }
+  },
+  "erm_valid_credential_authenticates": {
+    "status": 200,
+    "knowledge_sufficiency": "insufficient",
+    "error": null
+  }
+}

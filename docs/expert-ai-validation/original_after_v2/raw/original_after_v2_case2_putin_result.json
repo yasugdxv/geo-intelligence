@@ -1,0 +1,1222 @@
+{
+  "request": {
+    "request_id": "ba4559ef-dbd0-4b45-ad0a-88ad894cadd8",
+    "theme_id": null,
+    "case_id": "d9252cae-1b8d-48d0-ae04-96392cf3b0bd",
+    "mode": "case_analysis",
+    "profile": "deep",
+    "query_text": "現在のプーチンのウクライナ戦争に対する目的と、今後取り得る方向性を分析してください。",
+    "created_at": "2026-09-01T08:15:52.242640+00:00",
+    "run_config": {
+      "actor_profile_lookup_statuses": [
+        "active",
+        "candidate"
+      ],
+      "actor_profile_retrieval_status": null,
+      "candidate_snapshot_mode": "test-mode: active+candidate, retrieval_status unrestricted (matches Neutral v3)",
+      "actor_intelligence_enabled": true,
+      "media_intelligence_enabled": false,
+      "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+      "fingerprints": {
+        "geo_expert_engine.py": "582aa324c7971b73",
+        "geo_expert_schema.py": "358640565bdd689c",
+        "geo_expert_quality_guard.py": "c8cbb2ecf9c21c29",
+        "geo_actor_intelligence_service.py": "a4728e75b6b9c3ab",
+        "geo_media_intelligence_service.py": "aa61f22f460b32a5",
+        "geo_knowledge_item_schemas.py": "5ab8d2935eebf4b7",
+        "schemas/geo_expert_ai_response.schema.json": "77a892d2bd1f777f",
+        "geo_persistent_preference_service.py": "47e2b31ccec1b1c5",
+        "geo_foundation_pack_service.py": "11dd58266c423f91"
+      },
+      "case_as_of_dates": {
+        "case1_trump_xi": "2026-08-31",
+        "case2_putin": "2026-08-31",
+        "case3_netanyahu": "2026-08-31",
+        "case4_mbs": "2026-08-31",
+        "case5_kim": "2026-08-31"
+      }
+    }
+  },
+  "source_pack": {
+    "source_pack_id": "bf98b9e1-f823-42f7-8b78-9b38519224e0",
+    "request_id": "5ee992da-353b-484f-9476-2f49d05891c8",
+    "document_ids": [
+      "69e8064f-b236-42e8-89b1-e92a4c866987",
+      "e2fed736-6330-4d6c-83bf-740800dab58c",
+      "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+      "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+      "eba1d367-ab95-41c6-bebd-53a53903bd58",
+      "609a1837-e29b-4215-9660-93d1f96f8ebe",
+      "50a2a155-3437-46db-8cc3-5ea55b08a385",
+      "62010532-a2fc-4f6d-8384-4ab94401e852",
+      "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+      "b47f3ca0-a472-46ed-8031-a43590d9562a"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-09-01T08:15:49.78596+00:00"
+  },
+  "response": {
+    "response_id": "ae76ea5e-079d-4b85-bcff-b2d485570958",
+    "request_id": "5ee992da-353b-484f-9476-2f49d05891c8",
+    "source_pack_id": "bf98b9e1-f823-42f7-8b78-9b38519224e0",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "NATO東方拡大はロシアの安全保障に対する脅威であり、受け入れられない。",
+          "claim_type": "official_claim",
+          "source_ref": "core_profile.worldview"
+        },
+        {
+          "text": "NATOの旧ソ連圏（特にウクライナ）へのさらなる拡大はロシアにとって越えてはならない一線である。",
+          "claim_type": "official_claim",
+          "source_ref": "core_profile.red_lines"
+        },
+        {
+          "text": "プーチンはウクライナ戦争を通じて、ウクライナのNATO・EU完全統合を阻止し、少なくとも一部領域とウクライナの外交・安全保障上の選択肢に対するロシアの拒否権を確保しようとしている可能性が高い。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "プーチン政権はエネルギー輸出収入への依存という構造的制約の下で、長期戦を戦えるが無制限ではなく、制裁・戦費・国内経済への負担を勘案しつつ「持続可能な戦争状態」を模索していると考えられる。",
+          "claim_type": "inference",
+          "source_ref": "core_profile.structural_constraints"
+        },
+        {
+          "text": "2023年6月にワグネルが反乱を起こし、同年8月にプリゴジンが死亡した。",
+          "claim_type": "fact",
+          "source_ref": "d0ef206d-d8d0-4697-8781-bc310387fc31"
+        },
+        {
+          "text": "ワグネル反乱とその後の処理は、プーチンが軍・準軍事組織を通じた権力基盤の統制を最優先課題の一つとして認識していることを示しており、ウクライナ戦争の遂行もこの国内権力維持の制約を強く受けている。",
+          "claim_type": "inference",
+          "source_ref": "d0ef206d-d8d0-4697-8781-bc310387fc31"
+        },
+        {
+          "text": "プーチンはDirect LineやValdai Clubなどを通じて、対内外向けに戦略的コミュニケーションを行ってきた。",
+          "claim_type": "observation",
+          "source_ref": "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8"
+        },
+        {
+          "text": "プーチンはウクライナ戦争に関しても、国内向けには「祖国防衛」「NATOからの防衛」を強調しつつ、対外的には交渉余地や核抑止を示唆するなど、複数Audienceに異なるメッセージを送る傾向があると推定される。",
+          "claim_type": "inference",
+          "source_ref": "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8"
+        },
+        {
+          "text": "プーチンのUltimate Objectiveは、ロシアを大国として認めさせ、旧ソ連圏に対する影響力を維持・拡大しつつ、自身の政権を安定的に維持することであり、ウクライナ戦争はそのための手段である。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "プーチンはウクライナ戦争において、全面勝利よりも「ロシアに有利な凍結紛争」や「ウクライナのNATO完全加盟阻止」を現実的な目標としている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        }
+      ],
+      "dynamics": null,
+      "stakeholders": [
+        {
+          "actor": "Vladimir Putin",
+          "purpose": "ロシアを大国として認めさせ、旧ソ連圏に対する影響力を維持・強化しつつ、自身の政権を長期にわたり安定的に維持すること。",
+          "leverage": "NATO・米国の対応",
+          "position": "ウクライナのNATO・EU完全統合を阻止し、少なくとも一部領域（クリミア・ドンバス等）とウクライナの外交・安全保障上の選択肢に対するロシアの拒否権を確保すること。",
+          "red_lines": "ウクライナのNATO正式加盟、またはロシアが事実上NATOと同等の防衛コミットメントをウクライナに認めること。",
+          "confidence": "中",
+          "constraints_fears": "国内政権安定・エリート支配、エネルギー輸出収入と制裁",
+          "ability_to_move_or_block": "ウクライナ戦線での攻勢・防御の方針、動員規模、停戦交渉への参加・拒否など、戦争の方向性を大きく動かす能力を持つ。"
+        },
+        {
+          "actor": "ロシア軍・治安機関（国防省、FSB等）",
+          "purpose": "組織としての権限・予算・威信の維持・拡大。戦争を通じた影響力強化。",
+          "leverage": "戦場での実際の作戦遂行能力と、治安機関としての国内抑圧能力。",
+          "position": "公的には戦争継続と勝利を支持しつつ、内部では損失と負担の最小化を図る。",
+          "priority": "短期的には戦争継続と組織防衛、中期的には敗戦責任の回避。",
+          "red_lines": "自らの組織がスケープゴートとして処罰される形での急激なディエスカレーション。",
+          "confidence": "中",
+          "constraints_fears": "大規模な敗北や混乱により、組織としての責任追及や粛清の対象となること。",
+          "key_relationships": "プーチンとの相互依存関係。忠誠と引き換えに権限・予算を得る一方、反乱や離反は厳しく処罰される。",
+          "ability_to_move_or_block": "戦争遂行の実務を担うため、消極的抵抗や非協力により戦争の強度を事実上調整し得るが、単独で停戦を決定する力は限定的。"
+        },
+        {
+          "actor": "ロシア経済・財政当局（財務省、中央銀行等）",
+          "purpose": "財政・通貨の安定維持と、制裁下での経済運営。",
+          "leverage": "予算配分、資本規制、通貨政策を通じた戦費・社会支出のコントロール。",
+          "position": "戦争継続を前提に、財政・通貨の安定を維持するための調整役。",
+          "priority": "戦費と社会支出のバランス確保、制裁回避とエネルギー収入維持。",
+          "red_lines": "制御不能な通貨危機やハイパーインフレ。",
+          "confidence": "中",
+          "constraints_fears": "制裁と戦費により財政が持続不能となり、インフレや社会不安が拡大すること。",
+          "key_relationships": "プーチン政権に対する技術官僚としての助言役。エネルギー企業や銀行との密接な関係。",
+          "ability_to_move_or_block": "戦費の制約を通じて戦争の強度に間接的な上限を課し得るが、政治的決定を直接止める力は限定的。"
+        },
+        {
+          "actor": "NATO主要国（特に米国）",
+          "purpose": "ウクライナ防衛と対ロ抑止を通じた欧州安全保障秩序の維持。",
+          "leverage": "軍事・財政支援の規模・質を通じた戦況への影響、制裁・輸出管理。",
+          "position": "支援継続を表明しつつ、エスカレーション管理に慎重。",
+          "priority": "ロシアとの直接戦争を避けつつ、ウクライナの敗北を防ぐ。",
+          "red_lines": "NATO領域への直接攻撃、核兵器使用。",
+          "confidence": "中",
+          "constraints_fears": "エスカレーションによるNATOとロシアの直接衝突、国内世論・財政負担。",
+          "key_relationships": "ウクライナへの軍事・財政支援の主要供給者であり、プーチンにとっても主要な交渉相手。",
+          "ability_to_move_or_block": "支援の増減により、ウクライナ側の戦争継続能力とロシアのコスト構造を大きく左右し得る。"
+        },
+        {
+          "actor": "ウクライナ政府",
+          "purpose": "領土保全と主権の維持、NATO・EU統合の追求。",
+          "leverage": "戦場での抵抗意志と、NATO支援を引き出す政治的正当性。",
+          "position": "ロシアの譲歩なき停戦には反対し、支援をテコに戦争継続。",
+          "priority": "戦争継続による占領地域の奪還と、長期的な安全保障保証の獲得。",
+          "red_lines": "ロシアによる占領の恒久化や、主権を制限する形での「中立化」。",
+          "confidence": "中",
+          "constraints_fears": "戦争疲弊と人口流出、支援減少による防衛能力低下。",
+          "key_relationships": "NATO・EUとの緊密な関係。ロシアにとっては交渉相手でありつつ、敵対主体。",
+          "ability_to_move_or_block": "停戦・和平の受け入れ可否を通じて、ロシアの目的達成を左右し得る。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "低",
+        "assumptions": [
+          "プーチン体制が短期的には崩壊せず、彼自身が主要な意思決定者であり続ける。",
+          "NATO・米国はウクライナへの支援を続けるが、直接的なロシアとの全面戦争は回避しようとする。",
+          "ロシアのエネルギー輸出収入は制裁下でも一定程度維持され、戦争継続が財政的に可能である。"
+        ],
+        "description": "プーチンのウクライナ戦争に対する主目的は、ウクライナ国家の完全占領や即時の政権転覆ではなく、「ウクライナのNATO・EU完全統合を阻止し、旧ソ連圏に対するロシアの影響力を維持・拡大しつつ、自身の政権を安定的に維持すること」である。そのために、ウクライナの一部領土（クリミア・ドンバス等）の実効支配と、ウクライナの安全保障・外交上の選択肢に対するロシアの拒否権を確保しようとしている。今後の方向性としては、(1) 現在の戦線を維持しつつ、ウクライナと西側の疲弊を待ちながら、自国に有利な凍結紛争・停戦を模索する「長期消耗戦＋凍結シナリオ」が主軸となる可能性が高い。プーチンは全面動員や核使用といった極端な手段には慎重であり、国内政権安定・エネルギー収入・制裁回避といった制約の下で、戦争の強度を調整しながら時間を味方につけようとしていると考えられる。",
+        "evidence_class": "current_indirect_evidence",
+        "selection_rationale": "このシナリオは、(1) Actor Intelligence Packに示されたプーチンの世界観・レッドライン（NATO東方拡大阻止）、(2) エネルギー輸出依存という構造的制約、(3) ワグネル反乱後の政権安定優先の行動パターン、の三つと整合的であり、ウクライナ戦争の開戦理由・継続理由・現在の戦争強度を最も無理なく説明できる。他のシナリオ（全面勝利・即時停戦など）は、現時点の行動パターンや制約と比べて説明力が劣る。",
+        "supporting_evidence": [
+          "core_profile.worldview",
+          "core_profile.red_lines",
+          "core_profile.structural_constraints",
+          "d0ef206d-d8d0-4697-8781-bc310387fc31",
+          "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8"
+        ],
+        "observable_indicators": [
+          "ロシアが全面動員ではなく部分動員・志願兵募集を継続するかどうか。",
+          "ロシアが停戦・和平交渉に関して「現状の戦線を基準としたライン」を繰り返し主張するかどうか。",
+          "エネルギー輸出の多角化（対中国・インド等）と制裁回避の動きが続くかどうか。",
+          "国内プロパガンダで「長期戦」「祖国防衛」が強調され続けるかどうか。"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": false,
+            "description": "旧ソ連時代やポスト冷戦期における「凍結紛争」（ジョージア、モルドバ等）を通じた影響力維持の手法。",
+            "same_domain": true,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": true,
+            "analogy_source_precedent_id": null,
+            "same_institutional_structure": false
+          }
+        ],
+        "confidence_adjustment_reason": "evidence_class indicates only historical-pattern/general-knowledge support (no current direct/indirect evidence); confidence capped at low per the Expert AI Depth & Grounding Upgrade evidence-weighting contract."
+      },
+      "business_impact": {
+        "direct": null,
+        "indirect": "ウクライナ戦争が長期の消耗戦・凍結紛争として続く場合、エネルギー・農産物・金属などの価格変動、制裁・二次制裁、物流ルートの変更などを通じて、欧州・世界市場に中長期的な不確実性が残る。特にエネルギー輸出依存というロシアの構造的制約は、エネルギー市場のボラティリティと政策介入（価格上限・輸入規制等）を通じて企業のコスト構造に影響し得る。",
+        "unrelated_note": null,
+        "environment_change": "ロシアとNATOの対立が長期化し、制裁・輸出管理・安全保障リスクが「新常態」となることで、企業はロシア・ウクライナ・周辺地域への投資・調達・物流戦略を再設計する必要が生じる可能性がある。"
+      },
+      "initial_anomaly": "ロシアが大規模侵攻から2年以上経過しても、明確な勝利条件や出口戦略を公表せず、戦線を維持しつつも全面動員や総力戦レベルには踏み込んでいない点。これは「ウクライナ国家の完全破壊」よりも、「NATO拡大阻止と影響圏維持」という中長期目的と、国内政権安定・経済制約とのバランスを優先している可能性を示唆する。",
+      "review_findings": null,
+      "audience_analysis": null,
+      "executive_summary": {
+        "what_changed": null,
+        "why_it_matters": null,
+        "what_to_watch_decide": null
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "Vladimir Putin",
+          "red_line": "ウクライナのNATO正式加盟、またはロシアが事実上NATOと同等の防衛コミットメントをウクライナに認めること。",
+          "actor_ref": "putin",
+          "entity_id": "897329dc-fbfe-4e2f-b0a1-41e621c065c0",
+          "confidence": "低",
+          "formal_role": null,
+          "evidence_ids": null,
+          "decision_power": "ロシア連邦大統領として、対外安全保障政策・軍事行動・外交交渉の最終決定権を持つと一般に理解されている。",
+          "driving_forces": [
+            {
+              "force": "国内政権安定・エリート支配",
+              "direction": "constraining",
+              "description": "ワグネル反乱などから、軍・準軍事組織・治安機関の忠誠維持が最優先課題となっており、戦争の強度や動員政策はこの制約を強く受ける。"
+            },
+            {
+              "force": "エネルギー輸出収入と制裁",
+              "direction": "constraining",
+              "description": "エネルギー輸出への依存と制裁の影響により、長期戦は可能だが無制限ではなく、戦費・社会支出・エリートへの配分のバランスが必要。"
+            },
+            {
+              "force": "NATO・米国の対応",
+              "direction": "supporting",
+              "description": "NATO東方拡大への反発は、プーチンの世界観と国内ナラティブを支える要素であり、戦争の正当化に利用されている。"
+            }
+          ],
+          "ability_to_move": "ウクライナ戦線での攻勢・防御の方針、動員規模、停戦交渉への参加・拒否など、戦争の方向性を大きく動かす能力を持つ。",
+          "issue_objective": "ウクライナのNATO・EU完全統合を阻止し、少なくとも一部領域（クリミア・ドンバス等）とウクライナの外交・安全保障上の選択肢に対するロシアの拒否権を確保すること。",
+          "observed_action": "大規模侵攻を開始し、占領地域の併合宣言や「非軍事化」「非ナチ化」といった目標を掲げつつ、戦線を維持しながら部分動員・経済の戦時モードへの部分的移行を行っている。",
+          "vulnerabilities": [
+            "エネルギー輸出への財政依存",
+            "制裁による技術・投資制約",
+            "軍・準軍事組織の忠誠と統制",
+            "長期戦による人的損失と社会不満",
+            "エリート層の離反リスク"
+          ],
+          "ability_to_block": "軍・治安機関・官僚機構を通じて、和平交渉や譲歩を拒否し、戦争継続を選択する拒否権を事実上有する。",
+          "action_substance": {
+            "assessment": "Signalとしては対内外に強硬姿勢と長期戦の覚悟を示しているが、Substanceとしては全面動員や核使用を避けつつ、持続可能な範囲での長期消耗戦にとどめている。",
+            "discretion": "戦争の強度（動員規模、攻勢・防御のバランス）や交渉への関与について、プーチンが大きな裁量を保持していると推定される。",
+            "evidence_ids": [
+              "d0ef206d-d8d0-4697-8781-bc310387fc31",
+              "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8"
+            ],
+            "target_scope": "ウクライナ領土の一部（特にクリミア・ドンバス等）と、ウクライナの安全保障・外交上の選択肢全体。",
+            "stated_signal": "ウクライナ戦争はNATO東方拡大に対する防衛であり、ロシアの安全保障と歴史的権利を守る戦いだというメッセージ。",
+            "concrete_measure": "大規模侵攻の継続、占領地域の併合宣言、「非軍事化」「非ナチ化」といった目標の掲示、部分動員や軍需産業の拡張。",
+            "enforcement_status": "軍・治安機関を通じた統制と弾圧により、国内での反対派は抑え込まれているが、戦場での成果は限定的で消耗戦の様相。",
+            "implementation_status": "戦線は維持され、併合宣言地域での行政・治安統制が進められている一方、全面動員や総力戦には至っていない。",
+            "legal_or_policy_force": "ロシア国内法上の併合手続きや動員令、戦時経済への部分的移行など、国内的には高い拘束力を持つが、国際法上は広く承認されていない。"
+          },
+          "primary_audience": "国内の有権者・エリート・軍・治安機関（「祖国防衛」「NATOからの防衛」というナラティブを通じて正当性を訴える）。",
+          "why_actor_matters": "プーチンはロシアの対外安全保障政策と軍事行動の最終決定権を持ち、NATO東方拡大をレッドラインと位置づけている。ウクライナ戦争の開戦・継続・エスカレーション/ディエスカレーションは、彼の世界観と政権維持戦略に直接結びついており、この局面を動かすKey Stakeholderである。",
+          "available_leverage": [
+            "通常戦力・ミサイル戦力の投入・調整",
+            "部分動員・徴兵政策の調整",
+            "エネルギー輸出・価格を通じた対欧州圧力",
+            "核抑止・核シグナリング",
+            "情報戦・プロパガンダ",
+            "停戦・和平交渉への参加・拒否"
+          ],
+          "secondary_audience": "NATO・米国・ウクライナ（軍事行動と核抑止を通じて、NATO拡大のコストを示し、交渉上の譲歩を引き出そうとする）。",
+          "ultimate_objective": "ロシアを大国として認めさせ、旧ソ連圏に対する影響力を維持・強化しつつ、自身の政権を長期にわたり安定的に維持すること。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "ワグネル反乱後の対応から、プーチンが依然として最終決定権を持つとみるのが自然だが、軍・治安機関の影響力が増している可能性もあり、現時点の資料だけではどこまで集団化が進んでいるか判断できない。",
+            "challenge_question": "もしプーチン個人の意思決定権が、軍・治安機関・エリート集団によって大きく制約されており、ウクライナ戦争の主要方針が集団的に決まっているとしたらどうか。"
+          },
+          "persistent_preference": "NATO東方拡大を安全保障上の脅威とみなし、旧ソ連圏（特にウクライナ）へのNATO・EU統合を阻止しようとする志向。",
+          "preference_action_gap": "Persistent Preference（NATO拡大阻止・影響圏維持）とObserved Action（大規模侵攻・長期戦）は整合的に見える一方で、全面動員や総力戦には踏み込んでいない。このギャップは、国内政権安定・経済制約・エリート支持の維持といったDriving Forceが、戦争の強度と手段を制約しているためと解釈できる。",
+          "relevant_decision_patterns": [
+            "Direct Line/Valdai Clubを通じた戦略的コミュニケーション手法",
+            "ワグネル反乱への対応を通じた権力基盤の再統制"
+          ],
+          "unavailable_or_costly_cards": [
+            "全面動員と総力戦（国内不満・経済負担が大きい）",
+            "戦術核兵器の実戦使用（国際的孤立とエスカレーションリスクが極めて高い）"
+          ],
+          "confidence_adjustment_reason": "actor_intelligence_provenance.general_knowledge_used=true and this case has no current-case evidence_ids backing the assessment; confidence capped at low per the P0-1 General Knowledge Confidence Cap (a model-general-knowledge-only actor assumption must not be promoted to medium/high confidence).",
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "actor_intelligence_active",
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8",
+              "d0ef206d-d8d0-4697-8781-bc310387fc31"
+            ],
+            "supporting_evidence_ids": [],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": null,
+              "source": null,
+              "claim_id": null,
+              "relevance": "ウクライナ戦争の正当化論理と直接関係する。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "NATO東方拡大を安全保障上の脅威として繰り返し批判してきた公式発言",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": null,
+              "source": null,
+              "claim_id": null,
+              "relevance": "ウクライナ戦争の目的設定に関わる。",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "NATOの旧ソ連圏（特にウクライナ）への拡大をレッドラインと位置づける発言",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "ウクライナ戦争そのものではなく、国内権力維持の側面。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "安全保障政策と国内権力維持が密接に結びついていることを示す。",
+              "evidence_id": "d0ef206d-d8d0-4697-8781-bc310387fc31",
+              "date_or_period": "2023年6-8月",
+              "event_or_behavior": "ワグネル反乱とその後の処理を通じた国内権力統制の強化",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "このパターンは、プーチンがウクライナ戦争でもAudience別にメッセージを調整している可能性を示唆するが、現在の具体的発言の裏付けが限定的であり、独立した証明にはならない。",
+              "pattern_id": null,
+              "applicability": "medium",
+              "pattern_summary": "Direct Line/Valdai Clubを通じて、国内外Audienceに異なるメッセージを送りつつ、自身の世界観を繰り返し強調する戦略的コミュニケーション。",
+              "current_differences": [
+                "戦時下で情報統制が強化されており、平時のValdai等と比べてメッセージの幅が狭まっている可能性。"
+              ],
+              "current_similarities": [
+                "ウクライナ戦争に関しても、国内向けには「祖国防衛」、対外向けには交渉余地や核抑止を示唆するなど、複数Audienceへのメッセージ分化が観測されていると推定される。"
+              ],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "Direct Line/Valdai Clubを通じた戦略的コミュニケーション手法",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "ワグネル反乱への対応を通じた権力基盤の再統制",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "NATO・米国とは対立と交渉を組み合わせた関係を維持しつつ、旧ソ連圏ではロシアの優越的地位を認めさせる「勢力圏」的な関係を志向していると推定される。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "プーチンが直近の演説やインタビューで、ウクライナ戦争の「勝利条件」や「受け入れ可能な妥協ライン」をどのように定義しているか。",
+          "rationale": "公式発言の変化は、Persistent Preferenceやレッドラインの修正を示す可能性がある。",
+          "related_hypothesis": "プーチンの主目的がNATO拡大阻止と影響圏維持であるという仮説。",
+          "recommended_sources": null
+        },
+        {
+          "priority": "中",
+          "question": "ロシア国内の世論・エリート・軍・治安機関の間で、戦争継続・拡大・縮小に関する意見分布はどうなっているか。",
+          "rationale": "内部支持構造の変化は、プーチンの選択肢とリスク認識に直接影響する。",
+          "related_hypothesis": "政権安定が戦争の強度と時間軸を制約しているという仮説。",
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "プーチンが直近の主要演説で、ウクライナ戦争の「勝利条件」や「受け入れ可能な妥協ライン」をどのように定義しているか。",
+          "rationale": "Key Point（NATO拡大阻止）とPersistent Preference仮説の検証。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ロシア国内エリート・軍・治安機関内で、戦争継続・拡大・縮小に関する意見分布はどうなっているか。",
+          "rationale": "Preference-Action Gap（政権安定と戦争強度）の説明精度向上。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        },
+        {
+          "priority": null,
+          "question": "ロシアのエネルギー輸出収入と制裁回避の現状は、戦費と社会支出をどの程度支えられているか。",
+          "rationale": "Key Point候補「エネルギー輸出と財政持続性」の強さ評価。",
+          "related_hypothesis": null,
+          "recommended_sources": null
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "Actor Intelligence Packの世界観・レッドラインと整合し、現状の戦争強度・部分動員・長期戦志向を最も自然に説明する。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "プーチンの主目的はウクライナのNATO加盟阻止と旧ソ連圏への影響力維持であり、戦争は長期消耗戦＋凍結紛争を通じて有利な停戦を目指すもの。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "core_profile.worldview",
+            "core_profile.red_lines",
+            "core_profile.structural_constraints",
+            "d0ef206d-d8d0-4697-8781-bc310387fc31"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "戦争初期にキエフ近郊から撤退し、戦線を東部・南部に集中させたことは、完全占領が現実的でないことを示唆しており、現行の行動パターンとも整合しにくい。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "プーチンの真の目的はウクライナ国家の完全従属・ロシア化（政権転覆・完全占領）であり、現在の長期戦は能力不足による一時的な状態に過ぎない。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "エネルギー輸出依存や制裁は戦争継続能力に明確な制約を課しており、プーチンの選択肢を狭めている。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "ウクライナ戦争の方向性は、プーチン個人の意図よりも、エネルギー輸出依存や制裁、NATO支援などの構造要因によって主に規定されている。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "core_profile.structural_constraints"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "ワグネル反乱後もプーチンが最終決定権を持つとみるのが自然だが、軍・治安機関の影響力が増している可能性は否定できない。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "プーチン個人の意思決定権は大きく低下しており、ウクライナ戦争の主要方針は軍・治安機関・エリート集団による集団的意思決定に移行している。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": [
+            "d0ef206d-d8d0-4697-8781-bc310387fc31"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "NATO東方拡大を脅威とする世界観とレッドラインが長期にわたり繰り返されており、対外安全保障要因を単なる口実とみなすにはEvidenceが不足している。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "ウクライナ戦争は主に国内政権安定のための「管理された紛争」であり、対外安全保障やNATO拡大は二次的な口実に過ぎない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": [
+            "core_profile.worldview",
+            "core_profile.red_lines"
+          ],
+          "contradicting_evidence_ids": null
+        }
+      ],
+      "one_line_assessment": "as_of 2026-08-31時点で、プーチンのウクライナ戦争に対する主目的は、ウクライナの完全占領ではなく「NATO東方拡大を阻止しつつ、旧ソ連圏への影響力を維持・拡大し、自身の政権安定を確保する形で戦争を自国に有利な凍結状態または段階的譲歩を引き出すこと」とみるのが最も整合的だが、その達成手段と時間軸には複数のシナリオが残る。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "低",
+        "control_type": "distributed",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "ウクライナがNATOに正式加盟するか、事実上の安全保障保証（NATO並みの防衛コミットメント）を得るか、それともロシアが受け入れ可能な形で「非加盟・中立に近い状態」にとどまるか。",
+          "secondary_hinges": [
+            "ロシア国内でプーチン体制がどの程度安定しているか（反乱・クーデター・エリート離反の有無）",
+            "ロシアのエネルギー輸出収入と制裁回避の成否（戦争継続の財政余力）",
+            "ウクライナの抵抗意志と西側軍事・財政支援の持続性"
+          ]
+        },
+        "primary_key_point": "NATOのウクライナ加盟・安全保障上の位置づけ（事実上の加盟状態を含む）",
+        "rejected_candidates": [
+          {
+            "key_point": "ロシア国内政権安定（プーチン体制の存続とエリート支配の維持）",
+            "why_not_primary": "ワグネル反乱などから政権安定が極めて重要な制約であることは確かだが、これは戦争の「目的」よりも「手段・強度・時間軸」を制約する要因として機能していると見る方が自然であり、開戦理由や対外的正当化の中心に置かれてはいないため。"
+          },
+          {
+            "key_point": "ロシアのエネルギー輸出と財政持続性",
+            "why_not_primary": "エネルギー依存は戦争継続能力を規定する構造的要因だが、ウクライナ戦争に固有の目的ではなく、ロシア経済全体に共通する制約である。NATO拡大問題ほどウクライナ戦争の開始・継続の説明力は持たない。"
+          },
+          {
+            "key_point": "ウクライナ国内の抵抗意志と西側軍事支援の持続性",
+            "why_not_primary": "これはロシア側の目的ではなく、ロシアの目的達成可能性を左右する外部条件であり、プーチンの戦争目的そのものを規定する蝶番とは言い難い。"
+          }
+        ],
+        "selection_rationale": "Actor Intelligence Packで明示されているプーチンの世界観・レッドラインがNATO東方拡大、とりわけウクライナを含む旧ソ連圏への拡大に集中していることから、ウクライナ戦争の目的・方向性を最も直接的に規定する蝶番は「ウクライナがNATO安全保障枠組みの中でどの位置に置かれるか」であると考えられる。他の候補（国内政権安定、エネルギー収入、ウクライナ抵抗・西側支援）は重要な制約・補助条件だが、戦争開始の動機や公式説明と最も整合的なのはNATO問題である。",
+        "candidate_key_points": [
+          {
+            "key_point": "NATOのウクライナ加盟・安全保障上の位置づけ（事実上の加盟状態を含む）",
+            "control_type": "distributed",
+            "what_it_explains": "なぜプーチンがウクライナに対して軍事行動を取ったのか、なぜ戦争の目的を「非ナチ化」「非軍事化」など安全保障枠組みの変更として説明するのか、なぜNATO側の安全保障保証の内容が停戦・和平の鍵になるのかを説明しやすい。",
+            "why_it_could_be_key": "Actor Intelligence Pack上、プーチンの世界観とレッドラインはNATO東方拡大、とりわけウクライナを含む旧ソ連圏への拡大を中心に構成されている。ウクライナ戦争の開戦理由・継続理由も、この問題設定と強く結びついていると考えられるため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "core_profile.worldview",
+              "core_profile.red_lines"
+            ],
+            "what_it_does_not_explain": "ウクライナ国内政治や領土支配（クリミア・ドンバスなど）の細部、ロシア国内の権力闘争や経済制裁への対応など、戦争の他の側面を直接には説明しない。",
+            "control_structure_summary": "NATO加盟はNATO加盟国全体の合意とウクライナ側の意思決定に依存し、ロシア単独では制御できない。複数主権国家・同盟の合意構造により決まるため、分散的な決定構造。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": [
+              "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8"
+            ]
+          },
+          {
+            "key_point": "ロシア国内政権安定（プーチン体制の存続とエリート支配の維持）",
+            "control_type": "actor_controlled",
+            "what_it_explains": "なぜプーチンが全面動員や極端な政策（例：核使用）に慎重でありつつ、敗北と見なされる譲歩も避けようとするのか、なぜ国内プロパガンダや抑圧を強化しつつ戦争を継続しているのかを説明しやすい。",
+            "why_it_could_be_key": "ワグネル反乱とその後の処理は、ウクライナ戦争が国内権力構造に直接影響していることを示した。プーチンにとって戦争の継続・拡大・縮小は、自身の政権安定と不可分であり、戦争目的もこの制約の下で調整されている可能性が高い。",
+            "controlling_entity_ids": [
+              "897329dc-fbfe-4e2f-b0a1-41e621c065c0"
+            ],
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "NATOやウクライナ側の行動、国際エネルギー市場など外部要因の影響を直接には説明しない。",
+            "control_structure_summary": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": [
+              "d0ef206d-d8d0-4697-8781-bc310387fc31"
+            ]
+          },
+          {
+            "key_point": "ロシアのエネルギー輸出と財政持続性",
+            "control_type": "structural",
+            "what_it_explains": "なぜロシアがエネルギー輸出の多角化や割引販売を通じて収入維持を図っているのか、なぜ戦争が「長期戦」になり得る一方で無制限ではないのかを説明しやすい。",
+            "why_it_could_be_key": "Actor Intelligence Packによれば、ロシアはエネルギー輸出収入への財政的依存が構造的制約となっている。長期戦を遂行するには財政基盤が不可欠であり、エネルギー収入と制裁回避の成否が戦争継続能力を規定する可能性がある。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "core_profile.structural_constraints"
+            ],
+            "what_it_does_not_explain": "戦場での具体的な軍事行動や政治的スローガン、短期的な攻勢・停戦のタイミングなどは直接には説明しない。",
+            "control_structure_summary": "世界のエネルギー需要・価格、制裁レジーム、第三国（中国・インド等）の購買行動など、複数の外部要因に依存する構造的制約であり、単一Actorの意思では制御できない。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "ウクライナ国内の抵抗意志と西側軍事支援の持続性",
+            "control_type": "distributed",
+            "what_it_explains": "なぜロシアが短期決戦から長期消耗戦へ戦略をシフトしたと解釈されるのか、なぜ停戦・和平の可能性がウクライナと西側の意思に大きく依存するのかを説明しやすい。",
+            "why_it_could_be_key": "ロシア側の目的が何であれ、ウクライナの抵抗と西側支援が続く限り、短期の完全勝利は困難であり、戦争の形は「消耗戦」「凍結紛争」「限定的攻勢」などに制約される。これはプーチンの選択肢を大きく制限する。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "ロシア側の内部政治や経済制約、NATO拡大に対する長期的世界観などは直接には説明しない。",
+            "control_structure_summary": "ウクライナ政府・社会の抵抗意志と、米国・欧州主要国の政治日程・世論・防衛産業能力に依存する分散構造であり、ロシア単独では制御できない。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "もしロシアが、ウクライナのNATO正式加盟やNATO並みの安全保障保証を事実上容認しつつ、戦争を自発的に終結させる、あるいは大きな反発なく受け入れるような行動を取れば、「NATO拡大阻止」がKey Pointであるという前提自体を見直す必要がある。",
+        "controlling_entity_ids": null,
+        "supporting_evidence_ids": [
+          "core_profile.worldview",
+          "core_profile.red_lines"
+        ],
+        "control_structure_summary": "NATOのウクライナ加盟・安全保障上の位置づけは、NATO加盟国の合意、ウクライナの意思、ロシアの軍事・外交圧力が相互に影響し合う分散的な決定構造であり、単一Actorの意思では決まらない。プーチンは軍事力・エネルギー・外交を通じてこの構造に影響を与えようとしているが、完全なコントロールはできない。",
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": "supporting_evidence_ids consisted solely of Derived Intelligence IDs (historical episodes / actor-intelligence-derived evidence) with no remaining current-case evidence after separation; confidence capped at low (historical pattern is prior/plausibility, not current proof).",
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": [
+          "c7582597-f5fe-4bf9-a521-b9cbac5e7dd8"
+        ]
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "現時点の資料では、プーチンが具体的にどのラインで停戦・和平を受け入れる用意があるのか（領土・安全保障枠組み・制裁解除の組み合わせ）は判断できない。また、ロシア国内エリート・軍・治安機関の内部力学についても、断片的情報しかなく、高い確度での評価は困難である。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "エスカレーション・ドミナンス追求シナリオ：プーチンが現状の長期消耗戦では国内支持や戦場での劣勢を覆せないと判断し、より大規模な動員、インフラ・都市への大規模攻撃、核シグナリングの一段の強化などを通じて、ウクライナと西側に譲歩を強要しようとする。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "上記のような大規模敗北や国内不満の爆発が観測され、現状の長期消耗戦が政権安定にとって耐え難いコストと化した場合。"
+          ],
+          "weakening_conditions": [
+            "ロシアが現状の戦線を維持しつつ、限定的な戦果を国内向けに「勝利」として宣伝できている。",
+            "西側支援が政治・財政要因で頭打ちになり、ロシア側が急激な劣勢に陥っていない。"
+          ],
+          "strengthening_conditions": [
+            "ロシア軍が戦線で大規模な敗北を喫し、象徴的な都市や要衝を失う。",
+            "国内で戦争指導部への不満が高まり、現状維持が政権にとってより大きなリスクとなる。",
+            "西側の軍事支援が質・量ともに大幅に強化され、ロシアが軍事的に明確な劣勢に追い込まれる。"
+          ],
+          "confidence_adjustment_reason": null
+        },
+        {
+          "confidence": "低",
+          "description": "限定的譲歩・管理されたディエスカレーションシナリオ：プーチンが政権安定と経済負担を優先し、ウクライナの形式的非加盟や特定地域の地位に関する妥協など、NATOとの何らかの安全保障枠組みを受け入れつつ、一定の領土支配や安全保障上の譲歩を得る代わりに戦争を段階的に縮小する。",
+          "evidence_class": "model_general_knowledge",
+          "switch_conditions": [
+            "ロシア国内での経済・社会状況が政権安定を脅かすレベルに悪化し、エリート・軍・治安機関内で戦争縮小を求める声が顕著に強まる場合。"
+          ],
+          "weakening_conditions": [
+            "ロシアがエネルギー輸出の多角化や制裁回避に成功し、戦争継続の財政的余力を維持できている。",
+            "国内プロパガンダが強く機能し、譲歩を伴う停戦が「敗北」と受け止められるリスクが高いままである。"
+          ],
+          "strengthening_conditions": [
+            "制裁と戦費負担によりロシア経済が顕著に悪化し、社会不満やエリート層の不満が高まる。",
+            "中国など第三国から、戦争継続よりも安定を求める圧力が強まる。"
+          ],
+          "confidence_adjustment_reason": null
+        }
+      ],
+      "monitoring_indicators": [
+        "プーチンの主要演説（例：年次教書、Valdai、Direct Line）におけるウクライナ戦争の位置づけと勝利条件の言及。",
+        "ロシアの動員政策（部分動員の継続・拡大・縮小）。",
+        "ロシアのエネルギー輸出動向と制裁回避ルート（対中国・インド等）。",
+        "NATO・米国によるウクライナ支援の規模・質の変化。",
+        "ロシア国内での抗議・エリート離反・治安機関の動きに関する信頼できる報道。"
+      ],
+      "retraction_conditions": [
+        "ロシアがウクライナ全土の占領や政権転覆を明確な目標として再度大規模攻勢を仕掛け、全面動員や総力戦体制に移行する。",
+        "ロシアがウクライナのNATO加盟やNATO並みの安全保障保証を事実上容認しつつ、戦争を自発的に終結させる。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "69e8064f-b236-42e8-89b1-e92a4c866987",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "e2fed736-6330-4d6c-83bf-740800dab58c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "9181293d-9a2b-4bbe-8297-3d3c3dc74a53",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "36b1602d-4b17-4f3d-8c97-794a46e4eb7a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "eba1d367-ab95-41c6-bebd-53a53903bd58",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "609a1837-e29b-4215-9660-93d1f96f8ebe",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "50a2a155-3437-46db-8cc3-5ea55b08a385",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "62010532-a2fc-4f6d-8384-4ab94401e852",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3326dcdc-72b1-434b-8c14-7e4f5022c7b4",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "b47f3ca0-a472-46ed-8031-a43590d9562a",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "ロシアが戦争初期にキエフ近郊から撤退し、戦線を東部・南部に集中させたことは、ウクライナ全土の完全占領が現実的でないことを示唆しており、主目的が「完全占領」ではない可能性を強める。",
+      "contradicting_evidence": null,
+      "investigation_questions": [
+        {
+          "question": "プーチンが直近の主要演説で、ウクライナ戦争の「勝利条件」や「受け入れ可能な妥協ライン」をどのように定義しているか。",
+          "rationale": "Key Point（NATO拡大阻止）とPersistent Preference仮説の検証。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ロシア国内エリート・軍・治安機関内で、戦争継続・拡大・縮小に関する意見分布はどうなっているか。",
+          "rationale": "Preference-Action Gap（政権安定と戦争強度）の説明精度向上。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "ロシアのエネルギー輸出収入と制裁回避の現状は、戦費と社会支出をどの程度支えられているか。",
+          "rationale": "Key Point候補「エネルギー輸出と財政持続性」の強さ評価。",
+          "answer_if_yes": null,
+          "question_type": "evidence_check",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "プーチンがウクライナ戦争の「勝利条件」や「受け入れ可能な妥協ライン」をどこに置いているかについての、具体的かつ最新の公式発言・内部評価。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "直近の演説・インタビュー・政策文書を収集し、NATO・ウクライナ・領土問題に関する言及を系統的に整理する。"
+        },
+        {
+          "priority": "中",
+          "description": "ロシア国内のエリート・軍・治安機関内で、ウクライナ戦争継続・縮小・拡大に関する意見分布と、そのプーチンへの影響。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "信頼できるシンクタンク・専門家の分析やリーク情報を参照しつつ、エリート内の分裂・支持構造をマッピングする。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "プーチンの真の目的は、ウクライナのNATO加盟阻止ではなく、ウクライナ国家の完全従属・ロシア化（政権転覆・完全占領）であり、現在の長期戦は単に能力不足によるものであって、目的自体は最大限強硬なままである可能性がある。",
+      "key_stakeholder_assessment": {
+        "rationale": "Actor Intelligence Packによれば、プーチンはロシアの対外安全保障政策、とりわけNATO東方拡大への対応と旧ソ連圏への影響力維持に関して、公式・実質の決定権を持つ中心人物である。ウクライナ戦争の開戦決定・継続・エスカレーション/ディエスカレーションの主要な意思決定者もプーチンとみなすのが妥当であり、他のエリートや制度は重要な制約・支援要因ではあるが、Key Stakeholderとしてはプーチン個人が最も適切である。",
+        "confidence": "中",
+        "evidence_ids": [
+          "d0ef206d-d8d0-4697-8781-bc310387fc31"
+        ],
+        "determination": "single",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "putin"
+        ]
+      },
+      "situation_actor_assessment": [
+        {
+          "salience": "high",
+          "actor_ref": "putin",
+          "confidence": "中",
+          "evidence_ids": [],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "ウクライナが形式的・実質的にNATO防衛コミットメントの外側にとどまり、ロシアの安全保障上の要求が何らかの形で反映される状態。",
+          "issue_component": "ウクライナのNATO加盟阻止",
+          "likely_reaction": "NATO加盟が具体化すれば、軍事・政治的エスカレーションを伴う強い反発。",
+          "current_red_line": "ウクライナの正式加盟やNATO並みの防衛コミットメントを含む枠組み。",
+          "stated_preference": "NATO東方拡大は受け入れられない。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "Actor Intelligence Pack上の世界観・レッドラインと直結しており、ウクライナ戦争の開戦理由・継続理由の中心。",
+          "currently_tradeable": "現時点では交渉材料ではなく、譲れない一線として扱われていると推定される。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "軍事力と長期戦によるコスト付け。",
+          "effect_on_actor_objective": "この目的が達成されれば、旧ソ連圏への影響力維持と大国としての地位を示すことができるが、失敗すれば世界観とレッドラインが崩れ、政権の正当性が大きく損なわれる。",
+          "estimated_real_preference": "ウクライナの完全加盟阻止が最優先であり、形式的非加盟＋実質的保証の扱いについては内部で議論の余地がある可能性。",
+          "alternative_interpretation": "真の目的はウクライナの完全従属であり、NATO加盟阻止はその一部に過ぎない可能性。",
+          "primary_binding_constraint": "NATO・ウクライナ側の意思決定にロシアが直接介入できないこと。",
+          "issue_component_description": "ウクライナが正式加盟または事実上の安全保障保証を得ることを防ぐ。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "plausible"
+        },
+        {
+          "salience": "high",
+          "actor_ref": "putin",
+          "confidence": "中",
+          "evidence_ids": null,
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "戦争を利用して権力基盤を強化しつつ、反乱やクーデターを防ぐ。",
+          "issue_component": "ロシア国内政権安定",
+          "likely_reaction": "戦況が悪化すれば、抑圧強化とナラティブの調整で政権への責任集中を回避しようとする。",
+          "current_red_line": "政権の正当性を脅かす形での明白な敗北や譲歩。",
+          "stated_preference": "国内の安定と秩序の維持。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "ワグネル反乱とその後の処理から、政権安定が最優先課題の一つであることが示唆される。",
+          "currently_tradeable": "政権安定そのものは交渉材料にならないが、戦争の強度や譲歩の程度は政権安定とのトレードオフで調整され得る。",
+          "genuine_or_tactical": "genuine",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "治安機関を通じた抑圧とエリートへの配分。",
+          "effect_on_actor_objective": "政権が不安定化すれば、ウクライナ戦争の目的達成以前に自身の権力が危うくなる。",
+          "estimated_real_preference": "戦争が政権基盤を強化する範囲で継続し、逆効果になれば強度を調整する。",
+          "alternative_interpretation": "政権安定は既に十分確立されており、戦争はほぼ自由にエスカレートできるという見方。",
+          "primary_binding_constraint": "エリート・軍・治安機関の忠誠維持。",
+          "issue_component_description": "プーチン体制の存続とエリート支配の維持。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "weak"
+        },
+        {
+          "salience": "medium",
+          "actor_ref": "putin",
+          "confidence": "中",
+          "evidence_ids": [],
+          "evidence_class": "current_indirect_evidence",
+          "desired_outcome": "制裁下でもエネルギー輸出を通じて十分な収入を確保し、戦費と社会支出を賄う。",
+          "issue_component": "戦争の財政持続性",
+          "likely_reaction": "財政圧力が高まれば、戦争強度の調整や社会支出削減を検討。",
+          "current_red_line": "戦費が社会不安を引き起こすレベルに達すること。",
+          "stated_preference": "経済の安定維持。",
+          "instrumental_value": "intrinsic",
+          "priority_rationale": "構造的制約として重要だが、短期的には政治・軍事判断が優先される局面もある。",
+          "currently_tradeable": "戦費と社会支出の配分は調整可能な交渉材料。",
+          "genuine_or_tactical": "mixed",
+          "media_salience_basis": null,
+          "media_salience_signal": "neutral",
+          "primary_usable_leverage": "エネルギー輸出の方向転換と価格交渉。",
+          "effect_on_actor_objective": "財政が持続可能であれば長期戦が可能だが、限界を超えると政権安定が脅かされる。",
+          "estimated_real_preference": "戦争継続に必要な最低限の経済安定を確保できれば、一定の成長鈍化は許容。",
+          "alternative_interpretation": "財政制約は誇張されており、ロシアはほぼ無制限に戦争を継続できるという見方。",
+          "primary_binding_constraint": "制裁とエネルギー市場の動向。",
+          "issue_component_description": "エネルギー輸出収入と制裁回避による戦費・社会支出の維持。",
+          "confidence_adjustment_reason": null,
+          "alternative_interpretation_status": "weak"
+        }
+      ],
+      "decisive_power_and_leverage": "as_of 2026-08-31、ウクライナ戦争の方向性を最終的に大きく変え得る決定力は、ロシア側ではプーチン個人とその周辺安全保障エリート（軍・治安機関）、他方では米国・主要NATO諸国の支援継続意思に分散している。プーチンはロシア側の軍事行動・交渉方針をほぼ一手に握るが、戦争の持続可能性はエネルギー収入・制裁・国内支持・NATO支援という構造的要因にも強く制約されている。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": null
+    },
+    "created_at": "2026-09-01T08:15:50.421814+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "bb16c05d-436d-47c4-83c0-8789ea6667e6",
+    "response_id": "ae76ea5e-079d-4b85-bcff-b2d485570958",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Vladimir Putin, ロシア軍・治安機関（国防省、FSB等）, ロシア経済・財政当局（財務省、中央銀行等）, NATO主要国（特に米国）, ウクライナ政府",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 33,
+    "failed_count": 1,
+    "created_at": "2026-09-01T08:15:50.850298+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": [
+      "key_actor_profiles[0].evidence_ids=core_profile.worldview",
+      "key_actor_profiles[0].evidence_ids=core_profile.red_lines",
+      "key_actor_profiles[0].persistent_preference_evidence[0].claim_id=core_profile.worldview",
+      "key_actor_profiles[0].persistent_preference_evidence[1].claim_id=core_profile.red_lines",
+      "key_actor_profiles[0].action_substance.evidence_ids=core_profile.worldview",
+      "key_actor_profiles[0].action_substance.evidence_ids=core_profile.red_lines",
+      "key_stakeholder_assessment.evidence_ids=core_profile.worldview",
+      "key_stakeholder_assessment.evidence_ids=core_profile.red_lines",
+      "situation_actor_assessment[0].evidence_ids=core_profile.worldview",
+      "situation_actor_assessment[0].evidence_ids=core_profile.red_lines",
+      "situation_actor_assessment[2].evidence_ids=core_profile.structural_constraints"
+    ],
+    "confidence_adjustments": [
+      "main_scenario",
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "putin"
+    ],
+    "historical_evidence_separations": [
+      "key_point_assessment",
+      "key_point_assessment.candidate_key_points[0]",
+      "key_point_assessment.candidate_key_points[1]"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ],
+    "actor_evidence_separations": [
+      "key_actor_profiles[0]:removed=['d0ef206d-d8d0-4697-8781-bc310387fc31', 'c7582597-f5fe-4bf9-a521-b9cbac5e7dd8']",
+      "situation_actor_assessment[1]:removed=['d0ef206d-d8d0-4697-8781-bc310387fc31']"
+    ]
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82003,
+    "completion_tokens": 14272,
+    "total_tokens": 96275
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 184375,
+        "prompt_tokens": 38264,
+        "completion_tokens": 9118
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 80500,
+        "prompt_tokens": 43739,
+        "completion_tokens": 5154
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: Vladimir Putin, ロシア軍・治安機関（国防省、FSB等）, ロシア経済・財政当局（財務省、中央銀行等）, NATO主要国（特に米国）, ウクライナ政府"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 294.2891900539398
+}

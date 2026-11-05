@@ -23,6 +23,16 @@ const STRINGS: Record<Lang, Record<string, string>> = {
       "案件ボード等、Pilot参加者向けの追加情報を見るために必要です。Pilotに参加していない場合は空欄のままで構いません。",
     "geo.settings.clearCredential": "Credentialを削除",
     "geo.settings.save": "保存",
+    "geo.settings.ssoLoggedIn": "SSOでログイン中",
+    "geo.settings.ssoNote":
+      "ユーザーIDと権限は、SSOのアカウントから自動で決まります（この画面での設定は不要です）。",
+    "geo.settings.ssoLogout": "ログアウト",
+    "sso.signingIn": "ログインしています…",
+    "sso.needLocalhost":
+      "SSOを使うには、アドレスを localhost に変えて開いてください（127.0.0.1 では、Entraに登録したリダイレクトURIと一致せず、ログインできません）。",
+    "sso.openLocalhost": "localhost で開く",
+    "sso.error": "ログインに失敗しました",
+    "sso.retry": "もう一度ログインする",
 
     "sidebar.categories": "カテゴリ",
     "sidebar.competitorMonitoring": "競合モニタリング",
@@ -404,6 +414,7 @@ const STRINGS: Record<Lang, Record<string, string>> = {
     "nav.geoCases": "案件（Case）",
     "nav.geoKnowledgeReview": "ナレッジ承認",
     "nav.geoIntelligenceNeeds": "ニーズDB",
+    "nav.geoKnowledgeIntake": "ナレッジ追加",
     "nav.geoSourcesDocuments": "ソース・文書",
     "nav.geoIndicatorMonitor": "Indicator Monitor",
     "nav.geoHome": "Home",
@@ -1671,6 +1682,16 @@ const STRINGS: Record<Lang, Record<string, string>> = {
       "Needed to see pilot-only information such as the case board. Leave blank if you're not part of the pilot.",
     "geo.settings.clearCredential": "Clear credential",
     "geo.settings.save": "Save",
+    "geo.settings.ssoLoggedIn": "Signed in with SSO",
+    "geo.settings.ssoNote":
+      "Your user ID and permissions are determined by your SSO account (no setup needed here).",
+    "geo.settings.ssoLogout": "Sign out",
+    "sso.signingIn": "Signing in…",
+    "sso.needLocalhost":
+      "To use SSO, open this site at localhost instead of 127.0.0.1 (127.0.0.1 does not match the redirect URI registered in Entra, so sign-in fails).",
+    "sso.openLocalhost": "Open with localhost",
+    "sso.error": "Sign-in failed",
+    "sso.retry": "Sign in again",
 
     "sidebar.categories": "Categories",
     "sidebar.competitorMonitoring": "Competitor Monitoring",
@@ -2045,6 +2066,7 @@ const STRINGS: Record<Lang, Record<string, string>> = {
     "nav.geoCases": "Cases",
     "nav.geoKnowledgeReview": "Knowledge Review",
     "nav.geoIntelligenceNeeds": "Needs DB",
+    "nav.geoKnowledgeIntake": "Add Knowledge",
     "nav.geoSourcesDocuments": "Sources & Documents",
     "nav.geoIndicatorMonitor": "Indicator Monitor",
     "nav.geoHome": "Home",

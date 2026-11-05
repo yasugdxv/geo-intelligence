@@ -1,0 +1,11 @@
+# OFACは1日1回、深夜帯に起動する（前回が実行中ならJob側のlockでskipされる）。
+[Unit]
+Description=Geo Intelligence Scheduler - OFAC (daily, night)
+
+[Timer]
+OnCalendar=*-*-* 18:00:00
+Persistent=true
+Unit=geo-scheduler-ofac.service
+
+[Install]
+WantedBy=timers.target

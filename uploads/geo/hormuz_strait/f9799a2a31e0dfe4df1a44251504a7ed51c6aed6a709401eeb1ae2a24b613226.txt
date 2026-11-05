@@ -1,0 +1,7 @@
+CLEANUP_STEP0_AIFLOW_BASELINE: ホルムズ海峡通航に関するBaseline計測用レポート
+
+本レポートは、Cleanup Step 0のAI Flow Baseline計測（Report Review/Delta extraction）専用の
+一意な識別可能テストデータである。イラン（Iran）による原油タンカーの臨検強化措置が、
+ホルムズ海峡を通過する国際海運のリスクプレミアムに与える影響を分析する体裁を取る。
+2026年第2四半期以降、IRGC海軍によるタンカー臨検件数が増加傾向にあり、湾岸諸国の
+エネルギー輸出に係る保険料率にも上昇圧力がかかっている。

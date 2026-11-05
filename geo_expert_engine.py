@@ -2015,6 +2015,7 @@ def _build_system_prompt(mode: str, knowledge_block: str, profile: str = "standa
     return f"""あなたは地政学インテリジェンス基盤の地政学専門家AIです。以下のKnowledgeに
 従って分析してください。専門家レビュー前の一次フィルターであり、最終判断は行いません。
 
+{geo_expert_schema.EXPERT_INTENT_NOTE}
 {knowledge_block}
 
 【今回のモード】{mode}
@@ -3401,7 +3402,22 @@ def _rebind_or_unresolve_invalid_entity_references(
     return touched
 
 
-def _resolve_entity_identity_consistency(response: dict, *, stage1_visible_entity_names: dict) -> list:
+def _fetch_entity_alt_names(client, entity_ids) -> dict:
+    """entity_id→[name_en, name_ja, local_name]（照合用）を1回のSELECTで取得する。取得に失敗しても
+    Expert AIの実行は止めず、空dictを返す（その場合は従来どおりcanonical_nameのみで照合される）。"""
+    ids = sorted({i for i in (entity_ids or []) if i})
+    if not ids:
+        return {}
+    try:
+        rows = client.select("geo_entities", {
+            "select": "entity_id,name_en,name_ja,local_name", "entity_id": f"in.({','.join(ids)})"})
+    except Exception:  # noqa: BLE001 — 照合の補助情報の取得失敗で本処理を止めない
+        return {}
+    return {r["entity_id"]: [r.get(f) for f in ("name_en", "name_ja", "local_name") if r.get(f)] for r in rows or []}
+
+
+def _resolve_entity_identity_consistency(response: dict, *, stage1_visible_entity_names: dict,
+                                         entity_alt_names: dict | None = None) -> list:
     """Phase 6E-5(Entity Identity Integrity、ユーザー指示): _rebind_or_unresolve_invalid_
     entity_referencesは、entity_idがstage1_visible_entity_idsに含まれない場合のみ検証し、
     含まれる場合は無条件でスキップする。これは「entity_idそのものは今回提示範囲内で正当
@@ -3428,8 +3444,14 @@ def _resolve_entity_identity_consistency(response: dict, *, stage1_visible_entit
             continue
         canonical_name = stage1_visible_entity_names[entity_id]
         actor_label = (kap.get("actor") or kap.get("actor_ref") or "")
-        name_matched = bool(actor_label) and (
-            canonical_name.lower() in actor_label.lower() or actor_label.lower() in canonical_name.lower())
+        # 2026-11-04修正: canonical_name(英語の正式名)だけで照合すると、AIが「トランプ」のように
+        # 日本語で書いた正しいActorまでmismatch扱いになりentity_idが消えていた。隣の
+        # _rebind_or_unresolve_invalid_entity_referencesと同じく、name_en/name_ja/local_name
+        # (取得できた分)のいずれかと部分一致すれば一致とみなす。
+        candidate_names = [canonical_name] + list((entity_alt_names or {}).get(entity_id) or [])
+        name_matched = bool(actor_label) and any(
+            name and (name.lower() in actor_label.lower() or actor_label.lower() in name.lower())
+            for name in candidate_names)
         if not name_matched:
             kap["entity_id"] = None
             mismatches.append({
@@ -3576,6 +3598,54 @@ def _detect_unused_rich_actor_intelligence(actor_intelligence_pack: dict | None,
                 "actor_intelligence_status": ka.get("actor_intelligence_status"),
             })
     return unused
+
+
+# 2026-11-04追加: 新モデルは、プロンプト中の「as_of=日付より後の情報は除外」という注記を写して、本文の
+# 書き出しに「as_of: 2026-11-04。」と付けることがある（旧モデルでも「as_of 日付時点では」があった）。
+# 読み手に無意味で、品質ガードの時点混乱チェックにも掛かり、タイトルが日付だけになる原因だった。
+# 先頭に付いた「as_of 日付(＋時点では等)」だけを決定的に取り除く（本文の意味は変えない）。
+_AS_OF_PREFIX_PATTERN = re.compile(
+    "^[ 　]*[(（]?[ 　]*as[ _-]?of[ 　]*[:：=]?[ 　]*[0-9]{4}[ 　]*[-/年.][ 　]*[0-9]{1,2}[ 　]*[-/月.]"
+    "[ 　]*[0-9]{1,2}[ 　]*日?[ 　]*(?:時点(?:では|で|の)?)?[ 　]*[)）]?[ 　]*[。、,，:：]?[ 　]*", re.IGNORECASE)
+
+
+# 2026-11-04追加: 新モデルは、本文の先頭に「H1：」や「H0を主シナリオとして採用する。」のような内部ラベルを書くことがある
+# （旧モデルは0%、新モデルは本線・代替シナリオの約5割）。読み手に無意味なので、先頭のラベルだけを取り除く。
+_HYPOTHESIS_LABEL_PREFIX_PATTERN = re.compile(
+    "^[ 　]*H[0-9]+[ 　]*(?:[：:][ 　]*|を(?:主シナリオとして)?採用(?:する|します)[。．][ 　]*)")
+
+
+def _strip_leading_as_of(text):
+    if not isinstance(text, str):
+        return text
+    stripped = _AS_OF_PREFIX_PATTERN.sub("", text, count=1)
+    stripped = _HYPOTHESIS_LABEL_PREFIX_PATTERN.sub("", stripped, count=1)
+    return stripped if stripped.strip() else text  # 全部消えてしまう場合は元のまま
+
+
+def _strip_as_of_prefix_in_response(response: dict) -> int:
+    """読み手が読む主要な文章フィールドの先頭から「as_of 日付」を取り除く。戻り値は修正した件数。"""
+    changed = 0
+
+    def _fix(container, key):
+        nonlocal changed
+        if isinstance(container, dict) and isinstance(container.get(key), str):
+            new = _strip_leading_as_of(container[key])
+            if new != container[key]:
+                container[key] = new
+                changed += 1
+
+    _fix(response, "one_line_assessment")
+    _fix(response.get("main_scenario"), "description")
+    kpa = response.get("key_point_assessment")
+    _fix(kpa, "primary_key_point")
+    for c in (kpa or {}).get("candidate_key_points") or []:
+        _fix(c, "key_point")
+    for alt in response.get("alternative_scenarios") or []:
+        _fix(alt, "description")
+    for h in response.get("hypothesis_register") or []:
+        _fix(h, "description")
+    return changed
 
 
 def _apply_stage_optional_defaults(response: dict) -> None:
@@ -3974,26 +4044,42 @@ def run_expert_request_staged(client, azure_client, model: str, mode: str, theme
     # search_budgetを消費）。Web Searchを先に行わず、既存DB Retrievalの結果を見てから
     # 「何が足りないか」を判断する、という順序を守る。
     research_metadata = {"sufficiency_gate_enabled": external_research_enabled()}
-    if theme_id and external_research_enabled():
+    # 2026-11-04修正: 従来はtheme_idが空の実行（画面のIntake経由など）ではGateの手前で検索自体が
+    # スキップされていた。geo_documents.theme_idはNOT NULLのため、空のときは共通のad-hocテーマへ
+    # 保存する（Source Packの検索はtheme_id=Noneのまま、従来どおり）。
+    research_theme_id = theme_id
+    if external_research_enabled() and not research_theme_id:
+        try:
+            research_theme_id = geo_expert_research_service.get_or_create_adhoc_research_theme(client)
+            research_metadata["adhoc_research_theme"] = True
+        except Exception as exc:  # noqa: BLE001 — 検索の準備に失敗しても推論自体は続ける
+            research_metadata["adhoc_research_theme_error"] = str(exc)[:200]
+    if research_theme_id and external_research_enabled():
         initial_sufficiency = geo_expert_research_service.assess_research_sufficiency(
-            source_pack, query_text=query_text)
+            source_pack, query_text=query_text,
+            newest_evidence_age_days=geo_expert_research_service.newest_document_age_days(
+                client, source_pack.get("document_ids")))
         research_metadata["initial_sufficiency"] = initial_sufficiency
         research_cycle_result = geo_expert_research_service.run_research_cycle(
-            client, azure_client, model, theme_id=theme_id, query_text=query_text,
+            client, azure_client, model, theme_id=research_theme_id, query_text=query_text,
             sufficiency=initial_sufficiency)
         research_metadata["research_cycle"] = {
             k: v for k, v in research_cycle_result.items() if k != "documents_added"
         }
         documents_added = research_cycle_result.get("documents_added") or []
+        # 保存済みURLの再利用分も、今回の分析の材料としてSource Packへ含める
+        documents_reused = research_cycle_result.get("documents_reused") or []
         research_metadata["documents_added_count"] = len(documents_added)
-        if documents_added:
+        research_metadata["documents_reused_count"] = len(documents_reused)
+        if documents_added or documents_reused:
             # 新規永続化したdocumentをsource_packへ再構築する（DB専用、追加Azure
             # Callなし）。既存keyword-matched検索（日本語クエリ由来のKeywordを想定）は
             # English中心のExternal Research結果のtitle/extracted_textとILIKEで
             # 一致しないことがあるため、Research Cycleが返した既知のdocument_idを
             # extra_document_idsとして明示的に渡し、keyword一致に関わらず必ず含める
             # （呼び出し元が指定したextra_document_idsがあればマージする）。
-            merged_extra_ids = list(extra_document_ids or []) + [d["document_id"] for d in documents_added]
+            merged_extra_ids = list(extra_document_ids or []) + [
+                d["document_id"] for d in (documents_added + documents_reused)]
             source_pack = build_source_pack(
                 client, theme_id, query_text, extra_document_ids=merged_extra_ids)
         research_metadata["final_sufficiency"] = geo_expert_research_service.assess_research_sufficiency(
@@ -4454,6 +4540,8 @@ def run_expert_request_staged(client, azure_client, model: str, mode: str, theme
               "main_scenario.derived_from_hypothesis_idへその仮説のhypothesis_idを"
               "記録すること。拮抗する仮説があれば、採用した場合に何が変わるかをalternative_"
               "scenarios（該当するderived_from_hypothesis_idも記録）へ反映すること。"
+              "各シナリオ（main_scenario/alternative_scenarios）のdescriptionは、H0/H1等の内部ラベルや『採用した場合』という書き方を使わず、他の仮説を参照しなくても読める独立した読み筋（誰が・なぜ・どう動き・その結果どうなるか）として書くこと。本線との違いはswitch_conditionsに書くこと。"
+              "alternative_scenariosには、主シナリオと結果の方向が大きく異なるもの（悪化・無秩序化・合意の空洞化・当事者の意図と逆の結果など）が、与えられた状況から根拠を持って成立し得る場合は、少なくとも1つ含めること（無理に作らず、成立し得ない場合は含めなくてよい）。"
             + supplemental_retrieval_text
             + activated_model_cards_text
             + trajectory_context_text
@@ -4618,7 +4706,8 @@ def run_expert_request_staged(client, azure_client, model: str, mode: str, theme
     # その実際のcanonical_nameと矛盾する」ケースを追加検証する（rebindの後に実行し、
     # rebindで既にnull化されたentity_idは自然に対象外になる）。
     entity_identity_mismatches = _resolve_entity_identity_consistency(
-        response_json, stage1_visible_entity_names=stage1_visible_entity_names)
+        response_json, stage1_visible_entity_names=stage1_visible_entity_names,
+        entity_alt_names=_fetch_entity_alt_names(client, stage1_visible_entity_names.keys()))
     unused_rich_actor_intelligence = _detect_unused_rich_actor_intelligence(
         actor_intelligence_pack, response_json)
     # Phase 7-1A Telemetry(ユーザー指示): Controller/Rich Actor CandidateごとのAVAILABLE/
@@ -4640,6 +4729,7 @@ def run_expert_request_staged(client, azure_client, model: str, mode: str, theme
             {"entity_id": eid, "canonical_name": name} for eid, name in _entity_backed_candidates_seen.items()],
         label_only_candidates=institutional_controller_candidates, response=response_json)
     _apply_stage_optional_defaults(response_json)
+    _strip_as_of_prefix_in_response(response_json)
     if actor_intelligence_pack is not None:
         # Retrieval側が決定的に算出した充足度をそのまま設定する（LLMには生成させない）。
         response_json["actor_intelligence_status"] = actor_intelligence_pack.get("actor_intelligence_status")
@@ -4757,6 +4847,7 @@ def run_expert_request_staged(client, azure_client, model: str, mode: str, theme
                     response_json, derived_intelligence_ids)
                 pattern_applicability_fallbacks += geo_expert_quality_guard.ensure_pattern_applicability_assessment(response_json)
                 _apply_stage_optional_defaults(response_json)
+                _strip_as_of_prefix_in_response(response_json)
                 if actor_intelligence_pack is not None:
                     response_json["actor_intelligence_status"] = actor_intelligence_pack.get("actor_intelligence_status")
                 guard_result = geo_expert_quality_guard.run_quality_guard(

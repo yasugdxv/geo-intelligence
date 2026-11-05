@@ -1,0 +1,50 @@
+{
+  "S1-N01": {
+    "review_verdict": "approved",
+    "issues_found_count": 3,
+    "issues_found": [
+      {
+        "axis": "superficial_interpretation",
+        "detail": "加盟国による『合意・決定』を主要な駆動要因としているが、観測可能なのはタイトルレベルの事実のみであり、政治的背景や制度設計上の理由には踏み込んでいない。ただし、今回の観測データが極めて限定的であることを明示し、因果の詳細には踏み込まない姿勢を維持しているため、許容範囲の簡潔さにとどまっている。",
+        "target": "drivers[0].mechanism / central_assessment.summary"
+      },
+      {
+        "axis": "insufficient_counter_hypotheses",
+        "detail": "『執行タイムラインの遅延』を主要な特徴としているが、遅延が一時的な政治妥協なのか、制度設計上の恒常的な見直しの一環なのか、あるいは実務準備の遅れへの対応なのかといった対立仮説の提示はない。ただし、法的メカニズムや準備状況が不明であることを明示しており、観測データの範囲内で過度な解釈を避けているため、重大な問題とは言えない。",
+        "target": "central_assessment.summary / findings[0]"
+      },
+      {
+        "axis": "media_framing_dependence",
+        "detail": "『EU Member States Agree to One-Year Delay』『Delay until December 2026』というタイトル表現をそのまま用いており、遅延の性質（完全な施行延期か、一部義務の猶予か等）については媒体側のフレーミングに依拠している。ただし、本文情報が欠如していることを繰り返し明示し、詳細な法的評価を行っていないため、フレーミング依存による誤った因果推論には踏み込んでいない。",
+        "target": "drivers[0].mechanism / findings[0]"
+      }
+    ],
+    "draft_equals_final": true,
+    "draft_len": 7647,
+    "final_draft_len": 7647
+  },
+  "S1-N02": {
+    "review_verdict": "approved",
+    "issues_found_count": 0,
+    "issues_found": [],
+    "draft_equals_final": true,
+    "draft_len": 3707,
+    "final_draft_len": 3707
+  },
+  "S1-N03": {
+    "review_verdict": "approved",
+    "issues_found_count": 0,
+    "issues_found": [],
+    "draft_equals_final": true,
+    "draft_len": 2440,
+    "final_draft_len": 2440
+  },
+  "S1-N04": {
+    "review_verdict": "approved",
+    "issues_found_count": 0,
+    "issues_found": [],
+    "draft_equals_final": true,
+    "draft_len": 2639,
+    "final_draft_len": 2639
+  }
+}

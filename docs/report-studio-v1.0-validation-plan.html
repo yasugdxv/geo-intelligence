@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report Studio v1.0 検証計画</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --ink: #1b222a;
+    --ink-soft: #4a5560;
+    --ink-faint: #7c8790;
+    --paper: #f1f3f1;
+    --paper-raised: #ffffff;
+    --line: #d8ddd9;
+    --line-strong: #c1c8c2;
+    --accent: #2b6e6b;
+    --accent-ink: #ffffff;
+    --accent-soft: #dcebe9;
+    --good: #4b7a4e;
+    --good-soft: #e3ede3;
+    --watch: #97641f;
+    --watch-soft: #f3e6cf;
+    --critical: #a6432f;
+    --critical-soft: #f4ded9;
+    --shadow: 0 1px 2px rgba(27,34,42,.04), 0 6px 20px -8px rgba(27,34,42,.12);
+    --font-display: 'IBM Plex Serif', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    --font-body: 'IBM Plex Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', Meiryo, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Hiragino Kaku Gothic ProN', Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e7eae7; --ink-soft: #a8b3ac; --ink-faint: #7c8790;
+      --paper: #14181a; --paper-raised: #1c2224; --line: #2b3234; --line-strong: #394144;
+      --accent: #6fc2bc; --accent-ink: #0d2120; --accent-soft: rgba(111,194,188,.14);
+      --good: #86c088; --good-soft: rgba(134,192,136,.14);
+      --watch: #dcab5c; --watch-soft: rgba(220,171,92,.14);
+      --critical: #e08b76; --critical-soft: rgba(224,139,118,.14);
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 24px -8px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e7eae7; --ink-soft: #a8b3ac; --ink-faint: #7c8790;
+    --paper: #14181a; --paper-raised: #1c2224; --line: #2b3234; --line-strong: #394144;
+    --accent: #6fc2bc; --accent-ink: #0d2120; --accent-soft: rgba(111,194,188,.14);
+    --good: #86c088; --good-soft: rgba(134,192,136,.14);
+    --watch: #dcab5c; --watch-soft: rgba(220,171,92,.14);
+    --critical: #e08b76; --critical-soft: rgba(224,139,118,.14);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 24px -8px rgba(0,0,0,.5);
+  }
+
+  * { box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.7; }
+  h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; color: var(--ink); margin: 0; }
+  p { margin: 0 0 .9em; color: var(--ink); }
+  a { color: var(--accent); }
+  ::selection { background: var(--accent-soft); }
+
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+
+  .shell { max-width: 1180px; margin: 0 auto; padding: 0 24px 96px; display: grid; grid-template-columns: 232px minmax(0,1fr); gap: 56px; }
+  @media (max-width: 900px) { .shell { grid-template-columns: 1fr; gap: 0; } }
+
+  .cover { grid-column: 1 / -1; padding: 56px 0 32px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+  .cover .doc-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; color: var(--ink-soft);
+    border: 1px solid var(--line-strong); padding: 4px 10px; border-radius: 3px; margin-bottom: 20px;
+  }
+  .cover .doc-tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  .cover h1 { font-size: clamp(30px, 4.4vw, 46px); font-weight: 600; line-height: 1.15; max-width: 16ch; }
+  .cover .subtitle { font-size: 17px; color: var(--ink-soft); max-width: 58ch; margin-top: 16px; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 26px; font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-soft); }
+  .meta-row strong { color: var(--ink); font-weight: 600; }
+  .meta-inputs { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 18px; }
+  .meta-inputs label { display: flex; flex-direction: column; gap: 5px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); letter-spacing: .04em; }
+  .meta-inputs input { min-width: 220px; }
+
+  .toc { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; }
+  .toc-title { font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; color: var(--ink-faint); text-transform: uppercase; margin-bottom: 14px; }
+  .toc ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+  .toc li a { display: block; padding: 6px 10px; border-radius: 5px; text-decoration: none; color: var(--ink-soft); font-size: 13.5px; border-left: 2px solid transparent; }
+  .toc li a:hover { color: var(--ink); background: var(--paper-raised); }
+  .toc li a.active { color: var(--accent); border-left-color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+  .toc .sub { padding-left: 20px; }
+  .toc .sub a { font-size: 12.5px; }
+  @media (max-width: 900px) {
+    .toc { position: static; max-height: none; padding: 20px 0 8px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+    .toc ol { flex-direction: row; flex-wrap: wrap; }
+    .toc .sub { display: none; }
+  }
+
+  main { min-width: 0; display: flex; flex-direction: column; gap: 64px; }
+  section { scroll-margin-top: 24px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px; }
+  .sec-num { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 600; }
+  .sec-head h2 { font-size: 24px; font-weight: 600; }
+  .sec-lede { color: var(--ink-soft); font-size: 15px; max-width: 68ch; margin-top: -8px; margin-bottom: 22px; }
+
+  .callout { background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 14px 18px; border-radius: 0 6px 6px 0; font-size: 14px; color: var(--ink); margin: 4px 0 24px; }
+  .callout strong { color: var(--accent); }
+  .callout.critical-def { border-left-color: var(--critical); background: var(--critical-soft); }
+  .callout.critical-def strong { color: var(--critical); }
+
+  .theme-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  @media (max-width: 760px) { .theme-grid { grid-template-columns: 1fr; } }
+  .theme-card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px; padding: 20px; box-shadow: var(--shadow); }
+  .theme-card .t-id { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); letter-spacing: .06em; }
+  .theme-card h3 { font-size: 17px; margin-top: 6px; }
+  .theme-card .t-tag { display: inline-block; margin-top: 8px; font-size: 11.5px; font-family: var(--font-mono); font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 4px; }
+  .theme-card p { font-size: 13.5px; color: var(--ink-soft); margin: 10px 0 0; }
+
+  .axis-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+  @media (max-width: 960px) { .axis-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .axis-grid { grid-template-columns: 1fr; } }
+  .axis-card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  .axis-card .a-num { font-family: var(--font-mono); font-size: 20px; color: var(--accent); font-weight: 600; }
+  .axis-card h4 { font-size: 14.5px; margin: 8px 0 6px; }
+  .axis-card p { font-size: 12.5px; color: var(--ink-soft); margin: 0; }
+
+  .crit-block { border: 1px solid var(--line); border-radius: 12px; background: var(--paper-raised); padding: 26px 26px 24px; box-shadow: var(--shadow); }
+  .crit-block + .crit-block { margin-top: 18px; }
+  .crit-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+  .crit-head h3 { font-size: 18px; }
+  .crit-id { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint); }
+  .crit-block .lede { color: var(--ink-soft); font-size: 13.5px; margin: 6px 0 18px; max-width: 72ch; }
+
+  ul.plain, ol.plain { margin: 0 0 14px; padding-left: 20px; }
+  ul.plain li, ol.plain li { margin-bottom: 6px; font-size: 14px; }
+
+  .flow { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-family: var(--font-mono); font-size: 12.5px; margin: 14px 0 4px; }
+  .flow .step { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; color: var(--ink); }
+  .flow .arrow { color: var(--ink-faint); }
+  .flow-label { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .08em; margin-top: 16px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .table-scroll { overflow-x: auto; margin: 14px 0; border: 1px solid var(--line); border-radius: 8px; }
+  .table-scroll table { min-width: 560px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); background: var(--paper); font-weight: 600; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--paper); }
+  td.num, th.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  tr.gate-row td { background: var(--watch-soft); }
+
+  .chip { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-family: var(--font-mono); font-weight: 600; padding: 3px 10px; border-radius: 999px; }
+  .chip.good { background: var(--good-soft); color: var(--good); }
+  .chip.watch { background: var(--watch-soft); color: var(--watch); }
+  .chip.critical { background: var(--critical-soft); color: var(--critical); }
+  .chip.neutral { background: var(--paper); color: var(--ink-soft); border: 1px solid var(--line-strong); }
+
+  .score-group { display: inline-flex; gap: 4px; }
+  .score-group button {
+    width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--line-strong);
+    background: var(--paper-raised); color: var(--ink-soft); font-family: var(--font-mono); font-size: 12px; cursor: pointer;
+  }
+  .score-group button:hover { border-color: var(--accent); color: var(--accent); }
+  .score-group button.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .note-input {
+    width: 100%; min-width: 140px; font-family: var(--font-body); font-size: 13px; color: var(--ink);
+    background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px; resize: vertical;
+  }
+  .note-input:focus, .score-group button:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  .theme-switch { display: inline-flex; gap: 6px; margin-bottom: 12px; }
+  .theme-switch button { font-family: var(--font-mono); font-size: 12px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line-strong); background: var(--paper-raised); color: var(--ink-soft); cursor: pointer; }
+  .theme-switch button.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .quality-table { display: none; }
+  .quality-table.visible { display: block; }
+
+  select {
+    font-family: var(--font-mono); font-size: 12px; color: var(--ink);
+    background: var(--paper-raised); border: 1px solid var(--line-strong); border-radius: 6px; padding: 5px 8px;
+  }
+
+  .checklist-row { display: grid; grid-template-columns: 22px 1fr auto; gap: 10px; align-items: start; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .checklist-row:last-child { border-bottom: none; }
+  .checklist-row input[type="checkbox"] { margin-top: 3px; width: 16px; height: 16px; accent-color: var(--accent); }
+  .checklist-row .cl-label { font-size: 13.5px; }
+
+  .privacy-note { font-size: 11.5px; color: var(--ink-faint); margin-top: 10px; }
+  .clear-btn, .action-btn {
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-soft);
+    background: var(--paper-raised); border: 1px solid var(--line-strong); border-radius: 6px; padding: 7px 12px; cursor: pointer;
+  }
+  .clear-btn:hover { color: var(--critical); border-color: var(--critical); }
+  .action-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .action-btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .action-btn.primary:hover { color: var(--accent-ink); opacity: .9; }
+
+  .control-panel { border: 1px solid var(--watch); background: var(--watch-soft); border-radius: 10px; padding: 18px 20px; margin-bottom: 20px; }
+  .control-panel .cp-tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; color: var(--watch); font-weight: 600; }
+  .control-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 12px; }
+  @media (max-width: 700px) { .control-grid { grid-template-columns: 1fr; } }
+  .control-grid label { display: flex; flex-direction: column; gap: 5px; font-size: 12px; color: var(--ink-soft); }
+  .control-grid .two-col { display: flex; gap: 8px; }
+  .control-check { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 13.5px; }
+  .control-check input { width: 16px; height: 16px; accent-color: var(--watch); }
+
+  .phase-list { display: flex; flex-direction: column; gap: 0; border-left: 2px solid var(--line-strong); margin-left: 6px; }
+  .phase { position: relative; padding: 4px 0 26px 26px; }
+  .phase::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper-raised); border: 2px solid var(--accent); }
+  .phase h4 { font-size: 15px; margin-bottom: 4px; }
+  .phase .phase-tag { font-family: var(--font-mono); font-size: 11px; color: var(--accent); letter-spacing: .06em; }
+  .phase p { font-size: 13.5px; color: var(--ink-soft); }
+
+  .next-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 640px) { .next-grid { grid-template-columns: 1fr; } }
+  .next-item { display: flex; gap: 12px; padding: 16px; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px; }
+  .next-item .n-mark { font-family: var(--font-mono); color: var(--accent); font-weight: 600; font-size: 13px; }
+  .next-item p { font-size: 13.5px; margin: 4px 0 0; color: var(--ink-soft); }
+  .next-item h4 { font-size: 14px; }
+
+  .verdict-group { display: flex; gap: 10px; flex-wrap: wrap; margin: 8px 0 16px; }
+  .verdict-btn {
+    flex: 1 1 160px; font-family: var(--font-mono); font-size: 13px; font-weight: 600; letter-spacing: .04em;
+    padding: 16px 14px; border-radius: 10px; border: 1.5px solid var(--line-strong); background: var(--paper-raised); color: var(--ink-soft); cursor: pointer; text-align: center;
+  }
+  .verdict-btn[data-verdict="GO"].active { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+  .verdict-btn[data-verdict="CONDITIONAL GO"].active { background: var(--watch-soft); border-color: var(--watch); color: var(--watch); }
+  .verdict-btn[data-verdict="NO-GO"].active { background: var(--critical-soft); border-color: var(--critical); color: var(--critical); }
+
+  .export-box { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 18px; margin-top: 8px; }
+  #export-output { width: 100%; min-height: 220px; font-family: var(--font-mono); font-size: 11.5px; line-height: 1.5; background: var(--paper-raised); }
+  .export-actions { display: flex; gap: 10px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+  #export-status { font-family: var(--font-mono); font-size: 11.5px; color: var(--accent); }
+
+  footer.doc-footer {
+    grid-column: 1 / -1; border-top: 1px solid var(--line); margin-top: 8px; padding-top: 20px;
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+</style>
+
+
+</head>
+<body>
+<div class="shell">
+  <div class="cover">
+    <span class="doc-tag">GEOPOLITICAL MONITOR — REPORT STUDIO</span>
+    <h1>Report Studio v1.0 検証計画</h1>
+    <p class="subtitle">専門家の判断品質と実務工数を、旧フローとの並行比較で実測するUser Validation Plan。事前に合格基準を固定し、「感想」ではなく GO / CONDITIONAL GO / NO-GO の判定に接続する。</p>
+    <div class="meta-row">
+      <span><strong>対象</strong> Report Studio (Phase 0–6 Close)</span>
+      <span><strong>ステータス</strong> <span class="chip watch" style="vertical-align:middle;">BASELINE LOCKED</span> 2026-09-02</span>
+      <span><strong>方針</strong> 検証期間中は新機能を追加しない</span>
+      <span><strong>実施順</strong> ① Zelenskyy(Calibration) → ② Iran sanctions → ③ EUDR</span>
+    </div>
+    <div class="meta-inputs">
+      <label>評価者
+        <input class="note-input" type="text" data-note-key="meta:reviewer" placeholder="氏名 / ID">
+      </label>
+      <label>対象バージョン（report_version）
+        <input class="note-input" type="text" data-note-key="meta:report_version" placeholder="例: Phase 6 Close, 2026-09-02">
+      </label>
+    </div>
+  </div>
+
+  <nav class="toc">
+    <div class="toc-title">目次</div>
+    <ol>
+      <li><a href="#position" data-toc>0. この計画の位置づけ</a></li>
+      <li><a href="#themes" data-toc>1. 検証テーマ（3件）</a></li>
+      <li><a href="#axes" data-toc>2. 評価5軸</a></li>
+      <li><a href="#gate-criteria" data-toc>3. 合格基準（Gate）</a></li>
+      <li><a href="#criteria" data-toc>4. 評価項目詳細</a>
+        <ol class="sub">
+          <li><a href="#c-quality" data-toc>4.1 Report品質</a></li>
+          <li><a href="#c-efficiency" data-toc>4.2 人間の作業量</a></li>
+          <li><a href="#c-review" data-toc>4.3 Review Required精度</a></li>
+          <li><a href="#c-continuity" data-toc>4.4 Continuous Intelligence</a></li>
+          <li><a href="#c-expert" data-toc>4.5 Expert AIの付加価値</a></li>
+          <li><a href="#c-provenance" data-toc>4.6 Provenance理解</a></li>
+          <li><a href="#c-stability" data-toc>4.7 運用安定性</a></li>
+        </ol>
+      </li>
+      <li><a href="#procedure" data-toc>5. 実施要領</a></li>
+      <li><a href="#scorecard" data-toc>6. 採点表・最終判定</a></li>
+      <li><a href="#export" data-toc>7. 結果のExport</a></li>
+      <li><a href="#roadmap" data-toc>8. 実施ロードマップ</a></li>
+      <li><a href="#next" data-toc>9. 次のアクション</a></li>
+      <li><a href="#baseline-log" data-toc>Appendix · Baseline Issue Log</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="position">
+      <div class="sec-head"><span class="sec-num">0</span><h2>この計画の位置づけ</h2></div>
+      <p class="sec-lede">Design → Evidence → Classification → Expert Synthesis → Report → Continuity → Monitoring → Need → Reassessment。Phase 0〜6でこのループは技術的に一周した。ここから先で問うべきは「さらに何を作るか」ではなく、<strong>専門家・実務担当者の判断品質と工数を本当に改善するか</strong>である。</p>
+      <div class="callout">
+        検証期間中は新機能を追加しない。機能を増やすと「何が効いて品質が上がったのか」が分からなくなる。まず実運用で数本回し、人間がどこで修正するか・どこで迷うか・どこを信用しないかを集める。その結果を <strong>v1.1の要件</strong> にする。評価は「良さそうだった」で終わらせず、事前に固定した合格基準（3章）と照らして <strong>GO / CONDITIONAL GO / NO-GO</strong>（6章）まで一気につなげる。
+      </div>
+      <div class="callout critical-def">
+        <strong>この計画は 2026-09-02 に v1.0-validation-plan baseline として固定した。</strong>
+        検証期間中は評価基準・Gate閾値・ルーブリックを直接編集しない。変更したくなった場合も本文を上書きせず、
+        <a href="#baseline-log">巻末の Baseline Issue Log</a> へ「評価基準自体に問題があった」こととして別記録する
+        （評価結果と評価基準の変更を混同しないため）。
+      </div>
+    </section>
+
+    <section id="themes">
+      <div class="sec-head"><span class="sec-num">1</span><h2>検証テーマ（3件）</h2></div>
+      <p class="sec-lede">性質の異なる3テーマを選び、それぞれ「旧フロー（手作業）」と「Report Studio」を同一期間データで並行実施し比較する。いきなり多数テーマには広げない。実施順は①→②→③固定。</p>
+      <div class="theme-grid">
+        <div class="theme-card">
+          <div class="t-id">THEME 01 · 実施順 ①</div>
+          <h3>Zelenskyy / Ukraine</h3>
+          <span class="t-tag">Actor中心</span>
+          <span class="t-tag" style="background:var(--watch-soft); color:var(--watch); margin-left:4px;">Calibration Case</span>
+          <p>主に見る観点: Actor Intelligence・Media Intelligence・Provenance・Continuity。開発テストで最も挙動を理解しているテーマのため最初に置く。<strong>この1本だけはスコアより「評価者がどこで迷うか」（Observed/Expert Contextの判別、修正箇所の特定、Review Requiredの解釈、同条件の線引き）を先に見る</strong> ——計画そのものの使いやすさの検証を兼ねる。</p>
+        </div>
+        <div class="theme-card">
+          <div class="t-id">THEME 02 · 実施順 ②</div>
+          <h3>Iran sanctions</h3>
+          <span class="t-tag">政府・世論・反応</span>
+          <p>主に見る観点: 多主体・政府反応・Public Voice・Counterevidence・Watchpoint。Zelenskyyで計画の使い方が固まった後、未知の問題を探す。</p>
+        </div>
+        <div class="theme-card">
+          <div class="t-id">THEME 03 · 実施順 ③</div>
+          <h3>EUDR 等規制</h3>
+          <span class="t-tag">規制・企業行動</span>
+          <p>主に見る観点: 規制→対応→行動→Business Implicationの比較分析。Stageの進行と企業行動への影響を正しく接続できるか。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="axes">
+      <div class="sec-head"><span class="sec-num">2</span><h2>評価5軸</h2></div>
+      <p class="sec-lede">最終的にこの5軸でv1.0を評価する。合格基準は「3. 合格基準」、詳細な観点は「4. 評価項目詳細」、記入は「6. 採点表」で行う。</p>
+      <div class="axis-grid">
+        <div class="axis-card"><div class="a-num">01</div><h4>Quality</h4><p>専門家評価。中央評価の妥当性、論点の網羅性、推論の節度。</p></div>
+        <div class="axis-card"><div class="a-num">02</div><h4>Efficiency</h4><p>時間・工数・LLMコストを合算したTotal Costでの削減率。</p></div>
+        <div class="axis-card"><div class="a-num">03</div><h4>Trust</h4><p>Evidence traceability／provenance。Review Requiredの精度。</p></div>
+        <div class="axis-card"><div class="a-num">04</div><h4>Operational Stability</h4><p>失敗率・Review率。障害時のretry／resume／idempotency。</p></div>
+        <div class="axis-card"><div class="a-num">05</div><h4>Intelligence Value</h4><p>新しい論点・変化検出・判断支援としての付加価値。</p></div>
+      </div>
+    </section>
+
+    <section id="gate-criteria">
+      <div class="sec-head"><span class="sec-num">3</span><h2>合格基準（Go / Conditional Go / No-Go）</h2></div>
+      <p class="sec-lede">評価が終わってから基準を動かさないよう、判定条件を先に固定する。数値は初期値の例——実施前に確定させる。</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th style="width:20%">軸</th><th style="width:28%">合格基準（Gate）</th><th>判定ロジック</th></tr></thead>
+          <tbody id="gate-def-rows"></tbody>
+        </table>
+      </div>
+      <div class="callout critical-def">
+        <strong>Critical Issue</strong> は以下のいずれかに固定する（1件でもあれば、他の軸が満点でも <strong>Conditional Go 以下</strong> とする）:
+        <ul class="plain" style="margin-top:8px; margin-bottom:0;">
+          <li>Evidenceにない事実</li>
+          <li>ObservedとExpert Contextの混同</li>
+          <li>重要なCounterevidenceの脱落</li>
+          <li>結論を逆転させる誤り</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="criteria">
+      <div class="sec-head"><span class="sec-num">4</span><h2>評価項目詳細</h2></div>
+      <p class="sec-lede">7つの評価ディメンション。それぞれ観点・測定方法・記録欄を定義する。</p>
+
+      <!-- 4.1 Quality -->
+      <div class="crit-block" id="c-quality">
+        <div class="crit-head"><h3>4.1 Report品質</h3><span class="crit-id">Axis 01 · 最重要</span></div>
+        <p class="lede">従来の手作業フローと同じテーマ・同時期データで並行作成し、専門家が同一ルーブリックで評価する。単純な5段階評価だけでなく<strong>「どこを直したか」</strong>と<strong>重大度</strong>を残す方が、Expert AI改善には価値がある。Criticalの定義は <a href="#gate-criteria">3. 合格基準</a> を参照。</p>
+
+        <div class="callout" style="margin-bottom:18px;">
+          <strong>評価者間クロスチェック</strong>: 3テーマ全部を複数人で評価する必要はない。<strong>1テーマだけ</strong>、別の評価者に同じ手順で独立して評価してもらい、それぞれ「7. 結果のExport」でJSONを書き出して突き合わせる。差が大きければ「AIの品質差」ではなく「専門家自身の見方の差」である可能性を疑う。
+        </div>
+
+        <div class="control-panel" style="border-color: var(--accent); background: var(--accent-soft);">
+          <span class="cp-tag" style="color: var(--accent);">CALIBRATION MEMO — Iran / Strait of Hormuz（Zelenskyy代替・実施順①・FROZEN 2026-09-03）</span>
+          <p style="margin: 8px 0 12px; font-size: 13.5px;">Zelenskyyは実データが存在しなかった（DB上は検証用Fixtureのみ）ため、もともと②に予定していたIran/Hormuz（実記事13件、Bloomberg/CNBC/NPR/SCMP等）を①へ前倒しして実施。この1本目はスコアより、計画そのものの使いやすさと、Draft／Expert Review／Systemの品質をどう切り分けるかを見る。十分な学びが出たため、このケースはここでFreezeし、次の未知ケースで汎化性能を見る。</p>
+
+          <div class="table-scroll" style="margin: 4px 0 18px; border-color: var(--line-strong);">
+            <table>
+              <thead><tr><th style="width:26%">項目</th><th>今回の結論</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Pipeline viability</strong></td><td><span class="chip good">PASS</span> 実データ（13記事）→Project→Narrative Master→Preprocess→Classify（10クラスタ、実Azure呼び出し）→Synthesize（3 Narrative）→Expert Reviewまで、実データ・実Azure呼び出しでEnd-to-End成立。fallback 0件（全記事が3 Narrativeのいずれかへ正しく分類）。</td></tr>
+                <tr><td><strong>Draft quality</strong></td><td><span class="chip watch">CONDITIONAL PASS</span> Fact／Evidence誤りは0件。ただしDraft単体には「media framing→fact」「correlation→causation」への体系的な昇格傾向があり、Expert Reviewでの指摘10件は全てInference Strength（推論の強さ・断定）カテゴリだった（下記参照）。</td></tr>
+                <tr><td><strong>Expert Review value</strong></td><td><span class="chip good">HIGH</span> 2/3 Narrativeが「revised」。特にS1-N02（イラン内政）は、Draft段階では「静かな構造的クーデター」という報道フレーミングを構造認識の中核に据えていたが、Expert Reviewが修正しsuccession_status=unknownを踏まえた慎重な最終記述になった——最終品質はDraft単独の成果ではなく、Draft→Reviewの2段階アーキテクチャが機能した結果。</td></tr>
+                <tr><td><strong>Generalization gap</strong></td><td><span class="chip neutral">次ケースで検証</span> ① media framing dependence ② causal over-attribution ③ Cross-Narrative Primary Driver抽出（3 Narrativeを横断した「結局何が局面を動かしているか」の一文合成——今回は人手で合成、Report Studioの自動生成機能ではない）。同じRoot Causeが次ケースでも再現すればSystematic Draft Weaknessと判定しP1化する。</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout" style="margin: 0 0 18px;">
+            <strong>定量結果</strong>: Expert Reviewが指摘したissues_foundは2 Narrative合計10件。内訳は causal_leap 3件・media_framing_dependence 2件・missing_counterevidence 2件・insufficient_counter_hypotheses 2件・superficial_interpretation 1件——<strong>10件中10件がInference Strength関連</strong>（Fact/Evidence誤り0件、表現/構成のみ0件、Key Point優先順位0件、自社影響接続0件）。
+          </div>
+
+          <div class="control-grid">
+            <label>このFindingはObservedなのかExpert Contextなのか、迷った箇所
+              <textarea class="note-input" rows="4" data-note-key="calibration:observed_vs_expert">S1-N01/N02のDraftはどちらも、記事本文の記述（Observed）と記事の見出し的フレーミング（例:「US-Iran war」「静かな構造的クーデター」）を十分に切り分けずcentral_assessment.summaryへ書いており、Expert Reviewのmedia_framing_dependence指摘まで、どこまでがObserved Evidenceでどこからがメディアの解釈かが読み手には判別しにくかった。特にS1-N02では、succession_status=unknownという決定的な分類結果自体が、Draft本文中には明示的な留保として現れていなかった点が分かりにくい。</textarea>
+            </label>
+            <label>どこを修正すればよいか、判断に迷った箇所
+              <textarea class="note-input" rows="4" data-note-key="calibration:correction_target">causal_leap（相関を因果として強く書く）は、file単位のEvidenceを見ても「因果が明確に誤り」とまでは言えず、どこまでを許容範囲の要約簡略化とし、どこからを訂正対象とするかの線引きが難しい。今回はExpert Reviewの判定（revised_draftでconfidenceをHigh→Medium、断定表現を留保表現へ変更）をそのまま採用したが、人間レビュアーが同じ基準で線引きできるかは要確認。</textarea>
+            </label>
+            <label>Review Requiredをどう解釈したか
+              <textarea class="note-input" rows="4" data-note-key="calibration:review_required_interpretation">今回は`draft_validity_status`/`final_validity_status`とも自動判定でPASSしており、いわゆる「人間がReview Requiredとして止められる」フラグではなく、review_verdict（approved/revised）がExpert Review（AI側のセカンドパス）の結果である点に注意。人間のReview Required運用ログ（4.3節）とは別の階層のログである。今回はS1-N03のみ一発approved、S1-N01/N02はrevisedだった。</textarea>
+            </label>
+            <label>旧フローとの比較で何を「同条件」と考えたか
+              <textarea class="note-input" rows="4" data-note-key="calibration:same_condition_definition">旧フローとの並行比較（STEP1）はまだ未実施——今回はSTEP2（Report Studio実行）のみを実施した。次に旧フローを回す際は、同一の13記事・同一期間（2026-04-01〜2026-09-03）・同一Narrative定義（S1-N01〜N03+fallback）を「同条件」の基準として固定する。</textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="control-panel" style="border-color: var(--accent); background: var(--accent-soft); margin-top: 18px;">
+          <span class="cp-tag" style="color: var(--accent);">CALIBRATION MEMO — EUDR実装局面（Calibration #2・FROZEN 2026-09-04）</span>
+          <p style="margin: 8px 0 12px; font-size: 13.5px;">Hormuzが「地政学・危機／Evidence豊富」だったのに対し、EUDRは「規制・サプライチェーン／Evidence希薄（ClaudeによるWeb検索で新規persistした19件、本文はtitle相当のみ）」という構造的に異なるドメインとして意図的に選定。Sustainability crawler（<code>articles</code>テーブル）は別アプリのため参照せず、Report Studio検証専用の新規themeへ実データ（実URL・実出典）のみを永続化して実行した。2ケースで十分な学びが出たため、ここで「Calibration」フェーズを終了しFreezeする——3件目には進まず、次は共通課題の修正（v1.1 Fix List）と、Cross-Narrative専用のTargeted Validationへ移行する。</p>
+
+          <div class="table-scroll" style="margin: 4px 0 18px; border-color: var(--line-strong);">
+            <table>
+              <thead><tr><th style="width:26%">項目</th><th>今回の結論</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Sparse Evidence時の抑制</strong></td><td><span class="chip good">PASS</span> N02〜N04（産地/Buyer/市場影響の3 Narrative）は、本文がtitle相当のみという希薄な観測データに対し、無理に厚みを出さず「現時点では評価できない」「不明」で一貫して構成された。</td></tr>
+                <tr><td><strong>Hallucination抑制</strong></td><td><span class="chip good">PASS</span> 3 Narrativeとも一般知識で埋める・因果を捏造する挙動は確認されなかった。</td></tr>
+                <tr><td><strong>Evidence不足の明示</strong></td><td><span class="chip good">PASS</span> Central Assessment・Findings・Continuityの全階層で「Insufficient evidence」を正直に選択（confidence低capではなく記述自体が保守的）。</td></tr>
+                <tr><td><strong>Expert Review価値</strong></td><td><span class="chip good">CONFIRMED</span> N01（唯一実質情報ありのNarrative）でExpert Reviewが3件のissueを検出——ただし「Draftが既に十分ヘッジ済み」と判断しrevised不要（draft=final_draft）。指摘した上で不要と判断する、という一段階前のプロセスが可視化された。</td></tr>
+                <tr><td><strong>Draft Inference Strength</strong></td><td><span class="chip watch">SYSTEMATIC CALIBRATION ISSUE</span> N01で<code>media_framing_dependence</code>・<code>insufficient_counter_hypotheses</code>・<code>superficial_interpretation</code>が再検出——Hormuzと同じInference Strengthカテゴリ。2ドメインで再現したためHormuz固有ではなくSystematicと判定し、v1.1のP1として昇格（Draft側prompt/自己チェックとして軽量実装済み、下記参照）。</td></tr>
+                <tr><td><strong>Cross-Narrative能力</strong></td><td><span class="chip neutral">NOT EVALUATED</span> N02〜N04が実質空（証拠不足の申告のみ）のため、4 Narrativeを横断した検証材料が存在しなかった。「AIが作れなかった」のではなく「入力Evidenceの密度がCross-Narrative検証に足りなかった」——機能未実装のままでよいという判断を後押しする結果。</td></tr>
+                <tr><td><strong>Data sourcing suitability</strong></td><td><span class="chip bad">INSUFFICIENT</span> Web検索由来の<code>extracted_text</code>はtitleのみ（本文抽出なし、既知の制約）。次のTargeted Validation Caseでは、複数Narrativeに十分な本文Evidenceが存在するテーマを事前確認してから選定する。</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout" style="margin: 0 0 18px;">
+            <strong>次のアクション（ユーザー合意済み）</strong>: ①Draft Evidence Discipline（5問の自己チェック: Evidenceに直接裏付けられるか／media framingを事実化していないか／相関を因果と断定していないか／対立仮説を検討したか／薄ければ「不明」とすべきでないか）を<code>geo_report_synthesis_service.py</code>のSynthesis system promptへ軽量追加済み（新規Guard・Schema変更なし、回帰658 pass確認済み）。②Cross-Narrative Primary Driverの自動生成は今は実装しない——将来的には「Narrative間の接続Evidence/rationaleが一定以上ある場合のみ合成を許可し、無ければ<code>cannot be assessed from current evidence</code>で止める」Cross-Narrative Sufficiency Gateが必要という設計仮説を記録するに留める。③Hormuz/EUDRの再実行はしない（過学習防止）。④次はCross-Narrative専用のTargeted Validation Case（Evidence密度を事前確認したテーマ、候補: 複数軸を持つ選挙データ等）で、Human独立合成→AI合成→比較、の順に検証する。
+          </div>
+        </div>
+
+        <div class="theme-switch" role="tablist" aria-label="テーマ切替（品質ルーブリック）">
+          <button type="button" data-theme-btn="zelenskyy" class="active">Zelenskyy</button>
+          <button type="button" data-theme-btn="iran">Iran sanctions</button>
+          <button type="button" data-theme-btn="eudr">EUDR</button>
+        </div>
+
+        <div class="table-scroll quality-table visible" data-quality-table="zelenskyy">
+          <table>
+            <thead><tr><th style="width:30%">評価観点</th><th style="width:12%">スコア (1–5)</th><th style="width:14%">Issue重大度</th><th>修正内容 / コメント</th></tr></thead>
+            <tbody id="quality-rows-zelenskyy"></tbody>
+          </table>
+        </div>
+        <div class="table-scroll quality-table" data-quality-table="iran">
+          <table>
+            <thead><tr><th style="width:30%">評価観点</th><th style="width:12%">スコア (1–5)</th><th style="width:14%">Issue重大度</th><th>修正内容 / コメント</th></tr></thead>
+            <tbody id="quality-rows-iran"></tbody>
+          </table>
+        </div>
+        <div class="table-scroll quality-table" data-quality-table="eudr">
+          <table>
+            <thead><tr><th style="width:30%">評価観点</th><th style="width:12%">スコア (1–5)</th><th style="width:14%">Issue重大度</th><th>修正内容 / コメント</th></tr></thead>
+            <tbody id="quality-rows-eudr"></tbody>
+          </table>
+        </div>
+        <p class="privacy-note">入力内容はこの端末のブラウザにのみ保存されます（共有されません）。 <button class="clear-btn" data-clear-scope="quality">この記録をクリア</button></p>
+      </div>
+
+      <!-- 4.2 Efficiency -->
+      <div class="crit-block" id="c-efficiency">
+        <div class="crit-head"><h3>4.2 人間の作業量</h3><span class="crit-id">Axis 02</span></div>
+        <p class="lede">今回の価値の中心はここにある。旧フローでは人がツール間を移動していた。Report Studioではその移動が集約される。</p>
+
+        <div class="flow-label">旧フロー</div>
+        <div class="flow">
+          <span class="step">Prompt 0</span><span class="arrow">→</span>
+          <span class="step">Babel Street</span><span class="arrow">→</span>
+          <span class="step">Download</span><span class="arrow">→</span>
+          <span class="step">Shell処理</span><span class="arrow">→</span>
+          <span class="step">Prompt 1</span><span class="arrow">→</span>
+          <span class="step">Prompt 2</span><span class="arrow">→</span>
+          <span class="step">Report確認</span>
+        </div>
+        <div class="flow-label">Report Studio</div>
+        <div class="flow">
+          <span class="step">テーマ入力</span><span class="arrow">→</span>
+          <span class="step">Collection</span><span class="arrow">→</span>
+          <span class="step">Review Requiredのみ確認</span><span class="arrow">→</span>
+          <span class="step">Report確認</span>
+        </div>
+
+        <div class="table-scroll" style="margin-top:20px;">
+          <table>
+            <thead><tr><th>計測項目</th><th style="width:22%">旧フロー</th><th style="width:22%">Report Studio</th></tr></thead>
+            <tbody id="efficiency-rows"></tbody>
+          </table>
+        </div>
+        <div class="callout">AI token costだけでなく、人間の時間を含む <strong>Total Cost</strong> で評価する。</div>
+      </div>
+
+      <!-- 4.3 Review Required -->
+      <div class="crit-block" id="c-review">
+        <div class="crit-head"><h3>4.3 Review Requiredの精度</h3><span class="crit-id">Axis 03</span></div>
+        <p class="lede">Guardを強く作った分、本当に人間が見るべきところだけがReview Requiredになっているかが重要なKPIになる。</p>
+        <div class="flow" style="margin-bottom:18px;">
+          <span class="step">大量Evidence</span><span class="arrow">↓</span>
+          <span class="step">ほぼ自動処理</span><span class="arrow">↓</span>
+          <span class="step">数件だけReview Required</span><span class="arrow">↓</span>
+          <span class="step">人間が重要箇所だけ確認</span>
+        </div>
+        <p class="lede" style="margin-bottom:6px;">逆にREVIEW REQUIREDが頻発すると、結局人間の負荷が戻る。特にLLM分類の非決定性（同一Evidenceで結果が揺れる既知課題）はログを取る。</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th style="width:38%">ログ項目</th><th>記録</th></tr></thead>
+            <tbody>
+              <tr><td>同じEvidenceでPASS/REVIEWがどの程度揺れるか</td><td><input class="note-input" type="text" data-log-key="review:variance" placeholder="例: 10回中2回REVIEWへ振れる"></td></tr>
+              <tr><td>retryすると収束するか</td><td><input class="note-input" type="text" data-log-key="review:retry" placeholder="例: 1回retryで9割PASSに収束"></td></tr>
+              <tr><td>特定dimensionで多発するか</td><td><input class="note-input" type="text" data-log-key="review:dimension" placeholder="例: dimension_without_evidenceに集中"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4.4 Continuity -->
+      <div class="crit-block" id="c-continuity">
+        <div class="crit-head"><h3>4.4 Continuous Intelligenceの実運用精度</h3><span class="crit-id">Axis 05 · 2〜4週間継続</span></div>
+        <p class="lede">Phase 4〜6は技術的には通ったが、時間を置かないと本当の品質は分からない。実テーマを2〜4週間継続し、New / Intensified / Reframed / Stable / Resolved の判定が人間の感覚と合うかを見る。<strong>Precision重視</strong> ——最初から大量Alertを出すより「これが出たら見た方がいい」という信頼を作る方が重要。</p>
+        <div id="continuity-checklist"></div>
+      </div>
+
+      <!-- 4.5 Expert AI value -->
+      <div class="crit-block" id="c-expert">
+        <div class="crit-head"><h3>4.5 Expert AIが本当に価値を足しているか</h3><span class="crit-id">Axis 05 · A/B比較</span></div>
+        <p class="lede">同じEvidenceで比較する。見るのは文章の上手さではない。<strong>Observed Evidenceは両条件で完全に同一</strong>にする（詳細は5.0比較条件の固定）。</p>
+        <div class="theme-grid" style="grid-template-columns: 1fr 1fr; margin-bottom:16px;">
+          <div class="theme-card"><div class="t-id">CONDITION A</div><h3 style="font-size:15px;">Observed Evidenceのみ</h3><p>→ Synthesis</p></div>
+          <div class="theme-card"><div class="t-id">CONDITION B</div><h3 style="font-size:15px;">Observed + Actor Intelligence + Media Intelligence + Precedent</h3><p>→ Expert Synthesis</p></div>
+        </div>
+        <div id="expert-checklist"></div>
+      </div>
+
+      <!-- 4.6 Provenance -->
+      <div class="crit-block" id="c-provenance">
+        <div class="crit-head"><h3>4.6 Provenanceのユーザー理解</h3><span class="crit-id">Axis 03 · ユーザーテスト</span></div>
+        <p class="lede">Observed Evidence / Expert Contextを技術的に分離できていても、ユーザーがUIを見て本当に違いを理解できるかは別問題。答えられなければUI表示の改善が必要。</p>
+        <div class="callout">テスト質問: <strong>「このFindingのどこまでが今回取得したEvidenceで、どこからがAIの解釈ですか？」</strong></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th style="width:20%">回答者</th><th>回答の要旨</th><th style="width:16%">正しく区別できたか</th></tr></thead>
+            <tbody id="provenance-rows"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4.7 Stability -->
+      <div class="crit-block" id="c-stability">
+        <div class="crit-head"><h3>4.7 運用安定性</h3><span class="crit-id">Axis 04</span></div>
+        <p class="lede">機能開発を止めた今だからこそ確認する。今回のセッション中にも一度Azure接続エラーが発生している —— retry／resume／idempotencyが実運用で十分かは見ておく価値がある。</p>
+        <div id="stability-checklist"></div>
+        <p class="privacy-note"><button class="clear-btn" data-clear-scope="stability">この記録をクリア</button></p>
+      </div>
+
+    </section>
+
+    <section id="procedure">
+      <div class="sec-head"><span class="sec-num">5</span><h2>実施要領</h2></div>
+      <p class="sec-lede">3テーマそれぞれについて、同一の手順で旧フローとReport Studioを比較する。</p>
+
+      <div class="control-panel">
+        <span class="cp-tag">CONTROL — 比較条件の固定</span>
+        <p style="margin: 8px 0 0; font-size: 13.5px;">「Report Studio側だけ新しい情報を持っていた」という比較にならないよう、期間・入力・バージョン・評価時点を先に固定する。</p>
+        <div class="control-grid">
+          <label>対象期間
+            <div class="two-col">
+              <input class="note-input" type="text" data-note-key="control:period_start" placeholder="開始日">
+              <input class="note-input" type="text" data-note-key="control:period_end" placeholder="終了日">
+            </div>
+          </label>
+          <label>BS入力（クエリ / データセット識別子）
+            <input class="note-input" type="text" data-note-key="control:bs_input" placeholder="例: BS Query ID / CSVファイル名">
+          </label>
+          <label>Narrative Master バージョン
+            <input class="note-input" type="text" data-note-key="control:narrative_master_version" placeholder="例: v3 (2026-08-20)">
+          </label>
+          <label>評価時点（旧フロー成果物のスナップショット）
+            <input class="note-input" type="text" data-note-key="control:snapshot_legacy" placeholder="日時">
+          </label>
+          <label>評価時点（Report Studio成果物のスナップショット）
+            <input class="note-input" type="text" data-note-key="control:snapshot_report_studio" placeholder="日時">
+          </label>
+        </div>
+        <label class="control-check">
+          <input type="checkbox" data-check-key="control:evidence_identical">
+          Expert AI A/B比較（4.5）のObserved Evidenceは両条件で完全に同一であることを確認した
+        </label>
+      </div>
+
+      <div class="phase-list">
+        <div class="phase"><span class="phase-tag">STEP 1</span><h4>旧フローで実施（ベースライン）</h4><p>対象テーマを従来の手作業フロー（Prompt0〜Prompt2）で通し、成果物と各工程の所要時間を記録する。</p></div>
+        <div class="phase"><span class="phase-tag">STEP 2</span><h4>同一期間データでReport Studioを実施</h4><p>同じ期間・同じ入力データでReport Studioを実行し、Review Requiredの発生状況を含めて記録する。</p></div>
+        <div class="phase"><span class="phase-tag">STEP 3</span><h4>専門家が両成果物を比較・採点</h4><p>「4.1 Report品質」のルーブリックで採点し、修正箇所と重大度をログする。</p></div>
+        <div class="phase"><span class="phase-tag">STEP 4</span><h4>工数を両条件で記録</h4><p>「4.2 人間の作業量」の計測項目を両フローについて埋める。</p></div>
+        <div class="phase"><span class="phase-tag">STEP 5</span><h4>運用ログを収集</h4><p>「4.3〜4.7」を実運用ログ・ユーザーテストから継続的に収集する（4.4は2〜4週間の継続観測）。</p></div>
+      </div>
+    </section>
+
+    <section id="scorecard">
+      <div class="sec-head"><span class="sec-num">6</span><h2>採点表・最終判定</h2></div>
+      <p class="sec-lede">3章で固定した合格基準と照らし合わせ、各軸をPASS / CONDITIONAL / FAILで判定したうえで、最終判定を1つに定める。</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th style="width:18%">判定軸</th><th style="width:20%">結果</th><th style="width:18%">Gate</th><th style="width:14%">判定</th><th>メモ</th></tr></thead>
+          <tbody id="axis-rows"></tbody>
+        </table>
+      </div>
+      <p class="privacy-note">この採点表の入力もこの端末のブラウザにのみ保存されます。 <button class="clear-btn" data-clear-scope="axis">この記録をクリア</button></p>
+
+      <h3 style="font-size:16px; margin-top:30px; margin-bottom:10px;">v1.0 Validation Verdict</h3>
+      <p class="lede" style="color:var(--ink-soft); font-size:13.5px; margin-bottom:14px;">Critical Issuesが1件でもあれば GO は選ばない。</p>
+      <div class="verdict-group" id="verdict-group">
+        <button type="button" class="verdict-btn" data-verdict="GO">GO</button>
+        <button type="button" class="verdict-btn" data-verdict="CONDITIONAL GO">CONDITIONAL GO</button>
+        <button type="button" class="verdict-btn" data-verdict="NO-GO">NO-GO</button>
+      </div>
+      <textarea class="note-input" rows="3" data-note-key="final_verdict_rationale" placeholder="判定の根拠（何が決め手だったか）"></textarea>
+    </section>
+
+    <section id="export">
+      <div class="sec-head"><span class="sec-num">7</span><h2>結果のExport</h2></div>
+      <p class="sec-lede">localStorageはユーザーテストには便利だが、この検証は後から価値のある学習データになる。特に「専門家がどこをどう直したか」は、今後Expert AIを改善する最重要データになる。</p>
+      <ul class="plain">
+        <li><span class="chip neutral">evaluation_scores</span> 各軸・各観点のスコア</li>
+        <li><span class="chip neutral">reviewer_comments</span> 軸レベルのメモ・Provenanceテストの回答</li>
+        <li><span class="chip neutral">corrections</span> Report品質ルーブリックの「どこを直したか」</li>
+        <li><span class="chip neutral">issue_type</span> Critical / Major / Minor / Preference の重大度</li>
+        <li><span class="chip neutral">time_spent</span> 工数比較（旧フロー / Report Studio）</li>
+        <li><span class="chip neutral">report_version</span> 検証対象バージョン</li>
+      </ul>
+      <div class="export-box">
+        <div class="export-actions">
+          <button type="button" class="action-btn primary" id="export-build-btn">JSONを生成</button>
+          <button type="button" class="action-btn" id="export-copy-btn">クリップボードにコピー</button>
+          <span id="export-status"></span>
+        </div>
+        <textarea id="export-output" class="note-input" readonly placeholder="「JSONを生成」を押すと、この端末に保存された評価データがここに表示されます。"></textarea>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="sec-head"><span class="sec-num">8</span><h2>実施ロードマップ</h2></div>
+      <div class="phase-list">
+        <div class="phase"><span class="phase-tag">PHASE 1</span><h4>3テーマ並行実施</h4><p>Zelenskyy / Iran sanctions / EUDRの3テーマで、旧フローとReport Studioを並行実施する。</p></div>
+        <div class="phase"><span class="phase-tag">PHASE 2</span><h4>専門家レビュー・採点</h4><p>4.1〜4.7のルーブリックに沿って専門家・実務担当者が評価し、採点表を埋める。1テーマは2名で独立評価する。</p></div>
+        <div class="phase"><span class="phase-tag">PHASE 3</span><h4>結果集約 → v1.1要件抽出</h4><p>5軸の結果とExportした学習データを集約し、Report Studioが本当に効いた点／効かなかった点を切り分け、次の要件（v1.1）へ落とす。この間は新機能を追加しない。</p></div>
+      </div>
+    </section>
+
+    <section id="next">
+      <div class="sec-head"><span class="sec-num">9</span><h2>次のアクション</h2></div>
+      <div class="next-grid">
+        <div class="next-item"><div><span class="n-mark">01</span><h4>合格基準の確定</h4><p>3章のGate閾値を、実施前に関係者間で確定する。</p></div></div>
+        <div class="next-item"><div><span class="n-mark">02</span><h4>比較条件の固定</h4><p>5章のControlパネル（期間・入力・バージョン）を埋め、Report Studioに情報優位が無いことを確認する。</p></div></div>
+        <div class="next-item"><div><span class="n-mark">03</span><h4>実施者・レビュアーのアサイン</h4><p>旧フロー実施者と専門家レビュアー（1テーマは2名）を確定する。</p></div></div>
+        <div class="next-item"><div><span class="n-mark">04</span><h4>実施開始日の確定</h4><p>Phase 1（3テーマ並行実施）の開始日を確定する。</p></div></div>
+      </div>
+    </section>
+
+    <section id="baseline-log">
+      <div class="sec-head"><span class="sec-num">A</span><h2>Appendix · Baseline Issue Log</h2></div>
+      <p class="sec-lede">Report Studioの出力に対する指摘（4.1のIssue重大度・修正コメント）とは別物。<strong>評価基準・Gate・手順そのものに問題が見つかった場合だけ</strong>ここに記録する。基準本文は検証期間中は上書きしない。</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th style="width:14%">日付</th><th style="width:16%">発見テーマ</th><th>内容</th><th style="width:18%">対応</th></tr></thead>
+          <tbody id="baseline-log-rows"></tbody>
+        </table>
+      </div>
+      <p class="privacy-note">この記録もこの端末のブラウザにのみ保存されます。 <button class="clear-btn" data-clear-scope="baseline_log">この記録をクリア</button></p>
+    </section>
+
+  </main>
+
+  <footer class="doc-footer">
+    <span>Report Studio v1.0 — User Validation Plan</span>
+    <span>Draft · 新機能追加は一時停止中</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var PREFIX = "rs-plan:";
+
+  function safeGet(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
+  function safeSet(key, val) { try { localStorage.setItem(key, val); } catch (e) {} }
+  function safeRemovePrefixed(scopePrefixes) {
+    try {
+      var toRemove = [];
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (!k) continue;
+        for (var j = 0; j < scopePrefixes.length; j++) {
+          if (k.indexOf(PREFIX + scopePrefixes[j]) === 0) { toRemove.push(k); break; }
+        }
+      }
+      toRemove.forEach(function (k) { localStorage.removeItem(k); });
+    } catch (e) {}
+  }
+
+  function mountScoreGroup(container, key) {
+    container.innerHTML = "";
+    container.className = "score-group";
+    container.setAttribute("data-key", key);
+    var saved = safeGet(PREFIX + "score:" + key);
+    for (var i = 1; i <= 5; i++) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = String(i);
+      btn.setAttribute("data-score", String(i));
+      if (saved === String(i)) btn.classList.add("active");
+      btn.addEventListener("click", function () {
+        var val = this.getAttribute("data-score");
+        var group = this.parentElement;
+        Array.prototype.forEach.call(group.children, function (b) { b.classList.remove("active"); });
+        this.classList.add("active");
+        safeSet(PREFIX + "score:" + group.getAttribute("data-key"), val);
+      });
+      container.appendChild(btn);
+    }
+  }
+
+  function mountNoteField(el, key) {
+    el.setAttribute("data-note-key", key);
+    var saved = safeGet(PREFIX + "note:" + key);
+    if (saved !== null) el.value = saved;
+    el.addEventListener("input", function () { safeSet(PREFIX + "note:" + key, el.value); });
+  }
+
+  function mountCheckbox(el, key) {
+    var saved = safeGet(PREFIX + "check:" + key);
+    if (saved === "1") el.checked = true;
+    el.addEventListener("change", function () { safeSet(PREFIX + "check:" + key, el.checked ? "1" : "0"); });
+  }
+
+  function mountSelect(el, key, onChange) {
+    var saved = safeGet(PREFIX + "select:" + key);
+    if (saved !== null) el.value = saved;
+    el.addEventListener("change", function () {
+      safeSet(PREFIX + "select:" + key, el.value);
+      if (onChange) onChange(el.value);
+    });
+  }
+
+  /* wire up plain [data-note-key] / [data-check-key] elements declared directly in HTML */
+  document.querySelectorAll("[data-note-key]").forEach(function (el) {
+    mountNoteField(el, el.getAttribute("data-note-key"));
+  });
+  document.querySelectorAll("[data-check-key]").forEach(function (el) {
+    mountCheckbox(el, el.getAttribute("data-check-key"));
+  });
+  document.querySelectorAll("[data-log-key]").forEach(function (el) {
+    mountNoteField(el, el.getAttribute("data-log-key"));
+  });
+
+  /* ---------- 3. Gate definitions ---------- */
+  var GATE_DEFAULTS = [
+    ["quality", "Quality", "≥ 4.0", "4.0未満なら当該軸FAIL"],
+    ["efficiency", "Efficiency", "≥ 40% 工数削減（Total Cost）", "40%未満はFAIL、20〜40%はConditionalの目安"],
+    ["trust", "Trust", "≥ 4.0、かつ重大なProvenance誤認 0件", "重大なProvenance誤認が1件でもあればConditional以下"],
+    ["stability", "Operational Stability", "≥ 95%", "95%未満はFAIL、90〜95%はConditionalの目安"],
+    ["value", "Intelligence Value", "≥ 4.0", "4.0未満なら当該軸FAIL"],
+    ["critical", "Critical Issues", "0件（絶対条件）", "1件でもあれば他軸に関わらずConditional Go以下"]
+  ];
+  var gateDefBody = document.getElementById("gate-def-rows");
+  GATE_DEFAULTS.forEach(function (row) {
+    var tr = document.createElement("tr");
+    var tdName = document.createElement("td");
+    tdName.innerHTML = "<strong>" + row[1] + "</strong>";
+    tr.appendChild(tdName);
+
+    var tdGate = document.createElement("td");
+    var input = document.createElement("input");
+    input.className = "note-input";
+    input.type = "text";
+    input.value = row[2];
+    mountNoteField(input, "gate:threshold:" + row[0]);
+    tdGate.appendChild(input);
+    tr.appendChild(tdGate);
+
+    var tdLogic = document.createElement("td");
+    tdLogic.textContent = row[3];
+    tr.appendChild(tdLogic);
+
+    gateDefBody.appendChild(tr);
+  });
+
+  function gateThreshold(axisId) {
+    return safeGet(PREFIX + "note:gate:threshold:" + axisId) || (GATE_DEFAULTS.filter(function (g) { return g[0] === axisId; })[0] || [])[2] || "";
+  }
+
+  /* ---------- 4.1 Quality rubric (per theme) ---------- */
+  var QUALITY_CRITERIA = [
+    "中央評価は妥当か",
+    "重要論点の抜けがないか",
+    "表層的ニュース要約になっていないか",
+    "Actorの目的・制約を正しく考慮できているか",
+    "Counterevidenceを保持できているか",
+    "推論がEvidenceを超えていないか",
+    "Watchpointが本当に「次に見るべきもの」になっているか"
+  ];
+  var THEMES = ["zelenskyy", "iran", "eudr"];
+  var SEVERITY_OPTIONS = ["", "なし", "Preference", "Minor", "Major", "Critical"];
+
+  function updateCriticalCount() {
+    var count = 0;
+    THEMES.forEach(function (themeId) {
+      QUALITY_CRITERIA.forEach(function (label, idx) {
+        if (safeGet(PREFIX + "select:quality_severity:" + themeId + ":" + idx) === "Critical") count++;
+      });
+    });
+    var el = document.getElementById("critical-count-display");
+    if (el) el.textContent = String(count);
+    var verdictEl = document.getElementById("critical-verdict-display");
+    if (verdictEl) {
+      verdictEl.className = "chip " + (count === 0 ? "good" : "critical");
+      verdictEl.textContent = count === 0 ? "PASS" : "FAIL";
+    }
+    return count;
+  }
+
+  THEMES.forEach(function (themeId) {
+    var tbody = document.getElementById("quality-rows-" + themeId);
+    QUALITY_CRITERIA.forEach(function (label, idx) {
+      var tr = document.createElement("tr");
+
+      var tdLabel = document.createElement("td");
+      tdLabel.textContent = label;
+      tr.appendChild(tdLabel);
+
+      var tdScore = document.createElement("td");
+      var scoreEl = document.createElement("div");
+      mountScoreGroup(scoreEl, "quality:" + themeId + ":" + idx);
+      tdScore.appendChild(scoreEl);
+      tr.appendChild(tdScore);
+
+      var tdSeverity = document.createElement("td");
+      var sevSelect = document.createElement("select");
+      SEVERITY_OPTIONS.forEach(function (opt) {
+        var o = document.createElement("option");
+        o.value = opt; o.textContent = opt === "" ? "—" : opt;
+        sevSelect.appendChild(o);
+      });
+      mountSelect(sevSelect, "quality_severity:" + themeId + ":" + idx, updateCriticalCount);
+      tdSeverity.appendChild(sevSelect);
+      tr.appendChild(tdSeverity);
+
+      var tdNote = document.createElement("td");
+      var noteEl = document.createElement("input");
+      noteEl.className = "note-input";
+      noteEl.type = "text";
+      noteEl.placeholder = "どこを直したか / コメント";
+      mountNoteField(noteEl, "quality:" + themeId + ":" + idx);
+      tdNote.appendChild(noteEl);
+      tr.appendChild(tdNote);
+
+      tbody.appendChild(tr);
+    });
+  });
+
+  document.querySelectorAll("[data-theme-btn]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var target = this.getAttribute("data-theme-btn");
+      document.querySelectorAll("[data-theme-btn]").forEach(function (b) { b.classList.remove("active"); });
+      this.classList.add("active");
+      document.querySelectorAll("[data-quality-table]").forEach(function (t) {
+        t.classList.toggle("visible", t.getAttribute("data-quality-table") === target);
+      });
+    });
+  });
+
+  /* ---------- 4.2 Efficiency (time_spent, now real inputs) ---------- */
+  var EFFICIENCY_ROWS = [
+    "初回設計時間", "BS Query作成時間", "データ処理時間",
+    "Classification review時間", "レポート修正時間", "総リードタイム", "人間が介入した回数"
+  ];
+  var effBody = document.getElementById("efficiency-rows");
+  EFFICIENCY_ROWS.forEach(function (label, idx) {
+    var tr = document.createElement("tr");
+    var tdLabel = document.createElement("td");
+    tdLabel.textContent = label;
+    tr.appendChild(tdLabel);
+
+    ["legacy", "report_studio"].forEach(function (variant) {
+      var td = document.createElement("td");
+      var input = document.createElement("input");
+      input.className = "note-input";
+      input.type = "text";
+      mountNoteField(input, "efficiency:" + idx + ":" + variant);
+      td.appendChild(input);
+      tr.appendChild(td);
+    });
+    effBody.appendChild(tr);
+  });
+
+  /* ---------- 4.4 Continuity checklist ---------- */
+  var CONTINUITY_ITEMS = [
+    "ノイズを「変化」と誤認しないか",
+    "本当の変化をStableにしてしまわないか",
+    "Watchpoint Alertが多すぎないか",
+    "Intelligence Needを作りすぎないか",
+    "再評価が不要なのにSynthesisが回りすぎないか"
+  ];
+  buildTriStateChecklist("continuity-checklist", "continuity", CONTINUITY_ITEMS, ["良好", "要注意", "未確認"]);
+
+  /* ---------- 4.5 Expert AI checklist ---------- */
+  var EXPERT_ITEMS = [
+    "新しい重要論点が出たか",
+    "判断の解像度が上がったか",
+    "反対仮説が増えたか",
+    "Actorの行動予測が改善したか",
+    "不要な推測が増えていないか"
+  ];
+  buildTriStateChecklist("expert-checklist", "expert", EXPERT_ITEMS, ["改善", "変化なし", "悪化"]);
+
+  function buildTriStateChecklist(mountId, scopeKey, items, options) {
+    var mount = document.getElementById(mountId);
+    items.forEach(function (label, idx) {
+      var row = document.createElement("div");
+      row.className = "checklist-row";
+      row.appendChild(document.createElement("span"));
+
+      var labelEl = document.createElement("div");
+      labelEl.className = "cl-label";
+      labelEl.textContent = label;
+      row.appendChild(labelEl);
+
+      var select = document.createElement("select");
+      var blank = document.createElement("option");
+      blank.value = ""; blank.textContent = "—";
+      select.appendChild(blank);
+      options.forEach(function (opt) {
+        var o = document.createElement("option");
+        o.value = opt; o.textContent = opt;
+        select.appendChild(o);
+      });
+      mountSelect(select, scopeKey + ":" + idx);
+      row.appendChild(select);
+
+      mount.appendChild(row);
+    });
+  }
+
+  /* ---------- 4.6 Provenance respondents ---------- */
+  var RESPONDENTS = ["テスター 1", "テスター 2", "テスター 3"];
+  var provRows = document.getElementById("provenance-rows");
+  RESPONDENTS.forEach(function (name, idx) {
+    var tr = document.createElement("tr");
+    var tdName = document.createElement("td");
+    tdName.textContent = name;
+    tr.appendChild(tdName);
+
+    var tdAnswer = document.createElement("td");
+    var ta = document.createElement("textarea");
+    ta.className = "note-input";
+    ta.rows = 2;
+    ta.placeholder = "回答の要旨を記録";
+    mountNoteField(ta, "provenance:answer:" + idx);
+    tdAnswer.appendChild(ta);
+    tr.appendChild(tdAnswer);
+
+    var tdOk = document.createElement("td");
+    var sel = document.createElement("select");
+    ["", "できた", "部分的", "できなかった"].forEach(function (opt) {
+      var o = document.createElement("option");
+      o.value = opt; o.textContent = opt === "" ? "—" : opt;
+      sel.appendChild(o);
+    });
+    mountSelect(sel, "provenance:ok:" + idx);
+    tdOk.appendChild(sel);
+    tr.appendChild(tdOk);
+
+    provRows.appendChild(tr);
+  });
+
+  /* ---------- 4.7 Stability checklist ---------- */
+  var STABILITY_ITEMS = [
+    "Azure OpenAI 一時障害", "Supabase 一時障害", "Babel Street CSV形式変更", "大容量CSV",
+    "長時間ジョブ", "Partial failure", "Retry", "同時複数Report実行", "Schema migration", "古いNarrative Master Version"
+  ];
+  var stabMount = document.getElementById("stability-checklist");
+  STABILITY_ITEMS.forEach(function (label, idx) {
+    var row = document.createElement("div");
+    row.className = "checklist-row";
+
+    var cb = document.createElement("input");
+    cb.type = "checkbox";
+    mountCheckbox(cb, "stability:observed:" + idx);
+    row.appendChild(cb);
+
+    var labelEl = document.createElement("div");
+    labelEl.className = "cl-label";
+    labelEl.textContent = label + " — 発生を確認・検証した";
+    row.appendChild(labelEl);
+
+    var sel = document.createElement("select");
+    ["", "問題なし", "軽微", "要対応"].forEach(function (opt) {
+      var o = document.createElement("option");
+      o.value = opt; o.textContent = opt === "" ? "—" : opt;
+      sel.appendChild(o);
+    });
+    mountSelect(sel, "stability:severity:" + idx);
+    row.appendChild(sel);
+
+    stabMount.appendChild(row);
+  });
+
+  /* ---------- Appendix: Baseline Issue Log (fixed 6 rows) ---------- */
+  var BASELINE_LOG_ROW_COUNT = 6;
+  var baselineLogBody = document.getElementById("baseline-log-rows");
+  for (var bIdx = 0; bIdx < BASELINE_LOG_ROW_COUNT; bIdx++) {
+    (function (idx) {
+      var tr = document.createElement("tr");
+
+      var tdDate = document.createElement("td");
+      var dateInput = document.createElement("input");
+      dateInput.className = "note-input"; dateInput.type = "text"; dateInput.placeholder = "YYYY-MM-DD";
+      mountNoteField(dateInput, "baseline_log:" + idx + ":date");
+      tdDate.appendChild(dateInput);
+      tr.appendChild(tdDate);
+
+      var tdTheme = document.createElement("td");
+      var themeSel = document.createElement("select");
+      ["", "Zelenskyy", "Iran sanctions", "EUDR", "共通"].forEach(function (opt) {
+        var o = document.createElement("option");
+        o.value = opt; o.textContent = opt === "" ? "—" : opt;
+        themeSel.appendChild(o);
+      });
+      mountSelect(themeSel, "baseline_log:" + idx + ":theme");
+      tdTheme.appendChild(themeSel);
+      tr.appendChild(tdTheme);
+
+      var tdDetail = document.createElement("td");
+      var detailInput = document.createElement("input");
+      detailInput.className = "note-input"; detailInput.type = "text";
+      detailInput.placeholder = "評価基準・Gate・手順のどこに問題があったか";
+      mountNoteField(detailInput, "baseline_log:" + idx + ":detail");
+      tdDetail.appendChild(detailInput);
+      tr.appendChild(tdDetail);
+
+      var tdAction = document.createElement("td");
+      var actionSel = document.createElement("select");
+      ["", "今回は据え置き", "次バージョンで反映", "要協議"].forEach(function (opt) {
+        var o = document.createElement("option");
+        o.value = opt; o.textContent = opt === "" ? "—" : opt;
+        actionSel.appendChild(o);
+      });
+      mountSelect(actionSel, "baseline_log:" + idx + ":action");
+      tdAction.appendChild(actionSel);
+      tr.appendChild(tdAction);
+
+      baselineLogBody.appendChild(tr);
+    })(bIdx);
+  }
+
+  /* ---------- 6. Scorecard ---------- */
+  var AXES = [
+    ["quality", "Quality", "score", "専門家評価"],
+    ["efficiency", "Efficiency", "percent", "例: -62%（削減率）"],
+    ["trust", "Trust", "score", "Evidence traceability / provenance"],
+    ["stability", "Operational Stability", "percent", "例: 97%（成功率）"],
+    ["value", "Intelligence Value", "score", "新しい論点・変化検出・判断支援"]
+  ];
+  var axisRows = document.getElementById("axis-rows");
+  var gateDisplayEls = {};
+
+  AXES.forEach(function (axis) {
+    var tr = document.createElement("tr");
+
+    var tdName = document.createElement("td");
+    tdName.innerHTML = "<strong>" + axis[1] + "</strong>";
+    tr.appendChild(tdName);
+
+    var tdResult = document.createElement("td");
+    if (axis[2] === "score") {
+      var scoreEl = document.createElement("div");
+      mountScoreGroup(scoreEl, "axis:" + axis[0]);
+      tdResult.appendChild(scoreEl);
+    } else {
+      var resInput = document.createElement("input");
+      resInput.className = "note-input";
+      resInput.type = "text";
+      resInput.placeholder = axis[3];
+      mountNoteField(resInput, "axis_result:" + axis[0]);
+      tdResult.appendChild(resInput);
+    }
+    tr.appendChild(tdResult);
+
+    var tdGate = document.createElement("td");
+    var gateSpan = document.createElement("span");
+    gateSpan.className = "chip neutral";
+    gateSpan.textContent = gateThreshold(axis[0]);
+    gateDisplayEls[axis[0]] = gateSpan;
+    tdGate.appendChild(gateSpan);
+    tr.appendChild(tdGate);
+
+    var tdVerdict = document.createElement("td");
+    var verdictSel = document.createElement("select");
+    ["", "PASS", "CONDITIONAL", "FAIL"].forEach(function (opt) {
+      var o = document.createElement("option");
+      o.value = opt; o.textContent = opt === "" ? "—" : opt;
+      verdictSel.appendChild(o);
+    });
+    mountSelect(verdictSel, "verdict:axis:" + axis[0]);
+    tdVerdict.appendChild(verdictSel);
+    tr.appendChild(tdVerdict);
+
+    var tdNote = document.createElement("td");
+    var noteEl = document.createElement("input");
+    noteEl.className = "note-input";
+    noteEl.type = "text";
+    mountNoteField(noteEl, "axis:" + axis[0]);
+    tdNote.appendChild(noteEl);
+    tr.appendChild(tdNote);
+
+    axisRows.appendChild(tr);
+  });
+
+  /* live-sync gate display cells when gate-def thresholds are edited */
+  document.querySelectorAll('[data-note-key^="gate:threshold:"]').forEach(function (input) {
+    input.addEventListener("input", function () {
+      var axisId = this.getAttribute("data-note-key").split(":")[2];
+      if (gateDisplayEls[axisId]) gateDisplayEls[axisId].textContent = this.value;
+    });
+  });
+
+  /* Critical Issues row — auto-computed, not manually editable */
+  var critTr = document.createElement("tr");
+  critTr.className = "gate-row";
+  critTr.innerHTML =
+    "<td><strong>Critical Issues</strong></td>" +
+    "<td><span id=\"critical-count-display\" class=\"chip watch\">0</span> 件</td>" +
+    "<td><span class=\"chip neutral\">0件（絶対条件）</span></td>" +
+    "<td><span id=\"critical-verdict-display\" class=\"chip good\">PASS</span></td>" +
+    "<td class=\"privacy-note\">4.1のIssue重大度から自動集計</td>";
+  axisRows.appendChild(critTr);
+  updateCriticalCount();
+
+  /* ---------- 6. Final verdict ---------- */
+  (function () {
+    var saved = safeGet(PREFIX + "final_verdict");
+    var buttons = document.querySelectorAll(".verdict-btn");
+    buttons.forEach(function (btn) {
+      if (btn.getAttribute("data-verdict") === saved) btn.classList.add("active");
+      btn.addEventListener("click", function () {
+        buttons.forEach(function (b) { b.classList.remove("active"); });
+        this.classList.add("active");
+        safeSet(PREFIX + "final_verdict", this.getAttribute("data-verdict"));
+      });
+    });
+  })();
+
+  /* ---------- clear buttons ---------- */
+  document.querySelectorAll("[data-clear-scope]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var scope = this.getAttribute("data-clear-scope");
+      var prefixMap = {
+        quality: ["score:quality:", "note:quality:", "select:quality_severity:"],
+        stability: ["check:stability:", "select:stability:"],
+        axis: ["score:axis:", "note:axis:", "note:axis_result:", "select:verdict:axis:"],
+        baseline_log: ["note:baseline_log:", "select:baseline_log:"]
+      };
+      safeRemovePrefixed(prefixMap[scope] || [scope]);
+      window.location.reload();
+    });
+  });
+
+  /* ---------- 7. Export ---------- */
+  function buildExportObject() {
+    var evaluation_scores = { axis: {}, quality: {} };
+    var reviewer_comments = { axis: {}, provenance: {}, review_required_log: {} };
+    var corrections = { quality: {} };
+    var issue_type = { quality: {} };
+    var time_spent = { efficiency: {} };
+
+    AXES.forEach(function (axis) {
+      var s = safeGet(PREFIX + "score:axis:" + axis[0]);
+      if (s !== null) evaluation_scores.axis[axis[1]] = Number(s);
+      var r = safeGet(PREFIX + "note:axis_result:" + axis[0]);
+      if (r) evaluation_scores.axis[axis[1] + "_result"] = r;
+      var n = safeGet(PREFIX + "note:axis:" + axis[0]);
+      if (n) reviewer_comments.axis[axis[1]] = n;
+    });
+    evaluation_scores.critical_issue_count = updateCriticalCount();
+
+    THEMES.forEach(function (themeId) {
+      evaluation_scores.quality[themeId] = {};
+      corrections.quality[themeId] = {};
+      issue_type.quality[themeId] = {};
+      QUALITY_CRITERIA.forEach(function (label, idx) {
+        var s = safeGet(PREFIX + "score:quality:" + themeId + ":" + idx);
+        if (s !== null) evaluation_scores.quality[themeId][label] = Number(s);
+        var n = safeGet(PREFIX + "note:quality:" + themeId + ":" + idx);
+        if (n) corrections.quality[themeId][label] = n;
+        var sev = safeGet(PREFIX + "select:quality_severity:" + themeId + ":" + idx);
+        if (sev) issue_type.quality[themeId][label] = sev;
+      });
+    });
+
+    EFFICIENCY_ROWS.forEach(function (label, idx) {
+      var legacy = safeGet(PREFIX + "note:efficiency:" + idx + ":legacy");
+      var rs = safeGet(PREFIX + "note:efficiency:" + idx + ":report_studio");
+      if (legacy || rs) time_spent.efficiency[label] = { legacy: legacy || null, report_studio: rs || null };
+    });
+
+    ["variance", "retry", "dimension"].forEach(function (k) {
+      var v = safeGet(PREFIX + "note:review:" + k);
+      if (v) reviewer_comments.review_required_log[k] = v;
+    });
+
+    RESPONDENTS.forEach(function (name) {
+      var idx = RESPONDENTS.indexOf(name);
+      var ans = safeGet(PREFIX + "note:provenance:answer:" + idx);
+      var ok = safeGet(PREFIX + "select:provenance:ok:" + idx);
+      if (ans || ok) reviewer_comments.provenance[name] = { answer: ans || null, understood_provenance: ok || null };
+    });
+
+    var gate = { thresholds: {}, axis_verdicts: {}, final_verdict: safeGet(PREFIX + "final_verdict") || null,
+                 final_verdict_rationale: safeGet(PREFIX + "note:final_verdict_rationale") || null };
+    GATE_DEFAULTS.forEach(function (row) { gate.thresholds[row[1]] = gateThreshold(row[0]); });
+    AXES.forEach(function (axis) {
+      var v = safeGet(PREFIX + "select:verdict:axis:" + axis[0]);
+      if (v) gate.axis_verdicts[axis[1]] = v;
+    });
+
+    var calibration_memo = null;
+    var calibrationKeys = ["observed_vs_expert", "correction_target", "review_required_interpretation", "same_condition_definition"];
+    var calibrationValues = {};
+    calibrationKeys.forEach(function (k) {
+      var v = safeGet(PREFIX + "note:calibration:" + k);
+      if (v) calibrationValues[k] = v;
+    });
+    if (Object.keys(calibrationValues).length) calibration_memo = calibrationValues;
+
+    var baseline_issue_log = [];
+    for (var blIdx = 0; blIdx < BASELINE_LOG_ROW_COUNT; blIdx++) {
+      var date = safeGet(PREFIX + "note:baseline_log:" + blIdx + ":date");
+      var theme = safeGet(PREFIX + "select:baseline_log:" + blIdx + ":theme");
+      var detail = safeGet(PREFIX + "note:baseline_log:" + blIdx + ":detail");
+      var action = safeGet(PREFIX + "select:baseline_log:" + blIdx + ":action");
+      if (date || theme || detail || action) {
+        baseline_issue_log.push({ date: date || null, theme: theme || null, detail: detail || null, action: action || null });
+      }
+    }
+
+    return {
+      report_version: safeGet(PREFIX + "note:meta:report_version") || null,
+      reviewer_id: safeGet(PREFIX + "note:meta:reviewer") || null,
+      exported_at: new Date().toISOString(),
+      calibration_memo: calibration_memo,
+      baseline_issue_log: baseline_issue_log,
+      control: {
+        period_start: safeGet(PREFIX + "note:control:period_start") || null,
+        period_end: safeGet(PREFIX + "note:control:period_end") || null,
+        bs_input: safeGet(PREFIX + "note:control:bs_input") || null,
+        narrative_master_version: safeGet(PREFIX + "note:control:narrative_master_version") || null,
+        snapshot_legacy: safeGet(PREFIX + "note:control:snapshot_legacy") || null,
+        snapshot_report_studio: safeGet(PREFIX + "note:control:snapshot_report_studio") || null,
+        evidence_identical_confirmed: safeGet(PREFIX + "check:control:evidence_identical") === "1"
+      },
+      evaluation_scores: evaluation_scores,
+      reviewer_comments: reviewer_comments,
+      corrections: corrections,
+      issue_type: issue_type,
+      time_spent: time_spent,
+      gate: gate
+    };
+  }
+
+  var exportOutput = document.getElementById("export-output");
+  var exportStatus = document.getElementById("export-status");
+  document.getElementById("export-build-btn").addEventListener("click", function () {
+    exportOutput.value = JSON.stringify(buildExportObject(), null, 2);
+    exportStatus.textContent = "";
+  });
+  document.getElementById("export-copy-btn").addEventListener("click", function () {
+    if (!exportOutput.value) exportOutput.value = JSON.stringify(buildExportObject(), null, 2);
+    exportOutput.select();
+    var copied = false;
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(exportOutput.value);
+        copied = true;
+      }
+    } catch (e) {}
+    exportStatus.textContent = copied ? "コピーしました" : "自動コピーできない場合はテキストを全選択してコピーしてください";
+  });
+
+  /* ---------- TOC scroll-spy ---------- */
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll("[data-toc]"));
+  var sections = tocLinks.map(function (a) { return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+
+  if ("IntersectionObserver" in window && sections.length) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = "#" + entry.target.id;
+          tocLinks.forEach(function (a) { a.classList.toggle("active", a.getAttribute("href") === id); });
+        }
+      });
+    }, { rootMargin: "-15% 0px -70% 0px", threshold: 0 });
+    sections.forEach(function (s) { observer.observe(s); });
+  }
+})();
+</script>
+
+</body>
+</html>

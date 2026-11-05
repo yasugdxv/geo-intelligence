@@ -80,8 +80,12 @@ def _query_named_entity_terms(query_text: str) -> list:
     return seen
 
 
+# 2026-11-04追加: 内部資料の最新発行日がこの日数より古い場合は「最新情報が不足」とみなす。
+_RECENCY_STALE_DAYS = 14
+
+
 def assess_research_sufficiency(source_pack: dict, institution_intelligence_pack: dict | None = None, *,
-                                 query_text: str = "") -> dict:
+                                 query_text: str = "", newest_evidence_age_days: int | None = None) -> dict:
     """Stage1呼び出し前の決定的な粗判定。current_evidence（DB上のCurrent Evidence量）と
     institutional_coverage（Institution Intelligenceの充足度）を別々に評価し、overallは
     current_evidence優先で決める（External Researchのトリガー判定に使うのはcurrent_
@@ -111,6 +115,10 @@ def assess_research_sufficiency(source_pack: dict, institution_intelligence_pack
     ]
     if named_entity_coverage_gaps and current_evidence == "sufficient":
         current_evidence = "partial"
+    # 件数が足りていても、資料がすべて古ければ「現在の状況」を答える材料としては不足
+    recency_gap = (newest_evidence_age_days is not None and newest_evidence_age_days > _RECENCY_STALE_DAYS)
+    if recency_gap and current_evidence == "sufficient":
+        current_evidence = "partial"
 
     institutional_coverage = "not_evaluated"
     if institution_intelligence_pack is not None:
@@ -134,6 +142,9 @@ def assess_research_sufficiency(source_pack: dict, institution_intelligence_pack
             "named_entity_coverage_gap: クエリが名指しした固有名詞 "
             f"{named_entity_coverage_gaps} がEvidence本文中に見当たりません"
             "（件数は足りていても、名指しされた主体そのものの材料が不足している可能性）")
+    if recency_gap:
+        gaps.append(f"recency_gap: 内部資料の最新の発行日が{newest_evidence_age_days}日前です"
+                    f"（目安{_RECENCY_STALE_DAYS}日以内）。最新の報道・公式発表を確認します")
     if institutional_coverage == "insufficient":
         gaps.append("institutional_coverage=insufficient（Institution Intelligence Packに"
                      "候補は存在するが実Profileが無い）")
@@ -143,6 +154,7 @@ def assess_research_sufficiency(source_pack: dict, institution_intelligence_pack
         "institutional_coverage": institutional_coverage,
         "overall": current_evidence,
         "direct_evidence_count": direct_count,
+        "newest_evidence_age_days": newest_evidence_age_days,
         "named_entity_coverage_gaps": named_entity_coverage_gaps,
         "gaps": gaps,
     }
@@ -297,6 +309,48 @@ def classify_temporal_status(published_at: str | None) -> str:
     return "historical"
 
 
+ADHOC_RESEARCH_THEME_CODE = "expert-ai-adhoc-research"
+
+
+def get_or_create_adhoc_research_theme(client) -> str:
+    """theme_id未指定のExpert AI実行（画面のIntake経由など）でExternal Researchを使うための共通テーマ。
+    geo_documents.theme_idはNOT NULLのため、検索結果の保存先として1つだけ用意する（無ければ作成）。"""
+    rows = client.select("geo_themes", {"select": "theme_id", "code": f"eq.{ADHOC_RESEARCH_THEME_CODE}", "limit": "1"})
+    if rows:
+        return rows[0]["theme_id"]
+    inserted = client.insert("geo_themes", [{
+        "code": ADHOC_RESEARCH_THEME_CODE, "name_ja": "Expert AI 追加調査（テーマ未指定の実行）",
+        "name_en": "Expert AI ad-hoc research",
+        "description": "テーマ未指定のExpert AI実行でWeb検索を行った際の、検索結果の保存先（自動作成）"}])
+    return inserted[0]["theme_id"]
+
+
+def newest_document_age_days(client, document_ids, today=None):
+    """Source Pack内の文書のうち、最も新しいpublished_atが今日から何日前か。発行日が取れる文書が
+    1件も無い場合はNone（鮮度は不明として、鮮度による検索トリガーは使わない）。"""
+    ids = [i for i in (document_ids or []) if i]
+    if not ids:
+        return None
+    try:
+        rows = client.select("geo_documents", {
+            "select": "published_at", "document_id": f"in.({','.join(ids)})", "published_at": "not.is.null"})
+    except Exception:  # noqa: BLE001 — 鮮度の補助判定に失敗しても本処理は止めない
+        return None
+    dates = []
+    for r in rows or []:
+        try:
+            dates.append(datetime.fromisoformat(str(r["published_at"]).replace("Z", "+00:00")))
+        except (ValueError, TypeError):
+            continue
+    if not dates:
+        return None
+    now = today or datetime.now(timezone.utc)
+    newest = max(dates)
+    if newest.tzinfo is None:
+        newest = newest.replace(tzinfo=timezone.utc)
+    return max((now - newest).days, 0)
+
+
 def get_or_create_domain_source(client, *, theme_id: str, domain: str, source_type: str) -> dict:
     """geo_source_registry（既存、テーマ単位のSource登録）を、ドメイン単位でget-or-create
     する。同一ドメインが同一テーマで既に登録済みならそれを返す（新規カラム不要、
@@ -313,7 +367,8 @@ def get_or_create_domain_source(client, *, theme_id: str, domain: str, source_ty
     return inserted[0]
 
 
-def qualify_and_persist_citations(client, *, theme_id: str, citations: list) -> list:
+def qualify_and_persist_citations(client, *, theme_id: str, citations: list, summary: str | None = None,
+                                  reused_out: list | None = None) -> list:
     """Web Search Adapterが返したcitations（{"url","title"}）のうち、Evidence
     Qualificationを通過したものだけをgeo_documentsへ永続化する。既存
     content_hash一意制約（geo_documents_content_hash_idx）をdedupにそのまま使う
@@ -328,6 +383,8 @@ def qualify_and_persist_citations(client, *, theme_id: str, citations: list) -> 
         content_hash = hashlib.sha256(url.encode("utf-8")).hexdigest()
         existing = client.select("geo_documents", {"select": "document_id", "content_hash": f"eq.{content_hash}"})
         if existing:
+            if reused_out is not None:
+                reused_out.append(existing[0])  # 重複保存はしないが、今回の分析の材料としては再利用する
             continue  # 既に永続化済み（同一URL）。重複保存しない。
 
         domain = _domain_from_url(url)
@@ -339,7 +396,10 @@ def qualify_and_persist_citations(client, *, theme_id: str, citations: list) -> 
             "title": c.get("title") or url, "url": url, "canonical_url": url,
             "published_at": None,  # Web検索ツールは構造化されたpublished_atを返さないため未取得
             "content_hash": content_hash,
-            "extracted_text": c.get("title") or "",
+            # タイトルに加え、検索ツールが返した要旨（AIによる要約・未検証）があれば明記して添える。
+            # 要旨は検索1回分の全体の要旨であり、このURL単独の内容ではない。
+            "extracted_text": (c.get("title") or "") + (
+                f" / 【Web検索の要旨（AI要約・未検証、この検索全体の要約）】{summary}" if summary else ""),
             "fetch_status": "成功", "is_mock": False,
             "evidence_class": "current_direct_evidence",
             "temporal_status": classify_temporal_status(None),
@@ -373,27 +433,30 @@ def run_research_cycle(client, azure_client, model: str, *, theme_id: str, query
     context = f"Research Sufficiency Gateがcurrent_evidence={sufficiency.get('current_evidence')}と判定したため、不足しているCurrent Evidenceを補うための調査。"
 
     documents_added = []
+    documents_reused: list = []
     search_calls_used = 0
     stop_condition = "no_new_evidence"
     try:
         result = run_external_research(azure_client, model, question=question, context=context)
         search_calls_used += 1
         if result["citations"]:
-            documents_added = qualify_and_persist_citations(client, theme_id=theme_id, citations=result["citations"])
-            stop_condition = "sufficient_comparison" if documents_added else "no_new_evidence"
+            documents_added = qualify_and_persist_citations(
+                client, theme_id=theme_id, citations=result["citations"], summary=result.get("summary"),
+                reused_out=documents_reused)
+            stop_condition = "sufficient_comparison" if (documents_added or documents_reused) else "no_new_evidence"
         else:
             stop_condition = "evidence_unobtainable"
     except Exception as exc:  # noqa: BLE001 — External Research失敗時もReasoning自体は継続させる
         stop_condition = "evidence_unobtainable"
         return {
-            "triggered": True, "documents_added": [], "search_calls_used": search_calls_used,
+            "triggered": True, "documents_added": [], "documents_reused": [], "search_calls_used": search_calls_used,
             "stop_condition": stop_condition, "error": str(exc),
         }
 
     if search_calls_used >= search_budget:
-        stop_condition = stop_condition if documents_added else "budget_limit"
+        stop_condition = stop_condition if (documents_added or documents_reused) else "budget_limit"
 
     return {
-        "triggered": True, "documents_added": documents_added,
+        "triggered": True, "documents_added": documents_added, "documents_reused": documents_reused,
         "search_calls_used": search_calls_used, "stop_condition": stop_condition,
     }

@@ -1,0 +1,13 @@
+# 15分ごとにtickを起動する（Job側の周期はconfig/scheduler_jobs.yamlのcadenceが決める）。
+[Unit]
+Description=Geo Intelligence Scheduler tick (every 15 minutes)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=15min
+# サーバ停止中に過ぎた分は、起動後に1回だけ実行する（実際のcatch-upは各Jobが自動で行う）
+Persistent=true
+Unit=geo-scheduler-tick.service
+
+[Install]
+WantedBy=timers.target

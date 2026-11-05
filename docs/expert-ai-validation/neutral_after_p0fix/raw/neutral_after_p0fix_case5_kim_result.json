@@ -1,0 +1,1123 @@
+{
+  "request": {
+    "request_id": "b48d3f5b-374a-40b8-a015-f1c06b618068",
+    "theme_id": null,
+    "mode": "case_analysis",
+    "query_text": "North Koreaの現在のRussia・China・US・South Koreaとの関係について、Kim Jong Unの意思決定と今後の方向性を分析してください。",
+    "created_at": "2026-08-31T12:09:47.265386+00:00"
+  },
+  "source_pack": {
+    "source_pack_id": "8ed3df25-34ad-4d11-9b2a-cef260d73581",
+    "request_id": "b48d3f5b-374a-40b8-a015-f1c06b618068",
+    "document_ids": [
+      "4782ea75-15f2-47bb-a050-5408f186b989",
+      "5c99bd85-72e8-4278-b431-2c96595a8533",
+      "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+      "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+      "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+      "a9208a53-6674-4447-922b-5fb15ecdd2be",
+      "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+      "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+      "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+      "d163ef87-de0e-41fc-bea5-366f7e5aa89f"
+    ],
+    "event_ids": [
+      "b8c45f40-7c55-440c-9126-d8e12b19d28d",
+      "bd4b5db7-87d8-4d4d-956a-bddfc42afb46",
+      "41194dca-582a-430f-88a1-80288b9898dd",
+      "d8010cc3-6775-48c9-9a2f-2d8eacbf7deb",
+      "eae37157-e239-4348-bf23-7276bc170977",
+      "46024068-35bf-4041-afe4-59e77a49096e",
+      "76abc488-b2f4-430f-9082-d1edef02fb63",
+      "c228a3e1-ba80-48ea-9696-6d05d2d8a766",
+      "e233fc23-cc49-4358-b0a3-db5f3ed425a4",
+      "32f2c3fd-0867-4905-8b96-201eb4e8eedb",
+      "f59b60c8-2fd3-4613-adbf-c653735b1ab3",
+      "01a5c3a3-4ea8-417d-8891-f2b832c823dc",
+      "81f49aaa-23aa-4b6f-81ed-09f5d88482d2",
+      "5b5c48f1-4e27-4a4c-9e8d-ca0b3fa366dc",
+      "b4971b20-670f-49d8-a72e-70e0dcb3407d"
+    ],
+    "evidence_ids": [
+      "d813c036-2832-453a-9960-6146c9ac452e",
+      "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+      "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+      "d97955ac-1c77-4916-8c00-712e8068a7c6",
+      "cbfa7584-2fe7-4202-bef8-8384af947059",
+      "d7ab7e02-f793-4966-9b28-287d94fc7319",
+      "1565140a-d683-4ca6-9435-a2e2a511371b",
+      "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+      "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+      "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+      "c255847b-152b-420f-b600-e192e895b777",
+      "f4ea208b-5e66-4047-983c-591aa4cbb315",
+      "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+      "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+      "6cf9d2de-e78f-4832-97e2-0a58094d4690"
+    ],
+    "observation_snapshot": [],
+    "created_at": "2026-08-31T12:09:47.664209+00:00"
+  },
+  "response": {
+    "response_id": "a0336e93-4cf5-421d-8464-9b8bea1ba1d1",
+    "request_id": "b48d3f5b-374a-40b8-a015-f1c06b618068",
+    "source_pack_id": "8ed3df25-34ad-4d11-9b2a-cef260d73581",
+    "mode": "case_analysis",
+    "prompt_version": "geo-expert-v1.2-staged-phaseA",
+    "knowledge_version": "3b31db8e2355",
+    "model": "Global-AzureOpenAI-DEV-gpt-5.1",
+    "response_json": {
+      "claims": [
+        {
+          "text": "Actor Intelligence Packによれば、金正恩は核・ミサイル能力を体制存続の最終的な保証と位置づける公式立場を取っている。",
+          "claim_type": "fact",
+          "source_ref": "actor_claim:Kim_Jong_Un_worldview"
+        },
+        {
+          "text": "金正恩政権は、核・ミサイル計画の完全放棄を交渉の前提とすることを拒否する立場を示している。",
+          "claim_type": "official_claim",
+          "source_ref": "actor_claim:Kim_Jong_Un_red_lines"
+        },
+        {
+          "text": "2023-2024年に金正恩は「敵対的2国家」路線を宣言し、韓国との平和統一方針を事実上放棄したとされる。",
+          "claim_type": "observation",
+          "source_ref": "knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc"
+        },
+        {
+          "text": "2020年6月に北朝鮮は南北共同連絡事務所を爆破し、その後一部の軍事計画を撤回した。",
+          "claim_type": "observation",
+          "source_ref": "knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e"
+        },
+        {
+          "text": "これらの行動は、南北関係を「統一志向」から「敵対的分断」へと公式に転換しつつ、軍事的エスカレーションと部分的後退を交渉カードとして使うパターンを示唆する。",
+          "claim_type": "inference",
+          "source_ref": null
+        },
+        {
+          "text": "金正恩はロシアとの関係を、制裁下での軍事技術・資源獲得と対米・対韓抑止の強化に利用しようとしている可能性が高い。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "金正恩は中国との関係を、経済的生命線と国際社会での完全孤立を防ぐ安全弁として維持しつつ、対米・対韓での挑発が一定ラインを超えないよう調整されることを理解している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "対米関係では、金正恩は直接対話の再開よりも、核・ミサイル能力の高度化とロシア・中国との連携を通じて米国の抑止計算を複雑化させることを優先している可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "対韓関係では、金正恩は「敵対的2国家」路線に沿って、政治的統一の議題を事実上棚上げし、軍事的・心理戦的圧力を通じて韓国国内の分断と対北政策の揺さぶりを狙っている可能性がある。",
+          "claim_type": "hypothesis",
+          "source_ref": null
+        },
+        {
+          "text": "南北共同連絡事務所爆破後に軍事計画の一部を撤回した事例は、金正恩が象徴的な強硬行動と限定的な後退を組み合わせて、国内向けの威信維持と対外的なエスカレーション管理を両立させる交渉スタイルの一例とみなせる。",
+          "claim_type": "illustration",
+          "source_ref": "knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e"
+        }
+      ],
+      "dynamics": "北朝鮮をめぐる現在の力学は、(1) 金正恩の体制存続・核抑止維持という究極目的、(2) 国際制裁と経済脆弱性、(3) ロシア・中国との関係の変化、(4) 米韓の同盟強化と地域ミサイル防衛・拡大抑止の調整、の相互作用で規定される。ロシアのウクライナ戦争長期化に伴い、北朝鮮の砲弾・ミサイル供給と引き換えにロシアから軍事技術・資源を得る可能性が高まり、金正恩の対ロレバレッジは相対的に上がっている。一方、中国は北朝鮮の過度な不安定化や核危機のエスカレーションを望まず、経済支援・貿易・国境管理を通じて北朝鮮を「管理された不安定」として維持しようとする傾向があると推定される。米国と韓国は、北朝鮮の核・ミサイル能力の高度化に対応して拡大抑止の明確化・共同演習・ミサイル防衛強化を進めており、これが北朝鮮側には体制への脅威として利用され、国内宣伝と軍事開発の正当化に使われる構図が続いている。",
+      "stakeholders": [
+        {
+          "actor": "金正恩",
+          "purpose": "自らの統治体制と家族支配の存続、および国内での絶対的権威の維持。",
+          "leverage": "ロシアの軍需ニーズ、米韓同盟の拡大抑止・共同演習",
+          "position": "現局面では、核・ミサイル能力の維持・高度化を続けつつ、ロシア・中国との関係を利用して制裁環境下での体制安定と対米・対韓抑止を強化し、米韓側に有利な条件での対話・譲歩を避けること。",
+          "red_lines": "核・ミサイル計画の完全放棄を交渉の前提とされること、および体制崩壊につながるような軍事攻撃・内部クーデターの兆候。",
+          "confidence": "中",
+          "constraints_fears": "国際制裁・経済制約、中国への経済的依存",
+          "ability_to_move_or_block": "核・ミサイル試験、ロシア・中国との首脳会談・軍事協力、対米・対韓への挑発・対話提案など、局面を大きく動かす行動を選択できる。"
+        },
+        {
+          "actor": "中国指導部（習近平政権）",
+          "purpose": "北朝鮮を『管理された不安定』として維持し、体制崩壊や核危機の急激なエスカレーションを避けつつ、米韓・日米同盟への牽制材料として利用する。",
+          "leverage": "貿易・エネルギー供給・国境管理・外交支援（国連安保理での拒否権など）。",
+          "position": "北朝鮮への経済支援・貿易を維持しつつ、過度な挑発には非公式にブレーキをかける『安全弁』としての立場。",
+          "priority": "地域安定と対米戦略のバランス維持。北朝鮮問題は対米・対韓関係の一要素として位置づけられる。",
+          "red_lines": "北朝鮮による制御不能な核戦争リスクの高まり、体制崩壊に直結するような急激な不安定化。",
+          "confidence": "中",
+          "constraints_fears": "北朝鮮体制崩壊による難民流入・米韓軍の北上、予測不能な核危機、国連制裁違反による国際的批判。",
+          "key_relationships": "金正恩政権への経済・エネルギー支援、国境管理、国連安保理での制裁議論。",
+          "ability_to_move_or_block": "北朝鮮経済の生命線を握ることで、金正恩の挑発の上限を事実上制約し得るが、完全に行動をコントロールすることはできない。"
+        },
+        {
+          "actor": "ロシア指導部（プーチン政権）",
+          "purpose": "ウクライナ戦争継続に必要な砲弾・ミサイルなど軍需物資を確保し、西側制裁下での軍事・外交的選択肢を広げる。",
+          "leverage": "軍事技術・資源供給、国際的な政治支援（国連など）。",
+          "position": "北朝鮮からの軍需支援を受けつつ、技術・資源の見返りを提供する可能性があるが、具体的規模は不明。",
+          "priority": "戦争継続能力の維持と対西側の軍事・外交レバレッジ強化。",
+          "red_lines": "北朝鮮との協力が自国の安全保障や対中関係に重大な悪影響を及ぼす水準。",
+          "confidence": "低",
+          "constraints_fears": "軍需物資不足による戦線の弱体化、西側制裁の強化、国際的孤立の拡大。",
+          "key_relationships": "金正恩政権との軍事・技術協力、中国との戦略的協調、西側との対立。",
+          "ability_to_move_or_block": "北朝鮮の軍事能力強化に寄与し得るが、北朝鮮の対米・対韓挑発を直接制御する立場にはない。"
+        },
+        {
+          "actor": "米国政府",
+          "purpose": "北朝鮮の核・ミサイル能力が米本土・同盟国に対する現実的脅威となることを防ぎ、拡大抑止の信頼性を維持する。",
+          "leverage": "軍事力（在韓・在日米軍）、制裁・金融制約、外交的圧力。",
+          "position": "拡大抑止の明確化・共同演習・制裁維持を通じて北朝鮮を抑止しつつ、条件付き対話の可能性を残す。",
+          "priority": "同盟防衛と核拡散防止。",
+          "red_lines": "北朝鮮による米本土への直接的核・ミサイル攻撃、同盟国への重大な軍事攻撃。",
+          "confidence": "中",
+          "constraints_fears": "北朝鮮による米本土・同盟国への核・ミサイル攻撃、拡大抑止への信頼低下、地域戦争への巻き込まれ。",
+          "key_relationships": "韓国・日本との同盟、対中・対ロ関係、国連安保理での制裁主導。",
+          "ability_to_move_or_block": "北朝鮮の行動に対する抑止・制裁を通じて環境を大きく動かし得るが、金正恩の意思決定を直接変えることはできない。"
+        },
+        {
+          "actor": "韓国政府",
+          "purpose": "自国の安全保障と国民の生命・財産を守りつつ、長期的には朝鮮半島の安定を確保する。",
+          "leverage": "軍事力、経済規模、対北情報・宣伝戦。",
+          "position": "米韓同盟を通じた拡大抑止強化と共同演習を進めつつ、限定的対話の窓口を維持する。",
+          "priority": "安全保障と国内政治の安定。",
+          "red_lines": "ソウルなど主要都市への大規模攻撃、重大な軍事挑発。",
+          "confidence": "中",
+          "constraints_fears": "北朝鮮による砲撃・ミサイル攻撃、国内世論の分断、経済への悪影響。",
+          "key_relationships": "米国との同盟、日本との安全保障協力、北朝鮮との軍事境界線管理。",
+          "ability_to_move_or_block": "北朝鮮との軍事境界線での緊張管理に直接関与し、対話・制裁の組み合わせを通じて局面を部分的に動かし得る。"
+        }
+      ],
+      "main_scenario": {
+        "confidence": "中",
+        "assumptions": [
+          "金正恩の世界観（核・ミサイルを体制保証とみなす）が短期的には変化していない。",
+          "ロシアのウクライナ戦争が短期的に終結せず、北朝鮮との軍需協力ニーズが継続する。",
+          "中国が北朝鮮の急激な不安定化や体制崩壊を望まず、一定の経済・安全保障支援を維持する。",
+          "米韓同盟が拡大抑止・共同演習を継続し、北朝鮮にとって継続的な脅威・宣伝材料となる。"
+        ],
+        "description": "現時点で最も整合的な見立ては、金正恩が核・ミサイル能力を体制存続の最終保証とみなす世界観を維持しつつ、ロシアとの軍事・技術協力を通じて制裁環境下での軍事力・資源を補強し、中国との経済・安全保障関係を安全弁として維持する「多元的対立・依存」路線を続けるというものである。対米・対韓関係では、「敵対的2国家」路線に沿って平和統一や包括的非核化交渉を事実上棚上げし、米韓の拡大抑止・共同演習を国内宣伝と核・ミサイル開発の正当化に利用しながら、象徴的な強硬行動（ミサイル試験・強い声明）と限定的後退（一部軍事計画の撤回・対話提案）を組み合わせて緊張を管理するパターンが続く可能性が高い。ロシアとの関係は、ウクライナ戦争長期化に伴い軍需協力の重要性が増し、金正恩にとって技術・資源獲得と国際的孤立の緩和の手段となるが、中国は北朝鮮の過度な不安定化を望まず、経済支援・国境管理を通じて「管理された不安定」を維持しようとするため、金正恩はロシアとの協力を拡大しつつも、中国の許容範囲を超える核危機や戦争エスカレーションは避けるバランスを取るとみられる。",
+        "selection_rationale": "このシナリオは、(1) 金正恩の世界観・レッドラインに関するActor Intelligence、(2) 敵対的2国家宣言と南北共同連絡事務所爆破という過去行動、(3) 国際制裁と中国依存という構造的制約、(4) ロシア戦争長期化と米韓拡大抑止強化という外部環境を組み合わせて、北朝鮮の対ロ・対中・対米・対韓関係を一貫した枠組みで説明できる。一方、完全な非核化や急激な対話路線への転換を前提とする代替シナリオは、現時点のActor Intelligenceと過去行動と整合しにくく、追加の強い証拠が必要であるため主シナリオとはしなかった。",
+        "supporting_evidence": [
+          "actor_claim:Kim_Jong_Un_worldview",
+          "actor_claim:Kim_Jong_Un_red_lines",
+          "knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc",
+          "knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e"
+        ],
+        "observable_indicators": [
+          "北朝鮮による継続的な核・ミサイル試験（特に新型兵器・射程の拡大）",
+          "北朝鮮とロシアの高官・首脳レベルの会談、軍事協力に関する公式・非公式報道",
+          "中国と北朝鮮の貿易量・エネルギー供給・国境管理に関するデータの推移",
+          "米韓共同演習の規模・頻度と、それに対する北朝鮮の声明・軍事行動のパターン"
+        ],
+        "historical_analogies_used": [
+          {
+            "same_actor": true,
+            "description": "南北共同連絡事務所爆破後に軍事計画を一部撤回した事例を、現在の緊張管理スタイルの参考として用いている。",
+            "same_domain": true,
+            "analogy_strength": "medium",
+            "same_constraints": false,
+            "same_leverage_mechanism": false,
+            "analogy_source_precedent_id": "464a87c2-b00c-4156-8202-2d735286ef5e",
+            "same_institutional_structure": true
+          }
+        ]
+      },
+      "business_impact": {
+        "direct": "北朝鮮に直接の事業・拠点・人員を持つ企業は少数であり、一般的な多国籍企業にとって直接影響は限定的である。ただし、韓国・日本・在韓米軍基地などに拠点を持つ企業にとっては、北朝鮮のミサイル試験・軍事挑発が安全保障リスク（従業員安全・サプライチェーン中断）として直接影響し得る。",
+        "indirect": "北朝鮮の核・ミサイル開発と対ロ・対中関係の変化は、北東アジアの安全保障環境を通じて、海上輸送ルート・保険料・為替・投資心理に影響を与え得る。特に韓国・日本・中国向けの輸出入や現地生産拠点を持つ企業は、緊張の高まりによる物流遅延・保険コスト増・市場ボラティリティの間接影響を受ける可能性がある。",
+        "unrelated_note": null,
+        "environment_change": "長期的には、北朝鮮の核・ミサイル能力の高度化とロシア・中国との関係変化が、米中対立・地域安全保障構造の一部として組み込まれ、北東アジアを事業展開する企業にとって『慢性的な地政学リスク』として前提化される。これは、拠点分散・サプライチェーン多元化・保険・BCPの設計に影響を与える環境変化である。"
+      },
+      "initial_anomaly": "提供された直近Eventは台湾海巡署・中国海警・米沿岸警備隊に関するものであり、北朝鮮・金正恩に直接関係する一次情報が含まれていない。この状態で金正恩の現在の対ロ・対中・対米・対韓関係を詳細に評価すること自体が情報不足であり、通常なら北朝鮮関連の公式発表・軍事動向・外交通信が参照されるはずという点が違和感となる。",
+      "review_findings": null,
+      "audience_analysis": [],
+      "executive_summary": {
+        "what_changed": "過去数年で、金正恩は南北関係を『敵対的2国家』として公式に位置づけ直し、平和統一方針を事実上放棄した。一方で、ロシアの戦争長期化に伴い、北朝鮮の軍需協力ニーズが高まり、対ロ関係の重要性が増している可能性がある。",
+        "why_it_matters": "北朝鮮の核・ミサイル能力と金正恩の意思決定は、北東アジアの安全保障環境を規定する重要要因であり、韓国・日本・中国向け事業や海上輸送・為替・投資心理に影響を与え得る。特にロシア・中国との関係変化は、制裁環境と軍事バランスに影響し、地域リスクの性質を変える可能性がある。",
+        "what_to_watch_decide": "経営としては、(1) 北朝鮮の核・ミサイル試験とロシア・中国との関係の変化、(2) 米韓・日米同盟の拡大抑止・共同演習の動向、(3) 韓国・日本・中国向け事業のBCP・サプライチェーン分散・保険・在外邦人安全対策の妥当性を定期的に確認することが重要である。現時点では、主シナリオを前提にした準備を維持しつつ、追加情報に応じて見立てを更新する余地を残すべき局面である。"
+      },
+      "key_actor_profiles": [
+        {
+          "actor": "金正恩",
+          "red_line": "核・ミサイル計画の完全放棄を交渉の前提とされること、および体制崩壊につながるような軍事攻撃・内部クーデターの兆候。",
+          "actor_ref": "Kim_Jong_Un",
+          "entity_id": "64db3e84-45e3-4217-bf08-1018e1f8c7c5",
+          "confidence": "低",
+          "formal_role": "朝鮮民主主義人民共和国の最高指導者（党・国家・軍の最高位を兼ねる）",
+          "evidence_ids": [],
+          "decision_power": "核・ミサイル開発、対外軍事協力、外交方針、国内統治に関する最終決定権を事実上独占しているとみなされる。",
+          "driving_forces": [
+            {
+              "force": "国際制裁・経済制約",
+              "direction": "constraining",
+              "description": "制裁により経済が脆弱であり、過度な軍事エスカレーションや中国との関係悪化は体制存続に直接のリスクとなる。"
+            },
+            {
+              "force": "中国への経済的依存",
+              "direction": "constraining",
+              "description": "中国が経済支援・貿易・エネルギー供給を握っており、金正恩は中国の許容範囲を超える不安定化を避ける必要がある。"
+            },
+            {
+              "force": "ロシアの軍需ニーズ",
+              "direction": "supporting",
+              "description": "ロシアの戦争継続に伴う砲弾・ミサイル需要は、北朝鮮に軍事協力を通じた技術・資源獲得の機会を提供する。"
+            },
+            {
+              "force": "米韓同盟の拡大抑止・共同演習",
+              "direction": "supporting",
+              "description": "北朝鮮側の脅威認識と国内宣伝に利用され、核・ミサイル開発の正当化材料となる一方、軍事的には抑止圧力として制約も与える。"
+            }
+          ],
+          "ability_to_move": "核・ミサイル試験、ロシア・中国との首脳会談・軍事協力、対米・対韓への挑発・対話提案など、局面を大きく動かす行動を選択できる。",
+          "issue_objective": "現局面では、核・ミサイル能力の維持・高度化を続けつつ、ロシア・中国との関係を利用して制裁環境下での体制安定と対米・対韓抑止を強化し、米韓側に有利な条件での対話・譲歩を避けること。",
+          "observed_action": "提供資料には北朝鮮の直近行動が含まれていないため、具体的な最近のミサイル試験・ロシア訪問・中国との会談などはここでは特定できない。",
+          "vulnerabilities": [
+            "国際制裁下での慢性的な経済脆弱性",
+            "中国への過度な経済・安全保障依存",
+            "国内エリート・軍の不満や潜在的な権力闘争（情報不足で詳細は不明）"
+          ],
+          "ability_to_block": "軍・党内の異論を抑え、対話や譲歩の試みを拒否することで、緊張緩和や非核化プロセスを事実上阻止できる。",
+          "primary_audience": "国内のエリート層・軍・国民（体制の正当性と指導者の威信を維持するため）",
+          "why_actor_matters": "金正恩は北朝鮮の最高指導者として、核・ミサイル開発、対ロ・対中・対米・対韓関係の方向性をほぼ一人で決める位置にあり、彼の選好と判断がそのまま地域安全保障環境に反映される。特に、核・ミサイル能力を体制存続の保証とみなす世界観と、非核化前提の交渉を拒否するレッドラインは、北朝鮮の対外関係の枠組みを規定しているため、この局面を動かす・止める力の中心にある。",
+          "available_leverage": [
+            "核・ミサイル能力とその試験・発射のタイミング",
+            "ロシアへの砲弾・ミサイル供給など軍需協力",
+            "中国との経済・安全保障関係（国境管理・貿易・エネルギー供給）",
+            "米韓との対話提案・合意履行／破棄を通じた緊張管理"
+          ],
+          "secondary_audience": "米国・韓国・中国・ロシアなどの外部主体（抑止・交渉カード・国際的認知を操作するため）",
+          "ultimate_objective": "自らの統治体制と家族支配の存続、および国内での絶対的権威の維持。",
+          "actor_model_challenge": {
+            "outcome": "inconclusive",
+            "reasoning": "そのような転換を示す一次情報（核凍結・査察受け入れ・中国・ロシアとの安全保障条約など）は今回のSource Packには含まれておらず、外部情報なしには検証不能である。一方、過去の公式立場と行動は核・ミサイルを体制保証とみなす世界観を支持しており、現時点では既存モデルを維持しつつ、将来の証拠により更新可能な仮説として扱うのが妥当である。",
+            "challenge_question": "もし金正恩が内部的には核・ミサイル能力を交渉カードとして扱い、体制存続の保証を中国・ロシアとの安全保障関係により強く依存させる方向へ転換していた場合、現在のActor Intelligenceはどこまで有効か。"
+          },
+          "persistent_preference": "核・ミサイル能力を体制存続の保証とみなし、その維持・高度化を最優先する一方、象徴的な強硬行動と限定的な後退を組み合わせて、国内威信と対外エスカレーション管理を両立させる交渉スタイルを好む仮説。",
+          "preference_action_gap": "過去事例からは、金正恩が強硬な宣言や象徴的行動（敵対的2国家宣言、連絡事務所爆破）を行いつつ、その後一部軍事計画を撤回するなど、完全なエスカレーションではなく管理された緊張を維持する傾向が見られる。これは、究極目的としての体制存続と、国内向け威信維持・対外交渉カードの両立を図るために、Persistent Preference（核・ミサイル維持・高度化）とObserved Action（限定的後退を含む）との間に意図的なギャップを設けている可能性を示唆する。",
+          "relevant_decision_patterns": [
+            "象徴的な強硬行動（施設爆破・強い声明）と、その後の限定的後退を組み合わせて緊張を管理するパターン",
+            "核・ミサイル能力を交渉カードではなく体制保証として位置づけ、完全放棄を拒否するパターン"
+          ],
+          "unavailable_or_costly_cards": [
+            "核・ミサイル計画の完全放棄（体制存続の保証を失うため）",
+            "中国との関係の全面的断絶（経済・安全保障の生命線を失うため）",
+            "全面戦争へのエスカレーション（体制崩壊リスクが高いため）"
+          ],
+          "confidence_adjustment_reason": "actor_intelligence_provenance.general_knowledge_used=true and this case has no current-case evidence_ids backing the assessment; confidence capped at low per the P0-1 General Knowledge Confidence Cap (a model-general-knowledge-only actor assumption must not be promoted to medium/high confidence).",
+          "persistent_preference_change": null,
+          "actor_intelligence_provenance": {
+            "pattern_ids": [],
+            "profile_source": "actor_intelligence_active",
+            "exception_episode_ids": [],
+            "general_knowledge_used": true,
+            "historical_episode_ids": [
+              "d81a21e5-b2ec-457a-8814-5e06ec9824fc",
+              "464a87c2-b00c-4156-8202-2d735286ef5e"
+            ],
+            "supporting_evidence_ids": [
+              "actor_claim:Kim_Jong_Un_worldview",
+              "actor_claim:Kim_Jong_Un_red_lines"
+            ],
+            "actor_intelligence_status": "partial"
+          },
+          "persistent_preference_evidence": [
+            {
+              "caveat": "公式立場であり、実際の内部意図とは完全には一致しない可能性がある。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "高",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "核・ミサイル能力を体制存続の最終的な保証と位置づける公式立場の表明",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "交渉上のポジションであり、将来の条件次第で変化し得る。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "高",
+              "evidence_id": null,
+              "date_or_period": null,
+              "event_or_behavior": "核・ミサイル計画の完全放棄を交渉の前提とすることを拒否する立場",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "南北関係に関する方針転換であり、核・ミサイル方針そのものではないが、敵対構造の固定化を示唆する。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "中",
+              "evidence_id": null,
+              "date_or_period": "2023-2024",
+              "event_or_behavior": "「敵対的2国家」路線宣言による平和統一方針の放棄",
+              "supports_or_contradicts": "supports"
+            },
+            {
+              "caveat": "象徴的強硬行動と限定的後退を組み合わせるパターンの一例だが、他の局面でも同様かは追加検証が必要。",
+              "source": null,
+              "claim_id": null,
+              "relevance": "中",
+              "evidence_id": null,
+              "date_or_period": "2020-06",
+              "event_or_behavior": "南北共同連絡事務所爆破とその後の軍事計画撤回",
+              "supports_or_contradicts": "supports"
+            }
+          ],
+          "pattern_applicability_assessment": [
+            {
+              "conclusion": "過去事例は金正恩の交渉スタイルの仮説を補強するが、今回の局面にそのまま適用できるかは直近行動の追加確認が必要であり、独立した証明にはならない。",
+              "pattern_id": null,
+              "applicability": "medium",
+              "pattern_summary": "象徴的な強硬行動と限定的後退を組み合わせて緊張を管理する交渉スタイル",
+              "current_differences": [
+                "直近の北朝鮮行動（ミサイル試験・対ロ協力など）に関する一次情報が今回のSource Packに含まれていないため、最新局面への適用状況を確認できない。",
+                "ロシア戦争や中国の対北政策など外部環境が過去と変化している可能性がある。"
+              ],
+              "current_similarities": [
+                "南北共同連絡事務所爆破後に軍事計画を一部撤回した事例",
+                "敵対的2国家宣言により南北関係を硬化させつつ、全面戦争には踏み込んでいない点"
+              ],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "象徴的な強硬行動（施設爆破・強い声明）と、その後の限定的後退を組み合わせて緊張を管理するパターン",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            },
+            {
+              "conclusion": "Applicability was not assessed by the model for this pattern; defaulting to 'uncertain' per the Actor Pattern Applicability requirement (a referenced Historical Pattern must not be silently auto-applied without an explicit current-case applicability judgement).",
+              "pattern_id": null,
+              "applicability": "uncertain",
+              "pattern_summary": "核・ミサイル能力を交渉カードではなく体制保証として位置づけ、完全放棄を拒否するパターン",
+              "current_differences": [],
+              "current_similarities": [],
+              "exception_evidence_ids": []
+            }
+          ],
+          "strategic_relationship_preference": "米国・韓国とは公式には敵対関係を強調しつつ、必要に応じて限定的対話や合意を交渉カードとして利用する。中国とは安全弁・経済生命線としての関係維持を優先し、ロシアとは軍事・技術協力を通じた対米・対韓抑止強化を志向する可能性が高い。"
+        }
+      ],
+      "root_premise_check": null,
+      "additional_research": [
+        {
+          "priority": "高",
+          "question": "北朝鮮とロシアの軍事・技術協力の具体的内容と規模はどの程度か。",
+          "rationale": "対ロ関係の実態は、金正恩の今後の意思決定と主シナリオの妥当性に直接影響するため。",
+          "related_hypothesis": "ロシアとの関係を体制維持と軍事力強化の主要なてことして利用しているという仮説",
+          "recommended_sources": "衛星画像分析、信頼できる国際報道、政府・情報機関の公開評価"
+        },
+        {
+          "priority": "高",
+          "question": "中国の対北朝鮮政策（制裁履行度、貿易・エネルギー支援、国境管理）は直近でどのように変化しているか。",
+          "rationale": "中国の許容範囲は金正恩の行動の上限を規定し得るため、構造的制約の評価に不可欠。",
+          "related_hypothesis": "中国との関係を安全弁として維持しつつ、許容範囲を超えるエスカレーションを避けるという仮説",
+          "recommended_sources": "中国税関データ、国境貿易の観測、専門家分析"
+        },
+        {
+          "priority": "中",
+          "question": "米韓同盟の最新の拡大抑止措置・共同演習計画と、それに対する北朝鮮の具体的反応はどうか。",
+          "rationale": "エスカレーションパターンの確認は、緊張管理スタイルの仮説を検証する上で重要。",
+          "related_hypothesis": "米韓拡大抑止・共同演習を国内宣伝と核・ミサイル開発の正当化に利用しているという仮説",
+          "recommended_sources": "米韓国防当局の発表、演習スケジュール、北朝鮮の公式声明・ミサイル発射記録"
+        },
+        {
+          "priority": "中",
+          "question": "北朝鮮内部の経済状況とエリート・軍の支持・不満の状況はどうか。",
+          "rationale": "内部制約の強さは、主シナリオと代替シナリオ（対話志向への転換）の蓋然性を比較するために必要。",
+          "related_hypothesis": "金正恩が強硬路線を維持しつつも、内部制約に応じて柔軟な対話・後退を選ぶ可能性があるという仮説",
+          "recommended_sources": "脱北者証言、衛星画像による夜間照度・農業生産の推定、専門家分析"
+        }
+      ],
+      "hypothesis_register": [
+        {
+          "reason": "Actor Intelligenceと過去行動、構造的制約と整合的だが、直近行動の一次情報が不足しているため確信度は中にとどまる。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "金正恩は核・ミサイル能力を体制存続の保証とみなし、ロシアとの軍事協力と中国との安全弁関係を組み合わせた「多元的対立・依存」路線を継続する。",
+          "hypothesis_id": "H0",
+          "hypothesis_type": "surface",
+          "supporting_evidence_ids": [
+            "actor_claim:Kim_Jong_Un_worldview",
+            "actor_claim:Kim_Jong_Un_red_lines",
+            "knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc",
+            "knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "そのような転換を示す一次情報が今回のSource Packにはなく、外部情報なしには検証不能だが、内部経済危機やエリート不満が強ければ成立し得る。",
+          "status": "unresolved",
+          "confidence": "判断不能",
+          "description": "金正恩は内部的には核・ミサイル能力を交渉カードとして再定義し、中国・米韓との包括的和平・制裁緩和を優先する方向へ転換しつつある。",
+          "hypothesis_id": "H1",
+          "hypothesis_type": "actor_intent_alternative",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "actor_claim:Kim_Jong_Un_red_lines"
+          ]
+        },
+        {
+          "reason": "構造的制約は強く、金正恩の裁量はその枠内で行使されているとみるのが妥当だが、個人の選好も重要なため、主シナリオの補助的説明として残す。",
+          "status": "retained",
+          "confidence": "中",
+          "description": "北朝鮮の行動は金正恩個人の意思よりも、国際制裁・中国依存・ロシア戦争・米韓拡大抑止といった構造要因によって主に規定されている。",
+          "hypothesis_id": "H2",
+          "hypothesis_type": "structural_alternative",
+          "supporting_evidence_ids": [
+            "external_assessment:Kim_Jong_Un_structural_constraints"
+          ],
+          "contradicting_evidence_ids": null
+        },
+        {
+          "reason": "そのような移行を示す具体的証拠（包括的安全保障条約・核凍結合意など）が確認されておらず、現時点では仮説としての説明力が低い。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "既存Actor Intelligence（核・ミサイルを体制保証とみなす世界観）が現在の金正恩には当てはまらず、彼は別の安全保障枠組み（中国・ロシアとの条約など）へ移行しつつある。",
+          "hypothesis_id": "H3",
+          "hypothesis_type": "actor_model_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "actor_claim:Kim_Jong_Un_worldview"
+          ]
+        },
+        {
+          "reason": "北朝鮮の核・ミサイル能力は韓国・日本・米本土への直接的脅威となり得るため、単なる副次的要因として扱うのは現実的でない。",
+          "status": "rejected",
+          "confidence": "低",
+          "description": "北朝鮮問題は地域安全保障の中心ではなく、米中・米露対立の副次的産物として扱われるべきであり、金正恩の意思決定は大国間競争の周辺要因に過ぎない。",
+          "hypothesis_id": "H4",
+          "hypothesis_type": "frame_breaking",
+          "supporting_evidence_ids": null,
+          "contradicting_evidence_ids": [
+            "knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc"
+          ]
+        }
+      ],
+      "one_line_assessment": "現時点では、金正恩は核・ミサイルを軸にした体制存続を最優先しつつ、ロシアとの軍事・技術協力をてこに米韓への圧力を強め、中国との関係を安全弁として維持する「多元的対立・依存」路線を続ける可能性が高いが、具体的な次の一手は制裁環境とロシア・中国の出方に強く制約されている（as_of: 2026-08-31）。",
+      "relevant_mechanisms": [],
+      "relevant_precedents": [],
+      "key_point_assessment": {
+        "confidence": "低",
+        "control_type": "actor_controlled",
+        "evidence_class": "current_indirect_evidence",
+        "hinge_structure": {
+          "primary_hinge": "金正恩が核・ミサイル能力を体制存続の保証とみなし、その維持・高度化を今後も最優先方針として維持するかどうか",
+          "secondary_hinges": [
+            "国際制裁と中国依存が現在の水準で維持され、北朝鮮経済が急激な崩壊や急回復をしないこと",
+            "ロシアの戦争状況が北朝鮮との軍事協力を継続的に必要とする程度に長期化するかどうか",
+            "米韓同盟の拡大抑止・共同演習が北朝鮮にとって継続的な脅威・宣伝材料として存在し続けること"
+          ]
+        },
+        "primary_key_point": "金正恩による核・ミサイル能力維持・高度化の継続方針",
+        "rejected_candidates": [
+          {
+            "key_point": "国際制裁と中国依存による北朝鮮経済の構造的制約",
+            "why_not_primary": "北朝鮮の行動を強く制約するが、制裁・依存が同じでも金正恩の選好次第で対外関係のスタイル（対話志向か挑発志向か）は変わり得るため、局面の『枠組み』ではなく『制約条件』として位置づける方が適切と判断した。"
+          },
+          {
+            "key_point": "ロシアの戦争継続に伴う北朝鮮軍需協力ニーズの高まり",
+            "why_not_primary": "対ロ関係の質を変える重要要因だが、ロシア戦争が終結しても金正恩の核・ミサイル維持方針は継続し得るため、局面全体のKey Pointというより特定期間の機会要因とみなす方が妥当と判断した。"
+          },
+          {
+            "key_point": "米韓同盟による拡大抑止・共同演習の強化",
+            "why_not_primary": "北朝鮮側の脅威認識と宣伝に大きく影響するが、米韓側の政策は北朝鮮の核・ミサイル方針への反応として強化されている面も大きく、因果の主軸としては金正恩の方針の方が上位にあるとみなした。"
+          }
+        ],
+        "selection_rationale": "北朝鮮の対ロ・対中・対米・対韓関係はすべて、金正恩が核・ミサイル能力を体制存続の保証とみなし、それを維持・高度化する方針を変えないことを前提に構築されている。国際制裁やロシア戦争、米韓同盟強化などの構造要因は重要だが、それらはこの方針に対する制約・機会として作用しているに過ぎず、局面の基本構図を規定しているのは金正恩のこの選好であるため、Primary Key Pointとして最も整合的と判断した。",
+        "candidate_key_points": [
+          {
+            "key_point": "金正恩による核・ミサイル能力維持・高度化の継続方針",
+            "control_type": "actor_controlled",
+            "what_it_explains": "なぜ北朝鮮が対米・対韓関係で譲歩しないのか、なぜロシア・中国との関係が軍事・安全保障中心になるのか、なぜ国際制裁が長期化しても体制が核開発を優先し続けるのかを説明できる。",
+            "why_it_could_be_key": "北朝鮮の対外関係（対米・対韓・対中・対ロ）は、ほぼすべて核・ミサイル能力を前提とした抑止・交渉構造の上に構築されており、この方針が変わらない限り関係の枠組みも大きくは変わらないため。",
+            "controlling_entity_ids": [
+              "64db3e84-45e3-4217-bf08-1018e1f8c7c5"
+            ],
+            "supporting_evidence_ids": [
+              "actor_claim:Kim_Jong_Un_worldview",
+              "actor_claim:Kim_Jong_Un_red_lines"
+            ],
+            "what_it_does_not_explain": "短期的な対話再開や軍事挑発の強度変化、経済政策や国内統治スタイルの細部、ロシア・中国との具体的な取引条件の違いまでは直接説明しない。",
+            "control_structure_summary": null,
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": [
+              "knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc",
+              "knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e"
+            ]
+          },
+          {
+            "key_point": "国際制裁と中国依存による北朝鮮経済の構造的制約",
+            "control_type": "structural",
+            "what_it_explains": "なぜ北朝鮮が完全な戦争エスカレーションを避けつつ挑発を繰り返すのか、なぜ中国との関係を完全には壊せないのか、なぜロシアとの関係強化が魅力的になるのかを説明できる。",
+            "why_it_could_be_key": "北朝鮮の対外行動は、深刻な経済制約と中国への依存によって強く制約されており、どれだけ軍事的に強硬でも、経済崩壊や中国からの支援停止は体制存続に直結するため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": [
+              "external_assessment:Kim_Jong_Un_structural_constraints"
+            ],
+            "what_it_does_not_explain": "金正恩がどの程度経済より軍事を優先するかという選好の差、短期的な挑発タイミングや具体的な軍事演習内容など、構造の中での裁量部分は説明しない。",
+            "control_structure_summary": "国連制裁・米国の二次制裁・北朝鮮の計画経済構造・中国との貿易・エネルギー供給など、複数の制度・市場要因が重なった構造的制約であり、単一の意思決定者が短期に変更しにくい。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "ロシアの戦争継続に伴う北朝鮮軍需協力ニーズの高まり",
+            "control_type": "structural",
+            "what_it_explains": "なぜ近年、北朝鮮とロシアの軍事協力・首脳交流が増えているのか、なぜ北朝鮮がロシアから技術・資源を得る見返りを期待し得るのかを説明できる。",
+            "why_it_could_be_key": "ロシアがウクライナ戦争で長期的な砲弾・ミサイル供給を必要とする状況は、北朝鮮にとって軍需協力を通じた技術・資源獲得の新たな機会となり、対ロ関係の質を変え得るため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "具体的な取引内容、どの兵器・技術がどの程度移転されるか、ロシアがどこまで北朝鮮の核・ミサイル開発を支援するかといった詳細までは説明しない。",
+            "control_structure_summary": "ロシアの戦争継続・西側制裁・ロシア軍需産業の制約という構造的要因が、北朝鮮の軍需供給能力と結びつくことで生じる需要であり、個々の指導者の意思だけでは簡単に消えない。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          },
+          {
+            "key_point": "米韓同盟による拡大抑止・共同演習の強化",
+            "control_type": "distributed",
+            "what_it_explains": "なぜ北朝鮮が米韓演習の前後にミサイル発射や強硬声明を行うことが多いのか、なぜ対米・対韓宣伝で『敵対的軍事包囲』が強調されるのかを説明できる。",
+            "why_it_could_be_key": "米韓の拡大抑止強化と共同演習は、北朝鮮側の脅威認識と国内宣伝に直接影響し、金正恩が挑発・軍事開発を正当化する根拠として利用されるため。",
+            "controlling_entity_ids": null,
+            "supporting_evidence_ids": null,
+            "what_it_does_not_explain": "米韓側の内部政治・選挙・産業利害など、演習や抑止政策の細部の決定要因までは説明しない。",
+            "control_structure_summary": "米国政府・韓国政府・両国議会・軍・国内世論など複数主体の意思決定が絡む分散構造であり、北朝鮮側からは一体の圧力として認識されるが、内部では調整が必要。",
+            "control_type_adjustment_reason": null,
+            "historical_supporting_evidence_ids": null
+          }
+        ],
+        "disconfirming_signal": "金正恩が公式に、核・ミサイル能力を体制存続の保証ではなく交渉カードとして位置づけ直し、完全な核放棄を前提とする包括的和平・経済開放路線へ実際に踏み出す（検証可能な核凍結・査察受け入れ・長期的なミサイル試験停止など）場合、このKey Pointの置き方自体が誤っていたか、少なくとも更新が必要と判断する。",
+        "controlling_entity_ids": [
+          "64db3e84-45e3-4217-bf08-1018e1f8c7c5"
+        ],
+        "supporting_evidence_ids": [
+          "actor_claim:Kim_Jong_Un_worldview",
+          "actor_claim:Kim_Jong_Un_red_lines"
+        ],
+        "control_structure_summary": null,
+        "contradicting_evidence_ids": null,
+        "confidence_adjustment_reason": "supporting_evidence_ids consisted solely of Derived Intelligence IDs (historical episodes / actor-intelligence-derived evidence) with no remaining current-case evidence after separation; confidence capped at low (historical pattern is prior/plausibility, not current proof).",
+        "control_type_adjustment_reason": null,
+        "historical_supporting_evidence_ids": [
+          "knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc",
+          "knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e"
+        ]
+      },
+      "media_source_context": null,
+      "unknown_or_uncertain": "今回のSource Packには北朝鮮関連の一次情報が含まれておらず、ロシア戦争・中国対北政策・米韓拡大抑止の最新状況も直接参照されていない。そのため、金正恩の現在の具体的行動（直近のミサイル試験・対ロ訪問・対中会談・対米・対韓声明）や内部経済・エリート動向については判断不能であり、主シナリオは過去のActor Intelligenceと一般的な構造要因に基づく仮説にとどまる。",
+      "alternative_scenarios": [
+        {
+          "confidence": "低",
+          "description": "限定的経済危機や内部不満の高まりを受けて、金正恩が中国との関係をさらに優先し、ロシアとの軍事協力を抑制しつつ、米韓との限定的対話・緊張緩和に傾くシナリオ。核・ミサイル能力は維持するが、試験頻度や挑発強度を下げ、経済支援・制裁緩和を得ることを優先する。",
+          "switch_conditions": [
+            "北朝鮮が核・ミサイル試験の頻度を明確に減らし、経済協力・制裁緩和を前面に出した対話提案を行う。",
+            "中国が対北支援と引き換えに、緊張緩和・対話再開を条件としていることを示す公式・非公式情報が現れる。"
+          ],
+          "weakening_conditions": [
+            "北朝鮮が高頻度・高強度の核・ミサイル試験を継続し、対話より挑発を優先していることを示す。",
+            "中国が対北支援を政治的に利用しつつも、緊張緩和を強く求める兆候が見られない。"
+          ],
+          "strengthening_conditions": [
+            "北朝鮮内部の経済状況悪化に関する信頼できる証拠（食糧不足・エネルギー危機・エリート不満）が増える。",
+            "中国が対北支援と引き換えに緊張緩和・対話再開を強く求める兆候が現れる。",
+            "米韓側が制裁緩和や安全保障上の譲歩と引き換えに、北朝鮮との限定的合意を模索する動きが強まる。"
+          ]
+        },
+        {
+          "confidence": "低",
+          "description": "ロシア戦争の長期化と米中対立の激化を背景に、金正恩がロシアとの軍事・技術協力を大幅に拡大し、中国の制約を相対的に弱めつつ、より強硬な核・ミサイル開発と挑発に踏み込むシナリオ。米韓への抑止を強化する一方、偶発的衝突や誤算による危機エスカレーションのリスクが高まる。",
+          "switch_conditions": [
+            "ロシア・北朝鮮間で、長距離ミサイル・衛星技術などの高度な軍事技術移転を示す具体的証拠が確認される。",
+            "中国が北朝鮮への圧力を強め、ロシアとの過度な軍事協力に懸念を示す。"
+          ],
+          "weakening_conditions": [
+            "ロシア戦争の状況が変化し、北朝鮮との軍需協力ニーズが減少する。",
+            "北朝鮮がロシアとの軍事協力を公式に否定するか、協力規模が限定的であることを示す証拠が増える。"
+          ],
+          "strengthening_conditions": [
+            "ロシアと北朝鮮の間で大規模な軍事技術・資源の交換を示す信頼できる証拠が現れる。",
+            "北朝鮮が過去よりも高頻度・高強度の核・ミサイル試験を行い、米韓・日本への直接的脅威を増大させる。",
+            "中国が対北制裁履行を強めるか、北朝鮮への支援を相対的に絞る兆候が出る。"
+          ]
+        }
+      ],
+      "monitoring_indicators": [
+        "北朝鮮の核・ミサイル試験の頻度・種類・射程の変化",
+        "北朝鮮とロシアの軍事・技術協力に関する信頼できる報道・衛星画像分析",
+        "中国と北朝鮮の貿易量・エネルギー供給・国境管理に関するデータ",
+        "米韓共同演習の規模・頻度と北朝鮮の反応（声明・軍事行動）",
+        "北朝鮮内部の経済状況・食糧・エネルギーに関する専門家評価"
+      ],
+      "retraction_conditions": [
+        "金正恩が核・ミサイル計画の完全放棄を前提とする包括的非核化交渉に公式にコミットし、検証可能な措置（査察受け入れ・長期的試験停止）を実施する。",
+        "北朝鮮がロシアとの軍事協力を明確に縮小し、中国・米韓との経済・安全保障協力を優先する具体的行動（合意・共同声明）を取る。",
+        "信頼できる情報源から、北朝鮮内部の権力構造や金正恩の世界観が大きく変化したことを示す証拠（後継者問題・党内権力再編など）が現れる。"
+      ],
+      "sources_and_citations": [
+        {
+          "result_id": "4782ea75-15f2-47bb-a050-5408f186b989",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "5c99bd85-72e8-4278-b431-2c96595a8533",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "0140af1e-3788-4fe5-97ff-c71bbb3aafe5",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "fc30753d-4762-4f4b-b8bb-2ecb451e382c",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "f1a5db81-3dba-49a0-875a-69ca6b306a17",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "a9208a53-6674-4447-922b-5fb15ecdd2be",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3d3c3c09-45a3-4e6f-bd9f-0a08d0e8f94d",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "6b3e15d8-bb4c-4b47-a94c-41196ea5d282",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "3351be8b-3a7b-4428-82c7-f46aa0e6c5ca",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d163ef87-de0e-41fc-bea5-366f7e5aa89f",
+          "result_type": "document",
+          "citation_label": null
+        },
+        {
+          "result_id": "d813c036-2832-453a-9960-6146c9ac452e",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c81d2d4e-8f9a-40ad-8c7b-35b49c9eea23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f62dfbea-98bb-4a8c-85cc-1ba1bcc186b5",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d97955ac-1c77-4916-8c00-712e8068a7c6",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "cbfa7584-2fe7-4202-bef8-8384af947059",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "d7ab7e02-f793-4966-9b28-287d94fc7319",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "1565140a-d683-4ca6-9435-a2e2a511371b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "ccc9d8e9-7be3-44e0-9e08-f0360c563b2f",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "71586388-5cfe-45e9-97b6-92bb1ab24d23",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "79cc21f9-9dbf-4d74-982d-9dc333bd895b",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "c255847b-152b-420f-b600-e192e895b777",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "f4ea208b-5e66-4047-983c-591aa4cbb315",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "91236d95-eb21-4d72-ab2c-f8101ae636c7",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "4d7d81b0-63d1-4555-a8e2-e55f8be0fb9c",
+          "result_type": "evidence",
+          "citation_label": null
+        },
+        {
+          "result_id": "6cf9d2de-e78f-4832-97e2-0a58094d4690",
+          "result_type": "evidence",
+          "citation_label": null
+        }
+      ],
+      "weakening_information": "今回のSource Packには北朝鮮の直近行動に関する一次情報が含まれておらず、ロシア戦争・中国対北政策・米韓拡大抑止の最新状況も直接参照されていないため、主シナリオは過去のActor Intelligenceと一般的な構造要因に依存している。この情報不足自体が、確信度を中以上に引き上げることを妨げる要因となる。",
+      "contradicting_evidence": [
+        "knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc（敵対的2国家宣言は南北関係の硬化を示すが、将来の対話再開可能性を完全には否定しないため、主シナリオの『平和統一棚上げの固定化』を弱める可能性がある。）",
+        "knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e（南北共同連絡事務所爆破後の軍事計画撤回は、金正恩が緊張緩和に転じる柔軟性を持つことを示しており、常に強硬路線を維持するという見立てと矛盾し得る。）"
+      ],
+      "investigation_questions": [
+        {
+          "question": "北朝鮮とロシアの軍事・技術協力の具体的内容と規模はどの程度か。",
+          "rationale": "Key Point（ロシア戦争と北朝鮮軍需協力）とKey Actor（金正恩）のレバレッジ評価に直結するため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "中国の対北朝鮮政策（制裁履行度、貿易・エネルギー支援、国境管理）は直近でどのように変化しているか。",
+          "rationale": "構造的制約（中国依存）が金正恩の行動上限を規定しているため。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "米韓同盟の最新の拡大抑止措置・共同演習計画と、それに対する北朝鮮の具体的反応はどうか。",
+          "rationale": "Preference-Action Gapと緊張管理スタイルの検証に必要。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        },
+        {
+          "question": "北朝鮮内部の経済状況とエリート・軍の支持・不満の状況はどうか。",
+          "rationale": "金正恩の柔軟な対話志向への転換可能性（代替シナリオ）の蓋然性評価に必要。",
+          "answer_if_yes": null,
+          "question_type": "knowledge_gap",
+          "answer_evidence_ids": null,
+          "can_current_evidence_answer": false
+        }
+      ],
+      "actor_intelligence_status": "partial",
+      "identified_knowledge_gaps": [
+        {
+          "priority": "高",
+          "description": "北朝鮮の直近1〜2年における対ロ軍事協力（砲弾・ミサイル供給、技術移転）の具体的内容と規模。",
+          "gap_category": "deterministic",
+          "recommended_action": "信頼できる報道・衛星画像分析・政府・情報機関の公開評価を確認し、ロシアとの協力が金正恩の意思決定に与える影響を再評価する。"
+        },
+        {
+          "priority": "高",
+          "description": "中国の現行対北朝鮮政策（制裁履行度、貿易・エネルギー支援、国境管理）の最新状況。",
+          "gap_category": "deterministic",
+          "recommended_action": "中国税関データ、国境貿易の観測、国際機関・研究者の分析を確認し、北朝鮮の中国依存度と中国の許容範囲を把握する。"
+        },
+        {
+          "priority": "中",
+          "description": "米韓同盟における最新の拡大抑止措置・共同演習計画と、それに対する北朝鮮の具体的反応（ミサイル試験・声明）。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "米韓国防当局の発表、演習スケジュール、北朝鮮の公式声明・ミサイル発射記録を時系列で整理し、エスカレーションパターンを分析する。"
+        },
+        {
+          "priority": "中",
+          "description": "北朝鮮内部の経済状況（食糧・エネルギー・産業生産）とエリート・軍の不満・支持状況。",
+          "gap_category": "analytical_candidate",
+          "recommended_action": "脱北者証言、衛星画像による夜間照度・農業生産の推定、専門家分析を参照し、金正恩の国内制約を評価する。"
+        }
+      ],
+      "knowledge_gaps_referenced": [],
+      "strongest_counterargument": "金正恩が核・ミサイル能力を体制存続の保証ではなく、交渉カードとして再定義し、経済危機や内部不満を背景に中国・米韓との包括的和平・制裁緩和を優先する方向へ転換している可能性を過小評価しているかもしれない。もし内部状況が深刻であれば、過去の強硬パターンに基づくPersistent Preference仮説は現在には当てはまらず、より柔軟な対話志向シナリオが主軸となり得る。",
+      "key_stakeholder_assessment": {
+        "rationale": "北朝鮮の対ロ・対中・対米・対韓政策は、形式上も実質上も金正恩個人の意思決定に強く集中しており、軍・党・政府機構はその方針を実施する役割が中心とみなされる。核・ミサイル開発、対外軍事協力、対話・挑発の強度など、局面を大きく動かす決定は金正恩の承認なしには行われないと考えるのが自然であるため、Key Stakeholderは単一主体（金正恩）と判断する。",
+        "confidence": "中",
+        "evidence_ids": [],
+        "determination": "single",
+        "decision_structure": null,
+        "selected_actor_ids": [
+          "Kim_Jong_Un"
+        ]
+      },
+      "situation_actor_assessment": null,
+      "decisive_power_and_leverage": "この局面全体を決定づける力は、単一主体ではなく、金正恩の核・ミサイル開発とそれに対する米国の拡大抑止・制裁政策、中国の経済支援と危機管理、ロシアの軍事協力ニーズの「分散した相互拘束」にある。金正恩個人は北朝鮮内部ではほぼ絶対的な意思決定権を持つが、外部環境は国際制裁・中国依存・ロシアの戦争状況・米韓同盟の選択に強く制約されており、結果として局面の方向性は『金正恩の選好 × 大国の構造的制約』の組み合わせで決まる。",
+      "assets_dependencies_leverage": [],
+      "preference_action_gap_summary": "金正恩は、核・ミサイル能力を体制存続の保証とみなすPersistent Preferenceを持ちながら、過去には南北共同連絡事務所爆破など象徴的な強硬行動と、その後の軍事計画撤回といった限定的後退を組み合わせている。これは、究極目的（体制存続）と国内向け威信維持・対外交渉カードの両立を図るために、行動レベルでは完全なエスカレーションではなく「管理された緊張」を選ぶ傾向があることを示唆する。ただし、直近の対ロ・対中・対米・対韓行動に関する一次情報が不足しているため、このギャップが現在も同様に機能しているかは確信度を中にとどめる。"
+    },
+    "created_at": "2026-08-31T12:09:48.173027+00:00"
+  },
+  "quality_evaluation": {
+    "evaluation_id": "a1f62a09-1aec-41b7-98ef-04b9337307c2",
+    "response_id": "a0336e93-4cf5-421d-8464-9b8bea1ba1d1",
+    "checks": [
+      {
+        "name": "claims_have_claim_type",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "fact_claims_have_source_ref",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "main_scenario_has_supporting_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_strongest_counterargument",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "has_retraction_conditions",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 金正恩, 中国指導部（習近平政権）, ロシア指導部（プーチン政権）, 米国政府, 韓国政府",
+        "passed": false
+      },
+      {
+        "name": "business_impact_path_or_unrelated_noted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "no_forced_severity_when_unrelated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "versions_recorded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_ids_not_fabricated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_stakeholder_v12_fields_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_control_type_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "key_point_actor_refs_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_salience_confidence_consistency",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "situation_actor_assessment_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_observed_fields_free_of_inference_language",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_editorial_hypotheses_not_uniformly_confirmatory",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_beneficiary_not_treated_as_intent_proof",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_hypothesis_evidence_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "anonymous_sourced_hypothesis_confidence_capped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "media_omitted_actor_analysis_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "investigation_question_answer_grounded",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "historical_pattern_not_asserted_as_certain_fact",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "cross_intelligence_contradiction_not_silently_dropped",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_attribution_not_conflated",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_intelligence_provenance_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_pattern_applicability_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "unsupported_actor_assumption_not_promoted",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "weak_analogy_not_used_as_strong_evidence",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "evidence_substitution_detected",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "hypothesis_pruning_present",
+        "detail": "",
+        "passed": true
+      },
+      {
+        "name": "actor_model_challenged",
+        "detail": "",
+        "passed": true
+      }
+    ],
+    "passed_count": 33,
+    "failed_count": 1,
+    "created_at": "2026-08-31T12:09:48.569768+00:00",
+    "completeness_status": "incomplete_after_repair",
+    "initial_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "repair_attempted": false,
+    "remaining_failed_checks": [
+      "stakeholders_grounded_in_source_pack"
+    ],
+    "removed_fabricated_ids": [
+      "key_actor_profiles[0].evidence_ids=actor_claim:Kim_Jong_Un_worldview",
+      "key_actor_profiles[0].evidence_ids=actor_claim:Kim_Jong_Un_red_lines",
+      "key_actor_profiles[0].evidence_ids=knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc",
+      "key_actor_profiles[0].evidence_ids=knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e",
+      "key_actor_profiles[0].persistent_preference_evidence[0].claim_id=actor_claim:Kim_Jong_Un_worldview",
+      "key_actor_profiles[0].persistent_preference_evidence[1].claim_id=actor_claim:Kim_Jong_Un_red_lines",
+      "key_actor_profiles[0].persistent_preference_evidence[2].claim_id=knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc",
+      "key_actor_profiles[0].persistent_preference_evidence[3].claim_id=knowledge_item_id:464a87c2-b00c-4156-8202-2d735286ef5e",
+      "key_stakeholder_assessment.evidence_ids=actor_claim:Kim_Jong_Un_worldview",
+      "key_stakeholder_assessment.evidence_ids=knowledge_item_id:d81a21e5-b2ec-457a-8814-5e06ec9824fc"
+    ],
+    "confidence_adjustments": [
+      "key_actor_profiles[0]"
+    ],
+    "control_type_adjustments": [],
+    "actor_provenance_touched": [
+      "Kim_Jong_Un"
+    ],
+    "historical_evidence_separations": [
+      "key_point_assessment",
+      "key_point_assessment.candidate_key_points[0]"
+    ],
+    "pattern_applicability_fallbacks": [
+      "key_actor_profiles[0]"
+    ]
+  },
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 82697,
+    "completion_tokens": 16664,
+    "total_tokens": 99361
+  },
+  "execution_metadata": {
+    "execution_mode": "staged",
+    "profile": "deep",
+    "mode": "case_analysis",
+    "executed": {
+      "stage1": true,
+      "stage2_modules": [
+        "audience_signal",
+        "media_context",
+        "deep_scenario",
+        "situation_actor_assessment"
+      ],
+      "stage3_repair": false
+    },
+    "routing_reason": "mode=case_analysis, profile=deep -> stage2_modules=['audience_signal', 'media_context', 'deep_scenario', 'situation_actor_assessment']",
+    "stage_metrics": [
+      {
+        "stage": "stage1",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 108077,
+        "prompt_tokens": 36552,
+        "completion_tokens": 12918
+      },
+      {
+        "stage": "stage2:audience_signal+media_context+deep_scenario+situation_actor_assessment",
+        "attempts": 1,
+        "success": true,
+        "elapsed_ms": 32422,
+        "prompt_tokens": 46145,
+        "completion_tokens": 3746
+      }
+    ],
+    "initial_failed_checks_detail": [
+      {
+        "name": "stakeholders_grounded_in_source_pack",
+        "detail": "Source Pack/Case Context本文中に見当たらない主体があります（誤字・創作の可能性、要人手確認）: 金正恩, 中国指導部（習近平政権）, ロシア指導部（プーチン政権）, 米国政府, 韓国政府"
+      }
+    ]
+  },
+  "persistent_preference_candidates": [],
+  "_wall_clock_seconds": 162.5
+}

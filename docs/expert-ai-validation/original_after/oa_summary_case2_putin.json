@@ -1,0 +1,170 @@
+{
+  "usage": {
+    "calls": 2,
+    "prompt_tokens": 80420,
+    "completion_tokens": 10174,
+    "total_tokens": 90594
+  },
+  "wall_clock_seconds": 190.51059198379517,
+  "stage2_modules": [
+    "audience_signal",
+    "media_context",
+    "deep_scenario",
+    "situation_actor_assessment"
+  ],
+  "key_point_assessment": {
+    "primary_key_point": "ウクライナのNATO・EU完全統合の阻止",
+    "selection_rationale": "Actor Intelligence Packに明示されたプーチンの世界観・レッドライン（NATO東方拡大を脅威とみなし、旧ソ連圏への拡大を一線とする）と最も直接的に結びつき、ウクライナ戦争という個別事案の開始・継続を説明しやすい。旧ソ連圏全体の影響圏維持はより上位の構造目的だが、ウクライナ戦争という局面の蝶番としては、ウクライナの西側統合阻止というより具体的なKey PointをPrimaryに置く方が、今後の方向性（継戦・凍結・取引）を評価しやすい。政権維持やエネルギー制約は重要な制約・ドライバーだが、戦争の目的そのものというより、目的達成手段の選択に影響する要因と位置づけた。",
+    "control_type": "mixed",
+    "confidence": "低",
+    "candidate_key_points_count": 4,
+    "candidate_key_points": [
+      "ウクライナのNATO・EU完全統合の阻止",
+      "旧ソ連圏におけるロシアの影響圏維持・拡大",
+      "ロシア国内政権維持（プーチン体制の存続）",
+      "ロシアのエネルギー輸出依存と制裁による財政制約"
+    ],
+    "rejected_candidates": [
+      {
+        "key_point": "旧ソ連圏におけるロシアの影響圏維持・拡大",
+        "why_not_primary": "ウクライナ戦争を説明する上位目的として重要だが、ジョージアやベラルーシなど他案件も含む広い枠組みであり、今回の局面固有の方向性（どこで止めるか、何を取引するか）を評価するには抽象度が高すぎるため、Primaryではなく背景目的として扱う。"
+      },
+      {
+        "key_point": "ロシア国内政権維持（プーチン体制の存続）",
+        "why_not_primary": "戦争の継続・終結のコスト・リスク計算には重要だが、ウクライナ戦争開始前から存在する恒常的目的であり、なぜウクライナ・なぜ2022年かを説明するにはNATO拡大・勢力圏維持の方が直接的と判断した。"
+      },
+      {
+        "key_point": "ロシアのエネルギー輸出依存と制裁による財政制約",
+        "why_not_primary": "戦争の持続可能性や外交余地を規定する構造要因だが、戦争目的そのものではなく、どの程度の強度・期間で戦争を続けられるかという制約条件に近いため、Primary Key Pointではなくsecondary hingeとして扱う。"
+      }
+    ],
+    "disconfirming_signal": "ロシアがウクライナのNATO加盟やNATOによる安全保障上の明確なコミットメント（例：条約上の防衛義務）を公式に受け入れ、なおかつウクライナ戦争を継続または再開する場合、このKey Point設定（西側統合阻止が主目的）は誤り、または大幅な修正が必要と判断する。",
+    "evidence_class": "model_general_knowledge"
+  },
+  "actors": [
+    {
+      "actor_ref": "putin",
+      "profile_source": "actor_intelligence_active",
+      "general_knowledge_used": null,
+      "actor_intelligence_status": "partial",
+      "historical_episode_ids_count": 0,
+      "pattern_ids_count": 0,
+      "has_pattern_applicability_assessment": false,
+      "has_actor_model_challenge": false,
+      "actor_model_challenge_outcome": null,
+      "persistent_preference_present": true
+    }
+  ],
+  "situation_actor_assessment_count": 0,
+  "situation_actor_assessment_evidence_class_distribution": {},
+  "hypothesis_register_count": 5,
+  "hypothesis_status_distribution": {
+    "retained": 2,
+    "unresolved": 1,
+    "rejected": 2
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H0",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H1",
+      "status": "unresolved"
+    },
+    {
+      "hypothesis_id": "H2",
+      "status": "retained"
+    },
+    {
+      "hypothesis_id": "H3",
+      "status": "rejected"
+    },
+    {
+      "hypothesis_id": "H4",
+      "status": "rejected"
+    }
+  ],
+  "main_scenario": {
+    "confidence": "低",
+    "description": "プーチンの現在のウクライナ戦争に対する目的は、ウクライナのNATO・EU完全統合を阻止しつつ、ウクライナ国家の主権行使をロシアの安全保障上の要求に従属させる形で長期的に制約することである。そのための手段として、短中期的には現状線を基礎とした継戦・消耗戦を続け、西側の支援疲れやウクライナの人的・経済的疲弊を待ちながら、将来的に有利な条件での凍結紛争化（実効支配線の固定）や限定的取引（制裁緩和・安全保障上の譲歩との交換）を模索する方向性が主シナリオとして最も整合的である。全面的な軍事勝利（ウクライナ国家の完全崩壊）を短期目標とするよりも、「管理された不安定状態」を維持し、西側統合を実務的に困難にすることが現実的な目的となっている可能性が高い。",
+    "historical_analogies_used": [
+      {
+        "same_actor": false,
+        "description": "冷戦期のソ連による東欧での勢力圏維持（ハンガリー1956年、チェコスロバキア1968年）や、2008年のジョージア紛争後の凍結紛争化。",
+        "same_domain": true,
+        "analogy_strength": "weak",
+        "same_constraints": false,
+        "same_leverage_mechanism": true,
+        "analogy_source_precedent_id": null,
+        "same_institutional_structure": false
+      }
+    ]
+  },
+  "strongest_counterargument_present": true,
+  "alternative_scenarios_count": 2,
+  "additional_research_count": 4,
+  "additional_research": [
+    {
+      "priority": "高",
+      "question": "プーチンおよびロシア政府の最近の公式発言・政策文書は、ウクライナ戦争の目的と終戦条件をどのように定義しているか。",
+      "rationale": "公式立場の変化・一貫性を確認することで、主シナリオの妥当性を検証できる。",
+      "related_hypothesis": "主シナリオ：NATO・EU統合阻止とウクライナ主権の長期制約が目的",
+      "recommended_sources": "ロシア大統領府公式サイト、主要演説の全文、信頼できる翻訳・分析。"
+    },
+    {
+      "priority": "中",
+      "question": "ロシアの財政・エネルギー収入の現状は、どの程度の期間・強度の戦争を支えられる水準にあるか。",
+      "rationale": "構造的制約の強さを定量的に把握することで、主シナリオの時間軸を評価できる。",
+      "related_hypothesis": "長期継戦・凍結紛争化シナリオの持続可能性",
+      "recommended_sources": "IMF、世界銀行、独立系経済研究機関のレポート。"
+    },
+    {
+      "priority": null,
+      "question": "プーチンおよびロシア政府の2025〜2026年の公式発言・政策文書は、ウクライナ戦争の目的と終戦条件をどのように定義しているか。",
+      "rationale": "Key Point（ウクライナのNATO・EU完全統合阻止）と主シナリオの妥当性を検証するためのKey Actorの公式立場確認。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    },
+    {
+      "priority": null,
+      "question": "ロシア国内の世論・エリートの戦争支持・疲弊の実態（抗議・動員回避・エリート離反など）はどうか。",
+      "rationale": "Preference-Action Gap（目的と手段のギャップ）と政権維持制約を評価するためのKey Actor周辺のDriving Force確認。",
+      "related_hypothesis": null,
+      "recommended_sources": null
+    }
+  ],
+  "investigation_questions_count": 3,
+  "knowledge_gaps_count": 3,
+  "quality_guard": {
+    "passed_count": 31,
+    "failed_count": 3,
+    "initial_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "remaining_failed_checks": [
+      "fact_claims_have_source_ref",
+      "stakeholders_grounded_in_source_pack",
+      "actor_model_challenged"
+    ],
+    "confidence_adjustments": [
+      "key_point_assessment",
+      "main_scenario"
+    ],
+    "control_type_adjustments": [
+      "key_point_assessment.candidate_key_points[2]"
+    ],
+    "historical_evidence_separations": [],
+    "actor_evidence_separations": [],
+    "pattern_applicability_fallbacks": []
+  },
+  "executive_summary": {
+    "what_changed": null,
+    "why_it_matters": null,
+    "what_to_watch_decide": null
+  },
+  "one_line_assessment": "as_of 2026-08-31時点の未検証情報を含む限定的材料では、プーチンのウクライナ戦争に対する目的は「NATO・EU統合への完全な組み込みを阻止しつつ、ウクライナの主権行使を長期的に制約する影響圏の維持」に収れんしているとみるのが最も整合的だが、その達成手段（継戦・凍結・段階的取引）の選好は国内・経済・軍事の制約に強く依存しており確度は中程度にとどまる。",
+  "initial_anomaly": "提供されたEvent群は台湾海峡・中国海警・米沿岸警備隊に関するものであり、ウクライナ戦争やプーチンに直接関係する一次Evidenceが含まれていない。この情報ギャップを前提に、Actor Intelligence Packにある一般的なプーチンの世界観・レッドラインからウクライナ戦争の目的を推定せざるを得ない点が最大の制約。"
+}

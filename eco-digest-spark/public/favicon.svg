@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Meridian">
+  <rect width="64" height="64" rx="14" fill="#101c33"/>
+  <g fill="none" stroke="#6f9bc7" stroke-width="3.2" stroke-linecap="round">
+    <circle cx="32" cy="32" r="19"/>
+    <ellipse cx="32" cy="32" rx="8" ry="19"/>
+    <path d="M13 32h38"/>
+  </g>
+  <path d="M32 9v46" stroke="#e8eef6" stroke-width="3.2" stroke-linecap="round"/>
+</svg>
